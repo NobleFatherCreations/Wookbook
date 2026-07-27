@@ -86,6 +86,9 @@ def build():
             html = hide_missing_assets(hoist_store(html))
         if slug == "":
             html = study_hub(html)
+        if slug == "portals":
+            import nf_portals
+            html = nf_portals.build(html)
         # site copy (hub gets rewired links)
         dest = site / slug / "index.html" if slug else site / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)
