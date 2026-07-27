@@ -95,6 +95,9 @@ def build():
         if slug == "divide":
             import nf_divide
             html = nf_divide.build(html)
+        if slug == "playground":
+            import nf_playground
+            html = nf_playground.build(html)
         # site copy (hub gets rewired links)
         dest = site / slug / "index.html" if slug else site / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)
