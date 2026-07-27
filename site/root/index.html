@@ -176,8 +176,25 @@ body::before{
     linear-gradient(180deg, transparent, rgba(6,4,3,calc(var(--rt-depth)*.55)));
   transition:background 1.1s var(--rt-ease)}
 
+/* ---- arrival: the room comes up out of the dark, once ---- */
+.rt-arrive{position:fixed;inset:0;z-index:9993;pointer-events:none;background:#0B0806;
+  animation:rt-arrive 900ms cubic-bezier(.4,.6,.2,1) both}
+@keyframes rt-arrive{0%{opacity:1}55%{opacity:.5}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.rt-arrive{display:none}}
+
 /* ---- chrome ---- */
-.topbar{padding:20px 22px 14px}
+.topbar{padding:20px 22px 14px;position:relative}
+.topbar::after{content:"";position:absolute;left:22px;right:22px;bottom:0;height:1px;
+  background:linear-gradient(90deg,rgba(217,150,74,.42),rgba(217,150,74,.08) 42%,transparent)}
+.wordmark::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;
+  margin-right:2px;flex:none;align-self:center;
+  background:radial-gradient(circle at 35% 30%,#F0DCAE,#D9964A 60%,#8A5A20);
+  box-shadow:0 0 10px rgba(217,150,74,.7)}
+@media (prefers-reduced-motion: no-preference){
+  .wordmark::before{animation:rt-wick 4.5s ease-in-out infinite}
+  @keyframes rt-wick{0%,100%{opacity:.75;box-shadow:0 0 8px rgba(217,150,74,.55)}
+    50%{opacity:1;box-shadow:0 0 15px rgba(217,150,74,.85)}}
+}
 .wordmark{font-size:16px;letter-spacing:.005em;gap:10px}
 .wordmark .sub{letter-spacing:.2em;font-size:9.5px}
 .resetlink{font-family:var(--sans);font-size:10px;letter-spacing:.18em;
@@ -320,6 +337,121 @@ textarea:focus,input:focus{background:rgba(255,255,255,.04);
 .rt-fine{font-size:10.5px;letter-spacing:.1em;color:var(--dim);margin-top:22px}
 .returning{border-radius:4px;border-color:rgba(143,175,155,.3);
   background:rgba(143,175,155,.07)}
+
+/* =============== EVERY STEP LOOKS LIKE ITSELF =============== */
+
+/* ---- the opening: a candle is lit before the first question ---- */
+.rt-card[data-step="root"]{position:relative;padding-top:8px}
+.rt-card[data-step="root"]::before{content:"";position:absolute;left:-6px;top:-58px;
+  width:210px;height:210px;pointer-events:none;border-radius:50%;
+  background:radial-gradient(circle,rgba(217,150,74,.20),rgba(217,150,74,.06) 45%,transparent 70%);
+  filter:blur(6px)}
+.rt-card[data-step="root"] .rt-question{font-size:clamp(30px,6.4vw,46px)}
+@media (prefers-reduced-motion: no-preference){
+  .rt-card[data-step="root"]::before{animation:rt-flame 5.5s ease-in-out infinite}
+  @keyframes rt-flame{0%,100%{opacity:.85;transform:scale(1)}
+    50%{opacity:1;transform:scale(1.07)}}
+  .rt-card[data-step="root"] .rt-question{
+    animation:rt-strike .9s cubic-bezier(.16,1,.3,1) both}
+  @keyframes rt-strike{from{opacity:0;transform:translateY(16px);filter:blur(7px)}
+    to{opacity:1;transform:none;filter:none}}
+}
+
+/* ---- the breath: a ring that breathes at the pace the words describe ---- */
+.rt-card[data-step="breath"]{text-align:center;max-width:520px;margin-inline:auto;
+  display:flex;flex-direction:column}
+/* the ring belongs between the instruction and the way out, not after it */
+.rt-card[data-step="breath"] .rt-depth{order:1}
+.rt-card[data-step="breath"] .rt-question{order:2}
+.rt-card[data-step="breath"] .rt-sub{order:3}
+.rt-card[data-step="breath"]::after{order:4}
+.rt-card[data-step="breath"] .actions{order:5}
+.rt-card[data-step="breath"] .rt-depth{justify-content:center}
+.rt-card[data-step="breath"] .rt-sub{margin-inline:auto}
+.rt-card[data-step="breath"] .actions{justify-content:center}
+.rt-card[data-step="breath"]::after{content:"";display:block;width:132px;height:132px;
+  margin:34px auto 6px;border-radius:50%;
+  border:1px solid rgba(217,150,74,.5);
+  background:radial-gradient(circle,rgba(217,150,74,.14),transparent 68%);
+  box-shadow:0 0 34px rgba(217,150,74,.22)}
+@media (prefers-reduced-motion: no-preference){
+  /* four counts in, four held, four out — the ring keeps the time */
+  .rt-card[data-step="breath"]::after{animation:rt-breathe 12s ease-in-out infinite}
+  @keyframes rt-breathe{
+    0%{transform:scale(.72);opacity:.55}
+    33%{transform:scale(1);opacity:1}
+    66%{transform:scale(1);opacity:1}
+    100%{transform:scale(.72);opacity:.55}}
+}
+
+/* ---- the body: the chips arrange themselves into a figure ---- */
+@media(min-width:430px){
+  .rt-card[data-step="body"] .bodymap{display:grid;gap:9px;justify-items:center;
+    grid-template-columns:1fr 1fr 1fr;max-width:420px;margin-inline:auto;
+    align-items:center}
+  .rt-card[data-step="body"] .bodymap .opt{width:100%;text-align:center}
+  /* Chest Throat Stomach Shoulders Jaw Head Hands Hard-to-locate */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(6){grid-area:1/2/2/3}  /* Head */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(5){grid-area:2/2/3/3}  /* Jaw */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(2){grid-area:3/2/4/3}  /* Throat */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(4){grid-area:4/1/5/2}  /* Shoulders */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(1){grid-area:4/2/5/3}  /* Chest */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(7){grid-area:4/3/5/4}  /* Hands */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(3){grid-area:5/2/6/3}  /* Stomach */
+  .rt-card[data-step="body"] .bodymap .opt:nth-child(8){grid-area:6/1/7/4}  /* elsewhere */
+  .rt-card[data-step="body"] .bodymap{position:relative}
+  .rt-card[data-step="body"] .bodymap::before{content:"";position:absolute;
+    left:50%;top:6%;bottom:16%;width:1px;transform:translateX(-50%);
+    background:linear-gradient(180deg,transparent,rgba(217,150,74,.28),transparent);
+    pointer-events:none}
+}
+
+/* ---- the tally: two pans of a balance ---- */
+.rt-card[data-step="tally"] .two-col{position:relative}
+@media(min-width:560px){
+  .rt-card[data-step="tally"] .two-col::before{content:"";position:absolute;
+    left:50%;top:4px;bottom:4px;width:1px;transform:translateX(-50%);
+    background:linear-gradient(180deg,transparent,var(--line-strong),transparent)}
+}
+.rt-card[data-step="tally"] .tally-col{padding-top:4px}
+.rt-card[data-step="tally"] .tallyline{text-align:center;
+  border-top:1px solid var(--line-strong);position:relative}
+.rt-card[data-step="tally"] .tallyline::before{content:"";position:absolute;
+  left:50%;top:-4px;width:7px;height:7px;transform:translateX(-50%) rotate(45deg);
+  background:var(--candle);box-shadow:0 0 10px rgba(217,150,74,.6)}
+
+/* ---- naming it: the sentence is set as a ceremony ---- */
+.rt-card[data-step="named"] .rt-sub{font-family:var(--serif);font-style:italic;
+  font-size:clamp(19px,3.4vw,26px);line-height:1.4;color:var(--parchment);
+  margin-top:22px;padding:20px 22px;border-radius:3px;max-width:none;
+  background:linear-gradient(174deg,rgba(217,150,74,.09),transparent);
+  border:1px solid rgba(217,150,74,.24);text-wrap:balance}
+.rt-card[data-step="named"] input[type=text]{font-family:var(--serif);font-size:17px}
+
+/* ---- the protector: a name plate being struck ---- */
+.rt-card[data-step="protector"] .opts .opt{font-family:var(--serif);letter-spacing:.01em}
+.rt-card[data-step="protector"] input[type=text]{font-family:var(--serif);font-size:17px;
+  letter-spacing:.01em}
+
+/* ---- the commitment: a signed line ---- */
+.rt-card[data-step="commitment"] input[type=text]{border:0;border-bottom:1px solid var(--line-strong);
+  border-radius:0;background:none;padding-left:2px;font-family:var(--serif);font-size:17px}
+.rt-card[data-step="commitment"] input[type=text]:focus{box-shadow:none;
+  border-bottom-color:var(--candle)}
+
+/* ---- returning: the callback and resume read as a letter waiting ---- */
+.rt-card[data-step="callback"] .callback-box,
+.rt-card[data-step="resume"] .opt.wide{border-radius:3px}
+.rt-card[data-step="callback"] .callback-box{position:relative;padding-left:22px;
+  border-left:2px solid var(--ember)}
+
+/* ---- going deeper: the ground presses in a little ---- */
+.rt-card[data-step="deep1"] .rt-question,
+.rt-card[data-step="deep2"] .rt-question{font-style:italic}
+
+/* ---- the belief: stated flat, so it is set flat and heavy ---- */
+.rt-card[data-step="belief"] textarea{font-family:var(--serif);font-size:18px;
+  line-height:1.55}
 
 @media(max-width:560px){
   .topbar{padding:14px 16px 10px;gap:12px;align-items:flex-start}
@@ -800,8 +932,8 @@ const stage=document.getElementById("stageInner");
 
 function shell(eyebrow,question,bodyHtml,opts){
   opts=opts||{};
-  var d=history.length;
-  stage.innerHTML=`<div class="card rt-card">
+  var st=window.__rtStep||"";
+  stage.innerHTML=`<div class="card rt-card" data-step="${st}">
     <p class="eyebrow rt-depth"><span class="rt-depth-mark" aria-hidden="true"></span>${esc(eyebrow)}</p>
     <h2 class="question rt-question">${question}</h2>
     ${opts.subtext?`<p class="subtext rt-sub">${opts.subtext}</p>`:""}
@@ -811,6 +943,7 @@ function shell(eyebrow,question,bodyHtml,opts){
 function actionsRow(html){ return `<div class="actions">${html}</div>`; }
 
 function render(id,isBack){
+  window.__rtStep=id;
   if(isBack){ /* no history push, just draw */ }
   renderRail();
 
@@ -1199,6 +1332,17 @@ function route(){
   history=["root"]; render("root");
 }
 route();
+</script>
+
+<script id="rt-js">
+(function(){
+  // the room lights on arrival — plays once per load, holds nothing
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var a=document.createElement('div');
+  a.className='rt-arrive';a.setAttribute('aria-hidden','true');
+  document.body.appendChild(a);
+  setTimeout(function(){a.remove()},950);
+})();
 </script>
 
 <div id="nf-chrome" class="nf-chrome" data-nf-page="root"><div class="nf-veil" aria-hidden="true"></div><button class="nf-seal" type="button" aria-expanded="false" aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button><div class="nf-scrim" aria-hidden="true"></div><nav class="nf-panel" id="nf-panel" aria-label="The Catalogue" aria-hidden="true"><div class="nf-panel-head"><div><div class="nf-eyebrow">Noble Father Creations</div><h2 class="nf-panel-title">The Catalogue</h2></div><button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div><ul class="nf-toc"><li class="nf-row" style="--nf-i:0"><a href="/"><span class="nf-dot" style="--va:#C9A35B" aria-hidden="true"></span><span class="nf-num">I</span><span class="nf-vol">The Catalogue</span><span class="nf-desc">Every volume, one shelf</span></a></li><li class="nf-row" style="--nf-i:1"><a href="/seals/"><span class="nf-dot" style="--va:#E8C879" aria-hidden="true"></span><span class="nf-num">II</span><span class="nf-vol">The Press</span><span class="nf-desc">Real wax, a voice inside</span></a></li><li class="nf-row" style="--nf-i:2"><a href="/portals/"><span class="nf-dot" style="--va:#7FD9D4" aria-hidden="true"></span><span class="nf-num">III</span><span class="nf-vol">The Portals</span><span class="nf-desc">Strontium glow, no battery</span></a></li><li class="nf-row nf-here" style="--nf-i:3"><a href="/root/" aria-current="page"><span class="nf-dot" style="--va:#D9964A" aria-hidden="true"></span><span class="nf-num">IV</span><span class="nf-vol">The Root<span class="nf-here-dot" aria-hidden="true"></span></span><span class="nf-desc">A shadow work practice</span></a></li><li class="nf-row" style="--nf-i:4"><a href="/reaction-map/"><span class="nf-dot" style="--va:#D7DE5A" aria-hidden="true"></span><span class="nf-num">V</span><span class="nf-vol">The Reaction Map</span><span class="nf-desc">Conscious consumption, mapped</span></a></li><li class="nf-row" style="--nf-i:5"><a href="/divide/"><span class="nf-dot" style="--va:#C29A52" aria-hidden="true"></span><span class="nf-num">VI</span><span class="nf-vol">The Sacred Divide</span><span class="nf-desc">25 traditions, 750 entries</span></a></li><li class="nf-row" style="--nf-i:6"><a href="/fractal/"><span class="nf-dot" style="--va:#E5A93C" aria-hidden="true"></span><span class="nf-num">VII</span><span class="nf-vol">The Fractal</span><span class="nf-desc">One pattern runs the world</span></a></li><li class="nf-row" style="--nf-i:7"><a href="/fracture/"><span class="nf-dot" style="--va:#C9A35B" aria-hidden="true"></span><span class="nf-num">VIII</span><span class="nf-vol">All Fracture</span><span class="nf-desc">The reading edition</span></a></li><li class="nf-row" style="--nf-i:8"><a href="/sovereign/"><span class="nf-dot" style="--va:#C85F7E" aria-hidden="true"></span><span class="nf-num">IX</span><span class="nf-vol">The Sovereign Divine Feminine</span><span class="nf-desc">A field guide</span></a></li><li class="nf-row" style="--nf-i:9"><a href="/playground/"><span class="nf-dot" style="--va:#FFC23D" aria-hidden="true"></span><span class="nf-num">X</span><span class="nf-vol">Playground Protectors</span><span class="nf-desc">Shaela's guide for brave kids</span></a></li><li class="nf-row" style="--nf-i:10"><a href="/festival/"><span class="nf-dot" style="--va:#D8FF3D" aria-hidden="true"></span><span class="nf-num">XI</span><span class="nf-vol">The Festie Codex</span><span class="nf-desc">The gate — attendee's cut</span></a></li><li class="nf-row" style="--nf-i:11"><a href="https://noblepatterns.netlify.app/" target="_blank" rel="noopener"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XII</span><span class="nf-vol">The Pattern Decoder</span><span class="nf-ext">&#8599;</span><span class="nf-desc">349 tactics, decoded</span></a></li><li class="nf-row" style="--nf-i:12"><a href="https://noblemusic.netlify.app/" target="_blank" rel="noopener"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XIII</span><span class="nf-vol">The Music</span><span class="nf-ext">&#8599;</span><span class="nf-desc">Free to stream</span></a></li></ul><div class="nf-panel-foot">Bound by hand in the study &mdash; thirteen volumes &amp; counting.</div></nav></div>
