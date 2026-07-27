@@ -6,6 +6,7 @@ Reaction Map's `store` declaration (pre-existing TDZ crash fix), inject
 shared chrome, rewire hub links (site variant only).
 """
 import re, shutil, subprocess, pathlib, sys
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 UP = pathlib.Path("/root/.claude/uploads/d88434ad-a117-5356-83fe-58c871ee3068")
@@ -58,6 +59,10 @@ def hoist_store(html):
     k = html.index("<script>") + len("<script>")
     return html[:k] + "\n" + block + html[k:]
 
+def study_hub(html):
+    import nf_hub
+    return nf_hub.build(html)
+
 def rewire_hub(html):
     n = 0
     for old, new in HUB_MAP.items():
@@ -79,6 +84,8 @@ def build():
             html = fix_divide_title(html)
         if slug == "reaction-map":
             html = hide_missing_assets(hoist_store(html))
+        if slug == "":
+            html = study_hub(html)
         # site copy (hub gets rewired links)
         dest = site / slug / "index.html" if slug else site / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)
