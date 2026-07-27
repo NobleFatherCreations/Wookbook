@@ -43,7 +43,7 @@ PANEL_JS = r'''function panelHTML(s){var im=IMG[s.id];
   /* masthead */
   +'<header class="pv-mast">'
     +'<p class="pv-kicker"><span class="pv-gem"></span>'+article+'</p>'
-    +'<h3 class="pv-name">'+s.name+'</h3>'
+    +'<h3 class="pv-name" data-nf-split>'+s.name+'</h3>'
     +'<p class="pv-tagline">'+s.tag+'</p>'
     +'<p class="pv-intro">'+s.intro+'</p>'
   +'</header>'
@@ -154,6 +154,50 @@ WIPE_JS = r"""
       });
     },0);
   });
+
+  /* ---- the torch and the tilt ---- */
+  var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+  if(fine&&!reduced){
+    document.querySelectorAll('.pv-piece').forEach(function(el){
+      var hero=el.hasAttribute('data-wipe'), max=hero?5:7;
+      el.classList.add('pv-torch');
+      el.addEventListener('pointermove',function(e){
+        var r=el.getBoundingClientRect();
+        var px=(e.clientX-r.left)/r.width, py=(e.clientY-r.top)/r.height;
+        el.style.setProperty('--tx',(px*100).toFixed(1)+'%');
+        el.style.setProperty('--ty',(py*100).toFixed(1)+'%');
+        if(el.classList.contains('pv-dragging'))return;   // the line owns the piece
+        el.classList.add('pv-live');
+        el.style.setProperty('--ry',((px-.5)*2*max).toFixed(2)+'deg');
+        el.style.setProperty('--rx',((.5-py)*2*max).toFixed(2)+'deg');
+      });
+      el.addEventListener('pointerleave',function(){
+        el.classList.remove('pv-live');
+        el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg');
+      });
+    });
+  }
+
+  /* ---- set names re-letter themselves when a new set slides in ---- */
+  if(!reduced&&window.NFreplay){
+    var names=[].slice.call(document.querySelectorAll('.pv-name'));
+    var rail=document.getElementById('rail');
+    function replayActive(){
+      setTimeout(function(){
+        names.forEach(function(n){
+          var p=n.closest('.panel');
+          if(p&&Math.abs(p.getBoundingClientRect().left)<80)window.NFreplay(n);
+        });
+      },260);
+    }
+    ['railPrev','railNext'].forEach(function(id){
+      var b=document.getElementById(id);
+      if(b)b.addEventListener('click',replayActive);
+    });
+    if(rail)rail.addEventListener('click',function(e){
+      if(e.target.closest('.rcard'))replayActive();
+    });
+  }
 })();
 """
 
@@ -173,7 +217,16 @@ CSS = r"""
 .pv-gem{width:7px;height:7px;border-radius:50%;background:var(--sglow,#7fe39a);
   box-shadow:0 0 10px var(--sglow,#7fe39a);flex:none}
 .pv-name{font-family:var(--display);font-size:clamp(2.7rem,8.5vw,5rem);font-weight:600;
-  letter-spacing:.055em;line-height:.98;margin:0;color:var(--cream)}
+  letter-spacing:.055em;line-height:.98;margin:0;color:var(--cream);
+  font-variation-settings:"SOFT" 0,"WONK" 0;
+  transition:font-variation-settings .6s var(--pv-ease)}
+.pv-panel:hover .pv-name{font-variation-settings:"SOFT" 46,"WONK" 1}
+
+/* the page wordmark carries the same gold leaf as the hub */
+.site-hero h1{
+  background:linear-gradient(100deg,#8E6B2F,#F4E2B4 26%,#C9A35B 46%,#F7EBC6 62%,#8E6B2F 88%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 2px 12px rgba(201,163,91,.22))}
 .pv-tagline{margin:16px auto 0;max-width:34ch;font-family:var(--display);font-style:italic;
   font-size:clamp(1.08rem,2.5vw,1.42rem);line-height:1.42;color:var(--gold)}
 .pv-intro{margin:22px auto 0;max-width:56ch;font-size:.98rem;line-height:1.78;
@@ -190,8 +243,38 @@ CSS = r"""
   border-radius:50%;background:radial-gradient(ellipse at 50% 0%,rgba(0,0,0,.72),transparent 72%);
   filter:blur(8px)}
 
+/* the torch radius has to be a real animatable length for the light to swell */
+@property --tr{syntax:'<length>';inherits:false;initial-value:0px}
+
 .pv-hero{border-radius:16px;cursor:ew-resize;touch-action:pan-y;
-  box-shadow:0 30px 80px -24px rgba(0,0,0,.85),0 0 0 1px rgba(201,162,75,.16)}
+  box-shadow:0 30px 80px -24px rgba(0,0,0,.85),0 0 0 1px rgba(201,162,75,.16);
+  transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));
+  transition:transform .5s var(--pv-ease),box-shadow .5s var(--pv-ease)}
+.pv-hero.pv-live{transition:transform .09s linear}
+.pv-hero.pv-dragging{transition:none}
+
+/* ---- the torch: a light you sweep across the piece, revealing the glow
+   only where it falls. Pointer devices only; touch keeps tap-to-glow. ---- */
+@media (hover:hover) and (pointer:fine){
+  .pv-piece .day{--tr:0px;transition:--tr .38s var(--pv-ease),opacity 1.05s ease}
+  .pv-piece:hover .day{--tr:118px}
+  .pv-thumb:hover .day{--tr:82px}
+  .pv-piece.pv-torch .day{
+    -webkit-mask-image:radial-gradient(circle var(--tr) at var(--tx,50%) var(--ty,50%),
+      transparent 0%,transparent 52%,#000 100%);
+    mask-image:radial-gradient(circle var(--tr) at var(--tx,50%) var(--ty,50%),
+      transparent 0%,transparent 52%,#000 100%)}
+  /* on a pointer device the torch is the reveal, so the blunt hover-flip stands down */
+  .pv-thumb.lit .day{opacity:1}
+  .pv-thumb{transform:perspective(760px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg))
+    translateY(var(--ty2,0px));transition:transform .45s var(--pv-ease)}
+  .pv-thumb.pv-live{transition:transform .09s linear}
+  .pv-thumb:hover{--ty2:-5px}
+}
+@media (prefers-reduced-motion: reduce){
+  .pv-hero,.pv-thumb{transform:none!important;transition:none!important}
+  .pv-piece.pv-torch .day{-webkit-mask-image:none;mask-image:none}
+}
 .pv-hero:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
 /* The piece arrives already half-dark: daylight on one side of the line,
    the hidden sun on the other. That duality is the entire product. */
@@ -291,8 +374,7 @@ CSS = r"""
 .pv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;
   overflow:visible;scroll-snap-type:none;padding:0}
 @media(max-width:720px){.pv-grid{grid-template-columns:repeat(2,1fr);gap:11px}}
-.pv-thumb{border-radius:12px;transition:transform .4s var(--pv-ease),box-shadow .4s var(--pv-ease)}
-.pv-thumb:hover{transform:translateY(-4px)}
+.pv-thumb{border-radius:12px}
 .pv-tag{position:absolute;left:9px;bottom:9px;z-index:5;
   font-family:var(--label);font-size:.5rem;letter-spacing:.18em;text-transform:uppercase;
   color:rgba(240,232,214,.8);text-shadow:0 1px 5px rgba(0,0,0,.9);

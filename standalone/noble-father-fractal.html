@@ -659,7 +659,7 @@ svg.bk-thumb-ph{padding:16px;background:radial-gradient(circle at 50% 38%,rgba(2
 .p-final .p-k{margin-top:0}
 .p-final p{margin:0;color:var(--fg-dim);font-size:.83rem;line-height:1.62}
 </style>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap">
 <style id="nf-chrome-css">
 /* ============ Noble Father shared chrome — design tokens ============ */
 :root{
@@ -674,7 +674,36 @@ svg.bk-thumb-ph{padding:16px;background:radial-gradient(circle at 50% 38%,rgba(2
 }
 .nf-chrome,.nf-chrome *{margin:0;padding:0;box-sizing:border-box}
 
-/* ---- the veil: every arrival rises out of ink, lit from below ---- */
+/* ---- cross-document view transitions: the wax seal holds still while the
+   page changes around it. Browsers without support fall back to the veil. ---- */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion: no-preference){
+  ::view-transition-old(root){animation:nf-vt-out 190ms cubic-bezier(.5,0,.9,.6) both}
+  ::view-transition-new(root){animation:nf-vt-in 380ms cubic-bezier(.2,.7,.2,1) both}
+  @keyframes nf-vt-out{to{opacity:0;transform:scale(.994);filter:blur(3px)}}
+  @keyframes nf-vt-in{from{opacity:0;transform:scale(1.006);filter:blur(4px)}}
+}
+@media (prefers-reduced-motion: reduce){
+  ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
+.nf-seal{view-transition-name:nf-seal}
+
+/* ---- shared motion utilities (driven by data attributes) ---- */
+.nf-ch{display:inline-block;white-space:pre}
+@media (prefers-reduced-motion: no-preference){
+  [data-nf-split] .nf-ch{opacity:0;transform:translateY(.42em) rotateX(-38deg);
+    transform-origin:50% 100%;
+    animation:nf-ch-in 620ms cubic-bezier(.16,1,.3,1) both;
+    animation-delay:calc(var(--i)*26ms + var(--d,0ms))}
+  @keyframes nf-ch-in{to{opacity:1;transform:none}}
+  [data-nf-split].nf-replay .nf-ch{animation:none;opacity:0;transform:translateY(.42em)}
+}
+
+/* gold-leaf: light travels across the letterforms rather than sitting still */
+@media (prefers-reduced-motion: no-preference){
+  .nf-leaf{background-size:280% 100%;animation:nf-leaf 7s ease-in-out infinite}
+  @keyframes nf-leaf{0%,100%{background-position:14% 50%}50%{background-position:86% 50%}}
+}
 .nf-veil{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:0;
   background:
     radial-gradient(120% 90% at 50% 108%, rgba(217,150,74,.14), transparent 55%),
@@ -1785,10 +1814,58 @@ function renderAbout(){
       },{passive:true});
     }
   }
-  // ink-veil exit: internal same-origin links leave through the dark
+  /* ---- shared motion utilities ---- */
+  // split into letters so headlines can arrive a character at a time
+  window.NFsplit=function(el){
+    if(!el||el.dataset.nfSplitDone)return;
+    var text=el.textContent, frag=document.createDocumentFragment(), i=0;
+    text.split('').forEach(function(c){
+      var s=document.createElement('span');
+      s.className='nf-ch';s.textContent=c;
+      s.style.setProperty('--i',i++);
+      frag.appendChild(s);
+    });
+    el.textContent='';el.appendChild(frag);
+    el.dataset.nfSplitDone='1';
+    el.setAttribute('aria-label',text);
+  };
+  window.NFreplay=function(el){
+    if(!el)return;
+    el.classList.add('nf-replay');
+    void el.offsetWidth;                 // force reflow so the animation restarts
+    el.classList.remove('nf-replay');
+  };
+  if(!reduced)document.querySelectorAll('[data-nf-split]').forEach(window.NFsplit);
+
+  // numerals that count up when they first come into view
+  if(!reduced&&'IntersectionObserver' in window){
+    var cio=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(!en.isIntersecting)return;
+        var el=en.target, raw=el.textContent.trim(), to=parseInt(raw,10);
+        cio.unobserve(el);
+        if(isNaN(to))return;
+        var t0=null, dur=900;
+        function step(ts){
+          if(!t0)t0=ts;
+          var p=Math.min(1,(ts-t0)/dur);
+          el.textContent=Math.round(to*(1-Math.pow(1-p,3)));
+          if(p<1)requestAnimationFrame(step);else el.textContent=raw;
+        }
+        requestAnimationFrame(step);
+      });
+    },{threshold:.6});
+    document.querySelectorAll('[data-nf-count]').forEach(function(el){cio.observe(el)});
+  }
+
+  // ink-veil exit: internal same-origin links leave through the dark.
+  // Where the browser does real cross-document view transitions, stand down
+  // and let it morph instead — the seal stays put across the navigation.
   var veil=root.querySelector('.nf-veil');
+  var nativeVT = !!document.startViewTransition &&
+                 CSS.supports('view-transition-name','nf-seal');
   document.addEventListener('click',function(e){
-    if(reduced||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
+    if(nativeVT||reduced||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
     var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
     if(!a||a.target==='_blank')return;
     var href=a.getAttribute('href');

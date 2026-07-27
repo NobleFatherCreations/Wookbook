@@ -103,7 +103,11 @@ def rebuild_articles(html, cls, start):
 
 
 # ------------------------------------------------------------------- hero
-HERO = '''<section class="st-hero">
+HERO = '''<div class="st-open" id="stOpen" aria-hidden="true">
+  <span class="st-open-l"></span><span class="st-open-r"></span>
+  <span class="st-open-seam"></span>
+</div>
+<section class="st-hero">
   <div class="st-hero-room" aria-hidden="true">
     __PLATE__
     <span class="st-hero-glow"></span>
@@ -112,15 +116,21 @@ HERO = '''<section class="st-hero">
     <span class="st-hero-vignette"></span>
   </div>
   <div class="st-hero-inner">
-    <div class="st-hero-seal" aria-hidden="true"><span class="st-hero-emblem"></span></div>
+    <div class="st-hero-seal" aria-hidden="true">
+      <svg class="st-ring" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <circle class="st-ring-o" cx="50" cy="50" r="47"/>
+        <circle class="st-ring-i" cx="50" cy="50" r="41"/>
+      </svg>
+      <span class="st-hero-emblem"></span>
+    </div>
     <p class="st-hero-eyebrow">Noble Father Creations</p>
-    <h1 class="st-hero-title"><span class="st-l1">The collected</span><span class="st-l2">works.</span></h1>
+    <h1 class="st-hero-title"><span class="st-l1" data-nf-split>The collected</span><span class="st-l2 nf-leaf">works.</span></h1>
     <p class="st-hero-thesis">Field guides that reveal the pattern hiding inside everyday systems &mdash; and hand-made objects that hide a living core under wax and resin.</p>
     <p class="st-hero-mantra"><em>Worn in the light. Alive in the dark.</em></p>
     <ul class="st-colophon">
-      <li><b>2</b><span>living tools</span></li>
-      <li><b>6</b><span>interactive books</span></li>
-      <li><b>2</b><span>NFC craft lines</span></li>
+      <li><b data-nf-count>2</b><span>living tools</span></li>
+      <li><b data-nf-count>6</b><span>interactive books</span></li>
+      <li><b data-nf-count>2</b><span>NFC craft lines</span></li>
       <li><b>Free</b><span>to read</span></li>
     </ul>
     <a class="st-enter" href="#manifesto"><span>Enter the study</span>
@@ -232,6 +242,26 @@ CSS = r"""
   transform:translate3d(0,calc(var(--st-scroll,0)*44px),0);
   opacity:calc(1 - var(--st-scroll,0)*.85)}
 
+/* ---- the covers part on first arrival ---- */
+.st-open{position:fixed;inset:0;z-index:9995;pointer-events:none;display:none}
+.st-open.st-open-run{display:block}
+.st-open-l,.st-open-r{position:absolute;top:0;bottom:0;width:50.5%;
+  background:linear-gradient(174deg,#1E1726,#141019 56%,#0E0A14);
+  box-shadow:0 0 60px rgba(0,0,0,.9)}
+.st-open-l{left:0;transform-origin:left center}
+.st-open-r{right:0;transform-origin:right center}
+.st-open-seam{position:absolute;top:0;bottom:0;left:50%;width:2px;margin-left:-1px;
+  background:linear-gradient(180deg,transparent,#E8C879 22%,#C9A35B 50%,#E8C879 78%,transparent);
+  box-shadow:0 0 16px rgba(232,200,121,.7)}
+.st-open-run .st-open-l{animation:nf-cover-l 820ms cubic-bezier(.65,0,.25,1) 120ms both}
+.st-open-run .st-open-r{animation:nf-cover-r 820ms cubic-bezier(.65,0,.25,1) 120ms both}
+.st-open-run .st-open-seam{animation:nf-seam 700ms cubic-bezier(.65,0,.25,1) both}
+@keyframes nf-cover-l{to{transform:translateX(-101%)}}
+@keyframes nf-cover-r{to{transform:translateX(101%)}}
+@keyframes nf-seam{0%{opacity:0;transform:scaleY(.2)}
+  36%{opacity:1;transform:scaleY(1)}100%{opacity:0;transform:scaleY(1)}}
+@media(prefers-reduced-motion:reduce){.st-open{display:none!important}}
+
 /* the seal struck at the head of the page */
 .st-hero-seal{width:96px;height:96px;margin:0 auto 30px;border-radius:50%;
   display:grid;place-items:center;position:relative;
@@ -240,6 +270,21 @@ CSS = r"""
     0 0 0 1px rgba(201,163,91,.34),0 18px 44px -18px rgba(0,0,0,.9)}
 .st-hero-seal::after{content:"";position:absolute;inset:9px;border-radius:50%;
   border:1px dashed rgba(201,163,91,.3)}
+/* an engraved ring that draws itself around the mark */
+.st-ring{position:absolute;inset:-7px;width:calc(100% + 14px);height:calc(100% + 14px);
+  overflow:visible;pointer-events:none}
+.st-ring circle{fill:none;stroke:var(--nf-brass,#C9A35B);
+  transform:rotate(-90deg);transform-origin:50% 50%}
+.st-ring-o{stroke-width:.9;opacity:.75}
+.st-ring-i{stroke-width:.5;opacity:.4;stroke-dasharray:2 4}
+@media (prefers-reduced-motion: no-preference){
+  .st-ring-o{stroke-dasharray:296;stroke-dashoffset:296;
+    animation:nf-draw 1500ms cubic-bezier(.4,.6,.2,1) 260ms both}
+  .st-ring-i{animation:nf-tick 1100ms cubic-bezier(.4,.6,.2,1) 780ms both}
+  @keyframes nf-draw{to{stroke-dashoffset:0}}
+  @keyframes nf-tick{from{opacity:0;transform:rotate(-90deg) scale(.86)}
+    to{opacity:.4;transform:rotate(-90deg) scale(1)}}
+}
 .st-hero-emblem{width:52px;height:52px;background-image:var(--brand-logo);
   background-size:contain;background-repeat:no-repeat;background-position:center;
   filter:drop-shadow(0 3px 8px rgba(0,0,0,.7))}
@@ -251,9 +296,17 @@ CSS = r"""
   align-items:center;gap:.02em}
 .st-l1{font-size:clamp(2.9rem,10.5vw,6rem);color:#ECE4D6}
 .st-l2{font-size:clamp(3.4rem,13vw,7.4rem);font-style:italic;font-weight:600;
-  background:linear-gradient(174deg,#F4E2B4,#C9A35B 44%,#8E6B2F 78%,#E8C879);
+  background:linear-gradient(100deg,#8E6B2F,#F4E2B4 26%,#C9A35B 46%,#F7EBC6 62%,#8E6B2F 88%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
   filter:drop-shadow(0 2px 10px rgba(201,163,91,.24))}
+/* the gilt line cannot be letter-split — background-clip:text will not survive
+   per-glyph compositing — so it rises whole, just after the line above it */
+@media (prefers-reduced-motion: no-preference){
+  .st-l2{animation:nf-leaf 7s ease-in-out infinite,
+    nf-l2-in 700ms cubic-bezier(.16,1,.3,1) 300ms both}
+  @keyframes nf-l2-in{from{opacity:0;transform:translateY(.2em) scale(.97)}
+    to{opacity:1;transform:none}}
+}
 .st-hero-thesis{margin:30px auto 0;max-width:44ch;font-size:clamp(15px,1.6vw,17.5px);
   line-height:1.68;color:#BCB1A0}
 .st-hero-mantra{margin:14px auto 0;font-family:var(--nf-display,"Fraunces",Georgia,serif);
@@ -445,6 +498,17 @@ CSS = r"""
   .st-hero-plate{opacity:.2;transform:scale(1.5);transform-origin:50% 0}
 }
 
+/* ---- Fraunces has SOFT and WONK axes: the letterforms themselves soften
+   and lean as a volume is approached, rather than merely changing weight ---- */
+.st-vol-title,.st-chapter-title,.st-hero-title{
+  font-variation-settings:"SOFT" 0,"WONK" 0;
+  transition:font-variation-settings .55s var(--st-ease),color .3s var(--st-ease)}
+.st-vol:hover .st-vol-title,.st-vol:focus-within .st-vol-title{
+  font-variation-settings:"SOFT" 42,"WONK" 1}
+@media (prefers-reduced-motion: reduce){
+  .st-vol-title,.st-chapter-title,.st-hero-title{transition:none}
+}
+
 /* ---- reduced motion ---- */
 @media(prefers-reduced-motion:reduce){
   .st-hero-glow,.st-hero-beam,.st-hero-motes,.st-hero-inner{transform:none!important;opacity:1!important}
@@ -455,6 +519,21 @@ CSS = r"""
 
 # scroll-linked candlelight: one warm source that tracks the descent
 JS = r"""
+(function(){
+  // the covers part once per visit, never on a return within the session
+  var cover=document.getElementById('stOpen');
+  if(cover){
+    var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var seen=false;
+    try{seen=sessionStorage.getItem('nfOpened')==='1'}catch(_){}
+    if(reduce||seen){cover.remove();}
+    else{
+      cover.classList.add('st-open-run');
+      try{sessionStorage.setItem('nfOpened','1')}catch(_){}
+      setTimeout(function(){cover.remove()},1100);
+    }
+  }
+})();
 (function(){
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   var hero=document.querySelector('.st-hero');if(!hero)return;
