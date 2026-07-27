@@ -677,6 +677,33 @@
   .st-hero-plate{opacity:.2;transform:scale(1.5);transform-origin:50% 0}
 }
 
+/* ---- chapter titles are uncovered by a travelling light rather than faded ---- */
+@media (prefers-reduced-motion: no-preference){
+  @supports (animation-timeline: view()){
+    .st-chapter-title{
+      -webkit-mask-image:linear-gradient(100deg,#000 0 var(--wipe-a,0%),
+        rgba(0,0,0,.15) var(--wipe-b,6%),transparent var(--wipe-c,14%));
+      mask-image:linear-gradient(100deg,#000 0 var(--wipe-a,0%),
+        rgba(0,0,0,.15) var(--wipe-b,6%),transparent var(--wipe-c,14%));
+      animation:st-uncover linear both;
+      animation-timeline:view();
+      animation-range:entry 8% cover 34%}
+    @keyframes st-uncover{
+      to{--wipe-a:104%;--wipe-b:112%;--wipe-c:122%}}
+  }
+  /* the ribbon runs on the compositor where the browser can drive it natively */
+  @supports (animation-timeline: scroll()){
+    .nf-ribbon{animation:nf-ribbon-fill linear both;animation-timeline:scroll(root block)}
+    @keyframes nf-ribbon-fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  }
+}
+@property --wipe-a{syntax:'<percentage>';inherits:false;initial-value:0%}
+@property --wipe-b{syntax:'<percentage>';inherits:false;initial-value:6%}
+@property --wipe-c{syntax:'<percentage>';inherits:false;initial-value:14%}
+
+/* ---- magnetic: the link leans toward the hand ---- */
+.st-vol-open,.st-enter{transform:translate(var(--mx,0px),var(--my,0px))}
+
 /* ---- Fraunces has SOFT and WONK axes: the letterforms themselves soften
    and lean as a volume is approached, rather than merely changing weight ---- */
 .st-vol-title,.st-chapter-title,.st-hero-title{
@@ -1242,6 +1269,21 @@
       setTimeout(function(){cover.remove()},1100);
     }
   }
+})();
+(function(){
+  // magnetic links — pointer devices only
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return;
+  document.querySelectorAll('.st-vol-open,.st-enter').forEach(function(b){
+    b.addEventListener('pointermove',function(e){
+      var r=b.getBoundingClientRect();
+      b.style.setProperty('--mx',(((e.clientX-r.left)/r.width-.5)*14).toFixed(1)+'px');
+      b.style.setProperty('--my',(((e.clientY-r.top)/r.height-.5)*9).toFixed(1)+'px');
+    });
+    b.addEventListener('pointerleave',function(){
+      b.style.setProperty('--mx','0px');b.style.setProperty('--my','0px');
+    });
+  });
 })();
 (function(){
   if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;

@@ -89,6 +89,12 @@ def build():
         if slug == "portals":
             import nf_portals
             html = nf_portals.build(html)
+        if slug == "root":
+            import nf_root
+            html = nf_root.build(html)
+        if slug == "divide":
+            import nf_divide
+            html = nf_divide.build(html)
         # site copy (hub gets rewired links)
         dest = site / slug / "index.html" if slug else site / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)

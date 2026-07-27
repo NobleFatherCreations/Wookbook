@@ -184,8 +184,11 @@
   border-radius:50%;background:radial-gradient(ellipse at 50% 0%,rgba(0,0,0,.72),transparent 72%);
   filter:blur(8px)}
 
-/* the torch radius has to be a real animatable length for the light to swell */
+/* the torch needs registered properties or neither its radius nor its
+   position can interpolate — the light would jump instead of travel */
 @property --tr{syntax:'<length>';inherits:false;initial-value:0px}
+@property --tx{syntax:'<percentage>';inherits:false;initial-value:50%}
+@property --ty{syntax:'<percentage>';inherits:false;initial-value:50%}
 
 .pv-hero{border-radius:16px;cursor:ew-resize;touch-action:pan-y;
   box-shadow:0 30px 80px -24px rgba(0,0,0,.85),0 0 0 1px rgba(201,162,75,.16);
@@ -212,9 +215,56 @@
   .pv-thumb.pv-live{transition:transform .09s linear}
   .pv-thumb:hover{--ty2:-5px}
 }
+/* ---- the torch on a phone: no cursor to follow, so the light drifts of its
+   own accord, and answers device tilt where the browser offers it ---- */
+@media (hover:none),(pointer:coarse){
+  .pv-piece.pv-torch .day{
+    -webkit-mask-image:radial-gradient(circle var(--tr,0px) at var(--tx,50%) var(--ty,50%),
+      transparent 0%,transparent 52%,#000 100%);
+    mask-image:radial-gradient(circle var(--tr,0px) at var(--tx,50%) var(--ty,50%),
+      transparent 0%,transparent 52%,#000 100%)}
+  .pv-hero.pv-torch{--tr:96px}
+  .pv-thumb.pv-torch{--tr:60px}
+  @media (prefers-reduced-motion: no-preference){
+    .pv-hero.pv-drift{animation:pv-drift 9s ease-in-out infinite}
+    @keyframes pv-drift{
+      0%,100%{--tx:26%;--ty:38%}
+      50%{--tx:74%;--ty:62%}}
+  }
+}
+
+/* ---- resin refraction: the piece bends light at its edge under the torch ---- */
+.pv-hero .glow{filter:none;transition:filter .5s var(--pv-ease)}
+.pv-hero.pv-live .glow{filter:url(#pvRefract)}
+@supports not (filter:url(#pvRefract)){.pv-hero.pv-live .glow{filter:none}}
+
+/* ---- a light, not an arrow, while you are over a piece ---- */
+@media (hover:hover) and (pointer:fine){
+  .pv-piece{cursor:none}
+  .pv-lamp{position:fixed;top:0;left:0;z-index:9940;pointer-events:none;
+    width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;opacity:0;
+    background:radial-gradient(circle at 42% 38%,#FFF6DC,#E8C879 42%,rgba(201,163,91,.15) 72%,transparent 78%);
+    box-shadow:0 0 22px rgba(232,200,121,.75),0 0 46px rgba(232,200,121,.35);
+    transition:opacity .28s var(--pv-ease),transform .16s var(--pv-ease)}
+  .pv-lamp.on{opacity:1}
+}
+
+/* ---- magnetic buttons: they lean toward the hand ---- */
+.pv-btn{transform:translate(var(--mx,0px),var(--my,0px))}
+.pv-btn:hover{transform:translate(var(--mx,0px),calc(var(--my,0px) - 2px))}
+
+/* ---- the shopfront lights come up on arrival ---- */
+.pv-dawn{position:fixed;inset:0;z-index:9994;pointer-events:none;background:#08070B;
+  display:none}
+.pv-dawn.pv-dawn-run{display:block;
+  animation:pv-dawn 1150ms cubic-bezier(.4,.6,.2,1) both}
+@keyframes pv-dawn{0%{opacity:1}60%{opacity:.55}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.pv-dawn{display:none!important}}
+
 @media (prefers-reduced-motion: reduce){
   .pv-hero,.pv-thumb{transform:none!important;transition:none!important}
   .pv-piece.pv-torch .day{-webkit-mask-image:none;mask-image:none}
+  .pv-hero.pv-live .glow{filter:none}
 }
 .pv-hero:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
 /* The piece arrives already half-dark: daylight on one side of the line,
@@ -840,6 +890,28 @@ go(0);
 <script id="pv-wipe-js">
 (function(){
   var reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // the refraction filter and the lights-up plate are appended once
+  if(!document.getElementById('pvRefract')){
+    var ns='http://www.w3.org/2000/svg';
+    var svg=document.createElementNS(ns,'svg');
+    svg.setAttribute('aria-hidden','true');
+    svg.setAttribute('style','position:absolute;width:0;height:0;overflow:hidden');
+    svg.innerHTML='<filter id="pvRefract" x="-6%" y="-6%" width="112%" height="112%">'
+      +'<feTurbulence type="fractalNoise" baseFrequency="0.009 0.014" numOctaves="2" seed="7" result="n"/>'
+      +'<feDisplacementMap in="SourceGraphic" in2="n" scale="7" '
+      +'xChannelSelector="R" yChannelSelector="G"/></filter>';
+    document.body.appendChild(svg);
+  }
+  if(!reduced&&!document.querySelector('.pv-dawn')){
+    var seen=false;try{seen=sessionStorage.getItem('pvDawn')==='1'}catch(_){}
+    if(!seen){
+      var d=document.createElement('div');
+      d.className='pv-dawn pv-dawn-run';d.setAttribute('aria-hidden','true');
+      document.body.appendChild(d);
+      try{sessionStorage.setItem('pvDawn','1')}catch(_){}
+      setTimeout(function(){d.remove()},1300);
+    }
+  }
   document.querySelectorAll('[data-wipe]').forEach(function(el){
     var drag=false;
     function at(x){
@@ -914,6 +986,56 @@ go(0);
         el.style.setProperty('--rx','0deg');el.style.setProperty('--ry','0deg');
       });
     });
+  }
+
+  /* ---- the lamp that replaces the cursor over a piece ---- */
+  if(fine&&!reduced){
+    var lamp=document.createElement('span');
+    lamp.className='pv-lamp';lamp.setAttribute('aria-hidden','true');
+    document.body.appendChild(lamp);
+    var lx=0,ly=0,lraf=false;
+    function lampFrame(){lamp.style.transform='translate('+lx+'px,'+ly+'px)';lraf=false;}
+    document.addEventListener('pointermove',function(e){
+      lx=e.clientX;ly=e.clientY;
+      if(!lraf){lraf=true;requestAnimationFrame(lampFrame);}
+    },{passive:true});
+    document.querySelectorAll('.pv-piece').forEach(function(el){
+      el.addEventListener('pointerenter',function(){lamp.classList.add('on')});
+      el.addEventListener('pointerleave',function(){lamp.classList.remove('on')});
+    });
+  }
+
+  /* ---- magnetic buttons ---- */
+  if(fine&&!reduced){
+    document.querySelectorAll('.pv-btn').forEach(function(b){
+      b.addEventListener('pointermove',function(e){
+        var r=b.getBoundingClientRect();
+        b.style.setProperty('--mx',(((e.clientX-r.left)/r.width-.5)*13).toFixed(1)+'px');
+        b.style.setProperty('--my',(((e.clientY-r.top)/r.height-.5)*8).toFixed(1)+'px');
+      });
+      b.addEventListener('pointerleave',function(){
+        b.style.setProperty('--mx','0px');b.style.setProperty('--my','0px');
+      });
+    });
+  }
+
+  /* ---- phones: the light drifts, and answers tilt where it is offered ---- */
+  if(!fine&&!reduced){
+    document.querySelectorAll('.pv-piece').forEach(function(el){el.classList.add('pv-torch')});
+    document.querySelectorAll('.pv-hero').forEach(function(el){el.classList.add('pv-drift')});
+    if(window.DeviceOrientationEvent&&
+       typeof DeviceOrientationEvent.requestPermission!=='function'){
+      window.addEventListener('deviceorientation',function(e){
+        if(e.gamma==null||e.beta==null)return;   // a null reading must not pin the light
+        var g=Math.max(-30,Math.min(30,e.gamma||0));
+        var beta=Math.max(-30,Math.min(30,(e.beta||0)-40));
+        document.querySelectorAll('.pv-hero').forEach(function(el){
+          el.classList.remove('pv-drift');
+          el.style.setProperty('--tx',(50+g*1.5).toFixed(1)+'%');
+          el.style.setProperty('--ty',(50+beta*1.2).toFixed(1)+'%');
+        });
+      },{passive:true});
+    }
   }
 
   /* ---- set names re-letter themselves when a new set slides in ---- */
