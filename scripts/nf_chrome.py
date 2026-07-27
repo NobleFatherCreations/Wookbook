@@ -9,9 +9,11 @@ Two variants:
 The chrome never touches page content or logic: it appends one <style> to
 <head> and one nav fragment + <script> before </body>. Idempotent.
 """
-import re, sys, pathlib
+import json, re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "scripts"))
+from nf_elevate import ELEVATE, REVEAL, RIBBON, ACCENTS
 
 # slug, roman, title, descriptor, old netlify URL (None = not yet hosted)
 VOLUMES = [
@@ -49,11 +51,27 @@ CSS = r"""
 }
 .nf-chrome,.nf-chrome *{margin:0;padding:0;box-sizing:border-box}
 
-/* ---- the veil: every arrival rises out of ink ---- */
-.nf-veil{position:fixed;inset:0;background:var(--nf-ink-2);z-index:9990;
-  pointer-events:none;opacity:0;animation:nf-veil-in 340ms var(--nf-ease) both}
+/* ---- the veil: every arrival rises out of ink, lit from below ---- */
+.nf-veil{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:0;
+  background:
+    radial-gradient(120% 90% at 50% 108%, rgba(217,150,74,.14), transparent 55%),
+    var(--nf-ink-2);
+  animation:nf-veil-in 420ms var(--nf-ease) both}
 @keyframes nf-veil-in{from{opacity:1}to{opacity:0}}
 .nf-veil.nf-veil-out{animation:none;opacity:1;transition:opacity 180ms cubic-bezier(.5,0,.9,.6)}
+
+/* ---- bookmark ribbon: reading progress as a strip of gilding ---- */
+.nf-ribbon{position:fixed;top:0;left:0;right:0;height:2px;z-index:9945;
+  transform-origin:0 50%;transform:scaleX(0);
+  background:linear-gradient(90deg,#8E6B2F,#E8C879 60%,#C9A35B);
+  box-shadow:0 0 8px rgba(232,200,121,.45)}
+
+/* ---- scroll-reveal (JS-gated; nothing hides without the engine) ---- */
+.nf-r{opacity:0;transform:translateY(14px);filter:blur(6px);
+  transition:opacity .64s cubic-bezier(.16,1,.3,1),transform .64s cubic-bezier(.16,1,.3,1),
+  filter .64s cubic-bezier(.16,1,.3,1);transition-delay:var(--nf-d,0s)}
+.nf-r.nf-pop{transform:translateY(12px) scale(.965);filter:none}
+.nf-r.nf-in{opacity:1;transform:none;filter:none}
 
 /* ---- the seal ---- */
 .nf-seal{position:fixed;right:18px;bottom:18px;z-index:9950;width:56px;height:56px;
@@ -70,6 +88,14 @@ CSS = r"""
 .nf-seal:active{transform:scale(.92);transition-duration:90ms}
 .nf-seal:focus-visible{outline:2px solid var(--nf-brass);outline-offset:3px}
 .nf-seal[aria-expanded="true"]{transform:scale(.92);opacity:0;pointer-events:none;transition-duration:140ms}
+@media (prefers-reduced-motion: no-preference){
+  .nf-seal{animation:nf-sealidle 7s ease-in-out infinite}
+  @keyframes nf-sealidle{
+    0%,100%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.28),0 6px 18px rgba(0,0,0,.55)}
+    50%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.3),0 6px 18px rgba(0,0,0,.55),0 0 22px rgba(232,200,121,.22)}}
+}
 
 /* ---- scrim + leather catalogue panel ---- */
 .nf-scrim{position:fixed;inset:0;background:rgba(10,7,13,.58);backdrop-filter:blur(5px);
@@ -80,15 +106,20 @@ CSS = r"""
   display:flex;flex-direction:column;
   background:linear-gradient(164deg,#1E1726,#141019 55%,#0E0A14),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
-  border-left:1px solid rgba(201,163,91,.28);
   box-shadow:inset 1px 0 0 rgba(236,228,214,.05),-32px 0 64px rgba(0,0,0,.5);
   transform:translateX(103%);visibility:hidden;
   transition:transform 160ms cubic-bezier(.5,0,.9,.6),visibility 0s 160ms}
+.nf-panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28);
+  opacity:.85}
+.nf-panel::after{content:"";position:absolute;inset:9px;pointer-events:none;
+  border:1px dashed rgba(201,163,91,.13);border-radius:2px}
 .nf-open .nf-panel{transform:translateX(0);visibility:visible;
   transition:transform 270ms var(--nf-ease),visibility 0s}
 @media(max-width:560px){
-  .nf-panel{width:100vw;border-left:none;border-top:1px solid rgba(201,163,91,.28);
-    transform:translateY(103%)}
+  .nf-panel{width:100vw;transform:translateY(103%)}
+  .nf-panel::before{left:0;right:0;top:0;bottom:auto;width:auto;height:3px;
+    background:linear-gradient(90deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28)}
   .nf-open .nf-panel{transform:translateY(0)}
 }
 .nf-panel-head{display:flex;align-items:flex-start;justify-content:space-between;
@@ -104,10 +135,14 @@ CSS = r"""
 .nf-close:focus-visible{outline:2px solid var(--nf-brass);outline-offset:2px}
 .nf-toc{list-style:none;overflow-y:auto;flex:1;padding:10px 26px 18px;overscroll-behavior:contain}
 .nf-row{border-bottom:1px solid rgba(201,163,91,.12)}
-.nf-row a{display:grid;grid-template-columns:34px 1fr auto;grid-template-rows:auto auto;
-  align-items:baseline;column-gap:10px;padding:13px 2px;text-decoration:none;
-  transition:transform 160ms var(--nf-ease)}
+.nf-row a{display:grid;grid-template-columns:12px 34px 1fr auto;grid-template-rows:auto auto;
+  align-items:baseline;column-gap:9px;padding:13px 2px;text-decoration:none;
+  transition:transform 160ms var(--nf-ease),background 160ms var(--nf-ease)}
 .nf-row a:hover{transform:translateX(4px)}
+.nf-dot{grid-row:1/3;align-self:center;width:5px;height:5px;border-radius:50%;
+  background:var(--va,#C9A35B);opacity:.55;box-shadow:0 0 7px var(--va,#C9A35B);
+  transition:opacity 160ms,transform 160ms var(--nf-ease)}
+.nf-row a:hover .nf-dot{opacity:1;transform:scale(1.35)}
 .nf-row a:focus-visible{outline:2px solid var(--nf-brass);outline-offset:-2px;border-radius:4px}
 .nf-num{grid-row:1/3;font-family:var(--nf-mono);font-size:11px;color:var(--nf-muted);
   transition:color 160ms,text-shadow 160ms}
@@ -115,9 +150,9 @@ CSS = r"""
 .nf-vol{font-family:var(--nf-display);font-size:16.5px;font-weight:500;color:var(--nf-bone);
   transition:color 160ms}
 .nf-row a:hover .nf-vol{color:var(--nf-brass-bright)}
-.nf-desc{grid-column:2/4;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
+.nf-desc{grid-column:3/5;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
   font-family:system-ui,-apple-system,sans-serif}
-.nf-ext{grid-column:3;font-size:11px;color:var(--nf-muted)}
+.nf-ext{grid-column:4;font-size:11px;color:var(--nf-muted)}
 .nf-row.nf-here .nf-vol{color:var(--nf-brass)}
 .nf-row.nf-here .nf-num{color:var(--nf-wax-bright)}
 .nf-here-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px;
@@ -153,7 +188,72 @@ JS = r"""
   close.addEventListener('click',shut);
   scrim.addEventListener('click',shut);
   document.addEventListener('keydown',function(e){
-    if(e.key==='Escape'&&root.classList.contains('nf-open'))shut()});
+    if(e.key==='Escape'&&root.classList.contains('nf-open')){shut();return}
+    if(!root.classList.contains('nf-open'))return;
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+      var links=[].slice.call(panel.querySelectorAll('.nf-row a'));
+      var i=links.indexOf(document.activeElement);
+      var next=e.key==='ArrowDown'?(i+1)%links.length:(i-1+links.length)%links.length;
+      links[next].focus();e.preventDefault();
+    }});
+  // bookmark ribbon — reading progress as a strip of gilding
+  var ribbon=root.querySelector('.nf-ribbon');
+  if(ribbon&&!reduced){
+    var tick=false;
+    function prog(){
+      var d=document.documentElement;
+      var max=d.scrollHeight-innerHeight;
+      ribbon.style.transform='scaleX('+(max>0?Math.min(1,scrollY/max):0)+')';
+      tick=false;
+    }
+    addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(prog)}},
+      {passive:true});
+    prog();
+  }
+  // scroll-reveal engine — hides nothing unless it is running
+  var cfg=root.getAttribute('data-nf-reveal');
+  if(cfg&&!reduced&&'IntersectionObserver' in window){
+    try{cfg=JSON.parse(cfg)}catch(_){cfg=null}
+    if(cfg){
+      var targets=[];
+      cfg.forEach(function(pair){
+        document.querySelectorAll(pair[0]).forEach(function(el){
+          if(el.closest('.nf-chrome'))return;
+          var r=el.getBoundingClientRect();
+          if(r.top<innerHeight*.86)return;          // already on screen: leave it
+          if(el.offsetHeight>innerHeight*1.1)return; // whole-chapter blocks reveal per-child, not wholesale
+          el.classList.add('nf-r');
+          if(pair[1]==='pop')el.classList.add('nf-pop');
+          targets.push(el);
+        });
+      });
+      var seen=0;
+      function show(el){
+        if(el.classList.contains('nf-in'))return;
+        el.style.setProperty('--nf-d',(Math.min(seen++%4,3)*70)+'ms');
+        el.classList.add('nf-in');
+        io.unobserve(el);
+        targets=targets.filter(function(t){return t!==el});
+        setTimeout(function(){el.classList.remove('nf-r','nf-pop','nf-in');
+          el.style.removeProperty('--nf-d')},1400);
+      }
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(en){if(en.isIntersecting)show(en.target)});
+      },{rootMargin:'0px 0px -6% 0px',threshold:0});
+      targets.forEach(function(el){io.observe(el)});
+      // sweep fallback: anything scrolled to (or past) always reveals
+      var sTick=false;
+      addEventListener('scroll',function(){
+        if(sTick||!targets.length)return;sTick=true;
+        requestAnimationFrame(function(){
+          targets.slice().forEach(function(el){
+            if(el.getBoundingClientRect().top<innerHeight*.94)show(el);
+          });
+          sTick=false;
+        });
+      },{passive:true});
+    }
+  }
   // ink-veil exit: internal same-origin links leave through the dark
   var veil=root.querySelector('.nf-veil');
   document.addEventListener('click',function(e){
@@ -192,21 +292,28 @@ def toc_html(current_slug, variant):
         here = ' nf-here' if slug == current_slug else ''
         dot = '<span class="nf-here-dot" aria-hidden="true"></span>' if here else ''
         cur = ' aria-current="page"' if here else ''
+        accent = ACCENTS.get(slug, "#C9A35B")
         rows.append(
             '<li class="nf-row%s" style="--nf-i:%d"><a href="%s"%s>'
+            '<span class="nf-dot" style="--va:%s" aria-hidden="true"></span>'
             '<span class="nf-num">%s</span><span class="nf-vol">%s%s</span>'
-            '<span class="nf-desc">%s</span></a></li>' % (here, i, href, cur, num, title, dot, desc))
+            '<span class="nf-desc">%s</span></a></li>' % (here, i, href, cur, accent, num, title, dot, desc))
         i += 1
     for num, title, desc, url in EXTERNAL:
         rows.append(
             '<li class="nf-row" style="--nf-i:%d"><a href="%s" target="_blank" rel="noopener">'
+            '<span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span>'
             '<span class="nf-num">%s</span><span class="nf-vol">%s</span>'
             '<span class="nf-ext">&#8599;</span>'
             '<span class="nf-desc">%s</span></a></li>' % (i, url, num, title, desc))
         i += 1
+    reveal = REVEAL.get(current_slug)
+    reveal_attr = " data-nf-reveal='%s'" % json.dumps(reveal) if reveal else ""
+    ribbon_html = '<div class="nf-ribbon" aria-hidden="true"></div>' if current_slug in RIBBON else ""
     return (
-        '<div id="nf-chrome" class="nf-chrome" data-nf-page="%s">'
-        '<div class="nf-veil" aria-hidden="true"></div>'
+        '<div id="nf-chrome" class="nf-chrome" data-nf-page="%s"%s>'
+        '%s'
+        '<div class="nf-veil" aria-hidden="true"></div>' % ((current_slug or "home"), reveal_attr, ribbon_html) + (
         '<button class="nf-seal" type="button" aria-expanded="false" '
         'aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button>'
         '<div class="nf-scrim" aria-hidden="true"></div>'
@@ -216,7 +323,7 @@ def toc_html(current_slug, variant):
         '<button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div>'
         '<ul class="nf-toc">%s</ul>'
         '<div class="nf-panel-foot">Bound by hand in the study &mdash; thirteen volumes &amp; counting.</div>'
-        '</nav></div>' % (current_slug or "home", ''.join(rows)))
+        '</nav></div>' % ''.join(rows)))
 
 # page-specific chrome accommodations (presentation only, no logic changes)
 PAGE_CSS = {
@@ -233,7 +340,8 @@ def inject(path, slug, variant):
         return False
     add_font = "Fraunces" not in html
     head_bits = (FRAUNCES_LINK if add_font else "") + \
-        '\n<style id="nf-chrome-css">%s%s</style>\n' % (CSS, PAGE_CSS.get(slug, ""))
+        '\n<style id="nf-chrome-css">%s%s%s</style>\n' % (
+            CSS, PAGE_CSS.get(slug, ""), ELEVATE.get(slug, ""))
     body_bits = '\n%s\n<script id="nf-chrome-js">%s</script>\n' % (toc_html(slug, variant), JS)
     if "</head>" in html:
         html = html.replace("</head>", head_bits + "</head>", 1)

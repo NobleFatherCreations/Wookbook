@@ -394,11 +394,27 @@
 }
 .nf-chrome,.nf-chrome *{margin:0;padding:0;box-sizing:border-box}
 
-/* ---- the veil: every arrival rises out of ink ---- */
-.nf-veil{position:fixed;inset:0;background:var(--nf-ink-2);z-index:9990;
-  pointer-events:none;opacity:0;animation:nf-veil-in 340ms var(--nf-ease) both}
+/* ---- the veil: every arrival rises out of ink, lit from below ---- */
+.nf-veil{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:0;
+  background:
+    radial-gradient(120% 90% at 50% 108%, rgba(217,150,74,.14), transparent 55%),
+    var(--nf-ink-2);
+  animation:nf-veil-in 420ms var(--nf-ease) both}
 @keyframes nf-veil-in{from{opacity:1}to{opacity:0}}
 .nf-veil.nf-veil-out{animation:none;opacity:1;transition:opacity 180ms cubic-bezier(.5,0,.9,.6)}
+
+/* ---- bookmark ribbon: reading progress as a strip of gilding ---- */
+.nf-ribbon{position:fixed;top:0;left:0;right:0;height:2px;z-index:9945;
+  transform-origin:0 50%;transform:scaleX(0);
+  background:linear-gradient(90deg,#8E6B2F,#E8C879 60%,#C9A35B);
+  box-shadow:0 0 8px rgba(232,200,121,.45)}
+
+/* ---- scroll-reveal (JS-gated; nothing hides without the engine) ---- */
+.nf-r{opacity:0;transform:translateY(14px);filter:blur(6px);
+  transition:opacity .64s cubic-bezier(.16,1,.3,1),transform .64s cubic-bezier(.16,1,.3,1),
+  filter .64s cubic-bezier(.16,1,.3,1);transition-delay:var(--nf-d,0s)}
+.nf-r.nf-pop{transform:translateY(12px) scale(.965);filter:none}
+.nf-r.nf-in{opacity:1;transform:none;filter:none}
 
 /* ---- the seal ---- */
 .nf-seal{position:fixed;right:18px;bottom:18px;z-index:9950;width:56px;height:56px;
@@ -415,6 +431,14 @@
 .nf-seal:active{transform:scale(.92);transition-duration:90ms}
 .nf-seal:focus-visible{outline:2px solid var(--nf-brass);outline-offset:3px}
 .nf-seal[aria-expanded="true"]{transform:scale(.92);opacity:0;pointer-events:none;transition-duration:140ms}
+@media (prefers-reduced-motion: no-preference){
+  .nf-seal{animation:nf-sealidle 7s ease-in-out infinite}
+  @keyframes nf-sealidle{
+    0%,100%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.28),0 6px 18px rgba(0,0,0,.55)}
+    50%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.3),0 6px 18px rgba(0,0,0,.55),0 0 22px rgba(232,200,121,.22)}}
+}
 
 /* ---- scrim + leather catalogue panel ---- */
 .nf-scrim{position:fixed;inset:0;background:rgba(10,7,13,.58);backdrop-filter:blur(5px);
@@ -425,15 +449,20 @@
   display:flex;flex-direction:column;
   background:linear-gradient(164deg,#1E1726,#141019 55%,#0E0A14),
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
-  border-left:1px solid rgba(201,163,91,.28);
   box-shadow:inset 1px 0 0 rgba(236,228,214,.05),-32px 0 64px rgba(0,0,0,.5);
   transform:translateX(103%);visibility:hidden;
   transition:transform 160ms cubic-bezier(.5,0,.9,.6),visibility 0s 160ms}
+.nf-panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28);
+  opacity:.85}
+.nf-panel::after{content:"";position:absolute;inset:9px;pointer-events:none;
+  border:1px dashed rgba(201,163,91,.13);border-radius:2px}
 .nf-open .nf-panel{transform:translateX(0);visibility:visible;
   transition:transform 270ms var(--nf-ease),visibility 0s}
 @media(max-width:560px){
-  .nf-panel{width:100vw;border-left:none;border-top:1px solid rgba(201,163,91,.28);
-    transform:translateY(103%)}
+  .nf-panel{width:100vw;transform:translateY(103%)}
+  .nf-panel::before{left:0;right:0;top:0;bottom:auto;width:auto;height:3px;
+    background:linear-gradient(90deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28)}
   .nf-open .nf-panel{transform:translateY(0)}
 }
 .nf-panel-head{display:flex;align-items:flex-start;justify-content:space-between;
@@ -449,10 +478,14 @@
 .nf-close:focus-visible{outline:2px solid var(--nf-brass);outline-offset:2px}
 .nf-toc{list-style:none;overflow-y:auto;flex:1;padding:10px 26px 18px;overscroll-behavior:contain}
 .nf-row{border-bottom:1px solid rgba(201,163,91,.12)}
-.nf-row a{display:grid;grid-template-columns:34px 1fr auto;grid-template-rows:auto auto;
-  align-items:baseline;column-gap:10px;padding:13px 2px;text-decoration:none;
-  transition:transform 160ms var(--nf-ease)}
+.nf-row a{display:grid;grid-template-columns:12px 34px 1fr auto;grid-template-rows:auto auto;
+  align-items:baseline;column-gap:9px;padding:13px 2px;text-decoration:none;
+  transition:transform 160ms var(--nf-ease),background 160ms var(--nf-ease)}
 .nf-row a:hover{transform:translateX(4px)}
+.nf-dot{grid-row:1/3;align-self:center;width:5px;height:5px;border-radius:50%;
+  background:var(--va,#C9A35B);opacity:.55;box-shadow:0 0 7px var(--va,#C9A35B);
+  transition:opacity 160ms,transform 160ms var(--nf-ease)}
+.nf-row a:hover .nf-dot{opacity:1;transform:scale(1.35)}
 .nf-row a:focus-visible{outline:2px solid var(--nf-brass);outline-offset:-2px;border-radius:4px}
 .nf-num{grid-row:1/3;font-family:var(--nf-mono);font-size:11px;color:var(--nf-muted);
   transition:color 160ms,text-shadow 160ms}
@@ -460,9 +493,9 @@
 .nf-vol{font-family:var(--nf-display);font-size:16.5px;font-weight:500;color:var(--nf-bone);
   transition:color 160ms}
 .nf-row a:hover .nf-vol{color:var(--nf-brass-bright)}
-.nf-desc{grid-column:2/4;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
+.nf-desc{grid-column:3/5;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
   font-family:system-ui,-apple-system,sans-serif}
-.nf-ext{grid-column:3;font-size:11px;color:var(--nf-muted)}
+.nf-ext{grid-column:4;font-size:11px;color:var(--nf-muted)}
 .nf-row.nf-here .nf-vol{color:var(--nf-brass)}
 .nf-row.nf-here .nf-num{color:var(--nf-wax-bright)}
 .nf-here-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px;
@@ -482,7 +515,34 @@
   .nf-scrim,.nf-open .nf-scrim{transition:none}
   .nf-open .nf-row{animation:none;opacity:1;transform:none}
 }
-</style>
+
+.hero h1{letter-spacing:-.022em;text-wrap:balance}
+.hero-meta{gap:10px 26px;letter-spacing:.14em}
+.book{transition:transform .28s var(--nf-ease),box-shadow .28s var(--nf-ease)}
+.book:hover{transform:translateY(-5px);
+  box-shadow:0 22px 48px -14px rgba(0,0,0,.65),0 0 0 1px rgba(201,163,91,.28),
+  0 0 40px -8px rgba(201,163,91,.22)}
+.book img{transition:filter .3s var(--nf-ease)}
+.book:hover img{filter:brightness(1.07) saturate(1.04)}
+.open{transition:color .18s var(--nf-ease),letter-spacing .18s var(--nf-ease)}
+.open:hover{letter-spacing:.03em}
+.manifesto{position:relative}
+.manifesto::before,.manifesto::after{content:"";position:absolute;left:50%;
+  transform:translateX(-50%);width:64px;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,163,91,.55),transparent)}
+.manifesto::before{top:-1px}.manifesto::after{bottom:-1px}
+@media (prefers-reduced-motion: no-preference){
+.hero-emblem{animation:nf-emberglow 7s ease-in-out infinite}
+@keyframes nf-emberglow{
+  0%,100%{filter:drop-shadow(0 4px 10px rgba(0,0,0,.5)) drop-shadow(0 0 16px rgba(201,163,91,.16))}
+  50%{filter:drop-shadow(0 4px 10px rgba(0,0,0,.5)) drop-shadow(0 0 30px rgba(232,200,121,.4))}}
+.hero>*{animation:nf-rise-in 640ms cubic-bezier(.16,1,.3,1) both}
+.hero>*:nth-child(2){animation-delay:70ms}.hero>*:nth-child(3){animation-delay:140ms}
+.hero>*:nth-child(4){animation-delay:210ms}.hero>*:nth-child(5){animation-delay:280ms}
+.hero>*:nth-child(n+6){animation-delay:340ms}
+@keyframes nf-rise-in{from{opacity:0;transform:translateY(16px);filter:blur(5px)}
+  to{opacity:1;transform:none;filter:none}}
+}</style>
 </head>
 <body>
 
@@ -956,7 +1016,7 @@
   })();
 </script>
 
-<div id="nf-chrome" class="nf-chrome" data-nf-page="home"><div class="nf-veil" aria-hidden="true"></div><button class="nf-seal" type="button" aria-expanded="false" aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button><div class="nf-scrim" aria-hidden="true"></div><nav class="nf-panel" id="nf-panel" aria-label="The Catalogue" aria-hidden="true"><div class="nf-panel-head"><div><div class="nf-eyebrow">Noble Father Creations</div><h2 class="nf-panel-title">The Catalogue</h2></div><button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div><ul class="nf-toc"><li class="nf-row" style="--nf-i:0"><a href="https://noblenfcseals.netlify.app/"><span class="nf-num">II</span><span class="nf-vol">The Press</span><span class="nf-desc">Real wax, a voice inside</span></a></li><li class="nf-row" style="--nf-i:1"><a href="https://nfcportals.netlify.app/"><span class="nf-num">III</span><span class="nf-vol">The Portals</span><span class="nf-desc">Strontium glow, no battery</span></a></li><li class="nf-row" style="--nf-i:2"><a href="https://nobleshadows.netlify.app/"><span class="nf-num">IV</span><span class="nf-vol">The Root</span><span class="nf-desc">A shadow work practice</span></a></li><li class="nf-row" style="--nf-i:3"><a href="https://thenobledivide.netlify.app/"><span class="nf-num">VI</span><span class="nf-vol">The Sacred Divide</span><span class="nf-desc">25 traditions, 750 entries</span></a></li><li class="nf-row" style="--nf-i:4"><a href="https://thefractal.netlify.app/"><span class="nf-num">VII</span><span class="nf-vol">The Fractal</span><span class="nf-desc">One pattern runs the world</span></a></li><li class="nf-row" style="--nf-i:5"><a href="https://fractures.netlify.app/"><span class="nf-num">VIII</span><span class="nf-vol">All Fracture</span><span class="nf-desc">The reading edition</span></a></li><li class="nf-row" style="--nf-i:6"><a href="https://sovereign-woman.netlify.app/"><span class="nf-num">IX</span><span class="nf-vol">The Sovereign Divine Feminine</span><span class="nf-desc">A field guide</span></a></li><li class="nf-row" style="--nf-i:7"><a href="https://playgroundprotector.netlify.app/"><span class="nf-num">X</span><span class="nf-vol">Playground Protectors</span><span class="nf-desc">Shaela's guide for brave kids</span></a></li><li class="nf-row" style="--nf-i:8"><a href="https://wook-in-sheeps-clothing.netlify.app/"><span class="nf-num">XI</span><span class="nf-vol">The Festie Codex</span><span class="nf-desc">The gate — attendee's cut</span></a></li><li class="nf-row" style="--nf-i:9"><a href="https://noblepatterns.netlify.app/" target="_blank" rel="noopener"><span class="nf-num">XII</span><span class="nf-vol">The Pattern Decoder</span><span class="nf-ext">&#8599;</span><span class="nf-desc">349 tactics, decoded</span></a></li><li class="nf-row" style="--nf-i:10"><a href="https://noblemusic.netlify.app/" target="_blank" rel="noopener"><span class="nf-num">XIII</span><span class="nf-vol">The Music</span><span class="nf-ext">&#8599;</span><span class="nf-desc">Free to stream</span></a></li></ul><div class="nf-panel-foot">Bound by hand in the study &mdash; thirteen volumes &amp; counting.</div></nav></div>
+<div id="nf-chrome" class="nf-chrome" data-nf-page="home" data-nf-reveal='[[".section", "rise"], [".manifesto", "rise"], [".book", "rise"]]'><div class="nf-ribbon" aria-hidden="true"></div><div class="nf-veil" aria-hidden="true"></div><button class="nf-seal" type="button" aria-expanded="false" aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button><div class="nf-scrim" aria-hidden="true"></div><nav class="nf-panel" id="nf-panel" aria-label="The Catalogue" aria-hidden="true"><div class="nf-panel-head"><div><div class="nf-eyebrow">Noble Father Creations</div><h2 class="nf-panel-title">The Catalogue</h2></div><button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div><ul class="nf-toc"><li class="nf-row" style="--nf-i:0"><a href="https://noblenfcseals.netlify.app/"><span class="nf-dot" style="--va:#E8C879" aria-hidden="true"></span><span class="nf-num">II</span><span class="nf-vol">The Press</span><span class="nf-desc">Real wax, a voice inside</span></a></li><li class="nf-row" style="--nf-i:1"><a href="https://nfcportals.netlify.app/"><span class="nf-dot" style="--va:#7FD9D4" aria-hidden="true"></span><span class="nf-num">III</span><span class="nf-vol">The Portals</span><span class="nf-desc">Strontium glow, no battery</span></a></li><li class="nf-row" style="--nf-i:2"><a href="https://nobleshadows.netlify.app/"><span class="nf-dot" style="--va:#D9964A" aria-hidden="true"></span><span class="nf-num">IV</span><span class="nf-vol">The Root</span><span class="nf-desc">A shadow work practice</span></a></li><li class="nf-row" style="--nf-i:3"><a href="https://thenobledivide.netlify.app/"><span class="nf-dot" style="--va:#C29A52" aria-hidden="true"></span><span class="nf-num">VI</span><span class="nf-vol">The Sacred Divide</span><span class="nf-desc">25 traditions, 750 entries</span></a></li><li class="nf-row" style="--nf-i:4"><a href="https://thefractal.netlify.app/"><span class="nf-dot" style="--va:#E5A93C" aria-hidden="true"></span><span class="nf-num">VII</span><span class="nf-vol">The Fractal</span><span class="nf-desc">One pattern runs the world</span></a></li><li class="nf-row" style="--nf-i:5"><a href="https://fractures.netlify.app/"><span class="nf-dot" style="--va:#C9A35B" aria-hidden="true"></span><span class="nf-num">VIII</span><span class="nf-vol">All Fracture</span><span class="nf-desc">The reading edition</span></a></li><li class="nf-row" style="--nf-i:6"><a href="https://sovereign-woman.netlify.app/"><span class="nf-dot" style="--va:#C85F7E" aria-hidden="true"></span><span class="nf-num">IX</span><span class="nf-vol">The Sovereign Divine Feminine</span><span class="nf-desc">A field guide</span></a></li><li class="nf-row" style="--nf-i:7"><a href="https://playgroundprotector.netlify.app/"><span class="nf-dot" style="--va:#FFC23D" aria-hidden="true"></span><span class="nf-num">X</span><span class="nf-vol">Playground Protectors</span><span class="nf-desc">Shaela's guide for brave kids</span></a></li><li class="nf-row" style="--nf-i:8"><a href="https://wook-in-sheeps-clothing.netlify.app/"><span class="nf-dot" style="--va:#D8FF3D" aria-hidden="true"></span><span class="nf-num">XI</span><span class="nf-vol">The Festie Codex</span><span class="nf-desc">The gate — attendee's cut</span></a></li><li class="nf-row" style="--nf-i:9"><a href="https://noblepatterns.netlify.app/" target="_blank" rel="noopener"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XII</span><span class="nf-vol">The Pattern Decoder</span><span class="nf-ext">&#8599;</span><span class="nf-desc">349 tactics, decoded</span></a></li><li class="nf-row" style="--nf-i:10"><a href="https://noblemusic.netlify.app/" target="_blank" rel="noopener"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XIII</span><span class="nf-vol">The Music</span><span class="nf-ext">&#8599;</span><span class="nf-desc">Free to stream</span></a></li></ul><div class="nf-panel-foot">Bound by hand in the study &mdash; thirteen volumes &amp; counting.</div></nav></div>
 <script id="nf-chrome-js">
 (function(){
   var root=document.getElementById('nf-chrome');if(!root)return;
@@ -971,7 +1031,72 @@
   close.addEventListener('click',shut);
   scrim.addEventListener('click',shut);
   document.addEventListener('keydown',function(e){
-    if(e.key==='Escape'&&root.classList.contains('nf-open'))shut()});
+    if(e.key==='Escape'&&root.classList.contains('nf-open')){shut();return}
+    if(!root.classList.contains('nf-open'))return;
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+      var links=[].slice.call(panel.querySelectorAll('.nf-row a'));
+      var i=links.indexOf(document.activeElement);
+      var next=e.key==='ArrowDown'?(i+1)%links.length:(i-1+links.length)%links.length;
+      links[next].focus();e.preventDefault();
+    }});
+  // bookmark ribbon — reading progress as a strip of gilding
+  var ribbon=root.querySelector('.nf-ribbon');
+  if(ribbon&&!reduced){
+    var tick=false;
+    function prog(){
+      var d=document.documentElement;
+      var max=d.scrollHeight-innerHeight;
+      ribbon.style.transform='scaleX('+(max>0?Math.min(1,scrollY/max):0)+')';
+      tick=false;
+    }
+    addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(prog)}},
+      {passive:true});
+    prog();
+  }
+  // scroll-reveal engine — hides nothing unless it is running
+  var cfg=root.getAttribute('data-nf-reveal');
+  if(cfg&&!reduced&&'IntersectionObserver' in window){
+    try{cfg=JSON.parse(cfg)}catch(_){cfg=null}
+    if(cfg){
+      var targets=[];
+      cfg.forEach(function(pair){
+        document.querySelectorAll(pair[0]).forEach(function(el){
+          if(el.closest('.nf-chrome'))return;
+          var r=el.getBoundingClientRect();
+          if(r.top<innerHeight*.86)return;          // already on screen: leave it
+          if(el.offsetHeight>innerHeight*1.1)return; // whole-chapter blocks reveal per-child, not wholesale
+          el.classList.add('nf-r');
+          if(pair[1]==='pop')el.classList.add('nf-pop');
+          targets.push(el);
+        });
+      });
+      var seen=0;
+      function show(el){
+        if(el.classList.contains('nf-in'))return;
+        el.style.setProperty('--nf-d',(Math.min(seen++%4,3)*70)+'ms');
+        el.classList.add('nf-in');
+        io.unobserve(el);
+        targets=targets.filter(function(t){return t!==el});
+        setTimeout(function(){el.classList.remove('nf-r','nf-pop','nf-in');
+          el.style.removeProperty('--nf-d')},1400);
+      }
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(en){if(en.isIntersecting)show(en.target)});
+      },{rootMargin:'0px 0px -6% 0px',threshold:0});
+      targets.forEach(function(el){io.observe(el)});
+      // sweep fallback: anything scrolled to (or past) always reveals
+      var sTick=false;
+      addEventListener('scroll',function(){
+        if(sTick||!targets.length)return;sTick=true;
+        requestAnimationFrame(function(){
+          targets.slice().forEach(function(el){
+            if(el.getBoundingClientRect().top<innerHeight*.94)show(el);
+          });
+          sTick=false;
+        });
+      },{passive:true});
+    }
+  }
   // ink-veil exit: internal same-origin links leave through the dark
   var veil=root.querySelector('.nf-veil');
   document.addEventListener('click',function(e){
