@@ -1,0 +1,20 @@
+# Noble Father Creations — unified site redirects
+# ------------------------------------------------
+# The 301s preserve URLs already embedded in sold NFC chips. They take
+# effect only when each old Netlify site (or its domain alias) points at
+# this unified site. Until then, give each OLD site a _redirects of:
+#
+#   /*   https://YOUR-DOMAIN/<slug>/:splat   301!
+#
+# Mapping (old site -> new path):
+#   https://thenobledivide.netlify.app/          -> /divide/
+#   https://nobleshadows.netlify.app/            -> /root/
+#   https://sovereign-woman.netlify.app/         -> /sovereign/
+#   https://playgroundprotector.netlify.app/     -> /playground/
+#   https://wook-in-sheeps-clothing.netlify.app/ -> /festival/
+#   https://thefractal.netlify.app/              -> /fractal/
+#   https://fractures.netlify.app/               -> /fracture/
+#   https://nfcportals.netlify.app/              -> /portals/
+#   https://noblenfcseals.netlify.app/           -> /seals/
+#
+# Not yet migrated (still external): noblepatterns, noblemusic

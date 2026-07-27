@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Root — a shadow work practice</title>
+<meta name="description" content="A single guided practice: follow one reaction down to the belief underneath it, where it came from, and one true thing to do about it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<style>
+:root{
+  --brand-accent:#D7DE5A;
+  --signal:#A6314B; --signal-soft:rgba(166,49,75,.14);
+  --ink:#191310; --deep:#211913; --panel:#292018; --panel2:#332821;
+  --line:rgba(237,226,204,.13); --line-strong:rgba(237,226,204,.28);
+  --parchment:#EDE2CC; --muted:#B9A98D; --dim:#8d7f66;
+  --candle:#D9964A; --candle-soft:rgba(217,150,74,.14);
+  --ember:#B95F3D; --ember-soft:rgba(185,95,61,.14);
+  --sage:#8FAF9B; --sage-soft:rgba(143,175,155,.13);
+  --violet:#b8a0d8; --violet-soft:rgba(178,150,220,.13);
+  --radius:16px;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--parchment);font-family:var(--sans);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;min-height:100vh;min-height:100dvh;
+  display:flex;flex-direction:column;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(1100px 650px at 78% -8%, rgba(217,150,74,.08), transparent 60%),
+    radial-gradient(900px 600px at -8% 108%, rgba(185,95,61,.06), transparent 55%);
+  animation:breathe 14s ease-in-out infinite;
+}
+@keyframes breathe{0%,100%{opacity:1}50%{opacity:.65}}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+h1,h2,h3,.display{font-family:var(--serif)}
+button{font-family:var(--sans);cursor:pointer}
+:focus-visible{outline:2px solid var(--candle);outline-offset:3px;border-radius:4px}
+a{color:var(--candle)}
+
+/* ---------- chrome ---------- */
+.topbar{
+  position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;
+  padding:18px 22px;max-width:1000px;margin:0 auto;width:100%;
+}
+.wordmark{font-family:var(--serif);font-size:15px;font-weight:600;letter-spacing:.02em;color:var(--parchment);
+  display:flex;align-items:baseline;gap:8px}
+.wordmark .sub{font-family:var(--sans);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:600}
+.resetlink{background:none;border:none;color:var(--dim);font-size:12px;letter-spacing:.04em;text-decoration:underline;
+  text-underline-offset:3px;opacity:.75}
+.resetlink:hover{color:var(--muted);opacity:1}
+
+/* ---------- layout: rail + stage ---------- */
+.frame{position:relative;z-index:1;flex:1;display:flex;width:100%;max-width:1000px;margin:0 auto;padding:0 22px 40px}
+.rail{
+  width:22px;flex-shrink:0;display:none;flex-direction:column;align-items:center;gap:0;padding-top:10px;margin-right:8px;
+}
+@media(min-width:760px){.rail{display:flex}}
+.rail-line{width:2px;flex:1;background:var(--line);position:relative;border-radius:2px;min-height:20px}
+.rail-node{
+  width:9px;height:9px;border-radius:50%;background:var(--panel2);border:1.5px solid var(--line-strong);
+  flex-shrink:0;margin:2px 0;transition:background .25s,border-color .25s,transform .25s;
+}
+.rail-node.lit{background:var(--candle);border-color:var(--candle);box-shadow:0 0 8px rgba(217,150,74,.6)}
+.rail-node.branch{border-radius:3px;transform:rotate(45deg)}
+.rail-node.branch.lit{background:var(--sage);border-color:var(--sage);box-shadow:0 0 8px rgba(143,175,155,.6)}
+
+.stage{flex:1;min-width:0;display:flex;flex-direction:column;justify-content:center;padding-top:6vh;padding-bottom:6vh}
+.stage-mobile-progress{display:flex;gap:5px;margin-bottom:22px}
+@media(min-width:760px){.stage-mobile-progress{display:none}}
+.stage-mobile-progress i{width:5px;height:5px;border-radius:50%;background:var(--line-strong);display:block}
+.stage-mobile-progress i.lit{background:var(--candle)}
+
+.card{
+  max-width:600px;
+  animation:rise .5s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--candle);font-weight:600;margin-bottom:14px;display:block}
+.question{font-family:var(--serif);font-size:clamp(24px,4vw,34px);font-weight:500;line-height:1.28;color:var(--parchment);margin-bottom:6px}
+.subtext{color:var(--muted);font-size:14.5px;line-height:1.6;margin-top:10px;max-width:52ch}
+
+.field{margin-top:26px}
+textarea,input[type=text]{
+  width:100%;background:var(--panel);border:1px solid var(--line-strong);border-radius:12px;color:var(--parchment);
+  font-family:var(--sans);font-size:15.5px;padding:14px 16px;line-height:1.55;resize:vertical;
+}
+textarea{min-height:100px}
+textarea::placeholder,input::placeholder{color:var(--dim)}
+textarea:focus,input:focus{border-color:var(--candle);outline:none;box-shadow:0 0 0 3px rgba(217,150,74,.14)}
+
+.opts{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.opt{
+  background:var(--panel);border:1px solid var(--line-strong);color:var(--parchment);border-radius:999px;
+  padding:11px 18px;font-size:14.5px;font-weight:500;transition:all .15s;text-align:left;
+}
+.opt:hover{border-color:var(--candle);color:var(--candle)}
+.opt.sel{background:var(--candle-soft);border-color:var(--candle);color:var(--candle)}
+.opt.wide{border-radius:12px;display:block;width:100%}
+
+.insight{
+  margin-top:20px;padding:15px 17px;background:var(--panel);border-left:3px solid var(--candle);border-radius:0 10px 10px 0;
+  font-size:14.5px;line-height:1.6;color:var(--muted);opacity:0;transform:translateY(4px);transition:opacity .4s,transform .4s;
+}
+.insight.show{opacity:1;transform:translateY(0)}
+.insight em{color:var(--parchment);font-style:italic}
+.insight.sage{border-left-color:var(--sage)}
+.insight.violet{border-left-color:var(--violet)}
+
+.actions{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap;align-items:center}
+.btn{
+  background:var(--candle);color:var(--ink);border:none;border-radius:999px;padding:13px 26px;font-size:15px;font-weight:600;
+  transition:transform .15s,box-shadow .15s;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 22px rgba(217,150,74,.3)}
+.btn:disabled{opacity:.4;transform:none;box-shadow:none;cursor:not-allowed}
+.btn.ghost{background:none;border:1px solid var(--line-strong);color:var(--parchment)}
+.btn.ghost:hover{border-color:var(--candle);color:var(--candle);box-shadow:none}
+.backlink{background:none;border:none;color:var(--dim);font-size:13px;padding:13px 6px}
+.backlink:hover{color:var(--muted)}
+.skip{background:none;border:none;color:var(--dim);font-size:12.5px;text-decoration:underline;text-underline-offset:3px;margin-left:auto}
+
+/* body chips */
+.bodymap{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+
+/* tally lists */
+.two-col{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+@media(min-width:560px){.two-col{grid-template-columns:1fr 1fr}}
+.tally-col h4{font-family:var(--sans);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-bottom:10px;font-weight:600}
+.tally-col.help h4{color:var(--sage)}
+.tally-col.cost h4{color:var(--ember)}
+.tally-col ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-bottom:10px}
+.tally-col li{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 11px;font-size:13.5px;color:var(--parchment)}
+.add-row{display:flex;gap:7px}
+.add-row input{flex:1;padding:10px 12px;font-size:13.5px}
+.add-row button{background:var(--panel2);border:1px solid var(--line-strong);color:var(--parchment);border-radius:8px;width:38px;font-size:17px}
+.tallyline{margin-top:14px;font-size:13px;color:var(--muted)}
+
+/* record */
+.record-wrap{max-width:640px}
+.record-box{
+  background:var(--panel);border:1px solid var(--line-strong);border-radius:var(--radius);padding:30px 28px;
+  white-space:pre-wrap;font-family:var(--sans);font-size:14.5px;line-height:1.75;color:var(--parchment);
+}
+.record-box b{color:var(--candle)}
+.returning{
+  margin-top:20px;background:var(--sage-soft);border:1px solid rgba(143,175,155,.4);border-radius:12px;padding:16px 18px;
+  font-size:14px;line-height:1.6;color:var(--parchment);
+}
+.returning h4{font-family:var(--serif);font-weight:600;font-size:15.5px;color:var(--sage);margin-bottom:8px}
+.returning .prior{border-top:1px solid rgba(143,175,155,.25);margin-top:8px;padding-top:8px;font-size:13.5px;color:var(--muted)}
+.returning .prior b{color:var(--parchment);font-weight:500}
+.closing-line{margin-top:22px;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--dim);line-height:1.6}
+
+/* callback / resume */
+.callback-box{background:var(--ember-soft);border:1px solid rgba(185,95,61,.4);border-radius:12px;padding:16px 18px;margin-top:20px;font-size:14px;color:var(--muted)}
+
+.small-print{font-size:12px;color:var(--dim);margin-top:16px;line-height:1.6}
+</style>
+
+<style id="nf-chrome-css">
+/* ============ Noble Father shared chrome — design tokens ============ */
+:root{
+  --nf-ink:#141019; --nf-ink-2:#0E0A14; --nf-panel:#1B1522; --nf-panel-2:#241B2E;
+  --nf-bone:#ECE4D6; --nf-bone-dim:#BCB1A0; --nf-muted:#8A8071;
+  --nf-brass:#C9A35B; --nf-brass-bright:#E8C879;
+  --nf-wax:#B23A33; --nf-wax-bright:#DC5A4D; --nf-wax-deep:#8E2B26;
+  --nf-line:rgba(201,163,91,.16);
+  --nf-ease:cubic-bezier(.2,.7,.2,1);
+  --nf-display:'Fraunces',Georgia,'Times New Roman',serif;
+  --nf-mono:'Space Mono','IBM Plex Mono',ui-monospace,'SFMono-Regular',monospace;
+}
+.nf-chrome,.nf-chrome *{margin:0;padding:0;box-sizing:border-box}
+
+/* ---- the veil: every arrival rises out of ink ---- */
+.nf-veil{position:fixed;inset:0;background:var(--nf-ink-2);z-index:9990;
+  pointer-events:none;opacity:0;animation:nf-veil-in 340ms var(--nf-ease) both}
+@keyframes nf-veil-in{from{opacity:1}to{opacity:0}}
+.nf-veil.nf-veil-out{animation:none;opacity:1;transition:opacity 180ms cubic-bezier(.5,0,.9,.6)}
+
+/* ---- the seal ---- */
+.nf-seal{position:fixed;right:18px;bottom:18px;z-index:9950;width:56px;height:56px;
+  border-radius:50%;border:none;cursor:pointer;
+  font-family:var(--nf-display);font-weight:600;font-size:19px;letter-spacing:.02em;
+  color:#F2E6D2;text-shadow:0 -1px 1px rgba(0,0,0,.45),0 1px 1px rgba(255,255,255,.12);
+  background:radial-gradient(circle at 34% 28%,var(--nf-wax-bright),var(--nf-wax) 52%,var(--nf-wax-deep) 100%);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+    0 0 0 3px rgba(178,58,51,.28),0 6px 18px rgba(0,0,0,.55);
+  transition:transform 180ms var(--nf-ease),box-shadow 180ms var(--nf-ease)}
+.nf-seal:hover{transform:translateY(-2px) rotate(-4deg);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+    0 0 0 3px rgba(178,58,51,.34),0 8px 22px rgba(0,0,0,.6),0 0 24px rgba(232,200,121,.28)}
+.nf-seal:active{transform:scale(.92);transition-duration:90ms}
+.nf-seal:focus-visible{outline:2px solid var(--nf-brass);outline-offset:3px}
+.nf-seal[aria-expanded="true"]{transform:scale(.92);opacity:0;pointer-events:none;transition-duration:140ms}
+
+/* ---- scrim + leather catalogue panel ---- */
+.nf-scrim{position:fixed;inset:0;background:rgba(10,7,13,.58);backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);z-index:9960;opacity:0;pointer-events:none;
+  transition:opacity 140ms var(--nf-ease)}
+.nf-open .nf-scrim{opacity:1;pointer-events:auto;transition-duration:220ms}
+.nf-panel{position:fixed;top:0;right:0;bottom:0;width:min(408px,100vw);z-index:9970;
+  display:flex;flex-direction:column;
+  background:linear-gradient(164deg,#1E1726,#141019 55%,#0E0A14),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+  border-left:1px solid rgba(201,163,91,.28);
+  box-shadow:inset 1px 0 0 rgba(236,228,214,.05),-32px 0 64px rgba(0,0,0,.5);
+  transform:translateX(103%);visibility:hidden;
+  transition:transform 160ms cubic-bezier(.5,0,.9,.6),visibility 0s 160ms}
+.nf-open .nf-panel{transform:translateX(0);visibility:visible;
+  transition:transform 270ms var(--nf-ease),visibility 0s}
+@media(max-width:560px){
+  .nf-panel{width:100vw;border-left:none;border-top:1px solid rgba(201,163,91,.28);
+    transform:translateY(103%)}
+  .nf-open .nf-panel{transform:translateY(0)}
+}
+.nf-panel-head{display:flex;align-items:flex-start;justify-content:space-between;
+  padding:26px 26px 18px;border-bottom:1px solid var(--nf-line)}
+.nf-eyebrow{font-family:var(--nf-mono);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--nf-brass);margin-bottom:8px}
+.nf-panel-title{font-family:var(--nf-display);font-size:27px;font-weight:500;
+  color:var(--nf-bone);line-height:1.1}
+.nf-close{background:none;border:1px solid rgba(201,163,91,.3);color:var(--nf-bone-dim);
+  width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;
+  flex-shrink:0;margin-left:12px;transition:color 140ms,border-color 140ms,transform 140ms var(--nf-ease)}
+.nf-close:hover{color:var(--nf-brass-bright);border-color:var(--nf-brass);transform:rotate(90deg)}
+.nf-close:focus-visible{outline:2px solid var(--nf-brass);outline-offset:2px}
+.nf-toc{list-style:none;overflow-y:auto;flex:1;padding:10px 26px 18px;overscroll-behavior:contain}
+.nf-row{border-bottom:1px solid rgba(201,163,91,.12)}
+.nf-row a{display:grid;grid-template-columns:34px 1fr auto;grid-template-rows:auto auto;
+  align-items:baseline;column-gap:10px;padding:13px 2px;text-decoration:none;
+  transition:transform 160ms var(--nf-ease)}
+.nf-row a:hover{transform:translateX(4px)}
+.nf-row a:focus-visible{outline:2px solid var(--nf-brass);outline-offset:-2px;border-radius:4px}
+.nf-num{grid-row:1/3;font-family:var(--nf-mono);font-size:11px;color:var(--nf-muted);
+  transition:color 160ms,text-shadow 160ms}
+.nf-row a:hover .nf-num{color:var(--nf-brass);text-shadow:0 0 12px rgba(232,200,121,.5)}
+.nf-vol{font-family:var(--nf-display);font-size:16.5px;font-weight:500;color:var(--nf-bone);
+  transition:color 160ms}
+.nf-row a:hover .nf-vol{color:var(--nf-brass-bright)}
+.nf-desc{grid-column:2/4;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
+  font-family:system-ui,-apple-system,sans-serif}
+.nf-ext{grid-column:3;font-size:11px;color:var(--nf-muted)}
+.nf-row.nf-here .nf-vol{color:var(--nf-brass)}
+.nf-row.nf-here .nf-num{color:var(--nf-wax-bright)}
+.nf-here-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px;
+  background:radial-gradient(circle at 35% 30%,var(--nf-wax-bright),var(--nf-wax-deep));
+  box-shadow:0 0 8px rgba(220,90,77,.6);vertical-align:baseline}
+.nf-panel-foot{padding:14px 26px 20px;border-top:1px solid var(--nf-line);
+  font-family:var(--nf-display);font-style:italic;font-size:12.5px;color:var(--nf-muted)}
+.nf-open .nf-row{opacity:0;transform:translateY(9px);
+  animation:nf-rise 210ms var(--nf-ease) both;animation-delay:calc(var(--nf-i)*20ms + 60ms)}
+@keyframes nf-rise{to{opacity:1;transform:translateY(0)}}
+
+@media(prefers-reduced-motion:reduce){
+  .nf-veil{animation:none;opacity:0}
+  .nf-veil.nf-veil-out{transition:none}
+  .nf-seal,.nf-seal:hover,.nf-close:hover,.nf-row a,.nf-row a:hover{transition:none;transform:none}
+  .nf-panel,.nf-open .nf-panel{transition:transform 0s,visibility 0s}
+  .nf-scrim,.nf-open .nf-scrim{transition:none}
+  .nf-open .nf-row{animation:none;opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wordmark">The Root <span class="sub">a shadow work practice</span></div>
+  <button class="resetlink" id="resetBtn" type="button">Start over</button>
+</div>
+
+<div class="frame">
+  <div class="rail" id="rail" aria-hidden="true"></div>
+  <div class="stage">
+    <div class="stage-mobile-progress" id="railMobile" aria-hidden="true"></div>
+    <div id="stageInner"></div>
+  </div>
+</div>
+
+<script>
+/* =======================================================================
+   STORAGE — own namespace, works fully offline, in-memory fallback
+   ======================================================================= */
+const store=(()=>{let mem={},ok=false;
+  try{localStorage.setItem("__t","1");localStorage.removeItem("__t");ok=true}catch(e){}
+  return{
+    get(k,d){try{if(ok){const v=localStorage.getItem("root_"+k);return v!==null?JSON.parse(v):d}}catch(e){}return (k in mem)?mem[k]:d},
+    set(k,v){mem[k]=v;try{if(ok)localStorage.setItem("root_"+k,JSON.stringify(v))}catch(e){}},
+    del(k){delete mem[k];try{if(ok)localStorage.removeItem("root_"+k)}catch(e){}}
+  };
+})();
+function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}
+
+/* =======================================================================
+   CONTENT — the actual depth of the practice lives here
+   ======================================================================= */
+const WHO=[
+  {v:"person",label:"A specific person",
+   insight:"A person surfaced instantly — your attention already lives partly with them, whether or not you'd chosen to know that. The content didn't put them there. It caught them there.",
+   follow:"What's one true thing about your relationship to them, right now, today — not how it used to be?"},
+  {v:"pattern",label:"A pattern or habit",
+   insight:"A pattern surfaced — part of you has been watching it from the corner of your eye, waiting for permission to look straight at it.",
+   follow:"When does it usually show up? A specific time, place, or feeling that comes right before it?"},
+  {v:"fear",label:"A fear",
+   insight:"A fear answered the door. Fears that respond to strangers' words are usually older than the situations they attach to.",
+   follow:"How old does this fear feel — not you, the fear itself? What age would you guess?"},
+  {v:"memory",label:"A memory",
+   insight:"A memory came up — the line found something unfinished. Memories that surface uninvited are rarely done with you.",
+   follow:"How old were you in the memory? Who else was there, even at the edge of it?"},
+  {v:"hope",label:"A desire or hope",
+   insight:"A hope surfaced. Hopes are shadows too — they show what you believe you're missing, and sometimes what you believe you're not allowed to have.",
+   follow:"Who told you — directly, or just by example — that this wasn't allowed for you?"}
+];
+
+const CONSCIOUSNESS=[
+  {v:"conscious",label:"Already on my mind",
+   insight:"Already conscious — so this acted as an amplifier, turning up a thought you were already having. Amplified thoughts feel more urgent than they are; factor that in before you decide how big this is."},
+  {v:"background",label:"Running in the background",
+   insight:"The classic catch. Your subconscious was already carrying it, and this gave it a doorway. This is exactly what this practice is for."},
+  {v:"nowhere",label:"Seemingly from nowhere",
+   insight:"From nowhere usually means from deep storage. The stronger the surprise, the older the material. We'll go slower for the next few questions."}
+];
+
+/* 16 themes. Each: regex to test free text, a plain reflection, what it costs,
+   two deep-dive questions specific to it, and three suggested actions. */
+const THEMES=[
+ {k:"chase",words:/chas|pursu|effort|want me|desire|obsess|fight for|earn.{0,12}love|prove.{0,12}love|attention/i,
+  ref:"the belief that love only counts when it's chased or earned",
+  cost:"This one tends to cost the quiet, steady lovers — and hand you the dramatic, inconsistent ones. Pursuit gets mistaken for proof.",
+  deep:["Think of the last time someone loved you steadily, without being chased. What did you do with that steadiness — trust it, or wait for it to end?",
+        "If you stopped chasing tomorrow, who would still be there? Sit with the answer, even if it's short."],
+  acts:["Reach out first to one person today, plainly","Accept one act of quiet care today without deflecting it","Delete one 'test' you were running on someone"]},
+ {k:"worth",words:/output|productiv|earn(ed|ing)?\b|deserve|lazy|work harder|achiev|grind|useless|perform(ance)?|accomplish|worth it|worth the (work|effort)/i,
+  ref:"the belief that worth must be produced rather than possessed",
+  cost:"This one usually costs rest first, then relationships, then health — in that order, quietly. Every pause arrives with interest attached.",
+  deep:["What were you praised for first, as a kid — being, or doing? See if you can actually remember.",
+        "Name one hour this week that produced nothing, and ask yourself honestly whether it was wasted."],
+  acts:["Rest for 30 minutes today without earning it first","Leave one small task undone overnight, on purpose","Tell someone what you enjoyed today instead of what you finished"]},
+ {k:"recognition",words:/viral|recogni[sz]|followers|views|blow(ing)? up|noticed|discovered|validat|isn'?t real until|doesn'?t count until|proof (that|it'?s)|paying off|going (viral|big)|numbers|engagement|likes|my work (is|isn'?t)/i,
+  ref:"the belief that your work only counts once it's seen and validated by others",
+  cost:"This one ties your sense of progress to a number you don't control — an algorithm, a stranger's scroll — so the work quietly stops feeling like enough on its own.",
+  deep:["What did you make before anyone was watching? Do you still remember why you made it?",
+        "If the numbers disappeared tomorrow — no views, no likes, no followers — what would you still choose to do?"],
+  acts:["Do one piece of work today and don't post it anywhere","Name one thing you're proud of that nobody else has seen yet","Notice one moment you measured your day by a metric instead of by effort"]},
+ {k:"help",words:/\bweak(ness)?\b|\bhelp\b|burden|\balone\b|myself|independen|need (someone|anyone|people)|rely|lean on|\bask\b/i,
+  ref:"the belief that needing others is a defect",
+  cost:"This one costs help exactly when it's most needed — and slowly teaches everyone around you to stop offering.",
+  deep:["Who taught you that needing help costs you something? What did it cost them, to need help?",
+        "What's the smallest thing you're avoiding asking for right now?"],
+  acts:["Ask one person for one small, specific favor","Say 'I'm struggling with this' out loud to someone safe","Accept the next offer of help without negotiating it down"]},
+ {k:"behind",words:/\bbehind\b|too old|catch(ing)? up|compar(e|ing|ison)|everyone (else|is) (ahead|further|doing)|other (people|creators)|ahead of me|why (can'?t|haven'?t) i/i,
+  ref:"the belief that you're behind on a schedule someone else wrote",
+  cost:"This one turns every peer into a deadline and every rest day into a debt. The race it imagines has no finish line and no judges — only more content selling lane changes.",
+  deep:["Whose timeline is this, actually? Write the name — not the vague 'everyone.'",
+        "What did you learn during the years you're calling 'wasted' that you couldn't have learned any faster?"],
+  acts:["Write down whose timeline you're measuring against — by name","Unfollow one account that reliably makes you feel behind","List three things that arrived in your life at exactly the right time"]},
+ {k:"irrelevant",words:/forgotten|irrelevant|left behind|missed my (window|moment|chance)|too late|nobody (cares|remembers)|\bfade\b|obsolete|washed up|running out of time|closing (window|door)/i,
+  ref:"the belief that you have a closing window and it's closing right now",
+  cost:"This one manufactures urgency out of nothing measurable — there's no actual clock, just a feeling dressed up as one, and it can burn years chasing a deadline nobody set.",
+  deep:["What's the actual deadline, and who set it? If you can't name one, say that plainly.",
+        "Name one person whose most important chapter started later than everyone expected."],
+  acts:["Name one thing that got better with more time, not less","Take a full day off from checking numbers or comparisons","List one thing you know now that you didn't know a year ago"]},
+ {k:"special",words:/exceptional|\bspecial\b|ordinary|\bnothing\b|\bnobody\b|mediocre|extraordinary|\bmatter\b|stand out|invisible/i,
+  ref:"the belief that being ordinary is a kind of death",
+  cost:"This one makes ordinary days feel like failure — which is most days, which quietly becomes most of a life.",
+  deep:["What would it mean about you if today was completely unremarkable?",
+        "Who in your life do you love for being ordinary — not despite it?"],
+  acts:["Do one thing badly, on purpose, and let it stay bad","Celebrate something completely ordinary about today, out loud","Let someone else be the impressive one in a conversation, fully"]},
+ {k:"enough",words:/not enough|never enough|good enough|imposter|impostor|\bfraud\b|don'?t deserve|didn'?t earn|fake it|will (find out|realize|discover)|exposed/i,
+  ref:"the belief that you're one discovery away from being exposed as not enough",
+  cost:"This one costs the ability to actually receive success — every win gets quietly discounted the moment it arrives, because the belief was never really about the evidence.",
+  deep:["What exactly would be 'discovered'? Say the specific fear, not the vague shape of it.",
+        "Who already knows the thing you're afraid of being found out for — and stayed anyway?"],
+  acts:["Write down one thing you're actually good at, without qualifying it","Accept a compliment today without deflecting or downplaying it","Say one true, unimpressive thing about yourself to someone safe"]},
+ {k:"perfect",words:/perfect|flawless|can'?t (mess up|fail|be wrong)|zero mistakes|one (shot|chance)|ruin(ed)? everything|\bmistake/i,
+  ref:"the belief that one mistake erases everything else",
+  cost:"This one costs starting things at all — if failure feels catastrophic, the safest move is never trying, and safety quietly becomes stagnation.",
+  deep:["Name a mistake you made years ago that you're now certain didn't erase you.",
+        "What are you not starting because you can't guarantee how it ends?"],
+  acts:["Do one thing today and let it be mediocre on purpose","Point out one of your own past mistakes out loud, lightly","Start something today without a plan for how it'll turn out"]},
+ {k:"control",words:/control|uncertain|unpredictable|don'?t know what'?s (coming|next)|need to (know|plan)|out of control|can'?t relax (until|unless)|surprises/i,
+  ref:"the belief that safety requires controlling what happens next",
+  cost:"This one costs spontaneity and rest — nothing gets enjoyed until it's already been accounted for, which means very little actually gets enjoyed.",
+  deep:["What did unpredictability cost you once, a long time ago? Is that still the actual risk now?",
+        "Name one thing that turned out fine specifically because you couldn't control it."],
+  acts:["Leave one small plan unmade today, on purpose","Say 'I don't know yet' out loud, without following it with a plan","Let someone else make one decision that affects you today"]},
+ {k:"money",words:/\bmoney\b|\bbroke\b|can'?t afford|financial|\bdebt\b|\bpoor\b|scarcity|not enough (money|cash)/i,
+  ref:"the belief that your security is always one step from collapsing",
+  cost:"This one costs peace in the present — even when things are objectively fine, the nervous system stays braced for the version where they're not.",
+  deep:["Whose financial fear did you inherit? Was it ever really about the money, for them?",
+        "What's true about your finances right now, in exact numbers — not in the feared shape of them?"],
+  acts:["Name one thing that is financially fine right now, specifically","Spend on one small thing today without guilt","Write down the actual number instead of the feared one"]},
+ {k:"please",words:/disappoint|let (them|people|someone) down|upset (them|people)|say no|people[- ]pleas|can'?t say no|everyone(')?s (happy|okay)/i,
+  ref:"the belief that other people's disappointment is yours to prevent",
+  cost:"This one costs your own preferences — they quietly stop mattering, because avoiding someone else's reaction became the actual goal.",
+  deep:["Who taught you their disappointment was dangerous? What actually happened when they were disappointed?",
+        "What do you actually want here, underneath what you think you're supposed to want?"],
+  acts:["Say no to one small thing today, plainly, without over-explaining","Let one person be mildly disappointed in you, on purpose","Ask for what you actually want once today, out loud"]},
+ {k:"known",words:/really knew|knew me|\bleave\b|\babandon|\breject|found out|\bmask\b|\bhide\b|real me|truly know|\bfake\b|pretend/i,
+  ref:"the belief that being fully known ends in being left",
+  cost:"This one builds a curated self that people love — and a real self that never gets to find out whether it's lovable.",
+  deep:["Who left after seeing something real? Was it really the real thing that made them leave?",
+        "What's one true, unpolished thing about you that someone already knows — and stayed for anyway?"],
+  acts:["Share one small true thing you'd normally curate away","Let a silence sit without performing into it","Answer 'how are you' honestly, once, this week"]},
+ {k:"trust",words:/\btrust\b|betray|hurt me|let (them|people|anyone) in|\bguard\b|\bwall\b|burned|use me|\bsafe\b/i,
+  ref:"the belief that closeness is a security breach",
+  cost:"This one keeps the wrong people out and the right people at exactly the same distance. The wall doesn't check credentials.",
+  deep:["What did trusting someone cost you the first time it went wrong?",
+        "Who has already been let a little closer — and hasn't used it against you?"],
+  acts:["Lower the guard one notch with one already-safe person","Name the wall out loud to someone: 'I'm working on letting people in'","Notice one moment today where trust was extended to you — and what it cost them"]},
+ {k:"numb",words:/numb|don'?t feel|disconnected|checked out|going through the motions|nothing (feels|matters)|can'?t feel/i,
+  ref:"the belief that not feeling is safer than feeling",
+  cost:"This one costs access to the good feelings along with the bad ones — the numbness doesn't discriminate, it just turns the whole system down.",
+  deep:["When did going numb first start working for you? What was happening around you then?",
+        "What's one feeling you'd be willing to let last five minutes today, unmanaged?"],
+  acts:["Name one small thing you felt today, specifically, out loud","Let yourself react to something today instead of managing the reaction","Notice the moment you go flat, and get curious instead of pushing through it"]},
+ {k:"anger",words:/\banger\b|\bangry\b|\brage\b|resent|furious|can'?t (get|be) angry|not allowed to be (mad|angry)/i,
+  ref:"the belief that your anger is more dangerous than whatever caused it",
+  cost:"This one costs the information anger carries. It's often the first honest signal that a boundary's been crossed — swallowing it doesn't stop the crossing, just the noticing.",
+  deep:["Who taught you your anger was too much, or too dangerous, or not allowed?",
+        "What is the anger actually protecting? What would happen if it got to speak first, just once?"],
+  acts:["Write down what you're actually angry about, without softening the language","Say 'I'm angry about this' to yourself, once, without immediately apologizing for it","Notice one place in your body where the anger lives, and let it be there a minute"]}
+];
+function detectThemes(text){
+  text=text||"";const hits=[];
+  THEMES.forEach(th=>{if(th.words.test(text))hits.push(th.k)});
+  return hits;
+}
+function themeByKey(k){return THEMES.find(t=>t.k===k)}
+
+const ORIGIN=[
+  {v:"childhood",label:"Childhood",
+   follow:"Who was the adult in charge when this belief first made sense to hold?"},
+  {v:"relationship",label:"A specific relationship",
+   follow:"Is that relationship still active in your life today, in any form?"},
+  {v:"institution",label:"An institution or culture",
+   follow:"What was it, specifically — school, church, a workplace, an online space?"},
+  {v:"unknown",label:"Can't place it",
+   insight:"That's fine. Not every root announces its planting. Knowing it's old enough to be a root is sometimes all you get — and it's enough to work with."}
+];
+
+const BODY_AREAS=["Chest","Throat","Stomach","Shoulders","Jaw","Head","Hands","Hard to locate"];
+
+const PROTECTOR_EXAMPLES=["The Guard","The Achiever","The Peacemaker","The Watcher","The Understudy","The Manager","The Critic","The Escape Hatch"];
+
+/* =======================================================================
+   STATE + STEP GRAPH
+   ======================================================================= */
+const S={
+  line:"", whoType:"", whoLabel:"", whoFollow:"",
+  consciousness:"",
+  belief:"", themeKey:null, altKeys:[],
+  deep1:"", deep2:"",
+  originType:"", originLabel:"", originFollow:"",
+  body:[], bodyNote:"",
+  protector:"",
+  helps:[], costs:[],
+  named:"",
+  action:"",
+  commitment:""
+};
+let history=[]; // visited step ids, drives the rail + back()
+let branchSteps=new Set(["who","belief","origin"]); // steps whose node renders as a diamond
+
+function nextId(cur){
+  switch(cur){
+    case "callback": return "resume";
+    case "resume": return "root";
+    case "root": return "who";
+    case "who": return "conscious";
+    case "conscious": return S.consciousness==="nowhere" ? "breath" : "belief";
+    case "breath": return "belief";
+    case "belief": return "origin_bridge"; // internal no-render router below decides theme-pick vs deep1
+    case "theme-pick": return "deep1";
+    case "deep1": return "deep2";
+    case "deep2": return "origin";
+    case "origin": return S.originType==="unknown" ? "body" : "originfollow";
+    case "originfollow": return "body";
+    case "body": return "protector";
+    case "protector": return "tally";
+    case "tally": return "named";
+    case "named": return "action";
+    case "action": return "commitment";
+    case "commitment": return "record";
+    default: return "record";
+  }
+}
+
+function go(id){
+  if(id==="origin_bridge"){ id = S.altKeys.length ? "theme-pick" : "deep1"; }
+  history.push(id);
+  store.set("draft",{S,history});
+  render(id);
+  window.scrollTo({top:0,behavior:document.body.classList.contains("noanim")?"auto":"smooth"});
+}
+function next(cur){ go(nextId(cur)); }
+function back(){
+  if(history.length<2)return;
+  history.pop();
+  const prev=history[history.length-1];
+  store.set("draft",{S,history});
+  render(prev,true);
+}
+function restart(){
+  store.del("draft");
+  Object.assign(S,{line:"",whoType:"",whoLabel:"",whoFollow:"",consciousness:"",belief:"",themeKey:null,altKeys:[],
+    deep1:"",deep2:"",originType:"",originLabel:"",originFollow:"",body:[],bodyNote:"",protector:"",helps:[],costs:[],
+    named:"",action:"",commitment:""});
+  history=[];
+  route();
+}
+document.getElementById("resetBtn").addEventListener("click",()=>{
+  if(confirm("Start over? This clears the current thread (past saved sessions stay in your notebook history).")) restart();
+});
+
+/* =======================================================================
+   RAIL
+   ======================================================================= */
+function renderRail(){
+  const rail=document.getElementById("rail");
+  const mob=document.getElementById("railMobile");
+  const visible=history.filter(h=>!["resume","callback","breath","theme-pick","originfollow"].includes(h) || true);
+  rail.innerHTML="";
+  mob.innerHTML="";
+  history.forEach((h,i)=>{
+    const isBranch=branchSteps.has(h);
+    const line=document.createElement("div");line.className="rail-line";
+    const node=document.createElement("div");node.className="rail-node lit"+(isBranch?" branch":"");
+    if(i>0)rail.appendChild(line);
+    rail.appendChild(node);
+    const dot=document.createElement("i");dot.className="lit";mob.appendChild(dot);
+  });
+}
+
+/* =======================================================================
+   STEP RENDERERS
+   ======================================================================= */
+const stage=document.getElementById("stageInner");
+
+function shell(eyebrow,question,bodyHtml,opts){
+  opts=opts||{};
+  stage.innerHTML=`<div class="card">
+    <span class="eyebrow">${esc(eyebrow)}</span>
+    <h2 class="question">${question}</h2>
+    ${opts.subtext?`<p class="subtext">${opts.subtext}</p>`:""}
+    ${bodyHtml}
+  </div>`;
+}
+function actionsRow(html){ return `<div class="actions">${html}</div>`; }
+
+function render(id,isBack){
+  if(isBack){ /* no history push, just draw */ }
+  renderRail();
+
+  if(id==="callback"){
+    const pend=store.get("pending",null);
+    shell("Before we begin","Last time, you set an intention.",
+      `<div class="callback-box"><b style="color:var(--parchment)">${esc(pend.date)}:</b> you said you'd — <em>${esc(pend.action)}</em>.<br>How will you know if you did it: <em>${esc(pend.commitment||"—")}</em></div>
+       <div class="opts">
+         <button class="opt" data-v="yes">Yes, I did it</button>
+         <button class="opt" data-v="partly">Partly</button>
+         <button class="opt" data-v="no">No, not yet</button>
+       </div>
+       ${actionsRow(`<span class="skip" id="skipCb">Skip this</span>`)}`);
+    document.querySelectorAll('.opts .opt').forEach(b=>b.addEventListener('click',()=>{
+      const outcomes=store.get("outcomes",[]);
+      outcomes.unshift({date:new Date().toISOString(),action:pend.action,result:b.dataset.v});
+      store.set("outcomes",outcomes.slice(0,50));
+      store.del("pending");
+      next("callback");
+    }));
+    document.getElementById("skipCb").addEventListener('click',()=>next("callback"));
+    return;
+  }
+
+  if(id==="resume"){
+    shell("Welcome back","Pick up your last thread, or start a new one?",
+      `<div class="opts">
+         <button class="opt wide" id="resumeYes">Continue where I left off — <em>${esc((S.line||"").slice(0,60))}${(S.line||"").length>60?"…":""}</em></button>
+         <button class="opt wide" id="resumeNo">Start a fresh thread</button>
+       </div>`);
+    document.getElementById("resumeYes").addEventListener('click',()=>{
+      const draft=store.get("draft",null);
+      if(draft){history=draft.history;Object.assign(S,draft.S);}
+      render(history[history.length-1]);
+    });
+    document.getElementById("resumeNo").addEventListener('click',restart);
+    return;
+  }
+
+  if(id==="root"){
+    shell("Where it starts","What just caught you?",
+      `<div class="field"><textarea id="in" placeholder='A line, an image, a comment, a video — whatever caught. Paste it or describe it in your own words.'>${esc(S.line)}</textarea></div>
+       <div class="insight" id="ins"></div>
+       ${actionsRow(`<button class="btn" id="go" disabled>Continue</button>`)}`,
+      {subtext:"There's no wrong answer here. Whatever snagged your attention is the honest starting point."});
+    const ta=document.getElementById("in"),btn=document.getElementById("go"),ins=document.getElementById("ins");
+    function upd(){
+      const v=ta.value.trim();S.line=v;btn.disabled=v.length<3;
+      if(v.length>8){
+        const hits=detectThemes(v);
+        ins.innerHTML=hits.length?`Even before the questions: the words you chose lean toward <em>${esc(themeByKey(hits[0]).ref)}</em>. Keep that loose — test it, don't adopt it yet.`:
+          `Noted. Whatever this line touched, the next few questions will find its edges.`;
+        ins.classList.add("show");
+      }
+    }
+    ta.addEventListener("input",upd);
+    btn.addEventListener("click",()=>next("root"));
+    return;
+  }
+
+  if(id==="who"){
+    shell("Section 1 · What surfaced","When you sit with it — is it a person, a pattern, a fear, a memory, or a hope?",
+      `<div class="opts" id="whoOpts">${WHO.map(w=>`<button class="opt" data-v="${w.v}">${esc(w.label)}</button>`).join("")}</div>
+       <div class="insight" id="ins1"></div>
+       <div class="field" id="followWrap" style="display:none"><textarea id="followIn" placeholder="…"></textarea></div>
+       ${actionsRow(`<button class="backlink" id="b1">← Back</button><button class="btn" id="go1" disabled>Continue</button>`)}`);
+    const ins=document.getElementById("ins1"),followWrap=document.getElementById("followWrap"),followIn=document.getElementById("followIn"),go1=document.getElementById("go1");
+    document.querySelectorAll("#whoOpts .opt").forEach(b=>b.addEventListener("click",()=>{
+      document.querySelectorAll("#whoOpts .opt").forEach(o=>o.classList.toggle("sel",o===b));
+      const w=WHO.find(x=>x.v===b.dataset.v);
+      S.whoType=w.v;S.whoLabel=w.label;
+      ins.innerHTML=w.insight;ins.classList.add("show");
+      followWrap.style.display="block";followIn.placeholder=w.follow;followIn.focus();
+      go1.disabled=false;
+    }));
+    followIn.addEventListener("input",()=>S.whoFollow=followIn.value);
+    document.getElementById("b1").addEventListener("click",back);
+    go1.addEventListener("click",()=>next("who"));
+    return;
+  }
+
+  if(id==="conscious"){
+    shell("Section 2 · Timing","Was this already on your mind, running in the background, or did it seem to come from nowhere?",
+      `<div class="opts" id="cOpts">${CONSCIOUSNESS.map(c=>`<button class="opt" data-v="${c.v}">${esc(c.label)}</button>`).join("")}</div>
+       <div class="insight" id="ins2"></div>
+       ${actionsRow(`<button class="backlink" id="b2">← Back</button><button class="btn" id="go2" disabled>Continue</button>`)}`);
+    document.querySelectorAll("#cOpts .opt").forEach(b=>b.addEventListener("click",()=>{
+      document.querySelectorAll("#cOpts .opt").forEach(o=>o.classList.toggle("sel",o===b));
+      const c=CONSCIOUSNESS.find(x=>x.v===b.dataset.v);S.consciousness=c.v;
+      const ins=document.getElementById("ins2");ins.innerHTML=c.insight;ins.classList.add("show");
+      document.getElementById("go2").disabled=false;
+    }));
+    document.getElementById("b2").addEventListener("click",back);
+    document.getElementById("go2").addEventListener("click",()=>next("conscious"));
+    return;
+  }
+
+  if(id==="breath"){
+    shell("A slower moment","Before we go further — one breath.",
+      `<p class="subtext" style="margin-top:18px;max-width:44ch">Deep-storage material moves slower than the rest of this practice. In for four. Hold for four. Out for four. No rush on the next question either.</p>
+       ${actionsRow(`<button class="backlink" id="bB">← Back</button><button class="btn" id="goB">I'm ready</button>`)}`);
+    document.getElementById("bB").addEventListener("click",back);
+    document.getElementById("goB").addEventListener("click",()=>next("breath"));
+    return;
+  }
+
+  if(id==="belief"){
+    shell("Section 3 · The belief","Finish this sentence: the belief underneath this is —",
+      `<div class="field"><textarea id="bIn" placeholder="I am… / people always… / it's not safe to… / whatever comes.">${esc(S.belief)}</textarea></div>
+       <div class="insight" id="ins3"></div>
+       ${actionsRow(`<button class="backlink" id="b3">← Back</button><button class="btn" id="go3" disabled>Continue</button>`)}`,
+      {subtext:"Write it plainly, as a rule, not a feeling — 'I am too much' rather than 'I felt bad.'"});
+    const ta=document.getElementById("bIn"),ins=document.getElementById("ins3"),go3=document.getElementById("go3");
+    function upd(){
+      const v=ta.value.trim();S.belief=v;go3.disabled=v.length<3;
+      if(v.length>4){
+        const hits=detectThemes(v+" "+S.line+" "+S.whoFollow);
+        S.themeKey=hits[0]||null;S.altKeys=hits.slice(1,3);
+        const th=S.themeKey?themeByKey(S.themeKey):null;
+        ins.innerHTML=th?`Reading your words, this looks like <em>${esc(th.ref)}</em>. ${esc(th.cost)}`:
+          `You wrote it plainly — a belief stated that flatly is already half-examined. Notice whether saying it out loud makes it feel less like truth and more like a rule someone handed you.`;
+        ins.classList.add("show");
+      }
+    }
+    ta.addEventListener("input",upd);
+    document.getElementById("b3").addEventListener("click",back);
+    go3.addEventListener("click",()=>next("belief"));
+    return;
+  }
+
+  if(id==="theme-pick"){
+    const primary=themeByKey(S.themeKey);
+    const opts=[S.themeKey,...S.altKeys].map(k=>themeByKey(k));
+    shell("More than one thread","Your words touched more than one belief. Which one do you want to follow down?",
+      `<div class="opts" id="tpOpts">${opts.map(o=>`<button class="opt wide" data-v="${o.k}">${esc(o.ref)}</button>`).join("")}</div>
+       ${actionsRow(`<button class="backlink" id="bTp">← Back</button>`)}`);
+    document.querySelectorAll("#tpOpts .opt").forEach(b=>b.addEventListener("click",()=>{
+      S.themeKey=b.dataset.v;next("theme-pick");
+    }));
+    document.getElementById("bTp").addEventListener("click",back);
+    return;
+  }
+
+  if(id==="deep1"||id==="deep2"){
+    const th=themeByKey(S.themeKey)|| {deep:["What else is true about this belief, that you haven't said yet?","What would you need to believe instead, for this to loosen?"]};
+    const n=id==="deep1"?0:1;
+    const key=id==="deep1"?"deep1":"deep2";
+    shell(id==="deep1"?"Section 4 · Going deeper":"Still going deeper",th.deep[n],
+      `<div class="field"><textarea id="dIn" placeholder="Take your time.">${esc(S[key])}</textarea></div>
+       ${actionsRow(`<button class="backlink" id="bD">← Back</button><button class="btn" id="goD" disabled>Continue</button>`)}`);
+    const ta=document.getElementById("dIn"),goD=document.getElementById("goD");
+    ta.addEventListener("input",()=>{S[key]=ta.value;goD.disabled=ta.value.trim().length<2});
+    document.getElementById("bD").addEventListener("click",back);
+    goD.addEventListener("click",()=>next(id));
+    return;
+  }
+
+  if(id==="origin"){
+    shell("Section 5 · Where it's from","Where do you think this belief was first installed?",
+      `<div class="opts" id="oOpts">${ORIGIN.map(o=>`<button class="opt" data-v="${o.v}">${esc(o.label)}</button>`).join("")}</div>
+       <div class="insight" id="ins5"></div>
+       ${actionsRow(`<button class="backlink" id="b5">← Back</button><button class="btn" id="go5" disabled>Continue</button>`)}`);
+    document.querySelectorAll("#oOpts .opt").forEach(b=>b.addEventListener("click",()=>{
+      document.querySelectorAll("#oOpts .opt").forEach(o=>o.classList.toggle("sel",o===b));
+      const o=ORIGIN.find(x=>x.v===b.dataset.v);S.originType=o.v;S.originLabel=o.label;
+      const ins=document.getElementById("ins5");
+      ins.innerHTML=o.insight||`Beliefs from this far back formed when you had far less power than you have now. It made sense then — that's why it stuck.`;
+      ins.classList.add("show");
+      document.getElementById("go5").disabled=false;
+    }));
+    document.getElementById("b5").addEventListener("click",back);
+    document.getElementById("go5").addEventListener("click",()=>next("origin"));
+    return;
+  }
+
+  if(id==="originfollow"){
+    const o=ORIGIN.find(x=>x.v===S.originType);
+    shell("A little more","",
+      `<div class="field"><textarea id="ofIn" placeholder="…">${esc(S.originFollow)}</textarea></div>
+       ${actionsRow(`<button class="backlink" id="bOf">← Back</button><button class="btn" id="goOf">Continue</button>`)}`);
+    stage.querySelector(".question").textContent=o.follow;
+    const ta=document.getElementById("ofIn");
+    ta.addEventListener("input",()=>S.originFollow=ta.value);
+    document.getElementById("bOf").addEventListener("click",back);
+    document.getElementById("goOf").addEventListener("click",()=>next("originfollow"));
+    return;
+  }
+
+  if(id==="body"){
+    shell("Section 6 · The body","Where do you feel this, right now, in your body?",
+      `<div class="bodymap" id="bMap">${BODY_AREAS.map(a=>`<button class="opt" data-v="${a}">${esc(a)}</button>`).join("")}</div>
+       <div class="field"><input type="text" id="bNote" placeholder="Anything else about it — tight, hot, hollow, heavy…" value="${esc(S.bodyNote)}"></div>
+       ${actionsRow(`<button class="backlink" id="bB6">← Back</button><button class="btn" id="go6">Continue</button>`)}`,
+      {subtext:"Beliefs live in the body before they live in language. 'Hard to locate' is a real, complete answer."});
+    document.querySelectorAll("#bMap .opt").forEach(b=>b.addEventListener("click",()=>{
+      b.classList.toggle("sel");
+      S.body = [...document.querySelectorAll("#bMap .opt.sel")].map(x=>x.dataset.v);
+    }));
+    document.getElementById("bNote").addEventListener("input",e=>S.bodyNote=e.target.value);
+    document.getElementById("bB6").addEventListener("click",back);
+    document.getElementById("go6").addEventListener("click",()=>next("body"));
+    return;
+  }
+
+  if(id==="protector"){
+    shell("Section 7 · Naming the protector","If this belief had a job title — the part of you that built it and still runs it — what would you call it?",
+      `<div class="opts" id="pEx">${PROTECTOR_EXAMPLES.map(p=>`<button class="opt" data-v="${p}">${esc(p)}</button>`).join("")}</div>
+       <div class="field"><input type="text" id="pIn" placeholder="Or write your own name for it…" value="${esc(S.protector)}"></div>
+       <div class="insight sage show">Most protectors were hired young, for a job that made sense at the time. Firing them isn't the goal — reassigning them is.</div>
+       ${actionsRow(`<button class="backlink" id="bP">← Back</button><button class="btn" id="goP">Continue</button>`)}`);
+    const pIn=document.getElementById("pIn");
+    document.querySelectorAll("#pEx .opt").forEach(b=>b.addEventListener("click",()=>{
+      pIn.value=b.dataset.v;S.protector=b.dataset.v;
+      document.querySelectorAll("#pEx .opt").forEach(o=>o.classList.toggle("sel",o===b));
+    }));
+    pIn.addEventListener("input",()=>S.protector=pIn.value);
+    document.getElementById("bP").addEventListener("click",back);
+    document.getElementById("goP").addEventListener("click",()=>next("protector"));
+    return;
+  }
+
+  if(id==="tally"){
+    shell("Section 8 · What it's cost, what it's protected","Two lists. Be honest about both.",
+      `<div class="two-col">
+         <div class="tally-col help"><h4>It protected me by…</h4><ul id="lHelp">${S.helps.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
+           <div class="add-row"><input type="text" id="inHelp" placeholder="e.g. kept me careful"><button id="addHelp" aria-label="Add">+</button></div></div>
+         <div class="tally-col cost"><h4>It has cost me…</h4><ul id="lCost">${S.costs.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>
+           <div class="add-row"><input type="text" id="inCost" placeholder="e.g. rest, closeness, years"><button id="addCost" aria-label="Add">+</button></div></div>
+       </div>
+       <div class="tallyline" id="tLine"></div>
+       <div class="insight" id="ins8"></div>
+       ${actionsRow(`<button class="backlink" id="b8">← Back</button><button class="btn" id="go8" disabled>Continue</button>`)}`);
+    function refresh(){
+      document.getElementById("lHelp").innerHTML=S.helps.map(h=>`<li>${esc(h)}</li>`).join("");
+      document.getElementById("lCost").innerHTML=S.costs.map(h=>`<li>${esc(h)}</li>`).join("");
+      document.getElementById("tLine").textContent=`${S.helps.length} way${S.helps.length===1?"":"s"} it protected you · ${S.costs.length} thing${S.costs.length===1?"":"s"} it cost you`;
+      const go8=document.getElementById("go8");
+      if(S.helps.length&&S.costs.length){
+        go8.disabled=false;
+        const ins=document.getElementById("ins8");
+        ins.innerHTML=(S.costs.length>S.helps.length?
+          "The costs now outnumber the protections. That's usually the moment a belief stops being armor and becomes a cage — you're allowed to thank it and retire it.":
+          "Both columns are real. The question isn't whether the belief ever helped — it's whether the protection is still worth the current price.");
+        ins.classList.add("show");
+      }
+    }
+    function add(kind){
+      const inp=document.getElementById(kind==="help"?"inHelp":"inCost");const v=inp.value.trim();if(!v)return;
+      (kind==="help"?S.helps:S.costs).push(v);inp.value="";refresh();
+    }
+    document.getElementById("addHelp").addEventListener("click",()=>add("help"));
+    document.getElementById("addCost").addEventListener("click",()=>add("cost"));
+    ["inHelp","inCost"].forEach(id=>document.getElementById(id).addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();add(id==="inHelp"?"help":"cost")}}));
+    document.getElementById("b8").addEventListener("click",back);
+    document.getElementById("go8").addEventListener("click",()=>next("tally"));
+    return;
+  }
+
+  if(id==="named"){
+    if(!S.named){let d=(S.belief||"").replace(/^i\s/i,"").replace(/^that\s/i,"");S.named="that "+(d.charAt(0).toLowerCase()+d.slice(1));}
+    shell("Section 9 · Saying it plainly","Say the belief out loud, in this shape:",
+      `<div class="field"><input type="text" id="nIn" value="${esc(S.named)}"></div>
+       <p class="subtext">My shadow belief is ${esc(S.named)}</p>
+       ${actionsRow(`<button class="backlink" id="bN">← Back</button><button class="btn" id="goN">Continue</button>`)}`);
+    const nIn=document.getElementById("nIn");
+    nIn.addEventListener("input",()=>S.named=nIn.value);
+    document.getElementById("bN").addEventListener("click",back);
+    document.getElementById("goN").addEventListener("click",()=>next("named"));
+    return;
+  }
+
+  if(id==="action"){
+    const th=themeByKey(S.themeKey);
+    const list=(th&&th.acts)||["Tell one safe person what you found in this exercise","Do the smallest possible opposite of the belief, once, today","Write the belief on paper — and one sentence of evidence against it"];
+    shell("Section 10 · One action","Choose one small, concrete action for the next 48 hours.",
+      `<div class="opts" id="aOpts">${list.map(a=>`<button class="opt wide" data-v="${esc(a)}">${esc(a)}</button>`).join("")}</div>
+       <div class="field"><input type="text" id="aIn" placeholder="Or write your own…" value="${esc(S.action)}"></div>
+       ${actionsRow(`<button class="backlink" id="bA">← Back</button><button class="btn" id="goA" disabled>Continue</button>`)}`);
+    const aIn=document.getElementById("aIn"),goA=document.getElementById("goA");
+    document.querySelectorAll("#aOpts .opt").forEach(b=>b.addEventListener("click",()=>{
+      document.querySelectorAll("#aOpts .opt").forEach(o=>o.classList.toggle("sel",o===b));
+      S.action=b.dataset.v;aIn.value=b.dataset.v;goA.disabled=false;
+    }));
+    aIn.addEventListener("input",()=>{S.action=aIn.value;goA.disabled=aIn.value.trim().length<2});
+    document.getElementById("bA").addEventListener("click",back);
+    goA.addEventListener("click",()=>next("action"));
+    return;
+  }
+
+  if(id==="commitment"){
+    shell("One last question","How will you know if you actually did it?",
+      `<div class="field"><input type="text" id="cIn" placeholder="A concrete marker — not a feeling." value="${esc(S.commitment)}"></div>
+       ${actionsRow(`<button class="backlink" id="bC">← Back</button><button class="btn" id="goC" disabled>Finish the thread</button>`)}`,
+      {subtext:"This gets saved on your device. Next time you open this page, it'll ask you first."});
+    const cIn=document.getElementById("cIn"),goC=document.getElementById("goC");
+    goC.disabled=cIn.value.trim().length<2;
+    cIn.addEventListener("input",()=>{S.commitment=cIn.value;goC.disabled=cIn.value.trim().length<2});
+    document.getElementById("bC").addEventListener("click",back);
+    goC.addEventListener("click",()=>next("commitment"));
+    return;
+  }
+
+  if(id==="record"){ renderRecord(); return; }
+}
+
+/* =======================================================================
+   RECORD + RETURNING PATTERNS + PERSISTENCE
+   ======================================================================= */
+function renderRecord(){
+  const th=themeByKey(S.themeKey);
+  const d=new Date();
+  const dateStr=d.toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"});
+
+  // save this thread
+  const threads=store.get("threads",[]);
+  threads.unshift({date:d.toISOString(),line:S.line,belief:S.belief,named:S.named,theme:S.themeKey,themeRef:th?th.ref:null,action:S.action});
+  store.set("threads",threads.slice(0,100));
+  store.set("pending",{action:S.action,commitment:S.commitment,date:dateStr});
+  store.del("draft");
+
+  const priorSame=threads.slice(1).filter(t=>t.theme===S.themeKey);
+  const returning = th && priorSame.length>=1
+    ? `<div class="returning"><h4>This one's come up before</h4>
+       This is your <b style="color:var(--parchment)">${priorSame.length+1}${priorSame.length+1===2?"nd":priorSame.length+1===3?"rd":"th"}</b> thread naming <em>${esc(th.ref)}</em>.
+       ${priorSame.slice(0,3).map(p=>`<div class="prior"><b>${esc(new Date(p.date).toLocaleDateString())}:</b> "${esc(p.belief)}"</div>`).join("")}
+       </div>`
+    : "";
+
+  const record=
+`THE ROOT — ${dateStr}
+
+What caught it:
+"${S.line}"
+
+What surfaced: ${S.whoLabel||"—"}${S.whoFollow?" — "+S.whoFollow:""}
+Timing: ${S.consciousness==="conscious"?"already conscious":S.consciousness==="background"?"running in the background":"seemingly from nowhere"}
+
+The belief underneath:
+${S.belief}
+${th?"(Pattern: "+th.ref+")":""}
+
+Going deeper:
+${S.deep1}
+${S.deep2}
+
+Where it's from: ${S.originLabel||"—"}${S.originFollow?" — "+S.originFollow:""}
+
+In the body: ${S.body.join(", ")||"—"}${S.bodyNote?" — "+S.bodyNote:""}
+
+The protector's name: ${S.protector||"—"}
+
+It protected me by: ${S.helps.join("; ")||"—"}
+It has cost me: ${S.costs.join("; ")||"—"}
+
+Named out loud:
+"My shadow belief is ${S.named}"
+
+THE ACTION (within 48 hours):
+${S.action}
+How I'll know: ${S.commitment}
+
+— The content didn't do this work. It held still long enough
+for me to see something already in me. I did the rest.`;
+
+  stage.innerHTML=`<div class="card record-wrap">
+    <span class="eyebrow">Finished · the record</span>
+    <h2 class="question" style="font-size:26px">One thread, followed all the way down.</h2>
+    <div class="record-box">${esc(record)}</div>
+    ${returning}
+    <div class="closing-line">Your reactions are the map. This was one line on it.</div>
+    <div class="actions">
+      <button class="btn" id="copyBtn">Copy the record</button>
+      <button class="btn ghost" id="dlBtn">Download .txt</button>
+      <button class="btn ghost" id="againBtn">Begin a new thread</button>
+    </div>
+    <p class="small-print">Everything above stays only in this browser, on this device. Nothing was sent anywhere.</p>
+  </div>`;
+  document.getElementById("copyBtn").addEventListener("click",e=>{
+    navigator.clipboard.writeText(record).then(()=>{e.target.textContent="Copied ✓";setTimeout(()=>e.target.textContent="Copy the record",1800)});
+  });
+  document.getElementById("dlBtn").addEventListener("click",()=>{
+    const blob=new Blob([record],{type:"text/plain"});const a=document.createElement("a");
+    a.href=URL.createObjectURL(blob);a.download="the-root-"+d.toISOString().slice(0,10)+".txt";
+    document.body.appendChild(a);a.click();a.remove();
+  });
+  document.getElementById("againBtn").addEventListener("click",restart);
+  renderRail();
+}
+
+/* =======================================================================
+   INIT / ROUTING
+   ======================================================================= */
+function route(){
+  const pend=store.get("pending",null);
+  const draft=store.get("draft",null);
+  if(pend){ history=["callback"]; render("callback"); return; }
+  if(draft && draft.S && draft.S.line){ history=["resume"]; render("resume"); return; }
+  history=["root"]; render("root");
+}
+route();
+</script>
+
+<div id="nf-chrome" class="nf-chrome" data-nf-page="root"><div class="nf-veil" aria-hidden="true"></div><button class="nf-seal" type="button" aria-expanded="false" aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button><div class="nf-scrim" aria-hidden="true"></div><nav class="nf-panel" id="nf-panel" aria-label="The Catalogue" aria-hidden="true"><div class="nf-panel-head"><div><div class="nf-eyebrow">Noble Father Creations</div><h2 class="nf-panel-title">The Catalogue</h2></div><button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div><ul class="nf-toc"><li class="nf-row" style="--nf-i:0"><a href="/"><span class="nf-num">I</span><span class="nf-vol">The Catalogue</span><span class="nf-desc">Every volume, one shelf</span></a></li><li class="nf-row" style="--nf-i:1"><a href="/seals/"><span class="nf-num">II</span><span class="nf-vol">The Press</span><span class="nf-desc">Real wax, a voice inside</span></a></li><li class="nf-row" style="--nf-i:2"><a href="/portals/"><span class="nf-num">III</span><span class="nf-vol">The Portals</span><span class="nf-desc">Strontium glow, no battery</span></a></li><li class="nf-row nf-here" style="--nf-i:3"><a href="/root/" aria-current="page"><span class="nf-num">IV</span><span class="nf-vol">The Root<span class="nf-here-dot" aria-hidden="true"></span></span><span class="nf-desc">A shadow work practice</span></a></li><li class="nf-row" style="--nf-i:4"><a href="/reaction-map/"><span class="nf-num">V</span><span class="nf-vol">The Reaction Map</span><span class="nf-desc">Conscious consumption, mapped</span></a></li><li class="nf-row" style="--nf-i:5"><a href="/divide/"><span class="nf-num">VI</span><span class="nf-vol">The Sacred Divide</span><span class="nf-desc">25 traditions, 750 entries</span></a></li><li class="nf-row" style="--nf-i:6"><a href="/fractal/"><span class="nf-num">VII</span><span class="nf-vol">The Fractal</span><span class="nf-desc">One pattern runs the world</span></a></li><li class="nf-row" style="--nf-i:7"><a href="/fracture/"><span class="nf-num">VIII</span><span class="nf-vol">All Fracture</span><span class="nf-desc">The reading edition</span></a></li><li class="nf-row" style="--nf-i:8"><a href="/sovereign/"><span class="nf-num">IX</span><span class="nf-vol">The Sovereign Divine Feminine</span><span class="nf-desc">A field guide</span></a></li><li class="nf-row" style="--nf-i:9"><a href="/playground/"><span class="nf-num">X</span><span class="nf-vol">Playground Protectors</span><span class="nf-desc">Shaela's guide for brave kids</span></a></li><li class="nf-row" style="--nf-i:10"><a href="/festival/"><span class="nf-num">XI</span><span class="nf-vol">The Festie Codex</span><span class="nf-desc">The gate — attendee's cut</span></a></li><li class="nf-row" style="--nf-i:11"><a href="https://noblepatterns.netlify.app/" target="_blank" rel="noopener"><span class="nf-num">XII</span><span class="nf-vol">The Pattern Decoder</span><span class="nf-ext">&#8599;</span><span class="nf-desc">349 tactics, decoded</span></a></li><li class="nf-row" style="--nf-i:12"><a href="https://noblemusic.netlify.app/" target="_blank" rel="noopener"><span class="nf-num">XIII</span><span class="nf-vol">The Music</span><span class="nf-ext">&#8599;</span><span class="nf-desc">Free to stream</span></a></li></ul><div class="nf-panel-foot">Bound by hand in the study &mdash; thirteen volumes &amp; counting.</div></nav></div>
+<script id="nf-chrome-js">
+(function(){
+  var root=document.getElementById('nf-chrome');if(!root)return;
+  var seal=root.querySelector('.nf-seal'),scrim=root.querySelector('.nf-scrim'),
+      panel=root.querySelector('.nf-panel'),close=root.querySelector('.nf-close');
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function open(){root.classList.add('nf-open');seal.setAttribute('aria-expanded','true');
+    panel.removeAttribute('aria-hidden');close.focus({preventScroll:true})}
+  function shut(){root.classList.remove('nf-open');seal.setAttribute('aria-expanded','false');
+    panel.setAttribute('aria-hidden','true');seal.focus({preventScroll:true})}
+  seal.addEventListener('click',open);
+  close.addEventListener('click',shut);
+  scrim.addEventListener('click',shut);
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&root.classList.contains('nf-open'))shut()});
+  // ink-veil exit: internal same-origin links leave through the dark
+  var veil=root.querySelector('.nf-veil');
+  document.addEventListener('click',function(e){
+    if(reduced||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
+    var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+    if(!a||a.target==='_blank')return;
+    var href=a.getAttribute('href');
+    if(!href||href.charAt(0)==='#'||/^(mailto|tel|javascript):/.test(href))return;
+    var u;try{u=new URL(a.href,location.href)}catch(_){return}
+    if(u.origin!==location.origin)return;
+    if(u.pathname===location.pathname&&u.hash)return;
+    e.preventDefault();
+    veil.classList.add('nf-veil-out');
+    setTimeout(function(){location.href=a.href},190);
+  },true);
+  window.addEventListener('pageshow',function(e){
+    if(e.persisted)veil.classList.remove('nf-veil-out')});
+})();
+</script>
+</body>
+</html>
