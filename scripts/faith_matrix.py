@@ -87,10 +87,12 @@ CSS = r"""
   color:var(--ink2);min-height:1.2em;flex:1 1 16rem}
 .fx-mx-read b{color:var(--ink);font-weight:700}
 
-.fx-mx{border-collapse:separate;border-spacing:0}
+.fx-mxwrap{overflow-x:auto;max-width:100%;position:relative;
+  overscroll-behavior-x:contain;contain:paint}
+.fx-mx{border-collapse:collapse}
 .fx-mx-c{padding:0}
-.fx-mx-c a{display:block;padding:5px;line-height:0;text-decoration:none}
-.fx-mx-dot{display:block;width:11px;height:11px;border-radius:2px;
+.fx-mx-c a{display:block;padding:3px;line-height:0;text-decoration:none}
+.fx-mx-dot{display:block;width:9px;height:9px;border-radius:2px;
   transition:transform .12s linear}
 .fx-mx-c:hover .fx-mx-dot,.fx-mx-c.fx-on .fx-mx-dot{transform:scale(1.35)}
 .fx-mx-c.fx-cursor{outline:2px solid var(--gilt);outline-offset:-2px}
