@@ -81,7 +81,9 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSource": "source/projects/noble-father-playbook.html",
+      "localSourceNote": "Fetched live 2026-08-12 and committed to preserve it -- this project previously had no local source at all, which is exactly how the music page's track data was lost."
     },
     {
       "codename": "root",
@@ -387,7 +389,9 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSource": "source/projects/noble-father-music.html",
+      "localSourceNote": "Fetched live 2026-08-12 and committed. WARNING: this snapshot is already broken -- TRACKS/SHELVES are referenced but never declared anywhere in the file, so the track catalogue renders empty live. Preserving the broken state so it cannot get further lost; recovery needs the user or an older Netlify deploy, not a rewrite starting from this file."
     },
     {
       "codename": "festie+bible",
