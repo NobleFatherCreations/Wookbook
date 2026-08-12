@@ -10,3 +10,6 @@ node_modules/
 # scratch Playwright/measurement scripts a subagent wrote to repo root
 # instead of the session scratchpad — throwaway, not a deliverable
 /audit[0-9]*.js
+
+# Netlify MCP temporary deploy zip files
+deploy-*.zip
