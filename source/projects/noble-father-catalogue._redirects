@@ -39,6 +39,36 @@
 /portals/*     https://nfcportals.netlify.app/:splat                 200
 /press         https://noblenfcseals.netlify.app/                    200
 /press/*       https://noblenfcseals.netlify.app/:splat              200
+/resin         https://incandescent-kataifi-cde77d.netlify.app/      200
+/resin/*       https://incandescent-kataifi-cde77d.netlify.app/:splat 200
+
+# The Casting is the ONLY multi-file project in the catalogue -- every book
+# is a single self-contained HTML file, so proxying them at /slug just
+# works. The Casting is a real static site whose CSS, JS, images and JSON
+# are separate files referenced with ROOT-relative paths (/assets/…,
+# /data/…) -- see its own DEPLOYING.md, which warns that the site assumes
+# it lives at a domain root. Proxied at /resin, the browser still asks
+# THIS domain for /assets/css/theme.css, which 404s here, so the whole
+# gallery rendered as unstyled text with no photos and no data.
+#
+# These two rules hand those prefixes to The Casting. Safe because the hub
+# deploy is a single index.html and owns nothing under /assets or /data,
+# and because Netlify serves a real file in preference to a rewrite -- so
+# if the hub ever does ship its own /assets, that wins automatically.
+# If a SECOND multi-file project is ever added, these must be namespaced
+# (and that project's asset paths made relative) rather than duplicated.
+# EVERY top-level path The Casting owns has to be listed here, not just its
+# assets. Missing /statues is what made "View the Collection" and every
+# individual piece 404 even after the styling was fixed: those links are
+# root-relative too, so they resolved against THIS domain. The full set is
+# /assets, /data and /statues -- if the Casting ever adds another top-level
+# directory, it must be added here in the same breath or its links break the
+# same way. `npm run verify` (scripts/verify-live.mjs) crawls every internal
+# link on every page and fails on any 404, which is the guard against this.
+/assets/*      https://incandescent-kataifi-cde77d.netlify.app/assets/:splat 200
+/data/*        https://incandescent-kataifi-cde77d.netlify.app/data/:splat   200
+/statues       https://incandescent-kataifi-cde77d.netlify.app/statues       200
+/statues/*     https://incandescent-kataifi-cde77d.netlify.app/statues/:splat 200
 
 # Singular/alternate spellings people are likely to type or to have been
 # given on a card, kept as real redirects (301) so there is one canonical

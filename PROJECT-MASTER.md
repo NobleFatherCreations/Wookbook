@@ -268,7 +268,7 @@ Netlify; resolves the codename → real-slug confusion from the thread):
 | playground | children | Playground Protectors | /children | `playgroundprotector` | — |
 | festie + codex | wook | The Festie Codex | /wook | **this repo (Wookbook)** | git |
 | fractal | fractal | The Fractal | /fractal | `thefractal` | — |
-| allfracture | fracture | The Fracture Everywhere (was "All Fracture") | /fracture | `fractures` | — |
+| allfracture | fracture | The Fracture (was "All Fracture", then "The Fracture Everywhere") | /fracture | `fractures` | — |
 | *(not in original 9)* | loop | The Loop | /loop | `noble-the-loop` | **cli, no git repo** |
 | *(not in original 9)* | scale | The Weighing | /scale | `noble-the-weighing` | **cli, no git repo** |
 | *(not in original 9)* | faith | The Coercive Control Codex | /faith | `thenobledivide` (likely) | **cli, no git repo** |

@@ -745,7 +745,7 @@ These are small, and they matter mainly because they invert the signal. Every on
 
 Attention is converted into money. This chapter follows the conversion, because the design decisions everywhere else in this book stop being mysterious once the flow is visible.
 
-This is the chapter that makes The Fracture Everywhere a sibling of this book rather than a neighbour.
+This is the chapter that makes The Fracture a sibling of this book rather than a neighbour.
 
 The chain
 

@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-02",
-  "note": "Single source of truth for chapter/book data. loop and scale are extracted directly from their own shipped HTML (var MOVEMENTS=[...] / var CH={...} literals) via design/extract-chapters.py — real content, not invented. CORRECTION: chapters 14-20 (the ones named in the original planning thread) belong to 'loop' (The Loop), NOT 'allfracture' as first assumed — confirmed by exact text match in loop's own source, including chapter 19's own blurb explicitly calling itself 'the sibling of All Fracture'. Other books still need their own data-format investigated before filling in.",
+  "note": "Single source of truth for chapter/book data. loop and scale are extracted directly from their own shipped HTML (var MOVEMENTS=[...] / var CH={...} literals) via design/extract-chapters.py — real content, not invented. CORRECTION: chapters 14-20 (the ones named in the original planning thread) belong to 'loop' (The Loop), NOT 'allfracture' as first assumed — confirmed by exact text match in loop's own source, including chapter 19's own blurb explicitly calling itself 'the sibling of The Fracture'. Other books still need their own data-format investigated before filling in.",
   "books": [
     {
       "project": "festie+codex",
@@ -54,7 +54,7 @@
     {
       "project": "allfracture",
       "slug": "fracture",
-      "title": "The Fracture Everywhere",
+      "title": "The Fracture",
       "url": "https://noblefathercreations.com/fracture",
       "movements": [],
       "note": "Uses a different authoring format than loop/scale (no MOVEMENTS/CH JS literals found) — not yet extracted. Do not invent chapter data."
@@ -231,7 +231,7 @@
             {
               "n": 19,
               "title": "Where the money actually goes",
-              "blurb": "The sibling of All Fracture. Who captures the value, and how little reaches whoever made the thing.",
+              "blurb": "The sibling of The Fracture. Who captures the value, and how little reaches whoever made the thing.",
               "readMin": 9,
               "slug": null,
               "url": "https://noblefathercreations.com/loop#19"

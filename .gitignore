@@ -11,5 +11,10 @@ node_modules/
 # instead of the session scratchpad — throwaway, not a deliverable
 /audit[0-9]*.js
 
+# The Listening Room's 176 mp3s (~1.26 GB of large binaries), same reasoning as
+# the Casting's source photos. They are fully reproducible from the Drive ids in
+# deploy/music/MANIFEST.json, which IS committed — see deploy/music/README.md.
+deploy/music/audio/
+
 # Netlify MCP temporary deploy zip files
 deploy-*.zip

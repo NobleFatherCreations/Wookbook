@@ -1,0 +1,781 @@
+/* ==========================================================================
+   The Listening Room — Noble Father Creations
+   Self-contained: no external requests. Fonts inlined above this block.
+   Two families only (Fraunces display, Karla text); timecodes use
+   tabular-nums rather than a third face.
+   ========================================================================== */
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body,h1,h2,h3,p,ul,ol,li,figure{margin:0;padding:0}
+ul,ol{list-style:none}
+button{font:inherit;color:inherit;background:none;border:none}
+img,canvas,svg{display:block;max-width:100%}
+
+:root{
+  /* ---- palette: the house dark theme, one accent (brass) ---- */
+  --void:#0B0910;
+  --ink:#141019;
+  --ink-2:#1B1522;
+  --ink-3:#241B2E;
+  --bone:#EFE6D6;
+  --bone-dim:#BCB1A0;
+  --smoke:#8E8598;
+  --brass:#C9A24A;
+  --brass-bright:#E8C879;
+  --brass-deep:#7E6733;
+  --line:rgba(201,162,74,.16);
+  --line-soft:rgba(236,228,214,.07);
+
+  /* ---- 8px spacing grid ---- */
+  --s1:8px; --s2:16px; --s3:24px; --s4:32px; --s5:40px;
+  --s6:48px; --s7:56px; --s8:64px; --s10:80px; --s12:96px; --s16:128px;
+
+  /* ---- easings: custom curves only, never a CSS keyword ---- */
+  --e-out:cubic-bezier(.23,1,.32,1);
+  --e-in-out:cubic-bezier(.77,0,.175,1);
+  --e-drawer:cubic-bezier(.32,.72,0,1);
+  --e-exit:cubic-bezier(.5,0,.9,.6);
+
+  --display:'Fraunces',Georgia,'Times New Roman',serif;
+  --text:'Karla',system-ui,-apple-system,'Segoe UI',sans-serif;
+
+  --deck-h:96px;
+  --measure:68ch;
+}
+
+body{
+  background:var(--void);
+  color:var(--bone);
+  font-family:var(--text);
+  font-size:16px;
+  line-height:1.6;
+  font-synthesis-weight:none;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  /* the fixed deck must never cover the last row of content */
+  padding-bottom:calc(var(--deck-h) + env(safe-area-inset-bottom,0px));
+}
+
+/* a single quiet ground-glow, static — no slow looping background motion */
+body::before{
+  content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(120% 78% at 50% -12%, rgba(201,162,74,.09), transparent 60%),
+    radial-gradient(90% 60% at 90% 104%, rgba(201,162,74,.05), transparent 62%);
+}
+.shell{position:relative;z-index:1}
+
+/* ---- shared type roles ---------------------------------------------------- */
+.label{
+  font-size:11px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--brass);font-variant-numeric:tabular-nums;
+}
+.num{font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1}
+
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip-path:inset(50%);white-space:nowrap;border:0}
+
+:where(a,button,input,[tabindex]):focus-visible{
+  outline:2px solid var(--brass-bright);outline-offset:3px;border-radius:3px;
+}
+
+/* ==========================================================================
+   Masthead — the title moment (record-sleeve typography)
+   ========================================================================== */
+.masthead{
+  max-width:1240px;margin:0 auto;
+  padding:var(--s10) var(--s3) var(--s6);
+}
+@media(min-width:900px){ .masthead{padding:var(--s16) var(--s6) var(--s10)} }
+
+.masthead .label{display:block;margin-bottom:var(--s3)}
+
+.masthead h1{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:clamp(2.75rem,11vw,7rem);
+  line-height:.93;
+  letter-spacing:-.035em;          /* negative tracking, it is display size */
+  color:var(--bone);
+  font-optical-sizing:auto;
+  text-wrap:balance;
+  margin-bottom:var(--s3);
+}
+/* Second line in solid brass, not a clipped gradient: `color:transparent` +
+   background-clip renders the title INVISIBLE anywhere the clip fails, and this
+   project has already shipped invisible-content bugs. Solid holds the two-tone
+   title moment with none of that risk. */
+.masthead h1 em{
+  display:block;font-style:normal;
+  color:var(--brass);
+}
+.lede{
+  max-width:52ch;color:var(--bone-dim);
+  font-size:clamp(1rem,1.6vw,1.1875rem);line-height:1.62;
+}
+.tally{
+  display:flex;flex-wrap:wrap;gap:var(--s1) var(--s3);
+  margin-top:var(--s4);padding-top:var(--s3);
+  border-top:1px solid var(--line);
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--smoke);
+}
+.tally b{color:var(--bone);font-weight:600}
+
+/* ==========================================================================
+   The room — shelf rail + the stacks
+   ========================================================================== */
+.room{
+  max-width:1240px;margin:0 auto;padding:0 var(--s3) var(--s12);
+  display:grid;gap:var(--s5);
+  grid-template-columns:minmax(0,1fr);
+}
+@media(min-width:900px){
+  .room{
+    padding:0 var(--s6) var(--s16);
+    grid-template-columns:232px minmax(0,1fr);
+    gap:var(--s8);
+    align-items:start;
+  }
+}
+
+/* ---- shelf rail: chips on mobile, a list on desktop ---------------------- */
+.rail-title{display:none}
+@media(min-width:900px){
+  .rail{position:sticky;top:var(--s5)}
+  .rail-title{display:block;margin-bottom:var(--s2);padding-bottom:var(--s2);
+    border-bottom:1px solid var(--line)}
+}
+.shelves{
+  display:flex;gap:var(--s1);
+  overflow-x:auto;overflow-y:hidden;
+  margin-inline:calc(var(--s3) * -1);padding:2px var(--s3) var(--s2);
+  scrollbar-width:none;-ms-overflow-style:none;
+  scroll-snap-type:x proximity;
+}
+.shelves::-webkit-scrollbar{display:none}
+@media(min-width:900px){
+  .shelves{display:block;overflow:visible;margin-inline:0;padding:0}
+}
+
+.shelf-btn{
+  display:flex;align-items:center;gap:var(--s1);
+  flex:0 0 auto;scroll-snap-align:start;
+  min-height:44px;padding:0 var(--s2);
+  border:1px solid var(--line);border-radius:999px;
+  color:var(--bone-dim);white-space:nowrap;cursor:pointer;
+  font-size:13px;font-weight:500;letter-spacing:.01em;
+  transition:color 180ms var(--e-out),border-color 180ms var(--e-out),
+             background-color 180ms var(--e-out),transform 140ms var(--e-out);
+}
+.shelf-btn .c{
+  font-size:11px;color:var(--smoke);font-variant-numeric:tabular-nums;
+  transition:color 180ms var(--e-out);
+}
+@media(hover:hover) and (pointer:fine){
+  .shelf-btn:hover{color:var(--bone);border-color:rgba(201,162,74,.4)}
+  .shelf-btn:hover .c{color:var(--bone-dim)}
+}
+.shelf-btn:active{transform:scale(.97);transition-duration:100ms}
+.shelf-btn[aria-pressed="true"]{
+  color:var(--void);background:var(--brass);border-color:var(--brass);font-weight:700;
+}
+.shelf-btn[aria-pressed="true"] .c{color:rgba(11,9,16,.62)}
+
+@media(min-width:900px){
+  .shelf-btn{
+    display:grid;grid-template-columns:1fr auto;align-items:baseline;
+    width:100%;border:none;border-radius:4px;border-left:2px solid transparent;
+    padding:var(--s1) var(--s2);min-height:44px;
+    background:none;text-align:left;white-space:normal;
+    font-family:var(--display);font-size:15px;font-weight:500;
+    transition:color 180ms var(--e-out),border-color 180ms var(--e-out),
+               background-color 180ms var(--e-out),padding-left 180ms var(--e-out);
+  }
+  .shelf-btn:active{transform:none;background:rgba(201,162,74,.1)}
+  @media(hover:hover) and (pointer:fine){
+    .shelf-btn:hover{background:rgba(201,162,74,.06);padding-left:calc(var(--s2) + 4px)}
+  }
+  .shelf-btn[aria-pressed="true"]{
+    color:var(--brass-bright);background:rgba(201,162,74,.09);
+    border-left-color:var(--brass);font-weight:600;
+  }
+  .shelf-btn[aria-pressed="true"] .c{color:var(--brass)}
+}
+
+/* ---- the stacks head: heading, blurb, search ----------------------------- */
+.stacks{min-width:0}
+.stacks-head{margin-bottom:var(--s4)}
+.stacks-head h2{
+  font-family:var(--display);font-weight:600;
+  font-size:clamp(1.625rem,3.4vw,2.375rem);
+  line-height:1.1;letter-spacing:-.02em;color:var(--bone);
+  font-optical-sizing:auto;
+}
+.shelf-blurb{
+  margin-top:var(--s1);max-width:var(--measure);
+  color:var(--smoke);font-size:15px;line-height:1.6;
+}
+.search{
+  display:flex;align-items:center;gap:var(--s1);
+  margin-top:var(--s3);padding:0 var(--s2);
+  min-height:48px;
+  background:rgba(20,16,25,.7);
+  border:1px solid var(--line);border-radius:8px;
+  transition:border-color 180ms var(--e-out),background-color 180ms var(--e-out);
+}
+.search:focus-within{border-color:rgba(201,162,74,.46);background:rgba(20,16,25,.95)}
+.search svg{flex:0 0 auto;width:16px;height:16px;color:var(--smoke)}
+.search input{
+  flex:1 1 auto;min-width:0;
+  background:none;border:none;outline:none;color:var(--bone);
+  font-family:var(--text);font-size:15px;
+}
+.search input::placeholder{color:var(--smoke)}
+.search kbd{
+  flex:0 0 auto;font-family:var(--text);font-size:11px;font-weight:600;
+  color:var(--smoke);border:1px solid var(--line);border-radius:4px;
+  padding:2px 6px;line-height:1.3;
+}
+@media(max-width:560px){ .search kbd{display:none} }
+.search-clear{
+  flex:0 0 auto;width:32px;height:32px;border-radius:50%;cursor:pointer;
+  display:none;place-items:center;color:var(--smoke);
+  transition:color 160ms var(--e-out),background-color 160ms var(--e-out),
+             transform 140ms var(--e-out);
+}
+.search-clear[data-on]{display:grid}
+.search-clear:active{transform:scale(.9)}
+@media(hover:hover) and (pointer:fine){
+  .search-clear:hover{color:var(--bone);background:rgba(236,228,214,.08)}
+}
+
+/* ==========================================================================
+   The track list
+   ========================================================================== */
+.list{border-top:1px solid var(--line-soft)}
+
+.row{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:0 var(--s2);
+  border-bottom:1px solid var(--line-soft);
+}
+.row-btn{
+  display:grid;grid-column:1/-1;
+  grid-template-columns:32px minmax(0,1fr) auto;
+  align-items:center;gap:0 var(--s2);
+  width:100%;min-height:64px;padding:var(--s1) var(--s1) var(--s1) 0;
+  text-align:left;cursor:pointer;border-radius:6px;
+  transition:background-color 180ms var(--e-out),padding-left 200ms var(--e-out);
+}
+@media(hover:hover) and (pointer:fine){
+  .row-btn:hover{background:rgba(236,228,214,.045);padding-left:var(--s1)}
+  .row-btn:hover .row-n{color:var(--brass)}
+  .row-btn:hover .row-title{color:var(--brass-bright)}
+}
+.row-btn:active{background:rgba(201,162,74,.1);transition-duration:90ms}
+
+.row-n{
+  grid-column:1;justify-self:center;
+  font-size:12px;color:var(--smoke);font-variant-numeric:tabular-nums;
+  transition:color 180ms var(--e-out);
+}
+.row-main{grid-column:2;min-width:0}
+/* both are spans, so they MUST be made block or the title and the sub-line
+   collide on one line ("4 DegreesThe Descent") */
+.row-title{
+  display:block;
+  font-family:var(--display);font-size:17px;font-weight:500;line-height:1.28;
+  color:var(--bone);letter-spacing:-.008em;
+  transition:color 180ms var(--e-out);
+  overflow-wrap:anywhere;
+}
+.row-sub{
+  display:block;
+  margin-top:2px;font-size:12.5px;color:var(--smoke);line-height:1.4;
+  overflow-wrap:anywhere;
+}
+.row-time{
+  grid-column:3;font-size:13px;color:var(--smoke);
+  font-variant-numeric:tabular-nums;padding-left:var(--s1);
+}
+
+/* current row: a brass marker replaces the index, plus a live equaliser */
+.row[data-current] .row-n{color:transparent}
+.row[data-current] .row-title{color:var(--brass-bright)}
+.row[data-current] .row-time{color:var(--brass)}
+.row[data-current]{background:rgba(201,162,74,.07)}
+.eq{
+  grid-column:1;grid-row:1;justify-self:center;
+  display:none;align-items:flex-end;gap:2px;height:14px;
+}
+.row[data-current] .eq{display:flex}
+.eq i{
+  display:block;width:2px;background:var(--brass-bright);border-radius:1px;
+  height:30%;transform-origin:50% 100%;
+}
+.row[data-current][data-playing] .eq i{animation:eq 900ms var(--e-in-out) infinite alternate}
+.eq i:nth-child(1){animation-delay:0ms}
+.eq i:nth-child(2){animation-delay:160ms}
+.eq i:nth-child(3){animation-delay:320ms}
+@keyframes eq{from{height:22%}to{height:100%}}
+
+/* staggered entrance for a freshly filtered list */
+.row{
+  animation:row-in 320ms var(--e-out) both;
+  animation-delay:calc(var(--i,0) * 34ms);
+}
+@keyframes row-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+.empty{
+  padding:var(--s8) var(--s2);text-align:center;color:var(--smoke);
+  font-family:var(--display);font-size:18px;font-style:italic;
+}
+.empty[hidden]{display:none}
+
+/* ==========================================================================
+   Updates / colophon
+   ========================================================================== */
+.colophon{
+  max-width:1240px;margin:0 auto;padding:0 var(--s3) var(--s12);
+}
+@media(min-width:900px){ .colophon{padding:0 var(--s6) var(--s16)} }
+.colophon-inner{
+  border-top:1px solid var(--line);padding-top:var(--s5);
+  display:grid;gap:var(--s5);
+}
+@media(min-width:900px){
+  .colophon-inner{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:var(--s8)}
+}
+.colophon h2{
+  font-family:var(--display);font-size:1.5rem;font-weight:600;
+  letter-spacing:-.015em;margin-bottom:var(--s2);
+}
+.colophon p{color:var(--smoke);font-size:14.5px;max-width:46ch}
+.colophon p + p{margin-top:var(--s2)}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;margin-bottom:var(--s2);
+  padding:4px 10px;border:1px solid var(--line);border-radius:999px;
+  font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--brass);font-variant-numeric:tabular-nums;
+}
+.changelog{display:grid;gap:var(--s3)}
+.changelog li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:var(--s2)}
+.changelog .v{
+  font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--brass);
+  font-variant-numeric:tabular-nums;padding-top:3px;white-space:nowrap;
+}
+.changelog .t{color:var(--bone-dim);font-size:14.5px;line-height:1.55}
+.changelog .d{display:block;color:var(--smoke);font-size:12px;margin-top:2px}
+
+.foot{
+  max-width:1240px;margin:0 auto;padding:0 var(--s3) var(--s10);
+  color:var(--smoke);font-size:13px;
+}
+@media(min-width:900px){ .foot{padding:0 var(--s6) var(--s12)} }
+.foot a{color:var(--bone-dim);text-decoration:none;border-bottom:1px solid var(--line);
+  transition:color 160ms var(--e-out),border-color 160ms var(--e-out)}
+@media(hover:hover) and (pointer:fine){
+  .foot a:hover{color:var(--brass-bright);border-color:var(--brass)}
+}
+.foot p + p{margin-top:var(--s1)}
+
+/* ==========================================================================
+   The sleeve (generated art — no image requests)
+   ========================================================================== */
+.sleeve{
+  position:relative;flex:0 0 auto;aspect-ratio:1;border-radius:4px;overflow:hidden;
+  background:
+    linear-gradient(150deg,
+      hsl(var(--h,42) 34% 22%) 0%,
+      hsl(var(--h,42) 26% 12%) 52%,
+      hsl(calc(var(--h,42) + 26) 30% 9%) 100%);
+  box-shadow:inset 0 0 0 1px rgba(236,228,214,.1),0 6px 18px rgba(0,0,0,.5);
+}
+/* the record, edging out of the sleeve */
+.sleeve::before{
+  content:"";position:absolute;inset:14%;border-radius:50%;
+  background:
+    radial-gradient(circle at 50% 50%, var(--ink-3) 0 17%, transparent 17.5%),
+    repeating-radial-gradient(circle at 50% 50%,
+      rgba(0,0,0,.5) 0 2px, rgba(236,228,214,.06) 2px 3px),
+    radial-gradient(circle at 34% 28%, rgba(236,228,214,.12), transparent 58%),
+    #0A0810;
+  box-shadow:0 1px 6px rgba(0,0,0,.6);
+}
+/* the label at the centre */
+.sleeve::after{
+  content:"";position:absolute;left:50%;top:50%;width:20%;height:20%;
+  transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle at 38% 32%,
+    hsl(var(--h,42) 46% 46%), hsl(var(--h,42) 44% 24%) 72%, #0A0810 100%);
+  box-shadow:0 0 0 1px rgba(0,0,0,.5);
+}
+@media(prefers-reduced-motion:no-preference){
+  .sleeve::before,.sleeve::after{
+    animation:spin 4.2s linear infinite;
+    animation-play-state:paused;
+  }
+  .deck[data-playing] .sleeve::before,
+  .deck[data-playing] .sleeve::after,
+  .sheet[data-playing] .sleeve::before,
+  .sheet[data-playing] .sleeve::after{animation-play-state:running}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* ::after also carries a translate, so it needs its own keyframes */
+@media(prefers-reduced-motion:no-preference){
+  .sleeve::after{animation-name:spin-label}
+}
+@keyframes spin-label{
+  from{transform:translate(-50%,-50%) rotate(0)}
+  to{transform:translate(-50%,-50%) rotate(360deg)}
+}
+
+/* ==========================================================================
+   The deck — fixed translucent chrome, content scrolls under it
+   ========================================================================== */
+.deck{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  height:calc(var(--deck-h) + env(safe-area-inset-bottom,0px));
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  background:rgba(15,11,20,.82);
+  backdrop-filter:blur(20px) saturate(150%);
+  -webkit-backdrop-filter:blur(20px) saturate(150%);
+  border-top:1px solid var(--line);
+  box-shadow:0 -18px 44px rgba(0,0,0,.5);
+}
+/* scroll edge: a soft fade where content meets the floating deck */
+.deck::before{
+  content:"";position:absolute;left:0;right:0;bottom:100%;height:var(--s4);
+  pointer-events:none;
+  background:linear-gradient(to top,rgba(11,9,16,.72),transparent);
+}
+/* the scrub line rides the very top edge of the deck on mobile */
+.deck-line{
+  position:absolute;left:0;right:0;top:-1px;height:2px;
+  background:var(--line-soft);overflow:hidden;
+}
+.deck-line i{
+  display:block;height:100%;width:100%;
+  transform-origin:0 50%;transform:scaleX(var(--played,0));
+  background:linear-gradient(90deg,var(--brass-deep),var(--brass-bright));
+}
+@media(min-width:900px){ .deck-line{display:none} }
+
+.deck-inner{
+  height:100%;max-width:1240px;margin:0 auto;
+  display:flex;align-items:center;gap:var(--s2);
+  padding:0 var(--s2);
+}
+@media(min-width:900px){ .deck-inner{padding:0 var(--s6);gap:var(--s3)} }
+
+.deck .sleeve{width:48px}
+@media(min-width:900px){ .deck .sleeve{width:64px} }
+
+/* tapping the meta block opens the full sheet on mobile */
+.deck-open{
+  flex:1 1 auto;min-width:0;display:flex;align-items:center;gap:var(--s2);
+  text-align:left;cursor:pointer;padding:var(--s1) 0;border-radius:6px;
+  transition:opacity 160ms var(--e-out),transform 140ms var(--e-out);
+}
+.deck-open:active{transform:scale(.99);opacity:.75}
+@media(min-width:900px){ .deck-open{cursor:default;pointer-events:none} }
+
+.deck-meta{min-width:0;flex:1 1 auto}
+.deck-eyebrow{
+  font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--brass);margin-bottom:2px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.deck-title{
+  font-family:var(--display);font-size:15px;font-weight:600;line-height:1.22;
+  color:var(--bone);letter-spacing:-.01em;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+@media(min-width:900px){ .deck-title{font-size:17px} }
+.deck-sub{
+  font-size:12px;color:var(--smoke);line-height:1.35;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+
+/* the visualisation only earns its space on wider decks */
+.deck-viz{display:none}
+@media(min-width:900px){
+  .deck-viz{
+    display:block;flex:0 1 200px;height:40px;min-width:0;
+    align-self:center;
+  }
+}
+.deck-scrub{display:none}
+@media(min-width:900px){
+  .deck-scrub{display:grid;flex:1 1 300px;gap:2px;min-width:0}
+}
+.deck-transport{flex:0 0 auto;display:flex;align-items:center;gap:4px}
+.deck-vol{display:none}
+@media(min-width:1120px){ .deck-vol{display:flex;flex:0 0 auto} }
+.deck-hint{display:none}
+@media(min-width:1280px){
+  .deck-hint{
+    display:block;flex:0 0 auto;max-width:150px;
+    font-size:10.5px;line-height:1.5;color:var(--smoke);
+  }
+  .deck-hint kbd{
+    font-family:var(--text);font-weight:700;color:var(--bone-dim);
+    border:1px solid var(--line);border-radius:3px;padding:0 4px;font-size:10px;
+  }
+}
+
+/* mobile: only play + next live in the bar. The pairing rule lives after
+   `.tbtn` (below) because a bare `.only-wide` loses to `.tbtn{display:grid}` on
+   equal specificity, which is why all four buttons used to crowd the phone bar. */
+
+/* ==========================================================================
+   Transport controls
+   ========================================================================== */
+.tbtn{
+  display:grid;place-items:center;
+  width:44px;height:44px;border-radius:50%;flex:0 0 auto;
+  color:var(--bone-dim);cursor:pointer;
+  transition:color 160ms var(--e-out),background-color 160ms var(--e-out),
+             transform 130ms var(--e-out);
+}
+.tbtn svg{width:20px;height:20px}
+@media(hover:hover) and (pointer:fine){
+  .tbtn:hover{color:var(--bone);background:rgba(236,228,214,.08)}
+}
+.tbtn:active{transform:scale(.9);transition-duration:90ms}
+.tbtn[aria-pressed="true"]{color:var(--brass-bright)}
+.tbtn[aria-pressed="true"]::after{
+  content:"";position:absolute;width:3px;height:3px;border-radius:50%;
+  background:var(--brass-bright);transform:translateY(14px);
+}
+.tbtn{position:relative}
+
+/* prev + shuffle are desktop-only in the bar; the phone bar keeps play + next
+   and puts the full transport in the sheet. Must out-specify `.tbtn`. */
+.tbtn.only-wide{display:none}
+@media(min-width:900px){ .tbtn.only-wide{display:grid} }
+
+.tbtn-play{
+  width:48px;height:48px;color:var(--void);
+  background:linear-gradient(168deg,var(--brass-bright),var(--brass) 60%,var(--brass-deep));
+  box-shadow:0 3px 12px rgba(201,162,74,.32),inset 0 1px 0 rgba(255,255,255,.3);
+}
+.tbtn-play svg{width:22px;height:22px}
+@media(hover:hover) and (pointer:fine){
+  .tbtn-play:hover{
+    color:var(--void);background:linear-gradient(168deg,#F3D689,var(--brass-bright) 60%,var(--brass));
+    box-shadow:0 5px 18px rgba(201,162,74,.44),inset 0 1px 0 rgba(255,255,255,.34);
+  }
+}
+.tbtn-play:active{transform:scale(.94)}
+/* the icon swap is a crossfade, not a bounce — this is a keyboard action too */
+.tbtn-play .i-pause{display:none}
+.deck[data-playing] .tbtn-play .i-pause,
+.sheet[data-playing] .tbtn-play .i-pause{display:block}
+.deck[data-playing] .tbtn-play .i-play,
+.sheet[data-playing] .tbtn-play .i-play{display:none}
+
+/* ==========================================================================
+   Scrub + volume (native inputs, styled — keyboard accessible for free)
+   ========================================================================== */
+.scrub{
+  --played:0;--buffered:0;
+  position:relative;display:block;width:100%;height:20px;
+}
+.scrub input{
+  position:absolute;inset:0;width:100%;height:100%;margin:0;
+  -webkit-appearance:none;appearance:none;background:none;cursor:pointer;
+}
+.scrub-track{
+  position:absolute;left:0;right:0;top:50%;height:4px;transform:translateY(-50%);
+  border-radius:999px;background:rgba(236,228,214,.12);overflow:hidden;
+  transition:height 160ms var(--e-out);
+}
+.scrub-buf,.scrub-played{
+  position:absolute;left:0;top:0;bottom:0;width:100%;
+  transform-origin:0 50%;border-radius:999px;
+}
+.scrub-buf{background:rgba(236,228,214,.16);transform:scaleX(var(--buffered))}
+.scrub-played{background:linear-gradient(90deg,var(--brass-deep),var(--brass-bright))}
+.scrub-played{transform:scaleX(var(--played))}
+.scrub-knob{
+  position:absolute;top:50%;width:12px;height:12px;border-radius:50%;
+  background:var(--bone);box-shadow:0 1px 5px rgba(0,0,0,.6);
+  translate:-50% -50%;
+  /* left is a percentage so the knob cannot cause a layout jump */
+  left:calc(var(--played) * 100%);
+  /* Visible at all times. It used to be opacity:0 until :hover, which meant a
+     touch device -- where there is no hover -- never saw the playhead at all. */
+  opacity:1;scale:.72;
+  transition:scale 160ms var(--e-out);
+}
+.scrub:hover .scrub-track,.scrub:focus-within .scrub-track{height:6px}
+.scrub:hover .scrub-knob,.scrub:focus-within .scrub-knob{scale:1}
+.scrub input::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;opacity:0}
+.scrub input::-moz-range-thumb{width:20px;height:20px;border:none;opacity:0}
+.scrub input:focus-visible{outline:2px solid var(--brass-bright);outline-offset:2px;
+  border-radius:999px}
+
+.times{
+  display:flex;justify-content:space-between;align-items:center;gap:var(--s2);
+  font-size:11px;color:var(--smoke);font-variant-numeric:tabular-nums;
+  /* fixed min-width on each half: the label can never reflow the row */
+  min-height:14px;
+}
+.times span{min-width:5ch}
+.times .t-end{text-align:right}
+
+.vol{display:flex;align-items:center;gap:var(--s1)}
+/* without an explicit size this svg renders at its intrinsic box and swamps
+   the row -- it was rendering enormous on the sheet */
+.vol > svg{flex:0 0 auto;width:18px;height:18px;color:var(--smoke)}
+.vol-slider{position:relative;width:80px;height:20px;flex:0 0 auto}
+.vol-slider input{
+  position:absolute;inset:0;width:100%;height:100%;margin:0;
+  -webkit-appearance:none;appearance:none;background:none;cursor:pointer;
+}
+.vol-track{
+  position:absolute;left:0;right:0;top:50%;height:4px;transform:translateY(-50%);
+  border-radius:999px;background:rgba(236,228,214,.12);overflow:hidden;
+}
+.vol-fill{
+  position:absolute;inset:0;transform-origin:0 50%;transform:scaleX(var(--vol,1));
+  background:linear-gradient(90deg,var(--brass-deep),var(--brass));
+}
+.vol-slider input::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;opacity:0}
+.vol-slider input::-moz-range-thumb{width:16px;height:16px;border:none;opacity:0}
+.vol-slider input:focus-visible{outline:2px solid var(--brass-bright);outline-offset:2px;
+  border-radius:999px}
+
+/* ==========================================================================
+   Visualisation
+   ========================================================================== */
+.viz{width:100%;height:100%;display:block}
+/* graceful fallback when AudioContext is unavailable or the media is tainted:
+   a bar field driven by playback state, never a dead canvas */
+.viz-fallback{
+  display:none;width:100%;height:100%;
+  align-items:flex-end;justify-content:center;gap:3px;
+}
+.deck[data-viz="fallback"] .viz,
+.sheet[data-viz="fallback"] .viz{display:none}
+.deck[data-viz="fallback"] .viz-fallback,
+.sheet[data-viz="fallback"] .viz-fallback{display:flex}
+.viz-fallback i{
+  display:block;flex:0 1 4px;min-width:2px;height:18%;border-radius:1px;
+  background:linear-gradient(to top,var(--brass-deep),var(--brass-bright));
+  transform-origin:50% 100%;
+}
+@media(prefers-reduced-motion:no-preference){
+  .viz-fallback i{animation:vbar 1200ms var(--e-in-out) infinite alternate;
+    animation-play-state:paused}
+  .deck[data-playing] .viz-fallback i,
+  .sheet[data-playing] .viz-fallback i{animation-play-state:running}
+}
+@keyframes vbar{from{height:12%}to{height:90%}}
+
+/* ==========================================================================
+   The now-playing sheet (mobile) — enters and exits on the same path
+   ========================================================================== */
+.sheet{
+  position:fixed;inset:0;z-index:70;
+  display:flex;flex-direction:column;
+  padding:var(--s5) var(--s3) calc(var(--s5) + env(safe-area-inset-bottom,0px));
+  background:
+    radial-gradient(120% 70% at 50% 0%, hsl(var(--h,42) 30% 16%), transparent 62%),
+    linear-gradient(180deg,var(--ink),var(--void) 62%);
+  transform:translateY(100%);
+  visibility:hidden;
+  overflow-y:auto;overscroll-behavior:contain;
+  transition:transform 260ms var(--e-exit),visibility 0s 260ms;
+}
+.sheet[data-open]{
+  transform:translateY(0);visibility:visible;
+  transition:transform 380ms var(--e-drawer),visibility 0s;
+}
+@media(min-width:900px){ .sheet{display:none} }
+
+.sheet-grip{
+  align-self:center;width:44px;height:44px;border-radius:50%;
+  display:grid;place-items:center;cursor:pointer;color:var(--smoke);
+  margin-bottom:var(--s2);
+  transition:color 160ms var(--e-out),transform 140ms var(--e-out);
+}
+.sheet-grip:active{transform:scale(.9)}
+.sheet-grip svg{width:22px;height:22px}
+
+.sheet-art{
+  flex:0 1 auto;min-height:0;display:grid;place-items:center;
+  margin-bottom:var(--s4);
+}
+/* the sleeve gives up height before anything else does, so the transport and
+   the shortcut legend are never pushed off the bottom of a short phone */
+.sheet .sleeve{width:min(62vw,272px);max-width:38vh;max-height:38vh}
+.sheet-meta{margin-bottom:var(--s3);text-align:center}
+.sheet-meta .deck-eyebrow{margin-bottom:var(--s1)}
+.sheet-meta .deck-title{
+  font-size:clamp(1.375rem,6.4vw,1.875rem);line-height:1.15;
+  white-space:normal;overflow:visible;text-overflow:clip;
+  overflow-wrap:anywhere;text-wrap:balance;
+}
+.sheet-meta .deck-sub{
+  font-size:14px;white-space:normal;overflow:visible;text-overflow:clip;margin-top:4px;
+}
+.sheet-viz{height:56px;margin-bottom:var(--s2)}
+.sheet-controls{margin-top:auto;display:grid;gap:var(--s3)}
+.sheet-transport{
+  display:flex;align-items:center;justify-content:center;gap:var(--s2);
+}
+.sheet-transport .tbtn-play{width:64px;height:64px}
+.sheet-transport .tbtn-play svg{width:28px;height:28px}
+.sheet .vol{justify-content:center}
+.sheet .vol-slider{width:min(60vw,220px)}
+.sheet-keys{
+  text-align:center;font-size:11px;color:var(--smoke);line-height:1.6;
+}
+.sheet-keys kbd{
+  font-family:var(--text);font-weight:700;color:var(--bone-dim);
+  border:1px solid var(--line);border-radius:3px;padding:0 4px;font-size:10.5px;
+}
+
+/* ==========================================================================
+   Reduced motion — gentler, not absent. Delays MUST go to zero, or
+   staggered items sit invisible waiting out a delay they never animate.
+   ========================================================================== */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-delay:0ms !important;
+    animation-iteration-count:1 !important;
+    transition-delay:0ms !important;
+  }
+  .row{animation:none;opacity:1;transform:none}
+  .row-btn,.shelf-btn,.tbtn,.deck-open,.search-clear,.sheet-grip{
+    transition:background-color 140ms linear,color 140ms linear;
+  }
+  .row-btn:active,.shelf-btn:active,.tbtn:active,.deck-open:active,
+  .search-clear:active,.sheet-grip:active{transform:none}
+  @media(hover:hover) and (pointer:fine){
+    .row-btn:hover,.shelf-btn:hover{padding-left:0}
+    .shelf-btn:hover{padding-left:var(--s2)}
+  }
+  .sheet{transition:opacity 160ms linear,visibility 0s 160ms;transform:none;opacity:0}
+  .sheet[data-open]{transition:opacity 160ms linear,visibility 0s;opacity:1}
+  .eq i,.viz-fallback i,.sleeve::before,.sleeve::after{animation:none}
+  .eq i{height:60%}
+  .viz-fallback i{height:46%}
+  .scrub-track{transition:none}
+  .scrub-knob{scale:1;transition:none}
+}
+
+@media(prefers-reduced-transparency:reduce){
+  .deck{background:#100C16;backdrop-filter:none;-webkit-backdrop-filter:none}
+}
+@media(prefers-contrast:more){
+  :root{--smoke:#B4AABE;--bone-dim:#DDD3C4;--line:rgba(201,162,74,.4);
+    --line-soft:rgba(236,228,214,.2)}
+  .deck{background:#0C0912;backdrop-filter:none;-webkit-backdrop-filter:none}
+}

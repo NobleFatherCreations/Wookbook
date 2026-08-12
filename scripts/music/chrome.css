@@ -1,0 +1,151 @@
+/* ============ Noble Father shared chrome — the seal + THE HOUSE catalogue ====
+   Lifted from the current `nf-seal` generation (source/projects/noble-father-root.html)
+   so this page matches the nine other books instead of the older red side tab it
+   used to carry. Trimmed to what this page actually uses: the seal, the scrim,
+   the catalogue panel and the ink veil. The split-text, gold-leaf, bookmark-ribbon
+   and scroll-reveal utilities were dropped -- this page has its own motion system.
+   The catalogue rows are GENERATED from sites.json by scripts/build-music.py,
+   never hand-pasted (CLAUDE.md forbids hand-maintaining this component).
+   ============================================================================ */
+:root{
+  --nf-ink:#141019; --nf-ink-2:#0E0A14; --nf-panel:#1B1522; --nf-panel-2:#241B2E;
+  --nf-bone:#ECE4D6; --nf-bone-dim:#BCB1A0; --nf-muted:#8A8071;
+  --nf-brass:#C9A35B; --nf-brass-bright:#E8C879;
+  --nf-wax:#B23A33; --nf-wax-bright:#DC5A4D; --nf-wax-deep:#8E2B26;
+  --nf-line:rgba(201,163,91,.16);
+  --nf-ease:cubic-bezier(.2,.7,.2,1);
+  --nf-display:'Fraunces',Georgia,'Times New Roman',serif;
+  --nf-ui:'Karla',system-ui,-apple-system,sans-serif;
+}
+.nf-chrome,.nf-chrome *{margin:0;padding:0;box-sizing:border-box}
+
+/* cross-document view transitions: the seal holds still while the page changes */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion: no-preference){
+  ::view-transition-old(root){animation:nf-vt-out 190ms cubic-bezier(.5,0,.9,.6) both}
+  ::view-transition-new(root){animation:nf-vt-in 380ms cubic-bezier(.2,.7,.2,1) both}
+  @keyframes nf-vt-out{to{opacity:0;transform:scale(.994);filter:blur(3px)}}
+  @keyframes nf-vt-in{from{opacity:0;transform:scale(1.006);filter:blur(4px)}}
+}
+@media (prefers-reduced-motion: reduce){
+  ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
+.nf-seal{view-transition-name:nf-seal}
+
+.nf-veil{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:0;
+  background:
+    radial-gradient(120% 90% at 50% 108%, rgba(217,150,74,.14), transparent 55%),
+    var(--nf-ink-2);
+  animation:nf-veil-in 420ms var(--nf-ease) both}
+@keyframes nf-veil-in{from{opacity:1}to{opacity:0}}
+.nf-veil.nf-veil-out{animation:none;opacity:1;transition:opacity 180ms cubic-bezier(.5,0,.9,.6)}
+
+/* ---- the seal ---- */
+.nf-seal{position:fixed;right:18px;z-index:9950;width:56px;height:56px;
+  /* clears the fixed deck rather than sitting on top of it */
+  bottom:calc(var(--deck-h,96px) + 18px + env(safe-area-inset-bottom,0px));
+  border-radius:50%;border:none;cursor:pointer;
+  font-family:var(--nf-display);font-weight:600;font-size:19px;letter-spacing:.02em;
+  color:#F2E6D2;text-shadow:0 -1px 1px rgba(0,0,0,.45),0 1px 1px rgba(255,255,255,.12);
+  background:radial-gradient(circle at 34% 28%,var(--nf-wax-bright),var(--nf-wax) 52%,var(--nf-wax-deep) 100%);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+    0 0 0 3px rgba(178,58,51,.28),0 6px 18px rgba(0,0,0,.55);
+  transition:transform 180ms var(--nf-ease),box-shadow 180ms var(--nf-ease)}
+@media(hover:hover) and (pointer:fine){
+  .nf-seal:hover{transform:translateY(-2px) rotate(-4deg);
+    box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.34),0 8px 22px rgba(0,0,0,.6),0 0 24px rgba(232,200,121,.28)}
+}
+.nf-seal:active{transform:scale(.92);transition-duration:90ms}
+.nf-seal:focus-visible{outline:2px solid var(--nf-brass);outline-offset:3px}
+.nf-seal[aria-expanded="true"]{transform:scale(.92);opacity:0;pointer-events:none;
+  transition-duration:140ms}
+/* The now-playing sheet is a full-screen surface. The seal outranks it on
+   z-index (9950 vs 70) and was floating on top of the shuffle button, so it
+   stands down while the sheet is up. */
+body.sheet-open .nf-seal{opacity:0;pointer-events:none;transform:scale(.92)}
+
+/* ---- scrim + leather catalogue panel ---- */
+.nf-scrim{position:fixed;inset:0;background:rgba(10,7,13,.58);backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);z-index:9960;opacity:0;pointer-events:none;
+  transition:opacity 140ms var(--nf-ease)}
+.nf-open .nf-scrim{opacity:1;pointer-events:auto;transition-duration:220ms}
+.nf-panel{position:fixed;top:0;right:0;bottom:0;width:min(408px,100vw);z-index:9970;
+  display:flex;flex-direction:column;
+  background:linear-gradient(164deg,#1E1726,#141019 55%,#0E0A14),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+  box-shadow:inset 1px 0 0 rgba(236,228,214,.05),-32px 0 64px rgba(0,0,0,.5);
+  transform:translateX(103%);visibility:hidden;
+  transition:transform 160ms cubic-bezier(.5,0,.9,.6),visibility 0s 160ms}
+.nf-panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28);
+  opacity:.85}
+.nf-panel::after{content:"";position:absolute;inset:9px;pointer-events:none;
+  border:1px dashed rgba(201,163,91,.13);border-radius:2px}
+.nf-open .nf-panel{transform:translateX(0);visibility:visible;
+  transition:transform 270ms var(--nf-ease),visibility 0s}
+@media(max-width:560px){
+  .nf-panel{width:100vw;transform:translateY(103%)}
+  .nf-panel::before{left:0;right:0;top:0;bottom:auto;width:auto;height:3px;
+    background:linear-gradient(90deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28)}
+  .nf-open .nf-panel{transform:translateY(0)}
+}
+.nf-panel-head{display:flex;align-items:flex-start;justify-content:space-between;
+  padding:26px 26px 18px;border-bottom:1px solid var(--nf-line)}
+.nf-eyebrow{font-family:var(--nf-ui);font-size:10px;font-weight:600;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--nf-brass);margin-bottom:8px}
+.nf-panel-title{font-family:var(--nf-display);font-size:27px;font-weight:500;
+  color:var(--nf-bone);line-height:1.1}
+.nf-close{background:none;border:1px solid rgba(201,163,91,.3);color:var(--nf-bone-dim);
+  width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;
+  flex-shrink:0;margin-left:12px;
+  transition:color 140ms,border-color 140ms,transform 140ms var(--nf-ease)}
+@media(hover:hover) and (pointer:fine){
+  .nf-close:hover{color:var(--nf-brass-bright);border-color:var(--nf-brass);transform:rotate(90deg)}
+}
+.nf-close:active{transform:scale(.92)}
+.nf-close:focus-visible{outline:2px solid var(--nf-brass);outline-offset:2px}
+.nf-toc{list-style:none;overflow-y:auto;flex:1;padding:10px 26px 18px;
+  overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.nf-row{border-bottom:1px solid rgba(201,163,91,.12)}
+.nf-row a{display:grid;grid-template-columns:12px 34px 1fr auto;grid-template-rows:auto auto;
+  align-items:baseline;column-gap:9px;padding:13px 2px;text-decoration:none;min-height:44px;
+  transition:transform 160ms var(--nf-ease),background 160ms var(--nf-ease)}
+@media(hover:hover) and (pointer:fine){
+  .nf-row a:hover{transform:translateX(4px)}
+  .nf-row a:hover .nf-dot{opacity:1;transform:scale(1.35)}
+  .nf-row a:hover .nf-num{color:var(--nf-brass);text-shadow:0 0 12px rgba(232,200,121,.5)}
+  .nf-row a:hover .nf-vol{color:var(--nf-brass-bright)}
+}
+.nf-dot{grid-row:1/3;align-self:center;width:5px;height:5px;border-radius:50%;
+  background:var(--va,#C9A35B);opacity:.55;box-shadow:0 0 7px var(--va,#C9A35B);
+  transition:opacity 160ms,transform 160ms var(--nf-ease)}
+.nf-row a:focus-visible{outline:2px solid var(--nf-brass);outline-offset:-2px;border-radius:4px}
+.nf-num{grid-row:1/3;font-family:var(--nf-ui);font-size:11px;color:var(--nf-muted);
+  font-variant-numeric:tabular-nums;transition:color 160ms,text-shadow 160ms}
+.nf-vol{font-family:var(--nf-display);font-size:16.5px;font-weight:500;color:var(--nf-bone);
+  transition:color 160ms}
+.nf-desc{grid-column:3/5;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
+  font-family:var(--nf-ui)}
+.nf-ext{grid-column:4;font-size:11px;color:var(--nf-muted)}
+.nf-row.nf-here .nf-vol{color:var(--nf-brass)}
+.nf-row.nf-here .nf-num{color:var(--nf-wax-bright)}
+.nf-here-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px;
+  background:radial-gradient(circle at 35% 30%,var(--nf-wax-bright),var(--nf-wax-deep));
+  box-shadow:0 0 8px rgba(220,90,77,.6);vertical-align:baseline}
+.nf-panel-foot{padding:14px 26px 20px;border-top:1px solid var(--nf-line);
+  font-family:var(--nf-display);font-style:italic;font-size:12.5px;color:var(--nf-muted)}
+.nf-open .nf-row{opacity:0;transform:translateY(9px);
+  animation:nf-rise 210ms var(--nf-ease) both;animation-delay:calc(var(--nf-i)*20ms + 60ms)}
+@keyframes nf-rise{to{opacity:1;transform:translateY(0)}}
+
+@media(prefers-reduced-motion:reduce){
+  .nf-veil{animation:none;opacity:0}
+  .nf-veil.nf-veil-out{transition:none}
+  .nf-seal,.nf-seal:hover,.nf-close:hover,.nf-row a,.nf-row a:hover{transition:none;transform:none}
+  .nf-panel,.nf-open .nf-panel{transition:transform 0s,visibility 0s}
+  .nf-scrim,.nf-open .nf-scrim{transition:none}
+  /* delay MUST go to zero as well, or every row waits out an animation it
+     never plays and stays invisible */
+  .nf-open .nf-row{animation:none;animation-delay:0ms;opacity:1;transform:none}
+}

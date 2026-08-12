@@ -246,8 +246,7 @@ These received the shared design system rather than individual rebuilds:
   shared element so it holds still while the page changes
 - **Per-page elevation layers** written against each page's own selectors —
   breathing seal die on The Press, cover entrances and pull-quote marks on The
-  Fractal, brass chapter rules on Sovereign, a Fraunces drop cap on All
-  Fracture, zine-style hard-shadow buttons on the Festie Codex
+  Fractal, brass chapter rules on Sovereign, a Fraunces drop cap on The Fracture, zine-style hard-shadow buttons on the Festie Codex
 
 **A real bug was found and fixed on the Reaction Map.** A variable was used
 before its declaration, which silently killed roughly 600 lines of setup — the

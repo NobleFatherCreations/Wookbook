@@ -19805,7 +19805,7 @@ The lights are on. You can see the wires now. That was the whole point.
 PROTECT THE F*CKING MAGIC
 
 
-# The Fracture Everywhere
+# The Fracture
 
 *(source/projects/noble-father-fracture.html, 87,815 words)*
 
@@ -19833,12 +19833,12 @@ If any factual error is identified, the creator commits to prompt review and cor
 ### Independent Production
 This series is independently produced, not affiliated with or endorsed by any political party, government agency, corporate entity, or advocacy group.
 The Investigation Continues · From The Fractal
-The Fractal mapped the where and the how. The Fracture Everywhere asks who.
+The Fractal mapped the where and the how. The Fracture asks who.
 The Fractal traced the architecture of manipulation — where value is quietly moved, and the mechanisms that move it. The patterns that repeat, at every scale, inside the rooms where decisions are made.
 This series turns to the question those mechanisms always leave open.
 Who.
 Who received the fifty trillion dollars. Who owns the architecture. Whose names sit on the other side of the transfer — not as an abstraction, but as a roster, in the public record.
-Where The Fractal showed you the shape of the machine, The Fracture Everywhere shows you the hands on it. The where and the how describe a system. The who is where accountability begins.
+Where The Fractal showed you the shape of the machine, The Fracture shows you the hands on it. The where and the how describe a system. The who is where accountability begins.
 ## How to read this
 This is the reading edition of the series — twelve episodes and one companion story, assembled into a single record you can move through at your own pace. The production cues are gone; what remains is the argument, on the page.
 Episode 1
@@ -22275,11 +22275,11 @@ And current things can be changed.
 About the Author
 ## Shae Stovell
 Shae Stovell is the founder of Noble Father Creations and the creator behind the persona “Dapper Dad.” The brand joins handcrafted resin art with NFC technology — bridging physical objects and digital experiences — alongside a growing body of educational and published work.
-Across that work runs a single throughline: making hidden structures visible. From spiritual and Hermetic frameworks to field guides on psychological manipulation, Shae builds tools that let people see the patterns operating on them — and name them plainly. The Fracture Everywhere extends that project to the largest pattern of all: the documented architecture of economic extraction, and what it asks of the people caught inside it.
+Across that work runs a single throughline: making hidden structures visible. From spiritual and Hermetic frameworks to field guides on psychological manipulation, Shae builds tools that let people see the patterns operating on them — and name them plainly. The Fracture extends that project to the largest pattern of all: the documented architecture of economic extraction, and what it asks of the people caught inside it.
 The work favors precision over comfort and unvarnished analysis over softened framing — on the belief that visible architecture can be examined, and examined architecture can be changed.
 Changelog
 ## Updates
-v2 · August 5, 2026. Renamed from “All Fracture” to “The Fracture Everywhere.” Verified all 195 citations against the original documentary’s source list — no discrepancies found. Corrected a claim on this page that mis-described which episodes have sourcing; Episodes 9 and 10 are now honestly marked as not yet sourced instead of the gap going unmentioned.
+v2 · August 5, 2026. Renamed from “The Fracture” to “The Fracture.” Verified all 195 citations against the original documentary’s source list — no discrepancies found. Corrected a claim on this page that mis-described which episodes have sourcing; Episodes 9 and 10 are now honestly marked as not yet sourced instead of the gap going unmentioned.
 The Public Record
 ## Sources & Citations
 These are the references underpinning the series — the citation lists carried by each episode of the original documentary, restored here in full. They are reproduced from the source script’s own verification record. Episodes One through Seven and Twelve each carry a full endnote list, appearing below by episode. Episode Eight and Episode Eleven name their sources inline within the text rather than in a separate list. Episode Nine and Episode Ten do not yet have sourcing attached to their claims — a known gap, not an oversight we’re hiding.
@@ -22490,7 +22490,7 @@ More Interactive Books
 ## Other field guides to the pattern
 Each of these is a self-contained interactive book in the same spirit — naming a specific manipulation architecture so it can be seen and countered.
 Visible architecture can be examined. Examined architecture can be challenged. Challenged architecture can be changed. But only if you see it.
-The Fracture Everywhere
+The Fracture
 
 
 # The Loop
@@ -23241,7 +23241,7 @@ These are small, and they matter mainly because they invert the signal. Every on
 
 Attention is converted into money. This chapter follows the conversion, because the design decisions everywhere else in this book stop being mysterious once the flow is visible.
 
-This is the chapter that makes The Fracture Everywhere a sibling of this book rather than a neighbour.
+This is the chapter that makes The Fracture a sibling of this book rather than a neighbour.
 
 The chain
 

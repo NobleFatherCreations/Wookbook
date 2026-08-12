@@ -1,0 +1,17 @@
+# Allow the page to READ its own audio, not just play it.
+#
+# The Listening Room is served from two addresses: this site's own
+# noblemusic.netlify.app, and noblefathercreations.com/music via the hub's proxy
+# rewrite. From the hub address the audio files are cross-origin, and a
+# cross-origin media element silently taints the Web Audio graph -- the
+# AnalyserNode then returns nothing but zeros, so the frequency display would be
+# dead. This header is what lets the page opt in to a real spectrum.
+#
+# The page never assumes this header is present: it probes for CORS first and only
+# sets crossorigin="anonymous" if the probe succeeds, and it drops crossorigin
+# again on any media error. If this file goes missing, the visualisation falls
+# back to its CSS bars and PLAYBACK IS UNAFFECTED.
+
+/audio/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=31536000, immutable

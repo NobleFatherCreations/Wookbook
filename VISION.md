@@ -37,7 +37,7 @@ Three concrete things I found that prove the gap:
    Loop alone. None are links. The book is already a web; the HTML doesn't
    know it.
 3. **12 references to sibling books are also plain text.** Loop mentions
-   The Weighing 8 times, The Fractal twice, All Fracture, Playground. THE
+   The Weighing 8 times, The Fractal twice, The Fracture, Playground. THE
    HOUSE tab is presented as navigation furniture when the *books
    themselves* are already citing each other.
 
@@ -152,7 +152,7 @@ parts. You arrive for one thing and discover a body of work.
   afternoon of work and it changes the reading experience categorically —
   the book becomes navigable by its own argument.
 - **Turn the 12 sibling-book mentions into cross-book links.** When Loop
-  says "the sibling of All Fracture," that should be a door. Right now THE
+  says "the sibling of The Fracture," that should be a door. Right now THE
   HOUSE is a nav tab you have to *decide* to open. It should instead be
   something you fall through, mid-sentence, because the argument took you
   there.

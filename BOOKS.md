@@ -159,7 +159,7 @@ already partially built.
 extend rather than redo. Aeon/WBW — unconfirmed, no chapter data extracted
 yet (checked directly: no MOVEMENTS/CH pattern found).
 
-## fracture — The Fracture Everywhere (renamed 2026-08-05, was "All Fracture") **[from review doc]**
+## fracture — The Fracture (was "All Fracture", then "The Fracture Everywhere"; shortened to "The Fracture" 2026-08-12) **[from review doc]**
 
 "The wealth transfer · 195 citations." Title in review doc: "All Fracture
 — The Reading Edition" (old title). Per review doc: has a "Fraunces drop cap"
@@ -209,11 +209,46 @@ not a linear book. **Not independently investigated this session.**
 searchable) than Aeon (this probably isn't meant to be read start-to-finish).
 Check its actual structure before planning further.
 
-## music — The Listening Room **[inferred from tagline only]**
+## music — The Listening Room **[confirmed: rebuilt from the audio itself, 2026-08-12]**
 
-"Sorted by what each song is for." Not a book at all — a media page. The
-3 references (all book-shaped) likely don't apply in their current form.
-Not investigated this session.
+"Sorted by what each song is for." Not a book — a media page, and the only
+project whose payload is not a single HTML file (176 mp3s alongside it). The
+3 book-shaped references mostly don't apply; the press.stripe.com "title/cover
+moment" does, and drove the record-sleeve treatment.
+
+**Content (measured, not inferred):** 176 tracks, 14h 50m, recovered from the
+user's Drive folder `14TecSqJSZOlYlT7bHPsKqBdHsGdUC0ea` ("MP3 music") plus its
+`dad` and `New` subfolders. 183 files seen; 7 pairs turned out to be the same
+Suno generation saved under two names (identified by the `id=` in the ID3
+comment) and were collapsed to one track each, the discarded name kept in
+`alsoKnownAs`. **Durations come from `ffprobe`, never estimated.** Titles are
+derived from filenames — 173 of 176 files have no ID3 title, only a
+"made with suno" comment carrying a real creation date and generation id.
+
+**Six shelves, by purpose not genre** (the one editorial layer — assigned from
+title keywords, since these files carry no genre metadata):
+The Reckoning (39) · The Descent (23) · The Frequency (38) ·
+The Dragon Cycle (10) · The Festival Floor (52) · The Tender Room (14).
+A seventh catch-all shelf, The Wider Catalogue, exists in the data model but is
+currently empty and does not render.
+
+**Design stance:** dark, brass single accent, Fraunces + Karla only (timecodes
+use `tabular-nums` rather than a third face). Per-track sleeve art is generated
+from the shelf's hue, so colour actually encodes which shelf a track is on. This
+book WANTS a player and real motion — it is the opposite case to Loop and faith,
+which refuse interactive flourish. Autoplay is forbidden here (a past autoplay
+hijack was a real bug on the hub).
+
+**Architecture note — the exception to "one self-contained file":** the audio
+cannot be inlined, so it is the only external request any project makes. Every
+audio URL is therefore ABSOLUTE (`https://noblemusic.netlify.app/audio/…`),
+because the page is served both at its own domain and at
+`noblefathercreations.com/music` through a proxy rewrite.
+
+**Generated, not hand-maintained:** `python3 scripts/build-music.py` reads
+`deploy/music/MANIFEST.json` and writes `deploy/music/index.html` and
+`source/projects/noble-father-music.html` as identical bytes. Do not hand-edit
+either output.
 
 ---
 
