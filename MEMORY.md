@@ -2506,3 +2506,88 @@ Casting, so both appeared in **0 of 14** book catalogues.
 unification + generator; deploying the rename to the 6 other book sites;
 Portals day/night and Festie-Bible-white-background both measured as NOT
 reproducible — asked user for detail rather than "fixing" working code.
+
+## 2026-08-12, later — playbook/music preserved, nav generator built (8/15 pages)
+
+Picked up the audit's "Still open" list. No new user request this round —
+continued the documented next steps, nothing deployed (standing instruction:
+hold all deploys until everything is verified).
+
+**Playbook and music now have local source** (`source/projects/
+noble-father-{playbook,music}.html`, fetched live, `sites.json`
+`localSource` wired for both) — previously neither had any copy in the repo,
+which is exactly the mechanism that already lost music's `TRACKS`/`SHELVES`
+data once. That loss reconfirmed in this snapshot: both consts are
+referenced but still never declared. Recovery still needs the user or an
+older Netlify deploy — not fixable by editing this file.
+
+**Checked two items from the audit's "not reproducible"/"other findings"
+list, both turned out to be false alarms, not fixed because nothing was
+broken:**
+- `children`'s `background-color` reads `rgba(0,0,0,0)` via
+  `getComputedStyle`, but that's because the body only ever set
+  `background-image` (the sky gradient) through the `background:` shorthand
+  — the gradient fully covers the viewport regardless. Confirmed by
+  screenshot; not a visible bug.
+- Diffed `source/projects/noble-father-playground.html` (children) against
+  the live page byte-for-byte: identical except the already-known pending
+  "Fracture Everywhere"→"Fracture" rename in the nav — i.e. local source is
+  trustworthy here, not stale.
+
+**Built `design/build-house-nav.py`** — generates THE HOUSE catalogue-panel
+HTML from a curated entry list, asserting every title against `sites.json`'s
+own title for that slug at generation time (so a future title change in
+`sites.json` and a stale hand-copy immediately disagree loudly instead of
+silently drifting, which is exactly how "The Sacred Divide" ended up
+plastered across 8 pages for a book that was never actually deployed under
+that name). Confirmed the underlying `.nf-*` CSS and `#nf-chrome-js` JS are
+already byte-identical, page-agnostic, and fully generic (work off
+`data-nf-page`/`data-nf-reveal` attributes, no page-specific values baked
+in) across every page checked — only the HTML entry list itself was ever
+hand-pasted-and-drifted, so the generator only needs to own that part; CSS/JS
+untouched.
+
+**Applied to the 8 pages that already carry the `nf-seal` chrome** (root,
+sovereign, playground, fractal, fracture, festival [=wook/Festie Codex, not
+to be confused with Festie Bible], portals, seals). Two real content bugs
+fixed as a byproduct of generating from source-of-truth data instead of
+recopying old text:
+- **faith's nav entry said "The Sacred Divide"** — the undeployed redesign's
+  title — on every one of those 8 pages. The book actually live at that URL
+  is titled "The Coercive Control Codex" (confirmed against the live page's
+  own `<title>` tag, not assumed). `sites.json` already had this right; only
+  the hand-pasted nav text was wrong. Fixed.
+- **"The Music" was a generic placeholder** — `sites.json`'s real title is
+  "The Listening Room." Fixed.
+- Added the two volumes that existed in **zero** book catalogue panels
+  before this: The Festie Bible, The Casting.
+- `reaction-map` and `catalogue.html` (the hub itself) were deliberately
+  left out of this pass — neither is a normal "House volume" entry
+  (reaction-map isn't in the volume list at all; catalogue's own
+  `data-nf-page="home"` is a different, hub-only case) — don't fold them
+  into the generic slug list without checking what they actually need first.
+
+**Verified, not just asserted**: Playwright across all 8 files — row count
+15 on every page, correct book highlighted as "here" on each one specifically
+(not just "a highlight exists somewhere"), both new volumes present, zero
+leftover "Sacred Divide"/"Fracture Everywhere" text, zero console errors,
+zero horizontal overflow at both 1440px and 375px, re-checked under
+`reducedMotion:'reduce'`. Screenshot read back (root.html) — renders
+correctly, matches the site's existing look. `check-leak.sh` clean on all 8.
+Committed and pushed; **nothing deployed live** — this is the standing rule
+right now, not an oversight.
+
+**Not done this round, tracked as its own follow-up:** the older `nh-*` red
+side-tab pages (loop, scale, playbook, music) and the pages with no House
+nav at all (faith, festival's actual `/festival` site = Festie Bible, resin
+= Casting) still need the *full* CSS+HTML+JS block inserted, not just a list
+swap like the 8 pages above — different, bigger operation, deliberately not
+rushed into the same pass. `design/build-house-nav.py`'s `render_block()`
+already supports emitting the full standalone block; only the "insert into a
+page with none" wiring is unbuilt.
+
+One minor unrelated inconsistency noticed, not touched: `sites.json`'s
+craftBusiness entry for Portals is titled "The Shop" while the nav (both
+before and after this change) correctly calls it "The Portals" — the nav is
+right, `sites.json`'s craftBusiness title field is the stale one here, opposite
+of the faith case. Low priority, noting so it isn't rediscovered as new.
