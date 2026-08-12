@@ -15,3 +15,4 @@ node_modules/
 # the Casting's source photos. They are fully reproducible from the Drive ids in
 # deploy/music/MANIFEST.json, which IS committed — see deploy/music/README.md.
 deploy/music/audio/
+deploy-*.zip
