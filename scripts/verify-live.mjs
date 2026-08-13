@@ -358,7 +358,19 @@ const PROBE = {
     const confirmed = [];
     for (const rec of out) {
       rec.el.scrollIntoView({ block: 'center' });
-      await new Promise((r) => setTimeout(r, 900));
+      /* Wait for the element's own transition to FINISH rather than
+         guessing a duration. A fixed pause races the slower fades -- these
+         run past a second -- and a fade caught at 0.06 is reported as a
+         fade that never fired, which is a lie that costs someone an hour. */
+      await new Promise((r) => setTimeout(r, 120));
+      try {
+        const anims = rec.el.getAnimations ? rec.el.getAnimations() : [];
+        await Promise.race([
+          Promise.allSettled(anims.map((a) => a.finished)),
+          new Promise((r) => setTimeout(r, 2500)),
+        ]);
+      } catch { /* older engines: fall through to the pause below */ }
+      await new Promise((r) => setTimeout(r, 400));
       const cs2 = getComputedStyle(rec.el);
       if (cs2.visibility === 'hidden' || parseFloat(cs2.opacity) === 0) {
         const { el, ...rest } = rec;
