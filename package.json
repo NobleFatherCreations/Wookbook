@@ -5,6 +5,8 @@
   "scripts": {
     "verify": "node scripts/verify-live.mjs",
     "deployed": "node scripts/verify-deployed.mjs",
-    "check": "node scripts/verify-deployed.mjs && node scripts/verify-live.mjs"
+    "assets": "node scripts/verify-assets.mjs",
+    "snapshot": "node scripts/snapshot.mjs",
+    "check": "node scripts/verify-deployed.mjs && node scripts/verify-assets.mjs && node scripts/verify-live.mjs"
   }
 }

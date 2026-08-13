@@ -108,27 +108,71 @@ separate manual act that leaves no receipt, so "fixed" and "shipped" drift
 apart quietly and a reader finds out first.
 
 ```sh
-node scripts/verify-deployed.mjs          # every project
-node scripts/verify-deployed.mjs music    # one, by slug
+npm run deployed     # is live the thing we wrote?      (verify-deployed.mjs)
+npm run assets       # is all the content actually there? (verify-assets.mjs)
+npm run verify       # does every page work?             (verify-live.mjs)
+npm run check        # all three, in that order
 ```
 
-It fetches what is actually being served and compares it byte-for-byte to
-the `localSource` recorded in `sites.json`. Rules:
+Three different questions, and a page can pass any two while failing the
+third. The Listening Room once served a page that loaded perfectly while
+107 of its 176 tracks 404'd — `verify-live` was happy, because the page
+worked; it was the *inventory* that was gutted.
+
+`verify-deployed` fetches what is being served and compares it byte-for-byte
+against what `sites.json` says that project is. Rules:
 
 1. **Never say a fix is done because it is committed.** It is done when
    `verify-deployed` says that project is in sync. "Committed", "pushed"
-   and "live" are three different states and only the third one counts.
-2. **Run it at the start of a session too**, not just after deploying —
-   that is what catches drift the other way, where live is ahead of the
-   repo and a routine deploy would silently regress production.
-3. **Drift is never resolved by editing the file until it matches.**
-   Work out which side is correct first: ship the repo, or restore what is
-   live into the repo. Guessing turns one wrong page into two.
-4. `verify-live.mjs` asks "does the live page work?". This asks "is the
-   live page the one we wrote?". Both, before calling a round finished.
+   and "live" are three states and only the third one reaches a reader.
+2. **Run it at the start of a session too.** That is what catches drift the
+   other way — live ahead of the repo, where a routine deploy would silently
+   regress production. This has happened: a container reset rolled this
+   checkout back behind live twice in one session.
+3. **Drift is never resolved by editing until it matches.** Decide which
+   side is right first. Guessing turns one wrong page into two.
+4. **Push early.** Every container reset here has spared what was pushed and
+   eaten what was not.
 
-New project? Give it a `localSource` in `sites.json` in the same breath, or
-it is invisible to this check and gets to rot the old way.
+Every project declares one of three things, and they are not
+interchangeable:
+
+| in `sites.json` | meaning | a difference means |
+| --- | --- | --- |
+| `localSource` | the file we edit and deploy | the repo is not shipped — deploy it |
+| `externalSource` | source lives in another repo (The Casting) | same, but ship from that repo |
+| `liveSnapshot` | no source exists; a capture in `deploy/snapshots/` | the site changed and nobody knows why — investigate, then `npm run snapshot -- <slug>` |
+
+New site? Register it with one of those three in the same breath, or it is
+invisible to the check and gets to rot the old way. To find sites nobody
+registered at all, ask the host rather than the registry:
+
+```sh
+curl -s -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+  "https://api.netlify.com/api/v1/sites?per_page=100" | \
+  python3 -c "import json,sys;[print(s['name']) for s in json.load(sys.stdin)]"
+```
+
+That is how two live, untracked sites (`noblereactionmap`, `shaeroselotus`)
+were found on 2026-08-13.
+
+## Deploying big sites
+
+The Netlify MCP `deploy-site` tool zips the whole directory and fails above
+roughly 450MB — measured, not guessed: 350MB and 425MB succeeded, 484MB,
+519MB and 606MB failed identically. Music (1.26GB) and The Casting (519MB)
+are both past it, and a failed attempt atomically replaces nothing, so
+partial batches silently *delete* the tracks they did not include.
+
+Use `netlify-cli` for those two. It hashes files and uploads only what
+changed — The Casting went from six failed attempts to 431 files in 52s:
+
+```sh
+netlify deploy --prod --dir=<publish dir> --site=<siteId>
+```
+
+The CLI does not survive container resets here; reinstall with
+`npm i -g netlify-cli`, or hit the REST API with curl, which always works.
 
 ## Patch notes & versioning (every deploy-worthy round)
 

@@ -82,17 +82,15 @@ function compare(localText, liveText) {
 const sites = JSON.parse(await readFile(path.join(ROOT, 'sites.json'), 'utf8'));
 
 /* One flat list out of the three places a deployable can be described. */
+const pick = (o, slug) => ({
+  slug, title: o.title, url: o.url, note: o.deployNote,
+  localSource: o.localSource, liveSnapshot: o.liveSnapshot,
+  externalSource: o.externalSource,
+});
 const targets = [
-  { slug: 'hub', title: sites.hub.title, url: sites.hub.url,
-    localSource: sites.hub.localSource, note: sites.hub.deployNote },
-  ...sites.projects.map((p) => ({
-    slug: p.slug, title: p.title, url: p.url,
-    localSource: p.localSource, note: p.deployNote,
-  })),
-  ...(sites.craftBusiness || []).map((c) => ({
-    slug: c.netlifySite, title: c.title, url: c.url,
-    localSource: c.localSource, note: c.deployNote,
-  })),
+  pick(sites.hub, 'hub'),
+  ...sites.projects.map((p) => pick(p, p.slug)),
+  ...(sites.craftBusiness || []).map((c) => pick(c, c.netlifySite)),
 ].filter((t) => (ONLY.length ? ONLY.includes(t.slug) : true));
 
 console.log(`\n${C.b}Noble Father Creations — is the repo what is live?${C.r}`);
@@ -103,15 +101,29 @@ const drifted = [], unreachable = [], unchecked = [], synced = [];
 for (const t of targets) {
   const label = (t.slug || '?').padEnd(14);
 
-  if (!t.localSource) {
-    unchecked.push({ ...t, why: 'no localSource recorded in sites.json' });
-    if (!QUIET) console.log(`  ${C.y}?${C.r}  ${label} ${C.d}no local source recorded — nothing to compare${C.r}`);
+  /* Three ways a project can say what it ought to be, and they mean
+     different things when they disagree with live. A localSource that
+     differs means the repo is not shipped. A snapshot that differs means
+     the site changed underneath us and nobody knows why, because there is
+     no source anyone could have edited. Never conflate the two. */
+  let abs = null, kind = null, shown = null;
+  if (t.localSource) {
+    abs = path.join(ROOT, t.localSource); kind = 'source'; shown = t.localSource;
+  } else if (t.externalSource) {
+    abs = path.join(t.externalSource.workdir, t.externalSource.file);
+    kind = 'external'; shown = `${t.externalSource.repo}:${t.externalSource.file}`;
+  } else if (t.liveSnapshot) {
+    abs = path.join(ROOT, t.liveSnapshot); kind = 'snapshot'; shown = t.liveSnapshot;
+  }
+  if (!abs) {
+    unchecked.push({ ...t, why: 'declares no localSource, externalSource or liveSnapshot' });
+    console.log(`  ${C.y}?${C.r}  ${label} ${C.y}UNPROTECTED${C.r} ${C.d}— nothing recorded to compare against${C.r}`);
     continue;
   }
-  const abs = path.join(ROOT, t.localSource);
   if (!existsSync(abs)) {
-    unchecked.push({ ...t, why: `localSource missing on disk: ${t.localSource}` });
-    if (!QUIET) console.log(`  ${C.y}?${C.r}  ${label} ${C.d}${t.localSource} is not in this repo${C.r}`);
+    unchecked.push({ ...t, why: `${kind} missing on disk: ${shown}` });
+    console.log(`  ${C.y}?${C.r}  ${label} ${C.d}${shown} not on disk${
+      kind === 'external' ? ' — clone the repo to check this one' : ''}${C.r}`);
     continue;
   }
 
@@ -120,14 +132,16 @@ for (const t of targets) {
 
   if (r.state === 'sync') {
     synced.push(t);
-    if (!QUIET) console.log(`  ${C.g}✓${C.r}  ${label} ${C.d}live matches ${t.localSource}${C.r}`);
+    const how = kind === 'snapshot' ? 'unchanged since its capture' : `live matches ${shown}`;
+    if (!QUIET) console.log(`  ${C.g}✓${C.r}  ${label} ${C.d}${how}${C.r}`);
   } else if (r.state === 'unreachable') {
     unreachable.push(t);
     console.log(`  ${C.y}!${C.r}  ${label} ${C.y}could not fetch ${t.url}${C.r}`);
   } else {
-    drifted.push({ ...t, ...r });
-    const dir = r.delta > 0 ? `repo has ${r.delta} bytes MORE` : `live has ${-r.delta} bytes more`;
-    console.log(`  ${C.red}✗${C.r}  ${label} ${C.red}DRIFTED${C.r} — ${dir}`);
+    drifted.push({ ...t, ...r, kind });
+    const dir = r.delta > 0 ? `our copy has ${r.delta} bytes MORE` : `live has ${-r.delta} bytes more`;
+    console.log(`  ${C.red}✗${C.r}  ${label} ${C.red}${
+      kind === 'snapshot' ? 'CHANGED SINCE CAPTURE' : 'DRIFTED'}${C.r} — ${dir}`);
     console.log(`     ${C.d}first difference around line ${r.atLine}${C.r}`);
     console.log(`     ${C.d}repo: ${r.localAt || '(end of file)'}${C.r}`);
     console.log(`     ${C.d}live: ${r.liveAt || '(end of file)'}${C.r}`);
@@ -142,9 +156,20 @@ console.log(`  unreachable: ${unreachable.length}`);
 console.log(`  unchecked  : ${unchecked.length}`);
 
 if (drifted.length) {
-  console.log(`\n${C.red}${C.b}These are fixed here and NOT fixed for a reader:${C.r}`);
-  for (const d of drifted) console.log(`  · ${d.slug} — ${d.url}`);
-  console.log(`\n${C.d}  A commit is not a deploy. Ship these, then run this again.${C.r}\n`);
+  const src = drifted.filter((d) => d.kind !== 'snapshot');
+  const snap = drifted.filter((d) => d.kind === 'snapshot');
+  if (src.length) {
+    console.log(`\n${C.red}${C.b}Fixed here and NOT fixed for a reader — ship these:${C.r}`);
+    for (const d of src) console.log(`  · ${d.slug} — ${d.url}`);
+    console.log(`${C.d}  A commit is not a deploy.${C.r}`);
+  }
+  if (snap.length) {
+    console.log(`\n${C.y}${C.b}Changed since capture, with no source anyone could have edited:${C.r}`);
+    for (const d of snap) console.log(`  · ${d.slug} — ${d.url}`);
+    console.log(`${C.d}  Find out why before touching it, then re-baseline on purpose:${C.r}`);
+    console.log(`${C.d}    node scripts/snapshot.mjs ${snap[0].slug}${C.r}`);
+  }
+  console.log('');
   process.exit(1);
 }
 if (unreachable.length) {
