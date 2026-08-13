@@ -433,7 +433,7 @@
       "hasGitRepo": false,
       "localSource": "source/projects/noble-father-music.html",
       "localSourceNote": "GENERATED - do not hand-edit. Rebuild with `python3 scripts/build-music.py`, which writes this file and deploy/music/index.html as identical bytes from deploy/music/MANIFEST.json. The 176 mp3s live in deploy/music/audio/ (gitignored, reproducible from the Drive ids in the manifest). See deploy/music/README.md.",
-      "localSourceVerified": "built and verified locally 2026-08-12; deployed and verified live 2026-08-13 (page and catalogue confirmed rendering at /music)",
+      "localSourceVerified": "built and verified locally 2026-08-12; deployed and verified live 2026-08-13 — page renders and all 176 audio files return 200",
       "deployPending": true,
       "deployNote": "v2 is built and verified in the repo but has never been deployed. The audio directory (~1.26 GB) has to go up with it. Needs explicit user go-ahead as a production write.",
       "houseTabLeak": {
@@ -445,7 +445,7 @@
         {
           "date": "2026-08-13",
           "version": "v3",
-          "summary": "The Listening Room is properly open. The rebuilt page — all 176 tracks, six shelves, search and the new player — is now the one actually being served; before this it was still showing the old empty shell that could not load its own track list. Most of the room plays now; the rest of the audio is still being moved back into place."
+          "summary": "The Listening Room is properly open. Every track is here and playing — all 176 of them, on six shelves, with search and the new player. Before this the page was still serving an old empty shell that could not load its own track list."
         },
         {
           "date": "2026-08-12",
@@ -563,8 +563,13 @@
       "url": "https://incandescent-kataifi-cde77d.netlify.app/",
       "netlifySite": "incandescent-kataifi-cde77d",
       "note": "Eco-resin statues, hollow candle pillars, and glow-in-the-dark resin pieces -- 293 pieces. Real source now lives in its own repo: github.com/NobleFatherCreations/Castings (pushed 2026-08-11, full static-site-generator project -- Node/sharp ingest+build pipeline, 445MB/1502 files including all product photos). This is now the source of truth for this project going forward -- clone it, edit, `npm run pages`, redeploy via the same Netlify MCP deploy-site pattern used for the hub. Netlify site fbd96c13-059a-491b-a270-95e02a308a92.",
-      "version": "v5",
+      "version": "v6",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v6",
+          "summary": "Every page now leads back to the rest of Noble Father Creations — the name at the top of the screen is a link home. The individual piece pages had no way out at all before, which mattered most for anyone arriving on one from a search or a shared link. Piece photographs now come down sized to the screen showing them, so opening a piece on a phone pulls a fraction of what it used to without looking any different."
+        },
         {
           "date": "2026-08-12",
           "version": "v5",
@@ -587,7 +592,8 @@
         }
       ],
       "gitRepo": "NobleFatherCreations/Castings",
-      "localSource": null
+      "localSource": null,
+      "deployNote": "Deploys via netlify-cli (`netlify deploy --prod --dir=.` from a publish dir holding assets/, statues/, data/, index.html, sitemap.xml, robots.txt, netlify.toml). The Netlify MCP deploy-site tool CANNOT deploy this site: it uploads one full zip and fails above ~450MB, and this payload is ~519MB. netlify-cli hashes files and uploads only what changed."
     }
   ],
   "otherLiveSites": [
