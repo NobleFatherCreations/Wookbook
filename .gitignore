@@ -18,3 +18,8 @@ deploy/music/audio/
 
 # Netlify MCP temporary deploy zip files
 deploy-*.zip
+
+# netlify-cli writes a resolved copy of the site config next to whatever
+# directory it deploys from. It is a local cache -- it even bakes in this
+# machine's absolute publish path -- not part of any site.
+.netlify/
