@@ -91,7 +91,9 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "liveSnapshot": "deploy/snapshots/noblepatterns.html",
+      "localSourceNote": "No source has ever existed for this page. The file in deploy/snapshots is a byte capture of live so the page is at least recoverable and monitorable -- it is NOT an editable source."
     },
     {
       "codename": "root",
@@ -510,6 +512,46 @@
           "summary": "First build. All 12 guides (G.R.O.V.E./B.A.S.S./R.A.V.E./P.R.I.D.E./C.R.E.A.T.E./S.O.U.N.D./M.A.R.K.E.T./H.O.L.D./C.A.R.E./L.E.A.D./E.V.E.N.T./S.A.F.E.), 149 scenario pages, extracted and rebuilt with a real logo (the source PDF's brand mark rendered at ~10% opacity -- fixed), reading-progress bar, in-guide contents drawer, and a persistent crisis-resource strip."
         }
       ]
+    },
+    {
+      "codename": null,
+      "slug": "reaction-map",
+      "title": "The Reaction Map",
+      "tagline": "A field guide to conscious consumption",
+      "url": "https://noblereactionmap.netlify.app/",
+      "netlifySite": "noblereactionmap",
+      "deploySource": "cli",
+      "hasGitRepo": false,
+      "liveSnapshot": "deploy/snapshots/noblereactionmap.html",
+      "localSourceNote": "UNRESOLVED: source/projects/noble-father-reaction-map.html is 2.9MB while live is 187KB -- a different lineage, not a newer copy. Nobody has established which is meant to be live. Do not overwrite either side.",
+      "version": "v1",
+      "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v1",
+          "summary": "Added to the registry. It was live and completely untracked before this -- nothing watched it and its page existed nowhere but the host."
+        }
+      ]
+    },
+    {
+      "codename": null,
+      "slug": "roselotus",
+      "title": "The Rose Lotus · Source Map",
+      "tagline": "Shae Stephen Robert Stovell",
+      "url": "https://shaeroselotus.netlify.app/",
+      "netlifySite": "shaeroselotus",
+      "deploySource": "cli",
+      "hasGitRepo": false,
+      "liveSnapshot": "deploy/snapshots/shaeroselotus.html",
+      "localSourceNote": "No source in any repo. Capture only.",
+      "version": "v1",
+      "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v1",
+          "summary": "Added to the registry, captured, and now monitored. It was live and completely untracked before this."
+        }
+      ]
     }
   ],
   "craftBusiness": [
@@ -551,16 +593,18 @@
       ]
     },
     {
-      "title": null,
-      "tagline": null,
+      "title": "The Whole Picture",
+      "tagline": "What this library is trying to do",
       "url": "https://noble-nfc-tour.netlify.app/",
-      "netlifySite": "noble-nfc-tour"
+      "netlifySite": "noble-nfc-tour",
+      "liveSnapshot": "deploy/snapshots/noble-nfc-tour.html"
     },
     {
-      "title": null,
-      "tagline": null,
+      "title": "NFC HQ",
+      "tagline": "The master guide, on one page",
       "url": "https://nfchq.netlify.app/",
-      "netlifySite": "nfchq"
+      "netlifySite": "nfchq",
+      "liveSnapshot": "deploy/snapshots/nfchq.html"
     },
     {
       "title": "The Casting",
@@ -598,7 +642,12 @@
       ],
       "gitRepo": "NobleFatherCreations/Castings",
       "localSource": null,
-      "deployNote": "Deploys via netlify-cli (`netlify deploy --prod --dir=.` from a publish dir holding assets/, statues/, data/, index.html, sitemap.xml, robots.txt, netlify.toml). The Netlify MCP deploy-site tool CANNOT deploy this site: it uploads one full zip and fails above ~450MB, and this payload is ~519MB. netlify-cli hashes files and uploads only what changed."
+      "deployNote": "Deploys via netlify-cli (`netlify deploy --prod --dir=.` from a publish dir holding assets/, statues/, data/, index.html, sitemap.xml, robots.txt, netlify.toml). The Netlify MCP deploy-site tool CANNOT deploy this site: it uploads one full zip and fails above ~450MB, and this payload is ~519MB. netlify-cli hashes files and uploads only what changed.",
+      "externalSource": {
+        "repo": "github.com/NobleFatherCreations/castings",
+        "workdir": "/workspace/castings",
+        "file": "index.html"
+      }
     }
   ],
   "otherLiveSites": [
