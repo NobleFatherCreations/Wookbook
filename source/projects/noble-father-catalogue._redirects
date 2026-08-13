@@ -67,7 +67,7 @@
 # link on every page and fails on any 404, which is the guard against this.
 /assets/*      https://incandescent-kataifi-cde77d.netlify.app/assets/:splat 200
 /data/*        https://incandescent-kataifi-cde77d.netlify.app/data/:splat   200
-/statues       https://incandescent-kataifi-cde77d.netlify.app/statues       200
+/statues       https://incandescent-kataifi-cde77d.netlify.app/statues/      200
 /statues/*     https://incandescent-kataifi-cde77d.netlify.app/statues/:splat 200
 
 # Singular/alternate spellings people are likely to type or to have been
