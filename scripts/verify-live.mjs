@@ -311,7 +311,7 @@ const PROBE = {
      declared closed. Closed drawers/lightboxes announce themselves with
      [hidden] / aria-hidden / inert / pointer-events:none — an element that
      is invisible without any of those is a fade that never fired. */
-  invisible: () => {
+  invisible: async () => {
     const out = [];
     const closed = (el) => el.closest('[hidden],[aria-hidden="true"],[inert],dialog:not([open]),template');
     for (const el of document.querySelectorAll('body *')) {
@@ -329,18 +329,67 @@ const PROBE = {
       let sel = tag.toLowerCase();
       if (el.id) sel += '#' + el.id;
       if (el.classList.length) sel += '.' + [...el.classList].slice(0, 3).join('.');
-      out.push({ sel, w: Math.round(r.width), h: Math.round(r.height),
+      out.push({ el, sel, w: Math.round(r.width), h: Math.round(r.height),
                  opacity: cs.opacity, visibility: cs.visibility,
                  delay: cs.animationDelay, anim: cs.animationName });
       if (out.length >= 12) break;
     }
-    return out;
+
+    /* A single top-to-bottom pass moves faster than a ~1s fade, so plenty of
+       elements are caught mid-transition or not yet reached. The real question
+       is whether a reader who arrives at this element ever sees it: bring each
+       one to the middle of the screen, give the transition room, and only keep
+       the ones that are still not there. */
+    const confirmed = [];
+    for (const rec of out) {
+      rec.el.scrollIntoView({ block: 'center' });
+      await new Promise((r) => setTimeout(r, 900));
+      const cs2 = getComputedStyle(rec.el);
+      if (cs2.visibility === 'hidden' || parseFloat(cs2.opacity) === 0) {
+        const { el, ...rest } = rec;
+        confirmed.push({ ...rest, opacity: cs2.opacity, visibility: cs2.visibility });
+      }
+    }
+    return confirmed;
   },
 };
+
+/* Some pages hold the reader at a gate -- the hub locks scrolling until a
+   door is chosen -- and a locked page cannot be scrolled by script either.
+   Left alone that makes every fade below the gate look like it never fired,
+   which is 19 false failures and enough noise to hide a real one. So: if the
+   document is taller than the window but will not move, open the gate the
+   way a reader would, then carry on. */
+async function ungate(page) {
+  const locked = await page.evaluate(() => {
+    if (document.documentElement.scrollHeight <= window.innerHeight + 4) return false;
+    window.scrollTo(0, 200);
+    const stuck = window.scrollY === 0;
+    window.scrollTo(0, 0);
+    return stuck;
+  }).catch(() => false);
+  if (!locked) return;
+
+  for (const sel of ['.st-portal', '[class*="portal"] a', '[class*="portal"] button',
+                     '[class*="gate"] a', '[class*="gate"] button', '[class*="door"]']) {
+    const el = await page.$(sel).catch(() => null);
+    if (!el) continue;
+    await el.click({ timeout: 2000 }).catch(() => {});
+    await page.waitForTimeout(900);
+    const freed = await page.evaluate(() => {
+      window.scrollTo(0, 200);
+      const ok = window.scrollY > 0;
+      window.scrollTo(0, 0);
+      return ok;
+    }).catch(() => false);
+    if (freed) return;
+  }
+}
 
 /* Push the page through its IntersectionObserver fades before judging what
    is invisible, then come back to the top. */
 async function settle(page) {
+  await ungate(page);
   await page.evaluate(async () => {
     const step = Math.max(320, window.innerHeight * 0.9);
     const end = document.documentElement.scrollHeight;
