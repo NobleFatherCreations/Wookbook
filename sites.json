@@ -520,8 +520,13 @@
       "netlifySite": "nfcportals",
       "localSource": "source/projects/noble-father-portals.html",
       "localSourceVerified": "byte-exact match to live content, 2026-08-02",
-      "version": "v1",
+      "version": "v2",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v2",
+          "summary": "The piece now changes with a tap instead of a drag. The old slider showed daylight and glow either side of a moving line, which only looks right if the two photographs line up exactly — they do not, so the line drew attention to the seam instead of the piece. Tapping shows one whole picture at a time."
+        },
         {
           "date": "2026-08-13",
           "version": "v1",

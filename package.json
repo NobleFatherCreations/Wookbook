@@ -1,0 +1,10 @@
+{
+  "name": "noble-father-creations",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "node scripts/verify-live.mjs",
+    "deployed": "node scripts/verify-deployed.mjs",
+    "check": "node scripts/verify-deployed.mjs && node scripts/verify-live.mjs"
+  }
+}

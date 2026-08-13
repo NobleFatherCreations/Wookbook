@@ -92,6 +92,44 @@ people you serve," not self-promotion.
   still needs a big pass stays on its last deployed version; don't ship it
   just because the branch moved.
 
+## A commit is not a deploy (non-negotiable)
+
+Nearly every bad round on this project has had one shape: **the repo was
+right, production was wrong, and nothing said so.** The music page was
+rebuilt and sat undeployed while the live one threw on load. The Portals
+torch fix was written, committed, and never shipped. The `/statues` rule
+existed here while ten links 404'd out there. The Fracture rename was done
+in source and stale on eleven live sites. On 2026-08-13 the reverse also
+happened — a container reset silently rolled the repo back behind live, so
+the next deploy would have *undone* five shipped fixes.
+
+None were hard problems. They were the same invisible one: deploying is a
+separate manual act that leaves no receipt, so "fixed" and "shipped" drift
+apart quietly and a reader finds out first.
+
+```sh
+node scripts/verify-deployed.mjs          # every project
+node scripts/verify-deployed.mjs music    # one, by slug
+```
+
+It fetches what is actually being served and compares it byte-for-byte to
+the `localSource` recorded in `sites.json`. Rules:
+
+1. **Never say a fix is done because it is committed.** It is done when
+   `verify-deployed` says that project is in sync. "Committed", "pushed"
+   and "live" are three different states and only the third one counts.
+2. **Run it at the start of a session too**, not just after deploying —
+   that is what catches drift the other way, where live is ahead of the
+   repo and a routine deploy would silently regress production.
+3. **Drift is never resolved by editing the file until it matches.**
+   Work out which side is correct first: ship the repo, or restore what is
+   live into the repo. Guessing turns one wrong page into two.
+4. `verify-live.mjs` asks "does the live page work?". This asks "is the
+   live page the one we wrote?". Both, before calling a round finished.
+
+New project? Give it a `localSource` in `sites.json` in the same breath, or
+it is invisible to this check and gets to rot the old way.
+
 ## Patch notes & versioning (every deploy-worthy round)
 
 Every site gets a simple version number (`v1`, `v2`, `v3`…, incrementing
