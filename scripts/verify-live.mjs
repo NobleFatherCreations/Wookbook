@@ -326,6 +326,21 @@ const PROBE = {
       if (cs.pointerEvents === 'none') continue;      // decorative / closed overlay
       if (closed(el)) continue;
       if (el.textContent.trim() === '' && tag !== 'IMG' && tag !== 'PICTURE') continue;
+
+      /* Elements that are SUPPOSED to be invisible until you do something.
+         Each was checked against its own CSS before being listed, and the
+         rule that reveals it is named so the claim can be re-checked rather
+         than taken on trust. Keep this list tiny and specific: a gate that
+         always reports failure is a gate everyone learns to ignore, which
+         is the exact habit this whole file exists to break.
+
+           .pv-tag      Portals. `.pv-tag{opacity:0}` with
+                        `.pv-thumb:hover .pv-tag{opacity:1}` — a caption
+                        that only exists while you hover its thumbnail.
+           .brandmark   Fracture. Revealed by `.rail.scrolled .brandmark`
+                        — the sticky header's wordmark fades in once you
+                        have scrolled past the title. */
+      if (el.classList.contains('pv-tag') || el.classList.contains('brandmark')) continue;
       let sel = tag.toLowerCase();
       if (el.id) sel += '#' + el.id;
       if (el.classList.length) sel += '.' + [...el.classList].slice(0, 3).join('.');
