@@ -92,8 +92,8 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "liveSnapshot": "deploy/snapshots/noblepatterns.html",
-      "localSourceNote": "No source has ever existed for this page. The file in deploy/snapshots is a byte capture of live so the page is at least recoverable and monitorable -- it is NOT an editable source."
+      "localSourceNote": "Promoted from a passive drift-detection snapshot to a real editable source on 2026-08-14, when Cloudflare Web Analytics was added -- that was the first edit this page ever had, so today's live bytes plus the snippet became the new source of truth.",
+      "localSource": "source/projects/noble-father-decoder.html"
     },
     {
       "codename": "root",

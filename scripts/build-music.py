@@ -27,12 +27,22 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, 'scripts', 'music')
 
-VERSION = 'v2'
-VERSION_DATE = '2026-08-12'
+VERSION = 'v4'
+VERSION_DATE = '2026-08-14'
 
 # On-page changelog, newest first. Reader-facing language only -- no file paths,
 # no commit jargon. Mirrored into sites.json -> projects[music].changelog.
 CHANGELOG = [
+    ('v4', '2026-08-14',
+     'Added an anonymous visit counter — no cookies, no profile, nothing that '
+     'follows you off this page. The line at the bottom used to say "no '
+     'tracking" outright; that was no longer quite true, so it now says what '
+     'is actually happening instead.'),
+    ('v3', '2026-08-13',
+     'All 176 tracks are back and playing. The previous rebuild had recovered '
+     'the full catalogue in the files behind the scenes, but the page you were '
+     'actually served had not caught up with it yet — some tracks would 404 '
+     'partway through browsing. Fixed the gap between the two.'),
     ('v2', '2026-08-12',
      'The room is stocked again. Every track is back — 176 of them, sorted onto '
      'six shelves by what each song is for, with real running times read off the '
@@ -347,8 +357,9 @@ def build():
 <footer class="foot">
   <p>Written, recorded and built by Shae Stovell &mdash;
     <a href="%(hub)s">Noble Father Creations</a>.</p>
-  <p>This page asks nothing of you: no account, no tracking, no player that
-    follows you around the internet. Press play or don't.</p>
+  <p>This page asks nothing of you: no account, no player that
+    follows you around the internet. It counts that someone visited &mdash;
+    no cookies, no profile, nothing that leaves this page. Press play or don't.</p>
 </footer>
 </div><!-- /.shell -->
 
@@ -414,6 +425,7 @@ def build():
 
 <script>%(chrome_js)s</script>
 <script>%(page_js)s</script>
+<!-- Cloudflare Web Analytics --><script defer type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c8d1aea530814aea8c7a92baa2accef3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
 """
