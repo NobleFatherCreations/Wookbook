@@ -348,8 +348,13 @@ const PROBE = {
                         that only exists while you hover its thumbnail.
            .brandmark   Fracture. Revealed by `.rail.scrolled .brandmark`
                         — the sticky header's wordmark fades in once you
-                        have scrolled past the title. */
-      if (el.classList.contains('pv-tag') || el.classList.contains('brandmark')) continue;
+                        have scrolled past the title.
+           .filters-chips  The Casting, narrow viewports only. A closed
+                        accordion: `grid-template-rows:0fr; opacity:0`,
+                        opened by `.filters-chips.open` from the filter
+                        button. The 14px box the check sees is its padding. */
+      if (el.classList.contains('pv-tag') || el.classList.contains('brandmark')
+          || el.classList.contains('filters-chips')) continue;
       let sel = tag.toLowerCase();
       if (el.id) sel += '#' + el.id;
       if (el.classList.length) sel += '.' + [...el.classList].slice(0, 3).join('.');
