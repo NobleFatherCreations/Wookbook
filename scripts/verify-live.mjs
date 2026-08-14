@@ -358,19 +358,22 @@ const PROBE = {
     const confirmed = [];
     for (const rec of out) {
       rec.el.scrollIntoView({ block: 'center' });
-      /* Wait for the element's own transition to FINISH rather than
-         guessing a duration. A fixed pause races the slower fades -- these
-         run past a second -- and a fade caught at 0.06 is reported as a
-         fade that never fired, which is a lie that costs someone an hour. */
-      await new Promise((r) => setTimeout(r, 120));
-      try {
-        const anims = rec.el.getAnimations ? rec.el.getAnimations() : [];
-        await Promise.race([
-          Promise.allSettled(anims.map((a) => a.finished)),
-          new Promise((r) => setTimeout(r, 2500)),
-        ]);
-      } catch { /* older engines: fall through to the pause below */ }
-      await new Promise((r) => setTimeout(r, 400));
+      /* Watch until the opacity stops moving, rather than pausing for a
+         guessed duration. A fixed wait races the slower fades -- these run
+         well past a second -- and a fade sampled at 0.06 gets reported as a
+         fade that never fired, which is a lie that costs the next person an
+         hour. Polling for stability needs no support for getAnimations and
+         handles the element that simply has not started yet: the moment it
+         is non-zero it has fired, and that is the whole question. */
+      let prev = -1, stable = 0;
+      for (let waited = 0; waited < 3000; waited += 150) {
+        await new Promise((r) => setTimeout(r, 150));
+        const now = parseFloat(getComputedStyle(rec.el).opacity);
+        if (now > 0) break;                    // it fired; nothing else to prove
+        stable = now === prev ? stable + 1 : 0;
+        prev = now;
+        if (stable >= 4 && waited > 1200) break;   // pinned at 0, and staying there
+      }
       const cs2 = getComputedStyle(rec.el);
       if (cs2.visibility === 'hidden' || parseFloat(cs2.opacity) === 0) {
         const { el, ...rest } = rec;
