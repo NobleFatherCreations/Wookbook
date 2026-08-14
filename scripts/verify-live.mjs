@@ -657,11 +657,28 @@ console.log('');
 
 /* ------------------------------------------------------------- summary */
 
+const C_ALT = process.stdout.isTTY ? '\x1b[2m' : '';
+const C_OFF = process.stdout.isTTY ? '\x1b[0m' : '';
 const pageFails = results.filter((r) => r.failures.length);
 console.log('── summary ' + '─'.repeat(46));
 console.log(`  page renders : ${results.length} (${TARGETS.length} targets x ${RUN_PASSES.length} passes` +
             `${subRendered ? ` + ${subRendered} crawled sub-pages` : ''})`);
 console.log(`  page failures: ${pageFails.length}`);
+
+/* The per-pass listing above only prints the seed targets. Sub-pages found
+   by the crawl are rendered and asserted with the same rules, but had no
+   row of their own -- so a failure on one was counted here and shown
+   nowhere, which is the precise habit this gate exists to break. Anything
+   that failed and was never printed gets printed now. */
+const shownPaths = new Set(TARGETS);
+const hidden = pageFails.filter((r) => !shownPaths.has(r.path));
+if (hidden.length) {
+  console.log(`\n  ${'─'.repeat(4)} failures on crawled sub-pages ${'─'.repeat(18)}`);
+  for (const r of hidden) {
+    console.log(`  FAIL  ${r.path}  ${C_ALT}[${r.pass}]${C_OFF}`);
+    for (const f of r.failures) console.log(`        · ${f.check}: ${f.detail}`);
+  }
+}
 console.log(`  link failures: ${linkFailures.length} of ${done}`);
 
 const navByPath = new Map();
