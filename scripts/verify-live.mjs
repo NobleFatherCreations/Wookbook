@@ -336,6 +336,12 @@ const PROBE = {
       if (closed(el)) continue;
       if (el.textContent.trim() === '' && tag !== 'IMG' && tag !== 'PICTURE') continue;
 
+      /* An <img> with nothing loaded into it is a placeholder waiting to be
+         filled, not content that failed to appear -- The Casting's lightbox
+         keeps an empty `img.lb-full` at opacity 0 until you open a piece.
+         An image with no source cannot be missing content. */
+      if (tag === 'IMG' && !(el.currentSrc || el.getAttribute('src'))) continue;
+
       /* Elements that are SUPPOSED to be invisible until you do something.
          Each was checked against its own CSS before being listed, and the
          rule that reveals it is named so the claim can be re-checked rather
