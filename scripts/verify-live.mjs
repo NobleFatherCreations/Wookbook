@@ -321,8 +321,17 @@ const PROBE = {
       const r = el.getBoundingClientRect();
       if (r.width * r.height < 900) continue;
       const cs = getComputedStyle(el);
-      const invisible = cs.visibility === 'hidden' || parseFloat(cs.opacity) === 0;
-      if (!invisible) continue;
+      /* Only opacity:0 is interesting. The bug this check exists to catch is
+         a scroll-reveal that never fired, and that always shows up as
+         opacity stuck at 0 -- a transition cannot leave something
+         visibility:hidden by accident, because visibility is not what these
+         fades animate. visibility:hidden is always somebody writing it on
+         purpose: closed drawers, closed lightboxes, off-canvas panels. It
+         also removes the element from the accessibility tree and the tab
+         order, so it is the correct way to close a panel, not a symptom.
+         Flagging it produced six failures on one closed nav drawer and its
+         inherited children, and nothing true. */
+      if (parseFloat(cs.opacity) !== 0) continue;
       if (cs.pointerEvents === 'none') continue;      // decorative / closed overlay
       if (closed(el)) continue;
       if (el.textContent.trim() === '' && tag !== 'IMG' && tag !== 'PICTURE') continue;
