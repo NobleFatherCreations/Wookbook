@@ -690,5 +690,17 @@
     "wook's local review-package file (noble-father-festival.html) has a different title than this repo's tracked festie-codex-full.html — unresolved discrepancy, needs a diff before assuming either supersedes the other.",
     "2026-08-05 deploy round: confirmed the actual working deploy mechanism for these Netlify CLI/API sites (no linked repo) — call the deploy-site MCP operation for a siteId, it returns a `npx -y @netlify/mcp@latest --site-id <id> --proxy-path <token>` command; run that from a staging directory containing ONLY the single index.html to deploy (running it from the repo root would upload the whole repo instead). Verified via byte-diff against the live URL after every deploy. Used this to push feminine/children/fractal/fracture (all byte-confirmed live) and to redeploy faith. fixes/loop.html and fixes/scale.html are ready with the same mechanism whenever the user wants that leak fix pushed — not yet run.",
     "2026-08-05: faith-index.html deployed to thenobledivide, replacing the prior live 'Coercive Control Codex' content (the fixes/faith.html lineage). That lineage's leak fix is now moot — it's not the live content anymore. The Sacred Divide redesign (noble-father-divide.html) remains a separate, still-undeployed option."
-  ]
+  ],
+  "verified": {
+    "date": "2026-08-14",
+    "sitesOnHost": 20,
+    "registered": 20,
+    "unchecked": 0,
+    "deployedInSync": 20,
+    "drifted": 0,
+    "musicTracksLive": "176/176 (1255 MB, all correct size)",
+    "castingImagesLive": "1275/1275 across 425 pieces",
+    "pageChecks": "60 renders across 16 pages x 3 viewport passes: 0 failures, 0 broken links",
+    "howToRepeat": "npm run check"
+  }
 }
