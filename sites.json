@@ -10,8 +10,13 @@
     "deploySource": "cli",
     "localSource": "source/projects/noble-father-catalogue.html",
     "localSourceNote": "This is the first verified live deploy of the redesigned 'collected works' hub. A 2026-08-02 review package claimed the catalogue hub redesign was already deployed, but it did NOT byte-match live content at the time -- treat this 2026-08-05 deploy as the true first release.",
-    "version": "v11",
+    "version": "v12",
     "changelog": [
+      {
+        "date": "2026-08-15",
+        "version": "v12",
+        "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) to the hub and every proxied book/craft project it serves -- no cookies, no personal data, nothing that leaves this domain."
+      },
       {
         "date": "2026-08-13",
         "version": "v11",
@@ -79,8 +84,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v3",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v2",
@@ -111,8 +121,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v3",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v2",
@@ -141,8 +156,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -176,8 +196,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -213,8 +238,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v3",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v2",
@@ -243,8 +273,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -283,8 +318,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -326,8 +366,13 @@
         "deployed": true,
         "deployedAt": "2026-08-05"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -366,8 +411,13 @@
         "deployed": true,
         "deployedAt": "2026-08-05"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -402,8 +452,13 @@
         "checkedAt": "2026-08-05",
         "note": "Moot as of this deploy - the live site is now faith-index.html's lineage, which never had the old nh-drawer House Tab component at all (self-contained, no shared chrome, by design). The old fixes/faith.html leak fix is superseded, not applied - that lineage is no longer live here."
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -442,8 +497,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added an anonymous visit counter -- no cookies, no profile, nothing that follows you off this page. The line at the bottom used to say \"no tracking\" outright; that was no longer quite true, so it now says what is actually happening instead."
+        },
         {
           "date": "2026-08-13",
           "version": "v3",
@@ -479,8 +539,13 @@
         "found": false,
         "checkedAt": "2026-08-10"
       },
-      "version": "v6",
+      "version": "v7",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v7",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-12",
           "version": "v6",
@@ -562,8 +627,13 @@
       "netlifySite": "nfcportals",
       "localSource": "source/projects/noble-father-portals.html",
       "localSourceVerified": "byte-exact match to live content, 2026-08-02",
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v3",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v2",
@@ -583,8 +653,13 @@
       "netlifySite": "noblenfcseals",
       "localSource": "source/projects/noble-father-seals.html",
       "localSourceVerified": "byte-exact match to live content, 2026-08-02",
-      "version": "v1",
+      "version": "v2",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v2",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data collected, nothing that leaves this domain. Counts visits so we know these pages are actually being read; does not track anyone individually."
+        },
         {
           "date": "2026-08-13",
           "version": "v1",
@@ -612,8 +687,13 @@
       "url": "https://incandescent-kataifi-cde77d.netlify.app/",
       "netlifySite": "incandescent-kataifi-cde77d",
       "note": "Eco-resin statues, hollow candle pillars, and glow-in-the-dark resin pieces -- 293 pieces. Real source now lives in its own repo: github.com/NobleFatherCreations/Castings (pushed 2026-08-11, full static-site-generator project -- Node/sharp ingest+build pipeline, 445MB/1502 files including all product photos). This is now the source of truth for this project going forward -- clone it, edit, `npm run pages`, redeploy via the same Netlify MCP deploy-site pattern used for the hub. Netlify site fbd96c13-059a-491b-a270-95e02a308a92.",
-      "version": "v6",
+      "version": "v7",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v7",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- same one token as the rest of the catalogue, since this site is proxied through the hub domain. No cookies, no personal data."
+        },
         {
           "date": "2026-08-13",
           "version": "v6",
