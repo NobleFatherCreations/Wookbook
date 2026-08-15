@@ -508,6 +508,18 @@ async function visit(browser, pass, url, label, { seed = true } = {}) {
     });
   }
 
+  /* Cloudflare Web Analytics' beacon script (static.cloudflareinsights.com)
+     loads fine and is left alone. Only its own follow-up XHR/fetch to
+     report the pageview -- the bare-domain RUM endpoint -- 404s from this
+     sandboxed test environment (no real Cloudflare edge in front of it
+     here) but works fine for real visitors, so that one call is stubbed
+     here rather than left to pollute every page's console/subresource
+     checks below. Registered last so it wins over the catch-all
+     VIA_CURL/IS_LOCAL routes above (Playwright matches routes
+     most-recently-added-first). */
+  await ctx.route('https://cloudflareinsights.com/cdn-cgi/rum', (route) =>
+    route.fulfill({ status: 204, body: '' }));
+
   const page = await ctx.newPage();
   const errors = [];
   const badRes = [];
@@ -523,7 +535,14 @@ async function visit(browser, pass, url, label, { seed = true } = {}) {
   });
   page.on('response', (r) => {
     row.subresources++;
-    if (r.status() >= 400) badRes.push(`${r.request().resourceType()} ${r.status()} ${r.url().slice(0, 120)}`);
+    const u = r.url();
+    /* Cloudflare Web Analytics is a deliberate, accepted exception to
+       "self-contained, no external requests" (see CLAUDE.md). Its beacon
+       script and RUM endpoint are stubbed/allowed above; this is a
+       defense-in-depth backstop in case a route above doesn't catch a
+       given request shape. */
+    if (/^https:\/\/(static\.)?cloudflareinsights\.com\//.test(u)) return;
+    if (r.status() >= 400) badRes.push(`${r.request().resourceType()} ${r.status()} ${u.slice(0, 120)}`);
   });
 
   let resp = null;
