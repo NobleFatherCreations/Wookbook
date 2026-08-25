@@ -2865,3 +2865,55 @@ are generic on *every* entry including all 81 mature ones. That is the
 framework the book applies identically by design. The worklist only reports
 fields that are specific on some entries and generic on others, which is the
 actual signature of unfinished work.
+
+## Update (2026-08-25, session 16 continued) — drafting batch 2, and a genuine data defect found
+
+**Codex fields: 65 more drafted (155/266 total), independently re-verified,
+not taken on the agent's own report.** Structural checks by hand: 65/65 names
+match input order, 0 field/needs mismatches, 0 empty strings, 0 overlap with
+batch 1. Re-ran near-duplicate detection myself across the **combined 155**
+`what_it_is_not` values (not just this batch) — 0 pairs above 0.5 shingle
+overlap. Scanned both fields across all 130 for intent/diagnosis language
+("deliberately", "intends", "is a narcissist"...) — 0 hits; the agent's claim
+of having caught and removed one "deliberately" in Dark Patterns (AI-Adaptive)
+checked out.
+
+**Confidence 34 high / 31 medium / 0 low**, and the split is legible: entries
+with their own specific `common_false_positives` (Control structural, Discard
+/ institutional) drafted high-confidence; entries sharing identical
+boilerplate false-positive lines (Digital & AI, Political & Propaganda,
+Espionage, Cult) needed the innocent case built from the definition alone,
+mostly medium. This batch's opener variety is markedly better than batch 1's:
+**zero of 65 open with "The target"** (batch 1 had 30/90), most frequent
+opener used twice.
+
+**Genuine data defect found, distinct from the Gaslighting typo:** three
+entries have a **truncated `short_definition` in the source data itself** —
+`Stalking & Surveillance (Post-Separation)` reads *"Comprehensive monitoring
+after the."*, `Astroturfing` reads *"...public support to."*, `Cognitive
+Warfare` reads *"...form consensus, or make."* — each cut off mid-clause on a
+dangling article/preposition/verb. Confirmed independently, not just on the
+agent's flag: swept all 349 `short_definition` values for the pattern, these
+3 are the only real hits (10 other superficial matches were complete
+sentences that happened to end near a stopword). The agent derived both
+fields from the surviving expanded description instead and marked `note` on
+all three; drafts kept at medium confidence. **Unlike the Gaslighting typo,
+this is not yet in `CORRECTIONS` in `extract-playbook-data.py`** — it should
+be, once the correct full sentences are sourced (they are not recoverable
+from any other field in this dataset; need the live/original authoring
+source).
+
+**Hardest entries handled well, worth noting for future batches:** False Flag
+Operations, MICE Framework Exploitation and Mystical Manipulation all needed
+the disconfirming case to warn against *over*-diagnosis rather than just
+naming an innocent lookalike — a different rhetorical shape than the rest of
+the corpus, and the agent adapted correctly rather than forcing the standard
+template. Mystical Manipulation's `what_it_is_not` explicitly declines to
+adjudicate the truth of any religious belief while still drawing the line at
+staged spontaneity — the right call for a `culturally_sensitive`-flagged
+entry.
+
+**111 codex entries remain.** Following the standing dispatch discipline
+(and the explicit instruction not to run agents in parallel after the first
+one hit a session limit): one canary at a time, full verification before
+staging, no batch released until the prior one is confirmed clean.

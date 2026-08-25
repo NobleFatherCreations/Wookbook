@@ -1404,6 +1404,526 @@
    "confidence": "high",
    "note": "",
    "approved": false
+  },
+  {
+   "name": "Emotion Control",
+   "why_this_matters": "When only some feelings are safe to show, a person stops reporting the rest and eventually stops noticing them; what remains of their emotional life is the part that was permitted.",
+   "what_it_is_not": "Households and workplaces do have norms about how feelings get expressed, and cultures differ widely on this — a difference in emotional style is not a tactic. What matters is whether the norm falls evenly on everyone or lands on one person as a penalty for particular feelings.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ritualized Exhaustion",
+   "why_this_matters": "Depletion sustained over months narrows the capacity to think, weigh options and push back — and once that capacity is gone, noticing its absence gets harder too.",
+   "what_it_is_not": "Genuinely hard stretches exist — a launch, a new baby, a family crisis — and a demanding period with a real, disclosed end point is not the same as an open-ended schedule that never gives any rest back.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Nonverbal Dominance",
+   "why_this_matters": "Because nothing quotable is ever said, the experience cannot be evidenced to anyone else, and the person on the receiving end often ends up self-editing around a reaction they could not describe if asked.",
+   "what_it_is_not": "Faces move on their own: a flash of visible irritation, an expressive manner, a real sigh at the end of a long day. Ask whether the reaction appears whenever something is annoying, or specifically whenever one person disagrees.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Postural Dominance",
+   "why_this_matters": "Being physically talked down to registers below the level of argument; a sense of having shrunk arrives with nothing concrete to point at.",
+   "what_it_is_not": "Rooms have layouts, people have different heights and builds, and someone standing up is usually just about to leave. What separates this from ordinary movement is positioning that recurs specifically around correction or disagreement.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Spatial Invasion",
+   "why_this_matters": "The body reacts to a blocked exit well before there are words for it, so fear arrives in a conversation where nothing was ever threatened out loud.",
+   "what_it_is_not": "Personal-space norms vary a great deal between cultures and between individuals, and small rooms, lifts and crowded venues force closeness on everyone in them. A closeness noticed and corrected once is not this.",
+   "confidence": "high",
+   "note": "Treated differing cultural norms about proximity as a first-line disconfirming case even though the entry carries no cultural flag, because the entry's own false-positive list raises it.",
+   "approved": false
+  },
+  {
+   "name": "Resource Sabotage",
+   "why_this_matters": "Failing without the tools needed to succeed reads to everyone watching — and often to the person themselves — as plain incompetence.",
+   "what_it_is_not": "Budgets get cut, colleagues forget things, and money and attention are legitimately redirected for real, stated reasons. The question is whether the shortfall lands on everyone or only ever on one person, and whether the missing support is acknowledged when the work then fails.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "\"Managed Out\" Through Exhaustion",
+   "why_this_matters": "A departure produced by these conditions looks, on paper and in memory, like a free choice — which leaves the person carrying the story that they simply could not cope.",
+   "what_it_is_not": "Restructures, shrinking budgets and genuine role mismatches all hollow out jobs, and an employer in real decline has less to offer everyone. A transparent change applied across a group is a different thing from a quiet, gradual removal aimed at one person while no complaint is ever filed.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Account Control",
+   "why_this_matters": "Losing independent access to your own email, money or messages turns ordinary daily life into something that has to be requested.",
+   "what_it_is_not": "Plenty of households share accounts by agreement, a parent reasonably manages a young child's, and forgotten passwords get reset together. The distinguishing feature is access changed without the account holder's knowledge and returned only on conditions.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Evidence Traps",
+   "why_this_matters": "Knowing that anything said may be stored and re-timed makes ordinary candour feel risky; speech starts being drafted rather than spoken.",
+   "what_it_is_not": "Keeping records is legitimate and often wise, and raising something someone said because it still matters, in the context it was said in, is just conversation. What is being described is the stripping of that context and the choosing of the moment it returns.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moral Framing",
+   "why_this_matters": "Once the subject has become what kind of person you are, the original issue is no longer on the table and cannot be settled.",
+   "what_it_is_not": "Sometimes an observation about character is accurate, specific and offered as real feedback, and sometimes two people simply hold different values and read the same event through them. A hurt remark later walked back and replaced with substance is not this.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reproductive Coercion",
+   "why_this_matters": "A decision that belongs to one person's body and life ends up made under the weight of what refusal would cost them — job, money, support, standing in the family.",
+   "what_it_is_not": "People are allowed to want things and say so: a parent hoping for grandchildren, a partner describing the family they imagined. A neutral, lawful employment policy can also touch a reproductive decision without targeting it. What changes the picture is a consequence attached to the answer.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Negative Reinforcement Traps",
+   "why_this_matters": "Relief becomes the reward for giving in, and in time the giving-in starts arriving early, before the pressure does — so the disagreement underneath is never actually discussed.",
+   "what_it_is_not": "Moods rise and fall, tension genuinely eases when something is resolved, and some people are simply changeable without using it as leverage. Calm that follows a real conversation is different from calm that only ever arrives at the moment of compliance.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moving-in-Silence",
+   "why_this_matters": "Finding out after the fact that your life has been rearranged leaves nothing to discuss, only something to absorb.",
+   "what_it_is_not": "Emergencies do force fast decisions, some areas are genuinely one person's agreed domain, and a surprise party is kept quiet for kind reasons. What distinguishes this is whether the exclusion is explained afterwards, and whether it happens only on the decisions that carry weight.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Smart-Home Coercion",
+   "why_this_matters": "When the house itself becomes unpredictable, there is nowhere to be unobserved and nothing that can be shown to anyone else afterwards.",
+   "what_it_is_not": "Connected devices misfire, updates change settings without asking, and households share systems by agreement — someone adjusting the heating to their own preference is not surveillance. Unexplained changes that cluster around moments of conflict are a different picture.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Health Sabotage",
+   "why_this_matters": "Sleep, medication and medical care are the ground a person stands on to think and act; when those go, so does the capacity to notice what is happening or to leave.",
+   "what_it_is_not": "New babies, illness and crises wreck everyone's sleep and routines at once; transport, money and shift patterns genuinely get in the way of appointments; and someone struggling with their own health may be unable to help without doing anything to harm.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Choice Architecture Manipulation",
+   "why_this_matters": "A choice that felt free but always led one way leaves nothing to object to afterwards — consent was given to something that was never really picked.",
+   "what_it_is_not": "Arguing openly for one option, with the reasoning visible, is ordinary persuasion, and sensible defaults exist for practical reasons. The difference lies in whether the reasoning sits on the table or inside the way the options were described.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Blackmail / Leverage Exploitation",
+   "why_this_matters": "Something shared in trust becomes the reason compliance is no longer optional, and the fear of exposure keeps working long after any particular demand has passed.",
+   "what_it_is_not": "Expressing real hurt about a past disclosure is not this, nor is pursuing genuine wrongdoing through proper channels, and a furious remark retracted afterwards may be anger rather than a lever. The mark is a specific demand attached to the possibility of exposure.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Willful Blindness as Complicity",
+   "why_this_matters": "When the person best placed to look declines to, harm carries on with nobody formally responsible for it, and the person being harmed has no route to anyone who will act.",
+   "what_it_is_not": "Not knowing is usually just not knowing: information genuinely is not always available, and someone outside the chain of responsibility had no duty or opportunity to go looking. Someone who did look, acted, and got an unsatisfying result has not looked away.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moral Outrage as Weapon",
+   "why_this_matters": "Backing down to lower the temperature is not agreement, but it ends the conversation just as effectively — and questioning the intensity starts to feel like defending the thing being condemned.",
+   "what_it_is_not": "Some things warrant real indignation, and people who care deeply about an issue sound intense without calculating it. Raising an ethical concern firmly and clearly is not the same as an intensity that grows each time its proportionality is questioned.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ghosting as Control",
+   "why_this_matters": "Without any account of what happened there is nothing to process; the questions stay open, and attention stays fixed on someone who has gone.",
+   "what_it_is_not": "People need space, some find every difficult conversation genuinely hard and avoid it badly, and relationships fade by mutual drift. Even a brief \"I need distance\" is information — the pattern here is silence that lifts precisely when the other person starts to move on.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Humiliation Rituals",
+   "why_this_matters": "Being told the humiliation is the point makes objecting to it look like failing the test, so the cost is paid twice: once in public, and again in staying quiet about it.",
+   "what_it_is_not": "Genuinely hard training and demanding standards push people without diminishing them, and one harsh moment inside an otherwise respectful process is friction rather than a rite. Ask whether the stated growth would survive removing the audience.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Public Exposure",
+   "why_this_matters": "An audience makes the moment permanent: it is witnessed, retold, and cannot be taken back privately later.",
+   "what_it_is_not": "Some things genuinely have to be addressed where they happen — a safety problem in a room full of people — and information can be public for a real, disclosed reason. Carelessness with something private is also not the same as choosing a setting for the size of its audience.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Forced Submission",
+   "why_this_matters": "An apology given to end pressure still enters the record as an admission, and the person then has to live alongside having confessed to something they do not believe they did.",
+   "what_it_is_not": "Asking for accountability where something actually happened is fair, and saying you were hurt and want it acknowledged is not forcing anything. What sets this apart is pressure that continues regardless of what the facts turn out to be.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Stalking & Surveillance (Post-Separation)",
+   "why_this_matters": "Separation is supposed to end the other person's access; when it does not, ordinary life — where you live, who you see, what you do next — continues to be conducted under observation.",
+   "what_it_is_not": "Shared custody and shared property require real, continuing contact, and news travels through mutual friends without anyone monitoring anyone. What falls outside that is knowledge of details that were never shared through any of those channels.",
+   "confidence": "medium",
+   "note": "The entry's short definition is truncated in the source (\"Comprehensive monitoring after the.\"), so both fields were derived from the expanded description and the examples rather than the definition line.",
+   "approved": false
+  },
+  {
+   "name": "Legal Abuse (Post-Separation)",
+   "why_this_matters": "Each filing looks procedurally normal on its own, so the cost accumulates in money, time and nerves without ever producing a single moment anyone would call abuse.",
+   "what_it_is_not": "Complicated separations legitimately need many legal steps, courts are slow and expensive by themselves, and someone protecting a real interest will feel adversarial to the other side. Re-litigating settled matters with no new substantive basis is what stands apart.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reputation Warfare (Post-Separation)",
+   "why_this_matters": "An account seeded among the right people follows someone into work and friendships they thought were separate, and it is answered — if ever — long after it has been believed.",
+   "what_it_is_not": "Venting honestly to a close friend after a painful breakup is not a campaign, shared contacts can reach their own conclusions from their own experience, and social circles simply thin out after a separation.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Edited Recordings",
+   "why_this_matters": "A recording carries the authority of evidence, so the burden falls on the person in it to talk their way out of something that appears to show itself.",
+   "what_it_is_not": "Clips get shortened for length and clarity constantly, and an excerpt honestly labelled as partial makes no claim to be the whole picture. Poor recording quality and natural gaps in a device's capture are not edits.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Account Takeover",
+   "why_this_matters": "Being displaced from your own accounts means losing not only access but the ability to speak as yourself — messages can go out under your name to people with every reason to believe them.",
+   "what_it_is_not": "Forgotten passwords and legitimate recovery processes exist, platforms have bugs and outages, and an authorised family member resetting a shared account and saying so is housekeeping. Recovery attempts being blocked or intercepted is what makes it something else.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "SIM Swap / 2FA Interception",
+   "why_this_matters": "The phone number that secures everything else becomes the way in, and the lockout usually arrives before there is any way to understand what has happened.",
+   "what_it_is_not": "Carriers have outages, billing errors and genuine glitches, and a single odd authentication code on one platform means very little on its own. A carrier-account change nobody requested is the part without an innocent reading.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Intimate Image Abuse",
+   "why_this_matters": "Control over the most private material about a person passes to somebody else, and the fear of exposure keeps working whether or not anything is ever actually shared.",
+   "what_it_is_not": "Images shared consensually inside a relationship, with no threat and no sharing beyond it, are not this. A claim to hold such material when none exists is still coercion — worth distinguishing, because what to do about it differs.",
+   "confidence": "high",
+   "note": "Kept the entry's own distinction that a bluffed claim is still coercive, so the disconfirming case does not read as dismissal.",
+   "approved": false
+  },
+  {
+   "name": "Algorithmic Manipulation",
+   "why_this_matters": "What a person sees, and so what they take the world to be like, is shaped by a process they cannot inspect — and the beliefs that result feel entirely their own.",
+   "what_it_is_not": "Ranked feeds are the default everywhere, and personalisation that surfaces more of what someone already reads is ordinary product design rather than a campaign. Nothing in a conversation can settle this either way; where it has been shown at all, it has been shown by researchers with access to the systems.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Dark Patterns (AI-Adaptive)",
+   "why_this_matters": "Money, data and consent leave a person's hands through interfaces built so that the fastest, most default path is not the one they would have chosen with time to read.",
+   "what_it_is_not": "Good design nudges too — a prominent save button, a sensible default — and a confusing checkout is far more often just badly built than built to work against the user. What is being described is an interface that gets harder to escape the more it learns about one particular user.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Synthetic Persona Networks",
+   "why_this_matters": "Someone forms a view of what people think, or of who they are talking to, on the strength of accounts that no person stands behind.",
+   "what_it_is_not": "Pseudonymous accounts, staff posting under a brand name, and a group of people who genuinely agree are not a fake network. Establishing coordination takes platform-level data, not a hunch about a stranger's profile picture.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Context Poisoning",
+   "why_this_matters": "Decisions get made against a corrupted record, and because the corruption sits in the source, the person and the tools they check themselves against return the same wrong answer.",
+   "what_it_is_not": "Shared information spaces fill with ordinary error, stale pages and honest disagreement without anyone injecting anything. Deliberate insertion is a claim that needs forensic evidence, not just the experience of finding something wrong on the internet.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Parasocial Manipulation Engineering",
+   "why_this_matters": "The warmth is felt as mutual by one side only, and loyalty, money or personal information are given on the strength of a relationship that has no reciprocal half.",
+   "what_it_is_not": "Creators, teachers and public figures build real rapport with audiences, and one-sided attachment forms on its own without anyone cultivating it. Selling something to an audience is not the flag; simulated closeness that makes declining feel like a betrayal is.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Immersive Manipulation (VR/AR)",
+   "why_this_matters": "An experience the body treats as real leaves something closer to a memory than an argument, and memories are much harder to revise afterwards.",
+   "what_it_is_not": "Immersive media is used honestly for training, therapy, education and storytelling, and a simulation that moves someone deeply is doing what art does. The concern is a staged experience offered as evidence about how the world actually is.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "AI-Driven Social Engineering (Automated)",
+   "why_this_matters": "The usual defences — an unfamiliar voice, clumsy wording, an address that looks wrong — stop working when the approach is generated to sound exactly like someone already known and trusted.",
+   "what_it_is_not": "Real organisations do phone, email and ask to verify identity, and synthetic voice is now standard in ordinary customer service lines. An unexpected contact proves nothing by itself; verifying through a channel you chose yourself is the sensible response either way.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Weaponized AI Empathy",
+   "why_this_matters": "Disclosure comes easily to something that seems to understand, and what is disclosed is retained by a system rather than held by a person.",
+   "what_it_is_not": "Warm, attentive design in an assistant is not deceit, and people take real comfort from these tools. The line sits at apparent care used to draw out information or compliance that would otherwise have been withheld.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Biometric Exploitation",
+   "why_this_matters": "Signals nobody chooses to send — a face, a voice under strain, a pulse — become the basis on which the next thing said to that person is selected.",
+   "what_it_is_not": "Health trackers, accessibility tools and consented research all read physiological data for the benefit of the person providing it. Disclosure and consent are what separate them, not the sensing itself.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Epistemic Coercion via AI",
+   "why_this_matters": "Confidence in one's own reasoning erodes when every question is answered fluently by something that never sounds unsure, and the habit of checking elsewhere quietly lapses.",
+   "what_it_is_not": "A tool that is genuinely useful and usually right will be relied on, and leaning on a good source is not dependence. Worth distinguishing: a system that shows its reasoning and its uncertainty, versus one whose framing is the only one ever on offer.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "AI-Driven Narrative Hijacking",
+   "why_this_matters": "Sheer volume settles what a topic is about before most people have finished forming a view, so the terms of the argument arrive already fixed.",
+   "what_it_is_not": "Coordinated campaigning is normal politics, and popular ideas spread fast on their own — virality is not evidence of synthesis. Volume alone says nothing about where something came from.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Algorithmic Targeting of Vulnerable Populations",
+   "why_this_matters": "The approach arrives exactly when a person is least equipped to weigh it — short of money, newly bereaved, isolated — which is precisely why it works.",
+   "what_it_is_not": "Relevant advertising is not automatically predatory, and outreach genuinely aimed at people in difficulty, such as a debt charity or a crisis line, is targeting of an entirely different kind. It is the terms of what is offered, not the fact of being reached, that makes it exploitation.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pig Butchering (Long-Con Digital Fraud)",
+   "why_this_matters": "Months of unhurried, ordinary relationship-building mean that when the request finally comes it arrives from someone the person has real reason to trust, and the losses are often life-changing.",
+   "what_it_is_not": "Genuine friendships and relationships do begin online and build slowly, and someone talking enthusiastically about their own investments may simply be doing that. The turn worth noticing is a relationship that has asked for nothing beginning to direct money towards a platform it introduced.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Overton Window Manipulation",
+   "why_this_matters": "What counts as an ordinary opinion shifts underneath people, so positions they would once have rejected outright arrive already sounding moderate.",
+   "what_it_is_not": "Public opinion moves on its own and always has, and arguing for a position most people currently reject is how every reform has started. A single extreme statement is not a repositioning campaign — this describes drift visible only in aggregate and in hindsight.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Manufactured Consent",
+   "why_this_matters": "Agreement reached from a curated picture is still experienced as one's own conclusion, which leaves nothing obvious to object to.",
+   "what_it_is_not": "Governments and institutions explain their decisions, editors choose what to cover, and framing is unavoidable in any account of anything. Showing this requires systematic analysis of coverage over time, not disagreement with a particular story.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Astroturfing",
+   "why_this_matters": "A view carries more weight when it looks like many ordinary people hold it, so a manufactured chorus crowds out the real one — and genuine grassroots voices then get doubted too.",
+   "what_it_is_not": "Real grassroots movements are often coordinated, funded and professionally supported; organisation is not fakery. What is described here is participants who do not exist, or who are paid to appear as unaffiliated members of the public.",
+   "confidence": "medium",
+   "note": "The entry's definition is truncated in the source (\"...public support to.\"), so the fields rest on the standard sense of the term rather than the entry's own stated purpose clause.",
+   "approved": false
+  },
+  {
+   "name": "Wedge Issue Exploitation",
+   "why_this_matters": "People end up divided along a line drawn for someone else's benefit, arguing about who they are while the things they actually share go unaddressed.",
+   "what_it_is_not": "Divisive issues are frequently important and deserve real argument, and raising one is not evidence of strategy. The distinction is between an issue pursued in order to settle it and one kept warm because the division itself is useful.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Computational Propaganda",
+   "why_this_matters": "The sense of what most people believe — which shapes what any individual feels able to say aloud — gets set by accounts that are not people.",
+   "what_it_is_not": "Parties, campaigns and advocacy groups legitimately coordinate their messaging, and scheduling tools and staff accounts are not bots. Attribution here is technical work; an account that argues aggressively is not evidence of a network.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reflexive Control",
+   "why_this_matters": "A decision reached through one's own careful reasoning is trusted far more than one taken under pressure, which is exactly what makes a decision built on selected inputs so hard to revisit later.",
+   "what_it_is_not": "Everyone decides on incomplete information, and negotiators, advertisers and friends all present the facts that favour their case. This describes a sustained effort to shape another party's whole information picture, not the ordinary selectivity of anyone making an argument.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Normative Messaging",
+   "why_this_matters": "Behaviour shifts to match what everyone else is said to be doing, even where private preference points elsewhere — and the claim about what everyone does is rarely checked.",
+   "what_it_is_not": "Accurate social-norms messaging is a mainstream and often benign public-health tool, and it is not manipulation when the norm stated is true and the purpose is disclosed. An unverifiable or false claim about what everyone else does is the part to notice.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "False Flag Operations",
+   "why_this_matters": "Retaliation, suspicion and public anger land on a group that did not do the thing, and the record that would correct it is the very thing that was arranged.",
+   "what_it_is_not": "This is one of the most over-claimed ideas in circulation: most disputed events are genuinely confusing in their first days, and unanswered questions after an incident are normal rather than proof of staging. The documented cases were established through archives and investigation years afterwards, never through pattern-spotting in real time.",
+   "confidence": "medium",
+   "note": "Leaned the disconfirming case towards warning against over-diagnosis, since this term is far more often misapplied than correctly applied.",
+   "approved": false
+  },
+  {
+   "name": "Post-Truth Epistemic Manipulation",
+   "why_this_matters": "When nothing can be known, nothing can be checked — and someone left doubting everything has no ground from which to object to anything.",
+   "what_it_is_not": "Distrust of institutions is often earned, and acknowledging uncertainty or bias in reporting is intellectual honesty rather than corrosion. The difference lies between doubting a particular claim and abandoning the idea that claims can be tested at all.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Honey Trapping",
+   "why_this_matters": "The relationship itself was the mechanism, so finding out means losing the connection and facing the consequences of everything disclosed inside it at the same moment.",
+   "what_it_is_not": "Relationships involving people in sensitive positions are overwhelmingly just relationships, and suspicion about a partner's motives is not evidence of an operation. Attraction and professional proximity coincide constantly without anything being arranged.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Agent of Influence Operations",
+   "why_this_matters": "Audiences weigh an argument partly by how independent its source appears; where that independence is not real, their judgement is being borrowed rather than informed.",
+   "what_it_is_not": "Journalists, academics and executives take funding, briefings, access and hospitality openly, and holding a view that happens to suit a government or a company is not proof of recruitment. Undisclosed direction is the claim, and it takes documentary evidence to support.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Deception (Denial & Deception / D&D)",
+   "why_this_matters": "Plans get laid against a picture of the world that was arranged to be believed, and the error usually becomes visible only once acting on it can no longer be undone.",
+   "what_it_is_not": "Ordinary secrecy is legitimate — institutions and states keep capabilities and intentions confidential without staging a coordinated illusion. Not being told something is not the same as being actively pointed the wrong way.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "MICE Framework Exploitation",
+   "why_this_matters": "What gets used is whatever a person most needs or most fears losing — money worries, a sincere belief, a private embarrassment, a wish to be recognised — so the approach feels less like pressure and more like finally being understood.",
+   "what_it_is_not": "This is a framework analysts use to describe recruitment after the fact, not a checklist of warning signs. Everyone has financial pressures, convictions, embarrassments and vanity; having them is the human condition, not an indication that anyone is working on you.",
+   "confidence": "medium",
+   "note": "Wrote the disconfirming case against reading the four vectors as personal red flags, since the entry is descriptive of recruitment analysis rather than of a detectable pattern.",
+   "approved": false
+  },
+  {
+   "name": "PSYOP Message Framing",
+   "why_this_matters": "Messages built around futility or inevitability leave people experiencing their own resignation as simple realism.",
+   "what_it_is_not": "The techniques described overlap heavily with ordinary advertising, campaigning and public communication, so spotting the shape of a frame tells you nothing about who wrote it or why. A rousing or a fatalistic message is not by itself an operation.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Leaking",
+   "why_this_matters": "Information arrives with the credibility of something that escaped when it was in fact released, so a placed story is read as an exposed one.",
+   "what_it_is_not": "Genuine whistleblowing and unauthorised disclosure in the public interest look identical from outside and are not this, and officials brief journalists routinely and openly. What is described is a release presented as unauthorised while serving whoever released it.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Cognitive Warfare",
+   "why_this_matters": "What is attacked is a population's capacity to reason together, so the damage shows up as exhaustion, mutual distrust, and an inability to agree on anything for long enough to act on it.",
+   "what_it_is_not": "Societies argue, polarise and lose trust for their own internal reasons — economic strain, real grievances, plain bad government — none of which requires an outside campaign. Attributing domestic dysfunction to a foreign adversary is itself a familiar and convenient move.",
+   "confidence": "medium",
+   "note": "The entry's definition is truncated in the source (\"...form consensus, or make.\"), so the fields were derived from the surviving clause about degrading critical thinking and consensus.",
+   "approved": false
+  },
+  {
+   "name": "Cyber Manipulation Operations (CMOs)",
+   "why_this_matters": "Nothing appears stolen and nothing appears broken, so decisions carry on being made confidently on figures that are quietly wrong.",
+   "what_it_is_not": "Data corrupts through bugs, botched migrations and human error far more often than through intrusion, and a discrepancy in a system is a reason to investigate rather than a conclusion. This is a forensic finding, not something to infer from a number that looks off.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Adversarial Machine Learning",
+   "why_this_matters": "The systems people are told to rely on — filters, fraud checks, screening tools — return confident answers shaped by someone else, and the person affected has no way to see why.",
+   "what_it_is_not": "Models fail in ordinary ways too: they break on unusual inputs, carry the biases of their training data, and drift as the world changes. A wrong or strange output is far more likely to be a limitation than an attack.",
+   "confidence": "medium",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Milieu Control",
+   "why_this_matters": "With reading, contact and conversation all bounded by the group, there is no outside view left to compare anything against — including the question of whether the boundary itself is reasonable.",
+   "what_it_is_not": "Communities of every kind have shared practices, retreats and periods of deliberate focus, and choosing to spend most of your time among people who share your commitments is ordinary. The question is whether outside contact and information can be resumed without penalty.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Mystical Manipulation",
+   "why_this_matters": "An experience read as evidence of something greater is very hard to reconsider later, and the authority it lends to whoever presided over it is correspondingly hard to question.",
+   "what_it_is_not": "Religious and spiritual experience is real to those who have it, and this entry takes no view on any belief. Ritual, atmosphere and preparation are ordinary parts of worship — the distinction being drawn is between a prepared setting and an event presented as spontaneous when it was arranged.",
+   "confidence": "medium",
+   "note": "Made explicit that the entry is not adjudicating the truth of any religious belief, only the staging of events described as spontaneous.",
+   "approved": false
+  },
+  {
+   "name": "Demand for Purity",
+   "why_this_matters": "A standard nobody can meet keeps a person permanently slightly in the wrong, and the only place to seek relief from that is the authority that set the standard.",
+   "what_it_is_not": "Many traditions and ethical communities hold demanding standards sincerely, and wanting to be better than you currently are is not shame-based control. What changes the picture is a standard drawn so that falling short is guaranteed and only the group can absolve it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Sacred Science",
+   "why_this_matters": "Doubt gets recoded as a fault in the doubter rather than a question about the claim, so the ordinary means of testing an idea are unavailable from inside.",
+   "what_it_is_not": "Strong conviction is not this, and every field has foundational assumptions it does not reopen daily. The flag is a body of ideas that cannot be questioned without the questioner's character or loyalty becoming the subject instead.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
   }
  ]
 }
