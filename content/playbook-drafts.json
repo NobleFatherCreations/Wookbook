@@ -1,0 +1,1409 @@
+{
+ "note": "DRAFTED CONTENT AWAITING APPROVAL. Not the author's text. Applied over the extracted data at build time; nothing here is in the book until it is written into the book. Approve by setting approved: true on an entry.",
+ "generated": "2026-08-25",
+ "hook_budget_chars": 80,
+ "hooks": [
+  {
+   "name": "Priming / Narrative Seeding",
+   "hook": "A pointed comment or story shared right before an event.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "\"Managed Out\" Through Exhaustion",
+   "hook": "\"No one's forcing you to stay.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credit Laundering",
+   "hook": "By the time the idea reaches the top, your name is no longer on it.",
+   "source": "composed",
+   "from_field": null,
+   "note": "Every available trim dropped the disappearing-authorship point; composed from the book's 'by the time an idea reaches a decision-maker' line.",
+   "approved": false
+  },
+  {
+   "name": "\"Sacred Duty\" Manipulation",
+   "hook": "\"This is what your faith/your ancestors expect of you\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ambiguity as Weapon",
+   "hook": "Behavior that could mean exclusion or could mean nothing.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Accountability Evasion via Diagnosis",
+   "hook": "\"Have you considered that you might have a condition?\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Account Control",
+   "hook": "Access to shared or personal accounts is used as leverage in disagreements",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Dehumanization",
+   "hook": "The target is discussed or treated as a \"case\" or a category.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Benching",
+   "hook": "Keeping someone available as a backup option.",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Self-Deprecation / Performed Humility",
+   "hook": "You end up comforting the person who was about to be held accountable.",
+   "source": "composed",
+   "from_field": null,
+   "note": "Trimming the candidate left only 'comforting the person', losing the point; kept the book's words in second person.",
+   "approved": false
+  },
+  {
+   "name": "Controlled Opposition",
+   "hook": "Creating, funding, or co-opting the apparent resistance.",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Authority Hijack",
+   "hook": "\"I know what you really meant.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Blackmail / Leverage Exploitation",
+   "hook": "\"Do this, or I'll tell/show/post [specific damaging thing]\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Objectification",
+   "hook": "Reducing a person to their utility, function, appearance, or output.",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Confirmation Bias Exploitation",
+   "hook": "The target finds themselves explaining away or minimizing incidents.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credential-Costuming",
+   "hook": "A title or credential used prominently and repeatedly to preempt questioning.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Echo Chamber Construction",
+   "hook": "Outside perspectives are pre-framed as biased or untrustworthy.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Burden of Proof Shifting",
+   "hook": "\"Prove it\" demanded in response to a described experience.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Choice Architecture Manipulation",
+   "hook": "Every option you were offered led to the same outcome.",
+   "source": "composed",
+   "from_field": null,
+   "note": "The book's line ('Looking back, the target realizes...') has no boundary that fits 80; kept its words in second person.",
+   "approved": false
+  },
+  {
+   "name": "Overcorrection Demands",
+   "hook": "The scale of what's demanded seems designed to demonstrate submission.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Account Takeover",
+   "hook": "Login credentials for personal accounts stop working.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Covert Contracts",
+   "hook": "\"I shouldn't have to ask, you should just know.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Identity Performances",
+   "hook": "Claimed experiences or identity markers that don't hold up.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Gatekeeping",
+   "hook": "The criteria for access shift depending on who's asking.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credibility Theft",
+   "hook": "\"You know how they exaggerate\" said preemptively.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Emotion Control",
+   "hook": "The target finds themselves performing an emotion they don't feel.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "PIP Weaponization",
+   "hook": "Feedback arrives too late in the review period to realistically be acted on.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Forced Submission",
+   "hook": "\"Just say you're sorry and this can be over.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Financial Dependence by Design",
+   "hook": "Money is arranged so you have no independent access or standing.",
+   "source": "composed",
+   "from_field": null,
+   "note": "Both trims ('...cannot survive', '...deliberately arranged') read as false or empty; kept the book's 'no independent access or standing'.",
+   "approved": false
+  },
+  {
+   "name": "Performative Allyship / False Solidarity",
+   "hook": "Support that intensifies specifically when visibility is high.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Idea Theft in Real Time",
+   "hook": "Attempts to note \"I just said that\" are met with dismissal.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Dog Whistling / Coded Signaling",
+   "hook": "A phrase that sounds ordinary to everyone else and carries a threat to you.",
+   "source": "composed",
+   "from_field": null,
+   "note": "The closest candidate trims to 81 chars; composed from the book's 'sounds completely ordinary to onlookers' line.",
+   "approved": false
+  },
+  {
+   "name": "Evidence Traps",
+   "hook": "A casual, off-hand comment gets treated as a formal, binding position.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Shame-as-Governance Disguised as Advice",
+   "hook": "\"I'm just trying to help, why are you so defensive?\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "Lifted the spoken line out of the middle of the candidate sentence.",
+   "approved": false
+  },
+  {
+   "name": "Ghosting as Control",
+   "hook": "Sudden, complete silence after previously consistent contact.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Halo Effect Exploitation",
+   "hook": "One admirable quality, invoked every time an unrelated concern comes up.",
+   "source": "composed",
+   "from_field": null,
+   "note": "Trims left 'a single admirable quality gets repeatedly invoked' with nothing to invoke it against.",
+   "approved": false
+  },
+  {
+   "name": "Information Cascades",
+   "hook": "Questioning the claim, even reasonably, produces social discomfort.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Frame Assassination",
+   "hook": "\"This isn't about what I did, this is about how unstable you've been lately\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Health Sabotage",
+   "hook": "Appointments, sleep, and medication keep getting disrupted for no good reason.",
+   "source": "composed",
+   "from_field": null,
+   "note": "Every candidate trim ran 88-92 chars; composed from the short definition's list plus 'without a good practical reason'.",
+   "approved": false
+  },
+  {
+   "name": "The \"Good Woman Program\"",
+   "hook": "Praise consistently arrives for accommodation and self-sacrifice.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Humiliation Rituals",
+   "hook": "\"Everyone goes through this, it's how we build character.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "Capitalised the quote's first word now that it stands alone.",
+   "approved": false
+  },
+  {
+   "name": "Obligation Contracts",
+   "hook": "\"After everything, this is the least you owe.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Information Laundering",
+   "hook": "The original, unreliable source becomes hard to find.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Gish Gallop",
+   "hook": "A debate or argument that feels won on volume and speed.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moral Framing",
+   "hook": "\"That's a really selfish way to think about this.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Toxic Positivity / Weaponized Optimism",
+   "hook": "\"Just stay positive\" or \"everything happens for a reason\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Intimate Image Abuse",
+   "hook": "A threat to share private images unless the target complies.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Platform Migration",
+   "hook": "A consistent preference for disappearing-message apps or voice calls.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Interruption Patterns",
+   "hook": "The target notices they've started truncating their own points preemptively.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Identity Diminishment via Pathologizing",
+   "hook": "A reasonable boundary is described using clinical-sounding language.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moral Outrage as Weapon",
+   "hook": "A disproportionately intense moral reaction to something relatively minor.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Legal Abuse (Post-Separation)",
+   "hook": "Repeated legal filings or motions that re-litigate matters already settled.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Premature Exclusivity",
+   "hook": "A request for exclusivity or a serious commitment very early.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Maternal Gatekeeping",
+   "hook": "\"Let me just do it, you're doing it wrong.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Limited Hangout",
+   "hook": "\"I already told you about that\" used to shut down further inquiry.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moving-in-Silence",
+   "hook": "\"I didn't want to stress you out.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Public Exposure",
+   "hook": "Singling someone out for shaming in front of others.",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Self-Abandonment",
+   "hook": "Agreeing to things you promised yourself you wouldn't.",
+   "source": "trimmed",
+   "from_field": "what_it_is",
+   "note": "Used the book's own quoted phrasing from inside the 'Recognizable by phrasing such as...' line.",
+   "approved": false
+  },
+  {
+   "name": "Punishment by Proxy",
+   "hook": "Harming someone the target cares about to send a message.",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ambient Sexual Threat",
+   "hook": "You find yourself managing your schedule or location around this person.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Paltering",
+   "hook": "A direct, specific question answered with a technically true statement.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Negative Reinforcement Traps",
+   "hook": "The target notices themselves complying earlier and earlier.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reputation Warfare (Post-Separation)",
+   "hook": "Systematic destruction of the target's credibility and social standing",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Self-Gaslighting Induction",
+   "hook": "Catching yourself saying \"maybe I'm remembering it wrong.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reputation Laundering",
+   "hook": "\"Well, that's just what everyone says about them.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "Capitalised the quote's first word now that it stands alone.",
+   "approved": false
+  },
+  {
+   "name": "Identity Erosion",
+   "hook": "Not remembering what music you liked before them.",
+   "source": "trimmed",
+   "from_field": "what_it_is",
+   "note": "Used the book's own quoted phrasing from inside the 'Recognizable by phrasing such as...' line.",
+   "approved": false
+  },
+  {
+   "name": "Projection",
+   "hook": "Attributing one's own harmful behavior, motives, or flaws to the target.",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Nonverbal Dominance",
+   "hook": "A sigh or an eye roll, timed exactly to the moment you speak up.",
+   "source": "composed",
+   "from_field": null,
+   "note": "Trimming the candidate dropped the timing, which is the recognisable part.",
+   "approved": false
+  },
+  {
+   "name": "Stochastic Harassment Direction",
+   "hook": "A wave of harassment arrives, all of it citing one person's characterization.",
+   "source": "composed",
+   "from_field": null,
+   "note": "The closest candidate trim ran 82 chars.",
+   "approved": false
+  },
+  {
+   "name": "Pseudo-Insight as Shutdown",
+   "hook": "\"You're projecting\" or \"this is your trauma\"",
+   "source": "trimmed",
+   "from_field": "short_definition",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Postural Dominance",
+   "hook": "A consistent pattern of standing over someone who's seated.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "HR Shielding",
+   "hook": "Reports met with concern for \"how this looks\" rather than what happened",
+   "source": "trimmed",
+   "from_field": "what_it_is",
+   "note": "Used the book's own quoted phrasing from inside the 'Recognizable by phrasing such as...' line.",
+   "approved": false
+  },
+  {
+   "name": "Weaponized Inclusion / Strategic Containment",
+   "hook": "The included person notices their actual influence on outcomes is minimal.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pseudo-Profundity / Intellectual Intimidation",
+   "hook": "Pushback is met with more complex language rather than a plainer explanation.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reproductive Coercion",
+   "hook": "Support made conditional on a reproductive choice going a particular way.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "Dropped the parenthetical '(financial, emotional, practical)'.",
+   "approved": false
+  },
+  {
+   "name": "Tokenism",
+   "hook": "One seat at the table, no vote.",
+   "source": "trimmed",
+   "from_field": "what_it_is",
+   "note": "Used the book's own quoted phrasing from inside the 'Recognizable by phrasing such as...' line.",
+   "approved": false
+  },
+  {
+   "name": "Semantic Erosion / Meaning Dilution",
+   "hook": "A serious term applied to increasingly minor, unrelated situations.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Resource Sabotage",
+   "hook": "Resources or support that were previously available are quietly withdrawn.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Malicious Compliance",
+   "hook": "A task completed in a way that satisfies the literal words of a request.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Spiritual Bypassing",
+   "hook": "Forgiveness or \"letting go\" is demanded on a spiritual or moral basis.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ritualized Exhaustion",
+   "hook": "A schedule that leaves little to no time for rest, reflection, or recovery.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moral Licensing",
+   "hook": "\"I'm one of the good ones.\"",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Smart-Home Coercion",
+   "hook": "References to information a connected device would have captured.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "Dropped the parenthetical '(movements, conversations)' as well as the trailing clause.",
+   "approved": false
+  },
+  {
+   "name": "Spatial Invasion",
+   "hook": "Positioning between the target and an exit, or in a doorway.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Willful Blindness as Complicity",
+   "hook": "Clear warning signs are consistently not investigated further.",
+   "source": "trimmed",
+   "from_field": "what_it_sounds_like",
+   "note": "",
+   "approved": false
+  }
+ ],
+ "codex_fields": [
+  {
+   "name": "Weaponized Incompetence",
+   "why_this_matters": "The task lands permanently on one person, along with the work of noticing it, asking about it, and eventually giving up on asking. Raising it also makes them sound as if they are complaining about help they were offered.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Apathy",
+   "why_this_matters": "One person makes every decision alone and then carries the criticism for whichever way it went. Over time, deciding stops feeling like having a say and starts feeling like exposure.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reverse Psychology",
+   "why_this_matters": "The target's own resistance is what does the deciding, so a choice that felt like their own defiance may not have been theirs at all.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Malicious Compliance",
+   "why_this_matters": "The target absorbs the failure with no clear grievance available to them: the instruction was followed, so there is nothing they can point at without sounding unreasonable.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Moral Licensing",
+   "why_this_matters": "A specific, current complaint goes unanswered because the conversation turns into a referendum on someone's overall goodness, which the target cannot win and did not raise.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Self-Deprecation / Performed Humility",
+   "why_this_matters": "The target arrives with a concern and leaves having provided reassurance. The thing they came to say never gets said, and they often feel unkind for having wanted to say it.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Priming / Narrative Seeding",
+   "why_this_matters": "The target reads an event through a lens they never chose, and mistakes a supplied conclusion for their own judgement. The frame is hardest to question precisely because it arrived before the evidence did.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ambiguity as Weapon",
+   "why_this_matters": "The target can feel the exclusion but cannot point to it. Naming it out loud sounds paranoid, and staying quiet means carrying the doubt alone.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Push-Pull",
+   "why_this_matters": "The target organises their attention around a temperature they cannot predict, and tends to read each cold spell as something they must have caused.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Intermittent Reinforcement",
+   "why_this_matters": "Effort keeps rising as the returns fall. The rarity of the good moments is exactly what makes them feel worth waiting for, so the pattern is self-sustaining.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Breadcrumbing",
+   "why_this_matters": "The target stays available for a relationship that never arrives, holding a place open on the strength of contact that costs almost nothing to send.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Trauma Bonding",
+   "why_this_matters": "Relief and harm come from the same source, so the target's strongest sense of closeness arrives directly after the worst treatment — and then becomes a reason to stay.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Relief Bait",
+   "why_this_matters": "Each round of kindness resets what the target can tolerate, so the baseline of acceptable treatment moves downward without them noticing it move.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Withholding",
+   "why_this_matters": "Ordinary things — an answer, an acknowledgement, basic warmth — turn into rewards, and the target starts negotiating for what was previously free. Because nothing visible happened, there is nothing to describe to anyone else.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Dr. Jekyll/Mr. Hyde",
+   "why_this_matters": "The target has no witnesses. The version other people know makes their account of the other version sound implausible, including to themselves.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ambient Abuse",
+   "why_this_matters": "There is nothing to quote, so the exhaustion has no justification the target can offer to anyone, themselves included. They stay braced without being able to say what for.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ghosting-Orbiting Cycle",
+   "why_this_matters": "The target is neither in contact nor free of it. Attention keeps arriving with no reply attached, which keeps hope alive at precisely the point it was starting to fade.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Stonewalling",
+   "why_this_matters": "Every issue stays permanently open. The target cannot resolve it, cannot drop it, and cannot even find out when it might be discussed.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Sealioning",
+   "why_this_matters": "The target's energy goes into sourcing and proving rather than into being heard, and the point they were trying to make is eventually abandoned for reasons of stamina.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Idealize-Devalue-Discard Cycle",
+   "why_this_matters": "The target measures the ending against the extraordinary beginning and concludes that they must have caused the decline — which is also the conclusion that keeps them trying to earn the beginning back.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Extinction Bursts",
+   "why_this_matters": "The first boundary that actually works is the one that costs the most, which teaches the target that holding a limit makes things worse rather than better.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Competitive Victimhood",
+   "why_this_matters": "The target's own pain never gets a hearing, and rather than enter a contest they cannot win, they stop raising things at all.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ambient Sexual Threat",
+   "why_this_matters": "The target reorganises their movements, schedule and attention around one person while holding nothing concrete enough to report, or even to explain to a friend.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "\"Polite Hostile\" Environments",
+   "why_this_matters": "Nothing that happens is documentable, so whoever spoke up carries the cost alone with no case to make. Everyone watching learns that silence is the sensible option.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Self-Gaslighting Induction",
+   "why_this_matters": "The doubting continues with nobody present to do it. The target discounts things they clearly remember and edits their own account before anyone has even challenged it.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Fawning",
+   "why_this_matters": "Safety is bought with the target's own position: they apologise for things done to them, and lose track of what they actually think while they are still saying it.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Self-Abandonment",
+   "why_this_matters": "The target can say what would keep the peace far more readily than what they want, and their own limits stop being information they are willing to act on.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Internalized Conditioning",
+   "why_this_matters": "The rules keep running in the other person's absence, so distance — even ending the relationship — no longer brings the relief the target expected it to.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Silence Installation",
+   "why_this_matters": "The problems most in need of raising become the ones the target physically cannot raise, so they go unaddressed indefinitely and quietly grow.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Approval Addiction Cultivation",
+   "why_this_matters": "The target's sense of how they are doing is outsourced to someone else's mood, and their own view of a thing arrives too late to count for much.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Parentification",
+   "why_this_matters": "The target treats their own needs as an imposition, and the growing-up that was postponed to keep an adult afloat does not happen later on its own.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Process Exhaustion",
+   "why_this_matters": "The target loses to depletion rather than to a decision, and the outcome is recorded as voluntary — they withdrew, they did not pursue it, they stopped replying.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "HR Shielding",
+   "why_this_matters": "The person who reported the harm absorbs the disruption while the situation they reported continues, and everyone else in the organisation learns what reporting costs.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pseudo-Consultation",
+   "why_this_matters": "The target spends real effort and real candour on input that could never have changed anything, and the decision is afterwards described as one they helped make.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Tokenism",
+   "why_this_matters": "The target's presence is used as the answer to the criticism they were brought in to voice, and objecting to that makes them look ungrateful for the seat.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Individualization of Systemic Issues",
+   "why_this_matters": "The target adds self-improvement to an already unsustainable load, and concludes that the shortfall is in their own resilience rather than in the conditions.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Diffusion of Responsibility",
+   "why_this_matters": "The harm is real and nobody is answerable for it, so the target has nowhere to take it, no one to ask for repair, and no way to stop it recurring.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Deepfakes",
+   "why_this_matters": "The target is left disproving something that never happened, to people who have already seen it — and denial is exactly what a guilty person would also say.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "AI Voice Cloning",
+   "why_this_matters": "A voice the target has trusted their whole life stops being evidence of anything, and verifying every unexpected call through a second channel becomes a permanent tax on ordinary contact.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Doxxing",
+   "why_this_matters": "Risk moves offline and out of the target's hands: their home, workplace and family become reachable by strangers who have no relationship to the original dispute, and the exposure cannot be reversed.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Sock Puppets",
+   "why_this_matters": "The target argues against what looks like a consensus and concludes they are the outlier, when the numbers on the other side were never real.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Coordinated Reporting",
+   "why_this_matters": "The target loses their account, their reach, or their income through a system built to protect people, and there is no realistic appeal against a decision that was made on volume.",
+   "what_it_is_not": null,
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credential-Costuming",
+   "why_this_matters": "The target defers to standing that is not there, and the questions they would otherwise have asked start to feel out of place. Decisions then rest on the appearance of expertise rather than on anything that was tested.",
+   "what_it_is_not": "An unfamiliar credential is not a false one — plenty of genuine titles mean nothing outside their field, and modest people describe real experience in ways that happen to sound grand. A claim you cannot place is something to check, not a finding in itself.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Identity Performances",
+   "why_this_matters": "Trust is extended to a version of someone that does not exist, so the target's read on the relationship rests on facts that were supplied to them rather than observed.",
+   "what_it_is_not": "Everyone presents differently in different rooms, and someone rebuilding or still working out who they are is changing rather than fabricating. The question is whether specific claims hold up under a reasonable follow-up, not whether the person seems unlike themselves at work.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Social Engineering",
+   "why_this_matters": "What gets used is the target's ordinary decency — helpfulness, deference to apparent authority, reluctance to make a fuss — so the loss afterwards feels like a personal failing rather than something done to them.",
+   "what_it_is_not": "Genuinely urgent legitimate requests exist, and real IT or security staff follow processes that most people have never met before. Checking back through a channel you already trust costs an honest request nothing, which is why it is the cheap test here rather than suspicion of the person.",
+   "confidence": "medium",
+   "note": "This entry sits closer to fraud than to relational manipulation, so the disconfirming case is framed around verification rather than around pattern-over-instance.",
+   "approved": false
+  },
+  {
+   "name": "Performative Allyship / False Solidarity",
+   "why_this_matters": "Trust is given on the strength of stated values, and the gap only becomes visible at the moment support would have cost something — which is usually the moment the target most needed it.",
+   "what_it_is_not": "Many people are further along in their stated values than in their practice and are genuinely, if unevenly, catching up. Quiet support that is never announced anywhere is the reverse of this pattern, not a mild version of it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Premature Exclusivity",
+   "why_this_matters": "The target commits before they hold the information the decision needed, and by the time it arrives they have already given up the alternatives they would have weighed it against.",
+   "what_it_is_not": "Some people simply prefer clarity early, and two people can both want to close things down quickly and be delighted about it; pacing norms differ by culture and by person. What separates the two is whether hesitation is allowed to stand without a penalty.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Confirmation Bias Exploitation",
+   "why_this_matters": "The target's own hopefulness becomes the thing that keeps them in place, and the pattern stays invisible to the one person best placed to see it.",
+   "what_it_is_not": "Most relationships genuinely are mostly good, and holding on to the good parts is not denial. The tendency only becomes something that can be worked on when the good stretches reliably arrive straight after harm rather than independently of it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Halo Effect Exploitation",
+   "why_this_matters": "A concern gets weighed against someone's reputation rather than against the evidence for it, and the target usually learns not to raise it before anyone else has even heard it.",
+   "what_it_is_not": "Being excellent at one thing does sometimes go with being decent generally, and a real track record legitimately earns some benefit of the doubt. It goes wrong when an achievement is offered as the answer to a concern that has nothing to do with it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Obligation Contracts",
+   "why_this_matters": "The target is held to a debt they never agreed, and asking what they actually signed up for is treated as evidence of disloyalty rather than as a fair question.",
+   "what_it_is_not": "Long relationships do build genuine mutual obligations that both people would describe the same way if asked separately, and someone can be honestly hurt that an assumed closeness was not there. This describes a debt only one party has ever stated the terms of.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Covert Contracts",
+   "why_this_matters": "The target is judged against a standard they had no access to, so effort never produces safety — there is always another rule they have not been told.",
+   "what_it_is_not": "Some expectations are shared widely enough that most people would recognise them unstated, and people often believe in good faith that something was mutual. Someone who adjusts readily once told the rule was never communicated is having a miscommunication, not enforcing one.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Financial Dependence by Design",
+   "why_this_matters": "Leaving becomes a question of survival rather than of judgement, so whatever the target concludes about the relationship, the conclusion cannot change anything.",
+   "what_it_is_not": "Plenty of households divide earning and caring by genuine agreement, and caregiving, illness or a poor job market limit independence without anyone arranging it. The thing to look at is what happens when the dependent person takes a step toward independence.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Platform Migration",
+   "why_this_matters": "The target loses the record, so any later dispute about what was said becomes their word against someone else's, with the whole burden of remembering exactly falling on them.",
+   "what_it_is_not": "Wanting to talk difficult things through by voice is a common and reasonable preference, and there are real privacy reasons to avoid particular apps. What distinguishes this is whether the preference covers everything or only what might later be quoted back.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Benching",
+   "why_this_matters": "The target's availability is preserved while their status stays undefined, so they keep a place open for something with no timeline and turn down things that had one.",
+   "what_it_is_not": "Early connections genuinely are undefined for a while, people are honestly busy, and openly casual arrangements both parties accept are their own thing. What is missing here is honesty about where things stand, not intensity.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "\"Sacred Duty\" Manipulation",
+   "why_this_matters": "Refusal stops being a preference and becomes a moral failure, so the target cannot decline without feeling they have done something wrong — and often cannot appeal to anyone inside their own community.",
+   "what_it_is_not": "Faith, ancestry and family duty are real values that millions of people hold and invoke sincerely, and someone speaking from conviction about their own obligations is not doing this. Watch whether the sacred framing shows up for every request or only for the ones that happen to suit the speaker.",
+   "confidence": "medium",
+   "note": "Written to avoid implying that religious or ancestral obligation is itself suspect; the disconfirming case carries most of that weight.",
+   "approved": false
+  },
+  {
+   "name": "Shame-as-Governance Disguised as Advice",
+   "why_this_matters": "The target comes away smaller rather than better equipped, and objection is pre-answered: it was only ever offered as help.",
+   "what_it_is_not": "Real feedback is often unwelcome in the moment, and delivery can be clumsy without being an attack. The usable test is what you are left holding afterwards — something to do, or only something to feel.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "PIP Weaponization",
+   "why_this_matters": "The target is set a target they cannot hit while the record for their exit is being assembled, and defending themselves means arguing against a document that already exists.",
+   "what_it_is_not": "Genuine performance problems are real, and a formal plan with clear goals, actual support and honest timelines is how they are meant to be handled. What matters is the timing relative to a complaint or a protected absence, and whether the goals hold still once progress starts.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credit Laundering",
+   "why_this_matters": "The target watches their own work succeed without them and cannot name a moment at which it was taken, which makes raising it sound like sour grapes even to themselves.",
+   "what_it_is_not": "Ideas genuinely improve as they pass through people, large workplaces diffuse information with nobody steering it, and two people do sometimes arrive at the same thought separately. The signal is attribution disappearing along the way, not the idea travelling.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "The \"Good Woman Program\"",
+   "why_this_matters": "The same conduct costs the target more than it costs other people — a proportionate no draws a penalty — and over time the discomfort with taking up space is experienced as a personal trait rather than a learned response to that penalty.",
+   "what_it_is_not": "Kindness and consideration are values many people genuinely hold for themselves, and some people are accommodating by temperament with nothing imposed about it. What is being described is an uneven cost attached to the same conduct, not the conduct itself.",
+   "confidence": "low",
+   "note": "Broad cultural pattern rather than a discrete exchange, so the disconfirming case had to separate personal temperament from an unevenly applied social cost; a reviewer may want to tighten this.",
+   "approved": false
+  },
+  {
+   "name": "Objectification",
+   "why_this_matters": "The target's worth rises and falls with their usefulness, so the parts of them that are not useful go unwitnessed — and attention withdrawing feels like something they failed to supply.",
+   "what_it_is_not": "Some relationships are frankly transactional and both people know it, and valuing a particular skill is not a reduction of the person who has it. Ask whether anything about them registers at the moments when the useful part is not needed.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Dehumanization",
+   "why_this_matters": "Decisions get made about the target in language that has no slot for their perspective, so there is no point in the process at which their own account could plausibly be asked for.",
+   "what_it_is_not": "Formal, clinical and bureaucratic language exists for good reasons and is applied to everybody in some settings, and professional detachment in triage is not contempt. Look for whether the reductive framing is used selectively for one person.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Overcorrection Demands",
+   "why_this_matters": "Repair stops being achievable and becomes a performance of submission, and the target learns that small mistakes carry costs they cannot predict in advance.",
+   "what_it_is_not": "What looked minor sometimes turns out to have caused more damage than it first appeared, and expectations around apology vary a great deal between families and cultures. The revealing moment is what happens when the disproportion is named out loud.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Toxic Positivity / Weaponized Optimism",
+   "why_this_matters": "The target's dissatisfaction becomes the thing that needs fixing, so whatever caused it goes unexamined and saying so again costs them standing in the room.",
+   "what_it_is_not": "Encouragement that arrives alongside real acknowledgement of the difficulty is a different thing, and people who are optimistic by temperament share that outlook without requiring anyone to match it. Perspective offered once about a genuinely small setback, and not insisted on, is ordinary.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Frame Assassination",
+   "why_this_matters": "The target arrives with a concern about an action and leaves defending their own stability. The original point is not refused, which is why it is so hard to notice that it was never answered.",
+   "what_it_is_not": "Conversations drift, and redirecting one collaboratively is ordinary; someone can also raise a real worry about your wellbeing without meaning to displace what you said. The test is whether the original topic can be returned to at all.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credibility Theft",
+   "why_this_matters": "The target's account is discounted before they give it, so whatever they later report lands on people who have already been prepared not to believe it — and they usually never learn why.",
+   "what_it_is_not": "A documented record of inaccuracy reasonably does affect how much weight an account carries, and doubting one particular claim is not a campaign. The separation is between doubt about a claim and doubt installed in advance about the person.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Projection",
+   "why_this_matters": "The target spends the conversation defending themselves against the thing being done to them, which makes the actual source of the harm very hard to see, let alone describe to anyone else.",
+   "what_it_is_not": "An accusation can be accurate even when it also describes the accuser, and in most conflicts both people contribute some of the same behaviour. Someone naming a pattern they share, and owning their half of it, is doing the opposite of this.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Authority Hijack",
+   "why_this_matters": "The target ends up arguing the case for their own feelings, and simply being taken at their word stops being available to them.",
+   "what_it_is_not": "People who know you well sometimes offer a reading you had not considered, and in therapy that questioning is invited rather than imposed; a clarifying question is not a counter-claim. The difference is whether your own account is still allowed to be the last word on it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Accountability Evasion via Diagnosis",
+   "why_this_matters": "The complaint is never answered — it is converted into a symptom, and the target is sent to seek treatment for a reaction to someone else's conduct.",
+   "what_it_is_not": "A real condition can genuinely be part of the picture, and someone qualified raising it with care is doing their job. The question is whether the original report ever gets answered by anybody, or whether the diagnosis is where the matter ends.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Identity Diminishment via Pathologizing",
+   "why_this_matters": "Self-protection gets reclassified as a symptom, so the target's boundaries cost them credibility and any pushback is read as further evidence of the alleged problem.",
+   "what_it_is_not": "A trusted person can gently name a real escalation out of genuine care, and a diagnosis someone has disclosed themselves can be referred to supportively. What is described here is a boundary answered with a label instead of a response.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pseudo-Insight as Shutdown",
+   "why_this_matters": "A specific, checkable complaint is converted into something unfalsifiable about the target's inner life, which closes the conversation without anything being resolved or even disputed.",
+   "what_it_is_not": "\"You're projecting\" is sometimes accurate, and in a therapy room that kind of exploration is the agreed purpose of being there. The marker is a psychological reading offered as the whole reply to a concrete complaint.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Spiritual Bypassing",
+   "why_this_matters": "The target's anger is judged as a spiritual shortcoming and forgiveness is asked for before anything has been acknowledged, so the harm is closed off without ever having been repaired.",
+   "what_it_is_not": "Many people hold these beliefs sincerely and apply them first to their own lives, and spiritual perspective offered alongside a real acknowledgement of what happened is not this. It is the ordering that matters: letting go requested before anything is admitted.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Burden of Proof Shifting",
+   "why_this_matters": "The target has to build a case for ordinary treatment, and the work of proving becomes the price of asking — a price most people eventually decline to keep paying.",
+   "what_it_is_not": "Some disputes really do turn on evidence, and formal settings apply the same evidentiary standard to everybody in them. The flag here is proof demanded for a boundary or for a described experience, rather than for a contested fact.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Paltering",
+   "why_this_matters": "The target is misled by statements that are all individually true, and when they object they are told, correctly, that nothing false was said — so they end up doubting their own reasonable inference rather than the account.",
+   "what_it_is_not": "Careful, precise people answer exactly what was asked without steering anyone anywhere, and someone can answer honestly with an incomplete picture because that is all they had. There are also things people are legitimately entitled not to disclose at all.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Gish Gallop",
+   "why_this_matters": "The target loses on throughput rather than on substance, and the fact that they could not answer everything gets treated as evidence that they could not answer anything.",
+   "what_it_is_not": "Well-prepared people cover ground fast because they are prepared, enthusiasm makes people talk quickly, and some disputes genuinely contain many separate valid points. Volume is not the signal; whether individual claims survive a proper look is.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Limited Hangout",
+   "why_this_matters": "The target closes the matter believing they now have the full picture, and the smaller admission is afterwards used as proof that there was nothing further to tell.",
+   "what_it_is_not": "People often disclose in stages as they find the nerve, or genuinely do not yet know the full scope of what they did; leading with the largest thing and filling in details later is a natural order, not a suspicious one. What is described here is a small admission used to foreclose the question.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pseudo-Profundity / Intellectual Intimidation",
+   "why_this_matters": "The target is left unable to challenge a conclusion they never understood, and reads their own confusion as a shortfall in themselves rather than in the explanation.",
+   "what_it_is_not": "Some subjects genuinely need specialist vocabulary, and real experts are frequently poor at translating what they know into plain language. Asking for it in simpler terms usually separates them: genuine expertise can be restated, hollow language cannot.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Semantic Erosion / Meaning Dilution",
+   "why_this_matters": "The target loses the accurate word for their own situation, so describing it plainly now sounds like exaggeration — to other people and often to them.",
+   "what_it_is_not": "Words drift for ordinary cultural reasons all the time, loosened by thousands of unconnected people using them casually, and there is legitimate good-faith argument about where a concept's edges lie. This describes dilution that happens to relieve one particular person of an accusation.",
+   "confidence": "low",
+   "note": "Hard to distinguish from ordinary language change without attributing intent, so the disconfirming case leans on who benefits rather than on what was meant.",
+   "approved": false
+  },
+  {
+   "name": "Dog Whistling / Coded Signaling",
+   "why_this_matters": "The target reacts to something real that nobody else in the room can see, so their reaction becomes the visible event while the message itself stays deniable.",
+   "what_it_is_not": "Private references and inside jokes are ordinary and usually harmless, and a phrase can land on something painful entirely by accident. Because the meaning is by design invisible to observers, this is one to hold especially loosely: no onlooker, and no tool, can confirm it from the words alone.",
+   "confidence": "medium",
+   "note": "The tactic is defined by deniability, so the disconfirming case doubles as a caution that it is close to unverifiable from text.",
+   "approved": false
+  },
+  {
+   "name": "Information Cascades",
+   "why_this_matters": "The target is judged on a belief that nobody actually checked, and correcting it means taking on a whole group's social pressure rather than a single person's claim.",
+   "what_it_is_not": "Widely held beliefs are often simply correct, and relying on a source with a real track record instead of re-verifying everything yourself is sensible rather than herd-like. The marker is people citing each other's agreement in place of anything independent.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Interruption Patterns",
+   "why_this_matters": "The target's points never reach completion, so their contribution is judged on fragments — and in time they start shortening themselves before anyone has cut in.",
+   "what_it_is_not": "Some groups are interruption-heavy as a matter of culture and cut across everybody equally, and a single eager interruption means nothing at all. The question is distribution: spread across the room, or concentrated on the same voices.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Idea Theft in Real Time",
+   "why_this_matters": "The target's contribution counts for somebody else, and the only way to claim it back makes them look petty in the very moment it happens.",
+   "what_it_is_not": "People genuinely reach the same idea within minutes of each other, someone who did not register your version may honestly believe theirs is new, and a restatement that adds something substantive has earned its own credit. Once is coincidence; it is the repetition that registers.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Gatekeeping",
+   "why_this_matters": "The target needs permission that others do not, and because the criteria move there is no version of asking correctly that reliably works.",
+   "what_it_is_not": "Managing access is the actual job in plenty of roles, and criteria that are published and applied to everyone are simply process; someone slow to make an introduction is usually just busy. The signal is criteria that change depending on who is asking.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Punishment by Proxy",
+   "why_this_matters": "The target's own boundaries start carrying a cost for someone else, so protecting themselves means exposing a person they care about — which is usually enough to stop them.",
+   "what_it_is_not": "Timing coincides far more often than intuition expects, and third parties have their own independent history with the same people. This is among the easiest patterns in the book to over-read and the least safe to act on from timing alone.",
+   "confidence": "medium",
+   "note": "Kept the disconfirming case deliberately strong because the tactic is defined by an inference about causation that the reader usually cannot verify.",
+   "approved": false
+  },
+  {
+   "name": "Weaponized Inclusion / Strategic Containment",
+   "why_this_matters": "The target's independent options close as their formal ones open, and any objection is answered by the fact that they were included.",
+   "what_it_is_not": "Genuine inclusion in which someone's input really does move outcomes looks much the same from outside, and new structures often take time to build the mechanisms that make input count. Having less influence because of seniority or experience is not containment.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Controlled Opposition",
+   "why_this_matters": "The target's dissent is absorbed rather than answered: effort goes into a channel that was not built to lead anywhere, and the appearance of a debate substitutes for a change.",
+   "what_it_is_not": "Movements disagree internally about strategy constantly, and a critic who is cautious by genuine conviction is not a plant. Overlap between someone's positions and the interests they criticise is common and usually coincidental — this needs evidence of actual coordination, not a feeling that the opposition is too tidy.",
+   "confidence": "low",
+   "note": "Politically loaded and highly prone to conspiratorial over-reading; the disconfirming case is written to raise the evidence bar rather than describe an innocent lookalike.",
+   "approved": false
+  },
+  {
+   "name": "Reputation Laundering",
+   "why_this_matters": "The target has to argue against a portrayal with no traceable origin, while each person repeating it treats everyone else's repetition as their evidence for it.",
+   "what_it_is_not": "Reputations are frequently earned, and \"everyone says that\" is sometimes simply true. Several people who had similar experiences at first hand are corroborating each other; the distinction worth drawing is between people who encountered the person and people who encountered the story.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Maternal Gatekeeping",
+   "why_this_matters": "The corrected caregiver's confidence erodes until they step back, and the stepping back is then read as proof they were never really willing.",
+   "what_it_is_not": "One specific safety concern, raised constructively, is not this — and two caregivers can have genuinely different methods that both work perfectly well. Someone still learning a particular skill can be given proportionate guidance without their competence being the target of it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Echo Chamber Construction",
+   "why_this_matters": "The target loses the outside views that would let them sense-check their own situation, and the narrowing arrives feeling like a preference they chose.",
+   "what_it_is_not": "People form affinity groups on their own, and recommending sources you honestly rate is not curating somebody else's world. The distinguishing feature is active discouragement of everything else, not enthusiasm for something in particular.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Stochastic Harassment Direction",
+   "why_this_matters": "The target absorbs harassment from many people at once while the portrayal that produced it stays technically deniable, so there is no single act to report and no one to hold to it.",
+   "what_it_is_not": "Proportionate public criticism of someone's public actions is legitimate even when a third party overreacts to it, and reporting real wrongdoing through appropriate channels is not incitement. What is described here is repeated inflammatory portrayal aimed at an audience, not criticism as such.",
+   "confidence": "medium",
+   "note": "Turns on foreseeability, which is a judgement about likely effect rather than a described behaviour, so the disconfirming case does most of the guarding.",
+   "approved": false
+  },
+  {
+   "name": "Information Laundering",
+   "why_this_matters": "The target is contradicted by something that now looks well-sourced, and disproving it means unpicking a chain of citations rather than a single claim.",
+   "what_it_is_not": "Responsible journalism legitimately cites and builds on other credible reporting, and a claim that several outlets each confirmed separately is corroborated rather than laundered. The thing to trace is whether any link in the chain did original verification work.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  }
+ ]
+}
