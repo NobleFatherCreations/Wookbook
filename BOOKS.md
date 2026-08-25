@@ -199,15 +199,54 @@ moment only. Aeon — the reading-comfort typography still applies to its
 prose passages. Wait But Why — ❌ skip; a step sequence isn't a chapter
 index.
 
-## playbook — The Pattern Decoder **[inferred from tagline only]**
+## playbook — The Pattern Decoder **[confirmed: data extracted and validated, 2026-08-25]**
 
-"349 tactics · type what happened." Tagline suggests an interactive
-lookup/matching tool (you describe a situation, it identifies the tactic),
-not a linear book. **Not independently investigated this session.**
+"349 tactics · type what happened." An interactive lookup/reference compendium,
+not a linear book — confirmed by reading its own data, no longer inferred.
 
-**Reference adaptation:** Unconfirmed — likely more Wait But Why (findable,
-searchable) than Aeon (this probably isn't meant to be read start-to-finish).
-Check its actual structure before planning further.
+**Three datasets**, all now in `content/playbook-data.json` (built by
+`design/extract-playbook-data.py`, which asserts the counts):
+
+- `CODEX_COMPLETED` — **the source of truth.** 349 tactics × 38 fields, all
+  349/349 populated: `what_it_sounds_like`, `boundary_script`, `response_options`,
+  `this_may_not_be_it_when`, `common_false_positives`, `discernment_questions`,
+  `psychological_mechanism`, `safety_note`, `misuse_warning`, `related_tactics`.
+- `COMPENDIUM` — **do not use as a content source.** Same 349 names, but
+  patchy: `sounds` on 226/349 (123 non-empty), `why` and `healthy` on 81/349,
+  101 entries flagged `stub`. It looks like the simple version and is actually
+  the incomplete one.
+- `RECIPES` — 109 validated tactic *sequences* (Grooming, Love Addiction
+  Engineering…), each naming its component tactics in order. All 109
+  cross-reference cleanly. No other project in the catalogue has anything
+  like this.
+
+Four tiers: Reference-only 244, Detected 81, Pattern-only 16, Watch-only 8.
+"Detected" means the live tool can flag that tactic in pasted text.
+24 categories.
+
+**Design status:** no git-tracked authoring source has ever existed; what the
+repo holds is a byte-mirror of the live page. Re-verified against live
+2026-08-25 — content byte-identical, but **live carries a Cloudflare Web
+Analytics beacon the mirror does not.** External request on a book page,
+contradicts the self-contained rule; flagged, not removed.
+
+**Known defect:** `Gaslighting` → `what_it_sounds_like` contains
+`"You're rememb it all wrong."` — a truncated word, unfixed (content, not code).
+
+**Reference adaptation:**
+- Stripe Press — ⚠️ a cover moment is fine, but this is a working reference, not
+  a volume to be read; restraint over object-feel.
+- Aeon — ❌ mostly doesn't apply. Nobody reads 349 entries start to finish.
+- Wait But Why — ✅ strongly. Findable, searchable, cross-linked. The
+  `related_tactics` field already contains the link graph; it just isn't drawn.
+
+**Short-form stance — this is the catalogue's best short-form asset.** Each
+entry carries its own hook (`what_it_sounds_like`), its own close
+(`boundary_script`), and — uniquely — its own disconfirming case
+(`this_may_not_be_it_when`). See `design/build-decoder-clips.py` and
+`content/decoder-clips.json` for the 349-clip manifest. **The disconfirming
+beat is not optional decoration; it is what keeps the entry's own
+`misuse_warning` true once the entry leaves the book.**
 
 ## music — The Listening Room **[confirmed: rebuilt from the audio itself, 2026-08-12]**
 

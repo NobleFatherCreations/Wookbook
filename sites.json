@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-02",
-  "updated": "2026-08-05",
+  "updated": "2026-08-25",
   "note": "Machine-readable registry of every Noble Father Creations live project. Built by fetching noblefathercreations.com live, cross-referencing the connected Netlify account (all netlifySite mappings below are byte-verified against live content, not guessed), and cross-referencing a user-supplied review package (source/) documenting a prior design session. Any AI/tool working on this project should read this file first instead of re-guessing URLs.",
   "hub": {
     "title": "Noble Father Creations",
@@ -69,6 +69,10 @@
       "netlifySite": "noblepatterns",
       "netlifySiteId": "8b3d5fdf-49e5-46eb-bb53-97d69039a44e",
       "deploySource": "cli",
+      "localSource": "content/prose/_raw/playbook.html",
+      "localSourceNote": "No authoring source has ever existed for this project; the tracked file is a byte-mirror of the live page. Re-verified against live 2026-08-25: the content data (COMPENDIUM 349, CODEX_COMPLETED 349, RECIPES 109) is byte-identical. The only difference is a Cloudflare Web Analytics beacon present on live and absent here -- an external request, so it contradicts the self-contained rule in CLAUDE.md. Flagged, not removed; that is a deploy decision.",
+      "dataSource": "content/playbook-data.json",
+      "dataSourceNote": "The three datasets lifted out of the HTML mirror into diffable JSON by design/extract-playbook-data.py. This is what other tooling should read; the HTML stays as the provenance record. Rebuild rather than hand-editing.",
       "hasGitRepo": false,
       "houseTabLeak": {
         "found": false,
@@ -76,6 +80,11 @@
       },
       "version": "v1",
       "changelog": [
+        {
+          "date": "2026-08-25",
+          "version": "v1",
+          "summary": "Repo-side only, nothing deployed: the 349 tactics, 349 full codex entries and 109 tactic sequences now exist as tracked JSON instead of living only inside a 5MB HTML mirror."
+        },
         {
           "date": "unknown",
           "version": "v1",

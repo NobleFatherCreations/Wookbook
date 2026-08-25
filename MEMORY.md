@@ -2594,3 +2594,73 @@ overflow, nothing stuck at `opacity:0`, all 176 rows and 6 shelves render, and
 **audio actually plays** (`currentTime` advancing, asserted twice, from the
 absolute URL). Also asserted the analyser genuinely paints the canvas, and that
 the fallback bars appear with no dead canvas when `AudioContext` is missing.
+
+## Update (2026-08-25, session 16) — The Pattern Decoder given a real source; short-form adaptation started
+
+**Context.** User asked for a plan to adapt the whole body of work into
+short-form, then chose the Pattern Decoder to start with and asked for it to be
+protected first. Nothing was deployed this session.
+
+**The "no source" problem was half true, and the half that was true is fixed.**
+`sites.json` recorded `localSource` as none for `decoder`, which read as "the
+data only exists live." In fact `content/prose/_raw/playbook.html` **is**
+git-tracked (5.2 MB) and always was. What genuinely did not exist was any
+readable source: all the content sat inside that file as JS array literals, so
+nothing could use it without parsing a whole web app.
+
+`design/extract-playbook-data.py` now lifts all three datasets out into
+`content/playbook-data.json` (3.9 MB, diffable). Counts are asserted, so a
+truncated future mirror fails loudly instead of silently shrinking:
+
+- `COMPENDIUM` — 349 tactics, the reference shape.
+- `CODEX_COMPLETED` — the same 349, **38 fields each**, all 349/349 populated.
+  This is the real source of truth, not COMPENDIUM.
+- `RECIPES` — **109 validated tactic sequences** (Grooming = Love Bombing →
+  Boundary Testing → Manufactured Intimacy → …). All 109 cross-reference
+  cleanly to compendium entries; the script checks and reports, never repairs.
+
+**COMPENDIUM is patchy and should not be used as the content source.** Measured:
+`sounds` on 226/349 (only 123 non-empty), `why` and `healthy` on 81/349, and
+101 entries carry a `stub` flag. `CODEX_COMPLETED` is complete on every field.
+Any future work that reaches for `COMPENDIUM` because it looks simpler will
+silently lose two thirds of the book.
+
+**Live drift check (2026-08-25).** Fetched live `/playbook` and diffed against
+the tracked mirror. The content data is byte-identical. The single difference:
+live carries a **Cloudflare Web Analytics beacon** (`static.cloudflareinsights.com`)
+that the tracked file does not. That is an external request on a book page, so
+it contradicts the self-contained rule in `CLAUDE.md`, and it sits oddly beside
+the sibling books that promise "no analytics, no tracking, no external requests"
+in their own text. **Flagged, not touched** — removing it is a deploy decision
+and the standing "stop deploying" hold applies. Recorded in `sites.json` →
+`decoder.localSourceNote`.
+
+**One real content defect, in 349 entries × 38 fields.** `Gaslighting` →
+`what_it_sounds_like` contains `"You're rememb it all wrong."` — a truncated
+word. Not fixed here (frozen-prose rule; it is content). Three other scanner
+hits on `Benching` were false positives — "undefined" is legitimate prose there,
+about undefined relationship status.
+
+**`design/build-decoder-clips.py`** builds `content/decoder-clips.json` — 349
+five-beat clip records, every line copied from the book's own fields, nothing
+written by the script. The beats: `what_it_sounds_like` → name → `why_this_matters`
+→ **`this_may_not_be_it_when`** → `boundary_script`. All 349 assemble with zero
+missing beats.
+
+**Beat 4 is the editorial argument and should not be cut for length.** Every
+other account naming manipulation tactics stops at "why it works," because doubt
+costs retention. This book carries a disconfirming case on all 349 entries, so
+including it is free — and it is what keeps the book's own `misuse_warning`
+("a signal to examine, not proof of motive") true in the adaptation. It is also
+what stops the series becoming an outrage feed, which is the failure mode the
+standing 2026-08-03 craft rule exists to prevent.
+
+**Release order is deliberately not virality-scored** — one clip per category,
+cycling, Detected tier first within a category (those are the ones the live tool
+can actually flag in pasted text, so a viewer arriving at the site can
+immediately do the thing the clip described). Tier spread: Reference-only 244,
+Detected 81, Pattern-only 16, Watch-only 8.
+
+**Still open:** the Cloudflare beacon decision; the Gaslighting typo; and
+whether `RECIPES` becomes its own series (109 sequences is a second, distinct
+format that no other book in the catalogue offers).
