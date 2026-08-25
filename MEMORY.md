@@ -2743,3 +2743,46 @@ extraction.
 **Not a discrepancy, checked and dismissed:** the `content/prose/README.md`
 word-count table differs from `wc -w` by +5 to +38 per file. That is two
 different counting methods, not drift.
+
+## Update (2026-08-25, session 16 continued) — hook pass: 104 -> 134 shoot-ready, and why the other 215 can't be automated
+
+**+30 mechanically.** `design/build-decoder-clips.py` now falls back to the
+**lead clause of `short_definition`** when an entry's own spoken lines are all
+too long. The split is on boundaries the author already wrote (em-dash, colon,
+semicolon, and only those commas introducing a trailing subordinate clause) —
+never mid-phrase — and is accepted only if the result actually fits the
+80-character budget. Each clip records `hook_source`, and the full
+`short_definition` travels with the record, so nothing is silently rewritten.
+Result: 104 -> **134 shoot-ready**, 245 -> **215 needing a hook**, and the
+blocked-category count dropped from 10 to **8**.
+
+**The other 215 have no mechanical answer, and the near-misses are traps.**
+Measured across the corpus, not assumed:
+
+- `this_may_be_it_when` — 1,225 items, **20 distinct**. Every entry has a line
+  under budget; it is the same line ("It fits a repeating pattern rather than
+  one isolated moment."). Identifies nothing.
+- `pattern_over_time_signs` — 974 items, **15 distinct**. Same trap.
+- `what_it_is` — 980 items, 326 distinct, but the short ones are the shared
+  scaffolding lines.
+- `what_it_sounds_like` — 99% distinct, but on these entries it holds
+  *descriptions* of a signal, median 106 chars.
+- `short_definition` — **100% distinct on all 349**, which is why it's the
+  fallback; only 30 of the 215 have a lead clause that fits.
+
+Lines that are both unique AND under budget across those fields: **11 of 245**.
+So the script does not invent hooks. `design/build-hook-worksheet.py` writes
+**`HOOKS-TODO.md`** instead: per tactic, its most distinctive short lines with
+character counts and overage, boilerplate excluded (computed from the corpus,
+not hard-coded), **8 blocked categories first** because those cannot appear in
+the release at all until one hook is written.
+
+**How much work is actually left** (overage past 80 chars):
+11 need a word or two cut · 92 need a clause cut · 100 need a rewrite ·
+12 need writing fresh. So ~103 are quick trims and ~112 are real editorial
+decisions.
+
+**Blocked categories remaining (8):** Confusion / rhetoric (16), Control
+structural (19), Cult & Thought Reform (9), Devaluation structural (8),
+Digital & AI (13), Hooking structural (9), Isolation / social (13),
+Organizational & Institutional (5).

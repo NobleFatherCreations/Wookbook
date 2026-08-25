@@ -216,7 +216,8 @@ Short-form work products, as they get built:
 | Project | Asset | What it holds |
 |---|---|---|
 | `playbook` | `content/playbook-data.json` | 349 tactics x 38 fields, 349 compendium entries, 109 tactic sequences |
-| `playbook` | `content/decoder-clips.json` | 349 five-beat clip records, 104 marked shoot-ready |
+| `playbook` | `content/decoder-clips.json` | 349 five-beat clip records; 134 shoot-ready, 215 awaiting a hook |
+| `playbook` | `HOOKS-TODO.md` | worksheet: candidate opening lines for the 215, blocked categories first |
 | `festival` | `content/festie-bible-data.json` | 12 role-based field guides with checks, outlines and scenarios |
 | `music` | `deploy/music/MANIFEST.json` | 176 tracks across 6 shelves, used as the bed library for every clip |
 

@@ -40,6 +40,7 @@ described.
 import argparse
 import json
 import os
+import re
 import sys
 from collections import Counter, defaultdict, OrderedDict
 
@@ -118,6 +119,36 @@ def pick_hook(sounds):
     return ordered[0], ordered[1:]
 
 
+# Boundaries the author already put in the sentence. Splitting here is
+# choosing where the writer's own clause ends -- it is not a rewrite, and
+# nothing is ever cut mid-phrase. Comma splits are restricted to the
+# connectives that begin a trailing subordinate clause, because a bare comma
+# is just as likely to be separating items in a list.
+CLAUSE_BREAK = re.compile(
+    r"\s*[—;:]\s*"
+    r"|,\s+(?=so |which |making |leaving |until |while |before |after )")
+
+
+def lead_clause(text):
+    """The first clause of `text`, or None if it is not shorter than the whole.
+
+    Used only on short_definition, which is the one field that is distinct on
+    all 349 entries. what_it_sounds_like is 99% distinct but long on
+    Reference-only entries; this_may_be_it_when and pattern_over_time_signs
+    look promising (100% of entries have a line under the budget) and are in
+    fact boilerplate -- 20 and 15 distinct lines respectively across the whole
+    corpus, so they identify nothing.
+    """
+    if not text:
+        return None
+    parts = [p.strip().rstrip(".,;:—") for p in CLAUSE_BREAK.split(text)]
+    parts = [p for p in parts if p]
+    if not parts:
+        return None
+    head = parts[0]
+    return head if len(head) < len(text.strip()) else None
+
+
 def first(lst):
     for item in lst or []:
         if isinstance(item, str) and item.strip():
@@ -127,6 +158,19 @@ def first(lst):
 
 def build(entry):
     hook, alts = pick_hook(entry.get("what_it_sounds_like") or [])
+    hook_source = "what_it_sounds_like"
+
+    # If the entry's own spoken lines are all too long to read in three
+    # seconds -- which is the normal case outside the Detected tier, where
+    # the field holds descriptions rather than quotes -- fall back to the
+    # opening clause of short_definition. Only accept it if it actually fits;
+    # a truncation that still overruns helps nobody.
+    if not hook or len(hook) > HOOK_MAX_CHARS:
+        lead = lead_clause((entry.get("short_definition") or "").strip())
+        if lead and len(lead) <= HOOK_MAX_CHARS:
+            if hook:
+                alts = [hook] + alts
+            hook, hook_source = lead, "short_definition (lead clause)"
     not_this = first(entry.get("this_may_not_be_it_when"))
     close = (entry.get("boundary_script") or "").strip() or None
     mechanism = (entry.get("why_this_matters") or "").strip() or None
@@ -158,7 +202,9 @@ def build(entry):
             ("not_this", not_this),
             ("close", close),
         ])),
+        ("hook_source", hook_source),
         ("hook_alternates", alts),
+        ("short_definition", (entry.get("short_definition") or "").strip()),
         ("summary", (entry.get("plain_language_summary") or "").strip()),
         ("misuse_warning", entry.get("misuse_warning") or []),
         ("safety_note", (entry.get("safety_note") or "").strip()),
