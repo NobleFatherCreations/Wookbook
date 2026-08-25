@@ -1,6 +1,6 @@
 # Playground Protectors
 
-*Extracted from `source/projects/noble-father-playground.html` — 47,128 words.*
+*Extracted from `source/projects/noble-father-playground.html` — 47,151 words.*
 
 ---
 
@@ -2164,6 +2164,7 @@ A few small things make a big difference. You don't have to do all of them — p
 Shae Stovell is a writer and craftsperson and the creator behind Noble Father Creations . He has spent years studying how people influence, pressure, and manipulate each other — and how ordinary, kind people can learn to see it coming.
 Playground Protectors is where that work meets the person who matters most to him: his daughter. It takes the hardest-won lessons about tricky behavior and hands them to kids in a language they actually enjoy — missions, heroes, and Power-Ups instead of warnings and worry.
 His hope is simple: that the children who read this grow up a little harder to trick, a little quicker to trust themselves, and a lot quicker to ask for help when they need it.
+v4 · August 15, 2026. Added anonymous visitor analytics (Cloudflare Web Analytics) — no cookies, no personal data, nothing that leaves this domain.
 v2 · August 5, 2026. Fixed 36 spots where words got swapped for the wrong ones by a bad find-and-replace (including a science citation that had the wrong name for a real researcher's work), 3 Grown-Up Corner sections that had lost their box and heading, a speech bubble that showed only "s:" instead of real words, and a few small typos.
 PLAYGROUND PROTECTORS
 Shaela's Complete Guide to Tricky People, Power-Ups, and Real Friendships

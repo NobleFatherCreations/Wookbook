@@ -128,7 +128,7 @@
       "deploySource": "cli (via @netlify/mcp deploy-site)",
       "hasGitRepo": false,
       "localSource": "source/projects/noble-father-sovereign.html",
-      "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
+      "localSourceVerified": "2026-08-25",
       "houseTabLeak": {
         "found": false,
         "checkedAt": "2026-08-02"
@@ -145,7 +145,8 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
     },
     {
       "codename": "playground",
@@ -158,7 +159,7 @@
       "deploySource": "cli (via @netlify/mcp deploy-site)",
       "hasGitRepo": false,
       "localSource": "source/projects/noble-father-playground.html",
-      "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
+      "localSourceVerified": "2026-08-25",
       "houseTabLeak": {
         "found": false,
         "checkedAt": "2026-08-02"
@@ -175,7 +176,8 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
     },
     {
       "codename": "festie-codex",
@@ -190,7 +192,7 @@
       "gitRepo": "NobleFatherCreations/Wookbook",
       "gitFile": "festie-codex-full.html",
       "localSource": "source/projects/noble-father-festival.html",
-      "localSourceNote": "RESOLVED 2026-08-03: festie-codex-full.html and source/projects/noble-father-festival.html are the same document, kept manually in sync (no symlink). RE-DRIFTED and re-synced 2026-08-05: two repo-wide sweeps (Loop/Scale House-tab, Fracture rename) touched only the source/projects copy and missed the git-deployed repo-root file. Standing risk: any future source/projects/*.html sweep will miss festie-codex-full.html again unless it's explicitly included — check both are byte-identical before trusting either as current.",
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them.",
       "houseTabLeak": {
         "found": false,
         "checkedAt": "2026-08-02"
@@ -202,7 +204,8 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceVerified": "2026-08-25"
     },
     {
       "codename": "fractal",
@@ -250,7 +253,7 @@
       "deploySource": "cli (via @netlify/mcp deploy-site)",
       "hasGitRepo": false,
       "localSource": "source/projects/noble-father-fracture.html",
-      "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
+      "localSourceVerified": "2026-08-25",
       "houseTabLeak": {
         "found": false,
         "checkedAt": "2026-08-02"
@@ -272,7 +275,8 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
     },
     {
       "codename": "loop",
@@ -285,13 +289,14 @@
       "deploySource": "cli (via @netlify/mcp deploy-site)",
       "hasGitRepo": false,
       "houseTabLeak": {
-        "found": true,
-        "checkedAt": "2026-08-02",
+        "found": false,
+        "checkedAt": "2026-08-25",
         "fixReady": true,
         "fixFile": "fixes/loop.html",
         "fixVerified": "byte-exact removal, 757 bytes, single contiguous span, rest of file untouched",
         "deployed": true,
-        "deployedAt": "2026-08-05"
+        "deployedAt": "2026-08-05",
+        "note": "Verified clean against live 2026-08-25. This flag stayed true long after the fix shipped: live matches fixes/loop.html exactly (plus the analytics beacon), so the correction was deployed and the registry was never updated."
       },
       "version": "v2",
       "changelog": [
@@ -320,13 +325,14 @@
       "deploySource": "cli (via @netlify/mcp deploy-site)",
       "hasGitRepo": false,
       "houseTabLeak": {
-        "found": true,
-        "checkedAt": "2026-08-02",
+        "found": false,
+        "checkedAt": "2026-08-25",
         "fixReady": true,
         "fixFile": "fixes/scale.html",
         "fixVerified": "byte-exact removal, 761 bytes, single contiguous span, rest of file untouched",
         "deployed": true,
-        "deployedAt": "2026-08-05"
+        "deployedAt": "2026-08-05",
+        "note": "Verified clean against live 2026-08-25. This flag stayed true long after the fix shipped: live matches fixes/scale.html exactly (plus the analytics beacon), so the correction was deployed and the registry was never updated."
       },
       "version": "v2",
       "changelog": [
@@ -373,9 +379,10 @@
         }
       ],
       "localSource": "source/projects/faith-index.html",
-      "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
+      "localSourceVerified": "2026-08-25",
       "leakFix": "fixes/faith.html",
-      "leakFixNote": "Byte-verified corrected HTML for the build-instruction comment leak, awaiting redeploy. Was tracked but referenced nowhere, so nothing could find it."
+      "leakFixNote": "Byte-verified corrected HTML for the build-instruction comment leak, awaiting redeploy. Was tracked but referenced nowhere, so nothing could find it.",
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
     },
     {
       "codename": "music",
@@ -388,8 +395,8 @@
       "deploySource": "unknown",
       "hasGitRepo": false,
       "localSource": "source/projects/noble-father-music.html",
-      "localSourceNote": "GENERATED - do not hand-edit. Rebuild with `python3 scripts/build-music.py`, which writes this file and deploy/music/index.html as identical bytes from deploy/music/MANIFEST.json. The 176 mp3s live in deploy/music/audio/ (gitignored, reproducible from the Drive ids in the manifest). See deploy/music/README.md.",
-      "localSourceVerified": "built and verified locally 2026-08-12; NOT yet deployed",
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them.",
+      "localSourceVerified": "2026-08-25",
       "deployPending": true,
       "deployNote": "v2 is built and verified in the repo but has never been deployed. The audio directory (~1.26 GB) has to go up with it. Needs explicit user go-ahead as a production write.",
       "houseTabLeak": {
@@ -585,5 +592,11 @@
       "why": "Both are generated as identical bytes by scripts/build-music.py. Neither is hand-edited; regenerate rather than patching either.",
       "risk": "Hand-editing one output silently desynchronises it from the generator."
     }
-  ]
+  ],
+  "analyticsDecision": {
+    "what": "Cloudflare Web Analytics beacon (static.cloudflareinsights.com) on all 12 projects.",
+    "status": "Deliberate and reader-disclosed, not a leak.",
+    "evidence": "feminine, children and fracture each carry an on-page v4 changelog entry dated 2026-08-15: \"Added anonymous visitor analytics (Cloudflare Web Analytics) - no cookies, no personal data, nothing that leaves this domain.\" music carries the equivalent at v4, 2026-08-14.",
+    "conflict": "CLAUDE.md still states the self-contained rule absolutely (\"Never add a CDN <script> or <link> tag\", \"no external requests\"). That rule and this decision now contradict each other, and several books state the no-external-requests claim in their own body text. Reconcile the rule with the decision - do not silently strip the beacon on a future deploy because the rule says so."
+  }
 }

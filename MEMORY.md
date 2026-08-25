@@ -2786,3 +2786,82 @@ decisions.
 structural (19), Cult & Thought Reform (9), Devaluation structural (8),
 Digital & AI (13), Hooking structural (9), Isolation / social (13),
 Organizational & Institutional (5).
+
+## Update (2026-08-25, session 16 continued) — deploy check: nothing needed deploying; live was AHEAD
+
+User asked to deploy what's needed. **Nothing was deployed, because nothing
+should have been.** Checked all 12 projects, local source against live.
+
+**The leak fixes were already deployed.** `sites.json` still carried
+`houseTabLeak.found: true` for loop and scale. Live is clean, and live matches
+`fixes/loop.html` and `fixes/scale.html` byte-for-byte (plus the analytics
+beacon). The correction shipped and the registry was never updated — an eighth
+instance of the same stale-registry pattern the earlier audit found.
+
+**Six projects had live AHEAD of the repo.** feminine, children, wook,
+fracture, faith and music all carried changes made directly on the deployed
+sites between 2026-08-14 and 2026-08-15 that were never brought back:
+
+- feminine / children / fracture — an on-page **v4 changelog entry dated
+  2026-08-15** announcing the analytics addition.
+- music — v4 changelog plus a visit counter.
+- faith — a link fix, `noblefathercreations.netlify.app` → `.com`.
+- wook — a CSS rule and a section change.
+
+**Deploying the repo copy would have reverted all six.** `CLAUDE.md` says the
+repo is the source of truth and live must match it; here the repo was the
+stale side, so the sync ran live → repo. Both sync-pair files were written for
+wook and music, and the audit confirms they remain byte-identical.
+
+**The Cloudflare beacon question is answered, and not the way I framed it.**
+It is deliberate and reader-disclosed: three books carry an on-page v4 entry
+saying *"Added anonymous visitor analytics (Cloudflare Web Analytics) — no
+cookies, no personal data, nothing that leaves this domain."* It is not a
+leak. **But `CLAUDE.md` still states the self-contained rule absolutely**
+("Never add a CDN `<script>`", "no external requests"), and several books make
+the no-external-requests claim in their own body text. Recorded in
+`sites.json` → `analyticsDecision`. **Reconcile the rule with the decision —
+do not let a future session silently strip the beacon because the rule says
+to.**
+
+## Codex completion — two findings that changed the clip pipeline
+
+**1. The book grades itself, and the grading was being ignored.**
+`codex_maturity`: mature 81 / needs_review 143 / **reference_stub 101** /
+developing 24. `human_review_flags` marks every entry. `mature` = 81 = exactly
+the Detected tier = exactly the set with usable spoken hooks; the book's own
+assessment and the hook analysis agree independently.
+
+`build-decoder-clips.py` now gates on it. **152 held**: 101 reference stubs
+(the book calls them scaffolding) and 51 `manipulation_playbook_risk` (naming
+the mechanism this precisely is usable as instruction — an author's call, not
+a pipeline's). 22 of those were passing every other readiness test and would
+have shipped. Shoot-ready 134 → **112**. Two flags change *how* a clip is cut
+rather than whether: `safety_sensitive` (10, put the safety note on screen) and
+`high_false_positive_risk` (65, beat 4 becomes mandatory).
+
+**2. Beat 4 was sourced from the wrong field, and every clip would have ended
+on the same sentence.** `this_may_not_be_it_when` is on all 349 entries and
+holds **20 distinct lines across 1,745 items**. `what_it_is_not` (178
+distinct) and `common_false_positives` (916 distinct, 911 used once) carry the
+entry-specific version — *"One-off disagreement about facts is normal; people
+genuinely misremember. It's the pattern of attacking your sanity that
+matters."* Beat 4 now takes the first line unique to the entry; all 112
+shoot-ready clips have one, 108 from `what_it_is_not`.
+
+**3. "Incomplete" here means unspecific, not empty.** All 38 fields are
+populated on all 349 entries, so a missing-field check finds nothing. What
+separates mature from stub is specificity: `why_this_matters` is
+entry-specific on 81/81 mature and generic on 101/101 stubs; same for
+`what_it_is_not`. `design/build-codex-worklist.py` → **`CODEX-TODO.md`** lists
+the **266 entries** with a field still holding scaffolding
+(`why_this_matters` 266, `what_it_is_not` 224, `what_it_sounds_like` 45,
+`common_false_positives` 45).
+
+**Do not "complete" the shared apparatus.** `this_may_be_it_when`,
+`this_may_not_be_it_when`, `pattern_over_time_signs`, `safety_note`,
+`repair_check`, `psychological_mechanism` and `possible_impact_on_receiver`
+are generic on *every* entry including all 81 mature ones. That is the
+framework the book applies identically by design. The worklist only reports
+fields that are specific on some entries and generic on others, which is the
+actual signature of unfinished work.

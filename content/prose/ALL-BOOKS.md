@@ -7,7 +7,7 @@
 
 # The Sovereign Divine Feminine
 
-*(source/projects/noble-father-sovereign.html, 52,175 words)*
+*(source/projects/noble-father-sovereign.html, 52,198 words)*
 
 
 ---
@@ -7427,6 +7427,7 @@ That’s a refusal, not a strategy. I will not put hard-won, lived-experience wi
 And — there’s always an and — Spirit keeps nudging me on one of my own edges: learning to receive. You cannot write a whole book about healthy exchange and then dodge it yourself. So: if you reach the last page and feel moved to put something in the jar, beautiful. If not, also beautiful. The next book will be free too.
 🛠️ Changelog
 ## Updates
+v4 · August 15, 2026. Added anonymous visitor analytics (Cloudflare Web Analytics) — no cookies, no personal data, nothing that leaves this domain.
 v2 · August 5, 2026. Removed 2 sentences that weren’t supposed to be visible, fixed a counter bug where all twelve tactic badges showed the number 1, gave Appendix B a working link from the drawer menu, restored the closing Love-Centered Mandate box in 6 chapters where it had lost its styling, and fixed 8 more spots where a section heading had gotten glued onto the end of the wrong sentence.
 © The Fine Print
 ## Copyright &amp; Disclaimer
@@ -7444,7 +7445,7 @@ The pattern is the proof ✦ The sovereign feminine
 
 # Playground Protectors
 
-*(source/projects/noble-father-playground.html, 47,128 words)*
+*(source/projects/noble-father-playground.html, 47,151 words)*
 
 
 ---
@@ -9609,6 +9610,7 @@ A few small things make a big difference. You don't have to do all of them — p
 Shae Stovell is a writer and craftsperson and the creator behind Noble Father Creations . He has spent years studying how people influence, pressure, and manipulate each other — and how ordinary, kind people can learn to see it coming.
 Playground Protectors is where that work meets the person who matters most to him: his daughter. It takes the hardest-won lessons about tricky behavior and hands them to kids in a language they actually enjoy — missions, heroes, and Power-Ups instead of warnings and worry.
 His hope is simple: that the children who read this grow up a little harder to trick, a little quicker to trust themselves, and a lot quicker to ask for help when they need it.
+v4 · August 15, 2026. Added anonymous visitor analytics (Cloudflare Web Analytics) — no cookies, no personal data, nothing that leaves this domain.
 v2 · August 5, 2026. Fixed 36 spots where words got swapped for the wrong ones by a bad find-and-replace (including a science citation that had the wrong name for a real researcher's work), 3 Grown-Up Corner sections that had lost their box and heading, a speech bubble that showed only "s:" instead of real words, and a few small typos.
 PLAYGROUND PROTECTORS
 Shaela's Complete Guide to Tricky People, Power-Ups, and Real Friendships
@@ -19807,7 +19809,7 @@ PROTECT THE F*CKING MAGIC
 
 # The Fracture
 
-*(source/projects/noble-father-fracture.html, 87,810 words)*
+*(source/projects/noble-father-fracture.html, 87,833 words)*
 
 
 ---
@@ -22279,6 +22281,7 @@ Across that work runs a single throughline: making hidden structures visible. Fr
 The work favors precision over comfort and unvarnished analysis over softened framing — on the belief that visible architecture can be examined, and examined architecture can be changed.
 Changelog
 ## Updates
+v4 · August 15, 2026. Added anonymous visitor analytics (Cloudflare Web Analytics) — no cookies, no personal data, nothing that leaves this domain.
 v2 · August 5, 2026. Renamed from “The Fracture” to “The Fracture.” Verified all 195 citations against the original documentary’s source list — no discrepancies found. Corrected a claim on this page that mis-described which episodes have sourcing; Episodes 9 and 10 are now honestly marked as not yet sourced instead of the gap going unmentioned.
 The Public Record
 ## Sources & Citations

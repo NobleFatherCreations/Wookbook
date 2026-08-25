@@ -1,6 +1,6 @@
 # The Fracture
 
-*Extracted from `source/projects/noble-father-fracture.html` — 87,810 words.*
+*Extracted from `source/projects/noble-father-fracture.html` — 87,833 words.*
 
 ---
 
@@ -2471,6 +2471,7 @@ Across that work runs a single throughline: making hidden structures visible. Fr
 The work favors precision over comfort and unvarnished analysis over softened framing — on the belief that visible architecture can be examined, and examined architecture can be changed.
 Changelog
 ## Updates
+v4 · August 15, 2026. Added anonymous visitor analytics (Cloudflare Web Analytics) — no cookies, no personal data, nothing that leaves this domain.
 v2 · August 5, 2026. Renamed from “The Fracture” to “The Fracture.” Verified all 195 citations against the original documentary’s source list — no discrepancies found. Corrected a claim on this page that mis-described which episodes have sourcing; Episodes 9 and 10 are now honestly marked as not yet sourced instead of the gap going unmentioned.
 The Public Record
 ## Sources & Citations

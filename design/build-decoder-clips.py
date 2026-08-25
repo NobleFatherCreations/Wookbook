@@ -17,16 +17,30 @@ The five-beat clip, and the field each beat comes from:
   1 HOOK      what_it_sounds_like[]    a line the viewer has heard before
   2 NAME      name + category          what it is called
   3 MECHANISM why_this_matters         why it works, in the book's own words
-  4 NOT-THIS  this_may_not_be_it_when  when this is NOT what's happening
+  4 NOT-THIS  what_it_is_not          when this is NOT what's happening
   5 CLOSE     boundary_script          what to say instead
 
 Beat 4 is the point of the series. Every other account that names manipulation
-tactics stops at beat 3, because doubt costs retention. This book carries a
-this_may_not_be_it_when and a common_false_positives field on all 349 entries,
-so the disconfirming case is available for free -- and including it is what
-makes the series honest rather than another outrage feed. It is also the beat
-that keeps the misuse_warning true: "one example is a signal to examine, not
-proof of motive."
+tactics stops at beat 3, because doubt costs retention. Including the
+disconfirming case is what makes this a reference work rather than an outrage
+feed, and it is what keeps each entry's own misuse_warning true once the entry
+leaves the book: "one example is a signal to examine, not proof of motive."
+
+Which field it comes from matters more than it looks. `this_may_not_be_it_when`
+is present on all 349 entries and is the obvious choice -- and it holds only
+**20 distinct lines across 1,745 items**. Sourcing beat 4 there would end all
+349 clips on the same sentence. `what_it_is_not` (178 distinct) and
+`common_false_positives` (916 distinct, 911 of them used exactly once) carry
+the entry-specific version:
+
+    Gaslighting  "One-off disagreement about facts is normal; people genuinely
+                  misremember. It's the *pattern* of attacking your sanity."
+    Trivializing "Occasionally people do overreact, and saying so once, gently,
+                  can be honest feedback."
+
+So beat 4 takes the first line that is unique to this entry, and a clip whose
+only available line is shared is marked `needs_disconfirm` rather than shipped
+with boilerplate.
 
 Ordering
 --------
@@ -78,6 +92,8 @@ SHELF_BY_CATEGORY = {
     "Social Warfare & Triangulation": "The Reckoning",
 }
 
+MATURITY_RANK = {"mature": 0, "developing": 1, "needs_review": 2,
+                 "reference_stub": 3}
 TIER_RANK = {"Detected": 0, "Pattern-only": 1, "Watch-only": 2, "Reference-only": 3}
 
 # A hook has to be *read* in about three seconds, muted, on a phone. Measured
@@ -96,6 +112,32 @@ TIER_RANK = {"Detected": 0, "Pattern-only": 1, "Watch-only": 2, "Reference-only"
 # an editorial pass. That is what splits the corpus into shoot-ready and
 # needs-a-hook, and it is why release order follows the tiers.
 HOOK_MAX_CHARS = 80
+
+# The book grades its own entries, and the grading is load-bearing for a
+# release. `codex_maturity` splits 349 into mature 81 / needs_review 143 /
+# reference_stub 101 / developing 24, and `human_review_flags` marks specific
+# risks on every single entry. Cutting a clip from an entry the book itself
+# calls a stub publishes something its author has not finished.
+#
+# Two flags stop a clip outright:
+#
+#   reference_stub             the entry is scaffolding, not a finished entry.
+#                              101 of them, and 17 currently pass every other
+#                              readiness test, so nothing else would catch it.
+#   manipulation_playbook_risk naming the mechanism this precisely is usable
+#                              as instruction. 51 entries. Whether to publish
+#                              those at all is the author's call, not a
+#                              pipeline's.
+#
+# Two more change how a clip is cut rather than whether:
+#
+#   safety_sensitive           the entry's safety_note has to be on screen.
+#   high_false_positive_risk   beat 4 -- the disconfirming case -- stops being
+#                              a nice editorial choice and becomes required.
+#                              65 of the shoot-ready set carry this.
+HOLD_FLAGS = {"manipulation_playbook_risk"}
+HOLD_MATURITY = {"reference_stub"}
+PRODUCTION_FLAGS = {"safety_sensitive", "high_false_positive_risk"}
 
 
 def pick_hook(sounds):
@@ -149,6 +191,24 @@ def lead_clause(text):
     return head if len(head) < len(text.strip()) else None
 
 
+def first_unique(entry, fields, shared):
+    """First line from `fields` that no other entry also uses.
+
+    `shared` is computed from the corpus rather than hard-coded, so a field
+    that becomes boilerplate later is caught without editing this file.
+    """
+    for field in fields:
+        value = entry.get(field)
+        items = value if isinstance(value, list) else [value]
+        for item in items:
+            if not isinstance(item, str):
+                continue
+            line = item.strip()
+            if line and line not in shared:
+                return line, field
+    return None, None
+
+
 def first(lst):
     for item in lst or []:
         if isinstance(item, str) and item.strip():
@@ -156,7 +216,7 @@ def first(lst):
     return None
 
 
-def build(entry):
+def build(entry, shared=frozenset()):
     hook, alts = pick_hook(entry.get("what_it_sounds_like") or [])
     hook_source = "what_it_sounds_like"
 
@@ -171,7 +231,9 @@ def build(entry):
             if hook:
                 alts = [hook] + alts
             hook, hook_source = lead, "short_definition (lead clause)"
-    not_this = first(entry.get("this_may_not_be_it_when"))
+    not_this, not_this_source = first_unique(
+        entry, ("what_it_is_not", "common_false_positives", "less_concerning_if"),
+        shared)
     close = (entry.get("boundary_script") or "").strip() or None
     mechanism = (entry.get("why_this_matters") or "").strip() or None
 
@@ -190,6 +252,19 @@ def build(entry):
     else:
         stage = "needs_hook"
 
+    if stage == "shoot_ready" and not not_this:
+        stage = "needs_disconfirm"
+
+    maturity = entry.get("codex_maturity") or "unknown"
+    flags = sorted(entry.get("human_review_flags") or [])
+    holds = sorted(set(flags) & HOLD_FLAGS)
+    if maturity in HOLD_MATURITY:
+        holds.append("maturity:%s" % maturity)
+    requires = sorted(set(flags) & PRODUCTION_FLAGS)
+    gate = "hold" if holds else "clear"
+    if gate == "hold":
+        stage = "held"
+
     return OrderedDict([
         ("name", entry["name"]),
         ("category", entry["category"]),
@@ -203,6 +278,7 @@ def build(entry):
             ("close", close),
         ])),
         ("hook_source", hook_source),
+        ("not_this_source", not_this_source),
         ("hook_alternates", alts),
         ("short_definition", (entry.get("short_definition") or "").strip()),
         ("summary", (entry.get("plain_language_summary") or "").strip()),
@@ -210,6 +286,11 @@ def build(entry):
         ("safety_note", (entry.get("safety_note") or "").strip()),
         ("related_tactics", entry.get("related_tactics") or []),
         ("stage", stage),
+        ("release_gate", gate),
+        ("held_because", holds),
+        ("production_requires", requires),
+        ("codex_maturity", maturity),
+        ("review_flags", flags),
         ("hook_chars", len(hook) if hook else 0),
         ("needs_review", missing),
     ])
@@ -221,8 +302,11 @@ def interleave(clips):
     for clip in clips:
         buckets[clip["category"]].append(clip)
     for cat in buckets:
-        buckets[cat].sort(key=lambda c: (0 if c["stage"] == "shoot_ready" else 1,
-                                         TIER_RANK.get(c["tier"], 9), c["name"]))
+        buckets[cat].sort(key=lambda c: (
+            0 if c["stage"] == "shoot_ready" else 1,
+            MATURITY_RANK.get(c["codex_maturity"], 9),
+            len(c["production_requires"]),
+            TIER_RANK.get(c["tier"], 9), c["name"]))
 
     order, cats = [], sorted(buckets)
     while any(buckets[c] for c in cats):
@@ -246,11 +330,29 @@ def main():
         return 1
 
     data = json.load(open(SRC, encoding="utf-8"))
-    clips = interleave([build(e) for e in data["codex_completed"]])
+    entries = data["codex_completed"]
+
+    # Any line that appears on more than one entry identifies nothing,
+    # whatever field it sits in. Derive that from the corpus so a field
+    # turning into boilerplate later is caught automatically.
+    counts = Counter()
+    for entry in entries:
+        for field in ("what_it_is_not", "common_false_positives",
+                      "less_concerning_if"):
+            value = entry.get(field)
+            items = value if isinstance(value, list) else [value]
+            for item in items:
+                if isinstance(item, str) and item.strip():
+                    counts[item.strip()] += 1
+    shared = frozenset(line for line, n in counts.items() if n > 1)
+
+    clips = interleave([build(e, shared) for e in entries])
 
     ready = [c for c in clips if c["stage"] == "shoot_ready"]
     needs_hook = [c for c in clips if c["stage"] == "needs_hook"]
     blocked = [c for c in clips if c["stage"] == "needs_source"]
+    held = [c for c in clips if c["stage"] == "held"]
+    no_disconfirm = [c for c in clips if c["stage"] == "needs_disconfirm"]
 
     print("Pattern Decoder -- short-form release manifest")
     print("  %d tactics" % len(clips))
@@ -260,7 +362,34 @@ def main():
           % len(needs_hook))
     print("    %3d needs-source  a beat has no field to draw from"
           % len(blocked))
+    print("    %3d held          the book grades this entry as unfinished or "
+          "risky" % len(held))
+    print("    %3d needs-disconfirm  no what_it_is_not line unique to this "
+          "entry" % len(no_disconfirm))
     print()
+
+    sources = Counter(c["not_this_source"] for c in ready)
+    if sources:
+        print("  beat 4 drawn from:")
+        for field, n in sources.most_common():
+            print("    %-30s %3d" % (field, n))
+        print()
+
+    if held:
+        reasons = Counter(r for c in held for r in c["held_because"])
+        print("  held, by the book's own grading:")
+        for reason, n in reasons.most_common():
+            print("    %-34s %3d" % (reason, n))
+        print()
+
+    requires = Counter(r for c in ready for r in c["production_requires"])
+    if requires:
+        print("  shoot-ready clips with a production requirement:")
+        for req, n in requires.most_common():
+            note = {"safety_sensitive": "put safety_note on screen",
+                    "high_false_positive_risk": "beat 4 is mandatory"}.get(req, "")
+            print("    %-30s %3d   %s" % (req, n, note))
+        print()
 
     print("  hook usability by tier (why the split falls where it does):")
     for tier in ("Detected", "Pattern-only", "Watch-only", "Reference-only"):

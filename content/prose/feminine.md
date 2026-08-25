@@ -1,6 +1,6 @@
 # The Sovereign Divine Feminine
 
-*Extracted from `source/projects/noble-father-sovereign.html` — 52,175 words.*
+*Extracted from `source/projects/noble-father-sovereign.html` — 52,198 words.*
 
 ---
 
@@ -7419,6 +7419,7 @@ That’s a refusal, not a strategy. I will not put hard-won, lived-experience wi
 And — there’s always an and — Spirit keeps nudging me on one of my own edges: learning to receive. You cannot write a whole book about healthy exchange and then dodge it yourself. So: if you reach the last page and feel moved to put something in the jar, beautiful. If not, also beautiful. The next book will be free too.
 🛠️ Changelog
 ## Updates
+v4 · August 15, 2026. Added anonymous visitor analytics (Cloudflare Web Analytics) — no cookies, no personal data, nothing that leaves this domain.
 v2 · August 5, 2026. Removed 2 sentences that weren’t supposed to be visible, fixed a counter bug where all twelve tactic badges showed the number 1, gave Appendix B a working link from the drawer menu, restored the closing Love-Centered Mandate box in 6 chapters where it had lost its styling, and fixed 8 more spots where a section heading had gotten glued onto the end of the wrong sentence.
 © The Fine Print
 ## Copyright &amp; Disclaimer
