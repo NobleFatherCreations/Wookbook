@@ -2917,3 +2917,66 @@ entry.
 (and the explicit instruction not to run agents in parallel after the first
 one hit a session limit): one canary at a time, full verification before
 staging, no batch released until the prior one is confirmed clean.
+
+## Update (2026-08-25, session 16 continued) — drafting complete: all 266 codex entries, all 85 hooks
+
+**Final batch (111 entries) independently re-verified the same way as the
+first two — not taken on the agent's report.** By hand: 111/111 names match
+input order, 0 field/needs mismatches, 0 empty strings, 0 overlap with
+batches 1-2. One flagged "intent-language hit" on re-scan turned out to be a
+false positive of my own regex (`wants? to` matched "does not **want to**
+learn" — the innocent third party's ordinary choice in a disconfirming
+clause, not an assertion about a manipulator); read the full sentence and
+confirmed it's legitimate content, correctly used.
+
+**Ran the near-duplicate check across the FULL combined 266 this time, not
+just the new batch** — 224 `what_it_is_not` values and 266 `why_this_matters`
+values, all pairs, both fields: **zero pairs above 0.5 shingle overlap.**
+Also independently confirmed the two pairs the agent said it caught and
+rewrote (False Reports/Administrative Escalation, Meta-Gaslighting/Emotional
+Hostage-Taking) are now genuinely distinct — read all four myself.
+
+**Opener discipline held:** max single opening word across 111 is "The" at
+10 uses (9%), well under the fifth-of-total bar set for this batch. Zero
+"The target" opens (batch 1 had 30/90 on this).
+
+**Two more genuinely truncated `short_definition` entries found**, same
+defect class as the three from batch 2: `Firehose of Falsehood` ends
+*"Overwhelming with so many claims, accusations, or narratives."* and
+`Paper Terrorism` ends *"...floods of filings, motions, complaints,."* — both
+cut off mid-clause. **Five total now** (with Stalking & Surveillance
+(Post-Separation), Astroturfing, Cognitive Warfare from batch 2). All five
+worked around by deriving from `expanded_definition` instead, all flagged
+`note`, none forced from the broken fragment. **None of the five are in
+`CORRECTIONS` yet** — still need the real full sentences, not recoverable
+from any other field in this dataset.
+
+**The ten hardest entries were the ten `manipulation_playbook_risk` /
+Cult & Organizational entries** (Doctrine Over Person, Dispensing of
+Existence, Algorithmic Management, Bounded Choice and others) — all
+Reference-only, all sharing identical generic false-positives with no
+entry-specific material to derive from, so the disconfirming case had to be
+reasoned out from the mechanism itself rather than lifted from a field.
+Checked: none acquired "how to", step-by-step, or defensive-move phrasing —
+`why_this_matters` stayed strictly on cost to the person throughout.
+
+**Pre-Punishment** is the one entry in the whole 266 with no second party —
+a self-directed, internalised pattern — and the draft correctly reframes
+"cost to the person on the receiving end" as the cost the person carries
+themselves, flagged explicitly in `note` rather than forcing the standard
+two-party shape.
+
+**FINAL TOTALS, staged in `content/playbook-drafts.json`, everything
+`approved: false`:**
+- 85 hooks — 76 trimmed from the book's own sentences, 9 composed, 0 over
+  the 80-char budget, 0 teasing/withholding.
+- 266 codex `why_this_matters` / `what_it_is_not` pairs — 214 high
+  confidence, 49 medium, 3 low. Zero near-duplicates across the full set,
+  zero intent/diagnosis-language violations.
+- Combined with the 112 already shoot-ready and the 5 truncated-source
+  entries flagged for follow-up, **all 349 Pattern Decoder tactics now have
+  either a finished entry, a usable hook, or a drafted-and-verified
+  replacement awaiting approval** — nothing left unaddressed except the
+  final approve/reject decision and the small number of things that are
+  genuinely the author's call (the 51 `manipulation_playbook_risk` holds,
+  the 5 truncated sources, the Cloudflare beacon, the Gaslighting typo).

@@ -1924,6 +1924,894 @@
    "confidence": "high",
    "note": "",
    "approved": false
+  },
+  {
+   "name": "Doctrine Over Person",
+   "why_this_matters": "When lived experience is always the thing that must be wrong, a person loses the only instrument they have for noticing that something is harming them.",
+   "what_it_is_not": "Committed communities routinely ask members to hold to a belief that cuts against immediate feeling — fasting, forgiveness, discipline — and that alone is not this. The distinguishing question is whether a member's contradicting experience is allowed to count as evidence at all, or is automatically reclassified as their own failure.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Dispensing of Existence",
+   "why_this_matters": "Once worth is assigned by doctrine rather than held as a given, outsiders can be treated in ways that would otherwise be unthinkable — and those inside learn that their own standing is revocable on the same terms.",
+   "what_it_is_not": "Groups with strong boundaries — membership rules, excommunication, shunning — are not automatically doing this; many communities have exit rules without denying that leavers remain people. What marks the pattern is worth itself being withdrawn, so that harm to those outside reads as virtue rather than as harm.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Bounded Choice",
+   "why_this_matters": "Choices feel entirely one's own while the range they were drawn from has quietly closed, so a person carries full responsibility for outcomes they were never given room to avoid.",
+   "what_it_is_not": "Every environment shapes what feels choosable — a job, a mortgage, a close family all narrow options, and feeling free within constraints is ordinary. The distinguishing question is whether options that would serve the person rather than the group remain genuinely available, or only nominally so.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Charismatic Authority Dependence",
+   "why_this_matters": "With one person established as the sole source of truth, meaning and safety, losing their approval means losing all of those at once, which makes ordinary disagreement feel like self-destruction.",
+   "what_it_is_not": "Admiring a teacher, mentor or leader and being genuinely changed by them is common and often good. The pattern differs where no second source of meaning remains — no one else whose judgement counts, and no way to be wrong about the leader without being wrong about everything.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Forced Confession / Self-Criticism Rituals",
+   "why_this_matters": "Material surrendered under group pressure does not go away; it stays available as leverage, and the habit of confessing on demand leaves a person with no private ground of their own to stand on.",
+   "what_it_is_not": "Accountability practices exist in healthy settings too — step work, clinical supervision, team retrospectives, restorative circles — and saying something difficult in front of a group is not itself harmful. The difference lies in whether disclosure is voluntary and bounded, or required, open-ended, and recalled against the person afterwards.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Institutional Betrayal",
+   "why_this_matters": "Being harmed and then failed by the body meant to prevent it produces a second injury that often outlasts the first, and teaches that reporting brings exposure without remedy.",
+   "what_it_is_not": "An institution that responds slowly, clumsily, or within genuine legal limits is not thereby betraying anyone; formal process is often bad at speed. What separates the two is whether the harm is eventually acknowledged and addressed at all, or whether the institution's own exposure is consistently the thing that gets managed instead.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Organizational Silence Engineering",
+   "why_this_matters": "Problems that people can plainly see go unreported, and the cost lands first on whoever the warning would have protected, then on the person who stayed quiet and knew.",
+   "what_it_is_not": "Quiet teams are not necessarily silenced teams — some workplaces are simply calm, well-run, or full of people who raise things one-to-one rather than in meetings. The useful check is what happened to the last few people who did speak up, and whether anyone can point to a concern that actually changed something.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Strategic HR Complicity",
+   "why_this_matters": "Someone brings a complaint believing they are speaking to a protector, and finds what they said has been used to shape the response against them — after which the next person is far less likely to report anything at all.",
+   "what_it_is_not": "HR staff who set out the limits of confidentiality, follow a policy that disappoints the complainant, or reach a conclusion the employee disagrees with are doing the job as designed, not colluding. The distinguishing pattern is information given in confidence being routed to pre-empt the person who gave it.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Performance Framework Manipulation",
+   "why_this_matters": "Effort shifts from doing the work well to being agreeable about it, and anyone who raises problems accumulates a documented record of underperformance that looks objective to whoever reads it later.",
+   "what_it_is_not": "Every evaluation system rewards some things over others and disadvantages someone; a rubric that undervalues your particular strengths is a design flaw rather than a control mechanism. The question is whether the measures track the work at all or track deference — and whether they get revised when the wrong people start scoring well.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Algorithmic Management",
+   "why_this_matters": "Consequential decisions arrive with no one to ask and nowhere to appeal, so workers adapt to a system they cannot see and blame themselves for outcomes they have no way to examine.",
+   "what_it_is_not": "Automation in scheduling, routing and performance tracking is widespread and often simply efficient; a rota generated by software is not a control apparatus. What matters is whether a human being can be reached to review an outcome, and whether the criteria are disclosed clearly enough to be argued with.",
+   "confidence": "medium",
+   "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category.",
+   "approved": false
+  },
+  {
+   "name": "Gaslighting by Omission",
+   "why_this_matters": "Decisions get made on a picture that was accurate in every detail and wrong as a whole, and the missing piece usually surfaces too late to change what was chosen.",
+   "what_it_is_not": "Forgetting to mention a detail that did not register as important at the time is ordinary, and some people share things gradually rather than volunteering everything at once. What distinguishes the pattern is that the omitted piece is the specific one that would have changed the listener's decision.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Revisionist History",
+   "why_this_matters": "Agreements stop being safe to rely on, because the version that counts is whichever suits the present, and the person who remembers accurately spends the conversation arguing about the past instead of the point.",
+   "what_it_is_not": "Two people remembering an ambiguous conversation differently is ordinary, and memory blurs for everyone over time. The distinguishing feature is a version that changes direction exactly when the original becomes inconvenient, and then holds rather than being corrected once evidence appears.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Word Salad",
+   "why_this_matters": "Hours can pass with nothing established — no claim to answer, no agreement reached — and the exhaustion left behind is easy to mistake for having been unreasonable.",
+   "what_it_is_not": "Plenty of people struggle to say a complicated or half-formed thing clearly, and thinking aloud is naturally circular while the thinking is unfinished. A communication difference that produces tangential or associative speech is not a tactic. The useful check is whether a request for clarification produces clarity or more of the same.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Contradiction Stacking",
+   "why_this_matters": "Answering either claim appears to concede the other, so there is no position left from which to raise the issue — and whether the thing happened is never settled either way.",
+   "what_it_is_not": "Someone genuinely unsure what happened may give a shifting account while they work it out, and two statements about different situations can sound contradictory taken out of context. What marks the pattern is denial and justification held at the same time rather than one replacing the other.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Circular Arguments",
+   "why_this_matters": "There is no evidence that could count against the claim, so disagreeing becomes proof of the very unreliability being asserted.",
+   "what_it_is_not": "Restating a well-supported position in different words for clarity is not circularity, and someone repeating themselves under pressure is usually inarticulate rather than strategic. Two people simply asserting incompatible positions is a stalemate, not this.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Loaded Language",
+   "why_this_matters": "A label does the work that evidence has not done, and once attached, answering it means arguing about the word rather than about what actually happened.",
+   "what_it_is_not": "Severe situations sometimes warrant severe words, and describing how something felt in strong terms is emotional honesty rather than a verdict on anyone. Some people, and some cultures, simply run to higher-intensity language across the board.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Semantic Traps",
+   "why_this_matters": "An imprecise paraphrase becomes the entire subject, and the behaviour it was pointing at leaves the conversation without ever having been discussed.",
+   "what_it_is_not": "Being genuinely misquoted in a way that changes the meaning is worth objecting to, and some people care about exact wording as a matter of temperament rather than evasion. The tell is whether the substance is returned to once the wording has been corrected.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Frame Control",
+   "why_this_matters": "An entirely accurate account can come out sounding irrelevant, because the terms of the conversation were set to exclude it before it was spoken.",
+   "what_it_is_not": "Disagreeing in good faith about what the real issue is happens constantly, and both readings can have merit. Steering a conversation back on topic is legitimate too. The pattern is a frame that no version of the other person's concern can fit inside.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "False Framing",
+   "why_this_matters": "Judgement is settled before the facts are examined, and correcting the facts afterwards rarely dislodges the impression the framing has already made.",
+   "what_it_is_not": "Some situations really do warrant the strong framing they get, and a person describing a genuine hurt in dramatic terms is usually reporting how it felt to them. Choosing emphasis is part of ordinary persuasion and is not by itself distortion.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Ambiguity",
+   "why_this_matters": "Two people leave the same conversation with incompatible understandings of what was agreed, and whichever reading turns out to be costly later was, it emerges, never the one meant.",
+   "what_it_is_not": "Genuine uncertainty expressed honestly as tentative is not this, and some people are imprecise about everything rather than specifically about commitments. The distinguishing feature is vagueness that consistently resolves in the speaker's favour after the fact.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Repetition as Truth",
+   "why_this_matters": "Familiarity starts to feel like corroboration, so a claim nobody ever checked ends up carrying the weight of something established.",
+   "what_it_is_not": "A claim repeated because it keeps being relevant, or because fresh evidence keeps confirming it, is not doing this. People also repeat themselves when they feel unheard. The pattern is the same unsupported claim recycled unchanged, with no new support arriving alongside it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Firehose of Falsehood",
+   "why_this_matters": "Verification cannot keep pace with volume, and the disorientation left behind is much harder to describe afterwards than any single false claim would have been.",
+   "what_it_is_not": "Someone genuinely distressed can produce many real concerns at once, and a rapid-fire style can reflect honest urgency about several separate issues. Volume alone is not the pattern; the difference shows in whether engaging with one claim gets engagement back or simply produces several more.",
+   "confidence": "medium",
+   "note": "The short_definition is truncated mid-sentence (\"Overwhelming with so many claims, accusations, or narratives.\"), so both fields were derived from the expanded_definition and false-positive list instead.",
+   "approved": false
+  },
+  {
+   "name": "Meta-Gaslighting",
+   "why_this_matters": "Naming a pattern becomes the next thing to be disputed, so a person stops naming anything and loses the vocabulary for describing what is happening to them.",
+   "what_it_is_not": "Someone who sincerely does not believe they did what is described will deny it, and discomfort at a heavy label applied to an ambiguous situation is reasonable. Defending yourself against a genuine mischaracterisation is not this.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "FOG",
+   "why_this_matters": "Each pressure on its own might be refusable; layered together they leave no version of 'no' that does not feel frightening, ungrateful, or cruel all at once.",
+   "what_it_is_not": "Real obligations, real stakes and real concern often coexist in the same situation without anyone assembling them into pressure. Family and cultural norms around duty can generate all three honestly. The flag is the combination arriving reliably around a specific request.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Emotional Hostage-Taking",
+   "why_this_matters": "Managing another person's mood turns into the price of refusing anything, and blame for whatever follows attaches to whoever said no.",
+   "what_it_is_not": "Being genuinely, involuntarily upset by a disappointing answer is not leverage, and someone who struggles to regulate emotion is not thereby wielding it. Both people being affected by each other's choices is normal in any close relationship; the pattern is distress that intensifies specifically around requests and limits.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Weaponized Tears",
+   "why_this_matters": "The conversation reverses: whoever raised the harm ends up providing comfort, and the original concern is never returned to.",
+   "what_it_is_not": "Some people cry readily when confronted, particularly those who find criticism hard to receive, and that is distress rather than tactic. Tears while the conversation still continues are not this — what marks the pattern is that accountability stops.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Obligation Installation",
+   "why_this_matters": "Loyalty stops being something freely given and becomes a debt owed for having been trusted, and terms the person never agreed to can then be enforced as though they had.",
+   "what_it_is_not": "Confiding in someone is how intimacy works, and mutual disclosure that is never later invoked as leverage is not this. Many relationship expectations go unstated and are still perfectly reasonable; the difference is being held to account for breaking a rule that was never available to see.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Obligation Hooks",
+   "why_this_matters": "A diffuse sense of owing colours every exchange, so even a reasonable refusal arrives feeling like a moral failure rather than a decision.",
+   "what_it_is_not": "Relationships with a real history of give and take produce genuine feelings of reciprocity, and a personal tendency towards guilt or people-pleasing may be nobody's doing. Mutual obligation running in both directions is ordinary; one-directional and permanent is the shape to notice.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Loan-Sharking Gifts",
+   "why_this_matters": "Accepting a kindness turns out to have been entering an agreement, with the price set later, by someone else, for something unrelated.",
+   "what_it_is_not": "Generosity with no strings is common and looks identical at the moment of giving. Some people give freely as a matter of character and never mention it again. This one only becomes visible in retrospect, when the gift is produced as leverage for a separate demand.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Weaponized Generosity",
+   "why_this_matters": "Witnesses to the favour raise the social cost of declining, so refusing what comes next means looking ungrateful in front of people who saw only the kindness.",
+   "what_it_is_not": "Plenty of people are simply direct about wanting something back, and an openly transactional favour that survives a 'no' without consequence is not this. Reciprocal give and take between people who both understand the arrangement is ordinary.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Guilt Legacy",
+   "why_this_matters": "Repayment is expected for a debt incurred before the person could have consented to it, and declining reads as a betrayal not of one relationship but of a whole family line.",
+   "what_it_is_not": "Family and cultural values around duty and reciprocity are genuinely held by many people who endorse them freely, and a parent recounting real history is sharing context rather than calling in a debt. Norms that differ from your own expectations are not the same as norms deployed as leverage for a specific present demand.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Manufactured Intimacy",
+   "why_this_matters": "Closeness arrives before there is any track record to justify it, so a person ends up trusting at a depth their actual knowledge of the other cannot support.",
+   "what_it_is_not": "Some people open up quickly by temperament, and shared crises or intense circumstances genuinely accelerate bonding. Early disclosure can also be someone testing whether you can be trusted, which is a risk they are taking rather than one they are creating.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Manufactured Destiny",
+   "why_this_matters": "Leaving stops feeling like ending a relationship and starts feeling like defying something larger, which raises the cost of an otherwise ordinary decision to go.",
+   "what_it_is_not": "Strong early compatibility genuinely does feel remarkable to both people sometimes, and grand romantic language is a style in many cultures and individuals. Someone who sincerely believes in fate tends to say fated things about connections generally, not only about this one.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Mirroring-on-Demand",
+   "why_this_matters": "A sense of rare alignment forms with a reflection rather than a person, and what is later found to be missing was never actually there to lose.",
+   "what_it_is_not": "Real compatibility, especially between people who met through a shared interest, produces genuine excitement at how much overlaps. An agreeable or accommodating style is not strategic reflection. The distinction lies in whether the shared enthusiasms have any independent history behind them, or appear complete and fully formed the moment they are mentioned.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pedestal Ploy",
+   "why_this_matters": "Being the exception means having no peers, and worth becomes conditional on staying above the very people who might otherwise have offered perspective.",
+   "what_it_is_not": "Specific admiration for someone's qualities isolates no one, and naturally complimentary people praise widely rather than comparatively. Two people bonding over feeling like outsiders together is ordinary — the flag is elevation that requires everyone else in the person's life to be worth less.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "The Rescue Hook",
+   "why_this_matters": "Substantial labour is given without ever having been asked for, so there is nothing to point at as an imposition and no clear moment at which it could have been declined.",
+   "what_it_is_not": "People genuinely struggle with specific skills, and someone raised without a task ever modelled to them has real rather than performed difficulty. An uneven division of tasks along the lines of who is better at what is normal in most households. The pattern is need that appears reliably rather than help that is asked for plainly.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Premature Vulnerability",
+   "why_this_matters": "Intense pain shared early creates a duty of care before there is any relationship to hold it, and stepping back then feels like abandoning someone in crisis.",
+   "what_it_is_not": "Someone still living inside a recent loss will talk about it because it is present, not to accelerate anything. Others overshare from misreading the moment rather than from strategy. Early vulnerability that is mutual and reciprocated is how a good deal of real closeness begins.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Emotional Parasitism",
+   "why_this_matters": "Depletion accumulates so gradually that it registers as a personal failing — tiredness, low tolerance — rather than as the arithmetic of a relationship that never balances.",
+   "what_it_is_not": "A friend going through a genuinely hard stretch needs more for a while, and reciprocity resuming once things stabilise is ordinary. Someone with their own significant unmet needs may be unable rather than unwilling to give back. What distinguishes the pattern is an imbalance that is stable across years rather than weeks.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Information Control",
+   "why_this_matters": "Outside perspectives that might have supplied a second opinion never arrive, so one account of events becomes the only one available to reason with.",
+   "what_it_is_not": "Warning someone about a genuinely unreliable source is fair, and doing so without restricting their access to it is not control. A person who is simply uninformed themselves is filtering nothing. The distinguishing feature is what happens when the other person goes looking for a source independently.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Device Access Demands",
+   "why_this_matters": "Refusing looks like concealment, so privacy has to be argued for rather than assumed, and the ordinary expectation of an unobserved thought quietly disappears.",
+   "what_it_is_not": "Mutually agreed and revocable arrangements exist — shared family device management for young children, for instance — and clearly disclosed institutional requirements applied consistently to everyone are not personal. Voluntary transparency that both people want and either can end at any time is a different thing entirely.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Enforcing Trivial Demands",
+   "why_this_matters": "Practising obedience on things that do not matter makes compliance on things that do feel like a smaller step than it is.",
+   "what_it_is_not": "Particular preferences about how things are done are widespread and often just fussiness, and a rule with a real functional purpose can look arbitrary to someone who has not been told the reason. High standards in an area someone genuinely cares about are not a rehearsal for anything.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Boundary Testing",
+   "why_this_matters": "Each step is too small to be worth a confrontation, which is precisely what allows the line to move without any single moment at which it could have been held.",
+   "what_it_is_not": "A one-off misjudgement with nothing following it is a mistake. Someone unclear where a line sits who adjusts once told has done exactly the right thing. Negotiating in good faith about where a reasonable boundary should sit is not testing it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Velvet Glove Control",
+   "why_this_matters": "Nothing in the delivery offers anything to object to, so the narrowing of a person's choices happens while they feel well looked after.",
+   "what_it_is_not": "Gentle guidance from someone who ultimately accepts a decision they disagree with is care, not control, and a soft-spoken manner conceals nothing by itself. The test sits at the point of refusal, not in how the request was phrased.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Demonstrating Omnipotence",
+   "why_this_matters": "Resistance stops being attempted because it has already been made to look pointless, and that conclusion gets reached without anything having been tried.",
+   "what_it_is_not": "Someone who genuinely has more reach or information in a particular area may simply be using it, and knowing something unexpected usually has an ordinary explanation. Being well-connected is not a display; what marks the pattern is capability shown for no purpose other than being seen.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Forced Dependency",
+   "why_this_matters": "The ability to manage alone is not lost through circumstance but never allowed to develop, so staying becomes the only workable option rather than the chosen one.",
+   "what_it_is_not": "Differences in skill and interest naturally lead to one person handling certain things, and reasonable reliance during a genuine crisis is temporary by design. Someone who has decided they do not want to learn a task has made that choice. The difference is whether dependence reduces over time or is maintained.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Golden Bars",
+   "why_this_matters": "Comfort becomes an argument against leaving that has nothing to do with whether the arrangement is sound, and describing the situation to anyone else makes it sound enviable.",
+   "what_it_is_not": "Unconditional generosity that would survive a disagreement is not a cage, and every major life decision involves real trade-offs that are fair to weigh openly. Material comfort being one honestly discussed factor among several in a mutual decision is ordinary.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Manufactured Scarcity",
+   "why_this_matters": "Fear of losing the opportunity does the evaluating, and by the time there is room to think properly the decision has already been made.",
+   "what_it_is_not": "Genuinely limited, time-sensitive opportunities exist, and their scarcity can usually be checked independently. Someone accurately reporting real stakes is not creating urgency. Deadlines that come from outside circumstances are not manufactured by whoever mentions them.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Time Theft",
+   "why_this_matters": "Hours are lost that cannot be recovered, and the message carried in the losing of them — that this person's time is not worth planning around — is absorbed long before it is ever named.",
+   "what_it_is_not": "Occasional lateness from real circumstances, acknowledged and apologised for, is just life. Some people are chronically disorganised with everyone rather than with one person. Genuinely unpredictable work or caring commitments create real scheduling difficulty with no signal attached to it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Deflection",
+   "why_this_matters": "The original concern never receives a direct response, so it stays live and unaddressed while the conversation ends looking as though it happened.",
+   "what_it_is_not": "Someone genuinely overwhelmed may need to pause and fully mean to come back, and a person who misunderstood the question will answer something adjacent to it. Dealing with a genuinely urgent related matter first is legitimate — the question is whether the original topic is ever actually returned to.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Apology Without Repair",
+   "why_this_matters": "Each apology closes the incident without changing anything, so the same harm can recur indefinitely while the record shows it was addressed every time.",
+   "what_it_is_not": "A sincere apology followed by imperfect effort is how change usually looks — rarely instant, rarely linear. Some people apologise well and struggle with follow-through from a real skill gap rather than indifference. One relapse followed by re-commitment is not the pattern; an unbroken loop is.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Forced Forgiveness",
+   "why_this_matters": "Resolution is claimed before acknowledgment, so the harm stays unprocessed and any further mention of it becomes the new problem.",
+   "what_it_is_not": "A mutual decision to move forward after real acknowledgment has already happened is repair, not pressure. Some people genuinely process conflict faster and do not require anyone else to match their pace. Family or cultural norms about not dwelling are not automatically avoidance.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Plausible Deniability",
+   "why_this_matters": "Every instance has an innocent reading available, so raising any one of them makes the person raising it look unreasonable, and the pattern can only be described by pointing at things that individually look like nothing.",
+   "what_it_is_not": "People do follow policy, and they do worry about others; often the innocent explanation is simply the true one. Someone being careful and honest can sound identical to someone producing cover. A single ambiguous incident cannot separate the two, which is why this belongs at the level of a pattern rather than an instance.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Feigned Ignorance",
+   "why_this_matters": "Nothing can be settled, because the shared basis for settling it is unavailable, and whoever raised the issue ends up re-explaining rather than resolving.",
+   "what_it_is_not": "Genuine forgetfulness, distraction and busy periods are universal, and a real gap in understanding on a specific topic is common. Confusion that tracks difficulty rather than convenience is not this; the pattern is normal comprehension everywhere except the inconvenient subject.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Victim Role Reversal",
+   "why_this_matters": "Sympathy that would have gone to the person harmed goes elsewhere, and onlookers form an impression of the situation that is very hard to correct later.",
+   "what_it_is_not": "Mutual harm is real, and two people can both have legitimate claims to being affected. Someone visibly wrestling with guilt is not necessarily redirecting anything. A person may also be genuinely going through something difficult that has nothing to do with the harm under discussion.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Preemptive Accusation",
+   "why_this_matters": "By the time the person speaks, the ground has been prepared, and an accurate account arrives sounding like retaliation for one already made.",
+   "what_it_is_not": "Concerns raised in good faith often come first simply because that person noticed first. An honest observation can happen to precede a complaint by coincidence, and someone voicing a worry about you is not thereby anticipating one from you.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Complaint Weaponization",
+   "why_this_matters": "Whichever account reaches the record first tends to set the frame, so a truthful second report is read as a response rather than as information.",
+   "what_it_is_not": "Reporting a real concern promptly through proper channels is exactly what people are told to do, and someone unaware of how quick reporting can look is acting in good faith. Both parties independently reporting close in time, neither knowing about the other, is common.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Counterfeit Calm",
+   "why_this_matters": "A proportionate emotional response gets read as instability by contrast, leaving a person to choose between being upset and being credible.",
+   "what_it_is_not": "Even-keeled people exist, and staying steady under stress is a real and often hard-won skill. Choosing to stay calm in order to de-escalate a conflict is helpful rather than dismissive. Cultural and personal norms favouring composure are widespread, and none of that requires anyone else to be reactive.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Double Binds",
+   "why_this_matters": "Every available response is wrong, so effort produces fault whatever is chosen, and a person begins to conclude the problem must be themselves.",
+   "what_it_is_not": "Two pieces of feedback about genuinely different situations can feel contradictory when set side by side, and preferences shift over time without anyone laying a trap. Someone hard to please out of their own dissatisfaction is not necessarily constructing a no-win.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Role Reversal Traps",
+   "why_this_matters": "The person who was harmed ends up doing the comforting and then the apologising, so accountability finishes further from the harm than where it started.",
+   "what_it_is_not": "Genuine remorse often includes real distress, and someone overwhelmed by their own mistake may need a moment without expecting to be looked after. Mutual reassurance is a normal part of repair between two people who were both affected.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Sarcasm as Weapon",
+   "why_this_matters": "Criticism lands in full while objecting to it means arguing about a joke, so the hurt has nowhere to go.",
+   "what_it_is_not": "Mutual, affectionate teasing that both people enjoy is not this, and a generally sarcastic style applied evenly to everyone has no particular target. One sharp remark in a bad moment, acknowledged and not repeated, is friction rather than a pattern.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Public Humiliation",
+   "why_this_matters": "An audience makes the injury durable in a way private criticism is not: everyone present carries a version of it afterwards, including the person it was about.",
+   "what_it_is_not": "Necessary and time-sensitive feedback sometimes has to be given where others happen to be, and settings where feedback is normal and applied evenly to everybody are humiliating nobody. An awkward moment can be nothing more than poor timing.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Labeling as Identity Warfare",
+   "why_this_matters": "Once a label attaches, ordinary behaviour gets read as confirming it, so there is no conduct available that would disprove it.",
+   "what_it_is_not": "An unflattering characterisation can be accurate, based on a real and consistent pattern. Reputations also form organically when many people independently have similar experiences. Specific feedback about a specific behaviour is a different thing from a defect label that stands in for the whole person.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Rage as Control",
+   "why_this_matters": "People around an outburst learn to prioritise de-escalation over whatever point set it off, so the topic stops being raised long before anyone consciously decides to stop raising it.",
+   "what_it_is_not": "Proportionate anger at something genuinely upsetting, expressed and then resolved without changing the outcome of the conversation, is ordinary. Someone actively working on emotional regulation is not using it as leverage. A single outburst during unusual stress, acknowledged afterwards, is not a pattern.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Credit Theft",
+   "why_this_matters": "Work continues while recognition for it accrues elsewhere, and by the time the pattern is visible the original attribution is too old to establish.",
+   "what_it_is_not": "Two people genuinely arriving at a similar idea independently happens often, and collaborative work naturally distributes credit across a team without erasing anyone. An honest oversight corrected once pointed out is exactly that.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Sabotaging Success",
+   "why_this_matters": "Progress keeps stalling for reasons that each look like bad luck, so a person starts to doubt their own competence rather than the timing.",
+   "what_it_is_not": "Coincidence is real, and unrelated circumstances often land at inconvenient moments. Some people are unreliable across the board rather than at particular moments. Genuinely competing constraints can clash with someone's timeline while having nothing to do with it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Impossible Metrics",
+   "why_this_matters": "Failure is built into the standard but attributed to the person, so effort increases while the record fills up with shortfalls.",
+   "what_it_is_not": "High but achievable standards that others in the same role have actually met are demanding rather than impossible. Stretch goals framed openly as aspirational rather than pass or fail are a different thing. A bar the person has cleared before under similar conditions is evidence the bar is reachable.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Setting Up to Fail",
+   "why_this_matters": "Conditions disappear from the account and only the outcome remains, so a predictable failure becomes durable evidence about the person who was handed it.",
+   "what_it_is_not": "Difficult tasks with real constraints are ordinary work, and resources are often genuinely unavailable to everyone rather than withheld from one person. Something turning out harder than anyone anticipated is not engineered.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Scapegoating",
+   "why_this_matters": "One person absorbs consequences proportionate to a collective failure, and the conditions that produced it stay exactly as they were, because the matter has been declared solved.",
+   "what_it_is_not": "Sometimes an individual really did make the consequential mistake, and sometimes shared responsibility genuinely does concentrate in one person's decisions. Accountability that matches actual decision-making authority can feel harsh and still be proportionate.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Flying Monkeys",
+   "why_this_matters": "Pressure arrives from several directions at once, from people who believe they are acting on their own concern, which makes it nearly impossible to answer without appearing to attack them.",
+   "what_it_is_not": "Friends do notice things independently and reach out on their own, and family members naturally discuss shared concerns and arrive at similar views. Someone checking in out of their own long relationship with you is acting for themselves, not on anyone's behalf.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Proxy Recruitment",
+   "why_this_matters": "The confrontation happens without the person whose concern it is, so no one present can actually answer for what is being demanded.",
+   "what_it_is_not": "Asking a mutual friend how to approach a difficult conversation is not the same as asking them to have it instead. Go-betweens are appropriate where direct contact genuinely is not safe or possible. Someone who hears about a situation and independently decides to raise it is speaking for themselves.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Smear Campaign",
+   "why_this_matters": "Correction never reaches everyone the account reached, so a person is left answering a version of themselves that travels faster than they can follow it.",
+   "what_it_is_not": "Independent, accurate criticism from several people who each have their own real basis for it is not coordination. Rumour spreads through ordinary gossip with no one originating it. A public dispute where both sides sincerely believe their own account involves no fabrication at all.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Reputation Poisoning",
+   "why_this_matters": "The discrediting is done before there is anything to discredit, so a later complaint is heard as the confirmation of a warning rather than as new information.",
+   "what_it_is_not": "Sharing a warranted concern with someone who genuinely needs to know is appropriate, and venting frustration to a trusted friend is not advance positioning. Two people can independently arrive at mixed feelings about a third without either having planted them.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Silent Coalitions",
+   "why_this_matters": "There is no incident to point at, only a consistent absence, which turns the search for an explanation inward.",
+   "what_it_is_not": "Social anxiety can produce the same feeling with nothing at all behind it, and some groups are simply less inclusive as a general dynamic rather than towards one individual. A low period colours ordinary social gaps and makes a pattern out of them.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Group Consolidation",
+   "why_this_matters": "Everyone watching learns the price of dissent without being told, and the lesson outlasts the person it was demonstrated on.",
+   "what_it_is_not": "Proportionate accountability can be visible simply because of the setting — an open-plan office, a meeting, a family gathering. A genuinely serious matter can warrant a visible response on its own merits. Consequences applied consistently and announced as policy are not calibrated to an audience.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pile-Ons",
+   "why_this_matters": "Fifty versions of the same criticism land as something categorically different from one, and there is no way to answer them at the scale they arrive.",
+   "what_it_is_not": "A serious concern genuinely shared by many people warrants many people saying so. A public figure receiving proportionate criticism for a public statement is not being piled on. Organic reaction produces varied, independent responses rather than a single converging one.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Ostracism",
+   "why_this_matters": "Exclusion from information and decisions has practical consequences well beyond the social ones, and each individual omission is small enough to be explained away.",
+   "what_it_is_not": "One forgotten invitation with nothing following it is an oversight. Groups drift for reasons unconnected to any particular member. Someone who has quietly opted out of things themselves can easily be read as excluded when in fact they chose.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Mobbing",
+   "why_this_matters": "Attempts to address it get absorbed as further evidence, so the ordinary responses available to someone under sustained group pressure make the position worse rather than better.",
+   "what_it_is_not": "Separate conflicts with different people clustering in time by coincidence is not concerted action, and one serious dispute that others have taken sides on is contentious rather than orchestrated. A specific documented instance where the person really was responsible is a fact, not a campaign.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Splitting",
+   "why_this_matters": "Standing shifts without reference to anything actually done, so there is no behaviour available that reliably keeps a person in favour.",
+   "what_it_is_not": "A serious breach of trust that permanently changes how someone is seen is a proportionate reassessment. Gradual disillusionment as you get to know a person better is normal. Someone more reactive during a difficult period is not necessarily thinking in all-or-nothing terms.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Golden Child Elevation",
+   "why_this_matters": "Achievement by one family member becomes the measure applied to the rest, so nothing they accomplish arrives without a comparison attached to it.",
+   "what_it_is_not": "Pride in a specific achievement, expressed without reference to anyone else, is just pride. Different family members having different strengths celebrated differently is not a ranking. A parent venting their own stress may land comparatively without the comparison being the point.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "False Consensus",
+   "why_this_matters": "Disagreeing appears to mean disagreeing with everyone, and the claim is vague enough that there is no one to check it with.",
+   "what_it_is_not": "A genuinely shared concern summarised rather than individually attributed is still real, and people speak imprecisely about small-group agreement all the time. Some communication styles simply favour group-referencing language.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Social Proof Pressure",
+   "why_this_matters": "A judgement that felt sound a minute earlier starts to feel eccentric, and the decision gets made against an apparent majority rather than on its merits.",
+   "what_it_is_not": "A genuinely unanimous decision, accurately represented, is not pressure just because one person disagrees with it. Social proof offered honestly as one input among several is legitimate information. Groups do reach quick, real consensus on straightforward things.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Performative Public Affection",
+   "why_this_matters": "Anyone the person might turn to has seen only the public version, so describing the private one costs credibility instead of gaining support.",
+   "what_it_is_not": "Plenty of people are more expressive in public and more reserved at home, with nothing hidden behind the difference. Ordinary private conflict that outsiders never see is not concealment. Public warmth that is genuine, if more understated in private, is consistent rather than staged.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Divide and Conquer",
+   "why_this_matters": "Two people who might have compared notes stop speaking, and each carries a version of the other that neither ever gets the chance to correct.",
+   "what_it_is_not": "Miscommunication between two people often has nothing to do with anyone else. Relationships drift for unrelated reasons over time. Someone who relays a conversation inaccurately may simply have remembered it badly.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Foot-in-the-Door",
+   "why_this_matters": "The larger request gets evaluated against a commitment already made rather than on its own terms, so consistency does the persuading.",
+   "what_it_is_not": "Small favours growing into larger ones naturally and mutually, with real consent at each stage, is how most relationships work. Someone can ask for something small, get it, and only later find they need something bigger. A large request that stands on its own merits is unaffected by whatever preceded it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Door-in-the-Face",
+   "why_this_matters": "Relief at the smaller ask substitutes for evaluating it, so the second request is judged against the first rather than against what is actually reasonable.",
+   "what_it_is_not": "Opening high and scaling back on real feedback is ordinary negotiation, understood as such by both sides. Someone may genuinely have preferred the bigger option and settled in good faith for the smaller. A large ask and a modest one can simply be unconnected.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Commitment Traps",
+   "why_this_matters": "No single step was large enough to refuse, and the obligation that accumulated is one that was never actually agreed to at any point along the way.",
+   "what_it_is_not": "An expansion both people talked about as it happened is a shared decision, however large it ends up being. Volunteering for more is not being trapped by less. The distinction lies in whether the present obligation is one either party could have named at the start.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Anchoring",
+   "why_this_matters": "Everything that follows gets measured against a number or framing that was never justified, including offers that would have looked unreasonable in isolation.",
+   "what_it_is_not": "A good-faith opening position that both sides understand as a starting point is normal negotiation. Someone unfamiliar with the conventions may state an ambitious first figure with nothing behind it. A reference point that reflects a real constraint is a fact rather than a lever.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Choice Restriction",
+   "why_this_matters": "No demand is ever made, so there is nothing to refuse — the preferred outcome simply becomes the only one left standing.",
+   "what_it_is_not": "Options are often genuinely limited by external constraints nobody arranged. Honest advice about which of several real options is best leaves the others available. Circumstances narrow on their own over time, with no strategy behind it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Emotional Flooding",
+   "why_this_matters": "Sustained intensity leaves no quiet stretch in which to assess anything, so speed gets mistaken for depth and there is no calm vantage point from which to notice.",
+   "what_it_is_not": "The early excitement of a new relationship is genuinely intense and usually settles into something steadier. Someone living through a real crisis will be intense because the situation is. Naturally expressive people are engineering nothing.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Cognitive Overload",
+   "why_this_matters": "Agreement becomes the fastest way out of the overwhelm, and the decision that results was never really evaluated at all.",
+   "what_it_is_not": "Genuinely complex decisions require a great deal of real information, and someone anxious to be thorough may over-explain without meaning to obstruct anything. Real, externally imposed urgency produces the same compression with no one creating it.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Rapid Topic Switching",
+   "why_this_matters": "No concern stays open long enough to require a complete answer, so a conversation that covered everything resolves nothing.",
+   "what_it_is_not": "Busy conversations legitimately cover a lot of ground, and a fast-paced style can be energetic rather than evasive. Real time constraints often mean touching briefly on several things in a context where follow-up is genuinely expected later.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Crisis Manufacturing",
+   "why_this_matters": "There is no time to consult anyone or notice inconsistencies, and compliance given under that compression is difficult to revisit afterwards.",
+   "what_it_is_not": "Real emergencies with real external deadlines exist and feel exactly like this from the inside. Someone anxious themselves may communicate urgency with no relation to anyone else's decision-making. A legitimately time-sensitive opportunity is not manufactured by being described urgently.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Bait and Switch",
+   "why_this_matters": "By the time the terms change, walking away costs more than accepting them, which is what makes the worse deal acceptable.",
+   "what_it_is_not": "Circumstances genuinely change and require honest renegotiation. A person correcting a mistake in their initial offer transparently, even inconveniently, is being straight. Terms that were clearly flagged as tentative at the time were never a promise.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Graduated Compliance",
+   "why_this_matters": "Each increment is small enough to accept, and the distance travelled from the starting point only becomes visible from a long way along it.",
+   "what_it_is_not": "Skill and trust genuinely develop in steps, and responsibility that is named out loud each time it increases has been earned rather than slipped past. Where both people would describe the present arrangement in the same terms, incremental growth is just growth.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Pre-Punishment",
+   "why_this_matters": "Opportunities are closed off before anyone else has the chance to refuse them, and the cost — jobs not applied for, things not said — stays invisible precisely because nothing happened.",
+   "what_it_is_not": "Realistic self-assessment about a situation where the odds genuinely are poor is judgement rather than fear. Ordinary caution and humility need no history behind them. Choosing not to pursue something because of competing priorities is a decision, not a withdrawal.",
+   "confidence": "medium",
+   "note": "This entry describes a self-directed, internalised pattern rather than something one person does to another, so why_this_matters is written about the cost the person carries rather than about a recipient of someone else's behaviour.",
+   "approved": false
+  },
+  {
+   "name": "Lying",
+   "why_this_matters": "Decisions get made on false information, and the discovery costs not only the specific belief but the reliability of everything else that was said.",
+   "what_it_is_not": "An honest mistake stated sincerely is not a lie, and a simplification or rounding that is not technically precise may carry no deception at all. Someone correcting their account because they later remembered more accurately is doing the right thing.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Lying by Omission",
+   "why_this_matters": "Nothing said was false, so there is no untruth to point at — only a conclusion the listener reached themselves on grounds they did not know were incomplete.",
+   "what_it_is_not": "Not thinking to mention something that did not seem relevant is ordinary, and plenty of information is legitimately nobody else's business. A gap held briefly, with a plan to close it once the timing was right, is a delay rather than a concealment.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Selective Information Sharing",
+   "why_this_matters": "The account is accurate in every particular and still leaves the listener with a conclusion the full picture would not support.",
+   "what_it_is_not": "Context can be missing because the speaker never had it, which is a gap rather than a filter. Sharing what you know as you learn it, across several conversations, is a different thing from choosing in advance which facts another person gets.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Strategic Incompleteness",
+   "why_this_matters": "Acting is possible but acting well is not, so every step requires going back to the same source, and independence never arrives.",
+   "what_it_is_not": "Genuinely complex things are often explained in stages because that is the only comprehensible order. Someone who does not yet have the full picture themselves can only pass on what they have. Need-to-know structures exist for reasons unconnected to any particular individual.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Forged Screenshots",
+   "why_this_matters": "Screenshots are widely treated as settled proof, so disproving one means asking people to doubt a kind of evidence they normally accept without question.",
+   "what_it_is_not": "A real screenshot cropped for brevity, with its meaning intact, is not a forgery. Confusion about which conversation or timeframe an image comes from is common. Different devices and platform updates genuinely produce different formatting of authentic images.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Catfishing",
+   "why_this_matters": "Everything built on the connection rests on ground that was never there, so what is lost on discovery includes the relationship's entire history, not merely its ending.",
+   "what_it_is_not": "Reasonable caution about identifying details early in an online relationship is not a fabricated identity. Outdated photos and flattering presentation fall short of accurate without being wholesale invention. Reluctance about video calls or meeting in person is frequently social anxiety.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Half-Truth Framing",
+   "why_this_matters": "Every fact checks out individually, so a listener who verifies carefully still arrives at the wrong conclusion.",
+   "what_it_is_not": "An accurate summary necessarily omits detail for length. People often present facts in whatever order those facts occurred to them. A genuinely different, honestly held interpretation of the same true facts is disagreement rather than arrangement.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "False Reports",
+   "why_this_matters": "A fabricated complaint puts a real job, licence or family arrangement in jeopardy, and the person has to answer for something that did not happen before anyone establishes whether it did.",
+   "what_it_is_not": "A genuine report that characterises events in a way the subject disputes still reflects the reporter's honest perception. Institutions make their own errors in processing legitimate reports. Two people can disagree factually about what happened without either one inventing anything.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Paper-Trail Traps",
+   "why_this_matters": "A record accumulates that the person has no opportunity to answer as it is built, and by the time they see it, it reads as damning.",
+   "what_it_is_not": "Standard documentation applied to everyone is not targeting. A genuine record of concerns that were actually raised with the person is legitimate even if they wish it did not exist. Someone keeping notes on their own experience for their own reference is doing something ordinary.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Compartmentalization",
+   "why_this_matters": "No single person can see enough to raise a question, so accountability fails not because anyone refused it but because nobody had the view required to ask for it.",
+   "what_it_is_not": "Confidentiality and need-to-know structures exist for genuinely good reasons in most organisations. Information silos form naturally in any large family or workplace. Someone who simply did not think to pass something on has partitioned nothing.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Thought Control",
+   "why_this_matters": "The vocabulary available for examining the situation is itself supplied from inside it, so doubt arrives already labelled as a symptom.",
+   "what_it_is_not": "Every group develops shared shorthand over time, and that is normal rather than controlling. Beliefs a person holds independently and can give their own reasons for are theirs. Passionate, sincerely held conviction is a different thing from a mechanism that suppresses dissent.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Phobia Indoctrination",
+   "why_this_matters": "Avoidance becomes bodily rather than reasoned, so options stay ruled out by a fear response that persists even after the person has concluded the fear was unwarranted.",
+   "what_it_is_not": "Proportionate warnings about real risks, from someone with relevant experience, are useful information. Pre-existing anxiety or trauma responses belong to the person and may have nothing to do with anyone currently present. Cautious family or cultural norms can be restrictive without having been constructed to frighten anyone.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Administrative Escalation",
+   "why_this_matters": "Defending against a disproportionate process consumes time, money and attention regardless of how it concludes, and the next concern goes unraised for that reason alone.",
+   "what_it_is_not": "Some issues genuinely warrant formal process regardless of who raised a concern first. Organisations and families with a low threshold for formalising things apply it evenly to everyone. Someone unaware that informal resolution was available may escalate simply from not knowing another route existed.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Paper Terrorism",
+   "why_this_matters": "Burden accumulates across filings rather than sitting in any one of them: responding to all of them costs time and money whether or not a single one has merit.",
+   "what_it_is_not": "Genuinely complex disputes require multiple legitimate filings to resolve. Thorough counsel generates volume as a by-product of diligence rather than as a strategy. Institutions produce a great deal of paperwork through their own procedural requirements, independent of any party's conduct.",
+   "confidence": "medium",
+   "note": "The short_definition is truncated mid-list (\"...floods of filings, motions, complaints,.\"), so both fields were derived from the expanded_definition and false-positive list instead.",
+   "approved": false
+  },
+  {
+   "name": "Brigading",
+   "why_this_matters": "Volume arriving at once removes any possibility of responding the way a single message could be answered, and the platform itself becomes unusable for as long as it lasts.",
+   "what_it_is_not": "Virality is not coordination: a post that spreads on its own draws unconnected people who arrived by different routes. What marks this pattern is convergence traceable to a single rallying post or thread — and several friends reacting to the same thing independently is not that.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
+  },
+  {
+   "name": "Context Collapse Exploitation",
+   "why_this_matters": "The version that circulates is the stripped one, and restoring the context means reaching an audience that has already reacted.",
+   "what_it_is_not": "People misunderstand context themselves and pass things on innocently. Headlines and short excerpts truncate longer statements as a matter of format. Sharing something without checking where it came from is careless rather than exploitative.",
+   "confidence": "high",
+   "note": "",
+   "approved": false
   }
  ]
 }
