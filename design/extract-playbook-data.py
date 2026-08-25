@@ -49,6 +49,38 @@ DATASETS = {
 }
 
 
+# Defects found in the live data. The mirror in content/prose/_raw/ is a
+# MIRROR -- it must stay byte-faithful to the live page or the drift check
+# that compares them becomes meaningless -- so corrections are applied here,
+# on the way out, and listed in the output so nothing is silently altered.
+#
+# Each one still needs fixing at source on the live page. Applying it here
+# only stops the typo reaching the clip manifest.
+CORRECTIONS = [
+    # tactic, field, wrong, right
+    ("Gaslighting", "what_it_sounds_like",
+     "You're rememb it all wrong.", "You're remembering it all wrong."),
+]
+
+
+def apply_corrections(datasets):
+    """Apply CORRECTIONS and return the ones that actually matched."""
+    applied = []
+    for tactic, field, wrong, right in CORRECTIONS:
+        for entries in datasets:
+            for entry in entries:
+                if entry.get("name") != tactic:
+                    continue
+                value = entry.get(field)
+                if isinstance(value, list) and wrong in value:
+                    entry[field] = [right if v == wrong else v for v in value]
+                    applied.append((tactic, field, wrong, right))
+                elif isinstance(value, str) and value == wrong:
+                    entry[field] = right
+                    applied.append((tactic, field, wrong, right))
+    return applied
+
+
 def find_array(src, name):
     """Return the JSON text of `const <name> = [...]`.
 
@@ -129,6 +161,15 @@ def main():
     if failed:
         print("\nrefusing to write: extraction did not validate")
         return 1
+
+    applied = apply_corrections([data["compendium"], data["codex_completed"]])
+    if applied:
+        print()
+        print("  corrections applied on extraction (still unfixed at source):")
+        for tactic, field, wrong, right in applied:
+            print("    %s -> %s" % (tactic, field))
+            print("      %r" % wrong)
+            print("      %r" % right)
 
     unresolved = check_recipe_links(data["compendium"], data["recipes"])
     print()

@@ -337,6 +337,75 @@ def render_compendium(entries):
 # Festie *Bible*, a different project, which is how the two came to be
 # confused for three weeks. Keep this column equal to sites.json `slug`;
 # design/audit-registry.py checks it.
+def extract_bible(path):
+    """The Festie Bible's 12 role guides, out of its structured JSON.
+
+    This is the one project whose prose does not come from shipped HTML. Its
+    content was OCR'd out of a 183-page PDF into content/festie-bible-data.json
+    by design/extract-festie-bible.py -- a script that can no longer run (it
+    hardcodes a scratchpad OCR directory that no longer exists, and a
+    capital-W /home/user/Wookbook path). The JSON is the surviving source of
+    truth, so the prose is generated from it rather than from the dead pipeline.
+
+    Twelve guides, each an acronym keyed to a role at the festival, and 149
+    scenarios beneath them. Every field is emitted; nothing is summarised.
+    """
+    data = json.load(open(path, encoding="utf-8"))
+    out = []
+    if data.get("mission"):
+        out.append("## The mission")
+        out.append(data["mission"])
+    for guide in data.get("guides", []):
+        out.append("## %s — %s" % (guide.get("acronym", "?"),
+                                   guide.get("edition", "")))
+        for label, key in (("Role", "role"), ("Pages", "pages")):
+            if guide.get(key):
+                out.append("**%s:** %s" % (label, guide[key]))
+        if guide.get("intro"):
+            out.append(guide["intro"])
+
+        for check in guide.get("checks") or []:
+            out.append("### %s — %s" % (check.get("letter", ""),
+                                        check.get("name", "")))
+            if check.get("desc"):
+                out.append(check["desc"])
+
+        outline = guide.get("outline") or []
+        if outline:
+            out.append("### The arc")
+            for step in outline:
+                out.append("**%s** — %s" % (step.get("key", ""),
+                                            step.get("desc", "")))
+
+        sentences = guide.get("sentences") or []
+        if sentences:
+            out.append("### The sentences")
+            for line in sentences:
+                out.append(line)
+
+        for sc in guide.get("scenarios") or []:
+            out.append("### %s" % (sc.get("hook") or sc.get("archetype") or ""))
+            for label, key in (("Section", "section"),
+                               ("Archetype", "archetype"),
+                               ("Clinical name", "clinical")):
+                if sc.get(key):
+                    out.append("**%s:** %s" % (label, sc[key]))
+            for key in ("who", "scene", "happening"):
+                if sc.get(key):
+                    out.append(sc[key])
+            if sc.get("tells"):
+                out.append("**Tells:** " + " / ".join(sc["tells"]))
+            for label, key in (("Check", "check"), ("The dark version", "dark"),
+                               ("The move", "move"), ("Say", "say"),
+                               ("The truth", "truth")):
+                if sc.get(key):
+                    prefix = ("**%s (%s):** " % (label, sc["darkTitle"])
+                              if key == "dark" and sc.get("darkTitle")
+                              else "**%s:** " % label)
+                    out.append(prefix + sc[key])
+    return "\n\n".join(out)
+
+
 BOOKS = [
     ("feminine", "The Sovereign Divine Feminine", "static",
      os.path.join(ROOT, "source/projects/noble-father-sovereign.html")),
@@ -358,6 +427,8 @@ BOOKS = [
      os.path.join(ROOT, "content/prose/_raw/playbook.html")),
     ("music", "The Listening Room", "static",
      os.path.join(ROOT, "content/prose/_raw/music.html")),
+    ("festival", "The Festie Bible", "bible",
+     os.path.join(ROOT, "content/festie-bible-data.json")),
 ]
 
 NOTES = {
@@ -371,6 +442,9 @@ NOTES = {
                 "chapter book -- organized here by category, one entry per tactic.",
     "music": "A curated music/streaming page, not a chapter book -- this is its framing "
              "copy only; the actual songs live as audio, not text.",
+    "festival": "Twelve role-based field guides, each keyed to an acronym, with 149 "
+                "scenarios beneath them. Generated from content/festie-bible-data.json "
+                "because the original OCR pipeline can no longer run.",
 }
 
 
@@ -396,6 +470,8 @@ def main():
             text = extract_bodies(path)
         elif method == "faith":
             text = extract_faith(path)
+        elif method == "bible":
+            text = extract_bible(path)
         elif method == "compendium":
             text = extract_json_array(path, "COMPENDIUM", render_compendium)
         else:

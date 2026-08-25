@@ -4,7 +4,7 @@
 
 `slug` is the canonical key everywhere: it matches the live URL, the `BOOKS.md` heading, and the `content/prose/` filename. `codename` is kept only as an alias, because older notes and `chapters.json` were written against it.
 
-12 projects · 870,569 words of extracted prose
+12 projects · 938,410 words of extracted prose
 
 
 ## Lookup table
@@ -13,16 +13,16 @@
 |---|---|---|---|---|---|
 | The Coercive Control Codex | `faith` | — | [faith](https://noblefathercreations.com/faith) | `content/prose/faith.md` | 301,317 |
 | The Festie Codex | `wook` | `festie-codex` | [wook](https://noblefathercreations.com/wook) | `content/prose/wook.md` | 250,985 |
-| The Fracture | `fracture` | `allfracture` | [fracture](https://noblefathercreations.com/fracture) | `content/prose/fracture.md` | 87,820 |
+| The Fracture | `fracture` | `allfracture` | [fracture](https://noblefathercreations.com/fracture) | `content/prose/fracture.md` | 87,843 |
 | The Fractal | `fractal` | — | [fractal](https://noblefathercreations.com/fractal) | `content/prose/fractal.md` | 74,718 |
-| The Sovereign Divine Feminine | `feminine` | `sovereign` | [feminine](https://noblefathercreations.com/feminine) | `content/prose/feminine.md` | 52,187 |
-| Playground Protectors | `children` | `playground` | [children](https://noblefathercreations.com/children) | `content/prose/children.md` | 47,138 |
+| The Festie Bible | `festival` | `festie-bible` | [festival](https://noblefathercreations.com/festival) | `content/prose/festival.md` | 67,772 |
+| The Sovereign Divine Feminine | `feminine` | `sovereign` | [feminine](https://noblefathercreations.com/feminine) | `content/prose/feminine.md` | 52,210 |
+| Playground Protectors | `children` | `playground` | [children](https://noblefathercreations.com/children) | `content/prose/children.md` | 47,161 |
 | The Loop | `loop` | — | [loop](https://noblefathercreations.com/loop) | `content/prose/loop.md` | 25,736 |
 | The Weighing | `scale` | — | [scale](https://noblefathercreations.com/scale) | `content/prose/scale.md` | 18,791 |
 | The Pattern Decoder | `playbook` | `decoder` | [playbook](https://noblefathercreations.com/playbook) | `content/prose/playbook.md` | 11,419 |
 | The Root | `shadowroot` | `root` | [shadowroot](https://noblefathercreations.com/shadowroot) | `content/prose/shadowroot.md` | 378 |
 | The Listening Room | `music` | — | [music](https://noblefathercreations.com/music) | `content/prose/music.md` | 80 |
-| The Festie Bible | `festival` | `festie-bible` | [festival](https://noblefathercreations.com/festival) | — | — |
 
 ## Per project
 
@@ -34,7 +34,7 @@
 - **alias (`codename`)** — none — same as slug
 - **live** — https://noblefathercreations.com/faith
 - **version** — v2
-- **shape** — 85 sections, 810 sub-entries
+- **shape** — 85 chapters in 0 movements
 - **page source** — `source/projects/faith-index.html`
 - **structured data** — —
 - **prose** — `content/prose/faith.md` (301,317 words)
@@ -50,7 +50,7 @@
 - **alias (`codename`)** — `festie-codex`
 - **live** — https://noblefathercreations.com/wook
 - **version** — v1
-- **shape** — 74 sections, 148 sub-entries
+- **shape** — 74 chapters in 0 movements
 - **page source** — `source/projects/noble-father-festival.html`
 - **structured data** — —
 - **prose** — `content/prose/wook.md` (250,985 words)
@@ -66,10 +66,10 @@
 - **alias (`codename`)** — `allfracture`
 - **live** — https://noblefathercreations.com/fracture
 - **version** — v2
-- **shape** — 19 sections, 162 sub-entries
+- **shape** — 19 chapters in 0 movements
 - **page source** — `source/projects/noble-father-fracture.html`
 - **structured data** — —
-- **prose** — `content/prose/fracture.md` (87,820 words)
+- **prose** — `content/prose/fracture.md` (87,843 words)
 - **chapter data** — `chapters.json` → `fracture`
 - **notes** — `BOOKS.md` → `## fracture`
 
@@ -81,12 +81,27 @@
 - **alias (`codename`)** — none — same as slug
 - **live** — https://noblefathercreations.com/fractal
 - **version** — v2
-- **shape** — 11 sections, 123 sub-entries
+- **shape** — 123 chapters in 0 movements
 - **page source** — `source/projects/noble-father-fractal.html`
 - **structured data** — —
 - **prose** — `content/prose/fractal.md` (74,718 words)
 - **chapter data** — `chapters.json` → `fractal`
 - **notes** — `BOOKS.md` → `## fractal`
+
+### The Festie Bible
+
+*Twelve field guides for the whole festival world*
+
+- **slug** — `festival`
+- **alias (`codename`)** — `festie-bible`
+- **live** — https://noblefathercreations.com/festival
+- **version** — v6
+- **shape** — 229 chapters in 0 movements
+- **page source** — `source/projects/noble-father-festiebible.html`
+- **structured data** — —
+- **prose** — `content/prose/festival.md` (67,772 words)
+- **chapter data** — `chapters.json` → `festival`
+- **notes** — `BOOKS.md` → `## festival`
 
 ### The Sovereign Divine Feminine
 
@@ -96,10 +111,10 @@
 - **alias (`codename`)** — `sovereign`
 - **live** — https://noblefathercreations.com/feminine
 - **version** — v2
-- **shape** — 54 sections, 6 sub-entries
+- **shape** — 54 chapters in 0 movements
 - **page source** — `source/projects/noble-father-sovereign.html`
 - **structured data** — —
-- **prose** — `content/prose/feminine.md` (52,187 words)
+- **prose** — `content/prose/feminine.md` (52,210 words)
 - **chapter data** — `chapters.json` → `feminine`
 - **notes** — `BOOKS.md` → `## feminine`
 
@@ -111,10 +126,10 @@
 - **alias (`codename`)** — `playground`
 - **live** — https://noblefathercreations.com/children
 - **version** — v2
-- **shape** — 44 sections, 4 sub-entries
+- **shape** — 44 chapters in 0 movements
 - **page source** — `source/projects/noble-father-playground.html`
 - **structured data** — —
-- **prose** — `content/prose/children.md` (47,138 words)
+- **prose** — `content/prose/children.md` (47,161 words)
 - **chapter data** — `chapters.json` → `children`
 - **notes** — `BOOKS.md` → `## children`
 
@@ -156,7 +171,7 @@
 - **alias (`codename`)** — `decoder`
 - **live** — https://noblefathercreations.com/playbook
 - **version** — v1
-- **shape** — 24 sections, 349 sub-entries
+- **shape** — 24 chapters in 0 movements
 - **page source** — `content/prose/_raw/playbook.html`
 - **structured data** — `content/playbook-data.json`
 - **prose** — `content/prose/playbook.md` (11,419 words)
@@ -171,7 +186,7 @@
 - **alias (`codename`)** — `root`
 - **live** — https://noblefathercreations.com/shadowroot
 - **version** — v1
-- **shape** — 17 sections, 0 sub-entries
+- **shape** — 17 chapters in 0 movements
 - **page source** — `source/projects/noble-father-root.html`
 - **structured data** — —
 - **prose** — `content/prose/shadowroot.md` (378 words)
@@ -193,21 +208,6 @@
 - **chapter data** — `chapters.json` → `music`
 - **notes** — `BOOKS.md` → `## music`
 - **kept in sync with** — `deploy/music/index.html` + `source/projects/noble-father-music.html`
-
-### The Festie Bible
-
-*Twelve field guides for the whole festival world*
-
-- **slug** — `festival`
-- **alias (`codename`)** — `festie-bible`
-- **live** — https://noblefathercreations.com/festival
-- **version** — v6
-- **shape** — —
-- **page source** — `source/projects/noble-father-festiebible.html`
-- **structured data** — —
-- **prose** — not extracted
-- **chapter data** — `chapters.json` → `festival`
-- **notes** — `BOOKS.md` → `## festival`
 
 ## Adaptation assets
 
