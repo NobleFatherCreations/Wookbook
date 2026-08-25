@@ -79,6 +79,23 @@ SHELF_BY_CATEGORY = {
 
 TIER_RANK = {"Detected": 0, "Pattern-only": 1, "Watch-only": 2, "Reference-only": 3}
 
+# A hook has to be *read* in about three seconds, muted, on a phone. Measured
+# across the corpus, 80 characters is where a line stops fitting that.
+#
+# This threshold does more work than it looks like it does, because
+# what_it_sounds_like is not one kind of field. On Detected-tier entries it
+# holds actual spoken lines ("It's your fault." / "You'll thank me later.") --
+# median 22 characters, and 81 of 81 come in under the limit. On
+# Reference-only entries it holds *descriptions* of a signal ("Following a
+# specific characterization, the target experiences a wave of harassment
+# from people who cite...") -- median 106 characters, and only 6 of 244 fit.
+#
+# So the tier field, which exists to say what the live tool can detect in
+# pasted text, turns out to also predict whether an entry can be cut without
+# an editorial pass. That is what splits the corpus into shoot-ready and
+# needs-a-hook, and it is why release order follows the tiers.
+HOOK_MAX_CHARS = 80
+
 
 def pick_hook(sounds):
     """Shortest distinct line -- the one that fits on screen at 3 seconds.
@@ -117,6 +134,18 @@ def build(entry):
     missing = [n for n, v in (("hook", hook), ("mechanism", mechanism),
                               ("not_this", not_this), ("close", close)) if not v]
 
+    # Shoot-ready means: every beat present, and the hook is a line short
+    # enough to read rather than a description that needs rewriting first.
+    # Anything else is still a good clip -- it just needs a human to choose
+    # the opening, which is editorial work this script must not fake.
+    usable_hook = bool(hook) and len(hook) <= HOOK_MAX_CHARS
+    if missing:
+        stage = "needs_source"
+    elif usable_hook:
+        stage = "shoot_ready"
+    else:
+        stage = "needs_hook"
+
     return OrderedDict([
         ("name", entry["name"]),
         ("category", entry["category"]),
@@ -134,6 +163,8 @@ def build(entry):
         ("misuse_warning", entry.get("misuse_warning") or []),
         ("safety_note", (entry.get("safety_note") or "").strip()),
         ("related_tactics", entry.get("related_tactics") or []),
+        ("stage", stage),
+        ("hook_chars", len(hook) if hook else 0),
         ("needs_review", missing),
     ])
 
@@ -144,7 +175,8 @@ def interleave(clips):
     for clip in clips:
         buckets[clip["category"]].append(clip)
     for cat in buckets:
-        buckets[cat].sort(key=lambda c: (TIER_RANK.get(c["tier"], 9), c["name"]))
+        buckets[cat].sort(key=lambda c: (0 if c["stage"] == "shoot_ready" else 1,
+                                         TIER_RANK.get(c["tier"], 9), c["name"]))
 
     order, cats = [], sorted(buckets)
     while any(buckets[c] for c in cats):
@@ -170,12 +202,29 @@ def main():
     data = json.load(open(SRC, encoding="utf-8"))
     clips = interleave([build(e) for e in data["codex_completed"]])
 
-    ready = [c for c in clips if not c["needs_review"]]
-    blocked = [c for c in clips if c["needs_review"]]
+    ready = [c for c in clips if c["stage"] == "shoot_ready"]
+    needs_hook = [c for c in clips if c["stage"] == "needs_hook"]
+    blocked = [c for c in clips if c["stage"] == "needs_source"]
 
     print("Pattern Decoder -- short-form release manifest")
-    print("  %d tactics -> %d clips ready to cut, %d need review"
-          % (len(clips), len(ready), len(blocked)))
+    print("  %d tactics" % len(clips))
+    print("    %3d shoot-ready   every beat present, hook <=%d chars"
+          % (len(ready), HOOK_MAX_CHARS))
+    print("    %3d needs-hook    complete, but the opening line needs choosing"
+          % len(needs_hook))
+    print("    %3d needs-source  a beat has no field to draw from"
+          % len(blocked))
+    print()
+
+    print("  hook usability by tier (why the split falls where it does):")
+    for tier in ("Detected", "Pattern-only", "Watch-only", "Reference-only"):
+        group = [c for c in clips if c["tier"] == tier]
+        if not group:
+            continue
+        fits = sum(1 for c in group if c["hook_chars"] <= HOOK_MAX_CHARS)
+        med = sorted(c["hook_chars"] for c in group)[len(group) // 2]
+        print("    %-15s %3d entries  %3d usable (%3d%%)  median %3d chars"
+              % (tier, len(group), fits, round(100 * fits / len(group)), med))
     print()
 
     unmapped = sorted({c["category"] for c in clips
@@ -189,23 +238,33 @@ def main():
         print("    %-16s %3d" % (tier, n))
     print()
 
-    print("  first %d in release order (one per category, cycling):"
-          % min(12, len(clips)))
-    for i, c in enumerate(clips[:12], 1):
-        print("    %2d. %-30s %-30s %s" % (i, c["name"][:30], c["category"][:30],
-                                           c["tier"]))
+    print("  the shooting queue -- first %d shoot-ready, in release order:"
+          % min(12, len(ready)))
+    for i, c in enumerate(ready[:12], 1):
+        print("    %2d. %-30s %-30s %s"
+              % (i, c["name"][:30], c["category"][:30], c["shelf"]))
+    print()
+
+    covered = len({c["category"] for c in ready})
+    print("  shoot-ready spans %d of %d categories" % (covered, len(set(
+        c["category"] for c in clips))))
+    thin = sorted(cat for cat in {c["category"] for c in clips}
+                  if not any(r["category"] == cat for r in ready))
+    if thin:
+        print("  no shoot-ready entry in: %s" % ", ".join(thin))
     print()
 
     if blocked:
-        print("  needs review before cutting:")
+        print("  needs-source (a beat has no field):")
         for c in blocked[:20]:
             print("    %-32s missing: %s" % (c["name"][:32],
                                              ", ".join(c["needs_review"])))
         print()
 
-    weeks = (len(ready) + args.weekly - 1) // args.weekly
-    print("  at %d clips/week: %d weeks (%.1f years) of material"
-          % (args.weekly, weeks, weeks / 52))
+    for label, n in (("shoot-ready only", len(ready)), ("whole corpus", len(clips))):
+        weeks = (n + args.weekly - 1) // args.weekly
+        print("  %-17s at %d/week: %3d weeks (%.1f years)"
+              % (label, args.weekly, weeks, weeks / 52))
 
     if not args.apply:
         print("\ndry run -- pass --apply to write %s"
@@ -223,8 +282,10 @@ def main():
                    "mechanism: why_this_matters",
                    "not_this: this_may_not_be_it_when",
                    "close: boundary_script"]),
-        ("counts", {"total": len(clips), "ready": len(ready),
-                    "needs_review": len(blocked)}),
+        ("hook_max_chars", HOOK_MAX_CHARS),
+        ("counts", {"total": len(clips), "shoot_ready": len(ready),
+                    "needs_hook": len(needs_hook),
+                    "needs_source": len(blocked)}),
         ("clips", clips),
     ])
     with open(OUT, "w", encoding="utf-8") as fh:
