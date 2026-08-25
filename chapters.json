@@ -3,7 +3,7 @@
   "note": "Single source of truth for chapter/book data. loop and scale are extracted directly from their own shipped HTML (var MOVEMENTS=[...] / var CH={...} literals) via design/extract-chapters.py — real content, not invented. CORRECTION: chapters 14-20 (the ones named in the original planning thread) belong to 'loop' (The Loop), NOT 'allfracture' as first assumed — confirmed by exact text match in loop's own source, including chapter 19's own blurb explicitly calling itself 'the sibling of The Fracture'. Other books still need their own data-format investigated before filling in.",
   "books": [
     {
-      "project": "festie+codex",
+      "project": "festie-codex",
       "slug": "wook",
       "title": "The Festie Codex",
       "url": "https://noblefathercreations.com/wook",
@@ -45,7 +45,7 @@
       "movements": []
     },
     {
-      "project": null,
+      "project": "faith",
       "slug": "faith",
       "title": "The Coercive Control Codex",
       "url": "https://noblefathercreations.com/faith",
@@ -60,7 +60,7 @@
       "note": "Uses a different authoring format than loop/scale (no MOVEMENTS/CH JS literals found) — not yet extracted. Do not invent chapter data."
     },
     {
-      "project": null,
+      "project": "loop",
       "slug": "loop",
       "title": "The Loop",
       "url": "https://noblefathercreations.com/loop",
@@ -500,7 +500,7 @@
       ]
     },
     {
-      "project": null,
+      "project": "scale",
       "slug": "scale",
       "title": "The Weighing",
       "url": "https://noblefathercreations.com/scale",
@@ -852,11 +852,28 @@
           ]
         }
       ]
+    },
+    {
+      "project": "festie-bible",
+      "slug": "festival",
+      "title": "The Festie Bible",
+      "url": "https://noblefathercreations.com/festival",
+      "movements": [],
+      "note": "Not a movement/chapter book. See dataSource in sites.json for its real structure."
+    },
+    {
+      "project": "music",
+      "slug": "music",
+      "title": "The Listening Room",
+      "url": "https://noblefathercreations.com/music",
+      "movements": [],
+      "note": "Not a movement/chapter book. See dataSource in sites.json for its real structure."
     }
   ],
   "todo": [
-    "fracture, wook, feminine, children, fractal, shadowroot, playbook: chapter data not yet extracted — check each book's own source for its authoring format (may not match loop/scale's MOVEMENTS/CH pattern) before inventing anything.",
-    "Once populated, this file drives: the chapter-index/contents page, Prev/Next nav, reading-progress bar, and THE HOUSE cross-project map (see design/build-chapter-index.py and PROJECT-MASTER.md Part 4)."
+    "fracture, wook, feminine, children, fractal, shadowroot, playbook: chapter data not yet extracted into this file. Superseded note: the prose DOES now exist for all of them in content/prose/ -- extraction into this shape is a formatting job, not a recovery job.",
+    "loop and scale carry full chapter data but every chapter's slug is null, so chapters are addressable only by anchor number.",
+    "Once populated, this file drives: the chapter-index/contents page, Prev/Next nav, reading-progress bar, and THE HOUSE cross-project map."
   ],
-  "updated": "2026-08-02T3"
+  "updated": "2026-08-25"
 }

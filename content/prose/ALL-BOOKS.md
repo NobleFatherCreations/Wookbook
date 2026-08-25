@@ -19807,7 +19807,7 @@ PROTECT THE F*CKING MAGIC
 
 # The Fracture
 
-*(source/projects/noble-father-fracture.html, 87,815 words)*
+*(source/projects/noble-father-fracture.html, 87,810 words)*
 
 
 ---
@@ -22495,7 +22495,7 @@ The Fracture
 
 # The Loop
 
-*(fixes/loop.html, 25,727 words)*
+*(fixes/loop.html, 25,726 words)*
 
 
 ---

@@ -1,6 +1,6 @@
 # The Fracture
 
-*Extracted from `source/projects/noble-father-fracture.html` — 87,815 words.*
+*Extracted from `source/projects/noble-father-fracture.html` — 87,810 words.*
 
 ---
 

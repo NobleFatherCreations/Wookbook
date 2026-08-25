@@ -134,20 +134,81 @@ the audience, not a manipulation pattern to avoid.
   it as its own design language; the review doc's existing work already
   fits it better than importing outside patterns would.
 
-## wook — The Festie Codex **[from review doc + this repo's own file]**
+## wook — The Festie Codex **[confirmed: source resolved and content measured, 2026-08-25]**
 
-Festival & field harm reduction. Per review doc: "zine-style hard-shadow
-buttons." **Unresolved discrepancy** (see `MEMORY.md`): this repo's own
-tracked `festie-codex-full.html` has a different title than the review
-package's `source/projects/noble-father-festival.html` — diff before doing
-any design work here.
+Festival & field harm reduction, 250,985 words — the second-largest work in
+the catalogue. 26 chapters plus 26 appendices (A–Z).
 
-**Reference adaptation (tentative, pending the diff above):**
-- Stripe Press — ⚠️ likely wrong fit — "zine" aesthetic is intentionally
-  raw/DIY, not premium-polished. Don't smooth this one over by default.
-- Aeon — probably fine for any long-form sections, unconfirmed.
-- Wait But Why — likely useful if content is chapter-like; unconfirmed
-  structure.
+**The "unresolved discrepancy" that blocked this book was never real.**
+`festie-codex-full.html` and `source/projects/noble-father-festival.html` are
+**byte-identical** (md5 `e917c570…`), and `sites.json` has recorded that as
+RESOLVED since 2026-08-03 — this file just never got the update, so the
+blocker stood here for three weeks after it was cleared. The title confusion
+was with a **third** file, `source/projects/noble-father-festiebible.html`,
+which is a different project entirely (The Festie Bible, slug `festival` —
+its own section below).
+
+Both copies are deliberate and both must stay: wook is the one project
+deployed from this git repo, and Netlify builds the repo-root file, while
+`source/projects/` holds the copy every sweep and audit script walks. They
+drifted once already (2026-08-05). They are now declared in `sites.json` →
+`syncPairs` and `design/audit-registry.py` fails if they differ.
+
+**Content confirmed by reading it** (`content/prose/wook.md`): "zine-style
+hard-shadow buttons" per the review doc, plus three structural devices the
+review doc never mentioned, all of which matter more than the styling:
+
+- **Counter-Drops** — black ⚡ cards, described by the book itself as "the
+  actual moves, word for word, ready to run." ~191 references.
+- **Sunrise Sets** — once per chapter the slang drops to zero and the page
+  goes warm: "the no-bullsh*t version of everything you just read." A
+  pre-written plain-language recap layer, one per chapter, ~38 references.
+- **The Kandi Strand** — 26 beads, one lighting per chapter finished, and
+  the book calls it a collectible outright. **This book deliberately DOES
+  gamify**, unlike Loop/scale/faith. Do not apply their anti-progress stance
+  here; it is the opposite case, like Playground Protectors.
+
+**Reference adaptation:**
+- Stripe Press — ⚠️ wrong fit, confirmed. The zine aesthetic is intentionally
+  raw/DIY. Don't smooth it.
+- Aeon — ✅ for the Sunrise Sets and long scenario prose; the measure applies,
+  the restraint does not.
+- Wait But Why — ✅ strongly. 26 chapters + 26 appendices with "Fast Lanes"
+  already described in its own tutorial; it wants a real index.
+
+## festival — The Festie Bible **[confirmed: structured data read, 2026-08-25]**
+
+*"Twelve field guides for the whole festival world."* v6 — the most-revised
+project in the catalogue, and until now **the least visible: no BOOKS.md
+section, no chapters.json record, and no `content/prose/` extraction.** It
+was findable only by knowing the filename.
+
+Not a chapter book. Twelve **role-based editions**, each built on an acronym,
+in `content/festie-bible-data.json` (452 KB, built by
+`design/extract-festie-bible.py` from a 183-page PDF via OCR):
+
+`grove` (G.R.O.V.E., Women Attendees) · `bass` · `rave` · `pride` ·
+`create` · `sound` · `market` · `hold` · `care` · `lead` · `event` · `safe`
+
+Each guide carries `intro`, `checks`, `outline`, `sentences` and
+`scenarios` (17 in the Women Attendees edition alone). The role targeting is
+the distinguishing feature of this book and of nothing else in the catalogue
+— it is the same field knowledge cut by *who you are at the festival*, not
+by topic.
+
+**Two caveats before working on it:**
+- `design/extract-festie-bible.py` is **not currently re-runnable** — it
+  hardcodes an absolute OCR path in a scratchpad that no longer exists, plus
+  `/home/user/Wookbook/` with a capital W. The JSON output is fine; the
+  regeneration path is broken.
+- Its outbound links were once only TikTok, email and crisis lines (fixed
+  2026-08-12 by adding House + hub links).
+
+**Reference adaptation:**
+- Stripe Press — ⚠️ same zine caution as wook.
+- Aeon — ✅ for scenario prose.
+- Wait But Why — ✅ the twelve editions are a natural index; a "which guide
+  is mine?" chooser is the obvious front door and does not exist.
 
 ## fractal — The Fractal **[from review doc]**
 

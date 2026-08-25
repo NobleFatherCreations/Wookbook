@@ -1,6 +1,6 @@
 # The Loop
 
-*Extracted from `fixes/loop.html` — 25,727 words.*
+*Extracted from `fixes/loop.html` — 25,726 words.*
 
 ---
 

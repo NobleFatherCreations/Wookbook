@@ -178,7 +178,7 @@
       ]
     },
     {
-      "codename": "festie+codex",
+      "codename": "festie-codex",
       "slug": "wook",
       "title": "The Festie Codex",
       "tagline": "Festival & field harm reduction",
@@ -275,7 +275,7 @@
       ]
     },
     {
-      "codename": null,
+      "codename": "loop",
       "slug": "loop",
       "title": "The Loop",
       "tagline": "The machine that learns you",
@@ -310,7 +310,7 @@
       "localSource": "fixes/loop.html"
     },
     {
-      "codename": null,
+      "codename": "scale",
       "slug": "scale",
       "title": "The Weighing",
       "tagline": "How to be right about people",
@@ -345,7 +345,7 @@
       "localSource": "fixes/scale.html"
     },
     {
-      "codename": null,
+      "codename": "faith",
       "slug": "faith",
       "title": "The Coercive Control Codex",
       "tagline": "Honor the faith · name the machinery",
@@ -373,10 +373,12 @@
         }
       ],
       "localSource": "source/projects/faith-index.html",
-      "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05"
+      "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
+      "leakFix": "fixes/faith.html",
+      "leakFixNote": "Byte-verified corrected HTML for the build-instruction comment leak, awaiting redeploy. Was tracked but referenced nowhere, so nothing could find it."
     },
     {
-      "codename": null,
+      "codename": "music",
       "slug": "music",
       "title": "The Listening Room",
       "tagline": "Sorted by what each song is for",
@@ -409,7 +411,7 @@
       ]
     },
     {
-      "codename": "festie+bible",
+      "codename": "festie-bible",
       "slug": "festival",
       "title": "The Festie Bible",
       "tagline": "Twelve field guides for the whole festival world",
@@ -560,8 +562,28 @@
     "loop/scale/faith deploySource='cli' confirmed via Netlify deploy metadata (commit_ref: null) — no GitHub repo backs them, so the leak fix can only ship via a direct Netlify redeploy, not a git push.",
     "Only 'wook' (this repo, Wookbook) is git-backed; all other projects are Netlify CLI/API deploys with no linked repo Claude can add.",
     "2026-08-02 update: user supplied a review package (source/) — local HTML source + a build log (source/REVIEW-SUMMARY.md) from a prior design session covering 12 files. root/sovereign/playground/fractal/fracture/wook(as noble-father-festival.html)/portals/seals/reaction-map are claimed deployed; portals/seals/reaction-map/root confirmed byte-exact live, the rest not independently re-verified. Two pieces (catalogue hub redesign, Sacred Divide) are claimed deployed by the review doc but do NOT byte-match live content — treat that specific claim in the review doc as unconfirmed/incorrect until resolved with the user.",
-    "wook's local review-package file (noble-father-festival.html) has a different title than this repo's tracked festie-codex-full.html — unresolved discrepancy, needs a diff before assuming either supersedes the other.",
+    "RESOLVED 2026-08-03, re-verified byte-identical 2026-08-25: festie-codex-full.html and source/projects/noble-father-festival.html are the same document, deliberately kept in sync -- see syncPairs. The title confusion was with a THIRD file, source/projects/noble-father-festiebible.html, which is a different project (The Festie Bible, slug \"festival\"). This note previously contradicted projects[wook].localSourceNote in this same file.",
     "2026-08-05 deploy round: confirmed the actual working deploy mechanism for these Netlify CLI/API sites (no linked repo) — call the deploy-site MCP operation for a siteId, it returns a `npx -y @netlify/mcp@latest --site-id <id> --proxy-path <token>` command; run that from a staging directory containing ONLY the single index.html to deploy (running it from the repo root would upload the whole repo instead). Verified via byte-diff against the live URL after every deploy. Used this to push feminine/children/fractal/fracture (all byte-confirmed live) and to redeploy faith. fixes/loop.html and fixes/scale.html are ready with the same mechanism whenever the user wants that leak fix pushed — not yet run.",
     "2026-08-05: faith-index.html deployed to thenobledivide, replacing the prior live 'Coercive Control Codex' content (the fixes/faith.html lineage). That lineage's leak fix is now moot — it's not the live content anymore. The Sacred Divide redesign (noble-father-divide.html) remains a separate, still-undeployed option."
+  ],
+  "syncPairs": [
+    {
+      "project": "wook",
+      "files": [
+        "festie-codex-full.html",
+        "source/projects/noble-father-festival.html"
+      ],
+      "why": "wook is the one project deployed from this git repo, and Netlify builds the repo-root file. source/projects/ holds the copy every sweep and audit script actually walks. Both must exist; both must be identical.",
+      "risk": "Drifted once already (2026-08-05): two repo-wide sweeps touched only the source/projects copy. design/audit-registry.py now fails when they differ."
+    },
+    {
+      "project": "music",
+      "files": [
+        "deploy/music/index.html",
+        "source/projects/noble-father-music.html"
+      ],
+      "why": "Both are generated as identical bytes by scripts/build-music.py. Neither is hand-edited; regenerate rather than patching either.",
+      "risk": "Hand-editing one output silently desynchronises it from the generator."
+    }
   ]
 }

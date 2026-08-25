@@ -10,7 +10,7 @@ content/prose/, plus content/prose/ALL-BOOKS.md (everything concatenated).
 Three extraction methods, matched per-project to how that project actually
 stores its content:
   - static:  headings/paragraphs/list-items walked straight out of the HTML
-             (sovereign, playground, festival, fracture, loop, scale, faith)
+             (feminine, children, wook, fracture, loop, scale, faith)
   - fractal: a JS `const DATA = {...}` object (happens to be valid JSON)
   - root:    a branching guided-practice state machine (shell(...) calls)
   - json:    a plain JS `NAME = [...]` array that is itself valid JSON, for
@@ -329,14 +329,22 @@ def render_compendium(entries):
     return "\n\n".join(out)
 
 
+# The first element is the project's `slug` from sites.json, and it is also
+# the output filename. These agreed with nothing before 2026-08-25: this list
+# used a fourth set of names alongside sites.json's `codename`, sites.json's
+# `slug`, and BOOKS.md's headings. The worst collision was here -- "festival"
+# named The Festie *Codex* in this file while slug "festival" belongs to The
+# Festie *Bible*, a different project, which is how the two came to be
+# confused for three weeks. Keep this column equal to sites.json `slug`;
+# design/audit-registry.py checks it.
 BOOKS = [
-    ("sovereign", "The Sovereign Divine Feminine", "static",
+    ("feminine", "The Sovereign Divine Feminine", "static",
      os.path.join(ROOT, "source/projects/noble-father-sovereign.html")),
-    ("playground", "Playground Protectors", "static",
+    ("children", "Playground Protectors", "static",
      os.path.join(ROOT, "source/projects/noble-father-playground.html")),
-    ("festival", "The Festie Codex", "static",
+    ("wook", "The Festie Codex", "static",
      os.path.join(ROOT, "source/projects/noble-father-festival.html")),
-    ("fracture", "The Fracture Everywhere", "static",
+    ("fracture", "The Fracture", "static",
      os.path.join(ROOT, "source/projects/noble-father-fracture.html")),
     ("loop", "The Loop", "bodies", os.path.join(ROOT, "fixes/loop.html")),
     ("scale", "The Weighing", "bodies", os.path.join(ROOT, "fixes/scale.html")),
@@ -344,7 +352,7 @@ BOOKS = [
      os.path.join(ROOT, "source/projects/faith-index.html")),
     ("fractal", "The Fractal", "fractal",
      os.path.join(ROOT, "source/projects/noble-father-fractal.html")),
-    ("root", "The Root", "root",
+    ("shadowroot", "The Root", "root",
      os.path.join(ROOT, "source/projects/noble-father-root.html")),
     ("playbook", "The Pattern Decoder", "compendium",
      os.path.join(ROOT, "content/prose/_raw/playbook.html")),
@@ -353,7 +361,7 @@ BOOKS = [
 ]
 
 NOTES = {
-    "root": "This is a tool, not a book: an 18-step branching guided practice moved "
+    "shadowroot": "This is a tool, not a book: an 18-step branching guided practice moved "
             "through once, in sequence, not browsed like chapters. Extracted from the "
             "tool's own state-machine prompts.",
     "fractal": "An interactive technique-decoder/constellation-map tool, not a linear "

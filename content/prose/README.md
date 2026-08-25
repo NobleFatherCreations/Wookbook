@@ -10,20 +10,34 @@ Regenerate any time a book's content changes:
 `python3 design/extract-prose-master.py --apply` (dry-run without `--apply`
 prints word counts only, writes nothing).
 
+## Naming
+
+**Every file here is named after the project's `slug` in `sites.json`** —
+the same key used by the `BOOKS.md` heading and the live URL. Before
+2026-08-25 this directory used its own names, and one of them collided:
+`festival.md` held The Festie *Codex*, while slug `festival` belongs to The
+Festie *Bible*, a different project. Four files were renamed
+(`festival`→`wook`, `sovereign`→`feminine`, `playground`→`children`,
+`root`→`shadowroot`); `design/audit-registry.py` now fails if the rule breaks
+again. See `INDEX.md` for the full lookup, aliases included.
+
+The Festie Bible has no prose file — its content is structured data in
+`content/festie-bible-data.json`, not chapter prose.
+
 ## Coverage — complete, all 11 projects
 
 | File | Words | Source | Method |
 |---|---:|---|---|
-| `festival.md` | 250,974 | `source/projects/noble-father-festival.html` | static HTML |
+| `wook.md` | 250,974 | `source/projects/noble-father-festival.html` | static HTML |
 | `faith.md` | 301,305 | `source/projects/faith-index.html` | `window.CODEX_DATA` JS object |
 | `fracture.md` | 87,815 | `source/projects/noble-father-fracture.html` | static HTML |
 | `fractal.md` | 74,682 | `source/projects/noble-father-fractal.html` | `const DATA` JS object |
-| `sovereign.md` | 52,175 | `source/projects/noble-father-sovereign.html` | static HTML |
-| `playground.md` | 47,128 | `source/projects/noble-father-playground.html` | static HTML |
+| `feminine.md` | 52,175 | `source/projects/noble-father-sovereign.html` | static HTML |
+| `children.md` | 47,128 | `source/projects/noble-father-playground.html` | static HTML |
 | `loop.md` | 25,727 | `fixes/loop.html` | `BODIES[n]` template literals |
 | `scale.md` | 18,781 | `fixes/scale.html` | `BODIES[n]` template literals |
 | `playbook.md` | 11,387 | `content/prose/_raw/playbook.html` (fetched live — no git source exists) | `COMPENDIUM` JSON array |
-| `root.md` | 340 | `source/projects/noble-father-root.html` | state-machine prompts |
+| `shadowroot.md` | 340 | `source/projects/noble-father-root.html` | state-machine prompts |
 | `music.md` | 46 | `content/prose/_raw/music.html` (fetched live — no git source exists) | static HTML |
 
 **870,360 words total.** `ALL-BOOKS.md` is every file above concatenated
@@ -59,7 +73,7 @@ input; that raw HTML is a mirror of what's currently live, not a source of
 truth the way the git-tracked books are — if either project changes, these
 go stale until re-fetched.
 
-## `root.md` and `music.md` are short on purpose
+## `shadowroot.md` and `music.md` are short on purpose
 
 The Root is an 18-step guided practice moved through once, not browsed
 like chapters — its real content is short prompts, not long-form prose.
