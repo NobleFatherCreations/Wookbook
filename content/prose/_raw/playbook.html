@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>The Field Guide — 349 tactics of manipulation & control, mapped</title>
-<meta name="description" content="A private, offline field guide to 349 named tactics of manipulation and control — searchable, browsable by category or feeling, and mapped as an interactive constellation of how they relate to each other. No AI, no tracking, nothing ever leaves your device."/>
+<meta name="description" content="An offline field guide to 349 named tactics of manipulation and control — searchable, browsable by category or feeling, and mapped as an interactive constellation of how they relate to each other. No AI, no account required."/>
 <meta name="robots" content="noindex"/>
 <meta name="theme-color" content="#0A0D14"/>
 <style>
@@ -786,7 +786,7 @@ function headerHTML(route){
   const dark=isDark();
   return '<header><div class="hbar">'+
     '<a class="hlogo" href="'+BRAND_SITE_URL+'" target="_blank" rel="noopener noreferrer" title="Noble Father Creations" aria-label="Noble Father Creations — opens in a new tab"><img src="'+BRAND_LOGO_URI+'" alt="" width="30" height="30"></a>'+
-    '<button class="hbrand" onclick="nav(\'\')" aria-label="Home"><span class="t">The Field Guide</span><span class="s">349 tactics · offline · private</span></button>'+
+    '<button class="hbrand" onclick="nav(\'\')" aria-label="Home"><span class="t">The Field Guide</span><span class="s">349 tactics · offline · no account</span></button>'+
     '<nav class="hnav-desktop" aria-label="Sections">'+
       NAV_ITEMS.map(x=>'<button aria-current="'+(route.view===x[0])+'" onclick="nav(\''+x[0]+'\')">'+ic(x[2],17)+'<span class="lbl">'+x[1]+'</span></button>').join("")+
       '<button onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode"><span class="lbl">'+(dark?"Light":"Dark")+'</span></button>'+
@@ -1511,5 +1511,6 @@ renderRoute();
   document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
 })();
 </script>
+<!-- Cloudflare Web Analytics --><script defer type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c8d1aea530814aea8c7a92baa2accef3"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

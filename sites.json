@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-02",
-  "updated": "2026-08-25",
+  "updated": "2026-08-27",
   "note": "Machine-readable registry of every Noble Father Creations live project. Built by fetching noblefathercreations.com live, cross-referencing the connected Netlify account (all netlifySite mappings below are byte-verified against live content, not guessed), and cross-referencing a user-supplied review package (source/) documenting a prior design session. Any AI/tool working on this project should read this file first instead of re-guessing URLs.",
   "hub": {
     "title": "Noble Father Creations",
@@ -70,7 +70,7 @@
       "netlifySiteId": "8b3d5fdf-49e5-46eb-bb53-97d69039a44e",
       "deploySource": "cli",
       "localSource": "content/prose/_raw/playbook.html",
-      "localSourceNote": "No authoring source has ever existed for this project; the tracked file is a byte-mirror of the live page. Re-verified against live 2026-08-25: the content data (COMPENDIUM 349, CODEX_COMPLETED 349, RECIPES 109) is byte-identical. The only difference is a Cloudflare Web Analytics beacon present on live and absent here -- an external request, so it contradicts the self-contained rule in CLAUDE.md. Flagged, not removed; that is a deploy decision.",
+      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. Not yet deployed.",
       "dataSource": "content/playbook-data.json",
       "dataSourceNote": "The three datasets lifted out of the HTML mirror into diffable JSON by design/extract-playbook-data.py. This is what other tooling should read; the HTML stays as the provenance record. Rebuild rather than hand-editing.",
       "hasGitRepo": false,
@@ -115,7 +115,8 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
     },
     {
       "codename": "sovereign",
@@ -235,7 +236,8 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
     },
     {
       "codename": "allfracture",
@@ -312,7 +314,8 @@
         }
       ],
       "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
-      "localSource": "fixes/loop.html"
+      "localSource": "fixes/loop.html",
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
     },
     {
       "codename": "scale",
@@ -348,7 +351,8 @@
         }
       ],
       "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
-      "localSource": "fixes/scale.html"
+      "localSource": "fixes/scale.html",
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
     },
     {
       "codename": "faith",
@@ -430,7 +434,7 @@
       "gitRepo": "NobleFatherCreations/Wookbook",
       "gitFile": null,
       "localSource": "source/projects/noble-father-festiebible.html",
-      "localSourceNote": "2026-08-10: built from the 183-page FestieBible COMPLETE COLLECTION PDF (3 files, 60+61+62 pages) the user uploaded. Content extracted via OCR (the source PDF has broken font ligature mappings that silently drop letters from its own text stream -- OCR against the 300dpi render was used as ground truth instead) into content/festie-bible-data.json (12 guides, 149 scenarios, ~44k words of scenario prose). Rebuilt as a single self-contained HTML app (data-driven template, not hand-typed pages) using the hub design tokens (Fraunces/Hanken Grotesk/Space Mono, warm plum-black + brass palette) plus a 12-color persona accent per guide. Linked from the hub Library as VOL. X. NOT YET DEPLOYED -- needs a new Netlify site (or another hosting decision) before /festiebible resolves; see _redirects TODO in noble-father-catalogue._redirects. 2026-08-10 (later): deployed live at noble-festie-bible.netlify.app, routed through noblefathercreations.com/festival via _redirects. Prior to deploy, a design/UI review agent found the scenario data had severe, systemic extraction corruption (check-field bleed and MOVE/SAY/TRUTH column-header text glued onto ~145/149 scenarios, OCR glyph misreads of capital I as !/⁄/|/l, ~30 truncated hook titles, a leaked © bullet-glyph artifact, trailing page-marker fragments, and assorted missing-space typos) -- fixed across four review rounds, each verified against the raw OCR text and re-scanned with a full-dataset regex/structural/tokenization sweep before the corruption was confirmed fully resolved.",
+      "localSourceNote": "2026-08-10: built from the 183-page FestieBible COMPLETE COLLECTION PDF (3 files, 60+61+62 pages) the user uploaded. Content extracted via OCR (the source PDF has broken font ligature mappings that silently drop letters from its own text stream -- OCR against the 300dpi render was used as ground truth instead) into content/festie-bible-data.json (12 guides, 149 scenarios, ~44k words of scenario prose). Rebuilt as a single self-contained HTML app (data-driven template, not hand-typed pages) using the hub design tokens (Fraunces/Hanken Grotesk/Space Mono, warm plum-black + brass palette) plus a 12-color persona accent per guide. Linked from the hub Library as VOL. X. NOT YET DEPLOYED -- needs a new Netlify site (or another hosting decision) before /festiebible resolves; see _redirects TODO in noble-father-catalogue._redirects. 2026-08-10 (later): deployed live at noble-festie-bible.netlify.app, routed through noblefathercreations.com/festival via _redirects. Prior to deploy, a design/UI review agent found the scenario data had severe, systemic extraction corruption (check-field bleed and MOVE/SAY/TRUTH column-header text glued onto ~145/149 scenarios, OCR glyph misreads of capital I as !/⁄/|/l, ~30 truncated hook titles, a leaked © bullet-glyph artifact, trailing page-marker fragments, and assorted missing-space typos) -- fixed across four review rounds, each verified against the raw OCR text and re-scanned with a full-dataset regex/structural/tokenization sweep before the corruption was confirmed fully resolved. KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project.",
       "houseTabLeak": {
         "found": false,
         "checkedAt": "2026-08-10"

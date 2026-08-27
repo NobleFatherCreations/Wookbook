@@ -2980,3 +2980,104 @@ two-party shape.
   final approve/reject decision and the small number of things that are
   genuinely the author's call (the 51 `manipulation_playbook_risk` holds,
   the 5 truncated sources, the Cloudflare beacon, the Gaslighting typo).
+
+## Update (2026-08-27) — resolved the tracking-claim contradiction: beacon stays, the two false lines don't
+
+User's direction: "Remove 2 lines so beacon stays." Fixed in
+`content/prose/_raw/playbook.html` — three changes, not two, because fixing
+the claim alone would have been fixing a symptom while leaving the real bug.
+
+**The two false lines, corrected:**
+- meta description: *"A private, offline field guide... No AI, no tracking,
+  nothing ever leaves your device."* → *"An offline field guide... No AI, no
+  account required."* Both replacement claims are true and verified (no login
+  system exists anywhere in the app).
+- header subtitle: *"349 tactics · offline · private"* →
+  *"349 tactics · offline · no account"*.
+
+**The bug the fix surfaced:** the local mirror doesn't contain the
+Cloudflare beacon at all — confirmed by grep, 0 occurrences. The earlier
+live-vs-local check (25 Aug) that called this project "IN SYNC" was
+technically right (residual diff after stripping the beacon block from live
+= 0) but that framing obscured the actual state: **the beacon only exists on
+live; the tracked file never had it.** Deploying this file as it stood would
+have silently *removed* the beacon your instruction says should stay — the
+opposite of what was asked.
+
+**Fixed:** added the exact beacon snippet at the same insertion point as
+live (verified against the saved live capture from 25 Aug), immediately
+before `</body>`. Confirmed present (1 occurrence), false claims confirmed
+gone (0 occurrences each), leak-marker check still clean.
+
+**Same gap likely exists on 5 more projects** — loop, scale, shadowroot,
+fractal, festival — the other members of the "IN SYNC" group from the 25 Aug
+check. None have been fixed; each is flagged in `sites.json` →
+`localSourceNote` with a "KNOWN GAP" marker so a future redeploy of any of
+them doesn't repeat this. Out of scope for this session (Decoder-only work),
+but worth a dedicated pass before any of those five ship.
+
+**Not deployed.** This is the pre-deploy staging copy; per the user's own
+sequencing, the full design/UX pass (per `codex-finish-plan` audit) happens
+next, then everything deploys together at the end.
+
+## Update (2026-08-27) — clinical review complete, all 351 items approved
+
+The psychology review agent (resumed twice after session-limit interruptions,
+checkpointing survived both times with zero data loss — 133/351 saved before
+the second resume) finished the full 351-item review. **Independently
+re-verified before acting on it** — every specific factual claim in the
+report checked against the actual JSON, not taken on the summary:
+
+- Structural: 351/351 unique items, verdicts valid, zero empty rationale,
+  full match against `playbook-drafts.json`'s 85 hooks + 266 codex entries.
+- **Health Sabotage / Reputation Warfare (Post-Separation)**: confirmed both
+  `what_it_is_not` values list innocent explanations and stop, with no
+  closing "what falls outside that" clause — verified by reading all six
+  entries the review compared them against (Stalking & Surveillance, Account
+  Takeover, Financial Dependence, SIM Swap, Blackmail, Legal Abuse), all of
+  which do have the closing discriminator.
+- **Nonverbal Dominance hook**: confirmed the composed line reads "timed
+  exactly to the moment" against the book's own `what_it_sounds_like`
+  ("specifically timed to a moment") — a real, verifiable intensifier the
+  drafter added, not inherited.
+- **Sacred Science truncation**: confirmed `short_definition` genuinely ends
+  mid-sentence ("...any doubt is not intellectual.") — a sixth truncated
+  entry, on top of the five found 25-26 Aug, that neither drafting batch
+  caught.
+- **`safety_sensitive`/Digital-only pattern**: confirmed exactly — all 5
+  `safety_sensitive`-flagged entries among the 266 drafted are Digital
+  category (Deepfakes, AI Voice Cloning, Doxxing, Sock Puppets, Coordinated
+  Reporting); confirmed Health Sabotage, Intimate Image Abuse, Reproductive
+  Coercion, Financial Dependence, Blackmail, Spatial Invasion and Rage as
+  Control carry none of the four sensitivity flags despite describing
+  comparable or greater real-world danger.
+
+**Verdict: 348 approved, 3 needs_revision, 0 denied — reviewer explicitly
+went looking for a denial and found none.** Applied via
+`design/apply-psych-review.py --apply`.
+
+**All three held items fixed same-day**, using only source material the
+review itself cited (no new clinical claims): Health Sabotage and
+Reputation Warfare each gained a closing discriminator clause drawn from
+their own `more_concerning_if` field, matching the exact pattern used by
+every correctly-formed sibling entry. Nonverbal Dominance's hook reverted
+to the book's own "specifically timed" wording. **All 351 items now
+`approved: true`.**
+
+**Two follow-ups the review raised, deliberately left as author decisions,
+not executed:**
+1. Add `safety_sensitive` to the 7 interpersonal-danger entries the review
+   named. This edits the book's actual clinical grading (`human_review_flags`
+   inside the live JS data, not something `extract-playbook-data.py`
+   generates) — a taxonomy change to the source content, not a mechanical
+   fix. Reviewer calls it "a prerequisite for the next batch," not a block
+   on this one.
+2. Repair Sacred Science's truncated `short_definition` (now 6 known
+   truncations total, alongside the Gaslighting typo) — needs the real
+   sentence, not recoverable from any other field.
+
+**`PSYCH-REVIEW.md`** is the full report, committed to the repo root. Also
+notable: one of the review's four "before publication" asks — that the clip
+format preserve beat 4 (the disconfirming line) in every clip — is already
+guaranteed by `build-decoder-clips.py`'s design, which hard-sources beat 4
+from exactly this reviewed field on every one of the 349 tactics.
