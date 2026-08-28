@@ -78,8 +78,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v3",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-28",
+          "version": "v4",
+          "summary": "Repo-side only, not yet deployed. Two real pre-existing bugs fixed: (1) the \"paste a phrase\" promise never worked -- search was a whole-string substring match, so real sentences (\"you're being too sensitive\", \"you're imagining things\") returned zero results; added a token+phrase-gram ranked fallback weighted toward what_it_sounds_like, capped and honestly labelled \"closest matches\", which now resolves those to Trivializing / Gaslighting / Minimization / Triangulation etc. (2) the sticky header was never actually sticky -- <header> had position:sticky but sat in a wrapper exactly its own height, so the nav including the Quick exit safety button scrolled away permanently; moved the sticky to #headerSlot. Also: exact search hits now rank by match location (searching \"gaslighting\" put Gaslighting 4th under Doctrine Over Person); A-Z jump no longer scrolls rows under the header (scroll-padding); empty search state turned from a dead end into three recovery paths. Premium/QoL pass: text-wrap balance+pretty, .view-h extracted from 10 duplicated inline styles and made fluid, slashed-zero/tabular figures on all mono roles, overflow-wrap on long names, caret/accent color, touch-action manipulation, star-toggle pop, back-to-top, search clear button, \"/\" and arrow-key shortcuts, aria-live on dynamic counts, and a properly designed print stylesheet (margins, orphans/widows, chrome stripped, safety note boxed, provenance footer)."
+        },
         {
           "date": "2026-08-28",
           "version": "v3",
