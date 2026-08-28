@@ -80,6 +80,9 @@
   .small{font-size:12.5px;color:var(--mut)}
   ul.plain{list-style:none;margin:0;padding:0}
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+  .door:active,.tile:active,.feel:active,.row:active{transform:scale(.98);transition:transform .1s cubic-bezier(.16,1,.3,1)}
+  .chip:active,.btn:active,.loadmore:active,.related-links a:active,.chain a:active,.footer-links a:active,.idxbar button:active,.constel-zoom button:active,.moremenu-grid button:active,.moremenu-toggles button:active,.hnav-desktop button:active,.copy-btn:active{transform:scale(.96);transition:transform .1s cubic-bezier(.16,1,.3,1)}
+  .count,.badge,.entry-num,.idxbar button,.crumb,.prevnext .lbl{font-variant-numeric:tabular-nums}
   .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:var(--accent-ink);padding:10px 14px;border-radius:var(--radius-sm);z-index:200;font-weight:700}
   .skip:focus{left:12px;top:12px}
 
@@ -124,6 +127,17 @@
   .narrow{max-width:760px;margin:0 auto}
   .narrow-wrap{animation:pageIn .45s cubic-bezier(.16,1,.3,1) both}
   @keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+  @keyframes rowIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+  .rowlist .row,#allList .row,.doors .door,.tilegrid .tile,.feelgrid .feel{animation:rowIn .4s cubic-bezier(.16,1,.3,1) both}
+  .rowlist .row:nth-child(2),#allList .row:nth-child(2),.doors .door:nth-child(2),.tilegrid .tile:nth-child(2),.feelgrid .feel:nth-child(2){animation-delay:0.03s}
+  .rowlist .row:nth-child(3),#allList .row:nth-child(3),.doors .door:nth-child(3),.tilegrid .tile:nth-child(3),.feelgrid .feel:nth-child(3){animation-delay:0.06s}
+  .rowlist .row:nth-child(4),#allList .row:nth-child(4),.doors .door:nth-child(4),.tilegrid .tile:nth-child(4),.feelgrid .feel:nth-child(4){animation-delay:0.09s}
+  .rowlist .row:nth-child(5),#allList .row:nth-child(5),.doors .door:nth-child(5),.tilegrid .tile:nth-child(5),.feelgrid .feel:nth-child(5){animation-delay:0.12s}
+  .rowlist .row:nth-child(6),#allList .row:nth-child(6),.doors .door:nth-child(6),.tilegrid .tile:nth-child(6),.feelgrid .feel:nth-child(6){animation-delay:0.15s}
+  .rowlist .row:nth-child(7),#allList .row:nth-child(7),.doors .door:nth-child(7),.tilegrid .tile:nth-child(7),.feelgrid .feel:nth-child(7){animation-delay:0.18s}
+  .rowlist .row:nth-child(8),#allList .row:nth-child(8),.doors .door:nth-child(8),.tilegrid .tile:nth-child(8),.feelgrid .feel:nth-child(8){animation-delay:0.21s}
+  .rowlist .row:nth-child(9),#allList .row:nth-child(9),.doors .door:nth-child(9),.tilegrid .tile:nth-child(9),.feelgrid .feel:nth-child(9){animation-delay:0.24s}
+  .rowlist .row:nth-child(10),#allList .row:nth-child(10),.doors .door:nth-child(10),.tilegrid .tile:nth-child(10),.feelgrid .feel:nth-child(10){animation-delay:0.27s}
 
   /* =========================================================================
      LANDING
@@ -898,7 +912,7 @@ function viewCategory(param){
   return '<div class="crumb"><a href="#category" onclick="event.preventDefault();nav(\'category\')">Categories</a> / '+esc(param)+'</div>'+
     '<h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">'+esc(param)+'</h1>'+
     '<div class="count">'+list.length+' entries</div>'+
-    list.map(rowHTML).join("");
+    '<div class="rowlist">'+list.map(rowHTML).join("")+'</div>';
 }
 
 function viewFeeling(param){
@@ -920,7 +934,7 @@ function viewFeeling(param){
     '<h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">'+esc(f.label)+'</h1>'+
     '<p class="small" style="max-width:520px">A starting cluster, not the full picture \u2014 <a href="#all" onclick="event.preventDefault();nav(\'all\')">browse everything</a> any time.</p>'+
     '<div class="count">'+list.length+' possible matches</div>'+
-    (list.length?list.map(rowHTML).join(""):'<div class="empty">No strong matches yet \u2014 try browsing by category instead.</div>');
+    (list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>':'<div class="empty">No strong matches yet \u2014 try browsing by category instead.</div>');
 }
 
 
@@ -937,14 +951,14 @@ function viewSearch(q){
   }
   return '<div class="label">Search</div>'+
     '<div class="search-inline" style="margin-left:0;margin-right:0;max-width:640px"><span class="sic">'+ic("search",18)+'</span><input id="searchBoxLive" type="text" value="'+esc(q)+'" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search"></div>'+
-    (n?'<div class="count">'+list.length+' result'+(list.length===1?"":"s")+'</div>'+(list.length?list.map(rowHTML).join(""):'<div class="empty">No entries match \u201c'+esc(q)+'\u201d.</div>'):'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition.</p>');
+    (n?'<div class="count">'+list.length+' result'+(list.length===1?"":"s")+'</div>'+(list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>':'<div class="empty">No entries match \u201c'+esc(q)+'\u201d.</div>'):'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition.</p>');
 }
 
 function viewCore(){
   return '<div class="label">The core set</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">The North Stars</h1>'+
     '<p class="small" style="max-width:580px">'+CORE_TACTICS.length+' tactics, picked out from all 349 by how often they actually show up \u2014 well-established enough to name from real text, and recurring across the most documented patterns. Not sure where to start? Start here.</p>'+
     '<div class="count">'+CORE_TACTICS.length+' entries</div>'+
-    CORE_TACTICS.map(rowHTML).join("");
+    '<div class="rowlist">'+CORE_TACTICS.map(rowHTML).join("")+'</div>';
 }
 let ALL_STATE={sort:"az",catFilter:"all",shown:40};
 function viewAll(){
@@ -1005,12 +1019,12 @@ function entryBodyHTML(e,c,opts){
       "<p style='font-weight:700;color:var(--good)'>Less concerning if:</p>"+ul(c.less_concerning_if)+
       "<p style='font-weight:700;margin-top:10px;color:var(--danger)'>More concerning if:</p>"+ul(c.more_concerning_if))+
     (c.pattern_over_time_signs&&c.pattern_over_time_signs.length?feSection("Pattern over time",ul(c.pattern_over_time_signs)):"")+
-    feSection("Repair &amp; boundary-respect checks","<p><strong>Repair check:</strong> "+esc(c.repair_check)+"</p><p style='margin-top:10px'><strong>Boundary respect check:</strong> "+esc(c.boundary_respect_check)+"</p>")+
-    feSection("Mechanism &amp; possible impact","<p><strong>Psychological mechanism:</strong> "+esc(c.psychological_mechanism)+"</p><p style='margin-top:10px'><strong>Possible impact on receiver:</strong> "+esc(c.possible_impact_on_receiver)+"</p>")+
-    feSection("Response options &amp; boundary script","<ul>"+respRows+"</ul>"+respNote+"<div class='copy-row'><p style='margin-top:10px'><strong>Boundary script:</strong> <span class='copy-text'>"+esc(c.boundary_script)+"</span></p><button type='button' class='btn copy-btn' onclick='copyBoundaryScript(this)'>Copy</button></div>")+
+    feSection("Repair & boundary-respect checks","<p><strong>Repair check:</strong> "+esc(c.repair_check)+"</p><p style='margin-top:10px'><strong>Boundary respect check:</strong> "+esc(c.boundary_respect_check)+"</p>")+
+    feSection("Mechanism & possible impact","<p><strong>Psychological mechanism:</strong> "+esc(c.psychological_mechanism)+"</p><p style='margin-top:10px'><strong>Possible impact on receiver:</strong> "+esc(c.possible_impact_on_receiver)+"</p>")+
+    feSection("Response options & boundary script","<ul>"+respRows+"</ul>"+respNote+"<div class='copy-row'><p style='margin-top:10px'><strong>Boundary script:</strong> <span class='copy-text'>"+esc(c.boundary_script)+"</span></p><button type='button' class='btn copy-btn' onclick='copyBoundaryScript(this)'>Copy</button></div>")+
     (!opts.hideSafety&&!isSafetySensitive&&c.safety_note?'<div class="fe-safetybox">'+ic("shield",18)+' '+esc(c.safety_note)+'</div>':"")+
     (c.misuse_warning&&c.misuse_warning.length?feSection("Misuse warning",ul(c.misuse_warning)):"")+
-    (c.related_tactics&&c.related_tactics.length?feSection("Related tactics &amp; how to tell them apart",relatedLinksHTML(c.related_tactics)+(c.how_to_distinguish_from_related?"<p style='margin-top:10px'>"+esc(c.how_to_distinguish_from_related)+"</p>":"")+(c.absorbs&&c.absorbs.length?"<p style='margin-top:10px' class='small'>Also covers: "+c.absorbs.map(esc).join(", ")+"</p>":"")):"");
+    (c.related_tactics&&c.related_tactics.length?feSection("Related tactics & how to tell them apart",relatedLinksHTML(c.related_tactics)+(c.how_to_distinguish_from_related?"<p style='margin-top:10px'>"+esc(c.how_to_distinguish_from_related)+"</p>":"")+(c.absorbs&&c.absorbs.length?"<p style='margin-top:10px' class='small'>Also covers: "+c.absorbs.map(esc).join(", ")+"</p>":"")):"");
 }
 function viewEntry(slug){
   const name=NAME_BY_SLUG[slug];
@@ -1413,6 +1427,40 @@ function viewConstellation(){
     '</div>'+
     '<div class="constel-legend">'+CATS.map(c=>'<span><i style="background:'+CAT_COLOR[c]+'"></i>'+esc(c)+'</span>').join("")+'</div>';
 }
+
+/* ---------- accordion open/close animation (event-delegated, binds once) ---------- */
+document.addEventListener("click", function(e){
+  const summary=e.target.closest(".fe-section > summary");
+  if(!summary) return;
+  const details=summary.parentElement;
+  if(details.classList.contains("fe-animating")){ e.preventDefault(); return; }
+  if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const body=details.querySelector(".fe-section-body");
+  if(!body) return;
+  e.preventDefault();
+  details.classList.add("fe-animating");
+  const cleanup=()=>{ body.style.height="";body.style.overflow="";body.style.transition="";details.classList.remove("fe-animating"); };
+  if(!details.open){
+    details.open=true;
+    const h=body.scrollHeight;
+    body.style.height="0px";
+    body.style.overflow="hidden";
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      body.style.transition="height .3s cubic-bezier(.16,1,.3,1)";
+      body.style.height=h+"px";
+    }));
+    body.addEventListener("transitionend",function te(ev){ if(ev.propertyName!=="height") return; body.removeEventListener("transitionend",te); cleanup(); });
+  } else {
+    const h=body.scrollHeight;
+    body.style.height=h+"px";
+    body.style.overflow="hidden";
+    requestAnimationFrame(()=>requestAnimationFrame(()=>{
+      body.style.transition="height .25s cubic-bezier(.4,0,.2,1)";
+      body.style.height="0px";
+    }));
+    body.addEventListener("transitionend",function te(ev){ if(ev.propertyName!=="height") return; body.removeEventListener("transitionend",te); details.open=false; cleanup(); });
+  }
+});
 
 /* ---------- bootstrap ---------- */
 document.documentElement.setAttribute("data-theme", store.get("theme", preferredTheme()));
