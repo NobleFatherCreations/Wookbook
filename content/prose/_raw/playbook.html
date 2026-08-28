@@ -320,6 +320,51 @@
   .search-inline .clr:hover{color:var(--ink);background:var(--card-2)}
   .kbdhint{font-family:var(--mono);font-size:11px;color:var(--mut);
     border:1px solid var(--line2);border-radius:5px;padding:2px 6px;background:var(--card-2)}
+  /* =========================================================================
+     NARROW IT DOWN -- the guided multiple-choice walkthrough.
+     Options are derived from the set still matching and only rendered when at
+     least one entry sits behind them, so a zero-result dead end is impossible
+     by construction rather than merely unlikely.
+     ========================================================================= */
+  .nw-progress{display:flex;gap:6px;margin:16px 0 4px}
+  .nw-pip{height:3px;flex:1;border-radius:2px;background:var(--line2);transition:background .3s}
+  .nw-pip.done{background:var(--accent)}
+  .nw-pip.now{background:var(--accent);opacity:.55}
+  .nw-q{font-family:var(--serif);font-size:clamp(20px,3vw,25px);line-height:1.25;margin:14px 0 6px;text-wrap:balance}
+  .nw-sub{color:var(--mut);font-size:13.5px;margin:0 0 16px;max-width:60ch;text-wrap:pretty}
+  .nw-opts{display:grid;gap:9px;margin-bottom:8px}
+  @media (min-width:720px){ .nw-opts.two{grid-template-columns:1fr 1fr} }
+  .nw-opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;
+    background:linear-gradient(165deg,var(--card),var(--card-2));border:1px solid var(--line2);
+    border-radius:var(--radius-md);padding:14px 16px;cursor:pointer;font-family:inherit;
+    color:inherit;font-size:15px;line-height:1.4;
+    box-shadow:var(--shadow),inset 0 1px 0 var(--edge-hi);
+    transition:border-color .15s,transform .15s cubic-bezier(.16,1,.3,1),box-shadow .15s}
+  .nw-opt:hover{border-color:var(--accent);transform:translateY(-2px);
+    box-shadow:0 10px 24px -12px var(--glow-1),var(--shadow)}
+  .nw-opt:active{transform:scale(.985)}
+  .nw-opt[aria-pressed="true"]{border-color:var(--accent);background:linear-gradient(165deg,var(--card-2),var(--card))}
+  .nw-box{flex-shrink:0;width:19px;height:19px;border-radius:5px;border:1.5px solid var(--line);
+    display:grid;place-items:center;transition:border-color .15s,background .15s}
+  .nw-opt[aria-pressed="true"] .nw-box{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+  .nw-box svg{opacity:0;transition:opacity .15s}
+  .nw-opt[aria-pressed="true"] .nw-box svg{opacity:1}
+  .nw-txt{flex:1;min-width:0}
+  .nw-n{font-family:var(--mono);font-size:11px;color:var(--mut);flex-shrink:0;
+    font-feature-settings:"zero" 1,"tnum" 1}
+  .nw-opt[aria-pressed="true"] .nw-n{color:var(--accent)}
+  .nw-bar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;
+    margin-top:20px;padding-top:16px;border-top:1px solid var(--line2)}
+  .nw-count{font-family:var(--mono);font-size:12.5px;color:var(--mut);margin-right:auto;
+    font-feature-settings:"zero" 1,"tnum" 1}
+  .nw-count b{color:var(--accent);font-weight:700}
+  .nw-recap{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
+  .nw-chip{font-family:var(--mono);font-size:11px;padding:5px 10px;border-radius:var(--radius-pill);
+    background:var(--card-2);border:1px solid var(--line2);color:var(--sub);
+    display:inline-flex;align-items:center;gap:6px}
+  .nw-chip button{background:none;border:none;color:var(--mut);cursor:pointer;padding:0;
+    font-size:13px;line-height:1;display:grid;place-items:center}
+  .nw-chip button:hover{color:var(--danger)}
   .copy-row{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
   .copy-row p{flex:1;min-width:200px}
   .copy-btn{flex-shrink:0;min-height:30px;padding:6px 12px;margin-top:10px}
@@ -579,7 +624,12 @@
 <a class="skip" href="#main">Skip to content</a>
 <div id="app">
 <div id="headerSlot"></div>
-<main id="main"></main>
+<main id="main"><div class="narrow-wrap" id="failsafe">
+<h1 style="font-family:var(--serif);font-size:clamp(24px,4vw,32px);line-height:1.2;margin:0 0 10px">The Field Guide</h1>
+<p style="max-width:60ch">349 named tactics of manipulation and control, across relationships, family, work, online life, and institutions.</p>
+<p style="margin-top:14px"><a href="#core">Start here</a> &middot; <a href="#all">Full A&ndash;Z index</a> &middot; <a href="#category">Browse by category</a> &middot; <a href="#narrow">Narrow it down</a></p>
+<p style="margin-top:18px;max-width:60ch;font-size:13.5px">If this is all you can see, the interactive guide didn&rsquo;t start &mdash; the links above still work. Try reloading, or opening this file in another browser. Nothing here is sent anywhere either way.</p>
+</div></main>
 <div id="footerSlot"></div>
 <div id="moreMenuSlot"></div>
 </div>
@@ -600,7 +650,19 @@ const CODEX_COMPLETED = [{"name":"Gaslighting","tier":"Detected","tier_key":"det
 
 /* ---------- utils ---------- */
 function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");}
-function norm(s){return (s||"").toLowerCase().replace(/[^a-z0-9]+/g," ").trim();}
+/* Contractions matter for search: norm() used to strip the apostrophe as plain
+   punctuation, so "won\u2019t" became "won"+"t" and "you\u2019re" became "you"+"re" \u2014
+   the negation and the verb both silently vanished into meaningless short tokens.
+   Expand the common ones to real words first, while the apostrophe still marks them. */
+function expandContractions(s){
+  return s
+    .replace(/\bwon['\u2019]t\b/g,"will not").replace(/\bcan['\u2019]t\b/g,"can not")
+    .replace(/\bshan['\u2019]t\b/g,"shall not").replace(/n['\u2019]t\b/g," not")
+    .replace(/['\u2019]re\b/g," are").replace(/['\u2019]ve\b/g," have")
+    .replace(/['\u2019]ll\b/g," will").replace(/\bi['\u2019]m\b/g,"i am")
+    .replace(/['\u2019]d\b/g," would").replace(/['\u2019]s\b/g,"");
+}
+function norm(s){return expandContractions((s||"").toLowerCase()).replace(/[^a-z0-9]+/g," ").trim();}
 function slugify(s){return (s||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/(^-+|-+$)/g,"")||"x";}
 function jsq(s){return String(s).replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
 /* jsq(): escapes a string for safe embedding inside a single-quoted JS string literal
@@ -625,7 +687,13 @@ function copyBoundaryScript(btn){
     try{
       const ta=document.createElement("textarea");
       ta.value=text;ta.style.position="fixed";ta.style.opacity="0";
-      document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta);
+      document.body.appendChild(ta);ta.select();
+      /* execCommand returns false WITHOUT throwing on iOS Safari and others.
+         Saying "Copied" when nothing was copied is worse than saying nothing:
+         the reader pastes an empty message at the worst possible moment. */
+      const okCopy=document.execCommand("copy");
+      document.body.removeChild(ta);
+      if(!okCopy){ btn.textContent="Press and hold to copy"; setTimeout(()=>{btn.textContent="Copy"},2600); return; }
       onDone();
     }catch(e){}
   };
@@ -640,8 +708,19 @@ function debounce(fn,ms){let t;return function(){clearTimeout(t);const a=argumen
 const store=(()=>{let mem={},ok=false;
   try{localStorage.setItem("__t","1");localStorage.removeItem("__t");ok=true}catch(e){}
   return{
-    get(k,d){try{if(ok){const v=localStorage.getItem("fg_"+k);return v!==null?JSON.parse(v):d}}catch(e){}return (k in mem)?mem[k]:d},
-    set(k,v){mem[k]=v;try{if(ok)localStorage.setItem("fg_"+k,JSON.stringify(v))}catch(e){}},
+    get(k,d){try{if(ok){const v=localStorage.getItem("fg_"+k);if(v!==null){const parsed=JSON.parse(v);
+      /* Stored JSON is valid but may be the WRONG SHAPE (hand-edited, from an
+         older version, or another tab). If it does not match the type of the
+         default, fall back rather than handing an array-shaped caller a
+         string -- .filter/.includes on that throws. */
+      return (Array.isArray(d)&&!Array.isArray(parsed))?d
+           : (d!==null&&typeof d==="object"&&!Array.isArray(d)&&(parsed===null||typeof parsed!=="object"))?d
+           : (typeof d==="string"&&typeof parsed!=="string")?d
+           : parsed;}return d}}catch(e){}return (k in mem)?mem[k]:d},
+    /* If a write fails later (quota reached mid-session), stop trusting
+       localStorage entirely -- otherwise set() writes to mem while get() keeps
+       reading the stale stored value, and a starred entry visibly un-stars. */
+    set(k,v){mem[k]=v;try{if(ok)localStorage.setItem("fg_"+k,JSON.stringify(v))}catch(e){ok=false}},
   };
 })();
 function preferredTheme(){try{return matchMedia("(prefers-color-scheme: light)").matches?"light":"dark"}catch(e){return "dark"}}
@@ -659,6 +738,7 @@ const ICO={
   shield:'<path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6z"/>',
   starOn:'<path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 17l-5.6 3.1 1.4-6.3-4.8-4.3 6.4-.6z" fill="currentColor"/>',
   starOff:'<path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L12 17l-5.6 3.1 1.4-6.3-4.8-4.3 6.4-.6z"/>',
+  check:'<polyline points="4 12.5 9 17.5 20 6.5"/>',
   plus:'<line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>',
   minus:'<line x1="5" y1="12" x2="19" y2="12"/>',
   core:'<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/>',
@@ -806,6 +886,30 @@ const FEELINGS=[
   {key:"minimizewhenexplain",group:"self",label:"I catch myself minimizing it when I describe it to other people",
    cats:["Reality Distortion","Accountability Evasion"],kw:["minimiz","downplay","its not that bad","explain away"]},
 ];
+/* =============================================================================
+   NARROW IT DOWN -- frozen match index.
+
+   feelingMatches() below scores 349 entries against keyword lists at runtime.
+   Scoring is lossy, and its output is what the walkthrough filters on, so it
+   is frozen here instead: design/build-narrow-index.py runs that exact same
+   scorer offline and emits this table, asserting that every feeling resolves
+   to a non-empty set and every name in it exists. Verified identical to the
+   live scorer for all 35 feelings.
+
+   Regenerate with:  python3 design/build-narrow-index.py
+   ============================================================================= */
+const NARROW_BY_FEELING={"alwaysblamed":["Blame-Shifting","False Equivalence","Strategic Apathy","Scapegoating","Silent Coalitions","DARVO","Whataboutism","Non-Apology Apology","Denial","Minimization","Tone Policing","Kafka Trapping","Triangulation","Forced Teaming"],"alwaysreach":["Breadcrumbing","Love Bombing","Exclusive Meaning","Conditional Love","Hoovering","Future Faking","Negging","Silent Treatment","The Exception Script","Push-Pull","Intermittent Reinforcement","Trauma Bonding","Relief Bait","Withholding"],"apologizing":["Emotional Blackmail","Aftercare Control","Fawning","Guilt-Tripping","Self-Harm Threats as Leverage","Pity Plays","Martyrdom Display","Duty Scripts","Demand for Gratitude","Favor Debt","Catastrophizing as Control","Competitive Victimhood","FOG","Emotional Hostage-Taking"],"droppeduseful":["Ghosting as Control","Humiliation Rituals","Public Exposure","Forced Submission","Stalking & Surveillance (Post-Separation)","Legal Abuse (Post-Separation)","Reputation Warfare (Post-Separation)","Edited Recordings","Account Takeover","SIM Swap / 2FA Interception","Intimate Image Abuse","Idealize-Devalue-Discard Cycle","Shame-as-Governance Disguised as Advice","PIP Weaponization"],"eggshells":["Punishment of Boundaries","Ambient Abuse","Location Tracking","Stonewalling","Public Humiliation","Scapegoating","Isolation","Monitoring & Surveillance","Behavior Control","Infantilization","\"I Know Best\" Paternalism","Contempt","Name-Calling Disguised as Humor","Comparative Devaluation"],"everyoneagrees":["False Consensus","Social Proof Pressure","Triangulation","Forced Teaming","\"We're Family\" Erasure","Concern Trolling","\"Polite Hostile\" Environments","Overton Window Manipulation","Manufactured Consent","Astroturfing","Wedge Issue Exploitation","Computational Propaganda","Reflexive Control","Normative Messaging"],"excuses":["Minimization","Plausible Deniability","Guilt-Tripping","Emotional Blackmail","Self-Harm Threats as Leverage","Pity Plays","Martyrdom Display","Duty Scripts","Demand for Gratitude","Favor Debt","Catastrophizing as Control","DARVO","Blame-Shifting","Whataboutism"],"exhausted":["Process Exhaustion","Individualization of Systemic Issues","Ultimatums","Urgency Manufacturing","False Dilemma","Sunk Cost Exploitation","Response-Time Policing","Legal/Administrative Threats","Weaponized Therapy-Speak","Trash-Can Diagnosis","Interrogation","Confidentiality as Weapon","Pressure to Sign","Clinical Tone Policing"],"familyjustus":["Normalization","Identity Hooking","Conditional Worth","Learned Helplessness","Loyalty Binds","Legal/Administrative Threats","Weaponized Therapy-Speak","Trash-Can Diagnosis","Confidentiality as Weapon","Pressure to Sign","Clinical Tone Policing","False Conclusion from Normal Labs","Medical Gaslighting","Self-Gaslighting Induction"],"goldenchild":["Comparative Devaluation","Golden Child Elevation","Splitting","Triangulation","Forced Teaming","\"We're Family\" Erasure","Concern Trolling","Idealize-Devalue-Discard Cycle","\"Polite Hostile\" Environments","Flying Monkeys","Proxy Recruitment","Smear Campaign","Reputation Poisoning","Silent Coalitions"],"goodmoments":["Trauma Bonding","Intermittent Reinforcement","Relief Bait","Idealize-Devalue-Discard Cycle","The Rescue Hook","Hoovering","Push-Pull","Breadcrumbing","Withholding","Love Bombing","Exclusive Meaning","Conditional Love","Future Faking","Negging"],"guiltyforspace":["Guilt-Tripping","Obligation Installation","Obligation Hooks","Guilt Legacy","Emotional Blackmail","Self-Harm Threats as Leverage","Pity Plays","Martyrdom Display","Duty Scripts","Demand for Gratitude","Favor Debt","Catastrophizing as Control","Aftercare Control","Competitive Victimhood"],"keepthepeace":["Duty Scripts","Obligation Installation","Obligation Hooks","Guilt Legacy","Guilt-Tripping","Martyrdom Display","\"Sacred Duty\" Manipulation","Emotional Blackmail","Self-Harm Threats as Leverage","Pity Plays","Demand for Gratitude","Favor Debt","Catastrophizing as Control","Aftercare Control"],"minimizewhenexplain":["Minimization","Gaslighting","Countering","Trivializing","Diverting","Selective Memory","Moving Goalposts","Thought-Stopping Clichés","Normalization","DARVO","Blame-Shifting","Whataboutism","Non-Apology Apology","Denial"],"missingout":["Urgency Manufacturing","Manufactured Scarcity","Emotional Flooding","Crisis Manufacturing","Ultimatums","False Dilemma","Sunk Cost Exploitation","Response-Time Policing","Interrogation","Sexual Coercion","Reverse Psychology","Extinction Bursts","Premature Exclusivity","Confirmation Bias Exploitation"],"myfault":["Gaslighting","Shame Installation","Gaslighting by Omission","Meta-Gaslighting","Blame-Shifting","Identity Erosion","Sarcasm as Weapon","Scapegoating","Countering","Trivializing","Diverting","Selective Memory","Moving Goalposts","Thought-Stopping Clichés"],"myupset":["Victim Role Reversal","DARVO","Blame-Shifting","Role Reversal via Therapy Language","Deflection","Role Reversal Traps","Whataboutism","Non-Apology Apology","Denial","Minimization","Tone Policing","Kafka Trapping","Gotcha Framing","False Authority"],"niceinfront":["Performative Public Affection","Tokenism","Performative Allyship / False Solidarity","Public Exposure","Public Humiliation","Forged Screenshots","Exaggeration","Vague Allegations","Legal/Administrative Threats","Weaponized Therapy-Speak","Trash-Can Diagnosis","Confidentiality as Weapon","Pressure to Sign","Clinical Tone Policing"],"notateamplayer":["Punishment of Boundaries","Gotcha Framing","Role Reversal via Therapy Language","Emotion Control","Moral Framing","Double Binds","DARVO","Blame-Shifting","Whataboutism","Non-Apology Apology","Denial","Minimization","Tone Policing","Kafka Trapping"],"notmyself":["Identity Hooking","Conditional Worth","Internalized Conditioning","Fawning","Identity Erosion","Learned Helplessness","Loyalty Binds","Self-Gaslighting Induction","Self-Abandonment","Silence Installation","Approval Addiction Cultivation","Parentification","Thought Control","Phobia Indoctrination"],"off":["Gaslighting","Meta-Gaslighting","Gaslighting by Omission","Contradiction Stacking","Word Salad","Selective Memory","Revisionist History","Circular Arguments","Loaded Language","Semantic Traps","Frame Control","False Framing","Strategic Ambiguity","Repetition as Truth"],"onlysorryifleave":["Hoovering","Breadcrumbing","Relief Bait","Future Faking","Love Bombing","Exclusive Meaning","Conditional Love","Negging","Silent Treatment","The Exception Script","Push-Pull","Intermittent Reinforcement","Trauma Bonding","Withholding"],"others":["Smear Campaign","Performative Public Affection","Flying Monkeys","Reputation Poisoning","Triangulation","Group Consolidation","Forced Teaming","\"We're Family\" Erasure","Concern Trolling","\"Polite Hostile\" Environments","Proxy Recruitment","Silent Coalitions","Pile-Ons","Ostracism"],"rehearseconvos":["Negative Reinforcement Traps","Pre-Punishment","Ultimatums","Urgency Manufacturing","False Dilemma","Sunk Cost Exploitation","Response-Time Policing","Interrogation","Sexual Coercion","Reverse Psychology","Extinction Bursts","Emotion Control","Ritualized Exhaustion","Nonverbal Dominance"],"saidaboutme":["Smear Campaign","Triangulation","Forced Teaming","\"We're Family\" Erasure","Concern Trolling","Exaggeration","Vague Allegations","\"Polite Hostile\" Environments","Fabricated Evidence","Flying Monkeys","Proxy Recruitment","Reputation Poisoning","Silent Coalitions","Group Consolidation"],"saidyes":["Duty Scripts","Guilt Legacy","Guilt-Tripping","FOG","Obligation Installation","Obligation Hooks","Graduated Compliance","Emotional Blackmail","Self-Harm Threats as Leverage","Favor Debt","Sexual Coercion","Emotional Hostage-Taking","Loan-Sharking Gifts","Pity Plays"],"stoppedtrusting":["Gaslighting","Countering","Trivializing","Diverting","Selective Memory","Moving Goalposts","Thought-Stopping Clichés","Normalization","Gaslighting by Omission","Revisionist History","Word Salad","Contradiction Stacking","Circular Arguments","Loaded Language"],"strangerknowsme":["Silent Treatment","Trauma Bonding","\"Sacred Duty\" Manipulation","Parasocial Manipulation Engineering","Manufactured Destiny","Love Bombing","Exclusive Meaning","Conditional Love","Hoovering","Future Faking","Negging","The Exception Script","Push-Pull","Intermittent Reinforcement"],"strongone":["Parentification","Identity Hooking","Conditional Worth","Learned Helplessness","Loyalty Binds","Role Reversal via Therapy Language","Self-Gaslighting Induction","Fawning","Self-Abandonment","Internalized Conditioning","Silence Installation","Approval Addiction Cultivation","Victim Role Reversal","Role Reversal Traps"],"testedaffection":["Conditional Love","Withholding","Conditional Worth","Manufactured Intimacy","Premature Vulnerability","Love Bombing","Exclusive Meaning","Hoovering","Future Faking","Negging","Silent Treatment","Learned Helplessness","The Exception Script","Push-Pull"],"threepeoplework":["Process Exhaustion","\"Managed Out\" Through Exhaustion","Ultimatums","Urgency Manufacturing","False Dilemma","Sunk Cost Exploitation","Response-Time Policing","Legal/Administrative Threats","Weaponized Therapy-Speak","Trash-Can Diagnosis","Interrogation","Confidentiality as Weapon","Pressure to Sign","Clinical Tone Policing"],"toosensitive":["Clinical Tone Policing","Trivializing","Trash-Can Diagnosis","False Conclusion from Normal Labs","Medical Gaslighting","Circular Arguments","Gaslighting","Countering","Diverting","Selective Memory","Moving Goalposts","Thought-Stopping Clichés","Normalization","Tone Policing"],"waitingforstart":["Idealize-Devalue-Discard Cycle","Love Bombing","Future Faking","Exclusive Meaning","Strategic Self-Deprecation / Performed Humility","Credential-Costuming","Identity Performances","Social Engineering","Performative Allyship / False Solidarity","Conditional Love","Hoovering","Negging","Silent Treatment","The Exception Script"],"worseafterscroll":["Algorithmic Manipulation","Algorithmic Targeting of Vulnerable Populations","PIP Weaponization","Comparative Devaluation","Shame-as-Governance Disguised as Advice","Credit Laundering","The \"Good Woman Program\"","Objectification","Dehumanization","Overcorrection Demands","Toxic Positivity / Weaponized Optimism","Dark Patterns (AI-Adaptive)","Synthetic Persona Networks","Context Poisoning"],"writingchanges":["Plausible Deniability","DARVO","Blame-Shifting","Whataboutism","Non-Apology Apology","Denial","Minimization","Tone Policing","Kafka Trapping","Legal/Administrative Threats","Weaponized Therapy-Speak","Trash-Can Diagnosis","Gotcha Framing","False Authority"]};
+
+/* Resolve a feeling key to real entry objects. Falls back to live scoring if a
+   key is somehow absent from the frozen table, so a stale index degrades to the
+   old behaviour instead of rendering an empty screen. */
+function narrowEntriesFor(key){
+  const names=NARROW_BY_FEELING[key];
+  if(names&&names.length) return names.map(n=>COMP_BY_NAME[n]).filter(Boolean);
+  const f=FEELINGS.find(x=>x.key===key);
+  return f?feelingMatches(f):[];
+}
+
 function feelingMatches(f){
   const scored=COMPENDIUM.map(e=>{
     const c=CODEX_BY_NAME[e.name]||{};
@@ -840,6 +944,9 @@ function matchedRecipesForTrail(minOverlap){
   const out=[];
   RECIPES.forEach((r,ri)=>{
     const chain=r.c||[];
+    /* An empty chain made Math.min(minOverlap,0)===0 and 0>=0 true, so it
+       matched every trail unconditionally and sorted on 0/0 = NaN. */
+    if(!chain.length) return;
     const overlap=chain.filter(n=>have.has(n));
     if(overlap.length>=Math.min(minOverlap,chain.length)){
       out.push({ri,r,overlap,missing:chain.filter(n=>!have.has(n))});
@@ -849,14 +956,38 @@ function matchedRecipesForTrail(minOverlap){
 }
 
 /* ---------- router ---------- */
+/* decodeURIComponent throws URIError on a malformed escape ("%2", "100%"),
+   which is not an exotic case here: this page's own category links contain
+   %2F, so ANY link truncated mid-escape by a messaging app arrives that way.
+   Unguarded, that threw before #main was ever written and left a completely
+   blank page -- no header, no Quick exit -- that never recovered, because
+   every later hashchange threw again. Degrade to the raw text instead. */
+function safeDecode(s){ try{ return decodeURIComponent(s); }catch(e){ return String(s||""); } }
 function parseHash(){
   let h=location.hash.replace(/^#\/?/,"");
   const [path,qs]=h.split("?");
-  const parts=path.split("/").filter(Boolean).map(p=>decodeURIComponent(p));
-  const q={}; if(qs) qs.split("&").forEach(kv=>{const[k,v]=kv.split("=");if(k)q[k]=decodeURIComponent(v||"");});
+  const parts=path.split("/").filter(Boolean).map(p=>safeDecode(p));
+  const q={}; if(qs) qs.split("&").forEach(kv=>{const[k,v]=kv.split("=");if(k)q[k]=safeDecode(v||"");});
   return {view:parts[0]||"", param:parts[1]||"", q};
 }
-function nav(hash){ location.hash=hash; }
+/* The guide deliberately occupies a SINGLE history entry.
+
+   Quick exit is a safety feature for a reader whose device may be monitored.
+   It replaces the current entry and leaves -- but pushing an entry per
+   navigation meant every page read was still sitting behind it, so one Back
+   press from the exit destination walked straight back into the guide
+   (measured: 5 entries after three taps). Replacing instead of pushing means
+   there is no in-guide stack to walk back into.
+
+   The trade: browser Back no longer steps through reading history, it leaves.
+   For this audience that is the correct trade, and the page carries its own
+   Previous/Next, breadcrumbs and Back controls. */
+function nav(hash){
+  const h="#"+String(hash==null?"":hash).replace(/^#/,"");
+  if(location.hash===h){ renderRoute(); return; }
+  try{ history.replaceState(null,"",h); renderRoute(); }
+  catch(e){ location.hash=h; }
+}
 window.addEventListener("hashchange", renderRoute);
 
 /* ---------- app chrome ---------- */
@@ -996,7 +1127,7 @@ function viewLanding(){
     '<div class="doors">'+
       '<button class="door" onclick="nav(\'core\')"><span class="ic">'+ic("core",28)+'</span><h3>The North Stars</h3><p>'+CORE_TACTICS.length+' tactics most people actually run into most often. Not sure where to start? Start here.</p><span class="go">START HERE \u2192</span></button>'+
       '<button class="door" onclick="nav(\'category\')"><span class="ic">'+ic("book",28)+'</span><h3>Browse by category</h3><p>24 categories, from Accountability Evasion to Social Warfare & Triangulation. Good if you roughly know where to look.</p><span class="go">BROWSE \u2192</span></button>'+
-      '<button class="door" onclick="nav(\'feeling\')"><span class="ic">'+ic("trail",28)+'</span><h3>Start from a feeling</h3><p>Don\u2019t have the vocabulary yet? Start from how it feels, and we\u2019ll get you to the word.</p><span class="go">START \u2192</span></button>'+
+      '<button class="door" onclick="nav(\'narrow\')"><span class="ic">'+ic("trail",28)+'</span><h3>Narrow it down</h3><p>Don\u2019t have the vocabulary yet? Answer a few questions about what happened and work down to the closest matches.</p><span class="go">START \u2192</span></button>'+
       '<button class="door" onclick="nav(\'constellation\')"><span class="ic">'+ic("map",28)+'</span><h3>Explore the constellation</h3><p>Every tactic, mapped by category and by how it relates to the others.</p><span class="go">EXPLORE \u2192</span></button>'+
     '</div>';
 }
@@ -1026,7 +1157,7 @@ function viewFeeling(param){
       }).join("");
   }
   const f=FEELINGS.find(x=>x.key===param);
-  if(!f) return '<p>Not found. <a href="#feeling" onclick="event.preventDefault();nav(\'feeling\')">Back to feelings</a></p>';
+  if(!f) return notFound("That starting point isn\u2019t here any more.");
   const list=feelingMatches(f);
   const group=FEELING_GROUPS.find(g=>g.key===f.group);
   return '<div class="crumb"><a href="#feeling" onclick="event.preventDefault();nav(\'feeling\')">Start from a feeling</a>'+(group?' / '+esc(group.label):'')+'</div>'+
@@ -1055,18 +1186,45 @@ function saidFor(e){
   const c=CODEX_BY_NAME[e.name];
   return norm((c&&c.what_it_sounds_like?c.what_it_sounds_like.join(" "):""));
 }
+/* Held in a variable, NOT in the URL.
+
+   This box invites you to paste what was actually said to you. Writing that
+   into location.hash put it in the address bar, session history, omnibox
+   autocomplete and session restore -- outside everything this page promises
+   about staying on the device, and visible to anyone who later picks it up.
+   Keeping it here makes that leak impossible rather than merely unlikely.
+   The cost is shareable search links, which for this audience is a feature. */
+let SEARCH_Q="";
 function viewSearch(q){
-  q=q||"";
+  q=String(q==null?"":q);
+  /* Bounded at the boundary: an unbounded paste is a synchronous freeze
+     (measured ~2s for a 35k-character chat log, far worse on a phone).
+     The giveaway wording is near the start of what someone pastes. */
+  const OVER=q.length>400;
+  if(OVER) q=q.slice(0,400);
   const n=norm(q);
   let list=[],fuzzy=false;
   if(n){
     /* Rank exact hits by where they matched, not just alphabetically: an entry whose
        NAME is what you typed must come first (searching "gaslighting" put Gaslighting
        fourth, under Doctrine Over Person, when this was a plain A-Z sort). */
-    list=COMPENDIUM.filter(e=>hayFor(e).includes(n)).map(e=>{
-      const nm=norm(e.name);
-      return {e, rank: nm===n?0 : nm.startsWith(n)?1 : nm.includes(n)?2 : saidFor(e).includes(n)?3 : 4};
-    }).sort((a,b)=>a.rank-b.rank||a.e.name.localeCompare(b.e.name)).map(x=>x.e);
+    /* A 1-character query ("a", "I") is a plain-substring match against nearly every
+       entry and isn't a search at all. Require at least 2 real characters before
+       running the exact pass — a bare single letter falls straight to the token
+       path below, whose own length>2 filter naturally empties it out. */
+    if(n.replace(/ /g,"").length>=2){
+      list=COMPENDIUM.filter(e=>hayFor(e).includes(n)).map(e=>{
+        const nm=norm(e.name);
+        return {e, rank: nm===n?0 : nm.startsWith(n)?1 : nm.includes(n)?2 : saidFor(e).includes(n)?3 : 4};
+      }).sort((a,b)=>a.rank-b.rank||a.e.name.localeCompare(b.e.name)).map(x=>x.e);
+      /* A short fragment ("in", "of", "an") can still substring-match most of the
+         corpus even past the 2-char floor — measured "a" alone at 349/349 and "the"
+         at 326/349 before this guard. If a query under 4 characters is matching an
+         implausible fraction of the whole index, that is coincidence, not a real
+         hit; discard it and fall through to the token path instead of dumping
+         nearly the entire book. */
+      if(n.length<4 && list.length>40) list=[];
+    }
     if(!list.length){
       const toks=searchTokens(n);
       if(toks.length){
@@ -1095,9 +1253,14 @@ function viewSearch(q){
           });
           scored.push({e,hits,score});
         });
-        /* Require at least half the meaningful words for a longer phrase, so one
-           incidental word can't drag in a page of unrelated entries. */
-        const need=toks.length>2?Math.ceil(toks.length/2):toks.length;
+        /* Require at least half the meaningful words for a short phrase, so one
+           incidental word can't drag in a page of unrelated entries \u2014 but cap the
+           requirement at 4 regardless of length: a real paragraph someone pastes
+           about what happened to them is mostly narrative connective tissue ("last
+           week", "in front of everyone", "I still don't know what to do") around a
+           couple of diagnostic words, so demanding half of a 12-word sentence match
+           was emptying out exactly the long, honest descriptions this exists for. */
+        const need=toks.length<=2?toks.length:Math.min(4,Math.ceil(toks.length/2));
         const kept=scored.filter(x=>x.hits>=need)
           .sort((a,b)=>b.score-a.score||b.hits-a.hits||a.e.name.localeCompare(b.e.name));
         /* "Closest" has to mean it: keep only what scores near the best hit, and cap
@@ -1109,14 +1272,15 @@ function viewSearch(q){
     }
   }
   return '<div class="label">Search</div>'+
+    (OVER?'<p class="small" style="margin:6px 0 0">Searching the first 400 characters \u2014 the wording that gives a tactic away is almost always near the start.</p>':'')+
     '<div class="search-inline" style="margin-left:0;margin-right:0;max-width:640px"><span class="sic">'+ic("search",18)+'</span><input id="searchBoxLive" type="text" value="'+esc(q)+'" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search" oninput="syncClearBtn(this)"><button type="button" class="clr'+(q?" show":"")+'" aria-label="Clear search" onclick="clearSearch(this)">'+ic("close",16)+'</button></div>'+
     (n?'<div class="count" role="status" aria-live="polite">'+list.length+' '+(fuzzy?(list.length===1?'closest match':'closest matches'):(list.length===1?'result':'results'))+'</div>'+
       (fuzzy?'<p class="small" style="margin:-2px 0 10px">Nothing contained that exact wording, so these are ranked by how much of what you typed they match. Start from a feeling if none of them fit.</p>':'')+
       (list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>'
         :'<div class="empty"><p style="margin:0 0 4px">Nothing here matches \u201c'+esc(q)+'\u201d.</p>'+
-         '<p class="small" style="margin:0 0 14px">That often means the wording is unusual, not that nothing fits \u2014 try fewer words, or start from how it felt.</p>'+
+         '<p class="small" style="margin:0 0 14px">Searching matches wording, so an unusual phrasing can miss even when the tactic is here. Answering a few questions instead works from what happened rather than how you said it.</p>'+
          '<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'+
-         '<button class="btn" onclick="nav(\'feeling\')">Start from a feeling</button>'+
+         '<button class="btn primary" onclick="nav(\'narrow\')">Narrow it down with questions</button>'+
          '<button class="btn" onclick="nav(\'category\')">Browse 24 categories</button>'+
          '<button class="btn" onclick="nav(\'all\')">All 349 entries</button></div></div>')
     :'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition \u2014 or paste a phrase someone actually said. Press <span class="kbdhint">/</span> from anywhere to jump back here.</p>');
@@ -1143,7 +1307,7 @@ function viewAll(){
     (ALL_STATE.sort==="az"?'<div class="idxbar" aria-label="Jump to letter">'+letters.map(l=>'<button onclick="jumpToLetter(\''+l+'\')">'+l+'</button>').join("")+'</div>':"")+
     '<div class="count" role="status" aria-live="polite">'+list.length+' entries \u00b7 showing '+shown.length+'</div>'+
     '<div id="allList">'+shown.map(rowHTML).join("")+'</div>'+
-    (shown.length<list.length?'<button class="loadmore" onclick="ALL_STATE.shown+=60;renderRoute()">Show more ('+(list.length-shown.length)+' remaining)</button>':"");
+    (shown.length<list.length?'<button class="loadmore" onclick="ALL_STATE.shown+=60;renderRouteKeepingScroll()">Show more ('+(list.length-shown.length)+' remaining)</button>':"");
 }
 function jumpToLetter(l){
   ALL_STATE.shown=Math.max(ALL_STATE.shown, ALPHA.findIndex(e=>e.name[0].toUpperCase()===l)+40);
@@ -1156,7 +1320,14 @@ function jumpToLetter(l){
 }
 
 /* ---------- entry view ---------- */
-function ul(items){ return "<ul>"+items.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>"; }
+/* Total by construction. entryBodyHTML calls this unguarded on several codex
+   fields; the corpus is hand-maintained with no build step, so the day one
+   entry ships without `what_it_is_not` the old version threw and blanked every
+   route that rendered it. A missing field must cost a section, never a page. */
+function ul(items){
+  if(!Array.isArray(items)) items = (items==null||items==="") ? [] : [items];
+  return items.length ? "<ul>"+items.map(x=>"<li>"+esc(x)+"</li>").join("")+"</ul>" : "";
+}
 function feSection(title,html,openDefault){
   return '<details class="fe-section"'+(openDefault?" open":"")+'><summary><span>'+esc(title)+'</span><span class="chv">'+ic("chevron",16)+'</span></summary><div class="fe-section-body">'+html+'</div></details>';
 }
@@ -1194,10 +1365,22 @@ function entryBodyHTML(e,c,opts){
     (c.misuse_warning&&c.misuse_warning.length?feSection("Misuse warning",ul(c.misuse_warning)):"")+
     (c.related_tactics&&c.related_tactics.length?feSection("Related tactics & how to tell them apart",relatedLinksHTML(c.related_tactics)+(c.how_to_distinguish_from_related?"<p style='margin-top:10px'>"+esc(c.how_to_distinguish_from_related)+"</p>":"")+(c.absorbs&&c.absorbs.length?"<p style='margin-top:10px' class='small'>Also covers: "+c.absorbs.map(esc).join(", ")+"</p>":"")):"");
 }
+/* Every not-found branch routes through here, so no dead end can be written
+   without a way out of it. `#patterns/<unknown>` previously rendered the bare
+   text "Pattern not found." with zero links -- reachable from any stale
+   shared link. */
+function notFound(msg){
+  return '<div class="empty"><p style="margin:0 0 12px">'+esc(msg)+'</p>'+
+    '<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'+
+    '<button class="btn primary" onclick="nav(\'\')">Start</button>'+
+    '<button class="btn" onclick="nav(\'all\')">All 349 entries</button>'+
+    '<button class="btn" onclick="nav(\'category\')">Browse categories</button>'+
+    '<button class="btn" onclick="nav(\'narrow\')">Narrow it down</button></div></div>';
+}
 function viewEntry(slug){
   const name=NAME_BY_SLUG[slug];
   const e=name&&COMP_BY_NAME[name];
-  if(!e) return '<div class="empty">Entry not found. <a href="#all" onclick="event.preventDefault();nav(\'all\')">Browse the full index</a>.</div>';
+  if(!e) return notFound("That entry isn\u2019t here \u2014 the link may be out of date or cut short.");
   const c=CODEX_BY_NAME[name]||{};
   logTrail(name);
   const idx=ALPHA.findIndex(x=>x.name===name);
@@ -1207,7 +1390,7 @@ function viewEntry(slug){
   const trailNote=matches.length?('<div class="trail-note">You\u2019ve opened '+matches[0].overlap.length+' of '+matches[0].r.c.length+' tactics in <strong>'+esc(matches[0].r.n)+'</strong>'+(matches[0].missing.length?' \u2014 including <a href="#entry/'+SLUG_BY_NAME[matches[0].missing[0]]+'" onclick="event.preventDefault();nav(\'entry/'+SLUG_BY_NAME[matches[0].missing[0]]+'\')">'+esc(matches[0].missing[0])+'</a>, which you haven\u2019t looked at yet.':'. That\u2019s the whole documented pattern.')+' <a href="#patterns/'+encodeURIComponent(matches[0].r.n)+'" onclick="event.preventDefault();nav(\'patterns/'+encodeURIComponent(matches[0].r.n)+'\')">See the full pattern \u2192</a></div>'):"";
   return '<div class="entry-head"><div class="crumb"><a href="#category/'+encodeURIComponent(e.cat)+'" onclick="event.preventDefault();nav(\'category/'+encodeURIComponent(e.cat)+'\')">'+esc(e.cat)+'</a></div>'+
     '<div class="entry-title-row"><h1 class="entry-title">'+esc(name)+'</h1>'+
-    '<button class="star-btn'+(starred?" on":"")+'" style="width:38px;height:38px" onclick="'+esc("toggleStar('"+jsq(name)+"');renderRoute()")+'" aria-pressed="'+starred+'" aria-label="'+(starred?"Unstar":"Star")+' this entry">'+ic(starred?"starOn":"starOff",22)+'</button></div>'+
+    '<button class="star-btn'+(starred?" on":"")+'" style="width:38px;height:38px" onclick="'+esc("toggleStar('"+jsq(name)+"');renderRouteKeepingScroll()")+'" aria-pressed="'+starred+'" aria-label="'+(starred?"Unstar":"Star")+' this entry">'+ic(starred?"starOn":"starOff",22)+'</button></div>'+
     '<div class="entry-badges">'+
     (c.safety_note&&c.safety_note.indexOf("No elevated safety concern")===-1?'<span class="badge badge-safety">Safety-sensitive</span>':'')+
     (c.codex_maturity==="needs_review"?'<span class="badge badge-review">Needs review</span>':'')+
@@ -1225,7 +1408,7 @@ let PATTERNS_Q="";
 function viewPatterns(param){
   if(param){
     const r=RECIPES.find(x=>x.n===param);
-    if(!r) return '<div class="empty">Pattern not found.</div>';
+    if(!r) return notFound("That pattern isn\u2019t here \u2014 the link may be out of date or cut short.");
     const have=trailNamesSet();
     return '<div class="crumb"><a href="#patterns" onclick="event.preventDefault();nav(\'patterns\')">Composite patterns</a></div>'+
       '<h1 class="view-h wide">'+esc(r.n)+'</h1>'+
@@ -1238,7 +1421,7 @@ function viewPatterns(param){
   const have=trailNamesSet();
   return '<div class="label">Composite patterns</div><h1 class="view-h">'+RECIPES.length+' documented sequences</h1>'+
     '<p class="small" style="max-width:560px">Real dynamics are rarely one tactic \u2014 they\u2019re several, chained over time. Each of these is a documented chain, validated against the full 349-entry field guide; every step links to its full entry.</p>'+
-    '<div class="search-inline" style="margin-left:0;max-width:480px"><span class="sic">'+ic("search",18)+'</span><input value="'+esc(PATTERNS_Q)+'" oninput="PATTERNS_Q=this.value;renderRoute()" placeholder="Search patterns\u2026"></div>'+
+    '<div class="search-inline" style="margin-left:0;max-width:480px"><span class="sic">'+ic("search",18)+'</span><input id="patternsQ" value="'+esc(PATTERNS_Q)+'" oninput="PATTERNS_Q=this.value;renderRouteKeepingScroll()" placeholder="Search patterns\u2026"></div>'+
     '<div class="count">'+list.length+' patterns</div>'+
     list.map(r=>{
       const overlap=r.c.filter(n=>have.has(n)).length;
@@ -1248,6 +1431,197 @@ function viewPatterns(param){
       (overlap>=2?'<div class="trail-match">'+overlap+' of '+r.c.length+' steps in your trail</div>':'')+
       '</div>';
     }).join("");
+}
+
+/* =============================================================================
+   NARROW IT DOWN -- guided multiple-choice walkthrough.
+
+   Design rule that makes this unable to dead-end: every question's options are
+   derived FROM THE SET STILL MATCHING, and an option is rendered only when at
+   least one entry sits behind it. There is therefore no sequence of clicks that
+   reaches zero results -- not "we tested and didn't find one", but no such path
+   exists to find. Each option also carries its own count, so the reader always
+   sees the consequence of a choice before making it.
+
+   Every step additionally offers "show me these now", so the reader is never
+   forced to finish, and a back/undo at every point.
+   ============================================================================= */
+let NARROW={step:0,where:null,feels:[],cats:[],safetyOnly:false};
+
+function narrowReset(){ NARROW={step:0,where:null,feels:[],cats:[],safetyOnly:false}; renderRoute(); }
+
+/* The working set, recomputed from state every time. Pure set operations over
+   frozen lists and authored fields -- no scoring, no thresholds. */
+function narrowSet(){
+  let names;
+  if(NARROW.feels.length){
+    /* Feelings are a UNION: picking more describes more of what happened and
+       can only widen the set, so it can never empty. */
+    const seen=new Set();
+    NARROW.feels.forEach(k=>narrowEntriesFor(k).forEach(e=>{ if(e) seen.add(e.name); }));
+    names=[...seen];
+  } else if(NARROW.where){
+    /* A context chosen but nothing picked yet: everything that context reaches. */
+    const seen=new Set();
+    FEELINGS.filter(f=>f.group===NARROW.where).forEach(f=>
+      narrowEntriesFor(f.key).forEach(e=>{ if(e) seen.add(e.name); }));
+    names=[...seen];
+  } else {
+    names=COMPENDIUM.map(e=>e.name);
+  }
+  let list=names.map(n=>COMP_BY_NAME[n]).filter(Boolean);
+  /* Categories are also a UNION, then intersected with the working set. Every
+     offered category is computed from that same set, so each has >=1 behind it
+     and the result stays non-empty. */
+  if(NARROW.cats.length) list=list.filter(e=>NARROW.cats.includes(e.cat));
+  if(NARROW.safetyOnly) list=list.filter(e=>isSafetySensitive(e.name));
+  return list.sort((a,b)=>a.name.localeCompare(b.name));
+}
+
+function isSafetySensitive(name){
+  const c=CODEX_BY_NAME[name];
+  return !!(c&&c.safety_note&&c.safety_note.indexOf("No elevated safety concern")===-1);
+}
+
+function narrowPickWhere(g){ NARROW.where=g; NARROW.feels=[]; NARROW.cats=[]; NARROW.step=1; renderRoute(); }
+function narrowToggleFeel(k){
+  const i=NARROW.feels.indexOf(k);
+  if(i<0) NARROW.feels.push(k); else NARROW.feels.splice(i,1);
+  NARROW.cats=NARROW.cats.filter(c=>narrowCatCounts().some(x=>x.cat===c));
+  renderRoute();
+}
+function narrowToggleCat(c){
+  const i=NARROW.cats.indexOf(c);
+  if(i<0) NARROW.cats.push(c); else NARROW.cats.splice(i,1);
+  renderRoute();
+}
+function narrowStep(n){ NARROW.step=Math.max(0,Math.min(3,n)); renderRoute(); }
+function narrowToggleSafety(){ NARROW.safetyOnly=!NARROW.safetyOnly; renderRoute(); }
+
+/* Categories present in the set BEFORE the category filter is applied -- that
+   is what makes every offered option non-empty. */
+function narrowCatCounts(){
+  const save=NARROW.cats; NARROW.cats=[];
+  const base=narrowSet(); NARROW.cats=save;
+  const m={}; base.forEach(e=>{ m[e.cat]=(m[e.cat]||0)+1; });
+  return Object.keys(m).sort((a,b)=>m[b]-m[a]||a.localeCompare(b)).map(cat=>({cat,n:m[cat]}));
+}
+
+function nwCheck(){ return '<span class="nw-box">'+ic("check",13)+'</span>'; }
+function nwOpt(label,count,onclick,pressed){
+  return '<button class="nw-opt" aria-pressed="'+(pressed?"true":"false")+'" onclick="'+esc(onclick)+'">'+
+    nwCheck()+'<span class="nw-txt">'+esc(label)+'</span>'+
+    (count!=null?'<span class="nw-n">'+count+'</span>':'')+'</button>';
+}
+
+function narrowRecap(){
+  const bits=[];
+  if(NARROW.where){
+    const g=FEELING_GROUPS.find(x=>x.key===NARROW.where);
+    if(g) bits.push('<span class="nw-chip">'+esc(g.label)+
+      '<button onclick="narrowReset()" aria-label="Clear and start again" title="Start again">'+ic("close",11)+'</button></span>');
+  }
+  NARROW.feels.forEach(k=>{
+    const f=FEELINGS.find(x=>x.key===k);
+    if(f) bits.push('<span class="nw-chip">'+esc(f.label.length>46?f.label.slice(0,44)+"…":f.label)+
+      '<button onclick="'+esc("narrowToggleFeel('"+jsq(k)+"')")+'" aria-label="Remove">'+ic("close",11)+'</button></span>');
+  });
+  NARROW.cats.forEach(c=>bits.push('<span class="nw-chip">'+esc(c)+
+    '<button onclick="'+esc("narrowToggleCat('"+jsq(c)+"')")+'" aria-label="Remove">'+ic("close",11)+'</button></span>'));
+  if(NARROW.safetyOnly) bits.push('<span class="nw-chip">Safety-sensitive only'+
+    '<button onclick="narrowToggleSafety()" aria-label="Remove">'+ic("close",11)+'</button></span>');
+  return bits.length?'<div class="nw-recap">'+bits.join("")+'</div>':"";
+}
+
+function narrowBar(showNext){
+  const n=narrowSet().length;
+  return '<div class="nw-bar">'+
+    '<span class="nw-count"><b>'+n+'</b> '+(n===1?"tactic":"tactics")+' match so far</span>'+
+    (NARROW.step>0?'<button class="btn" onclick="'+esc("narrowStep("+(NARROW.step-1)+")")+'">← Back</button>':'')+
+    '<button class="btn" onclick="narrowReset()">Start again</button>'+
+    (showNext?'<button class="btn primary" onclick="'+esc("narrowStep("+(NARROW.step+1)+")")+'">Continue →</button>':'')+
+    (NARROW.step<3?'<button class="btn" onclick="narrowStep(3)">Show these '+n+' now</button>':'')+
+    '</div>';
+}
+
+function narrowPips(){
+  return '<div class="nw-progress" aria-hidden="true">'+
+    [0,1,2,3].map(i=>'<span class="nw-pip'+(i<NARROW.step?" done":(i===NARROW.step?" now":""))+'"></span>').join("")+
+    '</div>';
+}
+
+function viewNarrow(){
+  const head='<div class="label">Narrow it down</div>'+narrowPips();
+
+  /* --- step 0: where ---------------------------------------------------- */
+  if(NARROW.step===0){
+    const opts=FEELING_GROUPS.map(g=>{
+      const seen=new Set();
+      FEELINGS.filter(f=>f.group===g.key).forEach(f=>narrowEntriesFor(f.key).forEach(e=>{ if(e) seen.add(e.name); }));
+      return seen.size?nwOpt(g.label,seen.size,"narrowPickWhere('"+jsq(g.key)+"')",NARROW.where===g.key):"";
+    }).join("");
+    return head+
+      '<h1 class="nw-q">Where has this been happening?</h1>'+
+      '<p class="nw-sub">Nothing you pick is a diagnosis, and nothing is stored anywhere but this device. You can change any answer, or skip straight to the full index at any point.</p>'+
+      '<div class="nw-opts two">'+opts+
+        nwOpt("I’m not sure, or it’s more than one place",COMPENDIUM.length,"narrowStep(1)",false)+
+      '</div>'+narrowRecap()+narrowBar(false);
+  }
+
+  /* --- step 1: what has been happening ---------------------------------- */
+  if(NARROW.step===1){
+    const pool=NARROW.where?FEELINGS.filter(f=>f.group===NARROW.where):FEELINGS;
+    /* Every feeling resolves to the same frozen cap, so printing its raw size
+       would put an identical, useless number on every row. What actually helps
+       is the MARGINAL count: how many possibilities this option would add that
+       the current selection doesn't already cover. */
+    const already=new Set(narrowSet().map(e=>e.name));
+    const opts=pool.map(f=>{
+      const names=narrowEntriesFor(f.key).map(e=>e.name);
+      if(!names.length) return "";
+      const on=NARROW.feels.includes(f.key);
+      const add=names.filter(n=>!already.has(n)).length;
+      const label=on?names.length:(NARROW.feels.length?(add?"+"+add:"already in"):names.length);
+      return nwOpt(f.label,label,"narrowToggleFeel('"+jsq(f.key)+"')",on);
+    }).join("");
+    return head+
+      '<h1 class="nw-q">Which of these sound like it?</h1>'+
+      '<p class="nw-sub">Pick as many as fit — each one you add brings in more possibilities rather than fewer. If none of them land, carry on and narrow by kind instead.</p>'+
+      '<div class="nw-opts">'+opts+'</div>'+
+      narrowRecap()+narrowBar(true);
+  }
+
+  /* --- step 2: narrow by kind ------------------------------------------- */
+  if(NARROW.step===2){
+    const cats=narrowCatCounts();
+    const opts=cats.map(x=>nwOpt(x.cat,x.n,"narrowToggleCat('"+jsq(x.cat)+"')",NARROW.cats.includes(x.cat))).join("");
+    const base=(()=>{ const save=NARROW.safetyOnly; NARROW.safetyOnly=false; const b=narrowSet(); NARROW.safetyOnly=save; return b; })();
+    const safeN=base.filter(e=>isSafetySensitive(e.name)).length;
+    /* The safety filter is offered only when it would actually split the set --
+       never when it would empty it, and never when it would change nothing. */
+    const safeOpt=(safeN>0&&safeN<base.length)
+      ? '<div class="nw-opts" style="margin-top:10px">'+
+        nwOpt("Only show the ones flagged safety-sensitive",safeN,"narrowToggleSafety()",NARROW.safetyOnly)+'</div>'
+      : "";
+    return head+
+      '<h1 class="nw-q">Narrow it by kind?</h1>'+
+      '<p class="nw-sub">Optional. These are the categories present in what you’ve matched so far — the count next to each is how many of your current matches it holds.</p>'+
+      '<div class="nw-opts two">'+opts+'</div>'+safeOpt+
+      narrowRecap()+narrowBar(true);
+  }
+
+  /* --- step 3: results --------------------------------------------------- */
+  const list=narrowSet();
+  return head+
+    '<h1 class="nw-q">'+list.length+' '+(list.length===1?"tactic":"tactics")+' to look at</h1>'+
+    '<p class="nw-sub">Ranked alphabetically, not by likelihood — this is a place to read from, not a verdict. Open any that look close; several often overlap.</p>'+
+    narrowRecap()+
+    '<div class="nw-bar" style="border-top:none;padding-top:0;margin-top:12px">'+
+      '<button class="btn" onclick="narrowStep(2)">← Change answers</button>'+
+      '<button class="btn" onclick="narrowReset()">Start again</button>'+
+      '<button class="btn" onclick="nav(\'all\')">Browse all 349 instead</button>'+
+    '</div>'+
+    '<div class="rowlist">'+list.map(rowHTML).join("")+'</div>';
 }
 
 /* ---------- trail / notebook ---------- */
@@ -1293,9 +1667,14 @@ function exportNotebook(){
 
 /* ---------- print single entry ---------- */
 function printOne(name){
-  const e=COMP_BY_NAME[name], c=CODEX_BY_NAME[name];
+  const e=COMP_BY_NAME[name], c=CODEX_BY_NAME[name]||{};
   if(!e) return;
-  document.getElementById("printDump").innerHTML='<div class="row" style="box-shadow:none"><h1 style="font-family:var(--serif)">'+esc(name)+'</h1>'+entryBodyHTML(e,c)+'</div>';
+  const dump=document.getElementById("printDump");
+  dump.innerHTML='<div class="row" style="box-shadow:none"><h1 style="font-family:var(--serif)">'+esc(name)+'</h1>'+entryBodyHTML(e,c)+'</div>';
+  /* Seven of the nine sections are closed <details>. CSS alone does not reveal
+     them (content-visibility on ::details-content wins over display), so the
+     boundary script -- the thing most worth printing -- silently vanished. */
+  dump.querySelectorAll("details").forEach(d=>{ d.open=true; });
   window.print();
 }
 function printAll(){
@@ -1304,37 +1683,80 @@ function printAll(){
     const c=CODEX_BY_NAME[e.name]||{};
     return '<div class="row" style="box-shadow:none;margin-top:26px"><h2 style="font-family:var(--serif)">'+esc(e.name)+' <span class="small mono">('+esc(e.cat)+')</span></h2>'+entryBodyHTML(e,c)+'</div>';
   }).join("");
+  dump.querySelectorAll("details").forEach(d=>{ d.open=true; });
   window.print();
 }
 
 /* ============================= ROUTER DISPATCH ============================= */
+/* Set by callers that are updating state in place (star, show-more, theme) so
+   the reader is not thrown back to the top of a 349-row list mid-read. */
+let KEEP_SCROLL=false;
+function renderRouteKeepingScroll(){ KEEP_SCROLL=true; renderRoute(); }
+
 function renderRoute(){
   const r=parseHash();
+  /* A link shared from an older build (or by a reader) can still carry the
+     phrase in ?q=. Absorb it, then scrub it out of the address bar so it does
+     not sit in history from this point on. */
+  if(r.view==="search"&&r.q&&r.q.q){
+    SEARCH_Q=r.q.q;
+    try{ history.replaceState(null,"","#/search"); }catch(e){}
+  }
   document.documentElement.setAttribute("data-theme", store.get("theme", preferredTheme()));
   document.documentElement.setAttribute("data-contrast", store.get("contrast","normal"));
-  let body="";
-  if(r.view===""||r.view==="landing") body=viewLanding();
-  else if(r.view==="search") body=viewSearch(r.q.q||"");
-  else if(r.view==="category") body=viewCategory(r.param);
-  else if(r.view==="feeling") body=viewFeeling(r.param);
-  else if(r.view==="all") body=viewAll();
-  else if(r.view==="core") body=viewCore();
-  else if(r.view==="entry") body=viewEntry(r.param);
-  else if(r.view==="constellation") body=viewConstellation();
-  else if(r.view==="patterns") body=viewPatterns(r.param);
-  else if(r.view==="trail") body=viewTrail();
-  else body=viewLanding();
 
-  document.getElementById("headerSlot").innerHTML=headerHTML(r);
-  document.getElementById("footerSlot").innerHTML=footerHTML();
-  renderMoreMenu();
-  document.getElementById("main").innerHTML='<div class="narrow-wrap">'+body+'</div>'+'<div id="printDump"></div>';
-  window.scrollTo({top:0,behavior:"auto"});
+  /* Error boundary. Every view below builds a string; if any of them throws,
+     the reader must still get the header (Quick exit lives there) and a way
+     back, never a blank page. This is why the chrome is written OUTSIDE the
+     try: no view can prevent it from rendering. */
+  let body="";
+  try{
+    if(r.view===""||r.view==="landing") body=viewLanding();
+    else if(r.view==="search") body=viewSearch(SEARCH_Q);
+    else if(r.view==="category") body=viewCategory(r.param);
+    else if(r.view==="feeling") body=viewFeeling(r.param);
+    else if(r.view==="narrow") body=viewNarrow();
+    else if(r.view==="all") body=viewAll();
+    else if(r.view==="core") body=viewCore();
+    else if(r.view==="entry") body=viewEntry(r.param);
+    else if(r.view==="constellation") body=viewConstellation();
+    else if(r.view==="patterns") body=viewPatterns(r.param);
+    else if(r.view==="trail") body=viewTrail();
+    else body=viewLanding();
+  }catch(err){
+    try{ if(window.console&&console.error) console.error("view error",err); }catch(e){}
+    body='<div class="empty"><p style="margin:0 0 6px"><strong>That page didn\u2019t load.</strong></p>'+
+      '<p class="small" style="margin:0 0 14px">Nothing you\u2019ve saved is affected. Everything else still works.</p>'+
+      '<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'+
+      '<button class="btn primary" onclick="nav(\'\')">Back to start</button>'+
+      '<button class="btn" onclick="nav(\'all\')">All 349 entries</button></div></div>';
+  }
+
+  /* Chrome first, and each piece independently, so one failure cannot take the
+     others down with it. The header carries Quick exit and must always exist. */
+  const setHTML=(id,html)=>{ const el=document.getElementById(id); if(el) el.innerHTML=html; };
+  try{ setHTML("headerSlot", headerHTML(r)); }catch(e){}
+  try{ setHTML("footerSlot", footerHTML()); }catch(e){}
+  try{ renderMoreMenu(); }catch(e){}
+  setHTML("main", '<div class="narrow-wrap">'+body+'</div>'+'<div id="printDump"></div>');
+
+  if(KEEP_SCROLL) KEEP_SCROLL=false;
+  else window.scrollTo({top:0,behavior:"auto"});
+
+  /* The map runs a physics loop; leaving it must stop that, or it keeps
+     burning frames behind whatever view the reader moved on to. */
+  if(r.view!=="constellation"&&CONSTEL_RAF){ cancelAnimationFrame(CONSTEL_RAF); CONSTEL_RAF=null; }
 
   const ls=document.getElementById("landingSearch");
-  if(ls) ls.addEventListener("keydown",e=>{ if(e.key==="Enter") nav("search?q="+encodeURIComponent(ls.value)); });
+  if(ls) ls.addEventListener("keydown",e=>{ if(e.key==="Enter"){ SEARCH_Q=ls.value; nav("search"); } });
   const sb=document.getElementById("searchBoxLive");
-  if(sb){ sb.focus(); sb.setSelectionRange(sb.value.length,sb.value.length); sb.addEventListener("input",debounce(()=>nav("search?q="+encodeURIComponent(sb.value)),250)); }
+  if(sb){ sb.focus(); sb.setSelectionRange(sb.value.length,sb.value.length);
+    sb.addEventListener("input",debounce(()=>{ SEARCH_Q=sb.value; renderRouteKeepingScroll(); },250)); }
+  /* Patterns search re-renders the route on every keystroke, which detaches the
+     focused field -- without this only the first character ever registered and
+     the phone keyboard closed. */
+  const pq=document.getElementById("patternsQ");
+  if(pq&&document.activeElement!==pq){ pq.focus(); pq.setSelectionRange(pq.value.length,pq.value.length); }
 
   if(r.view==="constellation") initConstellation();
 }
@@ -1658,8 +2080,19 @@ document.addEventListener("keydown",function(e){
   const chromeOpen = document.getElementById("nf-chrome") && document.getElementById("nf-chrome").classList.contains("nf-open");
   if(e.metaKey||e.ctrlKey||e.altKey) return;
 
+  /* The app's own overlays each paint a full-screen backdrop. Without these,
+     "/" focused a search field hidden behind the sheet and the arrow keys
+     navigated the page underneath it. Escape closes the topmost thing first. */
+  const moreOpen = (typeof MORE_OPEN!=="undefined") && MORE_OPEN;
+  const panelOpen = (typeof CONSTEL_SELECTED!=="undefined") && CONSTEL_SELECTED!==null;
+  if(e.key==="Escape"&&!typing){
+    if(moreOpen&&typeof closeMoreMenu==="function"){ closeMoreMenu(); return; }
+    if(panelOpen&&typeof selectConstelNode==="function"){ selectConstelNode(null); return; }
+  }
+  if(moreOpen||panelOpen) return;
+
   if(e.key==="Escape" && typing && (t.id==="searchBoxLive"||t.id==="landingSearch")){
-    if(t.value){ t.value=""; syncClearBtn(t); if(t.id==="searchBoxLive") nav("search"); }
+    if(t.value){ t.value=""; syncClearBtn(t); if(t.id==="searchBoxLive"){ SEARCH_Q=""; renderRouteKeepingScroll(); } }
     else t.blur();
     return;
   }
@@ -1693,7 +2126,7 @@ function clearSearch(btn){
   const input=wrap&&wrap.querySelector("input");
   if(!input) return;
   input.value=""; syncClearBtn(input); input.focus();
-  if(input.id==="searchBoxLive") nav("search");
+  if(input.id==="searchBoxLive"){ SEARCH_Q=""; renderRouteKeepingScroll(); }
 }
 
 /* ---------- bootstrap ---------- */
