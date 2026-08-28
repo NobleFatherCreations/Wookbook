@@ -1029,20 +1029,89 @@ function viewFeeling(param){
 }
 
 
+/* The search box invites you to "paste a phrase", but a whole-string substring
+   match finds nothing for a real sentence — the exact case this guide exists for.
+   So: exact phrase first (precise), and only if that finds nothing, fall back to
+   ranking entries by how many of the phrase's meaningful words they contain. */
+const SEARCH_STOP=new Set(("a an and are as at be been being but by can cant come could did do does dont for from get got had has have he her him his how i if im in is it its just keep keeps like make makes me my no not of on one or our out said say says she so some still than that the their them then there they thing things think this to too us very want was we were what when who why will with would you your".split(" ")));
+function searchTokens(n){
+  return n.split(" ").filter(w=>w.length>2&&!SEARCH_STOP.has(w));
+}
+function hayFor(e){
+  const c=CODEX_BY_NAME[e.name];
+  return norm(e.name+" "+e.cat+" "+(e.what||"")+" "+(c?c.plain_language_summary+" "+c.short_definition+" "+(c.what_it_sounds_like||[]).join(" "):""));
+}
+/* what_it_sounds_like holds the actual lines people say — for a pasted phrase it is
+   by far the most relevant field, so a hit there outranks one buried in a definition. */
+function saidFor(e){
+  const c=CODEX_BY_NAME[e.name];
+  return norm((c&&c.what_it_sounds_like?c.what_it_sounds_like.join(" "):""));
+}
 function viewSearch(q){
   q=q||"";
   const n=norm(q);
-  let list=[];
+  let list=[],fuzzy=false;
   if(n){
-    list=COMPENDIUM.filter(e=>{
-      const c=CODEX_BY_NAME[e.name];
-      const hay=norm(e.name+" "+e.cat+" "+(e.what||"")+" "+(c?c.plain_language_summary+" "+c.short_definition:""));
-      return hay.includes(n);
-    }).sort((a,b)=>a.name.localeCompare(b.name));
+    /* Rank exact hits by where they matched, not just alphabetically: an entry whose
+       NAME is what you typed must come first (searching "gaslighting" put Gaslighting
+       fourth, under Doctrine Over Person, when this was a plain A-Z sort). */
+    list=COMPENDIUM.filter(e=>hayFor(e).includes(n)).map(e=>{
+      const nm=norm(e.name);
+      return {e, rank: nm===n?0 : nm.startsWith(n)?1 : nm.includes(n)?2 : saidFor(e).includes(n)?3 : 4};
+    }).sort((a,b)=>a.rank-b.rank||a.e.name.localeCompare(b.e.name)).map(x=>x.e);
+    if(!list.length){
+      const toks=searchTokens(n);
+      if(toks.length){
+        /* Consecutive word pairs/triples from the phrase as typed (stopwords kept —
+           "too sensitive" and "never said" are exactly the giveaway fragments). A
+           contiguous run matching a documented line is far stronger evidence than
+           the same words scattered across a definition. */
+        const words=n.split(" ").filter(Boolean), grams=[];
+        for(let i=0;i<words.length-1;i++){
+          grams.push(words[i]+" "+words[i+1]);
+          if(i<words.length-2) grams.push(words[i]+" "+words[i+1]+" "+words[i+2]);
+        }
+        const scored=[];
+        COMPENDIUM.forEach(e=>{
+          const hay=hayFor(e), nm=norm(e.name), said=saidFor(e);
+          let hits=0,score=0;
+          toks.forEach(t=>{
+            if(!hay.includes(t)) return;
+            hits++;
+            score += nm.includes(t) ? 4 : (said.includes(t) ? 3 : 1);
+          });
+          if(!hits) return;
+          grams.forEach(g=>{
+            if(said.includes(g)) score+=6;
+            else if(hay.includes(g)) score+=2;
+          });
+          scored.push({e,hits,score});
+        });
+        /* Require at least half the meaningful words for a longer phrase, so one
+           incidental word can't drag in a page of unrelated entries. */
+        const need=toks.length>2?Math.ceil(toks.length/2):toks.length;
+        const kept=scored.filter(x=>x.hits>=need)
+          .sort((a,b)=>b.score-a.score||b.hits-a.hits||a.e.name.localeCompare(b.e.name));
+        /* "Closest" has to mean it: keep only what scores near the best hit, and cap
+           the list — a long tail of weak matches is worse than an honest empty state. */
+        const top=kept.length?kept[0].score:0;
+        list=kept.filter(x=>x.score>=Math.max(2,top*0.5)).slice(0,12).map(x=>x.e);
+        fuzzy=list.length>0;
+      }
+    }
   }
   return '<div class="label">Search</div>'+
     '<div class="search-inline" style="margin-left:0;margin-right:0;max-width:640px"><span class="sic">'+ic("search",18)+'</span><input id="searchBoxLive" type="text" value="'+esc(q)+'" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search" oninput="syncClearBtn(this)"><button type="button" class="clr'+(q?" show":"")+'" aria-label="Clear search" onclick="clearSearch(this)">'+ic("close",16)+'</button></div>'+
-    (n?'<div class="count" role="status" aria-live="polite">'+list.length+' result'+(list.length===1?"":"s")+'</div>'+(list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>':'<div class="empty">No entries match \u201c'+esc(q)+'\u201d.</div>'):'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition. Press <span class="kbdhint">/</span> from anywhere to jump back here.</p>');
+    (n?'<div class="count" role="status" aria-live="polite">'+list.length+' '+(fuzzy?(list.length===1?'closest match':'closest matches'):(list.length===1?'result':'results'))+'</div>'+
+      (fuzzy?'<p class="small" style="margin:-2px 0 10px">Nothing contained that exact wording, so these are ranked by how much of what you typed they match. Start from a feeling if none of them fit.</p>':'')+
+      (list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>'
+        :'<div class="empty"><p style="margin:0 0 4px">Nothing here matches \u201c'+esc(q)+'\u201d.</p>'+
+         '<p class="small" style="margin:0 0 14px">That often means the wording is unusual, not that nothing fits \u2014 try fewer words, or start from how it felt.</p>'+
+         '<div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">'+
+         '<button class="btn" onclick="nav(\'feeling\')">Start from a feeling</button>'+
+         '<button class="btn" onclick="nav(\'category\')">Browse 24 categories</button>'+
+         '<button class="btn" onclick="nav(\'all\')">All 349 entries</button></div></div>')
+    :'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition \u2014 or paste a phrase someone actually said. Press <span class="kbdhint">/</span> from anywhere to jump back here.</p>');
 }
 
 function viewCore(){
