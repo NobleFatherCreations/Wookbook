@@ -57,7 +57,7 @@
 
   *{box-sizing:border-box}
   html,body{margin:0;padding:0}
-  html{-webkit-tap-highlight-color:transparent;scroll-behavior:smooth}
+  html{-webkit-tap-highlight-color:transparent;scroll-behavior:smooth;scroll-padding-top:calc(var(--header-h) + 14px)}
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *,*::before,*::after{animation-duration:.001ms!important;transition-duration:.001ms!important} }
   body{background:var(--bg);color:var(--ink);font:16px/1.62 var(--sans);-webkit-text-size-adjust:100%;position:relative}
   body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
@@ -80,6 +80,27 @@
   .small{font-size:12.5px;color:var(--mut)}
   ul.plain{list-style:none;margin:0;padding:0}
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+  /* ---- typographic refinement ----------------------------------------
+     balance: display type wraps into even lines instead of leaving one
+     orphan word on the last line. pretty: body prose avoids a single-word
+     final line. Both degrade silently to normal wrapping where unsupported. */
+  .hero h1,.entry-title,.door h3,.recipe-card h3,.trail-section h2,.view-h,.nf-panel-title,.feel{text-wrap:balance}
+  .hero p,.fe-body p,.fe-section-body p,.fe-section-body li,.row .sum,.door p,.small,.footer-tag{text-wrap:pretty}
+  /* Long single-token tactic names must never punch out of a card on a narrow phone. */
+  .entry-title,.row .name,.tile .n,.nf-vol{overflow-wrap:anywhere}
+  /* Mono is used for counts, labels and IDs — slashed zero and tabular figures
+     stop 0/O confusion and stop digits jittering as numbers change. */
+  .mono,.label,.count,.badge,.crumb,.chip,.btn,.loadmore,.entry-num,.idxbar button,
+  .footer-fine,.footer-links a,.related-links a,.chain a,.constel-hint,.constel-legend span,
+  .prevnext .lbl,.nf-num,.nf-eyebrow,select{font-feature-settings:"zero" 1,"tnum" 1}
+  /* Brand-consistent text cursor and native form-control accent. */
+  input,textarea{caret-color:var(--accent)}
+  input,select,button,textarea{accent-color:var(--accent)}
+  /* Removes the ~300ms tap delay browsers reserve for double-tap-to-zoom. */
+  button,a,.row,summary,select,input[type="text"]{touch-action:manipulation}
+  /* Rows are scroll targets from the A–Z jump bar; keep them clear of the sticky header. */
+  .row,.fe-section,[id]{scroll-margin-top:calc(var(--header-h) + 14px)}
   .door:active,.tile:active,.feel:active,.row:active{transform:scale(.98);transition:transform .1s cubic-bezier(.16,1,.3,1)}
   .chip:active,.btn:active,.loadmore:active,.related-links a:active,.chain a:active,.footer-links a:active,.idxbar button:active,.constel-zoom button:active,.moremenu-grid button:active,.moremenu-toggles button:active,.hnav-desktop button:active,.copy-btn:active{transform:scale(.96);transition:transform .1s cubic-bezier(.16,1,.3,1)}
   .count,.badge,.entry-num,.idxbar button,.crumb,.prevnext .lbl{font-variant-numeric:tabular-nums}
@@ -90,7 +111,12 @@
      HEADER — single fixed-height sticky bar. No second stacked sticky
      element anywhere in this app; deliberately avoided after a real bug.
      ========================================================================= */
-  header{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);height:var(--header-h)}
+  /* The sticky must live on #headerSlot, not on <header> itself: a sticky element
+     can only stick within its own parent's box, and #headerSlot is exactly the
+     header's height — so `position:sticky` on <header> never actually stuck and the
+     nav (including Quick exit) scrolled away for good. */
+  #headerSlot{position:sticky;top:0;z-index:50}
+  header{background:var(--bg);border-bottom:1px solid var(--line);height:var(--header-h)}
   .hbar{max-width:1200px;margin:0 auto;height:100%;display:flex;align-items:center;gap:10px;padding:0 14px}
   .hlogo{display:flex;align-items:center;flex-shrink:0;border-radius:50%;overflow:hidden;width:30px;height:30px;box-shadow:0 0 0 1px var(--line2);transition:box-shadow .15s,transform .15s}
   .hlogo:hover{box-shadow:0 0 0 1px var(--accent),0 6px 14px -6px var(--glow-1);transform:scale(1.06)}
@@ -223,8 +249,16 @@
   .badge{display:inline-flex;align-items:center;gap:4px;font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.03em;padding:4px 10px;border-radius:var(--radius-pill);white-space:nowrap;border:1px solid transparent;box-shadow:0 1px 2px rgba(0,0,0,.06)}
   .badge-safety{background:transparent;color:var(--safe);border-color:var(--safe)}
   .badge-review{background:transparent;color:var(--warn);border-color:var(--warn);border-style:dashed}
-  .star-btn{background:none;border:none;color:var(--mut);cursor:pointer;flex-shrink:0;padding:4px}
+  .star-btn{background:none;border:none;color:var(--mut);cursor:pointer;flex-shrink:0;padding:4px;
+    transition:color .15s,transform .15s cubic-bezier(.16,1,.3,1)}
+  .star-btn:hover{color:var(--accent);transform:scale(1.15)}
   .star-btn.on{color:var(--accent)}
+  /* Starring is the one moment of real commitment in the list — acknowledge it
+     with a single settle, not a loop. Class is added on toggle, removed on end. */
+  @media (prefers-reduced-motion: no-preference){
+    .star-btn.just-starred{animation:starPop .42s cubic-bezier(.16,1,.3,1)}
+    @keyframes starPop{0%{transform:scale(.7)}45%{transform:scale(1.28)}100%{transform:scale(1)}}
+  }
 
   /* =========================================================================
      ENTRY VIEW
@@ -234,6 +268,10 @@
   .crumb a{color:var(--mut);text-decoration:underline}
   .entry-title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-top:8px}
   .entry-title{font-family:var(--serif);font-size:clamp(24px,4vw,32px);font-weight:700;line-height:1.2}
+  /* One class for the 10 view headings that were each carrying the same inline style.
+     Fluid like .entry-title so it holds up on a narrow phone and a wide desktop. */
+  .view-h{font-family:var(--serif);font-size:clamp(22px,3.2vw,26px);line-height:1.25;margin:10px 0 4px}
+  .view-h.wide{margin-bottom:10px}
   [data-theme="dark"] .entry-title{text-shadow:0 0 30px var(--glow-1)}
   .entry-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
   .entry-num{font-family:var(--mono);font-size:11px;color:var(--mut)}
@@ -264,6 +302,24 @@
   .btn:hover{border-color:var(--accent)}
   .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-grad));color:var(--accent-ink);border:none;font-family:var(--sans);font-weight:700;box-shadow:0 6px 18px -6px var(--glow-1),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .15s,box-shadow .15s}
   .btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 24px -6px var(--glow-1),inset 0 1px 0 rgba(255,255,255,.25)}
+  /* ---- back to top: only earns its place on the long views (349-row index,
+     category lists), and only once the header has actually scrolled away. ---- */
+  .to-top{position:fixed;left:18px;bottom:18px;z-index:940;width:42px;height:42px;
+    border-radius:50%;border:1px solid var(--line2);background:var(--card);color:var(--sub);
+    cursor:pointer;display:grid;place-items:center;box-shadow:0 3px 8px -2px rgba(0,0,0,.28);
+    opacity:0;pointer-events:none;transform:translateY(8px);
+    transition:opacity .2s,transform .2s cubic-bezier(.16,1,.3,1),color .15s,border-color .15s}
+  .to-top.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+  .to-top:hover{color:var(--accent);border-color:var(--accent)}
+  .to-top:active{transform:scale(.94)}
+  /* ---- search field clear button ---- */
+  .search-inline .clr{position:absolute;right:12px;top:50%;transform:translateY(-50%);
+    width:28px;height:28px;border-radius:50%;border:none;background:none;color:var(--mut);
+    cursor:pointer;display:none;place-items:center;transition:color .15s,background .15s}
+  .search-inline .clr.show{display:grid}
+  .search-inline .clr:hover{color:var(--ink);background:var(--card-2)}
+  .kbdhint{font-family:var(--mono);font-size:11px;color:var(--mut);
+    border:1px solid var(--line2);border-radius:5px;padding:2px 6px;background:var(--card-2)}
   .copy-row{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
   .copy-row p{flex:1;min-width:200px}
   .copy-btn{flex-shrink:0;min-height:30px;padding:6px 12px;margin-top:10px}
@@ -273,6 +329,9 @@
   .prevnext a:hover{color:var(--accent)}
   .prevnext .lbl{display:block;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);margin-bottom:3px}
   .prevnext .next{text-align:right}
+  /* Hint sits above the Previous/Next pair and only makes sense with a keyboard. */
+  .prevnext-hint{margin-top:30px;text-align:center}
+  @media (hover:none){ .prevnext-hint{display:none} }
 
   /* =========================================================================
      CONSTELLATION
@@ -328,6 +387,29 @@
     .fe-section-body{display:block!important}
     details{display:block!important}
     .row,.recipe-card,.card{break-inside:avoid;border-color:#999!important;box-shadow:none!important}
+    /* --- print refinement: this is a reference people print under stress --- */
+    @page{margin:18mm 16mm}
+    .to-top,.nf-seal,.nf-scrim,.nf-panel,.updates-block,.copy-btn,.prevnext-hint,.skip{display:none!important}
+    body::before,body::after{display:none!important}
+    /* Serif body at a print-legible size, with real widow/orphan control. */
+    #printDump{font-family:var(--serif);font-size:11.5pt;line-height:1.5;color:#000}
+    #printDump p,#printDump li{orphans:3;widows:3}
+    #printDump h1{font-size:20pt;margin:0 0 4mm}
+    #printDump h2{font-size:14pt;break-after:avoid}
+    #printDump .fe-heading{break-after:avoid;font-weight:700}
+    #printDump ul{margin:0 0 3mm 5mm}
+    /* Section panels are decoration on paper; keep the content, drop the chrome. */
+    #printDump .fe-section{border:none!important;background:none!important;margin-top:4mm}
+    #printDump .fe-section>summary{padding:0;font-size:12pt;break-after:avoid}
+    #printDump .fe-section .chv{display:none}
+    #printDump .fe-section-body{padding:1mm 0 0}
+    /* The safety note must never be mistaken for ordinary body copy in print. */
+    #printDump .fe-safetybox{border:1.5pt solid #000!important;background:none!important;
+      padding:3mm;break-inside:avoid;font-weight:600}
+    /* Provenance on paper — a printout otherwise has no indication of where it came from. */
+    #printDump::after{content:"The Field Guide \2014 noblefathercreations.com/playbook";
+      display:block;margin-top:8mm;padding-top:3mm;border-top:.5pt solid #999;
+      font-family:var(--mono);font-size:8pt;color:#555}
   }
 
   @media (max-width:480px){ .entry-title-row{flex-direction:column} }
@@ -501,6 +583,9 @@
 <div id="footerSlot"></div>
 <div id="moreMenuSlot"></div>
 </div>
+<button type="button" id="toTop" class="to-top" aria-label="Back to top" title="Back to top">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="6"/><polyline points="6 12 12 6 18 12"/></svg>
+</button>
 <script>
 
 /* ---------- data ---------- */
@@ -875,7 +960,7 @@ function rowHTML(e){
      outer button early and corrupts everything rendered after it in the list. */
   return '<div class="row" role="button" tabindex="0" onclick="'+openCode+'" onkeydown="'+openKeyCode+'">'+
     '<div class="top"><span class="name">'+esc(e.name)+'</span>'+
-    '<button class="star-btn'+(starred?" on":"")+'" onclick="'+esc("event.stopPropagation();toggleStar('"+jsq(e.name)+"');this.closest('.row').querySelector('.star-btn').outerHTML=starBtnHTML('"+jsq(e.name)+"')")+'" aria-label="'+(starred?"Unstar":"Star")+'" aria-pressed="'+starred+'">'+ic(starred?"starOn":"starOff",16)+'</button>'+
+    '<button class="star-btn'+(starred?" on":"")+'" onclick="'+esc("event.stopPropagation();toggleStar('"+jsq(e.name)+"');this.closest('.row').querySelector('.star-btn').outerHTML=starBtnHTML('"+jsq(e.name)+"',1)")+'" aria-label="'+(starred?"Unstar":"Star")+'" aria-pressed="'+starred+'">'+ic(starred?"starOn":"starOff",16)+'</button>'+
     '</div>'+
     '<div class="meta">'+
     (safety?'<span class="badge badge-safety">Safety-sensitive</span> ':'')+
@@ -884,9 +969,11 @@ function rowHTML(e){
     '<div class="sum">'+esc((c&&(c.short_definition||c.plain_language_summary))||e.what||"")+'</div>'+
   '</div>';
 }
-function starBtnHTML(name){
+/* `animate` is passed only when this button is being re-rendered in response to a
+   click, so the pop plays on the user's own action and never on first paint. */
+function starBtnHTML(name,animate){
   const starred=isStarred(name);
-  return '<button class="star-btn'+(starred?" on":"")+'" onclick="'+esc("event.stopPropagation();toggleStar('"+jsq(name)+"');this.outerHTML=starBtnHTML('"+jsq(name)+"')")+'" aria-label="'+(starred?"Unstar":"Star")+'" aria-pressed="'+starred+'">'+ic(starred?"starOn":"starOff",16)+'</button>';
+  return '<button class="star-btn'+(starred?" on":"")+(animate&&starred?" just-starred":"")+'" onclick="'+esc("event.stopPropagation();toggleStar('"+jsq(name)+"');this.outerHTML=starBtnHTML('"+jsq(name)+"',1)")+'" aria-label="'+(starred?"Unstar":"Star")+'" aria-pressed="'+starred+'">'+ic(starred?"starOn":"starOff",16)+'</button>';
 }
 
 /* ============================= VIEWS ============================= */
@@ -897,7 +984,7 @@ function viewLanding(){
   return '<div class="hero"><h1>A field guide to a sky, not a dictionary.</h1>'+
     '<p>349 named tactics of manipulation and control, across relationships, family, work, online life, and institutions. You don\u2019t need to memorize all of them \u2014 just learn a few constellations, and how to star-hop between them.</p></div>'+
     cont+
-    '<div class="search-inline"><span class="sic">'+ic("search",18)+'</span><input id="landingSearch" type="text" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search the field guide"></div>'+
+    '<div class="search-inline"><span class="sic">'+ic("search",18)+'</span><input id="landingSearch" type="text" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search the field guide" oninput="syncClearBtn(this)"><button type="button" class="clr" aria-label="Clear search" onclick="clearSearch(this)">'+ic("close",16)+'</button></div>'+
     '<div class="doors">'+
       '<button class="door" onclick="nav(\'core\')"><span class="ic">'+ic("core",28)+'</span><h3>The North Stars</h3><p>'+CORE_TACTICS.length+' tactics most people actually run into most often. Not sure where to start? Start here.</p><span class="go">START HERE \u2192</span></button>'+
       '<button class="door" onclick="nav(\'category\')"><span class="ic">'+ic("book",28)+'</span><h3>Browse by category</h3><p>24 categories, from Accountability Evasion to Social Warfare & Triangulation. Good if you roughly know where to look.</p><span class="go">BROWSE \u2192</span></button>'+
@@ -909,19 +996,19 @@ function viewLanding(){
 function viewCategory(param){
   if(!param){
     const counts={}; COMPENDIUM.forEach(e=>counts[e.cat]=(counts[e.cat]||0)+1);
-    return '<div class="label">Browse by category</div><h1 class="serif" style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">24 categories</h1>'+
+    return '<div class="label">Browse by category</div><h1 class="serif" class="view-h">24 categories</h1>'+
       '<div class="tilegrid">'+CATS.map(c=>'<button class="tile" style="--catc:'+CAT_COLOR[c]+'" onclick="nav(\'category/'+encodeURIComponent(c)+'\')"><div class="n"><span class="dot" style="background:'+CAT_COLOR[c]+'"></span>'+esc(c)+'</div><div class="c">'+counts[c]+' entries</div></button>').join("")+'</div>';
   }
   const list=ALPHA.filter(e=>e.cat===param);
   return '<div class="crumb"><a href="#category" onclick="event.preventDefault();nav(\'category\')">Categories</a> / '+esc(param)+'</div>'+
-    '<h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">'+esc(param)+'</h1>'+
+    '<h1 class="view-h">'+esc(param)+'</h1>'+
     '<div class="count">'+list.length+' entries</div>'+
     '<div class="rowlist">'+list.map(rowHTML).join("")+'</div>';
 }
 
 function viewFeeling(param){
   if(!param){
-    return '<div class="label">Start from a feeling</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">What\u2019s actually going on?</h1>'+
+    return '<div class="label">Start from a feeling</div><h1 class="view-h">What\u2019s actually going on?</h1>'+
       '<p class="small" style="max-width:560px;margin-top:6px">'+FEELINGS.length+' starting points across six places this shows up \u2014 none of them a diagnosis. Pick whichever is closest and adjust from there.</p>'+
       FEELING_GROUPS.map(g=>{
         const items=FEELINGS.filter(x=>x.group===g.key);
@@ -935,9 +1022,9 @@ function viewFeeling(param){
   const list=feelingMatches(f);
   const group=FEELING_GROUPS.find(g=>g.key===f.group);
   return '<div class="crumb"><a href="#feeling" onclick="event.preventDefault();nav(\'feeling\')">Start from a feeling</a>'+(group?' / '+esc(group.label):'')+'</div>'+
-    '<h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">'+esc(f.label)+'</h1>'+
+    '<h1 class="view-h">'+esc(f.label)+'</h1>'+
     '<p class="small" style="max-width:520px">A starting cluster, not the full picture \u2014 <a href="#all" onclick="event.preventDefault();nav(\'all\')">browse everything</a> any time.</p>'+
-    '<div class="count">'+list.length+' possible matches</div>'+
+    '<div class="count" role="status" aria-live="polite">'+list.length+' possible matches</div>'+
     (list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>':'<div class="empty">No strong matches yet \u2014 try browsing by category instead.</div>');
 }
 
@@ -954,12 +1041,12 @@ function viewSearch(q){
     }).sort((a,b)=>a.name.localeCompare(b.name));
   }
   return '<div class="label">Search</div>'+
-    '<div class="search-inline" style="margin-left:0;margin-right:0;max-width:640px"><span class="sic">'+ic("search",18)+'</span><input id="searchBoxLive" type="text" value="'+esc(q)+'" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search"></div>'+
-    (n?'<div class="count">'+list.length+' result'+(list.length===1?"":"s")+'</div>'+(list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>':'<div class="empty">No entries match \u201c'+esc(q)+'\u201d.</div>'):'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition.</p>');
+    '<div class="search-inline" style="margin-left:0;margin-right:0;max-width:640px"><span class="sic">'+ic("search",18)+'</span><input id="searchBoxLive" type="text" value="'+esc(q)+'" placeholder="Search a term, or paste a phrase\u2026" aria-label="Search" oninput="syncClearBtn(this)"><button type="button" class="clr'+(q?" show":"")+'" aria-label="Clear search" onclick="clearSearch(this)">'+ic("close",16)+'</button></div>'+
+    (n?'<div class="count" role="status" aria-live="polite">'+list.length+' result'+(list.length===1?"":"s")+'</div>'+(list.length?'<div class="rowlist">'+list.map(rowHTML).join("")+'</div>':'<div class="empty">No entries match \u201c'+esc(q)+'\u201d.</div>'):'<p class="small" style="margin-top:16px">Type to search all 349 entries by name, category, and definition. Press <span class="kbdhint">/</span> from anywhere to jump back here.</p>');
 }
 
 function viewCore(){
-  return '<div class="label">The core set</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">The North Stars</h1>'+
+  return '<div class="label">The core set</div><h1 class="view-h">The North Stars</h1>'+
     '<p class="small" style="max-width:580px">'+CORE_TACTICS.length+' tactics, picked out from all 349 by how often they actually show up \u2014 well-established enough to name from real text, and recurring across the most documented patterns. Not sure where to start? Start here.</p>'+
     '<div class="count">'+CORE_TACTICS.length+' entries</div>'+
     '<div class="rowlist">'+CORE_TACTICS.map(rowHTML).join("")+'</div>';
@@ -970,14 +1057,14 @@ function viewAll(){
   if(ALL_STATE.catFilter!=="all") list=list.filter(e=>e.cat===ALL_STATE.catFilter);
   const shown=list.slice(0,ALL_STATE.shown);
   const letters=[...new Set(ALPHA.map(e=>e.name[0].toUpperCase()))];
-  return '<div class="label">The full index</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">All 349 entries</h1>'+
+  return '<div class="label">The full index</div><h1 class="view-h">All 349 entries</h1>'+
     '<div class="toolbar">'+
       '<button class="chip" aria-pressed="'+(ALL_STATE.sort==="az")+'" onclick="ALL_STATE.sort=\'az\';ALL_STATE.shown=40;renderRoute()">A\u2013Z</button>'+
       '<button class="chip" aria-pressed="'+(ALL_STATE.sort==="cat")+'" onclick="ALL_STATE.sort=\'cat\';ALL_STATE.shown=40;renderRoute()">By category</button>'+
       '<select onchange="ALL_STATE.catFilter=this.value;ALL_STATE.shown=40;renderRoute()"><option value="all">All categories</option>'+CATS.map(c=>'<option value="'+esc(c)+'"'+(ALL_STATE.catFilter===c?" selected":"")+'>'+esc(c)+'</option>').join("")+'</select>'+
     '</div>'+
     (ALL_STATE.sort==="az"?'<div class="idxbar" aria-label="Jump to letter">'+letters.map(l=>'<button onclick="jumpToLetter(\''+l+'\')">'+l+'</button>').join("")+'</div>':"")+
-    '<div class="count">'+list.length+' entries \u00b7 showing '+shown.length+'</div>'+
+    '<div class="count" role="status" aria-live="polite">'+list.length+' entries \u00b7 showing '+shown.length+'</div>'+
     '<div id="allList">'+shown.map(rowHTML).join("")+'</div>'+
     (shown.length<list.length?'<button class="loadmore" onclick="ALL_STATE.shown+=60;renderRoute()">Show more ('+(list.length-shown.length)+' remaining)</button>':"");
 }
@@ -1051,6 +1138,7 @@ function viewEntry(slug){
     entryBodyHTML(e,c)+
     trailNote+
     '<div class="entry-actions"><button class="btn" onclick="nav(\'category/'+encodeURIComponent(e.cat)+'\')">More in '+esc(e.cat)+'</button><button class="btn" onclick="'+esc("printOne('"+jsq(name)+"')")+'">Print this entry</button></div>'+
+    '<div class="prevnext-hint small">Tip: use <span class="kbdhint">\u2190</span> <span class="kbdhint">\u2192</span> to move through entries A\u2013Z.</div>'+
     '<div class="prevnext"><a href="#entry/'+SLUG_BY_NAME[prev.name]+'" onclick="event.preventDefault();nav(\'entry/'+SLUG_BY_NAME[prev.name]+'\')"><span class="lbl">\u2190 Previous</span>'+esc(prev.name)+'</a>'+
     '<a class="next" href="#entry/'+SLUG_BY_NAME[next.name]+'" onclick="event.preventDefault();nav(\'entry/'+SLUG_BY_NAME[next.name]+'\')"><span class="lbl">Next \u2192</span>'+esc(next.name)+'</a></div>';
 }
@@ -1063,7 +1151,7 @@ function viewPatterns(param){
     if(!r) return '<div class="empty">Pattern not found.</div>';
     const have=trailNamesSet();
     return '<div class="crumb"><a href="#patterns" onclick="event.preventDefault();nav(\'patterns\')">Composite patterns</a></div>'+
-      '<h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 10px">'+esc(r.n)+'</h1>'+
+      '<h1 class="view-h wide">'+esc(r.n)+'</h1>'+
       (r.d?'<p style="max-width:620px;line-height:1.6;color:var(--sub);margin-bottom:16px">'+esc(r.d)+'</p>':'')+
       '<div class="chain">'+r.c.map((n,i)=>(i>0?'<span class="arrow">\u2192</span>':"")+(SLUG_BY_NAME[n]?'<a href="#entry/'+SLUG_BY_NAME[n]+'" onclick="event.preventDefault();nav(\'entry/'+SLUG_BY_NAME[n]+'\')" style="'+(have.has(n)?"border-color:var(--accent);color:var(--accent)":"")+'">'+esc(n)+'</a>':'<span>'+esc(n)+'</span>')).join("")+'</div>'+
       '<p class="small" style="margin-top:14px">'+r.c.filter(n=>have.has(n)).length+' of '+r.c.length+' steps already in your reading trail.</p>';
@@ -1071,7 +1159,7 @@ function viewPatterns(param){
   const q=norm(PATTERNS_Q);
   const list=RECIPES.filter(r=>!q||norm(r.n).includes(q)||r.c.some(n=>norm(n).includes(q))||(r.d&&norm(r.d).includes(q)));
   const have=trailNamesSet();
-  return '<div class="label">Composite patterns</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">'+RECIPES.length+' documented sequences</h1>'+
+  return '<div class="label">Composite patterns</div><h1 class="view-h">'+RECIPES.length+' documented sequences</h1>'+
     '<p class="small" style="max-width:560px">Real dynamics are rarely one tactic \u2014 they\u2019re several, chained over time. Each of these is a documented chain, validated against the full 349-entry field guide; every step links to its full entry.</p>'+
     '<div class="search-inline" style="margin-left:0;max-width:480px"><span class="sic">'+ic("search",18)+'</span><input value="'+esc(PATTERNS_Q)+'" oninput="PATTERNS_Q=this.value;renderRoute()" placeholder="Search patterns\u2026"></div>'+
     '<div class="count">'+list.length+' patterns</div>'+
@@ -1090,7 +1178,7 @@ function viewTrail(){
   const trail=store.get("trail",[]);
   const starred=store.get("starred",[]);
   const matches=matchedRecipesForTrail(3);
-  return '<div class="label">Your trail</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">What you\u2019ve read</h1>'+
+  return '<div class="label">Your trail</div><h1 class="view-h">What you\u2019ve read</h1>'+
     '<p class="small">Your trail, stars, and notebook stay only on this device — never uploaded or synced.</p>'+
     '<div class="entry-actions" style="margin-top:16px"><button class="btn primary" onclick="exportNotebook()">Download field notebook (.txt)</button>'+
     (trail.length||starred.length?'<button class="btn" onclick="clearTrailAndStars()">Clear trail &amp; stars</button>':'')+
@@ -1413,7 +1501,7 @@ function initConstellation(){
 }
 
 function viewConstellation(){
-  return '<div class="label">The constellation</div><h1 style="font-family:var(--serif);font-size:26px;margin:10px 0 4px">Every tactic, mapped</h1>'+
+  return '<div class="label">The constellation</div><h1 class="view-h">Every tactic, mapped</h1>'+
     '<p class="small" style="max-width:600px">Color = category. Size = how often it shows up inside a documented composite pattern. Lines = related tactics. Tap a star to open it. <a href="#all" onclick="event.preventDefault();nav(\'all\')">Trouble with the map? Browse as a list instead \u2192</a></p>'+
     '<div style="max-width:600px">'+feSection("How to read this map",
       '<p><strong>Each star is one of the 349 tactics.</strong> Stars near each other tend to share a category \u2014 the map gently pulls same-category tactics toward a shared point, so clusters of color are clusters of meaning, not coincidence.</p>'+
@@ -1465,6 +1553,71 @@ document.addEventListener("click", function(e){
     body.addEventListener("transitionend",function te(ev){ if(ev.propertyName!=="height") return; body.removeEventListener("transitionend",te); details.open=false; cleanup(); });
   }
 });
+
+/* ---------- back to top ----------
+   Shown only past two screens of scroll, so it never covers content on the
+   short views (landing, an average entry) where it would be noise. */
+(function(){
+  const btn=document.getElementById("toTop");
+  if(!btn) return;
+  btn.addEventListener("click",()=>{
+    window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
+  });
+  let tick=false;
+  addEventListener("scroll",()=>{
+    if(tick) return; tick=true;
+    requestAnimationFrame(()=>{ btn.classList.toggle("show", scrollY>innerHeight*1.5); tick=false; });
+  },{passive:true});
+})();
+
+/* ---------- keyboard shortcuts ----------
+   A 349-entry reference is used by typing. "/" jumps to search from anywhere,
+   Escape clears a search in progress, and the arrow keys walk the A–Z order
+   already shown in the Previous/Next footer. All are suppressed while the user
+   is actually typing in a field, and while the catalogue drawer is open. */
+document.addEventListener("keydown",function(e){
+  const t=e.target, tag=t&&t.tagName;
+  const typing = tag==="INPUT"||tag==="TEXTAREA"||tag==="SELECT"||(t&&t.isContentEditable);
+  const chromeOpen = document.getElementById("nf-chrome") && document.getElementById("nf-chrome").classList.contains("nf-open");
+  if(e.metaKey||e.ctrlKey||e.altKey) return;
+
+  if(e.key==="Escape" && typing && (t.id==="searchBoxLive"||t.id==="landingSearch")){
+    if(t.value){ t.value=""; syncClearBtn(t); if(t.id==="searchBoxLive") nav("search"); }
+    else t.blur();
+    return;
+  }
+  if(typing||chromeOpen) return;
+
+  if(e.key==="/"){
+    e.preventDefault();
+    const box=document.getElementById("searchBoxLive")||document.getElementById("landingSearch");
+    if(box){ box.focus(); box.select(); } else nav("search");
+    return;
+  }
+  const r=parseHash();
+  if(r.view==="entry"&&(e.key==="ArrowLeft"||e.key==="ArrowRight")){
+    const nm=NAME_BY_SLUG[r.param];
+    const i=ALPHA.findIndex(x=>x.name===nm);
+    if(i<0) return;
+    const to=e.key==="ArrowLeft"?ALPHA[(i-1+ALPHA.length)%ALPHA.length]:ALPHA[(i+1)%ALPHA.length];
+    e.preventDefault();
+    nav("entry/"+SLUG_BY_NAME[to.name]);
+  }
+});
+
+/* ---------- search field clear button ---------- */
+function syncClearBtn(input){
+  const wrap=input&&input.closest(".search-inline");
+  const btn=wrap&&wrap.querySelector(".clr");
+  if(btn) btn.classList.toggle("show", !!input.value);
+}
+function clearSearch(btn){
+  const wrap=btn.closest(".search-inline");
+  const input=wrap&&wrap.querySelector("input");
+  if(!input) return;
+  input.value=""; syncClearBtn(input); input.focus();
+  if(input.id==="searchBoxLive") nav("search");
+}
 
 /* ---------- bootstrap ---------- */
 document.documentElement.setAttribute("data-theme", store.get("theme", preferredTheme()));
