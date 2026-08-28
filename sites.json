@@ -70,7 +70,7 @@
       "netlifySiteId": "8b3d5fdf-49e5-46eb-bb53-97d69039a44e",
       "deploySource": "cli",
       "localSource": "content/prose/_raw/playbook.html",
-      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. Not yet deployed.",
+      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. 2026-08-28: see changelog v2 for a further round of verified design/correctness fixes (3 more beacon-contradiction instances, theme persistence, font-face collapse, type scale, copy-to-clipboard). Still carries the legacy nh-tab hub-nav widget, not yet regenerated to the current nf-seal generation used by newer projects (Festie Bible and others are unreachable from this page as a result) -- flagged, not yet fixed. Not yet deployed.",
       "dataSource": "content/playbook-data.json",
       "dataSourceNote": "The three datasets lifted out of the HTML mirror into diffable JSON by design/extract-playbook-data.py. This is what other tooling should read; the HTML stays as the provenance record. Rebuild rather than hand-editing.",
       "hasGitRepo": false,
@@ -78,8 +78,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v1",
+      "version": "v2",
       "changelog": [
+        {
+          "date": "2026-08-28",
+          "version": "v2",
+          "summary": "Repo-side only, not yet deployed: fixed 3 more instances of the beacon-vs-privacy-claim contradiction (footer, trail view, downloaded notebook) beyond the meta description/hero subtitle fixed 2026-08-27; theme now persists correctly with no flash-of-wrong-theme and falls back to OS prefers-color-scheme for first-time visitors; added a Copy button next to each boundary script; collapsed 12 redundant Fraunces @font-face declarations to 4 (-713KB, ~13.5% of file size), verified pixel-identical; cleaned up a flat/noisy type scale (14 near-duplicate font-size values down to 8 real steps) and a zero-offset glow anti-pattern on the two logo hovers. On-page Updates section (v2, in the footer) added for the first time this round."
+        },
         {
           "date": "2026-08-25",
           "version": "v1",

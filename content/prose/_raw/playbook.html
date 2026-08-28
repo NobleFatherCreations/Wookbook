@@ -250,6 +250,10 @@
   .btn:hover{border-color:var(--accent)}
   .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-grad));color:var(--accent-ink);border:none;font-family:var(--sans);font-weight:700;box-shadow:0 6px 18px -6px var(--glow-1),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .15s,box-shadow .15s}
   .btn.primary:hover{transform:translateY(-1px);box-shadow:0 10px 24px -6px var(--glow-1),inset 0 1px 0 rgba(255,255,255,.25)}
+  .copy-row{display:flex;align-items:flex-start;gap:10px;flex-wrap:wrap}
+  .copy-row p{flex:1;min-width:200px}
+  .copy-btn{flex-shrink:0;min-height:30px;padding:6px 12px;margin-top:10px}
+  .copy-btn[data-copied]{border-color:var(--good);color:var(--good)}
   .prevnext{display:flex;justify-content:space-between;gap:10px;margin-top:34px;padding-top:18px;border-top:1px solid var(--line2)}
   .prevnext a{flex:1;font-size:13.5px;color:var(--sub);text-decoration:none;padding:10px 4px}
   .prevnext a:hover{color:var(--accent)}
@@ -332,6 +336,9 @@
   .footer-links a{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:12.5px;color:var(--sub);text-decoration:none;padding:7px 13px;border-radius:var(--radius-pill);border:1px solid var(--line);background:var(--card);transition:all .15s}
   .footer-links a:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px);box-shadow:0 4px 12px -4px var(--glow-1)}
   .footer-fine{max-width:1200px;margin:0 auto;padding:0 18px 22px;font-size:11px;color:var(--mut);text-align:center;font-family:var(--mono)}
+  .updates-block{max-width:640px;margin:0 auto;padding:0 18px 28px;text-align:left}
+  .updates-list{margin:8px 0 0;padding-left:18px;font-size:11px;color:var(--mut);line-height:1.7}
+  .updates-list li{margin-top:4px}
 </style>
 <style id="embedded-fonts">
 @font-face {
@@ -505,6 +512,30 @@ function jsq(s){return String(s).replace(/\\/g,"\\\\").replace(/'/g,"\\'");}
    (JSON.stringify() must never be used inside onclick="..." — it wraps in literal double
    quotes, which silently truncates the surrounding HTML attribute for every value.) */
 function download(filename, text){const blob=new Blob([text],{type:"text/plain"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=filename;document.body.appendChild(a);a.click();a.remove();}
+function copyBoundaryScript(btn){
+  const row=btn.closest(".copy-row");
+  const text=row&&row.querySelector(".copy-text")?row.querySelector(".copy-text").textContent:"";
+  if(!text) return;
+  const onDone=()=>{
+    const orig=btn.textContent;
+    btn.textContent="Copied";
+    btn.setAttribute("data-copied","");
+    setTimeout(()=>{btn.textContent=orig;btn.removeAttribute("data-copied")},1500);
+  };
+  const fallback=()=>{
+    try{
+      const ta=document.createElement("textarea");
+      ta.value=text;ta.style.position="fixed";ta.style.opacity="0";
+      document.body.appendChild(ta);ta.select();document.execCommand("copy");document.body.removeChild(ta);
+      onDone();
+    }catch(e){}
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(onDone).catch(fallback);
+  }else{
+    fallback();
+  }
+}
 function debounce(fn,ms){let t;return function(){clearTimeout(t);const a=arguments;t=setTimeout(()=>fn.apply(null,a),ms);};}
 
 const store=(()=>{let mem={},ok=false;
@@ -784,6 +815,15 @@ function footerHTML(){
       '</div>'+
     '</div>'+
     '<div class="footer-fine">No AI, no account required. Your trail, stars, and notebook stay on this device.</div>'+
+    '<div class="updates-block" id="updates">'+
+      '<span class="badge" style="border-color:var(--line2);color:var(--mut)">v2 &mdash; 2026-08-28</span>'+
+      '<ul class="updates-list">'+
+        '<li>Fixed a page description that overclaimed &ldquo;nothing is ever sent anywhere&rdquo; &mdash; this page loads basic, anonymous page-view analytics. Your trail, stars, and saved notebook are still 100% local and never uploaded.</li>'+
+        '<li>Dark/light mode now remembers your choice, and matches your device&rsquo;s setting the first time you visit.</li>'+
+        '<li>Added a Copy button next to each boundary script, so you can copy it straight to a text or note.</li>'+
+        '<li>Smaller page (about 700KB lighter) and cleaner, more consistent spacing across labels and buttons.</li>'+
+      '</ul>'+
+    '</div>'+
   '</footer>';
 }
 function toggleTheme(){
@@ -967,7 +1007,7 @@ function entryBodyHTML(e,c,opts){
     (c.pattern_over_time_signs&&c.pattern_over_time_signs.length?feSection("Pattern over time",ul(c.pattern_over_time_signs)):"")+
     feSection("Repair &amp; boundary-respect checks","<p><strong>Repair check:</strong> "+esc(c.repair_check)+"</p><p style='margin-top:10px'><strong>Boundary respect check:</strong> "+esc(c.boundary_respect_check)+"</p>")+
     feSection("Mechanism &amp; possible impact","<p><strong>Psychological mechanism:</strong> "+esc(c.psychological_mechanism)+"</p><p style='margin-top:10px'><strong>Possible impact on receiver:</strong> "+esc(c.possible_impact_on_receiver)+"</p>")+
-    feSection("Response options &amp; boundary script","<ul>"+respRows+"</ul>"+respNote+"<p style='margin-top:10px'><strong>Boundary script:</strong> "+esc(c.boundary_script)+"</p>")+
+    feSection("Response options &amp; boundary script","<ul>"+respRows+"</ul>"+respNote+"<div class='copy-row'><p style='margin-top:10px'><strong>Boundary script:</strong> <span class='copy-text'>"+esc(c.boundary_script)+"</span></p><button type='button' class='btn copy-btn' onclick='copyBoundaryScript(this)'>Copy</button></div>")+
     (!opts.hideSafety&&!isSafetySensitive&&c.safety_note?'<div class="fe-safetybox">'+ic("shield",18)+' '+esc(c.safety_note)+'</div>':"")+
     (c.misuse_warning&&c.misuse_warning.length?feSection("Misuse warning",ul(c.misuse_warning)):"")+
     (c.related_tactics&&c.related_tactics.length?feSection("Related tactics &amp; how to tell them apart",relatedLinksHTML(c.related_tactics)+(c.how_to_distinguish_from_related?"<p style='margin-top:10px'>"+esc(c.how_to_distinguish_from_related)+"</p>":"")+(c.absorbs&&c.absorbs.length?"<p style='margin-top:10px' class='small'>Also covers: "+c.absorbs.map(esc).join(", ")+"</p>":"")):"");
