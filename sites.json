@@ -78,8 +78,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v4",
+      "version": "v5",
       "changelog": [
+        {
+          "date": "2026-08-29",
+          "version": "v5",
+          "summary": "Adds \"Narrow it down\" (#/narrow): a guided multiple-choice walkthrough whose options are derived from the set still matching and rendered only when >=1 entry sits behind them, so a zero-result dead end is unreachable rather than unlikely -- proved by walking all 495 reachable states (0 dead ends, 0 empty options). Its scoring is frozen offline by design/build-narrow-index.py and verified byte-identical to the live scorer for all 35 feelings. Two-agent audit fixed: a blank-page class with 12 confirmed triggers (malformed %-escape in a truncated link, wrong-shaped localStorage) now all recover via safeDecode, an error boundary that renders chrome outside the try, a store type-shape guard and static seed content in #main; the pasted search phrase no longer enters the URL/history/autocomplete; long pastes bounded (were ~2s freezes); printing force-opens the closed <details> so the boundary script is actually printed; ul() made total; one notFound() helper so no dead end lacks a way out; Patterns search keeps focus (only the first character used to register); show-more/star no longer scroll to top. Quick exit reframed as a plain Close button per user direction (this is a general reference, not a crisis build), and ordinary browser Back restored with it. Public Sans collapsed 8 faces -> 2 (8 declarations shared only 2 binaries), -179KB, verified pixel-identical under reduced-motion capture."
+        },
         {
           "date": "2026-08-28",
           "version": "v4",
