@@ -121,13 +121,13 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceVerified": "byte-exact match to live content, 2026-08-29 (md5 ac2366c625d20628607fcb8c4628929f)",
+      "localSourceVerified": "byte-exact match to live content, 2026-08-29 (md5 2d5051f20f1a21e1f1f7a0e64d4c96b3)",
       "lastDeploy": {
         "date": "2026-08-29",
-        "version": "v6",
-        "deployId": "6a928896ee6f57bf7ca20427",
+        "version": "v7",
+        "deployId": "6a92d467b551c9c57993a8e6",
         "method": "netlify MCP deploy-site -> npx @netlify/mcp from a staging dir containing only index.html",
-        "verified": "curl of noblefathercreations.com/playbook byte-identical to the repo file; 86/86 thread audit re-run against the downloaded live page"
+        "verified": "curl of noblefathercreations.com/playbook byte-identical to the repo file (md5 2d5051f20f1a21e1f1f7a0e64d4c96b3); 127/127 thread audit re-run against the downloaded live page"
       }
     },
     {
