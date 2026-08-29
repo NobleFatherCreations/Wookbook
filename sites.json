@@ -1,6 +1,6 @@
 {
   "generated": "2026-08-02",
-  "updated": "2026-08-27",
+  "updated": "2026-08-29",
   "note": "Machine-readable registry of every Noble Father Creations live project. Built by fetching noblefathercreations.com live, cross-referencing the connected Netlify account (all netlifySite mappings below are byte-verified against live content, not guessed), and cross-referencing a user-supplied review package (source/) documenting a prior design session. Any AI/tool working on this project should read this file first instead of re-guessing URLs.",
   "hub": {
     "title": "Noble Father Creations",
@@ -70,7 +70,7 @@
       "netlifySiteId": "8b3d5fdf-49e5-46eb-bb53-97d69039a44e",
       "deploySource": "cli",
       "localSource": "content/prose/_raw/playbook.html",
-      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. 2026-08-28: see changelog v2 for a further round of verified design/correctness fixes (3 more beacon-contradiction instances, theme persistence, font-face collapse, type scale, copy-to-clipboard). 2026-08-28 (later): regenerated to nf-seal (14-volume catalogue, rebuilt from this file's own project list, re-skinned onto this page's tokens rather than the wax/plum source palette) -- Festie Bible, Faith, and Sacred Divide are all reachable from this page now. Also added real motion (list/card stagger, smooth accordion open-close, press feedback) and fixed a pre-existing double-escaping bug on 4 of 6 per-entry section titles. See changelog v3. Not yet deployed.",
+      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. 2026-08-28: see changelog v2 for a further round of verified design/correctness fixes (3 more beacon-contradiction instances, theme persistence, font-face collapse, type scale, copy-to-clipboard). 2026-08-28 (later): regenerated to nf-seal (14-volume catalogue, rebuilt from this file's own project list, re-skinned onto this page's tokens rather than the wax/plum source palette) -- Festie Bible, Faith, and Sacred Divide are all reachable from this page now. Also added real motion (list/card stagger, smooth accordion open-close, press feedback) and fixed a pre-existing double-escaping bug on 4 of 6 per-entry section titles. See changelog v3. DEPLOYED 2026-08-29 as v5 and byte-verified live on both the netlify.app and custom-domain URLs; this file and live are in sync.",
       "dataSource": "content/playbook-data.json",
       "dataSourceNote": "The three datasets lifted out of the HTML mirror into diffable JSON by design/extract-playbook-data.py. This is what other tooling should read; the HTML stays as the provenance record. Rebuild rather than hand-editing.",
       "hasGitRepo": false,
@@ -110,7 +110,15 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "localSourceVerified": "byte-exact match to live content, 2026-08-29 (md5 3a93983da0196ab0c39633fb581a4595, verified on both noblepatterns.netlify.app and noblefathercreations.com/playbook)",
+      "lastDeploy": {
+        "date": "2026-08-29",
+        "version": "v5",
+        "deployId": "6a927e539afd19008ce5e62b",
+        "method": "netlify MCP deploy-site -> npx @netlify/mcp from a staging dir containing only index.html",
+        "verified": "curl of both URLs byte-identical to content/prose/_raw/playbook.html; 78/78 thread audit re-run against the live page"
+      }
     },
     {
       "codename": "root",
