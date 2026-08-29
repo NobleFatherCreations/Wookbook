@@ -78,8 +78,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v5",
+      "version": "v6",
       "changelog": [
+        {
+          "date": "2026-08-29",
+          "version": "v6",
+          "summary": "Full visual redesign. Diagnosis was measurable: this page carried 0.01MB of artwork against 0.60MB in the Festie Codex and 0.41MB in Playground Protectors -- both of which open with a commissioned illustration while this opened with a paragraph on a flat ground. Commissioned an engraved celestial chart whose constellations are people rather than beasts (157KB WebP, embedded); it leads the page with the title card set beneath rather than over it. Retired Fraunces and Faculty Glyphic (both reading faces) for a subsetted SIL OFL period system: Cinzel Decorative masthead, IM Fell English display, IM Fell English SC section headings -- font payload 390.7KB -> 190.8KB, so the page shrank despite gaining the cover. New shared plate surface language (flat paper ground, 3px radius, inset hairline double rule, brass corner register marks, generated SVG paper grain and vignette) replacing flat cards across doors, tiles, rows, sections, comparison columns and walkthrough options; search became an engraved slot. Palette resampled off the artwork. One authored entrance (plate resolves out of blur, title card rises). Two self-caught regressions fixed: an entrance that scaled above 1 and scrolled the page sideways mid-flight, and a mobile hero overlap that hid the artwork. 86/86 audit, 495-state walkthrough invariant, zero console errors, no overflow. 4.16MB, down from 4.20MB."
+        },
         {
           "date": "2026-08-29",
           "version": "v5",
