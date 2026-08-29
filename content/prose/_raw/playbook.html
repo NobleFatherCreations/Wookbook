@@ -37,6 +37,7 @@
     --serif:'Fraunces',Georgia,'Times New Roman',"Iowan Old Style",serif;
     --sans:'Public Sans',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
     --mono:"Space Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+    --display:'Faculty Glyphic','Fraunces',Georgia,serif;
   }
   [data-theme="dark"]{
     --bg:#0A0D14; --bg-elev:#0F131C; --card:#141926; --card-2:#1A2030;
@@ -76,7 +77,7 @@
   a{color:var(--accent2)}
   .mono{font-family:var(--mono)}
   .serif{font-family:var(--serif)}
-  .label{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--sub);font-weight:600}
+  .label{font-family:var(--display);font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--sub);font-weight:400}
   .small{font-size:12.5px;color:var(--mut)}
   ul.plain{list-style:none;margin:0;padding:0}
   :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
@@ -281,14 +282,67 @@
 
   .fe-safetybox{margin-top:14px;padding:14px 16px;border-radius:var(--radius-md);background:var(--safe-bg);border:1px solid var(--safe)}
   .fe-safetybox strong{color:var(--safe)}
-  .fe-body{margin-top:16px;font-size:16px;line-height:1.68}
+  /* Prose is capped near 68 characters. Entry text ran ~95ch at desktop width,
+     well past the 65-75 band where the eye reliably finds the next line start. */
+  .fe-body{margin-top:16px;font-size:16px;line-height:1.68;max-width:68ch}
   .fe-overview{background:linear-gradient(135deg,var(--card-2),transparent);border-left:3px solid var(--accent);padding:4px 0 4px 16px;border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+
+  /* ---- the lead ---------------------------------------------------------
+     The one-line plain definition is the sentence that answers "is this the
+     thing that happened to me". It previously carried the same weight as the
+     two paragraphs beneath it, so the eye had no anchor and hit a wall of
+     even text. It gets display treatment; the expanded definition drops back
+     to ordinary body so the two are no longer competing. */
+  .fe-lead{font-family:var(--serif);font-size:clamp(17px,2.1vw,20px);line-height:1.45;
+    color:var(--ink);margin:0 0 12px;max-width:60ch;text-wrap:pretty}
+  .fe-overview p:not(.fe-lead){color:var(--sub)}
+
+  /* ---- is / is-not, side by side ----------------------------------------
+     Telling these apart IS the reader's task, so they are shown as a
+     comparison rather than two stacked lists that look identical. Affirmative
+     takes the accent rule and solid border; the negative is dashed and muted
+     -- the same visual grammar the page already uses for its review badge. */
+  .fe-compare{display:grid;gap:14px;margin-top:18px}
+  /* align-items:start so each column hugs its own content -- stretched to
+     equal height, the shorter one trails a block of dead space that reads as
+     a mistake rather than as a deliberate pair. */
+  @media (min-width:820px){ .fe-compare{grid-template-columns:1fr 1fr;gap:18px;align-items:start} }
+  .fe-col{border:1px solid var(--line2);border-radius:var(--radius-md);padding:15px 17px 17px;
+    background:linear-gradient(165deg,var(--card),var(--card-2));
+    box-shadow:var(--shadow),inset 0 1px 0 var(--edge-hi)}
+  .fe-col.is{border-left:3px solid var(--accent)}
+  .fe-col.isnot{border-style:dashed;border-color:var(--line);background:none;box-shadow:none}
+  .fe-col ul{margin:0;padding-left:18px}
+  .fe-col li{margin-top:7px;line-height:1.55;font-size:14.5px}
+  .fe-col li:first-child{margin-top:0}
+  .fe-col .fe-heading{margin-top:0}
+  .fe-col .sub-h{font-weight:700;font-size:13.5px;margin:14px 0 6px;color:var(--sub)}
+
+  /* ---- less / more concerning, side by side ------------------------------
+     Semantically opposed, so shown opposed. Colour alone is not the signal:
+     each carries its own heading and rule, so it still reads without colour. */
+  .fe-scale{display:grid;gap:14px;margin-top:4px}
+  @media (min-width:760px){ .fe-scale{grid-template-columns:1fr 1fr;gap:16px;align-items:start} }
+  .fe-scale > div{border-radius:var(--radius-sm);padding:13px 15px;border:1px solid var(--line2)}
+  .fe-scale .less{border-left:3px solid var(--good)}
+  .fe-scale .more{border-left:3px solid var(--danger)}
+  .fe-scale h4{margin:0 0 8px;font-family:var(--display);font-size:12.5px;letter-spacing:.1em;
+    text-transform:uppercase;font-weight:400}
+  .fe-scale .less h4{color:var(--good)}
+  .fe-scale .more h4{color:var(--danger)}
+  .fe-scale ul{margin:0;padding-left:17px}
+  .fe-scale li{margin-top:6px;line-height:1.5;font-size:14px}
   .fe-body p{margin:0 0 12px}
-  .fe-heading{font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--sub);margin:18px 0 7px;font-family:var(--mono)}
+  /* Faculty Glyphic (SIL OFL, subset to 87 glyphs, ~10KB) -- an inscriptional
+     glyphic serif. It gives the structural headings a voice of their own,
+     distinct from both the Fraunces display type and the Space Mono metadata,
+     so the eye can tell "this is a section" from "this is a label" instantly. */
+  .fe-heading{font-family:var(--display);font-size:13px;font-weight:400;text-transform:uppercase;
+    letter-spacing:.12em;color:var(--accent);margin:18px 0 8px}
   .fe-section{margin-top:10px;background:linear-gradient(165deg,var(--card-2),var(--card));border:1px solid var(--line2);border-radius:var(--radius-md);overflow:hidden;transition:border-color .15s}
   .fe-section:hover{border-color:var(--line)}
   .fe-section[open]{border-color:var(--accent)}
-  .fe-section>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 15px;font-size:14.5px;font-weight:700}
+  .fe-section>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;font-family:var(--display);font-size:15px;font-weight:400;letter-spacing:.01em}
   .fe-section>summary::-webkit-details-marker{display:none}
   .fe-section>summary:hover{color:var(--accent)}
   .fe-section .chv{transition:transform .2s cubic-bezier(.16,1,.3,1);color:var(--mut)}
@@ -460,7 +514,11 @@
       font-family:var(--mono);font-size:8pt;color:#555}
   }
 
-  @media (max-width:480px){ .entry-title-row{flex-direction:column} }
+  /* Stacking this row on mobile left the star orphaned on its own line at the
+     far left, below a gap. The star already has flex-shrink:0 and the row is
+     align-items:flex-start, so the title can wrap beneath it while the star
+     stays top-right where it belongs. */
+  @media (max-width:480px){ .entry-title-row{gap:10px} }
 
   /* =========================================================================
      FOOTER — Noble Father Creations branding, present on every view
@@ -485,6 +543,13 @@
   .updates-list li{margin-top:4px}
 </style>
 <style id="embedded-fonts">
+@font-face {
+  font-family: 'Faculty Glyphic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(data:font/woff2;base64,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) format('woff2');
+}
 @font-face {
   font-family: 'Fraunces';
   font-style: italic;
@@ -989,6 +1054,9 @@ function footerHTML(){
     '<div class="updates-block" id="updates">'+
       '<span class="badge" style="border-color:var(--line2);color:var(--mut)">v5 &mdash; 2026-08-29</span>'+
       '<ul class="updates-list">'+
+        '<li><strong>A new look for every entry.</strong> A distinctive typeface for section headings, the plain-language definition set as a proper opening line, and &ldquo;what it is&rdquo; / &ldquo;what it is not&rdquo; shown side by side instead of stacked &mdash; telling those two apart is the whole job, so they now read as a comparison.</li>'+
+        '<li>&ldquo;Less concerning / more concerning&rdquo; is likewise shown as two opposed columns.</li>'+
+        '<li>Text lines are shorter and easier to track, and the star button no longer drops below the title on a phone.</li>'+
         '<li><strong>New: Narrow it down.</strong> Answer a few questions about what happened and work down to the closest entries &mdash; useful when you don&rsquo;t have the word for it yet and searching keeps missing.</li>'+
         '<li>Fixed a fault where a shortened or broken link could load a completely blank page with no way back. It now always shows you something and a way onward.</li>'+
         '<li>What you type into search no longer goes into the web address, so it stays out of your browser history and address-bar suggestions.</li>'+
@@ -1294,10 +1362,15 @@ function entryBodyHTML(e,c,opts){
   const respRows=Object.keys(RESP_LABEL).filter(k=>c.response_options&&c.response_options[k]).map(k=>"<li><strong>"+RESP_LABEL[k]+":</strong> "+esc(c.response_options[k])+"</li>").join("");
   const respNote=c.response_options&&c.response_options._note?'<p class="small" style="margin-top:6px">'+esc(c.response_options._note)+"</p>":"";
   return (!opts.hideSafety&&isSafetySensitive?'<div class="fe-safetybox">'+ic("shield",18)+' <strong>Safety note.</strong> '+esc(c.safety_note)+'</div>':'')+
-    '<div class="fe-body fe-overview"><div class="fe-heading">Overview</div><p>'+esc(c.plain_language_summary)+'</p><p>'+esc(c.expanded_definition)+'</p>'+(c.why_this_matters?'<p>'+esc(c.why_this_matters)+'</p>':'')+'</div>'+
-    (c.what_it_is&&c.what_it_is.length?'<div class="fe-body"><div class="fe-heading">What it is</div>'+ul(c.what_it_is)+'</div>':'')+
-    '<div class="fe-body"><div class="fe-heading">What it is NOT</div>'+ul(c.what_it_is_not)+
-      (c.common_false_positives&&c.common_false_positives.length?"<p style='margin-top:10px;font-weight:700'>Common false positives:</p>"+ul(c.common_false_positives):"")+'</div>'+
+    '<div class="fe-body fe-overview"><div class="fe-heading">Overview</div><p class="fe-lead">'+esc(c.plain_language_summary)+'</p><p>'+esc(c.expanded_definition)+'</p>'+(c.why_this_matters?'<p>'+esc(c.why_this_matters)+'</p>':'')+'</div>'+
+    /* Shown as a comparison: separating these two is the reader's actual task,
+       and two identically-styled stacked lists gave the eye nothing to work with. */
+    '<div class="fe-compare">'+
+      '<div class="fe-col is"><div class="fe-heading">What it is</div>'+ul(c.what_it_is)+'</div>'+
+      '<div class="fe-col isnot"><div class="fe-heading">What it is not</div>'+ul(c.what_it_is_not)+
+        (c.common_false_positives&&c.common_false_positives.length?'<p class="sub-h">Commonly mistaken for this</p>'+ul(c.common_false_positives):"")+
+      '</div>'+
+    '</div>'+
     (c.what_it_sounds_like&&c.what_it_sounds_like.length?feSection("What it sounds like",ul(c.what_it_sounds_like)):"")+
     feSection("Discernment questions",
       ul(c.discernment_questions)+
@@ -1305,8 +1378,10 @@ function entryBodyHTML(e,c,opts){
       (c.this_may_not_be_it_when&&c.this_may_not_be_it_when.length?"<p style='font-weight:700;margin-top:10px'>This may not be it when:</p>"+ul(c.this_may_not_be_it_when):"")+
       (c.innocent_or_ordinary_possibilities&&c.innocent_or_ordinary_possibilities.length?"<p style='font-weight:700;margin-top:10px'>Innocent or ordinary possibilities:</p>"+ul(c.innocent_or_ordinary_possibilities):""))+
     feSection("Less concerning / more concerning",
-      "<p style='font-weight:700;color:var(--good)'>Less concerning if:</p>"+ul(c.less_concerning_if)+
-      "<p style='font-weight:700;margin-top:10px;color:var(--danger)'>More concerning if:</p>"+ul(c.more_concerning_if))+
+      '<div class="fe-scale">'+
+        '<div class="less"><h4>Less concerning if</h4>'+ul(c.less_concerning_if)+'</div>'+
+        '<div class="more"><h4>More concerning if</h4>'+ul(c.more_concerning_if)+'</div>'+
+      '</div>')+
     (c.pattern_over_time_signs&&c.pattern_over_time_signs.length?feSection("Pattern over time",ul(c.pattern_over_time_signs)):"")+
     feSection("Repair & boundary-respect checks","<p><strong>Repair check:</strong> "+esc(c.repair_check)+"</p><p style='margin-top:10px'><strong>Boundary respect check:</strong> "+esc(c.boundary_respect_check)+"</p>")+
     feSection("Mechanism & possible impact","<p><strong>Psychological mechanism:</strong> "+esc(c.psychological_mechanism)+"</p><p style='margin-top:10px'><strong>Possible impact on receiver:</strong> "+esc(c.possible_impact_on_receiver)+"</p>")+
