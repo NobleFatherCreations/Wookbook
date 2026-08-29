@@ -78,8 +78,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v6",
+      "version": "v7",
       "changelog": [
+        {
+          "date": "2026-08-29",
+          "version": "v7",
+          "summary": "Celestial redesign plus a motion system. Retired the parchment ground entirely -- both themes are now sky (light #E4E6F5, astronomical twilight before dawn; dark #060916, deep space), with three drifting nebula gradients, two parallax starfields (420 + 150 stars), a shooting star on a 23s cycle and a vignette; zero beige hexes remain anywhere in the file, asserted. Generated 36 constellation emblems (24 category + 12 entry-section, 20.3KB) that draw themselves in on arrival. 34 numbered motion effects installed under prefers-reduced-motion:no-preference with a paired reduce block that preserves END STATES -- the trap being that a bare `animation:none` leaves an emblem stranded at dashoffset 64, i.e. invisible; proved by measuring fill/stroke opacity and dash offsets under reducedMotion:reduce, not by reading the CSS. THREE REAL DEFECTS FOUND AND FIXED, none of them cosmetic: (1) Cinzel Decorative's embedded subset contained exactly one glyph (a space, 580 bytes), so the --title face had been silently falling back to IM Fell English for the whole of v6 -- the masthead is now shipped as real letter geometry (17 outline paths lifted from IM Fell English SC) so it cannot fall back at all, and a general assertion now fails any embedded face small enough to be effectively empty; (2) no forced-colors guard existed anywhere, and .hero-mast painted its letterforms through `color:transparent` + background-clip:text, so in Windows High Contrast the largest title on the site rendered as nothing -- guard added, sky decoration stands down there; (3) four hover effects transitioned layout properties (left/height), now transforms, each re-measured to confirm it still animates. Detector down 15 -> 14: the footer wordmark's 35%-alpha zero-offset yellow halo (inherited neon-glow tell) softened, both side-tab findings resolved by turning the category tile's flat 3px colour bar into light rising off the top edge. The 14 remaining are all star glows -- category colours on the constellation map at 6-9% alpha -- kept deliberately: on a star chart a star that does not glow is not a star. Verification: thread audit extended 86 -> 127 checks (all pass), 12 routes x light/dark x desktop/mobile with 0 console errors, 495-state walkthrough invariant intact, 4 corrupt-state recoveries, no horizontal overflow sampled across 10 animation frames. Two of my own assertions were wrong and were corrected rather than the code bent to fit them: a regex that ran past `}` and matched 'top' inside `.to-top`, and an opacity>0.9 visibility threshold that failed emblems carrying a deliberate 0.85 design opacity. 4.29MB."
+        },
         {
           "date": "2026-08-29",
           "version": "v6",
