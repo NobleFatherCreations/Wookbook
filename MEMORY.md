@@ -2591,3 +2591,69 @@ craftBusiness entry for Portals is titled "The Shop" while the nav (both
 before and after this change) correctly calls it "The Portals" — the nav is
 right, `sites.json`'s craftBusiness title field is the stale one here, opposite
 of the faith case. Low priority, noting so it isn't rediscovered as new.
+
+## 2026-08-12, later still — nav rollout finished: all 15 pages now generated
+
+Continued straight through task #6 from the prior round (add House nav to
+the pages the first batch didn't cover). No new user request — same
+standing "hold all deploys" instruction throughout, nothing shipped live.
+
+**The two dead-end pages got the nav from scratch.** `design/
+build-house-nav.py` gained `insert_full_block()` — for a page with *no*
+`nf-chrome` at all, insert the canonical CSS before `</body>`, then the
+generated HTML list, then the canonical JS. The canonical CSS/JS text now
+lives in `design/nf-chrome-css.txt` / `nf-chrome-js.txt`, extracted by
+diffing the `<style id="nf-chrome-css">` block across 6 already-fixed pages
+down to the ~165 lines that are byte-identical everywhere (root's own
+version had ~17 extra lines of page-specific CSS bled into the same
+`<style>` tag — that bleed was left alone on root, just not copied forward)
+and confirming `#nf-chrome-js` is verbatim-identical, fully generic
+(`data-nf-page`/`data-nf-reveal` driven, no page-specific values baked in)
+everywhere it already exists. Applied to `faith-index.html` (live at
+`/faith`) and `noble-father-festiebible.html` (live at `/festival`) —
+both were confirmed genuine dead ends by the 2026-08-12 audit (only
+outbound links were external — crisis lines, TikTok, email — or none at
+all).
+
+**The four `nh-tab` holdouts got converted to the current pattern.**
+loop/scale/playbook/music were still on a different, older component
+(`#nh-tab`: a red vertical side-tab + a hand-grouped drawer keyed by
+`data-here`, not sites.json) — the audit's "three nav states shipped
+simultaneously" finding. `convert_nh_to_nf()` removes the old `#nh-tab`
+`<style>`/HTML/`<script>` block, swaps the `#nh-tab,#nh-veil` selector out
+of loop's and scale's `@media print` rule for `#nf-chrome`, and inserts the
+same canonical block used everywhere else. **Caught a real bug before it
+touched a live-adjacent file**: the first version of the print-media regex
+consumed the selector's trailing comma along with `#nh-tab,#nh-veil`, which
+would have produced `#bar,.pager,#nf-chrome.startrow` (one compound
+selector, wrong) instead of `#bar,.pager,#nf-chrome,.startrow` (two
+selectors, right) — caught by testing on a scratch copy first and diffing
+that one line specifically before running it on the real files. loop.html
+deliberately keeps `include_ribbon=False` — verified the book's own
+explicit no-progress-bar stance wasn't accidentally reintroduced by the
+generated block.
+
+**Verified, all 4**: Playwright — seal renders and opens, zero leftover
+`#nh-tab` anywhere, exactly 15 rows, correct page self-highlighted on each,
+zero horizontal overflow at 1440px (loop also re-checked at 375px under
+reduced motion), `check-leak.sh` and open/close tag-balance clean.
+`music.html` throws one `pageerror` ("TRACKS is not defined") — that's the
+already-documented pre-existing broken track data, confirmed present in
+the committed baseline via `git show HEAD` before this change touched
+anything, not something this round caused.
+
+**All 15 pages now carry the same generated nav.** Still not deployed
+anywhere — this whole 3-round nav effort (8 pages, then 2, then 4) is
+sitting locally/committed only. Casting stayed out of scope for the whole
+effort: its source lives entirely in a separate repo
+(`NobleFatherCreations/Castings`) not attached to this session — needs
+either that repo attached here or the same treatment done over there.
+
+**What deploying this actually needs, when the user says go:** hub-linked
+pages (root, sovereign, playground, fractal, fracture, wook/festival,
+portals, seals, faith-index, festiebible) are git-backed — the usual
+Netlify-CLI-deploy-from-this-repo pattern applies once given the go-ahead.
+loop.html and scale.html are `deploySource:"cli"` Netlify sites with no
+linked repo (confirmed earlier via deploy metadata), same as the
+still-pending "Fracture Everywhere"→"Fracture" rename on those — both need
+a direct Netlify redeploy, not a git push, whenever that's approved.
