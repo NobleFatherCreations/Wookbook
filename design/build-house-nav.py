@@ -149,12 +149,43 @@ def insert_full_block(path, current_url, page_slug):
     path.write_text(text)
     return True
 
+NH_BLOCK_RE = re.compile(
+    r'<button type="button" id="nh-tab".*?<script id="nh-js">.*?</script>',
+    re.DOTALL,
+)
+NH_STYLE_RE = re.compile(r'<style id="nh-css">.*?</style>\s*', re.DOTALL)
+NH_PRINT_RE = re.compile(r'#nh-tab,#nh-veil')
+
+def convert_nh_to_nf(path, current_url, page_slug):
+    """Replace the older #nh-tab red side-tab component (loop/scale/playbook/
+    music) with the current nf-chrome seal+drawer, matching the 8+2 pages
+    already converted. Removes the nh-* <style>, HTML, and <script> blocks
+    plus the #nh-tab/#nh-veil print-media reference, then inserts the
+    canonical nf-chrome block before </body>."""
+    text = path.read_text()
+    if not NH_BLOCK_RE.search(text):
+        raise ValueError(f"{path}: no nh-tab HTML+JS block found")
+    if not NH_STYLE_RE.search(text):
+        raise ValueError(f"{path}: no nh-css style block found")
+    text = NH_STYLE_RE.sub("", text)
+    text = NH_BLOCK_RE.sub("", text)
+    text = NH_PRINT_RE.sub("#nf-chrome", text)
+    body_close = text.rfind("</body>")
+    if body_close == -1:
+        raise ValueError(f"{path}: no </body> found")
+    html_block = render_block(current_url, page_slug, include_ribbon=False)
+    insertion = NF_CHROME_CSS + "\n" + html_block + "\n" + NF_CHROME_JS + "\n"
+    text = text[:body_close] + insertion + text[body_close:]
+    path.write_text(text)
+    return True
+
 if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--print", nargs=2, metavar=("URL", "SLUG"), help="print the block for a given current-page URL and data-nf-page slug")
     ap.add_argument("--apply", nargs=3, metavar=("FILE", "URL", "SLUG"), action="append", default=[])
     ap.add_argument("--insert-full", nargs=3, metavar=("FILE", "URL", "SLUG"), action="append", default=[])
+    ap.add_argument("--convert-nh", nargs=3, metavar=("FILE", "URL", "SLUG"), action="append", default=[])
     args = ap.parse_args()
     if args.print:
         print(render_block(args.print[0], args.print[1]))
@@ -164,3 +195,6 @@ if __name__ == "__main__":
     for f, url, slug in args.insert_full:
         insert_full_block(Path(f), url, slug)
         print(f"inserted full block into {f}")
+    for f, url, slug in args.convert_nh:
+        convert_nh_to_nf(Path(f), url, slug)
+        print(f"converted nh-tab to nf-chrome in {f}")
