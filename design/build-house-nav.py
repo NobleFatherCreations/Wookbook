@@ -115,11 +115,14 @@ def render_block(current_url, page_slug, extra_attrs="", include_ribbon=False):
 
 BLOCK_RE = re.compile(r'<div id="nf-chrome"[^>]*>.*?</nav></div>', re.DOTALL)
 
+NF_CHROME_CSS = (ROOT / "design" / "nf-chrome-css.txt").read_text()
+NF_CHROME_JS = (ROOT / "design" / "nf-chrome-js.txt").read_text()
+
 def apply_to_file(path, current_url, page_slug):
     text = path.read_text()
     m = BLOCK_RE.search(text)
     if not m:
-        raise ValueError(f"{path}: no existing nf-chrome block found -- this page needs the full block inserted, not a replace")
+        raise ValueError(f"{path}: no existing nf-chrome block found -- use --insert-full for a page with no nav yet")
     had_ribbon = '<div class="nf-ribbon"' in m.group(0)
     extra_attrs_m = re.search(r'data-nf-reveal=\'[^\']*\'', m.group(0))
     extra_attrs = (" " + extra_attrs_m.group(0)) if extra_attrs_m else ""
@@ -128,14 +131,36 @@ def apply_to_file(path, current_url, page_slug):
     path.write_text(text)
     return True
 
+def insert_full_block(path, current_url, page_slug):
+    """For a page with no nf-chrome at all: insert CSS before </head> (or as
+    the last <style> before </body> if no </head> match), HTML+JS before
+    </body>. Errors if an nf-chrome block already exists (use --apply instead)."""
+    text = path.read_text()
+    if BLOCK_RE.search(text):
+        raise ValueError(f"{path}: already has an nf-chrome block -- use --apply instead")
+    if 'id="nf-chrome-css"' in text or 'id="nf-chrome-js"' in text:
+        raise ValueError(f"{path}: already has nf-chrome CSS/JS but no HTML block -- inspect manually, don't double-insert")
+    body_close = text.rfind("</body>")
+    if body_close == -1:
+        raise ValueError(f"{path}: no </body> found")
+    html_block = render_block(current_url, page_slug, include_ribbon=False)
+    insertion = NF_CHROME_CSS + "\n" + html_block + "\n" + NF_CHROME_JS + "\n"
+    text = text[:body_close] + insertion + text[body_close:]
+    path.write_text(text)
+    return True
+
 if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--print", nargs=2, metavar=("URL", "SLUG"), help="print the block for a given current-page URL and data-nf-page slug")
     ap.add_argument("--apply", nargs=3, metavar=("FILE", "URL", "SLUG"), action="append", default=[])
+    ap.add_argument("--insert-full", nargs=3, metavar=("FILE", "URL", "SLUG"), action="append", default=[])
     args = ap.parse_args()
     if args.print:
         print(render_block(args.print[0], args.print[1]))
     for f, url, slug in args.apply:
         apply_to_file(Path(f), url, slug)
         print(f"updated {f}")
+    for f, url, slug in args.insert_full:
+        insert_full_block(Path(f), url, slug)
+        print(f"inserted full block into {f}")
