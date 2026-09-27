@@ -2594,3 +2594,13 @@ overflow, nothing stuck at `opacity:0`, all 176 rows and 6 shelves render, and
 **audio actually plays** (`currentTime` advancing, asserted twice, from the
 absolute URL). Also asserted the analyser genuinely paints the canvas, and that
 the fallback bars appear with no dead canvas when `AudioContext` is missing.
+
+## Update (2026-09-27) — faith book naming rule
+
+**The faith book is "The Sacred Divide"** (user instruction). Never "The
+Coercive Control Codex" or "Coercive Control Index" in memory, docs, or new
+content. Renamed here in BOOKS.md, sites.json, chapters.json,
+PROJECT-MASTER.md and content/prose/faith.md; older dated entries keep the
+old name as history. The full audit, the v4 candidate build, and the
+resolved live-vs-repo question for this book live in the Books repo
+(`MEMORY.md` 2026-09-27 entry, `docs/SACRED-DIVIDE-AUDIT-2026-09-27.md`).

@@ -271,7 +271,7 @@ Netlify; resolves the codename → real-slug confusion from the thread):
 | allfracture | fracture | The Fracture (was "All Fracture", then "The Fracture Everywhere") | /fracture | `fractures` | — |
 | *(not in original 9)* | loop | The Loop | /loop | `noble-the-loop` | **cli, no git repo** |
 | *(not in original 9)* | scale | The Weighing | /scale | `noble-the-weighing` | **cli, no git repo** |
-| *(not in original 9)* | faith | The Coercive Control Codex | /faith | `thenobledivide` (likely) | **cli, no git repo** |
+| *(not in original 9)* | faith | The Sacred Divide | /faith | `thenobledivide` (confirmed 2026-09-27) | **cli, no git repo** |
 
 Plus: `/music` (The Listening Room), and craft/business sites `nfcportals`,
 `noblenfcseals`, `nfchq`, `noble-nfc-tour` ("The Shop" / "The Press").

@@ -85,7 +85,9 @@ finish the book") is missing from the one artifact meant to be kept.
 apply without conflict (calibration/judgment content doesn't call for an anti-progress
 stance the way Loop's does, but confirm, don't assume).
 
-## faith — The Coercive Control Codex **[confirmed]**
+## faith — The Sacred Divide **[confirmed]**
+
+**Name: always "The Sacred Divide"** (user instruction, 2026-09-27) — never "The Coercive Control Codex" / "Coercive Control Index". Current source of truth for this book is the Books repo (`NobleFatherCreations/Books`): see its `BOOKS.md` and `docs/SACRED-DIVIDE-AUDIT-2026-09-27.md`.
 
 25–27 traditions × tactics matrix, evidence-graded. **Confirmed in the
 book's own text:** *"It will not measure you. No analytics, no tracking,
