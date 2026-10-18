@@ -54,8 +54,9 @@ DATASETS = {
 # that compares them becomes meaningless -- so corrections are applied here,
 # on the way out, and listed in the output so nothing is silently altered.
 #
-# Each one still needs fixing at source on the live page. Applying it here
-# only stops the typo reaching the clip manifest.
+# The Gaslighting typo below was fixed at source in v8 (2026-10-18), so it no
+# longer matches and is kept only as a record. Add new entries here only when
+# the source cannot be fixed immediately.
 CORRECTIONS = [
     # tactic, field, wrong, right
     ("Gaslighting", "what_it_sounds_like",

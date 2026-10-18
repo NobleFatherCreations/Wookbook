@@ -70,7 +70,7 @@
       "netlifySiteId": "8b3d5fdf-49e5-46eb-bb53-97d69039a44e",
       "deploySource": "cli",
       "localSource": "content/prose/_raw/playbook.html",
-      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. 2026-08-28: see changelog v2 for a further round of verified design/correctness fixes (3 more beacon-contradiction instances, theme persistence, font-face collapse, type scale, copy-to-clipboard). 2026-08-28 (later): regenerated to nf-seal (14-volume catalogue, rebuilt from this file's own project list, re-skinned onto this page's tokens rather than the wax/plum source palette) -- Festie Bible, Faith, and Sacred Divide are all reachable from this page now. Also added real motion (list/card stagger, smooth accordion open-close, press feedback) and fixed a pre-existing double-escaping bug on 4 of 6 per-entry section titles. See changelog v3. DEPLOYED 2026-08-29 as v5 and byte-verified live on both the netlify.app and custom-domain URLs; this file and live are in sync.",
+      "localSourceNote": "No authoring source has ever existed for this project; the tracked file was a byte-mirror of the live page through 2026-08-25. On 2026-08-27, per explicit user direction (\"remove 2 lines so beacon stays\"), it stopped being a passive mirror and became the pre-deploy staging copy: (1) the Cloudflare beacon -- present on live, absent here since the mirror predates it -- was added at the same insertion point as live, so a future deploy from this file keeps it rather than silently dropping it; (2) the meta description and hero subtitle, which claimed \"no tracking, nothing ever leaves your device\" and \"private\" while the beacon was loading, were corrected to \"No AI, no account required\" / \"no account\" -- true claims that do not contradict the beacon's presence. Content data (COMPENDIUM/CODEX_COMPLETED/RECIPES) unchanged. 2026-08-28: see changelog v2 for a further round of verified design/correctness fixes (3 more beacon-contradiction instances, theme persistence, font-face collapse, type scale, copy-to-clipboard). 2026-08-28 (later): regenerated to nf-seal (14-volume catalogue, rebuilt from this file's own project list, re-skinned onto this page's tokens rather than the wax/plum source palette) -- Festie Bible, Faith, and Sacred Divide are all reachable from this page now. Also added real motion (list/card stagger, smooth accordion open-close, press feedback) and fixed a pre-existing double-escaping bug on 4 of 6 per-entry section titles. See changelog v3. DEPLOYED 2026-08-29 as v5 and byte-verified live on both the netlify.app and custom-domain URLs; this file and live are in sync. 2026-10-18: the drift between this file and live (live had a 20-volume nav patched in directly) is closed -- this file is live plus the v8 fixes. Always diff against live before deploying from this file; the 2026-09-01 patch is how it drifted last time.",
       "dataSource": "content/playbook-data.json",
       "dataSourceNote": "The three datasets lifted out of the HTML mirror into diffable JSON by design/extract-playbook-data.py. This is what other tooling should read; the HTML stays as the provenance record. Rebuild rather than hand-editing.",
       "hasGitRepo": false,
@@ -78,8 +78,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v7",
+      "version": "v8",
       "changelog": [
+        {
+          "date": "2026-10-18",
+          "version": "v8",
+          "summary": "Fixed a cut-off example sentence in Gaslighting (\"You're rememb it all wrong\" now reads \"You're remembering it all wrong\"), which until now was only masked in the exported JSON and still showed on the live page. The repo file is now the live file plus this fix: it carries the 20-volume House menu that had been patched onto live on 2026-09-01 and never made it back to the repo, so deploying from the repo no longer regresses the menu to 14. On-page Updates entry added in the same commit."
+        },
         {
           "date": "2026-08-29",
           "version": "v7",
@@ -121,7 +126,7 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceVerified": "byte-exact match to live content, 2026-08-29 (md5 2d5051f20f1a21e1f1f7a0e64d4c96b3)",
+      "localSourceVerified": "Rebased onto the live bytes of 2026-10-18 (v7 + 20-volume nav + analytics beacon), then three edits: typo, version badge, Updates entry.",
       "lastDeploy": {
         "date": "2026-08-29",
         "version": "v7",

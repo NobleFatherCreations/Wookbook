@@ -3081,3 +3081,53 @@ notable: one of the review's four "before publication" asks — that the clip
 format preserve beat 4 (the disconfirming line) in every clip — is already
 guaranteed by `build-decoder-clips.py`'s design, which hard-sources beat 4
 from exactly this reviewed field on every one of the 349 tactics.
+
+## Update (2026-10-18) — Decoder: branch merged to main, live drift closed, v8 deployed
+
+**Corrects the record.** A fresh session audited the live Decoder from the
+`Books` repo, found "no source in any repo" and re-diagnosed a list of problems
+that this branch had already fixed (v4 paste-a-phrase, v5 Narrow it down, v6/v7
+redesign, the 349-clip manifest, the clinical review). The cause: `Books`
+(the consolidated Library/Workshop/Instruments repo) never received this
+branch, and its copy of `playbook.html` is an old snapshot with no Narrow view.
+**Read the Decoder history here, not there.**
+
+**Merged:** `claude/book-content-adaptation-o0a9u8` fast-forwarded onto `main`
+(no conflicts). **Not merged, deliberately:** `gstack-setup` (analytics rollout
+ledger; conflicts in `.gitignore` + `sites.json`) and `continue-jxslgw` (older
+nav work on loop/scale/music; conflicts in four files). Both touch other
+projects, not the Decoder; each needs its own decision.
+
+**Drift found and closed.** Live had a 20-volume nav patched in directly on
+2026-09-01; the repo file still had the older 13-row nav. Deploying the repo
+file as it stood would have regressed the menu, the same class of mistake as
+the beacon on 2026-08-27. `content/prose/_raw/playbook.html` is now the live
+bytes plus three edits (typo, v8 badge, Updates entry). Verified on the staged
+file at 1440, 375 touch and 375 reduced-motion: 0 console errors, no overflow,
+nav 20 rows, fixed line present.
+
+**v8:** Gaslighting's "You're rememb it all wrong" fixed at source. (The JSON
+export already masked it via `CORRECTIONS`; the live page did not.)
+
+**What was NOT applied to the page, and why.** `content/playbook-drafts.json`
+holds 85 hooks and 266 codex entries (`why_this_matters` / `what_it_is_not`),
+all `approved: true` after the 2026-08-27 clinical review, but by design they
+are an overlay and not the book's own text (see `design/apply-drafts.py`
+docstring). The live page still has 143 `needs_review` and 101 `reference_stub`
+entries with shared boilerplate. Writing 266 AI-drafted entries into a public
+reference is the author's call, plus the 51 `manipulation_playbook_risk` holds,
+Sacred Science's truncated definition, and `safety_sensitive` on 7
+interpersonal-danger entries. All still open.
+
+**Data check (measured on live, 2026-10-18):** 81 mature / 24 developing /
+143 needs_review / 101 reference_stub. `this_may_be_it_when` and
+`this_may_not_be_it_when` have 4 distinct values across 349 entries;
+`what_it_is_not` first lines 138 distinct; `why_this_matters` 109 distinct.
+Clip beat 4 sources `what_it_is_not` for exactly this reason.
+
+**Redesign backlog from the audit (not built):** paste box matches only the 81
+Detected tactics (a long sentence returned one loose match); 24 categories
+include near-duplicates ("Digital" / "Digital & AI", three institutional
+names); four names in use (Field Guide / Pattern Decoder / playbook /
+noblepatterns); changelog sits in every page's footer. Next planned step per
+the user: videos and a Canva template, fed from `content/decoder-clips.json`.
