@@ -3140,3 +3140,40 @@ PROJECT-MASTER.md and content/prose/faith.md; older dated entries keep the
 old name as history. The full audit, the v4 candidate build, and the
 resolved live-vs-repo question for this book live in the Books repo
 (`MEMORY.md` 2026-09-27 entry, `docs/SACRED-DIVIDE-AUDIT-2026-09-27.md`).
+
+## Update (2026-10-18) — Branch map: what lives where, so none of it is done twice
+
+Audited every branch in Wookbook, Books and Castings. Measured, not assumed:
+for each unmerged commit, whether its changes already existed on the target.
+
+**Wookbook (this repo)** — `main` now contains:
+- `book-content-adaptation-o0a9u8` (Decoder v2-v8, clip manifests, clinical review) — merged earlier today.
+- `gstack-setup-0nzwbn` — merged. It held the Cloudflare beacon for the 8 page sources `main` lacked
+  (main had it on 7 of 15), the three-question deploy gate (`npm run check`, with the CLAUDE.md
+  rules "A commit is not a deploy"), `deploy/snapshots/` for live sites with no source, the Portals
+  and catalogue fixes, and the `reaction-map` / `roselotus` registry entries. `sites.json` was merged
+  field by field with `design/merge-sites-json.py` (a text merge cannot tell which side is newer).
+  Their stale Decoder copy (`source/projects/noble-father-decoder.html`) was dropped; their Decoder
+  changelog line reused the label v2 and was skipped.
+- `faith-project-abdurahman-review-1lldxn` — merged (the naming rule: the faith book is
+  "The Sacred Divide").
+
+**Wookbook branches deliberately NOT merged, and why:**
+- `continue-jxslgw` (nav rollout, House-nav generator, old page snapshots): superseded. The Decoder's
+  menu is current, and Books carries its own descendants of the generator (`scripts/nf-install-chrome.py`,
+  `nf-catalogue.py`). Merging would conflict in four files and risks regressing the Music page, which
+  `main` rebuilt. Its generator is `design/build-house-nav.py` on that branch if ever needed.
+- `impeccable-skill-setup-e7tlwl` (July design experiments: "The Study", "The Vitrine", per-page
+  design layers): 50 commits behind main and never shipped. Kept as an archive.
+
+**Books** — branch `claude/wookbook-castings-consolidate-4zyo0d` now contains the three other Books
+branches (none had a `main`): `sacred-divide-v5-redesign` (includes `faith-project-abdurahman-review`):
+Sacred Divide v4/v5, 34 PDFs, Counterfeit decks and videos; and `cold-open-md-relink-wwtn7p`: the
+Festie Bible hand-written scripts for all 21 guides. Only `MEMORY.md` and `.gitignore` conflicted.
+
+**Castings** — only `main`; nothing unmerged.
+
+**Not ported to Books (decision for the user):** the gstack-setup deploy-gate scripts
+(`verify-deployed`, `verify-assets`, `snapshot`) and `deploy/snapshots/` exist only in Wookbook. Books
+has its own `scripts/verify-live.mjs` and a different layout (`repoPath` instead of `localSource`),
+so they need adapting, not copying.
