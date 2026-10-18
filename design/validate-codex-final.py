@@ -210,6 +210,14 @@ def check_text(name, e, base, risk, errs, warns):
             last = re.sub(r"[^A-Za-z']+$", "", sent.rstrip(".!?\"”)'")).split()
             if last and last[-1].lower() in NEVER_LAST and f != "boundary_script":
                 errs.append(f"{f}: sentence may be cut off: {sent[-50:]!r}")
+    if e.get("safety_sensitive") is True:
+        ro = e.get("response_options") if isinstance(e.get("response_options"), dict) else {}
+        for f, s in (("boundary_script", e.get("boundary_script", "")),
+                     ("response_options.firm_boundary", ro.get("firm_boundary", "")),
+                     ("response_options.soft_clarification", ro.get("soft_clarification", ""))):
+            if isinstance(s, str) and ANNOUNCE.search(s):
+                errs.append(f"{f}: tells the reader to announce leaving or issue an ultimatum to the other "
+                            f"person, which can raise risk on a safety-sensitive entry: {ANNOUNCE.search(s).group(0)!r}")
     sd = e.get("short_definition", "")
     if sd and sd.strip().rstrip(".").lower() in (e.get("expanded_definition", "").lower()):
         warns.append("expanded_definition repeats short_definition word for word")
@@ -266,6 +274,12 @@ def closer_freq(batches):
             if isinstance(v, str) and closer(v):
                 freq[f][closer(v)] += 1
     return freq
+
+
+ANNOUNCE = re.compile(
+    r"\b(i(?:'ll| will| am going to| 'm going to)\s+(?:leave|go to|stay (?:at|with)|move out|walk out)|"
+    r"i(?:'m| am) (?:leaving|moving out)|or (?:i(?:'ll| will)|else)|ultimatum|"
+    r"if it happens again,? i)\b", re.I)
 
 
 def corpus_freq(batches, base_all):

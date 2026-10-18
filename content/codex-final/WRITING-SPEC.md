@@ -24,7 +24,7 @@ student, advocate or curious person. They are not a clinician. Write for them.
 - **Describe patterns, not people.** "This pattern can leave you doubting your
   memory" — not "abusers do this".
 
-## The five hard rules
+## The six hard rules
 
 1. **No verdicts.** Never diagnose and never label a person's character
    (no narcissist, sociopath, psychopath, abuser, toxic). Describe what happens
@@ -50,7 +50,15 @@ student, advocate or curious person. They are not a clinician. Write for them.
    Do not reuse stock phrases ("A single instance without repetition...",
    "It fits a repeating pattern..."). If you catch yourself writing a line that
    fits almost any tactic, stop and make it concrete: who, where, what exactly.
-5. **True and unembellished.** No invented statistics, studies, quotes
+5. **Safety-sensitive entries never script an announcement.** If `safety_sensitive`
+   is true, no `boundary_script` or `response_options` text may tell the reader to
+   say they are leaving, to set an ultimatum ("or I will..."), or to name a
+   consequence to the other person. Telling someone who may escalate that you are
+   about to leave is among the riskiest moments. Offer wording that stays inside the
+   conversation (naming the pattern, asking for a third person, asking to pause),
+   and put leaving where it belongs: decided privately, with an advocate, never
+   announced. The checker rejects the obvious phrasings.
+6. **True and unembellished.** No invented statistics, studies, quotes
    attributed to real people, laws or case names. Name real frameworks (MICE,
    DARVO, the Overton window...) only when you are sure of them and use them
    accurately. If you are not sure of a fact, leave it out.
