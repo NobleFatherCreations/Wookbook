@@ -10,8 +10,18 @@
     "deploySource": "cli",
     "localSource": "source/projects/noble-father-catalogue.html",
     "localSourceNote": "This is the first verified live deploy of the redesigned 'collected works' hub. A 2026-08-02 review package claimed the catalogue hub redesign was already deployed, but it did NOT byte-match live content at the time -- treat this 2026-08-05 deploy as the true first release.",
-    "version": "v10",
+    "version": "v12",
     "changelog": [
+      {
+        "date": "2026-08-15",
+        "version": "v12",
+        "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) to this hub and every book and craft project it links to -- no cookies, no personal data, nothing that leaves this domain."
+      },
+      {
+        "date": "2026-08-13",
+        "version": "v11",
+        "summary": "Fixed The Casting's \"View the Collection\" button and every individual piece link, which had been landing on a \"page not found\" when followed from this site."
+      },
       {
         "date": "2026-08-12",
         "version": "v10",
@@ -151,8 +161,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v1",
+      "version": "v2",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v2",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "unknown",
           "version": "v1",
@@ -177,8 +192,18 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data, nothing that leaves this domain."
+        },
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "2026-08-05",
           "version": "v2",
@@ -208,8 +233,18 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data, nothing that leaves this domain."
+        },
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "2026-08-05",
           "version": "v2",
@@ -241,8 +276,18 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v1",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v3",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data, nothing that leaves this domain."
+        },
+        {
+          "date": "2026-08-13",
+          "version": "v2",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "unknown",
           "version": "v1",
@@ -267,8 +312,18 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data, nothing that leaves this domain."
+        },
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "2026-08-05",
           "version": "v2",
@@ -303,8 +358,18 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v4",
       "changelog": [
+        {
+          "date": "2026-08-15",
+          "version": "v4",
+          "summary": "Added anonymous visitor analytics (Cloudflare Web Analytics) -- no cookies, no personal data, nothing that leaves this domain."
+        },
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "2026-08-12",
           "version": "v2",
@@ -343,8 +408,13 @@
         "deployedAt": "2026-08-05",
         "note": "Verified clean against live 2026-08-25. This flag stayed true long after the fix shipped: live matches fixes/loop.html exactly (plus the analytics beacon), so the correction was deployed and the registry was never updated."
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "2026-08-05",
           "version": "v2",
@@ -380,8 +450,13 @@
         "deployedAt": "2026-08-05",
         "note": "Verified clean against live 2026-08-25. This flag stayed true long after the fix shipped: live matches fixes/scale.html exactly (plus the analytics beacon), so the correction was deployed and the registry was never updated."
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        },
         {
           "date": "2026-08-05",
           "version": "v2",
@@ -412,8 +487,13 @@
         "checkedAt": "2026-08-05",
         "note": "Moot as of this deploy - the live site is now faith-index.html's lineage, which never had the old nh-drawer House Tab component at all (self-contained, no shared chrome, by design). The old fixes/faith.html leak fix is superseded, not applied - that lineage is no longer live here."
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "The \"Main site\" link in the sidebar now goes to the main Noble Father Creations address instead of an old one that no longer answered."
+        },
         {
           "date": "2026-08-05",
           "version": "v2",
@@ -450,8 +530,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v2",
+      "version": "v3",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v3",
+          "summary": "The Listening Room is properly open. Every track is here and playing — all 176 of them, on six shelves, with search and the new player. Before this the page was still serving an old empty shell that could not load its own track list."
+        },
         {
           "date": "2026-08-12",
           "version": "v2",
@@ -515,6 +600,46 @@
           "summary": "First build. All 12 guides (G.R.O.V.E./B.A.S.S./R.A.V.E./P.R.I.D.E./C.R.E.A.T.E./S.O.U.N.D./M.A.R.K.E.T./H.O.L.D./C.A.R.E./L.E.A.D./E.V.E.N.T./S.A.F.E.), 149 scenario pages, extracted and rebuilt with a real logo (the source PDF's brand mark rendered at ~10% opacity -- fixed), reading-progress bar, in-guide contents drawer, and a persistent crisis-resource strip."
         }
       ]
+    },
+    {
+      "codename": null,
+      "slug": "reaction-map",
+      "title": "The Reaction Map",
+      "tagline": "A field guide to conscious consumption",
+      "url": "https://noblereactionmap.netlify.app/",
+      "netlifySite": "noblereactionmap",
+      "deploySource": "cli",
+      "hasGitRepo": false,
+      "liveSnapshot": "deploy/snapshots/noblereactionmap.html",
+      "localSourceNote": "UNRESOLVED: source/projects/noble-father-reaction-map.html is 2.9MB while live is 187KB -- a different lineage, not a newer copy. Nobody has established which is meant to be live. Do not overwrite either side.",
+      "version": "v1",
+      "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v1",
+          "summary": "Added to the registry. It was live and completely untracked before this -- nothing watched it and its page existed nowhere but the host."
+        }
+      ]
+    },
+    {
+      "codename": null,
+      "slug": "roselotus",
+      "title": "The Rose Lotus · Source Map",
+      "tagline": "Shae Stephen Robert Stovell",
+      "url": "https://shaeroselotus.netlify.app/",
+      "netlifySite": "shaeroselotus",
+      "deploySource": "cli",
+      "hasGitRepo": false,
+      "liveSnapshot": "deploy/snapshots/shaeroselotus.html",
+      "localSourceNote": "No source in any repo. Capture only.",
+      "version": "v1",
+      "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v1",
+          "summary": "Added to the registry, captured, and now monitored. It was live and completely untracked before this."
+        }
+      ]
     }
   ],
   "craftBusiness": [
@@ -524,7 +649,20 @@
       "url": "https://nfcportals.netlify.app/",
       "netlifySite": "nfcportals",
       "localSource": "source/projects/noble-father-portals.html",
-      "localSourceVerified": "byte-exact match to live content, 2026-08-02"
+      "localSourceVerified": "byte-exact match to live content, 2026-08-02",
+      "version": "v2",
+      "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v2",
+          "summary": "The piece now changes with a tap instead of a drag. The old slider showed daylight and glow either side of a moving line, which only looks right if the two photographs line up exactly — they do not, so the line drew attention to the seam instead of the piece. Tapping shows one whole picture at a time."
+        },
+        {
+          "date": "2026-08-13",
+          "version": "v1",
+          "summary": "The torch effect that follows your cursor no longer leaves the pieces dark and unlit on phones and tablets. One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        }
+      ]
     },
     {
       "title": "The Press",
@@ -532,19 +670,29 @@
       "url": "https://noblenfcseals.netlify.app/",
       "netlifySite": "noblenfcseals",
       "localSource": "source/projects/noble-father-seals.html",
-      "localSourceVerified": "byte-exact match to live content, 2026-08-02"
+      "localSourceVerified": "byte-exact match to live content, 2026-08-02",
+      "version": "v1",
+      "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v1",
+          "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
+        }
+      ]
     },
     {
-      "title": null,
-      "tagline": null,
+      "title": "The Whole Picture",
+      "tagline": "What this library is trying to do",
       "url": "https://noble-nfc-tour.netlify.app/",
-      "netlifySite": "noble-nfc-tour"
+      "netlifySite": "noble-nfc-tour",
+      "liveSnapshot": "deploy/snapshots/noble-nfc-tour.html"
     },
     {
-      "title": null,
-      "tagline": null,
+      "title": "NFC HQ",
+      "tagline": "The master guide, on one page",
       "url": "https://nfchq.netlify.app/",
-      "netlifySite": "nfchq"
+      "netlifySite": "nfchq",
+      "liveSnapshot": "deploy/snapshots/nfchq.html"
     },
     {
       "title": "The Casting",
@@ -552,8 +700,13 @@
       "url": "https://incandescent-kataifi-cde77d.netlify.app/",
       "netlifySite": "incandescent-kataifi-cde77d",
       "note": "Eco-resin statues, hollow candle pillars, and glow-in-the-dark resin pieces -- 293 pieces. Real source now lives in its own repo: github.com/NobleFatherCreations/Castings (pushed 2026-08-11, full static-site-generator project -- Node/sharp ingest+build pipeline, 445MB/1502 files including all product photos). This is now the source of truth for this project going forward -- clone it, edit, `npm run pages`, redeploy via the same Netlify MCP deploy-site pattern used for the hub. Netlify site fbd96c13-059a-491b-a270-95e02a308a92.",
-      "version": "v5",
+      "version": "v6",
       "changelog": [
+        {
+          "date": "2026-08-13",
+          "version": "v6",
+          "summary": "Every page now leads back to the rest of Noble Father Creations — the name at the top of the screen is a link home. The individual piece pages had no way out at all before, which mattered most for anyone arriving on one from a search or a shared link. Piece photographs now come down sized to the screen showing them, so opening a piece on a phone pulls a fraction of what it used to without looking any different."
+        },
         {
           "date": "2026-08-12",
           "version": "v5",
@@ -576,7 +729,13 @@
         }
       ],
       "gitRepo": "NobleFatherCreations/Castings",
-      "localSource": null
+      "localSource": null,
+      "deployNote": "Deploys via netlify-cli (`netlify deploy --prod --dir=.` from a publish dir holding assets/, statues/, data/, index.html, sitemap.xml, robots.txt, netlify.toml). The Netlify MCP deploy-site tool CANNOT deploy this site: it uploads one full zip and fails above ~450MB, and this payload is ~519MB. netlify-cli hashes files and uploads only what changed.",
+      "externalSource": {
+        "repo": "github.com/NobleFatherCreations/castings",
+        "workdir": "/workspace/castings",
+        "file": "index.html"
+      }
     }
   ],
   "otherLiveSites": [
@@ -645,5 +804,17 @@
     "status": "Deliberate and reader-disclosed, not a leak.",
     "evidence": "feminine, children and fracture each carry an on-page v4 changelog entry dated 2026-08-15: \"Added anonymous visitor analytics (Cloudflare Web Analytics) - no cookies, no personal data, nothing that leaves this domain.\" music carries the equivalent at v4, 2026-08-14.",
     "conflict": "CLAUDE.md still states the self-contained rule absolutely (\"Never add a CDN <script> or <link> tag\", \"no external requests\"). That rule and this decision now contradict each other, and several books state the no-external-requests claim in their own body text. Reconcile the rule with the decision - do not silently strip the beacon on a future deploy because the rule says so."
+  },
+  "verified": {
+    "date": "2026-08-14",
+    "sitesOnHost": 20,
+    "registered": 20,
+    "unchecked": 0,
+    "deployedInSync": 20,
+    "drifted": 0,
+    "musicTracksLive": "176/176 (1255 MB, all correct size)",
+    "castingImagesLive": "1275/1275 across 425 pieces",
+    "pageChecks": "60 renders across 16 pages x 3 viewport passes: 0 failures, 0 broken links",
+    "howToRepeat": "npm run check"
   }
 }

@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Reaction Map — A Field Guide to Conscious Consumption</title>
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<meta property="og:title" content="The Reaction Map — Noble Father Creations">
+<meta property="og:description" content="A field guide to conscious consumption: spot the tactics, discern the intent, do the shadow work.">
+<meta property="og:image" content="assets/logo-hero.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand-accent:#D7DE5A;
+  --signal:#A6314B; --signal-soft:rgba(166,49,75,.14);
+  --ink:#191310; --deep:#211913; --panel:#292018; --panel2:#332821;
+  --line:rgba(237,226,204,.13); --line-strong:rgba(237,226,204,.28);
+  --parchment:#EDE2CC; --muted:#B9A98D; --dim:#8d7f66;
+  --candle:#D9964A; --candle-soft:rgba(217,150,74,.14);
+  --ember:#B95F3D; --ember-soft:rgba(185,95,61,.14);
+  --sage:#8FAF9B; --sage-soft:rgba(143,175,155,.13);
+  --violet:#b8a0d8; --violet-soft:rgba(178,150,220,.13);
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--parchment);font-family:'Inter',sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(1200px 700px at 75% -10%, rgba(217,150,74,.07), transparent 60%),radial-gradient(900px 600px at -10% 110%, rgba(185,95,61,.05), transparent 55%);pointer-events:none;z-index:0}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.display{font-family:'Fraunces',serif}
+.eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--candle);font-weight:600}
+button{font-family:'Inter',sans-serif;cursor:pointer}
+:focus-visible{outline:2px solid var(--candle);outline-offset:2px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.annbar{background:linear-gradient(90deg,#241a12,#2c2015 55%,#241a12);border-bottom:1px solid var(--line);padding:9px 20px}
+.annbar-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center}
+.annbar-mark{height:22px;width:auto;border-radius:4px;flex-shrink:0}
+.annbar a{display:inline-flex;align-items:center;gap:6px;color:var(--parchment);text-decoration:none;font-size:13px;font-weight:600;padding:5px 13px;border:1px solid var(--line-strong);border-radius:999px;transition:all .15s;white-space:nowrap}
+.annbar a:hover{border-color:var(--candle);color:var(--candle);transform:translateY(-1px)}
+.annbar a.tt svg,.annbar a.hub svg{width:13px;height:13px;flex-shrink:0}
+.brand-lockup{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.brand-mark-icon{width:36px;height:36px;border-radius:8px;flex-shrink:0;object-fit:cover;border:1px solid var(--line-strong)}
+.brand-word{font-family:'Fraunces',serif;font-size:15.5px;font-weight:600;letter-spacing:.01em;color:var(--parchment);line-height:1.2;white-space:nowrap}
+.brand-word b{color:var(--brand-accent);font-weight:700}
+@media(max-width:480px){.brand-word{display:none}}
+.foot-lockup{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.foot-lockup .brand-mark-icon{width:42px;height:42px}
+.foot-lockup .brand-word{font-size:18px}
+.hero-logo{max-width:480px;width:62%;height:auto;margin-bottom:10px;display:block;filter:drop-shadow(0 6px 20px rgba(0,0,0,.4))}
+@media(max-width:600px){.hero-logo{width:85%}}
+.hero-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hlink{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:999px;font-size:14.5px;font-weight:600;text-decoration:none;transition:all .18s}
+.hlink svg{width:16px;height:16px;flex-shrink:0}
+.hlink.tt{background:var(--candle);color:var(--ink)}
+.hlink.tt:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(217,150,74,.4)}
+.hlink.hub{background:none;border:1px solid var(--line-strong);color:var(--parchment)}
+.hlink.hub:hover{border-color:var(--candle);color:var(--candle);transform:translateY(-2px)}
+.foot-links{display:flex;gap:16px;margin-top:8px}
+.foot-links a{color:var(--muted);text-decoration:none;font-size:13px;border-bottom:1px solid transparent}
+.foot-links a:hover{color:var(--candle);border-color:var(--candle)}
+nav{position:sticky;top:0;z-index:50;background:rgba(25,19,16,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:900px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.brand{font-family:'Fraunces',serif;font-weight:700;font-size:17px;margin-right:auto;white-space:nowrap}
+.brand span{color:var(--candle)}
+.tab{background:none;border:1px solid transparent;color:var(--muted);padding:7px 12px;border-radius:999px;font-size:13.5px;font-weight:500;transition:all .18s}
+.tab:hover{color:var(--parchment)}
+.tab.active{color:var(--ink);background:var(--candle);font-weight:600}
+.view{display:none;padding:44px 0 90px}
+.view.active{display:block;animation:fade .35s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.hero{padding:60px 0 26px}
+.hero h1{font-size:clamp(38px,7vw,62px);line-height:1.05;font-weight:700;margin:14px 0 20px}
+.hero h1 em{font-style:italic;color:var(--candle)}
+.hero p.lede{font-size:18.5px;color:var(--muted);max-width:640px}
+.entry-cards{display:grid;gap:14px;margin-top:40px}
+@media(min-width:700px){.entry-cards{grid-template-columns:1fr 1fr;}}
+.entry{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px 20px;text-align:left;color:var(--parchment);transition:border-color .2s, transform .2s}
+.entry:hover{border-color:var(--candle);transform:translateY(-2px)}
+.entry .eyebrow{display:block;margin-bottom:10px}
+.entry h3{font-size:21px;margin-bottom:8px}
+.entry p{font-size:14px;color:var(--muted)}
+.home-note{margin-top:38px;padding:18px 20px;border-left:3px solid var(--sage);background:var(--sage-soft);border-radius:0 10px 10px 0;font-size:14.5px;color:var(--muted)}
+.home-note strong{color:var(--parchment)}
+.section-head{margin-bottom:28px}
+.section-head h2{font-size:clamp(28px,5vw,40px);margin:10px 0 12px}
+.section-head p{color:var(--muted);max-width:660px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 24px}
+.chip{border:1px solid var(--line-strong);background:none;color:var(--muted);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:500;transition:all .15s}
+.chip:hover{color:var(--parchment);border-color:var(--candle)}
+.chip.on{background:var(--candle);color:var(--ink);font-weight:600}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-bottom:14px}
+.card h3{font-size:19px;margin-bottom:4px}
+.tag{display:inline-block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:3px 9px;border-radius:999px;margin:0 6px 10px 0}
+.tag.attention{background:var(--candle-soft);color:var(--candle)}
+.tag.identity{background:var(--ember-soft);color:#d98a68}
+.tag.hope{background:var(--violet-soft);color:var(--violet)}
+.tag.amplifier{background:rgba(237,226,204,.08);color:var(--muted)}
+.tag.after{background:var(--sage-soft);color:var(--sage)}
+.tag.sales{background:var(--candle-soft);color:var(--candle)}
+.tag.guru{background:var(--ember-soft);color:#d98a68}
+.tag.spiritual{background:var(--violet-soft);color:var(--violet)}
+.tag.social{background:rgba(237,226,204,.08);color:var(--muted)}
+.kv{margin-top:10px;font-size:14.5px}
+.kv b{color:var(--candle);font-weight:600}
+.kv.counter b{color:var(--sage)}
+.quote{font-family:'Fraunces',serif;font-style:italic;color:var(--muted);font-size:15px;border-left:2px solid var(--line-strong);padding-left:12px;margin-top:10px}
+details.card{padding:0;overflow:hidden}
+details.card summary{list-style:none;padding:18px 22px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:14px}
+details.card summary::-webkit-details-marker{display:none}
+details.card summary .arrow{color:var(--dim);transition:transform .2s;flex-shrink:0}
+details.card[open] summary .arrow{transform:rotate(90deg)}
+details.card .body{padding:0 22px 20px}
+summary .t-wrap h3{margin-bottom:2px}
+summary .t-wrap .mini{font-size:13px;color:var(--dim)}
+textarea,input[type=text]{width:100%;background:var(--deep);border:1px solid var(--line-strong);border-radius:10px;color:var(--parchment);padding:13px 14px;font-family:'Inter',sans-serif;font-size:15px;resize:vertical;min-height:52px}
+textarea:focus,input[type=text]:focus{outline:none;border-color:var(--candle)}
+textarea::placeholder,input::placeholder{color:var(--dim)}
+.btn{background:var(--candle);color:var(--ink);border:none;padding:12px 24px;border-radius:999px;font-weight:600;font-size:14.5px;margin-top:14px;transition:transform .15s, box-shadow .15s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 4px 18px rgba(217,150,74,.35)}
+.btn.ghost{background:none;border:1px solid var(--line-strong);color:var(--muted)}
+.btn.ghost:hover{color:var(--parchment);border-color:var(--candle);box-shadow:none}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none;box-shadow:none}
+/* ANALYZER */
+.big-input{min-height:150px}
+.metric-row{display:grid;gap:10px;margin-top:18px}
+@media(min-width:640px){.metric-row{grid-template-columns:1fr 1fr 1fr}}
+.metric{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.metric .m-num{font-family:'Fraunces',serif;font-size:28px;font-weight:600}
+.metric .m-lab{font-size:12px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.hit-card{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--candle);border-radius:8px;padding:16px 18px;margin-bottom:10px}
+.hit-card h4{font-size:16px;font-family:'Fraunces',serif;margin-bottom:4px}
+.hit-card .hp{font-size:13.5px;color:var(--muted)}
+.hit-card .matches{margin-top:8px;display:flex;gap:6px;flex-wrap:wrap}
+.match-pill{background:var(--candle-soft);color:var(--candle);font-size:12.5px;padding:3px 10px;border-radius:99px;font-style:italic}
+.analysis-summary{margin-top:20px;padding:18px 20px;border-radius:0 10px 10px 0;font-size:15px}
+.analysis-summary.low{background:var(--sage-soft);border-left:3px solid var(--sage)}
+.analysis-summary.mid{background:var(--candle-soft);border-left:3px solid var(--candle)}
+.analysis-summary.high{background:var(--ember-soft);border-left:3px solid var(--ember)}
+/* FLAGS */
+.flag-grid{display:grid;gap:10px;margin:16px 0}
+.flag{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:13px 15px;cursor:pointer;transition:border-color .15s}
+.flag:hover{border-color:var(--line-strong)}
+.flag input{margin-top:4px;accent-color:var(--candle);width:16px;height:16px;flex-shrink:0}
+.flag .fl-text{font-size:14.5px}
+.flag.green input{accent-color:var(--sage)}
+.scorebox{position:sticky;bottom:14px;background:var(--panel2);border:1px solid var(--line-strong);border-radius:var(--radius);padding:16px 20px;margin-top:20px;box-shadow:0 8px 30px rgba(0,0,0,.5)}
+.scorebox .verdict{font-family:'Fraunces',serif;font-size:18px;margin-top:4px}
+.meter{height:8px;background:rgba(237,226,204,.1);border-radius:99px;margin-top:10px;overflow:hidden}
+.meter div{height:100%;border-radius:99px;transition:width .3s, background .3s}
+/* QUIZ */
+.quiz-snippet{font-family:'Fraunces',serif;font-size:18px;font-style:italic;line-height:1.7;background:var(--deep);border:1px solid var(--line-strong);border-radius:10px;padding:20px 22px;margin:14px 0}
+.quiz-opts{display:grid;gap:8px;margin:14px 0}
+.qopt{display:flex;gap:11px;align-items:center;background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:12px 14px;cursor:pointer;font-size:14.5px;text-align:left;color:var(--parchment);width:100%;transition:border-color .15s}
+.qopt:hover{border-color:var(--line-strong)}
+.qopt.sel{border-color:var(--candle);background:var(--candle-soft)}
+.qopt.correct{border-color:var(--sage);background:var(--sage-soft)}
+.qopt.missed{border-color:var(--sage);border-style:dashed}
+.qopt.wrong{border-color:var(--ember);background:var(--ember-soft)}
+.quiz-reveal{display:none;margin-top:14px;padding:16px 18px;background:var(--deep);border-radius:10px;font-size:14.5px}
+.quiz-reveal.show{display:block;animation:fade .3s}
+.quiz-progress{font-size:13px;color:var(--dim);margin-bottom:8px}
+/* THREAD */
+.thread-wrap{position:relative;padding-left:34px}
+.thread-line{position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:rgba(237,226,204,.1);border-radius:2px}
+.thread-fill{position:absolute;left:11px;top:8px;width:2px;background:linear-gradient(180deg,var(--candle),var(--ember));border-radius:2px;transition:height .5s ease;box-shadow:0 0 12px rgba(217,150,74,.5)}
+.step{position:relative;margin-bottom:18px;opacity:.35;pointer-events:none;transition:opacity .4s}
+.step.live{opacity:1;pointer-events:auto}
+.step.done{opacity:.85}
+.node{position:absolute;left:-30px;top:24px;width:14px;height:14px;border-radius:50%;background:var(--ink);border:2px solid rgba(237,226,204,.25);transition:all .3s}
+.step.live .node{border-color:var(--candle);box-shadow:0 0 10px rgba(217,150,74,.6)}
+.step.done .node{background:var(--candle);border-color:var(--candle)}
+.step-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.step.live .step-card{border-color:rgba(217,150,74,.4)}
+.q-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--candle);font-weight:600;margin-bottom:6px}
+.step-card h3{font-size:21px;margin-bottom:8px}
+.step-card .help{font-size:14px;color:var(--muted);margin-bottom:14px}
+.opt-row{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.opt{border:1px solid var(--line-strong);background:none;color:var(--muted);padding:8px 15px;border-radius:999px;font-size:13.5px;font-weight:500;transition:all .15s}
+.opt:hover{border-color:var(--candle);color:var(--parchment)}
+.opt.sel{background:var(--candle);color:var(--ink);font-weight:600}
+.insight{margin-top:14px;padding:14px 16px;background:var(--candle-soft);border-left:3px solid var(--candle);border-radius:0 10px 10px 0;font-size:14.5px;display:none}
+.insight.show{display:block;animation:fade .35s ease}
+.insight em{color:var(--candle);font-style:normal;font-weight:600}
+.naming{background:linear-gradient(135deg,rgba(217,150,74,.12),rgba(185,95,61,.08));border:1px solid rgba(217,150,74,.45)}
+.naming .belief-line{font-family:'Fraunces',serif;font-size:22px;font-style:italic;margin:14px 0}
+.two-col{display:grid;gap:14px;margin-top:8px}
+@media(min-width:600px){.two-col{grid-template-columns:1fr 1fr}}
+.col-box{background:var(--deep);border:1px solid var(--line);border-radius:10px;padding:14px}
+.col-box h4{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;font-family:'Inter',sans-serif;font-weight:600}
+.col-box.help-col h4{color:var(--sage)}
+.col-box.cost-col h4{color:var(--ember)}
+.col-box ul{list-style:none;margin-bottom:10px}
+.col-box li{font-size:14px;padding:7px 10px;background:var(--panel);border-radius:7px;margin-bottom:6px}
+.col-box .add-row{display:flex;gap:6px}
+.col-box input{min-height:0;padding:9px 11px;font-size:13.5px}
+.col-box button{background:none;border:1px solid var(--line-strong);color:var(--muted);border-radius:8px;padding:0 13px;font-size:18px}
+.tally{margin-top:12px;font-size:14px;color:var(--muted)}
+.record{background:var(--deep);border:1px dashed var(--line-strong);border-radius:var(--radius);padding:22px;margin-top:16px;font-size:14.5px;white-space:pre-wrap;font-family:'Fraunces',serif;line-height:1.8}
+.small-print{font-size:13px;color:var(--dim);margin-top:16px}
+.danger-result{display:none;margin-top:12px;padding:14px 16px;border-radius:0 10px 10px 0;font-size:14.5px}
+.danger-result.show{display:block}
+.danger-result.calm{background:var(--sage-soft);border-left:3px solid var(--sage)}
+.danger-result.warm{background:var(--candle-soft);border-left:3px solid var(--candle)}
+.danger-result.hot{background:var(--ember-soft);border-left:3px solid var(--ember)}
+mark.sig{background:linear-gradient(transparent 55%, rgba(217,150,74,.35) 55%);color:inherit;border-bottom:1px solid var(--candle);cursor:help;border-radius:2px;padding:0 1px}
+.tx-box{background:var(--deep);border:1px solid var(--line-strong);border-radius:12px;padding:6px 18px 14px;max-height:420px;overflow-y:auto;margin-top:14px}
+.tx-seg{display:flex;gap:12px;padding:7px 0;border-bottom:1px solid rgba(237,226,204,.05);font-size:14.5px;line-height:1.6}
+.tx-time{color:var(--dim);font-size:12px;font-family:'Inter',sans-serif;flex-shrink:0;padding-top:3px;min-width:38px}
+.tx-title{font-family:'Fraunces',serif;font-size:18px;margin-top:16px}
+.sig-legend{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.nb-grid{display:grid;gap:12px;margin-top:8px}
+@media(min-width:640px){.nb-grid{grid-template-columns:1fr 1fr}}
+.nb-stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:16px}
+.nb-stat .m-num{font-family:'Fraunces',serif;font-size:30px;font-weight:600;color:var(--candle)}
+.nb-thread{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:10px;font-size:14px}
+.nb-thread .nb-date{color:var(--dim);font-size:12px;margin-bottom:4px}
+.nb-thread .nb-belief{font-family:'Fraunces',serif;font-style:italic;font-size:16px;margin:4px 0}
+.tut-step{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.tut-step:last-child{border-bottom:none}
+.tut-num{font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--candle);flex-shrink:0;width:32px}
+.tut-body h4{font-size:16.5px;margin-bottom:4px;font-family:'Fraunces',serif}
+.tut-body p{font-size:14px;color:var(--muted)}
+.tut-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:8px 22px;margin-top:16px}
+.pattern-callout{margin-top:16px;padding:16px 18px;background:linear-gradient(135deg,rgba(217,150,74,.12),rgba(185,95,61,.07));border:1px solid rgba(217,150,74,.4);border-radius:12px;font-size:15px}
+.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(237,226,204,.25);border-top-color:var(--candle);border-radius:50%;animation:spin .8s linear infinite;vertical-align:-3px;margin-right:8px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.loading-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin-top:16px;color:var(--muted);font-size:14.5px}
+.outline-list{margin:10px 0 0 0;padding-left:0;list-style:none;counter-reset:beat}
+.outline-list li{counter-increment:beat;position:relative;padding:10px 12px 10px 44px;background:var(--deep);border-radius:8px;margin-bottom:7px;font-size:14.5px}
+.outline-list li::before{content:counter(beat);position:absolute;left:12px;top:9px;font-family:'Fraunces',serif;color:var(--candle);font-weight:600;font-size:16px}
+.src-note{margin-top:16px;padding:12px 16px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;font-size:13.5px;color:var(--muted)}
+/* UNDERTOW */
+.ut-intro{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:8px}
+.ut-intro p{font-size:15px;color:var(--muted);margin-top:8px}
+.ut-intro p:first-child{margin-top:0}
+.vuln-grid{display:grid;gap:9px;margin:16px 0}
+.vuln-item{display:flex;gap:12px;align-items:flex-start;background:var(--deep);border:1px solid var(--line);border-radius:10px;padding:13px 15px;cursor:pointer}
+.vuln-item input{margin-top:4px;accent-color:var(--sage);width:16px;height:16px;flex-shrink:0}
+.vuln-result{margin-top:14px;padding:16px 18px;border-radius:0 10px 10px 0;font-size:14.5px;display:none;background:var(--sage-soft);border-left:3px solid var(--sage)}
+.vuln-result.show{display:block;animation:fade .3s}
+.ladder{margin:20px 0}
+.rung{display:flex;gap:16px;align-items:flex-start;padding:14px 16px;border-radius:10px;margin-bottom:8px;border:1px solid var(--line)}
+.rung-num{font-family:'Fraunces',serif;font-weight:700;font-size:18px;flex-shrink:0;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.rung-body h4{font-size:15.5px;margin-bottom:3px}
+.rung-body p{font-size:13.5px;color:var(--muted)}
+.traj-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.traj-q{margin-bottom:18px}
+.traj-q label.tq-label{display:block;font-size:15px;font-weight:600;margin-bottom:8px;font-family:'Fraunces',serif}
+.traj-result{margin-top:16px;padding:18px 20px;border-radius:0 10px 10px 0;font-size:15px;line-height:1.75;display:none}
+.traj-result.show{display:block;animation:fade .3s}
+.traj-result.t-low{background:var(--sage-soft);border-left:3px solid var(--sage)}
+.traj-result.t-mid{background:var(--candle-soft);border-left:3px solid var(--candle)}
+.traj-result.t-high{background:var(--signal-soft);border-left:3px solid var(--signal)}
+.gloss-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;margin-bottom:12px}
+.gloss-card h3{font-family:'Fraunces',serif;font-size:19px;font-style:italic;margin-bottom:10px;color:var(--candle)}
+.gloss-row{margin-top:8px;font-size:14.5px;line-height:1.65}
+.gloss-row b{color:var(--parchment);font-weight:600}
+.bite-cat{margin-top:26px}
+.bite-cat h4{font-family:'Fraunces',serif;font-size:18px;color:var(--signal);margin-bottom:4px}
+.bite-cat p.bc-sub{font-size:13px;color:var(--dim);margin-bottom:10px}
+.resource-box{margin-top:20px;padding:18px 20px;background:var(--signal-soft);border:1px solid rgba(166,49,75,.4);border-radius:var(--radius);font-size:14.5px}
+.resource-box a{color:var(--parchment);text-decoration:underline}
+.money-grid{display:grid;gap:14px;margin-top:8px}
+@media(min-width:640px){.money-grid{grid-template-columns:1fr 1fr}}
+.money-col h4{font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.money-col.ok h4{color:var(--sage)}
+.money-col.watch h4{color:var(--ember)}
+.money-col ul{list-style:none}
+.money-col li{font-size:14px;padding:9px 12px;background:var(--deep);border-radius:8px;margin-bottom:7px}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--candle);color:var(--ink);padding:10px 18px;border-radius:0 0 10px 0;font-weight:600;z-index:100;text-decoration:none}
+.skip-link:focus{left:0}
+.lib-search{margin:4px 0 14px}
+.lib-search input{max-width:420px}
+.backtop{position:fixed;right:18px;bottom:18px;width:44px;height:44px;border-radius:50%;background:var(--panel2);border:1px solid var(--line-strong);color:var(--candle);font-size:20px;display:none;align-items:center;justify-content:center;z-index:60;box-shadow:0 6px 20px rgba(0,0,0,.5);cursor:pointer}
+.backtop.show{display:flex}
+.backtop:hover{border-color:var(--candle)}
+.tour-backdrop{position:fixed;inset:0;background:rgba(10,7,5,.8);z-index:70;display:none}
+body.touring .tour-backdrop{display:block}
+body.touring nav{z-index:80}
+.tour-card{position:fixed;left:50%;transform:translateX(-50%);bottom:22px;width:min(500px,93vw);background:var(--panel2);border:1px solid rgba(217,150,74,.55);border-radius:16px;padding:22px 24px;z-index:85;box-shadow:0 16px 50px rgba(0,0,0,.7);display:none}
+body.touring .tour-card{display:block;animation:fade .3s}
+.tour-card h3{font-size:20px;margin-bottom:6px}
+.tour-card p{font-size:14.5px;color:var(--muted)}
+.tour-row{display:flex;align-items:center;justify-content:space-between;margin-top:16px;gap:10px}
+.tour-dots{display:flex;gap:6px}
+.tour-dot{width:8px;height:8px;border-radius:50%;background:var(--line-strong)}
+.tour-dot.on{background:var(--candle)}
+.tour-btns{display:flex;gap:8px}
+.tour-btns .btn{margin-top:0;padding:9px 18px;font-size:13.5px}
+.tab.tour-glow{box-shadow:0 0 0 2px var(--candle),0 0 20px rgba(217,150,74,.55);color:var(--parchment)}
+.sample-row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 4px}
+.nb-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+@media print{
+  nav,.annbar,.tab,button,.hero-links,footer{display:none!important}
+  body{background:#fff;color:#111}
+  .view{display:block!important}
+  .record{border:1px solid #999;color:#111}
+}
+footer{border-top:1px solid var(--line);padding:34px 0 60px;color:var(--dim);font-size:13.5px}
+footer .wrap{display:flex;flex-direction:column;gap:6px}
+.subhead{font-family:'Fraunces',serif;font-size:24px;margin:40px 0 8px}
+.subnote{color:var(--muted);font-size:14px;margin-bottom:14px;max-width:640px}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap">
+<style id="nf-chrome-css">
+/* ============ Noble Father shared chrome — design tokens ============ */
+:root{
+  --nf-ink:#141019; --nf-ink-2:#0E0A14; --nf-panel:#1B1522; --nf-panel-2:#241B2E;
+  --nf-bone:#ECE4D6; --nf-bone-dim:#BCB1A0; --nf-muted:#8A8071;
+  --nf-brass:#C9A35B; --nf-brass-bright:#E8C879;
+  --nf-wax:#B23A33; --nf-wax-bright:#DC5A4D; --nf-wax-deep:#8E2B26;
+  --nf-line:rgba(201,163,91,.16);
+  --nf-ease:cubic-bezier(.2,.7,.2,1);
+  --nf-display:'Fraunces',Georgia,'Times New Roman',serif;
+  --nf-mono:'Space Mono','IBM Plex Mono',ui-monospace,'SFMono-Regular',monospace;
+}
+.nf-chrome,.nf-chrome *{margin:0;padding:0;box-sizing:border-box}
+
+/* ---- cross-document view transitions: the wax seal holds still while the
+   page changes around it. Browsers without support fall back to the veil. ---- */
+@view-transition{navigation:auto}
+@media (prefers-reduced-motion: no-preference){
+  ::view-transition-old(root){animation:nf-vt-out 190ms cubic-bezier(.5,0,.9,.6) both}
+  ::view-transition-new(root){animation:nf-vt-in 380ms cubic-bezier(.2,.7,.2,1) both}
+  @keyframes nf-vt-out{to{opacity:0;transform:scale(.994);filter:blur(3px)}}
+  @keyframes nf-vt-in{from{opacity:0;transform:scale(1.006);filter:blur(4px)}}
+}
+@media (prefers-reduced-motion: reduce){
+  ::view-transition-old(root),::view-transition-new(root){animation:none}
+}
+.nf-seal{view-transition-name:nf-seal}
+
+/* ---- shared motion utilities (driven by data attributes) ---- */
+.nf-ch{display:inline-block;white-space:pre}
+@media (prefers-reduced-motion: no-preference){
+  [data-nf-split] .nf-ch{opacity:0;transform:translateY(.42em) rotateX(-38deg);
+    transform-origin:50% 100%;
+    animation:nf-ch-in 620ms cubic-bezier(.16,1,.3,1) both;
+    animation-delay:calc(var(--i)*26ms + var(--d,0ms))}
+  @keyframes nf-ch-in{to{opacity:1;transform:none}}
+  [data-nf-split].nf-replay .nf-ch{animation:none;opacity:0;transform:translateY(.42em)}
+}
+
+/* gold-leaf: light travels across the letterforms rather than sitting still */
+@media (prefers-reduced-motion: no-preference){
+  .nf-leaf{background-size:280% 100%;animation:nf-leaf 7s ease-in-out infinite}
+  @keyframes nf-leaf{0%,100%{background-position:14% 50%}50%{background-position:86% 50%}}
+}
+.nf-veil{position:fixed;inset:0;z-index:9990;pointer-events:none;opacity:0;
+  background:
+    radial-gradient(120% 90% at 50% 108%, rgba(217,150,74,.14), transparent 55%),
+    var(--nf-ink-2);
+  animation:nf-veil-in 420ms var(--nf-ease) both}
+@keyframes nf-veil-in{from{opacity:1}to{opacity:0}}
+.nf-veil.nf-veil-out{animation:none;opacity:1;transition:opacity 180ms cubic-bezier(.5,0,.9,.6)}
+
+/* ---- bookmark ribbon: reading progress as a strip of gilding ---- */
+.nf-ribbon{position:fixed;top:0;left:0;right:0;height:2px;z-index:9945;
+  transform-origin:0 50%;transform:scaleX(0);
+  background:linear-gradient(90deg,#8E6B2F,#E8C879 60%,#C9A35B);
+  box-shadow:0 0 8px rgba(232,200,121,.45)}
+
+/* ---- scroll-reveal (JS-gated; nothing hides without the engine) ---- */
+.nf-r{opacity:0;transform:translateY(14px);filter:blur(6px);
+  transition:opacity .64s cubic-bezier(.16,1,.3,1),transform .64s cubic-bezier(.16,1,.3,1),
+  filter .64s cubic-bezier(.16,1,.3,1);transition-delay:var(--nf-d,0s)}
+.nf-r.nf-pop{transform:translateY(12px) scale(.965);filter:none}
+.nf-r.nf-in{opacity:1;transform:none;filter:none}
+
+/* ---- the seal ---- */
+.nf-seal{position:fixed;right:18px;bottom:18px;z-index:9950;width:56px;height:56px;
+  border-radius:50%;border:none;cursor:pointer;
+  font-family:var(--nf-display);font-weight:600;font-size:19px;letter-spacing:.02em;
+  color:#F2E6D2;text-shadow:0 -1px 1px rgba(0,0,0,.45),0 1px 1px rgba(255,255,255,.12);
+  background:radial-gradient(circle at 34% 28%,var(--nf-wax-bright),var(--nf-wax) 52%,var(--nf-wax-deep) 100%);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+    0 0 0 3px rgba(178,58,51,.28),0 6px 18px rgba(0,0,0,.55);
+  transition:transform 180ms var(--nf-ease),box-shadow 180ms var(--nf-ease)}
+.nf-seal:hover{transform:translateY(-2px) rotate(-4deg);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+    0 0 0 3px rgba(178,58,51,.34),0 8px 22px rgba(0,0,0,.6),0 0 24px rgba(232,200,121,.28)}
+.nf-seal:active{transform:scale(.92);transition-duration:90ms}
+.nf-seal:focus-visible{outline:2px solid var(--nf-brass);outline-offset:3px}
+.nf-seal[aria-expanded="true"]{transform:scale(.92);opacity:0;pointer-events:none;transition-duration:140ms}
+@media (prefers-reduced-motion: no-preference){
+  .nf-seal{animation:nf-sealidle 7s ease-in-out infinite}
+  @keyframes nf-sealidle{
+    0%,100%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.28),0 6px 18px rgba(0,0,0,.55)}
+    50%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.35),
+      0 0 0 3px rgba(178,58,51,.3),0 6px 18px rgba(0,0,0,.55),0 0 22px rgba(232,200,121,.22)}}
+}
+
+/* ---- scrim + leather catalogue panel ---- */
+.nf-scrim{position:fixed;inset:0;background:rgba(10,7,13,.58);backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);z-index:9960;opacity:0;pointer-events:none;
+  transition:opacity 140ms var(--nf-ease)}
+.nf-open .nf-scrim{opacity:1;pointer-events:auto;transition-duration:220ms}
+.nf-panel{position:fixed;top:0;right:0;bottom:0;width:min(408px,100vw);z-index:9970;
+  display:flex;flex-direction:column;
+  background:linear-gradient(164deg,#1E1726,#141019 55%,#0E0A14),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='.05'/%3E%3C/svg%3E");
+  box-shadow:inset 1px 0 0 rgba(236,228,214,.05),-32px 0 64px rgba(0,0,0,.5);
+  transform:translateX(103%);visibility:hidden;
+  transition:transform 160ms cubic-bezier(.5,0,.9,.6),visibility 0s 160ms}
+.nf-panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28);
+  opacity:.85}
+.nf-panel::after{content:"";position:absolute;inset:9px;pointer-events:none;
+  border:1px dashed rgba(201,163,91,.13);border-radius:2px}
+.nf-open .nf-panel{transform:translateX(0);visibility:visible;
+  transition:transform 270ms var(--nf-ease),visibility 0s}
+@media(max-width:560px){
+  .nf-panel{width:100vw;transform:translateY(103%)}
+  .nf-panel::before{left:0;right:0;top:0;bottom:auto;width:auto;height:3px;
+    background:linear-gradient(90deg,#E8C879,#8E6B2F 28%,#C9A35B 55%,#E8C879 78%,#7A5A28)}
+  .nf-open .nf-panel{transform:translateY(0)}
+}
+.nf-panel-head{display:flex;align-items:flex-start;justify-content:space-between;
+  padding:26px 26px 18px;border-bottom:1px solid var(--nf-line)}
+.nf-eyebrow{font-family:var(--nf-mono);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--nf-brass);margin-bottom:8px}
+.nf-panel-title{font-family:var(--nf-display);font-size:27px;font-weight:500;
+  color:var(--nf-bone);line-height:1.1}
+.nf-close{background:none;border:1px solid rgba(201,163,91,.3);color:var(--nf-bone-dim);
+  width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;
+  flex-shrink:0;margin-left:12px;transition:color 140ms,border-color 140ms,transform 140ms var(--nf-ease)}
+.nf-close:hover{color:var(--nf-brass-bright);border-color:var(--nf-brass);transform:rotate(90deg)}
+.nf-close:focus-visible{outline:2px solid var(--nf-brass);outline-offset:2px}
+.nf-toc{list-style:none;overflow-y:auto;flex:1;padding:10px 26px 18px;overscroll-behavior:contain}
+.nf-row{border-bottom:1px solid rgba(201,163,91,.12)}
+.nf-row a{display:grid;grid-template-columns:12px 34px 1fr auto;grid-template-rows:auto auto;
+  align-items:baseline;column-gap:9px;padding:13px 2px;text-decoration:none;
+  transition:transform 160ms var(--nf-ease),background 160ms var(--nf-ease)}
+.nf-row a:hover{transform:translateX(4px)}
+.nf-dot{grid-row:1/3;align-self:center;width:5px;height:5px;border-radius:50%;
+  background:var(--va,#C9A35B);opacity:.55;box-shadow:0 0 7px var(--va,#C9A35B);
+  transition:opacity 160ms,transform 160ms var(--nf-ease)}
+.nf-row a:hover .nf-dot{opacity:1;transform:scale(1.35)}
+.nf-row a:focus-visible{outline:2px solid var(--nf-brass);outline-offset:-2px;border-radius:4px}
+.nf-num{grid-row:1/3;font-family:var(--nf-mono);font-size:11px;color:var(--nf-muted);
+  transition:color 160ms,text-shadow 160ms}
+.nf-row a:hover .nf-num{color:var(--nf-brass);text-shadow:0 0 12px rgba(232,200,121,.5)}
+.nf-vol{font-family:var(--nf-display);font-size:16.5px;font-weight:500;color:var(--nf-bone);
+  transition:color 160ms}
+.nf-row a:hover .nf-vol{color:var(--nf-brass-bright)}
+.nf-desc{grid-column:3/5;font-size:11.5px;color:var(--nf-muted);letter-spacing:.02em;
+  font-family:system-ui,-apple-system,sans-serif}
+.nf-ext{grid-column:4;font-size:11px;color:var(--nf-muted)}
+.nf-row.nf-here .nf-vol{color:var(--nf-brass)}
+.nf-row.nf-here .nf-num{color:var(--nf-wax-bright)}
+.nf-here-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px;
+  background:radial-gradient(circle at 35% 30%,var(--nf-wax-bright),var(--nf-wax-deep));
+  box-shadow:0 0 8px rgba(220,90,77,.6);vertical-align:baseline}
+.nf-panel-foot{padding:14px 26px 20px;border-top:1px solid var(--nf-line);
+  font-family:var(--nf-display);font-style:italic;font-size:12.5px;color:var(--nf-muted)}
+.nf-open .nf-row{opacity:0;transform:translateY(9px);
+  animation:nf-rise 210ms var(--nf-ease) both;animation-delay:calc(var(--nf-i)*20ms + 60ms)}
+@keyframes nf-rise{to{opacity:1;transform:translateY(0)}}
+
+@media(prefers-reduced-motion:reduce){
+  .nf-veil{animation:none;opacity:0}
+  .nf-veil.nf-veil-out{transition:none}
+  .nf-seal,.nf-seal:hover,.nf-close:hover,.nf-row a,.nf-row a:hover{transition:none;transform:none}
+  .nf-panel,.nf-open .nf-panel{transition:transform 0s,visibility 0s}
+  .nf-scrim,.nf-open .nf-scrim{transition:none}
+  .nf-open .nf-row{animation:none;opacity:1;transform:none}
+}
+.backtop{bottom:86px!important;right:20px!important}body.touring .nf-seal{opacity:0;pointer-events:none}
+.hero h1{letter-spacing:-.02em;text-wrap:balance}
+.tab{transition:color .16s var(--nf-ease),border-color .16s,background .16s}
+.card{box-shadow:0 14px 36px -20px rgba(0,0,0,.6)}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#home">Skip to content</a>
+
+<div class="annbar"><div class="annbar-inner">
+  <img onerror="this.hidden=true" src="assets/mark-512.png" alt="" class="annbar-mark">
+  <a class="tt" href="https://www.tiktok.com/@noblefathercreatorsource?_r=1&_t=ZT-97xRxeczFfh" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1-.94-1.6-2.26-1.6-3.72h-3.1v13.4a2.7 2.7 0 1 1-2.7-2.7c.28 0 .55.04.8.12V9.8a5.8 5.8 0 1 0 5 5.75V9.5a6.9 6.9 0 0 0 4 1.28v-3.1c-.9 0-1.75-.28-2.4-.86z"/></svg> @noblefathercreatorsource</a>
+  <a class="hub" href="https://noblefathercreations.netlify.app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg> Noble Father Creations</a>
+</div></div>
+<nav>
+  <div class="nav-inner">
+    <a href="https://noblefathercreations.netlify.app/" target="_blank" rel="noopener" class="brand-lockup">
+      <img onerror="this.hidden=true" src="assets/mark-512.png" alt="" class="brand-mark-icon">
+      <span class="brand-word"><b>N</b>oble <b>F</b>ather<br><b>C</b>reations</span>
+    </a>
+    <button class="tab active" data-view="home">Start</button>
+    <button class="tab" data-view="learn">Learn</button>
+    <button class="tab" data-view="analyze">Analyze</button>
+    <button class="tab" data-view="intent">Intent</button>
+    <button class="tab" data-view="practice">Practice</button>
+    <button class="tab" data-view="undertow">The Undertow</button>
+    <button class="tab" data-view="thread">The Thread</button>
+    <button class="tab" data-view="notebook">Notebook</button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<section class="view active" id="view-home">
+  <div class="wrap">
+    <div class="hero">
+      <img onerror="this.hidden=true" src="assets/logo-hero.png" alt="Noble Father Creations" class="hero-logo">
+      <span class="eyebrow">A field guide to conscious consumption</span>
+      <h1>Your reactions<br>are <em>the map</em>.</h1>
+      <p class="lede">Every piece of content you consume — the tarot reading, the sales pitch, the guru's promise, the post that made you furious — was built with intention. This guide works at two zoom levels: moment to moment, it teaches you to recognize the psychology working on you and judge the intent behind it. Zoomed out, it maps the longer currents — the chosen-one narratives, karmic relationship framing, and high-control group dynamics that a single video can be the first quiet step toward. Either way, the goal is the same: use what hits you as a doorway into your own healing, not something that happens to you unnoticed.</p>
+      <div class="hero-links">
+        <a class="hlink tt" href="https://www.tiktok.com/@noblefathercreatorsource?_r=1&_t=ZT-97xRxeczFfh" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 5.82c-1-.94-1.6-2.26-1.6-3.72h-3.1v13.4a2.7 2.7 0 1 1-2.7-2.7c.28 0 .55.04.8.12V9.8a5.8 5.8 0 1 0 5 5.75V9.5a6.9 6.9 0 0 0 4 1.28v-3.1c-.9 0-1.75-.28-2.4-.86z"/></svg> Watch on TikTok</a>
+        <a class="hlink hub" href="https://noblefathercreations.netlify.app/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg> More from Noble Father Creations</a>
+        <a class="hlink hub" href="javascript:void(0)" onclick="startTour()" style="cursor:pointer">✦ Take the 60-second tour</a>
+      </div>
+    </div>
+    <div class="entry-cards">
+      <button class="entry" data-goto="learn">
+        <span class="eyebrow">Educate</span>
+        <h3>Learn the mechanics</h3>
+        <p>Every major psychological mechanism used in content creation — attention hooks, identity installs, hope loops, amplifiers, and the aftereffects that keep working when the screen goes dark. With counters for each.</p>
+      </button>
+      <button class="entry" data-goto="analyze">
+        <span class="eyebrow">Decode</span>
+        <h3>Analyze real content</h3>
+        <p>Paste a caption, transcript, DM, or sales page. The analyzer scans it for tactic signatures and shows you exactly which phrases are doing what — with a read on the overall pressure level.</p>
+      </button>
+      <button class="entry" data-goto="intent">
+        <span class="eyebrow">Judge</span>
+        <h3>Discern intent</h3>
+        <p>Technique is neutral; intent is everything. A live-scoring creator checklist, the moment-after-the-peak test, genre field notes, and an honest self-check — because discernment points both ways.</p>
+      </button>
+      <button class="entry" data-goto="undertow">
+        <span class="eyebrow">Zoom out</span>
+        <h3>The Undertow</h3>
+        <p>Chosen-one narratives, karmic relationship framing, and the real path from content into covens and high-control groups. A glossary, an escalation ladder, and a trajectory tracker — for the longer current underneath any single video.</p>
+      </button>
+      <button class="entry" data-goto="thread">
+        <span class="eyebrow">Heal</span>
+        <h3>Follow the thread</h3>
+        <p>Something in a video hit you. That hit is data. A guided, branching shadow-work practice that reads your typed answers and walks you from the hit, to the belief underneath it, to one small action.</p>
+      </button>
+    </div>
+
+    <h3 class="subhead">How to use this guide</h3>
+    <p class="subnote">A two-minute orientation, then you're on your own.</p>
+    <div class="tut-box">
+      <div class="tut-step">
+        <div class="tut-num">1</div>
+        <div class="tut-body"><h4>Learn</h4><p>Reference material — 35 psychological mechanisms and dozens of named tactics used across social media, sales, gurus, and spiritual content. No input needed; just browse, filter by category, and get familiar with the vocabulary. Come back to it any time something needs a name.</p></div>
+      </div>
+      <div class="tut-step">
+        <div class="tut-num">2</div>
+        <div class="tut-body"><h4>Analyze</h4><p>Paste a transcript, caption, or DM. You'll get a full AI breakdown — an outline of what happens, the exact statements quoted with the tactic each is running, and an overall pressure read — plus an instant offline pattern scan underneath it.</p></div>
+      </div>
+      <div class="tut-step">
+        <div class="tut-num">3</div>
+        <div class="tut-body"><h4>Intent</h4><p>Once you can name the tactics, this is where you judge what they're <i>for</i>. A live-scoring checklist, the moment-after-the-peak test, and field notes by genre — because the same technique serves a healer and a harvester.</p></div>
+      </div>
+      <div class="tut-step">
+        <div class="tut-num">4</div>
+        <div class="tut-body"><h4>Practice</h4><p>A spot-the-tactic game with realistic snippets. Train your eye until recognizing these patterns becomes automatic instead of effortful.</p></div>
+      </div>
+      <div class="tut-step">
+        <div class="tut-num">5</div>
+        <div class="tut-body"><h4>The Undertow</h4><p>The zoomed-out view — a glossary of spiritual-subculture language, an escalation ladder, a trajectory tracker for a specific creator or relationship over time, and honest checklists for high-control group dynamics and karmic/twin-flame relationship framing.</p></div>
+      </div>
+      <div class="tut-step">
+        <div class="tut-num">6</div>
+        <div class="tut-body"><h4>The Thread</h4><p>The core practice. When something actually catches you emotionally — not just intellectually — come here and follow it: six typed, branching questions from the hit itself down to the belief underneath it and one small real action.</p></div>
+      </div>
+      <div class="tut-step">
+        <div class="tut-num">7</div>
+        <div class="tut-body"><h4>Notebook</h4><p>Your private history, stored only on this device. After your third or fourth completed thread, come back here — this is where the guide shows you the pattern across sessions that no single session could show you alone.</p></div>
+      </div>
+    </div>
+
+    <div class="home-note"><strong>A note on care.</strong> This is a self-reflection and media-literacy tool — not therapy, and not a substitute for professional support. If what surfaces here feels heavy or touches trauma, that's a signal it deserves more than a self-guided page. If you're in crisis in the U.S., you can call or text 988 any time. Nothing you type is stored or sent anywhere; it lives on this page and disappears when you close it.</div>
+  </div>
+</section>
+
+<!-- LEARN -->
+<section class="view" id="view-learn">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The architecture</span>
+      <h2>How content gets in: three doors</h2>
+      <p>Content doesn't force its way into your mind. It walks through three doors you leave open — <b style="color:var(--candle)">attention</b> (how it gets in), <b style="color:#d98a68">identity</b> (what it installs), and <b style="color:var(--violet)">hope</b> (why you return) — then <b>amplifiers</b> hold the doors open, and <b style="color:var(--sage)">aftereffects</b> keep working once the screen is dark. This applies to a tarot reading, a course funnel, a rage-bait post, and a shopping livestream equally.</p>
+    </div>
+    <div class="lib-search"><input type="text" id="lib-search" placeholder="Search the whole library… e.g. 'urgency', 'twin flame', 'guilt'" aria-label="Search the library"></div>
+    <div class="chips" id="mech-chips">
+      <button class="chip on" data-f="all">All</button>
+      <button class="chip" data-f="attention">Door 1 · Attention</button>
+      <button class="chip" data-f="identity">Door 2 · Identity</button>
+      <button class="chip" data-f="hope">Door 3 · Hope</button>
+      <button class="chip" data-f="amplifier">Amplifiers</button>
+      <button class="chip" data-f="after">Aftereffects</button>
+    </div>
+    <div id="mech-list"></div>
+
+    <h3 class="subhead">Named plays, by arena</h3>
+    <p class="subnote">Beyond the core mechanisms, each arena of content has signature plays. Filter by arena — many appear everywhere.</p>
+    <div class="chips" id="tech-chips">
+      <button class="chip on" data-f="all">All</button>
+      <button class="chip" data-f="social">Social media</button>
+      <button class="chip" data-f="sales">Sales & marketing</button>
+      <button class="chip" data-f="guru">Gurus & courses</button>
+      <button class="chip" data-f="spiritual">Spiritual & readings</button>
+    </div>
+    <div id="tech-list"></div>
+  </div>
+</section>
+
+<!-- ANALYZE -->
+<section class="view" id="view-analyze">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The decoder</span>
+      <h2>Analyze real content</h2>
+      <p>Paste anything — a caption, a video transcript (copy it straight from TikTok or YouTube's own transcript/captions button on the video), a sales page, a DM from a "coach," a channeled message. Get a full statement-by-statement AI breakdown, plus an instant offline pattern scan. It reads patterns, not minds: treat the result as a flashlight, not a verdict.</p>
+    </div>
+
+    <div class="card" style="border-color:rgba(217,150,74,.35)">
+      <h3>Paste it here</h3>
+      <p class="help" style="font-size:14px;color:var(--muted);margin:8px 0 12px">Most platforms let you view or copy captions directly: on TikTok, tap <b>···</b> under the video → <b>Transcript</b>; on YouTube, open the description → <b>Show transcript</b>. Copy that text and paste it below.</p>
+      <div class="sample-row">
+        <button class="opt" onclick="loadSample('spiritual')">Try an example: reading</button>
+        <button class="opt" onclick="loadSample('guru')">Try an example: guru pitch</button>
+        <button class="opt" onclick="loadSample('honest')">Try an example: honest content</button>
+      </div>
+      <textarea id="ai-text-input" class="big-input" placeholder="Paste the transcript, caption, DM, or sales page here…"></textarea>
+      <button class="btn" onclick="aiAnalyzeText()" id="ai-text-btn">Run AI analysis</button>
+      <p class="small-print">Runs a full breakdown: an outline of what happens, the key statements quoted with the tactic each is running and why, and an overall pressure read.</p>
+    </div>
+
+    <div id="ai-out"></div>
+
+    <h3 class="subhead">Quick pattern scanner (works anywhere)</h3>
+    <p class="subnote">A lighter, instant check that runs entirely on this page — it matches the language against known tactic signatures. No AI, no connection needed.</p>
+    <textarea id="analyze-input" class="big-input" placeholder="Paste the content here… captions, transcripts, DMs, sales pages, bios — anything with words in it."></textarea>
+    <button class="btn" onclick="runAnalysis()">Scan for signatures</button>
+    <div id="analyze-out"></div>
+  </div>
+</section>
+
+<!-- INTENT -->
+<section class="view" id="view-intent">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The only real question</span>
+      <h2>Discern intent</h2>
+      <p>A healer and a harvester use the same techniques — eye contact, open loops, "you" language, urgency. What separates them is what it's all <i>for</i>, and intent leaves footprints. Three tools below: the peak test, the creator checklist, and field notes by genre. Then one more that most guides skip: checking yourself.</p>
+    </div>
+
+    <div class="card" style="border-color:rgba(217,150,74,.35)">
+      <h3>The moment-after-the-peak test</h3>
+      <div class="kv">Every persuasive piece of content builds to an emotional peak — the validation, the revelation, the fear, the hope. <b>Watch what happens in the ten seconds after the peak.</b> That's the moment a creator is least able to hide what they wanted from you. Is there a link? A price? A "part 2 tomorrow"? A DM funnel? Or does the content resolve, hand you something usable, and let you go? One observation, repeated across a creator's catalog, tells you more than any single video can.</div>
+    </div>
+
+    <h3 class="subhead" style="color:var(--sage)">Green flags</h3>
+    <p class="subnote">Signs a creator wants you stronger — with or without them. Think of one specific creator and check what's true.</p>
+    <div class="flag-grid" id="green-flags"></div>
+    <h3 class="subhead" style="color:var(--ember)">Red flags</h3>
+    <p class="subnote">Signs the model depends on you staying hooked.</p>
+    <div class="flag-grid" id="red-flags"></div>
+    <div class="scorebox">
+      <span class="eyebrow">Reading</span>
+      <div class="verdict" id="verdict">Check some flags to get a reading.</div>
+      <div class="meter"><div id="meter-fill" style="width:0%"></div></div>
+    </div>
+
+    <h3 class="subhead">Field notes by genre</h3>
+    <p class="subnote">Different arenas lean on different hooks. One key question to carry into each.</p>
+    <div id="genre-list"></div>
+
+    <h3 class="subhead">Discernment points both ways: the self-check</h3>
+    <p class="subnote">Manipulation needs a matching vulnerability to land. These five patterns are how content quietly damages people — no malicious creator required. Check what's honestly true; guidance appears as you go. No score is kept.</p>
+    <div id="danger-list"></div>
+    <div class="home-note" style="margin-top:24px"><strong>The universal test:</strong> would someone who genuinely loves you celebrate this trait the way the content does — or gently ask if it's costing you something? That gap is where wellbeing gets traded for attention.</div>
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section class="view" id="view-practice">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Train the eye</span>
+      <h2>Spot the tactic</h2>
+      <p>Reading about tactics builds knowledge. Spotting them in the wild builds protection. Each round shows you a realistic snippet — select every tactic you can find, then reveal. Expect to miss some at first; that's the point.</p>
+    </div>
+    <div id="quiz-box"></div>
+  </div>
+</section>
+
+<!-- UNDERTOW -->
+<section class="view" id="view-undertow">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Zooming out</span>
+      <h2>The Undertow</h2>
+      <p>Everything else in this guide works one video at a time. This section is different — it's about current, not waves. Most tarot, spiritual, and "awakening" content is exactly what it looks like: genuinely meaningful language, real community, harmless entertainment. A specific, recurring subset of it — chosen-one narratives, karmic relationship framing, and eventually organized groups, covens, and collectives — has historically also served as an on-ramp toward higher-control involvement. This section maps that whole current honestly, without telling you that you're caught in it. Only you can tell.</p>
+    </div>
+
+    <div class="ut-intro">
+      <p><b style="color:var(--parchment)">A quick, honest check-in first.</b> The patterns below work on anyone — they're not a sign of gullibility, they're a sign of being human during a vulnerable window. Check anything that's true for you right now. This isn't a diagnosis; it's context for reading the rest of this section clearly.</p>
+      <div class="vuln-grid" id="vuln-grid"></div>
+      <div class="vuln-result" id="vuln-result"></div>
+    </div>
+
+    <h3 class="subhead">The escalation ladder</h3>
+    <p class="subnote">Most people who watch a tarot video never move past rung one or two — that's normal, and fine. This exists so rung four or five is recognizable if you're standing on it, not to make rung one feel dangerous.</p>
+    <div class="ladder" id="ladder"></div>
+
+    <h3 class="subhead">Trace your trajectory</h3>
+    <p class="subnote">Pick a specific creator, community, or relationship. Answer honestly about how things have changed since you started — this tool is about direction over time, not any single moment.</p>
+    <div class="traj-card">
+      <div id="traj-body"></div>
+      <button class="btn" onclick="runTrajectory()">See the reflection</button>
+      <div class="traj-result" id="traj-result"></div>
+    </div>
+
+    <h3 class="subhead">The glossary — what the words are actually doing</h3>
+    <p class="subnote">Every entry here has a genuinely meaningful, common use. Each also has a way it gets leveraged. Holding both is the point — the words aren't the problem. Context is.</p>
+    <div id="gloss-list"></div>
+
+    <h3 class="subhead">High-control group indicators</h3>
+    <p class="subnote">These four categories loosely follow how cult-recovery researchers describe the ways high-control groups maintain influence. Checking several doesn't mean you're "in a cult" — it means a conversation with someone outside the situation is worth having.</p>
+    <div id="bite-body"></div>
+    <div class="scorebox">
+      <span class="eyebrow">Reading</span>
+      <div class="verdict" id="bite-verdict">Check what's true to get a reading.</div>
+      <div class="meter"><div id="bite-meter" style="width:0%"></div></div>
+    </div>
+    <div class="resource-box"><b>If several of these felt true:</b> that's worth a conversation with someone entirely outside the situation — a friend, a family member, or a therapist. The International Cultic Studies Association (<a href="https://icsahome.com" target="_blank" rel="noopener">icsahome.com</a>) is a real, established, non-alarmist resource specifically for this — for you, or for a loved one you're worried about.</div>
+
+    <h3 class="subhead">Karmic &amp; twin-flame relationship check</h3>
+    <p class="subnote">Spiritual language for a relationship can be genuinely meaningful. It can also be the exact language that keeps someone from leaving something painful. Check what's honestly true.</p>
+    <div id="karmic-body"></div>
+    <div class="scorebox">
+      <span class="eyebrow">Reading</span>
+      <div class="verdict" id="karmic-verdict">Check what's true to get a reading.</div>
+      <div class="meter"><div id="karmic-meter" style="width:0%"></div></div>
+    </div>
+    <div class="resource-box"><b>If this is describing something painful or frightening:</b> the National Domestic Violence Hotline (1-800-799-7233, <a href="https://www.thehotline.org" target="_blank" rel="noopener">thehotline.org</a>) is free, confidential, and available around the clock — for any relationship, spiritual language or not.</div>
+
+    <h3 class="subhead">Follow the money</h3>
+    <p class="subnote">Spiritual commerce is normal and fine. These are the patterns worth noticing either way.</p>
+    <div class="money-grid">
+      <div class="money-col ok"><h4>Usually just business</h4><ul id="money-ok"></ul></div>
+      <div class="money-col watch"><h4>Worth watching</h4><ul id="money-watch"></ul></div>
+    </div>
+
+    <div class="home-note" style="margin-top:30px"><strong>Last word on this section.</strong> None of this exists to make you suspicious of spiritual practice, tarot, or the people who genuinely find meaning in this language — including, probably, people you love. It exists so that if something in your life has quietly moved from meaningful into controlling, you have real words for it, and real places to take those words. That's the whole goal. Nothing here diagnoses anything. You're the only one who actually knows.</div>
+  </div>
+</section>
+
+<!-- THREAD -->
+<section class="view" id="view-thread">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">The practice of alchemy</span>
+      <h2>Follow the thread</h2>
+      <p>Something you watched landed on you — a line, a claim, a story. That hit is the most useful thing in this whole guide, because it's information about <i>you</i>. Answer in your own words; the guide reads what you write and responds to it. Nothing is stored or sent anywhere. At the end you get a written record of the thread to copy and keep.</p>
+    </div>
+    <div class="thread-wrap">
+      <div class="thread-line"></div>
+      <div class="thread-fill" id="thread-fill" style="height:0"></div>
+
+      <div class="step live" id="step-0">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Before the questions</div>
+          <h3>What hit you?</h3>
+          <p class="help">Write the line, claim, or moment as closely as you remember it. From any content — a reading, an ad, a podcast clip, a stranger's story.</p>
+          <textarea id="a-line" placeholder='"Someone is thinking about you constantly." "You could be rich by now if you weren&#39;t lazy." "Real ones heal alone." Whatever caught.'></textarea>
+          <div class="insight" id="ins-0"></div>
+          <button class="btn" onclick="doneStep(0)">That's what hit</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-1">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Question one · 1 of 6</div>
+          <h3>Who — or what — surfaced?</h3>
+          <p class="help">Don't curate it. What came up first when it hit?</p>
+          <div class="opt-row" id="q1-opts">
+            <button class="opt" data-v="A specific person">A specific person</button>
+            <button class="opt" data-v="A pattern or habit">A pattern / habit</button>
+            <button class="opt" data-v="A fear">A fear</button>
+            <button class="opt" data-v="A memory">A memory</button>
+            <button class="opt" data-v="A desire or hope">A desire / hope</button>
+            <button class="opt" data-v="A specific goal or outcome">A goal / outcome</button>
+            <button class="opt" data-v="A comparison to someone else">A comparison to someone else</button>
+            <button class="opt" data-v="An old version of myself">An old version of myself</button>
+          </div>
+          <textarea id="a-who" placeholder="Describe what surfaced, in your own words…"></textarea>
+          <div class="insight" id="ins-1"></div>
+          <button class="btn" onclick="doneStep(1)">Next question</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-2">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Question two · 2 of 6</div>
+          <h3>Was this already on your mind?</h3>
+          <div class="opt-row" id="q2-opts">
+            <button class="opt" data-v="consciously">Yes — consciously</button>
+            <button class="opt" data-v="background">In the background</button>
+            <button class="opt" data-v="nowhere">It came out of nowhere</button>
+          </div>
+          <div class="insight" id="ins-2"></div>
+          <button class="btn" onclick="doneStep(2)" id="btn-2" disabled>Next question</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-3">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Question three · 3 of 6</div>
+          <h3>What belief made this land?</h3>
+          <p class="help">The line only hit because something in you agreed with it. Write the belief underneath, in plain words — the flatter the sentence, the more useful. Or start from a common one.</p>
+          <div class="opt-row" id="q3-opts">
+            <button class="opt" data-v="I'm only wanted if someone chases me">Love must be chased</button>
+            <button class="opt" data-v="My worth is tied to my output">Worth = output</button>
+            <button class="opt" data-v="My work isn't real until other people see it and it goes viral">Not real until it's seen</button>
+            <button class="opt" data-v="Needing help means I'm weak">Help = weakness</button>
+            <button class="opt" data-v="I'm behind everyone else and running out of time">I'm behind everyone</button>
+            <button class="opt" data-v="My window is closing and soon it'll be too late">My window is closing</button>
+            <button class="opt" data-v="If I'm not exceptional, I'm nothing">Special or nothing</button>
+            <button class="opt" data-v="I'm secretly a fraud and one day everyone will find out">Secretly a fraud</button>
+            <button class="opt" data-v="One mistake and everything falls apart">One mistake ruins it</button>
+            <button class="opt" data-v="I have to control everything or it falls apart">Must control everything</button>
+            <button class="opt" data-v="I'm never actually financially safe">Never financially safe</button>
+            <button class="opt" data-v="Other people's disappointment is my fault to prevent">Their disappointment = my fault</button>
+            <button class="opt" data-v="If they really knew me, they'd leave">Known = abandoned</button>
+            <button class="opt" data-v="Getting close to people isn't safe">Closeness isn't safe</button>
+          </div>
+          <textarea id="a-belief" placeholder="The belief underneath, in your own words…"></textarea>
+          <div class="insight" id="ins-3"></div>
+          <button class="btn" onclick="doneStep(3)">Next question</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-4">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Question four · 4 of 6</div>
+          <h3>Where did it come from?</h3>
+          <p class="help">Trace it back. Where was it learned, and roughly how old is it?</p>
+          <div class="opt-row" id="q4-opts">
+            <button class="opt" data-v="family / upbringing">Family / upbringing</button>
+            <button class="opt" data-v="an early relationship">Early relationship</button>
+            <button class="opt" data-v="school or peers">School / peers</button>
+            <button class="opt" data-v="a specific event">A specific event</button>
+            <button class="opt" data-v="religion or community">Religion / community</button>
+            <button class="opt" data-v="media and culture">Media / culture</button>
+            <button class="opt" data-v="work or a professional environment">Work / professional environment</button>
+            <button class="opt" data-v="a standard I set for myself, with no one else involved">A standard I set myself</button>
+          </div>
+          <textarea id="a-origin" placeholder="What do you remember about learning this? When did it start feeling true?"></textarea>
+          <div class="insight" id="ins-4"></div>
+          <button class="btn" onclick="doneStep(4)">I've traced it</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-5">
+        <div class="node"></div>
+        <div class="step-card naming">
+          <div class="q-label">The naming</div>
+          <h3>Say it out loud.</h3>
+          <p class="help">This is the moment that matters. Naming it plainly — a sentence, not a feeling — turns something vague into something you can examine. It's drafted from your own words below. Edit until it's exactly true, then say it out loud. Actually out loud.</p>
+          <div class="belief-line">“My shadow belief is…”</div>
+          <textarea id="a-named"></textarea>
+          <button class="btn" onclick="doneStep(5)">I said it out loud</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-6">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Question five · 5 of 6</div>
+          <h3>Is this belief protecting you or costing you?</h3>
+          <p class="help">Be fair to it — it probably protected you once. That's why it stuck. List both sides; add at least one to each.</p>
+          <div class="two-col">
+            <div class="col-box help-col">
+              <h4>It has protected me by…</h4>
+              <ul id="list-help"></ul>
+              <div class="add-row"><input type="text" id="in-help" placeholder="e.g. kept me careful"><button onclick="addEntry('help')" aria-label="Add protection">+</button></div>
+            </div>
+            <div class="col-box cost-col">
+              <h4>It has cost me…</h4>
+              <ul id="list-cost"></ul>
+              <div class="add-row"><input type="text" id="in-cost" placeholder="e.g. rest, closeness, years"><button onclick="addEntry('cost')" aria-label="Add cost">+</button></div>
+            </div>
+          </div>
+          <div class="tally" id="tally"></div>
+          <div class="insight" id="ins-6"></div>
+          <button class="btn" onclick="doneStep(6)" id="btn-6" disabled>Next question</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-7">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">Question six · 6 of 6 — the one that matters</div>
+          <h3>What's one small thing you can do?</h3>
+          <p class="help">Shadow work without action is just awareness. These suggestions were matched to the belief you named — pick one or write your own. Make it absurdly small: if it can't happen within 48 hours, it's still a wish.</p>
+          <div class="opt-row" id="q7-opts"></div>
+          <textarea id="a-action" placeholder="One small action, stated plainly…"></textarea>
+          <button class="btn" onclick="doneStep(7)">Commit to it</button>
+        </div>
+      </div>
+
+      <div class="step" id="step-8">
+        <div class="node"></div>
+        <div class="step-card">
+          <div class="q-label">The record</div>
+          <h3>Your thread, written down</h3>
+          <p class="help">Nothing here is saved anywhere — copy this and keep it. Come back in a week and ask what shifted.</p>
+          <div class="record" id="record"></div>
+          <button class="btn" onclick="copyRecord()" id="copy-btn">Copy the record</button>
+          <button class="btn ghost" onclick="resetThread()">Start a new thread</button>
+          <p class="small-print">One caution from the guide itself: don't turn this into a compulsion. Not every video deserves an excavation — only the ones that genuinely catch. And if what surfaced feels heavy or connects to trauma, bring it to a professional. This tool opens doors; it doesn't walk you through all of them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NOTEBOOK -->
+<section class="view" id="view-notebook">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Your field notes</span>
+      <h2>The Notebook</h2>
+      <p>Everything here lives on this device only — nothing is sent anywhere. The Notebook keeps your completed threads, tracks which tactics you encounter most, and watches for the thing a single session can't show you: the pattern across sessions.</p>
+    </div>
+    <div id="nb-body"></div>
+    <div class="nb-actions">
+      <button class="btn" onclick="exportNotebook()">Download notebook (.txt)</button>
+      <button class="btn ghost" onclick="clearNotebook()">Erase the notebook</button>
+    </div>
+    <p class="small-print">Stored in this browser only. Clearing your browser data, private windows, or a different device will show an empty notebook.</p>
+  </div>
+</section>
+
+<div class="tour-backdrop" id="tour-backdrop" onclick="endTour()"></div>
+<div class="tour-card" id="tour-card">
+  <span class="eyebrow" id="tour-eyebrow"></span>
+  <h3 class="display" id="tour-title"></h3>
+  <p id="tour-text"></p>
+  <div class="tour-row">
+    <div class="tour-dots" id="tour-dots"></div>
+    <div class="tour-btns">
+      <button class="btn ghost" onclick="endTour()">Skip</button>
+      <button class="btn ghost" id="tour-back" onclick="tourStep(-1)">Back</button>
+      <button class="btn" id="tour-next" onclick="tourStep(1)">Next</button>
+    </div>
+  </div>
+</div>
+
+<button class="backtop" id="backtop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-lockup">
+      <img onerror="this.hidden=true" src="assets/mark-512.png" alt="" class="brand-mark-icon">
+      <span class="brand-word"><b>N</b>oble <b>F</b>ather <b>C</b>reations</span>
+    </div>
+    <div>Technique is neutral. Intent is everything. Your reactions are the map.</div>
+    <div>Educational self-reflection tool — not therapy, diagnosis, or a substitute for professional mental-health support. Nothing typed here is stored or transmitted.</div>
+    <div class="foot-links">
+      <a href="https://www.tiktok.com/@noblefathercreatorsource?_r=1&_t=ZT-97xRxeczFfh" target="_blank" rel="noopener">TikTok @noblefathercreatorsource</a>
+      <a href="https://noblefathercreations.netlify.app/" target="_blank" rel="noopener">noblefathercreations.netlify.app</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---- guarded device storage (works on Netlify; silently in-memory elsewhere) ---- */
+const store=(()=>{let mem={},ok=false;try{localStorage.setItem("__t","1");localStorage.removeItem("__t");ok=true}catch(e){}
+ return{get(k,d){try{if(ok){const v=localStorage.getItem("rm_"+k);return v!==null?JSON.parse(v):d}}catch(e){}return (k in mem)?mem[k]:d},
+        set(k,v){mem[k]=v;try{if(ok)localStorage.setItem("rm_"+k,JSON.stringify(v))}catch(e){}},
+        del(k){delete mem[k];try{if(ok)localStorage.removeItem("rm_"+k)}catch(e){}}}})();
+
+/* ============ DATA: MECHANISMS ============ */
+const MECHANISMS=[
+ {n:"Sustained eye contact & tight framing",c:"attention",d:"A face filling the frame with eyes locked on the lens reads to your nervous system almost like a real person holding your gaze — something few strangers ever do. Works identically for a psychic, a finance guru, and a crying apology video.",s:"Close crop, unbroken stare, direct address.",x:"Ask: would this land the same as audio only? If not, the stare was doing the persuading."},
+ {n:"Pacing & cadence",c:"attention",d:"Slow deliberate speech quiets the analytical mind; fast urgent speech overwhelms it. Both bypass evaluation — one by relaxing you, one by flooding you.",s:"Hypnotic pauses… or breathless 'okay-so-listen-because-this-is-crazy' delivery.",x:"Change the playback speed. If the spell breaks, the spell was the cadence, not the content."},
+ {n:"Intimate staging",c:"attention",d:"Bedrooms, cars, and 'no-makeup' framing read as authentic access to a real life. Authenticity is a production choice like any other — the car video was shot in a parked car on purpose.",s:"'Getting ready' confessionals, car rants, candlelit rooms.",x:"Name the staging as staging. Intimacy of setting ≠ honesty of content."},
+ {n:"Emotional shortcuts (emoji, music, cuts)",c:"attention",d:"🔥💪😭, swelling music, and rapid cuts tell your nervous system how to feel before your thinking catches up to the words they decorate.",s:"Sad piano under a sales pitch. 💪 next to a burnout glorification.",x:"Strip the packaging mentally: reread the claim as plain text. Still feel true?"},
+ {n:"Dual-channel delivery",c:"attention",d:"The same claim hitting eyes (captions) and ears (voice) simultaneously is harder to hold at arm's length than either alone.",s:"Color-coded caption boxes timed to the spoken line.",x:"Close your eyes for ten seconds and evaluate the words alone."},
+ {n:"Curiosity gap / open loops",c:"attention",d:"An unresolved question is genuinely uncomfortable to abandon. Content opens loops early and pays them late — or never.",s:"'Wait for it…' 'Number 3 will shock you.' 'What she said next…'",x:"Name the loop out loud: 'they're withholding X so I stay.' Naming releases most of the pull."},
+ {n:"Pattern interrupts",c:"attention",d:"A sudden zoom, a whispered word, an absurd first frame — anything unexpected resets your attention clock and buys another few seconds of your life.",s:"Videos that open mid-sentence, mid-action, or mid-scream.",x:"Notice the interrupt as a technique and ask if anything was actually said yet."},
+ {n:"Self-referential 'you' language",c:"identity",d:"Your brain has dedicated machinery for self-relevant information; 'you' lights it up every sentence, boosting retention (~40% in studies) and encoding claims as facts about your identity.",s:"'You're the type of person who…' — in readings, ads, and motivational content alike.",x:"Swap 'you' for 'some people' and watch the power drain out."},
+ {n:"Barnum statements",c:"identity",d:"Vague, universally-relatable claims feel personally precise because your mind supplies the memory that makes them fit. People rate identical generic profiles as highly accurate even when told everyone got the same text.",s:"'You give so much and get so little back.' True of nearly everyone who's ever felt tired.",x:"Ask: what fraction of everyone scrolling would say 'that's me'? Over half means it wasn't written for you."},
+ {n:"Flattering reframes",c:"identity",d:"Painful patterns handed back wearing a crown: burnout becomes 'grind,' isolation becomes 'self-made,' anxiety becomes 'intuition,' spending becomes 'self-care.'",s:"'You're not overworked, you're built different.'",x:"Run the loved-one test: would someone who loves you celebrate this trait — or worry about it?"},
+ {n:"The social mirror",c:"identity",d:"Telling you how rooms full of people supposedly see you hands you a script to perform — guarded, superior, enviable — for audiences that never asked.",s:"'People are intimidated by you.' 'Everyone notices your energy.'",x:"Ask: who specifically? A claim about 'people' with no people in it is a costume, not a report."},
+ {n:"Authority via conduit or credential",c:"identity",d:"'The cards say' / 'the data says' / 'as a 7-figure founder' moves the claim somewhere you can't argue with it. Conduits and vague credentials are the same move in different costumes — both borrow what psychologists call the authority principle, the well-documented tendency to defer to anyone framed as an expert, regardless of whether the expertise is real or checkable.",s:"'Spirit is telling me…' 'Studies show…' (which studies?) 'When I ran my agency…'",x:"Reattach the claim to a checkable human. 'This person believes X' — now evaluate X."},
+ {n:"Halo effect",c:"identity",d:"One positive trait — confidence, attractiveness, production quality, a nice voice — unconsciously gets extended into assumed competence in unrelated areas. A polished video feels more true, not because the claims are better, but because the presentation is.",s:"'They seem so put-together, they must know what they're talking about.'",x:"Separate the packaging from the claim. Would this specific sentence still convince you delivered by someone ordinary-looking, in a plain room, with bad lighting?"},
+ {n:"Unresolved contradiction",c:"identity",d:"You're told you're the untouchable one — and that someone is desperate for you. Contradictions never get checked because each half lands separately, each flattering in its moment.",s:"'You trust no one' + 'you love too hard' in the same reading. 'Anyone can do this' + 'only 1% will.'",x:"Hold both halves up side by side deliberately. Contradiction only works unexamined."},
+ {n:"Identity pre-labeling",c:"identity",d:"Being handed a label ('empath,' 'sigma,' 'high-value,' 'old soul,' 'future millionaire') feels like being seen. Accepting it starts writing your behavior — you act to stay consistent with claimed identities.",s:"'If you're watching this, you're one of the rare ones.'",x:"Audit your labels: which did you choose, and which were handed to you by someone optimizing watch time?"},
+ {n:"Intermittent reinforcement",c:"hope",d:"Unpredictable rewards build stronger loops than reliable ones — the slot-machine principle. Feeds, mystery admirers, and 'this could be your sign' all run on it.",s:"'Someone is thinking about you…' The next scroll might be the good one.",x:"Notice the itch for 'one more' seeking resolution. The design is that resolution never comes."},
+ {n:"Spotlight effect exploitation",c:"hope",d:"Nearly everyone overestimates how much others think about them. 'They still check your page' doesn't plant that belief — it confirms one you carry.",s:"'Your ex watches your stories.' 'They talk about you when you leave.'",x:"Flip it: how often do you obsess over acquaintances? That's the honest base rate."},
+ {n:"Manufactured mystery (the cortisol hook)",c:"hope",d:"An unresolved emotional question keeps low-grade stress chemistry running after the content ends — which is what keeps you thinking about it and coming back.",s:"'Big shift coming this week. Watch for the sign.'",x:"When a video follows you around all day, name the residue: chemistry, not prophecy."},
+ {n:"Aspirational gap engineering",c:"hope",d:"Content shows you a life just close enough to feel reachable and just far enough to require their product, method, or continued attention to bridge.",s:"Renting the Lambo for the thumbnail. 'I was broke 14 months ago.'",x:"Ask what evidence exists that the bridge (course, habit, reading) built the life — versus the audience buying the bridge."},
+ {n:"Hope scheduling",c:"hope",d:"Attaching promises to future dates keeps you subscribed to the timeline: retrogrades ending, 'Q4 is when it flips,' 'your season is coming.'",s:"'After the eclipse, everything changes for you.'",x:"Write the prediction down with its date. Score it when the date arrives. Keep the ledger."},
+ {n:"Illusory truth effect",c:"amplifier",d:"Familiar claims feel more credible regardless of evidence. Hear a line across ten videos and it feels true from repetition alone. Feeds are repetition machines — this rides alongside the related mere-exposure effect, where simple repeated exposure to anything, true or not, increases liking and trust in it.",s:"Every third video this month: 'your person is coming back' / 'inflation is theft' / 'nobody wants to work.'",x:"Ask: do I believe this from evidence — or from volume?"},
+ {n:"Sunk cost",c:"amplifier",d:"Time already invested makes leaving feel like waste. Nine minutes into a stream, three modules into a course — admitting it's empty means admitting the spend.",s:"'Stay till the end, the last tip is the game-changer.'",x:"The time is spent either way. The only live question is whether the next minute is worth it."},
+ {n:"Parasocial bonding",c:"amplifier",d:"Direct address + consistency + intimacy builds a one-sided relationship. Your brain doesn't fully separate 'someone who knows me' from 'someone who talks like they know me' — a close cousin of Cialdini's liking principle, where we're simply more persuadable by people we feel warmly toward.",s:"'I love you guys.' 'You already know how I am.' You do feel like you know them.",x:"Say the asymmetry aloud: 'I know their face; they don't know I exist.' Recalibrate trust to match."},
+ {n:"Social proof & manufactured consensus",c:"amplifier",d:"Full comment sections, follower counts, and 'everyone's talking about' read as verification. Crowds can be bought, botted, or simply catching the same broad net you did.",s:"'This is literally me' × 400. '2M people can't be wrong.'",x:"Consensus about a mirror is not consensus about you. And yes — 2M people can be wrong."},
+ {n:"Cross-source consensus illusion",c:"amplifier",d:"Dozens of creators who've never met land on the same message — because they draw from the same pool of lines that perform. One script, a hundred faces.",s:"Three readers, two finfluencers, and a podcast all said it this week.",x:"Similarity across sources proves a shared playbook, not shared insight."},
+ {n:"Emotional contagion",c:"amplifier",d:"Tears, awe, rage, or intensity performed on camera transfer directly — you catch the state before evaluating the content.",s:"A cracking voice at the exact moment of the key claim. Rage-bait delivered at full volume.",x:"Ask: am I moved by what was said — or by watching someone be moved?"},
+ {n:"Reciprocity pull",c:"amplifier",d:"Free value creates felt debt — Cialdini's reciprocity principle. After the free reading, the free webinar, the free chapter, declining the paid ask feels like ingratitude, even though nothing was actually owed.",s:"'I do these free for you guys — link in bio if you want to go deeper.'",x:"Free content is marketing spend, not a gift you owe on. Gratitude ≠ obligation."},
+ {n:"Anchoring",c:"amplifier",d:"The first number or claim encountered becomes the reference everything after is judged against.",s:"'Normally $997 — today $97.' The $997 never existed.",x:"Ignore the anchor. Ask only: from zero, what is this worth to me?"},
+ {n:"Outrage & fear amplification",c:"amplifier",d:"Anger and fear are the highest-engagement emotions, so algorithms reward content that manufactures them — negativity bias at platform scale, our built-in tendency to weight threatening information far more heavily than positive or neutral information. You are shown what activates you, not what informs you.",s:"'You won't BELIEVE what they're doing now.'",x:"Notice when you're angrier after than before, with nothing actionable gained. That was the product."},
+ {n:"Neurochemical cycling",c:"amplifier",d:"Validation (dopamine) → direct address (oxytocin) → 'you're special' (serotonin) → unresolved threat or mystery (cortisol). A complete emotional cycle in minutes — the pattern brains remember and seek again.",s:"The arc of a reading, a motivational edit, and a rage-post are chemically similar.",x:"Label the stage you're in while watching. Naming an emotion measurably loosens its grip."},
+ {n:"Priming",c:"after",d:"Once 'a sign is coming' or 'watch out for red flags' is planted, you move through your day primed to promote neutral events into confirmations.",s:"After the video, a random text from an ex becomes prophecy; a partner's sigh becomes a red flag.",x:"Ask: would I have even noticed this event without that video?"},
+ {n:"Implicit memory",c:"after",d:"You forget the words within a day, but your body remembers the feeling — seen, special, afraid, behind. The feeling is what pulls you back when you can't say why.",s:"Opening the app 'for no reason' at the same low moment every night.",x:"Track the state you're in when you reach for the content. The trigger pattern is the real reading."},
+ {n:"Confirmation bias",c:"after",d:"You remember the two hits and forget the fifty misses — so accuracy feels far higher than anything measured.",s:"'These readings are always right.' 'His stock calls always hit.'",x:"Keep a hit/miss tally for one week. The ratio is the education."},
+ {n:"Apophenia & retrocausal thinking",c:"after",d:"Humans find patterns in randomness, and reinterpret past events as confirming later content — connecting dots backwards until it feels like prophecy.",s:"'She said change was coming — and last Tuesday…' (Tuesday came first.)",x:"Check timelines on paper. Prophecy that only works in reverse is storytelling."},
+ {n:"Identity consistency pull",c:"after",d:"Once you accept a label — even by commenting 'this is so me' — you unconsciously act to stay consistent with it, a direct expression of Cialdini's commitment and consistency principle: once we've claimed a position, even a small or casual one, we feel pressure to behave in ways that match it. The label starts writing behavior.",s:"Called yourself 'the machine' once; skipped rest for a year to match.",x:"Try one deliberately out-of-character act. Notice how much resistance a borrowed label puts up."}
+];
+
+/* ============ DATA: NAMED PLAYS ============ */
+const TECHNIQUES=[
+ {n:"Engagement bait",c:"social",d:"Manufacturing interactions the algorithm rewards — comments, shares, saves — regardless of value delivered.",s:"'Comment YES if you agree.' 'Tag someone who needs this.' Deliberately wrong statements posted to farm corrections.",w:"Ask what the interaction does for you versus for the metrics."},
+ {n:"Rage farming",c:"social",d:"Posting deliberately infuriating takes because anger drives the most engagement of any emotion.",s:"An unhinged opinion, a staged injustice, a villain edit.",w:"You leave angrier with nothing actionable. The anger was the product, and you paid in reach."},
+ {n:"Dependency loops",c:"social",d:"Content engineered to feel incomplete without the next installment.",s:"'Part 2 tomorrow.' 'Follow so you don't miss what happened.' Storytimes cut mid-climax.",w:"Chronic cliffhangers on 'guidance.' Real guidance resolves; loops are for retention."},
+ {n:"Sleeper return",c:"social",d:"Vanishing, then returning with intimacy framing — absence itself as the play.",s:"'I've been quiet, but something told me you needed this today.'",w:"The return is framed as being about you. It's about the algorithm."},
+ {n:"Manufactured relatability",c:"social",d:"Performed struggle or mess calibrated to read as 'just like you' — building trust that gets spent later.",s:"The millionaire's messy-kitchen video. 'I'm literally crying making this.'",w:"Relatability that always precedes an ask is a costume, not a confession."},
+ {n:"Borrowed proximity",c:"social",d:"Credibility harvested from association — the photo with the celebrity, the podcast clip beside a famous host, 'as seen in Forbes' (a paid placement).",s:"'When I talked to [famous person]…' (a 30-second event years ago).",w:"Ask what the association actually verifies. Usually: that a photo was taken."},
+ {n:"POV self-insertion framing",c:"social",d:"Second-person 'POV:' staging puts you inside a scenario instantly, collapsing the distance between watching and experiencing — you process it as happening to you, not as something you're observing.",s:"'POV: you finally found someone who actually gets you.'",w:"Notice content using 'POV' to install a feeling before any actual claim is made. Ask whose story this really is."},
+ {n:"Algorithm & shadowban paranoia",c:"social",d:"Claiming the platform is suppressing this specific content manufactures urgency and in-group loyalty — engage now, or an invisible force will bury it.",s:"'They don't want you to see this — like before it gets taken down.' 'I'm probably getting shadowbanned for this.'",w:"There's no way to verify a shadowban claim, which is exactly why it's a safe thing to assert. Treat it as unverifiable urgency, not information."},
+ {n:"Sympathy bait",c:"social",d:"Content engineered purely to trigger concern or comfort-comments — with no ask attached — trains an audience to reliably show up and engage, priming them for a future ask.",s:"A vague 'rough week' post with no context, inviting 'you okay?' comments.",w:"Notice content that invites concern but resolves nothing and asks nothing. The engagement itself may be the entire point."},
+ {n:"Insider jargon & day-count rituals",c:"social",d:"Community-specific language and ongoing counters ('day 47 of…') build in-group identity and a shared sense of commitment that's hard to walk away from without feeling like quitting.",s:"'Real ones know.' 'Day 112 of my healing journey.'",w:"Ask whether the ritual itself has become the point, separate from whatever it was originally tracking."},
+ {n:"Manufactured urgency",c:"sales",d:"False time pressure that bypasses deliberation — scarcity reads as threat to the nervous system.",s:"'Cart closes tonight.' 'Only 3 spots left.' Countdown timers that reset for every visitor.",w:"Deadlines that happen to align with a checkout page. Real opportunities survive a night's sleep."},
+ {n:"Price anchoring",c:"sales",d:"An inflated 'normal' price makes the real price feel like rescue rather than spending.",s:"'$1,997 value — today $197.'",w:"The original price never existed anywhere you can verify."},
+ {n:"Scarcity principle",c:"sales",d:"Cialdini's scarcity principle: limited-quantity framing inflates perceived value through fear of missing out, independent of time pressure — a distinct lever from urgency, which uses the clock instead of the count.",s:"'Only 12 spots.' 'Once these are gone, they're gone for good.'",w:"Ask what actually happens to the count if you don't act. Often: nothing. It refills."},
+ {n:"Foot-in-the-door",c:"sales",d:"A tiny yes (free quiz, $7 guide, 'just comment READY') engineered to make the next, larger yes feel consistent.",s:"Free webinar → $27 workbook → $497 course → $5k mastermind.",w:"Map the ladder before stepping on the first rung. The first rung is never the product."},
+ {n:"Curated & fake testimonials",c:"sales",d:"Only success stories survive; some may not be real at all. Survivorship bias sold as evidence.",s:"Identical phrasing, generic names, screenshots with no context, 'results not typical' in grey 8pt.",w:"Testimonials that all sound like one writer. Zero neutral or negative outcomes anywhere."},
+ {n:"Reciprocity funnels",c:"sales",d:"Free value staged in escalating gifts so the eventual ask lands on accumulated debt.",s:"'I've given you so much for free — this is the one thing I charge for.'",w:"Track the ratio of value to setup. Funnels feel generous right up until the pivot."},
+ {n:"DM funnels & comment triggers",c:"sales",d:"Pulling you from public content into private channels where pressure escalates unwitnessed.",s:"'Comment the word GROWTH and I'll send you the free guide.'",w:"What arrives is rarely a guide and always a funnel. Private pressure is the point of the move."},
+ {n:"False authority",c:"guru",d:"Claimed expertise with no track record, method, or accountability offered — vague credentials doing the work of real ones.",s:"'7-figure founder' (of what?). 'My system has never failed.' 'I've helped thousands.'",w:"Certainty with no mechanism and no visible misses. Real experts show their work and their errors."},
+ {n:"The wounded-healer funnel",c:"guru",d:"A genuine-sounding trauma or failure story deployed to build trust — immediately before the offer.",s:"'I was where you are. Rock bottom. Then I found the method — link below.'",w:"The vulnerability always lands right before the ask, never after."},
+ {n:"False binary",c:"guru",d:"Two options presented where many exist, forcing you onto the flattering side — theirs.",s:"'You're either building your dream or building someone else's.' 'Wolves and sheep.'",w:"Any framing where doubting the content means something is wrong with you."},
+ {n:"Guilt & shame leverage",c:"guru",d:"Manufactured inadequacy as motivation — you're behind, lazy, making excuses — with their method as the only absolution.",s:"'No excuses.' 'Your grandfather worked 80-hour weeks.' 'Broke is a mindset.'",w:"Content that has to injure your self-image before selling you the repair kit."},
+ {n:"Us-vs-them isolation",c:"guru",d:"Framing outsiders — family, friends, experts, skeptics — as asleep, jealous, or toxic. Quietly cutting your other tethers.",s:"'Your old circle won't understand your growth.' 'The 99% will call you crazy.'",w:"Content that makes you trust the creator more and everyone you actually know less."},
+ {n:"Moving goalposts",c:"guru",d:"When a promise or prediction fails, the claim mutates instead of dying.",s:"'The results are working — internally. You just haven't seen the external form yet.' 'You didn't want it enough.'",w:"No outcome is ever scored as a miss, and failure is always relocated into you."},
+ {n:"Gatekept truth",c:"guru",d:"'The real information' held behind ascending paywalls — with public content demoted to advertising for the vault.",s:"'I can't say this on here — it's in the private group.'",w:"Truth that's only available at a price is a product. Fine — if it's named as one."},
+ {n:"Single-cause oversimplification",c:"guru",d:"Complex outcomes — wealth, health, relationships — attributed to one variable, erasing luck, privilege, timing, and context, making the outcome look reliably repeatable when it may not be.",s:"'This one morning habit changed my entire life.' 'Rich people just think differently — that's the whole secret.'",w:"Ask what else was true about this person's situation that the story left out. Success almost always has more than one input."},
+ {n:"Lifestyle proof",c:"guru",d:"Unverified visual flexing — cars, views, screenshots — presented as evidence a method works, when it only proves that filming near expensive things is possible.",s:"A rented supercar in the thumbnail. Income screenshots with no dates, context, or expenses shown.",w:"Ask what evidence exists that the lifestyle came from the method being sold, rather than from something else — including a camera rental."},
+ {n:"Cold reading",c:"spiritual",d:"High-probability guesses, watching for reactions, building on whatever lands — the engine under most 'accurate' readings.",s:"'I'm sensing a betrayal… recent, or maybe years ago… work, or love…' (every base covered).",w:"Claims start broad and only sharpen after you react — in comments, live chats, or your own nodding."},
+ {n:"Shotgunning",c:"spiritual",d:"Firing many claims rapidly, knowing you'll only remember the hits. Misses evaporate; hits become the legend.",s:"A 9-minute reading with forty claims. Three land. You remember three.",w:"Count total claims versus landed claims. The ratio is usually the whole trick."},
+ {n:"The rainbow ruse",c:"spiritual",d:"Assigning a trait and its opposite in one breath, so something must fit.",s:"'You're strong, but there's a softness you rarely show.'",w:"Any sentence shaped 'you're X, but also not-X.' It cannot miss, so it cannot inform."},
+ {n:"Vagueness escape hatch",c:"spiritual",d:"Claims engineered to be unfalsifiable — when they miss, the frame absorbs it.",s:"'The energy shifted.' 'Free will intervened.' 'Divine timing.'",w:"Ask: what outcome would count as this being wrong? If nothing could, it's a mood, not a claim."},
+ {n:"Spiritual bypassing",c:"spiritual",d:"Spiritual framing used to skip legitimate pain, anger, or accountability — yours or theirs.",s:"'Everything happens for a reason.' 'Just raise your vibration past it.'",w:"Your valid grief or anger treated as a frequency problem to optimize away."},
+ {n:"Therapy replacement claims",c:"spiritual",d:"Positioning content as superior to professional help — the most genuinely dangerous play on this list.",s:"'Better than therapy.' 'What therapists don't want you to know.'",w:"Anything discouraging outside support. Healthy creators refer out; harvesters fence you in."},
+ {n:"Fear-mongering & protection selling",c:"spiritual",d:"Manufactured spiritual danger with the creator as the source of safety — and repeat viewing or purchase as the price of reassurance.",s:"'Someone put something on you.' 'Dark energy is attached — book a cleansing.'",w:"You leave more afraid than you arrived, and the cure is always in their bio."},
+ {n:"Love bombing",c:"spiritual",d:"Overwhelming early praise to build attachment before any ask arrives.",s:"'You're so rare. Chosen. A lightworker. Others aren't on your frequency.'",w:"Praise arriving before the creator could possibly know anything about you."}
+];
+
+/* ============ DATA: FLAGS, GENRES, DANGERS ============ */
+const GREEN=["Offers tools you can use independently, without them","Encourages you to question, verify, and get second opinions","Names their methods and their business model openly","Acknowledges misses, limits, and uncertainty out loud","Celebrates when followers grow, rest, or step away","Points to professional help when things are heavy","The ask is clear, honest, and separate from emotional peaks","You leave feeling calmer and more capable, not hungrier"];
+const RED=["The ask (link, price, follow) lands right at the emotional peak","Content is engineered to feel incomplete without the next piece","Doubt is framed as weakness, blindness, or 'low vibration'","Discourages therapy, experts, or outside perspectives","Manufactured urgency — timers, closing carts, cosmic deadlines","You feel emptier, angrier, or more anxious after — and reach for more","Promises and predictions never get scored; misses mutate","Frames the people in your real life as obstacles to your growth"];
+const GENRES=[
+ {n:"Spiritual, tarot & channeled content",d:"Leans on: Barnum claims, conduit authority, the admirer thread, hope scheduling, fear-and-cleansing loops. The pull is being seen without having to be known.",q:"Key question: if this exact message reached a million strangers, what fraction would say 'this is me'?"},
+ {n:"Sales, ads & shopping content",d:"Leans on: anchoring, urgency, reciprocity funnels, curated testimonials, foot-in-the-door ladders.",q:"Key question: would this offer survive me sleeping on it? Real ones do."},
+ {n:"Gurus, courses & hustle content",d:"Leans on: flattering reframes of burnout, false binaries, guilt leverage, borrowed proximity, gatekept truth, survivorship bias.",q:"Key question: does this person make money from the method — or from selling the method?"},
+ {n:"Relationship & pop-psychology advice",d:"Leans on: the social mirror, villain scripts, red-flag lists broad enough to condemn anyone, identity pre-labels ('empath,' 'avoidant').",q:"Key question: would this advice survive hearing the other person's honest version of the story?"},
+ {n:"News-adjacent & outrage content",d:"Leans on: rage farming, fear amplification, in-group belonging among 'the ones who see it,' engagement bait dressed as urgency.",q:"Key question: am I leaving with information I can verify and act on — or just activation and a follow?"}
+];
+const DANGERS=[
+ {n:"Romanticizing patterns that need attention",sy:["I feel a flicker of pride when content glorifies my exhaustion, spending, anger, or isolation","I describe a pattern that hurts me using flattering words I got from content","I'd feel a small loss of identity if this struggle got easier"],adv:"The reframe is doing its work. Run the loved-one test on the specific trait being praised — and let one warning sign be a warning sign this week."},
+ {n:"Isolation dressed as strength",sy:["I brush off help even when I quietly want it","'Not needing anyone' has become part of my self-description","Content has made me trust the people in my real life less"],adv:"The costume is on. Counter-move: tell one safe person one true, unpolished thing within 48 hours. Small, deliberate, opposite."},
+ {n:"Identity fusion",sy:["I carry a label from content that I now perform ('machine,' 'empath,' 'sigma,' 'chosen')","Acting against the label feels like breaking character","I get defensive when the label is questioned"],adv:"You're maintaining a character. Ask who chose this label — you, or someone optimizing watch time? Try one small out-of-character act."},
+ {n:"Emotional dependence on the feed",sy:["The good (or activated) feeling fades fast and I reach for another hit","I consume most at my lowest moments","I've lost hours to loops of 'one more' without meaning to"],adv:"The loop is running. Don't fight it head-on — track it. Note the state you're in each time you reach. The pattern in your triggers is the real reading."},
+ {n:"Skipping the process for a tidy narrative",sy:["I adopted a finished story about my pain before I actually processed it","My growth narrative came mostly from content, not from lived work","Underneath the story, something still feels unfinished"],adv:"A bow got tied on something that isn't done. Real meaning survives slowness. Give the unfinished thing ten honest minutes without the narrative — see what's still there."}
+];
+
+/* ============ DATA: ANALYZER SIGNATURES ============ */
+const SIGNATURES=[
+ {k:"urgency",n:"Manufactured urgency",why:"Time pressure bypasses deliberation — scarcity reads as threat to the nervous system, and decisions made under threat skip evaluation.",re:[/only today|last chance|final (call|hours|day)|act now|right now before|don'?t miss|expires?|closing (soon|tonight)|close[sd]? (tonight|at midnight)|cart closes|doors close|spots? (left|remaining)|limited (time|spots|seats)|24 hours|48 hours|ends (tonight|today|soon)|hurry|running out|before it'?s (too late|gone)|deadline/gi]},
+ {k:"scarcity",n:"Scarcity signaling",why:"Artificial rarity inflates perceived value and triggers loss aversion — the fear of missing out on something 'few' can have.",re:[/only \d+ (left|spots?|seats?|copies)|exclusive|invite[- ]only|not for everyone|(rare|few) (ones|people)|while (supplies|they) last|selling (out|fast)|almost (gone|full)/gi]},
+ {k:"flattery",n:"Love bombing / pre-labeling",why:"Praise arriving before you could possibly be known builds attachment and hands you an identity to stay consistent with.",re:[/you'?re (so )?(rare|special|different|chosen|gifted|not like|one of the few|built different|a different breed)|different breed|old soul|lightworker|high[- ]value|if you'?re (watching|seeing|reading) this,? (you|it)/gi]},
+ {k:"fear",n:"Fear activation",why:"Fear is a high-engagement emotion that overrides critical thinking — and makes the speaker the source of safety.",re:[/warning|danger(ous)?|before it'?s too late|dark (energy|forces|entity)|attached to you|put (something|a curse) on you|they don'?t want you to (know|see)|wake up before|threat|(be|stay) (careful|vigilant)|protect yourself|someone (close|near) (to )?you is/gi]},
+ {k:"binary",n:"False binary",why:"Two options where many exist forces you onto the flattering side — theirs — and frames doubt as personal failure.",re:[/either you .{3,40} or (you'?re|you)|two (types|kinds) of people|wolves and sheep|winners and losers|you'?re (either|one of)|the 99%|the 1%|(asleep|sheep) or (awake|aware)|npc/gi]},
+ {k:"authority",n:"Unverifiable authority",why:"Certainty with no mechanism, record, or accountability borrows the costume of expertise without its obligations.",re:[/never (been )?wrong|guarantee[ds]?|proven (system|method|framework)|trust me|i alone|my (guides|system|method) (has|have) never|100% (success|accurate)|the only (way|method)|secret (that|the|they)|\d+[- ]figure (founder|earner|business)/gi]},
+ {k:"funnel",n:"DM / comment funnel",why:"Pulling you from public content into private channels moves the persuasion somewhere unwitnessed, where pressure can escalate.",re:[/dm me|comment (the word|below|['"]?[A-Z]{2,}['"]?)|link in (my )?bio|drop a|type (yes|['"]?[A-Z]{2,}['"]?)|send me a message|join my (private|inner|free) (group|circle|list)|check my (bio|profile)/gi]},
+ {k:"proof",n:"Social proof claims",why:"Crowds read as verification, but crowds can be bought, botted, or simply caught in the same broad net you were.",re:[/thousands of (people|students|clients)|everyone is|join (the )?\d+|(\d+(,\d+)*|millions?) (of )?(people|members|students) (can'?t|have|are)|my (students|clients) (have|are)|as seen (in|on)/gi]},
+ {k:"anchor",n:"Price anchoring",why:"The first number becomes the reference point — an invented 'normal' price makes the real price feel like rescue.",re:[/(normally|usually|valued at|worth|was) \$\d[\d,]*|(\$\d[\d,]*) value|today (only )?\$\d|for (just|only) \$\d/gi]},
+ {k:"guilt",n:"Guilt & shame leverage",why:"Injuring your self-image creates the wound the offer then promises to heal — motivation borrowed at high interest.",re:[/no excuses|you'?re (just )?(lazy|making excuses|not trying)|stop being (lazy|weak|broke)|broke is a (mindset|choice)|if you (really|actually) wanted|while you (sleep|scroll|complain)|your (grandfather|ancestors) (worked|didn'?t)/gi]},
+ {k:"parasocial",n:"Parasocial intimacy",why:"'We' language and performed closeness build a one-sided relationship your brain treats as partially real.",re:[/i love you (guys|all)|you (guys|all) (know|already know)|my (loves|family|beautiful people|tribe)|we'?re (in this together|family)|you know how i am|between (us|you and me)/gi]},
+ {k:"vague",n:"Unfalsifiable framing",why:"Claims that cannot be wrong cannot inform — misses get absorbed by the frame ('energy shifted,' 'divine timing').",re:[/the universe (is|has|wants)|divine timing|meant (for|to find) you|the energy (shifted|is)|(this is|it'?s) a sign|your (vibration|frequency)|manifest(ing|ation)?|alignment|the signs are/gi]},
+ {k:"loop",n:"Open loops & dependency",why:"Unresolved threads are uncomfortable to abandon — engineered incompleteness converts curiosity into retention.",re:[/part (2|two|3|three)|wait (for it|till the end)|follow (so you don'?t miss|for part)|you won'?t believe|what (happened|she said|he did) next|stay tuned|to be continued|the last (tip|one) (is|will)/gi]},
+ {k:"isolation",n:"Us-vs-them isolation",why:"Framing your existing circle as asleep or toxic cuts the tethers that would offer perspective — leaving the creator as the trusted voice.",re:[/your (old )?(circle|friends|family) won'?t (understand|get it)|people from your (past|old life)|they'?ll call you crazy|(cut|remove) (toxic|negative) people|outgrow(n|ing) (them|people)|lonely at the top|the matrix/gi]},
+ {k:"therapyrep",n:"Therapy replacement claim",why:"Discouraging professional support fences you inside the content — the most genuinely dangerous signature on this list.",re:[/better than therapy|(don'?t|do not) need (a )?(therapist|therapy)|what therapists (won'?t|don'?t want)|therapy is a scam|heal (yourself )?without (therapy|meds)/gi]},
+ {k:"reciprocity",n:"Reciprocity setup",why:"Announced generosity creates felt debt — the eventual ask lands on the accumulated 'gift.'",re:[/i do (this|these) (all )?(for )?free|free (for you|gift|of charge)|i'?ve given you so much|(my|a) gift to you|no charge,? (just|because)/gi]},
+ {k:"hopeschedule",n:"Hope scheduling",why:"Promises pinned to future dates keep you subscribed to the timeline — and the misses are forgotten by the time the date passes.",re:[/(after|when) (the |this )?(eclipse|retrograde|new year|full moon|this (week|month|season))|your (season|time|moment) is (coming|near)|big (changes?|shift) (is |are )?coming|by (the end of|next)/gi]}
+];
+
+/* ============ NAV ============ */
+const tabs=document.querySelectorAll('.tab');
+/* ============ GUIDED TOUR ============ */
+const TOUR=[
+ {view:"home",eyebrow:"Welcome",title:"Your reactions are the map.",text:"This guide teaches you to read what content does to you — and to use it. Eight sections, one idea. This tour walks them in about a minute."},
+ {view:"learn",eyebrow:"Section 1 · Learn",title:"Name what's working on you",text:"35 psychological mechanisms and 34 named tactics, each with what it sounds like and how to counter it. Use the search box to find anything in seconds."},
+ {view:"analyze",eyebrow:"Section 2 · Analyze",title:"Paste anything, see everything",text:"Drop in a transcript, caption, or DM. Get an AI breakdown statement-by-statement, plus an instant offline pattern scan. Try the example buttons to see it work right now."},
+ {view:"intent",eyebrow:"Section 3 · Intent",title:"Technique is neutral. Intent is everything.",text:"The same tools serve a healer and a harvester. A live-scoring checklist and the moment-after-the-peak test help you tell which one you're watching."},
+ {view:"practice",eyebrow:"Section 4 · Practice",title:"Train the eye",text:"Eight rounds of spot-the-tactic — including one round of completely honest content, because recognizing clean content is half the skill."},
+ {view:"undertow",eyebrow:"Section 5 · The Undertow",title:"The longer current",text:"Chosen-one narratives, karmic framing, and the real path from content into high-control groups. A glossary, an escalation ladder, and a trajectory tracker."},
+ {view:"thread",eyebrow:"Section 6 · The Thread",title:"The core practice",text:"When something actually hits you, follow it: six typed questions from the hit, to the belief underneath it, to one small real action. Your words, read and reflected back."},
+ {view:"notebook",eyebrow:"Section 7 · Notebook",title:"The pattern across sessions",text:"Everything stays on your device. After a few threads, this is where your own repeating pattern becomes visible — the thing no single session can show you."},
+ {view:"home",eyebrow:"That's the map",title:"Start anywhere.",text:"Curious? Start with Learn. Something specific bothering you? Analyze it. Something hit deep? The Thread is waiting. Nothing here is stored, sold, or sent anywhere."}
+];
+let TOUR_I=0;
+function startTour(){TOUR_I=0;document.body.classList.add('touring');applyTourStep()}
+function tourStep(d){TOUR_I+=d;if(TOUR_I<0)TOUR_I=0;if(TOUR_I>=TOUR.length){endTour();return}applyTourStep()}
+function applyTourStep(){
+  const s=TOUR[TOUR_I];
+  show(s.view,true);
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('tour-glow',t.dataset.view===s.view));
+  document.getElementById('tour-eyebrow').textContent=s.eyebrow;
+  document.getElementById('tour-title').textContent=s.title;
+  document.getElementById('tour-text').textContent=s.text;
+  document.getElementById('tour-dots').innerHTML=TOUR.map((_,i)=>`<span class="tour-dot${i===TOUR_I?' on':''}"></span>`).join('');
+  document.getElementById('tour-back').style.display=TOUR_I===0?'none':'inline-block';
+  document.getElementById('tour-next').textContent=TOUR_I===TOUR.length-1?'Finish':'Next';
+}
+function endTour(){
+  document.body.classList.remove('touring');
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('tour-glow'));
+  store.set('tourSeen',1);
+  show('home',true);
+}
+if(!store.get('tourSeen',0)){setTimeout(()=>{if(!document.body.classList.contains('touring'))startTour()},700)}
+
+/* ============ THE UNDERTOW ============ */
+const VULN_ITEMS=["A major life change in the last year — a move, breakup, job loss, or loss of someone","Feeling more isolated or lonely than usual lately","Under real financial stress","Grieving something, even something hard to put into words","Searching for answers or meaning more urgently than usual"];
+document.getElementById('vuln-grid').innerHTML=VULN_ITEMS.map((t,i)=>`<label class="vuln-item"><input type="checkbox" data-vi="${i}"><span class="fl-text">${t}</span></label>`).join('');
+document.querySelectorAll('input[data-vi]').forEach(c=>c.addEventListener('change',()=>{
+  const n=document.querySelectorAll('input[data-vi]:checked').length;
+  const r=document.getElementById('vuln-result');
+  if(n===0){r.classList.remove('show');return}
+  r.classList.add('show');
+  r.textContent=n===1?"One thing checked — worth just knowing about yourself this week, nothing more.":
+    "None of this makes you gullible — it makes you human. These are exactly the conditions research on influence and recruitment consistently finds make anyone, including sharp, skeptical people, more open to intense new belonging right now. Just worth knowing about yourself as you read the rest of this section.";
+}));
+
+const LADDER=[
+ {t:"Casual viewing",d:"You watch content like anyone else — entertainment, occasional resonance, nothing organized.",c:"var(--sage)"},
+ {t:"Parasocial attachment",d:"You feel like you know this creator. You check for their content specifically. Still completely normal.",c:"var(--candle)"},
+ {t:"Time & money investment",d:"Paid readings, courses, or events. More of your schedule and budget point toward this one source.",c:"#d98a68"},
+ {t:"Identity fusion",d:"You describe yourself using the community's language. Doubting the message starts to feel like doubting yourself.",c:"var(--ember)"},
+ {t:"Isolation from outside perspective",d:"Contact with people who'd ask hard questions quietly decreases. The group starts to feel like the only place that understands you.",c:"#c14a5c"},
+ {t:"Group or leader dependency",d:"Major decisions run through the group or leader. Leaving feels not just hard, but genuinely frightening.",c:"var(--signal)"}
+];
+document.getElementById('ladder').innerHTML=LADDER.map((r,i)=>`<div class="rung"><div class="rung-num" style="background:${r.c}">${i+1}</div><div class="rung-body"><h4>${r.t}</h4><p>${r.d}</p></div></div>`).join('');
+
+const TRAJ_Q=[
+ {id:"time",label:"Compared to when I started, the time I give this has:",opts:["stayed about the same","increased a little","increased a lot"]},
+ {id:"money",label:"Compared to when I started, the money I've spent has:",opts:["stayed minimal","been more than expected","been a lot more than I ever planned"]},
+ {id:"contact",label:"My contact with friends or family outside this has:",opts:["stayed the same or grown","decreased a little","decreased a lot"]},
+ {id:"leave",label:"When I imagine stepping back or leaving, I feel:",opts:["neutral, or fine","some anxiety about it","real fear about it"]},
+ {id:"doubt",label:"Questioning or criticism of this gets met with:",opts:["genuine discussion","discomfort, but it's tolerated","dismissal, anger, or being shut down"]}
+];
+document.getElementById('traj-body').innerHTML=TRAJ_Q.map(q=>`
+  <div class="traj-q"><label class="tq-label">${q.label}</label>
+  <div class="opt-row" id="tq-${q.id}">${q.opts.map((o,i)=>`<button class="opt" data-v="${i}">${o}</button>`).join('')}</div></div>`).join('');
+const TRAJ_STATE={};
+TRAJ_Q.forEach(q=>{document.getElementById('tq-'+q.id).addEventListener('click',e=>{
+  if(e.target.dataset.v===undefined)return;
+  TRAJ_STATE[q.id]=+e.target.dataset.v;
+  document.querySelectorAll('#tq-'+q.id+' .opt').forEach(o=>o.classList.toggle('sel',o===e.target));
+})});
+function runTrajectory(){
+  const vals=TRAJ_Q.map(q=>TRAJ_STATE[q.id]);
+  if(vals.some(v=>v===undefined)){const r=document.getElementById('traj-result');r.className='traj-result show t-mid';r.textContent="Answer all five to see the reflection — a partial picture isn't a fair one.";return}
+  const score=vals.reduce((a,b)=>a+b,0); // 0-10
+  const r=document.getElementById('traj-result');
+  let cls,text;
+  if(score<=2){cls='t-low';text="Nothing here points toward concern. Time, money, and outside relationships have mostly held steady, and doubt is still something you can voice. That's what healthy engagement with anything — spiritual or otherwise — usually looks like."}
+  else if(score<=6){cls='t-mid';text="A few things have shifted more than the others — that's worth naming honestly to yourself, even if none of it feels urgent yet. The specific thing to watch isn't any single answer, it's whether the trend keeps moving in the same direction over the next few months. Direction matters more than any one point on the line."}
+  else{cls='t-high';text="Several of your answers landed on the higher end — increased cost, decreased outside contact, real fear at the thought of leaving, doubt that isn't welcome. None of that proves anything on its own, but together it's the exact shape researchers associate with escalating high-control involvement. This is worth an honest conversation with someone completely outside the situation — not necessarily to leave anything, just to be heard by someone with no stake in the answer."}
+  r.className='traj-result show '+cls;
+  r.textContent=text;
+  r.scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+const JARGON=[
+ {n:"Starseed / Indigo / Crystal child",legit:"For many people this is meaningful, poetic language for feeling like an old soul, or for never quite fitting the world around them — a real and common experience that doesn't need a diagnosis.",lev:"As a recruitment hook, it works as an exceptionalism claim: not just different, but non-human-origin special, with a rare mission. Exceptionalism is one of the oldest, most reliable ways to make someone feel chosen enough to keep listening — and different enough to stop listening to people outside the group."},
+ {n:"Awakening / The Great Awakening",legit:"A widely-used way to describe a genuine shift in perspective — noticing patterns, values, or systems you hadn't questioned before. That kind of shift is real and can be healthy.",lev:"Framed as a one-time gate you either walked through or didn't, it can quietly divide the people in your life into 'awake' and 'asleep' — making disagreement from someone you love read as proof they haven't caught up, rather than a viewpoint worth hearing."},
+ {n:"Twin Flame",legit:"An intensified soulmate concept many people use to describe an unusually significant, transformative connection. As a personal framework for a healthy relationship, it's just language.",lev:"As an explanation for a relationship that's actually chaotic or disrespectful, it can turn every red flag into 'mirror work' — the more painful the relationship gets, the more destined it can start to feel, because intensity itself gets read as proof."},
+ {n:"Karmic relationship / Karmic debt",legit:"A way of finding meaning in a difficult relationship or breakup — that it taught you something, even if it didn't last. Meaning-making after pain is genuinely healthy.",lev:"As a reason to stay, 'I owe this person a karmic debt' can override every practical reason to leave. A debt framed as cosmic doesn't come with a repayment date, which is exactly the problem."},
+ {n:"Dark Night of the Soul",legit:"A real, old contemplative term — with roots well outside internet spirituality — for a period of profound disorientation that sometimes precedes real growth.",lev:"Used to explain away withdrawal from friends, work, or basic care of yourself as necessary spiritual initiation, it can delay recognizing a depressive episode that needs real support, not just patience."},
+ {n:"Vibration / Frequency / 3D vs 5D",legit:"A metaphor a lot of people find genuinely useful for describing mood, mindset, or the kind of energy they want to cultivate.",lev:"As a hierarchy, it makes doubt or criticism into evidence of spiritual inferiority — 'you're just not vibrating high enough to see it' — a remarkably efficient way to make questioning the message feel like a personal failing."},
+ {n:"Downloads / Codes / Activations",legit:"Language for a sudden insight or creative inspiration that felt like it arrived from somewhere outside normal thinking — a real, common intuitive experience.",lev:"As a claimed direct transmission of secret knowledge, it does the same work as 'the cards say' — it moves the claim somewhere unfalsifiable, usually available in full only through the person claiming to receive it."},
+ {n:"Lightworker / Way-shower / The Chosen",legit:"A sense of purpose or calling to help others — a genuinely common and often admirable motivation.",lev:"Chosen-ness is one of the most consistent recruitment hooks across very different high-control groups historically, spiritual or not. Being picked for something rare is deeply appealing — and the fewer people who are 'chosen,' the more tightly the group bonds around what separates them from everyone outside it."},
+ {n:"Soul family / Tribe / Collective",legit:"A real and valuable feeling of belonging with people who share your outlook — friendship and community, just with different words.",lev:"In escalating situations, 'soul family' can start being framed as more real and more trustworthy than actual family — often the first quiet step toward isolation from the people most likely to notice if something's wrong."},
+ {n:"Coven / Circle / Inner Circle",legit:"Legitimate structure in many real spiritual and craft practices — a working group with different levels of experience, same as any skill community.",lev:"In high-control contexts, inner-circle access gets tied to payment, obedience, or proximity to a leader — turning a practice structure into a status ladder people are motivated to keep climbing, and afraid to fall from."},
+ {n:"Cutting cords / Releasing toxic people",legit:"A real and often genuinely healthy practice — recognizing and stepping back from relationships that aren't serving you.",lev:"In a high-control context, this exact language gets pointed at anyone who raises a concern about the group or its leader — reframing legitimate concern as something to be spiritually discarded rather than heard."},
+ {n:"Energy exchange",legit:"A respectful way many practitioners frame payment for real time, skill, and labor — a normal, fair concept.",lev:"As a euphemism, it can obscure the actual dollar amount and how it scales — climbing from a $20 reading to thousands for 'deeper access' without ever using the word 'price,' which makes the escalation harder to notice and easier to justify."}
+];
+document.getElementById('gloss-list').innerHTML=JARGON.map(g=>`
+ <div class="gloss-card"><h3>${g.n}</h3>
+ <div class="gloss-row"><b>What it usually means:</b> ${g.legit}</div>
+ <div class="gloss-row"><b>How it gets leveraged:</b> ${g.lev}</div></div>`).join('');
+
+const BITE=[
+ {cat:"Behavior control",sub:"What you do, and who you're allowed to do it with.",items:["Your schedule, sleep, or daily habits are increasingly organized around this group or creator","Spending time with people outside it is discouraged, even subtly — 'they wouldn't understand'","Money is required or expected to progress or access more"]},
+ {cat:"Information control",sub:"What you're allowed to read, watch, and hear.",items:["You're discouraged from researching the leader or group anywhere outside their own content","Criticism or exposés are pre-labeled as lies or 'low-vibration energy' before you ever see them","People who left are dismissed as bitter or not ready, rather than actually listened to"]},
+ {cat:"Thought control",sub:"How you're allowed to think about it.",items:["The group has its own vocabulary, and using it correctly signals belonging","Doubt itself is treated as a spiritual failure or a sign you need to go deeper, not a normal response","Complex questions get one repeated answer, and follow-up questions are discouraged"]},
+ {cat:"Emotional control",sub:"What you're allowed to feel about it.",items:["Warmth and approval were intense early on, and now feel conditional on compliance","You feel real fear about what would happen — to your progress, your safety, your soul — if you left","Guilt is used to explain your own doubts back to you, as your resistance or your karma"]}
+];
+document.getElementById('bite-body').innerHTML=BITE.map((b,bi)=>`
+ <div class="bite-cat"><h4>${b.cat}</h4><p class="bc-sub">${b.sub}</p>
+ ${b.items.map((t,i)=>`<label class="flag" style="margin-bottom:8px"><input type="checkbox" data-bite="${bi}-${i}"><span class="fl-text">${t}</span></label>`).join('')}</div>`).join('');
+function scoreGeneric(selector,verdictEl,meterEl,tiers){
+  const n=document.querySelectorAll(selector+':checked').length;
+  const total=document.querySelectorAll(selector).length;
+  const pct=total?Math.round(n/total*100):0;
+  document.getElementById(meterEl).style.width=pct+'%';
+  document.getElementById(meterEl).style.background= n===0?'var(--line-strong)': pct<25?'var(--sage)':pct<50?'var(--candle)':'var(--signal)';
+  const v=document.getElementById(verdictEl);
+  if(n===0){v.textContent="Check what's true to get a reading.";return}
+  const tier=pct<25?0:pct<50?1:2;
+  v.textContent=`${n} of ${total} checked. `+tiers[tier];
+}
+document.querySelectorAll('input[data-bite]').forEach(c=>c.addEventListener('change',()=>scoreGeneric('input[data-bite]','bite-verdict','bite-meter',[
+  "A few isolated items are common even in healthy communities — context matters more than the count.",
+  "Enough of these are checked that a conversation with someone entirely outside the situation is worth having, even if nothing feels urgent yet.",
+  "This many, together, is the pattern researchers specifically associate with high-control dynamics. Worth taking seriously — see the resource below."
+])));
+
+const KARMIC=["Pain or disrespect in the relationship gets explained as 'the universe testing us' or necessary mirror work","I've stayed through something I'd tell a friend to leave, because it's karmic or destined","Anyone who questions the relationship is told they don't understand higher or spiritual love","The relationship's intensity — big highs, big lows — gets treated as proof it's real, rather than a concern","Breakups or space get framed as failing a spiritual test, not a normal relationship ending","I've spent significant money on readings or courses trying to fix or activate this connection"];
+document.getElementById('karmic-body').innerHTML=KARMIC.map((t,i)=>`<label class="flag" style="margin-bottom:8px"><input type="checkbox" data-karmic="${i}"><span class="fl-text">${t}</span></label>`).join('');
+document.querySelectorAll('input[data-karmic]').forEach(c=>c.addEventListener('change',()=>scoreGeneric('input[data-karmic]','karmic-verdict','karmic-meter',[
+  "A single checked item is worth noticing, not panicking over — most relationships have at least one rough edge.",
+  "Enough of this rings true that the spiritual framing may be doing some real work covering for something painful. Worth being honest with yourself about which came first — the connection, or the explanation for staying.",
+  "This many checked together describes a pattern, not a coincidence. The resource below is there regardless of what you decide to do with any of this."
+])));
+
+const MONEY_OK=["Fixed, disclosed prices you can see before paying","One-time purchases with a clear scope and end point","Free content that stays free — no bait-and-switch","Prices that don't change based on how 'ready' or committed you seem"];
+const MONEY_WATCH=["Pay-to-access 'levels' or tiers of truth","Price described in vibes or 'energy exchange' instead of numbers","Suggestions that lack of money reflects lack of faith or commitment","Pressure to recruit others for a discount or for standing in the group"];
+document.getElementById('money-ok').innerHTML=MONEY_OK.map(t=>`<li>${t}</li>`).join('');
+document.getElementById('money-watch').innerHTML=MONEY_WATCH.map(t=>`<li>${t}</li>`).join('');
+
+const VALID_VIEWS=['home','learn','analyze','intent','practice','undertow','thread','notebook'];
+function show(v,skipHash){if(!VALID_VIEWS.includes(v))v='home';
+  document.querySelectorAll('.view').forEach(x=>x.classList.remove('active'));
+  document.getElementById('view-'+v).classList.add('active');
+  tabs.forEach(t=>t.classList.toggle('active',t.dataset.view===v));
+  if(v==='notebook')renderNotebook();
+  if(!skipHash&&location.hash!=='#'+v){try{history.pushState(null,'','#'+v)}catch(e){}}
+  window.scrollTo({top:0})}
+window.addEventListener('hashchange',()=>show((location.hash||'#home').slice(1),true));
+window.addEventListener('popstate',()=>show((location.hash||'#home').slice(1),true));
+tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.view)));
+document.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click',()=>show(b.dataset.goto)));
+if(location.hash&&location.hash.length>1)show(location.hash.slice(1),true);
+
+/* ============ RENDER LIBRARIES ============ */
+const CAT_LABEL={attention:"Door 1 · Attention",identity:"Door 2 · Identity",hope:"Door 3 · Hope",amplifier:"Amplifier",after:"Aftereffect"};
+const ARENA_LABEL={social:"Social media",sales:"Sales & marketing",guru:"Gurus & courses",spiritual:"Spiritual & readings"};
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')}
+let MECH_F='all',TECH_F='all',LIB_Q='';
+function libMatch(item,q){if(!q)return true;q=q.toLowerCase();return (item.n+' '+item.d+' '+(item.s||'')+' '+(item.x||item.w||'')).toLowerCase().includes(q)}
+function renderMechs(f){if(f!==undefined)MECH_F=f;f=MECH_F;document.getElementById('mech-list').innerHTML=MECHANISMS.filter(m=>(f==='all'||m.c===f)&&libMatch(m,LIB_Q)).map(m=>`
+ <details class="card"><summary><div class="t-wrap"><span class="tag ${m.c}">${CAT_LABEL[m.c]}</span><h3>${m.n}</h3><div class="mini">${m.d.split('.')[0]}.</div></div><span class="arrow">▸</span></summary>
+ <div class="body"><div class="kv">${m.d}</div><div class="quote">Sounds like: ${m.s}</div><div class="kv counter" style="margin-top:12px"><b>Counter:</b> ${m.x}</div></div></details>`).join('')}
+renderMechs('all');
+document.getElementById('mech-chips').addEventListener('click',e=>{if(!e.target.dataset.f)return;document.querySelectorAll('#mech-chips .chip').forEach(c=>c.classList.toggle('on',c===e.target));renderMechs(e.target.dataset.f)});
+function renderTechs(f){if(f!==undefined)TECH_F=f;f=TECH_F;document.getElementById('tech-list').innerHTML=TECHNIQUES.filter(t=>(f==='all'||t.c===f)&&libMatch(t,LIB_Q)).map(t=>`
+ <details class="card"><summary><div class="t-wrap"><span class="tag ${t.c}">${ARENA_LABEL[t.c]}</span><h3>${t.n}</h3><div class="mini">${t.d.split('.')[0]}.</div></div><span class="arrow">▸</span></summary>
+ <div class="body"><div class="kv">${t.d}</div><div class="quote">Sounds like: ${t.s}</div><div class="kv counter" style="margin-top:12px"><b>Watch for:</b> ${t.w}</div></div></details>`).join('')}
+renderTechs('all');
+document.getElementById('lib-search').addEventListener('input',e=>{LIB_Q=e.target.value.trim();renderMechs();renderTechs()});
+document.getElementById('tech-chips').addEventListener('click',e=>{if(!e.target.dataset.f)return;document.querySelectorAll('#tech-chips .chip').forEach(c=>c.classList.toggle('on',c===e.target));renderTechs(e.target.dataset.f)});
+document.getElementById('genre-list').innerHTML=GENRES.map(g=>`<div class="card"><h3>${g.n}</h3><div class="kv" style="margin-top:8px">${g.d}</div><div class="kv counter" style="margin-top:10px"><b>${g.q}</b></div></div>`).join('');
+
+/* ============ ANALYZER ============ */
+function runAnalysis(){
+  const raw=document.getElementById('analyze-input').value;
+  const out=document.getElementById('analyze-out');
+  const text=raw.trim();
+  if(text.length<20){out.innerHTML='<div class="analysis-summary mid" style="margin-top:16px">Paste at least a sentence or two — the analyzer needs words to work with.</div>';return}
+  const words=text.split(/\s+/).length;
+  const youCount=(text.match(/\byou(r|rs|rself)?\b/gi)||[]).length;
+  const youDensity=Math.round(youCount/words*1000)/10;
+  const exclaim=(text.match(/!/g)||[]).length;
+  const capsWords=(text.match(/\b[A-Z]{3,}\b/g)||[]).length;
+  const hits=[];
+  SIGNATURES.forEach(sig=>{
+    let matches=[];
+    sig.re.forEach(r=>{const m=text.match(r);if(m)matches=matches.concat(m)});
+    matches=[...new Set(matches.map(x=>x.trim()))].slice(0,6);
+    if(matches.length)hits.push({...sig,matches});
+  });
+  logTactics(hits.map(h=>h.n));
+  const heavy=['therapyrep','fear','isolation','guilt'];
+  const pressure=hits.reduce((a,h)=>a+(heavy.includes(h.k)?2:1)+Math.min(h.matches.length-1,2)*0.5,0)+(youDensity>6?1:0)+(exclaim>5?0.5:0);
+  let cls,verdict;
+  if(hits.length===0){cls='low';verdict="No tactic signatures detected in this text. That doesn't certify intent — plenty of persuasion lives in visuals, pacing, and context the analyzer can't see — but the language itself isn't leaning on the pressure playbook."}
+  else if(pressure<3){cls='low';verdict=`Light touch: ${hits.length} signature${hits.length>1?'s':''} detected. Some of these appear in perfectly honest content — persuasion isn't a crime. Read the matched phrases and ask what each is *for*.`}
+  else if(pressure<6){cls='mid';verdict=`Moderate pressure: ${hits.length} signatures detected. This text is working on you deliberately. The key question now is intent — take what you know about this creator to the Intent tab and run the checklist.`}
+  else{cls='high';verdict=`Heavy pressure: ${hits.length} signatures, several stacked. Language this loaded is engineered, not accidental. Whatever this is selling — a product, a belief, a dependency — decide with your guard fully up, or not at all.`}
+  out.innerHTML=`
+    <div class="metric-row">
+      <div class="metric"><div class="m-num">${hits.length}</div><div class="m-lab">Signatures found</div></div>
+      <div class="metric"><div class="m-num">${youDensity}%</div><div class="m-lab">"You" density ${youDensity>6?'· very high':youDensity>3?'· elevated':'· normal'}</div></div>
+      <div class="metric"><div class="m-num">${words}</div><div class="m-lab">Words scanned</div></div>
+    </div>
+    ${hits.length?'<h3 class="subhead" style="margin-top:26px">What the language is doing</h3>':''}
+    ${hits.map(h=>`<div class="hit-card"><h4>${h.n}</h4><div class="hp">${h.why}</div><div class="matches">${h.matches.map(m=>`<span class="match-pill">“${esc(m)}”</span>`).join('')}</div></div>`).join('')}
+    ${youDensity>6?`<div class="hit-card"><h4>Self-referential saturation</h4><div class="hp">Roughly ${youDensity}% of these words are "you/your" — well above conversational baseline. Sustained second-person address encodes claims as facts about your identity and boosts retention. Try mentally swapping "you" for "some people."</div></div>`:''}
+    ${capsWords>3||exclaim>5?`<div class="hit-card"><h4>Intensity inflation</h4><div class="hp">${capsWords>3?capsWords+' all-caps words':''}${capsWords>3&&exclaim>5?' and ':''}${exclaim>5?exclaim+' exclamation marks':''} — volume standing in for evidence. Intensity transfers emotion before evaluation (emotional contagion).</div></div>`:''}
+    <div class="analysis-summary ${cls}">${verdict}</div>
+    <p class="small-print">The analyzer matches language patterns only. It can't hear tone, see visuals, or know intent — and honest creators sometimes use these phrases too. Use it as a flashlight for the follow-up questions, never as a final verdict on a person.</p>`;
+  out.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+/* ============ INTENT FLAGS ============ */
+function flagHTML(t,cls,i){return `<label class="flag ${cls}"><input type="checkbox" data-k="${cls}"><span class="fl-text">${t}</span></label>`}
+document.getElementById('green-flags').innerHTML=GREEN.map((t,i)=>flagHTML(t,'green',i)).join('');
+document.getElementById('red-flags').innerHTML=RED.map((t,i)=>flagHTML(t,'red',i)).join('');
+document.querySelectorAll('#view-intent .flag input[data-k]').forEach(c=>c.addEventListener('change',score));
+function score(){
+  const g=document.querySelectorAll('input[data-k=green]:checked').length;
+  const r=document.querySelectorAll('input[data-k=red]:checked').length;
+  const v=document.getElementById('verdict'),m=document.getElementById('meter-fill');
+  if(g+r===0){v.textContent="Check some flags to get a reading.";m.style.width="0%";return}
+  const ratio=g/(g+r);m.style.width=Math.round(ratio*100)+"%";
+  m.style.background=ratio>.65?"var(--sage)":ratio>.4?"var(--candle)":"var(--ember)";
+  v.textContent=ratio>.75?`${g} green, ${r} red — this looks like someone building you up. Enjoy it consciously.`:ratio>.5?`${g} green, ${r} red — mixed signals. Keep watching the moment right after the emotional peak.`:ratio>.25?`${g} green, ${r} red — the model leans on your attention. Consume with your guard up, if at all.`:`${g} green, ${r} red — this pattern points at dependency, not help. You already know what your gut is saying.`;
+}
+
+/* ============ DANGERS ============ */
+document.getElementById('danger-list').innerHTML=DANGERS.map((d,i)=>`
+ <div class="card"><h3>${d.n}</h3>
+ <div style="margin-top:12px">${d.sy.map(s=>`<label class="flag" style="margin-bottom:8px"><input type="checkbox" data-d="${i}"><span class="fl-text">${s}</span></label>`).join('')}</div>
+ <div class="danger-result" id="dres-${i}"></div></div>`).join('');
+document.querySelectorAll('input[data-d]').forEach(c=>c.addEventListener('change',()=>{
+  const i=c.dataset.d;const n=document.querySelectorAll(`input[data-d="${i}"]:checked`).length;
+  const r=document.getElementById('dres-'+i);
+  if(n===0){r.classList.remove('show');return}
+  r.className='danger-result show '+(n===1?'warm':'hot');
+  r.textContent=(n===1?"One thread showing — worth a look before it becomes a pattern. ":"")+DANGERS[i].adv;
+}));
+
+/* ============ QUIZ ============ */
+const QUIZ=[
+ {sn:"“I don't usually share this, but my guides woke me up at 3am with a message for someone watching. You've been betrayed — maybe recently, maybe years ago — and you never got closure. If this resonates, comment the word HEAL and I'll send you what came through for you specifically.”",
+  opts:["Cold reading (covers every base)","Conduit authority ('my guides')","DM / comment funnel","Price anchoring","Manufactured intimacy ('I don't usually share this')"],ans:[0,1,2,4],
+  ex:"The betrayal claim spans all timelines (cold reading), the guides remove accountability (conduit), 'comment HEAL' is a funnel trigger, and the reluctant-confession opener is performed intimacy. No prices appear — anchoring isn't present."},
+ {sn:"“Look, I'm only saying this once. 847 students used this exact system to quit their 9-5. Enrollment closes TONIGHT at midnight and I'm never running it at $197 again — it's going back to $997. You're either serious about your future or you're not. Link in bio.”",
+  opts:["Manufactured urgency","Price anchoring","False binary","Social proof","Therapy replacement claim"],ans:[0,1,2,3],
+  ex:"Midnight deadline (urgency), $997→$197 (anchoring), 'serious or not' (binary), '847 students' (social proof). Nothing here touches therapy replacement — that's the one to leave unchecked."},
+ {sn:"“Your family won't understand this version of you. That's okay — growth is lonely. The people from your old life are comfortable watching you stay small. This community is where your real ones are. We see you, even when they don't. 🖤”",
+  opts:["Us-vs-them isolation","Love bombing / belonging offer","Flattering reframe (loneliness → growth)","Open loop / cliffhanger","Parasocial 'we' language"],ans:[0,1,2,4],
+  ex:"Family reframed as obstacles (isolation), instant belonging offered as replacement (love bombing + parasocial 'we see you'), and loneliness re-crowned as growth (flattering reframe). There's no cliffhanger — nothing is withheld for a part two."},
+ {sn:"“POV: you can't rest without feeling guilty, you overthink every text, and you'd rather handle everything alone than ask for help. You're not broken — you're a high-functioning empath with a warrior spirit. Save this so you remember who you are.”",
+  opts:["Barnum statements","Identity pre-labeling","Engagement bait ('save this')","Fear-mongering","Self-referential 'you' language"],ans:[0,1,2,4],
+  ex:"Each trait fits most tired humans (Barnum), delivered in dense second person ('you' language), resolved into a flattering label (pre-labeling), with a save prompt (engagement bait). Nothing here manufactures fear."},
+ {sn:"“They're not telling you what's in the water. I can't say too much on this app or this video gets taken down — but the full breakdown is in my private group, and honestly? After the eclipse next month, a lot of people are going to wish they'd listened.”",
+  opts:["Fear-mongering","Gatekept truth","Hope/fear scheduling (the eclipse)","Vagueness escape hatch","Price anchoring"],ans:[0,1,2,3],
+  ex:"Unnamed threat (fear), real info paywalled in a private group (gatekeeping), a future date carrying the payoff (scheduling), and claims too vague to ever be wrong (escape hatch). No prices are mentioned."},
+ {sn:"“I was exactly where you are — broke, anxious, ghosted by everyone I loved. Then I found this one daily practice. I'm not selling anything, I just love you guys and want you to win. Full method in tomorrow's video, make sure you're following so you don't miss it.”",
+  opts:["Wounded-healer narrative","Reciprocity setup ('not selling anything')","Dependency loop (tomorrow's video)","Parasocial bonding","False authority credentials"],ans:[0,1,2,3],
+  ex:"Trauma-to-triumph arc (wounded healer), announced generosity creating debt (reciprocity), the method withheld until tomorrow (dependency loop), 'I love you guys' (parasocial). No credentials are claimed — false authority isn't present."},
+ {sn:"“The fact that you found this video means you're one of the awakened ones — most people scroll right past. Your soul family is waiting for you. The people in your life right now? They knew the old you; they can't see who you're becoming. My inner circle does deep activation work together — it's a small energy exchange to join, DM me the word HOME and I'll send the details.”",
+  opts:["Chosen-one / identity pre-labeling","Us-vs-them isolation","Gatekept access ('inner circle')","Vague pricing ('energy exchange')","Price anchoring"],ans:[0,1,2,3],
+  ex:"'Awakened ones' assigns chosen-ness (pre-labeling), current relationships get quietly demoted (isolation), the real content lives in a paid inner circle (gatekeeping), and the cost hides behind 'energy exchange' (vague pricing). No inflated before-price appears, so anchoring isn't present. This exact combination is the recruitment pattern the Undertow section maps."},
+ {sn:"“Quick technique for anxiety spirals — box breathing. In for four, hold four, out four, hold four. That's the whole thing, no link, nothing to buy. Two caveats: it doesn't work for everyone, and if your anxiety is severe, a therapist or doctor is the real move. Try it for a week and drop it if it does nothing for you.”",
+  opts:["Manufactured urgency","Therapy replacement claim","Dependency loop","Parasocial intimacy","Nothing manipulative — this is what honest content looks like"],ans:[4],
+  ex:"This is the control round. Full method given immediately, limits admitted, professional help pointed to, permission to quit granted, no ask anywhere. If you checked tactics here, that's worth noticing too — the goal of this whole guide is discernment, not paranoia. Honest content exists, and being able to recognize it is half the skill."}
+];
+let qIndex=0,qSel=new Set(),qScore=0,qDone=false;
+function renderQuiz(){
+  const q=QUIZ[qIndex];qSel=new Set();qDone=false;
+  document.getElementById('quiz-box').innerHTML=`
+   <div class="card">
+    <div class="quiz-progress">Round ${qIndex+1} of ${QUIZ.length} · running score ${qScore}</div>
+    <div class="quiz-snippet">${q.sn}</div>
+    <p style="font-size:14px;color:var(--muted)">Select every tactic present, then reveal:</p>
+    <div class="quiz-opts">${q.opts.map((o,i)=>`<button class="qopt" data-i="${i}">${o}</button>`).join('')}</div>
+    <div class="quiz-reveal" id="q-reveal"></div>
+    <button class="btn" id="q-btn" onclick="revealQuiz()">Reveal</button>
+   </div>`;
+  document.querySelectorAll('.qopt').forEach(b=>b.addEventListener('click',()=>{if(qDone)return;const i=+b.dataset.i;qSel.has(i)?qSel.delete(i):qSel.add(i);b.classList.toggle('sel')}));
+}
+function revealQuiz(){
+  if(qDone){
+    if(qIndex===QUIZ.length-1){const best=store.get("quizBest",0);if(qScore>best)store.set("quizBest",qScore)}
+    qIndex=(qIndex+1)%QUIZ.length;if(qIndex===0)qScore=0;renderQuiz();return}
+  qDone=true;const q=QUIZ[qIndex];const ansSet=new Set(q.ans);let round=0;
+  document.querySelectorAll('.qopt').forEach(b=>{const i=+b.dataset.i;b.classList.remove('sel');
+    if(ansSet.has(i)&&qSel.has(i)){b.classList.add('correct');round++}
+    else if(ansSet.has(i)){b.classList.add('missed')}
+    else if(qSel.has(i)){b.classList.add('wrong');round--}
+  });
+  qScore+=Math.max(round,0);
+  const rev=document.getElementById('q-reveal');
+  rev.innerHTML=`<b style="color:var(--candle)">You caught ${[...qSel].filter(i=>ansSet.has(i)).length} of ${q.ans.length}${[...qSel].some(i=>!ansSet.has(i))?', with '+[...qSel].filter(i=>!ansSet.has(i)).length+' false alarm(s)':''}.</b><br><br>${q.ex}<br><br><span style="color:var(--dim);font-size:13px">Solid = correct catch · dashed = present but missed · red = false alarm</span>`;
+  rev.classList.add('show');
+  document.getElementById('q-btn').textContent=qIndex===QUIZ.length-1?"Start over":"Next round";
+}
+renderQuiz();
+
+/* ============ AI ANALYSIS (link + pasted text) ============ */
+const AI_SCHEMA=`Return ONLY valid JSON, no markdown fences, no preamble, matching exactly:
+{"transcript_found":boolean,"source_note":"one sentence: where the content came from and your confidence in it","outline":["3-6 short beats describing what happens/is said, in order"],"statements":[{"quote":"short verbatim or near-verbatim line","tactic":"tactic name","why":"one sentence: what this line is doing to the viewer"}],"tactics_summary":[{"name":"tactic","note":"brief"}],"pressure":"low|moderate|heavy","verdict":"2-3 sentences: an honest overall read, including that tactics alone don't prove bad intent"}
+Limit statements to the 8 most significant. Use tactic names from this framework where they fit: manufactured urgency, scarcity, love bombing, identity pre-labeling, Barnum statement, flattering reframe, social mirror, conduit authority, false authority, false binary, guilt leverage, fear activation, us-vs-them isolation, therapy replacement, cold reading, shotgunning, rainbow ruse, vagueness escape hatch, spiritual bypassing, hope scheduling, open loop, dependency loop, DM funnel, price anchoring, social proof, reciprocity setup, parasocial intimacy, engagement bait, rage farming, self-referential saturation, intermittent reinforcement, spotlight effect.`;
+
+async function callClaude(promptText,useSearch){
+  const body={model:"claude-sonnet-4-6",max_tokens:1000,messages:[{role:"user",content:promptText}]};
+  if(useSearch)body.tools=[{type:"web_search_20250305",name:"web_search"}];
+  const resp=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  if(!resp.ok)throw new Error("API returned "+resp.status);
+  const data=await resp.json();
+  return (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n");
+}
+function parseAI(text){
+  const clean=text.replace(/```json/gi,"").replace(/```/g,"").trim();
+  const start=clean.indexOf("{"),end=clean.lastIndexOf("}");
+  if(start===-1||end===-1)throw new Error("no JSON in response");
+  return JSON.parse(clean.slice(start,end+1));
+}
+function aiLoading(msg){document.getElementById('ai-out').innerHTML=`<div class="loading-card"><span class="spinner"></span>${msg}</div>`}
+function aiError(msg){document.getElementById('ai-out').innerHTML=`<div class="analysis-summary mid" style="margin-top:16px">${msg}</div>`}
+
+function logTactics(names){const t=store.get("tactics",{});names.forEach(n=>{t[n]=(t[n]||0)+1});store.set("tactics",t)}
+
+/* ---- AI analysis core (routes through Netlify function, falls back to direct call in-artifact) ---- */
+async function aiAnalyzeCore(text){
+  // 1) Netlify function with your API key
+  try{
+    const r=await fetch('/.netlify/functions/analyze',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({text})});
+    if(r.ok){const j=await r.json();return parseAI(j.raw)}
+    if(r.status===501)throw {step:'nokey'};
+    let j=null;try{j=await r.json()}catch(e){}
+    throw new Error((j&&j.error)||("Analysis service error "+r.status));
+  }catch(e){
+    if(e.step!=='nokey'&&!(e instanceof TypeError))throw (e instanceof Error?e:new Error(e.message||"Analysis failed"));
+    // 2) direct call (works inside Claude's artifact preview)
+    try{
+      const t=await callClaude(`Analyze the following content for persuasion and manipulation tactics used on the viewer/reader. Set transcript_found to true and source_note to "Video caption track."\nCONTENT:\n"""${text.slice(0,6000)}"""\n${AI_SCHEMA}`,false);
+      return parseAI(t);
+    }catch(e2){
+      throw new Error("AI analysis isn't enabled on this deployment yet. To turn it on: in Netlify → Site settings → Environment variables, add ANTHROPIC_API_KEY with your key from console.anthropic.com, then redeploy. The highlighted transcript and pattern scanner work without it.");
+    }
+  }
+}
+const SAMPLES={
+ spiritual:`I wasn't going to post this, but my guides would not let me sleep until I shared it. Someone watching this — you know who you are — you've been betrayed by someone close, maybe recently, maybe years ago, and you never got the closure you deserved. You don't trust easily anymore, and honestly? People are intimidated by your energy. But hear me: a person from your past is thinking about you constantly. They check your page. Big shifts are coming after this full moon — do NOT ignore the signs this week. If this resonated, comment CLARITY and I'll send you the extended message spirit gave me for you. I do these free because I love this community, but my private readings close tonight.`,
+ guru:`Nobody wants to say this, so I will: you're broke because you choose to be. While you were sleeping in, I was building my third income stream. I went from my car to $40k a month with ONE system — and no, it's not luck, luck is what lazy people call discipline. There are two types of people watching this right now: the ones who click the link, and the ones who'll still be complaining next year. My mentorship is normally $2,000 but I'm opening 5 spots at $497 until midnight, because I remember being where you are. Your family won't get it. Your friends will call it a scam. That's exactly how you know you're onto something.`,
+ honest:`Quick technique for anxiety spirals that's helped me — box breathing. In for four, hold four, out four, hold four. That's the whole thing, no link, nothing to buy, the full method is in this sentence. Two honest caveats: it doesn't work for everyone, and if your anxiety is severe or constant, this is a supplement, not a substitute — a therapist or doctor is the real move, and there's no shame in that. It helps me most before difficult conversations. Try it for a week and drop it if it does nothing for you. That's it. Take care of yourselves.`};
+function loadSample(k){
+  const t=document.getElementById('ai-text-input');t.value=SAMPLES[k];
+  const s=document.getElementById('analyze-input');if(s)s.value=SAMPLES[k];
+  t.scrollIntoView({behavior:'smooth',block:'center'});t.focus();
+}
+async function aiAnalyzeText(){
+  const t=document.getElementById('ai-text-input').value.trim();
+  if(t.length<40){aiError("Paste at least a few sentences — the analysis needs material to work with.");return}
+  const btn=document.getElementById('ai-text-btn');btn.disabled=true;
+  aiLoading("Analyzing the text — statement by statement…");
+  try{
+    const r=await aiAnalyzeCore(t);
+    renderAI(r,null);
+    if(Array.isArray(r.tactics_summary))logTactics(r.tactics_summary.map(x=>x.name).filter(Boolean));
+  }catch(e){aiError(e.message)}
+  btn.disabled=false;
+}
+function renderAI(r,url){
+  const cls=r.pressure==="heavy"?"high":r.pressure==="moderate"?"mid":"low";
+  const out=document.getElementById('ai-out');
+  out.innerHTML=`
+    ${r.transcript_found===false?`<div class="analysis-summary mid" style="margin-top:16px"><b>Full transcript not found.</b> ${esc(r.source_note||"")} What follows is based only on what could actually be located — if you have the transcript, paste it above for the complete breakdown.</div>`:`<div class="src-note">${esc(r.source_note||"")}</div>`}
+    ${Array.isArray(r.outline)&&r.outline.length?`<h3 class="subhead">What happens, in order</h3><ol class="outline-list">${r.outline.map(o=>`<li>${esc(o)}</li>`).join("")}</ol>`:""}
+    ${Array.isArray(r.statements)&&r.statements.length?`<h3 class="subhead">Key statements &amp; what they're doing</h3>${r.statements.map(s=>`<div class="hit-card"><div class="matches" style="margin:0 0 8px"><span class="match-pill">“${esc(s.quote||"")}”</span></div><h4>${esc(s.tactic||"")}</h4><div class="hp">${esc(s.why||"")}</div></div>`).join("")}`:""}
+    ${Array.isArray(r.tactics_summary)&&r.tactics_summary.length?`<h3 class="subhead">Tactics detected</h3><div class="matches" style="margin-bottom:6px">${r.tactics_summary.map(t=>`<span class="match-pill">${esc(t.name||"")}</span>`).join("")}</div>`:""}
+    <div class="analysis-summary ${cls}" style="margin-top:20px"><b>Pressure: ${esc(r.pressure||"—")}.</b> ${esc(r.verdict||"")}</div>
+    <p class="small-print">AI analysis of ${url?"a searched-for transcript":"pasted text"} — verify important quotes against the original before sharing conclusions about a specific creator. Tactics describe the language, not the heart of the person using it; take intent questions to the Intent tab.</p>`;
+  out.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+/* ============ THREAD: THEME ENGINE ============ */
+const THEMES=[
+ {k:"chase",words:/chas|pursu|effort|want me|desire|obsess|fight for|earn.{0,12}love|prove.{0,12}love|attention/i,
+  ref:"the belief that love only counts when it's chased or earned",
+  cost:"This one tends to cost people the quiet, steady lovers — and hand them the dramatic, inconsistent ones. Pursuit gets mistaken for proof.",
+  acts:["Reach out first to one person today","Accept one act of quiet care without deflecting it","Delete one 'test' you were running on someone"]},
+ {k:"worth",words:/output|productiv|earn(ed|ing)?\b|deserve|lazy|work harder|achiev|grind|useless|perform(ance)?|accomplish|worth it|worth the (work|effort)/i,
+  ref:"the belief that worth must be produced rather than possessed",
+  cost:"This one usually costs rest first, then relationships, then health — in that order, quietly. Every pause arrives with interest attached.",
+  acts:["Rest for 30 minutes today without earning it first","Leave one small task undone overnight, on purpose","Tell someone what you enjoyed today instead of what you finished"]},
+ {k:"recognition",words:/viral|recogni[sz]|followers|views|blow(ing)? up|noticed|discovered|validat|isn'?t real until|doesn'?t count until|proof (that|it'?s)|paying off|going (viral|big)|numbers|engagement|likes|my work (is|isn'?t)/i,
+  ref:"the belief that your work only counts once it's seen and validated by others",
+  cost:"This one ties your sense of progress to a number you don't control — an algorithm, a stranger's scroll — so the work itself quietly stops feeling like enough on its own.",
+  acts:["Do one piece of work today and don't post it anywhere","Name one thing you're proud of that nobody else has seen yet","Notice one moment you measured your day by a metric instead of by effort"]},
+ {k:"help",words:/\bweak(ness)?\b|\bhelp\b|burden|\balone\b|myself|independen|need (someone|anyone|people)|rely|lean on|\bask\b/i,
+  ref:"the belief that needing others is a defect",
+  cost:"This one costs help exactly when it's most needed — and slowly teaches everyone around you to stop offering.",
+  acts:["Ask one person for one small, specific favor","Say 'I'm struggling with this' out loud to someone safe","Accept the next offer of help without negotiating it down"]},
+ {k:"behind",words:/\bbehind\b|too old|catch(ing)? up|compar(e|ing|ison)|everyone (else|is) (ahead|further|doing)|other (people|creators)|ahead of me|why (can'?t|haven'?t) i/i,
+  ref:"the belief that you're behind on a schedule someone else wrote",
+  cost:"This one turns every peer into a deadline and every rest day into a debt. The race it imagines has no finish line and no judges — only more content selling lane changes.",
+  acts:["Write down whose timeline you're measuring against — by name","Unfollow one account that reliably makes you feel behind","List three things that arrived in your life at exactly the right time"]},
+ {k:"irrelevant",words:/forgotten|irrelevant|left behind|missed my (window|moment|chance)|too late|nobody (cares|remembers)|\bfade\b|obsolete|washed up|running out of time|closing (window|door)/i,
+  ref:"the belief that you have a closing window and it's closing right now",
+  cost:"This one manufactures urgency out of nothing measurable — there's no actual clock, just a feeling dressed up as one, and it can burn years chasing a deadline nobody actually set.",
+  acts:["Name one thing that got better with more time, not less","Take a full day off from checking numbers or comparisons","List one thing you know now that you didn't know a year ago"]},
+ {k:"special",words:/exceptional|\bspecial\b|ordinary|\bnothing\b|\bnobody\b|mediocre|extraordinary|\bmatter\b|stand out|invisible/i,
+  ref:"the belief that being ordinary is a kind of death",
+  cost:"This one makes ordinary days feel like failure — which is most days, which quietly becomes most of a life.",
+  acts:["Do one thing badly, on purpose, and let it stay bad","Celebrate something completely ordinary about today, out loud","Let someone else be the impressive one in a conversation, fully"]},
+ {k:"enough",words:/not enough|never enough|good enough|imposter|impostor|\bfraud\b|don'?t deserve|didn'?t earn|fake it|will (find out|realize|discover)|exposed/i,
+  ref:"the belief that you're one discovery away from being exposed as not enough",
+  cost:"This one costs the ability to actually receive success — every win gets quietly discounted the moment it arrives, because the belief was never really about the evidence.",
+  acts:["Write down one thing you're actually good at, without qualifying it","Accept a compliment today without deflecting or downplaying it","Say one true, unimpressive thing about yourself to someone safe"]},
+ {k:"perfect",words:/perfect|flawless|can'?t (mess up|fail|be wrong)|zero mistakes|one (shot|chance)|ruin(ed)? everything|\bmistake/i,
+  ref:"the belief that one mistake erases everything else",
+  cost:"This one costs starting things at all — if failure feels catastrophic, the safest move is never trying, and safety quietly becomes stagnation.",
+  acts:["Do one thing today and let it be mediocre on purpose","Point out one of your own past mistakes out loud, lightly","Start something today without a plan for how it'll turn out"]},
+ {k:"control",words:/control|uncertain|unpredictable|don'?t know what'?s (coming|next)|need to (know|plan)|out of control|can'?t relax (until|unless)|surprises/i,
+  ref:"the belief that safety requires controlling what happens next",
+  cost:"This one costs spontaneity and rest — nothing gets enjoyed until it's already been accounted for, which means very little actually gets enjoyed.",
+  acts:["Leave one small plan unmade today, on purpose","Say 'I don't know yet' out loud, without following it with a plan","Let someone else make one decision that affects you today"]},
+ {k:"money",words:/\bmoney\b|\bbroke\b|can'?t afford|financial|\bdebt\b|\bpoor\b|scarcity|not enough (money|cash)/i,
+  ref:"the belief that your security is always one step from collapsing",
+  cost:"This one costs peace in the present — even when things are objectively fine, the nervous system stays braced for the version where they're not.",
+  acts:["Name one thing that is financially fine right now, specifically","Spend on one small thing today without guilt","Write down the actual number instead of the feared one"]},
+ {k:"please",words:/disappoint|let (them|people|someone) down|upset (them|people)|say no|people[- ]pleas|can'?t say no|everyone(')?s (happy|okay)/i,
+  ref:"the belief that other people's disappointment is yours to prevent",
+  cost:"This one costs your own preferences — they quietly stop mattering, because avoiding someone else's reaction became the actual goal.",
+  acts:["Say no to one small thing today, plainly, without over-explaining","Let one person be mildly disappointed in you, on purpose","Ask for what you actually want once today, out loud"]},
+ {k:"known",words:/really knew|knew me|\bleave\b|\babandon|\breject|found out|\bmask\b|\bhide\b|real me|truly know|\bfake\b|pretend/i,
+  ref:"the belief that being fully known ends in being left",
+  cost:"This one builds a curated self that people love — and a real self that never gets to find out whether it's lovable.",
+  acts:["Share one small true thing you'd normally curate away","Let a silence sit without performing into it","Answer 'how are you' honestly, once, this week"]},
+ {k:"trust",words:/\btrust\b|betray|hurt me|let (them|people|anyone) in|\bguard\b|\bwall\b|burned|use me|\bsafe\b/i,
+  ref:"the belief that closeness is a security breach",
+  cost:"This one keeps the wrong people out and the right people at exactly the same distance. The wall doesn't check credentials.",
+  acts:["Lower the guard one notch with one already-safe person","Name the wall out loud to someone: 'I'm working on letting people in'","Notice one moment today where trust was extended to you — and what it cost them"]}
+];
+function detectTheme(t){t=t||"";for(const th of THEMES){if(th.words.test(t))return th}return null}
+function firstWords(t,n){const w=(t||"").trim().split(/\s+/);return w.slice(0,n).join(" ")+(w.length>n?"…":"")}
+
+/* ============ THREAD FLOW ============ */
+const S={line:"",whoType:"",who:"",when:"",belief:"",originType:"",origin:"",named:"",helps:[],costs:[],action:"",theme:null};
+function optRow(id,cb){document.getElementById(id).addEventListener('click',e=>{if(!e.target.dataset.v)return;document.querySelectorAll('#'+id+' .opt').forEach(o=>o.classList.toggle('sel',o===e.target));cb(e.target.dataset.v)})}
+optRow('q1-opts',v=>{S.whoType=v;showQ1Insight()});
+document.getElementById('a-who').addEventListener('blur',showQ1Insight);
+function showQ1Insight(){
+  if(!S.whoType&&!document.getElementById('a-who').value.trim())return;
+  const map={"A specific person":"A person surfaced instantly — your attention already lives partly with them, whether or not you'd chosen to know that. The content didn't put them there. It caught them there.",
+  "A pattern or habit":"A pattern surfaced — part of you has been watching it from the corner of your eye, waiting for permission to look straight at it.",
+  "A fear":"A fear answered the door. Fears that respond to strangers' content are usually older than the situations they attach to.",
+  "A memory":"A memory came up — the line found something unfinished. Memories that surface uninvited are rarely done with you.",
+  "A desire or hope":"A hope surfaced. Hopes are shadows too — they show what you believe you're missing, and sometimes what you believe you're not allowed to have."};
+  const who=document.getElementById('a-who').value.trim();
+  const el=document.getElementById('ins-1');
+  el.innerHTML=(map[S.whoType]||"Whatever surfaced first is the honest answer — the curation instinct comes second, and it protects the wrong things.")+(who?` You wrote <em>“${esc(firstWords(who,10))}”</em> — hold onto those exact words; they'll matter at the naming.`:"");
+  el.classList.add('show');
+}
+optRow('q2-opts',v=>{S.when=v;
+  const map={consciously:"Already conscious — so the content acted as an amplifier, turning up a thought you were having anyway. Amplified thoughts feel more urgent than they are; factor that in.",
+  background:"Running in the background — the classic catch. Your subconscious was carrying it and the line gave it a doorway. This is exactly what this practice is for.",
+  nowhere:"From nowhere usually means from deep storage. The stronger the surprise, the older the material. Go gently with what comes next."};
+  const el=document.getElementById('ins-2');el.textContent=map[v];el.classList.add('show');document.getElementById('btn-2').disabled=false;});
+optRow('q3-opts',v=>{S.belief=v;document.getElementById('a-belief').value=v;beliefInsight()});
+document.getElementById('a-belief').addEventListener('blur',beliefInsight);
+function beliefInsight(){
+  const b=document.getElementById('a-belief').value.trim();if(!b)return;
+  S.belief=b;S.theme=detectTheme(b+" "+S.line+" "+document.getElementById('a-who').value);
+  const el=document.getElementById('ins-3');
+  el.innerHTML=S.theme?`Reading your words, this looks like ${S.theme.ref}. ${S.theme.cost}`:`You wrote <em>“${esc(firstWords(b,12))}”</em> — a belief stated that plainly is already half-examined. Notice whether saying it flat like that makes it feel less like truth and more like a rule someone handed you.`;
+  el.classList.add('show');
+}
+optRow('q4-opts',v=>{S.originType=v;originInsight()});
+document.getElementById('a-origin').addEventListener('blur',originInsight);
+function originInsight(){
+  if(!S.originType&&!document.getElementById('a-origin').value.trim())return;
+  const el=document.getElementById('ins-4');
+  el.textContent=`Beliefs from ${S.originType||"that far back"} formed when you had far less power than you have now. It made sense then — that's why it stuck. Question five is whether it still earns its keep.`;
+  el.classList.add('show');
+}
+function addEntry(k){
+  const inp=document.getElementById('in-'+k);const v=inp.value.trim();if(!v)return;
+  (k==='help'?S.helps:S.costs).push(v);inp.value='';
+  document.getElementById('list-'+k).innerHTML=(k==='help'?S.helps:S.costs).map(x=>`<li>${esc(x)}</li>`).join('');
+  document.getElementById('tally').textContent=`${S.helps.length} way${S.helps.length===1?'':'s'} it protected you · ${S.costs.length} thing${S.costs.length===1?'':'s'} it cost you`;
+  if(S.helps.length&&S.costs.length){
+    document.getElementById('btn-6').disabled=false;
+    const el=document.getElementById('ins-6');
+    el.innerHTML=(S.costs.length>S.helps.length?
+      "The costs now outnumber the protections. That's usually the moment a belief stops being armor and becomes a cage — you're allowed to thank it and retire it.":
+      "Both columns are real. The question isn't whether the belief ever helped — it's whether the protection is still worth the current price.")+
+      (S.costs[0]?` You listed <em>“${esc(firstWords(S.costs[0],8))}”</em> as a cost — that one alone deserves a decision.`:"");
+    el.classList.add('show');
+  }
+}
+['in-help','in-cost'].forEach(id=>document.getElementById(id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addEntry(id.split('-')[1])}}));
+function renderActions(){
+  const list=(S.theme&&S.theme.acts)||["Tell one safe person what you found in this exercise","Do the smallest possible opposite of the belief, once, today","Write the belief on paper — and one sentence of evidence against it"];
+  const box=document.getElementById('q7-opts');
+  box.innerHTML=list.map(a=>`<button class="opt" data-v="${esc(a)}">${esc(a)}</button>`).join('');
+}
+document.getElementById('q7-opts').addEventListener('click',e=>{if(!e.target.dataset.v)return;document.querySelectorAll('#q7-opts .opt').forEach(o=>o.classList.toggle('sel',o===e.target));document.getElementById('a-action').value=e.target.dataset.v});
+function val(id){return document.getElementById(id).value.trim()}
+function nudge(id){const el=document.getElementById(id);el.style.borderColor='var(--ember)';el.focus();setTimeout(()=>el.style.borderColor='',1400)}
+function doneStep(n){
+  if(n===0){S.line=val('a-line');if(!S.line)return nudge('a-line');
+    const th=detectTheme(S.line);const el=document.getElementById('ins-0');
+    el.innerHTML=th?`Even before the questions: the words you chose lean toward ${th.ref}. Keep that loose — test it, don't adopt it.`:`Noted. Whatever this line touched, the questions below will find its edges.`;
+    el.classList.add('show');}
+  if(n===1){S.who=val('a-who');if(!S.who&&!S.whoType)return nudge('a-who')}
+  if(n===3){S.belief=val('a-belief')||S.belief;if(!S.belief)return nudge('a-belief');S.theme=detectTheme(S.belief+" "+S.line)}
+  if(n===4){S.origin=val('a-origin');
+    const named=document.getElementById('a-named');
+    if(!named.value.trim()){let d=S.belief.replace(/^i\s/i,'').replace(/^that\s/i,'');named.value="that "+d.charAt(0).toLowerCase()+d.slice(1)}}
+  if(n===5){S.named=val('a-named');if(!S.named)return nudge('a-named');renderActions()}
+  if(n===7){S.action=val('a-action');if(!S.action)return nudge('a-action');buildRecord()}
+  const cur=document.getElementById('step-'+n);cur.classList.remove('live');cur.classList.add('done');
+  const next=document.getElementById('step-'+(n+1));
+  if(next){next.classList.add('live');
+    const wrap=document.querySelector('.thread-wrap');
+    document.getElementById('thread-fill').style.height=(next.querySelector('.node').getBoundingClientRect().top-wrap.getBoundingClientRect().top+2)+"px";
+    next.scrollIntoView({behavior:'smooth',block:'center'});}
+}
+function buildRecord(){
+  const d=new Date().toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'});
+  document.getElementById('record').textContent=
+`THE THREAD — ${d}
+
+What hit:
+"${S.line}"
+
+What surfaced: ${S.whoType||'—'}${S.who?" — "+S.who:""}
+Already on my mind: ${S.when==='consciously'?'yes, consciously':S.when==='background'?'in the background':'no — deep storage'}
+
+The belief underneath:
+${S.belief}
+${S.theme?"(Pattern: "+S.theme.ref+")":""}
+Where it came from: ${S.originType||'—'}${S.origin?" — "+S.origin:""}
+
+Named out loud:
+"My shadow belief is ${S.named}"
+
+It protected me by: ${S.helps.join('; ')||'—'}
+It has cost me: ${S.costs.join('; ')||'—'}
+
+THE ACTION (within 48 hours):
+${S.action}
+
+— The content didn't do this work. It held still long enough
+for me to see something already in me. I did the rest.
+Your reactions are the map.`;
+  const th=store.get("threads",[]);
+  th.unshift({d:new Date().toISOString(),line:S.line,named:S.named,theme:S.theme?S.theme.k:null,themeRef:S.theme?S.theme.ref:null,action:S.action});
+  store.set("threads",th.slice(0,50));
+}
+function copyRecord(){
+  navigator.clipboard.writeText(document.getElementById('record').textContent).then(()=>{
+    const b=document.getElementById('copy-btn');b.textContent="Copied ✓";setTimeout(()=>b.textContent="Copy the record",1800);
+  }).catch(()=>{const r=document.createRange();r.selectNodeContents(document.getElementById('record'));const s=getSelection();s.removeAllRanges();s.addRange(r)});
+}
+function resetThread(){
+  Object.assign(S,{line:"",whoType:"",who:"",when:"",belief:"",originType:"",origin:"",named:"",helps:[],costs:[],action:"",theme:null});
+  ['a-line','a-who','a-belief','a-origin','a-named','a-action','in-help','in-cost'].forEach(i=>document.getElementById(i).value='');
+  ['list-help','list-cost'].forEach(i=>document.getElementById(i).innerHTML='');
+  document.getElementById('tally').textContent='';
+  document.querySelectorAll('#view-thread .insight').forEach(i=>i.classList.remove('show'));
+  document.querySelectorAll('#view-thread .opt').forEach(o=>o.classList.remove('sel'));
+  document.getElementById('btn-2').disabled=true;document.getElementById('btn-6').disabled=true;
+  [0,1,2,3,4,5,6,7,8].forEach(n=>{const s=document.getElementById('step-'+n);s.classList.remove('live','done')});
+  document.getElementById('step-0').classList.add('live');
+  document.getElementById('thread-fill').style.height='0';
+  document.getElementById('step-0').scrollIntoView({behavior:'smooth',block:'center'});
+}
+
+/* ---- NOTEBOOK ---- */
+const THEME_NAMES={chase:"love must be chased",worth:"worth = output",help:"needing help = weakness",behind:"I'm behind everyone",special:"special or nothing",known:"known = abandoned",trust:"closeness = danger"};
+function renderNotebook(){
+  const threads=store.get("threads",[]);
+  const tactics=store.get("tactics",{});
+  const best=store.get("quizBest",0);
+  const topTactics=Object.entries(tactics).sort((a,b)=>b[1]-a[1]).slice(0,8);
+  const themeCounts={};threads.forEach(t=>{if(t.theme)themeCounts[t.theme]=(themeCounts[t.theme]||0)+1});
+  const repeat=Object.entries(themeCounts).filter(([k,c])=>c>=2).sort((a,b)=>b[1]-a[1])[0];
+  document.getElementById('nb-body').innerHTML=`
+    <div class="nb-grid">
+      <div class="nb-stat"><div class="m-num">${threads.length}</div><div class="m-lab" style="font-size:12px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase">Threads completed</div></div>
+      <div class="nb-stat"><div class="m-num">${best}</div><div class="m-lab" style="font-size:12px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase">Best tactic-spotting score</div></div>
+    </div>
+    ${repeat?`<div class="pattern-callout"><b>A pattern across your threads:</b> ${repeat[1]} of your last ${threads.length} threads traced back to the same belief family — <i>${THEME_NAMES[repeat[0]]||repeat[0]}</i>. A single thread shows you a moment; a repeat shows you a root. Whatever content keeps catching you, it keeps catching the same hook — and roots that deep usually reward working with someone, not just a page.</div>`:""}
+    ${topTactics.length?`<h3 class="subhead">Tactics you've encountered most</h3><p class="subnote">Counted across every transcript, scan, and analysis you've run here. Frequency is your feed's fingerprint.</p><div class="sig-legend">${topTactics.map(([n,c])=>`<span class="match-pill">${esc(n)} × ${c}</span>`).join("")}</div>`:""}
+    ${threads.length?`<h3 class="subhead">Your threads</h3>${threads.map(t=>`<div class="nb-thread"><div class="nb-date">${new Date(t.d).toLocaleDateString(undefined,{year:'numeric',month:'long',day:'numeric'})}${t.themeRef?" · "+esc(t.themeRef):""}</div><div>Hit: “${esc(t.line||"")}”</div><div class="nb-belief">“My shadow belief is ${esc(t.named||"")}”</div><div style="color:var(--muted)">Action: ${esc(t.action||"")}</div></div>`).join("")}`:
+    `<div class="card" style="margin-top:20px"><h3>Nothing here yet</h3><div class="kv">The notebook fills itself as you use the guide: complete a thread, run an analysis, play a round of spot-the-tactic. Come back after your first thread — the real value shows up around your third, when patterns start repeating.</div></div>`}
+  `;
+}
+function exportNotebook(){
+  const threads=store.get("threads",[]);const tactics=store.get("tactics",{});const best=store.get("quizBest",0);
+  const lines=["THE REACTION MAP — NOTEBOOK EXPORT","Exported "+new Date().toLocaleString(),"","Threads completed: "+threads.length,"Best tactic-spotting score: "+best,""];
+  const top=Object.entries(tactics).sort((a,b)=>b[1]-a[1]);
+  if(top.length){lines.push("TACTICS ENCOUNTERED:");top.forEach(([n,c])=>lines.push("  "+n+" × "+c));lines.push("")}
+  threads.forEach((t,i)=>{lines.push("— THREAD "+(threads.length-i)+" — "+new Date(t.d).toLocaleDateString());
+    lines.push('Hit: "'+(t.line||"")+'"');
+    if(t.themeRef)lines.push("Pattern: "+t.themeRef);
+    lines.push('Named: "My shadow belief is '+(t.named||"")+'"');
+    lines.push("Action: "+(t.action||""));lines.push("")});
+  lines.push("Your reactions are the map.");
+  const blob=new Blob([lines.join("\n")],{type:"text/plain"});
+  const a=document.createElement("a");a.href=URL.createObjectURL(blob);
+  a.download="reaction-map-notebook.txt";document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);
+}
+window.addEventListener('scroll',()=>{const b=document.getElementById('backtop');if(b)b.classList.toggle('show',window.scrollY>700)},{passive:true});
+function clearNotebook(){["threads","tactics","quizBest"].forEach(k=>store.del(k));renderNotebook()}
+
+</script>
+
+<div id="nf-chrome" class="nf-chrome" data-nf-page="reaction-map"><div class="nf-ribbon" aria-hidden="true"></div><div class="nf-veil" aria-hidden="true"></div><button class="nf-seal" type="button" aria-expanded="false" aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button><div class="nf-scrim" aria-hidden="true"></div><nav class="nf-panel" id="nf-panel" aria-label="The Catalogue" aria-hidden="true"><div class="nf-panel-head"><div><div class="nf-eyebrow">Noble Father Creations</div><h2 class="nf-panel-title">The Catalogue</h2></div><button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div><ul class="nf-toc"><li class="nf-row" style="--nf-i:0"><a href="https://noblenfcseals.netlify.app/"><span class="nf-dot" style="--va:#E8C879" aria-hidden="true"></span><span class="nf-num">II</span><span class="nf-vol">The Press</span><span class="nf-desc">Real wax, a voice inside</span></a></li><li class="nf-row" style="--nf-i:1"><a href="https://nfcportals.netlify.app/"><span class="nf-dot" style="--va:#7FD9D4" aria-hidden="true"></span><span class="nf-num">III</span><span class="nf-vol">The Portals</span><span class="nf-desc">Strontium glow, no battery</span></a></li><li class="nf-row" style="--nf-i:2"><a href="https://nobleshadows.netlify.app/"><span class="nf-dot" style="--va:#D9964A" aria-hidden="true"></span><span class="nf-num">IV</span><span class="nf-vol">The Root</span><span class="nf-desc">A shadow work practice</span></a></li><li class="nf-row nf-here" style="--nf-i:3"><a href="#" aria-current="page"><span class="nf-dot" style="--va:#D7DE5A" aria-hidden="true"></span><span class="nf-num">V</span><span class="nf-vol">The Reaction Map<span class="nf-here-dot" aria-hidden="true"></span></span><span class="nf-desc">Conscious consumption, mapped</span></a></li><li class="nf-row" style="--nf-i:4"><a href="https://thenobledivide.netlify.app/"><span class="nf-dot" style="--va:#C29A52" aria-hidden="true"></span><span class="nf-num">VI</span><span class="nf-vol">The Sacred Divide</span><span class="nf-desc">25 traditions, 750 entries</span></a></li><li class="nf-row" style="--nf-i:5"><a href="https://thefractal.netlify.app/"><span class="nf-dot" style="--va:#E5A93C" aria-hidden="true"></span><span class="nf-num">VII</span><span class="nf-vol">The Fractal</span><span class="nf-desc">One pattern runs the world</span></a></li><li class="nf-row" style="--nf-i:6"><a href="https://fractures.netlify.app/"><span class="nf-dot" style="--va:#C9A35B" aria-hidden="true"></span><span class="nf-num">VIII</span><span class="nf-vol">All Fracture</span><span class="nf-desc">The reading edition</span></a></li><li class="nf-row" style="--nf-i:7"><a href="https://sovereign-woman.netlify.app/"><span class="nf-dot" style="--va:#C85F7E" aria-hidden="true"></span><span class="nf-num">IX</span><span class="nf-vol">The Sovereign Divine Feminine</span><span class="nf-desc">A field guide</span></a></li><li class="nf-row" style="--nf-i:8"><a href="https://playgroundprotector.netlify.app/"><span class="nf-dot" style="--va:#FFC23D" aria-hidden="true"></span><span class="nf-num">X</span><span class="nf-vol">Playground Protectors</span><span class="nf-desc">Shaela's guide for brave kids</span></a></li><li class="nf-row" style="--nf-i:9"><a href="https://wook-in-sheeps-clothing.netlify.app/"><span class="nf-dot" style="--va:#D8FF3D" aria-hidden="true"></span><span class="nf-num">XI</span><span class="nf-vol">The Festie Codex</span><span class="nf-desc">The gate — attendee's cut</span></a></li><li class="nf-row" style="--nf-i:10"><a href="https://noblepatterns.netlify.app/" target="_blank" rel="noopener"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XII</span><span class="nf-vol">The Pattern Decoder</span><span class="nf-ext">&#8599;</span><span class="nf-desc">349 tactics, decoded</span></a></li><li class="nf-row" style="--nf-i:11"><a href="https://noblemusic.netlify.app/" target="_blank" rel="noopener"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XIII</span><span class="nf-vol">The Music</span><span class="nf-ext">&#8599;</span><span class="nf-desc">Free to stream</span></a></li></ul><div class="nf-panel-foot">Bound by hand in the study &mdash; thirteen volumes &amp; counting.</div></nav></div>
+<script id="nf-chrome-js">
+(function(){
+  var root=document.getElementById('nf-chrome');if(!root)return;
+  var seal=root.querySelector('.nf-seal'),scrim=root.querySelector('.nf-scrim'),
+      panel=root.querySelector('.nf-panel'),close=root.querySelector('.nf-close');
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function open(){root.classList.add('nf-open');seal.setAttribute('aria-expanded','true');
+    panel.removeAttribute('aria-hidden');close.focus({preventScroll:true})}
+  function shut(){root.classList.remove('nf-open');seal.setAttribute('aria-expanded','false');
+    panel.setAttribute('aria-hidden','true');seal.focus({preventScroll:true})}
+  seal.addEventListener('click',open);
+  close.addEventListener('click',shut);
+  scrim.addEventListener('click',shut);
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&root.classList.contains('nf-open')){shut();return}
+    if(!root.classList.contains('nf-open'))return;
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+      var links=[].slice.call(panel.querySelectorAll('.nf-row a'));
+      var i=links.indexOf(document.activeElement);
+      var next=e.key==='ArrowDown'?(i+1)%links.length:(i-1+links.length)%links.length;
+      links[next].focus();e.preventDefault();
+    }});
+  // bookmark ribbon — reading progress as a strip of gilding
+  var ribbon=root.querySelector('.nf-ribbon');
+  if(ribbon&&!reduced){
+    var tick=false;
+    function prog(){
+      var d=document.documentElement;
+      var max=d.scrollHeight-innerHeight;
+      ribbon.style.transform='scaleX('+(max>0?Math.min(1,scrollY/max):0)+')';
+      tick=false;
+    }
+    addEventListener('scroll',function(){if(!tick){tick=true;requestAnimationFrame(prog)}},
+      {passive:true});
+    prog();
+  }
+  // scroll-reveal engine — hides nothing unless it is running
+  var cfg=root.getAttribute('data-nf-reveal');
+  if(cfg&&!reduced&&'IntersectionObserver' in window){
+    try{cfg=JSON.parse(cfg)}catch(_){cfg=null}
+    if(cfg){
+      var targets=[];
+      cfg.forEach(function(pair){
+        document.querySelectorAll(pair[0]).forEach(function(el){
+          if(el.closest('.nf-chrome'))return;
+          var r=el.getBoundingClientRect();
+          if(r.top<innerHeight*.86)return;          // already on screen: leave it
+          if(el.offsetHeight>innerHeight*1.1)return; // whole-chapter blocks reveal per-child, not wholesale
+          el.classList.add('nf-r');
+          if(pair[1]==='pop')el.classList.add('nf-pop');
+          targets.push(el);
+        });
+      });
+      var seen=0;
+      function show(el){
+        if(el.classList.contains('nf-in'))return;
+        el.style.setProperty('--nf-d',(Math.min(seen++%4,3)*70)+'ms');
+        el.classList.add('nf-in');
+        io.unobserve(el);
+        targets=targets.filter(function(t){return t!==el});
+        setTimeout(function(){el.classList.remove('nf-r','nf-pop','nf-in');
+          el.style.removeProperty('--nf-d')},1400);
+      }
+      var io=new IntersectionObserver(function(entries){
+        entries.forEach(function(en){if(en.isIntersecting)show(en.target)});
+      },{rootMargin:'0px 0px -6% 0px',threshold:0});
+      targets.forEach(function(el){io.observe(el)});
+      // sweep fallback: anything scrolled to (or past) always reveals
+      var sTick=false;
+      addEventListener('scroll',function(){
+        if(sTick||!targets.length)return;sTick=true;
+        requestAnimationFrame(function(){
+          targets.slice().forEach(function(el){
+            if(el.getBoundingClientRect().top<innerHeight*.94)show(el);
+          });
+          sTick=false;
+        });
+      },{passive:true});
+    }
+  }
+  /* ---- shared motion utilities ---- */
+  // split into letters so headlines can arrive a character at a time
+  window.NFsplit=function(el){
+    if(!el||el.dataset.nfSplitDone)return;
+    var text=el.textContent, frag=document.createDocumentFragment(), i=0;
+    text.split('').forEach(function(c){
+      var s=document.createElement('span');
+      s.className='nf-ch';s.textContent=c;
+      s.style.setProperty('--i',i++);
+      frag.appendChild(s);
+    });
+    el.textContent='';el.appendChild(frag);
+    el.dataset.nfSplitDone='1';
+    el.setAttribute('aria-label',text);
+  };
+  window.NFreplay=function(el){
+    if(!el)return;
+    el.classList.add('nf-replay');
+    void el.offsetWidth;                 // force reflow so the animation restarts
+    el.classList.remove('nf-replay');
+  };
+  if(!reduced)document.querySelectorAll('[data-nf-split]').forEach(window.NFsplit);
+
+  // numerals that count up when they first come into view
+  if(!reduced&&'IntersectionObserver' in window){
+    var cio=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(!en.isIntersecting)return;
+        var el=en.target, raw=el.textContent.trim(), to=parseInt(raw,10);
+        cio.unobserve(el);
+        if(isNaN(to))return;
+        var t0=null, dur=900;
+        function step(ts){
+          if(!t0)t0=ts;
+          var p=Math.min(1,(ts-t0)/dur);
+          el.textContent=Math.round(to*(1-Math.pow(1-p,3)));
+          if(p<1)requestAnimationFrame(step);else el.textContent=raw;
+        }
+        requestAnimationFrame(step);
+      });
+    },{threshold:.6});
+    document.querySelectorAll('[data-nf-count]').forEach(function(el){cio.observe(el)});
+  }
+
+  // ink-veil exit: internal same-origin links leave through the dark.
+  // Where the browser does real cross-document view transitions, stand down
+  // and let it morph instead — the seal stays put across the navigation.
+  var veil=root.querySelector('.nf-veil');
+  var nativeVT = !!document.startViewTransition &&
+                 CSS.supports('view-transition-name','nf-seal');
+  document.addEventListener('click',function(e){
+    if(nativeVT||reduced||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button!==0)return;
+    var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;
+    if(!a||a.target==='_blank')return;
+    var href=a.getAttribute('href');
+    if(!href||href.charAt(0)==='#'||/^(mailto|tel|javascript):/.test(href))return;
+    var u;try{u=new URL(a.href,location.href)}catch(_){return}
+    if(u.origin!==location.origin)return;
+    if(u.pathname===location.pathname&&u.hash)return;
+    e.preventDefault();
+    veil.classList.add('nf-veil-out');
+    setTimeout(function(){location.href=a.href},190);
+  },true);
+  window.addEventListener('pageshow',function(e){
+    if(e.persisted)veil.classList.remove('nf-veil-out')});
+})();
+</script>
+</body>
+</html>

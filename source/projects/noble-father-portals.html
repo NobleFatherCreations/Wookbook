@@ -188,12 +188,11 @@
 @property --tx{syntax:'<percentage>';inherits:false;initial-value:50%}
 @property --ty{syntax:'<percentage>';inherits:false;initial-value:50%}
 
-.pv-hero{border-radius:16px;cursor:ew-resize;touch-action:pan-y;
+.pv-hero{border-radius:16px;cursor:pointer;touch-action:manipulation;
   box-shadow:0 30px 80px -24px rgba(0,0,0,.85),0 0 0 1px rgba(201,162,75,.16);
   transform:perspective(1000px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));
   transition:transform .5s var(--pv-ease),box-shadow .5s var(--pv-ease)}
 .pv-hero.pv-live{transition:transform .09s linear}
-.pv-hero.pv-dragging{transition:none}
 
 /* ---- the torch: a light you sweep across the piece, revealing the glow
    only where it falls. Pointer devices only; touch keeps tap-to-glow. ---- */
@@ -265,39 +264,31 @@
   .pv-hero.pv-live .glow{filter:none}
 }
 .pv-hero:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
-/* The piece arrives already half-dark: daylight on one side of the line,
-   the hidden sun on the other. That duality is the entire product. */
+/* The piece has two states and you tap between them. A wipe was the old
+   way: it put daylight and glow side by side along a moving line, which
+   only reads as one object if the two photographs register to the pixel.
+   They do not -- they are separate exposures of a hand-made thing -- so the
+   line advertised the misalignment. Crossfading shows one exposure at a
+   time, so nothing has to line up, and the piece still does the one trick
+   that matters: same object, two lives. */
 .pv-hero .day{
-  -webkit-clip-path:inset(0 calc(100% - var(--wipe,62%)) 0 0);
-  clip-path:inset(0 calc(100% - var(--wipe,62%)) 0 0);
-  transition:clip-path .2s linear,opacity 1.05s ease}
-.pv-hero.pv-dragging .day{transition:none}
-/* hover no longer flips the piece — the line owns the reveal */
+  opacity:1;
+  transition:opacity .55s var(--pv-ease)}
+.pv-hero[data-mode="night"] .day{opacity:0}
 .pv-hero.lit .day{opacity:1}
-.pv-line{position:absolute;top:0;bottom:0;left:var(--wipe,62%);width:1px;z-index:4;
-  background:linear-gradient(180deg,transparent,rgba(240,220,174,.92) 12%,
-    rgba(240,220,174,.92) 88%,transparent);
-  box-shadow:0 0 12px rgba(232,200,121,.8);opacity:.62;
-  transition:opacity .3s var(--pv-ease)}
-.pv-hero:hover .pv-line,.pv-hero.pv-dragging .pv-line,
-.pv-hero:focus-visible .pv-line{opacity:1}
-.pv-knob{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
-  width:34px;height:34px;border-radius:50%;
-  background:radial-gradient(circle at 34% 30%,#F4E2B4,#C9A35B 58%,#8E6B2F);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 4px 14px rgba(0,0,0,.7),
-    0 0 0 1px rgba(0,0,0,.35)}
-.pv-knob::after{content:"";position:absolute;inset:0;margin:auto;width:13px;height:7px;
-  background:
-    linear-gradient(90deg,rgba(20,14,8,.85) 1px,transparent 1px) 0 0/4px 100%;
-  opacity:.85}
-.pv-hero.pv-dragging{cursor:grabbing}
-.pv-hero.pv-dragging .pv-knob{transform:translate(-50%,-50%) scale(1.1)}
+.pv-hero[data-mode="night"].lit .day{opacity:0}
 .pv-daymark,.pv-nightmark{position:absolute;bottom:12px;z-index:4;
   font-family:var(--label);font-size:.54rem;letter-spacing:.24em;text-transform:uppercase;
   color:rgba(240,232,214,.72);text-shadow:0 1px 5px rgba(0,0,0,.9);
   opacity:.6;transition:opacity .3s var(--pv-ease);pointer-events:none}
-.pv-daymark{left:14px}.pv-nightmark{right:14px}
+/* One mark, bottom left, naming the state you are looking at now -- the
+   pair used to label the two ends of the wipe, which no longer exists. */
+.pv-daymark,.pv-nightmark{left:14px;right:auto}
+.pv-hero[data-mode="night"] .pv-daymark{opacity:0}
+.pv-hero[data-mode="day"] .pv-nightmark{opacity:0}
 .pv-hero:hover .pv-daymark,.pv-hero:hover .pv-nightmark{opacity:1}
+.pv-hero[data-mode="night"]:hover .pv-daymark{opacity:0}
+.pv-hero[data-mode="day"]:hover .pv-nightmark{opacity:0}
 
 .pv-drag-hint{margin:0 0 16px;text-align:center;font-family:var(--label);
   font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cream-dim);
@@ -437,7 +428,7 @@
     to{opacity:1;transform:none;filter:none}}
 }
 @media (prefers-reduced-motion: reduce){
-  .pv-thumb,.pv-btn,.pv-line{transition:none}
+  .pv-thumb,.pv-btn{transition:none}
   .pv-thumb:hover,.pv-btn:hover{transform:none}
 }
 
@@ -807,10 +798,9 @@ function reveal(day,glow,cls,tag){
     +(tag?'<span class="pv-tag">'+tag+'</span>':'')+'</div>';
 }
 function heroReveal(day,glow){
-  return '<div class="reveal pv-piece pv-hero r45" data-piece data-wipe style="--wipe:62%">'
+  return '<div class="reveal pv-piece pv-hero r45" data-piece data-toggle data-mode="day">'
     +'<img class="glow" decoding="async" src="'+glow+'" alt="the same pendant glowing in the dark">'
     +'<img class="day" decoding="async" src="'+day+'" alt="the pendant in daylight">'
-    +'<span class="pv-line" aria-hidden="true"><span class="pv-knob"></span></span>'
     +'<span class="pv-daymark" aria-hidden="true">Day</span>'
     +'<span class="pv-nightmark" aria-hidden="true">Night</span>'
     +'</div>';
@@ -836,7 +826,7 @@ function panelHTML(s){var im=IMG[s.id];
   +'<div class="showcase pv-showcase">'
     +'<div class="pic pv-case">'
       +'<div class="pv-plinth">'+heroReveal(im.heroDay,im.heroGlow)+'</div>'
-      +'<p class="pv-drag-hint">Drag the line across the piece</p>'
+      +'<p class="pv-drag-hint">Tap the piece to turn the lights out</p>'
       +'<div class="mini pv-mini" data-mini>'
         +'<button data-d class="on">Daylight</button><button data-g>Lights out</button>'
       +'</div>'
@@ -937,55 +927,50 @@ go(0);
       setTimeout(function(){d.remove()},1300);
     }
   }
-  document.querySelectorAll('[data-wipe]').forEach(function(el){
-    var drag=false;
-    function at(x){
-      var r=el.getBoundingClientRect();
-      var p=Math.min(100,Math.max(0,((x-r.left)/r.width)*100));
-      el.style.setProperty('--wipe',p.toFixed(2)+'%');
-      el.classList.add('pv-wiping');
+  /* One state at a time, and tapping the piece swaps it. setMode is the only
+     thing that writes the state, so the piece, the Daylight/Lights-out pair
+     and the labels can never disagree about which mode is showing. */
+  function setMode(piece,mode){
+    if(!piece)return;
+    piece.setAttribute('data-mode',mode);
+    piece.setAttribute('aria-pressed',mode==='night'?'true':'false');
+    piece.setAttribute('aria-label',mode==='night'
+      ? 'The pendant, lights out. Tap to see it in daylight.'
+      : 'The pendant in daylight. Tap to see it glow in the dark.');
+    var sc=piece.closest('.showcase');
+    var mini=sc&&sc.querySelector('[data-mini]');
+    if(mini){
+      var d=mini.querySelector('[data-d]'),g=mini.querySelector('[data-g]');
+      if(d)d.classList.toggle('on',mode==='day');
+      if(g)g.classList.toggle('on',mode==='night');
     }
-    el.addEventListener('pointerdown',function(e){
-      drag=true;el.classList.add('pv-dragging');
-      try{el.setPointerCapture(e.pointerId)}catch(_){}
-      at(e.clientX);e.preventDefault();
-    });
-    el.addEventListener('pointermove',function(e){if(drag)at(e.clientX)});
-    ['pointerup','pointercancel','lostpointercapture'].forEach(function(t){
-      el.addEventListener(t,function(){drag=false;el.classList.remove('pv-dragging')});
-    });
-    el.addEventListener('keydown',function(e){
-      var cur=parseFloat(el.style.getPropertyValue('--wipe'))||62;
-      if(e.key==='ArrowLeft'||e.key==='ArrowRight'){
-        cur+=(e.key==='ArrowLeft'?-8:8);
-        el.style.setProperty('--wipe',Math.min(100,Math.max(0,cur))+'%');
-        el.classList.add('pv-wiping');e.preventDefault();
-      }
-    });
-    el.setAttribute('tabindex','0');
-    el.setAttribute('role','slider');
-    el.setAttribute('aria-label','Drag to move the light across the pendant');
-  });
-  // the segmented control drives the same line, so both controls agree
-  function slide(p,to){
-    if(!p)return;
-    p.classList.remove('pv-dragging');
-    p.style.setProperty('--wipe',to);
   }
+  document.querySelectorAll('[data-toggle]').forEach(function(el){
+    el.setAttribute('tabindex','0');
+    el.setAttribute('role','button');
+    setMode(el,el.getAttribute('data-mode')||'day');
+    function flip(){
+      setMode(el,el.getAttribute('data-mode')==='night'?'day':'night');
+    }
+    el.addEventListener('click',flip);
+    el.addEventListener('keydown',function(e){
+      if(e.key===' '||e.key==='Enter'||e.key==='Spacebar'){e.preventDefault();flip();}
+    });
+  });
   document.querySelectorAll('[data-mini]').forEach(function(m){
     var sc=m.closest('.showcase');
-    var piece=sc&&sc.querySelector('[data-wipe]');
+    var piece=sc&&sc.querySelector('[data-toggle]');
     if(!piece)return;
     var d=m.querySelector('[data-d]'),g=m.querySelector('[data-g]');
-    if(d)d.addEventListener('click',function(){slide(piece,'100%')});
-    if(g)g.addEventListener('click',function(){slide(piece,'0%')});
+    if(d)d.addEventListener('click',function(){setMode(piece,'day')});
+    if(g)g.addEventListener('click',function(){setMode(piece,'night')});
   });
   var sw=document.getElementById('tbSwitch');
   if(sw)sw.addEventListener('click',function(){
     setTimeout(function(){
       var on=document.body.classList.contains('night');
-      document.querySelectorAll('[data-wipe]').forEach(function(p){
-        slide(p,on?'0%':'62%');
+      document.querySelectorAll('[data-toggle]').forEach(function(p){
+        setMode(p,on?'night':'day');
       });
     },0);
   });
@@ -994,14 +979,13 @@ go(0);
   var fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
   if(fine&&!reduced){
     document.querySelectorAll('.pv-piece').forEach(function(el){
-      var hero=el.hasAttribute('data-wipe'), max=hero?5:7;
+      var hero=el.hasAttribute('data-toggle'), max=hero?5:7;
       el.classList.add('pv-torch');
       el.addEventListener('pointermove',function(e){
         var r=el.getBoundingClientRect();
         var px=(e.clientX-r.left)/r.width, py=(e.clientY-r.top)/r.height;
         el.style.setProperty('--tx',(px*100).toFixed(1)+'%');
         el.style.setProperty('--ty',(py*100).toFixed(1)+'%');
-        if(el.classList.contains('pv-dragging'))return;   // the line owns the piece
         el.classList.add('pv-live');
         el.style.setProperty('--ry',((px-.5)*2*max).toFixed(2)+'deg');
         el.style.setProperty('--rx',((.5-py)*2*max).toFixed(2)+'deg');
@@ -1234,4 +1218,5 @@ go(0);
     if(e.persisted)veil.classList.remove('nf-veil-out')});
 })();
 </script>
+<!-- Cloudflare Web Analytics --><script defer type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c8d1aea530814aea8c7a92baa2accef3"}'></script><!-- End Cloudflare Web Analytics -->
 </body></html>

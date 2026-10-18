@@ -311,7 +311,7 @@ const PROBE = {
      declared closed. Closed drawers/lightboxes announce themselves with
      [hidden] / aria-hidden / inert / pointer-events:none — an element that
      is invisible without any of those is a fade that never fired. */
-  invisible: () => {
+  invisible: async () => {
     const out = [];
     const closed = (el) => el.closest('[hidden],[aria-hidden="true"],[inert],dialog:not([open]),template');
     for (const el of document.querySelectorAll('body *')) {
@@ -321,26 +321,125 @@ const PROBE = {
       const r = el.getBoundingClientRect();
       if (r.width * r.height < 900) continue;
       const cs = getComputedStyle(el);
-      const invisible = cs.visibility === 'hidden' || parseFloat(cs.opacity) === 0;
-      if (!invisible) continue;
+      /* Only opacity:0 is interesting. The bug this check exists to catch is
+         a scroll-reveal that never fired, and that always shows up as
+         opacity stuck at 0 -- a transition cannot leave something
+         visibility:hidden by accident, because visibility is not what these
+         fades animate. visibility:hidden is always somebody writing it on
+         purpose: closed drawers, closed lightboxes, off-canvas panels. It
+         also removes the element from the accessibility tree and the tab
+         order, so it is the correct way to close a panel, not a symptom.
+         Flagging it produced six failures on one closed nav drawer and its
+         inherited children, and nothing true. */
+      if (parseFloat(cs.opacity) !== 0) continue;
       if (cs.pointerEvents === 'none') continue;      // decorative / closed overlay
       if (closed(el)) continue;
       if (el.textContent.trim() === '' && tag !== 'IMG' && tag !== 'PICTURE') continue;
+
+      /* An <img> with nothing loaded into it is a placeholder waiting to be
+         filled, not content that failed to appear -- The Casting's lightbox
+         keeps an empty `img.lb-full` at opacity 0 until you open a piece.
+         An image with no source cannot be missing content. */
+      if (tag === 'IMG' && !(el.currentSrc || el.getAttribute('src'))) continue;
+
+      /* Elements that are SUPPOSED to be invisible until you do something.
+         Each was checked against its own CSS before being listed, and the
+         rule that reveals it is named so the claim can be re-checked rather
+         than taken on trust. Keep this list tiny and specific: a gate that
+         always reports failure is a gate everyone learns to ignore, which
+         is the exact habit this whole file exists to break.
+
+           .pv-tag      Portals. `.pv-tag{opacity:0}` with
+                        `.pv-thumb:hover .pv-tag{opacity:1}` — a caption
+                        that only exists while you hover its thumbnail.
+           .brandmark   Fracture. Revealed by `.rail.scrolled .brandmark`
+                        — the sticky header's wordmark fades in once you
+                        have scrolled past the title.
+           .filters-chips  The Casting, narrow viewports only. A closed
+                        accordion: `grid-template-rows:0fr; opacity:0`,
+                        opened by `.filters-chips.open` from the filter
+                        button. The 14px box the check sees is its padding. */
+      if (el.classList.contains('pv-tag') || el.classList.contains('brandmark')
+          || el.classList.contains('filters-chips')) continue;
       let sel = tag.toLowerCase();
       if (el.id) sel += '#' + el.id;
       if (el.classList.length) sel += '.' + [...el.classList].slice(0, 3).join('.');
-      out.push({ sel, w: Math.round(r.width), h: Math.round(r.height),
+      out.push({ el, sel, w: Math.round(r.width), h: Math.round(r.height),
                  opacity: cs.opacity, visibility: cs.visibility,
                  delay: cs.animationDelay, anim: cs.animationName });
       if (out.length >= 12) break;
     }
-    return out;
+
+    /* A single top-to-bottom pass moves faster than a ~1s fade, so plenty of
+       elements are caught mid-transition or not yet reached. The real question
+       is whether a reader who arrives at this element ever sees it: bring each
+       one to the middle of the screen, give the transition room, and only keep
+       the ones that are still not there. */
+    const confirmed = [];
+    for (const rec of out) {
+      rec.el.scrollIntoView({ block: 'center' });
+      /* Watch until the opacity stops moving, rather than pausing for a
+         guessed duration. A fixed wait races the slower fades -- these run
+         well past a second -- and a fade sampled at 0.06 gets reported as a
+         fade that never fired, which is a lie that costs the next person an
+         hour. Polling for stability needs no support for getAnimations and
+         handles the element that simply has not started yet: the moment it
+         is non-zero it has fired, and that is the whole question. */
+      let prev = -1, stable = 0;
+      for (let waited = 0; waited < 3000; waited += 150) {
+        await new Promise((r) => setTimeout(r, 150));
+        const now = parseFloat(getComputedStyle(rec.el).opacity);
+        if (now > 0) break;                    // it fired; nothing else to prove
+        stable = now === prev ? stable + 1 : 0;
+        prev = now;
+        if (stable >= 4 && waited > 1200) break;   // pinned at 0, and staying there
+      }
+      const cs2 = getComputedStyle(rec.el);
+      if (cs2.visibility === 'hidden' || parseFloat(cs2.opacity) === 0) {
+        const { el, ...rest } = rec;
+        confirmed.push({ ...rest, opacity: cs2.opacity, visibility: cs2.visibility });
+      }
+    }
+    return confirmed;
   },
 };
+
+/* Some pages hold the reader at a gate -- the hub locks scrolling until a
+   door is chosen -- and a locked page cannot be scrolled by script either.
+   Left alone that makes every fade below the gate look like it never fired,
+   which is 19 false failures and enough noise to hide a real one. So: if the
+   document is taller than the window but will not move, open the gate the
+   way a reader would, then carry on. */
+async function ungate(page) {
+  const locked = await page.evaluate(() => {
+    if (document.documentElement.scrollHeight <= window.innerHeight + 4) return false;
+    window.scrollTo(0, 200);
+    const stuck = window.scrollY === 0;
+    window.scrollTo(0, 0);
+    return stuck;
+  }).catch(() => false);
+  if (!locked) return;
+
+  for (const sel of ['.st-portal', '[class*="portal"] a', '[class*="portal"] button',
+                     '[class*="gate"] a', '[class*="gate"] button', '[class*="door"]']) {
+    const el = await page.$(sel).catch(() => null);
+    if (!el) continue;
+    await el.click({ timeout: 2000 }).catch(() => {});
+    await page.waitForTimeout(900);
+    const freed = await page.evaluate(() => {
+      window.scrollTo(0, 200);
+      const ok = window.scrollY > 0;
+      window.scrollTo(0, 0);
+      return ok;
+    }).catch(() => false);
+    if (freed) return;
+  }
+}
 
 /* Push the page through its IntersectionObserver fades before judging what
    is invisible, then come back to the top. */
 async function settle(page) {
+  await ungate(page);
   await page.evaluate(async () => {
     const step = Math.max(320, window.innerHeight * 0.9);
     const end = document.documentElement.scrollHeight;
@@ -409,6 +508,18 @@ async function visit(browser, pass, url, label, { seed = true } = {}) {
     });
   }
 
+  /* Cloudflare Web Analytics' beacon script (static.cloudflareinsights.com)
+     loads fine and is left alone. Only its own follow-up XHR/fetch to
+     report the pageview -- the bare-domain RUM endpoint -- 404s from this
+     sandboxed test environment (no real Cloudflare edge in front of it
+     here) but works fine for real visitors, so that one call is stubbed
+     here rather than left to pollute every page's console/subresource
+     checks below. Registered last so it wins over the catch-all
+     VIA_CURL/IS_LOCAL routes above (Playwright matches routes
+     most-recently-added-first). */
+  await ctx.route('https://cloudflareinsights.com/cdn-cgi/rum', (route) =>
+    route.fulfill({ status: 204, body: '' }));
+
   const page = await ctx.newPage();
   const errors = [];
   const badRes = [];
@@ -424,7 +535,14 @@ async function visit(browser, pass, url, label, { seed = true } = {}) {
   });
   page.on('response', (r) => {
     row.subresources++;
-    if (r.status() >= 400) badRes.push(`${r.request().resourceType()} ${r.status()} ${r.url().slice(0, 120)}`);
+    const u = r.url();
+    /* Cloudflare Web Analytics is a deliberate, accepted exception to
+       "self-contained, no external requests" (see CLAUDE.md). Its beacon
+       script and RUM endpoint are stubbed/allowed above; this is a
+       defense-in-depth backstop in case a route above doesn't catch a
+       given request shape. */
+    if (/^https:\/\/(static\.)?cloudflareinsights\.com\//.test(u)) return;
+    if (r.status() >= 400) badRes.push(`${r.request().resourceType()} ${r.status()} ${u.slice(0, 120)}`);
   });
 
   let resp = null;
@@ -578,11 +696,28 @@ console.log('');
 
 /* ------------------------------------------------------------- summary */
 
+const C_ALT = process.stdout.isTTY ? '\x1b[2m' : '';
+const C_OFF = process.stdout.isTTY ? '\x1b[0m' : '';
 const pageFails = results.filter((r) => r.failures.length);
 console.log('── summary ' + '─'.repeat(46));
 console.log(`  page renders : ${results.length} (${TARGETS.length} targets x ${RUN_PASSES.length} passes` +
             `${subRendered ? ` + ${subRendered} crawled sub-pages` : ''})`);
 console.log(`  page failures: ${pageFails.length}`);
+
+/* The per-pass listing above only prints the seed targets. Sub-pages found
+   by the crawl are rendered and asserted with the same rules, but had no
+   row of their own -- so a failure on one was counted here and shown
+   nowhere, which is the precise habit this gate exists to break. Anything
+   that failed and was never printed gets printed now. */
+const shownPaths = new Set(TARGETS);
+const hidden = pageFails.filter((r) => !shownPaths.has(r.path));
+if (hidden.length) {
+  console.log(`\n  ${'─'.repeat(4)} failures on crawled sub-pages ${'─'.repeat(18)}`);
+  for (const r of hidden) {
+    console.log(`  FAIL  ${r.path}  ${C_ALT}[${r.pass}]${C_OFF}`);
+    for (const f of r.failures) console.log(`        · ${f.check}: ${f.detail}`);
+  }
+}
 console.log(`  link failures: ${linkFailures.length} of ${done}`);
 
 const navByPath = new Map();

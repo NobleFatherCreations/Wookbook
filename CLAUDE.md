@@ -92,6 +92,88 @@ people you serve," not self-promotion.
   still needs a big pass stays on its last deployed version; don't ship it
   just because the branch moved.
 
+## A commit is not a deploy (non-negotiable)
+
+Nearly every bad round on this project has had one shape: **the repo was
+right, production was wrong, and nothing said so.** The music page was
+rebuilt and sat undeployed while the live one threw on load. The Portals
+torch fix was written, committed, and never shipped. The `/statues` rule
+existed here while ten links 404'd out there. The Fracture rename was done
+in source and stale on eleven live sites. On 2026-08-13 the reverse also
+happened — a container reset silently rolled the repo back behind live, so
+the next deploy would have *undone* five shipped fixes.
+
+None were hard problems. They were the same invisible one: deploying is a
+separate manual act that leaves no receipt, so "fixed" and "shipped" drift
+apart quietly and a reader finds out first.
+
+```sh
+npm run deployed     # is live the thing we wrote?      (verify-deployed.mjs)
+npm run assets       # is all the content actually there? (verify-assets.mjs)
+npm run verify       # does every page work?             (verify-live.mjs)
+npm run check        # all three, in that order
+```
+
+Three different questions, and a page can pass any two while failing the
+third. The Listening Room once served a page that loaded perfectly while
+107 of its 176 tracks 404'd — `verify-live` was happy, because the page
+worked; it was the *inventory* that was gutted.
+
+`verify-deployed` fetches what is being served and compares it byte-for-byte
+against what `sites.json` says that project is. Rules:
+
+1. **Never say a fix is done because it is committed.** It is done when
+   `verify-deployed` says that project is in sync. "Committed", "pushed"
+   and "live" are three states and only the third one reaches a reader.
+2. **Run it at the start of a session too.** That is what catches drift the
+   other way — live ahead of the repo, where a routine deploy would silently
+   regress production. This has happened: a container reset rolled this
+   checkout back behind live twice in one session.
+3. **Drift is never resolved by editing until it matches.** Decide which
+   side is right first. Guessing turns one wrong page into two.
+4. **Push early.** Every container reset here has spared what was pushed and
+   eaten what was not.
+
+Every project declares one of three things, and they are not
+interchangeable:
+
+| in `sites.json` | meaning | a difference means |
+| --- | --- | --- |
+| `localSource` | the file we edit and deploy | the repo is not shipped — deploy it |
+| `externalSource` | source lives in another repo (The Casting) | same, but ship from that repo |
+| `liveSnapshot` | no source exists; a capture in `deploy/snapshots/` | the site changed and nobody knows why — investigate, then `npm run snapshot -- <slug>` |
+
+New site? Register it with one of those three in the same breath, or it is
+invisible to the check and gets to rot the old way. To find sites nobody
+registered at all, ask the host rather than the registry:
+
+```sh
+curl -s -H "Authorization: Bearer $NETLIFY_AUTH_TOKEN" \
+  "https://api.netlify.com/api/v1/sites?per_page=100" | \
+  python3 -c "import json,sys;[print(s['name']) for s in json.load(sys.stdin)]"
+```
+
+That is how two live, untracked sites (`noblereactionmap`, `shaeroselotus`)
+were found on 2026-08-13.
+
+## Deploying big sites
+
+The Netlify MCP `deploy-site` tool zips the whole directory and fails above
+roughly 450MB — measured, not guessed: 350MB and 425MB succeeded, 484MB,
+519MB and 606MB failed identically. Music (1.26GB) and The Casting (519MB)
+are both past it, and a failed attempt atomically replaces nothing, so
+partial batches silently *delete* the tracks they did not include.
+
+Use `netlify-cli` for those two. It hashes files and uploads only what
+changed — The Casting went from six failed attempts to 431 files in 52s:
+
+```sh
+netlify deploy --prod --dir=<publish dir> --site=<siteId>
+```
+
+The CLI does not survive container resets here; reinstall with
+`npm i -g netlify-cli`, or hit the REST API with curl, which always works.
+
 ## Patch notes & versioning (every deploy-worthy round)
 
 Every site gets a simple version number (`v1`, `v2`, `v3`…, incrementing
