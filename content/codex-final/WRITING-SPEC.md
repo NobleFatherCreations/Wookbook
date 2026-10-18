@@ -91,22 +91,41 @@ exact where shown.
 | `less_concerning_if` | exactly 3 | |
 | `more_concerning_if` | exactly 3 | |
 | `pattern_over_time_signs` | exactly 4 | What shows up across weeks or months, not in one moment. |
-| `repair_check` | 20–60 words | After it was raised, what real repair looks like for *this* tactic, and what fake repair looks like. |
-| `boundary_respect_check` | 20–60 words | What happens when a boundary is stated, and how to read the response, specific to this tactic. |
-| `psychological_mechanism` | 30–85 words | A hedged account of how it can work on a person ("can", "tends to"). End with a short line that this is a possible mechanism, not a claim about anyone's intent, or phrase it so that is clear. |
-| `possible_impact_on_receiver` | 30–90 words | What people describe. Hedged; never a prediction or a diagnosis; say effects vary. |
+| `repair_check` | 20–60 words | What real repair would look like for *this* tactic once it is raised, and what only looks like repair. **Do not use a "Real repair... Fake repair..." frame**; describe it in the tactic's own terms, and open each entry differently. |
+| `boundary_respect_check` | 20–60 words | How to read the response when you state a boundary about this tactic. **Vary the shape**: sometimes a question to ask yourself, sometimes what to watch for, sometimes a contrast. Do not make every entry "Say '...'. If they..., ... If...". |
+| `psychological_mechanism` | 30–85 words | A hedged account of how it can work on a person ("can", "tends to"). The hedging is in the verbs. **Do not add a closing disclaimer** ("this is a possible mechanism, not a claim about intent"); the safeguards page says that once. |
+| `possible_impact_on_receiver` | 30–90 words | What people describe, in this tactic's own terms. Hedged; never a prediction or a diagnosis. **Do not close with "effects vary..."** or any other stock line. |
 | `response_options` | object with exactly five keys | `soft_clarification`, `firm_boundary`, `disengagement`, `support_seeking`, `workplace_or_professional`; 12–55 words each, tailored to this tactic. For societal or digital entries, adapt: verify, report, step back, take it to a reporter or advocate. |
 | `boundary_script` | 15–80 words | Real wording the reader could use (in quotation marks) with **no** fill-in-the-blank brackets, no "X" and "Y". For societal entries, a verification script prefixed "Verification script (to yourself, before sharing):". |
 | `safety_sensitive` | true or false | **true** if the tactic can accompany physical danger, stalking, threats, coercive control, financial or legal entrapment, intimate-image abuse, self-harm pressure, danger to children, or loss of housing, income or immigration status. When in doubt for an interpersonal tactic that isolates, monitors, threatens or controls money, choose true. |
 | `safety_note` | 25–95 words | Specific to this tactic. If `safety_sensitive` is true: the danger signals to watch for and what kind of help to reach (advocate, legal aid, a trusted person, emergency services if there is immediate danger). If false: say what would change that for this tactic. Never a generic hotline paragraph. |
 | `misuse_warning` | 1–2 items | How *this label* tends to get misused (applied too fast, used as a weapon, used to dismiss). Specific. |
-| `how_to_distinguish_from_related` | 30–105 words | Name two or three of the entry's related tactics (see `related_tactics`) and give the concrete difference in each case. |
+| `how_to_distinguish_from_related` | 30–105 words | Name two or three of the entry's related tactics (see `related_tactics`) and give the concrete difference in each case. End on the difference, not on a rule of thumb: **no "If the live question is..." closers.** |
 
 Do **not** write `name`, `tier`, `category`, `related_tactics`, or anything
 about what the Decoder tool can detect. Do not write the old universal
 sentences ("One example is a signal to examine, not proof of motive...",
 "No elevated safety concern is implied..."). One universal safeguards page will
 carry those once. Your entries carry only what is true of this tactic.
+
+## Frames to avoid (the checker enforces these)
+
+A sentence can be different word for word and still be the same sentence. Across
+55 batches these frames creep in. The validator now rejects any three-word
+phrase (with at least two content words) that four or more entries share in the
+same field, in the fields that are prone to it. Known frames, do not use:
+
+- "Real repair ... Fake repair ..."
+- "This describes a possible mechanism, not a claim about ..."
+- "Effects vary with ..."
+- "If the live question/point is ..., you are closer to ..."
+- "Say '...'. If they ..., ... If ..." as the shape of every boundary check
+- "In that case, speak to a trusted person / advocate" as the end of every safety note
+  (name the real next step for this tactic instead)
+
+Write each field as if you were the only entry. Facts about quoting real
+people: you may name a researcher or framework only when you are certain, and
+say no more about their work than you are sure of.
 
 ## Using the packet
 

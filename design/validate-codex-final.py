@@ -215,6 +215,37 @@ def check_text(name, e, base, risk, errs, warns):
         warns.append("expanded_definition repeats short_definition word for word")
 
 
+FRAME_FIELDS = ["repair_check", "boundary_respect_check", "psychological_mechanism",
+                "possible_impact_on_receiver", "how_to_distinguish_from_related",
+                "why_this_matters", "expanded_definition", "plain_language_summary",
+                "boundary_script"]
+FRAME_MIN = 4  # entries sharing the same content trigram in one field
+STOP = set("""a an the and or but if so of to in on at by for from with as is are was were be been
+being it its this that these those you your yours they them their he she his her we our i me my
+not no can could may might will would should do does did have has had than then there here what
+when where which who whom how about into over out up down more most some any each other such""".split())
+
+
+def frame_trigrams(text):
+    w = re.findall(r"[a-z0-9']+", text.lower())
+    out = set()
+    for i in range(len(w) - 2):
+        tri = w[i:i + 3]
+        if sum(1 for x in tri if x not in STOP) >= 2:
+            out.add(" ".join(tri))
+    return out
+
+
+def frame_freq(batches):
+    freq = {f: Counter() for f in FRAME_FIELDS}
+    for name, (e, _) in batches.items():
+        for f in FRAME_FIELDS:
+            v = e.get(f)
+            if isinstance(v, str):
+                freq[f].update(frame_trigrams(v))
+    return freq
+
+
 def corpus_freq(batches, base_all):
     freq = Counter()
     for name, (e, _) in batches.items():
@@ -254,6 +285,7 @@ def main():
     pool.update(mine)
     freq = corpus_freq(pool, base_all)
 
+    ffreq = frame_freq(pool)
     bad = 0
     for name, (e, src) in mine.items():
         errs, warns = [], []
@@ -272,6 +304,16 @@ def main():
                 n = norm(sent)
                 if len(n.split()) >= 4 and freq[n] >= bp.SHARED_MIN:
                     errs.append(f"{f}: shared with {freq[n]-1} other entries: {sent[:80]!r}")
+        for f in FRAME_FIELDS:
+            v = e.get(f)
+            if not isinstance(v, str):
+                continue
+            hits = sorted(((ffreq[f][g], g) for g in frame_trigrams(v)
+                           if ffreq[f][g] >= FRAME_MIN), reverse=True)
+            if hits:
+                shown = "; ".join(f"'{g}' x{c}" for c, g in hits[:3])
+                errs.append(f"{f}: reuses a frame other entries use ({shown}). "
+                            f"Say it in this tactic's own terms.")
         if errs:
             bad += 1
         if (errs or warns) and not a.quiet:
