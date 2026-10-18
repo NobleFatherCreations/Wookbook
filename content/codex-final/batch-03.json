@@ -1,0 +1,685 @@
+{
+  "Malicious Compliance": {
+    "short_definition": "Doing exactly what was asked, to the letter, in a way that predictably defeats the point of the request.",
+    "core_meaning": "Doing exactly what was asked, to the letter, in a way that predictably defeats the point of the request.",
+    "expanded_definition": "Malicious compliance is carrying out an instruction so literally that the result fails the purpose behind it, while the person can still say they did as told. It tends to show up in workplaces and households after a disagreement, an unwelcome order or a criticism. The same outcome can come from an honest literal reading, a badly worded request or a rule that really does produce a bad result, so one case says little about why it happened. A pattern is the literal reading being chosen again and again, soon after friction.",
+    "plain_language_summary": "You asked for something, you got exactly those words and nothing more, and the result is useless. It is hard to complain because the instruction was followed.",
+    "why_this_matters": "The person on the receiving end absorbs the failure with no clear grievance to name. The instruction was followed, so pointing at anything risks sounding unreasonable, and they are left wondering whether they asked badly.",
+    "what_it_is": [
+      "Meeting the exact wording of a request while its obvious purpose goes unmet.",
+      "Often appears after an order the person disagreed with, a rebuke, or a change they were not consulted on.",
+      "Can involve rules as well as requests, such as applying every written procedure to the letter when everyone knows a shortcut would have worked.",
+      "Leaves the asker holding a result that is correct on paper and wrong in practice.",
+      "Hard to dispute, because the person can point to the instruction exactly as it was given."
+    ],
+    "what_it_sounds_like": [
+      "You said to send it to everyone on the list, so I did. All four hundred of them.",
+      "You told me to wait for your sign-off before ordering anything, so we've been without supplies all week.",
+      "You asked me to wash the dishes. You didn't say to dry them or put them away.",
+      "You said 'by Friday.' It's Friday, 11:58 at night.",
+      "I just did it the way you told me to, said flatly after something goes wrong.",
+      "Happy to. Just tell me every single step and I'll do exactly those steps.",
+      "A colleague follows a new procedure line by line for a job that used to take ten minutes, and it now takes the whole afternoon."
+    ],
+    "what_it_is_not": [
+      "Genuine literal-mindedness. Many people, including many autistic people, take words at face value, and the result can look the same with no hostility behind it.",
+      "A declared work-to-rule action, where a team announces openly that it will follow every rule strictly as a protest. That is stated, not hidden.",
+      "A vague request that was met exactly as phrased. The gap may be in the instruction.",
+      "Declining to do unpaid or out-of-scope extras after being refused fair terms, which is a boundary about the job.",
+      "Following a safety or legal rule that is inconvenient but real.",
+      "Weak results from someone who lacked the context or skill and tried their best."
+    ],
+    "this_may_be_it_when": [
+      "The literal reading is one almost nobody would choose, from a person who usually understands unspoken context well.",
+      "It begins soon after a disagreement, a criticism, or an order they objected to.",
+      "When the result fails, the person seems pleased or flatly satisfied rather than puzzled.",
+      "After you explain the purpose plainly, the next result is still literal in the same way, or in a new way.",
+      "The cost of the failure falls mostly on the person who gave the instruction."
+    ],
+    "this_may_not_be_it_when": [
+      "The person asks 'do you mean this or that?' before starting, and then does what you clarified.",
+      "Once the purpose is stated, the next result fits it.",
+      "They tell you what they are doing as they go: 'I'll do exactly this unless you want more.'",
+      "The task was new to them and they had nobody to ask.",
+      "They read similar requests sensibly with other people and in calmer weeks."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Someone new to a role may follow instructions tightly out of caution, afraid of overstepping.",
+      "A person who was blamed for earlier judgment calls may now prefer exactness, because exactness feels safer.",
+      "The same words mean different things in different workplaces and families, so 'tidy up' can differ from house to house.",
+      "Tiredness or overload can reduce anyone to the literal minimum."
+    ],
+    "common_false_positives": [
+      "A new employee who follows the checklist exactly because nobody said which steps could be skipped.",
+      "A team that announces in the open that it will follow every rule strictly during a pay dispute.",
+      "A child told to 'clean your room' who shoves everything under the bed, having finished the task as they understood it."
+    ],
+    "discernment_questions": [
+      "If I had said the purpose out loud in one sentence, would the outcome have been different?",
+      "With other tasks, does this person usually grasp what I mean without it being spelled out?",
+      "Did the literal reading start after a disagreement or after I said no to something?",
+      "Have they been blamed before for guessing wrong, so that exactness now feels safer to them?",
+      "When the result failed, did they seem sorry, puzzled, or pleased?"
+    ],
+    "less_concerning_if": [
+      "The outcome follows the exact words, and the person fixes it quickly once the purpose is explained.",
+      "They asked what you meant before they started.",
+      "It happened once, in a rushed week, off a rushed instruction."
+    ],
+    "more_concerning_if": [
+      "The person reads instructions loosely and sensibly when it suits them, and rigidly only on tasks they objected to.",
+      "The failures land at the moments where they cost the most, such as the hour before a deadline.",
+      "Asking for clarification gets 'you said what you said', and the next request goes the same way."
+    ],
+    "pattern_over_time_signs": [
+      "You start writing instructions like contracts, listing every step and every exception.",
+      "You take the task back or do it yourself to avoid the outcome.",
+      "Routine requests begin to need follow-up checks that they never needed before.",
+      "You build up a set of 'I did what you asked' exchanges that are hard to describe to anyone else."
+    ],
+    "repair_check": "Look for the next task coming back sensibly done once you have explained its purpose, together with a plain acknowledgment of what went wrong the last time. Quick agreement to every instruction, followed by the same exact-words result, means the pattern is still running.",
+    "boundary_respect_check": "Ask yourself what changes after you say you want the purpose honored as well as the wording. Do tasks begin arriving fit for use, or does the answer become 'then say so next time'?",
+    "psychological_mechanism": "An instruction can be treated as a contract, and meeting its words gives a person cover. Disagreement can then be expressed through the outcome instead of through a conversation. This can happen when someone feels unable to refuse openly, felt unheard when they objected, or was blamed for earlier judgment calls. The asker then sees only a failed task, not the disagreement beneath it.",
+    "possible_impact_on_receiver": "People describe becoming stiff and over-specific in how they ask, wondering whether they phrased something badly, and carrying the cost of the failed work themselves. Some start to dread delegating or hold back from making requests. Others describe feeling oddly unable to complain, since the instruction was carried out.",
+    "response_options": {
+      "soft_clarification": "Name the purpose, not only the task: 'What I need is a handout people can use tonight. Will this do that?' Then see whether the next version fits.",
+      "firm_boundary": "State the standard you expect: 'I need the work to meet the goal, not just the wording. If a step won't get us there, tell me before you do it.'",
+      "disengagement": "Stop writing longer and longer instructions to close each loophole. Give the goal, check the result once, and move the task elsewhere if it keeps failing.",
+      "support_seeking": "Describe two or three of the instructions and results to a colleague or friend who knows both of you, and ask whether they would have read your request the way you meant it.",
+      "workplace_or_professional": "Put the goal and deadline in writing and invite questions up front. If it recurs, take dated examples of outcomes to your manager, and leave guesses about motive out of it."
+    },
+    "boundary_script": "\"When I ask for something, I need it to do the job, not just match my words. If my wording is unclear, ask me before you start. If you disagree with the request, tell me, and we can sort it out.\"",
+    "safety_sensitive": false,
+    "safety_note": "On its own this is friction over work or chores, not a danger signal. That changes if the failures involve a skipped safety step, a missed medication, or work that puts your job at risk without being traceable to you. Then record dates and outcomes, and report the safety step to a supervisor, safety officer or union rep.",
+    "misuse_warning": [
+      "Calling a literal reading 'malicious' assumes a motive you cannot see. Someone who takes words at face value, or who was burned for guessing, can be accused of sabotage when they are being careful.",
+      "The label can excuse a vague request. If you never said what you wanted, the problem may sit in the instruction."
+    ],
+    "how_to_distinguish_from_related": "Blame-Shifting turns the fault toward you once something goes wrong; here the fault is pre-assigned to your own wording. Minimization plays a harm down after it is raised, while here the harm is built into the work itself. Denial contests what happened, but nothing is contested here: the request was met, just very narrowly."
+  },
+  "Moral Licensing": {
+    "short_definition": "Pointing to a good character or past good deeds as a reason the present complaint does not need an answer.",
+    "core_meaning": "Pointing to a good character or past good deeds as a reason the present complaint does not need an answer.",
+    "expanded_definition": "As used here, moral licensing is offering someone's good reputation or earlier kindness in place of an answer to what is being raised now. Psychologists also use the term for a tendency to feel freer to act badly after doing something good, which can happen quietly with no conversation at all. In an exchange it shows when a complaint about Tuesday is met with a list of what was done for years. One mention of a record is ordinary context. The pattern is the record regularly taking the place of the answer.",
+    "plain_language_summary": "Instead of talking about what you raised, the other person reminds you how good they are or what they have done for you, and your complaint is left sitting there.",
+    "why_this_matters": "A specific, current complaint goes unanswered because the conversation turns into a ruling on someone's overall goodness. The person who raised it never asked that question and cannot win it, and the original problem stays exactly where it was.",
+    "what_it_is": [
+      "A swap: a record of past good conduct is placed where an answer to the current complaint should be.",
+      "Draws on many kinds of credit, such as years of service, donations, a clean record, belonging to a respected group, or favors done for you.",
+      "Can come from others who vouch for the person, as in 'he would never do that'.",
+      "Sets up a false choice, where agreeing the complaint is fair seems to mean calling the person bad.",
+      "Different from the research finding, which describes a private shift in behavior rather than something said aloud."
+    ],
+    "what_it_sounds_like": [
+      "I have given up so much for this family. You're really going to bring this up now?",
+      "I volunteer every weekend. Ask anyone who knows me.",
+      "Do you know how many people I've helped? I'm not that kind of person.",
+      "In twenty years I've never had a single complaint.",
+      "After all the favors I've done for you, I'd expect a little trust.",
+      "I've always supported equality. I'd never say something like that.",
+      "A manager points to their leadership award when an employee reports how a meeting went."
+    ],
+    "what_it_is_not": [
+      "Relevant context given alongside an answer: 'I know that stung and I was wrong about the deadline. I hope the last two years count for something.'",
+      "Someone hurt that an accusation overlooks years of effort, who says so while still engaging with the complaint.",
+      "A character witness in a formal process such as a hearing, where track record is relevant by design.",
+      "Genuine surprise: 'That doesn't sound like me. Tell me more about what happened.'",
+      "The private tendency, described in research, to relax standards after doing good. That is not a conversational move and cannot be seen in one exchange.",
+      "Two people in a long relationship reminding each other of their shared history with honesty and goodwill."
+    ],
+    "this_may_be_it_when": [
+      "A complaint about one event is answered with praise for the person's whole life.",
+      "The list of good deeds gets longer each time you return to the subject, while the event itself is never described.",
+      "Your complaint is framed as ungrateful, as though what you owe cancels what you raised.",
+      "Other people are asked to vouch ('ask anyone'), and their testimony replaces the facts.",
+      "Agreeing with the complaint is treated as a statement that the person is bad."
+    ],
+    "this_may_not_be_it_when": [
+      "The track record is mentioned in a sentence, and then the specific issue is addressed.",
+      "They own what they did and also say it is out of character for them.",
+      "They ask you to look at the facts of this one event, not at their reputation.",
+      "The history comes up because you asked whether this has happened before.",
+      "The conversation ends on a concrete change, even a small one."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Hurt at being misjudged can make anyone reach for their best moments.",
+      "People sometimes cite their history because they sincerely believe it shows this was a mistake and not typical.",
+      "In some workplaces and cultures, reputation and standing are the normal way to discuss someone's conduct."
+    ],
+    "common_false_positives": [
+      "A character reference in a formal setting, such as a hearing or a reference check, where track record is the question.",
+      "A friend you complained about who says 'I'd hate to think I've let you down after all this time', and then asks what happened.",
+      "Someone speaking warmly about a person accused in public, who has nothing to dodge themselves."
+    ],
+    "discernment_questions": [
+      "After the good deeds were listed, was the specific thing I raised ever discussed?",
+      "Would my complaint still be fair if every one of those good deeds were true?",
+      "Do they bring up their record only when I raise a problem?",
+      "Am I being asked to weigh their whole life against one event?",
+      "Does it feel safe to say that both things can be true?"
+    ],
+    "less_concerning_if": [
+      "The person says in one breath that they do a lot and that they got this wrong.",
+      "The record comes up when you ask about it, not in reply to the complaint.",
+      "The specific event is settled before the conversation ends."
+    ],
+    "more_concerning_if": [
+      "Questioning their conduct is treated as a betrayal or an insult to their service.",
+      "Other people are recruited to speak for their character before you have finished explaining.",
+      "Their standing gives them an exemption from rules that others follow, in a workplace, congregation or family."
+    ],
+    "pattern_over_time_signs": [
+      "You expect the reminder before you speak, and begin to wrap complaints in praise to soften them.",
+      "You find yourself defending your own record of kindness to them.",
+      "Small issues pile up unsaid, because raising them feels like arguing against someone's entire character.",
+      "Others in the group start to treat the person as beyond question."
+    ],
+    "repair_check": "Look for the specific event being named back to you, in their words, before any mention of their record. If history comes in afterwards as context and the event still gets addressed, the exchange has moved. A longer list of credentials on the second try has not changed anything.",
+    "boundary_respect_check": "Notice whether saying 'I'm asking about Tuesday, not about your whole character' changes their next reply. Watch for a move from the list to the event, or for the list getting longer along with a hint that you are being unfair to ask.",
+    "psychological_mechanism": "A person's good standing can work as a shortcut for deciding what is likely: someone kind seems unlikely to have done harm. Listeners may discount a complaint, and the person making it, before checking the facts. The speaker can also be reassured by their own record, which may make an uncomfortable complaint feel like an error rather than information.",
+    "possible_impact_on_receiver": "Accounts of this often include guilt for raising something real, and extra caution about raising it again. Some doubt whether they have the right to complain, given what the person has done for them. Others are left with a small, specific problem that was never discussed and a large, vague sense of having been ungrateful.",
+    "response_options": {
+      "soft_clarification": "Acknowledge the record and return to the point: 'I know you've done a lot, and that's not what I'm asking about. I'm asking about what happened on Tuesday.'",
+      "firm_boundary": "Refuse to let the complaint become a vote on their character: 'I'm not asking you to be a bad person. I'm asking you to answer this one thing.'",
+      "disengagement": "If the list of achievements begins, stop competing with it. Say you will leave it there for now, then return later in writing with the one specific request.",
+      "support_seeking": "Ask someone who knows you both whether they can hold two things at once: that this person has done real good, and that this event still needs an answer.",
+      "workplace_or_professional": "Describe the event and its effect factually, leave their reputation out of it, and ask for the specific action you need, so a good name has nothing to answer."
+    },
+    "boundary_script": "\"I believe you've done a lot of good, and I'm not asking you to prove it. I'm asking about one thing that happened. Can we talk about that first, and then talk about everything else if you like?\"",
+    "safety_sensitive": false,
+    "safety_note": "Not a danger signal alone. It deserves more care where good standing is itself the source of power: a respected leader, clergy member, coach or senior colleague whose reputation makes complaints unlikely to be believed. There, keep dated notes and take the complaint to an outside body, such as an ombuds, regulator or independent reporting line, instead of to the person's own circle.",
+    "misuse_warning": [
+      "Not every mention of a good record is an evasion. Using the label on someone sincerely hurt by an accusation can shut them out of a fair hearing.",
+      "Someone's real history can be relevant evidence. Waving it away as 'licensing' discards context that may matter."
+    ],
+    "how_to_distinguish_from_related": "A flat Denial says the thing did not occur; licensing can concede there is a complaint and answer it with reputation. Blame-Shifting hands the fault to you, while licensing leaves fault unmentioned and puts the speaker's goodness on the table, which can leave you feeling in debt. Minimization makes the harm small, whereas licensing swaps in a different question: are they a good person?"
+  },
+  "Sealioning": {
+    "short_definition": "Pressing someone, again and again and in a polite tone, to produce evidence or explanation, in a way that wears them out without moving toward understanding.",
+    "core_meaning": "Pressing someone, again and again and in a polite tone, to produce evidence or explanation, in a way that wears them out without moving toward understanding.",
+    "expanded_definition": "Sealioning is a run of courteous-sounding requests for sources, definitions and explanations that keeps going no matter what is supplied. It is mostly seen online, in replies and comment threads, where the person answering never agreed to a debate. Each request alone is reasonable, which is what makes it hard to refuse. The pattern is in the shape: every answer produces a new request, the asker never states a view of their own, and the person answering spends hours. This does not show what the asker wants.",
+    "plain_language_summary": "Someone keeps politely asking you to prove and explain, over and over, and nothing you give ever counts as enough, until you are too tired to keep talking.",
+    "why_this_matters": "The target's energy goes into finding sources and proving points rather than being heard. The point they set out to make often gets dropped, not because it was answered but because they ran out of stamina.",
+    "what_it_is": [
+      "A string of requests such as 'source?', 'define that' or 'what do you mean by that', each fair on its own.",
+      "Mostly met in public or semi-public spaces: replies, comment sections, group chats, and email threads with a wide list.",
+      "Marked by a polite tone and a reluctance to say what would count as enough.",
+      "Often continues after the target says they are finished, with remarks like 'so you can't answer?'",
+      "Works partly because stopping looks like losing: anyone who leaves seems unable to back up their claim."
+    ],
+    "what_it_sounds_like": [
+      "Sorry, I'm just trying to understand. Which study?",
+      "That source is one outlet. Do you have another?",
+      "What exactly do you mean by 'often'? Can you give me a number?",
+      "I'm only asking questions. Why are you getting upset?",
+      "You still haven't answered my earlier question.",
+      "Can you define 'harm' before we go any further?",
+      "If you can't provide that, I'll have to assume you're wrong.",
+      "A reply lands within minutes of each message, for days, each asking for one more item."
+    ],
+    "what_it_is_not": [
+      "A real question from someone new to a subject, who thanks you and moves on to the next point.",
+      "Peer review, fact-checking or cross-examination, where demanding evidence is the job.",
+      "One careful request for a source on a surprising claim.",
+      "A skeptic who tells you what would change their mind, and then either changes it or states where they stand.",
+      "A heated argument where both sides question each other hard but stay on topic and either can end it.",
+      "A forum moderator asking for sources because the community's rules require them."
+    ],
+    "this_may_be_it_when": [
+      "You give a source and the reply questions the source, then another source, then a word in it.",
+      "You are asked to explain the basics of a topic after saying you will not debate it.",
+      "The asker never says what they believe or what evidence would satisfy them.",
+      "The polite tone holds while the number of requests grows, and your dropping patience is then pointed out.",
+      "Leaving the thread is met with a claim that you could not answer."
+    ],
+    "this_may_not_be_it_when": [
+      "The person quickly states their own position, so you can see what the questions are for.",
+      "They acknowledge a source you give and move on to a new point.",
+      "The questions slow or stop when you say you cannot continue.",
+      "The asker has to act on the answer, like a decision-maker who needs the facts.",
+      "The conversation is one you opened or agreed to, such as a debate or an interview."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Text strips tone, so a short 'source?' can be curiosity and not a challenge.",
+      "People who have been misled before may ask for evidence more firmly than others.",
+      "Some communities and professions treat questioning as a form of respect and expect to be asked."
+    ],
+    "common_false_positives": [
+      "A journalist or editor asking for documentation before publishing.",
+      "A student asking repeatedly because the material is new to them.",
+      "A colleague asking for the data behind a figure before signing off on a budget."
+    ],
+    "discernment_questions": [
+      "Did I agree to this conversation, or did it arrive in my replies?",
+      "When I answered, did anything shift, or did a new request appear?",
+      "Do I know what the other person thinks, or only what they want from me?",
+      "Would they accept an answer if I gave one, and do I know what would count?",
+      "Can I stop without harming anything real, even if it looks like a win to them?"
+    ],
+    "less_concerning_if": [
+      "They say what would satisfy them and accept it when it arrives.",
+      "The questions connect to a decision that rests with them.",
+      "They say thanks and drop the subject when you step away."
+    ],
+    "more_concerning_if": [
+      "Several different accounts take turns asking the same kind of question.",
+      "They carry on after you have said you are done, and your replies are quoted elsewhere for ridicule.",
+      "The questioning follows you into other spaces, such as your other posts, your workplace page or private messages."
+    ],
+    "pattern_over_time_signs": [
+      "You begin loading every post with sources and caveats in advance.",
+      "You stop posting about a subject you know well because of what it costs.",
+      "Hours that used to go elsewhere are eaten by answering, and you feel behind.",
+      "You notice you spend more time proving points than making them."
+    ],
+    "repair_check": "Repair here is the asker changing the shape of the exchange: stating a position, naming what would count as enough, or stopping when a question has been answered. A cheerful 'fair enough' followed by a fresh round of questions the next day leaves the loop exactly where it was.",
+    "boundary_respect_check": "Tell them once that you have answered what you will, then see whether the questions stop or turn into comments on your refusal. A person who accepts the limit goes quiet; one who tests it asks why you are afraid to continue.",
+    "psychological_mechanism": "Asking for evidence carries social authority, so refusing can look like having nothing to offer. Each answer also costs time and attention, while each question costs almost nothing, which tilts the exchange. A calm tone can make any frustration look like the real problem. Over time a person may give up their point just to end the cost.",
+    "possible_impact_on_receiver": "People describe exhaustion, a sense of being on trial for something they only mentioned, and anxiety about posting. Some withdraw from the topic or the platform. Others say they began doubting their own knowledge even when they had good sources.",
+    "response_options": {
+      "soft_clarification": "Ask the one question that sorts it out: 'What would count as enough for you here?' A real answer helps you both; a shrug or a new demand tells you something.",
+      "firm_boundary": "Set your limit on the exchange: 'I've given you two sources and my reasoning. I'm not going to keep going.' Then actually stop replying.",
+      "disengagement": "Mute, block, or leave the thread. You owe no one an unlimited supply of proof, and leaving is not a concession.",
+      "support_seeking": "Show the thread to someone neutral and ask whether the questions looked fair. If it is on a platform, use its reporting tools or ask a moderator to step in.",
+      "workplace_or_professional": "In a work channel, move requests for evidence to one agreed place, such as a short document or a meeting, and ask a manager to set limits on how often and by whom."
+    },
+    "boundary_script": "\"I've shared my sources and explained my reasoning, and I'm happy to leave it there. If you want to carry on, tell me what you think and what would change your mind. Otherwise I'm stepping out of this thread.\"",
+    "safety_sensitive": false,
+    "safety_note": "By itself this drains time and nerves; it is not a danger. That changes when the questions follow you to personal details, such as your address, employer, family or private messages, or arrive in organized waves of accounts. Then save dated screenshots, report to the platform, and tighten the privacy settings on your accounts.",
+    "misuse_warning": [
+      "Calling every request for evidence 'sealioning' lets people dodge fair scrutiny. Asking for sources on a public claim is ordinary, and journalists and scientists do it as a duty.",
+      "Labelling a sincere, persistent newcomer a sea lion can shut out someone who truly wants to learn."
+    ],
+    "how_to_distinguish_from_related": "Whataboutism answers a charge with a counter-charge; sealioning answers a claim with endless requests and may never make a charge of its own. Denial rejects the facts outright, while the asker here may never say they disagree. Blame-Shifting assigns you the fault; sealioning assigns you the burden of proof, again and again."
+  },
+  "Deflection": {
+    "short_definition": "Steering a conversation away from the issue that was raised, by changing the subject, asking a question back, or bringing up something else.",
+    "core_meaning": "Steering a conversation away from the issue that was raised, by changing the subject, asking a question back, or bringing up something else.",
+    "expanded_definition": "Deflection is turning a conversation away from the issue just raised, so that it never gets a direct reply. The turn can be a new subject, a question thrown back, an older grievance, or a quibble over wording. Everyone does it sometimes, especially when caught off guard or ashamed. It becomes a pattern when one subject reliably goes nowhere, however it is raised, and the talk always ends with the concern unanswered. Unlike whataboutism, which points to someone else's behavior, deflection can head anywhere.",
+    "plain_language_summary": "You ask a straight question and get a different topic, a question back, or an old argument. When the talk ends, your question is still unanswered.",
+    "why_this_matters": "The original concern never gets a direct reply, so it stays open while the conversation ends looking as though it happened. The person who raised it is left unsure whether they were heard at all.",
+    "what_it_is": [
+      "A move away from a question, not a response to it: the topic changes, or the roles do.",
+      "Takes several forms: a counter-question, a tangent, a technicality, an older complaint, a joke, or sudden concern about your tone.",
+      "Often subtle enough that the conversation feels full, even warm, with no answer given.",
+      "Can be an unplanned reflex under stress, and is visible in the exchange whatever the reason behind it.",
+      "Matters by repetition: one subject is always avoided while others are discussed openly."
+    ],
+    "what_it_sounds_like": [
+      "Did you cancel the appointment? / Why are you always checking up on me?",
+      "Can we talk about this later? (said again each time, with no later arriving)",
+      "Speaking of which, did you ever call your mother back?",
+      "That's not the point. The point is how you brought it up.",
+      "You're raising this now? After the week I've had?",
+      "I'll answer when you ask nicely.",
+      "When you ask about last month's missed payment, the talk turns to something you said at Christmas.",
+      "Mid-question, the person gets up to make tea, takes a call, or begins a long story."
+    ],
+    "what_it_is_not": [
+      "Someone overwhelmed who asks for a pause and does come back, or a person who misheard the question and answered something nearby. Dealing with a truly urgent related matter first is also fine, so long as the original topic is picked up again.",
+      "A clarifying question such as 'Which time do you mean?', after which your answer leads to theirs.",
+      "A group conversation where tangents are normal and no one's question outranks another's.",
+      "A person who says 'I'm not ready to answer that yet' and means it honestly.",
+      "Brevity with a private subject you have no claim to an answer on."
+    ],
+    "this_may_be_it_when": [
+      "One topic gets a different style of response from the topics around it.",
+      "The 'later' has no time attached, and the other person never raises it themselves.",
+      "Their counter-question replaces the answer instead of coming before it.",
+      "When you return to your question, you are told it is closed or already discussed.",
+      "Your question turns into a conversation about you: your tone, your timing, your motives."
+    ],
+    "this_may_not_be_it_when": [
+      "They say 'give me an hour' and come back at that hour.",
+      "Their question back is a clarifying one and leads on to an answer.",
+      "The swerve happened once, straight after bad news or a shock.",
+      "They name it themselves: 'I'm dodging, and I'm sorry. Ask me again.'",
+      "A long delay ends in a thoughtful, direct answer."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Some people cannot think on the spot and need hours to reach an answer.",
+      "Embarrassment, or fear of a fight, can send anyone to the nearest other topic.",
+      "Cultural or family styles may treat direct questions as rude, so answers arrive sideways."
+    ],
+    "common_false_positives": [
+      "Someone in tears asking for a break who calls back the next day.",
+      "A friend who answers a nearby question because they misheard.",
+      "A person handling an emergency who says 'let me deal with this first' and then does."
+    ],
+    "discernment_questions": [
+      "Does the original question get answered at any point, even late?",
+      "Does this happen with one subject, or with every hard one?",
+      "Does the change of topic leave me defending myself, or is it just a tangent?",
+      "When I name the dodge gently, does the person return to the question?",
+      "If I wrote the question in a message, would the reply address it?"
+    ],
+    "less_concerning_if": [
+      "A late but direct answer arrives.",
+      "They notice and name the swerve themselves.",
+      "It only happens when they are tired, unwell or taken by surprise."
+    ],
+    "more_concerning_if": [
+      "Raising the subject routinely costs you something, such as a fight, a sulk, or a counter-complaint.",
+      "The matters that never get answered include money, safety or health.",
+      "Written questions go unanswered or are answered about something else."
+    ],
+    "pattern_over_time_signs": [
+      "A list of unanswered questions builds up, some of them months old.",
+      "You start choosing your moment with great care, and the right moment never arrives.",
+      "You ask in smaller and smaller pieces to get any response at all.",
+      "You have been given plenty of warmth and conversation, but no answers."
+    ],
+    "repair_check": "Repair means the dropped question is picked up again: they return to it without being prompted, answer it directly, and do so whenever the subject comes round again. A string of 'later' promises that never turn into a date is the old pattern with a gentler face.",
+    "boundary_respect_check": "Try putting the question in one written line and see what comes back. A direct answer, or an honest 'I don't want to answer that yet', respects the limit. A reply about something else, or about your wording, shows the question is still being routed around.",
+    "psychological_mechanism": "Changing the subject is easy because conversation has no fixed agenda, and the person who raised the issue is often too polite to insist. A counter-question hands the listener a task, and answering it feels cooperative. Within a few turns the original concern is buried, and the person who raised it may not notice what was lost until afterwards.",
+    "possible_impact_on_receiver": "People describe leaving a long conversation feeling heard, then realizing nothing was answered. Over time some stop asking, some ask louder, and some blame themselves for never finding the right moment or wording. Others describe a quiet resentment about questions that have been open for months.",
+    "response_options": {
+      "soft_clarification": "Name the gap kindly: 'We covered a lot, but I still don't have an answer to my first question. Can we go back to it?'",
+      "firm_boundary": "Hold the question in place: 'I'm going to ask it again, because it hasn't been answered. I'll wait while you think.'",
+      "disengagement": "If every attempt gets swept aside, stop raising it face to face. Send the question in writing, with a date for a reply, and leave it there.",
+      "support_seeking": "Tell a friend the exact question and the answers you have had so far. Hearing how little of it was answered can confirm you are not asking too much.",
+      "workplace_or_professional": "Put the question in an email with a date, copying whoever has to decide. A written question is harder to steer away than a spoken one."
+    },
+    "boundary_script": "\"I'd like to go back to my first question before we move on, because I don't think I've had an answer yet. If you need time, tell me when you'll reply, and I'll hold off until then.\"",
+    "safety_sensitive": false,
+    "safety_note": "Not a safety matter in itself. That changes when the question being avoided carries real stakes, like where money went, a medical decision, a child's wellbeing or a threat that was made, and raising it brings anger or fear. Then write down the question and what happened when you asked, and talk to a counselor or advocate before pressing it again.",
+    "misuse_warning": [
+      "Calling a pause or a topic change deflection can punish someone for being overwhelmed. If you need an answer right now, check whether time is part of the request.",
+      "The label can turn into a demand for a reply to every question. Nobody owes an answer on everything, especially private matters."
+    ],
+    "how_to_distinguish_from_related": "Whataboutism answers with someone else's comparable conduct; deflection goes wherever the exit is. Blame-Shifting engages with the complaint by turning it into your fault, while deflection does not engage with it at all. Denial says no to the facts, but deflection says nothing about them."
+  },
+  "Apology Without Repair": {
+    "short_definition": "An apology that is offered but followed by no change in behavior, so the same harm returns and the apology closes the matter each time.",
+    "core_meaning": "An apology that is offered but followed by no change in behavior, so the same harm returns and the apology closes the matter each time.",
+    "expanded_definition": "Apology without repair is a sorry that works as an ending instead of a beginning. The words may be warm, specific and even tearful, but nothing is different afterwards: the same thing happens again, and the same sorry is offered. One apology not followed by instant change is normal, because change is slow and uneven. The pattern is the closed loop, where the apology stands in for the repair and raising the repeat is met with 'I already apologized.' This does not show whether the person means it.",
+    "plain_language_summary": "They say sorry, sometimes beautifully, and then do the same thing again. After a few rounds the sorry starts to feel like a way of ending the conversation.",
+    "why_this_matters": "Each apology closes the incident without changing anything, so the same harm can recur while, on paper, it has been dealt with every time. The person on the receiving end is left holding a record of apologies and no change.",
+    "what_it_is": [
+      "An apology that is complete in itself, with no plan, change or follow-up attached.",
+      "Often arrives at the point of highest tension, and its effect is to lower it.",
+      "Can be sincere in the moment. The pattern lies in what follows, not in how it sounded.",
+      "Gets recycled: the same offense, similar wording, sometimes the same gift or gesture.",
+      "Turns the next complaint into the new offense, because 'I already said sorry'."
+    ],
+    "what_it_sounds_like": [
+      "I'm sorry, okay? What more do you want from me?",
+      "I said I was sorry. How many times do I have to say it?",
+      "I'm so sorry. I hate myself when I do this. (which leaves you comforting them)",
+      "I already apologized for that last month. Why are you still going on about it?",
+      "It won't happen again, said for the fourth time about the same thing.",
+      "A text reading 'Sorry for everything' that names no action.",
+      "A tearful apology, a nice dinner, and the same late arrival the following week."
+    ],
+    "what_it_is_not": [
+      "A sincere apology followed by imperfect effort. Change is rarely instant and rarely a straight line.",
+      "Someone who apologizes well but has a real skill gap, with money or time, and needs a plan more than willpower.",
+      "One relapse followed by renewed effort, which is not a closed loop.",
+      "A person whose follow-through is affected by something like ADHD or depression, who is open about it and working on it.",
+      "An apology for something that cannot be undone, where no further repair is possible.",
+      "An apology you both agree is enough: 'that's all I needed'."
+    ],
+    "this_may_be_it_when": [
+      "The same offense has happened three or more times, each followed by a similar apology.",
+      "The apology never describes anything they will do differently.",
+      "You are expected to accept it that day and move on.",
+      "When you bring up the repeat, the old apology is quoted back as proof it is settled.",
+      "Comforting them about how bad they feel becomes your job."
+    ],
+    "this_may_not_be_it_when": [
+      "The apology names a specific action and one thing they will do differently, and you see it.",
+      "Between incidents there is visible effort, such as reminders set or help sought.",
+      "When it happens again, they bring it up before you do.",
+      "The gaps between repeats are getting longer.",
+      "They let you take your time before you accept."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "People often say sorry before they have a plan, because the words are what is available in the moment.",
+      "Old habits take many tries to change, and some relapses are to be expected.",
+      "Some people find it hard to talk about change and show it quietly, which can take weeks to notice."
+    ],
+    "common_false_positives": [
+      "A friend who is late again after apologizing, but who now leaves earlier and is mostly on time.",
+      "A parent who apologizes to a child after a bad day in a stressful season, then explains and does better.",
+      "A person apologizing for a loss that can't be fixed, whose follow-up is simply staying present."
+    ],
+    "discernment_questions": [
+      "What exactly changed between the last apology and today?",
+      "Did the apology name what happened, or only say how bad they feel?",
+      "Is the same sentence being used again?",
+      "When I mention the repeat, do I get a conversation or a reminder that I already forgave it?",
+      "Is there a plan I could see, like a step, a date or a helper?",
+      "Am I looking after their feelings afterwards more than they are looking after the problem?"
+    ],
+    "less_concerning_if": [
+      "Specific steps follow, even small ones, and some of them stick.",
+      "Setbacks are admitted before you find them.",
+      "The time between repeats is lengthening."
+    ],
+    "more_concerning_if": [
+      "The repeated harm is getting more serious, or touches your health, money or safety.",
+      "Reminders that you accepted the last apology are used to shut the topic down.",
+      "Offense and apology settle into a rhythm, with affection or gifts in between."
+    ],
+    "pattern_over_time_signs": [
+      "You can predict the apology before it comes.",
+      "Your own reaction gets smaller each round, because you no longer expect anything to change.",
+      "You stop raising it, because the apology costs you more than the offense did.",
+      "The calm stretches become something you protect and hold your breath through."
+    ],
+    "repair_check": "What counts as repair is something you can see happen between apologies: a changed routine, a step taken, a behavior that stops appearing. Ask what they did differently last week. More feeling, more tears and a bigger promise do not add up to a change.",
+    "boundary_respect_check": "Consider asking for one concrete thing you need to see, then note what follows. If they take it on, say how, and you can watch it happen, the boundary is being treated as real. If you get another apology or irritation at being asked, the sorry is still doing the job of a full stop.",
+    "psychological_mechanism": "An apology produces relief on both sides: the person apologizing may feel better as soon as it is said, and the listener feels the tension drop and hopes things will change. That relief can substitute for the work of changing. Because forgiving is also rewarded, the listener may accept again and again, and the cycle becomes familiar.",
+    "possible_impact_on_receiver": "People describe a draining kind of hope: believing each apology, then watching the same thing return. Some blame themselves for giving another chance, and some feel their anger is unreasonable because they have been apologized to. Over time, trust in the words themselves can wear thin, including words that are meant.",
+    "response_options": {
+      "soft_clarification": "Ask what the apology comes with: 'Thank you for saying sorry. What will you do differently next time, and how will I know?'",
+      "firm_boundary": "Say that words are no longer enough on this issue: 'I appreciate the apology. For me to move on, I need to see something change, and I'll wait to see it.'",
+      "disengagement": "Stop giving a quick 'it's fine' to end the discomfort. You can say 'I heard you' and leave it unresolved while behavior makes the case.",
+      "support_seeking": "Keep a short dated list of the repeats and the apologies and show it to someone you trust. A pattern can be easier to see on paper than in the moment.",
+      "workplace_or_professional": "Ask for the apology to come with a written next step and a review date, such as an agreement on how this will be handled next time."
+    },
+    "boundary_script": "\"Thank you for apologizing, and I do hear that you're sorry. This has happened a few times now, so what I need isn't another apology. I need to see what's different next time. Can we agree on what that will be?\"",
+    "safety_sensitive": true,
+    "safety_note": "An apology followed by repetition can be part of a cycle in controlling or violent relationships, where remorse after an incident is followed by a calm period and then another incident. If the harm involves threats, hitting, destroyed property, control of money, or fear of how they will react, contact a domestic violence advocate, who can help you plan for safety without requiring you to leave. In immediate danger, call emergency services.",
+    "misuse_warning": [
+      "Counting apologies as proof of bad faith is unfair to people working on change slowly. The label fits a closed loop, not a first or second relapse.",
+      "It can also be used to refuse any apology, treating sorry as worthless in advance. Sometimes an apology is all that can be offered."
+    ],
+    "how_to_distinguish_from_related": "A Non-Apology Apology regrets your reaction, not their action; here the apology can name the action in full and sound sincere, and then nothing changes. Denial disputes what happened, whereas here it is admitted. Minimization makes light of the damage, but here the damage may be fully owned and the same thing still happens again."
+  },
+  "Forced Forgiveness": {
+    "short_definition": "Pressing someone to forgive or move on before the harm has been acknowledged or made right, so forgiveness is demanded in place of repair.",
+    "core_meaning": "Pressing someone to forgive or move on before the harm has been acknowledged or made right, so forgiveness is demanded in place of repair.",
+    "expanded_definition": "Forced forgiveness is pressure to say 'it's fine' or 'let's move on' before anyone has admitted what happened or tried to put it right. The pressure may come from the person who caused the harm, or from relatives, a congregation or colleagues who want peace. Forgiving is a personal act that usually follows acknowledgment, and a deadline cannot hurry it. Hoping for reconciliation is not the problem. The pattern appears when forgiveness is treated as a duty or a test of character, and when still feeling hurt becomes the next offense.",
+    "plain_language_summary": "The people around you want it over. You are told to forgive and move on though no one has faced what happened, and still feeling hurt is treated as the problem.",
+    "why_this_matters": "Resolution is claimed before acknowledgment, so the harm stays unprocessed. Any further mention of it then becomes the new problem, and the person who was hurt carries the extra task of looking forgiving.",
+    "what_it_is": [
+      "Pressure toward a conclusion, such as forgiveness, a handshake or a hug, that normally comes after acknowledgment and repair.",
+      "Often speaks the language of virtue: faith, family loyalty, maturity, being the bigger person.",
+      "Can come from the person who caused harm or from others who speak for peace, such as relatives, leaders and friends.",
+      "Commonly carries a clock, as in 'it's been a year' or 'by Christmas'.",
+      "Changes who has work to do: the hurt person must forgive, while the other has nothing to do."
+    ],
+    "what_it_sounds_like": [
+      "Can we just move past this?",
+      "It's been long enough. You need to let it go.",
+      "Forgiveness is what God asks of us, and you're holding on.",
+      "He's family. Life's too short to hold grudges.",
+      "I've said I'm sorry. Now you have to forgive me. That's how it works.",
+      "Everyone else has moved on. Why can't you?",
+      "If you really cared about this family, you'd shake his hand at the wedding."
+    ],
+    "what_it_is_not": [
+      "A mutual decision to move forward after real acknowledgment has happened. That is repair, not pressure.",
+      "Someone who processes conflict quickly and does not ask others to match their pace.",
+      "Family or cultural norms about not dwelling, which are not avoidance by default.",
+      "Your own wish to forgive and let go, which is a choice and not a pressure.",
+      "A mediator or counselor who raises forgiveness as an option after both sides have been heard. An invitation is not a demand.",
+      "A friend who says 'I hope you can find peace with this someday' and requires nothing."
+    ],
+    "this_may_be_it_when": [
+      "Forgiveness is requested before anyone has said out loud what happened.",
+      "The person asking has a stake: they caused the harm, or they want to avoid conflict at an event.",
+      "You are given a date by which you are expected to feel better.",
+      "Refusing is described as bitterness, holding a grudge, or ruining the day.",
+      "Talking about the harm is treated as more disruptive than the harm."
+    ],
+    "this_may_not_be_it_when": [
+      "They acknowledged what happened before asking, and have asked what you need.",
+      "You are told you can take as long as you need.",
+      "Forgiveness is offered as a hope, as in 'I hope someday', not as a demand.",
+      "The person asking has nothing to gain and is open to hearing no.",
+      "You wanted to move on and started the conversation yourself."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Relatives who hate conflict may press for peace because they love both people and fear a rift, not to excuse the harm.",
+      "Some cultures and faiths treat forgiveness as a duty of community and urge it as a kindness.",
+      "People who have forgiven something themselves may wish the same relief for you."
+    ],
+    "common_false_positives": [
+      "A couple agreeing to drop an argument after each has said their part.",
+      "A grandparent saying 'I don't want to see you two apart' as a wish for reunion, with no demand attached.",
+      "A therapist who explores forgiveness as one of several options at your pace."
+    ],
+    "discernment_questions": [
+      "Has what happened been said out loud and acknowledged by the person responsible?",
+      "Who benefits if I forgive today?",
+      "Is the deadline mine, or someone else's?",
+      "Is 'no' an acceptable answer, or does it cost me something?",
+      "Am I allowed to forgive and still keep my distance?"
+    ],
+    "less_concerning_if": [
+      "Forgiveness is asked as a gift, and a 'not yet' is accepted.",
+      "The people urging it have also heard your account.",
+      "You feel free to say no without a penalty."
+    ],
+    "more_concerning_if": [
+      "Others are brought in to urge you, such as family, clergy or mutual friends who have not heard your side.",
+      "Your refusal costs you something: invitations, support, belonging.",
+      "The harm is described as past, while the conduct behind it continues."
+    ],
+    "pattern_over_time_signs": [
+      "You become more careful about mentioning what happened, because the mention is seen as the problem.",
+      "You act more forgiving in public than you feel.",
+      "You are invited to events on the understanding that you will behave as though nothing happened.",
+      "The list of subjects you cannot bring up gets longer."
+    ],
+    "repair_check": "Where forgiveness follows real repair, the order is visible: acknowledgment first, then change, then room for you to decide in your own time. If the request to forgive arrives first, or 'moving on' is the only repair on offer, the sequence has been turned round.",
+    "boundary_respect_check": "What happens when you say 'not yet' or 'no'? Respect looks like patience and perhaps a question about what you need. Disrespect looks like a cooler tone, a reminder of how much time has passed, or other people being sent to persuade you.",
+    "psychological_mechanism": "Forgiveness is widely praised, so being asked for it can make hesitation feel like a personal failing. When the request comes from family or a community, the cost of refusing can include losing belonging. Hurrying toward peace can also spare everyone the discomfort of the facts, letting the group relax while the hurt person absorbs the cost.",
+    "possible_impact_on_receiver": "People describe swallowing anger to keep the peace, feeling guilty for still being hurt, and being shut out of the conversation they needed. Some say they pretended to forgive and felt more alone afterwards. Others describe losing trust in the people who urged them to move on.",
+    "response_options": {
+      "soft_clarification": "Separate the two things: 'I do want us to be okay, and I need to talk about what happened before I can get there.'",
+      "firm_boundary": "Decline the deadline: 'Forgiveness isn't something I can schedule. I'll tell you if and when I get there, and until then, please don't ask.'",
+      "disengagement": "You can skip events or conversations where you will be expected to act as if nothing happened, without explaining yourself to everyone.",
+      "support_seeking": "Talk to someone outside the family or group who will not be asked to take sides, such as a counselor, a faith leader you trust, or a friend, and ask what they would want from you.",
+      "workplace_or_professional": "If a manager asks you to bury the hatchet before a complaint has been looked at, ask in writing how the complaint is being handled, and make clear that forgiving is not a condition of the process."
+    },
+    "boundary_script": "\"I'd like things to be better between us. Before I can forgive, I need what happened to be acknowledged, and I can't rush that. Please don't ask me again for now. I'll tell you when I'm ready.\"",
+    "safety_sensitive": true,
+    "safety_note": "Pressure to forgive can keep a person in contact with someone who hurt them, which matters most when the harm was violence, abuse or threats. Forgiving in your heart does not oblige you to see anyone or be alone with them. If you are being pushed to go back to a person you fear, a domestic violence or sexual assault advocate can help you plan how to say no and stay safe. In immediate danger, call emergency services.",
+    "misuse_warning": [
+      "Telling anyone who urges peace that they are 'forcing forgiveness' can silence people who sincerely want to help, or who are themselves hurt by the rift.",
+      "The label can harden into a rule that forgiveness must never be asked of anyone. A gentle invitation is not coercion."
+    ],
+    "how_to_distinguish_from_related": "Minimization says the harm was small, so your reaction looks too big; forced forgiveness may accept the harm was real and still demand that you stop feeling it. Denial disputes the events, where this skips past them. A Non-Apology Apology offers a hollow sorry to close things; here the sorry may be missing entirely, and the pressure falls on your forgiveness instead."
+  },
+  "Plausible Deniability": {
+    "short_definition": "Acting in ways that can always be explained as concern, policy or accident, so no single incident can be called harmful without the accuser sounding unfair.",
+    "core_meaning": "Acting in ways that can always be explained as concern, policy or accident, so no single incident can be called harmful without the accuser sounding unfair.",
+    "expanded_definition": "Plausible deniability is a structure in which each action arrives with a reasonable explanation attached: 'I was worried about you', 'it's company policy', 'I didn't mean it like that', 'that must have been a mistake'. Often the explanation is simply true. What makes it a pattern, rather than a run of ordinary events, is that the effects add up in one direction while every single example can be defended. In politics and law the term has a formal sense of leaders arranging to claim ignorance. This entry covers the everyday version, and it does not show what anyone intended.",
+    "plain_language_summary": "Every time something harmful happens, there is a decent-sounding reason, so you can never point to one thing without feeling unfair. Only the whole pile shows the shape.",
+    "why_this_matters": "Every incident comes with a fair-sounding explanation, so raising any one of them can make the person raising it look unreasonable. The pattern can only be described by pointing at things that, taken separately, look like nothing.",
+    "what_it_is": [
+      "A reasonable explanation attached to each act: concern, rules, humor, accident or misunderstanding.",
+      "Visible across many incidents more than in any one, as the same direction of effect repeats over time.",
+      "Works through ambiguity: things left unsaid, a 'suggestion' standing in for an order, or responsibility spread thin through a process.",
+      "Found in homes, workplaces, institutions and friend groups.",
+      "Can be a feature of a system as well as a person, when nobody is clearly responsible for outcomes."
+    ],
+    "what_it_sounds_like": [
+      "I was only worried about you. That's why I read your messages.",
+      "It's just policy. My hands are tied.",
+      "I didn't mean it that way. You're reading into it.",
+      "It was a joke. Where's your sense of humor?",
+      "I was just being honest.",
+      "I never told you not to go. I just said I'd be upset.",
+      "I must have forgotten to tell you about the change to your shifts.",
+      "Nobody said you couldn't. We just thought it would look bad."
+    ],
+    "what_it_is_not": [
+      "People do follow policy and do worry about others. Often the innocent explanation is simply the true one.",
+      "Someone careful and honest can sound identical to someone producing cover. One ambiguous incident cannot separate the two, which is why this belongs at the level of a pattern.",
+      "Honest mistakes that happen to cluster, such as a disorganized manager whose errors hit everyone.",
+      "Tact and indirectness. Hinting to avoid conflict is the polite norm in many families and cultures.",
+      "An understaffed office where problems come from chaos and not from any design."
+    ],
+    "this_may_be_it_when": [
+      "Effects line up in one direction across months, such as your access to money, friends or time narrowing, while each reason differs.",
+      "The explanations arrive quickly, before you have said what troubled you.",
+      "Asking about one incident prompts a response about how suspicious you are.",
+      "The reasons change with the circumstance but the outcome does not.",
+      "Policy or concern is applied to you in ways it is not applied to others in the same position."
+    ],
+    "this_may_not_be_it_when": [
+      "The outcomes vary: sometimes they help you, sometimes they do not.",
+      "The same rule affects others in your position equally.",
+      "When you object, the action stops or is adjusted.",
+      "They invite checking: 'Ask HR', 'read the policy yourself'.",
+      "Laid out over time, there is no consistent direction of harm."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "People often explain themselves because they expect to be misread.",
+      "Genuine care can be clumsy and intrusive without being a strategy.",
+      "Organizations often apply rules rigidly through staff who cannot change them.",
+      "Indirect speech is the polite norm in many families and cultures."
+    ],
+    "common_false_positives": [
+      "A manager enforcing a policy that applies to everyone, who says 'it's policy' because it is.",
+      "A worried parent or partner who checks in, and stops when asked.",
+      "A joke that landed badly, followed by a sincere 'sorry, that was off'."
+    ],
+    "discernment_questions": [
+      "If I set the explanations aside and look only at what happened, is there a direction?",
+      "Are the same reasons used for different incidents, or does a new one appear each time?",
+      "Does the same rule apply to others in my position?",
+      "What happens when I describe the effect on me and leave the reasons alone?",
+      "If I wrote down five incidents with dates, would they point the same way?"
+    ],
+    "less_concerning_if": [
+      "Laid out on paper, the incidents show no consistent harmful effect.",
+      "When you tell them the effect on you, they change what they do.",
+      "Others in the same position are treated in the same way."
+    ],
+    "more_concerning_if": [
+      "Each reason is plausible, and the combined effect cuts you off from money, people or options.",
+      "Naming the effect, rather than the reason, is met with annoyance or the suggestion that you are paranoid.",
+      "When the first explanation is checked, a different one appears and the action continues."
+    ],
+    "pattern_over_time_signs": [
+      "You collect incidents, each too small to bring up.",
+      "Your list of things you cannot do or cannot see keeps growing, with a reason beside each.",
+      "You rehearse how to raise something so that it will not sound unreasonable.",
+      "You wonder whether you are being unfair, even when the effects are plain."
+    ],
+    "repair_check": "Repair here means the effect changes, not only the explanation. If you tell them what the pattern is doing to you and the behavior adjusts, so that you get your information or access back, that is repair. A fresh, equally reasonable reason for the same outcome is not.",
+    "boundary_respect_check": "State the effect you need to stop, without arguing over their reasons, and watch the next few weeks. Respect shows as the effect ending, whatever their explanation. If a new justification appears for the same outcome, the boundary has been routed around, not honored.",
+    "psychological_mechanism": "When every action comes with a reasonable explanation, the listener tends to judge each incident alone, and each looks too small to object to. Objecting then carries a social cost, since it can make the objector seem suspicious or ungrateful. Doubt can turn inward, with the person wondering whether their reaction is the problem rather than the pattern.",
+    "possible_impact_on_receiver": "People describe a creeping doubt about whether they are being unreasonable, a habit of saving up incidents that each feel too small, and difficulty explaining to others why they are troubled. Some feel isolated by how reasonable everything sounds. Others describe relief when they put the incidents on paper and see the shape for the first time.",
+    "response_options": {
+      "soft_clarification": "Describe the effect and leave the reason alone: 'I know you were worried. What happens is that I no longer see my own messages. Can we find another way?'",
+      "firm_boundary": "Stop arguing over intent: 'Whatever the reason, this is what it is doing to me, and I need it to stop.'",
+      "disengagement": "Stop accepting each explanation as a final answer. You can say 'I hear the reason' and still keep your own copies of documents, accounts and contacts.",
+      "support_seeking": "Write the incidents down with dates and take the list to someone outside the situation. Ask whether the direction looks as clear to them as it does on paper.",
+      "workplace_or_professional": "Ask for the policy in writing and ask whether it is applied the same way to others. If the answers do not hold, take your dated list to HR or an ombuds."
+    },
+    "boundary_script": "\"I believe you may have good reasons each time, and I'm not asking you to prove them. What I'm telling you is that, taken together, these things leave me with less say over my own days. I need that to change.\"",
+    "safety_sensitive": true,
+    "safety_note": "Concern and rules are a common explanation for controlling behavior such as reading your messages, tracking your location, holding your documents, or limiting your contact with friends and money. If the explanations lead to you losing access to those things, or you fear the response to questions, take your dated list to a domestic abuse advocate or, at work, an employment lawyer. Keep copies of key documents somewhere safe outside the situation.",
+    "misuse_warning": [
+      "Not every explanation is a cover story. Treating all reasons as cover makes honest explanation impossible and makes the label impossible to disprove.",
+      "Because the term describes a pattern, using it on a single incident turns an ambiguous event into an accusation it cannot support."
+    ],
+    "how_to_distinguish_from_related": "Denial says the act did not happen; here the act is admitted and given a good reason. Minimization plays down harm after it has been named, while here the explanation arrives before anyone has named any harm. Blame-Shifting places the fault on you; here nobody is at fault, because the explanation says nothing went wrong."
+  }
+}
