@@ -246,6 +246,28 @@ def frame_freq(batches):
     return freq
 
 
+def closer(text):
+    """Last four words of a text, lowercased: how a field ends."""
+    w = re.findall(r"[a-z0-9']+", text.lower())
+    return " ".join(w[-4:]) if len(w) >= 4 else ""
+
+
+CLOSER_FIELDS = ["safety_note", "how_to_distinguish_from_related", "repair_check",
+                 "boundary_respect_check", "why_this_matters", "psychological_mechanism",
+                 "possible_impact_on_receiver"]
+CLOSER_MIN = 3
+
+
+def closer_freq(batches):
+    freq = {f: Counter() for f in CLOSER_FIELDS}
+    for name, (e, _) in batches.items():
+        for f in CLOSER_FIELDS:
+            v = e.get(f)
+            if isinstance(v, str) and closer(v):
+                freq[f][closer(v)] += 1
+    return freq
+
+
 def corpus_freq(batches, base_all):
     freq = Counter()
     for name, (e, _) in batches.items():
@@ -286,6 +308,7 @@ def main():
     freq = corpus_freq(pool, base_all)
 
     ffreq = frame_freq(pool)
+    cfreq = closer_freq(pool)
     bad = 0
     for name, (e, src) in mine.items():
         errs, warns = [], []
@@ -314,6 +337,11 @@ def main():
                 shown = "; ".join(f"'{g}' x{c}" for c, g in hits[:3])
                 errs.append(f"{f}: reuses a frame other entries use ({shown}). "
                             f"Say it in this tactic's own terms.")
+        for f in CLOSER_FIELDS:
+            v = e.get(f)
+            if isinstance(v, str) and closer(v) and cfreq[f][closer(v)] >= CLOSER_MIN:
+                errs.append(f"{f}: ends the same way as {cfreq[f][closer(v)]-1} other entries "
+                            f"('...{closer(v)}'). End on something specific to this tactic.")
         if errs:
             bad += 1
         if (errs or warns) and not a.quiet:

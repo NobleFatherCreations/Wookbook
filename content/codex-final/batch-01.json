@@ -75,10 +75,10 @@
       "Mutual friends or family have heard their account of events more than yours.",
       "Months later you cannot say what your first complaint was, only that you ended up sorry."
     ],
-    "repair_check": "Real repair means returning to the first complaint and answering it, including the part they got wrong, without needing you to apologize first. Fake repair is a general 'sorry things got heated' that leaves your original point unaddressed and the roles still reversed.",
-    "boundary_respect_check": "Say 'I want to finish talking about my concern before we move to yours.' Someone who respects that will wait, or schedule a time for theirs. If the reversal simply resumes at a higher volume, the boundary was not taken seriously.",
-    "psychological_mechanism": "Being told you are the wrongdoer, right after raising your own hurt, can set off self-doubt and a strong urge to clear your name. Attention moves from their action to your defense. Research on the pattern, including early work by Freyd, suggests it can leave the person confused about who was harmed. This is a possible mechanism, not a claim about anyone's intent.",
-    "possible_impact_on_receiver": "People describe leaving a confrontation feeling guilty and confused, unsure whether they had the right to complain, and sometimes apologizing for the thing they came to raise. Some stop reporting problems altogether. Effects vary with how often it happens and who else is around to confirm what was said.",
+    "repair_check": "Repair here would mean going back to the first complaint and answering it, including the part they dispute, before any counter-claim gets a turn. Warning signs are a general 'sorry things got heated' that never touches the original point, or an apology that arrives only after you have apologized.",
+    "boundary_respect_check": "Watch what happens to your original concern after you ask to finish it first. Does it get a reply, a date to continue, or a promise to return to it? Or does the conversation snap back to your character within a minute or two?",
+    "psychological_mechanism": "Psychologist Jennifer Freyd named DARVO in the 1990s, and later research by Harsey, Zurbriggen and Freyd (2017) linked exposure to it with people blaming themselves more. Being cast as the wrongdoer right after speaking up can pull attention onto clearing your own name, and the first complaint tends to slide out of view.",
+    "possible_impact_on_receiver": "People describe leaving a confrontation feeling guilty and confused, sometimes apologizing for the very thing they came to raise. Some go quiet about later problems, because the last time cost too much. Others replay the conversation for days trying to find where it turned.",
     "response_options": {
       "soft_clarification": "Name the order of events calmly: 'I came to talk about the missed payment, and now we are talking about me. Can we finish the first subject?'",
       "firm_boundary": "Refuse to defend yourself against the counter-charge until the first matter is answered: 'I will listen to your concern next, but I need an answer on mine first.'",
@@ -93,7 +93,7 @@
       "Anyone who is angry at being accused can sound like this for a minute. Naming DARVO after one defensive reply shuts down a conversation that might have recovered.",
       "People who really have caused harm sometimes say 'that is DARVO' about any pushback they receive. The word does not settle who is right."
     ],
-    "how_to_distinguish_from_related": "Blame-Shifting puts the cause of their action on you but does not necessarily claim to be the injured one. Whataboutism answers with a different past complaint and does not deny or attack. Denial just refuses the facts. DARVO is the one that finishes by casting the accuser as the wrongdoer and the accused as the victim."
+    "how_to_distinguish_from_related": "Blame-Shifting puts the cause of the act on you but does not necessarily claim to be injured. Whataboutism answers with a different past complaint and does not deny or attack. Denial only refuses the facts. DARVO ends by casting the accuser as the wrongdoer and the accused as the victim."
   },
   "Blame-Shifting": {
     "short_definition": "Placing the cause of your own action on the other person, so that your choice is described as something they did to you.",
@@ -170,10 +170,10 @@
       "You notice you are apologizing for events that happened before you arrived.",
       "Friends comment that you seem to walk on eggshells around them."
     ],
-    "repair_check": "Real repair sounds like 'That was my decision, and I am sorry', followed by changed behavior the next time the same trigger appears. Fake repair keeps the word 'but': an apology with a reminder of what you did that led up to it.",
-    "boundary_respect_check": "Say 'Your reaction was your choice, and I won't take the blame for it.' If they pause and engage, the boundary is landing. If you are then told you are being cold or unfair, the blame has just moved to a new place.",
-    "psychological_mechanism": "People are quick to accept responsibility, particularly when they care about the other person or have been told they are difficult. Repeated, confident blame can recruit that willingness, so the receiver starts checking their own conduct instead of the event. This describes a possible mechanism, not a claim about what anyone means by it.",
-    "possible_impact_on_receiver": "People describe constantly monitoring what they say, taking on guilt for things they did not do, and losing track of where their own responsibility starts and ends. Some become quieter or more anxious around the person. Effects differ with the stakes and how often it occurs.",
+    "repair_check": "Repair would sound like 'that was my decision' with no 'but' attached, and it would show the next time the same trigger appears: the shout, the lie or the slammed door does not happen, and you are not asked to prevent it. A list of what you did to cause it is the opposite.",
+    "boundary_respect_check": "After you say the reaction was theirs to choose, notice whether they pause and engage with that, or whether a new charge arrives, such as being cold, unfair or unwilling to take any responsibility yourself. The blame may have only moved to a new place.",
+    "psychological_mechanism": "Many people accept responsibility quickly, especially for someone they care about or after being told they are difficult. Repeated, confident blame can draw on that readiness, so the receiver starts auditing their own conduct before the event itself, and the other person's choice drops out of the picture.",
+    "possible_impact_on_receiver": "People describe constantly monitoring what they say, apologizing for outbursts they did not cause, and losing track of where their own responsibility starts and ends. Some grow quieter or more anxious around the person, and some begin hiding things to avoid setting off a reaction.",
     "response_options": {
       "soft_clarification": "Separate the trigger from the choice: 'I can see that I upset you, and you were still the one who decided to throw the plate.'",
       "firm_boundary": "State where your responsibility ends: 'I will own what I said. I will not own what you did in response.'",
@@ -188,7 +188,7 @@
       "People are sometimes accused of blame-shifting for mentioning any context at all. Explaining what led up to something is fair. The concern is explanations that leave no room for the speaker's own choice.",
       "Using the label to avoid hearing a legitimate point about your own contribution turns it into a way of dodging."
     ],
-    "how_to_distinguish_from_related": "DARVO adds a denial and an attack, then makes the speaker the victim; blame-shifting can happen with a calm admission of the act, as long as the cause is placed on you. Whataboutism points at a separate, past wrong of yours. Denial refuses that the act happened. Blame-Shifting accepts the act and relocates its cause."
+    "how_to_distinguish_from_related": "DARVO adds a denial and an attack, then makes the speaker the victim. Blame-Shifting can come with a calm admission of the act, so long as its cause is placed on you. Whataboutism points to a separate wrong of yours instead. Denial refuses that the act happened at all."
   },
   "Whataboutism": {
     "short_definition": "Answering a complaint by raising a different wrong from the other side, so that the original issue goes unanswered.",
@@ -264,10 +264,10 @@
       "Issues you raised a year ago are still open, along with theirs.",
       "You start tracking your own past mistakes so you can defend them quickly."
     ],
-    "repair_check": "Real repair is a return to the original complaint, with an answer, and then a separate time set for their concern. Fake repair is a mutual 'we both have faults' that closes the topic and leaves your first point as unanswered as before.",
-    "boundary_respect_check": "Say 'I will listen to that next, but I want an answer on mine first.' If they pause and respond, the request was heard. If they repeat the counter-point, it suggests the order of the conversation is not up for negotiation.",
-    "psychological_mechanism": "A counter-complaint hits a fairness instinct: if you have also made mistakes, it can seem unfair to press your own point. That discomfort can pull attention from the first complaint and make it feel cancelled. The effect tends to be strongest when the counter-point is true. This describes a possible mechanism, not a claim about anyone's intent.",
-    "possible_impact_on_receiver": "People describe feeling that raising anything is pointless because it will be matched with something else, and letting small issues grow. Some start to feel they owe a debt of past wrongs. Effects vary with how often it happens and whether any complaint ever gets resolved.",
+    "repair_check": "Repair would be a return to your complaint with an actual answer, then a separate time set aside for theirs. A mutual 'we both have faults' that closes the topic leaves your first point exactly as unanswered as before, and may be followed by the same swap next time.",
+    "boundary_respect_check": "Try asking for one subject at a time and see what follows. Do they answer the first point, then hold their own for later? Or does the same counter-point come back, louder, as if the order of the conversation were not up for discussion?",
+    "psychological_mechanism": "A counter-complaint appeals to a fairness instinct: if you have made mistakes too, pressing your own point can feel unfair. That discomfort can pull attention away from the first complaint, and it tends to work best when the counter-point is true.",
+    "possible_impact_on_receiver": "People describe feeling that raising anything is pointless because it will be matched with something else. Small issues pile up unspoken. Some begin to feel they owe a running debt of past wrongs, and keep a quick defense of old events ready.",
     "response_options": {
       "soft_clarification": "Acknowledge the new point and keep the order: 'That sounds like it matters. Can we deal with the dishes first, and then set time for the birthday?'",
       "firm_boundary": "Say you will not trade grievances: 'I am willing to talk about your concern. I am not willing to treat it as the answer to mine.'",
@@ -282,7 +282,7 @@
       "Calling every counter-point whataboutism can silence a person who truly has a fair, related grievance. The test is whether your complaint gets answered at all.",
       "In public debates the word is sometimes used to wave away a relevant comparison. A fair comparison deserves a real reply."
     ],
-    "how_to_distinguish_from_related": "DARVO denies the act, attacks you, and casts the speaker as the victim, while whataboutism simply sets a different wrong beside yours. Blame-Shifting says your behavior caused the act at issue; whataboutism leaves the act alone and talks about another. Denial says nothing happened, which whataboutism does not claim."
+    "how_to_distinguish_from_related": "DARVO denies the act, attacks you and casts the speaker as the victim. Whataboutism simply sets a different wrong beside yours. Blame-Shifting says your behavior caused the act at issue, while whataboutism leaves that act alone and talks about another. Denial claims nothing happened, which whataboutism does not."
   },
   "Non-Apology Apology": {
     "short_definition": "A statement that sounds like an apology but regrets your reaction or feelings, not the thing that was actually done.",
@@ -359,10 +359,10 @@
       "You find yourself saying 'it's okay' without feeling that it is.",
       "Old hurts stay open because nothing was ever acknowledged enough to close them."
     ],
-    "repair_check": "A real apology names the act, accepts it was theirs, says what will be different, and does not ask you for anything in return. A fake one asks you to feel better, says what you did to cause it, or is repeated without any change in what happens next.",
-    "boundary_respect_check": "Say 'I would like you to say what you did, not how I feel about it.' If they try again and name it, the boundary was heard. If you are told you are impossible to please, the request is being treated as a fault in you.",
-    "psychological_mechanism": "The word 'sorry' carries social weight, and people are inclined to forgive after hearing it. A statement that has the shape of an apology without the content can meet that expectation, so declining it feels rude. The attention then moves to your response. This describes a possible mechanism, not a claim about anyone's intent.",
-    "possible_impact_on_receiver": "People describe feeling dismissed even after an apology, unsure whether they have a right to remain upset, and sometimes accepting it to end the tension. Over time some stop expecting acknowledgment. Effects vary with how big the original hurt was and whether the same thing recurs.",
+    "repair_check": "Repair would include the action named in plain words, an acknowledgment that it was theirs, and something that changes afterwards, with nothing asked of you in return. An apology that asks you to feel better, mentions what you did, or repeats unchanged soon after does not close anything.",
+    "boundary_respect_check": "What do they do when you ask for the action to be named? A second attempt that says what happened suggests it was heard. Being told you are impossible to please turns the request into a fault in you.",
+    "psychological_mechanism": "The word 'sorry' carries social weight, and people tend to forgive on hearing it. A sentence with the shape of an apology but not its content can draw on that habit, so declining it feels rude, and attention shifts from what was done to how you respond.",
+    "possible_impact_on_receiver": "People describe feeling dismissed even after being told sorry, unsure whether they may stay upset, and sometimes accepting the apology just to end the tension. Over time some stop expecting acknowledgment at all, and old hurts stay open because nothing closed them.",
     "response_options": {
       "soft_clarification": "Ask for the missing piece: 'Thank you for saying sorry. Could you tell me what you are sorry for? I would like to hear the action named.'",
       "firm_boundary": "Say plainly that it does not count yet: 'I appreciate the attempt, but that apology is about my feelings. I need one about what happened.'",
@@ -377,7 +377,7 @@
       "Marking every imperfect apology as a non-apology can punish people who are trying and failing at a hard skill. Check whether they name the act and change course.",
       "Demanding exact words from someone, then rejecting each attempt, turns the label into a test no one can pass."
     ],
-    "how_to_distinguish_from_related": "Blame-Shifting says your behavior caused theirs; the non-apology apology may not blame you at all, it only regrets your feelings. DARVO denies, attacks and reverses roles. Denial refuses any wrongdoing, whereas this tactic appears to concede, then empties the concession. If there is a 'sorry' in the sentence, it is the likelier fit."
+    "how_to_distinguish_from_related": "Blame-Shifting says your behavior caused theirs, while this tactic need not blame you at all: it regrets your feelings. DARVO denies, attacks and reverses roles. Denial refuses any wrongdoing, whereas here something like a concession is offered and then emptied of the one thing it should contain, the act."
   },
   "Denial": {
     "short_definition": "Refusing to accept that any wrongdoing took place, whatever the evidence or how the concern is raised.",
@@ -454,10 +454,10 @@
       "The same issues come back unchanged because nothing was ever acknowledged.",
       "You hold records of events not for any plan but to remind yourself it really happened."
     ],
-    "repair_check": "Real repair starts with an admission of at least part of what happened, even if it is small, followed by a changed action. A fake repair is a denial renamed: 'let's move on' or 'let's agree to disagree' used to close a subject that was never opened.",
-    "boundary_respect_check": "Say 'I am not asking you to agree with all of it, only to look at this one message.' If they look, the boundary is respected even if they disagree. If they refuse to look, the subject is closed to you.",
-    "psychological_mechanism": "Admitting a mistake threatens a person's image of themselves, and a flat denial protects that image at no cost in the moment. For the receiver, repeated confident denial can wear down trust in their own account, particularly without a witness. This describes a possible mechanism, not a claim about what any particular person intends.",
-    "possible_impact_on_receiver": "People describe frustration at being unable to settle anything, doubt about whether their account is accurate, and a gradual habit of keeping hurts to themselves. Some feel anger, others a flat tiredness. Effects vary with how important the matter is and whether anyone else can confirm what happened.",
+    "repair_check": "Repair starts with an admission of at least part of what happened, even a small part, followed by a changed action. 'Let's move on' or 'agree to disagree' offered before anything was acknowledged is the denial under a new name, and the subject stays shut.",
+    "boundary_respect_check": "Ask them to look at one specific message or record, not to agree with everything. Whether they look, even if they disagree afterwards, is informative. A refusal to look at all tells you the subject is closed to you.",
+    "psychological_mechanism": "Admitting a mistake can threaten a person's picture of themselves, and a flat denial protects that picture at no cost in the moment. For the receiver, repeated confident denial with no witness tends to wear on trust in their own account.",
+    "possible_impact_on_receiver": "People describe frustration at being unable to settle anything, doubt about whether their own account is accurate, and a slow habit of keeping hurts to themselves. Some feel anger, others a flat tiredness, and some keep records only to remind themselves it happened.",
     "response_options": {
       "soft_clarification": "Narrow it to one checkable point: 'I do not need you to agree with everything. Could we just look at what the message said on Tuesday?'",
       "firm_boundary": "Stop arguing the whole case: 'I know what I saw, and I am not asking for your permission to remember it. I would like us to talk about what happens next.'",
@@ -472,7 +472,7 @@
       "People are sometimes labeled as being in denial because they disagree with an accusation. A person can truthfully say they did not do something, and the label should not be used to override that.",
       "Using 'you are in denial' as an argument, with no evidence, shuts down the other person's account in the same way the label describes."
     ],
-    "how_to_distinguish_from_related": "Minimization admits something happened but says it was small. Blame-Shifting admits the act and moves its cause onto you. DARVO starts with a denial but continues with an attack and a role reversal. Plain Denial stops at 'no': there is no counterattack, no excuse and no reduction, only a closed door."
+    "how_to_distinguish_from_related": "Minimization admits something happened but says it was small. Blame-Shifting admits the act and moves its cause onto you. DARVO starts with a denial but goes on to an attack and a role reversal. Plain Denial stops at 'no': there is no counterattack, no excuse and no reduction."
   },
   "Minimization": {
     "short_definition": "Shrinking how serious something was so that your reaction looks too big for what actually happened.",
@@ -551,10 +551,10 @@
       "You hear yourself using their words about your own feelings.",
       "Friends say you seem to excuse things you used to find unacceptable."
     ],
-    "repair_check": "Real repair means they take the effect seriously even if they still think it was small: 'I did not see it that way, and I can see it hurt you.' Fake repair is a short 'fine, I am sorry you are upset', which keeps the original rating intact.",
-    "boundary_respect_check": "Say 'Please do not tell me how big this should be for me.' If they stop and listen, the line was respected. If you hear 'See, you are overreacting right now', the comment has been turned into more of the same.",
-    "psychological_mechanism": "People calibrate their sense of what is serious partly from the reactions of those around them. Repeated reassurance that something is nothing can lead a person to check their own feelings against the other person's rating. The concern can then feel like an error. This describes a possible mechanism, not a claim about any person's intent.",
-    "possible_impact_on_receiver": "People describe doubting their sense of proportion, feeling embarrassed for being upset, and gradually saying less about what bothers them. Some feel they are always the sensitive one. Effects vary with how big the downplayed events really were and how consistently this happens.",
+    "repair_check": "Repair would be them taking the effect seriously even if they still rate the event as small, something like 'I did not see it that way, and I can see it hurt you.' A grudging 'fine, sorry you are upset' keeps the original rating in place and the concern still shrunk.",
+    "boundary_respect_check": "Notice what follows when you say the size of this is yours to judge. Do they stop and listen, or do you hear 'see, you are overreacting right now'? The second answer turns your boundary into one more example of the thing you were describing.",
+    "psychological_mechanism": "People calibrate their sense of what counts as serious partly from the reactions around them. Repeated reassurance that something is nothing can lead a person to check their feelings against the other person's rating, so the concern starts to feel like an error in themselves.",
+    "possible_impact_on_receiver": "People describe doubting their sense of proportion, feeling embarrassed about being upset, and gradually saying less about what bothers them. Some start to see themselves as the sensitive one, and may stop mentioning things that were truly serious.",
     "response_options": {
       "soft_clarification": "Give them a reason to adjust their rating: 'It may seem small to you. Here is why it was big for me.' Then see whether they listen.",
       "firm_boundary": "Take the sizing out of their hands: 'You are welcome to a different opinion, but I decide how big this is for me.'",
@@ -569,7 +569,7 @@
       "A friend who honestly thinks you are worrying too much can sound like this. Labeling every reassurance as minimization can push away people who are trying to help.",
       "Using the word to insist that your own rating of an event is the only correct one ends honest discussion of how serious it was."
     ],
-    "how_to_distinguish_from_related": "Denial says it did not happen. Minimization says it did, and was nothing. Tone Policing leaves the size alone and objects to how you said it. Blame-Shifting accepts the event and its size but puts the cause on you. If the live point is 'it was not that bad', you are closer to minimization than to those."
+    "how_to_distinguish_from_related": "Denial says it did not happen. Minimization says it did, and was nothing. Tone Policing leaves the size alone and objects to how you said it. Blame-Shifting accepts the event and its size but puts the cause on you. Minimization is the one that concedes the event and shrinks it."
   },
   "Tone Policing": {
     "short_definition": "Responding to how something was said and not what was said, so the complaint is never actually discussed.",
@@ -646,10 +646,10 @@
       "Complaints you raised months ago were never answered, only moved aside by a discussion of tone.",
       "You hear your own voice getting smaller in groups where you used to speak freely."
     ],
-    "repair_check": "Real repair means they come back to the content you raised and give it an answer, even after a break. Fake repair is a conditional 'I'll listen once you are nicer', or an apology for the argument while the complaint remains untouched.",
-    "boundary_respect_check": "Say 'I'll lower my voice, and I need you to answer the point once I do.' If they respond to the point, the deal holds. If a new objection to the tone appears, the standard is moving and the condition was never about volume.",
-    "psychological_mechanism": "Most people want to be seen as reasonable, so a comment about tone can lead them to focus on controlling their delivery instead of pressing the point. The concern gets less attention while self-monitoring takes more. This is a possible mechanism, not a claim about what any specific person intends by it.",
-    "possible_impact_on_receiver": "People describe holding back anger until it is hard to express clearly, rewriting messages repeatedly, and feeling their emotions are being used against them. Some stop raising issues. Others escalate in frustration, which then seems to confirm the criticism. Effects vary with context.",
+    "repair_check": "Repair would be a return to the content, after a break if needed, with a real answer to what you asked. A conditional 'I will listen once you are nicer', or an apology for the argument while the complaint sits untouched, leaves the actual subject where it was.",
+    "boundary_respect_check": "Compare two moments: how they responded when you were loud, and how they responded when you were quiet and clear. If the answer to the point arrives only in the second case, tone may have been the real issue. If a new objection to tone appears, the standard is moving.",
+    "psychological_mechanism": "Most people want to be seen as reasonable, so a remark about tone can lead them to focus on controlling delivery instead of pressing the point. Self-monitoring then takes more of their attention, and the concern gets less.",
+    "possible_impact_on_receiver": "People describe holding back anger until it is hard to express clearly, rewriting messages again and again, and feeling their emotions are used against them. Some stop raising issues. Others escalate in frustration, which then seems to confirm the criticism.",
     "response_options": {
       "soft_clarification": "Agree to a calmer delivery and ask for the matching step: 'I can talk more quietly. Will you then tell me what you think about the deadline?'",
       "firm_boundary": "Separate the two issues: 'If my tone was a problem, I will fix it. That does not answer what I asked.'",
@@ -664,6 +664,6 @@
       "A request to calm down is often fair, particularly when voices are raised or insults are used. Labeling it tone policing can excuse behavior that really was hurtful.",
       "The label can also be used to avoid hearing legitimate feedback on how a message landed, so check whether the substance still gets heard."
     ],
-    "how_to_distinguish_from_related": "Minimization attacks the size of the problem; tone policing attacks the manner in which it was raised. DARVO denies and then casts you as the aggressor, while tone policing stays on style and may not deny anything. Denial refuses the facts. Tone Policing never reaches the facts at all, because delivery stays the topic."
+    "how_to_distinguish_from_related": "Minimization attacks the size of the problem, while tone policing attacks the manner in which it was raised. DARVO denies and then casts you as the aggressor, but tone policing stays on style and may deny nothing. Denial refuses the facts, whereas tone policing never reaches them."
   }
 }
