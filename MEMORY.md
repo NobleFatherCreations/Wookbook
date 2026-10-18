@@ -3131,3 +3131,12 @@ include near-duplicates ("Digital" / "Digital & AI", three institutional
 names); four names in use (Field Guide / Pattern Decoder / playbook /
 noblepatterns); changelog sits in every page's footer. Next planned step per
 the user: videos and a Canva template, fed from `content/decoder-clips.json`.
+## Update (2026-09-27) — faith book naming rule
+
+**The faith book is "The Sacred Divide"** (user instruction). Never "The
+Coercive Control Codex" or "Coercive Control Index" in memory, docs, or new
+content. Renamed here in BOOKS.md, sites.json, chapters.json,
+PROJECT-MASTER.md and content/prose/faith.md; older dated entries keep the
+old name as history. The full audit, the v4 candidate build, and the
+resolved live-vs-repo question for this book live in the Books repo
+(`MEMORY.md` 2026-09-27 entry, `docs/SACRED-DIVIDE-AUDIT-2026-09-27.md`).

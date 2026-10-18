@@ -1,4 +1,4 @@
-# The Coercive Control Codex
+# The Sacred Divide
 
 *Extracted from `source/projects/faith-index.html` — 301,305 words.*
 
