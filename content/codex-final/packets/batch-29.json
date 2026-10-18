@@ -1,0 +1,406 @@
+{
+ "batch": "batch-29",
+ "kind": "normal",
+ "category": "Idealization structural",
+ "entries": [
+  {
+   "name": "Strategic Self-Deprecation / Performed Humility",
+   "category": "Idealization structural",
+   "tier": "Watch-only",
+   "branch": "watch",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target arrives with a concern and leaves having provided reassurance. The thing they came to say never gets said, and they often feel unkind for having wanted to say it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern.",
+    "expanded_definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern. As a communication pattern, Strategic Self-Deprecation / Performed Humility-type behavior in the Idealization structural category tends to work by accelerating trust and attachment before it has been earned, so normal caution gets bypassed — describing a pattern in the exchange, not a fixed trait in the person. As a Watch-only entry, note: text alone cannot establish intent here, and this is never scored by the tool.",
+    "plain_language_summary": "In plain terms: performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern.",
+     "Recognizable by phrasing such as \"Self-deprecating comments that reliably appear right before or during moments the person might otherwise be criticized\"."
+    ],
+    "what_it_sounds_like": [
+     "Self-deprecating comments that reliably appear right before or during moments the person might otherwise be criticized.",
+     "The target frequently finds themselves comforting the person who was about to be held accountable.",
+     "Something that reads as performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern on its surface, but could equally be an honest mismatch in communication style."
+    ],
+    "what_it_is_not": [
+     "Genuine humility and self-deprecating humor are common, healthy, and extremely hard to distinguish from a strategic version in text — this stays watch-only because the same words mean very different things depending on timing and intent that a phrase-matcher cannot see."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine self-awareness and honest acknowledgment of real weaknesses are healthy and not automatically strategic."
+    ],
+    "common_false_positives": [
+     "Genuine, honest self-awareness about a real weakness, shared without any strategic timing relative to being criticized.",
+     "A person's authentic humility or self-critical tendency that shows up consistently, not just before potential critique.",
+     "Real vulnerability shared in a moment that happens to coincide with, but isn't calculated around, an opportunity for criticism."
+    ],
+    "discernment_questions": [
+     "Does the self-criticism appear specifically and reliably right before or during moments the person might otherwise be criticized?",
+     "Does the target find themselves reassuring the person instead of raising their own original concern?",
+     "Is the self-deprecation consistent across contexts, or does it appear selectively around accountability moments?",
+     "Would the underlying concern still get raised if the self-deprecating comment hadn't preempted it?"
+    ],
+    "less_concerning_if": [
+     "Self-criticism is consistent across contexts and doesn't specifically precede moments of accountability."
+    ],
+    "more_concerning_if": [
+     "Self-deprecation reliably appears right before criticism and redirects the target into reassurance instead."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Credential-Costuming",
+     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+    },
+    {
+     "name": "Identity Performances",
+     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+    },
+    {
+     "name": "Social Engineering",
+     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+    },
+    {
+     "name": "Performative Allyship / False Solidarity",
+     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Credential-Costuming",
+   "category": "Idealization structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target defers to standing that is not there, and the questions they would otherwise have asked start to feel out of place. Decisions then rest on the appearance of expertise rather than on anything that was tested.",
+    "what_it_is_not": "An unfamiliar credential is not a false one — plenty of genuine titles mean nothing outside their field, and modest people describe real experience in ways that happen to sound grand. A claim you cannot place is something to check, not a finding in itself."
+   },
+   "existing_specific_text": {
+    "short_definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist.",
+    "expanded_definition": "Presenting invented, exaggerated, or misappropriated credentials, titles, or expertise to manufacture unearned authority and trust — costuming oneself in the appearance of legitimacy to make claims, requests, or positions seem more credible than the person's actual qualifications would support.",
+    "plain_language_summary": "In plain terms: inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+    ],
+    "what_it_sounds_like": [
+     "Credentials, titles, or affiliations that don't hold up when independently checked against the issuing institution or organization.",
+     "Expertise claimed in a specific area that, when tested with basic follow-up questions, reveals a surprisingly thin or inconsistent understanding.",
+     "A title or credential used prominently and repeatedly to preempt questioning, rather than substantive expertise doing that work."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine credentials can be unfamiliar to an evaluator without being fake.",
+     "Honest, modest claims about real experience aren't the same as invented credentials."
+    ],
+    "common_false_positives": [
+     "A genuine credential that's simply unfamiliar to the person evaluating it, verifiable with a bit of research.",
+     "Modest, honest self-description of real experience that isn't inflated, even if it sounds impressive.",
+     "A legitimate title from an early-career stage or a field with different norms around credentialing than the evaluator expects."
+    ],
+    "discernment_questions": [
+     "Does the credential or title verify independently against the issuing body or organization?",
+     "Does the person's actual demonstrated knowledge match the level implied by the claimed credential?",
+     "Is the credential invoked mainly to preempt scrutiny, rather than substantive expertise speaking for itself?",
+     "Would a basic, good-faith verification check resolve the question either way?"
+    ],
+    "less_concerning_if": [
+     "The credential verifies independently and the person's actual knowledge matches what it implies."
+    ],
+    "more_concerning_if": [
+     "The credential doesn't verify, or actual demonstrated knowledge falls notably short of what's claimed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Self-Deprecation / Performed Humility",
+     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+    },
+    {
+     "name": "Identity Performances",
+     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+    },
+    {
+     "name": "Social Engineering",
+     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+    },
+    {
+     "name": "Performative Allyship / False Solidarity",
+     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Identity Performances",
+   "category": "Idealization structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Trust is extended to a version of someone that does not exist, so the target's read on the relationship rests on facts that were supplied to them rather than observed.",
+    "what_it_is_not": "Everyone presents differently in different rooms, and someone rebuilding or still working out who they are is changing rather than fabricating. The question is whether specific claims hold up under a reasonable follow-up, not whether the person seems unlike themselves at work."
+   },
+   "existing_specific_text": {
+    "short_definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support.",
+    "expanded_definition": "Presenting a curated, strategically constructed persona — rather than an authentic self — specifically to gain trust, sympathy, or advantage in a particular context, with the performance calibrated to what a specific audience wants to see rather than reflecting who the person actually is.",
+    "plain_language_summary": "In plain terms: curating a false persona to build trust, credibility, or access that reality wouldn't support.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+    ],
+    "what_it_sounds_like": [
+     "A persona that shifts noticeably depending on the audience, in ways that go beyond normal context-appropriate behavior into apparent fabrication.",
+     "Claimed experiences or identity markers that don't hold up to specific, reasonable follow-up questions.",
+     "The performed identity closely tracks what would be most sympathetic or advantageous in a specific situation, in a way that seems too convenient to be coincidental."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Everyone adjusts their self-presentation somewhat across different contexts without that being fabrication.",
+     "Legitimate privacy about certain details, without inventing false ones, is different from a constructed performance."
+    ],
+    "common_false_positives": [
+     "Normal, healthy code-switching or context-appropriate self-presentation that everyone does to some degree, without fabricating anything.",
+     "Genuine personal growth or identity exploration that's authentically evolving, not strategically performed for an audience.",
+     "A private, legitimate reason for withholding certain personal details in a specific context, without inventing false ones."
+    ],
+    "discernment_questions": [
+     "Does the presented identity hold up to reasonable, specific follow-up questions, or does it become inconsistent?",
+     "Does the persona shift in ways that closely track what's most advantageous in each specific context?",
+     "Is there a plausible, ordinary explanation for any variation?",
+     "Would independent verification of specific claimed details confirm or contradict the presented identity?"
+    ],
+    "less_concerning_if": [
+     "The presented identity holds up consistently and any variation reflects ordinary, healthy context-appropriate presentation."
+    ],
+    "more_concerning_if": [
+     "The identity shifts to closely track what's advantageous in each context and doesn't hold up to specific verification."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Self-Deprecation / Performed Humility",
+     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+    },
+    {
+     "name": "Credential-Costuming",
+     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+    },
+    {
+     "name": "Social Engineering",
+     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+    },
+    {
+     "name": "Performative Allyship / False Solidarity",
+     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Social Engineering",
+   "category": "Idealization structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "What gets used is the target's ordinary decency — helpfulness, deference to apparent authority, reluctance to make a fuss — so the loss afterwards feels like a personal failing rather than something done to them.",
+    "what_it_is_not": "Genuinely urgent legitimate requests exist, and real IT or security staff follow processes that most people have never met before. Checking back through a channel you already trust costs an honest request nothing, which is why it is the cheap test here rather than suspicion of the person.",
+    "note": "This entry sits closer to fraud than to relational manipulation, so the disconfirming case is framed around verification rather than around pattern-over-instance."
+   },
+   "existing_specific_text": {
+    "short_definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses.",
+    "expanded_definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses. As a communication pattern, Social Engineering-type behavior in the Idealization structural category tends to work by accelerating trust and attachment before it has been earned, so normal caution gets bypassed — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
+    "plain_language_summary": "In plain terms: extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+    ],
+    "what_it_sounds_like": [
+     "An unexpected request for sensitive information, access, or urgent action, from someone claiming an authority or relationship that creates pressure to comply quickly.",
+     "A pretext used to bypass normal verification before a request is made.",
+     "Contact through an unfamiliar or newly-created channel, impersonating someone or something familiar, asking for something that skips a normal, expected process."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, legitimate requests can also be urgent — the distinguishing step is always independent verification, not judging urgency alone."
+    ],
+    "common_false_positives": [
+     "A genuine, legitimate request that happens to be urgent for real reasons, verifiable through an independent channel.",
+     "Real IT or security personnel following an actual, disclosed process that a person simply isn't familiar with yet.",
+     "A person who is disorganized or informal in their communication style, without any deceptive pretext involved."
+    ],
+    "discernment_questions": [
+     "Can the request be verified through an independent channel rather than trusting the contact method it arrived through?",
+     "Does the request rely on urgency or authority to bypass normal verification steps?",
+     "Is the channel or method of contact consistent with how this person or organization normally communicates?",
+     "Would slowing down and verifying independently change how reasonable the request seems?"
+    ],
+    "less_concerning_if": [
+     "The request is verifiable through an independent channel and doesn't rely on bypassing normal verification."
+    ],
+    "more_concerning_if": [
+     "The request uses urgency or claimed authority specifically to discourage independent verification before compliance."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Self-Deprecation / Performed Humility",
+     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+    },
+    {
+     "name": "Credential-Costuming",
+     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+    },
+    {
+     "name": "Identity Performances",
+     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+    },
+    {
+     "name": "Performative Allyship / False Solidarity",
+     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Performative Allyship / False Solidarity",
+   "category": "Idealization structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Trust is given on the strength of stated values, and the gap only becomes visible at the moment support would have cost something — which is usually the moment the target most needed it.",
+    "what_it_is_not": "Many people are further along in their stated values than in their practice and are genuinely, if unevenly, catching up. Quiet support that is never announced anywhere is the reverse of this pattern, not a mild version of it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism.",
+    "expanded_definition": "Publicly expressing support for a cause or group specifically for the social credit, reputation benefit, or cover it provides, without any accompanying substantive action, personal cost, or change in behavior — the solidarity is performed for an audience rather than practiced when it isn't being watched.",
+    "plain_language_summary": "In plain terms: publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+    ],
+    "what_it_sounds_like": [
+     "Vocal, public support for a cause that isn't matched by any private behavior, decisions, or sacrifice consistent with that stated support.",
+     "Support that intensifies specifically when visibility is high and quietly disappears once attention moves on.",
+     "The stated support is used to deflect specific criticism rather than substantiated by any concrete action."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People early in learning about an issue can have genuine, if still-developing, alignment between their stated values and their actions.",
+     "Support that's genuinely private, rather than performed, is the opposite of this pattern."
+    ],
+    "common_false_positives": [
+     "Genuine, private support that simply isn't performed publicly, which is the opposite pattern and not this tactic at all.",
+     "A person taking real, if imperfect or still-developing, action alongside public statements, rather than public statements alone.",
+     "Honest, good-faith public support from someone early in learning about an issue, whose actions are still catching up to their stated values."
+    ],
+    "discernment_questions": [
+     "Is the public support matched by any private action, cost, or behavior change, or does it exist only publicly?",
+     "Does support track visibility and attention, intensifying and fading with what's currently prominent?",
+     "Is the stated support used specifically to deflect scrutiny of unrelated, contradicting behavior?",
+     "Would this person's actual private choices look consistent with their public statements if no one were watching?"
+    ],
+    "less_concerning_if": [
+     "Public statements are accompanied by real, even if still-developing, private action and behavior consistent with them."
+    ],
+    "more_concerning_if": [
+     "Support exists only publicly, tracks visibility rather than genuine conviction, and is used to deflect scrutiny of contradicting behavior."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Self-Deprecation / Performed Humility",
+     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+    },
+    {
+     "name": "Credential-Costuming",
+     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+    },
+    {
+     "name": "Identity Performances",
+     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+    },
+    {
+     "name": "Social Engineering",
+     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

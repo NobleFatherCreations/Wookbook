@@ -1,0 +1,364 @@
+{
+ "batch": "batch-22",
+ "kind": "normal",
+ "category": "Digital",
+ "entries": [
+  {
+   "name": "Stalking-by-Notification",
+   "category": "Digital",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Auditing the target's online activity as evidence against them.",
+    "expanded_definition": "Auditing the target's online activity as evidence against them. Every green dot becomes prosecutable; the target curates their existence. As a communication pattern, Stalking-by-Notification-type behavior in the Digital category tends to work through monitoring or platform behavior that most people never see happening in real time — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: auditing the target's online activity as evidence against them.",
+    "why_this_matters": "Every green dot becomes prosecutable; the target curates their existence. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Auditing the target's online activity as evidence against them.",
+     "Every green dot becomes prosecutable; the target curates their existence.",
+     "Contrasts with a healthier version: \"I felt low when I saw you online and hadn't heard back — irrational maybe, but real.\".",
+     "Recognizable by phrasing such as \"I saw you were online at 2am\"."
+    ],
+    "what_it_sounds_like": [
+     "I saw you were online at 2am.",
+     "You posted a story but couldn't answer me?",
+     "I saw you're online and didn't reply.",
+     "You posted a story but can't text me."
+    ],
+    "what_it_is_not": [
+     "A single hurt observation about being ignored is a feeling report, not surveillance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Occasional, honest feelings about noticing someone online are a normal human reaction, not evidence of surveillance."
+    ],
+    "common_false_positives": [
+     "A single, honest expression of hurt at noticing someone was online without responding, acknowledged as possibly irrational but genuine.",
+     "Normal awareness of a partner's general online presence in a healthy relationship, without treating each instance as evidence in an ongoing case.",
+     "A person processing real anxiety about a relationship, expressed once, without a sustained pattern of auditing online activity as evidence."
+    ],
+    "discernment_questions": [
+     "Is online activity treated as neutral information, or actively compiled as evidence toward an accusation?",
+     "Does the target feel they need to curate or hide their online presence because of how it might be interpreted?",
+     "Is this a one-time expression of hurt, or a sustained pattern of monitoring and confrontation?",
+     "Would a reasonable accounting of online activity actually support the conclusions being drawn from it?"
+    ],
+    "less_concerning_if": [
+     "A single, honest expression of hurt is acknowledged as possibly irrational, without becoming a sustained pattern of monitoring."
+    ],
+    "more_concerning_if": [
+     "Online activity is actively compiled and treated as evidence, and the target feels pressure to curate their presence."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through monitoring or platform behavior that most people never see happening in real time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ghosting-Orbiting Cycle",
+     "definition": "Disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance."
+    },
+    {
+     "name": "Deepfakes",
+     "definition": "Synthetic images, video, or audio fabricated to depict you doing or saying things you never did."
+    },
+    {
+     "name": "AI Voice Cloning",
+     "definition": "Synthetic replication of a real person's voice used for impersonation, fraud, or fabricated 'evidence'."
+    },
+    {
+     "name": "Doxxing",
+     "definition": "Publishing someone's private information (address, workplace, family) to enable harassment by strangers."
+    },
+    {
+     "name": "Sock Puppets",
+     "definition": "Fake accounts operated by one person to simulate independent voices — agreement, witnesses, or a mob that doesn't exist."
+    },
+    {
+     "name": "Coordinated Reporting",
+     "definition": "Weaponizing platform report systems — organizing mass false reports to silence or ban a target."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Ghosting-Orbiting Cycle",
+   "category": "Digital",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target is neither in contact nor free of it. Attention keeps arriving with no reply attached, which keeps hope alive at precisely the point it was starting to fade."
+   },
+   "existing_specific_text": {
+    "short_definition": "Disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance.",
+    "expanded_definition": "Disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance. As a communication pattern, Ghosting-Orbiting Cycle-type behavior in the Digital category tends to work through monitoring or platform behavior that most people never see happening in real time — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance.",
+     "Recognizable by phrasing such as \"No replies for weeks, but every story viewed within minutes\"."
+    ],
+    "what_it_sounds_like": [
+     "No replies for weeks, but every story viewed within minutes.",
+     "Reappearing with a small reaction whenever the target seems to be moving on.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'disappearing from direct contact while continuing to watch a'. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "Passive scrolling by someone who simply drifted away isn't a campaign — the flag is the timing correlation with the target's recovery."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People sometimes remain passively connected on social media without any strategic intent, simply out of habit or incomplete disengagement."
+    ],
+    "common_false_positives": [
+     "Someone who's genuinely busy or going through something, whose passive social media activity isn't intended to unsettle anyone.",
+     "Normal, low-stakes social media viewing that happens to coincide with a period of reduced direct contact, without any deliberate pattern.",
+     "A person who's stepped back from a relationship and hasn't gotten around to unfollowing or disengaging fully, without strategic intent."
+    ],
+    "discernment_questions": [
+     "Does direct communication stay absent while passive engagement continues consistently?",
+     "Does this rhythm repeat as a pattern, or was it a one-time coincidence?",
+     "Would the person's passive activity make sense if they'd genuinely moved on, or does it suggest continued monitoring?",
+     "Does the target find themselves altering their own online behavior because of this pattern?"
+    ],
+    "less_concerning_if": [
+     "Passive activity fades along with direct contact, consistent with someone genuinely disengaging."
+    ],
+    "more_concerning_if": [
+     "Direct contact stays absent while passive engagement continues consistently as a repeating pattern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through monitoring or platform behavior that most people never see happening in real time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Stalking-by-Notification",
+     "definition": "Auditing the target's online activity as evidence against them."
+    },
+    {
+     "name": "Deepfakes",
+     "definition": "Synthetic images, video, or audio fabricated to depict you doing or saying things you never did."
+    },
+    {
+     "name": "AI Voice Cloning",
+     "definition": "Synthetic replication of a real person's voice used for impersonation, fraud, or fabricated 'evidence'."
+    },
+    {
+     "name": "Doxxing",
+     "definition": "Publishing someone's private information (address, workplace, family) to enable harassment by strangers."
+    },
+    {
+     "name": "Sock Puppets",
+     "definition": "Fake accounts operated by one person to simulate independent voices — agreement, witnesses, or a mob that doesn't exist."
+    },
+    {
+     "name": "Coordinated Reporting",
+     "definition": "Weaponizing platform report systems — organizing mass false reports to silence or ban a target."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Brigading",
+   "category": "Digital",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Volume arriving at once removes any possibility of responding the way a single message could be answered, and the platform itself becomes unusable for as long as it lasts.",
+    "what_it_is_not": "Virality is not coordination: a post that spreads on its own draws unconnected people who arrived by different routes. What marks this pattern is convergence traceable to a single rallying post or thread — and several friends reacting to the same thing independently is not that."
+   },
+   "existing_specific_text": {
+    "short_definition": "A coordinated group descending on a single target's posts, account, or message to overwhelm them.",
+    "expanded_definition": "A coordinated group descending on a single target's posts, account, or message to overwhelm them. Unlike an organic pile-on of individually annoyed people, brigading typically involves some form of coordination — a shared post, group chat, or forum thread that rallies people to converge on the same target at once, often within a short window. The overwhelming volume itself is often the point: it's hard to respond to fifty messages the way you could respond to one.",
+    "plain_language_summary": "In plain terms: a coordinated group descending on a single target's posts, account, or message to overwhelm them.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "A coordinated group descending on a single target's posts, account, or message to overwhelm them.",
+     "Associated, when sustained, with effects such as a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible."
+    ],
+    "what_it_sounds_like": [
+     "A target's mentions or comments fill with dozens of similar hostile replies within minutes of a specific post being shared elsewhere (\"go look at this,\" \"report this account\").",
+     "A post from days or weeks earlier suddenly resurfaces with a wave of new replies, all referencing the same external thread or screenshot.",
+     "Comments that echo near-identical phrasing, suggesting they originated from a shared script rather than independent reactions."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine virality can look similar to coordination from the inside, especially to the person experiencing it. Public commentary on a public post isn't inherently coordinated just because it's critical."
+    ],
+    "common_false_positives": [
+     "A post that's genuinely gone viral on its own merits, drawing organic (if intense) reaction from unconnected people.",
+     "A public figure or public post receiving a large volume of ordinary, uncoordinated criticism after a genuinely controversial statement.",
+     "Several friends independently reacting to the same public post without any coordination between them."
+    ],
+    "discernment_questions": [
+     "Is there a visible source post or thread that appears to be directing people to the target?",
+     "Do responses cluster in a short time window rather than trickling in naturally?",
+     "Do many responses share unusually similar phrasing, as if working from the same script?",
+     "Would this volume of response be proportionate to an ordinary, non-coordinated reaction?"
+    ],
+    "less_concerning_if": [
+     "It's a single viral moment with organic, varied reactions that fades naturally."
+    ],
+    "more_concerning_if": [
+     "A specific account visibly organized or called for the pile-on, or it recurs against the same target repeatedly."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through monitoring or platform behavior that most people never see happening in real time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Stalking-by-Notification",
+     "definition": "Auditing the target's online activity as evidence against them."
+    },
+    {
+     "name": "Ghosting-Orbiting Cycle",
+     "definition": "Disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance."
+    },
+    {
+     "name": "Deepfakes",
+     "definition": "Synthetic images, video, or audio fabricated to depict you doing or saying things you never did."
+    },
+    {
+     "name": "AI Voice Cloning",
+     "definition": "Synthetic replication of a real person's voice used for impersonation, fraud, or fabricated 'evidence'."
+    },
+    {
+     "name": "Doxxing",
+     "definition": "Publishing someone's private information (address, workplace, family) to enable harassment by strangers."
+    },
+    {
+     "name": "Sock Puppets",
+     "definition": "Fake accounts operated by one person to simulate independent voices — agreement, witnesses, or a mob that doesn't exist."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Context Collapse Exploitation",
+   "category": "Digital",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The version that circulates is the stripped one, and restoring the context means reaching an audience that has already reacted.",
+    "what_it_is_not": "People misunderstand context themselves and pass things on innocently. Headlines and short excerpts truncate longer statements as a matter of format. Sharing something without checking where it came from is careless rather than exploitative."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deliberately stripping a statement or image of its original context so it appears to mean something different.",
+    "expanded_definition": "Deliberately stripping a statement or image of its original context so it appears to mean something different. This often takes the form of a screenshot circulated without the surrounding conversation, a quote pulled from mid-explanation, or an old post recirculated as if it reflects a current, unchanged view. The exploit relies on audiences not seeking out the original context before reacting.",
+    "plain_language_summary": "In plain terms: deliberately stripping a statement or image of its original context so it appears to mean something different.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Deliberately stripping a statement or image of its original context so it appears to mean something different.",
+     "Associated, when sustained, with effects such as a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible."
+    ],
+    "what_it_sounds_like": [
+     "A screenshot of one message circulates without the reply it was responding to, making a reasonable response look unprovoked.",
+     "An old post is recirculated years later as if it reflects current views, without noting when it was written.",
+     "A quote is cropped mid-sentence at the exact point that reverses or obscures its meaning."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Excerpting and summarizing are normal parts of sharing information and don't require malice. People often share what they personally found compelling without auditing the full source."
+    ],
+    "common_false_positives": [
+     "Someone genuinely misunderstanding the context themselves and sharing something without malicious intent.",
+     "Space or format constraints (a headline, a short excerpt) that naturally truncate a longer statement.",
+     "A person sharing something they found without independently verifying its original context — careless rather than exploitative."
+    ],
+    "discernment_questions": [
+     "Does the missing context, if included, meaningfully change the meaning of what's shown?",
+     "Is there a plausible non-strategic reason the context was left out (space, format, genuine ignorance)?",
+     "Did the sharer have easy access to the fuller context and choose not to include it?",
+     "Does the framing around the clip actively discourage viewers from seeking the original?"
+    ],
+    "less_concerning_if": [
+     "The sharer seems unaware of the missing context and corrects it when shown, or linked the full original."
+    ],
+    "more_concerning_if": [
+     "The missing context is repeatedly and specifically the part that would change the meaning, and corrections are ignored."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through monitoring or platform behavior that most people never see happening in real time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a low-grade, hard-to-name feeling of being watched or accountable for information one didn't know was visible in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Stalking-by-Notification",
+     "definition": "Auditing the target's online activity as evidence against them."
+    },
+    {
+     "name": "Ghosting-Orbiting Cycle",
+     "definition": "Disappearing from direct contact while continuing to watch and lightly touch the target's digital life (views, likes, reactions) — absence with surveillance."
+    },
+    {
+     "name": "Deepfakes",
+     "definition": "Synthetic images, video, or audio fabricated to depict you doing or saying things you never did."
+    },
+    {
+     "name": "AI Voice Cloning",
+     "definition": "Synthetic replication of a real person's voice used for impersonation, fraud, or fabricated 'evidence'."
+    },
+    {
+     "name": "Doxxing",
+     "definition": "Publishing someone's private information (address, workplace, family) to enable harassment by strangers."
+    },
+    {
+     "name": "Sock Puppets",
+     "definition": "Fake accounts operated by one person to simulate independent voices — agreement, witnesses, or a mob that doesn't exist."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

@@ -1,0 +1,629 @@
+{
+ "batch": "batch-14",
+ "kind": "normal",
+ "category": "Control & Domination",
+ "entries": [
+  {
+   "name": "Financial Enmeshment",
+   "category": "Control & Domination",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using money and assets as an instrument of control.",
+    "expanded_definition": "Using money and assets as an instrument of control. Financial control is one of the strongest practical barriers to leaving an unhealthy situation. As a communication pattern, Financial Enmeshment-type behavior in the Control & Domination category tends to work by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance — describing a pattern in the exchange, not a fixed trait in the person. This entry also covers what earlier lists called: Financial Dependence-by-Design — combined here as one entry since they describe the same underlying pattern.",
+    "plain_language_summary": "In plain terms: using money and assets as an instrument of control.",
+    "why_this_matters": "Financial control is one of the strongest practical barriers to leaving an unhealthy situation. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using money and assets as an instrument of control.",
+     "Financial control is one of the strongest practical barriers to leaving an unhealthy situation.",
+     "Contrasts with a healthier version: transparent shared budgeting both people can see and veto.",
+     "Recognizable by phrasing such as \"My money, my rules\".",
+     "Also covers the related, previously separate entries: Financial Dependence-by-Design."
+    ],
+    "what_it_sounds_like": [
+     "My money, my rules.",
+     "You'll get your allowance when you behave.",
+     "My house, my rules.",
+     "I'll cut you off your card.",
+     "Everything here is in my name.",
+     "You'll get your allowance when I say.",
+     "Ask me for permission before you spend."
+    ],
+    "what_it_is_not": [
+     "Households genuinely do have one earner and shared rules — the flag is money framed as leverage over behavior, not budgeting."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, long-term financial interdependence is normal in many committed relationships."
+    ],
+    "common_false_positives": [
+     "A genuine, transparent shared budget that both people can see and have real input into.",
+     "Real financial interdependence built through a mutual, long relationship, that isn't used as leverage in disagreements.",
+     "A household with intertwined finances by necessity, where both people retain meaningful, if imperfect, financial agency."
+    ],
+    "discernment_questions": [
+     "Can the target see and meaningfully weigh in on shared financial decisions, or is access one-sided?",
+     "Is intertwined finance used as leverage during disagreements, or does it stay separate from conflict?",
+     "Would the target retain some financial agency even in a disagreement?",
+     "Does \"my money, my rules\" reflect actual unilateral control, or shorthand within a genuinely mutual system?"
+    ],
+    "less_concerning_if": [
+     "Shared finances are transparent and both people retain meaningful input and agency."
+    ],
+    "more_concerning_if": [
+     "Financial intertwinement is unilaterally controlled and specifically invoked as leverage during disagreements."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Given the safety dimension of this category, a scripted line matters less than the surrounding plan: if and when it feels safe, a simple, low-detail line like \"I need some space and I'll reach out when I'm ready\" is enough — it does not require justification. See the Safety note below before deciding how, when, or whether to address this directly with the person involved.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": true,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Financial Control",
+   "category": "Control & Domination",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+    "expanded_definition": "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence. Financial control is one of the strongest practical barriers to leaving an unsafe or unhappy situation. As a communication pattern, Financial Control-type behavior in the Control & Domination category tends to work by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+    "why_this_matters": "Financial control is one of the strongest practical barriers to leaving an unsafe or unhappy situation. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+     "Financial control is one of the strongest practical barriers to leaving an unsafe or unhappy situation.",
+     "Contrasts with a healthier version: shared, transparent finances that both people can see and neither can unilaterally lock the other out of.",
+     "Recognizable by phrasing such as \"You don't need your own bank account\"."
+    ],
+    "what_it_sounds_like": [
+     "You don't need your own bank account.",
+     "I'll decide what you get to spend.",
+     "You don't need bank account.",
+     "I'll decide what you can spend.",
+     "You're not allowed to work."
+    ],
+    "what_it_is_not": [
+     "Genuinely agreed household budgeting with one person tracking the books isn't control by itself — the flag is unilateral restriction imposed as leverage, not shared agreement."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutually agreed divisions of financial labor, with full transparency, are healthy and common."
+    ],
+    "common_false_positives": [
+     "A genuine, mutual agreement about how shared finances are managed, that both people can see and access.",
+     "A temporary arrangement during a real financial hardship, openly discussed and not designed to be permanent or one-sided.",
+     "A person managing finances as an agreed division of labor, with full transparency and no restriction on the other's independent access."
+    ],
+    "discernment_questions": [
+     "Does the target have real, independent access to money and financial information, or is it controlled entirely by one person?",
+     "Is any restriction mutually agreed and transparent, or unilaterally imposed?",
+     "Would the target be able to leave the relationship financially if they needed to?",
+     "Does financial management stay transparent, or is information specifically withheld from the target?"
+    ],
+    "less_concerning_if": [
+     "Financial arrangements are transparent, mutually agreed, and both people retain real independent access."
+    ],
+    "more_concerning_if": [
+     "Money, information, or earning capacity is unilaterally restricted, leaving the target financially unable to act independently."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Given the safety dimension of this category, a scripted line matters less than the surrounding plan: if and when it feels safe, a simple, low-detail line like \"I need some space and I'll reach out when I'm ready\" is enough — it does not require justification. See the Safety note below before deciding how, when, or whether to address this directly with the person involved.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": true,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Stonewalling",
+   "category": "Control & Domination",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Every issue stays permanently open. The target cannot resolve it, cannot drop it, and cannot even find out when it might be discussed."
+   },
+   "existing_specific_text": {
+    "short_definition": "Complete, repeated refusal to engage, respond, or resolve — silence deployed as punishment and erasure rather than genuine processing time.",
+    "expanded_definition": "Complete, repeated refusal to engage, respond, or resolve — silence deployed as punishment and erasure rather than genuine processing time. As a communication pattern, Stonewalling-type behavior in the Control & Domination category tends to work by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: complete, repeated refusal to engage, respond, or resolve — silence deployed as punishment and erasure rather than genuine processing time.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Complete, repeated refusal to engage, respond, or resolve — silence deployed as punishment and erasure rather than genuine processing time.",
+     "Recognizable by phrasing such as \"Every attempt to discuss an issue is met with total non-engagement, repeatedly, across many messages\"."
+    ],
+    "what_it_sounds_like": [
+     "Every attempt to discuss an issue is met with total non-engagement, repeatedly, across many messages.",
+     "Requests for even a timeline to talk are also refused.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'complete, repeated refusal to engage, respond, or resolve — '. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "A single 'I need space right now, can we talk tomorrow' is healthy self-regulation, not stonewalling — the flag is a repeating pattern of refusal with no return offered, not one instance of needing a pause."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "A genuine, honestly communicated need for a pause before engaging is healthy and different from stonewalling."
+    ],
+    "common_false_positives": [
+     "A genuine, honestly communicated need for a specific amount of time before engaging, with a real return to the conversation afterward.",
+     "A person who's momentarily overwhelmed and needs a short pause, clearly different from a sustained, repeated refusal to ever engage.",
+     "Real, mutual agreement to table a conversation for practical reasons, with a plan to return to it."
+    ],
+    "discernment_questions": [
+     "Does engagement resume after a reasonable time, or does the non-engagement persist indefinitely?",
+     "Is there any communication about needing space, or does refusal to engage happen without explanation?",
+     "Does this happen once during a hard moment, or as a repeated, reliable pattern across many issues?",
+     "Would the underlying issue ever actually get resolved, or does refusal to engage make that permanently impossible?"
+    ],
+    "less_concerning_if": [
+     "A specific need for time is communicated, with genuine engagement resuming afterward."
+    ],
+    "more_concerning_if": [
+     "Total non-engagement repeats indefinitely across many issues, with no communication and no eventual resolution."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Information Control",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Outside perspectives that might have supplied a second opinion never arrive, so one account of events becomes the only one available to reason with.",
+    "what_it_is_not": "Warning someone about a genuinely unreliable source is fair, and doing so without restricting their access to it is not control. A person who is simply uninformed themselves is filtering nothing. The distinguishing feature is what happens when the other person goes looking for a source independently."
+   },
+   "existing_specific_text": {
+    "short_definition": "Controlling what the target can access, who they can speak to, and what narratives they're permitted to hear or share.",
+    "expanded_definition": "Controlling what the target can access, who they can speak to, and what narratives or information they're permitted to hear or share — filtering the target's information environment so that outside perspectives that might challenge the controlling party's narrative rarely reach them. This is closely related to Isolation, but the specific mechanism here is control over information and narrative rather than direct restriction of relationships.",
+    "plain_language_summary": "In plain terms: controlling what the target can access, who they can speak to, and what narratives they're permitted to hear or share.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Controlling what the target can access, who they can speak to, and what narratives they're permitted to hear or share."
+    ],
+    "what_it_sounds_like": [
+     "Consistent steering away from certain sources of information, framed as protective (\"that source is unreliable,\" \"those people don't understand our situation\").",
+     "The target notices they're mainly getting one perspective on important topics, filtered through one person.",
+     "Sharing information from an outside source is met with dismissal or an unusually strong negative reaction."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, honest skepticism about specific unreliable sources is normal and healthy. Not proactively sharing every outside perspective isn't the same as actively restricting access to them."
+    ],
+    "common_false_positives": [
+     "Someone genuinely sharing their honest perspective on unreliable information sources, without controlling access to alternatives.",
+     "A person who is simply not very informed themselves and doesn't proactively share outside perspectives, without restricting the target's own access.",
+     "Legitimate concern about a genuinely unreliable or harmful information source, expressed without preventing the target's independent access."
+    ],
+    "discernment_questions": [
+     "Does the target have genuine, unimpeded access to other sources and perspectives if they seek them out?",
+     "Is skepticism toward outside sources proportionate and specific, or does it apply broadly to any outside perspective?",
+     "Does sharing outside information produce discussion, or dismissal and negative reaction?",
+     "Would the target's independent judgment on a topic be trusted, or does it need to be pre-filtered?"
+    ],
+    "less_concerning_if": [
+     "The target has genuine, unimpeded access to outside information and their own judgment on it is respected."
+    ],
+    "more_concerning_if": [
+     "Outside information is consistently discouraged or dismissed, and the target's information diet is effectively filtered through one source."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Device Access Demands",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Refusing looks like concealment, so privacy has to be argued for rather than assumed, and the ordinary expectation of an unobserved thought quietly disappears.",
+    "what_it_is_not": "Mutually agreed and revocable arrangements exist — shared family device management for young children, for instance — and clearly disclosed institutional requirements applied consistently to everyone are not personal. Voluntary transparency that both people want and either can end at any time is a different thing entirely."
+   },
+   "existing_specific_text": {
+    "short_definition": "Requiring access to personal devices, passwords, or accounts, blurring the line between institutional authority and personal privacy.",
+    "expanded_definition": "Requiring access to someone's personal devices, passwords, or accounts, often justified by a claim of institutional authority, safety, or accountability that blurs the line between a legitimate concern and an invasion of ordinary personal privacy. The demand is often framed as reasonable or protective, which makes it harder for the target to object without seeming to have something to hide.",
+    "plain_language_summary": "In plain terms: requiring access to personal devices, passwords, or accounts, blurring the line between institutional authority and personal privacy.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Requiring access to personal devices, passwords, or accounts, blurring the line between institutional authority and personal privacy."
+    ],
+    "what_it_sounds_like": [
+     "\"If you have nothing to hide, you shouldn't mind me having your passwords\" used to frame privacy itself as suspicious.",
+     "Access to devices or accounts is demanded as a condition of trust, rather than something offered voluntarily and revocably.",
+     "Any hesitation about sharing access is treated as evidence that something is being concealed."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some genuine, mutually-agreed arrangements around device access exist and are healthy, like shared family accounts for young kids. Legitimate institutional policies, clearly disclosed, aren't inherently controlling."
+    ],
+    "common_false_positives": [
+     "A genuine, mutually-agreed, revocable arrangement (like shared family device management for young children) with clear, limited scope.",
+     "Legitimate institutional requirements disclosed clearly and applied consistently.",
+     "Voluntary, ongoing transparency that both people genuinely want and can adjust or end at any time."
+    ],
+    "discernment_questions": [
+     "Is the access voluntary and revocable, or effectively mandatory and treated as non-negotiable?",
+     "Does declining or wanting to adjust the arrangement produce a proportionate response, or suspicion and pressure?",
+     "Is the stated justification proportionate to the scope of access actually demanded?",
+     "Would a reasonable person in a similar relationship or role find this level of access appropriate?"
+    ],
+    "less_concerning_if": [
+     "Access is voluntary, has a clear and limited scope, and can be adjusted or revoked without conflict."
+    ],
+    "more_concerning_if": [
+     "Access is effectively mandatory, broad in scope, and hesitation is treated as suspicious."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Enforcing Trivial Demands",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Practising obedience on things that do not matter makes compliance on things that do feel like a smaller step than it is.",
+    "what_it_is_not": "Particular preferences about how things are done are widespread and often just fussiness, and a rule with a real functional purpose can look arbitrary to someone who has not been told the reason. High standards in an area someone genuinely cares about are not a rehearsal for anything."
+   },
+   "existing_specific_text": {
+    "short_definition": "Requiring compliance with meaningless, arbitrary rules specifically to establish the habit of obedience, where the submission is the point, not the content.",
+    "expanded_definition": "Requiring compliance with meaningless or arbitrary rules — a specific way of doing something with no functional benefit — specifically to establish and reinforce a habit of obedience. The content of the rule doesn't actually matter; what matters is that the target has practiced complying with something arbitrary, which makes future compliance with more consequential demands feel more natural.",
+    "plain_language_summary": "In plain terms: requiring compliance with meaningless, arbitrary rules specifically to establish the habit of obedience, where the submission is the point, not the content.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Requiring compliance with meaningless, arbitrary rules specifically to establish the habit of obedience, where the submission is the point, not the content."
+    ],
+    "what_it_sounds_like": [
+     "Insistence on a specific, functionally meaningless way of doing something, enforced with disproportionate seriousness.",
+     "Pushback on a trivial rule is met with an outsized reaction, as though something much larger were at stake.",
+     "Looking at the rule objectively, there's no real functional reason it needs to be followed exactly as specified."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People do have genuine, sometimes overly particular preferences that aren't about establishing obedience. Rules can have real functional purposes that aren't obvious to everyone."
+    ],
+    "common_false_positives": [
+     "A genuine personal preference or standard that, while perhaps overly particular, isn't being used to establish a broader pattern of obedience.",
+     "Legitimate rules or procedures that have a real functional purpose the target simply doesn't see or understand.",
+     "Someone with genuinely high standards in a specific area that reflects their values, not a control strategy."
+    ],
+    "discernment_questions": [
+     "Does the rule have any real, functional purpose, or is its content genuinely arbitrary?",
+     "Is the reaction to non-compliance proportionate to the actual stakes of the rule itself?",
+     "Does compliance with small, arbitrary rules seem connected to a broader pattern of escalating expectations?",
+     "Would this rule matter at all if it weren't about establishing who has the final say?"
+    ],
+    "less_concerning_if": [
+     "The rule, even if particular, has some real functional basis and reactions to non-compliance are proportionate."
+    ],
+    "more_concerning_if": [
+     "The rule is genuinely arbitrary, the reaction to non-compliance is disproportionate, and it connects to a broader pattern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Boundary Testing",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Each step is too small to be worth a confrontation, which is precisely what allows the line to move without any single moment at which it could have been held.",
+    "what_it_is_not": "A one-off misjudgement with nothing following it is a mistake. Someone unclear where a line sits who adjusts once told has done exactly the right thing. Negotiating in good faith about where a reasonable boundary should sit is not testing it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Small, incremental violations designed to gauge tolerance before escalating to larger transgressions.",
+    "expanded_definition": "Small, incremental violations of a stated or implied boundary, deployed specifically to gauge how much resistance they'll meet before escalating to larger transgressions. Each individual test is often minor enough to seem not worth objecting to, which is exactly what makes it an effective way to map out how far things can go.",
+    "plain_language_summary": "In plain terms: small, incremental violations designed to gauge tolerance before escalating to larger transgressions.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Small, incremental violations designed to gauge tolerance before escalating to larger transgressions."
+    ],
+    "what_it_sounds_like": [
+     "A small rule or boundary is quietly crossed, followed by a pause to see whether it's noticed or objected to.",
+     "If the small violation goes unaddressed, a slightly larger one follows soon after.",
+     "Objecting to a small violation is met with a claim that the target is overreacting to something minor."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People sometimes genuinely don't know where a boundary is until it's explicitly stated, and adjust once it is. One-off mistakes happen without being part of any escalating pattern."
+    ],
+    "common_false_positives": [
+     "A one-off mistake or misjudgment that isn't part of any escalating pattern.",
+     "Someone genuinely unclear about where a boundary actually is, who adjusts once it's clearly stated.",
+     "Ordinary, well-intentioned negotiation about where a reasonable boundary should sit."
+    ],
+    "discernment_questions": [
+     "Does a small violation, once tolerated, get reliably followed by a somewhat larger one?",
+     "Does clearly stating the boundary lead to it being respected, or to a slightly different, adjacent violation next time?",
+     "Is objecting to a minor violation met with genuine reconsideration, or dismissal as overreacting?",
+     "Would this look like escalating testing to a neutral observer tracking it over time?"
+    ],
+    "less_concerning_if": [
+     "A stated boundary, once clarified, gets consistently respected going forward."
+    ],
+    "more_concerning_if": [
+     "Small violations reliably escalate incrementally each time the previous one goes unaddressed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

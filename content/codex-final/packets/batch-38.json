@@ -1,0 +1,612 @@
+{
+ "batch": "batch-38",
+ "kind": "normal",
+ "category": "Pressure & Coercion",
+ "entries": [
+  {
+   "name": "Emotional Flooding",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Sustained intensity leaves no quiet stretch in which to assess anything, so speed gets mistaken for depth and there is no calm vantage point from which to notice.",
+    "what_it_is_not": "The early excitement of a new relationship is genuinely intense and usually settles into something steadier. Someone living through a real crisis will be intense because the situation is. Naturally expressive people are engineering nothing."
+   },
+   "existing_specific_text": {
+    "short_definition": "Overwhelming the target's nervous system with intensity so urgency is mistaken for intimacy and speed is mistaken for depth.",
+    "expanded_definition": "Overwhelming the target's nervous system with sustained emotional intensity — declarations, crisis, high highs and low lows — so that the urgency of the intensity gets mistaken for genuine intimacy, and the speed of the connection gets mistaken for its depth. The overwhelm itself interferes with the kind of calm, gradual evaluation that would normally let someone assess whether a relationship or situation is actually sound.",
+    "plain_language_summary": "In plain terms: overwhelming the target's nervous system with intensity so urgency is mistaken for intimacy and speed is mistaken for depth.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Overwhelming the target's nervous system with intensity so urgency is mistaken for intimacy and speed is mistaken for depth."
+    ],
+    "what_it_sounds_like": [
+     "A relationship or interaction that moves through dramatic highs and lows at a pace that leaves little room to catch one's breath or reflect.",
+     "Intense emotional experiences — passionate declarations, dramatic conflict, tearful reconciliation — occurring frequently and in rapid succession.",
+     "Looking back, the target realizes they never had a calm, ordinary period to actually evaluate the relationship on its normal, day-to-day merits."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Early relationships and genuine crises really do produce authentic emotional intensity without being manipulative. Some people are naturally more emotionally expressive as part of who they are."
+    ],
+    "common_false_positives": [
+     "A genuinely intense but healthy period, like the early excitement of a new relationship, that settles into something calmer over time.",
+     "Someone processing a real crisis where the emotional intensity reflects an actually difficult situation, not manufactured drama.",
+     "A person who's naturally more emotionally expressive, without engineering intensity for effect."
+    ],
+    "discernment_questions": [
+     "Does the relationship or situation ever settle into a calm, ordinary baseline, or is intensity sustained indefinitely?",
+     "Does the intensity correlate with genuinely significant events, or does it seem manufactured relative to what's actually happening?",
+     "Would the connection or situation hold up if evaluated during a calm period, without the emotional intensity coloring the assessment?",
+     "Is there room for ordinary, low-key time together, or does everything feel high-stakes?"
+    ],
+    "less_concerning_if": [
+     "Genuine excitement settles into a calmer, sustainable baseline over time."
+    ],
+    "more_concerning_if": [
+     "Intensity is sustained indefinitely and there's never a calm period to actually evaluate things clearly."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Cognitive Overload",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Agreement becomes the fastest way out of the overwhelm, and the decision that results was never really evaluated at all.",
+    "what_it_is_not": "Genuinely complex decisions require a great deal of real information, and someone anxious to be thorough may over-explain without meaning to obstruct anything. Real, externally imposed urgency produces the same compression with no one creating it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deliberately overwhelming someone with information or demands so they cannot evaluate a decision clearly.",
+    "expanded_definition": "Deliberately overwhelming someone with information, demands, or details — more than can reasonably be processed in the time available — so they cannot evaluate a decision clearly and are more likely to default to agreement just to end the overwhelm. The volume of information becomes an obstacle to good judgment rather than an aid to it.",
+    "plain_language_summary": "In plain terms: deliberately overwhelming someone with information or demands so they cannot evaluate a decision clearly.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Deliberately overwhelming someone with information or demands so they cannot evaluate a decision clearly."
+    ],
+    "what_it_sounds_like": [
+     "A decision that needs to be made quickly is preceded by an overwhelming amount of complex detail, more than could reasonably be absorbed.",
+     "Requests to slow down or take more time are met with even more information, rather than actual space to think.",
+     "The target agrees mainly to escape the overwhelming feeling, not because they actually evaluated and understood the decision."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely complex decisions sometimes really do require absorbing a lot of information. Some people over-explain from anxiety or thoroughness, not to prevent clear thinking."
+    ],
+    "common_false_positives": [
+     "A genuinely complex situation that requires a lot of real information to make an informed decision, without strategic intent to overwhelm.",
+     "Someone who over-explains out of anxiety or a desire to be thorough, not to prevent clear thinking.",
+     "A time-sensitive situation with real, unavoidable urgency that isn't manufactured."
+    ],
+    "discernment_questions": [
+     "Is there a genuine reason the decision needs to be made this quickly, or is the urgency itself part of the overwhelm?",
+     "When more time or a simpler explanation is requested, is it given, or does the volume of information increase instead?",
+     "Does the target actually understand the decision they're agreeing to, or are they agreeing mainly to end the overwhelm?",
+     "Would the same decision look different with adequate time and a clearer breakdown of the information?"
+    ],
+    "less_concerning_if": [
+     "Time and clearer explanation are genuinely offered when requested, even if the underlying topic is complex."
+    ],
+    "more_concerning_if": [
+     "Requests to slow down produce more information rather than actual space, and urgency seems manufactured rather than real."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Rapid Topic Switching",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "No concern stays open long enough to require a complete answer, so a conversation that covered everything resolves nothing.",
+    "what_it_is_not": "Busy conversations legitimately cover a lot of ground, and a fast-paced style can be energetic rather than evasive. Real time constraints often mean touching briefly on several things in a context where follow-up is genuinely expected later."
+   },
+   "existing_specific_text": {
+    "short_definition": "Changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response.",
+    "expanded_definition": "Changing subjects faster than the target can settle into any one of them, ensuring no single concern receives enough sustained attention to actually require a real, complete response. Unlike Deflection, which redirects away from one specific uncomfortable topic, this involves a more general, rapid churn across many topics that prevents any of them — comfortable or not — from being fully addressed.",
+    "plain_language_summary": "In plain terms: changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response."
+    ],
+    "what_it_sounds_like": [
+     "A conversation moves through several unrelated topics in quick succession, none of which gets a complete resolution before the next begins.",
+     "Attempting to return to an earlier point is met with yet another new topic, rather than the conversation circling back.",
+     "The target leaves a conversation with a vague sense that several things were \"discussed\" but can't identify what was actually resolved."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some conversations genuinely do need to cover a lot of ground quickly, especially under real time constraints. A naturally fast-paced or energetic communication style isn't automatically a tactic."
+    ],
+    "common_false_positives": [
+     "A genuinely busy or complex conversation that legitimately covers a lot of ground, with each topic getting reasonable attention.",
+     "A naturally fast-paced communication style that isn't strategically preventing resolution, just quick and energetic.",
+     "Time constraints that genuinely require covering multiple topics briefly, in a context where follow-up is expected later."
+    ],
+    "discernment_questions": [
+     "Does any topic in the conversation get a complete, satisfying resolution, or does everything stay perpetually unfinished?",
+     "Does attempting to return to an earlier point succeed, or does it consistently produce a new topic instead?",
+     "Is the pace proportionate to genuine time constraints, or does it seem designed to prevent depth on any one thing?",
+     "Looking back at the conversation, can you actually identify what, if anything, was resolved?"
+    ],
+    "less_concerning_if": [
+     "Topics do eventually get resolved, even if the conversation covers a lot of ground quickly."
+    ],
+    "more_concerning_if": [
+     "Nothing ever reaches resolution, and attempts to return to a topic reliably produce a new one instead."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Crisis Manufacturing",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "There is no time to consult anyone or notice inconsistencies, and compliance given under that compression is difficult to revisit afterwards.",
+    "what_it_is_not": "Real emergencies with real external deadlines exist and feel exactly like this from the inside. Someone anxious themselves may communicate urgency with no relation to anyone else's decision-making. A legitimately time-sensitive opportunity is not manufactured by being described urgently."
+   },
+   "existing_specific_text": {
+    "short_definition": "Creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance.",
+    "expanded_definition": "Creating or exaggerating a sense of urgency and emergency specifically to prevent calm evaluation and force fast compliance before the target has time to think it through, consult anyone else, or notice inconsistencies. The crisis doesn't need to be entirely fabricated — even a real but minor issue can be manufactured into an emergency through tone and framing alone.",
+    "plain_language_summary": "In plain terms: creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance."
+    ],
+    "what_it_sounds_like": [
+     "\"We need to decide this right now\" applied to a decision that doesn't actually have a real, external time constraint.",
+     "A situation is framed as far more urgent than any objective account of the facts would support.",
+     "Requests for even a small amount of time to think are met with escalating pressure rather than any patience."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Real emergencies and genuinely time-sensitive opportunities do exist. Some people communicate their own anxiety as urgency without intending to manipulate anyone's decision."
+    ],
+    "common_false_positives": [
+     "A genuine emergency with real, external time pressure that isn't manufactured.",
+     "Someone who is themselves anxious and communicates that anxiety as urgency, without intending to manipulate anyone else's decision-making.",
+     "A legitimately time-sensitive opportunity where the urgency reflects real external circumstances."
+    ],
+    "discernment_questions": [
+     "Is there a real, external, verifiable reason this needs to be decided immediately?",
+     "Does asking for a reasonable amount of time to think produce patience, or escalating pressure?",
+     "Would the \"crisis\" look the same to a neutral third party without the emotional framing?",
+     "Does this pattern of manufactured urgency recur across different, unrelated situations?"
+    ],
+    "less_concerning_if": [
+     "The urgency is externally verifiable and a reasonable request for more time is respected."
+    ],
+    "more_concerning_if": [
+     "Requests for time produce escalating pressure, and the urgency doesn't hold up to neutral scrutiny."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Bait and Switch",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "By the time the terms change, walking away costs more than accepting them, which is what makes the worse deal acceptable.",
+    "what_it_is_not": "Circumstances genuinely change and require honest renegotiation. A person correcting a mistake in their initial offer transparently, even inconveniently, is being straight. Terms that were clearly flagged as tentative at the time were never a promise."
+   },
+   "existing_specific_text": {
+    "short_definition": "Offering an attractive initial term or condition, then substituting a worse one once someone is already committed.",
+    "expanded_definition": "Offering an attractive initial term, price, or condition specifically to secure commitment, then substituting a less favorable one once the other person is already invested — practically, emotionally, or logistically — and less likely to walk away. The switch relies on the sunk cost of the initial commitment to make the substitution feel harder to refuse than it would have been from the start.",
+    "plain_language_summary": "In plain terms: offering an attractive initial term or condition, then substituting a worse one once someone is already committed.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Offering an attractive initial term or condition, then substituting a worse one once someone is already committed."
+    ],
+    "what_it_sounds_like": [
+     "Terms presented at the outset turn out to be different from what's actually delivered, discovered only after the target is already committed.",
+     "\"Things changed\" offered as an explanation for a substitution that conveniently benefits the person making the change.",
+     "The target notices they wouldn't have agreed to the current terms if they'd been the terms presented from the beginning."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Circumstances genuinely change and honest people sometimes have to revise an offer transparently. Initial terms are sometimes explicitly tentative, which isn't the same as a deliberate bait."
+    ],
+    "common_false_positives": [
+     "Circumstances genuinely changed for reasons outside anyone's control, requiring a legitimate renegotiation.",
+     "A person who made an honest mistake in the initial offer and is correcting it transparently, even if inconveniently.",
+     "A situation where the initial terms were always conditional or tentative, and that was clearly communicated at the time."
+    ],
+    "discernment_questions": [
+     "Was the change in terms disclosed as soon as it was known, or only once the target was already committed?",
+     "Does the substitution consistently favor the person who made the initial offer?",
+     "Is there a plausible, non-strategic reason for the change, or does the timing suggest it was the plan all along?",
+     "Would the target have agreed to the actual final terms if presented with them from the start?"
+    ],
+    "less_concerning_if": [
+     "The change was disclosed promptly, has a genuine external cause, and doesn't specifically benefit the person who changed it."
+    ],
+    "more_concerning_if": [
+     "The switch happens only once the target is already committed, and consistently benefits the person who made the initial offer."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Graduated Compliance",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Each increment is small enough to accept, and the distance travelled from the starting point only becomes visible from a long way along it.",
+    "what_it_is_not": "Skill and trust genuinely develop in steps, and responsibility that is named out loud each time it increases has been earned rather than slipped past. Where both people would describe the present arrangement in the same terms, incremental growth is just growth."
+   },
+   "existing_specific_text": {
+    "short_definition": "Escalating requests in small increments so each step feels like a minor extension of the last.",
+    "expanded_definition": "Escalating requests in small, incremental steps so that each individual step feels like only a minor extension of the last one, even though the cumulative distance traveled from the starting point is significant. This is closely related to Foot-in-the-Door and Commitment Traps, but the distinguishing feature is the sustained, gradual increments over many steps, rather than a single two-step jump or an unstructured accumulation.",
+    "plain_language_summary": "In plain terms: escalating requests in small increments so each step feels like a minor extension of the last.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Escalating requests in small increments so each step feels like a minor extension of the last."
+    ],
+    "what_it_sounds_like": [
+     "A series of many small requests, each barely bigger than the last, that together add up to something far beyond what was initially agreed to.",
+     "Comparing the current situation to where things started reveals a significant gap that no single step alone would explain.",
+     "Pushing back on any individual increment feels disproportionate, since each one really was small — but the cumulative trajectory is not."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Roles and relationships do naturally and legitimately grow through many small, mutually-recognized steps. Gradual, consciously-tracked increases in responsibility are a normal part of trust-building."
+    ],
+    "common_false_positives": [
+     "A genuine, gradual, mutually-understood increase in scope that both people consciously tracked and agreed to along the way.",
+     "Natural skill or trust development where increased responsibility is earned and explicitly acknowledged at each stage.",
+     "Growth in a role or relationship that both parties are equally aware of and comfortable with."
+    ],
+    "discernment_questions": [
+     "Comparing the current situation to the original starting point, is the cumulative distance proportionate to what was ever explicitly discussed?",
+     "Are the increments tracked and acknowledged along the way, or does the trajectory only become visible in hindsight?",
+     "Would the current level of request, presented all at once from the start, have been agreed to?",
+     "Is there room to step back to an earlier increment without it being treated as a problem?"
+    ],
+    "less_concerning_if": [
+     "The cumulative growth was explicitly discussed and tracked at each stage by both people."
+    ],
+    "more_concerning_if": [
+     "The gap between where things started and where they are now is large and was never consciously agreed to as a whole."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Pre-Punishment",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Opportunities are closed off before anyone else has the chance to refuse them, and the cost — jobs not applied for, things not said — stays invisible precisely because nothing happened.",
+    "what_it_is_not": "Realistic self-assessment about a situation where the odds genuinely are poor is judgement rather than fear. Ordinary caution and humility need no history behind them. Choosing not to pursue something because of competing priorities is a decision, not a withdrawal.",
+    "note": "This entry describes a self-directed, internalised pattern rather than something one person does to another, so why_this_matters is written about the cost the person carries rather than about a recipient of someone else's behaviour."
+   },
+   "existing_specific_text": {
+    "short_definition": "The inner critic eliminating the self before anyone else can — not applying, not speaking, not trying — because past experience trained the target that visibility is punished.",
+    "expanded_definition": "An internalized pattern where a person's own inner critic eliminates options before anyone else has the chance to — not applying for something, not speaking up, not trying — because past experience trained them that visibility or effort gets punished. This is a self-directed pattern rather than something one person does to another in the moment; it describes how earlier experiences of pressure or punishment can continue operating internally, long after the original source is no longer present.",
+    "plain_language_summary": "In plain terms: the inner critic eliminating the self before anyone else can — not applying, not speaking, not trying — because past experience trained the target that visibility is punished.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "The inner critic eliminating the self before anyone else can — not applying, not speaking, not trying — because past experience trained the target that visibility is punished."
+    ],
+    "what_it_sounds_like": [
+     "Deciding not to apply, ask, or try, based on an anticipated rejection or punishment that hasn't actually happened yet.",
+     "A reflexive sense that trying and failing, or trying and succeeding, both feel unsafe, so not trying feels like the only safe option.",
+     "Noticing the impulse to shrink or hold back specifically in situations where being seen or visible would be required."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes caution really is realistic and well-founded given the actual circumstances. Choosing not to pursue something can be a genuine, considered decision rather than a fear response."
+    ],
+    "common_false_positives": [
+     "Genuinely realistic self-assessment about a specific situation where the odds really are poor, based on real information.",
+     "Ordinary caution or humility that isn't rooted in an internalized fear response.",
+     "A deliberate, well-reasoned choice not to pursue something, based on priorities rather than fear."
+    ],
+    "discernment_questions": [
+     "Does the decision to hold back trace to a specific, realistic assessment of the current situation, or to a general, anticipatory fear?",
+     "Does this pattern show up across many different, unrelated situations, suggesting something internalized rather than situation-specific?",
+     "Would the same opportunity, evaluated without the anticipatory fear, look different?",
+     "Is there a memory or pattern from earlier experience that seems to be driving the anticipation, even though the current situation is different?"
+    ],
+    "less_concerning_if": [
+     "The choice to hold back reflects a genuine, situation-specific assessment rather than a recurring pattern across unrelated situations."
+    ],
+    "more_concerning_if": [
+     "The pattern of self-elimination recurs across many different contexts and seems disconnected from the actual likely outcome in each one."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

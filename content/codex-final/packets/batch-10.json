@@ -1,0 +1,610 @@
+{
+ "batch": "batch-10",
+ "kind": "normal",
+ "category": "Attack & Erosion",
+ "entries": [
+  {
+   "name": "Labeling as Identity Warfare",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Once a label attaches, ordinary behaviour gets read as confirming it, so there is no conduct available that would disprove it.",
+    "what_it_is_not": "An unflattering characterisation can be accurate, based on a real and consistent pattern. Reputations also form organically when many people independently have similar experiences. Specific feedback about a specific behaviour is a different thing from a defect label that stands in for the whole person."
+   },
+   "existing_specific_text": {
+    "short_definition": "Replacing someone's self-concept with a defect label that becomes their institutional or social identity.",
+    "expanded_definition": "Replacing someone's actual self-concept with a defect label — \"the difficult one,\" \"the unstable one,\" \"the troublemaker\" — that becomes attached to them institutionally or socially, so that their actions get interpreted through the label rather than evaluated on their own terms. Once the label sticks, ordinary behavior gets reinterpreted as confirming it, making it self-reinforcing.",
+    "plain_language_summary": "In plain terms: replacing someone's self-concept with a defect label that becomes their institutional or social identity.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Replacing someone's self-concept with a defect label that becomes their institutional or social identity."
+    ],
+    "what_it_sounds_like": [
+     "A single label attached early on that seems to color how every subsequent action is interpreted, regardless of context.",
+     "Neutral or even positive behavior gets described using language that still fits the negative label.",
+     "The target notices they can't seem to escape the label no matter what they do, since even good behavior gets reframed to fit it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some reputations really are earned and accurately reflect a real pattern. A reputation held broadly and independently by many people isn't the same as one person's deliberate labeling."
+    ],
+    "common_false_positives": [
+     "A genuinely accurate, if unflattering, characterization based on a real, consistent pattern of behavior.",
+     "A reputation that develops organically from many people's independent, similar experiences, rather than one person's deliberate labeling.",
+     "Legitimate, specific feedback about a real behavior pattern that isn't reducing the whole person to a single defect."
+    ],
+    "discernment_questions": [
+     "Does the label apply regardless of what the target actually does, or does it track real, specific behavior?",
+     "Is there room for the target's actions to be evaluated on their own merits, or does everything get filtered through the label?",
+     "Did the label originate with one specific person, or does it reflect a broader, independently-formed consensus?",
+     "Would neutral or positive actions from the target actually be recognized as such, or reinterpreted to fit the label?"
+    ],
+    "less_concerning_if": [
+     "The characterization is specific, tied to real behavior, and open to updating based on new evidence."
+    ],
+    "more_concerning_if": [
+     "The label persists and reinterprets everything the target does, regardless of what they actually do."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Rage as Control",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "People around an outburst learn to prioritise de-escalation over whatever point set it off, so the topic stops being raised long before anyone consciously decides to stop raising it.",
+    "what_it_is_not": "Proportionate anger at something genuinely upsetting, expressed and then resolved without changing the outcome of the conversation, is ordinary. Someone actively working on emotional regulation is not using it as leverage. A single outburst during unusual stress, acknowledged afterwards, is not a pattern."
+   },
+   "existing_specific_text": {
+    "short_definition": "Explosive anger used, consciously or not, to end a conversation or force immediate compliance.",
+    "expanded_definition": "Explosive anger — yelling, slamming things, intense visible fury — that, whether or not it's consciously calculated, reliably functions to end a conversation or force immediate compliance, since the people around the outburst learn to prioritize de-escalation over continuing to press whatever point triggered it. The rage doesn't need to be performed cynically to still function as control; its effectiveness at ending pushback is what makes it a pattern worth naming.",
+    "plain_language_summary": "In plain terms: explosive anger used, consciously or not, to end a conversation or force immediate compliance.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Explosive anger used, consciously or not, to end a conversation or force immediate compliance."
+    ],
+    "what_it_sounds_like": [
+     "Anger that escalates sharply and specifically at moments when the target is pushing back, asking hard questions, or setting a boundary.",
+     "The target notices themselves backing down or changing the subject specifically to avoid triggering another outburst.",
+     "After the anger subsides, the original issue that triggered it goes unaddressed, having been replaced by managing the aftermath of the outburst itself."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine anger at something upsetting is a normal human response that isn't automatically a control tactic. People actively working on emotional regulation can have setbacks without those setbacks being strategic."
+    ],
+    "common_false_positives": [
+     "Genuine, proportionate anger at something that would reasonably upset most people, expressed and then resolved without controlling the outcome of the conversation.",
+     "A person who struggles with emotional regulation and is actively working on it, without using the anger strategically.",
+     "A single outburst during a period of unusual stress, acknowledged and apologized for afterward."
+    ],
+    "discernment_questions": [
+     "Does the anger specifically and reliably occur at moments of pushback, boundary-setting, or accountability?",
+     "Does the original issue get addressed after the anger subsides, or does it disappear entirely?",
+     "Does the target notice themselves self-censoring specifically to avoid triggering another outburst?",
+     "Is there any acknowledgment or repair after an outburst, or does the pattern repeat unchanged?"
+    ],
+    "less_concerning_if": [
+     "Anger is proportionate to genuine provocation, doesn't specifically target pushback, and is followed by real acknowledgment."
+    ],
+    "more_concerning_if": [
+     "Anger reliably occurs at moments of pushback and functions to end the conversation without resolution."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Credit Theft",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Work continues while recognition for it accrues elsewhere, and by the time the pattern is visible the original attribution is too old to establish.",
+    "what_it_is_not": "Two people genuinely arriving at a similar idea independently happens often, and collaborative work naturally distributes credit across a team without erasing anyone. An honest oversight corrected once pointed out is exactly that."
+   },
+   "existing_specific_text": {
+    "short_definition": "Taking someone's work, idea, or contribution and presenting it as your own.",
+    "expanded_definition": "Taking someone's work, idea, or contribution and presenting it as one's own, ranging from a single instance of uncredited use to a sustained pattern of laundering someone's contributions through informal channels until the original source is forgotten entirely. This entry also covers what was previously tracked separately as Credit Laundering — the slower version where credit is diffused gradually rather than claimed outright in one obvious move.",
+    "plain_language_summary": "In plain terms: taking someone's work, idea, or contribution and presenting it as your own.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Taking someone's work, idea, or contribution and presenting it as your own.",
+     "Also covers the related, previously separate entries: Credit Laundering."
+    ],
+    "what_it_sounds_like": [
+     "An idea or piece of work presented to a wider audience without acknowledging where it actually came from.",
+     "The original contributor is thanked privately, if at all, while public credit consistently goes to someone else.",
+     "A pattern where the same person's ideas repeatedly \"become\" someone else's by the time they reach a decision-maker or wider audience."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely simultaneous, independent ideas happen more often than people expect. Collaborative work naturally involves some diffusion of credit across a team without any deliberate theft."
+    ],
+    "common_false_positives": [
+     "Genuinely independent, simultaneous development of a similar idea by two people without either one copying the other.",
+     "A collaborative process where credit naturally gets distributed across a team, without any single person being erased.",
+     "An honest oversight in a specific instance, corrected once pointed out."
+    ],
+    "discernment_questions": [
+     "Is there a clear, verifiable timeline showing who actually originated the idea or work?",
+     "Does this happen once, correctable when raised, or does it form a recurring pattern with the same person?",
+     "When credit is misattributed, does correction happen readily, or is it resisted?",
+     "Does the pattern specifically and consistently favor one person's credit over another's, across multiple instances?"
+    ],
+    "less_concerning_if": [
+     "A misattribution is corrected readily once pointed out, and doesn't recur."
+    ],
+    "more_concerning_if": [
+     "A pattern recurs where the same person's contributions consistently get credited to someone else, and correction is resisted."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Sabotaging Success",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Progress keeps stalling for reasons that each look like bad luck, so a person starts to doubt their own competence rather than the timing.",
+    "what_it_is_not": "Coincidence is real, and unrelated circumstances often land at inconvenient moments. Some people are unreliable across the board rather than at particular moments. Genuinely competing constraints can clash with someone's timeline while having nothing to do with it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Undermining the target's achievements, opportunities, or progress through manufactured interference timed to moments of advancement.",
+    "expanded_definition": "Undermining the target's achievements, opportunities, or progress through manufactured interference — a canceled plan, a withheld piece of information, an unexplained delay — timed specifically to moments when the target is advancing toward something significant. The interference is often deniable individually, but its timing relative to the target's progress forms a pattern.",
+    "plain_language_summary": "In plain terms: undermining the target's achievements, opportunities, or progress through manufactured interference timed to moments of advancement.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Undermining the target's achievements, opportunities, or progress through manufactured interference timed to moments of advancement."
+    ],
+    "what_it_sounds_like": [
+     "Important opportunities or milestones are consistently disrupted by some unexpected obstacle that traces back to the same person.",
+     "Support that was previously reliable becomes unavailable specifically around a moment of the target's advancement.",
+     "Looking back, the target notices a pattern of things \"going wrong\" specifically at moments of progress, more often than chance would suggest."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine bad luck and unrelated circumstances really do sometimes cluster around important moments by simple coincidence. Some people are generally unreliable in ways that aren't targeted at anyone specifically."
+    ],
+    "common_false_positives": [
+     "Genuinely bad luck or unrelated circumstances that happen to coincide with a moment of progress.",
+     "A person who is generally unreliable across the board, not specifically around the target's successes.",
+     "Legitimate competing needs or constraints that happen to conflict with the target's timeline, without malicious intent."
+    ],
+    "discernment_questions": [
+     "Does the interference specifically cluster around moments of the target's advancement, more than random chance would predict?",
+     "Does the same person consistently appear connected to the disruptions?",
+     "Is there a plausible, non-strategic explanation for each individual instance that holds up across the whole pattern?",
+     "Would this person benefit, in some way, from the target's success being delayed or undermined?"
+    ],
+    "less_concerning_if": [
+     "The disruptions are genuinely random or explainable by unrelated circumstances."
+    ],
+    "more_concerning_if": [
+     "Interference reliably clusters around the target's moments of progress and consistently traces to the same source."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Impossible Metrics",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Failure is built into the standard but attributed to the person, so effort increases while the record fills up with shortfalls.",
+    "what_it_is_not": "High but achievable standards that others in the same role have actually met are demanding rather than impossible. Stretch goals framed openly as aspirational rather than pass or fail are a different thing. A bar the person has cleared before under similar conditions is evidence the bar is reachable."
+   },
+   "existing_specific_text": {
+    "short_definition": "Setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy.",
+    "expanded_definition": "Setting standards or goals specifically designed to be unachievable — through vague criteria, contradictory requirements, or resources that don't match the demand — and then attributing the resulting, essentially inevitable failure to the target's personal inadequacy rather than to the standard itself. Unlike Setting Up to Fail, which is usually about one specific task, this describes an ongoing standard or performance bar that stays perpetually out of reach.",
+    "plain_language_summary": "In plain terms: setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy."
+    ],
+    "what_it_sounds_like": [
+     "Goals that shift or increase specifically once the target gets close to meeting the previous version.",
+     "Success criteria that are vague enough to be reinterpreted after the fact, no matter what was actually achieved.",
+     "Comparisons to a standard that, on closer examination, no one could realistically meet given the actual resources or time available."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely ambitious, achievable goals exist and some people rise to meet them while finding them difficult. Aspirational stretch targets, clearly framed as such, aren't the same as an engineered impossible standard."
+    ],
+    "common_false_positives": [
+     "Genuinely high, but achievable, standards that others in a similar role or situation have actually met.",
+     "Ambitious goals that are explicitly framed as aspirational stretch targets, not pass/fail requirements.",
+     "A standard that's difficult but was met by the target themselves in the past under similar conditions."
+    ],
+    "discernment_questions": [
+     "Has anyone, under comparable conditions, actually met this standard?",
+     "Do the goalposts move specifically once the target gets close to meeting them?",
+     "Are the success criteria specific and stable, or vague enough to be reinterpreted after the fact?",
+     "Is the resulting failure attributed to the target's inadequacy, or is the standard itself ever questioned?"
+    ],
+    "less_concerning_if": [
+     "The standard is demonstrably achievable and stable, even if it's genuinely difficult."
+    ],
+    "more_concerning_if": [
+     "The standard shifts specifically when approached, or has never been met by anyone under comparable conditions."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Setting Up to Fail",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Conditions disappear from the account and only the outcome remains, so a predictable failure becomes durable evidence about the person who was handed it.",
+    "what_it_is_not": "Difficult tasks with real constraints are ordinary work, and resources are often genuinely unavailable to everyone rather than withheld from one person. Something turning out harder than anyone anticipated is not engineered."
+   },
+   "existing_specific_text": {
+    "short_definition": "Assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy.",
+    "expanded_definition": "Assigning a specific task under conditions — inadequate resources, an unreasonable deadline, missing information — that make success genuinely unlikely, then using the resulting failure as evidence of the target's inadequacy. Unlike Impossible Metrics, which describes an ongoing, perpetually-out-of-reach standard, this is usually about one specific task or assignment engineered for failure.",
+    "plain_language_summary": "In plain terms: assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy."
+    ],
+    "what_it_sounds_like": [
+     "A task assigned with a deadline, resource level, or information gap that makes success implausible from the outset.",
+     "Requests for the additional resources, time, or information needed to succeed are denied or ignored.",
+     "When the predictable failure occurs, it's treated as evidence of the target's competence, without acknowledgment of the conditions that made it likely."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely difficult tasks and real resource constraints exist without anyone engineering failure. Tasks sometimes turn out harder than anyone anticipated for reasons unrelated to any strategy."
+    ],
+    "common_false_positives": [
+     "A genuinely difficult but achievable task, where the difficulty reflects real constraints rather than engineered ones.",
+     "A situation where necessary resources genuinely weren't available to anyone, not specifically withheld from the target.",
+     "A task that turned out to be harder than expected for reasons no one anticipated, without any intent behind the difficulty."
+    ],
+    "discernment_questions": [
+     "Would the task have been achievable with reasonable resources, time, and information?",
+     "Were requests for what was needed to succeed denied, or genuinely unavailable to everyone?",
+     "Is the resulting failure treated as evidence of a systemic issue with the task's conditions, or purely of the target's inadequacy?",
+     "Has anyone else succeeded at a comparable task under comparable conditions?"
+    ],
+    "less_concerning_if": [
+     "The task's difficulty reflects genuine, universal constraints, and reasonable requests for support are honored."
+    ],
+    "more_concerning_if": [
+     "Requests for necessary resources are specifically denied to this target, and the predictable failure is used purely as evidence of inadequacy."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Scapegoating",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "One person absorbs consequences proportionate to a collective failure, and the conditions that produced it stay exactly as they were, because the matter has been declared solved.",
+    "what_it_is_not": "Sometimes an individual really did make the consequential mistake, and sometimes shared responsibility genuinely does concentrate in one person's decisions. Accountability that matches actual decision-making authority can feel harsh and still be proportionate."
+   },
+   "existing_specific_text": {
+    "short_definition": "Assigning systemic, collective, or leadership-caused failures to a single individual to protect the group or the powerful.",
+    "expanded_definition": "Assigning blame for a systemic, collective, or leadership-caused failure to a single individual, specifically to protect the group's reputation or a more powerful person's position. The scapegoat's actual role in the failure is often disproportionate to the blame assigned — they may have played a minor part, or none at all, but they're positioned to absorb the consequences that would otherwise fall on the group or a more powerful individual.",
+    "plain_language_summary": "In plain terms: assigning systemic, collective, or leadership-caused failures to a single individual to protect the group or the powerful.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Assigning systemic, collective, or leadership-caused failures to a single individual to protect the group or the powerful."
+    ],
+    "what_it_sounds_like": [
+     "A failure that clearly involved systemic or leadership decisions gets attributed almost entirely to one individual's actions.",
+     "The person blamed had comparatively little actual authority or influence over the outcome that went wrong.",
+     "After the individual is blamed and removed or punished, the underlying systemic issue that actually caused the failure remains unaddressed."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes an individual really did make the consequential mistake and bears legitimate, proportionate responsibility. Genuine investigations sometimes do conclude that one person's actions were the primary cause."
+    ],
+    "common_false_positives": [
+     "A genuine individual failure where the person really did make a consequential, personally-attributable mistake.",
+     "A situation where responsibility is shared but the individual's specific contribution really was the most significant factor.",
+     "Accountability that's proportionate to actual decision-making authority, even if it feels harsh to the person involved."
+    ],
+    "discernment_questions": [
+     "Did the blamed individual have proportionate authority and decision-making power over the outcome?",
+     "Does the underlying systemic issue persist after the individual is blamed or removed?",
+     "Would a neutral, thorough investigation attribute the failure primarily to this individual, or to broader factors?",
+     "Does the blame conveniently protect someone with more power or the group's reputation?"
+    ],
+    "less_concerning_if": [
+     "The individual had genuine, proportionate responsibility and authority over the outcome."
+    ],
+    "more_concerning_if": [
+     "The blamed individual had limited actual authority, and the systemic issue persists unaddressed after they're blamed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

@@ -1,0 +1,755 @@
+{
+ "batch": "batch-05",
+ "kind": "normal",
+ "category": "Attachment & Affection Control",
+ "entries": [
+  {
+   "name": "Love Bombing",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Overwhelming early affection and idealization.",
+    "expanded_definition": "Overwhelming early affection and idealization. Builds fast dependency and sets up devaluation later. As a communication pattern, Love Bombing-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: overwhelming early affection and idealization.",
+    "why_this_matters": "Builds fast dependency and sets up devaluation later. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Overwhelming early affection and idealization.",
+     "Builds fast dependency and sets up devaluation later.",
+     "Contrasts with a healthier version: affection that grows at the pace of actual knowledge of the person.",
+     "Recognizable by phrasing such as \"You're my soulmate — I knew it the moment we met\"."
+    ],
+    "what_it_sounds_like": [
+     "You're my soulmate — I knew it the moment we met.",
+     "I've never loved anyone the way I love you.",
+     "You're my soul mate.",
+     "We're meant to be together.",
+     "I've never felt this way about anyone.",
+     "No one has ever understood me like you do.",
+     "You're literally perfect.",
+     "You're my twin flame."
+    ],
+    "what_it_is_not": [
+     "People in love genuinely talk like this. It's only a flag when intensity is disproportionate to how long or well they know you — this tool can't see that."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutual, fast-developing chemistry exists and isn't always manipulative.",
+     "Naturally romantic people can express real intensity from early on."
+    ],
+    "common_false_positives": [
+     "Genuine, strong early enthusiasm that two people mutually feel and openly discuss, without one person pressuring the pace.",
+     "A naturally romantic, expressive person whose intensity is consistent over time, not just concentrated at the very start.",
+     "Real chemistry that develops quickly but continues to grow steadily afterward, rather than sharply reversing."
+    ],
+    "discernment_questions": [
+     "Does the intensity of affection continue steadily, or was it concentrated specifically at the beginning before a later reversal?",
+     "Is the pace of escalation mutual, or driven by one person pushing faster than the other is ready for?",
+     "Would the relationship's foundation hold up if evaluated at a more typical pace?",
+     "Does the person's affection seem based on getting to know the actual person, or arrive before that's really possible?"
+    ],
+    "less_concerning_if": [
+     "Intense early affection continues to grow steadily afterward, mutually, rather than sharply reversing."
+    ],
+    "more_concerning_if": [
+     "Overwhelming early affection concentrates specifically at the start, arriving before real knowledge of the person, often followed by later devaluation."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Exclusive Meaning",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Claiming to be the only one who truly understands the target.",
+    "expanded_definition": "Claiming to be the only one who truly understands the target. Quietly devalues every other relationship the target has. As a communication pattern, Exclusive Meaning-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: claiming to be the only one who truly understands the target.",
+    "why_this_matters": "Quietly devalues every other relationship the target has. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Claiming to be the only one who truly understands the target.",
+     "Quietly devalues every other relationship the target has.",
+     "Contrasts with a healthier version: \"I feel really close to you\" — without demoting everyone else.",
+     "Recognizable by phrasing such as \"No one will ever understand you like I do\"."
+    ],
+    "what_it_sounds_like": [
+     "No one will ever understand you like I do.",
+     "What we have is beyond other people.",
+     "No one else understands you like I do.",
+     "Only I truly know you.",
+     "I'm the only one who really cares about you."
+    ],
+    "what_it_is_not": [
+     "Deep intimacy sometimes honestly feels this way; said once, it's romance, not strategy."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Feeling deeply understood by someone is a normal, healthy relationship experience.",
+     "Enthusiastic expression of closeness doesn't have to demote anyone else."
+    ],
+    "common_false_positives": [
+     "Genuine, real closeness that someone describes enthusiastically, without demoting the target's other relationships.",
+     "A person's honest feeling of being deeply understood, expressed without claiming to be the only one who could ever understand.",
+     "Early relationship excitement that doesn't come paired with isolating language about other people."
+    ],
+    "discernment_questions": [
+     "Does the claim of unique understanding come paired with any diminishment of the target's other relationships?",
+     "Is this an expression of genuine feeling, or a repeated claim used to make other connections seem lesser?",
+     "Does the target's other relationships get treated as a threat, or genuinely welcomed?",
+     "Would the same closeness be described without needing to exclude everyone else?"
+    ],
+    "less_concerning_if": [
+     "Genuine closeness is expressed without any diminishment of the target's other relationships."
+    ],
+    "more_concerning_if": [
+     "The claim of unique understanding recurs alongside actively devaluing the target's other connections."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Conditional Love",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Making affection explicitly contingent on obedience.",
+    "expanded_definition": "Making affection explicitly contingent on obedience. Teaches the target that love must be earned by compliance. As a communication pattern, Conditional Love-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: making affection explicitly contingent on obedience.",
+    "why_this_matters": "Teaches the target that love must be earned by compliance. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Making affection explicitly contingent on obedience.",
+     "Teaches the target that love must be earned by compliance.",
+     "Contrasts with a healthier version: \"I'm upset with you right now, and I still love you.\".",
+     "Recognizable by phrasing such as \"I could really love you if you just lost the attitude\"."
+    ],
+    "what_it_sounds_like": [
+     "I could really love you if you just lost the attitude.",
+     "Be sweet like before and we'll be fine.",
+     "If you want me to love you."
+    ],
+    "what_it_is_not": [
+     "Hard to say innocently in this direct form — but it may be a heated exaggeration the speaker regrets."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "A single frustrated comment in the heat of an argument doesn't necessarily reflect genuinely conditional love.",
+     "Real hurt, honestly expressed, isn't the same as making love contingent on obedience."
+    ],
+    "common_false_positives": [
+     "Genuine, temporary frustration expressed honestly, without a pattern of tying affection itself to compliance.",
+     "A person processing real hurt in a moment, whose underlying affection isn't actually conditional despite a poorly-worded comment.",
+     "Reasonable relationship expectations discussed honestly, distinct from making love itself contingent on obedience."
+    ],
+    "discernment_questions": [
+     "Does affection get explicitly withdrawn or threatened specifically in response to non-compliance?",
+     "Is there a stable baseline of love that persists through disagreement, or does it feel conditional on good behavior?",
+     "Does this pattern recur across different situations, or was it one poorly-worded moment in anger?",
+     "Would the person acknowledge, if asked directly, that their love isn't actually conditional?"
+    ],
+    "less_concerning_if": [
+     "Affection remains stable through disagreement, even if a single comment in anger sounded conditional."
+    ],
+    "more_concerning_if": [
+     "Affection is explicitly and repeatedly tied to compliance, withdrawn specifically when the target doesn't obey."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Hoovering",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Pulling the target back after distance or a breakup with promises of change.",
+    "expanded_definition": "Pulling the target back after distance or a breakup with promises of change. Resets the cycle without any of the change actually happening. As a communication pattern, Hoovering-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: pulling the target back after distance or a breakup with promises of change.",
+    "why_this_matters": "Resets the cycle without any of the change actually happening. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Pulling the target back after distance or a breakup with promises of change.",
+     "Resets the cycle without any of the change actually happening.",
+     "Contrasts with a healthier version: demonstrated change over time, before asking for another chance.",
+     "Recognizable by phrasing such as \"I've changed, give me one more chance\"."
+    ],
+    "what_it_sounds_like": [
+     "I've changed, give me one more chance.",
+     "I can't stop thinking about what we had.",
+     "I've changed, I promise.",
+     "Just give me one more chance.",
+     "It'll be different this time."
+    ],
+    "what_it_is_not": [
+     "People do sometimes genuinely change and sincerely ask for another chance — the evidence is behavior over time, not the words."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine reconciliation, with real mutual effort and follow-through, is a healthy part of some relationships."
+    ],
+    "common_false_positives": [
+     "A person who's demonstrated real, sustained change over time before asking for another chance, not just promising it.",
+     "Genuine reconciliation after both people have done real work, not a one-sided pull back with no substantive change.",
+     "An honest apology paired with visible behavior change over a meaningful period, not just words at the moment of pulling someone back."
+    ],
+    "discernment_questions": [
+     "Is there demonstrated change over time, or just a promise made at the moment of pulling the target back?",
+     "Does the pattern of distance-then-pull-back repeat in a cycle, or was this a genuine, one-time reconciliation?",
+     "Would the same promise have been credible without the emotional intensity of the reconciliation itself?",
+     "Has meaningful time passed with real evidence of change, or is this immediate?"
+    ],
+    "less_concerning_if": [
+     "Real, demonstrated change is visible over time, not just promised at the moment of reconnecting."
+    ],
+    "more_concerning_if": [
+     "The same promise-then-relapse cycle repeats, with pulling-back and promising change but no sustained follow-through."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Future Faking",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Promising a future that keeps the target invested now.",
+    "expanded_definition": "Promising a future that keeps the target invested now. The promised future perpetually recedes while the present costs accumulate. As a communication pattern, Future Faking-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: promising a future that keeps the target invested now.",
+    "why_this_matters": "The promised future perpetually recedes while the present costs accumulate. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Promising a future that keeps the target invested now.",
+     "The promised future perpetually recedes while the present costs accumulate.",
+     "Contrasts with a healthier version: small kept promises now, instead of large deferred ones.",
+     "Recognizable by phrasing such as \"Next year will be different, I swear\"."
+    ],
+    "what_it_sounds_like": [
+     "Next year will be different, I swear.",
+     "Once I get the promotion, then we'll travel like you want.",
+     "Some day we'll finally.",
+     "I promise we'll * soon.",
+     "Next month will be different, I promise.",
+     "When the time is right, we'll.",
+     "Once I get , then we can."
+    ],
+    "what_it_is_not": [
+     "Most future promises are sincere. This only matters as a *pattern* of promises consistently replacing action."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine plans sometimes really do get delayed by real circumstances, honestly communicated.",
+     "Sincere intentions can have honestly shifting timelines without being manipulative."
+    ],
+    "common_false_positives": [
+     "A genuine plan that's delayed by real, disclosed circumstances, with honest acknowledgment of the delay.",
+     "A person who sincerely intends something but whose timeline genuinely shifted for real reasons, communicated honestly.",
+     "A promise kept, even if later than originally hoped, showing genuine follow-through over time."
+    ],
+    "discernment_questions": [
+     "Does the promised future ever actually arrive, or does it perpetually recede with a new excuse each time?",
+     "Are small commitments kept now, or does everything defer to some future point?",
+     "Is there honest acknowledgment of delay, or does the promise just get repeated unchanged?",
+     "Would a reasonable person, tracking the pattern over time, see genuine progress toward the promise?"
+    ],
+    "less_concerning_if": [
+     "Small commitments are kept now, and any delay in bigger promises is honestly explained."
+    ],
+    "more_concerning_if": [
+     "The promised future perpetually recedes with new excuses, while present costs and investment keep accumulating."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Negging",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Backhanded compliments that lower the target's confidence.",
+    "expanded_definition": "Backhanded compliments that lower the target's confidence. Installs insecurity that makes the speaker's approval feel necessary. As a communication pattern, Negging-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: backhanded compliments that lower the target's confidence.",
+    "why_this_matters": "Installs insecurity that makes the speaker's approval feel necessary. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Backhanded compliments that lower the target's confidence.",
+     "Installs insecurity that makes the speaker's approval feel necessary.",
+     "Contrasts with a healthier version: a compliment with no asterisk.",
+     "Recognizable by phrasing such as \"You're pretty smart for someone like you\"."
+    ],
+    "what_it_sounds_like": [
+     "You're pretty smart for someone like you.",
+     "I love that you don't care how you look.",
+     "You're pretty smart for a.",
+     "I'm surprised you managed.",
+     "You'd be so much prettier if you.",
+     "Not bad, for you."
+    ],
+    "what_it_is_not": [
+     "Clumsy compliments and awkward teasing exist; a single instance may be social ineptness."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some people are genuinely awkward at giving compliments without meaning any undermining.",
+     "Mutual, playful teasing that both people enjoy isn't the same as negging."
+    ],
+    "common_false_positives": [
+     "An honest compliment, delivered plainly, that the target simply interpreted more critically than intended.",
+     "A person's genuinely awkward or blunt communication style that unintentionally lands as backhanded.",
+     "Playful, mutual teasing between people who both find it fun, without an underlying edge meant to lower confidence."
+    ],
+    "discernment_questions": [
+     "Does the compliment carry a genuine sting, or is it plainly positive without qualification?",
+     "Does this pattern recur, specifically seeming to target the target's confidence or self-esteem?",
+     "Does the target notice themselves seeking this person's approval more after these comments?",
+     "Would a neutral listener hear the comment as a genuine compliment or a backhanded one?"
+    ],
+    "less_concerning_if": [
+     "The comment is a genuine, unqualified compliment, or reflects an honestly awkward but not undermining communication style."
+    ],
+    "more_concerning_if": [
+     "Backhanded compliments recur as a pattern and the target notices increased need for this person's approval afterward."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Silent Treatment",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Withdrawing contact as punishment until the target complies.",
+    "expanded_definition": "Withdrawing contact as punishment until the target complies. Weaponizes connection itself; the target is starved into apology. As a communication pattern, Silent Treatment-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: withdrawing contact as punishment until the target complies.",
+    "why_this_matters": "Weaponizes connection itself; the target is starved into apology. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Withdrawing contact as punishment until the target complies.",
+     "Weaponizes connection itself; the target is starved into apology.",
+     "Contrasts with a healthier version: \"I'm too angry to talk right now. I need until tomorrow, then let's resolve this.\".",
+     "Recognizable by phrasing such as \"I'm not speaking to you until you apologize\"."
+    ],
+    "what_it_sounds_like": [
+     "I'm not speaking to you until you apologize.",
+     "Don't talk to me. Figure out what you did.",
+     "I'm not talking to you until you apologize.",
+     "Don't talk to me until you've apologized."
+    ],
+    "what_it_is_not": [
+     "Needing space after a fight is healthy. The flag is silence with *conditions attached* — comply and I'll return.",
+     "Taking agreed time to cool off before continuing is regulation, not punishment — the difference is whether return is promised."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "A genuine, honestly communicated need for space before continuing a hard conversation is healthy."
+    ],
+    "common_false_positives": [
+     "A genuine, honestly communicated need for time before continuing a difficult conversation, with a clear plan to return to it.",
+     "A person who's overwhelmed and needs space, explicitly saying so rather than silently withdrawing as punishment.",
+     "A brief, natural cooling-off period that both people understand and that resolves without either person needing to \"win.\""
+    ],
+    "discernment_questions": [
+     "Is the withdrawal explained and time-bound, or open-ended and used as leverage?",
+     "Does the silence end once the target apologizes or complies, suggesting it's functioning as pressure?",
+     "Is there any communication about needing space, or does contact just stop unexplained?",
+     "Would resolution happen without the target needing to be the one to break the silence?"
+    ],
+    "less_concerning_if": [
+     "Withdrawal is explained, time-bound, and ends with genuine resolution, not specifically tied to the target's compliance."
+    ],
+    "more_concerning_if": [
+     "Silence is open-ended, unexplained, and ends specifically once the target apologizes or complies."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "The Exception Script",
+   "category": "Attachment & Affection Control",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Separating the target from peer solidarity by declaring them uniquely different, binding their identity to staying special in the manipulator's eyes.",
+    "expanded_definition": "Separating the target from peer solidarity by declaring them uniquely different, binding their identity to staying special in the manipulator's eyes. If your worth depends on being 'not like the others,' criticizing the manipulator or rejoining your peers threatens your whole sense of specialness. As a communication pattern, The Exception Script-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: separating the target from peer solidarity by declaring them uniquely different, binding their identity to staying special in the manipulator's eyes.",
+    "why_this_matters": "If your worth depends on being 'not like the others,' criticizing the manipulator or rejoining your peers threatens your whole sense of specialness. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Separating the target from peer solidarity by declaring them uniquely different, binding their identity to staying special in the manipulator's eyes.",
+     "If your worth depends on being 'not like the others,' criticizing the manipulator or rejoining your peers threatens your whole sense of specialness.",
+     "Contrasts with a healthier version: \"I like how you think about this\" — praise that doesn't require distancing you from anyone else.",
+     "Recognizable by phrasing such as \"You're not like the others, you actually get it\"."
+    ],
+    "what_it_sounds_like": [
+     "You're not like the others, you actually get it.",
+     "You're different — everyone else just doesn't understand.",
+     "You're not like the others.",
+     "You're different, not like the rest."
+    ],
+    "what_it_is_not": [
+     "Genuine, specific compliments exist and don't always carry an isolating agenda — the flag is the implied contrast with 'everyone else.'"
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine appreciation for feeling uniquely understood by someone is a normal, positive experience."
+    ],
+    "common_false_positives": [
+     "Genuine, specific praise for someone's actual qualities or ideas, without requiring distance from their peers to sustain it.",
+     "A person expressing real appreciation for feeling understood, without using it to isolate the target from others.",
+     "Honest recognition of a real, unique connection that doesn't come paired with putting down the target's other relationships."
+    ],
+    "discernment_questions": [
+     "Does the praise require the target to see themselves as different from or above their peers to receive it?",
+     "Does the target's sense of specialness depend on continued distance from other people in their life?",
+     "What happens to the warmth if the target reconnects with the peers they're supposedly \"not like\"?",
+     "Is the compliment specific to the target's actual qualities, or mainly about being unlike everyone else?"
+    ],
+    "less_concerning_if": [
+     "Praise is specific to the target's actual qualities and doesn't require distance from their peers to sustain it."
+    ],
+    "more_concerning_if": [
+     "The target's specialness depends on continued distance from peers, and warmth cools when they reconnect with others."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Conditional Love",
+     "definition": "Making affection explicitly contingent on obedience."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

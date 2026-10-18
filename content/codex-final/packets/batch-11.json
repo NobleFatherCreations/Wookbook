@@ -1,0 +1,704 @@
+{
+ "batch": "batch-11",
+ "kind": "normal",
+ "category": "Confusion / rhetoric",
+ "entries": [
+  {
+   "name": "Priming / Narrative Seeding",
+   "category": "Confusion / rhetoric",
+   "tier": "Watch-only",
+   "branch": "watch",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target reads an event through a lens they never chose, and mistakes a supplied conclusion for their own judgement. The frame is hardest to question precisely because it arrived before the evidence did."
+   },
+   "existing_specific_text": {
+    "short_definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose.",
+    "expanded_definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose. As a communication pattern, Priming / Narrative Seeding-type behavior in the Confusion / rhetoric category tends to work by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome — describing a pattern in the exchange, not a fixed trait in the person. As a Watch-only entry, note: text alone cannot establish intent here, and this is never scored by the tool.",
+    "plain_language_summary": "In plain terms: subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose.",
+     "Recognizable by phrasing such as \"A pointed comment or story shared right before an event that quietly shapes how the event gets interpreted afterward\"."
+    ],
+    "what_it_sounds_like": [
+     "A pointed comment or story shared right before an event that quietly shapes how the event gets interpreted afterward.",
+     "Something that reads as subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose on its surface, but could equally be an honest mismatch in communication style."
+    ],
+    "what_it_is_not": [
+     "This requires comparing what was said before an event to what happened after — a single pasted message can't show the 'before,' making this fundamentally unreliable to detect from one snippet of text."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People often share genuinely relevant context before an event without any strategic framing intent.",
+     "Coincidental timing between an unrelated comment and a later event doesn't prove deliberate seeding."
+    ],
+    "common_false_positives": [
+     "Someone sharing genuinely relevant context or a real concern before an event, without any intent to bias how it's perceived.",
+     "A story or comment that happens to color perception coincidentally, without being deliberately timed or chosen for that effect.",
+     "Legitimate preparation or briefing before a shared experience, offered transparently as helpful context."
+    ],
+    "discernment_questions": [
+     "Was the comment or story shared specifically and closely timed before the event it later colors?",
+     "Does the framing seem selected specifically to produce one particular interpretation, rather than a neutral account?",
+     "Would the event have been interpreted differently without this specific prior comment?",
+     "Is this a one-time occurrence, or does a pattern emerge of pre-framing before recurring situations?"
+    ],
+    "less_concerning_if": [
+     "The prior comment reflects genuine, relevant context, shared transparently rather than strategically timed."
+    ],
+    "more_concerning_if": [
+     "The comment is closely timed before the event and consistently produces one particular, convenient interpretation."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Frame Assassination",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target arrives with a concern about an action and leaves defending their own stability. The original point is not refused, which is why it is so hard to notice that it was never answered.",
+    "what_it_is_not": "Conversations drift, and redirecting one collaboratively is ordinary; someone can also raise a real worry about your wellbeing without meaning to displace what you said. The test is whether the original topic can be returned to at all."
+   },
+   "existing_specific_text": {
+    "short_definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior.",
+    "expanded_definition": "Killing the target's original frame for a conversation — \"you did X, and it affected me this way\" — and replacing it with a different one that centers the target's emotional state or character instead of the other person's behavior. This is a more aggressive, decisive version of Frame Control: rather than gradually redirecting, it explicitly dismantles the target's frame and substitutes another one in its place.",
+    "plain_language_summary": "In plain terms: killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    ],
+    "what_it_sounds_like": [
+     "A concern about a specific action is answered with a statement that redefines the entire conversation as being about the target's character or emotional state.",
+     "\"This isn't about what I did, this is about how unstable you've been lately\" used to completely replace the original topic.",
+     "No matter how the original concern is reasserted, the conversation stays anchored in the substitute frame."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Conversations sometimes genuinely need to widen to include more than one person's concern. Good-faith redirection toward a more productive framing is a normal part of difficult conversations."
+    ],
+    "common_false_positives": [
+     "A genuine, good-faith redirection when a conversation has drifted somewhere unproductive, offered collaboratively rather than as a dismantling.",
+     "Someone raising a real, separate concern about the target's wellbeing that isn't meant to replace the original topic entirely.",
+     "A conversation that naturally evolves to include both people's concerns, without either frame being \"killed.\""
+    ],
+    "discernment_questions": [
+     "Does the original concern get any space to be addressed, or is it entirely replaced by the new frame?",
+     "Is the new frame introduced collaboratively, or unilaterally imposed regardless of the target's response?",
+     "Does reasserting the original concern ever succeed in returning the conversation to it?",
+     "Would a neutral observer agree the substitute frame is a genuine, separate issue, or a deflection?"
+    ],
+    "less_concerning_if": [
+     "The original concern retains some space in the conversation, even alongside a new, genuinely relevant point."
+    ],
+    "more_concerning_if": [
+     "The original concern is entirely and permanently displaced by the substitute frame, with no way back to it."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Credibility Theft",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's account is discounted before they give it, so whatever they later report lands on people who have already been prepared not to believe it — and they usually never learn why.",
+    "what_it_is_not": "A documented record of inaccuracy reasonably does affect how much weight an account carries, and doubting one particular claim is not a campaign. The separation is between doubt about a claim and doubt installed in advance about the person."
+   },
+   "existing_specific_text": {
+    "short_definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted.",
+    "expanded_definition": "Undermining someone's reliability as a witness to their own experience — through claims about their memory, emotional stability, or honesty — specifically so that their testimony about anything is pre-discounted before it's even given. Unlike a single instance of disputing a specific claim, this targets the target's credibility as a category, so that future claims are automatically suspect regardless of their content.",
+    "plain_language_summary": "In plain terms: undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    ],
+    "what_it_sounds_like": [
+     "General statements about the target's unreliability, dishonesty, or instability introduced to people who haven't yet heard the target's actual account.",
+     "\"You know how they exaggerate\" said preemptively, before the target has said anything specific.",
+     "The target notices that their factual accounts get treated with more skepticism than their track record of accuracy would actually warrant."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "A genuine, real pattern of inaccuracy can reasonably affect how much weight people give someone's claims. Specific, honest concerns about a particular claim aren't the same as a general credibility attack."
+    ],
+    "common_false_positives": [
+     "A genuine, documented pattern of inaccuracy that would reasonably affect how much weight to give someone's account.",
+     "Someone sharing an honest, specific concern about a particular claim, not a general campaign against the target's overall credibility.",
+     "Two people with a real history of disagreement where mutual skepticism has developed organically on both sides."
+    ],
+    "discernment_questions": [
+     "Is there an actual, documented pattern of inaccuracy, or is the credibility attack general and unsubstantiated?",
+     "Is the credibility-undermining introduced preemptively, before the target has said anything specific?",
+     "Does the target's actual track record of accuracy support the level of skepticism being directed at them?",
+     "Would this campaign against credibility exist independent of a specific conflict where the target's account is inconvenient?"
+    ],
+    "less_concerning_if": [
+     "Any skepticism about accuracy is proportionate to a real, documented pattern."
+    ],
+    "more_concerning_if": [
+     "General, unsubstantiated doubt is introduced preemptively, specifically to pre-discount future claims."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Projection",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target spends the conversation defending themselves against the thing being done to them, which makes the actual source of the harm very hard to see, let alone describe to anyone else.",
+    "what_it_is_not": "An accusation can be accurate even when it also describes the accuser, and in most conflicts both people contribute some of the same behaviour. Someone naming a pattern they share, and owning their half of it, is doing the opposite of this."
+   },
+   "existing_specific_text": {
+    "short_definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible.",
+    "expanded_definition": "Attributing one's own harmful behavior, motives, or flaws to the target, so that the actual source of the harm becomes hard to locate — the target ends up defending against accusations that, on examination, describe the accuser's own behavior more accurately than the target's. This can be genuinely difficult to recognize in the moment, since the accusation often contains real emotional charge even when it's misdirected.",
+    "plain_language_summary": "In plain terms: attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    ],
+    "what_it_sounds_like": [
+     "An accusation leveled at the target that, on reflection, more accurately describes the accuser's own recent behavior.",
+     "\"You're the one who's controlling\" said by someone exhibiting controlling behavior in the very conversation where they're saying it.",
+     "A consistent pattern where the target is accused of exactly the behavior the accuser has themselves been engaging in."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes an accurate criticism happens to apply to both people in a conflict, without either one deflecting. Genuine, mutual acknowledgment of a shared pattern is a healthy, non-manipulative thing."
+    ],
+    "common_false_positives": [
+     "A genuine, accurate observation about the target's behavior that happens to also describe something the accuser struggles with, without being a deflection.",
+     "Two people in a conflict where both have legitimately contributed some of the same problematic behavior.",
+     "Self-aware, honest acknowledgment from someone about a shared pattern, not an accusation aimed only at the target."
+    ],
+    "discernment_questions": [
+     "Does the accusation, examined closely, describe the accuser's own recent behavior more accurately than the target's?",
+     "Is the accusation raised specifically in response to the target pointing out the accuser's behavior?",
+     "Does the target have independent evidence that contradicts the accusation?",
+     "Would a neutral third party, familiar with both people's actual behavior, find the accusation accurate?"
+    ],
+    "less_concerning_if": [
+     "The accusation holds up as an accurate, independently-verifiable description of the target's actual behavior."
+    ],
+    "more_concerning_if": [
+     "The accusation more accurately describes the accuser, and surfaces specifically in response to being confronted."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Authority Hijack",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target ends up arguing the case for their own feelings, and simply being taken at their word stops being available to them.",
+    "what_it_is_not": "People who know you well sometimes offer a reading you had not considered, and in therapy that questioning is invited rather than imposed; a clarifying question is not a counter-claim. The difference is whether your own account is still allowed to be the last word on it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean.",
+    "expanded_definition": "Claiming interpretive authority over the target's own inner experience — insisting on knowing what they \"really\" feel, think, or mean better than they do themselves. This goes beyond disagreement about outward behavior into disputing the target's access to their own mind, which is a distinct and more destabilizing kind of authority claim.",
+    "plain_language_summary": "In plain terms: claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    ],
+    "what_it_sounds_like": [
+     "\"You don't actually feel that, you just think you do\" offered as a correction to the target's own stated feelings.",
+     "\"I know what you really meant\" used to override the target's clearly stated intent.",
+     "The target finds themselves arguing about what they're actually feeling, rather than being taken at their word."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Close relationships sometimes involve gentle, collaborative exploration of feelings that isn't about claiming superior authority. Genuine misunderstandings and clarifying questions are a normal part of communication."
+    ],
+    "common_false_positives": [
+     "A close friend or partner gently offering an alternative interpretation, while still ultimately deferring to the target's own account.",
+     "Genuine, collaborative exploration of feelings in a therapeutic context, where questioning is invited rather than imposed.",
+     "A person who misunderstood and is asking a clarifying question, not asserting a counter-claim about the target's inner state."
+    ],
+    "discernment_questions": [
+     "Does the person ultimately defer to the target's own account of their feelings, or insist on their own interpretation regardless?",
+     "Is the alternative interpretation offered as a genuine question, or asserted as fact?",
+     "Does this happen specifically when the target's stated feelings are inconvenient for the other person?",
+     "Would the target's own account ever be accepted as the final word, or is it always open to being overruled?"
+    ],
+    "less_concerning_if": [
+     "An alternative interpretation is offered as a genuine question and the target's own account is ultimately respected."
+    ],
+    "more_concerning_if": [
+     "The target's stated feelings are consistently overruled by the other person's claimed superior knowledge of their inner state."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Accountability Evasion via Diagnosis",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The complaint is never answered — it is converted into a symptom, and the target is sent to seek treatment for a reaction to someone else's conduct.",
+    "what_it_is_not": "A real condition can genuinely be part of the picture, and someone qualified raising it with care is doing their job. The question is whether the original report ever gets answered by anybody, or whether the diagnosis is where the matter ends."
+   },
+   "existing_specific_text": {
+    "short_definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior.",
+    "expanded_definition": "Replacing an honest acknowledgment of institutional or relational failure — \"we failed you,\" \"this shouldn't have happened\" — with a clinical-sounding diagnosis that recasts the problem as something wrong with the target's mind or condition, rather than something the system or person did. The diagnosis, whether accurate or not, functions to close the accountability conversation rather than open a treatment one.",
+    "plain_language_summary": "In plain terms: replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    ],
+    "what_it_sounds_like": [
+     "A complaint about mistreatment is met with a suggestion that the complainant's reaction reflects an underlying condition, rather than engagement with what was reported.",
+     "\"Have you considered that you might have a condition?\" offered specifically in response to a concern about someone else's behavior.",
+     "The conversation shifts entirely from what happened to what might be wrong with the person who's raising it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes genuine concern about someone's wellbeing is real and separate from any attempt to dodge accountability. Qualified professionals sometimes appropriately raise clinical considerations as part of a caring, not dismissive, conversation."
+    ],
+    "common_false_positives": [
+     "A genuine, appropriately-timed clinical observation from someone qualified to make it, offered supportively rather than to deflect.",
+     "A situation where a real underlying condition does explain part of the reaction, raised with genuine care rather than to end the conversation.",
+     "Concern for someone's wellbeing that's separate from, not a replacement for, addressing their actual complaint."
+    ],
+    "discernment_questions": [
+     "Does the diagnosis-talk replace addressing the original complaint entirely, or does the complaint still get engaged with alongside it?",
+     "Is the person offering the diagnosis actually qualified to do so, and is it offered supportively or dismissively?",
+     "Does this pattern happen specifically when accountability is being sought, or in genuinely caring, unrelated contexts?",
+     "Would the original complaint still stand as valid even if the diagnosis were accurate?"
+    ],
+    "less_concerning_if": [
+     "The original concern still gets addressed, and any diagnostic language is offered supportively, not as a replacement for accountability."
+    ],
+    "more_concerning_if": [
+     "The diagnosis talk consistently substitutes for ever addressing the original complaint."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Identity Diminishment via Pathologizing",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Self-protection gets reclassified as a symptom, so the target's boundaries cost them credibility and any pushback is read as further evidence of the alleged problem.",
+    "what_it_is_not": "A trusted person can gently name a real escalation out of genuine care, and a diagnosis someone has disclosed themselves can be referred to supportively. What is described here is a boundary answered with a label instead of a response."
+   },
+   "existing_specific_text": {
+    "short_definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology.",
+    "expanded_definition": "Turning the target's boundaries, ordinary emotional reactions, or personal differences into evidence of a disorder or pathology, so that self-protection itself gets reframed as a symptom rather than a reasonable response. This can make the target hesitant to assert any boundary at all, since doing so risks having it used as further \"evidence\" of the alleged pathology.",
+    "plain_language_summary": "In plain terms: turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+    ],
+    "what_it_sounds_like": [
+     "A reasonable boundary is described using clinical-sounding language that implies something is wrong with the person setting it.",
+     "\"That's your anxiety talking\" or similar framing applied to a response that would be reasonable for most people in the same situation.",
+     "The target notices that any pushback, however measured, gets treated as further confirmation of an alleged underlying issue."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes a real pattern does exist and gets raised supportively, separate from dismissing a current, valid point. Genuine, disclosed diagnoses can be referenced with real care rather than weaponized."
+    ],
+    "common_false_positives": [
+     "A genuine, appropriately qualified observation about a real pattern, offered supportively and separately from dismissing the target's current point.",
+     "A trusted person gently and appropriately raising a real concern about escalating reactions, in a caring rather than dismissive way.",
+     "The target's own openness about a real diagnosis they've disclosed, referenced in a supportive rather than weaponizing way."
+    ],
+    "discernment_questions": [
+     "Would the target's reaction be considered reasonable for most people in the same situation, independent of any alleged pathology?",
+     "Is the pathologizing language used specifically in response to boundaries or pushback, or in a genuinely separate, supportive context?",
+     "Does the person asserting the pathology have any real basis or qualification to do so?",
+     "Does every reaction, regardless of content, get filtered through the same pathologizing lens?"
+    ],
+    "less_concerning_if": [
+     "The reaction, examined on its own, would be seen as disproportionate by most reasonable observers, and any pathology framing is offered supportively."
+    ],
+    "more_concerning_if": [
+     "Ordinary, proportionate boundaries get consistently relabeled as pathology, specifically in response to pushback."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Pseudo-Insight as Shutdown",
+   "category": "Confusion / rhetoric",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "A specific, checkable complaint is converted into something unfalsifiable about the target's inner life, which closes the conversation without anything being resolved or even disputed.",
+    "what_it_is_not": "\"You're projecting\" is sometimes accurate, and in a therapy room that kind of exploration is the agreed purpose of being there. The marker is a psychological reading offered as the whole reply to a concrete complaint."
+   },
+   "existing_specific_text": {
+    "short_definition": "\"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance.",
+    "expanded_definition": "Psychological-sounding language — \"you're projecting,\" \"this is your trauma talking\" — deployed specifically to close a conversation rather than to actually engage with its substance. The language borrows real clinical concepts, which gives it a veneer of insight, but its actual function here is to end the discussion by relocating the problem entirely inside the target.",
+    "plain_language_summary": "In plain terms: \"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "\"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance."
+    ],
+    "what_it_sounds_like": [
+     "\"You're projecting\" offered as a complete response to a specific, substantive concern, without any engagement with what was actually raised.",
+     "\"This is clearly about your past, not about what I did\" used to redirect a concrete complaint into an internal, unfalsifiable psychological explanation.",
+     "The target notices that raising almost any concern gets met with the same handful of psychological-sounding dismissals."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Real, evidenced psychological observations exist and can be offered thoughtfully alongside genuine engagement. Therapeutic contexts legitimately focus on internal psychological dynamics as their actual purpose."
+    ],
+    "common_false_positives": [
+     "A genuine, thoughtful observation from someone who also engages substantively with the target's specific concern, not instead of it.",
+     "A therapeutic context where exploring psychological dynamics is the actual, agreed-upon purpose of the conversation.",
+     "An accurate, well-evidenced observation about a real pattern, offered as one part of a fuller conversation rather than as a conversation-ending move."
+    ],
+    "discernment_questions": [
+     "Does the psychological framing replace engagement with the substance, or accompany real engagement with it?",
+     "Is the same handful of psychological-sounding phrases used regardless of what specific concern is raised?",
+     "Does the target have any way to have their actual, concrete concern addressed, separate from this reframing?",
+     "Is this offered in a context where exploring internal psychology is the explicit, mutually agreed purpose?"
+    ],
+    "less_concerning_if": [
+     "The psychological observation accompanies, rather than replaces, real engagement with the specific concern raised."
+    ],
+    "more_concerning_if": [
+     "The same psychological-sounding dismissal is used regardless of the actual concern, and nothing concrete ever gets addressed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Assassination",
+     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

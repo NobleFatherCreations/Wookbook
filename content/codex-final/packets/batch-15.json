@@ -1,0 +1,523 @@
+{
+ "batch": "batch-15",
+ "kind": "normal",
+ "category": "Control & Domination",
+ "entries": [
+  {
+   "name": "Velvet Glove Control",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Nothing in the delivery offers anything to object to, so the narrowing of a person's choices happens while they feel well looked after.",
+    "what_it_is_not": "Gentle guidance from someone who ultimately accepts a decision they disagree with is care, not control, and a soft-spoken manner conceals nothing by itself. The test sits at the point of refusal, not in how the request was phrased."
+   },
+   "existing_specific_text": {
+    "short_definition": "Domination delivered through gentleness and softness rather than force, making it harder to name as control.",
+    "expanded_definition": "Domination delivered through gentleness, softness, and apparent care rather than force or overt demands, which makes it considerably harder to name as control — the target may feel cared for even while their autonomy is being steadily narrowed, since nothing about the delivery feels aggressive or unreasonable in the moment. The softness of the method doesn't change the substance of the outcome: choices are still being made for the target, just kindly.",
+    "plain_language_summary": "In plain terms: domination delivered through gentleness and softness rather than force, making it harder to name as control.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Domination delivered through gentleness and softness rather than force, making it harder to name as control."
+    ],
+    "what_it_sounds_like": [
+     "Decisions consistently get made \"for the target's own good,\" delivered warmly, without the target ever quite being asked what they actually want.",
+     "Pushback is met not with anger but with gentle, concerned-sounding persistence that's hard to argue with without seeming unreasonable.",
+     "Looking back over time, the target notices their autonomy has narrowed considerably, even though no single moment felt confrontational."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely gentle, caring people exist and can offer honest input while still respecting someone's final decision. A soft communication style doesn't automatically indicate hidden control."
+    ],
+    "common_false_positives": [
+     "Genuinely caring, gentle guidance from someone who ultimately respects the target's final decision, even while offering their honest opinion.",
+     "A naturally soft-spoken communication style that isn't hiding any controlling intent.",
+     "Real concern, gently expressed, about a decision where the target's autonomy to choose is still genuinely respected in the end."
+    ],
+    "discernment_questions": [
+     "When the target does make their own choice, different from what was gently suggested, is it actually respected?",
+     "Does the gentle persistence ever stop, or does it continue indefinitely until the target complies?",
+     "Looking at outcomes over time rather than any single interaction, has the target's autonomy actually narrowed?",
+     "Would this pattern be easier to name if it were delivered more bluntly, with the same underlying substance?"
+    ],
+    "less_concerning_if": [
+     "The target's own choices, when made, are genuinely respected even if they differ from the gentle suggestion."
+    ],
+    "more_concerning_if": [
+     "Gentle persistence continues indefinitely regardless of the target's stated choice, and autonomy visibly narrows over time."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Demonstrating Omnipotence",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Resistance stops being attempted because it has already been made to look pointless, and that conclusion gets reached without anything having been tried.",
+    "what_it_is_not": "Someone who genuinely has more reach or information in a particular area may simply be using it, and knowing something unexpected usually has an ordinary explanation. Being well-connected is not a display; what marks the pattern is capability shown for no purpose other than being seen."
+   },
+   "existing_specific_text": {
+    "short_definition": "Performing total control or capability to convince a target that resistance is pointless.",
+    "expanded_definition": "Performing an exaggerated sense of total control, capability, or reach — knowing things they shouldn't, showing up unexpectedly, demonstrating influence over outcomes — specifically to convince a target that resistance or independent action is pointless. The display of power matters more than any actual practical use of it; the goal is the target's belief that opposing it wouldn't work.",
+    "plain_language_summary": "In plain terms: performing total control or capability to convince a target that resistance is pointless.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Performing total control or capability to convince a target that resistance is pointless."
+    ],
+    "what_it_sounds_like": [
+     "Unprompted demonstrations of knowing private information or being able to influence outcomes the target didn't expect.",
+     "\"There's nothing you can do that I won't find out about\" or similar statements asserting total awareness or control.",
+     "A pattern of showing up or intervening in situations specifically to demonstrate reach, beyond what the situation required."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some people genuinely are well-connected or capable and mention it without intimidating intent. Legitimate, appropriately-shared information or influence isn't the same as a deliberate power display."
+    ],
+    "common_false_positives": [
+     "Someone who legitimately has more information or influence in a specific area, sharing it appropriately rather than to intimidate.",
+     "Coincidental awareness of information through normal, non-surveillance means.",
+     "A person who is generally well-connected or capable, without using that as a deliberate intimidation tactic."
+    ],
+    "discernment_questions": [
+     "Does the demonstration of capability serve any practical purpose, or does it seem aimed purely at the target's sense of powerlessness?",
+     "Is the underlying capability real and proportionate, or exaggerated for effect?",
+     "Does the target notice themselves not pursuing options specifically because of this demonstrated capability?",
+     "Would this behavior make sense in the absence of any relationship where control was at stake?"
+    ],
+    "less_concerning_if": [
+     "Any demonstrated capability is proportionate, has a practical purpose, and isn't specifically wielded to discourage the target's independent action."
+    ],
+    "more_concerning_if": [
+     "Displays of capability seem disproportionate to any practical need and specifically function to discourage resistance."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Forced Dependency",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The ability to manage alone is not lost through circumstance but never allowed to develop, so staying becomes the only workable option rather than the chosen one.",
+    "what_it_is_not": "Differences in skill and interest naturally lead to one person handling certain things, and reasonable reliance during a genuine crisis is temporary by design. Someone who has decided they do not want to learn a task has made that choice. The difference is whether dependence reduces over time or is maintained."
+   },
+   "existing_specific_text": {
+    "short_definition": "Structuring a relationship or system so the other person cannot function without continued help from the controlling party.",
+    "expanded_definition": "Structuring a relationship, job, or system so that the other person genuinely cannot function without continued help from the controlling party — withholding skills, information, or access that would otherwise allow independence, so that dependency isn't incidental but actively maintained. This differs from ordinary interdependence in that the dependency is one-directional and seems maintained rather than naturally reduced over time.",
+    "plain_language_summary": "In plain terms: structuring a relationship or system so the other person cannot function without continued help from the controlling party.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Structuring a relationship or system so the other person cannot function without continued help from the controlling party."
+    ],
+    "what_it_sounds_like": [
+     "Skills or knowledge that would allow the target more independence are consistently withheld or discouraged, even when there's no good reason to withhold them.",
+     "The target notices that tasks they could reasonably learn to do themselves are always handled by the other person instead.",
+     "Attempts to build independence in a specific area are met with subtle discouragement or a sense that it's unnecessary."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine differences in skill and interest naturally lead couples and families to divide labor without anyone controlling the other. Temporary reliance during a real crisis is normal, not inherently a control tactic."
+    ],
+    "common_false_positives": [
+     "Genuine differences in skill or interest that naturally lead to one person handling certain things, without any effort to prevent the other from learning.",
+     "A temporary period of reasonable reliance during a genuine crisis or transition, expected to reduce over time.",
+     "One person offering to help with something the other person genuinely doesn't want to learn, by their own choice."
+    ],
+    "discernment_questions": [
+     "Is there active discouragement of the target learning or gaining access, or just a neutral division of labor?",
+     "Does the dependency reduce naturally over time, or does it seem actively maintained?",
+     "Would the controlling party's position be affected if the target became fully independent in this area?",
+     "Does the target want to build more independence here, and if so, is that supported or subtly discouraged?"
+    ],
+    "less_concerning_if": [
+     "The division of labor reflects genuine preference or skill difference, and independence is supported if wanted."
+    ],
+    "more_concerning_if": [
+     "The target's attempts to build independence are actively discouraged, and dependency seems maintained rather than incidental."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Golden Bars",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Comfort becomes an argument against leaving that has nothing to do with whether the arrangement is sound, and describing the situation to anyone else makes it sound enviable.",
+    "what_it_is_not": "Unconditional generosity that would survive a disagreement is not a cage, and every major life decision involves real trade-offs that are fair to weigh openly. Material comfort being one honestly discussed factor among several in a mutual decision is ordinary."
+   },
+   "existing_specific_text": {
+    "short_definition": "Privileges, benefits, or comforts that come with strings of compliance, making the cage feel like a gift.",
+    "expanded_definition": "Privileges, benefits, or comforts — financial security, a comfortable lifestyle, social status — offered in a way that comes with implicit or explicit strings of compliance, so that the arrangement functions as a kind of gilded cage: genuinely nice, but conditional on staying within certain limits. The comfort itself becomes an argument against leaving or resisting, independent of whether the underlying relationship or arrangement is otherwise healthy.",
+    "plain_language_summary": "In plain terms: privileges, benefits, or comforts that come with strings of compliance, making the cage feel like a gift.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Privileges, benefits, or comforts that come with strings of compliance, making the cage feel like a gift."
+    ],
+    "what_it_sounds_like": [
+     "Access to real comforts or benefits is framed, explicitly or implicitly, as conditional on continued compliance or good behavior.",
+     "\"Look at everything you'd be giving up\" invoked in response to any consideration of pushing back or leaving.",
+     "The comfort of the arrangement is used as the primary argument for staying, rather than the quality of the underlying relationship."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine generosity and shared comfort in a relationship aren't inherently manipulative. Real trade-offs are an honest part of major life decisions when acknowledged rather than weaponized."
+    ],
+    "common_false_positives": [
+     "Genuine, unconditional generosity or shared comfort that isn't tied to compliance and wouldn't be withdrawn for disagreement.",
+     "Real, practical trade-offs that any major life decision involves, honestly acknowledged rather than weaponized.",
+     "A relationship where material comfort is one honestly-discussed factor among several in a genuinely mutual decision."
+    ],
+    "discernment_questions": [
+     "Is access to the comfort or benefit actually conditional on compliance, or would it continue regardless of disagreement?",
+     "Is the comfort invoked specifically when the target considers pushing back, or is it a stable, unconditional part of the relationship?",
+     "Would this arrangement still feel worth it if the underlying relationship quality were evaluated separately from the material comfort?",
+     "Is there room to disagree or push back without any threat, explicit or implicit, to the comfort itself?"
+    ],
+    "less_concerning_if": [
+     "The comfort or benefit is unconditional and doesn't get invoked as leverage during disagreements."
+    ],
+    "more_concerning_if": [
+     "The comfort is specifically and repeatedly invoked as a reason not to push back or leave."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Manufactured Scarcity",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Fear of losing the opportunity does the evaluating, and by the time there is room to think properly the decision has already been made.",
+    "what_it_is_not": "Genuinely limited, time-sensitive opportunities exist, and their scarcity can usually be checked independently. Someone accurately reporting real stakes is not creating urgency. Deadlines that come from outside circumstances are not manufactured by whoever mentions them."
+   },
+   "existing_specific_text": {
+    "short_definition": "\"This is your only chance\" framing designed to trigger fear of loss and override evaluation.",
+    "expanded_definition": "\"This is your only chance\" or similar framing, designed to trigger a fear of permanently losing an opportunity or relationship, which overrides careful evaluation in favor of an immediate decision. The scarcity may be entirely fabricated, exaggerated, or technically true but irrelevant — the goal is the felt urgency of loss, not necessarily an accurate representation of the actual stakes.",
+    "plain_language_summary": "In plain terms: \"This is your only chance\" framing designed to trigger fear of loss and override evaluation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "\"This is your only chance\" framing designed to trigger fear of loss and override evaluation."
+    ],
+    "what_it_sounds_like": [
+     "\"If you don't decide now, this opportunity is gone forever\" applied to something that doesn't actually have that kind of finality.",
+     "A sense of manufactured competition or limited availability that doesn't hold up to independent verification.",
+     "The target notices, in hindsight, that the \"only chance\" framing wasn't actually true — the opportunity or relationship was more available than presented."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely time-sensitive opportunities and real deadlines do exist and are honestly communicated. Some situations really are rare and worth communicating with real urgency."
+    ],
+    "common_false_positives": [
+     "A genuinely limited, time-sensitive opportunity where the scarcity is real and independently verifiable.",
+     "Someone honestly and accurately communicating real stakes, without exaggeration.",
+     "A natural, non-manufactured deadline that exists for legitimate external reasons."
+    ],
+    "discernment_questions": [
+     "Is the scarcity independently verifiable, or does it rely entirely on the other person's claim?",
+     "Does evaluating the situation calmly, without the urgency, change the assessment of whether it's actually rare?",
+     "Has this same \"only chance\" framing been used before, about different things, suggesting a pattern?",
+     "What happens if the target doesn't act immediately — does the claimed consequence actually materialize?"
+    ],
+    "less_concerning_if": [
+     "The scarcity is real, verifiable, and proportionately communicated."
+    ],
+    "more_concerning_if": [
+     "The scarcity doesn't hold up to independent verification and this framing recurs as a pattern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Time Theft",
+   "category": "Control & Domination",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Hours are lost that cannot be recovered, and the message carried in the losing of them — that this person's time is not worth planning around — is absorbed long before it is ever named.",
+    "what_it_is_not": "Occasional lateness from real circumstances, acknowledged and apologised for, is just life. Some people are chronically disorganised with everyone rather than with one person. Genuinely unpredictable work or caring commitments create real scheduling difficulty with no signal attached to it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Chronically wasting, disrespecting, or consuming the target's time as a dominance signal communicating that their time has no value.",
+    "expanded_definition": "Chronically wasting, disrespecting, or consuming the target's time as a dominance signal communicating that their time has no value. As a communication pattern, Time Theft-type behavior in the Control & Domination category tends to work by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
+    "plain_language_summary": "In plain terms: chronically wasting, disrespecting, or consuming the target's time as a dominance signal communicating that their time has no value.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Chronically wasting, disrespecting, or consuming the target's time as a dominance signal communicating that their time has no value."
+    ],
+    "what_it_sounds_like": [
+     "Chronic lateness or last-minute cancellations that consistently cost the target time without acknowledgment or adjustment.",
+     "Open-ended waiting imposed on the target — being kept waiting without explanation or a clear timeframe — repeatedly.",
+     "The target notices their own time is treated as infinitely flexible while the other person's time is treated as valuable and protected."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely disorganized people exist and can be inconsiderate with everyone's time, not just the target's. Real circumstances like demanding jobs or caregiving can create honest scheduling difficulty."
+    ],
+    "common_false_positives": [
+     "Genuine, occasional lateness due to real circumstances, acknowledged and apologized for, without a broader pattern.",
+     "A person who is chronically disorganized across all their relationships, not specifically toward the target.",
+     "Legitimately unpredictable circumstances that create real scheduling difficulty without disrespect intended."
+    ],
+    "discernment_questions": [
+     "Is the pattern specific to interactions with this target, or does it happen consistently across all of this person's relationships?",
+     "Is there acknowledgment and adjustment after the target raises the issue, or does the pattern continue unchanged?",
+     "Does the same person protect their own time carefully while treating the target's time as infinitely available?",
+     "Would a reasonable person consider the frequency and impact disproportionate to normal scheduling friction?"
+    ],
+    "less_concerning_if": [
+     "The pattern is acknowledged, apologized for, and genuinely improves when raised."
+    ],
+    "more_concerning_if": [
+     "The pattern is specific to the target, persists despite being raised, and contrasts with how the person protects their own time."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

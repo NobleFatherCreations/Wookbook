@@ -1,0 +1,436 @@
+{
+ "batch": "batch-24",
+ "kind": "normal",
+ "category": "Discard / institutional",
+ "entries": [
+  {
+   "name": "Reputation Warfare (Post-Separation)",
+   "category": "Discard / institutional",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "An account seeded among the right people follows someone into work and friendships they thought were separate, and it is answered — if ever — long after it has been believed.",
+    "what_it_is_not": "Venting honestly to a close friend after a painful breakup is not a campaign, shared contacts can reach their own conclusions from their own experience, and social circles simply thin out after a separation. A sustained, coordinated narrative that follows them specifically into their professional life is what stands apart."
+   },
+   "existing_specific_text": {
+    "short_definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting.",
+    "expanded_definition": "Systematic destruction of the target's credibility and social standing after a relationship or affiliation ends, through reference sabotage, narrative seeding among shared contacts, and industry or community blacklisting — a coordinated, sustained campaign rather than a single instance of venting, specifically designed to follow the target into their next chapter.",
+    "plain_language_summary": "In plain terms: systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
+    ],
+    "what_it_sounds_like": [
+     "Professional or social contacts the target once shared begin treating them differently, tracing back to specific, damaging narratives seeded after the separation.",
+     "References or introductions that would once have been readily given are now quietly withheld or actively undermined.",
+     "The target discovers a consistent, damaging characterization circulating specifically among people relevant to their career or social standing."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "A single, honest vent to a close friend after a hard breakup is normal and human.",
+     "Shared contacts sometimes independently develop their own concerns, unconnected to any campaign."
+    ],
+    "common_false_positives": [
+     "A single instance of one person venting honestly about a difficult breakup to a close friend, without a sustained, coordinated campaign.",
+     "Genuine, independent concerns from shared contacts based on their own separate experience, not seeded by the ex-partner.",
+     "Natural professional or social distance that develops after a relationship ends, without any active campaign behind it."
+    ],
+    "discernment_questions": [
+     "Does the damaging narrative trace to a coordinated, sustained effort, or a single vented conversation?",
+     "Do the shared contacts have independent experience, or are they relaying a narrative from one specific source?",
+     "Is the campaign specifically targeted at contexts that matter most to the target's career or social standing?",
+     "Does this continue over an extended period after the separation, rather than fading naturally?"
+    ],
+    "less_concerning_if": [
+     "Any negative sentiment traces to a single instance of venting or to contacts' own independent experience."
+    ],
+    "more_concerning_if": [
+     "A sustained, coordinated narrative specifically targets the target's professional or social standing over an extended period."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Public Exposure",
+     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Edited Recordings",
+   "category": "Discard / institutional",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "A recording carries the authority of evidence, so the burden falls on the person in it to talk their way out of something that appears to show itself.",
+    "what_it_is_not": "Clips get shortened for length and clarity constantly, and an excerpt honestly labelled as partial makes no claim to be the whole picture. Poor recording quality and natural gaps in a device's capture are not edits."
+   },
+   "existing_specific_text": {
+    "short_definition": "Cropped, spliced, or decontextualized recordings selectively presented as complete evidence.",
+    "expanded_definition": "Cropped, spliced, or decontextualized audio or video recordings selectively presented as complete, unaltered evidence — the recording itself may be technically genuine, not fabricated like a Deepfake, but strategic editing changes what it appears to show or prove.",
+    "plain_language_summary": "In plain terms: cropped, spliced, or decontextualized recordings selectively presented as complete evidence.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Cropped, spliced, or decontextualized recordings selectively presented as complete evidence."
+    ],
+    "what_it_sounds_like": [
+     "A recording presented as complete that, on closer inspection, has an obvious cut, jump, or missing portion at a critical moment.",
+     "The presented clip starts or ends at a point that removes essential context.",
+     "The target's own memory or separate recollection of the full event doesn't match what the edited clip appears to show."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Honestly-labeled partial clips are a normal way to share relevant excerpts.",
+     "Recording quality issues can create natural gaps without any editing intent."
+    ],
+    "common_false_positives": [
+     "A genuinely short clip, honestly labeled as a partial excerpt, without any attempt to pass it off as the complete picture.",
+     "Necessary editing for length or clarity that doesn't change the substantive meaning of what's shown.",
+     "A recording that's simply low-quality or has natural gaps due to a poor recording device, not deliberate editing."
+    ],
+    "discernment_questions": [
+     "Does the recording have an unexplained cut, splice, or missing segment at a meaningful moment?",
+     "Is there a complete, unedited version available for comparison?",
+     "Does the edited version create an impression that the full recording wouldn't support?",
+     "Was the edit disclosed, or presented as if it were the complete original?"
+    ],
+    "less_concerning_if": [
+     "Any editing is disclosed honestly and doesn't change the substantive meaning of the recording."
+    ],
+    "more_concerning_if": [
+     "An undisclosed cut removes context that changes the meaning, and the edited version is presented as complete."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Public Exposure",
+     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Account Takeover",
+   "category": "Discard / institutional",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Being displaced from your own accounts means losing not only access but the ability to speak as yourself — messages can go out under your name to people with every reason to believe them.",
+    "what_it_is_not": "Forgotten passwords and legitimate recovery processes exist, platforms have bugs and outages, and an authorised family member resetting a shared account and saying so is housekeeping. Recovery attempts being blocked or intercepted is what makes it something else."
+   },
+   "existing_specific_text": {
+    "short_definition": "Seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity.",
+    "expanded_definition": "Seizing control of the target's digital accounts — email, social media, banking, cloud storage — to impersonate them, surveil their private communications, sabotage their relationships, or lock them out of their own online identity entirely. This is a more severe, unilateral escalation of Account Control: the target isn't just monitored or restricted, they're actively displaced from accounts that are rightfully theirs.",
+    "plain_language_summary": "In plain terms: seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity."
+    ],
+    "what_it_sounds_like": [
+     "Login credentials for personal accounts stop working, with no request from the target to change them.",
+     "Messages or posts appear from the target's own accounts that they didn't send, sometimes damaging their relationships or reputation.",
+     "Password reset or recovery attempts are blocked, redirected, or intercepted by someone with access to the target's recovery information."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine technical issues and forgotten passwords happen to everyone and don't require anyone else's involvement.",
+     "Legitimate, disclosed account resets by authorized family members are normal."
+    ],
+    "common_false_positives": [
+     "A genuinely forgotten password combined with a legitimate account recovery process, without anyone else's involvement.",
+     "A shared family account being reasonably reset by another authorized user, with the target informed.",
+     "A platform-side security issue or bug unrelated to any specific person's actions."
+    ],
+    "discernment_questions": [
+     "Is there a person with a specific motive who would benefit from controlling this account?",
+     "Did the target lose access suddenly, without initiating any change themselves?",
+     "Is recovery specifically being blocked, or is this a routine technical issue affecting many users?",
+     "Does content appear from the account that the target didn't create?"
+    ],
+    "less_concerning_if": [
+     "The access loss is explainable by a routine technical issue or a legitimate, disclosed account action by an authorized user."
+    ],
+    "more_concerning_if": [
+     "Access loss is sudden and unexplained, recovery is specifically blocked, and content appears that the target didn't create."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Public Exposure",
+     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "SIM Swap / 2FA Interception",
+   "category": "Discard / institutional",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The phone number that secures everything else becomes the way in, and the lockout usually arrives before there is any way to understand what has happened.",
+    "what_it_is_not": "Carriers have outages, billing errors and genuine glitches, and a single odd authentication code on one platform means very little on its own. A carrier-account change nobody requested is the part without an innocent reading."
+   },
+   "existing_specific_text": {
+    "short_definition": "Hijacking the target's phone number or authentication systems to lock them out, impersonate them, or intercept private communications.",
+    "expanded_definition": "Hijacking the target's phone number or two-factor authentication systems — often by social-engineering a mobile carrier or exploiting a security gap — to lock the target out of their own accounts, impersonate them, or intercept private communications and one-time verification codes meant to secure their identity.",
+    "plain_language_summary": "In plain terms: hijacking the target's phone number or authentication systems to lock them out, impersonate them, or intercept private communications.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Hijacking the target's phone number or authentication systems to lock them out, impersonate them, or intercept private communications."
+    ],
+    "what_it_sounds_like": [
+     "Sudden, unexplained loss of cell service or the phone number failing to work as expected, followed by lockouts from multiple accounts.",
+     "Two-factor authentication codes arrive for logins the target didn't initiate.",
+     "The target discovers their mobile carrier account was modified without their request."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Carrier outages and billing issues happen and can look alarming without being an attack.",
+     "People sometimes forget their own legitimate SIM replacement request amid other stress."
+    ],
+    "common_false_positives": [
+     "A genuine carrier issue, outage, or billing problem unrelated to any deliberate takeover attempt.",
+     "A legitimate, target-initiated SIM replacement that the target simply doesn't recall clearly amid other stress.",
+     "A one-time, isolated authentication glitch on a single platform, not connected to actual carrier-level account changes."
+    ],
+    "discernment_questions": [
+     "Is there a verifiable, unauthorized change to the mobile account itself?",
+     "Do multiple, otherwise-unrelated accounts show signs of compromise around the same time as the phone issue?",
+     "Does the target's carrier confirm an account change the target didn't request?",
+     "Is there a specific person with motive and know-how who'd benefit from this kind of access?"
+    ],
+    "less_concerning_if": [
+     "The disruption traces to a genuine carrier issue or a target-initiated change, confirmed by the carrier."
+    ],
+    "more_concerning_if": [
+     "The carrier confirms an unauthorized account change, and multiple other accounts show signs of compromise around the same time."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Public Exposure",
+     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Intimate Image Abuse",
+   "category": "Discard / institutional",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Control over the most private material about a person passes to somebody else, and the fear of exposure keeps working whether or not anything is ever actually shared.",
+    "what_it_is_not": "Images shared consensually inside a relationship, with no threat and no sharing beyond it, are not this. A claim to hold such material when none exists is still coercion — worth distinguishing, because what to do about it differs.",
+    "note": "Kept the entry's own distinction that a bluffed claim is still coercive, so the disconfirming case does not read as dismissal."
+   },
+   "existing_specific_text": {
+    "short_definition": "Using private sexual images or content for extortion, coercion, or reputational destruction, whether real or fabricated.",
+    "expanded_definition": "Using private sexual images or content for extortion, coercion, or reputational destruction, whether the images are real or fabricated — the harm comes from the loss of control over deeply private material and the threat or reality of its exposure, deployed specifically to extract compliance or as retaliation.",
+    "plain_language_summary": "In plain terms: using private sexual images or content for extortion, coercion, or reputational destruction, whether real or fabricated.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using private sexual images or content for extortion, coercion, or reputational destruction, whether real or fabricated."
+    ],
+    "what_it_sounds_like": [
+     "A threat to share private images unless the target complies with a specific demand.",
+     "Private images shared or threatened to be shared without the person's consent, as retaliation after a relationship or interaction ends.",
+     "References to having such material, used to create ongoing fear and compliance even without an explicit, immediate demand."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This category is not about consensual image-sharing within a trusted relationship — the concern is specifically about non-consensual use, threats, or coercion involving such material."
+    ],
+    "common_false_positives": [
+     "Images shared consensually within a relationship, with no threat, coercion, or non-consensual sharing involved.",
+     "A false claim of possessing such material used as a scare tactic without any images actually existing — still coercive, but worth distinguishing for response purposes."
+    ],
+    "discernment_questions": [
+     "Is there an actual or claimed threat to share private images without consent?",
+     "Is compliance with some other demand being extracted through this threat?",
+     "Has anything actually been shared, or is this a threat that hasn't yet been carried out?",
+     "Regardless of whether the threat is real, is it being used to control or frighten the target?"
+    ],
+    "less_concerning_if": [
+     "There's no evidence any image exists or was ever specifically threatened, such as a vague, unsubstantiated claim with no real specifics."
+    ],
+    "more_concerning_if": [
+     "A specific threat is made, or images have already been shared or threatened to be shared without consent."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Public Exposure",
+     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

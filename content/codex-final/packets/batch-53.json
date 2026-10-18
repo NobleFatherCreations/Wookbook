@@ -1,0 +1,282 @@
+{
+ "batch": "batch-53",
+ "kind": "risk",
+ "category": "Organizational & Institutional",
+ "entries": [
+  {
+   "name": "Institutional Betrayal",
+   "category": "Organizational & Institutional",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Being harmed and then failed by the body meant to prevent it produces a second injury that often outlasts the first, and teaches that reporting brings exposure without remedy.",
+    "what_it_is_not": "An institution that responds slowly, clumsily, or within genuine legal limits is not thereby betraying anyone; formal process is often bad at speed. What separates the two is whether the harm is eventually acknowledged and addressed at all, or whether the institution's own exposure is consistently the thing that gets managed instead.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
+   "existing_specific_text": {
+    "short_definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound.",
+    "expanded_definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound. As a communication pattern, Institutional Betrayal-type behavior in the Organizational & Institutional category tends to work through the systems, incentives, and culture of an organization rather than any one person's words — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: an institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to burnout, disengagement, or self-blame for outcomes actually produced by systemic design. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through the systems, incentives, and culture of an organization rather than any one person's words. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe burnout, disengagement, or self-blame for outcomes actually produced by systemic design in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Organizational Silence Engineering",
+     "definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety."
+    },
+    {
+     "name": "Strategic HR Complicity",
+     "definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm."
+    },
+    {
+     "name": "Performance Framework Manipulation",
+     "definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system."
+    },
+    {
+     "name": "Algorithmic Management",
+     "definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Organizational Silence Engineering",
+   "category": "Organizational & Institutional",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Problems that people can plainly see go unreported, and the cost lands first on whoever the warning would have protected, then on the person who stayed quiet and knew.",
+    "what_it_is_not": "Quiet teams are not necessarily silenced teams — some workplaces are simply calm, well-run, or full of people who raise things one-to-one rather than in meetings. The useful check is what happened to the last few people who did speak up, and whether anyone can point to a concern that actually changed something.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety.",
+    "expanded_definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety. (Overlaps with \"Polite Hostile\" Environments #148, Learned Helplessness #199). As a communication pattern, Organizational Silence Engineering-type behavior in the Organizational & Institutional category tends to work through the systems, incentives, and culture of an organization rather than any one person's words — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety. (Overlaps with \"Polite Hostile\" Environments #148, Learned Helplessness #199). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to burnout, disengagement, or self-blame for outcomes actually produced by systemic design. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety. (Overlaps with \"Polite Hostile\" Environments #148, Learned Helplessness #199)."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through the systems, incentives, and culture of an organization rather than any one person's words. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe burnout, disengagement, or self-blame for outcomes actually produced by systemic design in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Institutional Betrayal",
+     "definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound."
+    },
+    {
+     "name": "Strategic HR Complicity",
+     "definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm."
+    },
+    {
+     "name": "Performance Framework Manipulation",
+     "definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system."
+    },
+    {
+     "name": "Algorithmic Management",
+     "definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Strategic HR Complicity",
+   "category": "Organizational & Institutional",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Someone brings a complaint believing they are speaking to a protector, and finds what they said has been used to shape the response against them — after which the next person is far less likely to report anything at all.",
+    "what_it_is_not": "HR staff who set out the limits of confidentiality, follow a policy that disappoints the complainant, or reach a conclusion the employee disagrees with are doing the job as designed, not colluding. The distinguishing pattern is information given in confidence being routed to pre-empt the person who gave it.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
+   "existing_specific_text": {
+    "short_definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm.",
+    "expanded_definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm. (Overlaps with HR Shielding #175). As a communication pattern, Strategic HR Complicity-type behavior in the Organizational & Institutional category tends to work through the systems, incentives, and culture of an organization rather than any one person's words — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm. (Overlaps with HR Shielding #175). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to burnout, disengagement, or self-blame for outcomes actually produced by systemic design. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm. (Overlaps with HR Shielding #175)."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through the systems, incentives, and culture of an organization rather than any one person's words. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe burnout, disengagement, or self-blame for outcomes actually produced by systemic design in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Institutional Betrayal",
+     "definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound."
+    },
+    {
+     "name": "Organizational Silence Engineering",
+     "definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety."
+    },
+    {
+     "name": "Performance Framework Manipulation",
+     "definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system."
+    },
+    {
+     "name": "Algorithmic Management",
+     "definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Performance Framework Manipulation",
+   "category": "Organizational & Institutional",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Effort shifts from doing the work well to being agreeable about it, and anyone who raises problems accumulates a documented record of underperformance that looks objective to whoever reads it later.",
+    "what_it_is_not": "Every evaluation system rewards some things over others and disadvantages someone; a rubric that undervalues your particular strengths is a design flaw rather than a control mechanism. The question is whether the measures track the work at all or track deference — and whether they get revised when the wrong people start scoring well.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
+   "existing_specific_text": {
+    "short_definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system.",
+    "expanded_definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system. (Overlaps with PIP Weaponization #75, Impossible Metrics #78). As a communication pattern, Performance Framework Manipulation-type behavior in the Organizational & Institutional category tends to work through the systems, incentives, and culture of an organization rather than any one person's words — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system. (Overlaps with PIP Weaponization #75, Impossible Metrics #78). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to burnout, disengagement, or self-blame for outcomes actually produced by systemic design. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system. (Overlaps with PIP Weaponization #75, Impossible Metrics #78)."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through the systems, incentives, and culture of an organization rather than any one person's words. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe burnout, disengagement, or self-blame for outcomes actually produced by systemic design in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Institutional Betrayal",
+     "definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound."
+    },
+    {
+     "name": "Organizational Silence Engineering",
+     "definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety."
+    },
+    {
+     "name": "Strategic HR Complicity",
+     "definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm."
+    },
+    {
+     "name": "Algorithmic Management",
+     "definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Algorithmic Management",
+   "category": "Organizational & Institutional",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Consequential decisions arrive with no one to ask and nowhere to appeal, so workers adapt to a system they cannot see and blame themselves for outcomes they have no way to examine.",
+    "what_it_is_not": "Automation in scheduling, routing and performance tracking is widespread and often simply efficient; a rota generated by software is not a control apparatus. What matters is whether a human being can be reached to review an outcome, and whether the criteria are disclosed clearly enough to be argued with.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
+   "existing_specific_text": {
+    "short_definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss.",
+    "expanded_definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss. As a communication pattern, Algorithmic Management-type behavior in the Organizational & Institutional category tends to work through the systems, incentives, and culture of an organization rather than any one person's words — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to burnout, disengagement, or self-blame for outcomes actually produced by systemic design. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through the systems, incentives, and culture of an organization rather than any one person's words. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe burnout, disengagement, or self-blame for outcomes actually produced by systemic design in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Institutional Betrayal",
+     "definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound."
+    },
+    {
+     "name": "Organizational Silence Engineering",
+     "definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety."
+    },
+    {
+     "name": "Strategic HR Complicity",
+     "definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm."
+    },
+    {
+     "name": "Performance Framework Manipulation",
+     "definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

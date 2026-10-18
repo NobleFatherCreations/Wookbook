@@ -1,0 +1,102 @@
+{
+ "batch": "batch-47",
+ "kind": "risk",
+ "category": "Deception",
+ "entries": [
+  {
+   "name": "Fabricated Evidence",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "forensic",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Manufactured screenshots, edited messages, or forged documents presented as proof.",
+    "expanded_definition": "Manufactured screenshots, edited messages, or forged documents presented as proof. As a communication pattern, Fabricated Evidence-type behavior in the Deception category tends to work by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, forensic entry, note: this is an evidence-and-reporting matter, not something this tool scores or verifies.",
+    "plain_language_summary": "In plain terms: manufactured screenshots, edited messages, or forged documents presented as proof. If this is happening to you, the priority is evidence and reporting, not analysis.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Recognizing this category matters because the right response (evidence, reporting) is different from the right response to an ordinary conflict.",
+    "what_it_is": [
+     "Manufactured screenshots, edited messages, or forged documents presented as proof.",
+     "Recognizable by phrasing such as \"'Receipts' of things you never wrote, shown to third parties\"."
+    ],
+    "what_it_sounds_like": [
+     "A screenshot or document presented as something you wrote or said, that you have no memory of actually creating.",
+     "\"Receipts\" shown to a third party that don't match your own records of the same conversation or event.",
+     "A document or message surfaces that contains details or phrasing inconsistent with how you actually communicate."
+    ],
+    "what_it_is_not": [
+     "Preserve your own originals with metadata; do not delete anything; forensic verification and defamation are legal matters — document and seek advice."
+    ],
+    "this_may_be_it_when": [
+     "It fits a documented, named pattern of this kind of digital harm."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, honest misremembering happens and isn't the same as deliberate fabrication.",
+     "Authentic documents taken out of context can look misleading without being forged."
+    ],
+    "common_false_positives": [
+     "A genuine misremembering on someone's part, presenting an inaccurate account sincerely rather than a deliberately forged document.",
+     "An authentic document that's simply been taken out of context, rather than fabricated outright.",
+     "Two people with a real factual disagreement where neither is fabricating anything, just remembering or interpreting events differently."
+    ],
+    "discernment_questions": [
+     "Do you have your own independent record that contradicts the presented evidence?",
+     "Are there technical inconsistencies suggesting the document isn't authentic?",
+     "Does the presented material contain claims or details you can independently prove couldn't be true?",
+     "Is this a single, isolated discrepancy, or part of a broader pattern of manufactured documentation?"
+    ],
+    "less_concerning_if": [
+     "The discrepancy is explainable by genuine misremembering or lack of context, without evidence of deliberate fabrication."
+    ],
+    "more_concerning_if": [
+     "Independent records contradict the presented material, with technical inconsistencies suggesting it isn't authentic."
+    ],
+    "repair_check": "Corrective-action check: was the content taken down, the account recovered, or the false material retracted after being reported? Was there a documented resolution, or is it ongoing? Repair here looks like documentation, verification, and platform/legal response — not an apology.",
+    "boundary_respect_check": "What happens when you document what occurred, report it through the appropriate channel, restrict further access, or seek outside support? Does the situation improve with those concrete steps, or does it continue regardless?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Documentation/reporting script (to a platform or authority, not the person responsible): \"I want to report [specific content/account]. Here is what I have documented: [evidence]. What are my options?\"",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists. For this specific situation, prioritize evidence preservation (originals, URLs, timestamps — delete nothing) and reporting through the platform, a police cybercrime unit, or a specialized helpline over trying to resolve it through direct conversation.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    },
+    {
+     "name": "Strategic Incompleteness",
+     "definition": "Providing just enough information to act but not enough to act wisely, creating ongoing dependency on the source for the missing pieces."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": true,
+    "other_flags": [
+     "forensic_or_evidence_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

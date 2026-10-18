@@ -1,0 +1,251 @@
+{
+ "batch": "batch-54",
+ "kind": "risk",
+ "category": "Political & Propaganda",
+ "entries": [
+  {
+   "name": "Overton Window Manipulation",
+   "category": "Political & Propaganda",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "What counts as an ordinary opinion shifts underneath people, so positions they would once have rejected outright arrive already sounding moderate.",
+    "what_it_is_not": "Public opinion moves on its own and always has, and arguing for a position most people currently reject is how every reform has started. A single extreme statement is not a repositioning campaign — this describes drift visible only in aggregate and in hindsight."
+   },
+   "existing_specific_text": {
+    "short_definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable.",
+    "expanded_definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable. As a communication pattern, Overton Window Manipulation-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Manufactured Consent",
+     "definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
+    },
+    {
+     "name": "Astroturfing"
+    },
+    {
+     "name": "Wedge Issue Exploitation",
+     "definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
+    },
+    {
+     "name": "Computational Propaganda",
+     "definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
+    },
+    {
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
+    },
+    {
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Manufactured Consent",
+   "category": "Political & Propaganda",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Agreement reached from a curated picture is still experienced as one's own conclusion, which leaves nothing obvious to object to.",
+    "what_it_is_not": "Governments and institutions explain their decisions, editors choose what to cover, and framing is unavoidable in any account of anything. Showing this requires systematic analysis of coverage over time, not disagreement with a particular story."
+   },
+   "existing_specific_text": {
+    "short_definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it.",
+    "expanded_definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it. As a communication pattern, Manufactured Consent-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Overton Window Manipulation",
+     "definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
+    },
+    {
+     "name": "Astroturfing"
+    },
+    {
+     "name": "Wedge Issue Exploitation",
+     "definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
+    },
+    {
+     "name": "Computational Propaganda",
+     "definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
+    },
+    {
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
+    },
+    {
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Wedge Issue Exploitation",
+   "category": "Political & Propaganda",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "People end up divided along a line drawn for someone else's benefit, arguing about who they are while the things they actually share go unaddressed.",
+    "what_it_is_not": "Divisive issues are frequently important and deserve real argument, and raising one is not evidence of strategy. The distinction is between an issue pursued in order to settle it and one kept warm because the division itself is useful."
+   },
+   "existing_specific_text": {
+    "short_definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement.",
+    "expanded_definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement. As a communication pattern, Wedge Issue Exploitation-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Overton Window Manipulation",
+     "definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
+    },
+    {
+     "name": "Manufactured Consent",
+     "definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
+    },
+    {
+     "name": "Astroturfing"
+    },
+    {
+     "name": "Computational Propaganda",
+     "definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
+    },
+    {
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
+    },
+    {
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Computational Propaganda",
+   "category": "Political & Propaganda",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The sense of what most people believe — which shapes what any individual feels able to say aloud — gets set by accounts that are not people.",
+    "what_it_is_not": "Parties, campaigns and advocacy groups legitimately coordinate their messaging, and scheduling tools and staff accounts are not bots. Attribution here is technical work; an account that argues aggressively is not evidence of a network."
+   },
+   "existing_specific_text": {
+    "short_definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale.",
+    "expanded_definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale. As a communication pattern, Computational Propaganda-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: the automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Overton Window Manipulation",
+     "definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
+    },
+    {
+     "name": "Manufactured Consent",
+     "definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
+    },
+    {
+     "name": "Astroturfing"
+    },
+    {
+     "name": "Wedge Issue Exploitation",
+     "definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
+    },
+    {
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
+    },
+    {
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

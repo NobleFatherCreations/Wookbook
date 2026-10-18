@@ -1,0 +1,637 @@
+{
+ "batch": "batch-09",
+ "kind": "normal",
+ "category": "Attack & Erosion",
+ "entries": [
+  {
+   "name": "\"You're Too Emotional\"",
+   "category": "Attack & Erosion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using someone's emotional signal itself to disqualify them as a credible witness to their own experience.",
+    "expanded_definition": "Using someone's emotional signal itself to disqualify them as a credible witness to their own experience. It teaches the target to distrust and suppress their own reactions rather than examine what caused them. As a communication pattern, \"you're too emotional\"-type behavior in the Attack & Erosion category tends to work by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using someone's emotional signal itself to disqualify them as a credible witness to their own experience.",
+    "why_this_matters": "It teaches the target to distrust and suppress their own reactions rather than examine what caused them. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using someone's emotional signal itself to disqualify them as a credible witness to their own experience.",
+     "It teaches the target to distrust and suppress their own reactions rather than examine what caused them.",
+     "Contrasts with a healthier version: \"You seem really upset — help me understand what's going on for you.\".",
+     "Recognizable by phrasing such as \"You're too emotional to talk about this right now\"."
+    ],
+    "what_it_sounds_like": [
+     "You're too emotional to talk about this right now.",
+     "You're being so emotional about this, it's clouding your judgment.",
+     "You're just too emotional.",
+     "You're being too emotional about this."
+    ],
+    "what_it_is_not": [
+     "Sometimes emotional intensity really does make a conversation hard to have productively — the flag is when the emotion becomes the whole subject instead of the issue that caused it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine care about someone's wellbeing in an intense moment is different from dismissing their point."
+    ],
+    "common_false_positives": [
+     "A genuine, caring check-in about whether someone needs a moment before continuing a hard conversation, without dismissing the substance of their concern.",
+     "A person honestly overwhelmed themselves, asking for a brief pause, while still planning to hear the content.",
+     "Real concern about someone's wellbeing in a moment of intense distress, offered supportively rather than to disqualify their point."
+    ],
+    "discernment_questions": [
+     "Does the comment dismiss the substance of what's being said, or genuinely check in about wellbeing while still planning to engage?",
+     "Does this happen specifically when the person is raising something inconvenient?",
+     "Does the conversation return to substance once emotion settles, or does the label end it permanently?",
+     "Would a neutral observer see the emotional reaction as disqualifying, or as a reasonable response to what's being discussed?"
+    ],
+    "less_concerning_if": [
+     "The comment reflects genuine concern and the conversation returns to substance once things settle."
+    ],
+    "more_concerning_if": [
+     "The label is used specifically to end an inconvenient conversation, disqualifying the target's point entirely."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Dr. Jekyll/Mr. Hyde",
+   "category": "Attack & Erosion",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target has no witnesses. The version other people know makes their account of the other version sound implausible, including to themselves."
+   },
+   "existing_specific_text": {
+    "short_definition": "Two dramatically different personas — charming in public or in good phases, cruel in private or in bad ones — so the target doubts which one is real and outsiders doubt the target.",
+    "expanded_definition": "Two dramatically different personas — charming in public or in good phases, cruel in private or in bad ones — so the target doubts which one is real and outsiders doubt the target. As a communication pattern, Dr. Jekyll/Mr. Hyde-type behavior in the Attack & Erosion category tends to work by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: two dramatically different personas — charming in public or in good phases, cruel in private or in bad ones — so the target doubts which one is real and outsiders doubt the target.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Two dramatically different personas — charming in public or in good phases, cruel in private or in bad ones — so the target doubts which one is real and outsiders doubt the target.",
+     "Recognizable by phrasing such as \"Message history swings between two unrecognizably different voices\"."
+    ],
+    "what_it_sounds_like": [
+     "Message history swings between two unrecognizably different voices.",
+     "Witnesses see only the charming version; the target has screenshots of the other.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'two dramatically different personas — charming in public or '. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "Mood variation, masking, and stress responses are normal — the flag is the strategic placement of each persona (charm for witnesses, cruelty for the target)."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Everyone is naturally somewhat different in public versus private without that reflecting hidden cruelty."
+    ],
+    "common_false_positives": [
+     "A person who's genuinely more reserved in private and more socially expressive in public, without private cruelty involved.",
+     "Natural variation in mood across different contexts that doesn't amount to two genuinely unrecognizable personas.",
+     "A private relationship with real, ordinary conflict that simply isn't visible to outsiders, without deliberate concealment."
+    ],
+    "discernment_questions": [
+     "Is there a real, substantial, and consistent gap between how this person treats the target privately versus publicly?",
+     "Does the private version include genuine cruelty that the public version would contradict?",
+     "Would people who know the public version be genuinely surprised by an accurate account of the private behavior?",
+     "Is this two extreme personas, or ordinary, understandable mood variation?"
+    ],
+    "less_concerning_if": [
+     "Variation between public and private behavior is ordinary mood fluctuation, not two genuinely unrecognizable personas."
+    ],
+    "more_concerning_if": [
+     "A stark, consistent gap exists between a charming public persona and genuine private cruelty."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ],
+    "how_to_distinguish_from_related": "Compared to related entries in the same category (Contempt, Name-Calling Disguised as Humor, Comparative Devaluation), Dr. Jekyll/Mr. Hyde is distinguished by the specific mechanism in 'what it is' above, not just the general category effect — check the concrete wording or scenario before assuming overlap with a related entry."
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Ambient Abuse",
+   "category": "Attack & Erosion",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "There is nothing to quote, so the exhaustion has no justification the target can offer to anyone, themselves included. They stay braced without being able to say what for."
+   },
+   "existing_specific_text": {
+    "short_definition": "A background atmosphere of tension, criticism, and unpredictability rather than discrete incidents — no single message looks damning, but the climate is corrosive.",
+    "expanded_definition": "A background atmosphere of tension, criticism, and unpredictability rather than discrete incidents — no single message looks damning, but the climate is corrosive. As a communication pattern, Ambient Abuse-type behavior in the Attack & Erosion category tends to work by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: a background atmosphere of tension, criticism, and unpredictability rather than discrete incidents — no single message looks damning, but the climate is corrosive.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "A background atmosphere of tension, criticism, and unpredictability rather than discrete incidents — no single message looks damning, but the climate is corrosive.",
+     "Recognizable by phrasing such as \"No individual line is extreme, yet reading the whole thread feels like walking on eggshells\"."
+    ],
+    "what_it_sounds_like": [
+     "No individual line is extreme, yet reading the whole thread feels like walking on eggshells.",
+     "Constant low-grade correction, sighing disapproval, and conditional moods.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'a background atmosphere of tension, criticism, and unpredict'. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "A stressed household or blunt communication culture can feel tense without being abusive — the flag is that the tension consistently serves one person's control."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely stressful periods can affect a relationship's overall tone temporarily without reflecting an abusive pattern."
+    ],
+    "common_false_positives": [
+     "A genuinely stressful period affecting a relationship's overall tone temporarily, without a sustained pattern.",
+     "A relationship with real, occasional friction that resolves and doesn't leave a persistent felt sense of tension.",
+     "A person's own anxiety coloring their perception of an otherwise reasonably calm relationship."
+    ],
+    "discernment_questions": [
+     "Does a persistent sense of unease exist even when reviewing individual messages that don't look overtly harmful?",
+     "Does the felt tension ease during genuinely calm periods, or does it stay constant regardless?",
+     "Would an outside person, reading the full pattern over time, notice the same corrosive climate?",
+     "Is there a specific, external stressor explaining a temporary shift, or does the tension persist without one?"
+    ],
+    "less_concerning_if": [
+     "Any tension traces to a specific, temporary external stressor and eases once that resolves."
+    ],
+    "more_concerning_if": [
+     "A persistent, unexplained climate of tension and unpredictability continues regardless of external circumstances."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Ambient Sexual Threat",
+   "category": "Attack & Erosion",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": true,
+   "approved_draft": {
+    "why_this_matters": "The target reorganises their movements, schedule and attention around one person while holding nothing concrete enough to report, or even to explain to a friend."
+   },
+   "existing_specific_text": {
+    "short_definition": "Maintaining a sexually charged or threatening atmosphere without any single overt act, keeping the target hypervigilant with nothing concrete to point to.",
+    "expanded_definition": "Maintaining a sexually charged or threatening atmosphere without any single overt act, keeping the target hypervigilant with nothing concrete to point to. As a communication pattern, Ambient Sexual Threat-type behavior in the Attack & Erosion category tends to work by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: maintaining a sexually charged or threatening atmosphere without any single overt act, keeping the target hypervigilant with nothing concrete to point to.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Maintaining a sexually charged or threatening atmosphere without any single overt act, keeping the target hypervigilant with nothing concrete to point to.",
+     "Recognizable by phrasing such as \"A pattern of comments, looks described secondhand, or 'jokes' that consistently leave you uneasy, across many separate incidents\"."
+    ],
+    "what_it_sounds_like": [
+     "A pattern of comments, looks described secondhand, or 'jokes' that consistently leave you uneasy, across many separate incidents.",
+     "You find yourself managing your schedule or location around this person without being able to say exactly why.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'maintaining a sexually charged or threatening atmosphere wit'. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "A single tasteless joke, especially if apologized for, isn't this pattern — the flag is a sustained climate across many incidents that a reasonable person would find unsettling."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "A single misjudged joke or comment, corrected once named, doesn't establish a pattern of threat."
+    ],
+    "common_false_positives": [
+     "A single uncomfortable comment or joke, isolated and not part of a broader recurring pattern, that gets corrected once named.",
+     "Genuine differences in humor or comfort levels around certain topics that resolve with direct, respectful communication.",
+     "An isolated misjudgment in tone, acknowledged and not repeated once the discomfort is expressed."
+    ],
+    "discernment_questions": [
+     "Does the pattern of unease recur across many separate incidents, or was this an isolated, correctable moment?",
+     "Does naming the discomfort lead to genuine change, or does the pattern continue unchanged?",
+     "Would multiple separate incidents, described together, paint a consistent picture of unease?",
+     "Is there a specific, nameable overt act, or does the concern rest entirely on an accumulated felt sense?"
+    ],
+    "less_concerning_if": [
+     "An isolated comment is acknowledged and doesn't recur once discomfort is expressed."
+    ],
+    "more_concerning_if": [
+     "A pattern of unsettling comments or behavior recurs across many separate incidents despite discomfort being expressed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Identity Erosion",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "aftermath",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate.",
+    "expanded_definition": "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate. As a communication pattern, Identity Erosion-type behavior in the Attack & Erosion category tends to work by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry describing an internal state, note: this tool never scores or detects this about its user — it is here only so the state can be recognized and understood.",
+    "plain_language_summary": "In plain terms: the gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate. This is about a pattern inside you, not a verdict about you.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming an internal pattern accurately — without judgment — is often the first step toward loosening its grip.",
+    "what_it_is": [
+     "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate.",
+     "Recognizable by phrasing such as \"Not remembering what music you liked before them\"."
+    ],
+    "what_it_sounds_like": [
+     "Not being able to remember what music, food, or hobbies you actually liked before this relationship began.",
+     "Realizing your opinions on most things now default to matching someone else's, without a clear memory of when that started.",
+     "Noticing your circle of friends has narrowed to almost entirely people connected to this one relationship."
+    ],
+    "what_it_is_not": [
+     "People in healthy relationships also grow and change together — the difference is whether the change ran in one direction only, away from your prior self."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Everyone's tastes and interests genuinely evolve over time, with or without a relationship's influence.",
+     "Healthy relationships do sometimes introduce genuinely enjoyed new interests."
+    ],
+    "common_false_positives": [
+     "Genuine, natural evolution of taste and interests over time, which happens to everyone regardless of any relationship.",
+     "Healthy influence from a partner introducing you to new things you've genuinely, independently come to enjoy.",
+     "A deliberate, chosen simplification of your social circle during a busy life phase, not connected to losing your own preferences."
+    ],
+    "discernment_questions": [
+     "Can you trace specific, remembered preferences you had before this relationship that have since disappeared?",
+     "Does the change reflect genuine, independent growth, or a narrowing that tracks specifically what this one person prefers?",
+     "Do you still have friendships and interests that exist independent of this relationship?",
+     "Does imagining your life without this person feel like losing access to yourself, more than just missing them?"
+    ],
+    "less_concerning_if": [
+     "This reflects genuine, independent evolution of your taste over time, or interests you've authentically come to share."
+    ],
+    "more_concerning_if": [
+     "Specific, remembered preferences have disappeared and narrowed specifically to match this one person, with your independent circle shrinking."
+    ],
+    "repair_check": "Self-repair check: has anything changed in the conditions that produced this pattern? Are there moments now, even small ones, where the old response doesn't fire the way it used to? Self-repair isn't a single realization — it's a pattern of small, repeated choices to trust your own read of things.",
+    "boundary_respect_check": "What happens when you give yourself permission to slow down, check the facts as you understand them, or ask for support before deciding how you feel? Is that permission honored internally, or does old habit override it quickly?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a documented survival/adaptation mechanism, not a permanent trait or a diagnosis.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of someone carrying this pattern.",
+    "boundary_script": "Self-support script: \"I'm allowed to trust my own read of things. I don't have to decide how I feel about this right now.\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone.",
+     "This entry is for self-understanding. It is not a basis for describing yourself, or for anyone else to describe you, as broken, defective, or diagnosable."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "aftermath_self_reflection_needs_review"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Sarcasm as Weapon",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Criticism lands in full while objecting to it means arguing about a joke, so the hurt has nowhere to go.",
+    "what_it_is_not": "Mutual, affectionate teasing that both people enjoy is not this, and a generally sarcastic style applied evenly to everyone has no particular target. One sharp remark in a bad moment, acknowledged and not repeated, is friction rather than a pattern."
+   },
+   "existing_specific_text": {
+    "short_definition": "Using sarcasm specifically to deliver criticism or contempt while retaining deniability.",
+    "expanded_definition": "Using sarcasm specifically to deliver real criticism or contempt while retaining the ability to claim it was \"just a joke\" if challenged — the sarcastic framing does the work of an insult while providing a built-in defense against being held accountable for it. This differs from ordinary teasing in that the underlying content, stripped of the sarcastic tone, is a genuine criticism rather than affectionate humor.",
+    "plain_language_summary": "In plain terms: using sarcasm specifically to deliver criticism or contempt while retaining deniability.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using sarcasm specifically to deliver criticism or contempt while retaining deniability."
+    ],
+    "what_it_sounds_like": [
+     "A comment that, said plainly without the sarcastic tone, would be recognized as a clear criticism or insult.",
+     "Objecting to the comment is met with \"it was just a joke, don't be so sensitive,\" shifting blame to the target's reaction.",
+     "A pattern of sarcastic remarks that consistently target the same specific insecurities or sensitivities."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutual teasing between people who both enjoy it is a normal and healthy part of many relationships. Some people's communication style leans on sarcasm broadly, without targeting anyone specifically."
+    ],
+    "common_false_positives": [
+     "Genuine, mutual, affectionate teasing that both people enjoy and reciprocate, without an edge of real contempt.",
+     "A communication style that leans heavily on sarcasm generally, applied evenly and without any particular target.",
+     "A single sarcastic comment made in a bad moment, acknowledged and not repeated."
+    ],
+    "discernment_questions": [
+     "Stripped of the sarcastic tone, does the underlying comment read as genuine criticism or contempt?",
+     "Is the humor mutual and reciprocated, or does it consistently flow in one direction?",
+     "Does the same specific insecurity or sensitivity get targeted repeatedly?",
+     "Does objecting get met with genuine reconsideration, or dismissal as oversensitivity?"
+    ],
+    "less_concerning_if": [
+     "The humor is mutual, reciprocated, and doesn't consistently target the same vulnerability."
+    ],
+    "more_concerning_if": [
+     "The underlying content is consistently critical, targets the same sensitivity repeatedly, and objections get dismissed as oversensitivity."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Public Humiliation",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "An audience makes the injury durable in a way private criticism is not: everyone present carries a version of it afterwards, including the person it was about.",
+    "what_it_is_not": "Necessary and time-sensitive feedback sometimes has to be given where others happen to be, and settings where feedback is normal and applied evenly to everybody are humiliating nobody. An awkward moment can be nothing more than poor timing."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deliberately embarrassing someone in front of others as punishment or a display of power.",
+    "expanded_definition": "Deliberately embarrassing someone in front of others — colleagues, family, friends — specifically as punishment or as a display of power over them. Unlike private criticism, which at least allows the target some dignity in addressing feedback, this specifically relies on an audience: the humiliation is only as effective as the number of witnesses.",
+    "plain_language_summary": "In plain terms: deliberately embarrassing someone in front of others as punishment or a display of power.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Deliberately embarrassing someone in front of others as punishment or a display of power."
+    ],
+    "what_it_sounds_like": [
+     "Criticism or correction delivered in front of others when a private conversation would have been just as effective or more so.",
+     "A mistake or vulnerability shared with a group specifically at the moment it would be most embarrassing.",
+     "The target notices the criticism escalates or becomes harsher specifically when other people are present to witness it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some genuinely necessary feedback happens in group settings for legitimate, practical reasons. Group critique or feedback processes exist in many professional and educational contexts without being humiliation tactics."
+    ],
+    "common_false_positives": [
+     "Genuinely necessary, time-sensitive feedback that happened to occur in a group setting without any intent to embarrass.",
+     "A group setting where feedback is a normal, expected part of the process and applied evenly to everyone.",
+     "An awkward moment that wasn't deliberately engineered, just poor timing."
+    ],
+    "discernment_questions": [
+     "Could this feedback or correction have reasonably been given privately, and was that considered?",
+     "Does the tone or severity of criticism change specifically when there's an audience?",
+     "Is this applied evenly to everyone in the group, or does it seem targeted at one person specifically?",
+     "Does the timing suggest the audience was the point, or was it simply when the issue happened to come up?"
+    ],
+    "less_concerning_if": [
+     "The feedback is applied evenly, could reasonably have happened in front of others regardless, and isn't harsher for having an audience."
+    ],
+    "more_concerning_if": [
+     "The severity or tone changes specifically with an audience present, and private alternatives were clearly available."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

@@ -1,0 +1,545 @@
+{
+ "batch": "batch-26",
+ "kind": "normal",
+ "category": "Guilt & Obligation Leverage",
+ "entries": [
+  {
+   "name": "Favor Debt",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Citing past gifts or support as grounds for present compliance.",
+    "expanded_definition": "Citing past gifts or support as grounds for present compliance. Reframes past kindness as a contract the target unknowingly signed. As a communication pattern, Favor Debt-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: citing past gifts or support as grounds for present compliance.",
+    "why_this_matters": "Reframes past kindness as a contract the target unknowingly signed. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Citing past gifts or support as grounds for present compliance.",
+     "Reframes past kindness as a contract the target unknowingly signed.",
+     "Contrasts with a healthier version: \"I've supported you a lot and I'm asking for support back — as a request, not a bill.\".",
+     "Recognizable by phrasing such as \"Remember who paid for your school\"."
+    ],
+    "what_it_sounds_like": [
+     "Remember who paid for your school.",
+     "You owe me after everything.",
+     "Remember who paid for you.",
+     "Everything you have is because of me."
+    ],
+    "what_it_is_not": [
+     "Reminding someone of real support during a fairness dispute can be legitimate context."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutual support in a relationship, referenced honestly, isn't automatically a manipulative debt."
+    ],
+    "common_false_positives": [
+     "A genuine, mutual reminder of shared history in a relationship with real, ongoing reciprocity in both directions.",
+     "A person honestly asking for help back after having given real help, framed as a request rather than a bill being called in.",
+     "A relationship with a real, freely-acknowledged history of mutual support, referenced without demanding specific compliance in return."
+    ],
+    "discernment_questions": [
+     "Is past support invoked as a request for reciprocity, or as a debt that specifically compels one particular action?",
+     "Is there real reciprocity in the relationship, or does the debt only ever flow in one direction?",
+     "Would the past support have been given the same way if repayment weren't expected?",
+     "Does declining the current request produce a reminder of the debt, or genuine acceptance?"
+    ],
+    "less_concerning_if": [
+     "Past support is referenced as a mutual, reciprocal history, not as a specific debt compelling one action."
+    ],
+    "more_concerning_if": [
+     "Past support is invoked as a debt specifically to compel a particular current action, with no real reciprocity otherwise."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Catastrophizing as Control",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Predicting the target's ruin without the speaker.",
+    "expanded_definition": "Predicting the target's ruin without the speaker. Installs fear of independence, making leaving feel impossible. As a communication pattern, Catastrophizing as Control-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: predicting the target's ruin without the speaker.",
+    "why_this_matters": "Installs fear of independence, making leaving feel impossible. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Predicting the target's ruin without the speaker.",
+     "Installs fear of independence, making leaving feel impossible.",
+     "Contrasts with a healthier version: \"I worry about how you'd manage — but that's my anxiety, and it's your life.\".",
+     "Recognizable by phrasing such as \"If you take that job, this family falls apart\"."
+    ],
+    "what_it_sounds_like": [
+     "If you take that job, this family falls apart.",
+     "You'll end up alone and broke without me.",
+     "You'll be nothing without me.",
+     "No one else will ever love you.",
+     "You can't survive out there."
+    ],
+    "what_it_is_not": [
+     "Genuine worry about a loved one's readiness can sound similar; frequency and function distinguish them."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, proportionate worry about a loved one's wellbeing is a normal part of caring relationships."
+    ],
+    "common_false_positives": [
+     "A genuine, honest worry about a real risk, acknowledged as the speaker's own anxiety rather than a fact about what will happen.",
+     "A person expressing real concern about practical challenges, without predicting total ruin as a certainty.",
+     "Honest, proportionate caution about a genuinely risky decision, offered as one perspective among several."
+    ],
+    "discernment_questions": [
+     "Is the predicted catastrophe proportionate to any real, demonstrated risk?",
+     "Is the worry framed as the speaker's own feeling, or presented as an inevitable fact?",
+     "Does this prediction appear specifically around moments of the target's independence or autonomy?",
+     "Would a neutral observer see the predicted outcome as plausible, or wildly disproportionate?"
+    ],
+    "less_concerning_if": [
+     "The concern is framed as the speaker's own worry, proportionate to real risk, not an inevitable fact."
+    ],
+    "more_concerning_if": [
+     "Predictions of ruin are disproportionate to real risk and appear specifically around moments of independence."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Aftercare Control",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened.",
+    "expanded_definition": "Reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened. It converts the target's memory of harm into gratitude, preventing them from naming it as harm at all. As a communication pattern, Aftercare Control-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened.",
+    "why_this_matters": "It converts the target's memory of harm into gratitude, preventing them from naming it as harm at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened.",
+     "It converts the target's memory of harm into gratitude, preventing them from naming it as harm at all.",
+     "Contrasts with a healthier version: \"I'm sorry that hurt you — that wasn't okay, regardless of my intentions.\".",
+     "Recognizable by phrasing such as \"That was for your own good\"."
+    ],
+    "what_it_sounds_like": [
+     "That was for your own good.",
+     "You'll understand this was necessary, one day.",
+     "That was for your good.",
+     "You'll see this was necessary."
+    ],
+    "what_it_is_not": [
+     "Some hard choices really were for someone's benefit (a parent enforcing a curfew) — the flag is this phrase used to erase real pain rather than to explain a reasonable decision made in good faith."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes an action genuinely did have protective intent, honestly explained without denying it also hurt."
+    ],
+    "common_false_positives": [
+     "A genuine, later realization that something painful actually did serve a real protective purpose, acknowledged without denying it also hurt.",
+     "A person honestly explaining their intent after the fact, without insisting the target's own experience of harm was wrong.",
+     "Real, retrospective context that adds understanding without demanding the target reclassify genuine harm as help."
+    ],
+    "discernment_questions": [
+     "Does the \"for your own good\" framing come with real acknowledgment that it also caused harm, or does it erase the harm entirely?",
+     "Does the target's own memory and felt experience of harm get respected, or overridden by the reframe?",
+     "Does this happen once, in genuine reflection, or as a repeated pattern whenever accountability is sought?",
+     "Would the same action still seem justifiable if described accurately, without the retroactive reframing?"
+    ],
+    "less_concerning_if": [
+     "The explanation acknowledges real harm alongside genuine protective intent, without erasing the target's experience."
+    ],
+    "more_concerning_if": [
+     "The reframe consistently erases the target's memory of harm, insisting retroactively that it was actually help."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Competitive Victimhood",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's own pain never gets a hearing, and rather than enter a contest they cannot win, they stop raising things at all."
+   },
+   "existing_specific_text": {
+    "short_definition": "Responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention.",
+    "expanded_definition": "Responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention. As a communication pattern, Competitive Victimhood-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention.",
+     "Recognizable by phrasing such as \"Every time you raise something that hurt you, the conversation ends up about how much worse it's been for them\"."
+    ],
+    "what_it_sounds_like": [
+     "Every time you raise something that hurt you, the conversation ends up about how much worse it's been for them.",
+     "This happens consistently enough that you've stopped bringing things up.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'responding to the target's pain with a bigger pain of one's '. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "Sometimes someone really is going through something bigger and it's fair for that to come up — the flag is a reliable pattern where your pain is never allowed room of its own."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People going through genuinely hard times sometimes need extra support that happens to coincide with someone else's difficulty."
+    ],
+    "common_false_positives": [
+     "A person going through a genuinely, separately difficult time who processes it honestly, without it being deployed specifically in response to the target's pain.",
+     "Mutual support where both people's struggles get real attention over time, even if one conversation focuses more on one person.",
+     "A single instance of someone needing extra support that happened to coincide with, but wasn't a response to, the target's own pain."
+    ],
+    "discernment_questions": [
+     "Does this response happen specifically and reliably whenever the target raises their own pain?",
+     "Does the target's original pain ever get full attention on its own, in any conversation?",
+     "Is the other person's difficulty genuinely comparable, or does it consistently one-up whatever the target raised?",
+     "Would the target's concern get addressed if the other person's situation weren't brought up?"
+    ],
+    "less_concerning_if": [
+     "Both people's struggles get real, separate attention over time, without one consistently displacing the other."
+    ],
+    "more_concerning_if": [
+     "The target's pain reliably gets displaced by a bigger claimed pain, every time it's raised."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "FOG",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Each pressure on its own might be refusable; layered together they leave no version of 'no' that does not feel frightening, ungrateful, or cruel all at once.",
+    "what_it_is_not": "Real obligations, real stakes and real concern often coexist in the same situation without anyone assembling them into pressure. Family and cultural norms around duty can generate all three honestly. The flag is the combination arriving reliably around a specific request."
+   },
+   "existing_specific_text": {
+    "short_definition": "Fear, obligation, and guilt used together as a compliance-inducing pressure combination.",
+    "expanded_definition": "Fear, obligation, and guilt used together — not necessarily any single one alone, but the combined pressure of all three — as a compliance-inducing tactic. FOG is less a single move than a climate: fear of what happens if you refuse, obligation framed as something you owe, and guilt for even considering saying no, layered so that any one element reinforces the others.",
+    "plain_language_summary": "In plain terms: fear, obligation, and guilt used together as a compliance-inducing pressure combination.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Fear, obligation, and guilt used together as a compliance-inducing pressure combination."
+    ],
+    "what_it_sounds_like": [
+     "A refusal is met with a mix of a veiled consequence, a reminder of what's owed, and an appeal to how selfish declining would be — all in the same conversation.",
+     "The target notices they feel simultaneously afraid, obligated, and guilty about a single decision that shouldn't carry that much weight.",
+     "Each individual comment might seem minor, but together they make saying no feel almost impossible."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Real obligations exist and can legitimately involve fear, duty, and guilt without manipulation. Cultural and family expectations around duty are common and not inherently a tactic."
+    ],
+    "common_false_positives": [
+     "A situation with genuine mutual obligation, real stakes, and legitimate reasons for concern, without deliberate combination as pressure.",
+     "Cultural or family norms around duty and obligation that create real pressure without being consciously wielded as a tactic.",
+     "A person expressing several honest feelings that happen to overlap without being strategically combined."
+    ],
+    "discernment_questions": [
+     "Does declining consistently trigger all three elements together, or just one occasionally?",
+     "Is the combined pressure proportionate to the actual request, or does it seem engineered to override any refusal?",
+     "Would a reasonable person feel this pressured by the situation on its actual merits?",
+     "Does the pressure ease once compliance is given, suggesting it was functioning as leverage?"
+    ],
+    "less_concerning_if": [
+     "The pressure reflects genuine, proportionate stakes rather than an engineered combination."
+    ],
+    "more_concerning_if": [
+     "All three elements consistently appear together specifically around refusals, and ease once compliance is given."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Emotional Hostage-Taking",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Managing another person's mood turns into the price of refusing anything, and blame for whatever follows attaches to whoever said no.",
+    "what_it_is_not": "Being genuinely, involuntarily upset by a disappointing answer is not leverage, and someone who struggles to regulate emotion is not thereby wielding it. Both people being affected by each other's choices is normal in any close relationship; the pattern is distress that intensifies specifically around requests and limits."
+   },
+   "existing_specific_text": {
+    "short_definition": "Making one's own emotional state contingent on another person's compliance, so the other person feels responsible for managing it.",
+    "expanded_definition": "Making one's own emotional state — mood, wellbeing, even physical health — visibly contingent on another person's compliance, so the other person comes to feel directly responsible for managing it. This differs from simply expressing genuine feelings; the mechanism here is that the emotional state functions as leverage, reliably appearing or intensifying specifically around requests, disagreements, or boundaries.",
+    "plain_language_summary": "In plain terms: making one's own emotional state contingent on another person's compliance, so the other person feels responsible for managing it.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Making one's own emotional state contingent on another person's compliance, so the other person feels responsible for managing it."
+    ],
+    "what_it_sounds_like": [
+     "\"I guess I'll just be miserable then\" or a visible mood collapse specifically timed to a request being declined.",
+     "A pattern where the target starts pre-emptively managing their own choices around anticipating the other person's emotional reaction.",
+     "Physical symptoms (headaches, not eating, not sleeping) that reliably appear around moments of disagreement or refusal."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine disappointment and emotional reactions are normal in close relationships. Some people have real difficulty regulating emotions without any intent to leverage that difficulty."
+    ],
+    "common_false_positives": [
+     "Someone genuinely, involuntarily upset by a disappointing outcome, without any strategic intent behind the reaction.",
+     "A person with real difficulty regulating emotions who isn't consciously using their distress as leverage.",
+     "Two people who are both emotionally affected by each other's choices, which is normal in any close relationship."
+    ],
+    "discernment_questions": [
+     "Does the emotional reaction consistently and specifically follow moments of refusal or disagreement?",
+     "Does the reaction subside quickly once compliance is given, in a way that feels transactional?",
+     "Is there room for the target to decline without the interaction escalating into a crisis?",
+     "Would the person's distress look the same regardless of whether the target complied?"
+    ],
+    "less_concerning_if": [
+     "Distress is proportionate, not selectively timed to requests, and doesn't reliably resolve the moment compliance happens."
+    ],
+    "more_concerning_if": [
+     "Distress reliably appears around refusals and resolves quickly once the target gives in."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

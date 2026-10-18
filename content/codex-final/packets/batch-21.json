@@ -1,0 +1,704 @@
+{
+ "batch": "batch-21",
+ "kind": "normal",
+ "category": "Devaluation structural",
+ "entries": [
+  {
+   "name": "Shame-as-Governance Disguised as Advice",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target comes away smaller rather than better equipped, and objection is pre-answered: it was only ever offered as help.",
+    "what_it_is_not": "Real feedback is often unwelcome in the moment, and delivery can be clumsy without being an attack. The usable test is what you are left holding afterwards — something to do, or only something to feel."
+   },
+   "existing_specific_text": {
+    "short_definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance.",
+    "expanded_definition": "Delivering moralizing criticism specifically framed as helpful guidance or advice, that leaves the target feeling smaller, more inadequate, or more ashamed than before — the framing as \"help\" makes the shame harder to name and object to, since objecting can be met with \"I was just trying to help you.\"",
+    "plain_language_summary": "In plain terms: delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    ],
+    "what_it_sounds_like": [
+     "Unsolicited \"advice\" that's really a judgment about the target's character, delivered as though it were constructive guidance.",
+     "The target notices they feel worse, smaller, or more ashamed after receiving \"help,\" rather than genuinely more equipped.",
+     "Pushing back on the shaming quality is met with \"I'm just trying to help, why are you so defensive?\""
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely constructive feedback can be uncomfortable to hear without being shaming.",
+     "Some people have an awkward delivery style with real helpful intent, correctable once named."
+    ],
+    "common_false_positives": [
+     "Genuinely constructive, specific feedback that, while uncomfortable to hear, actually leaves the target better equipped and doesn't attack their character.",
+     "A person with an awkward delivery style whose intent really is helpful, receptive to adjusting their approach once the impact is named.",
+     "Real advice the target simply doesn't want to hear in the moment, which isn't the same as advice designed to shame."
+    ],
+    "discernment_questions": [
+     "Does the \"advice\" leave the target with something concrete and actionable, or mainly with a worse feeling about themselves?",
+     "Is the feedback specific to a behavior, or does it generalize into a judgment about the target's character?",
+     "When the shaming impact is named, does the person adjust, or double down on having \"just tried to help\"?",
+     "Would this \"advice\" have been delivered the same way to someone the person respected as an equal?"
+    ],
+    "less_concerning_if": [
+     "The feedback is specific, actionable, and the person adjusts their delivery when the impact is named."
+    ],
+    "more_concerning_if": [
+     "The feedback generalizes into character judgment, leaves the target feeling smaller, and any pushback is met with further insistence on good intent."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    },
+    {
+     "name": "Overcorrection Demands",
+     "definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "PIP Weaponization",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target is set a target they cannot hit while the record for their exit is being assembled, and defending themselves means arguing against a document that already exists.",
+    "what_it_is_not": "Genuine performance problems are real, and a formal plan with clear goals, actual support and honest timelines is how they are meant to be handled. What matters is the timing relative to a complaint or a protected absence, and whether the goals hold still once progress starts."
+   },
+   "existing_specific_text": {
+    "short_definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development.",
+    "expanded_definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development. As a communication pattern, PIP Weaponization-type behavior in the Devaluation structural category tends to work through a sustained shift in how someone is treated, felt gradually rather than as a single event — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
+    "plain_language_summary": "In plain terms: using performance improvement frameworks as punishment and paper-trail-building rather than genuine development.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    ],
+    "what_it_sounds_like": [
+     "A performance improvement plan initiated shortly after the employee raised a concern, took protected leave, or otherwise became inconvenient.",
+     "Goals within the plan shift, are vaguely defined, or increase in difficulty specifically as the employee makes progress toward meeting them.",
+     "Feedback arrives too late in the review period to realistically be acted on before the plan concludes."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine performance issues do sometimes need a formal improvement plan.",
+     "Organizations sometimes have real, if imperfect, processes that aren't specifically weaponized against any one person."
+    ],
+    "common_false_positives": [
+     "A genuine, well-documented performance issue that predates any complaint or protected activity, with clear, achievable goals.",
+     "A plan that includes real support, resources, and reasonable time to improve, applied consistently to others in similar situations.",
+     "Legitimate, if uncomfortable, feedback about real gaps that the employee themselves recognizes as fair."
+    ],
+    "discernment_questions": [
+     "Does the plan's timing closely follow the employee raising a concern or engaging in some other protected activity?",
+     "Are the goals specific, achievable, and consistently defined, or vague and shifting?",
+     "Does feedback arrive with enough time to realistically act on it?",
+     "Is this plan's structure and rigor consistent with how the organization has handled comparable situations for others?"
+    ],
+    "less_concerning_if": [
+     "The plan follows a genuine, well-documented performance issue, with clear goals, real support, and enough time to improve."
+    ],
+    "more_concerning_if": [
+     "The plan's timing follows a complaint or protected activity, with vague or shifting goals and feedback too late to act on."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    },
+    {
+     "name": "Overcorrection Demands",
+     "definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Credit Laundering",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target watches their own work succeed without them and cannot name a moment at which it was taken, which makes raising it sound like sour grapes even to themselves.",
+    "what_it_is_not": "Ideas genuinely improve as they pass through people, large workplaces diffuse information with nobody steering it, and two people do sometimes arrive at the same thought separately. The signal is attribution disappearing along the way, not the idea travelling."
+   },
+   "existing_specific_text": {
+    "short_definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely.",
+    "expanded_definition": "Passing someone's contribution through a chain of attribution — restated by a second person, then a third, each slightly rephrasing — until the original author's connection to the idea disappears entirely by the time it reaches its final, credited destination. This is the slower, multi-hop version of Credit Theft: instead of one person claiming credit outright, credit is diffused and laundered through several intermediate steps until no one can quite trace it back.",
+    "plain_language_summary": "In plain terms: passing someone's contribution through a chain of attribution until their authorship disappears entirely.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    ],
+    "what_it_sounds_like": [
+     "An idea passes through several people, each slightly rephrasing it, until it arrives somewhere with no trace of its original source.",
+     "The target can identify the idea as originally theirs but can't point to any single moment where it was \"stolen,\" since it happened gradually across several hops.",
+     "By the time an idea reaches a decision-maker or wider audience, its documented trail of authorship has quietly disappeared."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine collaborative idea development is normal and often improves on the original.",
+     "Large organizations naturally diffuse information in ways that aren't anyone's deliberate strategy."
+    ],
+    "common_false_positives": [
+     "Genuine collaborative development where an idea legitimately evolves and improves as multiple people contribute to it.",
+     "Natural organizational diffusion of ideas that isn't strategic, just how information spreads in a large group.",
+     "An idea that really was independently developed by someone else, coincidentally similar to the target's."
+    ],
+    "discernment_questions": [
+     "Can the idea's trail actually be traced back to the target's original contribution, even if indirectly?",
+     "Does the idea change substantively as it passes along, or is it essentially restated with minor rewording each time?",
+     "Is there any acknowledgment anywhere along the chain, or does attribution disappear entirely?",
+     "Would tracing the idea's history, if anyone bothered, actually lead back to the target?"
+    ],
+    "less_concerning_if": [
+     "The idea evolves substantively through genuine collaborative contribution as it passes along, rather than being merely reworded."
+    ],
+    "more_concerning_if": [
+     "The idea is essentially unchanged but its attribution trail disappears entirely by the time it reaches its final destination."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    },
+    {
+     "name": "Overcorrection Demands",
+     "definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "The \"Good Woman Program\"",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The same conduct costs the target more than it costs other people — a proportionate no draws a penalty — and over time the discomfort with taking up space is experienced as a personal trait rather than a learned response to that penalty.",
+    "what_it_is_not": "Kindness and consideration are values many people genuinely hold for themselves, and some people are accommodating by temperament with nothing imposed about it. What is being described is an uneven cost attached to the same conduct, not the conduct itself.",
+    "note": "Broad cultural pattern rather than a discrete exchange, so the disconfirming case had to separate personal temperament from an unevenly applied social cost; a reviewer may want to tighten this."
+   },
+   "existing_specific_text": {
+    "short_definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting.",
+    "expanded_definition": "A cultural operating system — internalized far more often than explicitly taught — that rewards feminine compliance, self-erasure, and endless accommodation, while punishing assertiveness, boundary-setting, or open self-advocacy as selfish, difficult, or unfeminine. It functions less as any one person's individual tactic and more as a background set of rules that make it easier for other individual tactics on this list to work.",
+    "plain_language_summary": "In plain terms: the cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    ],
+    "what_it_sounds_like": [
+     "Praise consistently arrives for accommodation and self-sacrifice, while assertiveness or boundary-setting draws criticism, even when proportionate.",
+     "A boundary or \"no\" is met with a specific social cost, like being called difficult or cold, that a similar boundary from someone else might not draw.",
+     "The target notices an internalized discomfort with taking up space or asking directly for what they need, disproportionate to any actual social risk."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine personal values around consideration for others exist independent of any cultural pattern.",
+     "Individual personality differences in how much people naturally accommodate others are real and not evidence of anything imposed."
+    ],
+    "common_false_positives": [
+     "Genuine, individually-held values around kindness and consideration that the person applies consistently, including reciprocally toward themselves.",
+     "A specific relationship or workplace culture that values consideration for everyone equally, not gendered specifically.",
+     "A person's own personality and preferences, which may lean toward accommodation without that being culturally imposed or punished."
+    ],
+    "discernment_questions": [
+     "Does the same assertive behavior draw different reactions depending on who's doing it?",
+     "Is accommodation praised while a comparable boundary from the same person draws disproportionate criticism?",
+     "Does the discomfort with self-advocacy feel disproportionate to any actual social risk involved?",
+     "Would a reasonable observer notice a gendered double standard in how similar behavior is received?"
+    ],
+    "less_concerning_if": [
+     "Kindness and consideration are genuinely, individually held values, applied reciprocally and consistently by and toward everyone."
+    ],
+    "more_concerning_if": [
+     "The same assertive behavior draws different reactions depending on gender, and boundary-setting specifically draws disproportionate social cost."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    },
+    {
+     "name": "Overcorrection Demands",
+     "definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Objectification",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's worth rises and falls with their usefulness, so the parts of them that are not useful go unwitnessed — and attention withdrawing feels like something they failed to supply.",
+    "what_it_is_not": "Some relationships are frankly transactional and both people know it, and valuing a particular skill is not a reduction of the person who has it. Ask whether anything about them registers at the moments when the useful part is not needed."
+   },
+   "existing_specific_text": {
+    "short_definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency.",
+    "expanded_definition": "Reducing a person to their utility, function, appearance, or output — treating them as a resource to be used or a tool to accomplish something, rather than a human being with independent agency, needs, and perspective. This shows up in how someone is discussed, valued, and treated: their worth becomes conditional on what they provide, rather than inherent.",
+    "plain_language_summary": "In plain terms: reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    ],
+    "what_it_sounds_like": [
+     "The target's value in a relationship or role seems entirely tied to what they produce, provide, or look like, rather than who they are.",
+     "Interest or attention noticeably tracks specifically what the target can offer, dropping off when that utility isn't currently relevant.",
+     "The target notices they're consulted or valued for a specific function, but not treated as a full person with independent perspective outside that function."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely transactional relationships with clear, mutual understanding of their scope are normal and not inherently disrespectful.",
+     "Appreciating a specific skill doesn't preclude respecting the whole person."
+    ],
+    "common_false_positives": [
+     "A genuinely functional, transactional relationship where both people understand and accept its limited scope.",
+     "Appreciation for someone's specific skill or contribution that coexists with respect for them as a full person elsewhere.",
+     "A person who is simply focused on a specific task in a specific moment, without that reflecting how they view the whole relationship."
+    ],
+    "discernment_questions": [
+     "Does interest in the target track specifically what they can provide, or does it persist independent of their current utility?",
+     "Is the target's own perspective and agency respected outside of their specific function?",
+     "Is the relationship genuinely, mutually understood as limited in scope, or does the target expect something broader that isn't being honored?",
+     "Would the target's absence, if they stopped providing whatever's valued, actually be noticed as a loss of them as a person?"
+    ],
+    "less_concerning_if": [
+     "The relationship is genuinely, mutually understood as limited in scope, and both people are comfortable with that."
+    ],
+    "more_concerning_if": [
+     "Interest and attention specifically track the target's utility, dropping off when it's not currently relevant, with no broader recognition of them as a person."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    },
+    {
+     "name": "Overcorrection Demands",
+     "definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Dehumanization",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Decisions get made about the target in language that has no slot for their perspective, so there is no point in the process at which their own account could plausibly be asked for.",
+    "what_it_is_not": "Formal, clinical and bureaucratic language exists for good reasons and is applied to everybody in some settings, and professional detachment in triage is not contempt. Look for whether the reductive framing is used selectively for one person."
+   },
+   "existing_specific_text": {
+    "short_definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed.",
+    "expanded_definition": "Stripping someone of their complexity through language, categorization, or treatment — reducing them to a label, a number, or a problem to be managed rather than a full person with their own inner life. This makes it psychologically easier to treat someone poorly, since it's harder to justify mistreating a whole person than it is to justify managing a \"problem case\" or a category.",
+    "plain_language_summary": "In plain terms: stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    ],
+    "what_it_sounds_like": [
+     "Consistent use of clinical, bureaucratic, or reductive language to refer to the target, rather than language that acknowledges their full humanity.",
+     "The target is discussed or treated as a \"case\" or a category, specifically in contexts where their perspective would normally be relevant.",
+     "Decisions affecting the target are made and discussed as though they weren't a person with their own reasonable input to offer."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some formal or clinical contexts genuinely require detached, procedural language for everyone.",
+     "A less warm communication style, applied evenly, isn't automatically dehumanizing."
+    ],
+    "common_false_positives": [
+     "Genuinely necessary clinical or bureaucratic language used consistently for everyone in a formal process, not selectively targeting one person.",
+     "Professional detachment in an appropriate context, like triage, that isn't accompanied by broader disrespect.",
+     "A person who is simply less warm in communication style generally, without specifically reducing anyone to a label."
+    ],
+    "discernment_questions": [
+     "Is the reductive language applied consistently to everyone in this context, or specifically to the target?",
+     "Does the target's own perspective get any real space in decisions that affect them?",
+     "Is there a legitimate, disclosed reason for formal or clinical language in this specific context?",
+     "Would a reasonable person feel their full humanity was being acknowledged in these interactions?"
+    ],
+    "less_concerning_if": [
+     "Formal or clinical language is applied consistently and doesn't come with broader disrespect for the target's input."
+    ],
+    "more_concerning_if": [
+     "Reductive language and treatment specifically target the individual, and their perspective is consistently excluded from decisions affecting them."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Overcorrection Demands",
+     "definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Overcorrection Demands",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Repair stops being achievable and becomes a performance of submission, and the target learns that small mistakes carry costs they cannot predict in advance.",
+    "what_it_is_not": "What looked minor sometimes turns out to have caused more damage than it first appeared, and expectations around apology vary a great deal between families and cultures. The revealing moment is what happens when the disproportion is named out loud."
+   },
+   "existing_specific_text": {
+    "short_definition": "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice.",
+    "expanded_definition": "Requiring reparation, apology, or compensation wildly disproportionate to a minor infraction, where the actual purpose isn't justice or repair but demonstrating absolute authority over the target — the severity of what's demanded has little relationship to the severity of what actually happened, and everything to do with establishing who has the power to set the terms.",
+    "plain_language_summary": "In plain terms: requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Requiring disproportionate reparation for minor infractions, designed to demonstrate absolute authority rather than pursue justice."
+    ],
+    "what_it_sounds_like": [
+     "A minor mistake or oversight triggers a demand for an elaborate, disproportionate apology, gesture, or compensation.",
+     "The scale of what's demanded seems designed to demonstrate submission rather than to actually repair anything.",
+     "Pointing out the disproportion is met with further demands, rather than any reconsideration of what's actually warranted."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some infractions really do have bigger consequences than they first appear, warranting real repair.",
+     "Some people have elaborate personal or cultural norms around apology that aren't about establishing power."
+    ],
+    "common_false_positives": [
+     "A situation where the \"minor\" infraction actually has more significant consequences than initially apparent, warranting real repair.",
+     "A person who genuinely, if perhaps excessively, cares about a specific issue and asks for more than strictly necessary, but accepts a reasonable counter without escalating.",
+     "Cultural or personal norms around apology and repair that are more elaborate than the target expects, without being about power."
+    ],
+    "discernment_questions": [
+     "Is the demanded reparation actually proportionate to the real consequences of what happened?",
+     "Does raising the disproportion lead to any reconsideration, or to further, escalating demands?",
+     "Does the demand seem calibrated to demonstrate submission, more than to address actual harm?",
+     "Would a neutral third party see the demanded response as proportionate to the actual infraction?"
+    ],
+    "less_concerning_if": [
+     "The demanded response, while significant, is proportionate to real consequences and reasonable when raised."
+    ],
+    "more_concerning_if": [
+     "The demand is wildly disproportionate to the actual infraction and escalates further when questioned."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Toxic Positivity / Weaponized Optimism",
+   "category": "Devaluation structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's dissatisfaction becomes the thing that needs fixing, so whatever caused it goes unexamined and saying so again costs them standing in the room.",
+    "what_it_is_not": "Encouragement that arrives alongside real acknowledgement of the difficulty is a different thing, and people who are optimistic by temperament share that outlook without requiring anyone to match it. Perspective offered once about a genuinely small setback, and not insisted on, is ordinary."
+   },
+   "existing_specific_text": {
+    "short_definition": "Enforcing relentless positivity to delegitimize the target's pain, grief, or dissatisfaction, reframing valid negative emotions as a personal failure so that suffering becomes unspeakable and the system producing it remains unexamined.",
+    "expanded_definition": "Enforcing relentless positivity to delegitimize the target's genuine pain, grief, or dissatisfaction — reframing valid negative emotions as a personal failure of attitude or gratitude, so that real suffering becomes unspeakable and whatever system or relationship is actually producing it never has to be examined or changed.",
+    "plain_language_summary": "In plain terms: enforcing relentless positivity to delegitimize the target's pain, grief, or dissatisfaction, reframing valid negative emotions as a personal failure so that suffering becomes unspeakable and the system producing it remains unexamined.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradual erosion of confidence that can be hard to date to any single incident. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Enforcing relentless positivity to delegitimize the target's pain, grief, or dissatisfaction, reframing valid negative emotions as a personal failure so that suffering becomes unspeakable and the system producing it remains unexamined."
+    ],
+    "what_it_sounds_like": [
+     "\"Just stay positive\" or \"everything happens for a reason\" offered in response to a legitimate, specific grievance, without any engagement with the substance.",
+     "The target's negative emotion is treated as the actual problem needing fixing, rather than whatever caused it.",
+     "Expressing dissatisfaction is met with subtle or overt social punishment for \"bringing down the mood\" or \"not being grateful enough.\""
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, well-timed encouragement is a normal and often helpful part of support.",
+     "Naturally optimistic people can share their outlook without demanding anyone else adopt it."
+    ],
+    "common_false_positives": [
+     "Genuine, well-timed encouragement offered alongside real acknowledgment of the difficulty, not as a replacement for it.",
+     "A person who is generally optimistic by temperament and shares that outlook without demanding the target adopt it too.",
+     "Reasonable encouragement to keep perspective during a genuinely minor, temporary setback, offered once and not insisted upon."
+    ],
+    "discernment_questions": [
+     "Does the positivity replace acknowledgment of the actual problem, or accompany it?",
+     "Is the underlying cause of the target's negative feeling ever addressed, or does attention stay fixed on their attitude?",
+     "Does expressing dissatisfaction draw social cost, beyond just a differing opinion?",
+     "Would a reasonable person consider the negative emotion proportionate to what's actually happening?"
+    ],
+    "less_concerning_if": [
+     "Encouragement is offered alongside real acknowledgment of the difficulty, not as a replacement for addressing it."
+    ],
+    "more_concerning_if": [
+     "Positivity consistently substitutes for addressing the actual cause, and expressing dissatisfaction draws real social cost."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through a sustained shift in how someone is treated, felt gradually rather than as a single event. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a gradual erosion of confidence that can be hard to date to any single incident in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Shame-as-Governance Disguised as Advice",
+     "definition": "Delivering moralizing criticism that leaves the target smaller, wrapped in the language of help or guidance."
+    },
+    {
+     "name": "PIP Weaponization",
+     "definition": "Using performance improvement frameworks as punishment and paper-trail-building rather than genuine development."
+    },
+    {
+     "name": "Credit Laundering",
+     "definition": "Passing someone's contribution through a chain of attribution until their authorship disappears entirely."
+    },
+    {
+     "name": "The \"Good Woman Program\"",
+     "definition": "The cultural operating system that rewards feminine compliance and punishes feminine sovereignty, assertiveness, or boundary-setting."
+    },
+    {
+     "name": "Objectification",
+     "definition": "Reducing a person to their utility, function, appearance, or output, treating them as a resource rather than a human with agency."
+    },
+    {
+     "name": "Dehumanization",
+     "definition": "Stripping someone of complexity through language, categorization, or treatment, reducing them to a label, number, or problem to be managed."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

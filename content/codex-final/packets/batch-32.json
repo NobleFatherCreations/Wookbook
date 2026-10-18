@@ -1,0 +1,763 @@
+{
+ "batch": "batch-32",
+ "kind": "normal",
+ "category": "Institutional & Process",
+ "entries": [
+  {
+   "name": "Legal/Administrative Threats",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Threatening police, lawyers, HR, or authorities as leverage.",
+    "expanded_definition": "Threatening police, lawyers, HR, or authorities as leverage. Imports institutional force into a personal dispute to compel compliance. As a communication pattern, Legal/Administrative Threats-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: threatening police, lawyers, HR, or authorities as leverage.",
+    "why_this_matters": "Imports institutional force into a personal dispute to compel compliance. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Threatening police, lawyers, HR, or authorities as leverage.",
+     "Imports institutional force into a personal dispute to compel compliance.",
+     "Contrasts with a healthier version: using institutions for their actual purpose — safety and rights — not as a club in an argument.",
+     "Recognizable by phrasing such as \"I'll have my lawyer bury you\"."
+    ],
+    "what_it_sounds_like": [
+     "I'll have my lawyer bury you.",
+     "One call to HR and you're finished.",
+     "I'll call the police.",
+     "You'll be hearing from my lawyer.",
+     "I'll have you arrested."
+    ],
+    "what_it_is_not": [
+     "Sometimes contacting authorities is the legitimate, correct move; the flag is the threat used as pressure ('unless you…')."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, appropriate statements of legal intent are a normal part of resolving real disputes.",
+     "Accurately informing someone of their real rights isn't the same as threatening them."
+    ],
+    "common_false_positives": [
+     "A genuine, appropriate statement of intent to pursue a legitimate legal or institutional process, stated factually rather than as intimidation.",
+     "A person accurately informing someone of real rights or consequences, without using it as leverage in an unrelated argument.",
+     "A one-time, heated statement in an argument that isn't actually acted on and isn't part of a pattern."
+    ],
+    "discernment_questions": [
+     "Is the threatened institutional action proportionate to a real, legitimate grievance, or does it seem designed mainly to intimidate?",
+     "Does the threat appear specifically as leverage in an unrelated personal disagreement?",
+     "Is this a pattern of invoking institutional force repeatedly, or a one-time, genuine statement of intent?",
+     "Would the threatened action, if pursued, actually have a real legal or institutional basis?"
+    ],
+    "less_concerning_if": [
+     "The threatened action has a genuine legal basis and is stated factually rather than as intimidation in an unrelated dispute."
+    ],
+    "more_concerning_if": [
+     "Institutional threats are repeatedly invoked as leverage in personal disagreements, disproportionate to any real basis."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Weaponized Therapy-Speak",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using clinical vocabulary as ammunition rather than understanding.",
+    "expanded_definition": "Using clinical vocabulary as ammunition rather than understanding. Borrowed authority pathologizes the target's normal responses. As a communication pattern, Weaponized Therapy-Speak-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using clinical vocabulary as ammunition rather than understanding.",
+    "why_this_matters": "Borrowed authority pathologizes the target's normal responses. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using clinical vocabulary as ammunition rather than understanding.",
+     "Borrowed authority pathologizes the target's normal responses.",
+     "Contrasts with a healthier version: therapy language used on oneself: \"I notice I'm getting defensive.\".",
+     "Recognizable by phrasing such as \"I'm setting a boundary: you're not allowed to be upset\"."
+    ],
+    "what_it_sounds_like": [
+     "I'm setting a boundary: you're not allowed to be upset.",
+     "Your 'anxiety' is just manipulation — I've read about people like you.",
+     "My therapist says that you're a narcissist.",
+     "That's just your trauma talking.",
+     "You're clearly projecting again.",
+     "You clearly have unresolved issues."
+    ],
+    "what_it_is_not": [
+     "Therapy concepts are mainstream now; many people use them earnestly and imprecisely, not strategically."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, self-aware use of therapeutic language about one's own behavior is healthy.",
+     "People newly learning these concepts sometimes apply them imperfectly but in good faith."
+    ],
+    "common_false_positives": [
+     "A person genuinely applying therapeutic language to their own behavior, reflecting real self-awareness.",
+     "Legitimate boundary-setting language used accurately, about the person's own limits, not to control the other person's emotional expression.",
+     "Someone newly learning therapeutic concepts who applies them somewhat clumsily but in good faith, open to correction."
+    ],
+    "discernment_questions": [
+     "Is the clinical language applied to the speaker's own behavior, or wielded against the target's normal reactions?",
+     "Does the \"boundary\" being set actually limit the speaker's own actions, or does it try to control the target's emotional expression?",
+     "Is the person using this vocabulary open to feedback about how it's landing, or doubling down when questioned?",
+     "Would the same situation, described in plain language instead of clinical terms, still sound reasonable?"
+    ],
+    "less_concerning_if": [
+     "Clinical language is applied to the speaker's own behavior or genuine self-limits, not used to control the target's reactions."
+    ],
+    "more_concerning_if": [
+     "Clinical vocabulary specifically targets and pathologizes the target's normal emotional responses, used to control rather than understand."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Trash-Can Diagnosis",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Assigning the target a mental-health label as an insult or verdict.",
+    "expanded_definition": "Assigning the target a mental-health label as an insult or verdict. A diagnosis-as-weapon dismisses everything the target says as symptoms. As a communication pattern, Trash-Can Diagnosis-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: assigning the target a mental-health label as an insult or verdict.",
+    "why_this_matters": "A diagnosis-as-weapon dismisses everything the target says as symptoms. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Assigning the target a mental-health label as an insult or verdict.",
+     "A diagnosis-as-weapon dismisses everything the target says as symptoms.",
+     "Contrasts with a healthier version: \"I'm finding your behavior really hard\" — behavior, not diagnosis.",
+     "Recognizable by phrasing such as \"You're a textbook narcissist\"."
+    ],
+    "what_it_sounds_like": [
+     "You're a textbook narcissist.",
+     "This is your BPD talking, not you.",
+     "You're a narcissist.",
+     "You need serious help, seriously."
+    ],
+    "what_it_is_not": [
+     "'You need help' can also be genuine, poorly-delivered concern for someone who's struggling."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, qualified clinical observations exist and can be appropriate in the right context.",
+     "Describing frustration with specific behavior is different from diagnosing someone."
+    ],
+    "common_false_positives": [
+     "A genuine, appropriately qualified clinical observation, offered by someone actually qualified to make it, in a relevant context.",
+     "Frustration expressed about specific behavior, described as behavior rather than as a diagnostic label.",
+     "A person's own disclosed, real diagnosis referenced by themselves, which isn't the same as someone else weaponizing a label against them."
+    ],
+    "discernment_questions": [
+     "Is the diagnostic label offered by someone actually qualified to assess it, in an appropriate context?",
+     "Does the criticism focus on specific behavior, or does it generalize into a sweeping label about the target's character?",
+     "Does the label get used specifically to dismiss everything the target says as \"symptoms,\" regardless of content?",
+     "Would the underlying concern still be valid if described in terms of specific behavior rather than a diagnosis?"
+    ],
+    "less_concerning_if": [
+     "Feedback focuses on specific behavior rather than a diagnostic label, or any diagnostic language comes from someone actually qualified in an appropriate context."
+    ],
+    "more_concerning_if": [
+     "A diagnostic label is used as a blanket dismissal of everything the target says, by someone unqualified to assess it."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Confidentiality as Weapon",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them.",
+    "expanded_definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them. It makes real self-defense structurally impossible — you can't respond to a case you're not allowed to see. As a communication pattern, Confidentiality as Weapon-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: invoking 'confidentiality' to block the target from seeing the evidence or accusations against them.",
+    "why_this_matters": "It makes real self-defense structurally impossible — you can't respond to a case you're not allowed to see. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them.",
+     "It makes real self-defense structurally impossible — you can't respond to a case you're not allowed to see.",
+     "Contrasts with a healthier version: \"Here's what's been raised, and here's what I legally/ethically can and can't share — let's talk through it.\".",
+     "Recognizable by phrasing such as \"We can't share those details with you\"."
+    ],
+    "what_it_sounds_like": [
+     "We can't share those details with you.",
+     "That's confidential, I can't tell you who complained.",
+     "We can't share details.",
+     "That's confidential, I can't tell you."
+    ],
+    "what_it_is_not": [
+     "Real privacy and legal confidentiality obligations exist and are legitimate — the flag is confidentiality invoked specifically to prevent the target's defense, not to protect a third party."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine legal and ethical confidentiality requirements exist and are a normal part of many processes.",
+     "Ongoing processes sometimes really can't share every detail yet without compromising them."
+    ],
+    "common_false_positives": [
+     "Genuine, legally-required confidentiality that's honestly explained, with as much shared as legitimately possible.",
+     "A process still in progress where some information genuinely can't be shared yet, with a clear timeline for when it can be.",
+     "A situation where the target is told what they're accused of in general terms, even if specific details are withheld for legitimate reasons."
+    ],
+    "discernment_questions": [
+     "Is there any legitimate legal or ethical reason the specific information can't be shared, and is that reason explained?",
+     "Is the target told at least the general nature of what's being raised, or kept entirely in the dark?",
+     "Is there a real, accessible process for responding to the substance, even without every detail?",
+     "Would a neutral reviewer see the confidentiality claim as legitimate, or as functioning mainly to block any defense?"
+    ],
+    "less_concerning_if": [
+     "A legitimate reason for confidentiality is explained, and the target still knows enough to meaningfully respond."
+    ],
+    "more_concerning_if": [
+     "Confidentiality blocks the target from knowing even the general nature of the accusation, preventing any real response."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Pressure to Sign",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone.",
+    "expanded_definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone. Removing time removes the ability to think clearly, get advice, or notice unfavorable terms. As a communication pattern, Pressure to Sign-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone.",
+    "why_this_matters": "Removing time removes the ability to think clearly, get advice, or notice unfavorable terms. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone.",
+     "Removing time removes the ability to think clearly, get advice, or notice unfavorable terms.",
+     "Contrasts with a healthier version: \"Take the weekend to read this over and ask any questions before you sign.\".",
+     "Recognizable by phrasing such as \"Sign it now, we don't have time to go over it\"."
+    ],
+    "what_it_sounds_like": [
+     "Sign it now, we don't have time to go over it.",
+     "You need to sign this today, before you leave the building.",
+     "Sign this now, we don't have time.",
+     "You need to sign this today."
+    ],
+    "what_it_is_not": [
+     "Some deadlines are genuinely real and external (a contract expiring, a legal filing date) — the flag is artificial urgency manufactured to prevent review."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine deadlines exist and can require reasonably prompt decisions without being manipulative.",
+     "Simple, low-stakes documents don't always need extensive review time."
+    ],
+    "common_false_positives": [
+     "A genuine, real time constraint that's honestly disclosed and unrelated to preventing review.",
+     "A document that's genuinely simple and low-stakes, where a quick signature is proportionate to what's actually being agreed to.",
+     "A person offering to answer questions on the spot, rather than refusing to let the target take time."
+    ],
+    "discernment_questions": [
+     "Is there a real, verifiable external deadline, or does the urgency seem manufactured?",
+     "Is the target given any real opportunity to read, ask questions, or consult someone else first?",
+     "Is the document's complexity and stakes proportionate to the speed being demanded?",
+     "Would slowing down and reviewing carefully actually reveal anything the presenter wouldn't want noticed?"
+    ],
+    "less_concerning_if": [
+     "There's a genuine, verifiable time constraint, and the target still has real opportunity to ask questions."
+    ],
+    "more_concerning_if": [
+     "Urgency is disproportionate to the document's actual complexity, and requests for time or review are refused."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Clinical Tone Policing",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive.",
+    "expanded_definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive. When the person with institutional power calls your reaction 'catastrophizing,' you have nowhere higher to appeal. As a communication pattern, Clinical Tone Policing-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using clinical or institutional authority to minimize real distress by framing it as excessive.",
+    "why_this_matters": "When the person with institutional power calls your reaction 'catastrophizing,' you have nowhere higher to appeal. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using clinical or institutional authority to minimize real distress by framing it as excessive.",
+     "When the person with institutional power calls your reaction 'catastrophizing,' you have nowhere higher to appeal.",
+     "Contrasts with a healthier version: \"This sounds really distressing — let's go through what we know and what we don't.\".",
+     "Recognizable by phrasing such as \"Let's not catastrophize\"."
+    ],
+    "what_it_sounds_like": [
+     "Let's not catastrophize.",
+     "You're being a bit dramatic about your symptoms.",
+     "You're a bit dramatic about symptoms."
+    ],
+    "what_it_is_not": [
+     "Clinicians do sometimes need to gently redirect genuine catastrophizing that's making a person's actual situation harder — the flag is when it's used to dismiss reasonable concern rather than address it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine clinical assessments about proportionate risk are a normal, appropriate part of care.",
+     "Direct communication style from a provider isn't automatically dismissive."
+    ],
+    "common_false_positives": [
+     "A genuine, appropriate clinical assessment that a reaction is disproportionate to actual risk, offered with real engagement and an open door for further discussion.",
+     "A provider who is simply direct in communication style, without dismissing the patient's underlying concern.",
+     "A situation where the clinical assessment turns out, on reflection or a second opinion, to be accurate."
+    ],
+    "discernment_questions": [
+     "Does the \"catastrophizing\" label come with actual engagement on the substance, or does it end the conversation?",
+     "Is there a real, accessible way to appeal or get a second opinion, or does the label function as final?",
+     "Would a second, independent clinical opinion agree with the assessment?",
+     "Does the framing address genuine risk, or does it seem to exist mainly to manage the patient's demeanor?"
+    ],
+    "less_concerning_if": [
+     "The assessment comes with real engagement and openness to a second opinion or further discussion."
+    ],
+    "more_concerning_if": [
+     "The label ends the conversation with no real appeal path, and a second opinion isn't sought or welcomed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "False Conclusion from Normal Labs",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem.",
+    "expanded_definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem. It tells the patient their own lived experience is less real than a metric, delaying diagnosis and validation. As a communication pattern, False Conclusion from Normal Labs-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem.",
+    "why_this_matters": "It tells the patient their own lived experience is less real than a metric, delaying diagnosis and validation. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem.",
+     "It tells the patient their own lived experience is less real than a metric, delaying diagnosis and validation.",
+     "Contrasts with a healthier version: \"Your labs are normal, and I still believe something is wrong — let's look further.\".",
+     "Recognizable by phrasing such as \"Your labs came back completely normal\"."
+    ],
+    "what_it_sounds_like": [
+     "Your labs came back completely normal.",
+     "There's nothing showing up on your scans.",
+     "There's nothing showing up in your tests.",
+     "The numbers look fine, so there's nothing's really wrong."
+    ],
+    "what_it_is_not": [
+     "Normal results genuinely do rule out many things and a doctor explaining that isn't automatically dismissive — the flag is when normal results end the conversation instead of continuing it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Normal lab results sometimes genuinely do rule out a specific concern being tested.",
+     "Symptoms sometimes do resolve on their own, consistent with normal test results."
+    ],
+    "common_false_positives": [
+     "A genuine clinical situation where normal labs really do rule out the specific condition being tested for, honestly explained.",
+     "A provider continuing to investigate further despite normal initial results, rather than closing the case.",
+     "A patient's symptoms that genuinely do turn out to resolve on their own, consistent with the normal labs."
+    ],
+    "discernment_questions": [
+     "Do the normal results actually rule out what's being tested for, or do they simply not capture the specific problem?",
+     "Does the provider continue investigating, or treat normal labs as the end of the inquiry?",
+     "Is the patient's lived experience of ongoing symptoms taken seriously alongside the normal results?",
+     "Would a second opinion or further testing be offered, or actively discouraged?"
+    ],
+    "less_concerning_if": [
+     "Normal results genuinely rule out the tested condition, and the provider continues investigating other possibilities."
+    ],
+    "more_concerning_if": [
+     "Ongoing symptoms are dismissed based on labs that don't actually capture the problem, and further investigation is discouraged."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Medical Gaslighting",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Dismissing symptoms or pain in a clinical setting so the patient's body is disbelieved by the system meant to treat it.",
+    "expanded_definition": "Dismissing symptoms or pain in a clinical setting so the patient's body is disbelieved by the system meant to treat it. It delays real diagnosis and teaches patients — especially those from groups historically dismissed by medicine — to distrust their own symptoms. As a communication pattern, Medical Gaslighting-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: dismissing symptoms or pain in a clinical setting so the patient's body is disbelieved by the system meant to treat it.",
+    "why_this_matters": "It delays real diagnosis and teaches patients — especially those from groups historically dismissed by medicine — to distrust their own symptoms. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Dismissing symptoms or pain in a clinical setting so the patient's body is disbelieved by the system meant to treat it.",
+     "It delays real diagnosis and teaches patients — especially those from groups historically dismissed by medicine — to distrust their own symptoms.",
+     "Contrasts with a healthier version: \"I don't have an answer yet, but I believe something is happening and we'll keep looking.\".",
+     "Recognizable by phrasing such as \"It's probably just anxiety\"."
+    ],
+    "what_it_sounds_like": [
+     "It's probably just anxiety.",
+     "There's nothing medically wrong with you.",
+     "It's just stress.",
+     "There's nothing wrong with you."
+    ],
+    "what_it_is_not": [
+     "Anxiety and stress are real and sometimes are the correct explanation — the flag is reaching for that explanation without genuinely ruling out alternatives first."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, appropriate clinical assessments sometimes correctly identify a less serious cause.",
+     "Providers still in the diagnostic process, without yet having an answer, aren't necessarily dismissing anyone."
+    ],
+    "common_false_positives": [
+     "A genuine, appropriate clinical assessment that symptoms are likely explained by something less serious, offered with continued openness to further investigation.",
+     "A provider who is simply still in the diagnostic process and hasn't yet found an answer, without dismissing the patient's experience.",
+     "A situation where the initial assessment turns out, with more information, to have been reasonably accurate."
+    ],
+    "discernment_questions": [
+     "Does the dismissal come with continued engagement and willingness to investigate further if symptoms persist?",
+     "Is there a plausible clinical basis for the assessment, or does it seem to dismiss the concern without real evaluation?",
+     "Does the patient's account of their own body get taken as real data, or treated as unreliable?",
+     "Would a second opinion be welcomed, or discouraged?"
+    ],
+    "less_concerning_if": [
+     "The assessment comes with continued engagement and openness to further investigation if symptoms don't resolve."
+    ],
+    "more_concerning_if": [
+     "Symptoms are dismissed without real evaluation, and further investigation or a second opinion is discouraged."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

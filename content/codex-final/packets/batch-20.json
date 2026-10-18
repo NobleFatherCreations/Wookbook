@@ -1,0 +1,523 @@
+{
+ "batch": "batch-20",
+ "kind": "normal",
+ "category": "Deception",
+ "entries": [
+  {
+   "name": "Forged Screenshots",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Screenshots are widely treated as settled proof, so disproving one means asking people to doubt a kind of evidence they normally accept without question.",
+    "what_it_is_not": "A real screenshot cropped for brevity, with its meaning intact, is not a forgery. Confusion about which conversation or timeframe an image comes from is common. Different devices and platform updates genuinely produce different formatting of authentic images."
+   },
+   "existing_specific_text": {
+    "short_definition": "Fabricated or altered digital images of conversations, messages, or documents presented as authentic proof.",
+    "expanded_definition": "Fabricated or digitally altered images of conversations, messages, or documents, presented as authentic evidence of something that didn't actually happen or wasn't actually said. This differs from Fabricated Evidence broadly in being specifically about the digital-image medium — text message screenshots, edited photos of documents — which can be especially convincing because screenshots are widely treated as straightforward proof.",
+    "plain_language_summary": "In plain terms: fabricated or altered digital images of conversations, messages, or documents presented as authentic proof.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Fabricated or altered digital images of conversations, messages, or documents presented as authentic proof."
+    ],
+    "what_it_sounds_like": [
+     "A screenshot presented as evidence that doesn't match the target's own records of the same conversation.",
+     "Formatting inconsistencies that don't match the messaging platform it's claimed to be from.",
+     "The alleged conversation contains claims or phrasing that don't match how the target actually communicates."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine screenshots get cropped for brevity all the time without altering meaning. Confusion about which conversation a screenshot is from is a common, innocent mistake."
+    ],
+    "common_false_positives": [
+     "A genuine screenshot that's simply been cropped for brevity, without altering its actual content or meaning.",
+     "Legitimate confusion about which specific conversation or timeframe a screenshot is from.",
+     "Platform updates or different devices producing genuinely different visual formatting of real screenshots."
+    ],
+    "discernment_questions": [
+     "Does the screenshot's content match the target's own independent record of the same conversation?",
+     "Are there technical inconsistencies that don't match the claimed platform or device?",
+     "Is there any independent way to verify the screenshot against the original account or platform?",
+     "Does the alleged content match how the target actually writes and communicates?"
+    ],
+    "less_concerning_if": [
+     "The screenshot checks out against independent records and platform-consistent formatting."
+    ],
+    "more_concerning_if": [
+     "The content contradicts the target's own records, and there are technical inconsistencies suggesting alteration."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Fabricated Evidence",
+     "definition": "Manufactured screenshots, edited messages, or forged documents presented as proof."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Catfishing",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Everything built on the connection rests on ground that was never there, so what is lost on discovery includes the relationship's entire history, not merely its ending.",
+    "what_it_is_not": "Reasonable caution about identifying details early in an online relationship is not a fabricated identity. Outdated photos and flattering presentation fall short of accurate without being wholesale invention. Reluctance about video calls or meeting in person is frequently social anxiety."
+   },
+   "existing_specific_text": {
+    "short_definition": "Presenting a fundamentally false identity or representation to hook the target before they can see reality.",
+    "expanded_definition": "Presenting a fundamentally false identity, appearance, or set of circumstances — a fake name, photos, job, or life story — specifically to hook the target's interest or trust before they have any chance to encounter the actual reality. The deception isn't incidental exaggeration; it's foundational to how the connection was ever established in the first place.",
+    "plain_language_summary": "In plain terms: presenting a fundamentally false identity or representation to hook the target before they can see reality.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Presenting a fundamentally false identity or representation to hook the target before they can see reality."
+    ],
+    "what_it_sounds_like": [
+     "Photos, claimed occupation, or biographical details that turn out to be entirely fabricated or belong to someone else.",
+     "A consistent refusal or series of excuses around video calls, meeting in person, or other ways of verifying identity.",
+     "Inconsistencies in basic biographical facts that don't add up when compared across different conversations."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Reasonable privacy caution early in an online connection isn't the same as identity fabrication. Genuine social anxiety about video calls or meeting is common and doesn't necessarily indicate deception."
+    ],
+    "common_false_positives": [
+     "Reasonable privacy caution early in an online relationship that isn't a fabricated identity.",
+     "Outdated photos or a flattering presentation that, while not fully accurate, isn't a wholesale fabrication.",
+     "Genuine anxiety about video calls or meeting in person that reflects social anxiety rather than deception."
+    ],
+    "discernment_questions": [
+     "Do the claimed biographical details hold up to independent verification?",
+     "Is there a pattern of specific excuses that consistently prevent verification?",
+     "Do the person's story details stay consistent over time, or do they shift or contradict each other?",
+     "Would a reasonable, low-effort verification step resolve the uncertainty, and is that being actively avoided?"
+    ],
+    "less_concerning_if": [
+     "Basic details check out and the person is willing to verify their identity through reasonable means."
+    ],
+    "more_concerning_if": [
+     "Verification is consistently avoided with excuses, and biographical details don't hold up or shift over time."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Fabricated Evidence",
+     "definition": "Manufactured screenshots, edited messages, or forged documents presented as proof."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Half-Truth Framing",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Every fact checks out individually, so a listener who verifies carefully still arrives at the wrong conclusion.",
+    "what_it_is_not": "An accurate summary necessarily omits detail for length. People often present facts in whatever order those facts occurred to them. A genuinely different, honestly held interpretation of the same true facts is disagreement rather than arrangement."
+   },
+   "existing_specific_text": {
+    "short_definition": "Combining true details in a way that creates a false overall impression.",
+    "expanded_definition": "Combining individually true details in a way that creates a false overall impression — each specific fact stated can be verified as accurate, but the selection and arrangement of those facts leads to a conclusion that wouldn't hold up if all the relevant facts were included. This differs from Lying by Omission in emphasis: the mechanism here is active combination and arrangement of true pieces, not just leaving something out.",
+    "plain_language_summary": "In plain terms: combining true details in a way that creates a false overall impression.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Combining true details in a way that creates a false overall impression."
+    ],
+    "what_it_sounds_like": [
+     "A sequence of individually accurate facts, arranged in a way that implies something the full picture wouldn't support.",
+     "Challenging the overall impression is met with \"but everything I said was true,\" missing the point that the combination was misleading.",
+     "When additional true context is added, the original impression created by the selective combination falls apart."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely accurate summaries necessarily simplify and can't include everything. People sometimes just describe things in the order they occurred to them, without any strategic arrangement."
+    ],
+    "common_false_positives": [
+     "A genuinely accurate summary that necessarily leaves out some detail simply because of length or relevance.",
+     "Someone presenting facts in the order they naturally occurred to them, without strategic arrangement.",
+     "A person with a genuinely different, honestly-held interpretation of what the same true facts mean."
+    ],
+    "discernment_questions": [
+     "Does adding the missing context change the overall impression the combination created?",
+     "Is the specific combination of facts unusual, or does it reflect a natural, non-strategic way of describing the situation?",
+     "Does the person resist adding relevant context when it's offered, or readily incorporate it?",
+     "Would a neutral summary of the same facts, without the specific arrangement, support the same conclusion?"
+    ],
+    "less_concerning_if": [
+     "The summary holds up even with additional relevant context added."
+    ],
+    "more_concerning_if": [
+     "The impression created falls apart once missing context is added, and that context is actively resisted."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Fabricated Evidence",
+     "definition": "Manufactured screenshots, edited messages, or forged documents presented as proof."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "False Reports",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "A fabricated complaint puts a real job, licence or family arrangement in jeopardy, and the person has to answer for something that did not happen before anyone establishes whether it did.",
+    "what_it_is_not": "A genuine report that characterises events in a way the subject disputes still reflects the reporter's honest perception. Institutions make their own errors in processing legitimate reports. Two people can disagree factually about what happened without either one inventing anything."
+   },
+   "existing_specific_text": {
+    "short_definition": "Filing fabricated complaints, accusations, or documentation to create institutional jeopardy for the target.",
+    "expanded_definition": "Filing fabricated complaints, accusations, or formal documentation — to an employer, a school, law enforcement, or another authority — specifically to create institutional jeopardy for the target, whether or not the underlying claim has any factual basis. This differs from Complaint Weaponization, which is about sequencing a real grievance to look retaliatory, in that the content of the report itself is fabricated, not just strategically timed.",
+    "plain_language_summary": "In plain terms: filing fabricated complaints, accusations, or documentation to create institutional jeopardy for the target.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Filing fabricated complaints, accusations, or documentation to create institutional jeopardy for the target."
+    ],
+    "what_it_sounds_like": [
+     "A formal complaint or report that contains claims the target knows to be factually untrue.",
+     "Institutional consequences triggered by a report that doesn't match what actually happened.",
+     "The fabricated report surfaces details or a narrative that couldn't be true given the target's actual, verifiable whereabouts or actions."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, good-faith reports sometimes turn out to be mistaken without being fabricated. Institutions themselves sometimes make errors in processing that aren't the reporter's fault."
+    ],
+    "common_false_positives": [
+     "A genuine report, even if the target disagrees with how it characterizes events, that reflects the reporter's honest perception.",
+     "An institution's own error or miscommunication in processing a legitimate report.",
+     "Two people with a genuine factual disagreement about what happened, where neither is deliberately fabricating anything."
+    ],
+    "discernment_questions": [
+     "Is there concrete, independent evidence that the reported claims are factually false?",
+     "Does the report's content diverge specifically from what's independently verifiable, or is it a matter of differing interpretation?",
+     "Does the person filing the report have a clear motive tied to a specific conflict with the target?",
+     "Would the report hold up if independently investigated with full access to the facts?"
+    ],
+    "less_concerning_if": [
+     "The report reflects a genuine, if disputed, perception rather than fabricated facts."
+    ],
+    "more_concerning_if": [
+     "The report contains claims independently verifiable as false, filed with a clear motive."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Fabricated Evidence",
+     "definition": "Manufactured screenshots, edited messages, or forged documents presented as proof."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Paper-Trail Traps",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "A record accumulates that the person has no opportunity to answer as it is built, and by the time they see it, it reads as damning.",
+    "what_it_is_not": "Standard documentation applied to everyone is not targeting. A genuine record of concerns that were actually raised with the person is legitimate even if they wish it did not exist. Someone keeping notes on their own experience for their own reference is doing something ordinary."
+   },
+   "existing_specific_text": {
+    "short_definition": "Creating false or misleading documentation designed to build a case against the target, often without their knowledge.",
+    "expanded_definition": "Creating false or misleading documentation — emails, notes, formal write-ups — specifically designed to build a case against the target over time, often without the target's knowledge that a case is even being built. Unlike a single False Report, this is a sustained, patient process: individual pieces of documentation accumulate into a record that looks damning in aggregate, even if each piece alone seems minor.",
+    "plain_language_summary": "In plain terms: creating false or misleading documentation designed to build a case against the target, often without their knowledge.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Creating false or misleading documentation designed to build a case against the target, often without their knowledge."
+    ],
+    "what_it_sounds_like": [
+     "Formal write-ups or documented \"concerns\" about the target that don't match the target's own understanding of the events described.",
+     "The target discovers, much later, an extensive paper trail being built about them that they were never made aware of at the time.",
+     "Documentation that seems oddly detailed or one-sided, as though written with an eventual audience in mind."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Standard documentation practices in workplaces and institutions exist for legitimate reasons and apply broadly. Keeping a personal record of real events for one's own reference isn't inherently building a case against someone."
+    ],
+    "common_false_positives": [
+     "Legitimate, standard documentation practices that apply to everyone, not specifically targeted at one person.",
+     "A genuine record of real, previously-discussed concerns, even if the target wishes it hadn't been documented.",
+     "Someone documenting their own experience for their own reference, without any intent to build a case."
+    ],
+    "discernment_questions": [
+     "Does the documentation accurately reflect events, or does it selectively frame things unfavorably?",
+     "Is documentation applied evenly to everyone in the relevant context, or specifically concentrated on the target?",
+     "Was the target aware that documentation was happening and given a chance to share their own account?",
+     "Does the volume and detail of documentation seem disproportionate to any legitimate purpose?"
+    ],
+    "less_concerning_if": [
+     "Documentation is accurate, applied evenly, and the target has been aware of and able to respond to it."
+    ],
+    "more_concerning_if": [
+     "Documentation is one-sided, concentrated specifically on the target, and built without their knowledge."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Fabricated Evidence",
+     "definition": "Manufactured screenshots, edited messages, or forged documents presented as proof."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Compartmentalization",
+   "category": "Deception",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "No single person can see enough to raise a question, so accountability fails not because anyone refused it but because nobody had the view required to ask for it.",
+    "what_it_is_not": "Confidentiality and need-to-know structures exist for genuinely good reasons in most organisations. Information silos form naturally in any large family or workplace. Someone who simply did not think to pass something on has partitioned nothing."
+   },
+   "existing_specific_text": {
+    "short_definition": "Structuring information so no one person can see the full picture, limiting accountability and oversight.",
+    "expanded_definition": "Structuring information — in a family, workplace, or organization — so that no single person has access to the full picture, which has the effect of limiting anyone's ability to hold the person controlling the information accountable, since no one else can see enough to connect the dots. Each individual piece of information may be shared honestly; the deception lives in how the pieces are kept apart.",
+    "plain_language_summary": "In plain terms: structuring information so no one person can see the full picture, limiting accountability and oversight.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to misplaced trust in a distorted picture of a situation, discovered later, if at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Structuring information so no one person can see the full picture, limiting accountability and oversight."
+    ],
+    "what_it_sounds_like": [
+     "Different people in the same family or organization each have a different, partial understanding of the same situation.",
+     "Questions that would require connecting information from multiple sources get deflected or discouraged.",
+     "The full picture only becomes visible when, by chance, two people who each have partial information happen to compare notes."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Legitimate confidentiality and natural information silos exist in most families and organizations without any intent to avoid accountability. Not proactively sharing everything with everyone isn't automatically a control tactic."
+    ],
+    "common_false_positives": [
+     "Legitimate confidentiality or need-to-know structures that exist for genuinely appropriate reasons.",
+     "Natural information silos that develop in any large family or organization without deliberate intent to prevent accountability.",
+     "A person simply not thinking to share information broadly, rather than deliberately withholding it from specific people."
+    ],
+    "discernment_questions": [
+     "Is there a legitimate reason for the information to be compartmentalized, or does it seem to specifically prevent accountability?",
+     "Does connecting the compartmentalized pieces reveal something the person controlling the information wouldn't want revealed?",
+     "Are people actively discouraged from comparing notes, or does that discouragement just happen not to occur?",
+     "Would this person be uncomfortable if the full picture were assembled and shared openly?"
+    ],
+    "less_concerning_if": [
+     "Any compartmentalization has a legitimate, non-accountability-avoiding reason."
+    ],
+    "more_concerning_if": [
+     "The compartmentalization specifically prevents anyone from seeing a pattern that would otherwise be concerning, and connecting information is discouraged."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by controlling what information the other person has access to, so their conclusions are built on an incomplete or false picture. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe misplaced trust in a distorted picture of a situation, discovered later, if at all in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Exaggeration",
+     "definition": "Absolutes — 'you always', 'you never' — that inflate the claim."
+    },
+    {
+     "name": "Vague Allegations",
+     "definition": "Referencing unnamed critics or unspecified accusations."
+    },
+    {
+     "name": "Fabricated Evidence",
+     "definition": "Manufactured screenshots, edited messages, or forged documents presented as proof."
+    },
+    {
+     "name": "Lying",
+     "definition": "Stating something known to be false in order to deceive."
+    },
+    {
+     "name": "Lying by Omission",
+     "definition": "Leaving out information necessary for an accurate understanding, without technically stating anything false."
+    },
+    {
+     "name": "Selective Information Sharing",
+     "definition": "Sharing only the facts that support a preferred narrative while withholding relevant context."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

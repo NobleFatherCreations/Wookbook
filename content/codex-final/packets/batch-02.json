@@ -1,0 +1,651 @@
+{
+ "batch": "batch-02",
+ "kind": "normal",
+ "category": "Accountability Evasion",
+ "entries": [
+  {
+   "name": "Kafka Trapping",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Treating denial itself as proof of guilt.",
+    "expanded_definition": "Treating denial itself as proof of guilt. Constructs an accusation that cannot be answered — every response convicts. As a communication pattern, Kafka Trapping-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: treating denial itself as proof of guilt.",
+    "why_this_matters": "Constructs an accusation that cannot be answered — every response convicts. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Treating denial itself as proof of guilt.",
+     "Constructs an accusation that cannot be answered — every response convicts.",
+     "Contrasts with a healthier version: \"Your denial doesn't prove anything either way — let's look at what actually happened.\".",
+     "Recognizable by phrasing such as \"Denying it just proves you did it\"."
+    ],
+    "what_it_sounds_like": [
+     "Denying it just proves you did it.",
+     "Only a guilty person would get this defensive.",
+     "The fact that you're denying it just proves it.",
+     "Your defensiveness says it all.",
+     "If you weren't guilty, you wouldn't be so defensive."
+    ],
+    "what_it_is_not": [
+     "Rarely innocent as phrased, but people repeat this fallacy without noticing the trap it builds."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Healthy skepticism based on actual evidence is different from treating denial itself as proof.",
+     "Reasonable doubt about a denial, given real facts, isn't the same as an unfalsifiable trap."
+    ],
+    "common_false_positives": [
+     "A situation where denial genuinely is contradicted by independent, verifiable evidence, making skepticism reasonable on its merits.",
+     "Healthy skepticism about a denial, based on specific facts, that remains open to being wrong given more evidence.",
+     "A reasonable observation that a pattern of denials, evaluated on its own factual merits, seems unlikely, without treating denial itself as inherently proof."
+    ],
+    "discernment_questions": [
+     "Is skepticism about the denial based on specific, independent evidence, or does denial alone count as proof regardless of evidence?",
+     "Is there any way to respond that would actually be accepted as evidence of innocence?",
+     "Does the accusation update based on new evidence, or is it structured so nothing could ever disprove it?",
+     "Would a neutral observer see this as a fair evaluation of evidence, or an unfalsifiable trap?"
+    ],
+    "less_concerning_if": [
+     "Skepticism is based on specific, independent evidence, and there's a real way to be believed if the evidence supports it."
+    ],
+    "more_concerning_if": [
+     "Denial itself is treated as proof of guilt, with no possible response that could count as evidence of innocence."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Gotcha Framing",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Reframing an honest, exploratory statement as a confession, weaponizing the target's own transparency against them.",
+    "expanded_definition": "Reframing an honest, exploratory statement as a confession, weaponizing the target's own transparency against them. It punishes honesty, teaching the target to stop thinking out loud or admitting uncertainty. As a communication pattern, Gotcha Framing-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: reframing an honest, exploratory statement as a confession, weaponizing the target's own transparency against them.",
+    "why_this_matters": "It punishes honesty, teaching the target to stop thinking out loud or admitting uncertainty. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Reframing an honest, exploratory statement as a confession, weaponizing the target's own transparency against them.",
+     "It punishes honesty, teaching the target to stop thinking out loud or admitting uncertainty.",
+     "Contrasts with a healthier version: \"Thanks for being honest about that — let's figure out what to do next.\".",
+     "Recognizable by phrasing such as \"Aha, so you admit it\"."
+    ],
+    "what_it_sounds_like": [
+     "Aha, so you admit it.",
+     "So you're confessing you were there after all.",
+     "So you admit it.",
+     "Aha, so there it is."
+    ],
+    "what_it_is_not": [
+     "Genuinely holding someone to something they said is fair; the flag is treating an exploratory or uncertain statement as a locked-in confession."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine accountability for a clear, deliberate statement is different from weaponizing tentative honesty.",
+     "Reasonable follow-up on someone's own words isn't automatically a gotcha."
+    ],
+    "common_false_positives": [
+     "A genuine, fair follow-up that holds someone accountable for something they actually, knowingly did, not something explored tentatively.",
+     "A reasonable observation that someone's own words support a conclusion they're now avoiding, raised without weaponizing honesty itself.",
+     "Legitimate accountability for a clear, deliberate statement, as opposed to a tentative, exploratory one."
+    ],
+    "discernment_questions": [
+     "Was the original statement offered tentatively or exploratorily, or as a clear, deliberate claim?",
+     "Does the response punish honesty and openness, or hold someone accountable for something they actually meant?",
+     "Does this pattern make the target hesitant to think out loud or admit uncertainty going forward?",
+     "Would a reasonable person consider the original statement a genuine confession, or an exploratory thought?"
+    ],
+    "less_concerning_if": [
+     "The original statement was a clear, deliberate claim, not a tentative or exploratory one being weaponized."
+    ],
+    "more_concerning_if": [
+     "An exploratory, tentative statement gets treated as a confession, punishing honesty and openness."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "False Authority",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Presenting subjective opinion or bias as neutral, unchallengeable fact.",
+    "expanded_definition": "Presenting subjective opinion or bias as neutral, unchallengeable fact. It shuts down disagreement by making the target feel they're arguing with reality itself, not a person's viewpoint. As a communication pattern, False Authority-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: presenting subjective opinion or bias as neutral, unchallengeable fact.",
+    "why_this_matters": "It shuts down disagreement by making the target feel they're arguing with reality itself, not a person's viewpoint. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Presenting subjective opinion or bias as neutral, unchallengeable fact.",
+     "It shuts down disagreement by making the target feel they're arguing with reality itself, not a person's viewpoint.",
+     "Contrasts with a healthier version: \"Here's my take, and I recognize it's one perspective.\".",
+     "Recognizable by phrasing such as \"I'm just being objective here\"."
+    ],
+    "what_it_sounds_like": [
+     "I'm just being objective here.",
+     "I'm stating facts, not opinions — you're the one being emotional.",
+     "I'm just being completely objective.",
+     "I'm just stating facts, not opinions?"
+    ],
+    "what_it_is_not": [
+     "People sometimes say 'I'm being objective' sincerely, especially after real effort to set aside bias — the flag is using the claim to end a conversation rather than open one."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Confidently expressing a genuine, informed opinion isn't automatically false authority.",
+     "Real expertise can be shared assertively without claiming to be beyond all disagreement."
+    ],
+    "common_false_positives": [
+     "A genuinely well-informed opinion, offered with appropriate humility about it being one perspective, even if delivered confidently.",
+     "A person with real relevant expertise sharing an informed view, clearly distinguishable from a personal opinion.",
+     "Confident communication style that doesn't specifically claim objectivity to shut down disagreement."
+    ],
+    "discernment_questions": [
+     "Does the person acknowledge this is their perspective, or insist it's simply objective fact?",
+     "Is disagreement engaged with, or dismissed as arguing with reality itself?",
+     "Does the claimed objectivity hold up to outside scrutiny, or reflect a clear personal bias?",
+     "Would a neutral expert in the relevant area actually agree this is objective rather than one viewpoint?"
+    ],
+    "less_concerning_if": [
+     "The person acknowledges this is their perspective and engages with disagreement rather than dismissing it."
+    ],
+    "more_concerning_if": [
+     "Subjective opinion is insisted upon as objective fact, and disagreement is dismissed as irrational."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Role Reversal via Therapy Language",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+    "expanded_definition": "Using clinical-sounding language to reframe the target's self-protection as the actual problem. It borrows the credibility of therapeutic language to disarm exactly the self-protective instinct therapy is supposed to strengthen. As a communication pattern, Role Reversal via Therapy Language-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+    "why_this_matters": "It borrows the credibility of therapeutic language to disarm exactly the self-protective instinct therapy is supposed to strengthen. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+     "It borrows the credibility of therapeutic language to disarm exactly the self-protective instinct therapy is supposed to strengthen.",
+     "Contrasts with a healthier version: \"I hear that you're protecting yourself — can we talk about what's making that necessary?\".",
+     "Recognizable by phrasing such as \"That's not a boundary, that's control\"."
+    ],
+    "what_it_sounds_like": [
+     "That's not a boundary, that's control.",
+     "That's not self-care, that's avoidance."
+    ],
+    "what_it_is_not": [
+     "Sometimes what looks like a boundary really is avoidance, and a good friend or therapist might name that — the flag is this framing used to shut down a legitimate limit, not offered as caring reflection."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine therapeutic language, used appropriately and collaboratively, is a healthy tool.",
+     "A real, curious observation about a boundary isn't automatically dismissive."
+    ],
+    "common_false_positives": [
+     "Genuine, appropriate therapeutic language used by someone actually qualified, in a context where exploring the dynamic is the agreed purpose.",
+     "A real, honest observation that a specific boundary seems more like withdrawal than a healthy limit, offered with curiosity rather than to dismiss it.",
+     "A person applying therapy language to reflect on their own behavior, not to relabel the target's self-protection as the problem."
+    ],
+    "discernment_questions": [
+     "Does the clinical language get applied to the speaker's own behavior, or specifically to relabel the target's self-protection?",
+     "Is this offered in a context where exploring the dynamic together is the actual, mutual purpose?",
+     "Does the underlying self-protective instinct get respected, or specifically disarmed by the reframing?",
+     "Would the same situation, described in plain language, still sound like a fair characterization?"
+    ],
+    "less_concerning_if": [
+     "Therapeutic language is applied to the speaker's own behavior or offered collaboratively, not to dismiss the target's self-protection."
+    ],
+    "more_concerning_if": [
+     "Clinical language specifically relabels the target's self-protective boundary as the actual problem, disarming it."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "False Equivalence",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Flattening clearly asymmetric harm into 'we both made mistakes' so responsibility looks evenly shared.",
+    "expanded_definition": "Flattening clearly asymmetric harm into 'we both made mistakes' so responsibility looks evenly shared. It erases the actual difference in who did what, making accountability impossible to land anywhere. As a communication pattern, False Equivalence-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: flattening clearly asymmetric harm into 'we both made mistakes' so responsibility looks evenly shared.",
+    "why_this_matters": "It erases the actual difference in who did what, making accountability impossible to land anywhere. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Flattening clearly asymmetric harm into 'we both made mistakes' so responsibility looks evenly shared.",
+     "It erases the actual difference in who did what, making accountability impossible to land anywhere.",
+     "Contrasts with a healthier version: \"I did X, which was wrong, separate from anything you did.\".",
+     "Recognizable by phrasing such as \"We both made mistakes here\"."
+    ],
+    "what_it_sounds_like": [
+     "We both made mistakes here.",
+     "We're both equally to blame, honestly.",
+     "We both made mistakes.",
+     "We're both equally to blame."
+    ],
+    "what_it_is_not": [
+     "Some conflicts really are mutual and both people did contribute — the flag is using the phrase specifically to avoid naming a clearly larger harm."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes both people really did make comparable mistakes, and saying so honestly isn't evasion.",
+     "Acknowledging a smaller, genuine mistake of one's own is healthy."
+    ],
+    "common_false_positives": [
+     "A situation where both people really did contribute comparably to what happened, honestly acknowledged as roughly equal.",
+     "A person acknowledging their own smaller mistake honestly, without using it to erase a larger, separate issue.",
+     "Genuine, mutual conflict where responsibility really is shared close to evenly."
+    ],
+    "discernment_questions": [
+     "Is the harm from each side actually comparable, or does the \"both sides\" framing flatten something clearly asymmetric?",
+     "Does one person's specific action get named and owned, or does it dissolve into a vague \"we both\"?",
+     "Would a neutral observer, given the actual facts, agree responsibility was roughly equal?",
+     "Does the equivalence framing appear specifically when one person's responsibility is significantly greater?"
+    ],
+    "less_concerning_if": [
+     "Responsibility genuinely is comparable between both people, honestly and specifically acknowledged."
+    ],
+    "more_concerning_if": [
+     "Clearly asymmetric harm gets flattened into vague, equal responsibility that erases who actually did what."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Weaponized Incompetence",
+   "category": "Accountability Evasion",
+   "tier": "Watch-only",
+   "branch": "watch",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The task lands permanently on one person, along with the work of noticing it, asking about it, and eventually giving up on asking. Raising it also makes them sound as if they are complaining about help they were offered."
+   },
+   "existing_specific_text": {
+    "short_definition": "Performing inability at unwanted tasks so they permanently land on someone else.",
+    "expanded_definition": "Performing inability at unwanted tasks so they permanently land on someone else. As a communication pattern, Weaponized Incompetence-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person. As a Watch-only entry, note: text alone cannot establish intent here, and this is never scored by the tool.",
+    "plain_language_summary": "In plain terms: performing inability at unwanted tasks so they permanently land on someone else.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Performing inability at unwanted tasks so they permanently land on someone else.",
+     "Recognizable by phrasing such as \"'You're just better at it' as a permanent division of labor\"."
+    ],
+    "what_it_sounds_like": [
+     "'You're just better at it' as a permanent division of labor.",
+     "Tasks done deliberately badly once, then never assigned again.",
+     "Something that reads as performing inability at unwanted tasks so they permanently land on someone else on its surface, but could equally be an honest mismatch in communication style."
+    ],
+    "what_it_is_not": [
+     "Real skill gaps, disability, ADHD, and honest 'I don't know how' are everywhere. Intent is invisible in text — that's why this is watch-only (severity 1, never scored)."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine skill gaps and honest struggles with specific tasks are real and not manipulative.",
+     "Reasonable divisions of labor based on real differences in ability are healthy when mutually discussed."
+    ],
+    "common_false_positives": [
+     "A genuine, real skill gap in a specific area that the person is actively working to improve, rather than using as a permanent excuse.",
+     "Different, genuinely reasonable divisions of labor based on real differences in skill or interest, openly discussed.",
+     "A person honestly struggling with a task who welcomes teaching or support, rather than resisting it to keep the task off their plate."
+    ],
+    "discernment_questions": [
+     "Does the incompetence appear selectively, specifically for undesirable tasks, while the same person manages comparably difficult tasks fine elsewhere?",
+     "Is there any genuine effort to improve, or does the performance conveniently ensure the task stays with someone else permanently?",
+     "Does the division of labor get openly discussed and mutually agreed, or simply assumed based on repeated failure?",
+     "Would a reasonable person see the skill gap as genuine, given the person's demonstrated abilities elsewhere?"
+    ],
+    "less_concerning_if": [
+     "The skill gap is genuine and the person shows real effort to improve, or the division of labor is openly, mutually agreed."
+    ],
+    "more_concerning_if": [
+     "Incompetence appears selectively for undesirable tasks specifically, with no effort to improve, permanently shifting the task to someone else."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Strategic Apathy",
+   "category": "Accountability Evasion",
+   "tier": "Watch-only",
+   "branch": "watch",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "One person makes every decision alone and then carries the criticism for whichever way it went. Over time, deciding stops feeling like having a say and starts feeling like exposure."
+   },
+   "existing_specific_text": {
+    "short_definition": "Cultivated indifference ('whatever', 'do what you want') used to force the other person to carry all decisions and their blame.",
+    "expanded_definition": "Cultivated indifference ('whatever', 'do what you want') used to force the other person to carry all decisions and their blame. As a communication pattern, Strategic Apathy-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person. As a Watch-only entry, note: text alone cannot establish intent here, and this is never scored by the tool.",
+    "plain_language_summary": "In plain terms: cultivated indifference ('whatever', 'do what you want') used to force the other person to carry all decisions and their blame.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Cultivated indifference ('whatever', 'do what you want') used to force the other person to carry all decisions and their blame.",
+     "Recognizable by phrasing such as \"Refusal to state any preference, followed by criticism of whatever was chosen\"."
+    ],
+    "what_it_sounds_like": [
+     "Refusal to state any preference, followed by criticism of whatever was chosen.",
+     "'I don't care' deployed precisely at decision points.",
+     "Something that reads as cultivated indifference ('whatever', 'do what you want') used to force the other person to carry all decisions and their blame on its surface, but could equally be an honest mismatch in communication style."
+    ],
+    "what_it_is_not": [
+     "Depression, burnout, and decision fatigue produce identical sentences sincerely. Text cannot distinguish them — watch-only, never scored."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine indifference on a low-stakes decision is normal and doesn't require criticizing the outcome.",
+     "Honest exhaustion or overwhelm, communicated clearly, isn't strategic."
+    ],
+    "common_false_positives": [
+     "A genuine, honest lack of preference on a low-stakes decision, without later criticizing whatever was chosen.",
+     "A person who's simply exhausted or overwhelmed and honestly doesn't have the capacity to weigh in right now, communicated as such.",
+     "Real, mutual agreement to let one person make more of the low-stakes decisions, without hidden criticism afterward."
+    ],
+    "discernment_questions": [
+     "Does declining to state a preference get followed by criticism of whatever was chosen anyway?",
+     "Is the indifference genuine, or a way to avoid the responsibility of a decision while keeping the option to criticize it?",
+     "Does this pattern happen consistently, specifically avoiding decision-making responsibility while retaining critique rights?",
+     "Would the person accept the outcome gracefully regardless of what was chosen?"
+    ],
+    "less_concerning_if": [
+     "Declining to state a preference is followed by genuine acceptance of whatever was chosen, without later criticism."
+    ],
+    "more_concerning_if": [
+     "Refusing to state a preference is consistently followed by criticism of whatever was chosen, avoiding responsibility while keeping critique rights."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

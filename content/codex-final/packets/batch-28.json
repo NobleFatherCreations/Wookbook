@@ -1,0 +1,791 @@
+{
+ "batch": "batch-28",
+ "kind": "normal",
+ "category": "Hooking structural",
+ "entries": [
+  {
+   "name": "Premature Exclusivity",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target commits before they hold the information the decision needed, and by the time it arrives they have already given up the alternatives they would have weighed it against.",
+    "what_it_is_not": "Some people simply prefer clarity early, and two people can both want to close things down quickly and be delighted about it; pacing norms differ by culture and by person. What separates the two is whether hesitation is allowed to stand without a penalty."
+   },
+   "existing_specific_text": {
+    "short_definition": "Demanding commitment before the target has enough information to make an informed choice.",
+    "expanded_definition": "Demanding exclusive commitment before the target has had enough time or information to actually make an informed choice — locking in commitment early specifically to prevent the target from continuing to evaluate the relationship, gather outside perspective, or notice red flags that more time would reveal.",
+    "plain_language_summary": "In plain terms: demanding commitment before the target has enough information to make an informed choice.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Demanding commitment before the target has enough information to make an informed choice."
+    ],
+    "what_it_sounds_like": [
+     "A request for exclusivity or a serious commitment very early, before there's been meaningful time to actually get to know each other.",
+     "Hesitation to commit that quickly is met with pressure or hurt feelings, rather than patience for a reasonable pace.",
+     "Looking back, the target realizes they agreed to exclusivity before they'd learned things about the person that would have mattered to the decision."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some people genuinely feel a strong mutual connection quickly and both want exclusivity in good faith.",
+     "Direct communication about wanting exclusivity isn't manipulative if the other person's timeline is respected."
+    ],
+    "common_false_positives": [
+     "Two people who both genuinely feel a strong, mutual connection early and choose exclusivity by shared, enthusiastic agreement.",
+     "A person who is simply direct and prefers clarity about exclusivity early, without pressuring the other person's timeline.",
+     "Cultural or personal norms around relationship pacing that differ from the target's expectations without being manipulative."
+    ],
+    "discernment_questions": [
+     "Is the push for exclusivity coming from one side more than the other, or is it genuinely mutual?",
+     "Does hesitation to commit quickly get met with patience, or pressure and hurt feelings?",
+     "Has there been enough real time and interaction to actually make an informed decision?",
+     "Would the same commitment decision look different with a more typical amount of time and information?"
+    ],
+    "less_concerning_if": [
+     "The desire for exclusivity is genuinely mutual and enthusiastic, or hesitation is met with real patience."
+    ],
+    "more_concerning_if": [
+     "Exclusivity is pushed by one side specifically before there's been time to gather real information, and hesitation is met with pressure."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Confirmation Bias Exploitation",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's own hopefulness becomes the thing that keeps them in place, and the pattern stays invisible to the one person best placed to see it.",
+    "what_it_is_not": "Most relationships genuinely are mostly good, and holding on to the good parts is not denial. The tendency only becomes something that can be worked on when the good stretches reliably arrive straight after harm rather than independently of it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm.",
+    "expanded_definition": "Leveraging the target's natural, human tendency to seek out evidence that confirms the \"good version\" of someone while dismissing or explaining away the accumulating pattern of harm — the manipulator doesn't need to hide the harmful behavior entirely; they just need to provide enough good moments that the target's own cognitive habits do the work of discounting the rest.",
+    "plain_language_summary": "In plain terms: leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    ],
+    "what_it_sounds_like": [
+     "After a harmful incident, a wave of especially good behavior follows, which the target holds onto as evidence of who the person \"really\" is.",
+     "The target finds themselves explaining away or minimizing incidents that, described to an outsider, would sound clearly concerning.",
+     "Bringing up the pattern of harm gets met with a reminder of all the good moments, which the target then uses to talk themselves out of their own concern."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Most relationships genuinely do have far more good moments than bad ones, without anyone exploiting that.",
+     "Hopeful, generous interpretation of ambiguous behavior is a normal, common human tendency."
+    ],
+    "common_false_positives": [
+     "A relationship that genuinely does have mostly positive interactions, with occasional real mistakes that don't reflect a broader pattern.",
+     "A person's own hopeful, generous interpretation of ambiguous behavior, which isn't being actively exploited by anyone.",
+     "Two people both working through real, mutual growth, where good moments genuinely do reflect authentic change over time."
+    ],
+    "discernment_questions": [
+     "If you listed out incidents chronologically without the good moments in between, does a concerning pattern emerge?",
+     "Does the good behavior appear specifically and reliably after a harmful incident, in a way that seems timed rather than coincidental?",
+     "Would a neutral friend, hearing the concerning incidents described plainly, share the same level of concern?",
+     "Does the target find themselves needing to actively argue themselves out of their own instincts?"
+    ],
+    "less_concerning_if": [
+     "The good moments reflect genuine, sustained change over time rather than a pattern of appearing right after harm."
+    ],
+    "more_concerning_if": [
+     "Good behavior reliably follows harmful incidents in a way that seems timed, and the target has to actively argue themselves out of real concern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Halo Effect Exploitation",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "A concern gets weighed against someone's reputation rather than against the evidence for it, and the target usually learns not to raise it before anyone else has even heard it.",
+    "what_it_is_not": "Being excellent at one thing does sometimes go with being decent generally, and a real track record legitimately earns some benefit of the doubt. It goes wrong when an achievement is offered as the answer to a concern that has nothing to do with it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior.",
+    "expanded_definition": "Using one genuinely positive trait, achievement, or reputation to override the target's own pattern recognition and excuse harmful behavior elsewhere — because the person is impressive, charming, or accomplished in one area, the target and often others extend unearned trust and benefit of the doubt to totally unrelated areas of their character or conduct.",
+    "plain_language_summary": "In plain terms: using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    ],
+    "what_it_sounds_like": [
+     "\"But they're so successful, surely they wouldn't do that\" used to dismiss concerning behavior that has nothing to do with the impressive trait.",
+     "A single, genuinely admirable quality gets repeatedly invoked as if it were evidence against an entirely unrelated concern.",
+     "The target notices themselves reluctant to voice a concern specifically because of the person's impressive reputation or achievements."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely good character across different areas of life is real, and some benefit of the doubt is reasonable.",
+     "Real admiration for someone's specific skill doesn't have to be manipulative."
+    ],
+    "common_false_positives": [
+     "A person's genuinely good character across the board, where their positive reputation in one area really does reflect broader trustworthiness.",
+     "Reasonable benefit of the doubt extended once, based on a real track record, rather than blanket immunity from any scrutiny.",
+     "Genuine admiration for someone's skill in one specific area that doesn't extend to uncritical trust in unrelated areas."
+    ],
+    "discernment_questions": [
+     "Is the impressive trait actually relevant to the concerning behavior, or in a completely unrelated domain?",
+     "Does the person's positive reputation get invoked specifically to shut down scrutiny of something unrelated?",
+     "Would the concerning behavior, described without reference to the person's achievements, be taken seriously on its own?",
+     "Is skepticism about the concerning behavior treated as an attack on the legitimate achievement?"
+    ],
+    "less_concerning_if": [
+     "The positive trait is genuinely relevant to assessing the concern, or skepticism is engaged with on its own merits."
+    ],
+    "more_concerning_if": [
+     "An unrelated positive trait is repeatedly invoked specifically to dismiss scrutiny of a genuinely separate concern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Obligation Contracts",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target is held to a debt they never agreed, and asking what they actually signed up for is treated as evidence of disloyalty rather than as a fair question.",
+    "what_it_is_not": "Long relationships do build genuine mutual obligations that both people would describe the same way if asked separately, and someone can be honestly hurt that an assumed closeness was not there. This describes a debt only one party has ever stated the terms of."
+   },
+   "existing_specific_text": {
+    "short_definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation.",
+    "expanded_definition": "Unspoken debts enforced through shame and appeals to duty, built on the assumption that loyalty was agreed to without ever actually being negotiated or discussed — the target is treated as though they consented to an ongoing obligation they never actually chose, and made to feel ashamed for questioning or declining it.",
+    "plain_language_summary": "In plain terms: unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    ],
+    "what_it_sounds_like": [
+     "\"After everything, this is the least you owe\" invoked for an obligation that was never actually discussed or agreed to.",
+     "Loyalty is assumed and demanded as a baseline, with any hesitation treated as a betrayal rather than a reasonable question.",
+     "The target notices they're expected to prioritize this relationship's needs automatically, without that priority ever having been mutually established."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Real, freely-chosen loyalty built through genuine reciprocal history is healthy.",
+     "Honest hurt about a hoped-for closeness is different from shaming someone into obligation."
+    ],
+    "common_false_positives": [
+     "Genuine, freely-chosen loyalty and mutual obligation built through real, reciprocal history that the target actually endorses.",
+     "A person expressing real hurt that an assumed closeness wasn't there, without shaming the target for it.",
+     "Reasonable expectations in a relationship that both people have actually discussed and agreed to over time."
+    ],
+    "discernment_questions": [
+     "Was the obligation ever actually discussed and agreed to, or is it assumed as a baseline?",
+     "Does questioning or declining the obligation get met with shame, or genuine conversation about expectations?",
+     "Is loyalty here reciprocal and freely chosen, or one-directional and assumed?",
+     "Would the target, given a genuine choice, actually have agreed to this specific obligation?"
+    ],
+    "less_concerning_if": [
+     "The obligation reflects genuine, freely-chosen, reciprocal loyalty that was actually discussed at some point."
+    ],
+    "more_concerning_if": [
+     "The obligation was never discussed, is assumed as a baseline, and questioning it is met with shame."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Covert Contracts",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target is judged against a standard they had no access to, so effort never produces safety — there is always another rule they have not been told.",
+    "what_it_is_not": "Some expectations are shared widely enough that most people would recognise them unstated, and people often believe in good faith that something was mutual. Someone who adjusts readily once told the rule was never communicated is having a miscommunication, not enforcing one."
+   },
+   "existing_specific_text": {
+    "short_definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed.",
+    "expanded_definition": "Unspoken expectations the target is punished for failing to meet, without ever having been told they existed in the first place — the \"agreement\" was never actually made explicit or negotiated, but violating it is treated exactly as if it had been. This shares its core mechanism with Obligation Installation; the distinguishing emphasis here is specifically on the invisible contract itself, rather than on how loyalty gets extracted through confided secrets.",
+    "plain_language_summary": "In plain terms: unspoken expectations the target is punished for failing to meet without ever being told they existed.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    ],
+    "what_it_sounds_like": [
+     "\"I shouldn't have to ask, you should just know\" applied to an expectation that was genuinely never discussed.",
+     "The target is criticized or punished for violating a standard they had no way of knowing existed beforehand.",
+     "Looking back, the target realizes an entire set of expectations were assumed on their behalf, never negotiated or agreed to."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Many reasonable social expectations really are unstated because they're widely understood.",
+     "Honest miscommunication about assumptions is common and resolves through conversation."
+    ],
+    "common_false_positives": [
+     "Reasonable, widely-understood social or relational norms that most people would recognize without needing them spelled out.",
+     "A person who genuinely believed something was mutually understood, correcting course readily once they learn it wasn't.",
+     "An honest miscommunication about expectations, resolved through direct conversation once it surfaces."
+    ],
+    "discernment_questions": [
+     "Would a reasonable person actually have known this expectation existed without being told?",
+     "Is there room to renegotiate the expectation once it's named, or is it treated as fixed and non-negotiable?",
+     "Does the target only discover these expectations by violating them, or is there any proactive communication about them?",
+     "Does this happen once, correctable through conversation, or as a recurring pattern of retroactive rules?"
+    ],
+    "less_concerning_if": [
+     "The expectation is one a reasonable person would recognize, and there's room to discuss and adjust it once named."
+    ],
+    "more_concerning_if": [
+     "The expectation is unusual and one-sided, only discovered through punishment, and treated as non-negotiable once revealed."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Financial Dependence by Design",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Leaving becomes a question of survival rather than of judgement, so whatever the target concludes about the relationship, the conclusion cannot change anything.",
+    "what_it_is_not": "Plenty of households divide earning and caring by genuine agreement, and caregiving, illness or a poor job market limit independence without anyone arranging it. The thing to look at is what happens when the dependent person takes a step toward independence."
+   },
+   "existing_specific_text": {
+    "short_definition": "Structuring economic conditions so the target cannot survive without the system controlling them.",
+    "expanded_definition": "Structuring economic conditions — discouraging employment, controlling access to shared accounts, preventing skill-building — so that the target genuinely cannot survive independently of the person or system controlling them. This is the deliberate construction side of Financial Enmeshment: not just intertwined finances that happen to make leaving hard, but a structure actively built and maintained to ensure that outcome.",
+    "plain_language_summary": "In plain terms: structuring economic conditions so the target cannot survive without the system controlling them.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Structuring economic conditions so the target cannot survive without the system controlling them."
+    ],
+    "what_it_sounds_like": [
+     "Active discouragement, sabotage, or prevention of the target gaining independent income, skills, or financial literacy.",
+     "Financial structures are deliberately arranged so the target has no independent access or standing.",
+     "Any step the target takes toward financial independence is met with resistance disproportionate to a neutral, practical concern."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutually-agreed divisions of labor in a household are common and healthy.",
+     "Real circumstances sometimes limit independent earning without anyone engineering that outcome."
+    ],
+    "common_false_positives": [
+     "A genuine, mutually-agreed division of labor that isn't designed to trap anyone.",
+     "Real, practical constraints, like caregiving responsibilities or health issues, that limit independent earning without anyone engineering it.",
+     "A person who is supportive of the target's independence but whose support happens to be limited by real circumstances."
+    ],
+    "discernment_questions": [
+     "Is there active discouragement or sabotage of independence, or just a neutral division of labor that isn't actively enforced?",
+     "Would the target be supported if they pursued financial independence, or does that pursuit meet resistance?",
+     "Are financial structures arranged specifically to exclude the target's independent access and standing?",
+     "Would a reasonable person see this as a deliberately engineered structure, or an incidental, mutually-agreed arrangement?"
+    ],
+    "less_concerning_if": [
+     "Any financial arrangement is mutually agreed, and the target would be supported in pursuing independence if they wanted to."
+    ],
+    "more_concerning_if": [
+     "Independence is actively discouraged or sabotaged, and financial structures are specifically arranged to exclude the target's standing."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Platform Migration",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target loses the record, so any later dispute about what was said becomes their word against someone else's, with the whole burden of remembering exactly falling on them.",
+    "what_it_is_not": "Wanting to talk difficult things through by voice is a common and reasonable preference, and there are real privacy reasons to avoid particular apps. What distinguishes this is whether the preference covers everything or only what might later be quoted back."
+   },
+   "existing_specific_text": {
+    "short_definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence.",
+    "expanded_definition": "Moving communication off any recorded or documented platform — from text or email to phone calls, disappearing messages, or in-person-only conversation — specifically to reduce accountability and eliminate any evidence of what's actually said. This often follows a pattern where the more consequential or concerning the content, the more insistent the push to move the conversation somewhere unrecorded.",
+    "plain_language_summary": "In plain terms: moving communication off-record or off-platform to reduce accountability and eliminate evidence.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    ],
+    "what_it_sounds_like": [
+     "\"Let's not talk about this over text, call me instead\" specifically for conversations that involve commitments, accusations, or anything that might later be disputed.",
+     "A consistent preference for disappearing-message apps or voice calls specifically around sensitive or accountability-related topics.",
+     "The target notices that anything potentially incriminating or hard-to-deny later gets steered toward an unrecorded channel."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some people genuinely prefer voice or in-person conversation for anything important, as a general communication style.",
+     "Legitimate privacy or security concerns about a platform can be real and unconnected to accountability avoidance."
+    ],
+    "common_false_positives": [
+     "A genuine, reasonable preference for talking sensitive things through by voice or in person, applied consistently regardless of content.",
+     "Privacy or security concerns about a specific platform that are legitimate and unrelated to avoiding accountability.",
+     "A person who simply prefers calling for anything important, as a communication style, not selectively for anything requiring deniability."
+    ],
+    "discernment_questions": [
+     "Does the push to move platforms happen specifically around consequential or accountability-related content?",
+     "Is the platform preference applied consistently to all topics, or selectively to the most sensitive ones?",
+     "Would a written record of this conversation be something the person would be comfortable with existing?",
+     "Does this pattern recur specifically when something might later be disputed or denied?"
+    ],
+    "less_concerning_if": [
+     "The platform preference is applied consistently across all types of conversation, not selectively to sensitive topics."
+    ],
+    "more_concerning_if": [
+     "Moving to an unrecorded channel happens specifically and reliably around consequential or accountability-related content."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Benching",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's availability is preserved while their status stays undefined, so they keep a place open for something with no timeline and turn down things that had one.",
+    "what_it_is_not": "Early connections genuinely are undefined for a while, people are honestly busy, and openly casual arrangements both parties accept are their own thing. What is missing here is honesty about where things stand, not intensity."
+   },
+   "existing_specific_text": {
+    "short_definition": "Keeping someone available as a backup option without commitment, transparency, or timeline.",
+    "expanded_definition": "Keeping someone available as a backup option — through occasional, low-effort contact — without commitment, transparency, or any real timeline, so they stay available in case they're needed later while the person doing this pursues other options freely. This is closely related to Breadcrumbing; Benching specifically emphasizes the target's role as a reserved, undisclosed option rather than a genuine, developing connection.",
+    "plain_language_summary": "In plain terms: keeping someone available as a backup option without commitment, transparency, or timeline.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Keeping someone available as a backup option without commitment, transparency, or timeline."
+    ],
+    "what_it_sounds_like": [
+     "Occasional, sporadic contact that never develops into anything more concrete, sustained just often enough to keep the target available.",
+     "The target is kept without a clear status, while the other person is visibly free to date or pursue other things.",
+     "Contact intensifies specifically when the person's other options fall through, then fades again once they don't need the backup anymore."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely early, undefined connections are a normal part of dating and don't require bad faith.",
+     "Busy or overwhelmed people sometimes maintain light contact without deceptive intent."
+    ],
+    "common_false_positives": [
+     "A genuinely early-stage, undefined connection where both people are honestly still figuring out what they want, without one exploiting the other.",
+     "A person who's honestly busy or going through something and maintains light contact without any deceptive intent about their availability.",
+     "Mutual, openly casual arrangements where both parties understand and accept the undefined nature."
+    ],
+    "discernment_questions": [
+     "Does contact intensify specifically when the other person's other options aren't working out?",
+     "Is the target given an honest answer when they ask directly about the nature or direction of the connection?",
+     "Is the arrangement openly, mutually understood as casual, or does the target believe something more is developing?",
+     "Does the pattern serve mainly to keep the target as an undisclosed fallback, rather than developing into anything real?"
+    ],
+    "less_concerning_if": [
+     "The undefined status is honestly acknowledged and mutually, openly accepted by both people."
+    ],
+    "more_concerning_if": [
+     "Contact reliably intensifies when the other person's other options fail, and direct questions about the relationship's status are dodged."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "\"Sacred Duty\" Manipulation",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Refusal stops being a preference and becomes a moral failure, so the target cannot decline without feeling they have done something wrong — and often cannot appeal to anyone inside their own community.",
+    "what_it_is_not": "Faith, ancestry and family duty are real values that millions of people hold and invoke sincerely, and someone speaking from conviction about their own obligations is not doing this. Watch whether the sacred framing shows up for every request or only for the ones that happen to suit the speaker.",
+    "note": "Written to avoid implying that religious or ancestral obligation is itself suspect; the disconfirming case carries most of that weight."
+   },
+   "existing_specific_text": {
+    "short_definition": "Framing compliance or sacrifice as a spiritual, moral, or divine obligation so resistance feels like sin.",
+    "expanded_definition": "Framing compliance or personal sacrifice as a spiritual, moral, or divine obligation, so that resistance or setting a limit feels like a sin or a moral failing rather than a reasonable boundary. By elevating an ordinary request to the level of sacred duty, questioning it becomes not just disagreement but a kind of transgression.",
+    "plain_language_summary": "In plain terms: framing compliance or sacrifice as a spiritual, moral, or divine obligation so resistance feels like sin.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Framing compliance or sacrifice as a spiritual, moral, or divine obligation so resistance feels like sin."
+    ],
+    "what_it_sounds_like": [
+     "\"This is what your faith/your ancestors expect of you\" applied to a request that's really just about one person's preference.",
+     "Resistance to a demand is met with language implying spiritual or moral failure, rather than engagement with the actual request.",
+     "The target notices the \"sacred\" framing appears specifically around requests that serve the other person's interest."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, shared religious or spiritual conviction is a real and legitimate basis for some requests.",
+     "Sincere personal faith, expressed about one's own choices, isn't the same as imposing it on someone else."
+    ],
+    "common_false_positives": [
+     "Genuine, sincerely-held religious or spiritual obligations that the target also shares and freely endorses.",
+     "A person expressing real spiritual conviction about their own choices, without demanding the target share it.",
+     "Cultural or family traditions around duty that are widely and mutually understood, not deployed strategically for one specific demand."
+    ],
+    "discernment_questions": [
+     "Does the \"sacred\" framing apply evenly across many topics, or specifically to whatever the other person currently wants?",
+     "Is the spiritual obligation something the target genuinely, independently believes, or is it being imposed?",
+     "Does resistance get engaged with on its merits, or immediately moralized as a failing?",
+     "Would the same request, without the spiritual framing, still seem reasonable on its own terms?"
+    ],
+    "less_concerning_if": [
+     "The spiritual framing reflects a genuine, mutually shared belief system, applied consistently rather than to one convenient demand."
+    ],
+    "more_concerning_if": [
+     "The sacred framing appears specifically around requests serving the other person's interest, and resistance gets moralized rather than engaged with."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Obligation Contracts",
+     "definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

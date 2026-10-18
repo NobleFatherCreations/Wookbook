@@ -1,0 +1,484 @@
+{
+ "batch": "batch-49",
+ "kind": "risk",
+ "category": "Digital & AI",
+ "entries": [
+  {
+   "name": "Algorithmic Manipulation",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "What a person sees, and so what they take the world to be like, is shaped by a process they cannot inspect — and the beliefs that result feel entirely their own.",
+    "what_it_is_not": "Ranked feeds are the default everywhere, and personalisation that surfaces more of what someone already reads is ordinary product design rather than a campaign. Nothing in a conversation can settle this either way; where it has been shown at all, it has been shown by researchers with access to the systems."
+   },
+   "existing_specific_text": {
+    "short_definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent.",
+    "expanded_definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent. As a communication pattern, Algorithmic Manipulation-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: the covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Dark Patterns (AI-Adaptive)",
+     "definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    },
+    {
+     "name": "Synthetic Persona Networks",
+     "definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    },
+    {
+     "name": "Context Poisoning",
+     "definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    },
+    {
+     "name": "Parasocial Manipulation Engineering",
+     "definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    },
+    {
+     "name": "Immersive Manipulation (VR/AR)",
+     "definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    },
+    {
+     "name": "AI-Driven Social Engineering (Automated)",
+     "definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Dark Patterns (AI-Adaptive)",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Money, data and consent leave a person's hands through interfaces built so that the fastest, most default path is not the one they would have chosen with time to read.",
+    "what_it_is_not": "Good design nudges too — a prominent save button, a sensible default — and a confusing checkout is far more often just badly built than built to work against the user. What is being described is an interface that gets harder to escape the more it learns about one particular user."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles.",
+    "expanded_definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles. As a communication pattern, Dark Patterns (AI-Adaptive)-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Algorithmic Manipulation",
+     "definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    },
+    {
+     "name": "Synthetic Persona Networks",
+     "definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    },
+    {
+     "name": "Context Poisoning",
+     "definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    },
+    {
+     "name": "Parasocial Manipulation Engineering",
+     "definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    },
+    {
+     "name": "Immersive Manipulation (VR/AR)",
+     "definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    },
+    {
+     "name": "AI-Driven Social Engineering (Automated)",
+     "definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Synthetic Persona Networks",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Someone forms a view of what people think, or of who they are talking to, on the strength of accounts that no person stands behind.",
+    "what_it_is_not": "Pseudonymous accounts, staff posting under a brand name, and a group of people who genuinely agree are not a fake network. Establishing coordination takes platform-level data, not a hunch about a stranger's profile picture."
+   },
+   "existing_specific_text": {
+    "short_definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets.",
+    "expanded_definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets. As a communication pattern, Synthetic Persona Networks-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Algorithmic Manipulation",
+     "definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    },
+    {
+     "name": "Dark Patterns (AI-Adaptive)",
+     "definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    },
+    {
+     "name": "Context Poisoning",
+     "definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    },
+    {
+     "name": "Parasocial Manipulation Engineering",
+     "definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    },
+    {
+     "name": "Immersive Manipulation (VR/AR)",
+     "definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    },
+    {
+     "name": "AI-Driven Social Engineering (Automated)",
+     "definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Context Poisoning",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Decisions get made against a corrupted record, and because the corruption sits in the source, the person and the tools they check themselves against return the same wrong answer.",
+    "what_it_is_not": "Shared information spaces fill with ordinary error, stale pages and honest disagreement without anyone injecting anything. Deliberate insertion is a claim that needs forensic evidence, not just the experience of finding something wrong on the internet."
+   },
+   "existing_specific_text": {
+    "short_definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making.",
+    "expanded_definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making. As a communication pattern, Context Poisoning-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Algorithmic Manipulation",
+     "definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    },
+    {
+     "name": "Dark Patterns (AI-Adaptive)",
+     "definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    },
+    {
+     "name": "Synthetic Persona Networks",
+     "definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    },
+    {
+     "name": "Parasocial Manipulation Engineering",
+     "definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    },
+    {
+     "name": "Immersive Manipulation (VR/AR)",
+     "definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    },
+    {
+     "name": "AI-Driven Social Engineering (Automated)",
+     "definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Parasocial Manipulation Engineering",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The warmth is felt as mutual by one side only, and loyalty, money or personal information are given on the strength of a relationship that has no reciprocal half.",
+    "what_it_is_not": "Creators, teachers and public figures build real rapport with audiences, and one-sided attachment forms on its own without anyone cultivating it. Selling something to an audience is not the flag; simulated closeness that makes declining feel like a betrayal is."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal.",
+    "expanded_definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal. As a communication pattern, Parasocial Manipulation Engineering-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Algorithmic Manipulation",
+     "definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    },
+    {
+     "name": "Dark Patterns (AI-Adaptive)",
+     "definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    },
+    {
+     "name": "Synthetic Persona Networks",
+     "definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    },
+    {
+     "name": "Context Poisoning",
+     "definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    },
+    {
+     "name": "Immersive Manipulation (VR/AR)",
+     "definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    },
+    {
+     "name": "AI-Driven Social Engineering (Automated)",
+     "definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Immersive Manipulation (VR/AR)",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "An experience the body treats as real leaves something closer to a memory than an argument, and memories are much harder to revise afterwards.",
+    "what_it_is_not": "Immersive media is used honestly for training, therapy, education and storytelling, and a simulation that moves someone deeply is doing what art does. The concern is a staged experience offered as evidence about how the world actually is."
+   },
+   "existing_specific_text": {
+    "short_definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience.",
+    "expanded_definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience. As a communication pattern, Immersive Manipulation (VR/AR)-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Algorithmic Manipulation",
+     "definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    },
+    {
+     "name": "Dark Patterns (AI-Adaptive)",
+     "definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    },
+    {
+     "name": "Synthetic Persona Networks",
+     "definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    },
+    {
+     "name": "Context Poisoning",
+     "definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    },
+    {
+     "name": "Parasocial Manipulation Engineering",
+     "definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    },
+    {
+     "name": "AI-Driven Social Engineering (Automated)",
+     "definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "AI-Driven Social Engineering (Automated)",
+   "category": "Digital & AI",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The usual defences — an unfamiliar voice, clumsy wording, an address that looks wrong — stop working when the approach is generated to sound exactly like someone already known and trusted.",
+    "what_it_is_not": "Real organisations do phone, email and ask to verify identity, and synthetic voice is now standard in ordinary customer service lines. An unexpected contact proves nothing by itself; verifying through a channel you chose yourself is the sensible response either way."
+   },
+   "existing_specific_text": {
+    "short_definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data.",
+    "expanded_definition": "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data. As a communication pattern, AI-Driven Social Engineering (Automated)-type behavior in the Digital & AI category tends to work at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Automated, personalized phishing, vishing (voice), and identity impersonation attacks using AI-generated text, voice, and video, scaled to exploit individual psychological profiles harvested from data."
+    ],
+    "what_it_is_not": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This operates at the scale of platforms, algorithms, or synthetic media — far beyond anything a single pasted conversation could establish. If you suspect this is happening to you, the Analyze tab's forensic note has reporting guidance."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at a scale and speed no individual conversation could produce, using automated systems rather than one-on-one exchange. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe difficulty telling authentic information from manufactured content, at a scale that's hard to counter individually in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ],
+    "how_to_distinguish_from_related": "The distinguishing feature from general Social Engineering is scale and automation: this is specifically AI-generated phishing, voice-cloned calls, or impersonation personalized using harvested data and deployed at a volume no individual human attacker could match. It's a Societal-scale entry for that reason — general Social Engineering describes a single manipulator exploiting trust or urgency in one interaction."
+   },
+   "related_tactics": [
+    {
+     "name": "Algorithmic Manipulation",
+     "definition": "The covert use of recommendation algorithms, feed-curation systems, and content-ranking to shape a target's information exposure, emotional state, and behavioral patterns without their awareness or consent."
+    },
+    {
+     "name": "Dark Patterns (AI-Adaptive)",
+     "definition": "Deceptive user interface and experience designs that exploit cognitive biases to trick users into unintended actions (purchases, data sharing, consent), increasingly personalized in real time via AI adaptation to individual vulnerability profiles."
+    },
+    {
+     "name": "Synthetic Persona Networks",
+     "definition": "Coordinated networks of AI-generated fake identities deployed across platforms to infiltrate communities, manufacture consensus, gather intelligence, or conduct influence operations at scale — the industrial version of sock puppets."
+    },
+    {
+     "name": "Context Poisoning",
+     "definition": "Injecting manipulated, misleading, or adversarial content into shared digital environments, databases, or AI training data to corrupt the information landscape that both humans and AI systems rely upon for decision-making."
+    },
+    {
+     "name": "Parasocial Manipulation Engineering",
+     "definition": "Deliberately exploiting one-sided emotional bonds that form between audiences and influencers, content creators, brands, or AI agents — designing interactions that simulate intimacy to extract loyalty, money, data, or compliance from people who feel a connection that is structurally non-reciprocal."
+    },
+    {
+     "name": "Immersive Manipulation (VR/AR)",
+     "definition": "Using virtual or augmented reality environments to create emotionally charged, viscerally convincing scenarios designed to bypass rational evaluation and install beliefs, fears, or attachments through simulated experience."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

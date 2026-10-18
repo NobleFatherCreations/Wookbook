@@ -1,0 +1,279 @@
+{
+ "batch": "batch-52",
+ "kind": "risk",
+ "category": "Espionage & Influence Operations",
+ "entries": [
+  {
+   "name": "Strategic Leaking",
+   "category": "Espionage & Influence Operations",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Information arrives with the credibility of something that escaped when it was in fact released, so a placed story is read as an exposed one.",
+    "what_it_is_not": "Genuine whistleblowing and unauthorised disclosure in the public interest look identical from outside and are not this, and officials brief journalists routinely and openly. What is described is a release presented as unauthorised while serving whoever released it."
+   },
+   "existing_specific_text": {
+    "short_definition": "Deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation.",
+    "expanded_definition": "Deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation. As a communication pattern, Strategic Leaking-type behavior in the Espionage & Influence Operations category tends to work using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to consequences generally outside individual awareness until much later, if ever. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation."
+    ],
+    "what_it_is_not": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe consequences generally outside individual awareness until much later, if ever in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Honey Trapping",
+     "definition": "Deploying a romantic or sexual relationship as a strategic intelligence tool to compromise, extract classified information from, recruit, or create blackmail leverage over a target — the relationship is the operation."
+    },
+    {
+     "name": "Agent of Influence Operations",
+     "definition": "Covertly recruiting, cultivating, or manipulating individuals with legitimate public influence (journalists, academics, politicians, executives) to promote the handler's interests through the agent's credible, independent-appearing public platform."
+    },
+    {
+     "name": "Strategic Deception (Denial & Deception / D&D)",
+     "definition": "Systematic, institutional-grade campaigns to mislead adversaries about intentions, capabilities, plans, or actions through coordinated concealment (denial) and misdirection (deception) across multiple channels simultaneously."
+    },
+    {
+     "name": "MICE Framework Exploitation",
+     "definition": "Systematically identifying and exploiting an individual's vulnerability to recruitment or manipulation through one or more of four vectors: **M**oney (financial pressure/greed), **I**deology (beliefs/disillusionment), **C**ompromise (blackmail material), or **E**go (vanity/recognition needs)."
+    },
+    {
+     "name": "PSYOP Message Framing",
+     "definition": "Crafting influence messages using military-grade psychological frameworks that target specific cognitive vulnerabilities — exploiting perceptions of legitimacy, inevitability, futility, in-group/out-group dynamics, or authority structures to achieve behavioral objectives in target populations."
+    },
+    {
+     "name": "Cognitive Warfare"
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Cognitive Warfare",
+   "category": "Espionage & Influence Operations",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": true,
+   "approved_draft": {
+    "why_this_matters": "What is attacked is a population's capacity to reason together, so the damage shows up as exhaustion, mutual distrust, and an inability to agree on anything for long enough to act on it.",
+    "what_it_is_not": "Societies argue, polarise and lose trust for their own internal reasons — economic strain, real grievances, plain bad government — none of which requires an outside campaign. Attributing domestic dysfunction to a foreign adversary is itself a familiar and convenient move.",
+    "note": "The entry's definition is truncated in the source (\"...form consensus, or make.\"), so the fields were derived from the surviving clause about degrading critical thinking and consensus."
+   },
+   "existing_specific_text": {
+    "short_definition": "Targeting the cognitive domain itself as a theater of operations — using AI-driven analysis of narrative structures, semantic patterns, and belief systems to design attacks that degrade an adversary population's ability to think critically, form consensus, or make.",
+    "expanded_definition": "Targeting the cognitive domain itself as a theater of operations — using AI-driven analysis of narrative structures, semantic patterns, and belief systems to design attacks that degrade an adversary population's ability to think critically, form consensus, or make. As a communication pattern, Cognitive Warfare-type behavior in the Espionage & Influence Operations category tends to work using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: targeting the cognitive domain itself as a theater of operations — using AI-driven analysis of narrative structures, semantic patterns, and belief systems to design attacks that degrade an adversary population's ability to think critically, form consensus, or make. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to consequences generally outside individual awareness until much later, if ever. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Targeting the cognitive domain itself as a theater of operations — using AI-driven analysis of narrative structures, semantic patterns, and belief systems to design attacks that degrade an adversary population's ability to think critically, form consensus, or make."
+    ],
+    "what_it_is_not": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe consequences generally outside individual awareness until much later, if ever in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Honey Trapping",
+     "definition": "Deploying a romantic or sexual relationship as a strategic intelligence tool to compromise, extract classified information from, recruit, or create blackmail leverage over a target — the relationship is the operation."
+    },
+    {
+     "name": "Agent of Influence Operations",
+     "definition": "Covertly recruiting, cultivating, or manipulating individuals with legitimate public influence (journalists, academics, politicians, executives) to promote the handler's interests through the agent's credible, independent-appearing public platform."
+    },
+    {
+     "name": "Strategic Deception (Denial & Deception / D&D)",
+     "definition": "Systematic, institutional-grade campaigns to mislead adversaries about intentions, capabilities, plans, or actions through coordinated concealment (denial) and misdirection (deception) across multiple channels simultaneously."
+    },
+    {
+     "name": "MICE Framework Exploitation",
+     "definition": "Systematically identifying and exploiting an individual's vulnerability to recruitment or manipulation through one or more of four vectors: **M**oney (financial pressure/greed), **I**deology (beliefs/disillusionment), **C**ompromise (blackmail material), or **E**go (vanity/recognition needs)."
+    },
+    {
+     "name": "PSYOP Message Framing",
+     "definition": "Crafting influence messages using military-grade psychological frameworks that target specific cognitive vulnerabilities — exploiting perceptions of legitimacy, inevitability, futility, in-group/out-group dynamics, or authority structures to achieve behavioral objectives in target populations."
+    },
+    {
+     "name": "Strategic Leaking",
+     "definition": "Deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Cyber Manipulation Operations (CMOs)",
+   "category": "Espionage & Influence Operations",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Nothing appears stolen and nothing appears broken, so decisions carry on being made confidently on figures that are quietly wrong.",
+    "what_it_is_not": "Data corrupts through bugs, botched migrations and human error far more often than through intrusion, and a discrepancy in a system is a reason to investigate rather than a conclusion. This is a forensic finding, not something to infer from a number that looks off."
+   },
+   "existing_specific_text": {
+    "short_definition": "Hacking operations designed not to steal data but to alter, fabricate, or delete information within target systems to manipulate decisions and actions based on corrupted data — the intrusion is invisible and the target acts on false information believing it to be authentic.",
+    "expanded_definition": "Hacking operations designed not to steal data but to alter, fabricate, or delete information within target systems to manipulate decisions and actions based on corrupted data — the intrusion is invisible and the target acts on false information believing it to be authentic. As a communication pattern, Cyber Manipulation Operations (CMOs)-type behavior in the Espionage & Influence Operations category tends to work using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: hacking operations designed not to steal data but to alter, fabricate, or delete information within target systems to manipulate decisions and actions based on corrupted data — the intrusion is invisible and the target acts on false information believing it to be authentic. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to consequences generally outside individual awareness until much later, if ever. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Hacking operations designed not to steal data but to alter, fabricate, or delete information within target systems to manipulate decisions and actions based on corrupted data — the intrusion is invisible and the target acts on false information believing it to be authentic."
+    ],
+    "what_it_is_not": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe consequences generally outside individual awareness until much later, if ever in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Honey Trapping",
+     "definition": "Deploying a romantic or sexual relationship as a strategic intelligence tool to compromise, extract classified information from, recruit, or create blackmail leverage over a target — the relationship is the operation."
+    },
+    {
+     "name": "Agent of Influence Operations",
+     "definition": "Covertly recruiting, cultivating, or manipulating individuals with legitimate public influence (journalists, academics, politicians, executives) to promote the handler's interests through the agent's credible, independent-appearing public platform."
+    },
+    {
+     "name": "Strategic Deception (Denial & Deception / D&D)",
+     "definition": "Systematic, institutional-grade campaigns to mislead adversaries about intentions, capabilities, plans, or actions through coordinated concealment (denial) and misdirection (deception) across multiple channels simultaneously."
+    },
+    {
+     "name": "MICE Framework Exploitation",
+     "definition": "Systematically identifying and exploiting an individual's vulnerability to recruitment or manipulation through one or more of four vectors: **M**oney (financial pressure/greed), **I**deology (beliefs/disillusionment), **C**ompromise (blackmail material), or **E**go (vanity/recognition needs)."
+    },
+    {
+     "name": "PSYOP Message Framing",
+     "definition": "Crafting influence messages using military-grade psychological frameworks that target specific cognitive vulnerabilities — exploiting perceptions of legitimacy, inevitability, futility, in-group/out-group dynamics, or authority structures to achieve behavioral objectives in target populations."
+    },
+    {
+     "name": "Strategic Leaking",
+     "definition": "Deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Adversarial Machine Learning",
+   "category": "Espionage & Influence Operations",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The systems people are told to rely on — filters, fraud checks, screening tools — return confident answers shaped by someone else, and the person affected has no way to see why.",
+    "what_it_is_not": "Models fail in ordinary ways too: they break on unusual inputs, carry the biases of their training data, and drift as the world changes. A wrong or strange output is far more likely to be a limitation than an attack."
+   },
+   "existing_specific_text": {
+    "short_definition": "Manipulating AI and machine learning systems through poisoned training data, adversarial inputs, or model exploitation to cause them to produce manipulated outputs, evade detection, or subvert the automated defenses they were designed to provide.",
+    "expanded_definition": "Manipulating AI and machine learning systems through poisoned training data, adversarial inputs, or model exploitation to cause them to produce manipulated outputs, evade detection, or subvert the automated defenses they were designed to provide. As a communication pattern, Adversarial Machine Learning-type behavior in the Espionage & Influence Operations category tends to work using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: manipulating AI and machine learning systems through poisoned training data, adversarial inputs, or model exploitation to cause them to produce manipulated outputs, evade detection, or subvert the automated defenses they were designed to provide. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to consequences generally outside individual awareness until much later, if ever. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Manipulating AI and machine learning systems through poisoned training data, adversarial inputs, or model exploitation to cause them to produce manipulated outputs, evade detection, or subvert the automated defenses they were designed to provide."
+    ],
+    "what_it_is_not": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This describes state-level or institutional-grade operations — far outside what any personal-conversation tool could detect. Included for literacy and vocabulary only."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate using institutional-grade tradecraft designed for adversarial, state-level, or organizational contexts. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe consequences generally outside individual awareness until much later, if ever in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Honey Trapping",
+     "definition": "Deploying a romantic or sexual relationship as a strategic intelligence tool to compromise, extract classified information from, recruit, or create blackmail leverage over a target — the relationship is the operation."
+    },
+    {
+     "name": "Agent of Influence Operations",
+     "definition": "Covertly recruiting, cultivating, or manipulating individuals with legitimate public influence (journalists, academics, politicians, executives) to promote the handler's interests through the agent's credible, independent-appearing public platform."
+    },
+    {
+     "name": "Strategic Deception (Denial & Deception / D&D)",
+     "definition": "Systematic, institutional-grade campaigns to mislead adversaries about intentions, capabilities, plans, or actions through coordinated concealment (denial) and misdirection (deception) across multiple channels simultaneously."
+    },
+    {
+     "name": "MICE Framework Exploitation",
+     "definition": "Systematically identifying and exploiting an individual's vulnerability to recruitment or manipulation through one or more of four vectors: **M**oney (financial pressure/greed), **I**deology (beliefs/disillusionment), **C**ompromise (blackmail material), or **E**go (vanity/recognition needs)."
+    },
+    {
+     "name": "PSYOP Message Framing",
+     "definition": "Crafting influence messages using military-grade psychological frameworks that target specific cognitive vulnerabilities — exploiting perceptions of legitimacy, inevitability, futility, in-group/out-group dynamics, or authority structures to achieve behavioral objectives in target populations."
+    },
+    {
+     "name": "Strategic Leaking",
+     "definition": "Deliberately releasing classified, confidential, or sensitive information through apparently unauthorized channels to shape public opinion, undermine adversaries, signal intentions, test reactions, or distract from other operations — the \"leak\" is the operation."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}

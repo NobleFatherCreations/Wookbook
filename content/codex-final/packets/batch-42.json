@@ -1,0 +1,642 @@
+{
+ "batch": "batch-42",
+ "kind": "normal",
+ "category": "Social Warfare & Triangulation",
+ "entries": [
+  {
+   "name": "Triangulation",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Recruiting real or invented third parties as ammunition.",
+    "expanded_definition": "Recruiting real or invented third parties as ammunition. Turns a two-person disagreement into an ambush by a crowd. As a communication pattern, Triangulation-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: recruiting real or invented third parties as ammunition.",
+    "why_this_matters": "Turns a two-person disagreement into an ambush by a crowd. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Recruiting real or invented third parties as ammunition.",
+     "Turns a two-person disagreement into an ambush by a crowd.",
+     "Contrasts with a healthier version: \"Here's *my* problem with it\" — owned, first-person, no chorus.",
+     "Recognizable by phrasing such as \"Even your mother thinks you're out of line\"."
+    ],
+    "what_it_sounds_like": [
+     "Even your mother thinks you're out of line.",
+     "Dana told me what you said about me.",
+     "Even agrees with me that you.",
+     "Everyone thinks that you're.",
+     "I've talked to and they all think.",
+     "Ask any one, they'll tell you.",
+     "Told me that you said.",
+     "Even your mom thinks."
+    ],
+    "what_it_is_not": [
+     "Citing that others share a concern can be legitimate (an intervention is triangulation-shaped but caring). Verify the chorus exists."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuinely seeking outside, independent perspective on a shared issue is different from recruiting ammunition."
+    ],
+    "common_false_positives": [
+     "A person genuinely, separately seeking a third party's honest, independent perspective on a shared issue, disclosed openly.",
+     "Real, first-person disagreement expressed directly, without needing to invoke other people's opinions as backup.",
+     "A third party's genuinely independent, unprompted opinion that happens to align with one side, mentioned honestly."
+    ],
+    "discernment_questions": [
+     "Is the third party's opinion genuinely independent, or was it solicited specifically to be used as ammunition?",
+     "Does the person express their own, first-person view, or does it hide behind a claimed chorus of others?",
+     "Is the third party's view accurately represented, or exaggerated or invented to add pressure?",
+     "Would the disagreement stand on its own without needing to invoke other people's supposed agreement?"
+    ],
+    "less_concerning_if": [
+     "A third party's genuinely independent opinion is mentioned honestly, without being solicited as ammunition."
+    ],
+    "more_concerning_if": [
+     "Third parties are recruited or invented specifically to add pressure to a two-person disagreement."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    },
+    {
+     "name": "Proxy Recruitment",
+     "definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Forced Teaming",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Manufacturing a 'we' to erase the target's separate choice.",
+    "expanded_definition": "Manufacturing a 'we' to erase the target's separate choice. Obligations get created that the target never actually agreed to. As a communication pattern, Forced Teaming-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: manufacturing a 'we' to erase the target's separate choice.",
+    "why_this_matters": "Obligations get created that the target never actually agreed to. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Manufacturing a 'we' to erase the target's separate choice.",
+     "Obligations get created that the target never actually agreed to.",
+     "Contrasts with a healthier version: \"I'd like us to approach this together — are you in?\".",
+     "Recognizable by phrasing such as \"We're in this together whether you like it or not\"."
+    ],
+    "what_it_sounds_like": [
+     "We're in this together whether you like it or not.",
+     "People like us have to stick together.",
+     "We're in this together, and you can't.",
+     "It's us against the world.",
+     "People like us need to stick together."
+    ],
+    "what_it_is_not": [
+     "Team language is everywhere and almost always benign; the flag is 'we' immediately followed by *your* obligation."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, invited collaboration that the target actually agreed to is healthy teamwork."
+    ],
+    "common_false_positives": [
+     "A genuine, invited collaboration where the target actually agreed to work together, rather than having a \"we\" imposed on them.",
+     "A person expressing hope for partnership, phrased as an invitation rather than a declared, non-negotiable fact.",
+     "Real, mutual teamwork that both people consciously chose, referenced accurately as \"we.\""
+    ],
+    "discernment_questions": [
+     "Did the target actually agree to the \"we,\" or was it declared and imposed regardless of their input?",
+     "Does the framing leave room for the target to decline being part of the \"team,\" or is it non-negotiable?",
+     "Does an obligation get created that the target never actually consented to?",
+     "Would the collaboration exist if the target had been genuinely asked first?"
+    ],
+    "less_concerning_if": [
+     "The \"we\" reflects a real, mutually agreed collaboration the target consciously chose."
+    ],
+    "more_concerning_if": [
+     "A \"we\" is declared and imposed regardless of the target's actual agreement, creating an unconsented obligation."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    },
+    {
+     "name": "Proxy Recruitment",
+     "definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "\"We're Family\" Erasure",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using the family bond to nullify boundaries or fairness.",
+    "expanded_definition": "Using the family bond to nullify boundaries or fairness. 'Family' becomes a word that means the target can't say no. As a communication pattern, \"we're family\" erasure-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using the family bond to nullify boundaries or fairness.",
+    "why_this_matters": "'Family' becomes a word that means the target can't say no. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using the family bond to nullify boundaries or fairness.",
+     "'Family' becomes a word that means the target can't say no.",
+     "Contrasts with a healthier version: \"We're family, so let's find something that's fair to both of us.\"."
+    ],
+    "what_it_sounds_like": [
+     "We're family, so you can't.",
+     "Family doesn't say boundaries.",
+     "You can't charge family.",
+     "Blood is thicker than water."
+    ],
+    "what_it_is_not": [
+     "Appeals to family closeness are usually sincere expressions of value, not levers."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutual family values around support and closeness are healthy when reciprocal."
+    ],
+    "common_false_positives": [
+     "A genuine, mutual family value around support that both people actually endorse and apply reciprocally.",
+     "A person honestly appealing to family closeness while still respecting the target's right to say no.",
+     "Real, warm family bonds referenced without being used to nullify a specific boundary or unfair situation."
+    ],
+    "discernment_questions": [
+     "Is \"family\" invoked specifically to override a fair boundary or unequal arrangement?",
+     "Does the appeal to family leave room for the target to still say no, or does it function as an automatic override?",
+     "Is the family obligation reciprocal, or does it flow mainly in one direction?",
+     "Would the same request be reasonable if stated without invoking family loyalty?"
+    ],
+    "less_concerning_if": [
+     "Family closeness is referenced warmly and reciprocally, without overriding the target's ability to say no."
+    ],
+    "more_concerning_if": [
+     "\"Family\" is invoked specifically to nullify a boundary or unfair arrangement, removing the target's ability to decline."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    },
+    {
+     "name": "Proxy Recruitment",
+     "definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Concern Trolling",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Packaging control directives as worry.",
+    "expanded_definition": "Packaging control directives as worry. Refusing 'help' gets reframed as self-destructiveness, trapping the target. As a communication pattern, Concern Trolling-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: packaging control directives as worry.",
+    "why_this_matters": "Refusing 'help' gets reframed as self-destructiveness, trapping the target. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Packaging control directives as worry.",
+     "Refusing 'help' gets reframed as self-destructiveness, trapping the target.",
+     "Contrasts with a healthier version: \"I'm worried. Do you want my input, or just support?\".",
+     "Recognizable by phrasing such as \"I'm only saying this because I worry about you\"."
+    ],
+    "what_it_sounds_like": [
+     "I'm only saying this because I worry about you.",
+     "As your friend, I have to say everyone's noticed.",
+     "I'm just worried about you, that's why you should.",
+     "As someone who cares, you really need to stop."
+    ],
+    "what_it_is_not": [
+     "Most concern is real concern. The test: does the 'worry' only ever point toward what the speaker wants?"
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, appropriate concern about a real issue, offered once respectfully, isn't concern trolling."
+    ],
+    "common_false_positives": [
+     "A genuine, one-time expression of worry that respects the target's autonomy to decide how to respond.",
+     "A person honestly asking whether the target wants advice or just support, and respecting the answer.",
+     "Real, appropriate concern about a serious issue, offered once without repeated control-directives disguised as worry."
+    ],
+    "discernment_questions": [
+     "Does the \"concern\" leave room for the target to decline help without being reframed as self-destructive?",
+     "Is the worry used repeatedly to justify specific directives about what the target should do?",
+     "Does asking whether the target wants input or just support happen, and get respected?",
+     "Would the underlying request stand on its own without needing to be wrapped in worry?"
+    ],
+    "less_concerning_if": [
+     "Worry is expressed once, respects the target's autonomy, and doesn't recur as repeated directives."
+    ],
+    "more_concerning_if": [
+     "Worry is repeatedly used to justify specific directives, and declining help gets reframed as self-destructive."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    },
+    {
+     "name": "Proxy Recruitment",
+     "definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "\"Polite Hostile\" Environments",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Nothing that happens is documentable, so whoever spoke up carries the cost alone with no case to make. Everyone watching learns that silence is the sensible option."
+   },
+   "existing_specific_text": {
+    "short_definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath.",
+    "expanded_definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath. As a communication pattern, \"polite hostile\" environments-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: a workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath.",
+     "Recognizable by phrasing such as \"Every formal interaction is impeccably polite, yet raising real concerns is consistently followed by subtle exclusion, cooled relationships, or stalled opportunities\"."
+    ],
+    "what_it_sounds_like": [
+     "Every formal interaction is impeccably polite, yet raising real concerns is consistently followed by subtle exclusion, cooled relationships, or stalled opportunities.",
+     "Colleagues describe a 'vibe' they can't quite name in official terms.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'a workplace or social space that appears civil and professio'. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "Genuine workplace civility and professionalism are good things — the flag is politeness used specifically as camouflage for a retaliation pattern, visible only once you track outcomes over months."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, reasonable workplace civility norms don't automatically punish real dissent."
+    ],
+    "common_false_positives": [
+     "A genuinely professional environment with reasonable norms around civility that doesn't actually punish real dissent or concerns when raised appropriately.",
+     "A workplace going through a rough patch where a few people's opportunities happen to stall for real, disclosed business reasons.",
+     "A single instance of a raised concern not going anywhere, without an established pattern connecting it to systematic exclusion."
+    ],
+    "discernment_questions": [
+     "Does raising real concerns actually and predictably lead to subtle exclusion or stalled opportunities, or is that a coincidence?",
+     "Is civility genuine, or does it function as a smokescreen that punishes anyone who breaks from it?",
+     "Does this pattern show up across multiple different people who've raised concerns, or is it isolated to one situation?",
+     "Would a neutral observer, tracking outcomes over time, see a real, punitive pattern connected to truth-telling?"
+    ],
+    "less_concerning_if": [
+     "Raising real concerns doesn't predictably lead to exclusion or stalled opportunities."
+    ],
+    "more_concerning_if": [
+     "Truth-telling or dissent predictably and consistently leads to subtle exclusion or stalled opportunities across multiple people."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    },
+    {
+     "name": "Proxy Recruitment",
+     "definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Flying Monkeys",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Pressure arrives from several directions at once, from people who believe they are acting on their own concern, which makes it nearly impossible to answer without appearing to attack them.",
+    "what_it_is_not": "Friends do notice things independently and reach out on their own, and family members naturally discuss shared concerns and arrive at similar views. Someone checking in out of their own long relationship with you is acting for themselves, not on anyone's behalf."
+   },
+   "existing_specific_text": {
+    "short_definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf.",
+    "expanded_definition": "Third parties — friends, family, colleagues — enlisted, often unknowingly, to pressure, monitor, or relay information about a target on someone else's behalf. The recruited person is often given a partial or distorted account of the situation, so they act in good faith on behalf of a narrative they don't realize is one-sided.",
+    "plain_language_summary": "In plain terms: third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    ],
+    "what_it_sounds_like": [
+     "A friend or family member unexpectedly reaches out to \"check in\" or relay a message, having clearly been given a one-sided account of a conflict.",
+     "Multiple people from someone's circle start raising the same talking points around the same time, without having independently arrived at them.",
+     "A third party mentions being asked to \"keep an eye on\" or report back about the target's activities."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, independent concern from people who care about someone is common and healthy. Families and friend groups do naturally discuss shared worries."
+    ],
+    "common_false_positives": [
+     "A friend genuinely, independently concerned and reaching out based on their own observations, not at anyone's direction.",
+     "Family members who naturally discuss shared concerns with each other, arriving at similar views independently.",
+     "Someone checking in out of their own long-standing relationship with the target, unconnected to any other party."
+    ],
+    "discernment_questions": [
+     "Does the third party's concern trace back to information from one specific person, rather than their own observation?",
+     "Do multiple people raise oddly similar talking points around the same time?",
+     "Does the third party acknowledge being asked to check in or relay something on someone's behalf?",
+     "Would this person have reached out independently, without the other party's involvement?"
+    ],
+    "less_concerning_if": [
+     "The third party's concern is based on their own independent observation and relationship with the target."
+    ],
+    "more_concerning_if": [
+     "Multiple third parties surface with suspiciously similar talking points traceable to one source."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Proxy Recruitment",
+     "definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  },
+  {
+   "name": "Proxy Recruitment",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The confrontation happens without the person whose concern it is, so no one present can actually answer for what is being demanded.",
+    "what_it_is_not": "Asking a mutual friend how to approach a difficult conversation is not the same as asking them to have it instead. Go-betweens are appropriate where direct contact genuinely is not safe or possible. Someone who hears about a situation and independently decides to raise it is speaking for themselves."
+   },
+   "existing_specific_text": {
+    "short_definition": "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability.",
+    "expanded_definition": "Convincing others to carry out pressure, confrontation, or criticism on one's behalf, so the original person avoids direct accountability for the pressure being applied. This is closely related to Flying Monkeys, but the distinguishing feature is intentional recruitment for confrontation specifically — actively enlisting someone to deliver a message or apply pressure the original person doesn't want to deliver themselves.",
+    "plain_language_summary": "In plain terms: convincing others to carry out pressure or confrontation so the original person avoids direct accountability.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Convincing others to carry out pressure or confrontation so the original person avoids direct accountability."
+    ],
+    "what_it_sounds_like": [
+     "\"Can you talk to them about this? I don't want to be the bad guy\" used to hand off an uncomfortable confrontation to someone else.",
+     "A third party unexpectedly raises a specific grievance that traces back to being asked to do so by someone else.",
+     "The original person is conspicuously absent or uninvolved when the actual pressure or confrontation happens."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Sometimes asking for advice or an outside perspective is genuinely different from asking someone to fight your battle. Appropriate mediation, especially in unsafe situations, is a legitimate use of a third party."
+    ],
+    "common_false_positives": [
+     "Genuinely asking a mutual friend for advice on how to approach a conversation, without asking them to have it instead.",
+     "A mediator or go-between used appropriately in a situation where direct communication genuinely isn't safe or possible.",
+     "Someone independently deciding to raise a concern themselves after hearing about a situation, without being specifically asked to confront anyone."
+    ],
+    "discernment_questions": [
+     "Did the third party raise this on their own initiative, or because they were specifically asked to deliver a message?",
+     "Does the original person remain conspicuously uninvolved while the pressure is applied by someone else?",
+     "Would the original person have raised this issue directly if no one else had been available to do it for them?",
+     "Is there a legitimate reason for using a third party here?"
+    ],
+    "less_concerning_if": [
+     "A third party's involvement is appropriate mediation or independent, not a hand-off of accountability."
+    ],
+    "more_concerning_if": [
+     "The original person consistently avoids direct confrontation by recruiting others to do it instead."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+   }
+  }
+ ]
+}
