@@ -77,7 +77,7 @@
       "Routine requests begin to need follow-up checks that they never needed before.",
       "You build up a set of 'I did what you asked' exchanges that are hard to describe to anyone else."
     ],
-    "repair_check": "Look for the next task coming back sensibly done once you have explained its purpose, together with a plain acknowledgment of what went wrong the last time. Quick agreement to every instruction, followed by the same exact-words result, means the pattern is still running.",
+    "repair_check": "Once you have explained a task's purpose, the next one comes back sensibly done, together with a plain acknowledgment of what went wrong the last time. Quick agreement to every instruction, followed by the same exact-words result, means the pattern is still running.",
     "boundary_respect_check": "Ask yourself what changes after you say you want the purpose honored as well as the wording. Do tasks begin arriving fit for use, or does the answer become 'then say so next time'?",
     "psychological_mechanism": "An instruction can be treated as a contract, and meeting its words gives a person cover. Disagreement can then be expressed through the outcome instead of through a conversation. This can happen when someone feels unable to refuse openly, felt unheard when they objected, or was blamed for earlier judgment calls. The asker then sees only a failed task, not the disagreement beneath it.",
     "possible_impact_on_receiver": "People describe becoming stiff and over-specific in how they ask, wondering whether they phrased something badly, and carrying the cost of the failed work themselves. Some start to dread delegating or hold back from making requests. Others describe feeling oddly unable to complain, since the instruction was carried out.",
@@ -90,7 +90,7 @@
     },
     "boundary_script": "\"When I ask for something, I need it to do the job, not just match my words. If my wording is unclear, ask me before you start. If you disagree with the request, tell me, and we can sort it out.\"",
     "safety_sensitive": false,
-    "safety_note": "On its own this is friction over work or chores, not a danger signal. That changes if the failures involve a skipped safety step, a missed medication, or work that puts your job at risk without being traceable to you. Then record dates and outcomes, and report the safety step to a supervisor, safety officer or union rep.",
+    "safety_note": "Sloppy work done to spite you is friction over work or chores, not a danger signal. That changes if the failures involve a skipped safety step, a missed medication, or work that puts your job at risk without being traceable to you. Then record dates and outcomes, and report the safety step to a supervisor, safety officer or union rep.",
     "misuse_warning": [
       "Calling a literal reading 'malicious' assumes a motive you cannot see. Someone who takes words at face value, or who was burned for guessing, can be accused of sabotage when they are being careful.",
       "The label can excuse a vague request. If you never said what you wanted, the problem may sit in the instruction."
@@ -174,7 +174,7 @@
       "Small issues pile up unsaid, because raising them feels like arguing against someone's entire character.",
       "Others in the group start to treat the person as beyond question."
     ],
-    "repair_check": "Look for the specific event being named back to you, in their words, before any mention of their record. If history comes in afterwards as context and the event still gets addressed, the exchange has moved. A longer list of credentials on the second try has not changed anything.",
+    "repair_check": "Their own words name the specific event back to you before any mention of their record. If history comes in afterwards as context and the event still gets addressed, the exchange has moved. A longer list of credentials on the second try has not changed anything.",
     "boundary_respect_check": "Notice whether saying 'I'm asking about Tuesday, not about your whole character' changes their next reply. Watch for a move from the list to the event, or for the list getting longer along with a hint that you are being unfair to ask.",
     "psychological_mechanism": "A person's good standing can work as a shortcut for deciding what is likely: someone kind seems unlikely to have done harm. Listeners may discount a complaint, and the person making it, before checking the facts. The speaker can also be reassured by their own record, which may make an uncomfortable complaint feel like an error rather than information.",
     "possible_impact_on_receiver": "Accounts of this often include guilt for raising something real, and extra caution about raising it again. Some doubt whether they have the right to complain, given what the person has done for them. Others are left with a small, specific problem that was never discussed and a large, vague sense of having been ungrateful.",
@@ -381,7 +381,7 @@
       "support_seeking": "Keep a short dated list of the repeats and the apologies and show it to someone you trust. A pattern can be easier to see on paper than in the moment.",
       "workplace_or_professional": "Ask for the apology to come with a written next step and a review date, such as an agreement on how this will be handled next time."
     },
-    "boundary_script": "\"Thank you for apologizing, and I do hear that you're sorry. This has happened a few times now, so what I need isn't another apology. I need to see what's different next time. Can we agree on what that will be?\"",
+    "boundary_script": "\"Your apology is real to me, and so is the pattern. This has happened a few times now, so what I need isn't another apology. I need to see what's different next time. Can we agree on what that will be?\"",
     "safety_sensitive": true,
     "safety_note": "An apology followed by repetition can be part of a cycle in controlling or violent relationships, where remorse after an incident is followed by a calm period and then another incident. If the harm involves threats, hitting, destroyed property, control of money, or fear of how they will react, contact a domestic violence advocate, who can help you plan for safety without requiring you to leave. In immediate danger, call emergency services.",
     "misuse_warning": [

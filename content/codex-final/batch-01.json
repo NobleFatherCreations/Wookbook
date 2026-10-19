@@ -86,7 +86,7 @@
       "support_seeking": "Tell a trusted person what you originally raised and what happened next. Hearing 'that is not what you came to talk about' from someone outside can restore your footing.",
       "workplace_or_professional": "Put the original complaint in writing with dates before any meeting, and ask HR or a manager to keep the discussion on that record when a counter-complaint appears."
     },
-    "boundary_script": "\"I hear that you feel hurt by what I said, and I will talk about that. But I came here to talk about the missed dinner and the lie about it. Can we stay on that first, and then take your concerns right after?\"",
+    "boundary_script": "\"What I said hurt you, and I will talk about that. But I came here to talk about the missed dinner and the lie about it. Can we stay on that first, and then take your concerns right after?\"",
     "safety_sensitive": true,
     "safety_note": "DARVO can show up alongside abuse, where a person who reports harm is then described to others as the one who caused the harm. Watch for threats to report you, to call your employer, or to claim custody, and for fear of what happens if you push back. Domestic violence advocates and legal aid can help you plan. If the counter-accusations are joined by threats of violence, call your local emergency number instead of waiting to see how it plays out.",
     "misuse_warning": [
@@ -264,7 +264,7 @@
       "Issues you raised a year ago are still open, along with theirs.",
       "You start tracking your own past mistakes so you can defend them quickly."
     ],
-    "repair_check": "Repair would be a return to your complaint with an actual answer, then a separate time set aside for theirs. A mutual 'we both have faults' that closes the topic leaves your first point exactly as unanswered as before, and may be followed by the same swap next time.",
+    "repair_check": "Your complaint gets an actual answer first, and theirs gets a separate time set aside. A mutual 'we both have faults' that closes the topic leaves your first point exactly as unanswered as before, and may be followed by the same swap next time.",
     "boundary_respect_check": "Try asking for one subject at a time and see what follows. Do they answer the first point, then hold their own for later? Or does the same counter-point come back, louder, as if the order of the conversation were not up for discussion?",
     "psychological_mechanism": "A counter-complaint appeals to a fairness instinct: if you have made mistakes too, pressing your own point can feel unfair. That discomfort can pull attention away from the first complaint, and it tends to work best when the counter-point is true.",
     "possible_impact_on_receiver": "People describe feeling that raising anything is pointless because it will be matched with something else. Small issues pile up unspoken. Some begin to feel they owe a running debt of past wrongs, and keep a quick defense of old events ready.",
@@ -370,7 +370,7 @@
       "support_seeking": "Read the apology aloud to a friend and ask what it admits. Hearing it from outside can confirm what felt missing and reduce self-doubt.",
       "workplace_or_professional": "If you need a record, ask in writing for a confirmation of what happened and what will change. Vague apologies in a workplace can be followed up with a specific, dated request."
     },
-    "boundary_script": "\"Thank you for saying sorry, and I do want to move forward. What I need is to hear what you did and that it was wrong, not that I feel upset. Can you try saying it that way?\"",
+    "boundary_script": "\"Moving forward is what I want too. What I need is to hear what you did and that it was wrong, not that I feel upset. Can you try saying it that way?\"",
     "safety_sensitive": false,
     "safety_note": "A hollow apology is not itself a safety signal. It would matter more if it sits in a cycle where harm is followed by sorry, then by harm again, or if refusing to accept it brings anger or threats. In that case, speak to a trusted person or a domestic abuse advocate about the larger pattern.",
     "misuse_warning": [
@@ -549,7 +549,7 @@
       "Complaints you raised months ago were never answered, only moved aside by a discussion of tone.",
       "You hear your own voice getting smaller in groups where you used to speak freely."
     ],
-    "repair_check": "Repair would be a return to the content, after a break if needed, with a real answer to what you asked. A conditional 'I will listen once you are nicer', or an apology for the argument while the complaint sits untouched, leaves the actual subject where it was.",
+    "repair_check": "After a break if needed, the conversation goes back to the content, with a real answer to what you asked. A conditional 'I will listen once you are nicer', or an apology for the argument while the complaint sits untouched, leaves the actual subject where it was.",
     "boundary_respect_check": "Compare two moments: how they responded when you were loud, and how they responded when you were quiet and clear. If the answer to the point arrives only in the second case, tone may have been the real issue. If a new objection to tone appears, the standard is moving.",
     "psychological_mechanism": "Most people want to be seen as reasonable, so a remark about tone can lead them to focus on controlling delivery instead of pressing the point. Self-monitoring then takes more of their attention, and the concern gets less.",
     "possible_impact_on_receiver": "People describe holding back anger until it is hard to express clearly, rewriting messages again and again, and feeling their emotions are used against them. Some stop raising issues. Others escalate in frustration, which then seems to confirm the criticism.",

@@ -87,7 +87,7 @@
       "support_seeking": "Give the exact words to a legal aid clinic, a tenant or worker advocate, or an attorney's first consultation, and ask whether the threatened step even exists. Learning it is empty, or real, changes how heavy it feels.",
       "workplace_or_professional": "If HR or a manager is involved, keep messages in writing, note dates, and privately ask HR or a union representative how complaints are handled and who sees them."
     },
-    "boundary_script": "\"I want to keep talking about the actual problem. When a lawyer or the police come up in the middle of it, I find it hard to think, so can we put that to one side and go back to what we were discussing?\"",
+    "boundary_script": "\"The actual problem is what I'd like to keep talking about. When a lawyer or the police come up in the middle of it, I find it hard to think, so can we put that to one side and go back to what we were discussing?\"",
     "safety_sensitive": true,
     "safety_note": "This can sit next to real danger when the named consequence is your housing, income, immigration status or custody, or when a partner or relative uses it to keep you quiet about harm. Treat any mention of a report to immigration or child services as something to check privately first: a legal aid office, a domestic violence advocate or an attorney can tell you what could really happen. Keep dated copies of messages somewhere the other person cannot reach.",
     "misuse_warning": [
@@ -186,7 +186,7 @@
     },
     "boundary_script": "\"I accept that some details have to stay private. I'd like a written summary of what I'm being asked to respond to, the rule that limits the rest, and a date by which I can give my side.\"",
     "safety_sensitive": false,
-    "safety_note": "On its own this is a fairness problem, not a physical danger. It changes if the hidden accusation could lead to loss of housing, income, immigration status or custody, or if the person holding the file is also someone you fear. In those cases a legal aid office, a union or a tenant or immigration advocate can find out what you are entitled to see; start by asking one of them before you answer any hearing notice.",
+    "safety_note": "A secret process is a fairness problem, not a physical danger. It changes if the hidden accusation could lead to loss of housing, income, immigration status or custody, or if the person holding the file is also someone you fear. In those cases a legal aid office, a union or a tenant or immigration advocate can find out what you are entitled to see; start by asking one of them before you answer any hearing notice.",
     "misuse_warning": [
       "Calling any refusal to share details 'weaponized confidentiality' can pressure people to break real privacy duties that protect those who reported harm.",
       "Someone who did something wrong could use this label to paint a legitimate process as a cover-up; the label needs evidence that the substance was withheld, not just a name."
@@ -280,7 +280,7 @@
       "support_seeking": "If you can do so safely, note the document's title, date and page count, then show it to legal aid, a union representative, a housing counselor or any trusted person who has read contracts before.",
       "workplace_or_professional": "At work, ask whether HR, a union representative or your own advisor can review the form, and write down who gave which deadline so the date can be checked later."
     },
-    "boundary_script": "\"Thank you for explaining it. I'd like a copy to read through properly, and I'll give you my answer once I've done that. Can you tell me the date you actually need it by?\"",
+    "boundary_script": "\"Explaining it was helpful, and I need time with the paper itself. I'd like a copy to read through properly, and I'll give you my answer once I've done that. Can you tell me the date you actually need it by?\"",
     "safety_sensitive": true,
     "safety_note": "A rushed signature can carry real danger when it touches housing, immigration status, custody, a lease co-signature, a loan or a resignation, or when a partner or relative presses the pen on you and you fear their reaction. If saying no feels unsafe, you do not have to argue the point: agree to look at it, then take the paper, a photo of it, or its title to a legal aid office, a domestic violence advocate or an attorney before anything is signed.",
     "misuse_warning": [
@@ -366,7 +366,7 @@
       "You put off seeking help for new problems because of how the last visit went.",
       "Notes or referrals start to describe you with the same adjectives, across different providers."
     ],
-    "repair_check": "Look for a return to your original words. A professional who says, 'I commented on how you were speaking and never addressed what you told me. Let's go back to it,' and then examines the matter has repaired something. A softer voice, or reassurance with the same conclusion, has not.",
+    "repair_check": "Your original words come back into the room. A professional who says, 'I commented on how you were speaking and never addressed what you told me. Let's go back to it,' and then examines the matter has repaired something. A softer voice, or reassurance with the same conclusion, has not.",
     "boundary_respect_check": "A useful test is to ask for your symptoms or concern to be noted in the record in your own words. Watch whether the request is simply done, or whether it is met with another remark about your tone.",
     "psychological_mechanism": "A label from someone with professional standing can carry weight beyond the moment, since many people assume training means accuracy. Being told that your reaction is the problem invites you to monitor your own tone instead of your situation, and many people respond by minimizing, which then makes the original concern harder to see. Past experience of being dismissed can make the next instance land harder.",
     "possible_impact_on_receiver": "People describe leaving an appointment unsure whether the worry was real, apologizing for being upset, and rehearsing a calm voice for the next visit. Bringing up symptoms at all can start to seem pointless. Anger can arrive later, at how reasonable the worry had been all along, and relief can come on meeting a professional who simply wrote down what was said.",
@@ -377,7 +377,7 @@
       "support_seeking": "Bring someone to the next appointment to listen and take notes, or ask a patient advocate or ombuds office how to request a second review.",
       "workplace_or_professional": "In an HR or school setting, put the concern in an email with dates and specifics, so the reply has to deal with the content, and ask who reviews it."
     },
-    "boundary_script": "\"I hear that I sound upset, and I am. My worry is real and I would like it looked at. Could we go through what I described, one thing at a time, and could you note it in my record as I've said it?\"",
+    "boundary_script": "\"I sound upset, and I am. My worry is real and I would like it looked at. Could we go through what I described, one thing at a time, and could you note it in my record as I've said it?\"",
     "safety_sensitive": false,
     "safety_note": "Tone policing in a clinic is not a coercion signal by itself, but a dismissed symptom can be an urgent one. Sudden chest pain, trouble breathing, weakness on one side, a severe headache unlike others, or thoughts of harming yourself need prompt care whatever anyone says about your manner. Go to an emergency department for those, and if you are sent home, ask a nurse or patient advocate to note that you asked to be examined.",
     "misuse_warning": [
@@ -462,7 +462,7 @@
       "You stop mentioning the symptom, because the answer is already known.",
       "You start researching on your own and then feel unsure whether to say so."
     ],
-    "repair_check": "Look for the sentence 'the tests are normal, and I still believe you.' A provider who adds a next step, such as a different test, a specialist, a symptom diary or a check-in date, has reopened the question. A chart note that repeats the normal results has not.",
+    "repair_check": "The sentence that matters is 'the tests are normal, and I still believe you.' A provider who adds a next step, such as a different test, a specialist, a symptom diary or a check-in date, has reopened the question. A chart note that repeats the normal results has not.",
     "boundary_respect_check": "Ask what the test was able to rule out and what it could not, and what you should do if the symptoms continue. A clear, specific reply respects the question. A shrug or a repetition of the result suggests the question did not land.",
     "psychological_mechanism": "Numbers and written results carry a special trust, for the patient and for whoever reads them. A normal value can seem like objective proof against a feeling, which is hard to argue with in an exam room. If you have already been told your symptoms are stress, a normal result can seem to confirm it, and doubt about your own body can follow.",
     "possible_impact_on_receiver": "A long stretch of being told you are fine while still unwell can mean collecting normal results, doubting your own sense of your body, and feeling relief mixed with frustration if a cause is eventually found. Some stop seeking care, and guilt about taking up appointments is common.",
@@ -673,7 +673,7 @@
     },
     "boundary_script": "\"I've already provided these documents on the dates shown on my confirmations. Please check the file for them, and let me know in writing what is actually still outstanding and when a decision will be made.\"",
     "safety_sensitive": false,
-    "safety_note": "On its own this is a fairness and time problem. It becomes more serious when the matter protects your housing, income, health care, immigration status or custody, because a missed step can close the case permanently. If you are close to a hard deadline of that kind, contact legal aid or a caseworker now and ask what the actual cut-off date is, before spending more time on forms.",
+    "safety_note": "Being worn down by forms and deadlines is a fairness and time problem. It becomes more serious when the matter protects your housing, income, health care, immigration status or custody, because a missed step can close the case permanently. If you are close to a hard deadline of that kind, contact legal aid or a caseworker now and ask what the actual cut-off date is, before spending more time on forms.",
     "misuse_warning": [
       "Calling any slow or heavy process 'exhaustion' can write off real safeguards and long timelines that apply to everyone, and can make an overloaded office look hostile.",
       "A person who missed deadlines on their own may use the label to explain the loss; a dated log of what actually happened is the check."
