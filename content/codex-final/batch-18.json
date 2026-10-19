@@ -1,0 +1,779 @@
+{
+  "Exaggeration": {
+    "short_definition": "Stretching a claim with words like always, never, everyone or nothing, so it sounds bigger and harder to answer than the facts support.",
+    "core_meaning": "Stretching a claim with words like always, never, everyone or nothing, so it sounds bigger and harder to answer than the facts support.",
+    "expanded_definition": "Exaggeration here means inflating a claim with absolutes and extremes: always, never, everyone, nothing, completely ruined. Nearly everyone does this when upset, so a single 'you never listen' says little. What matters is whether the stretched word is the main charge, whether one counterexample is waved away, and whether the talk gets stuck on 'always' while the real complaint, which may be partly fair, goes unanswered.",
+    "plain_language_summary": "Someone turns a specific problem into a sweeping one, with words like 'you never' and 'you always', so you end up arguing about the word instead of the thing that happened.",
+    "why_this_matters": "A stretched claim is hard to answer. Defending yourself against 'never' can make you look petty for listing the one time, and a fair point buried inside the claim gets lost along with the exaggeration.",
+    "what_it_is": [
+      "Words like always, never, everyone, nothing or ruined standing in for a count that would be closer to 'twice this month'.",
+      "A claim about a person's character rather than one event: 'you are always late' instead of 'you were late on Tuesday'.",
+      "Sometimes spoken about a group: 'the whole team hates this idea' when two people said so.",
+      "A small lapse presented at the scale of a betrayal, so any reply sounds either too small or too defensive.",
+      "Usually built around a true core, which is what makes it hard to dismiss."
+    ],
+    "what_it_sounds_like": [
+      "You ALWAYS do this.",
+      "You never listen to me.",
+      "Nobody on the team agrees with you.",
+      "Every single time I ask for one thing, it turns into a fight.",
+      "You've ruined the whole trip.",
+      "You haven't called me once this month."
+    ],
+    "what_it_is_not": [
+      "Ordinary venting, such as 'ugh, you always leave the cupboards open' said with a sigh and a half-smile.",
+      "A claim that is close to literally true because the thing really has happened nearly every time.",
+      "Casual rounding, like 'I've told you a hundred times' when the number is five.",
+      "Strong feeling put into big words by someone tired or hurt, who steps back when asked for an example.",
+      "Enthusiastic overstatement such as 'best day ever', which is mood rather than a charge against anyone.",
+      "A real disagreement over how often something happens, where both people are counting honestly."
+    ],
+    "this_may_be_it_when": [
+      "Asked for an example, the person repeats the absolute more loudly instead of naming a date.",
+      "A counterexample you offer is brushed off as 'that doesn't count'.",
+      "The sweeping word turns up in nearly every complaint, whatever the subject.",
+      "The claim grows between tellings: 'a few times' on Monday, 'always' by Friday.",
+      "The conversation ends up about whether 'never' is accurate, and the original request is never answered."
+    ],
+    "this_may_not_be_it_when": [
+      "When asked for an example, they give one and the claim shrinks to fit: 'Okay, not always, but the last three times.'",
+      "The big word is followed by a specific request you can act on.",
+      "They use absolutes about themselves too, as in 'I always mess this up'.",
+      "You can count, and it really is nearly every time.",
+      "They laugh or soften when you point out it isn't literally true."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Tired or hurt people often reach for big words because small ones feel too weak for what they feel.",
+      "Some families and cultures talk in strong, dramatic terms as an everyday style.",
+      "A person who has made the same request many times may feel 'never' is true even if you remember two exceptions.",
+      "People speaking a second language may use absolutes for lack of softer words."
+    ],
+    "common_false_positives": [
+      "A friend's 'you're always late' after you have been late the last six times.",
+      "A teenager's 'it's the worst day ever', which describes a mood and charges nobody.",
+      "A line like 'we never get time alone' that sums up a long stretch and is broadly accurate.",
+      "A rule such as 'never share your password', which is policy and not a stretched claim."
+    ],
+    "discernment_questions": [
+      "If I count the actual occasions, how many are there?",
+      "When I ask for an example, does the claim get smaller or louder?",
+      "Is there a fair point inside the big claim that I am tempted to dismiss because of its wording?",
+      "Does every disagreement with this person come in absolutes, or only the heated ones?",
+      "Am I listing exceptions to defend myself instead of hearing the complaint?"
+    ],
+    "less_concerning_if": [
+      "A specific example arrives as soon as you ask for one.",
+      "They soften the word once you point out it isn't literal.",
+      "Big words are simply how this person talks in every mood and about every topic."
+    ],
+    "more_concerning_if": [
+      "The sweeping claim is about your character and is used to decide what you may ask for.",
+      "The same stretched claim is told to other people, so your side arrives already discounted.",
+      "Asking for specifics is answered with 'See, you always do this', treating the request as proof."
+    ],
+    "pattern_over_time_signs": [
+      "You start answering absolutes with lists of dates, and the lists never settle anything.",
+      "You soften your own requests in advance so they can't be blown up.",
+      "Old small lapses are cited again as part of a history that grows in each retelling.",
+      "You begin to describe yourself in their words, as someone who 'never' gets anything right."
+    ],
+    "repair_check": "Watch what the claim does once an example is on the table. Someone repairing says the number out loud, 'it was twice, not always', and keeps the complaint alive. A change of wording that quietly drops the issue has fixed nothing.",
+    "boundary_respect_check": "Ask yourself: after I said I would talk about specific times, did the talk get more specific? A later argument that still has sweeping words but also a date or two suggests the request landed. Sentences that all still begin with 'always' suggest it did not.",
+    "psychological_mechanism": "A sweeping claim can shift the listener's job from understanding to defending. Because one exception technically refutes 'never', people often reach for exceptions, and the exchange becomes about accuracy. Strong words also tend to be remembered longer than the details around them, so the label can stay with you after the facts fade.",
+    "possible_impact_on_receiver": "Being summed up unfairly is the usual report, along with keeping a mental tally of the times you did help, and wearing out in arguments that never reach the real issue. Some hear big words in every piece of feedback, even gentle ones, and some start to believe the sweeping version of themselves.",
+    "response_options": {
+      "soft_clarification": "Ask for the count without disputing the feeling: 'It feels like never to you. Can you tell me about the last time, so I understand what you mean?'",
+      "firm_boundary": "Decline to debate the word and steer to one event: 'I will talk about specific times. I won't argue about whether always is true, so pick the one that bothers you most.'",
+      "disengagement": "If the argument becomes a contest of counterexamples, stop listing them. Say you will come back to it once it is down to one event, and take a break first.",
+      "support_seeking": "Tell a friend who knows you both what was said and what you think the real count is. Saying it aloud can show whether there is a fair point inside the 'always'.",
+      "workplace_or_professional": "At work, ask for feedback with dates and examples ('Which meetings do you mean?') so you can reply to the facts instead of the adjective."
+    },
+    "boundary_script": "\"I want to hear what's wrong, and I can only do that with a real example. Can you tell me about one time this week? Then we can talk about that, instead of always and never.\"",
+    "safety_sensitive": false,
+    "safety_note": "Stretched wording is an everyday habit and rarely a safety signal alone. That changes if sweeping charges come with threats, if you fear the reaction when you ask for an example, or if the same claims about you are repeated to others in ways that cut you off from them. Write down what was said and when, and show it to someone you trust before the next argument.",
+    "misuse_warning": [
+      "Labeling a frustrated 'you never' as manipulation can make it harder for the person to say anything strongly, and leaves the fair core of the complaint unheard.",
+      "Counting up someone's 'always' statements as evidence against them turns a speech habit into a verdict."
+    ],
+    "how_to_distinguish_from_related": "Vague Allegations refers to unnamed critics or unspecified charges, while exaggeration names a real event and stretches its size. Lying states something false; exaggeration usually has a true core that has been blown up. Fabricated Evidence invents proof. Exaggeration needs none, only a word like 'always' that cannot be checked and that one example from you can puncture."
+  },
+  "Vague Allegations": {
+    "short_definition": "Hinting that unnamed people have unspecified complaints about someone, so the claim cannot be checked, answered or corrected.",
+    "core_meaning": "Hinting that unnamed people have unspecified complaints about someone, so the claim cannot be checked, answered or corrected.",
+    "expanded_definition": "Vague allegations are accusations with the details removed: no names, no dates, no description of what was said or done. 'People are talking' or 'I've heard things' hands the listener something heavy and nothing to respond to. Sometimes a person is honestly protecting a source or has only a hazy impression, and one such remark says little. Concern grows when specifics are always unavailable and yet the claim is treated as settled.",
+    "plain_language_summary": "Someone says there are complaints about you but won't say who, what or when, so you can't answer them and are left to imagine the worst.",
+    "why_this_matters": "You can't correct what you can't see. People hit by a vague claim often spend weeks searching their memory and scanning faces for who knows what, while their standing with others may shift without a word being said to them.",
+    "what_it_is": [
+      "A claim about what others think or say, with the who, what and when left out.",
+      "Hints dropped in meetings, family gatherings, group chats and reviews, such as 'there have been concerns'.",
+      "A statement that cannot be proved false, because with no detail there is nothing to disprove.",
+      "Often delivered as friendly concern or a warning, so declining to guess feels rude.",
+      "A gap the listener fills in alone, usually with something worse than any real complaint."
+    ],
+    "what_it_sounds_like": [
+      "People are talking about you.",
+      "I've heard things, and I'm not going to say from whom.",
+      "There have been concerns about your attitude.",
+      "Everyone knows what you're really like.",
+      "Word is going around.",
+      "I'm not the only one who feels this way."
+    ],
+    "what_it_is_not": [
+      "A colleague who says 'a few people struggled with the handover' and then offers specifics when asked.",
+      "A manager under a formal confidentiality process who cannot name a complainant but describes the behavior and offers a way to respond. Awkwardly protecting a source while relaying a real concern is not the same as hiding the concern.",
+      "A friend who says 'I might be wrong, but I got the impression you upset Sam' and is open to hearing your side.",
+      "A summary of feedback from many people, such as a 360 review, that reports themes without names and gives examples of behavior.",
+      "A person who honestly has only secondhand talk and says so."
+    ],
+    "this_may_be_it_when": [
+      "Asking 'who?' or 'what did they say?' gets 'I can't say' every time, and the claim still stands.",
+      "The statement is presented as settled fact: 'everyone knows'.",
+      "The remark arrives soon after you disagree, ask for something or raise a complaint.",
+      "You are told to change but not told what to change.",
+      "The details shift or vanish when you probe."
+    ],
+    "this_may_not_be_it_when": [
+      "When you ask what behavior is meant, they describe one, even if they won't say who raised it.",
+      "They say plainly it is only their impression and invite your side.",
+      "The concern is formally recorded and you are given a process to respond.",
+      "They come back later with specifics.",
+      "It was said once, and they looked surprised to be pressed."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "People who hear talk secondhand often lack the details too and pass it on as heard.",
+      "Someone in HR, counselling or a similar role may be bound by confidentiality and say less than they would like.",
+      "Some people cannot bring themselves to say a hard thing plainly, so they hint.",
+      "A person may fear the one who raised it would suffer if named."
+    ],
+    "common_false_positives": [
+      "An anonymous course evaluation summary reporting that students found lectures unclear.",
+      "A relative who says 'your aunt seemed upset after dinner' without knowing why.",
+      "A friend who says 'something is off between you and Sam, I think', honestly guessing and open to hearing more."
+    ],
+    "discernment_questions": [
+      "If I ask for one example of behavior, is one given, even without a name?",
+      "Is the claim presented as fact, or as an impression?",
+      "Has anything actually changed in how others treat me, or am I filling in blanks?",
+      "Is there a process where I can see a concern and answer it?",
+      "How much of my worry comes from what was said, and how much from what I have imagined to fill the gap?"
+    ],
+    "less_concerning_if": [
+      "A reason for the vagueness is given and the behavior is described.",
+      "The speaker offers to find out more and returns with an answer.",
+      "You are invited to give your own account."
+    ],
+    "more_concerning_if": [
+      "The same unnamed 'concerns' follow you from one setting to another.",
+      "Other people repeat the hints to you and no one can say where they came from.",
+      "Your requests for specifics are treated as proof of the problem: 'see how defensive you are'."
+    ],
+    "pattern_over_time_signs": [
+      "You find yourself reviewing old conversations for a slip-up that might explain it.",
+      "You grow wary of group chats and rooms where people go quiet when you arrive.",
+      "The same phrases come back attached to new topics.",
+      "You start apologizing for unspecified things and adjusting your behavior to fit guesses."
+    ],
+    "repair_check": "Repair looks like a name or a description arriving: either the actual behavior ('Tuesday's meeting, the way the budget was challenged') or an honest 'I have no specifics and I shouldn't have said it that way'. A softer repeat of the same hint in a warmer tone is not that.",
+    "boundary_respect_check": "Notice what happens to your question, 'Can you tell me what was said?' A respectful reply gives something, or says honestly why it can't. If the question itself is treated as proof that something is wrong with you, the boundary was not respected.",
+    "psychological_mechanism": "An unspecific accusation leaves a gap, and the mind often fills gaps with its own worst fears. With nothing concrete to check, it can keep searching and turn ordinary events into possible clues. Not knowing who is involved can make everyone in the room a possible source, which may lead to withdrawing from the people who could have helped.",
+    "possible_impact_on_receiver": "People describe rereading old messages, replaying conversations and watching coworkers' faces for signs. Some change their behavior to fit guesses about the complaint, and some pull back from groups where they think the talk is happening. Feeling judged without a hearing can be painful in its own right.",
+    "response_options": {
+      "soft_clarification": "Ask for one piece of detail: 'Can you tell me what was said, or what it was about? Even without names, I'd like to know what to look at.'",
+      "firm_boundary": "Name the gap once, then stop guessing: 'Hints are hard for me to act on. Until there is something specific, I'm going to carry on as I am.'",
+      "disengagement": "If every request for detail meets 'I can't say', you don't have to keep guessing. Let the topic rest until specifics exist, and don't volunteer apologies for things nobody has named.",
+      "support_seeking": "Ask someone you trust who sees you in the same group what they have actually observed, separating what was seen from what was passed along.",
+      "workplace_or_professional": "At work, ask for the concern in writing with examples and dates, and for the chance to respond. Note the date you asked and what you were told."
+    },
+    "boundary_script": "\"I take it seriously if people have concerns. I can't respond to something I haven't been told, though. If you can describe what happened, even without names, I'll listen and answer it properly.\"",
+    "safety_sensitive": false,
+    "safety_note": "A vague claim alone is mostly a reputational and emotional strain. It becomes more serious if it is tied to consequences you can't see coming, such as a looming dismissal, a custody dispute or a housing review. Then ask in writing what is being claimed, and bring a union representative, employment adviser or lawyer in before any meeting where you are expected to answer.",
+    "misuse_warning": [
+      "Calling every cautious or confidential remark a 'vague allegation' can punish people who are protecting a source for good reason.",
+      "Demanding names from someone relaying a real concern can put the person who raised it at risk."
+    ],
+    "how_to_distinguish_from_related": "Exaggeration stretches a real event; vague allegations offer no event at all. Fabricated Evidence produces a screenshot or document you can at least examine and challenge, whereas a vague allegation gives you nothing to hold. Lying by Omission leaves a fact out of an otherwise concrete account; here the account itself is what is missing."
+  },
+  "Lying": {
+    "short_definition": "Saying something the speaker knows to be untrue so that another person will believe it and act on it.",
+    "core_meaning": "Saying something the speaker knows to be untrue so that another person will believe it and act on it.",
+    "expanded_definition": "A lie is a statement the speaker knows is false, offered so that the listener will believe it. The key is what the speaker knew, which an outsider usually cannot see at the time. A wrong statement is not a lie, and a lie need not be large: it can be an invented reason for being late or a false claim about money. Kind white lies are common and differ from lies that steer someone's decisions. Checkable claims that keep failing, and accounts that change only once evidence appears, point toward lying.",
+    "plain_language_summary": "Someone tells you something they know is not true, and you make choices based on it.",
+    "why_this_matters": "You decide things with false information, and finding out costs more than one belief. It makes you doubt everything else that person has told you, including the parts that were true.",
+    "what_it_is": [
+      "A statement of fact, not an opinion, made by someone who knows it is false.",
+      "It can be a flat denial, an invented detail, a false reason, or a claim that something happened when it did not.",
+      "Different from omission: a lie asserts something, while silence merely hides it.",
+      "It ranges from an invented excuse to a false statement about money, health or whereabouts.",
+      "What marks it is the speaker's knowledge, which only the speaker, or later evidence, can show."
+    ],
+    "what_it_sounds_like": [
+      "I was at work until nine.",
+      "I never got your message.",
+      "The payment went through last week.",
+      "I haven't spoken to her in years.",
+      "It wasn't me who told them.",
+      "That's the first I'm hearing of it."
+    ],
+    "what_it_is_not": [
+      "An honest mistake stated sincerely. A rounded or simplified figure that is not technically precise may carry no deception at all, and someone who corrects their account because they later remembered better is doing the right thing.",
+      "A prediction or opinion that turned out wrong, such as 'it'll be fine'.",
+      "A refusal to share, such as 'I can't discuss that', which declines to answer and states nothing false.",
+      "A cover story for a surprise party that everyone laughs about afterwards.",
+      "A child's imaginative story told as play."
+    ],
+    "this_may_be_it_when": [
+      "A checkable record, such as a receipt, a log or a message, contradicts what was said.",
+      "The account changes only after evidence appears.",
+      "A detail is oddly specific and offered without being asked.",
+      "When confronted, the story gets a new version instead of a correction.",
+      "Other people, with documents, tell it differently."
+    ],
+    "this_may_not_be_it_when": [
+      "They correct themselves quickly and without being pushed.",
+      "The error is in a date, a number or a detail that is easy to mix up.",
+      "Their account matches the records on every point you can check.",
+      "You have only a feeling and no contradicting fact.",
+      "They tell you plainly when there is something they can't share."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Memory is reconstructed each time it is used, and stress and tiredness distort it.",
+      "Secondhand information is often passed on as believed.",
+      "Embarrassment can make a person avoid a fact until they are ready, which is closer to omission than to a lie.",
+      "People simplify for children or when in a hurry."
+    ],
+    "common_false_positives": [
+      "A colleague gives a delivery date that then slips.",
+      "Someone says 'I'm fine' to get through a work day.",
+      "A friend remembers a name or place wrongly.",
+      "Two witnesses describe an event differently from where they stood."
+    ],
+    "discernment_questions": [
+      "What do I actually know, from a record or a witness, as opposed to a feeling?",
+      "Could the speaker have believed it when they said it?",
+      "When the facts came out, was the account owned or did it change?",
+      "Is this one claim, or one of several that haven't held up?",
+      "Would I decide differently with the true version, and does it matter here?"
+    ],
+    "less_concerning_if": [
+      "The correction is offered without prompting when they realize.",
+      "The false detail has no bearing on your decisions.",
+      "Their other claims check out when you look."
+    ],
+    "more_concerning_if": [
+      "The false claim shaped a big decision about money, health, someone's whereabouts or a legal matter.",
+      "Further claims keep failing when checked.",
+      "Owning it is followed by blaming you for checking."
+    ],
+    "pattern_over_time_signs": [
+      "You start verifying small things you would once have accepted.",
+      "Corrections arrive only after you find the record yourself.",
+      "Explanations of earlier claims keep changing.",
+      "True statements from the same person start to be doubted as well, and sorting true from false becomes your job."
+    ],
+    "repair_check": "Look for a plain correction that names what was untrue and what it cost you, followed by information volunteered before you ask for it. An apology that spends most of its length on why you shouldn't have checked has repaired nothing.",
+    "boundary_respect_check": "If you say you need claims you can check, such as the receipt or the message, watch the next few weeks. Respect looks like being handed the document without a fight. Being told you are paranoid for asking suggests the request was not taken in.",
+    "psychological_mechanism": "People generally assume that what they are told is true, because checking everything is exhausting. A lie uses that default. Once it is discovered, trust tends to break wider than the lie itself, since the listener cannot easily tell which other statements were true. Rebuilding the picture takes effort, and some people stay watchful long afterwards.",
+    "possible_impact_on_receiver": "A sharp jolt on discovery comes first, then going back through past conversations to sort true from false. Believing is an ordinary default, yet many feel foolish for having done it. Others turn into checkers, and some find the relationship, or the institution, harder to rely on afterwards even when the lie was small.",
+    "response_options": {
+      "soft_clarification": "Lead with the fact rather than the accusation: 'The bank record shows the payment on the 14th. Help me understand what happened.'",
+      "firm_boundary": "Say that on money and safety matters you need claims you can back up: 'On this kind of thing, I need to see the record, not just hear it.'",
+      "disengagement": "Where the stakes are high, stop acting on this person's unverified claims. Decide using what you can check yourself, and let the rest wait.",
+      "support_seeking": "Check your reading with someone neutral who can look at the documents, so you are not relying on memory alone or on the other person's version.",
+      "workplace_or_professional": "At work, ask for important statements in writing and keep the record. If a false statement affected a decision, take the documents to a supervisor or HR rather than arguing the point out loud."
+    },
+    "boundary_script": "\"I want to be able to rely on what you tell me. When it's about money or plans, I'll ask to see the confirmation. That isn't an accusation, it's how I'm going to make decisions from now on.\"",
+    "safety_sensitive": false,
+    "safety_note": "Lying becomes safety-relevant when the false claims concern where someone is, what has been done with your money or documents, or when asking about the truth is met with anger or threats. Keep copies of records you can verify, and if questions bring fear, speak to an advocate or lawyer before raising it again.",
+    "misuse_warning": [
+      "Calling someone a liar when they may have been mistaken or remember differently closes the conversation and treats a guess about what they knew as fact.",
+      "Treating one inaccurate statement as proof that everything else the person says is false."
+    ],
+    "how_to_distinguish_from_related": "Lying by Omission says nothing false but leaves out the piece that would change your decision; a lie puts a false statement on the table. Fabricated Evidence adds a manufactured document or screenshot to back the claim, so there is a physical thing to examine. Exaggeration begins with something true and stretches it. A lie stands alone as a flat statement the speaker knows is untrue."
+  },
+  "Strategic Incompleteness": {
+    "short_definition": "Giving someone enough information to take the next step but never enough to see the whole picture, so they keep coming back for more.",
+    "core_meaning": "Giving someone enough information to take the next step but never enough to see the whole picture, so they keep coming back for more.",
+    "expanded_definition": "Information arrives in installments. Each one is enough to act on, and none gives the whole plan, the full cost or the real timeline, so the person has to return to the same source for the next piece. Nothing false need be said, and plenty of honest situations work this way, such as a new job or a medical treatment explained in stages. Concern rises when asking for the full picture is answered with reassurance, and the person never becomes able to act alone.",
+    "plain_language_summary": "You get the next instruction but never the whole plan, and every time you ask for the big picture you are told not to worry.",
+    "why_this_matters": "You can act, but you can't act well, so every step sends you back to the same source, and independence never arrives.",
+    "what_it_is": [
+      "Information released in pieces sized to the next step, never the whole route.",
+      "Each answer is true or close to true. It is the total that is missing.",
+      "Found in jobs, contracts, projects, family arrangements and advisory or caregiving roles.",
+      "A loop: act, hit a gap, return for the next piece.",
+      "Unlike silence, you do get answers, which makes the gap harder to notice."
+    ],
+    "what_it_sounds_like": [
+      "Just do this part for now, I'll explain the rest later.",
+      "You don't need to worry about that yet.",
+      "Trust me, I'll handle that side.",
+      "I'll send you the next step once you've finished this one.",
+      "I'll walk you through that when we get there.",
+      "We'll cross that bridge when we come to it."
+    ],
+    "what_it_is_not": [
+      "Genuinely complex things are often explained in stages because that is the only comprehensible order. Someone who does not yet have the full picture can only pass on what they have, and need-to-know structures exist for reasons unconnected to any one person.",
+      "A mentor who holds back advanced material until the basics are learned, and says so.",
+      "A project whose later phases genuinely have not been decided yet.",
+      "A surprise being planned, where the holder of the plan is open about keeping it.",
+      "A safety or legal rule that limits who may receive which information."
+    ],
+    "this_may_be_it_when": [
+      "Asking for the overall plan, cost or timeline gets reassurance and no document.",
+      "After months you still cannot describe what the whole arrangement involves.",
+      "Each step needs approval from the same person.",
+      "Fees, terms or risks you needed to weigh show up only after you have committed.",
+      "Other people involved have fuller information and have been asked not to share it."
+    ],
+    "this_may_not_be_it_when": [
+      "A written outline with phases is available on request, even if later phases are marked tentative.",
+      "The person tells you what they don't know yet.",
+      "You can get the information elsewhere easily, and nobody discourages that.",
+      "The staging follows a published curriculum or standard process.",
+      "You need to ask less as time goes on, because your independence is growing."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Honest uncertainty: plans change, and the full detail may not exist yet.",
+      "Overload: people sometimes give small portions to a nervous learner.",
+      "A busy person gives the next instruction first and the background later.",
+      "Legal and safety rules can limit who receives which information."
+    ],
+    "common_false_positives": [
+      "A surgeon explaining recovery stage by stage.",
+      "A new employer onboarding someone over several weeks.",
+      "A course or game that unlocks later chapters by design and says so.",
+      "A parent telling a child only what they need for today's trip."
+    ],
+    "discernment_questions": [
+      "Could I describe the whole plan, cost and timeline today? If not, who does know?",
+      "When I ask for the full picture, do I get an answer, a document or reassurance?",
+      "Do I need to return to this source less over time, or more?",
+      "Are there pieces I only discovered after committing?",
+      "Is anyone discouraging me from asking elsewhere or comparing notes?"
+    ],
+    "less_concerning_if": [
+      "A written outline is given when you ask.",
+      "You are becoming more independent as time goes on.",
+      "Gaps are named openly: 'we don't know that yet'."
+    ],
+    "more_concerning_if": [
+      "The hard parts, such as costs, limits or risks, appear only after you have committed.",
+      "Requests for the whole picture are met with annoyance, or with being told to just trust.",
+      "Your ability to act without this source is shrinking, because they hold the login, the contact or the paperwork."
+    ],
+    "pattern_over_time_signs": [
+      "Your bigger questions are answered with smaller and smaller pieces.",
+      "You have done the work for months without being able to explain it to an outsider.",
+      "Each new step commits you further, or costs more, than the one before.",
+      "Alternatives drop out because only the source knows enough to advise."
+    ],
+    "repair_check": "A complete outline handed over without being chased is the sign: what the whole arrangement involves, what remains unknown, and what you can now do without asking. A promise to be more open while the next piece still arrives alone is a repeat.",
+    "boundary_respect_check": "Ask for the full outline in writing and see whether you receive something you could take to another person for a second opinion. A document you can show others suggests the request was heard. Talk about how complicated it all is, offered instead of the document, suggests it was not.",
+    "psychological_mechanism": "Small pieces make each next step look like a modest commitment, and effort already spent makes stopping harder. Without the whole, risk is hard to judge, alternatives are hard to compare, and growth in the total goes unnoticed. Needing to return for the next piece can also make the source feel indispensable.",
+    "possible_impact_on_receiver": "The usual report is feeling busy but not oriented: unable to explain to a friend what you are involved in, and discovering late that the total cost or demand was larger than any step suggested. Some feel they should have asked sooner; others notice they asked often and were soothed.",
+    "response_options": {
+      "soft_clarification": "Ask for the overall outline in one go: 'Could you give me the whole plan, even roughly, with the costs and the end date? I'd like to see it before I do the next piece.'",
+      "firm_boundary": "Make the next step depend on the picture: 'I'll carry on once I have the full terms in writing. Until then I'm holding where I am.'",
+      "disengagement": "If the whole picture never comes, treat what you have been told as all there is and decide on that basis. You can stop adding commitments.",
+      "support_seeking": "Describe the whole arrangement to someone outside it and notice where they ask questions you can't answer. Those gaps show where the missing information lives.",
+      "workplace_or_professional": "At work, ask for the scope, deadlines and decision-makers for your project in writing, and for who holds the parts you lack. Send a manager your own summary to confirm."
+    },
+    "boundary_script": "\"Before I take the next step, I need to see the whole thing laid out: what it involves, what it costs and when it ends. I'm happy to wait while you put it together, and I may ask someone else to look it over with me.\"",
+    "safety_sensitive": false,
+    "safety_note": "Staged information is mostly a risk to your money and time. It becomes more serious when whoever holds the missing pieces also controls your housing, immigration papers, wages or accounts, since then you cannot easily verify or step back. Copy the documents you have and get independent advice, such as legal aid or a workers' rights centre, before committing further.",
+    "misuse_warning": [
+      "Calling any staged explanation manipulation can make teachers, doctors and new managers look sinister when they are simply sequencing hard material.",
+      "Demanding everything at once from someone who honestly does not have it yet."
+    ],
+    "how_to_distinguish_from_related": "Lying by Omission keeps back one fact that would change a single decision; here information keeps coming, always in pieces, and the repeated need to return defines it. Vague Allegations leaves out detail so nothing can be checked, while here each piece is concrete and usable and only the whole is missing. Lying states a falsehood, which this pattern may never involve."
+  },
+  "Catfishing": {
+    "short_definition": "Building a relationship, usually online, behind a made-up identity such as borrowed photos or an invented life story, so the other person bonds with someone who does not exist.",
+    "core_meaning": "Building a relationship, usually online, behind a made-up identity such as borrowed photos or an invented life story, so the other person bonds with someone who does not exist.",
+    "expanded_definition": "Catfishing is forming a close online connection under a false identity: another person's photos, an invented job, a made-up age or location. Because the person is met through messages and pictures, the missing step is verification, and each new excuse for avoiding live video or a meeting pushes it further away. People use false profiles for many reasons, including loneliness and play, and also for money or images. From the receiving end you usually cannot tell which until you can check. Shifting basic facts and live contact that never happens are what mark it.",
+    "plain_language_summary": "You grow close to someone online who turns out not to be who they said, so the feelings were real but the person was not.",
+    "why_this_matters": "Everything built on the connection rests on ground that was never there, so what is lost on discovery includes the relationship's entire history, not merely its ending.",
+    "what_it_is": [
+      "A profile built from someone else's photos or from a fictional person's details: name, job, location, family.",
+      "Usually lives in messaging apps, dating apps, games and social platforms, where a face is not required.",
+      "Contact is often warm, attentive and fast-moving, though speed alone proves nothing.",
+      "Live checks keep falling through: video calls fail, meetings are postponed, voice notes stand in for calls.",
+      "May lead to requests for money, gifts, private images or personal details, though not always."
+    ],
+    "what_it_sounds_like": [
+      "Photos that, on a reverse image search, belong to a different name or a model's portfolio.",
+      "'My camera is broken' or 'bad signal' every time a video call is planned.",
+      "A glamorous remote job, such as offshore work or overseas service, that explains being out of reach.",
+      "Life details that clash across chats: a hometown, a sibling or a timeline that changes.",
+      "'I've never felt this way about anyone', said within days of meeting.",
+      "A sudden emergency that needs money from someone met only online.",
+      "No friends or family who ever comment, appear in photos or can be introduced."
+    ],
+    "what_it_is_not": [
+      "Reasonable caution about identifying details early in an online relationship is not a fabricated identity.",
+      "Outdated photos and flattering presentation fall short of accurate without being wholesale invention.",
+      "Reluctance about video calls or meeting in person is frequently social anxiety.",
+      "A username or pseudonym used for privacy, with the real name shared as trust grows.",
+      "A person with safety or health reasons, such as someone hiding their location from a former partner, who wants control over what they show.",
+      "Role-play in a game or fiction community where everyone knows the characters are invented."
+    ],
+    "this_may_be_it_when": [
+      "A reverse image search leads to someone else's profile.",
+      "Every plan to see or hear them live falls through, with a new reason each time.",
+      "Basic facts about age, job or place change between conversations.",
+      "Money, gift cards or private images are requested by someone you have never seen live.",
+      "Nothing exists beyond the profile: no history, no friends who interact with it."
+    ],
+    "this_may_not_be_it_when": [
+      "They agree to a video call, even awkwardly, and roughly look like the photos.",
+      "Their profile has history older than your contact, with friends interacting.",
+      "The differences are small, like photos a few years old or height rounded up.",
+      "They are shy but offer other ways to verify, such as a work email, a phone call or a mutual contact.",
+      "Nobody has asked you for money or images, and the pace is gradual."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "People avoid giving a real name and workplace to strangers, which is sensible privacy.",
+      "Anxiety about appearing on video, or a weak connection, can delay calls.",
+      "Shame about appearance can lead someone to use older photos.",
+      "Time zones and shift work can make live contact hard to arrange."
+    ],
+    "common_false_positives": [
+      "A dating match who is slow to video call because of shyness.",
+      "A friend whose profile photos are four years old.",
+      "A gaming friend you have always known through an avatar and handle.",
+      "Someone on a forum built around anonymity, such as a peer-support group."
+    ],
+    "discernment_questions": [
+      "Have I ever seen or heard this person live, in a way I could not mistake?",
+      "Do the photos and details match when I search the images, name and job?",
+      "Do their reasons for avoiding verification keep changing?",
+      "Has anything been asked of me, such as money, images or secrecy, that I would not give a stranger?",
+      "If a close friend described this relationship to me, what would I tell them to check?"
+    ],
+    "less_concerning_if": [
+      "Verification happens without fuss when you ask.",
+      "Nobody has asked for money, images or secrecy.",
+      "The profile's history and mutual contacts check out."
+    ],
+    "more_concerning_if": [
+      "Requests for money, gift cards, crypto or investments come from someone you have never met live.",
+      "Private images are asked for, or you are told to keep the relationship secret from friends and family.",
+      "Anger, guilt or pleading follows when you ask to verify."
+    ],
+    "pattern_over_time_signs": [
+      "Plans to meet or call are set repeatedly and then fall through.",
+      "Emotional intensity rises faster than the verifiable facts.",
+      "Requests grow from small, a favor or a gift card, to larger.",
+      "Details you were told need quiet patching whenever they conflict."
+    ],
+    "repair_check": "If the person is open about the false identity, they volunteer the true name and situation without being questioned, and leave you to decide what to do with it. Further explanations that require you to send money or keep quiet are not that.",
+    "boundary_respect_check": "Think about what happens when you say you would like a live video call before going further. Someone who is who they say usually finds a way, even if nervous. A new reason, a guilt-laden message or a deadline in reply is information too.",
+    "psychological_mechanism": "Messaging lets you fill a blank with your hopes. Warm attention, constant contact and early self-disclosure build closeness fast, and shared secrets seem like proof of trust. When the only evidence is a profile, the mind supplies the rest, and each small excuse is easy to accept because the feelings are already real to you.",
+    "possible_impact_on_receiver": "People describe grief that other people don't recognize, because the person they were attached to never existed in that form. Many feel embarrassed or foolish, though closeness with someone online is ordinary. Some describe money lost, trust in later dating damaged, and replaying messages to find what they missed.",
+    "response_options": {
+      "soft_clarification": "Ask for a live check as a normal next step: 'I'd love to see you on video this week. What day works?' Notice whether a time is found.",
+      "firm_boundary": "State your limit on money and images once, in plain words: 'I don't send money or private photos to anyone I haven't met in person.' Then hold to it, whatever the reply.",
+      "disengagement": "Stop replying and send nothing further. Save the messages and profile links first, then report the account to the platform.",
+      "support_seeking": "Tell a friend or family member what happened, even if it feels embarrassing, and show them the messages. If money or images were sent, contact your bank and a fraud-reporting or victim-support service promptly.",
+      "workplace_or_professional": "If a profile approached you through a professional network, report it to the platform and to your workplace's security or IT team, with screenshots and links."
+    },
+    "boundary_script": "\"I've enjoyed talking. Before we go further, I want us to have a live video call. I also don't send money or private photos to anyone I haven't met properly, so that isn't something I'll be doing.\"",
+    "safety_sensitive": true,
+    "safety_note": "Danger signals are requests for money, gift cards or crypto, requests for intimate images, pressure to keep the relationship secret, and threats to share what you have sent. Send nothing more. Keep screenshots, profile links and payment records, report the account to the platform, and contact your bank. If images were shared or threats made, a victim-support service or the police can advise on takedown options.",
+    "misuse_warning": [
+      "Treating every shy or private online contact as a fake identity can hurt people who are cautious for good reasons.",
+      "Publicly accusing a real person of catfishing without checking can expose a private individual to harassment."
+    ],
+    "how_to_distinguish_from_related": "Lying is one false statement that can sit inside an otherwise real relationship; catfishing replaces the whole person the relationship is with. Exaggeration inflates real qualities such as height or income, while a fabricated identity can't be fixed by toning it down. Fabricated Evidence manufactures documents or screenshots to prove a claim; a catfish profile may contain staged photos, but what defines it is that the person at the other end is not who they say."
+  },
+  "False Reports": {
+    "short_definition": "Filing complaints or accusations with an employer, school, agency or police that contain claims the filer knows are untrue, so the target must answer for something that never happened.",
+    "core_meaning": "Filing complaints or accusations with an employer, school, agency or police that contain claims the filer knows are untrue, so the target must answer for something that never happened.",
+    "expanded_definition": "A false report is a formal complaint whose central facts did not happen: an invented incident, a made-up date, an act the target could not have done. It goes to a body with power, such as a manager, a school, a licensing board, a child-protection agency or the police, which must respond. Mistaken reports and honestly disputed ones are different, and a report that cannot be proved is not necessarily false. What marks the pattern is a report contradicted by independent records, sometimes repeated to more than one body.",
+    "plain_language_summary": "Someone makes a formal complaint about you to an authority about something that did not happen, and you have to defend yourself before anyone finds out whether it is true.",
+    "why_this_matters": "A fabricated complaint puts a real job, licence or family arrangement in jeopardy, and the person has to answer for something that did not happen before anyone establishes whether it did.",
+    "what_it_is": [
+      "A formal complaint, accusation or document sent to an authority whose core facts are untrue.",
+      "Recipients include employers, schools, landlords, licensing bodies, child-protection services and police.",
+      "Different from a real grievance badly reported: here the event itself is missing.",
+      "Its force comes from process. Institutions must respond to reports, and the response can carry consequences before any finding is made.",
+      "It can be a single report or a series sent to different bodies."
+    ],
+    "what_it_sounds_like": [
+      "A letter from HR describing a meeting you can show you did not attend.",
+      "A welfare check or investigation notice triggered by a claim you can disprove.",
+      "A complaint that names a date when you were provably elsewhere.",
+      "Details in the report that match an argument you had, but nothing that actually happened.",
+      "Several agencies receiving similar reports from the same source within weeks."
+    ],
+    "what_it_is_not": [
+      "A genuine report that characterises events in a way the subject disputes still reflects the reporter's honest perception. Institutions also make their own errors in processing legitimate reports.",
+      "Two people who disagree factually about what happened, where neither is inventing anything.",
+      "A report made in good faith and found unsubstantiated. Unproven is not the same as false.",
+      "A mandated reporter, such as a teacher or nurse, passing on a concern as their role requires.",
+      "A true complaint that is also embarrassing or inconvenient for the person it concerns."
+    ],
+    "this_may_be_it_when": [
+      "Independent records, video, logs or witnesses contradict the central event.",
+      "The report cites something that could not have happened as described.",
+      "The complaint follows a dispute, breakup or refusal and was never mentioned before it.",
+      "The same source files similar reports with more than one body.",
+      "Details change between the first report and later retellings."
+    ],
+    "this_may_not_be_it_when": [
+      "Records show something did happen, though not as the complainant described it.",
+      "The complainant's account matches an independent witness.",
+      "It is a good-faith concern from someone obliged to report.",
+      "The differences come down to interpretation: tone, meaning, what someone intended.",
+      "The report was withdrawn with an honest correction such as 'I misunderstood'."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Details misremembered in an otherwise honest complaint.",
+      "A misunderstanding of what was seen or heard, such as a child's remark misread.",
+      "An institutional error like the wrong name or the wrong file.",
+      "Information distorted as it passed from person to person before it was reported."
+    ],
+    "common_false_positives": [
+      "A school inquiry that follows a mandated reporter's concern and finds nothing.",
+      "A poor performance review you believe unfair but that is based on real events.",
+      "A neighbor's noise complaint that overstates a real party.",
+      "A report dismissed for lack of evidence."
+    ],
+    "discernment_questions": [
+      "What independent records exist, and what do they show?",
+      "Is the central event missing, or is it a real event described in a way I dispute?",
+      "Has the institution told me exactly what I am accused of, so I can answer it?",
+      "Who could confirm where I was and what I did?",
+      "Do I actually know who filed it, or am I assuming?"
+    ],
+    "less_concerning_if": [
+      "The institution is clear and fair, and lets you respond with evidence.",
+      "The report mentions real events that were read differently.",
+      "The person who filed it corrects or withdraws it."
+    ],
+    "more_concerning_if": [
+      "A consequence lands before anyone has told you what the accusation actually says.",
+      "Records contradict the report, yet the process continues or repeats.",
+      "The consequences reach custody, employment, housing or immigration status."
+    ],
+    "pattern_over_time_signs": [
+      "A second and third report follows soon after the first is closed.",
+      "You have begun documenting your whereabouts with timestamped photos, just in case.",
+      "You avoid ordinary things, like a child handover or a one-to-one meeting, for fear of another report.",
+      "Managers, relatives or neighbors are approached and asked about you."
+    ],
+    "repair_check": "A written withdrawal or correction, sent to the same body that received the report, plus a plain acknowledgement to you that the claim was not true, is what repair would involve. Saying 'I only wanted someone to listen' while the file stays open leaves the consequences where they were.",
+    "boundary_respect_check": "What matters is whether the reports stop and whether anything is corrected on the record. Words said to you in private, such as 'I'm sorry it went that far', count for little if the institution has not been told. Notice which bodies have heard the correction.",
+    "psychological_mechanism": "Institutions are built to take reports seriously and to act while the facts are unknown, which is sensible but can cause harm if the report is invented. Being accused by a body with power can produce fear, shame and urgency to defend oneself before anything is checked. People around you may keep a lingering doubt even after a clearing.",
+    "possible_impact_on_receiver": "People describe shock at being formally accused, sleeplessness, and a sense of being watched by the process. Some face suspension, interviews or temporary limits on contact with children while a report is looked at. Even after being cleared, many describe lasting caution about being alone with others or doing ordinary things.",
+    "response_options": {
+      "soft_clarification": "Ask the body for specifics: 'Could you tell me what I am accused of, with dates, so I can respond accurately?'",
+      "firm_boundary": "Answer in writing and stay with verifiable facts, leaving the complainant's motives out of it: 'Here are the records for those dates.'",
+      "disengagement": "Keep contact with whoever filed to a minimum and in writing, through a lawyer or mediator if one is involved. Don't confront them privately about the report.",
+      "support_seeking": "Contact a lawyer or legal aid early, before any interview, and bring documents showing where you were. A union representative or a parents' or tenants' rights group can also help.",
+      "workplace_or_professional": "At work, ask HR for the written allegation and the process, bring a representative or colleague to meetings, and supply dated records or witnesses."
+    },
+    "boundary_script": "\"I take this seriously and I want to respond properly. Please send me the allegation in writing, with dates, and I'll provide records for each of them. I'd like a representative with me at any meeting.\"",
+    "safety_sensitive": true,
+    "safety_note": "A false report can threaten work, a licence, housing or time with your children, and the person who made it may be someone you share a home or children with. Don't confront them about it. Save every notice, get legal advice before any interview, and if you fear for your safety, tell your lawyer or a domestic abuse advocate what else has happened.",
+    "misuse_warning": [
+      "Calling a complaint false because it was not upheld can silence real reporters. Unproven is not untrue, and many genuine reports cannot be proved.",
+      "Telling someone who raised a concern that they filed a 'false report' can itself be a way of punishing them for speaking up."
+    ],
+    "how_to_distinguish_from_related": "Lying is a false statement made to a person; a false report puts it into a formal file where an institution must act. Fabricated Evidence manufactures proof, such as a forged message, while a false report can rest on words alone, though the two can be combined. Vague Allegations stays unspecific so nothing can be checked, whereas a false report is usually specific enough for records to contradict it."
+  },
+  "Paper-Trail Traps": {
+    "short_definition": "Creating or shaping written records, such as write-ups, emails and notes, that build a one-sided case against someone who does not know it is being assembled.",
+    "core_meaning": "Creating or shaping written records, such as write-ups, emails and notes, that build a one-sided case against someone who does not know it is being assembled.",
+    "expanded_definition": "A paper-trail trap is a record that gathers quietly: emails that restate a conversation in a slanted way, notes about 'concerns' never raised with the person, write-ups that leave out context. Each item may look minor. Together they can read like a long history when finally shown, at a review, a hearing or a custody dispute. Ordinary record-keeping is common and fair, so one memo says little. Concern rises when documentation concentrates on one person, is kept from them, and differs from what happened.",
+    "plain_language_summary": "Someone quietly collects written 'evidence' against you that you never saw or got to answer, and it all appears at once when it counts.",
+    "why_this_matters": "A record accumulates that the person has no opportunity to answer as it is built, and by the time they see it, it reads as damning.",
+    "what_it_is": [
+      "Emails, notes or formal write-ups that frame events one way and leave out the other side.",
+      "'Confirming' emails sent after a conversation that restate it in a slanted form, so that silence reads as agreement.",
+      "Documentation concentrated on one person while others doing the same things go unrecorded.",
+      "Built out of sight, so the first time the person hears of the 'history' is when it is used.",
+      "Found at work, in schools and care settings, in tenancy disputes, and in family and custody conflicts."
+    ],
+    "what_it_sounds_like": [
+      "Just to confirm what we discussed... followed by a version you do not recognize.",
+      "A review that cites 'several previous concerns' no one raised with you.",
+      "An email thread about problems with your work that copied you in late, or not at all.",
+      "It's all documented, in reply to a question about a concern you have never heard.",
+      "A file containing small events from months ago, such as a late arrival or a tone of voice.",
+      "A folder of screenshots shown at a meeting, picked to show one side of a long exchange."
+    ],
+    "what_it_is_not": [
+      "Standard documentation applied to everyone is not targeting. A genuine record of concerns that were actually raised with the person is legitimate even if they wish it did not exist.",
+      "Someone keeping notes on their own experience for their own reference.",
+      "Meeting minutes circulated to all attendees with a chance to correct them.",
+      "Records required by law or policy in regulated settings such as care or finance.",
+      "A manager who writes an informal summary to help them remember, and shares it when asked."
+    ],
+    "this_may_be_it_when": [
+      "You learn of written concerns for the first time at a formal meeting.",
+      "The record names you but not others who did the same thing.",
+      "Events in write-ups are described in ways that conflict with emails or timestamps.",
+      "You were not given the chance to respond or correct at the time.",
+      "Your replies to 'confirming' emails are ignored and the original stays as the version on file."
+    ],
+    "this_may_not_be_it_when": [
+      "Each item was shared with you at the time, and your replies are in the file.",
+      "Other people have similar records kept on them.",
+      "The record matches what you remember, even if you dislike seeing it.",
+      "There is an agreed process, such as warning letters that follow a stated policy.",
+      "Corrections you asked for were added."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Busy managers write notes late and from memory, so details go wrong honestly.",
+      "Organizations often document everything to protect themselves legally, which feels personal but is routine.",
+      "People confirm conversations by email to avoid misunderstanding, and nothing more.",
+      "Different people hold honestly different memories of the same meeting."
+    ],
+    "common_false_positives": [
+      "A performance improvement plan that follows several conversations you really had.",
+      "A landlord's inspection records that apply to every tenant.",
+      "A teacher's incident log kept for every child in a class.",
+      "Your own notes of a difficult month."
+    ],
+    "discernment_questions": [
+      "Have I seen what is in the file, and can I ask for a copy?",
+      "Was each item raised with me when it happened?",
+      "Is anyone else's behavior recorded as carefully as mine?",
+      "Does the record match emails, timestamps and other witnesses?",
+      "Was I able to add my own account at the time?"
+    ],
+    "less_concerning_if": [
+      "You were told each time and your answers are attached.",
+      "The same practice applies to everyone.",
+      "A copy is provided on request without delay."
+    ],
+    "more_concerning_if": [
+      "A hearing, review or dismissal is being prepared and you are not told what is in the file.",
+      "Records are refused to you, or appear only at the point of a decision.",
+      "The file will be used where much is at stake: a job, custody, a tenancy or immigration status."
+    ],
+    "pattern_over_time_signs": [
+      "'Confirming' emails arrive after each conversation, and the version differs from yours.",
+      "Small matters get recorded that were never mentioned face to face.",
+      "You have begun keeping your own record in self-defense and checking every conversation.",
+      "People around you are asked to provide statements about you."
+    ],
+    "repair_check": "Repair means the file is opened to you: a copy of everything held, a chance to add your reply to each item, and removal of entries shown to be wrong. A promise to stop writing things down while the existing record stays unchanged leaves its effects in place.",
+    "boundary_respect_check": "After you reply in writing to correct a record, check where your correction ended up. If it sits beside the original in the file and gets mentioned, it was respected. If the original is the only version ever quoted, your correction was filed away unread.",
+    "psychological_mechanism": "Written records carry authority: a paper account often outweighs a spoken one, and later readers frequently see only the file. Repetition across many items can make a pattern look established even when each is thin. Because the person is not told, they have no moment to dispute the framing, and a late reply can seem defensive.",
+    "possible_impact_on_receiver": "First sight of the file often brings a sinking shock, then a feeling of being watched and measured. Some begin writing everything down, rehearsing conversations and avoiding one-to-one meetings. Others find that colleagues or relatives who read the record already hold a view of them.",
+    "response_options": {
+      "soft_clarification": "Reply in writing to any 'confirming' email within a day with your own account: 'Thanks for the summary. Here is what I recall being agreed.'",
+      "firm_boundary": "Ask for the record directly: 'I would like a copy of everything in my file, and I would like my response added to it.'",
+      "disengagement": "Move conversations about disputed matters into writing or into a room with a witness, and keep each exchange short and factual.",
+      "support_seeking": "Talk early to a union representative, employment adviser, tenants' organization or family lawyer, depending on the setting, and bring copies of what you hold.",
+      "workplace_or_professional": "At work, request your personnel file in writing where policy or law allows, and keep dated notes of your own, following your employer's rules on company data."
+    },
+    "boundary_script": "\"Please give me a copy of anything written about me, and add my responses to the file. And when there is a concern, tell me when it happens so I can answer it at the time.\"",
+    "safety_sensitive": true,
+    "safety_note": "This tactic matters most when the record may be used in decisions about your job, tenancy, immigration status or time with your children. Signs of high stakes are meetings called without notice, requests to sign things you haven't read, and being told 'it's all documented'. Sign nothing unread. Keep your own dated notes somewhere the other person cannot reach, and see a lawyer or union representative before any formal meeting.",
+    "misuse_warning": [
+      "Keeping your own notes is not a paper-trail trap, and calling honest record-keeping a trap can excuse behavior that really was a problem.",
+      "Believing every unwelcome review is a plot can stop a person from seeing feedback that is accurate."
+    ],
+    "how_to_distinguish_from_related": "Fabricated Evidence invents a single item, such as a doctored screenshot; a paper-trail trap may include no forged item at all, only slanted wording and omissions that accumulate. Lying by Omission shapes one account by what it leaves out, while here the omissions are spread across many documents. Vague Allegations has nothing on paper to examine; here there is plenty, and the problem is what it adds up to."
+  },
+  "Compartmentalization": {
+    "short_definition": "Keeping information in separate pockets, with different people knowing different parts, so that nobody can see enough to notice a problem or ask the right question.",
+    "core_meaning": "Keeping information in separate pockets, with different people knowing different parts, so that nobody can see enough to notice a problem or ask the right question.",
+    "expanded_definition": "In compartmentalization, each person is told something true, but only their own slice. One relative hears about the money, another about the move, a third about the health scare, and nobody has the three together. Questions that would link the slices are discouraged or redirected. Most families and workplaces have private matters and need-to-know rules, so a gap in who knows what says little. Concern rises when the slicing is consistent, follows what would raise questions if joined, and comparing notes is met with displeasure.",
+    "plain_language_summary": "Everyone in the family or team is told a different piece, so no one can see the whole story or notice that something doesn't add up.",
+    "why_this_matters": "No single person can see enough to raise a question, so accountability fails not because anyone refused it but because nobody had the view required to ask for it.",
+    "what_it_is": [
+      "Information sorted into slices by listener: each person gets a true but partial version.",
+      "Seen in families (money, health, the past), workplaces (budgets, decisions) and groups (what leaders know).",
+      "It can work without a single false statement, because the structure of who knows what does the work.",
+      "Linking is what undoes it: the picture appears when two people compare notes.",
+      "One person usually holds the whole map, or is the only link between the pockets."
+    ],
+    "what_it_sounds_like": [
+      "Don't mention this to your brother, he'd only worry.",
+      "That's between you and me.",
+      "You don't need to talk to finance about that, I'll sort it.",
+      "I've told Mum the dates and Dad the cost, there's no need for them to compare.",
+      "Why are you asking her? I said I'd handle it.",
+      "Please don't discuss this with the other team."
+    ],
+    "what_it_is_not": [
+      "Confidentiality and need-to-know structures exist for good reasons in most organizations, and information silos form naturally in any large family or workplace. Someone who simply did not think to pass something on has partitioned nothing.",
+      "A surprise being planned, where the planner is open about keeping it.",
+      "Medical or client privacy that is stated and fits the situation.",
+      "Keeping your own private matters from some relatives.",
+      "Role-based access required by law, such as patient records."
+    ],
+    "this_may_be_it_when": [
+      "When two people compare what they were told, the accounts differ in ways that matter.",
+      "The same person is the only route between the groups.",
+      "Requests for secrecy are steady and sit around the matters that would draw questions.",
+      "Asking 'who else knows?' gets evasion.",
+      "Someone who asked across groups was told to leave it."
+    ],
+    "this_may_not_be_it_when": [
+      "The reason for separation is stated and fits, such as the privacy of a medical matter or a client.",
+      "The person encourages you to share and compare what you know.",
+      "Information flows when you ask for it.",
+      "The separation follows role, like payroll versus marketing, and applies equally to everyone.",
+      "Nothing important differs between accounts when you compare them."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "People tell the most relevant details to those most affected without thinking of the others.",
+      "Privacy norms: not every relative needs every health detail.",
+      "Sparing a sick or elderly person upsetting news.",
+      "Large organizations split into silos without anyone planning it."
+    ],
+    "common_false_positives": [
+      "An estate lawyer speaking separately with each heir for legal reasons.",
+      "A manager telling each team only what it needs for its own project.",
+      "A parent sparing young children adult worries.",
+      "A friend group where news simply travels unevenly."
+    ],
+    "discernment_questions": [
+      "If I put what each person has been told side by side, do the accounts agree?",
+      "Who is the only one who knows all of it?",
+      "What happens when someone asks a question that crosses between groups?",
+      "Who is protected by this being kept apart, and has that been said?",
+      "Could I check any part of this with someone else without a penalty?"
+    ],
+    "less_concerning_if": [
+      "A reason is offered and you can check it.",
+      "You are openly encouraged to speak to anyone.",
+      "The accounts agree when you compare them side by side."
+    ],
+    "more_concerning_if": [
+      "Comparing notes brings anger or hurt, or you are told you are stirring things up.",
+      "Decisions about money, care or housing rest on pieces that no one else can verify.",
+      "The person holding the map controls access to resources or to someone vulnerable."
+    ],
+    "pattern_over_time_signs": [
+      "You find out something major through a third person by chance.",
+      "The sentence 'don't tell' recurs, with a different person named each time.",
+      "Each person describes the situation differently, and each thinks they alone know.",
+      "At a crisis the accounts converge and many people say 'I didn't know that'."
+    ],
+    "repair_check": "Repair would show up as a gathering of the separate pieces: everyone affected hears the same account, in the same room or the same message, and questions that cross groups are welcomed. A private apology to each person, one at a time, re-creates the same arrangement.",
+    "boundary_respect_check": "Notice the response to a simple question: 'Who else has been told this?' A direct answer, even a partial one, honors the question. A change of subject, or irritation that you asked, does not.",
+    "psychological_mechanism": "People judge what is normal from what they are told, and when each person's slice looks reasonable alone, nothing seems to need explaining. Doubts that would arise on seeing the whole can stay below the threshold of speaking up. Each person may also assume others know more, so they hesitate to ask, which keeps the separation going without anyone being told to stay quiet.",
+    "possible_impact_on_receiver": "A jolt comes on discovering that others were told something different, then questions about what else was kept apart. Some feel angry at relatives or colleagues drawn into the arrangement; some lose trust in group conversations. The shared sense of everyone knowing can fall away, and with it some relationships.",
+    "response_options": {
+      "soft_clarification": "Invite the pieces together without blame: 'I was told about the loan, and I think you were told about the move. Can we put what we know side by side?'",
+      "firm_boundary": "Decline to carry secrets between people: 'I'll keep your privacy, but I won't hold back information about shared money or care from the people it affects.'",
+      "disengagement": "Decline to be the keeper of the secret. Tell the person asking that you would rather not be told anything you would be asked to hide from someone it concerns.",
+      "support_seeking": "Compare notes quietly with the other people affected, such as a sibling, a colleague or a friend, and write down what each was told and when.",
+      "workplace_or_professional": "At work, ask who owns each decision and request one shared summary of budget or status that all affected teams can see. Raise gaps with a manager or a compliance contact."
+    },
+    "boundary_script": "\"I'm glad to keep your private things private. I'm not comfortable keeping something from my brother when it affects his money. Can the three of us talk about it together?\"",
+    "safety_sensitive": false,
+    "safety_note": "Separate pockets of information are most worrying when the person holding the map also controls money, care or housing for someone who depends on them, such as an older parent or a partner without their own accounts. Then the gaps can hide real harm. Gather the facts from others involved, ask the bank, doctor or care manager what you are entitled to see, and contact an adult-protection or elder-care service if someone's welfare is at risk.",
+    "misuse_warning": [
+      "Treating every confidence as compartmentalization punishes ordinary privacy, such as someone's diagnosis or a surprise being planned.",
+      "Using the label to demand that one person reveal another's private matters."
+    ],
+    "how_to_distinguish_from_related": "Lying by Omission is about what one person leaves out of an account for one listener; compartmentalization is about how pieces are divided across many listeners so they cannot be joined. Strategic Incompleteness feeds one person pieces so they keep returning, whereas here no one needs to return and the cost falls on the group's oversight. Vague Allegations hints at the whole with no detail, while each pocket here holds specific, true detail."
+  }
+}
