@@ -192,7 +192,8 @@
     "old_review_flag_safety_sensitive": true,
     "other_flags": [],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
   },
   {
    "name": "Location Tracking",

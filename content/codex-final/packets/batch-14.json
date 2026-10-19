@@ -96,7 +96,8 @@
     "old_review_flag_safety_sensitive": true,
     "other_flags": [],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "also_covers": "Financial Dependence by Design is merged in and has no entry of its own"
   },
   {
    "name": "Financial Control",

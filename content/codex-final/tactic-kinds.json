@@ -1,0 +1,2105 @@
+{
+ "how_to_read": "A reading of the 349 entries (a judgement, not a field the page has). \"names two things\" = the title joins two things with / or &. Sequences (content/playbook-data.json recipes) are separate: 109 chains of 2-11 of these tactics.",
+ "counts": {
+  "single": 322,
+  "one named process with several steps": 9,
+  "names two things": 14,
+  "single, but says it also covers another tactic": 4
+ },
+ "entries": {
+  "Gaslighting": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Countering": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Trivializing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Diverting": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Selective Memory": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Moving Goalposts": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Thought-Stopping Clichés": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Normalization": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Guilt-Tripping": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Emotional Blackmail": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Self-Harm Threats as Leverage": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pity Plays": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Martyrdom Display": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Duty Scripts": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Demand for Gratitude": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Favor Debt": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Catastrophizing as Control": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Love Bombing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Exclusive Meaning": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Conditional Love": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Hoovering": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Future Faking": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Negging": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Silent Treatment": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Isolation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Monitoring & Surveillance": {
+   "kind": "names two things",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Location Tracking": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Behavior Control": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Infantilization": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "\"I Know Best\" Paternalism": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Punishment of Boundaries": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "DARVO": {
+   "kind": "one named process with several steps",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Blame-Shifting": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Whataboutism": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Non-Apology Apology": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Denial": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Minimization": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Tone Policing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Kafka Trapping": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Contempt": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Name-Calling Disguised as Humor": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Comparative Devaluation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Emotional Invalidation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Shame Installation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Intimidation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Triangulation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Forced Teaming": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "\"We're Family\" Erasure": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Concern Trolling": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Ultimatums": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Urgency Manufacturing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Dilemma": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Sunk Cost Exploitation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Response-Time Policing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Exaggeration": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Vague Allegations": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Identity Hooking": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Conditional Worth": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Learned Helplessness": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Loyalty Binds": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Legal/Administrative Threats": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Weaponized Therapy-Speak": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Trash-Can Diagnosis": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Stalking-by-Notification": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Baiting": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Interrogation": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Financial Enmeshment": {
+   "kind": "single, but says it also covers another tactic",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": "Financial Dependence by Design is merged in and has no entry of its own"
+  },
+  "The Exception Script": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "\"You're Too Emotional\"": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Gotcha Framing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Authority": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Confidentiality as Weapon": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pressure to Sign": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Role Reversal via Therapy Language": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Equivalence": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Aftercare Control": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Clinical Tone Policing": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Conclusion from Normal Labs": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Medical Gaslighting": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Sexual Coercion": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Financial Control": {
+   "kind": "single",
+   "tier": "Detected",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Weaponized Incompetence": {
+   "kind": "single",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic Apathy": {
+   "kind": "single",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Reverse Psychology": {
+   "kind": "single",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Malicious Compliance": {
+   "kind": "single",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Moral Licensing": {
+   "kind": "single",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic Self-Deprecation / Performed Humility": {
+   "kind": "names two things",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Priming / Narrative Seeding": {
+   "kind": "names two things",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Ambiguity as Weapon": {
+   "kind": "single",
+   "tier": "Watch-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Push-Pull": {
+   "kind": "one named process with several steps",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Intermittent Reinforcement": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Breadcrumbing": {
+   "kind": "single, but says it also covers another tactic",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": "Benching also has its own entry"
+  },
+  "Trauma Bonding": {
+   "kind": "one named process with several steps",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Relief Bait": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Withholding": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Dr. Jekyll/Mr. Hyde": {
+   "kind": "one named process with several steps",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Ambient Abuse": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Ghosting-Orbiting Cycle": {
+   "kind": "one named process with several steps",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Stonewalling": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Sealioning": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Idealize-Devalue-Discard Cycle": {
+   "kind": "one named process with several steps",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Extinction Bursts": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Competitive Victimhood": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Ambient Sexual Threat": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "\"Polite Hostile\" Environments": {
+   "kind": "single",
+   "tier": "Pattern-only",
+   "only_visible_over_time": true,
+   "note": ""
+  },
+  "Self-Gaslighting Induction": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Fawning": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Identity Erosion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Self-Abandonment": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Internalized Conditioning": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Silence Installation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Approval Addiction Cultivation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Parentification": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Process Exhaustion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "HR Shielding": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pseudo-Consultation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Tokenism": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Individualization of Systemic Issues": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Diffusion of Responsibility": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Deepfakes": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "AI Voice Cloning": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Doxxing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Sock Puppets": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Fabricated Evidence": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Coordinated Reporting": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Credential-Costuming": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Identity Performances": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Social Engineering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Performative Allyship / False Solidarity": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Premature Exclusivity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Confirmation Bias Exploitation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Halo Effect Exploitation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Obligation Contracts": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Covert Contracts": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Financial Dependence by Design": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Platform Migration": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Benching": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "\"Sacred Duty\" Manipulation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Shame-as-Governance Disguised as Advice": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "PIP Weaponization": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Credit Laundering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "The \"Good Woman Program\"": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Objectification": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Dehumanization": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Overcorrection Demands": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Toxic Positivity / Weaponized Optimism": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Frame Assassination": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Credibility Theft": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Projection": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Authority Hijack": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Accountability Evasion via Diagnosis": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Identity Diminishment via Pathologizing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pseudo-Insight as Shutdown": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Spiritual Bypassing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Burden of Proof Shifting": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Paltering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Gish Gallop": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Limited Hangout": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pseudo-Profundity / Intellectual Intimidation": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Semantic Erosion / Meaning Dilution": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Dog Whistling / Coded Signaling": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Information Cascades": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Interruption Patterns": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Idea Theft in Real Time": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Gatekeeping": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Punishment by Proxy": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Weaponized Inclusion / Strategic Containment": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Controlled Opposition": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Reputation Laundering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Maternal Gatekeeping": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Echo Chamber Construction": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Stochastic Harassment Direction": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Information Laundering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Emotion Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Ritualized Exhaustion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Nonverbal Dominance": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Postural Dominance": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Spatial Invasion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Resource Sabotage": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "\"Managed Out\" Through Exhaustion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Account Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Evidence Traps": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Moral Framing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Reproductive Coercion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Negative Reinforcement Traps": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Moving-in-Silence": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Smart-Home Coercion": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Health Sabotage": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Choice Architecture Manipulation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Blackmail / Leverage Exploitation": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Willful Blindness as Complicity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Moral Outrage as Weapon": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Ghosting as Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Humiliation Rituals": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Public Exposure": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Forced Submission": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Stalking & Surveillance (Post-Separation)": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Legal Abuse (Post-Separation)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Reputation Warfare (Post-Separation)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Edited Recordings": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Account Takeover": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "SIM Swap / 2FA Interception": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Intimate Image Abuse": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Algorithmic Manipulation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Dark Patterns (AI-Adaptive)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Synthetic Persona Networks": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Context Poisoning": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Parasocial Manipulation Engineering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Immersive Manipulation (VR/AR)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "AI-Driven Social Engineering (Automated)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Weaponized AI Empathy": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Biometric Exploitation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Epistemic Coercion via AI": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "AI-Driven Narrative Hijacking": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Algorithmic Targeting of Vulnerable Populations": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pig Butchering (Long-Con Digital Fraud)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Overton Window Manipulation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Manufactured Consent": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Astroturfing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Wedge Issue Exploitation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Computational Propaganda": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Reflexive Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Normative Messaging": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Flag Operations": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Post-Truth Epistemic Manipulation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Honey Trapping": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Agent of Influence Operations": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic Deception (Denial & Deception / D&D)": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "MICE Framework Exploitation": {
+   "kind": "one named process with several steps",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "PSYOP Message Framing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic Leaking": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Cognitive Warfare": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Cyber Manipulation Operations (CMOs)": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Adversarial Machine Learning": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Milieu Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Mystical Manipulation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Demand for Purity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Sacred Science": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Doctrine Over Person": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Dispensing of Existence": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Bounded Choice": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Charismatic Authority Dependence": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Forced Confession / Self-Criticism Rituals": {
+   "kind": "names two things",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Institutional Betrayal": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Organizational Silence Engineering": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic HR Complicity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Performance Framework Manipulation": {
+   "kind": "one named process with several steps",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Algorithmic Management": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Gaslighting by Omission": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Revisionist History": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Word Salad": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Contradiction Stacking": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Circular Arguments": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Loaded Language": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Semantic Traps": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Frame Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Framing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic Ambiguity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Repetition as Truth": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Firehose of Falsehood": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Meta-Gaslighting": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "FOG": {
+   "kind": "one named process with several steps",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Emotional Hostage-Taking": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Weaponized Tears": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Obligation Installation": {
+   "kind": "single, but says it also covers another tactic",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": "Covert Contracts also has its own entry"
+  },
+  "Obligation Hooks": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Loan-Sharking Gifts": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Weaponized Generosity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Guilt Legacy": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Manufactured Intimacy": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Manufactured Destiny": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Mirroring-on-Demand": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pedestal Ploy": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "The Rescue Hook": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Premature Vulnerability": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Emotional Parasitism": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Information Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Device Access Demands": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Enforcing Trivial Demands": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Boundary Testing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Velvet Glove Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Demonstrating Omnipotence": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Forced Dependency": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Golden Bars": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Manufactured Scarcity": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Time Theft": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Deflection": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Apology Without Repair": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Forced Forgiveness": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Plausible Deniability": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Feigned Ignorance": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Victim Role Reversal": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Preemptive Accusation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Complaint Weaponization": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Counterfeit Calm": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Double Binds": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Role Reversal Traps": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Sarcasm as Weapon": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Public Humiliation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Labeling as Identity Warfare": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Rage as Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Credit Theft": {
+   "kind": "single, but says it also covers another tactic",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": "Credit Laundering also has its own entry"
+  },
+  "Sabotaging Success": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Impossible Metrics": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Setting Up to Fail": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Scapegoating": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Flying Monkeys": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Proxy Recruitment": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Smear Campaign": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Reputation Poisoning": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Silent Coalitions": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Group Consolidation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pile-Ons": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Ostracism": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Mobbing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Splitting": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Golden Child Elevation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Consensus": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Social Proof Pressure": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Performative Public Affection": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Divide and Conquer": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Foot-in-the-Door": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Door-in-the-Face": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Commitment Traps": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Anchoring": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Choice Restriction": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Emotional Flooding": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Cognitive Overload": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Rapid Topic Switching": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Crisis Manufacturing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Bait and Switch": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Graduated Compliance": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Pre-Punishment": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Lying": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Lying by Omission": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Selective Information Sharing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Strategic Incompleteness": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Forged Screenshots": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Catfishing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Half-Truth Framing": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "False Reports": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Paper-Trail Traps": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Compartmentalization": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Thought Control": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Phobia Indoctrination": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Administrative Escalation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Paper Terrorism": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Brigading": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  },
+  "Context Collapse Exploitation": {
+   "kind": "single",
+   "tier": "Reference-only",
+   "only_visible_over_time": false,
+   "note": ""
+  }
+ }
+}
