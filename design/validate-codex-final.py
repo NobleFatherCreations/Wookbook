@@ -105,9 +105,10 @@ INSTRUCT = re.compile(
 INTENT_ERROR_BRANCHES = {"detected", "pattern", "watch", "aftermath"}
 END_OK = ('.', '?', '!', '"', '”', ')', "'")
 # Words a finished sentence cannot end on. Deliberately short: "it", "that",
-# "to", "is" and "for" all end real sentences ("than you used to.").
-NEVER_LAST = {"the", "a", "an", "of", "and", "or", "but", "with", "by", "from",
-              "as", "at", "into", "their", "its", "any", "than", "which", "make"}
+# "to", "is", "for", "with", "from", "at" and "as" all end real sentences
+# ("than you used to.", "dealt with.", "as well as.").
+NEVER_LAST = {"the", "a", "an", "of", "and", "or", "but", "their", "its",
+              "than", "which", "make", "into"}
 
 
 def words(s):
@@ -227,7 +228,9 @@ FRAME_FIELDS = ["repair_check", "boundary_respect_check", "psychological_mechani
                 "possible_impact_on_receiver", "how_to_distinguish_from_related",
                 "why_this_matters", "expanded_definition", "plain_language_summary",
                 "boundary_script"]
-FRAME_MIN = 4  # entries sharing the same content trigram in one field
+FRAME_ABS = 8      # a phrase in this many entries' same field is a template at any corpus size
+FRAME_MIN = 4      # ...or in this many AND in FRAME_DENSITY of all entries seen so far
+FRAME_DENSITY = 0.30
 STOP = set("""a an the and or but if so of to in on at by for from with as is are was were be been
 being it its this that these those you your yours they them their he she his her we our i me my
 not no can could may might will would should do does did have has had than then there here what
@@ -345,8 +348,11 @@ def main():
             v = e.get(f)
             if not isinstance(v, str):
                 continue
+            n_pool = max(1, len(pool))
             hits = sorted(((ffreq[f][g], g) for g in frame_trigrams(v)
-                           if ffreq[f][g] >= FRAME_MIN), reverse=True)
+                           if ffreq[f][g] >= FRAME_ABS or
+                           (ffreq[f][g] >= FRAME_MIN and ffreq[f][g] / n_pool >= FRAME_DENSITY)),
+                          reverse=True)
             if hits:
                 shown = "; ".join(f"'{g}' x{c}" for c, g in hits[:3])
                 errs.append(f"{f}: reuses a frame other entries use ({shown}). "
