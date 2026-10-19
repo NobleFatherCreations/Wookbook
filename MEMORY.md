@@ -3177,3 +3177,36 @@ Festie Bible hand-written scripts for all 21 guides. Only `MEMORY.md` and `.giti
 (`verify-deployed`, `verify-assets`, `snapshot`) and `deploy/snapshots/` exist only in Wookbook. Books
 has its own `scripts/verify-live.mjs` and a different layout (`repoPath` instead of `localSource`),
 so they need adapting, not copying.
+
+## Update (2026-10-19) — Decoder: 32 groups merged, 349 tactics become 310; every entry being rewritten
+
+**Decision (the author, 2026-10-19):** merge every Tier 1 group from the uniqueness audit
+(`content/codex-final/TACTIC-AUDIT.md`): 32 groups, 71 entries, 39 merged away. Choices and aliases:
+`content/codex-final/tactic-merges.json`. Merged names stay searchable (they are listed in the
+canonical entry's `absorbs`), old links and saved stars map to the canonical entry, and every
+sequence, related-tactic link and "Narrow it down" list is mapped through the aliases.
+Tier 2 (overlapping but distinct) and Tier 3 (combinations, effects) were left as they are.
+
+**The whole codex is being rewritten, not patched:** every prose field of every entry, written for that
+tactic, with no sentence shared between entries. The bar is measurable:
+`design/codex-boilerplate.py` must report clean and `design/validate-codex-final.py --all --complete`
+must show all 310 present once, none missing, none written twice.
+Pipeline: `design/build-codex-packets.py` (merge-aware planner; writer packets in
+`content/codex-final/packets/`), writers produce `batch-NN.json` / `merged-NN.json`, the validator gates
+each file (shape, shared sentences, repeated frames and endings, diagnosis/intent wording, how-to wording on
+the 51 risk entries, no "announce you are leaving" on safety-sensitive entries, the clinical review's
+required safety flags and cut-off definitions), then `design/apply-codex-final.py` writes the page and
+`design/patch-decoder-v9-page.py` adds the explicit safety flag, the one-time safeguards page
+(`#/about`), alias handling and the v9 note. Entries written for merged members before the decision are
+kept in `content/codex-final/superseded/` as source text.
+
+**Lessons recorded:** (1) a checker that passes sentences is not enough; writers reuse frames, so the
+validator also checks repeated three-word phrases and field endings, scaled to corpus size (8+ uses, or
+4+ and 30% of entries seen). (2) Writers skipped the "reread everything" step until it was made
+mandatory and asked for confirmation; two entries needed real safety fixes after that (Trauma Bonding told
+the reader to announce leaving). (3) A writer batch died on the session usage limit (resets 02:20 UTC):
+work was saved on disk; follow the dispatch rule and resume one at a time. (4) The stock sentence
+"Call emergency services if you are in immediate danger." had spread to three entries; it is now said once
+on the safeguards page.
+**Not deployed.** The live Decoder is v7. The v8 file (typo fix) is committed but also not live; v9 will
+include it. A deploy needs the author's approval (the last attempt was blocked by the permission check).

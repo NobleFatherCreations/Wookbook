@@ -91,6 +91,59 @@ def patch(html):
     assert html.count(hint) == 1, "entry tip line changed"
     html = html.replace(hint,
         "'<p class=\"small\" style=\"margin:14px 0 0\">New here? <a href=\"#/about\" onclick=\"event.preventDefault();nav(\\'about\\')\">How to use these entries safely</a>.</p>'+\n    " + hint)
+
+    # ---- merged tactics: old links, saved items and searches keep working ----
+    old = "function viewEntry(slug){\n  const name=NAME_BY_SLUG[slug];\n  const e=name&&COMP_BY_NAME[name];"
+    assert html.count(old) == 1, "viewEntry head changed"
+    html = html.replace(old,
+        "/* A merged-away tactic's old address resolves to the entry that now covers it. */\n"
+        "function aliasToName(slug){ for(const a in ALIASES){ if(slugify(a)===slug) return ALIASES[a]; } return null; }\n"
+        "function viewEntry(slug){\n  const name=NAME_BY_SLUG[slug]||aliasToName(slug);\n"
+        "  if(name&&NAME_BY_SLUG[slug]!==name&&SLUG_BY_NAME[name]){ try{ history.replaceState(null,\"\",\"#/entry/\"+SLUG_BY_NAME[name]); }catch(e){} }\n"
+        "  const e=name&&COMP_BY_NAME[name];")
+
+    old = ('return norm(e.name+" "+e.cat+" "+(e.what||"")+" "+(c?c.plain_language_summary+" "+c.short_definition+" "'
+           '+(c.what_it_sounds_like||[]).join(" "):""));')
+    assert html.count(old) == 1, "hayFor changed"
+    html = html.replace(old,
+        'return norm(e.name+" "+((c&&c.absorbs)||[]).join(" ")+" "+e.cat+" "+(e.what||"")+" "+(c?c.plain_language_summary+" "+c.short_definition+" "'
+        '+(c.what_it_sounds_like||[]).join(" "):""));')
+
+    old = ("const nm=norm(e.name);\n        return {e, rank: nm===n?0 : nm.startsWith(n)?1 : nm.includes(n)?2 : saidFor(e).includes(n)?3 : 4};")
+    assert html.count(old) == 1, "search ranking changed"
+    html = html.replace(old,
+        "/* the entry's own name or any name folded into it counts as a name match */\n"
+        "        const nms=[norm(e.name)].concat(((CODEX_BY_NAME[e.name]||{}).absorbs||[]).map(norm));\n"
+        "        return {e, rank: nms.some(x=>x===n)?0 : nms.some(x=>x.startsWith(n))?1 : nms.some(x=>x.includes(n))?2 : saidFor(e).includes(n)?3 : 4};")
+
+    old = "const ALPHA=[...COMPENDIUM].sort((a,b)=>a.name.localeCompare(b.name));"
+    assert html.count(old) == 1, "ALPHA line changed"
+    html = html.replace(old, old + """
+/* Stars and trail saved before the merge may name a tactic that is now an alias. Map them to the
+   entry that covers it, drop duplicates and anything unknown, once, at load. */
+(function normaliseSaved(){ try{
+  const canon=n=>ALIASES[n]||n;
+  const tr=store.get("trail",[]);
+  if(Array.isArray(tr)){ const seen=new Set(),out=[];
+    tr.forEach(t=>{ if(!t||typeof t.name!=="string") return; const c=canon(t.name);
+      if(!COMP_BY_NAME[c]||seen.has(c)) return; seen.add(c); out.push(Object.assign({},t,{name:c})); });
+    store.set("trail",out); }
+  const st=store.get("starred",[]);
+  if(Array.isArray(st)){ const seen=new Set(),out=[];
+    st.forEach(n=>{ if(typeof n!=="string") return; const c=canon(n); if(!COMP_BY_NAME[c]||seen.has(c)) return; seen.add(c); out.push(c); });
+    store.set("starred",out); }
+}catch(e){} })();""")
+
+    # ---- on-page version note ----
+    old = "v8 &mdash; 2026-10-18"
+    assert html.count(old) == 1, "version badge changed"
+    html = html.replace(old, "v9 &mdash; 2026-10-19")
+    old = "'<ul class=\"updates-list\">'+\n        "
+    assert html.count(old) == 1, "updates list changed"
+    html = html.replace(old, old +
+        "'<li><strong>Every entry has been rewritten.</strong> Each tactic now has its own definition, examples, look-alikes, questions, a boundary script and a safety note, written for that tactic and nothing else. The shared boilerplate is gone.</li>'+\n        "
+        "'<li><strong>Duplicates merged.</strong> Groups of tactics that turned out to be the same thing under different names are now one entry each, so the guide has fewer, clearer entries. Search for any old name, or use an old link, and you land on the entry that covers it.</li>'+\n        "
+        "'<li><strong>One page for the warnings.</strong> What applies to every entry, such as what a label is not, is on a single page, &ldquo;How to use this safely&rdquo;, instead of being repeated on every entry.</li>'+\n        ")
     return html
 
 
