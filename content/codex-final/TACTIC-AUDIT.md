@@ -461,3 +461,44 @@ If each group became one entry the count would be 310.
 - Guilt-Tripping = Obligation Hooks
 - Nonverbal Dominance = Postural Dominance
 - Identity Erosion = Self-Abandonment  [written: Identity Erosion]
+
+## Tier 2: overlapping, but each can be defended as its own tactic (the difference is context, scale or mechanism)
+
+- Tone Policing / Clinical Tone Policing: the second is the same move used by a clinician or institution.
+- Pile-Ons / Brigading / Mobbing: crowd criticism / the same online / the same in a workplace.
+- Ostracism / Silent Coalitions: open exclusion / covertly coordinated exclusion.
+- Credit Theft / Idea Theft in Real Time / Credit Laundering: taking credit / doing it live in a meeting / erasing authorship through a chain of attribution.
+- Sock Puppets / Synthetic Persona Networks / Astroturfing: one person's fake accounts / AI-generated networks / fake grassroots.
+- Deepfakes / AI Voice Cloning / AI-Driven Social Engineering (Automated): video-and-audio fakes / voice only / automated scam campaigns.
+- Monitoring & Surveillance / Location Tracking / Device Access Demands / Stalking-by-Notification: the general demand / location / devices and passwords / using online activity as evidence.
+- Gatekeeping / Maternal Gatekeeping.
+- Scapegoating / Individualization of Systemic Issues / Accountability Evasion via Diagnosis: blaming one person / calling a systemic fault personal / replacing "we failed you" with a diagnosis.
+- Medical Gaslighting / False Conclusion from Normal Labs.
+- Catfishing / Identity Performances / Credential-Costuming / Social Engineering.
+- Reputation Laundering / Repetition as Truth / Information Laundering / Information Cascades.
+- Edited Recordings / Context Collapse Exploitation / Evidence Traps / Paper-Trail Traps.
+- Infantilization / "I Know Best" Paternalism / Learned Helplessness.
+- Duty Scripts / "Sacred Duty" Manipulation / "We're Family" Erasure / Guilt Legacy.
+- Pity Plays / Weaponized Tears / Martyrdom Display / The Rescue Hook / Competitive Victimhood.
+- Paper Terrorism / Legal Abuse (Post-Separation) / Process Exhaustion / Administrative Escalation.
+- Forced Submission / Forced Confession / Self-Criticism Rituals / Humiliation Rituals.
+- Golden Bars / Velvet Glove Control.
+- Doctrine Over Person / Sacred Science / Milieu Control / Thought Control.
+- Gish Gallop / Firehose of Falsehood / Cognitive Overload.
+- Love Bombing / Emotional Flooding / Premature Exclusivity.
+- Exclusive Meaning (close to Pedestal Ploy and The Exception Script, kept separate: "only I understand you").
+- Emotional Invalidation / "You're Too Emotional" / Credibility Theft.
+- Conditional Worth (close to Conditional Love) / Emotional Hostage-Taking.
+- Impossible Metrics group: Resource Sabotage, Sabotaging Success, PIP Weaponization, Performance Framework Manipulation.
+- Gaslighting / Countering / Selective Memory / Revisionist History / Meta-Gaslighting / Self-Gaslighting Induction: facets of one parent idea, each with its own angle.
+- Ghosting as Control / Ghosting-Orbiting Cycle (kept apart from the silence group because the person disappears or watches).
+- Behavior Control / Enforcing Trivial Demands.
+- Manufactured Scarcity (close to Urgency Manufacturing, kept separate: "only chance" rather than "decide now").
+- Computational Propaganda / AI-Driven Narrative Hijacking / Post-Truth Epistemic Manipulation / Epistemic Coercion via AI.
+
+## Tier 3: not a single behavior someone does
+
+- Combinations of other tactics: FOG (fear + obligation + guilt), DARVO (four steps), Idealize-Devalue-Discard Cycle (three phases), Trauma Bonding, Push-Pull, MICE Framework Exploitation.
+- Effects on the person, not actions by someone else (the "aftermath" entries): Self-Gaslighting Induction, Fawning, Identity Erosion, Self-Abandonment, Internalized Conditioning, Silence Installation, Approval Addiction Cultivation, Parentification, Pre-Punishment.
+- "Absorbs" markers: all four "absorbed" tactics still have their own entry (Financial Dependence by Design, Benching, Covert Contracts, Credit Laundering), so the absorbing is not reflected in the list.
+- Two entries whose names join two things are in content/codex-final/tactic-kinds.json.
