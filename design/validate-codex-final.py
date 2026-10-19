@@ -210,7 +210,9 @@ def check_text(name, e, base, risk, errs, warns):
             if re.search(pat, s, re.I):
                 errs.append(f"{f}: scaffolding/placeholder language ({pat}): {s[:70]!r}")
                 break
-        if DIAGNOSIS.search(s) and not DIAGNOSIS.search(name):
+        # Quoted example lines may contain the words (that is what this tactic sounds like
+        # when someone says it); everywhere else, labelling a person is a verdict.
+        if DIAGNOSIS.search(s) and not DIAGNOSIS.search(name) and f != "what_it_sounds_like":
             errs.append(f"{f}: diagnosis or character label: {DIAGNOSIS.search(s).group(0)!r}")
         for sent in bp.sentences(s):
             if INTENT.search(sent) and not NEGATION.search(sent):
