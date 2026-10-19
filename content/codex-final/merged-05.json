@@ -1,0 +1,395 @@
+{
+  "Account Takeover": {
+    "short_definition": "Taking over someone's email, social media, banking or cloud accounts so they are watched, spoken for, cut off or locked out of their own online life.",
+    "core_meaning": "Taking over someone's email, social media, banking or cloud accounts so they are watched, spoken for, cut off or locked out of their own online life.",
+    "expanded_definition": "Account takeover is control of another person's digital accounts that the account holder did not agree to: changed passwords, redirected recovery details, messages read or sent in their name, access handed back only on conditions. Account Control is just another label for this, not a separate thing. It can start as casual shared access and harden into sole control. One reset after a forgotten password means little. It becomes a pattern when access changes without your knowledge and your ways back in are blocked.",
+    "plain_language_summary": "Someone gets control of your email, social media or bank logins, so they can read your messages, write as you, or keep you out, and getting back in depends on them.",
+    "why_this_matters": "Being pushed out of your own accounts costs more than access. Messages can go out under your name to people who have every reason to believe them, and everyday tasks like paying a bill or reaching a doctor start to need permission.",
+    "what_it_is": [
+      "Passwords, recovery email addresses or phone numbers changed by someone else, so the account holder cannot get back in.",
+      "Reading, deleting or sending messages from an account while the owner is unaware, or aware and unable to stop it.",
+      "A step beyond ordinary shared access: the person once had independent use of the account and now needs someone's help to open it.",
+      "Access used as leverage, handed back only after an apology, an agreement or a favour.",
+      "Covers email, banking, social media, phone accounts and cloud storage where photos, documents and contacts are kept."
+    ],
+    "what_it_sounds_like": [
+      "Your usual password stops working and the reset code goes to a phone number you do not recognise.",
+      "Friends ask about a post or message you never wrote, and it reads as cruel or out of character.",
+      "You are told: 'I changed it because you can't be trusted with it. I'll give it back when we've sorted this out.'",
+      "Your bank statements stop arriving, and the contact address on the account has been changed.",
+      "Sent mail you did not send, or messages marked as read before you open them.",
+      "'Why do you need your email? Ask me and I'll check it for you.'",
+      "A recovery attempt is cancelled within minutes by someone else approving a new device."
+    ],
+    "what_it_is_not": [
+      "Forgotten passwords, expired codes and lost phones. A locked account on its own is a common technical problem.",
+      "Platform outages, bugs and automatic security locks that follow an unusual login, which affect many users at once.",
+      "A parent managing a young child's accounts openly, with access that eases as the child grows.",
+      "An authorised family member resetting a shared account, saying so, and handing it back.",
+      "A hacker or scammer with no personal link to you, which is a crime of a different kind from control inside a relationship.",
+      "Mutual agreement to share a streaming login or family calendar that either person can leave."
+    ],
+    "this_may_be_it_when": [
+      "You lost access without changing anything yourself, and recovery options point to details that are not yours.",
+      "Content appears in your accounts that you did not create.",
+      "The other person knows things only your private messages would have shown them.",
+      "Access comes back only after you concede something unrelated to the account.",
+      "You can no longer pay, apply or contact anyone without going through them."
+    ],
+    "this_may_not_be_it_when": [
+      "Many people report the same lockout at the same time, and the provider confirms a fault.",
+      "The change was announced beforehand, you agreed to it, and you can reverse it.",
+      "A recovery code or reset email arrives at an address you set up yourself.",
+      "Your own old password was reused and leaked, and the provider's alert shows an unknown login from abroad.",
+      "Access is returned straight away, with an explanation you can check, and nothing is held back."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "A forgotten password, a new phone or a failed two-step code can lock anyone out.",
+      "A relative who sets up a shared account may reset it without realising you wanted to be told.",
+      "Companies sometimes freeze accounts after suspicious activity, which looks like a takeover but comes from the provider."
+    ],
+    "common_false_positives": [
+      "A genuinely forgotten password fixed through the provider's recovery steps.",
+      "A shared household account reset by another authorised user who tells you.",
+      "A provider-side security problem that hits many users, unconnected to anyone you know."
+    ],
+    "discernment_questions": [
+      "Did you lose access suddenly, without starting any change yourself?",
+      "Do the recovery email and phone number on the account still belong to you?",
+      "Does anyone close to you gain from you not having this account?",
+      "Does anything appear from your account that you did not write or send?",
+      "Is getting back in described as something you must earn?",
+      "Could you reach this account independently on a device nobody else touches?"
+    ],
+    "less_concerning_if": [
+      "The lockout has an explanation from the provider that you can verify.",
+      "Anyone who held your login before gives it back without conditions.",
+      "You can open every account yourself, on your own device, whenever you choose."
+    ],
+    "more_concerning_if": [
+      "Recovery attempts keep being blocked or intercepted by someone with your details.",
+      "Messages are sent in your name to people close to you, damaging a friendship, a job or a family tie.",
+      "Control of these accounts comes with checking where you are, who you speak to, or how you spend money."
+    ],
+    "pattern_over_time_signs": [
+      "Your list of accounts that only the other person can open grows, from one streaming login to email, then bank.",
+      "You copy important documents to a place nobody else can reach, because anything stored in one account may vanish.",
+      "People you used to message say they have not heard from you, or heard strange things.",
+      "Each time access comes back, it arrives with a new term attached."
+    ],
+    "repair_check": "Look at what happens to the logins themselves. Repair means every password and recovery detail returned to you with nothing attached, an account history you can read, and no new lockout later. An apology while they still hold the keys has fixed nothing.",
+    "boundary_respect_check": "Ask yourself whether you can now open each account yourself, today, on a device you control. If the only route is still through them, or a request to be left alone is followed by new changes, the request has not been respected.",
+    "psychological_mechanism": "Accounts hold a person's contacts, money, history and voice, so losing them tends to feel like losing the ability to act. Control through logins works quietly because each step looks small and administrative, and because getting access back turns into a favour to be asked for, which can shift who seems to be in charge of ordinary life.",
+    "possible_impact_on_receiver": "People describe panic at being unable to reach their own contacts or money, shame about messages sent in their name, and a constant sense of being watched. Some stop trusting every device or app. Some say the practical problems, such as missing a work email or a bill, hurt as much as the intrusion.",
+    "response_options": {
+      "soft_clarification": "Ask a plain question about the change: 'My login doesn't work and the recovery number isn't mine. Do you know why?' Then see whether the answer is specific and whether it is fixed.",
+      "firm_boundary": "If it feels safe, ask once for your logins and recovery details back with nothing attached. If you are unsure how they would react, skip this step and use the private options below.",
+      "disengagement": "Do not argue over each message. Use a trusted device, such as a library computer or a friend's phone, to check what you can still reach and begin setting up new accounts.",
+      "support_seeking": "Tell a trusted person or a domestic abuse or tech safety advocate what you have seen, and write down dates, screenshots of login alerts and unfamiliar devices before anything changes.",
+      "workplace_or_professional": "If a work account is involved, report it to your IT or security team at once, and ask your bank or phone company to put a block on changes without extra verification."
+    },
+    "boundary_script": "\"I'm having trouble getting into my own accounts, and I want to sort it out with you. Can we go through what changed and when, and what I need to do to have the logins back the way they were?\"",
+    "safety_sensitive": true,
+    "safety_note": "Losing control of accounts can go with monitoring, isolation, threats or control of money. Changing passwords or removing a device can alert the person to what you are doing. Work out your next step on a device they cannot see, with a domestic abuse advocate or a tech safety service, before you change anything on the compromised account.",
+    "misuse_warning": [
+      "A locked or hacked account does not show that someone close to you did it. Look at the provider's login history and recovery details before suspecting a person.",
+      "Accusing a partner or relative of taking over your accounts because of one failed login can damage trust over a fault that belongs to the platform."
+    ],
+    "how_to_distinguish_from_related": "Stalking & Surveillance (Post-Separation) tracks your movements and contacts after a break-up and need not touch your accounts at all, while account takeover works through your own logins, recovery details and the messages stored there. Resource Sabotage removes things you need to succeed, such as tools or funding, and blames you for the failure. Here the thing removed is your access and your own voice."
+  },
+  "Emotional Blackmail": {
+    "short_definition": "Making love, closeness or the relationship itself depend on doing what someone wants, so that saying no feels like risking the bond.",
+    "core_meaning": "Making love, closeness or the relationship itself depend on doing what someone wants, so that saying no feels like risking the bond.",
+    "expanded_definition": "Emotional blackmail ties a request to the relationship: do this, or the closeness, affection or the relationship ends, or something worse follows. Conditional Love goes by a different name but describes this very pattern; it is not a distinct tactic. The condition can be a threat to leave, an exposure, a cold withdrawal or a self-harm warning, or the quiet kind where warmth rises and falls with your compliance. One angry line in a bad fight means little. A pattern shows when affection is tied to a specific yes, again and again.",
+    "plain_language_summary": "Someone makes their love, their company or their goodwill depend on you giving in, so saying no feels like putting the whole relationship at risk.",
+    "why_this_matters": "When affection is held hostage, a choice made under threat is no longer a free one. You may give in to keep the bond, then lose track of what you wanted, and learn to scan for the other person's mood before you speak.",
+    "what_it_is": [
+      "Linking a specific request to what happens to the bond: loving, staying, speaking, or being kind.",
+      "Threat of loss or exposure: 'Leave, and everyone will know what you did.'",
+      "Quiet versions with no threat spoken at all, where warmth is plentiful after yes and thin after no.",
+      "Found between partners, between parents and children of any age, among friends, and with bosses who go cold on dissent.",
+      "A consequence aimed at your choice, rather than a feeling shared about it."
+    ],
+    "what_it_sounds_like": [
+      "If you really loved me, you'd stay.",
+      "Leave, and everyone will know what you did.",
+      "Do it, or don't bother coming back.",
+      "I could love you so much more if you'd just lose the attitude.",
+      "Be sweet like before and we'll be fine.",
+      "Prove you love me by dropping that friend.",
+      "When you do it my way, we're great. Why can't it always be like that?",
+      "You'll be sorry if you go through with this."
+    ],
+    "what_it_is_not": [
+      "A real boundary: 'I can't stay in a relationship where lying keeps happening' states what the speaker will do, not a price for your compliance.",
+      "Honest hurt about a decision, said once and leaving the choice with you: 'I'm sad about this, and it's your call.'",
+      "A heated line said in the middle of a fight and taken back soon after, with warmth continuing.",
+      "A parent enforcing a rule and still showing the child affection.",
+      "A person asking for time apart after being hurt, who says so and comes back whether or not you give in.",
+      "A reasonable expectation such as honesty, where stepping back is protection and not a bargain."
+    ],
+    "this_may_be_it_when": [
+      "The condition names a specific act: stay, drop a friend, sign, apologise.",
+      "Affection returns quickly and fully after you comply.",
+      "Declining is met with silence, cold distance or a threat aimed at what you value, not an honest 'no' back.",
+      "Your agreeing is described as proof of love, and declining as proof of the opposite.",
+      "You have begun deciding things in advance to keep the peace."
+    ],
+    "this_may_not_be_it_when": [
+      "They say they are upset and also say they are staying, and mean it.",
+      "The hard line they set is about their own conduct, and they apply it to themselves too.",
+      "A threat was said once, in the worst minute of a fight, and withdrawn without being asked.",
+      "You say no and the relationship carries on, perhaps after a difficult talk.",
+      "The request has a real reason, such as your safety or a shared bill."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Fear of losing someone can come out clumsily as 'I don't know what I'd do without you' with no wish to compel anything.",
+      "A frightened or hurt person may say extreme things they do not mean and regret straight away.",
+      "Couples sometimes state real dealbreakers early, such as wanting children, which is information and not leverage."
+    ],
+    "common_false_positives": [
+      "A friend annoyed that you cancelled three times who says so and stays your friend.",
+      "A partner stating a dealbreaker once, calmly, and leaving the decision to you.",
+      "Someone grieving a possible loss who describes how much it hurts without asking you to change.",
+      "A parent firm about homework who is affectionate at bedtime."
+    ],
+    "discernment_questions": [
+      "If I said no, would the relationship be at risk, or only the mood for a while?",
+      "Is the condition spoken, or only felt in how warmth changes?",
+      "Is a specific act being named as the price of staying close?",
+      "Do I decide things in advance to avoid a withdrawal?",
+      "Does the same standard apply to them?"
+    ],
+    "less_concerning_if": [
+      "Disappointment is voiced, the decision stands, and warmth continues.",
+      "The expectations placed on you are ones they hold for themselves.",
+      "When you say no, the next conversation is ordinary and nothing is held back."
+    ],
+    "more_concerning_if": [
+      "The threat involves exposing you, hurting themselves, or taking away money, housing or children.",
+      "The conditions grow to cover friends, clothes, work or where you go.",
+      "Other people are told you are cold or cruel whenever you refuse."
+    ],
+    "pattern_over_time_signs": [
+      "The list of things you no longer say or do grows quietly.",
+      "You rehearse requests and apologies before raising anything.",
+      "Good days follow compliance, so you read warmth as a grade.",
+      "People who knew you earlier say you argued more, or laughed more, in the past."
+    ],
+    "repair_check": "Look for warmth that stops rising and falling with your answers. They disagree with you without a chill, accept a no without a penalty, and hold the same line a month later. A big loving gesture straight after you gave in only restarts the cycle.",
+    "boundary_respect_check": "After you decline once, does the closeness come back by itself in a day or two, or does it wait for your apology? The pause itself is ordinary. What matters is whether anything is still being withheld until you reverse.",
+    "psychological_mechanism": "A wish to stay connected is one of the strongest pulls most people have, so tying that connection to a yes can make declining feel like a danger. When closeness comes and goes with compliance, behaviour can adjust quickly to protect it, and a person may start to treat their own preferences as a risk to the bond.",
+    "possible_impact_on_receiver": "People describe walking on eggshells, becoming expert at reading moods, and feeling guilty for having needs. Some say they could not tell whether they were loved or only well managed. After threats of exposure or loss, people describe dread and a habit of rehearsing everything they say.",
+    "response_options": {
+      "soft_clarification": "Name the link without blame: 'It sounds like my answer decides whether we're okay. I'd like us to be able to disagree and still be close.'",
+      "firm_boundary": "Say what the condition does to you: 'When my answer is tied to whether we stay together, I can't tell what I actually think. I want to answer without that attached.'",
+      "disengagement": "When the chill or threat starts, do not chase it. Keep your own plans for the evening and pick the subject up again when both of you are calmer, or in writing.",
+      "support_seeking": "Describe two or three specific episodes to a counsellor or friend who knows both of you, and ask whether the link between your choices and their warmth looks as clear to them as it does to you.",
+      "workplace_or_professional": "If a boss rewards agreement and goes cold on dissent, confine feedback to work content in writing, keep dated notes, and use a mentor outside the reporting line."
+    },
+    "boundary_script": "\"I care about you, and I want to think about this properly, which I can't do while our relationship feels like it depends on my answer. Can we stop here and come back to it tomorrow?\"",
+    "safety_sensitive": true,
+    "safety_note": "Watch for threats to hurt themselves, to expose you, to take children, money or housing, or fear of what follows if you refuse. Those turn a painful pattern into a safety matter, and even asking for a pause could raise the danger. If any of that is present, call a domestic abuse advocate or crisis line first, from a phone they cannot check, and let them help you plan any change.",
+    "misuse_warning": [
+      "Every relationship has expectations, and an honest limit such as 'I need faithfulness' is not blackmail. The label fits a condition used to force a particular answer.",
+      "Calling someone's pain at a possible loss 'blackmail' can dismiss real grief and cut off an honest conversation."
+    ],
+    "how_to_distinguish_from_related": "Guilt-Tripping works on your conscience, telling you refusal is morally wrong, and does not put the relationship itself on the line. Self-Harm Threats as Leverage makes the stake the speaker's own safety, while emotional blackmail can name any loss at all. Silent Treatment goes quiet to force a reply, and it can be one delivery method for the withdrawal, but needs no tie to a specific demand."
+  },
+  "Guilt-Tripping": {
+    "short_definition": "Using guilt about past help, sacrifice or hurt feelings to make saying no feel like a moral failing.",
+    "core_meaning": "Using guilt about past help, sacrifice or hurt feelings to make saying no feel like a moral failing.",
+    "expanded_definition": "Guilt-tripping turns your conscience against your own decision. The pressure comes from reminders of what was given, what it cost, or how hurt someone is, so that refusing feels like a debt unpaid. Obligation Hooks is what some people call this when the sense of owing is vague and ever-present rather than tied to one favour; it is not a different tactic. One sigh and one 'after all I've done' means little. A pattern shows when the reminder arrives whenever you decline, and the specifics fade.",
+    "plain_language_summary": "Someone reminds you of what they have done, given up or feel, so that saying no seems selfish or cruel, even when your answer was reasonable.",
+    "why_this_matters": "Guilt that is attached to ordinary refusals makes your own limits feel wrong. Over time you may agree to things you do not want to avoid the sting, and stop being able to tell real obligations from pressure.",
+    "what_it_is": [
+      "Reminders of past sacrifice or help brought up to settle a current, unrelated request.",
+      "A general, undefined sense of owing, where no single gift or favour can be pointed to but any refusal still feels wrong.",
+      "Hurt feelings presented as proof you did something wrong by deciding as you did.",
+      "Often delivered quietly, as sadness or a sigh, so that anger is not needed for it to work.",
+      "Found in families, partnerships, friendships, volunteer groups and workplaces that lean on loyalty."
+    ],
+    "what_it_sounds_like": [
+      "After everything I've done for you.",
+      "I never ask you for anything.",
+      "I sacrificed everything for you kids.",
+      "I guess I just don't matter to you any more.",
+      "If you really cared about me, you would.",
+      "How could you do this to me?",
+      "You owe me.",
+      "No, it's fine. Don't worry about me. I'll manage on my own."
+    ],
+    "what_it_is_not": [
+      "Honest disappointment said once, with the decision left to you: 'I'm sad you can't come, and I understand.'",
+      "Real reciprocity in a long relationship, where each of you has given and received and both feel it.",
+      "Telling someone how their choice affected you, once, as information and not a lever.",
+      "A person who feels guilty easily on their own, with nobody applying pressure.",
+      "Cultural norms of family duty that are mutual, openly discussed and open to negotiation.",
+      "A direct request for the favour to be returned that accepts a 'no' without a penalty."
+    ],
+    "this_may_be_it_when": [
+      "Past help is brought up only when you refuse, and never otherwise.",
+      "The reminder is about something unrelated to the request being made.",
+      "The sense of owing cannot be traced to anything you could list.",
+      "Declining is followed by hurt, sighs or withdrawal that fade as soon as you agree.",
+      "The same lines come out every time, whatever the request."
+    ],
+    "this_may_not_be_it_when": [
+      "They state the disappointment once and then accept your answer.",
+      "A fair accounting of give and take shows real debt running both ways, and they acknowledge your side of it.",
+      "They ask you to help with something that truly cannot be done without you, and say what is at stake.",
+      "Your guilt shows up even when nobody has said or implied anything.",
+      "They thank you for past help without attaching it to a request."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Someone who has really given up a lot may be hurt, and speak about it without wanting to coerce.",
+      "A person who is anxious about being left may say 'you never have time for me' as an awkward request for contact.",
+      "Gratitude in a long relationship can feel like obligation without anyone installing it."
+    ],
+    "common_false_positives": [
+      "A parent saying once that they were sad you missed the family event.",
+      "A friend who says they felt let down, then asks what could work next time.",
+      "A relationship with a long record of giving in both directions where each remembers it kindly.",
+      "Your own tendency to feel guilty, which would be there with other people too."
+    ],
+    "discernment_questions": [
+      "Does the disappointment leave my decision standing, or work to reverse it?",
+      "Is 'after everything I've done' tied to the present request or just a general reminder?",
+      "Can I list what each of us has actually given?",
+      "Does guilt show up with this person even when I have declined something small?",
+      "Does the guilt vanish as soon as I agree?"
+    ],
+    "less_concerning_if": [
+      "Hurt is voiced once and your answer is then respected.",
+      "A fair look at give and take shows real reciprocity both ways.",
+      "You feel free to say no and the relationship carries on afterwards."
+    ],
+    "more_concerning_if": [
+      "Past help is cited more and more often, and the debts it covers keep growing.",
+      "Refusing brings anger or withdrawal over a period of days.",
+      "Other people are told you are ungrateful or selfish when you decline."
+    ],
+    "pattern_over_time_signs": [
+      "You say yes before you have thought about whether you want to.",
+      "You keep your own news small, so they have less to feel excluded from.",
+      "You feel a rush of guilt at a refusal that others in your position would not feel.",
+      "You apologise first, even when you cannot say what for."
+    ],
+    "repair_check": "In this tactic, repair is a refusal that no longer costs you. They accept a no with a 'that's fine, I'll sort something out', and do not bring up old favours as leverage. A gift or warm gesture straight after the guilt, followed by the same line next month, is not it.",
+    "boundary_respect_check": "Watch what happens the next time you say no to something small. If they take it in stride, even with a flicker of sadness, your limit is being respected. If the reminder of what you owe returns, the guilt is still doing the work of the request.",
+    "psychological_mechanism": "Most people want to be fair and to repay kindness. Pressure that links that wish to every refusal can make a no feel like cheating a creditor. A vague, ever-present sense of owing is hard to argue with because there is no specific claim to check, so the only way to ease the discomfort tends to be to comply.",
+    "possible_impact_on_receiver": "People describe chronic guilt, difficulty saying no, and a belief that their own needs are selfish. Some keep a mental ledger of who owes what and feel they can never finish paying it. Others describe relief on realising that saying no had a cost they were never told about, and anger at how long it went unseen.",
+    "response_options": {
+      "soft_clarification": "Acknowledge the feeling without taking on the debt: 'I can hear you're hurt, and I'm still not able to do that. Can we find something that works for both of us?'",
+      "firm_boundary": "Hold the answer and decline the ledger: 'I appreciate what you've done, and my answer is still no. Past help doesn't mean I can't say it.'",
+      "disengagement": "When the list of past sacrifices begins, say you have heard it and step out of the conversation. Do not argue the accounts line by line.",
+      "support_seeking": "Write out what each of you has given and ask a friend outside the family whether the balance looks the way you have been told it does.",
+      "workplace_or_professional": "If a manager cites past loyalty to get unpaid extra work, ask for the request and its hours in writing, and keep a dated record of what has been agreed."
+    },
+    "boundary_script": "\"When I say no and the answer is a list of what you've done, I start to feel I can't decide anything for myself. I am grateful, and the answer is still no.\"",
+    "safety_sensitive": false,
+    "safety_note": "On its own, guilt pressure is painful but not a physical danger. It matters more when you depend on the person for housing or income, or when it comes with threats or anger after refusal. If so, talk to a counsellor or advocate before you push back, and keep the plan to yourself until it is ready.",
+    "misuse_warning": [
+      "Hurt feelings are not always guilt-tripping. People may say how a decision affected them, and calling that manipulation can silence an honest request.",
+      "Using the label on someone who is grieving or struggling can turn a cry for contact into an accusation."
+    ],
+    "how_to_distinguish_from_related": "Martyrdom Display advertises sacrifice to build obligation and need not make any request, whereas guilt-tripping uses it to push against a specific refusal. Demand for Gratitude asks for thanks as payment for help given, and Duty Scripts invoke role expectations such as 'a good daughter would'. Guilt-tripping works through your sense of owing and does not need a role."
+  },
+  "Weaponized Generosity": {
+    "short_definition": "Giving gifts, favours or help in a way that leaves the receiver in debt, so the giving can be turned into leverage for a later request.",
+    "core_meaning": "Giving gifts, favours or help in a way that leaves the receiver in debt, so the giving can be turned into leverage for a later request.",
+    "expanded_definition": "Weaponized generosity is giving that later works as a debt. A gift, favour or loan arrives, often unasked and sometimes in front of others, and is later cited as the reason you should say yes to something else. Loan-Sharking Gifts is a second name for this, with nothing separate about it. The kindness looks like honest kindness at the moment it is given. A pattern shows afterwards, when the gift is invoked for a separate demand and warmth drops when you decline.",
+    "plain_language_summary": "Someone does you a favour or gives you something, and later uses it as a reason you must say yes to something else, and treats a no as ingratitude.",
+    "why_this_matters": "Accepting a kindness can turn out to have been entering a deal whose price is set later, by someone else, for something unrelated. Witnesses who saw only the giving also raise the cost of saying no.",
+    "what_it_is": [
+      "Gifts, favours, loans or help that arrive unasked and are remembered in detail by the giver.",
+      "Generosity timed or staged so that others see it, making a later refusal look ungrateful.",
+      "A bill presented in a different currency: a gift of money repaid with loyalty, a vote or silence.",
+      "Giving that increases before a request the giver expects you may refuse, and stops when you decline.",
+      "Found in families, workplaces, neighbourhoods, friendships and between landlords and tenants."
+    ],
+    "what_it_sounds_like": [
+      "I did that for you, so the least you can do is this.",
+      "After everything I've done for you, you can't spare one weekend?",
+      "Remember who paid for your course when you're deciding who to side with.",
+      "A large gift handed over in front of the family, with 'we'll talk about it later'.",
+      "A string of small favours that picks up the week before a big ask.",
+      "After you decline: 'Fine. Don't expect me to help you again.'",
+      "I don't want anything for it, but I won't forget this."
+    ],
+    "what_it_is_not": [
+      "Openly transactional giving: 'I'll lend you the car if you drop me at the airport.' Both sides know the terms and either can say no.",
+      "A person who is directly honest about wanting something in return and accepts a 'no' without consequence.",
+      "Reciprocal favours between friends who both understand and welcome the give-and-take.",
+      "Generosity that the giver never brings up again, whatever you do.",
+      "Cultural gift norms understood by both parties, where returning a favour is part of how people show care.",
+      "A gift followed by a heartfelt thank-you request, such as a note, with no demand attached."
+    ],
+    "this_may_be_it_when": [
+      "A favour is cited as a reason within days of a request you resisted.",
+      "The gift is bigger than the occasion, or comes with a witness.",
+      "The thing asked for in return is unrelated to the gift.",
+      "Help stops or turns colder once you say no.",
+      "You feel unable to refuse something you would otherwise refuse, because of what you were given."
+    ],
+    "this_may_not_be_it_when": [
+      "The giver says up front what they hope for, and accepts a no calmly.",
+      "The gift is never mentioned again, even after you disagree with them.",
+      "They give to others in the same way without asking for anything.",
+      "The repayment asked for is small, proportionate and specific, and you agreed to it.",
+      "Both of you give and receive over time, and each of you feels the balance is fair."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Some people give freely as part of who they are and never track it.",
+      "Gift-giving to mark a holiday, a visit or a thank-you can carry social expectations without a hidden bill.",
+      "A person who helps in a hard time may later ask for help in return, and the request may be fair."
+    ],
+    "common_false_positives": [
+      "A neighbour who covers a cost and says outright that they might need a lift next month.",
+      "A relative who gives generously on every occasion and has never mentioned it afterwards.",
+      "A colleague who offers to cover a shift, and takes your 'no' on the next favour without a change in manner."
+    ],
+    "discernment_questions": [
+      "Was the favour ever brought up later as a reason to agree to something unrelated?",
+      "Does the giving increase just before a request I might turn down?",
+      "Would they be as warm if I never repaid anything?",
+      "Did the giving come with a clear sign of what they expected, or did the terms appear afterwards?",
+      "Is thanks enough, or is the gift treated as a debt that can be called in?"
+    ],
+    "less_concerning_if": [
+      "They accept a decline gracefully and carry on exactly as before.",
+      "The terms were spoken before you accepted, and you could have turned them down.",
+      "The giver names what they hope for before you accept, and is fine with either answer."
+    ],
+    "more_concerning_if": [
+      "The debt is cited repeatedly, and the cost of repaying it keeps rising.",
+      "Others are told, or shown, that you are ungrateful when you decline.",
+      "The help or warmth ends the day you decline, and the gift is mentioned again."
+    ],
+    "pattern_over_time_signs": [
+      "You find yourself turning down help in advance, for fear of what it will cost later.",
+      "The list of things you owe this person grows, and none of it can be paid off.",
+      "Giving and requests arrive close together, again and again.",
+      "You avoid saying no to small things because of what they have done."
+    ],
+    "repair_check": "Watch what happens to the debt itself. They state that nothing is owed for what was given and stop citing it. The next gift, if there is one, comes without an ask attached. A fresh gift offered right after you complained is more of the same pattern.",
+    "boundary_respect_check": "Think about what they did the last time you declined. If the help continued as before, the gift was a gift. If it ceased and the favour was mentioned, you have your answer about whether the request was ever really optional.",
+    "psychological_mechanism": "Many people feel a strong pull to return favours, and that pull can be used when the giving is unasked or public. Because the gift came first, saying no may seem like cheating someone who was kind to you. Witnesses raise that cost, since refusing means looking ungrateful in front of people who saw only the kindness.",
+    "possible_impact_on_receiver": "Some say they felt trapped by their own gratitude, went back over what they had received to work out what they owed, and turned down help they needed. Some feel foolish for not seeing it earlier. Some grow wary of kindness in general, which can cost them real support from honest people.",
+    "response_options": {
+      "soft_clarification": "Separate the gift from the request: 'I'm grateful for what you did, and I'd like to answer this request on its own. It's a no for me.'",
+      "firm_boundary": "Decline to treat the favour as a debt: 'I appreciate it. I can't treat it as something that decides my answer here.'",
+      "disengagement": "Decline further gifts and favours that arrive unasked, politely, and pay for your own costs where you can, so nothing is left outstanding.",
+      "support_seeking": "List what you were given and what was later asked for, and show it to someone with no stake in it. Ask if the exchange looks fair to them.",
+      "workplace_or_professional": "At work, thank a colleague or boss for favours, and keep any request to do something in return in writing, so that what was agreed is on record."
+    },
+    "boundary_script": "\"Thank you for helping me with that. I want to keep it separate from this decision, and my answer to this is no. If it's the cost that matters to you, tell me the amount and I'll pay it back.\"",
+    "safety_sensitive": true,
+    "safety_note": "Watch for a debt that touches where you live, your income or your immigration status, because then refusing puts a roof or a livelihood at risk. If what you owe is tied to housing, work or legal status, speak to legal aid or a tenants' or migrant advocate before agreeing to anything or paying anything back.",
+    "misuse_warning": [
+      "Treating every kind act as a hidden trap can make you refuse honest help, and punish people for generosity. The tell is what is demanded later, not the gift.",
+      "Accusing a giver on the strength of one awkward ask can wound someone who simply hoped to be helped in return."
+    ],
+    "how_to_distinguish_from_related": "Demand for Gratitude asks for thanks as payment for help, while this tactic treats the gift as a debt to be redeemed with a different, unrelated action. Guilt-Tripping works on your conscience after a refusal, without any gift. Pity Plays seek sympathy by displaying helplessness, whereas this one builds an obligation out of something the giver actually handed over."
+  }
+}
