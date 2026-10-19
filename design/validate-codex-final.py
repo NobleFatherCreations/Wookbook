@@ -240,7 +240,7 @@ FRAME_FIELDS = ["repair_check", "boundary_respect_check", "psychological_mechani
                 "possible_impact_on_receiver", "how_to_distinguish_from_related",
                 "why_this_matters", "expanded_definition", "plain_language_summary",
                 "boundary_script"]
-FRAME_ABS = 8      # a phrase in this many entries' same field is a template at any corpus size
+FRAME_ABS = 15     # a phrase in this many entries' same field is a template at any corpus size
 FRAME_MIN = 4      # ...or in this many AND in FRAME_DENSITY of all entries seen so far
 FRAME_DENSITY = 0.30
 STOP = set("""a an the and or but if so of to in on at by for from with as is are was were be been
@@ -249,8 +249,23 @@ not no can could may might will would should do does did have has had than then 
 when where which who whom how about into over out up down more most some any each other such""".split())
 
 
+_NAME_RE = None
+
+
+def mask_names(text):
+    """Replace every tactic name (and merged-away alias) with a neutral token, so
+    naming a related tactic is never mistaken for a repeated frame."""
+    global _NAME_RE
+    if _NAME_RE is None:
+        names = set(json.load(open(DATA, encoding="utf-8"))["codex_completed"][i]["name"]
+                    for i in range(349))
+        names = sorted({n.lower() for n in names}, key=len, reverse=True)
+        _NAME_RE = re.compile("|".join(re.escape(n) for n in names))
+    return _NAME_RE.sub(" tactic ", text.lower())
+
+
 def frame_trigrams(text):
-    w = re.findall(r"[a-z0-9']+", text.lower())
+    w = re.findall(r"[a-z0-9']+", mask_names(text))
     out = set()
     for i in range(len(w) - 2):
         tri = w[i:i + 3]
@@ -266,6 +281,27 @@ def frame_freq(batches):
             v = e.get(f)
             if isinstance(v, str):
                 freq[f].update(frame_trigrams(v))
+    return freq
+
+
+OPENER_FIELDS = ["safety_note", "boundary_script", "repair_check", "possible_impact_on_receiver",
+                 "boundary_respect_check", "psychological_mechanism",
+                 "plain_language_summary", "how_to_distinguish_from_related"]  # expanded_definition omitted: "<tactic> is a..." is the natural form
+OPENER_MAX = 8  # entries (counting this one) opening a field with the same three words
+
+
+def opener(text):
+    w = re.findall(r"[a-z0-9']+", mask_names(text))
+    return " ".join(w[:3]) if len(w) >= 3 else ""
+
+
+def opener_freq(batches):
+    freq = {f: Counter() for f in OPENER_FIELDS}
+    for name, (e, _) in batches.items():
+        for f in OPENER_FIELDS:
+            v = e.get(f)
+            if isinstance(v, str) and opener(v):
+                freq[f][opener(v)] += 1
     return freq
 
 
@@ -372,6 +408,7 @@ def main():
 
     ffreq = frame_freq(pool)
     cfreq = closer_freq(pool)
+    ofreq = opener_freq(pool)
     bad = 0
     for name, (e, src) in mine.items():
         errs, warns = [], []
@@ -408,6 +445,11 @@ def main():
                 shown = "; ".join(f"'{g}' x{c}" for c, g in hits[:3])
                 errs.append(f"{f}: reuses a frame other entries use ({shown}). "
                             f"Say it in this tactic's own terms.")
+        for f in OPENER_FIELDS:
+            v = e.get(f)
+            if isinstance(v, str) and opener(v) and ofreq[f][opener(v)] >= OPENER_MAX:
+                errs.append(f"{f}: opens '{opener(v)}...' like {ofreq[f][opener(v)]-1} other entries. "
+                            f"Open this field in a way that belongs to this tactic.")
         for f in CLOSER_FIELDS:
             v = e.get(f)
             if isinstance(v, str) and closer(v) and cfreq[f][closer(v)] >= CLOSER_MIN:
