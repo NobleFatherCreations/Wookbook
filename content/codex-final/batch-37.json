@@ -1,0 +1,581 @@
+{
+ "Pile-Ons": {
+  "short_definition": "Many people pile criticism onto one person in a short span, so the sheer volume becomes the problem.",
+  "expanded_definition": "A pile-on happens when a large number of people pour criticism onto one person in a short window, usually online but also in group chats, staff channels and school hallways. Each message may be mild, and some may even be fair. The weight comes from the count and the speed, because nobody can answer fifty people at once. It needs no organizer; people often join because others already have. One angry reply means little. What defines a pile-on is scale and pace.",
+  "plain_language_summary": "Lots of people criticize you at the same moment, so even small comments add up to something you cannot answer or escape.",
+  "why_this_matters": "Fifty versions of the same criticism land as something different from one, and there is no way to answer them at the scale they arrive. The person may lose sleep, leave a platform or stop speaking up, even when a few of the points were fair.",
+  "what_it_is": [
+   "A sudden surge of replies, comments or messages aimed at one person after a post, a mistake or a rumor.",
+   "Often fueled by a screenshot or quote shared outside its original context, so newcomers react to the clip instead of the whole story.",
+   "Joiners frequently add one more line without reading what came before, so the tone hardens as the thread grows.",
+   "Possible in a comment section, a group chat, a classroom or a staff channel, not only on big platforms.",
+   "Different from a one-on-one argument because the target faces a crowd and cannot reply to each person."
+  ],
+  "what_it_sounds_like": [
+   "Did you really say that? Everyone is talking about you.",
+   "A reply thread where the first twenty responses are the same sentence in different words.",
+   "I haven't read the whole thread but wow.",
+   "A group chat where people who had been quiet each type 'same' under a complaint about you.",
+   "Ratio'd. Just delete your account.",
+   "Notifications arriving faster than you can open them."
+  ],
+  "what_it_is_not": [
+   "A serious concern genuinely shared by many people. When many people independently say a statement was harmful, that is feedback, not a pile-on.",
+   "Proportionate public criticism of a public figure for a public statement.",
+   "Varied, independent responses that disagree with each other and include some support.",
+   "Several friends each raising the same worry with you privately, at different times.",
+   "Customers all complaining about the same real defect in a product.",
+   "Critics who quote you accurately and answer what you actually said, even if there are many of them."
+  ],
+  "this_may_be_it_when": [
+   "Replies arrive in a burst over minutes or hours rather than trickling in over days.",
+   "Many responders react to a quoted piece or screenshot, not the full original.",
+   "The wording of the criticism converges, with the same phrase or insult repeated.",
+   "Responses are about you as a person more than about the specific statement.",
+   "Accounts with no earlier contact with you join, often right after a larger account shares the post."
+  ],
+  "this_may_not_be_it_when": [
+   "The responses disagree with one another and include people who defend you.",
+   "Most people quote what you actually said and respond to its content.",
+   "The criticism comes from people you know, raised in separate, calm conversations.",
+   "The volume is small and spread over weeks.",
+   "Someone from the group offers to talk it through, and then does."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "A post can simply reach many people quickly, and a large audience produces a large reaction without anyone coordinating.",
+   "People who join late often assume the earlier replies were reasoned, so they add their own without any ill will.",
+   "Some commenters were upset about a real harm in the post and said so in a line."
+  ],
+  "common_false_positives": [
+   "A widely shared demand for an apology after a genuinely harmful statement.",
+   "A product page filling with the same complaint about a real defect.",
+   "Fans of a team all groaning at one referee call in the same match thread."
+  ],
+  "discernment_questions": [
+   "Do the responses engage with what I actually said, or with a clipped version of it?",
+   "If I set the number aside, would any single comment be a fair point?",
+   "Are the replies varied, or do they converge on one line?",
+   "Did the volume jump after a larger account shared my post?",
+   "Is it fading within a day or two, or being renewed by new posts?"
+  ],
+  "less_concerning_if": [
+   "The replies disagree with each other and some defend you.",
+   "It fades within a day or two without new fuel.",
+   "At least one criticism is accurate and you can answer it directly."
+  ],
+  "more_concerning_if": [
+   "Replies move from criticism of what you said to your workplace, address or family.",
+   "The same accounts keep returning with new posts after the first wave has faded.",
+   "The pile-on spills into your real-life groups, such as your team, school or neighborhood."
+  ],
+  "pattern_over_time_signs": [
+   "You check notifications compulsively and reread the same cutting lines.",
+   "You edit or hold back what you post, even in places the crowd never visited.",
+   "Old screenshots resurface whenever you say something new.",
+   "People you barely know mention the episode as though it defined you."
+  ],
+  "repair_check": "After a pile-on, repair shows in the crowd's behavior: people who joined correct a mistaken claim, drop the clipped screenshot and stop circulating it. A general call to move on, with no correction, leaves the target carrying the original story.",
+  "boundary_respect_check": "What happens after you state your position once, calmly, and then stop replying? If the thread slows and the replies thin out, the crowd was reacting to a moment. If new replies keep arriving to bait you, the silence is not being respected.",
+  "psychological_mechanism": "Seeing many others react tends to signal that the reaction must be deserved, so each joiner needs less evidence than the one before. Adding one line feels low-cost, which makes joining easy. For the target, a large count of strangers can be read as a verdict on their whole character, even when most replies were quick and shallow.",
+  "possible_impact_on_receiver": "Every notification can set off a racing heart, and people describe rereading each line to find the fair point, then distrusting their own judgment. Some delete posts or accounts, stop speaking up in groups or dread opening the app. Others say a few supportive messages from people who knew them mattered more than any rebuttal.",
+  "response_options": {
+   "soft_clarification": "If a few replies raise a genuine point, answer one of them with a short, specific reply and leave the rest. Replying to everyone gives the thread more fuel.",
+   "firm_boundary": "State once what you stand by and what you got wrong, then stop responding. One clear statement is easier to defend than a long thread of replies.",
+   "disengagement": "Mute the thread, turn off notifications for a day, and ask a friend to watch for anything that crosses into threats. You do not need to read every reply to know what is in them.",
+   "support_seeking": "Show a trusted friend the thread and ask which points, if any, are fair. Someone outside the surge can tell you what is signal and what is volume.",
+   "workplace_or_professional": "If it spreads into a work or school channel, save dated screenshots and ask the moderator, manager or HR to step in on the channel as a group-behavior problem."
+  },
+  "boundary_script": "\"I've read the criticism, and I'll answer the points that were about what I actually said. I won't reply to every message, and I'd ask people to stop passing around the clipped screenshot and link to the full post instead.\"",
+  "safety_sensitive": false,
+  "safety_note": "A pile-on becomes a safety matter when replies move from criticism to your address, workplace, children or school, or when threats arrive. Screenshot everything with dates, tighten account privacy, report to the platform, and contact local police or a legal aid service if you or your family are threatened.",
+  "misuse_warning": [
+   "Calling any heavy criticism a pile-on can dismiss people who are right and numerous. Volume alone proves nothing; ask whether the points are fair.",
+   "Someone with real power can use the label to cast the people they harmed as a mob."
+  ],
+  "how_to_distinguish_from_related": "Triangulation recruits third parties, real or invented, to carry one side against another, so a specific person is behind the recruiting. Flying Monkeys are people enlisted, often unknowingly, to pressure a target for someone else. A pile-on needs neither a recruiter nor a plan; the crowd forms because people see others already reacting. What defines it is many separate voices stacked on one person in a short window.",
+  "core_meaning": "Many people pile criticism onto one person in a short span, so the sheer volume becomes the problem."
+ },
+ "Ostracism": {
+  "short_definition": "Leaving a person out of invitations, conversations, decisions or information until they end up on the outside of their own group.",
+  "expanded_definition": "Ostracism is being left out in practice: off the invite list, out of the group chat, missing from the meeting where the decision was made. Any single omission can be explained as an oversight, which is part of why it is hard to name. What makes it a pattern is that it runs one way, lasts, and often begins after the person disagreed, set a limit or said something unwelcome. The pattern does not show what anyone meant.",
+  "plain_language_summary": "You keep being left out of plans, messages and decisions that the rest of the group gets, and you cannot point to one moment you could complain about.",
+  "why_this_matters": "Exclusion from information and decisions has practical consequences well beyond the social ones, and each omission is small enough to be explained away. A person can miss deadlines, a promotion or a friend's news, and then be blamed for being out of touch.",
+  "what_it_is": [
+   "Being left off a group invitation, thread or chat that the rest of the circle receives.",
+   "Being skipped in a meeting, email chain or decision that affects your own work.",
+   "A conversation that stops or shifts when you enter, or replies to you that shrink to one word.",
+   "Being the only one not told about a changed time or place.",
+   "Possible in a family, friend group, congregation, team or class."
+  ],
+  "what_it_sounds_like": [
+   "Oh, we figured you were busy. (said after plans you were never told about)",
+   "It was just a small get-together, we didn't think to invite everyone.",
+   "Didn't you see the group chat? (when you were never added)",
+   "Nothing's wrong, we just didn't think of you.",
+   "A team calendar where every colleague on your project is invited to the planning meeting except you.",
+   "A room that goes quiet when you walk in and picks up again when you leave."
+  ],
+  "what_it_is_not": [
+   "One forgotten invitation with nothing following it is an oversight.",
+   "A group drifting apart because jobs, moves and children changed everyone's schedules.",
+   "Someone who has quietly opted out of events themselves and now seems excluded when they chose it.",
+   "A private gathering of a few close friends that was never meant to be group-wide.",
+   "A manager limiting a meeting to the people with a role in the decision, and telling you why.",
+   "Space that you or others asked for, such as a friend needing time alone after a loss."
+  ],
+  "this_may_be_it_when": [
+   "You are the only person missing from messages that everyone else in the circle received.",
+   "The exclusion began or deepened soon after you disagreed, set a limit or raised something awkward.",
+   "When you ask about it, you get vague answers or are told you are overreacting.",
+   "Others are invited while you are out of the room, then mention the event in front of you.",
+   "Information you need to do your role reaches you late or secondhand."
+  ],
+  "this_may_not_be_it_when": [
+   "You were told kindly why one event was small, and you were included in the next.",
+   "Several people are out of the loop, not only you.",
+   "When you asked to be added, you were added.",
+   "The gap tracks a clear change such as a new job, a move or different hours.",
+   "The omissions stopped after you reminded people once."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "Organizers of loose groups often forget people, especially when the list lives in someone's head.",
+   "People under strain pull back from everyone, including those close to them.",
+   "Group chats split by topic, and some people simply end up in a different one."
+  ],
+  "common_false_positives": [
+   "A friend who keeps a small dinner small.",
+   "A coworker not copied on a thread because the subject is outside their role.",
+   "Your own withdrawal during a hard season, later read as others pushing you out."
+  ],
+  "discernment_questions": [
+   "Is it only me, or are other people also missing from these messages?",
+   "When I have asked to be included, what happened?",
+   "Did this start after something specific I said or did, and is there another explanation for the timing?",
+   "Could I have opted out of things earlier and forgotten?",
+   "Does missing this information cost me something practical, like a deadline or a decision?"
+  ],
+  "less_concerning_if": [
+   "The group tells you plainly why you were left out of a particular event and includes you in the next one.",
+   "Other members are left out at times too.",
+   "You have stepped back from some things and the invitations have thinned to match."
+  ],
+  "more_concerning_if": [
+   "Schedules or decisions reach you late or not at all, and then you are blamed for the gap.",
+   "Other people seem to be told, or to sense, that they should keep their distance from you.",
+   "The exclusion spreads to new groups, or carries on after you raised it plainly."
+  ],
+  "pattern_over_time_signs": [
+   "You start scanning social media or other people's mentions to learn what you were not told.",
+   "You change what you say in the group to avoid being left out next time.",
+   "Invitations that used to come regularly stop, and nobody mentions the change.",
+   "People you used to talk to easily now answer briefly and move on."
+  ],
+  "repair_check": "Repair would show on the invite list: you appear on it again without having to ask, and information reaches you at the same time as everyone else. An apology for any misunderstanding, followed by the same gaps next month, has not changed what happens to you.",
+  "boundary_respect_check": "Ask to be included in one specific thing, such as the next planning meeting, and watch whether it happens or you hear 'we'll see.' Being added once and dropped again points one way; staying on the list through several weeks points the other.",
+  "psychological_mechanism": "The sting of being left out registers quickly and tends to pull a person toward whatever brings them back in. Because each omission can be explained away, the person may blame their own sensitivity instead. The silence around it can also discourage them from asking directly, which lets the pattern continue unchecked.",
+  "possible_impact_on_receiver": "Checking messages for what they missed and rehearsing how to ask without sounding needy is how many describe it. Some pull away first to avoid the sting, lose track of work details, or doubt whether the exclusion was real because nobody ever said anything.",
+  "response_options": {
+   "soft_clarification": "Ask one person you trust in the group a low-key question: 'I noticed I wasn't on the thread about Saturday. Is there a reason I wasn't included?'",
+   "firm_boundary": "Ask to be included going forward: 'Please add me to the thread and the invite list from now on. I'm asking for that directly.'",
+   "disengagement": "Put your time into people and groups where you are included without asking, and give the group that keeps leaving you out less of it.",
+   "support_seeking": "Tell someone outside the group which specific things you missed, and when. They can help you tell a pattern from a rough patch and remind you who does want you around.",
+   "workplace_or_professional": "At work, ask your manager in writing which meetings and threads your role needs and request to be added. Keep dated notes of what you missed and how it affected your work."
+  },
+  "boundary_script": "\"I've noticed I was left off several invitations and messages lately. Please add me to the next one, and tell me directly if there is a reason I'm not on the list.\"",
+  "safety_sensitive": false,
+  "safety_note": "Being left out is not a physical-safety signal on its own. It changes character when it sits alongside control of your money or housing, being kept from anyone else, or fear of what happens if you speak up. If so, a domestic abuse advocate, a counselor, or a labor or tenant legal aid office can help you plan.",
+  "misuse_warning": [
+   "Reading every unanswered text or missed invite as ostracism can turn ordinary social drift into a grievance. Ask whether the gaps run one way and follow a specific event.",
+   "Using the label to demand a place at a private gathering treats a host's ordinary choices as punishment."
+  ],
+  "how_to_distinguish_from_related": "Triangulation brings a third party into a dispute to carry one side's message, so words travel. Ostracism removes you from the circle without anyone saying anything. Flying Monkeys are recruited to pressure or monitor you, which means contact; ostracism shows up as the absence of contact. The difference is silence: you are left out of what everyone else is told.",
+  "core_meaning": "Leaving a person out of invitations, conversations, decisions or information until they end up on the outside of their own group."
+ },
+ "Mobbing": {
+  "short_definition": "Sustained harassment of one person by a group over weeks or months, most often at work or in a community, wearing down their standing.",
+  "expanded_definition": "Mobbing is a term from workplace research for a group repeatedly turning on one person through gossip, exclusion, belittling remarks, withheld information, hostile jokes and unusual scrutiny. One cold shoulder or tense meeting is not mobbing. The pattern is duration and breadth: several people take part over months, often without ever agreeing to, and the person's efforts to address it tend to be read as proof there was a problem. The cost can be a job, a role or standing in a community.",
+  "plain_language_summary": "A group keeps picking on one person over weeks or months, and every attempt to raise it gets treated as more proof that the person is the problem.",
+  "why_this_matters": "Attempts to address it get absorbed as further evidence, so the ordinary responses open to someone under sustained group pressure tend to make the position worse. Over months the person can lose work, references or standing, and their account is doubted because so many people seem to disagree.",
+  "what_it_is": [
+   "Repeated hostile behavior from several people toward one person, across many separate occasions.",
+   "A mix of small acts: eye-rolls, being talked over, rumors, jokes at the person's expense, being left off messages, unusual scrutiny of their work.",
+   "Common in workplaces, schools, teams, congregations and volunteer groups, where people depend on one another.",
+   "Frequently escalates when the person objects, because the objection becomes the next thing to criticize.",
+   "Can include people who joined in only because others already had, and some who privately feel uneasy."
+  ],
+  "what_it_sounds_like": [
+   "Everyone has noticed it, not just me.",
+   "You're being very sensitive. No one is out to get you.",
+   "We've had several people raise concerns about you. (with no names and no examples)",
+   "Did you see what she did in the meeting? Again.",
+   "If you were easier to work with, this wouldn't be happening.",
+   "A manager's file with half a dozen vague complaints from different people, none dated or specific.",
+   "Colleagues who go silent when you walk by, then are friendly when alone with you."
+  ],
+  "what_it_is_not": [
+   "Separate conflicts with different people that happen to land in the same month.",
+   "One serious dispute with a colleague that others have taken sides on, which is contentious rather than orchestrated.",
+   "A documented instance where the person really was responsible and others responded to it.",
+   "Several people giving direct, specific feedback because each saw the same lapse.",
+   "A tense stretch around a deadline or reorganization when everyone is short with everyone.",
+   "One meeting where several people disagreed with your proposal."
+  ],
+  "this_may_be_it_when": [
+   "The same small group appears across many different incidents over months.",
+   "Complaints about you are vague and secondhand, with no dates, examples or names.",
+   "When you raise one concern, it is answered with a new complaint.",
+   "Colleagues are friendly one-on-one but cold in groups, or say privately that they cannot be seen backing you.",
+   "Your work is checked or measured more closely than that of others in the same role."
+  ],
+  "this_may_not_be_it_when": [
+   "Each complaint is specific, dated and describes something you recognize doing.",
+   "The people involved do not know one another or have no contact.",
+   "Feedback is offered to your face with a chance to respond and improve.",
+   "It was a few weeks around a crisis and has eased.",
+   "Others in the same role get similar scrutiny."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "Teams under strain turn on whoever is closest to the problem without anyone planning it.",
+   "Reorganizations change who attends what, and people lose access for reasons unrelated to them.",
+   "Several people may independently find the same real problem with someone's work and say so."
+  ],
+  "common_false_positives": [
+   "A review process with several reviewers who all note the same missed deadlines.",
+   "Friction after a change of manager, where norms shifted for everyone.",
+   "A neighborhood committee disagreeing sharply with a member's proposal across several meetings."
+  ],
+  "discernment_questions": [
+   "Can I name specific incidents, with dates and who was involved each time?",
+   "Are the same people showing up across them, or different people each time?",
+   "When I raised a concern, did anything change, or did a new complaint appear?",
+   "Would a neutral colleague, shown my notes, see a pattern or separate disagreements?",
+   "Is any of the criticism accurate, and have I been given a fair chance to address it?"
+  ],
+  "less_concerning_if": [
+   "Concerns are put to you directly, with specifics and a chance to answer.",
+   "The people involved change over time and the tension fades.",
+   "A neutral party who reviewed the situation found separate causes for each incident."
+  ],
+  "more_concerning_if": [
+   "Your job, pay, schedule or reputation has been affected, or you have been told your position may change.",
+   "Colleagues who were supportive have gone quiet after someone senior sided against you.",
+   "Sleeplessness or dread before work is growing, and it is affecting your health."
+  ],
+  "pattern_over_time_signs": [
+   "Incidents arrive in clusters after you object or succeed at something, not at random.",
+   "The list of people who are cold to you grows month by month.",
+   "Your attempts to clarify are cited later as examples of being difficult.",
+   "You rehearse every conversation and dread ordinary interactions that used to be fine."
+  ],
+  "repair_check": "Whether anything has been mended shows in what the group does: complaints are written down, put to you specifically, and closed once answered. If the group only softens its tone for a week while the unwritten grievances stay open, nothing underneath has moved.",
+  "boundary_respect_check": "Ask for one concern to be put in writing with an example and a date. Notice whether the request is met, or heard as one more sign you are hard to work with. A group acting in good faith can produce a specific example.",
+  "psychological_mechanism": "When several people appear to hold the same view, a target can start to think the problem must be them. Each participant may feel their own part is minor, and later joiners take earlier ones as a signal. Because objecting becomes the next complaint, the target can end up doubting their own account and withdrawing, which the group may then read as confirmation.",
+  "possible_impact_on_receiver": "People describe dread before shifts or meetings, sleeplessness, losing confidence in work they were good at, and feeling invisible among people who used to be warm. Some describe a drop in performance that then seemed to prove the complaints, and anger at being asked to prove what they could not safely say.",
+  "response_options": {
+   "soft_clarification": "Ask one colleague you trust to describe what they see: 'Have you noticed a change in how people deal with me? I'd like an honest read.'",
+   "firm_boundary": "Ask that concerns be given to you in writing, with an example and a date, so you can answer each one directly.",
+   "disengagement": "Reduce one-on-one time with the people most involved and keep communication in writing. Work out any change of team or role privately with an advocate first, and keep it quiet until it is settled.",
+   "support_seeking": "Keep a dated log of incidents, with who was present, and share it with an employment advocate, union representative or counselor who can read it with fresh eyes.",
+   "workplace_or_professional": "Ask HR or a neutral manager for a meeting with a note-taker, bring your log, and request that the process be documented. A third party in the room changes what can be said."
+  },
+  "boundary_script": "\"Could we put each concern about me in writing, with an example and a date, and have someone neutral sit in on our next conversation? I can respond to specifics, but I can't respond to a feeling that everyone shares.\"",
+  "safety_sensitive": true,
+  "safety_note": "Mobbing can put your income, housing or professional standing at risk, and months of it can wear down health. Watch for threats, being followed or photographed, sudden changes to your position, or retaliation after you raise it. An employment lawyer, union representative or legal aid office can explain your protections before you do anything formal. If anyone makes you fear for your physical safety, call emergency services.",
+  "misuse_warning": [
+   "Calling one hard season of friction mobbing can turn ordinary disagreement or fair feedback into a campaign story, making it harder to hear what is accurate.",
+   "Using the word against a group of people who each raised a real concern treats honest feedback as persecution."
+  ],
+  "how_to_distinguish_from_related": "Flying Monkeys are people enlisted by one person to pressure or monitor you; mobbing can happen with no organizer at all, only many people pushing the same way. Triangulation routes messages through a third party, but a mob acts directly. A Polite Hostile Environment penalizes truth-telling from everyone, and mobbing singles out one person for months of accumulating pressure.",
+  "core_meaning": "Sustained harassment of one person by a group over weeks or months, most often at work or in a community, wearing down their standing."
+ },
+ "Splitting": {
+  "short_definition": "Seeing a person or group as all good or all bad, with no middle ground, and flipping that view suddenly after a minor event.",
+  "expanded_definition": "Splitting is black-and-white thinking about people. Someone is a hero, the best friend, the only one who understands, and then, after a small disagreement or a late reply, becomes the enemy or a disappointment. There is little room for 'good person, bad day.' The flip can be about you, about other people, or about oneself. One harsh judgment after a real wrong is not splitting. The pattern is swings that outrun what actually happened, repeated across people and months.",
+  "plain_language_summary": "Someone puts you on a pedestal, then drops you to the bottom after something small, and the swing seems to have little to do with what you did.",
+  "why_this_matters": "Standing shifts without reference to anything actually done, so there is no behavior available that reliably keeps a person in favor. You can end up walking on eggshells, and watching others around them be built up and torn down in turn.",
+  "what_it_is": [
+   "Describing someone in absolute terms, such as perfect, the best, evil or worthless, with nothing in between.",
+   "A sudden reversal in how the same person is described, sometimes within a day, after a small trigger.",
+   "Applied to individuals, to groups such as a team or one side of a family, and sometimes to oneself.",
+   "Earlier praise often disappears from memory when the flip comes, so past good times are recast as fake.",
+   "Frequently produces camps, where others are pressed to join the all-good or all-bad view."
+  ],
+  "what_it_sounds_like": [
+   "You're the only person who truly gets me.",
+   "I thought you were different. You're just like all the rest.",
+   "She's perfect, I can't believe how lucky we are. (weeks later) I can't believe I ever trusted her.",
+   "After all that, you did one thing wrong, so I'm done.",
+   "Everyone in that department is useless.",
+   "You were never my friend. You were pretending the whole time.",
+   "I'm a complete failure, there's nothing good in me."
+  ],
+  "what_it_is_not": [
+   "A serious breach of trust that permanently changes how someone is seen is a proportionate reassessment, not a swing.",
+   "Gradual disillusionment as you get to know a person better is ordinary.",
+   "Someone more reactive during a hard period who still sees nuance when calmer.",
+   "Strong enthusiasm for a new friend or hero that mellows over months into a balanced view.",
+   "A person describing a bad experience with one organization without generalizing to everyone in it.",
+   "A firm opinion about someone's conduct that stays tied to specific events."
+  ],
+  "this_may_be_it_when": [
+   "The same person has been called wonderful and worthless within the same year.",
+   "What triggers the flip is trivial, such as a delay or a differing opinion.",
+   "Past good events are redescribed as fake or forgotten once the view turns.",
+   "Several people in their life describe the same swings.",
+   "Reassurance and evidence do not move the new view until it flips back by itself."
+  ],
+  "this_may_not_be_it_when": [
+   "The change followed something serious that you can name.",
+   "They can still say good things about the person they are upset with.",
+   "Their view of others changes slowly and for stated reasons.",
+   "After a cooling-off period they can describe both the problem and what they value.",
+   "Other reasonable people who saw the same events hold the same view."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "People in the first weeks of a friendship or job often overpraise and then correct to a more realistic view.",
+   "Grief, illness or stress can make anyone speak in extremes for a while.",
+   "Some families and teams talk in exaggerations as a style, with no real change in how they feel."
+  ],
+  "common_false_positives": [
+   "A friend who is furious after a betrayal and sees you differently afterward.",
+   "A manager who rated you highly and then gave honest critical feedback after a real mistake.",
+   "Fans who adore a performer and turn away after a scandal that was real."
+  ],
+  "discernment_questions": [
+   "Did the change follow something specific that happened, or come out of the blue?",
+   "Can they still name things they valued in me or in the other person?",
+   "Is this the first such swing, or have I seen it with others in their life?",
+   "Do I feel pressure to stay perfect to keep my standing?",
+   "Has the view shifted back on its own, with nothing changing?"
+  ],
+  "less_concerning_if": [
+   "The flip followed an actual breach and is proportionate to it.",
+   "They can hold both the good and the problem in view once the first heat passes.",
+   "The swings are rare, and you have been able to talk about them afterward."
+  ],
+  "more_concerning_if": [
+   "You are being asked to join one side, and people who disagree are being cut off.",
+   "You try harder and harder to avoid the drop, rearranging your life around not triggering it.",
+   "The all-bad view brings real consequences for you, such as being shut out of work, a family event or a friend group."
+  ],
+  "pattern_over_time_signs": [
+   "You notice who is currently in favor in their stories, and the list keeps changing.",
+   "Warm periods are followed by cold ones without a clear cause.",
+   "You adjust what you say and do to stay on the right side of the line.",
+   "People once praised are later mentioned only in negative terms."
+  ],
+  "repair_check": "When the view swings back, check whether the reversal comes with any account of what changed. Being welcomed warmly again without a word about the cold stretch repeats the cycle. A step toward repair would be naming the swing and agreeing together on what to do when the next one starts.",
+  "boundary_respect_check": "State once that you do not want to be described to others in all-or-nothing terms. The useful measure comes later: are you still spoken of in specifics in their stories, or does the old extreme return as soon as there is friction?",
+  "psychological_mechanism": "Black-and-white views can ease the discomfort of holding mixed feelings about someone, because sorting a person into good or bad makes them simple. For the person on the receiving end, unpredictable praise and withdrawal tend to keep attention fixed on avoiding the next drop, much as unpredictable rewards hold attention. This can erode a sense of steady footing.",
+  "possible_impact_on_receiver": "Wondering which version of the person will show up becomes a daily habit. People describe being flattered and then stunned by the drop, doubting their own value after being cast as the villain, feeling pressure to take sides in a group, or grieving a friendship that was rewritten as fake.",
+  "response_options": {
+   "soft_clarification": "Name what you noticed once, without labels: 'Last week I was the best thing in your life and today I can't do anything right. What changed?'",
+   "firm_boundary": "Decline to be ranked: 'I'm not perfect and I'm not the villain. I'll talk about what happened, but not about who I am in total.'",
+   "disengagement": "When the conversation is running on all-or-nothing language, pause it and come back when both of you can describe the problem in specifics.",
+   "support_seeking": "Ask someone who knows you both for a reality check on one recent flip. Seeing the swing from outside helps you remember you did not earn it.",
+   "workplace_or_professional": "If the swings come from a manager or teammate, keep a dated log of feedback, ask for criteria in writing, and take it to HR or a mentor if your standing affects your role."
+  },
+  "boundary_script": "\"I care about this friendship, and I can't be all good one week and all bad the next. If I did something that hurt you, tell me what it was and I'll listen. I won't agree that I was never a friend.\"",
+  "safety_sensitive": false,
+  "safety_note": "Swinging views of a person are not a safety signal on their own. Watch for shifts that bring threats, cutting off your contact with others, control of money or a place to live, or humiliation in front of others. If those appear, an advocate or counselor can help you plan, and a friend outside the relationship can help you keep perspective.",
+  "misuse_warning": [
+   "Calling a friend's anger at you 'splitting' turns a descriptive idea into a verdict about someone's mind, which this entry cannot support.",
+   "The word describes a pattern in how someone talks about people. It should not be used to explain away a real wrong done to you, or to excuse it."
+  ],
+  "how_to_distinguish_from_related": "Triangulation brings a third party in as ammunition; splitting needs no third party at all, only a swing in how one person is seen. Forced Teaming builds a 'we' to override your separate choices, so closeness is imposed from the start, while the closeness in splitting collapses without warning. Flying Monkeys carry the verdict to others; splitting is the verdict itself.",
+  "core_meaning": "Seeing a person or group as all good or all bad, with no middle ground, and flipping that view suddenly after a minor event."
+ },
+ "Golden Child Elevation": {
+  "short_definition": "Holding up one family member as the model of excellence, and using that standard to measure everyone else and find them short.",
+  "expanded_definition": "In Golden Child Elevation, one person in a family or group is treated as the standard: praised constantly, excused more easily, and named whenever anyone else falls short. The favored person may not ask for any of it and can be hurt by it too, since their worth is tied to staying on top. One proud remark about a sibling's award means little. The pattern is comparison used again and again, so the others never feel they measure up.",
+  "plain_language_summary": "One person is held up as the example, and everyone else is regularly measured against them and found lacking.",
+  "why_this_matters": "Achievement by one family member becomes the measure applied to the rest, so nothing they accomplish arrives without a comparison attached. Over years, people can grow up believing they are the disappointing one, while the favored one fears losing their place.",
+  "what_it_is": [
+   "One child, relative or team member is praised far more than the others, whatever the others do.",
+   "The favored person's wins are raised in conversations about other people's lives, as a yardstick.",
+   "Their mistakes are explained away as stress or a phase, while the same mistakes in others count against character.",
+   "Often seen at holidays, in family chats, at school and in family businesses, where everyone can see the ranking.",
+   "The favored person carries pressure too, because the praise can be withdrawn if they slip."
+  ],
+  "what_it_sounds_like": [
+   "Why can't you be more like your brother?",
+   "Your sister never needed reminding.",
+   "Look what Daniel did this year. Now that's someone who takes things seriously.",
+   "She's just going through a phase. You, on the other hand, should know better.",
+   "We never had to worry about him.",
+   "A parent toasts one child's promotion at a family dinner and skips another's."
+  ],
+  "what_it_is_not": [
+   "Pride in a specific achievement, expressed without reference to anyone else, is just pride.",
+   "Different family members having different strengths celebrated differently is not a ranking.",
+   "A parent venting their own stress may land comparatively without the comparison being the point.",
+   "A parent giving extra help to a child with greater needs, such as an illness or a disability.",
+   "A sibling who really is thriving, noticed with warmth rather than used as a yardstick.",
+   "A coach pointing to a teammate's technique as an example of one specific skill."
+  ],
+  "this_may_be_it_when": [
+   "The comparison turns up in unrelated conversations, not only when the favored person's work is relevant.",
+   "Excuses made for one person are not made for the others for the same behavior.",
+   "Your wins get a brief nod, then a mention of what the favored person did.",
+   "Other relatives repeat the same comparisons, as if it were family policy.",
+   "You have been measured against the same person for years, not only at one age or phase."
+  ],
+  "this_may_not_be_it_when": [
+   "Comparisons are rare and tied to one concrete skill.",
+   "Everyone's accomplishments get noticed in a way that feels balanced.",
+   "The comparisons stopped after you mentioned them.",
+   "Differences in treatment follow real differences in need, and have been explained to you.",
+   "The favored person pushes back on the comparisons too."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "Parents often brag about a recent win without noticing how it sounds to the others.",
+   "A child with greater needs, or in a crisis, takes more of a family's attention for a time.",
+   "Some families praise a particular milestone, such as graduating or marrying, for everyone who reaches it."
+  ],
+  "common_false_positives": [
+   "A grandparent proudly telling the story of the first grandchild's graduation.",
+   "A family spending more on one child's medical treatment.",
+   "A teacher holding up one student's essay as a model of structure."
+  ],
+  "discernment_questions": [
+   "Is the comparison tied to a specific skill or event, or is it a general ranking?",
+   "Are the same standards applied to everyone for the same behavior?",
+   "Has it gone on for years, or only during one period?",
+   "Has the favored person said it is uncomfortable for them too?",
+   "What happens when I raise it plainly?"
+  ],
+  "less_concerning_if": [
+   "Comparisons are occasional and attached to specific accomplishments.",
+   "The family can laugh about it and adjust once someone says it hurts.",
+   "Everyone gets attention for their own strengths over time."
+  ],
+  "more_concerning_if": [
+   "Money, inheritance, housing or support are handed out according to who is the favorite.",
+   "You are cast as the problem if you object, or told you are jealous.",
+   "It follows you into adulthood, shaping who is invited, believed or helped."
+  ],
+  "pattern_over_time_signs": [
+   "You catch yourself preparing evidence of your achievements before family visits.",
+   "The comparison person changes at times, but the ranking never does.",
+   "You hesitate to share good news because you expect it to be measured against someone else's.",
+   "The favored person grows anxious or withdraws, afraid of slipping."
+  ],
+  "repair_check": "A shift would show in small, repeated ways: your accomplishments get their own mention without anyone else attached, the same lapses draw the same response from everybody, and the favored person is allowed a bad year. A single heartfelt apology with no change in who gets toasted does not move anything.",
+  "boundary_respect_check": "Ask a family member to leave siblings out of conversations about you, then watch the next holiday. If your news is received on its own terms, the request was heard. If you are told you are too sensitive about being compared, it was not.",
+  "psychological_mechanism": "Comparison to a fixed standard tends to turn ordinary effort into a verdict. A person measured against a favorite can learn to work for approval that never arrives, and the favorite can learn that love depends on performance. Over years the roles can harden into identities such as the achiever and the disappointment, and each person may start to act them out.",
+  "possible_impact_on_receiver": "Nothing feeling like enough is the common thread. People describe dreading family gatherings and carrying the comparison into adult jobs and friendships. Some describe resentment toward the favored sibling that sits uneasily with love for them, while the favored person often describes pressure, loneliness and fear of letting anyone down.",
+  "response_options": {
+   "soft_clarification": "Say what you notice once, without blame: 'When you mention my brother's job right after I tell you about mine, it feels like mine doesn't count.'",
+   "firm_boundary": "Ask for the comparison to stop: 'Please stop measuring me against my sister. I'm glad to hear about her, but not as a yardstick.'",
+   "disengagement": "When a conversation turns into a ranking, change the subject or end the call, and favor family settings where comparisons are less likely.",
+   "support_seeking": "Talk with the favored person if the bond allows it, or with a cousin or friend who saw it happen. Learning it affected them too can ease the rivalry.",
+   "workplace_or_professional": "If a boss holds up one colleague as the model, ask for written criteria for your own role and request feedback tied to your goals instead of to a person."
+  },
+  "boundary_script": "\"I'm glad my sister is doing well. When I'm compared to her, I stop hearing the news and hear only that I fall short. Please talk about my work on its own, without her name in the sentence.\"",
+  "safety_sensitive": false,
+  "safety_note": "Favoritism is a painful pattern, not a physical-safety one in itself. It becomes more serious when it reaches money or housing, such as threats of being cut off, or when a child is treated very differently from siblings in ways that affect food, care or protection. A family therapist, a school counselor or, where a child's care is at stake, a child protection service can help.",
+  "misuse_warning": [
+   "Labeling a proud parent with this term can turn warm praise for a real achievement into an accusation. Ask whether the praise is being used to measure others.",
+   "The favored person is often a bystander, and blaming them for the family's pattern repeats the same unfairness."
+  ],
+  "how_to_distinguish_from_related": "Triangulation sets two people against each other through a third, such as repeating what one said about the other. Golden Child Elevation uses one person's real achievements as the measure for others. 'We're Family' Erasure invokes loyalty to override your limits, while this pattern works through ranking, not loyalty. Forced Teaming builds a 'we' that erases your separate choices; here the point is a difference in standing.",
+  "core_meaning": "Holding up one family member as the model of excellence, and using that standard to measure everyone else and find them short."
+ },
+ "Divide and Conquer": {
+  "short_definition": "Distance or distrust between people who might otherwise support one another, so that they do not compare notes or act together.",
+  "expanded_definition": "Divide and Conquer is a pattern where people who could back each other up are kept apart. It often runs on selective retelling: one person hears a sharpened version of what the other said, and the other hears the reverse. It can also look like private favors or secrets that make each person feel they alone hold a special place. One garbled message means little. The pattern is that gaps keep opening between the same people who might compare notes. This does not show what anyone meant.",
+  "plain_language_summary": "People who would normally compare notes and back each other up end up distrustful or distant, each holding a different version of what the other said.",
+  "why_this_matters": "Two people who might have compared notes stop speaking, and each carries a version of the other that neither gets the chance to correct. Meanwhile no one is in a position to say that something is wrong, because each person is dealing with it alone.",
+  "what_it_is": [
+   "Relaying what each person said to the other in trimmed, sharpened or invented form.",
+   "Privately telling several people that each is the one trusted or the one who really understands.",
+   "Handling people one at a time so no one sees how everyone else is treated.",
+   "Discouraging joint conversations with lines such as 'no need to bring everyone in.'",
+   "Seen in families, teams, friend groups, congregations and between co-parents and their children."
+  ],
+  "what_it_sounds_like": [
+   "I probably shouldn't tell you this, but here's what Priya really said about you.",
+   "You know what they really think of you, right?",
+   "Let's keep this between us. The others wouldn't understand.",
+   "You're the only one I can trust with this.",
+   "I wouldn't bring it up with her. It will only make things worse.",
+   "A group chat goes quiet after one person has spoken privately to each member.",
+   "Two coworkers are each told they were the one picked for a project, and each is asked not to mention it."
+  ],
+  "what_it_is_not": [
+   "Miscommunication between two people that has nothing to do with anyone else.",
+   "Relationships drifting apart for unrelated reasons such as distance, new jobs or new children.",
+   "Someone relaying a conversation inaccurately because they remembered it badly.",
+   "A person sharing a confidence with one friend because that friend is the one they trust.",
+   "A manager meeting employees one at a time for routine reviews.",
+   "Two people who simply do not get along and would be at odds with or without a go-between."
+  ],
+  "this_may_be_it_when": [
+   "Each person has heard something about the other that the other swears they never said.",
+   "Several people are told they are the only ones trusted with certain information.",
+   "Attempts to talk to each other are discouraged, or one person stays the only channel.",
+   "The conflict eases or vanishes once the people involved compare notes directly.",
+   "Alliances between two people tend to cool soon after they form."
+  ],
+  "this_may_not_be_it_when": [
+   "When you compare accounts, the stories match.",
+   "Information about everyone is shared freely, in groups.",
+   "The person relaying information stops once corrected.",
+   "The two people have had a conflict of their own for some time.",
+   "The distance followed life changes, such as a move or a new job."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "Many people are poor go-betweens; they paraphrase, forget, and soften or sharpen without noticing.",
+   "Friends confide in different people because they are close in different ways.",
+   "Managers hold one-on-ones for privacy and fairness, not to keep anyone apart."
+  ],
+  "common_false_positives": [
+   "A friend who repeats something you said to another person in a clumsy way.",
+   "A parent who confides in one adult child about a health matter.",
+   "Two coworkers who drift apart after being assigned to different teams."
+  ],
+  "discernment_questions": [
+   "Have the two of us ever checked directly with each other about what was said?",
+   "Is one person the only source of what each of us supposedly said?",
+   "Are we each being told we are special or trusted, in a way the others do not know?",
+   "Does the tension fall when we talk directly?",
+   "Would the story change if the third person were not part of it?"
+  ],
+  "less_concerning_if": [
+   "When people compare notes, the accounts line up.",
+   "The go-between welcomes a three-way conversation when asked.",
+   "The distance between the people predates the go-between's involvement."
+  ],
+  "more_concerning_if": [
+   "People who compared notes are then criticized, or told they are plotting.",
+   "Everyone is kept uncertain about who is trusted, so no one can ask for help.",
+   "A group about to raise a concern together falls apart just before it can."
+  ],
+  "pattern_over_time_signs": [
+   "You stop trusting a friend over a story you cannot verify, and later learn it was altered.",
+   "Plans for people to meet fall through, and the reason always runs through the same person.",
+   "Each person stops checking with the others.",
+   "A new friendship or alliance cools within weeks."
+  ],
+  "repair_check": "A real shift would show in the open: the person at the center agrees to a joint conversation, repeats things in the same words to everyone, and does not object when others compare notes. Apologizing separately to each person, in private, keeps the same shape as before.",
+  "boundary_respect_check": "Ask whether a three-way conversation can happen, and pay attention to the answer. Is it agreement, or an excuse for why it would be unkind, risky or unnecessary? What matters is whether you are allowed to hear it directly from the person concerned.",
+  "psychological_mechanism": "Hearing something unflattering about yourself from a trusted person is hard to ignore, and checking it can feel disloyal or risky. Being told you are specially trusted can feel good and make you guard that place. Both can keep people from the simple step of comparing notes, which is usually how a distorted account comes apart.",
+  "possible_impact_on_receiver": "A creeping sense that something is off with a friend or colleague is how many describe the start, followed by sharp embarrassment on learning a story was distorted. Some say they lost months of a friendship over a sentence nobody could source. Others feel alone at the center of a group linked only through one person.",
+  "response_options": {
+   "soft_clarification": "Check directly with the other person, in neutral words: 'I heard you said this about me, and I'd rather ask you than assume. Did you?'",
+   "firm_boundary": "Decline to carry or accept messages: 'I'd rather hear that from her directly. Can the three of us talk?'",
+   "disengagement": "Stop trading secondhand reports about other people, and take a report at face value only after you have checked it with the person it concerns.",
+   "support_seeking": "Tell two or three people the same account in the same words and ask what they have heard. Consistency across several mouths is a better check than one retelling.",
+   "workplace_or_professional": "At work, ask for decisions and feedback to be shared in writing or in a group, and compare the instructions you each received before acting."
+  },
+  "boundary_script": "\"If something about me needs saying, please let me hear it from the person who said it. Can the three of us sit down together, or agree that anything about each other gets checked with each other first?\"",
+  "safety_sensitive": false,
+  "safety_note": "This pattern is mainly about trust, not physical danger. It matters more when someone keeping you from comparing notes also controls your time, money, housing or contact with family. Signs include being told whom you may speak to, or being cut off from anyone who might offer another view. A counselor, domestic abuse advocate or relative outside the situation can help you check.",
+  "misuse_warning": [
+   "Calling every misunderstanding between friends 'divide and conquer' can turn clumsy relaying into a conspiracy story and cost you a friendship that could be repaired.",
+   "The label can also be used to cast a person's honest report of what they heard as a campaign."
+  ],
+  "how_to_distinguish_from_related": "Triangulation puts a third person in the position of ammunition, with the focus on winning a dispute between two people. Divide and Conquer is about the gap: its effect is that people who might have compared notes do not. Flying Monkeys are third parties who carry pressure to you, often unknowingly, while here the thing carried is distorted talk about each other. Forced Teaming builds closeness to override your choices; this pattern builds distance between people.",
+  "core_meaning": "Distance or distrust between people who might otherwise support one another, so that they do not compare notes or act together."
+ }
+}
