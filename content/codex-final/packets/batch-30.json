@@ -1,656 +1,530 @@
 {
  "batch": "batch-30",
  "kind": "normal",
- "category": "Identity & Conditioning",
+ "category": "Isolation / social",
  "entries": [
   {
-   "name": "Identity Hooking",
-   "category": "Identity & Conditioning",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Claiming ownership of the target's identity or achievements.",
-    "expanded_definition": "Claiming ownership of the target's identity or achievements. If they made you, leaving means unmaking yourself. As a communication pattern, Identity Hooking-type behavior in the Identity & Conditioning category tends to work by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: claiming ownership of the target's identity or achievements.",
-    "why_this_matters": "If they made you, leaving means unmaking yourself. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Claiming ownership of the target's identity or achievements.",
-     "If they made you, leaving means unmaking yourself.",
-     "Contrasts with a healthier version: \"I'm proud of what I contributed to your growth\" — contribution, not ownership.",
-     "Recognizable by phrasing such as \"You'd be nothing without me\"."
-    ],
-    "what_it_sounds_like": [
-     "You'd be nothing without me.",
-     "No one else would ever put up with you.",
-     "You would be nothing without me.",
-     "I made you who you are.",
-     "Everything you are is because of me.",
-     "Without me, you're nothing."
-    ],
-    "what_it_is_not": [
-     "Almost never innocent as phrased; at best a grandiose overstatement of real support given."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine pride and acknowledgment of real influence in someone's growth is healthy and not the same as ownership."
-    ],
-    "common_false_positives": [
-     "Genuine pride in having contributed to someone's growth, expressed as contribution rather than ownership.",
-     "A mentor or parent processing complicated feelings about someone's independence, without actually claiming ownership of their identity.",
-     "Honest acknowledgment of real influence in someone's development, offered without implying the person can't exist independently."
-    ],
-    "discernment_questions": [
-     "Is the language one of contribution or ownership?",
-     "Does the person's growth get framed as something they'd lose access to by leaving or becoming independent?",
-     "Would the relationship survive the target asserting a fully independent identity?",
-     "Does this framing appear specifically around moments of independence or separation?"
-    ],
-    "less_concerning_if": [
-     "The language reflects genuine contribution and pride, without implying the target can't exist independently."
-    ],
-    "more_concerning_if": [
-     "The person's identity or achievements are framed as owned by someone else, specifically invoked around moments of independence."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Conditional Worth",
-     "definition": "Pegging the target's value to their usefulness or compliance."
-    },
-    {
-     "name": "Learned Helplessness",
-     "definition": "Repeatedly asserting the target cannot cope alone."
-    },
-    {
-     "name": "Loyalty Binds",
-     "definition": "Defining loyalty as unconditional compliance and silence."
-    },
-    {
-     "name": "Self-Gaslighting Induction",
-     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
-    },
-    {
-     "name": "Fawning",
-     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
-    },
-    {
-     "name": "Self-Abandonment",
-     "definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Conditional Worth",
-   "category": "Identity & Conditioning",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Pegging the target's value to their usefulness or compliance.",
-    "expanded_definition": "Pegging the target's value to their usefulness or compliance. Installs a worth-meter the speaker controls. As a communication pattern, Conditional Worth-type behavior in the Identity & Conditioning category tends to work by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: pegging the target's value to their usefulness or compliance.",
-    "why_this_matters": "Installs a worth-meter the speaker controls. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Pegging the target's value to their usefulness or compliance.",
-     "Installs a worth-meter the speaker controls.",
-     "Contrasts with a healthier version: \"I need X from you\" — a need, with the person's worth left out of it.",
-     "Recognizable by phrasing such as \"You're only worth something when you're useful\"."
-    ],
-    "what_it_sounds_like": [
-     "You're only worth something when you're useful.",
-     "Earn your place in this family.",
-     "You matter only when you."
-    ],
-    "what_it_is_not": [
-     "May echo how the speaker was raised — repeating conditioning rather than wielding it deliberately."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Honest requests for something specific don't have to carry any judgment about someone's overall worth.",
-     "Reasonable professional performance expectations are different from a personal worth judgment."
-    ],
-    "common_false_positives": [
-     "Genuine, honest feedback about needing something specific, without any implication about the target's overall worth.",
-     "A relationship going through a rough patch where appreciation is temporarily less expressed, without a pattern of tying worth to usefulness.",
-     "Reasonable performance expectations in a professional context that don't extend to a person's inherent value as a human being."
-    ],
-    "discernment_questions": [
-     "Does approval track specifically what the target provides, or does it persist independent of their current usefulness?",
-     "Is there a version of \"I need X from you\" available, or does every request carry an implied worth judgment?",
-     "Would the target's value in the relationship survive a period where they couldn't provide what's currently valued?",
-     "Does this pattern repeat across different kinds of requests, or was this a one-time, poorly-worded moment?"
-    ],
-    "less_concerning_if": [
-     "Requests are framed as genuine needs, without an implied judgment about the target's overall worth."
-    ],
-    "more_concerning_if": [
-     "Approval and worth consistently track usefulness or compliance, disconnected from the person's value otherwise."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Identity Hooking",
-     "definition": "Claiming ownership of the target's identity or achievements."
-    },
-    {
-     "name": "Learned Helplessness",
-     "definition": "Repeatedly asserting the target cannot cope alone."
-    },
-    {
-     "name": "Loyalty Binds",
-     "definition": "Defining loyalty as unconditional compliance and silence."
-    },
-    {
-     "name": "Self-Gaslighting Induction",
-     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
-    },
-    {
-     "name": "Fawning",
-     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
-    },
-    {
-     "name": "Self-Abandonment",
-     "definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Learned Helplessness",
-   "category": "Identity & Conditioning",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Repeatedly asserting the target cannot cope alone.",
-    "expanded_definition": "Repeatedly asserting the target cannot cope alone. Said often enough, it gets believed — and then it becomes true. As a communication pattern, Learned Helplessness-type behavior in the Identity & Conditioning category tends to work by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: repeatedly asserting the target cannot cope alone.",
-    "why_this_matters": "Said often enough, it gets believed — and then it becomes true. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Repeatedly asserting the target cannot cope alone.",
-     "Said often enough, it gets believed — and then it becomes true.",
-     "Contrasts with a healthier version: \"You've handled hard things before. This one's yours too, and I'm here.\".",
-     "Recognizable by phrasing such as \"You can't survive without me\"."
-    ],
-    "what_it_sounds_like": [
-     "You can't survive without me.",
-     "You'd fall apart in a week on your own.",
-     "You could never manage on your own.",
-     "You're helpless without me."
-    ],
-    "what_it_is_not": [
-     "Anxious over-protection can produce this exact sentence with loving intent and harmful effect."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Honest acknowledgment of a specific, real limitation isn't the same as broad, repeated claims of helplessness."
-    ],
-    "common_false_positives": [
-     "Genuine, realistic concern about someone's specific limitations in a specific area, expressed once and not repeated as a broad claim.",
-     "Honest support during a genuinely difficult time that includes confidence in the person's capability, not just claims of their inability.",
-     "A situation where the person really does currently need substantial support, acknowledged honestly without implying permanent incapacity."
-    ],
-    "discernment_questions": [
-     "Does the claim of inability apply broadly and repeatedly, or to one specific, real limitation?",
-     "Does the messaging include confidence in the person's capability, or only claims of their inability?",
-     "Has the target's own confidence in their capability changed over time in a way that tracks this repeated messaging?",
-     "Would a neutral observer see the claimed helplessness as accurate, or disproportionate to the person's actual demonstrated capability?"
-    ],
-    "less_concerning_if": [
-     "The concern is specific, realistic, and accompanied by genuine confidence in the person's broader capability."
-    ],
-    "more_concerning_if": [
-     "Broad claims of inability repeat regularly and track a decline in the target's own confidence in their capability."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Identity Hooking",
-     "definition": "Claiming ownership of the target's identity or achievements."
-    },
-    {
-     "name": "Conditional Worth",
-     "definition": "Pegging the target's value to their usefulness or compliance."
-    },
-    {
-     "name": "Loyalty Binds",
-     "definition": "Defining loyalty as unconditional compliance and silence."
-    },
-    {
-     "name": "Self-Gaslighting Induction",
-     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
-    },
-    {
-     "name": "Fawning",
-     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
-    },
-    {
-     "name": "Self-Abandonment",
-     "definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Loyalty Binds",
-   "category": "Identity & Conditioning",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Defining loyalty as unconditional compliance and silence.",
-    "expanded_definition": "Defining loyalty as unconditional compliance and silence. Dissent becomes betrayal; the target can't disagree and stay 'good'. As a communication pattern, Loyalty Binds-type behavior in the Identity & Conditioning category tends to work by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: defining loyalty as unconditional compliance and silence.",
-    "why_this_matters": "Dissent becomes betrayal; the target can't disagree and stay 'good'. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Defining loyalty as unconditional compliance and silence.",
-     "Dissent becomes betrayal; the target can't disagree and stay 'good'.",
-     "Contrasts with a healthier version: \"Loyalty to me includes telling me when I'm wrong.\".",
-     "Recognizable by phrasing such as \"If you tell anyone, you're betraying this family\"."
-    ],
-    "what_it_sounds_like": [
-     "If you tell anyone, you're betraying this family.",
-     "What happens in this house stays in this house.",
-     "You owe me your loyalty.",
-     "Loyalty means never questioning.",
-     "If you were really loyal, you would."
-    ],
-    "what_it_is_not": [
-     "Loyalty is a real virtue people invoke sincerely; the flag is loyalty defined as never questioning."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine, bounded requests for confidentiality about a sensitive matter are reasonable and different from demanding total compliance."
-    ],
-    "common_false_positives": [
-     "A genuine, healthy expectation of confidentiality about a specific, sensitive matter, without extending to a broader ban on disagreement.",
-     "Real hurt at feeling unsupported, expressed honestly without demanding unconditional silence or compliance.",
-     "A family or group with a real, legitimate need for discretion about a specific issue, distinct from suppressing all dissent."
-    ],
-    "discernment_questions": [
-     "Does the loyalty demand extend specifically to silencing disagreement, or is it about a legitimate, bounded confidentiality?",
-     "Is there room to express disagreement while still being considered loyal, or does any dissent get framed as betrayal?",
-     "Would voicing a real concern to someone outside the relationship or family be met with genuine dialogue, or condemnation?",
-     "Does the definition of loyalty here match how the person defines their own loyalty back to the target?"
-    ],
-    "less_concerning_if": [
-     "Any request for confidentiality is bounded and specific, with real room for disagreement without it being betrayal."
-    ],
-    "more_concerning_if": [
-     "Loyalty is defined as unconditional compliance and silence, with any dissent treated as betrayal."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Identity Hooking",
-     "definition": "Claiming ownership of the target's identity or achievements."
-    },
-    {
-     "name": "Conditional Worth",
-     "definition": "Pegging the target's value to their usefulness or compliance."
-    },
-    {
-     "name": "Learned Helplessness",
-     "definition": "Repeatedly asserting the target cannot cope alone."
-    },
-    {
-     "name": "Self-Gaslighting Induction",
-     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
-    },
-    {
-     "name": "Fawning",
-     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
-    },
-    {
-     "name": "Self-Abandonment",
-     "definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Self-Gaslighting Induction",
-   "category": "Identity & Conditioning",
+   "name": "Information Cascades",
+   "category": "Isolation / social",
    "tier": "Reference-only",
-   "branch": "aftermath",
+   "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The doubting continues with nobody present to do it. The target discounts things they clearly remember and edits their own account before anyone has even challenged it."
+    "why_this_matters": "The target is judged on a belief that nobody actually checked, and correcting it means taking on a whole group's social pressure rather than a single person's claim.",
+    "what_it_is_not": "Widely held beliefs are often simply correct, and relying on a source with a real track record instead of re-verifying everything yourself is sensible rather than herd-like. The marker is people citing each other's agreement in place of anything independent."
    },
    "existing_specific_text": {
-    "short_definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting.",
-    "expanded_definition": "The installed habit of doubting your own memory and perception before anyone else even has to — the eventual endpoint of sustained gaslighting, where the external doubting is no longer necessary because you've learned to do it to yourself, preemptively and automatically.",
-    "plain_language_summary": "In plain terms: the installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting. This is about a pattern inside you, not a verdict about you.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic. Naming an internal pattern accurately — without judgment — is often the first step toward loosening its grip.",
+    "short_definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning.",
+    "expanded_definition": "A belief, reputation, or narrative spreading not because it's been independently verified, but because agreeing with it feels socially safer than questioning it — once a few visible people accept a claim, others follow suit based on that visible acceptance rather than the claim's actual merits, and the appearance of consensus builds faster than any actual verification could.",
+    "plain_language_summary": "In plain terms: a belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting.",
-     "Recognizable by phrasing such as \"Catching yourself saying 'maybe I'm remembering it wrong' about things you documented\"."
+     "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
     ],
     "what_it_sounds_like": [
-     "Catching yourself saying \"maybe I'm remembering it wrong\" about something you actually documented or have clear evidence of.",
-     "Pre-editing your own account of events to match someone else's version, before you've even shared what you remember.",
-     "Feeling a reflexive uncertainty about your own memory that doesn't match how clearly you actually recall something."
-    ],
-    "what_it_is_not": [
-     "Ordinary epistemic humility — checking your memory, admitting error — is healthy. The aftermath state is reflexive self-doubt that consistently favors one person's version."
+     "A claim spreads rapidly through a group with each new person citing the fact that others already believe it, rather than any independent evidence.",
+     "Questioning the claim, even reasonably, produces social discomfort disproportionate to a simple request for evidence.",
+     "Looking back, the original source of the claim turns out to be thin or unverified, despite how widely and confidently it was accepted."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Normal memory is imperfect for everyone and doesn't require any relationship's influence to explain some uncertainty.",
-     "Genuinely reconsidering a memory in light of credible new evidence is healthy, not a symptom of anything."
+     "Trusting a credible source's track record without personally re-verifying everything is a normal, reasonable practice.",
+     "Sometimes a widely-believed thing is also independently true."
     ],
     "common_false_positives": [
-     "Genuine, healthy uncertainty about a memory that really is hazy or long ago, without a pattern of automatically discounting clear memories.",
-     "Open-minded reconsideration of a memory when presented with real, credible new evidence, which is a healthy update, not self-gaslighting.",
-     "Normal memory imperfection that affects everyone and isn't specifically tied to one relationship's influence."
+     "A claim that spreads because it's independently verified by many people checking for themselves, not just following social cues.",
+     "Legitimate trust in credible sources whose track record actually warrants confidence without independent re-verification of every claim.",
+     "A belief that happens to be both widely held and also, independently, accurate."
     ],
     "discernment_questions": [
-     "Does the self-doubt apply even to things you have clear documentation or evidence for?",
-     "Does the doubt appear specifically and reliably in contexts connected to one person's account differing from yours?",
-     "Would you describe your memory in this specific instance as genuinely hazy, or clear but reflexively doubted anyway?",
-     "Does the uncertainty ease when you're away from the person or context connected to it?"
+     "Can the claim be traced to independent verification, or does its credibility rest mainly on how many people already believe it?",
+     "Does questioning the claim produce reasoned engagement, or social discomfort and pressure to fall in line?",
+     "Would the claim's acceptance look different if people evaluated it without knowing what others already believed?",
+     "Is there a plausible, verifiable original source, or does the trail go cold?"
     ],
     "less_concerning_if": [
-     "The uncertainty is about a genuinely hazy memory, or arose from real, credible new evidence, not a reflexive pattern."
+     "The claim traces back to genuine, independent verification rather than just social consensus."
     ],
     "more_concerning_if": [
-     "Self-doubt applies even to clearly documented events and shows up reliably in contexts connected to one person's differing account."
+     "Questioning it produces disproportionate social pressure, and the trail back to any actual evidence is thin or nonexistent."
     ],
-    "repair_check": "Self-repair check: has anything changed in the conditions that produced this pattern? Are there moments now, even small ones, where the old response doesn't fire the way it used to? Self-repair isn't a single realization — it's a pattern of small, repeated choices to trust your own read of things.",
-    "boundary_respect_check": "What happens when you give yourself permission to slow down, check the facts as you understand them, or ask for support before deciding how you feel? Is that permission honored internally, or does old habit override it quickly?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a documented survival/adaptation mechanism, not a permanent trait or a diagnosis.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of someone carrying this pattern.",
-    "boundary_script": "Self-support script: \"I'm allowed to trust my own read of things. I don't have to decide how I feel about this right now.\"",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone.",
-     "This entry is for self-understanding. It is not a basis for describing yourself, or for anyone else to describe you, as broken, defective, or diagnosable."
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Identity Hooking",
-     "definition": "Claiming ownership of the target's identity or achievements."
+     "name": "Strategic Ambiguity",
+     "definition": "Deliberately vague language that lets a speaker claim different meanings to different audiences later."
     },
     {
-     "name": "Conditional Worth",
-     "definition": "Pegging the target's value to their usefulness or compliance."
+     "name": "Interruption Patterns",
+     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
     },
     {
-     "name": "Learned Helplessness",
-     "definition": "Repeatedly asserting the target cannot cope alone."
+     "name": "Idea Theft in Real Time",
+     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
     },
     {
-     "name": "Loyalty Binds",
-     "definition": "Defining loyalty as unconditional compliance and silence."
+     "name": "Gatekeeping",
+     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
     },
     {
-     "name": "Fawning",
-     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
+     "name": "Punishment by Proxy",
+     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
     },
     {
-     "name": "Self-Abandonment",
-     "definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "aftermath_self_reflection_needs_review",
-     "clinical_adjacent_wording"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Fawning",
-   "category": "Identity & Conditioning",
-   "tier": "Reference-only",
-   "branch": "aftermath",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Safety is bought with the target's own position: they apologise for things done to them, and lose track of what they actually think while they are still saying it."
-   },
-   "existing_specific_text": {
-    "short_definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy.",
-    "expanded_definition": "A survival response of appeasing, agreeing with, and pleasing someone who feels threatening — using flattery, agreement, and self-erasure as a strategy to stay safe. This is a genuine, well-documented nervous-system response, alongside fight, flight, and freeze, not a character flaw; it develops because it worked, at some point, to reduce danger or conflict.",
-    "plain_language_summary": "In plain terms: a survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy. This is about a pattern inside you, not a verdict about you.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic. Naming an internal pattern accurately — without judgment — is often the first step toward loosening its grip.",
-    "what_it_is": [
-     "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy.",
-     "Recognizable by phrasing such as \"Apologizing for things that were done to you\"."
-    ],
-    "what_it_sounds_like": [
-     "Apologizing for things that were actually done to you, rather than things you did.",
-     "Feeling your own opinions dissolve mid-sentence when someone's expression changes.",
-     "Noticing you've already mentally rehearsed an apology for something you don't think you actually did wrong."
-    ],
-    "what_it_is_not": [
-     "Kindness, diplomacy, and conflict-avoidance are personality, not pathology. Fawning is specifically fear-driven appeasement of a particular person."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Cultural norms around politeness and deference exist without being rooted in fear.",
-     "Genuine, mutual compromise and accommodation are healthy and different from fear-driven appeasement."
-    ],
-    "common_false_positives": [
-     "Genuine, situational diplomacy or conflict-avoidance in a specific tense moment, without it being a broader survival pattern.",
-     "Cultural norms around deference or politeness that aren't rooted in a felt sense of threat.",
-     "Normal accommodation and compromise that's mutual and doesn't come from a place of fear."
-    ],
-    "discernment_questions": [
-     "Does this response happen specifically around people or situations that feel unsafe or unpredictable, or is it a general accommodating style?",
-     "Do you notice a felt sense of danger or threat underneath the impulse to appease?",
-     "Does the pattern ease in relationships that feel genuinely safe, or does it persist everywhere?",
-     "Would you describe the underlying feeling as fear, more than simple preference for harmony?"
-    ],
-    "less_concerning_if": [
-     "This reflects situational diplomacy in one tense moment, without an underlying felt sense of threat."
-    ],
-    "more_concerning_if": [
-     "The pattern specifically and reliably shows up around people or situations that feel unsafe, with a real felt sense of danger underneath it."
-    ],
-    "repair_check": "Self-repair check: has anything changed in the conditions that produced this pattern? Are there moments now, even small ones, where the old response doesn't fire the way it used to? Self-repair isn't a single realization — it's a pattern of small, repeated choices to trust your own read of things.",
-    "boundary_respect_check": "What happens when you give yourself permission to slow down, check the facts as you understand them, or ask for support before deciding how you feel? Is that permission honored internally, or does old habit override it quickly?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a documented survival/adaptation mechanism, not a permanent trait or a diagnosis.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of someone carrying this pattern.",
-    "boundary_script": "Self-support script: \"I'm allowed to trust my own read of things. I don't have to decide how I feel about this right now.\"",
-    "safety_note": "This entry describes something happening inside you, not a safety threat from someone else — but if what's underneath it involves fear, threats, or danger from another person, the same principle applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists. If recognizing this state brings up distress, a therapist or counselor is a reasonable next step, not an overreaction.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone.",
-     "This entry is for self-understanding. It is not a basis for describing yourself, or for anyone else to describe you, as broken, defective, or diagnosable."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Identity Hooking",
-     "definition": "Claiming ownership of the target's identity or achievements."
-    },
-    {
-     "name": "Conditional Worth",
-     "definition": "Pegging the target's value to their usefulness or compliance."
-    },
-    {
-     "name": "Learned Helplessness",
-     "definition": "Repeatedly asserting the target cannot cope alone."
-    },
-    {
-     "name": "Loyalty Binds",
-     "definition": "Defining loyalty as unconditional compliance and silence."
-    },
-    {
-     "name": "Self-Gaslighting Induction",
-     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
-    },
-    {
-     "name": "Self-Abandonment",
-     "definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment."
+     "name": "Weaponized Inclusion / Strategic Containment",
+     "definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "aftermath_self_reflection_needs_review",
-     "clinical_adjacent_wording"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Self-Abandonment",
-   "category": "Identity & Conditioning",
+   "name": "Interruption Patterns",
+   "category": "Isolation / social",
    "tier": "Reference-only",
-   "branch": "aftermath",
+   "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target can say what would keep the peace far more readily than what they want, and their own limits stop being information they are willing to act on."
+    "why_this_matters": "The target's points never reach completion, so their contribution is judged on fragments — and in time they start shortening themselves before anyone has cut in.",
+    "what_it_is_not": "Some groups are interruption-heavy as a matter of culture and cut across everybody equally, and a single eager interruption means nothing at all. The question is distribution: spread across the room, or concentrated on the same voices."
    },
    "existing_specific_text": {
-    "short_definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment.",
-    "expanded_definition": "Habitually overriding your own needs, limits, and knowledge of yourself in order to preserve a relationship or avoid a negative reaction — a learned pattern of putting your own reality last, so consistently that it can become hard to notice you're doing it at all.",
-    "plain_language_summary": "In plain terms: habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment. This is about a pattern inside you, not a verdict about you.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic. Naming an internal pattern accurately — without judgment — is often the first step toward loosening its grip.",
+    "short_definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition.",
+    "expanded_definition": "Systematically cutting off specific voices in group settings — repeatedly, and specifically targeting certain people — silencing through conversational architecture rather than any explicit rule or prohibition. No one is ever told they can't speak; they just never get to finish, while others reliably do.",
+    "plain_language_summary": "In plain terms: systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment.",
-     "Recognizable by phrasing such as \"Agreeing to things you promised yourself you wouldn't\"."
+     "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
     ],
     "what_it_sounds_like": [
-     "Agreeing to things you'd promised yourself, beforehand, that you wouldn't agree to.",
-     "Treating your own exhaustion or need for rest as a problem to hide, rather than something to honor.",
-     "Noticing you can list what would keep the peace far more easily than you can list what you actually want."
-    ],
-    "what_it_is_not": [
-     "Ordinary compromise is mutual and bounded; self-abandonment is unilateral and expanding."
+     "The same person or people are consistently interrupted before finishing a point, while others in the same setting are allowed to speak uninterrupted.",
+     "Interruptions cluster specifically around certain topics or moments, rather than being distributed evenly across the conversation.",
+     "The target notices they've started truncating their own points preemptively, anticipating being cut off before they can finish."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Reasonable compromise and flexibility, with real reciprocity, is part of healthy relationships.",
-     "Temporarily prioritizing someone else's urgent need, followed by returning to your own baseline, is normal."
+     "Some groups and cultures have a naturally fast-paced, overlapping conversational style that isn't targeted at anyone.",
+     "A single interruption in a moment of excitement doesn't establish a pattern."
     ],
     "common_false_positives": [
-     "A genuine, situational compromise made once, thoughtfully, that doesn't reflect an ongoing pattern of overriding your own needs.",
-     "Reasonable flexibility and adaptability in a healthy relationship where your needs are also honored in return.",
-     "A temporary period of prioritizing someone else's urgent, real need, followed by a return to your own baseline."
+     "A generally fast-paced, interruption-heavy conversational culture that applies evenly to everyone in the group, not targeted at anyone specifically.",
+     "A single instance of genuine excitement or urgency leading to an interruption, without a broader pattern.",
+     "A naturally more talkative group dynamic where interruptions happen but aren't distributed unevenly by who's speaking."
     ],
     "discernment_questions": [
-     "Is overriding your own needs a one-time, thoughtful compromise, or a consistent, automatic pattern?",
-     "Do you know what you actually want, or does the question itself feel hard to answer?",
-     "Does this pattern ease in relationships or situations that feel safe, or does it persist everywhere?",
-     "Is there reciprocity — does anyone else's flexibility toward your needs match what you're giving?"
+     "Are interruptions distributed evenly across speakers, or do they consistently cluster around the same person or people?",
+     "Does the interrupted person ever get space to finish their point, even if delayed?",
+     "Does the pattern correlate with specific topics where the interrupted person's input would be inconvenient?",
+     "Would a neutral observer, tallying interruptions across a meeting, see a clear imbalance?"
     ],
     "less_concerning_if": [
-     "This reflects a one-time, thoughtful compromise or a temporary period of prioritizing someone else's real, urgent need."
+     "Interruptions are distributed evenly across the group and reflect a general conversational style, not a targeted pattern."
     ],
     "more_concerning_if": [
-     "Overriding your own needs is automatic and consistent, and you find it genuinely hard to identify what you actually want."
+     "Interruptions consistently and specifically target the same person, clustering around inconvenient topics."
     ],
-    "repair_check": "Self-repair check: has anything changed in the conditions that produced this pattern? Are there moments now, even small ones, where the old response doesn't fire the way it used to? Self-repair isn't a single realization — it's a pattern of small, repeated choices to trust your own read of things.",
-    "boundary_respect_check": "What happens when you give yourself permission to slow down, check the facts as you understand them, or ask for support before deciding how you feel? Is that permission honored internally, or does old habit override it quickly?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a documented survival/adaptation mechanism, not a permanent trait or a diagnosis.",
-    "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of someone carrying this pattern.",
-    "boundary_script": "Self-support script: \"I'm allowed to trust my own read of things. I don't have to decide how I feel about this right now.\"",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone.",
-     "This entry is for self-understanding. It is not a basis for describing yourself, or for anyone else to describe you, as broken, defective, or diagnosable."
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Identity Hooking",
-     "definition": "Claiming ownership of the target's identity or achievements."
+     "name": "Strategic Ambiguity",
+     "definition": "Deliberately vague language that lets a speaker claim different meanings to different audiences later."
     },
     {
-     "name": "Conditional Worth",
-     "definition": "Pegging the target's value to their usefulness or compliance."
+     "name": "Information Cascades",
+     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
     },
     {
-     "name": "Learned Helplessness",
-     "definition": "Repeatedly asserting the target cannot cope alone."
+     "name": "Idea Theft in Real Time",
+     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
     },
     {
-     "name": "Loyalty Binds",
-     "definition": "Defining loyalty as unconditional compliance and silence."
+     "name": "Gatekeeping",
+     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
     },
     {
-     "name": "Self-Gaslighting Induction",
-     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
+     "name": "Punishment by Proxy",
+     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
     },
     {
-     "name": "Fawning",
-     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
+     "name": "Weaponized Inclusion / Strategic Containment",
+     "definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "aftermath_self_reflection_needs_review",
-     "clinical_adjacent_wording"
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Idea Theft in Real Time",
+   "category": "Isolation / social",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's contribution counts for somebody else, and the only way to claim it back makes them look petty in the very moment it happens.",
+    "what_it_is_not": "People genuinely reach the same idea within minutes of each other, someone who did not register your version may honestly believe theirs is new, and a restatement that adds something substantive has earned its own credit. Once is coincidence; it is the repetition that registers."
+   },
+   "existing_specific_text": {
+    "short_definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker.",
+    "expanded_definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker. As a communication pattern, Idea Theft in Real Time-type behavior in the Isolation / social category tends to work by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
+    "plain_language_summary": "In plain terms: someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
     ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "what_it_sounds_like": [
+     "The target makes a point in a meeting or conversation that goes unacknowledged, then someone else restates it minutes later and receives credit.",
+     "The target notices a pattern of their contributions being echoed back by someone else as if it were their own original idea.",
+     "Attempts to note \"I just said that\" are met with dismissal or a claim that the restatement was somehow different."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Independent, simultaneous arrival at the same idea happens more often than people expect, especially among people working on the same problem.",
+     "Genuinely not hearing or registering someone's point is common in busy meetings."
+    ],
+    "common_false_positives": [
+     "Two people genuinely arriving at the same idea independently and nearly simultaneously, without either one copying the other.",
+     "A person who didn't hear or register the target's original point, and genuinely believes they're contributing something new.",
+     "A restatement that adds real, substantive value beyond the original point, warranting some additional credit."
+    ],
+    "discernment_questions": [
+     "Does the timing and near-identical phrasing suggest the second speaker heard and is restating the first?",
+     "Does this pattern recur specifically with the same target, or does credit get misattributed more randomly?",
+     "Is there any acknowledgment when the pattern is pointed out, or consistent dismissal?",
+     "Does the restatement add genuine additional value, or is it essentially identical to the original?"
+    ],
+    "less_concerning_if": [
+     "The restatement adds genuine, substantive value beyond the original point, or the timing suggests independent arrival at the same idea."
+    ],
+    "more_concerning_if": [
+     "The restatement is near-identical and specifically follows the same target's unacknowledged point, recurring as a pattern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Ambiguity",
+     "definition": "Deliberately vague language that lets a speaker claim different meanings to different audiences later."
+    },
+    {
+     "name": "Information Cascades",
+     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+    },
+    {
+     "name": "Interruption Patterns",
+     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+    },
+    {
+     "name": "Gatekeeping",
+     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+    },
+    {
+     "name": "Punishment by Proxy",
+     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+    },
+    {
+     "name": "Weaponized Inclusion / Strategic Containment",
+     "definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Gatekeeping",
+   "category": "Isolation / social",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target needs permission that others do not, and because the criteria move there is no version of asking correctly that reliably works.",
+    "what_it_is_not": "Managing access is the actual job in plenty of roles, and criteria that are published and applied to everyone are simply process; someone slow to make an introduction is usually just busy. The signal is criteria that change depending on who is asking."
+   },
+   "existing_specific_text": {
+    "short_definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded.",
+    "expanded_definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded. As a communication pattern, Gatekeeping-type behavior in the Isolation / social category tends to work by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
+    "plain_language_summary": "In plain terms: controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+    ],
+    "what_it_sounds_like": [
+     "Access to a person, group, resource, or opportunity is controlled by one party, who decides who gets in and who's kept out.",
+     "The criteria for access shift depending on who's asking, rather than being applied consistently.",
+     "The target notices they're consistently the one needing permission or approval that others don't seem to need."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Legitimate roles that involve managing access are common and normal.",
+     "Being genuinely busy can delay facilitating access without any intent to control it."
+    ],
+    "common_false_positives": [
+     "A legitimate, disclosed role that involves managing access as part of its actual function.",
+     "Reasonable, evenly-applied criteria for access that everyone, including the target, understands and accepts.",
+     "A person genuinely too busy to facilitate access promptly, without any intent to control who gets it."
+    ],
+    "discernment_questions": [
+     "Are the criteria for access applied consistently to everyone, or do they shift depending on who's asking?",
+     "Is the gatekeeping role disclosed and legitimate, or does it seem to serve mainly to control the target specifically?",
+     "Does the target have any path to access that doesn't run entirely through this one person?",
+     "Would a reasonable person consider the level of control proportionate to the gatekeeper's actual role?"
+    ],
+    "less_concerning_if": [
+     "Access criteria are consistent, disclosed, and applied evenly to everyone, including the target."
+    ],
+    "more_concerning_if": [
+     "Criteria shift depending on who's asking, and the target is consistently the one needing special permission."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Ambiguity",
+     "definition": "Deliberately vague language that lets a speaker claim different meanings to different audiences later."
+    },
+    {
+     "name": "Information Cascades",
+     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+    },
+    {
+     "name": "Interruption Patterns",
+     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+    },
+    {
+     "name": "Idea Theft in Real Time",
+     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+    },
+    {
+     "name": "Punishment by Proxy",
+     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+    },
+    {
+     "name": "Weaponized Inclusion / Strategic Containment",
+     "definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Punishment by Proxy",
+   "category": "Isolation / social",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's own boundaries start carrying a cost for someone else, so protecting themselves means exposing a person they care about — which is usually enough to stop them.",
+    "what_it_is_not": "Timing coincides far more often than intuition expects, and third parties have their own independent history with the same people. This is among the easiest patterns in the book to over-read and the least safe to act on from timing alone.",
+    "note": "Kept the disconfirming case deliberately strong because the tactic is defined by an inference about causation that the reader usually cannot verify."
+   },
+   "existing_specific_text": {
+    "short_definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't.",
+    "expanded_definition": "Harming, excluding, or creating difficulty for someone the target cares about — specifically to send a message without directly confronting the target — which makes the attack difficult to name as retaliation because it never touched the target directly. The target is left managing the guilt and consequences of harm to someone they love, without ever being the one who was ostensibly targeted.",
+    "plain_language_summary": "In plain terms: harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+    ],
+    "what_it_sounds_like": [
+     "A friend, family member, or associate of the target experiences unexplained coldness, exclusion, or difficulty specifically after the target did something the other person didn't like.",
+     "The timing of the third party's mistreatment closely tracks a specific conflict with the target, despite the third party having no independent role in it.",
+     "The target notices a sense that pushing back on their own treatment might put someone else they care about at risk."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Coincidental timing between unrelated events happens and doesn't prove retaliation.",
+     "People sometimes have their own independent, unrelated conflicts with each other."
+    ],
+    "common_false_positives": [
+     "Genuinely unrelated difficulty for the third party that coincidentally overlaps in timing with the target's conflict.",
+     "A third party who has their own, independent reasons for a strained relationship with the other person, unconnected to the target.",
+     "Two separate conflicts that happen to involve people connected to each other, without one being retaliation for the other."
+    ],
+    "discernment_questions": [
+     "Does the third party's difficulty closely and specifically track the timing of a conflict with the target?",
+     "Does the third party have any independent basis for the mistreatment, or is the target the only apparent connection?",
+     "Does the person doing this ever acknowledge or hint at the connection, even indirectly?",
+     "Would the third party's treatment make sense at all without reference to the target's own conflict?"
+    ],
+    "less_concerning_if": [
+     "The third party's difficulty has an independent, verifiable cause unrelated to the target's own conflict."
+    ],
+    "more_concerning_if": [
+     "The timing closely and specifically tracks the target's conflict, with no independent explanation for the third party's treatment."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Ambiguity",
+     "definition": "Deliberately vague language that lets a speaker claim different meanings to different audiences later."
+    },
+    {
+     "name": "Information Cascades",
+     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+    },
+    {
+     "name": "Interruption Patterns",
+     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+    },
+    {
+     "name": "Idea Theft in Real Time",
+     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+    },
+    {
+     "name": "Gatekeeping",
+     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+    },
+    {
+     "name": "Weaponized Inclusion / Strategic Containment",
+     "definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Weaponized Inclusion / Strategic Containment",
+   "category": "Isolation / social",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The target's independent options close as their formal ones open, and any objection is answered by the fact that they were included.",
+    "what_it_is_not": "Genuine inclusion in which someone's input really does move outcomes looks much the same from outside, and new structures often take time to build the mechanisms that make input count. Having less influence because of seniority or experience is not containment."
+   },
+   "existing_specific_text": {
+    "short_definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage.",
+    "expanded_definition": "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage — rather than excluding a person who might cause trouble, they're kept close, given a seat at the table, and thereby kept controllable and unable to organize or act independently from outside.",
+    "plain_language_summary": "In plain terms: including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Including someone specifically to control, monitor, or neutralize them, where participation itself becomes the cage."
+    ],
+    "what_it_sounds_like": [
+     "Inclusion in a group or process that, on closer look, mainly seems to function to keep tabs on the person or limit their independent action, rather than genuinely valuing their input.",
+     "The included person notices their actual influence on outcomes is minimal, despite technically having a seat at the table.",
+     "Attempts to act independently, outside the \"included\" structure, are met with reminders that they're \"already part of\" the process."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, good-faith inclusion sometimes takes time to develop real mechanisms for influence.",
+     "Having less influence due to seniority or experience isn't the same as deliberate containment."
+    ],
+    "common_false_positives": [
+     "Genuine, good-faith inclusion where the person's input actually shapes outcomes, even if imperfectly.",
+     "A person invited to participate who simply has less influence than others due to seniority or experience, not deliberate containment.",
+     "An inclusive structure that's new or still developing real mechanisms for meaningful input, without any intent to neutralize anyone."
+    ],
+    "discernment_questions": [
+     "Does the person's participation actually influence real outcomes, or is it structurally symbolic?",
+     "Is being \"included\" used specifically to discourage the person from acting or organizing independently outside that structure?",
+     "Would the person's absence from the process actually change anything about how decisions get made?",
+     "Is there a plausible, good-faith explanation for the limited influence, like genuine seniority differences?"
+    ],
+    "less_concerning_if": [
+     "Participation genuinely shapes real outcomes, even if influence is still developing or uneven."
+    ],
+    "more_concerning_if": [
+     "Inclusion functions mainly to monitor or discourage independent action, with minimal actual influence on outcomes."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Strategic Ambiguity",
+     "definition": "Deliberately vague language that lets a speaker claim different meanings to different audiences later."
+    },
+    {
+     "name": "Information Cascades",
+     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+    },
+    {
+     "name": "Interruption Patterns",
+     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+    },
+    {
+     "name": "Idea Theft in Real Time",
+     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+    },
+    {
+     "name": "Gatekeeping",
+     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+    },
+    {
+     "name": "Punishment by Proxy",
+     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+    }
+   ],
+   "covers_two_things": "A title joins two things (Weaponized Inclusion / Strategic Containment). Cover BOTH, and say plainly whether they are two names for one behavior or two related behaviors.",
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]

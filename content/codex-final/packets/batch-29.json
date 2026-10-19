@@ -1,59 +1,60 @@
 {
  "batch": "batch-29",
  "kind": "normal",
- "category": "Idealization structural",
+ "category": "Institutional & Process",
  "entries": [
   {
-   "name": "Strategic Self-Deprecation / Performed Humility",
-   "category": "Idealization structural",
-   "tier": "Watch-only",
-   "branch": "watch",
+   "name": "Pseudo-Consultation",
+   "category": "Institutional & Process",
+   "tier": "Reference-only",
+   "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target arrives with a concern and leaves having provided reassurance. The thing they came to say never gets said, and they often feel unkind for having wanted to say it."
+    "why_this_matters": "The target spends real effort and real candour on input that could never have changed anything, and the decision is afterwards described as one they helped make."
    },
    "existing_specific_text": {
-    "short_definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern.",
-    "expanded_definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern. As a communication pattern, Strategic Self-Deprecation / Performed Humility-type behavior in the Idealization structural category tends to work by accelerating trust and attachment before it has been earned, so normal caution gets bypassed — describing a pattern in the exchange, not a fixed trait in the person. As a Watch-only entry, note: text alone cannot establish intent here, and this is never scored by the tool.",
-    "plain_language_summary": "In plain terms: performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "The performance of seeking input after the decision is already made — participation as theater.",
+    "expanded_definition": "The performance of seeking input or feedback after the actual decision has already been made — participation as theater, designed to produce the appearance of buy-in or due process without any real possibility of the input changing the outcome.",
+    "plain_language_summary": "In plain terms: the performance of seeking input after the decision is already made — participation as theater.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern.",
-     "Recognizable by phrasing such as \"Self-deprecating comments that reliably appear right before or during moments the person might otherwise be criticized\"."
+     "The performance of seeking input after the decision is already made — participation as theater.",
+     "Recognizable by phrasing such as \"Feedback sessions scheduled after contracts are signed\"."
     ],
     "what_it_sounds_like": [
-     "Self-deprecating comments that reliably appear right before or during moments the person might otherwise be criticized.",
-     "The target frequently finds themselves comforting the person who was about to be held accountable.",
-     "Something that reads as performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern on its surface, but could equally be an honest mismatch in communication style."
+     "A feedback or consultation session scheduled after contracts are already signed or the decision is otherwise already final.",
+     "Input is solicited, but no visible mechanism exists for it to actually change anything about the outcome.",
+     "Concerns raised during the \"consultation\" are acknowledged politely but never seem to affect what happens next."
     ],
     "what_it_is_not": [
-     "Genuine humility and self-deprecating humor are common, healthy, and extremely hard to distinguish from a strategic version in text — this stays watch-only because the same words mean very different things depending on timing and intent that a phrase-matcher cannot see."
+     "Sometimes input genuinely can't change constraints — honest consultation says so upfront instead of staging influence."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine self-awareness and honest acknowledgment of real weaknesses are healthy and not automatically strategic."
+     "Legitimate consultation on narrower implementation details, after a larger decision, is a normal and honest scope.",
+     "Genuine time constraints, disclosed honestly, can limit how much a decision can still change."
     ],
     "common_false_positives": [
-     "Genuine, honest self-awareness about a real weakness, shared without any strategic timing relative to being criticized.",
-     "A person's authentic humility or self-critical tendency that shows up consistently, not just before potential critique.",
-     "Real vulnerability shared in a moment that happens to coincide with, but isn't calculated around, an opportunity for criticism."
+     "A genuine consultation process where the decision is still genuinely open, even if the final call ultimately isn't unanimous.",
+     "A situation where feedback is sought on implementation details after a larger decision is made, which is a legitimate, narrower scope for the consultation.",
+     "Time constraints that genuinely limit how much a decision can change, disclosed honestly rather than hidden behind a pretense of open input."
     ],
     "discernment_questions": [
-     "Does the self-criticism appear specifically and reliably right before or during moments the person might otherwise be criticized?",
-     "Does the target find themselves reassuring the person instead of raising their own original concern?",
-     "Is the self-deprecation consistent across contexts, or does it appear selectively around accountability moments?",
-     "Would the underlying concern still get raised if the self-deprecating comment hadn't preempted it?"
+     "Is there any evidence the decision was genuinely still open at the time input was solicited?",
+     "Does feedback from the consultation process visibly show up anywhere in the final outcome?",
+     "Is the scope of what's actually still changeable disclosed honestly, or presented as broader than it really is?",
+     "Would the outcome have been any different if no one had participated in the consultation at all?"
     ],
     "less_concerning_if": [
-     "Self-criticism is consistent across contexts and doesn't specifically precede moments of accountability."
+     "The decision was genuinely still open, or the narrower scope of what's changeable is disclosed honestly."
     ],
     "more_concerning_if": [
-     "Self-deprecation reliably appears right before criticism and redirects the target into reassurance instead."
+     "The decision was already final before input was solicited, and feedback shows no visible effect on the outcome."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -61,160 +62,91 @@
    },
    "related_tactics": [
     {
-     "name": "Credential-Costuming",
-     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
     },
     {
-     "name": "Identity Performances",
-     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
     },
     {
-     "name": "Social Engineering",
-     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
     },
     {
-     "name": "Performative Allyship / False Solidarity",
-     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [
-     "high_false_positive_risk"
+     "workplace_or_legal_ambiguity"
     ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
-  },
-  {
-   "name": "Credential-Costuming",
-   "category": "Idealization structural",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "The target defers to standing that is not there, and the questions they would otherwise have asked start to feel out of place. Decisions then rest on the appearance of expertise rather than on anything that was tested.",
-    "what_it_is_not": "An unfamiliar credential is not a false one — plenty of genuine titles mean nothing outside their field, and modest people describe real experience in ways that happen to sound grand. A claim you cannot place is something to check, not a finding in itself."
-   },
-   "existing_specific_text": {
-    "short_definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist.",
-    "expanded_definition": "Presenting invented, exaggerated, or misappropriated credentials, titles, or expertise to manufacture unearned authority and trust — costuming oneself in the appearance of legitimacy to make claims, requests, or positions seem more credible than the person's actual qualifications would support.",
-    "plain_language_summary": "In plain terms: inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
-    ],
-    "what_it_sounds_like": [
-     "Credentials, titles, or affiliations that don't hold up when independently checked against the issuing institution or organization.",
-     "Expertise claimed in a specific area that, when tested with basic follow-up questions, reveals a surprisingly thin or inconsistent understanding.",
-     "A title or credential used prominently and repeatedly to preempt questioning, rather than substantive expertise doing that work."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine credentials can be unfamiliar to an evaluator without being fake.",
-     "Honest, modest claims about real experience aren't the same as invented credentials."
-    ],
-    "common_false_positives": [
-     "A genuine credential that's simply unfamiliar to the person evaluating it, verifiable with a bit of research.",
-     "Modest, honest self-description of real experience that isn't inflated, even if it sounds impressive.",
-     "A legitimate title from an early-career stage or a field with different norms around credentialing than the evaluator expects."
-    ],
-    "discernment_questions": [
-     "Does the credential or title verify independently against the issuing body or organization?",
-     "Does the person's actual demonstrated knowledge match the level implied by the claimed credential?",
-     "Is the credential invoked mainly to preempt scrutiny, rather than substantive expertise speaking for itself?",
-     "Would a basic, good-faith verification check resolve the question either way?"
-    ],
-    "less_concerning_if": [
-     "The credential verifies independently and the person's actual knowledge matches what it implies."
-    ],
-    "more_concerning_if": [
-     "The credential doesn't verify, or actual demonstrated knowledge falls notably short of what's claimed."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Strategic Self-Deprecation / Performed Humility",
-     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
-    },
-    {
-     "name": "Identity Performances",
-     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
-    },
-    {
-     "name": "Social Engineering",
-     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
-    },
-    {
-     "name": "Performative Allyship / False Solidarity",
-     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Identity Performances",
-   "category": "Idealization structural",
+   "name": "Tokenism",
+   "category": "Institutional & Process",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Trust is extended to a version of someone that does not exist, so the target's read on the relationship rests on facts that were supplied to them rather than observed.",
-    "what_it_is_not": "Everyone presents differently in different rooms, and someone rebuilding or still working out who they are is changing rather than fabricating. The question is whether specific claims hold up under a reasonable follow-up, not whether the person seems unlike themselves at work."
+    "why_this_matters": "The target's presence is used as the answer to the criticism they were brought in to voice, and objecting to that makes them look ungrateful for the seat."
    },
    "existing_specific_text": {
-    "short_definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support.",
-    "expanded_definition": "Presenting a curated, strategically constructed persona — rather than an authentic self — specifically to gain trust, sympathy, or advantage in a particular context, with the performance calibrated to what a specific audience wants to see rather than reflecting who the person actually is.",
-    "plain_language_summary": "In plain terms: curating a false persona to build trust, credibility, or access that reality wouldn't support.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Symbolic inclusion of a person or group to deflect criticism while denying real power.",
+    "expanded_definition": "Symbolic inclusion of a person or group — a visible seat, title, or presence — specifically to deflect criticism or demonstrate diversity, while denying that person or group any of the real power, voice, or influence the inclusion appears to represent.",
+    "plain_language_summary": "In plain terms: symbolic inclusion of a person or group to deflect criticism while denying real power.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+     "Symbolic inclusion of a person or group to deflect criticism while denying real power.",
+     "Recognizable by phrasing such as \"One seat at the table, no vote\"."
     ],
     "what_it_sounds_like": [
-     "A persona that shifts noticeably depending on the audience, in ways that go beyond normal context-appropriate behavior into apparent fabrication.",
-     "Claimed experiences or identity markers that don't hold up to specific, reasonable follow-up questions.",
-     "The performed identity closely tracks what would be most sympathetic or advantageous in a specific situation, in a way that seems too convenient to be coincidental."
+     "A seat at the table that comes with no actual vote, veto, or meaningful influence over what gets decided.",
+     "The included person's presence is highlighted publicly, while their actual input in private meetings is consistently overridden or ignored.",
+     "Criticism about representation is met by pointing to the included person's presence, rather than any change in how much real influence they have."
+    ],
+    "what_it_is_not": [
+     "Small first steps toward inclusion can be sincere — the flag is when representation is the end state, not the beginning."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Everyone adjusts their self-presentation somewhat across different contexts without that being fabrication.",
-     "Legitimate privacy about certain details, without inventing false ones, is different from a constructed performance."
+     "Genuinely new roles can take real time to develop influence without that being tokenism.",
+     "Uneven but real and growing influence is different from purely symbolic inclusion."
     ],
     "common_false_positives": [
-     "Normal, healthy code-switching or context-appropriate self-presentation that everyone does to some degree, without fabricating anything.",
-     "Genuine personal growth or identity exploration that's authentically evolving, not strategically performed for an audience.",
-     "A private, legitimate reason for withholding certain personal details in a specific context, without inventing false ones."
+     "A genuine, newly-created role that's still developing real influence over time, in good faith, rather than being permanently symbolic.",
+     "A person who's included and whose input genuinely does shape outcomes, even if imperfectly or unevenly compared to others.",
+     "An organization honestly disclosing the current limits of a role's authority, rather than implying more influence than actually exists."
     ],
     "discernment_questions": [
-     "Does the presented identity hold up to reasonable, specific follow-up questions, or does it become inconsistent?",
-     "Does the persona shift in ways that closely track what's most advantageous in each specific context?",
-     "Is there a plausible, ordinary explanation for any variation?",
-     "Would independent verification of specific claimed details confirm or contradict the presented identity?"
+     "Does the included person's input actually, visibly shape real decisions, or does it get consistently overridden?",
+     "Is the inclusion used specifically to deflect criticism about representation, without any parallel change in actual influence?",
+     "Is there a credible path for the role's influence to grow, or does it stay permanently symbolic?",
+     "Would removing the person change anything substantive about how decisions get made?"
     ],
     "less_concerning_if": [
-     "The presented identity holds up consistently and any variation reflects ordinary, healthy context-appropriate presentation."
+     "The role's influence is developing in good faith, even if not yet equal, with visible movement toward real input."
     ],
     "more_concerning_if": [
-     "The identity shifts to closely track what's advantageous in each context and doesn't hold up to specific verification."
+     "The role has no real influence, is specifically pointed to when representation is questioned, and shows no path toward growing."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -222,78 +154,91 @@
    },
    "related_tactics": [
     {
-     "name": "Strategic Self-Deprecation / Performed Humility",
-     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
     },
     {
-     "name": "Credential-Costuming",
-     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
     },
     {
-     "name": "Social Engineering",
-     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
     },
     {
-     "name": "Performative Allyship / False Solidarity",
-     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Social Engineering",
-   "category": "Idealization structural",
+   "name": "Individualization of Systemic Issues",
+   "category": "Institutional & Process",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "What gets used is the target's ordinary decency — helpfulness, deference to apparent authority, reluctance to make a fuss — so the loss afterwards feels like a personal failing rather than something done to them.",
-    "what_it_is_not": "Genuinely urgent legitimate requests exist, and real IT or security staff follow processes that most people have never met before. Checking back through a channel you already trust costs an honest request nothing, which is why it is the cheap test here rather than suspicion of the person.",
-    "note": "This entry sits closer to fraud than to relational manipulation, so the disconfirming case is framed around verification rather than around pattern-over-instance."
+    "why_this_matters": "The target adds self-improvement to an already unsustainable load, and concludes that the shortfall is in their own resilience rather than in the conditions."
    },
    "existing_specific_text": {
-    "short_definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses.",
-    "expanded_definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses. As a communication pattern, Social Engineering-type behavior in the Idealization structural category tends to work by accelerating trust and attachment before it has been earned, so normal caution gets bypassed — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
-    "plain_language_summary": "In plain terms: extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Reframing structural problems as personal failings — the system's misalignment becomes your resilience deficit.",
+    "expanded_definition": "Reframing a structural or organizational problem as a personal failing — the system's actual misalignment (unreasonable workload, unclear expectations, inadequate resources) gets recast as an individual's resilience deficit, so the fix offered addresses the person rather than the actual, structural cause.",
+    "plain_language_summary": "In plain terms: reframing structural problems as personal failings — the system's misalignment becomes your resilience deficit.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+     "Reframing structural problems as personal failings — the system's misalignment becomes your resilience deficit.",
+     "Recognizable by phrasing such as \"Burnout answered with wellness webinars instead of workload review\"."
     ],
     "what_it_sounds_like": [
-     "An unexpected request for sensitive information, access, or urgent action, from someone claiming an authority or relationship that creates pressure to comply quickly.",
-     "A pretext used to bypass normal verification before a request is made.",
-     "Contact through an unfamiliar or newly-created channel, impersonating someone or something familiar, asking for something that skips a normal, expected process."
+     "Burnout from a genuinely unsustainable workload answered with a wellness webinar rather than any review of the workload itself.",
+     "\"You just need better time management\" applied to a problem that, examined honestly, is actually about insufficient resources or unclear priorities.",
+     "Multiple people independently struggling with the same systemic issue, each individually offered a personal-development solution rather than any structural fix."
+    ],
+    "what_it_is_not": [
+     "Personal agency is real and coaching can help — the flag is when individual framing is the only frame ever offered."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine, legitimate requests can also be urgent — the distinguishing step is always independent verification, not judging urgency alone."
+     "Individual skill development is genuinely valuable and isn't always a deflection from structural issues.",
+     "Organizations can legitimately address both individual and structural factors at the same time."
     ],
     "common_false_positives": [
-     "A genuine, legitimate request that happens to be urgent for real reasons, verifiable through an independent channel.",
-     "Real IT or security personnel following an actual, disclosed process that a person simply isn't familiar with yet.",
-     "A person who is disorganized or informal in their communication style, without any deceptive pretext involved."
+     "A genuine, individual skill gap that really would benefit from personal development support, distinct from a broader structural issue.",
+     "An organization genuinely addressing both individual support and structural issues in parallel, not instead of each other.",
+     "A single person's difficulty that, on examination, really is more about their specific approach than about the system."
     ],
     "discernment_questions": [
-     "Can the request be verified through an independent channel rather than trusting the contact method it arrived through?",
-     "Does the request rely on urgency or authority to bypass normal verification steps?",
-     "Is the channel or method of contact consistent with how this person or organization normally communicates?",
-     "Would slowing down and verifying independently change how reasonable the request seems?"
+     "Do multiple people independently struggle with the same issue, suggesting something structural rather than individual?",
+     "Does the offered solution address the actual root cause, or just the individual's coping capacity?",
+     "Is there any acknowledgment of the structural factor at all, or is it entirely reframed as personal?",
+     "Would fixing the individual's \"resilience\" actually resolve the underlying problem, or just help them tolerate it longer?"
     ],
     "less_concerning_if": [
-     "The request is verifiable through an independent channel and doesn't rely on bypassing normal verification."
+     "The issue genuinely is individual and specific, and structural factors are also acknowledged and addressed where relevant."
     ],
     "more_concerning_if": [
-     "The request uses urgency or claimed authority specifically to discourage independent verification before compliance."
+     "Multiple people struggle with the same systemic issue, and the only offered solutions are individual-focused, with no structural acknowledgment."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -301,78 +246,91 @@
    },
    "related_tactics": [
     {
-     "name": "Strategic Self-Deprecation / Performed Humility",
-     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
     },
     {
-     "name": "Credential-Costuming",
-     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
     },
     {
-     "name": "Identity Performances",
-     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
     },
     {
-     "name": "Performative Allyship / False Solidarity",
-     "definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Performative Allyship / False Solidarity",
-   "category": "Idealization structural",
+   "name": "Diffusion of Responsibility",
+   "category": "Institutional & Process",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Trust is given on the strength of stated values, and the gap only becomes visible at the moment support would have cost something — which is usually the moment the target most needed it.",
-    "what_it_is_not": "Many people are further along in their stated values than in their practice and are genuinely, if unevenly, catching up. Quiet support that is never announced anywhere is the reverse of this pattern, not a mild version of it."
+    "why_this_matters": "The harm is real and nobody is answerable for it, so the target has nowhere to take it, no one to ask for repair, and no way to stop it recurring."
    },
    "existing_specific_text": {
-    "short_definition": "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism.",
-    "expanded_definition": "Publicly expressing support for a cause or group specifically for the social credit, reputation benefit, or cover it provides, without any accompanying substantive action, personal cost, or change in behavior — the solidarity is performed for an audience rather than practiced when it isn't being watched.",
-    "plain_language_summary": "In plain terms: publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to attachment that outpaces actual trust, making later red flags harder to weigh objectively. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Harm engineered so no single person is ever accountable — everyone was following process, approving what someone else drafted.",
+    "expanded_definition": "Harm engineered — deliberately or through institutional habit — so that no single person is ever accountable for it: everyone involved was following process, approving something someone else drafted, or executing a decision made further up or elsewhere. Each individual's role can look procedurally reasonable in isolation, while the outcome they collectively produced is harmful.",
+    "plain_language_summary": "In plain terms: harm engineered so no single person is ever accountable — everyone was following process, approving what someone else drafted.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Publicly declaring support, shared values, or solidarity to build trust and access, while privately failing to act on those claims or actively working against the target's interests — the performance of alliance functioning as a trust-extraction mechanism."
+     "Harm engineered so no single person is ever accountable — everyone was following process, approving what someone else drafted.",
+     "Recognizable by phrasing such as \"'That's not my department' forming a perfect circle\"."
     ],
     "what_it_sounds_like": [
-     "Vocal, public support for a cause that isn't matched by any private behavior, decisions, or sacrifice consistent with that stated support.",
-     "Support that intensifies specifically when visibility is high and quietly disappears once attention moves on.",
-     "The stated support is used to deflect specific criticism rather than substantiated by any concrete action."
+     "\"That's not my department\" said by everyone in a chain, forming a perfect, unbreakable circle of non-responsibility.",
+     "A harmful decision that, when traced, was approved by everyone and originated with no one in particular.",
+     "Attempts to identify who's actually responsible get redirected indefinitely from person to person or department to department."
+    ],
+    "what_it_is_not": [
+     "Large organizations genuinely distribute decisions — the flag is when the circle closes precisely around accountability for harm."
     ],
     "innocent_or_ordinary_possibilities": [
-     "People early in learning about an issue can have genuine, if still-developing, alignment between their stated values and their actions.",
-     "Support that's genuinely private, rather than performed, is the opposite of this pattern."
+     "Large, complex organizations do sometimes have genuine ambiguity about ownership, especially after restructuring.",
+     "Legitimate delegation to someone with more relevant expertise isn't evasion."
     ],
     "common_false_positives": [
-     "Genuine, private support that simply isn't performed publicly, which is the opposite pattern and not this tactic at all.",
-     "A person taking real, if imperfect or still-developing, action alongside public statements, rather than public statements alone.",
-     "Honest, good-faith public support from someone early in learning about an issue, whose actions are still catching up to their stated values."
+     "A genuinely complex organizational decision that really did involve legitimate, distributed input from many people, without anyone evading accountability.",
+     "Honest confusion about who owns a specific issue in a large or newly-restructured organization.",
+     "A single person genuinely, appropriately delegating a decision to someone with better expertise, which isn't evasion."
     ],
     "discernment_questions": [
-     "Is the public support matched by any private action, cost, or behavior change, or does it exist only publicly?",
-     "Does support track visibility and attention, intensifying and fading with what's currently prominent?",
-     "Is the stated support used specifically to deflect scrutiny of unrelated, contradicting behavior?",
-     "Would this person's actual private choices look consistent with their public statements if no one were watching?"
+     "When you trace the decision, does responsibility keep circling without ever landing, or is there a real, findable point of accountability?",
+     "Does everyone individually describe following a reasonable process, while the collective outcome is clearly harmful?",
+     "Is there a genuine effort to find and fix the point of failure, or does the search itself seem to be discouraged?",
+     "Would a neutral investigator be able to identify who actually had the authority to prevent this?"
     ],
     "less_concerning_if": [
-     "Public statements are accompanied by real, even if still-developing, private action and behavior consistent with them."
+     "Responsibility, when traced, does land somewhere real, even if the organization is genuinely complex."
     ],
     "more_concerning_if": [
-     "Support exists only publicly, tracks visibility rather than genuine conviction, and is used to deflect scrutiny of contradicting behavior."
+     "Responsibility circles indefinitely with no findable point of accountability, despite a clearly harmful collective outcome."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by accelerating trust and attachment before it has been earned, so normal caution gets bypassed. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe attachment that outpaces actual trust, making later red flags harder to weigh objectively in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -380,29 +338,218 @@
    },
    "related_tactics": [
     {
-     "name": "Strategic Self-Deprecation / Performed Humility",
-     "definition": "Performing self-criticism or modesty specifically to disarm defenses and pre-empt incoming critique, so the target ends up reassuring the manipulator instead of raising their concern."
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
     },
     {
-     "name": "Credential-Costuming",
-     "definition": "Inflating or fabricating authority through titles, affiliations, or associations to project power that doesn't exist."
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
     },
     {
-     "name": "Identity Performances",
-     "definition": "Curating a false persona to build trust, credibility, or access that reality wouldn't support."
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
     },
     {
-     "name": "Social Engineering",
-     "definition": "Extracting information, access, or compliance by exploiting trust, urgency, or social norms under false pretenses."
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Administrative Escalation",
+   "category": "Institutional & Process",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Defending against a disproportionate process consumes time, money and attention regardless of how it concludes, and the next concern goes unraised for that reason alone.",
+    "what_it_is_not": "Some issues genuinely warrant formal process regardless of who raised a concern first. Organisations and families with a low threshold for formalising things apply it evenly to everyone. Someone unaware that informal resolution was available may escalate simply from not knowing another route existed."
    },
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
+   "existing_specific_text": {
+    "short_definition": "Informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary.",
+    "expanded_definition": "Informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary — a casual disagreement suddenly becomes a formal complaint, a family concern becomes a legal filing, a minor request for space becomes a documented incident. The formality itself is the punishment: it forces the target to spend time, money, and emotional energy defending against a process disproportionate to what actually happened.",
+    "plain_language_summary": "In plain terms: informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary.",
+     "Associated, when sustained, with effects such as a sense of powerlessness against a system that appears neutral but isn't functioning that way."
+    ],
+    "what_it_sounds_like": [
+     "A minor, previously informal disagreement suddenly becomes a formal written complaint shortly after the target raised a concern of their own.",
+     "\"I'm going to have to escalate this formally\" used as a response to something that would ordinarily be resolved in conversation.",
+     "A pattern where formal processes are only ever initiated by one party, and only ever in response to the other asserting a need."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Some people or workplaces default to formal documentation as a general habit, not a targeted tactic. A genuinely serious issue can warrant formal process even if the timing looks suspicious."
+    ],
+    "common_false_positives": [
+     "A genuinely serious issue that warrants formal process regardless of who raised a concern first.",
+     "An organization or family with a low threshold for formalizing things generally, applied evenly.",
+     "Someone unfamiliar with informal resolution options who escalates out of not knowing another way to be heard."
+    ],
+    "discernment_questions": [
+     "Is the formal process proportionate to what actually happened?",
+     "Did the escalation happen specifically after the target raised their own concern?",
+     "Is formal process used evenly by both parties, or only by one?",
+     "Would this situation ordinarily be handled informally in this context?"
+    ],
+    "less_concerning_if": [
+     "Escalation happens rarely, is proportionate, and isn't timed to follow the target's own complaints."
+    ],
+    "more_concerning_if": [
+     "Escalation is disproportionate, one-directional, and reliably follows the target asserting a boundary."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Paper Terrorism",
+   "category": "Institutional & Process",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": true,
+   "approved_draft": {
+    "why_this_matters": "Burden accumulates across filings rather than sitting in any one of them: responding to all of them costs time and money whether or not a single one has merit.",
+    "what_it_is_not": "Genuinely complex disputes require multiple legitimate filings to resolve. Thorough counsel generates volume as a by-product of diligence rather than as a strategy. Institutions produce a great deal of paperwork through their own procedural requirements, independent of any party's conduct.",
+    "note": "The short_definition is truncated mid-list (\"...floods of filings, motions, complaints,.\"), so both fields were derived from the expanded_definition and false-positive list instead."
+   },
+   "existing_specific_text": {
+    "short_definition": "Weaponizing systems through floods of filings, motions, complaints,.",
+    "expanded_definition": "Weaponizing administrative or legal systems by flooding them with filings, motions, complaints, or requests — not to resolve anything, but to exhaust the target's time, money, and legal resources. Unlike a single disproportionate escalation, this is characterized by volume and repetition: individual filings might each look minor or even legitimate, but the cumulative burden of responding to all of them is the actual mechanism.",
+    "plain_language_summary": "In plain terms: weaponizing systems through floods of filings, motions, complaints,.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Weaponizing systems through floods of filings, motions, complaints,.",
+     "Associated, when sustained, with effects such as a sense of powerlessness against a system that appears neutral but isn't functioning that way."
+    ],
+    "what_it_sounds_like": [
+     "A stream of separate, technically-proper filings or complaints, each requiring a formal response, arriving faster than any one could reasonably be resolved.",
+     "Repeated motions that re-litigate an issue already decided, forcing the target to respond again each time.",
+     "A pattern of formal requests that seem designed more to cost the target time and legal fees than to achieve any specific outcome."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Complex disputes legitimately generate a lot of paperwork. Thorough legal representation can look similar to this from the outside without being strategic exhaustion."
+    ],
+    "common_false_positives": [
+     "A genuinely complex legal or administrative dispute that requires multiple legitimate filings to resolve.",
+     "A party working with counsel who is being thorough rather than strategic, generating volume as a byproduct of due diligence.",
+     "An institution's own procedural requirements generating a high volume of paperwork independent of anyone's intent."
+    ],
+    "discernment_questions": [
+     "Does each filing have a plausible, substantive purpose, or does it mainly recreate cost and delay?",
+     "Is there a pattern of re-filing issues that have already been resolved?",
+     "Would a reasonable legal or administrative professional see the volume as proportionate to the underlying dispute?",
+     "Is the volume itself the burden, more than the substance of any one filing?"
+    ],
+    "less_concerning_if": [
+     "Filings are proportionate to a genuinely complex dispute and taper off as issues resolve."
+    ],
+    "more_concerning_if": [
+     "Filings continue or increase after issues are resolved, and repeatedly re-raise settled matters."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    }
+   ],
+   "known_truncation_note": "A source short_definition for this entry stops mid-sentence. Write a complete one; do not reuse the old text.",
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
   }
  ]
 }

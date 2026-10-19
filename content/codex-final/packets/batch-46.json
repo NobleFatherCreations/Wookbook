@@ -1,38 +1,31 @@
 {
  "batch": "batch-46",
  "kind": "risk",
- "category": "Cult & Thought Reform",
+ "category": "Political & Propaganda",
  "entries": [
   {
-   "name": "Dispensing of Existence",
-   "category": "Cult & Thought Reform",
+   "name": "Overton Window Manipulation",
+   "category": "Political & Propaganda",
    "tier": "Reference-only",
    "branch": "societal",
    "risk_flagged": true,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Once worth is assigned by doctrine rather than held as a given, outsiders can be treated in ways that would otherwise be unthinkable — and those inside learn that their own standing is revocable on the same terms.",
-    "what_it_is_not": "Groups with strong boundaries — membership rules, excommunication, shunning — are not automatically doing this; many communities have exit rules without denying that leavers remain people. What marks the pattern is worth itself being withdrawn, so that harm to those outside reads as virtue rather than as harm.",
-    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+    "why_this_matters": "What counts as an ordinary opinion shifts underneath people, so positions they would once have rejected outright arrive already sounding moderate.",
+    "what_it_is_not": "Public opinion moves on its own and always has, and arguing for a position most people currently reject is how every reform has started. A single extreme statement is not a repositioning campaign — this describes drift visible only in aggregate and in hindsight."
    },
    "existing_specific_text": {
-    "short_definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous.",
-    "expanded_definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous. (Overlaps with Dehumanization #83, Splitting #116). As a communication pattern, Dispensing of Existence-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
-    "plain_language_summary": "In plain terms: the group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous. (Overlaps with Dehumanization #83, Splitting #116). This happens at a scale far beyond any single conversation.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "short_definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable.",
+    "expanded_definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable. As a communication pattern, Overton Window Manipulation-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
     "what_it_is": [
-     "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous. (Overlaps with Dehumanization #83, Splitting #116)."
-    ],
-    "what_it_is_not": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
+     "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
     ],
     "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
     "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
-    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
@@ -41,205 +34,59 @@
    },
    "related_tactics": [
     {
-     "name": "Milieu Control",
-     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
+     "name": "Manufactured Consent",
+     "definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
     },
     {
-     "name": "Mystical Manipulation",
-     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
+     "name": "Astroturfing"
     },
     {
-     "name": "Demand for Purity",
-     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
+     "name": "Wedge Issue Exploitation",
+     "definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
     },
     {
-     "name": "Sacred Science",
-     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
+     "name": "Computational Propaganda",
+     "definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
     },
     {
-     "name": "Doctrine Over Person",
-     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
     },
     {
-     "name": "Bounded Choice",
-     "definition": "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated."
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Bounded Choice",
-   "category": "Cult & Thought Reform",
+   "name": "Manufactured Consent",
+   "category": "Political & Propaganda",
    "tier": "Reference-only",
    "branch": "societal",
    "risk_flagged": true,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Choices feel entirely one's own while the range they were drawn from has quietly closed, so a person carries full responsibility for outcomes they were never given room to avoid.",
-    "what_it_is_not": "Every environment shapes what feels choosable — a job, a mortgage, a close family all narrow options, and feeling free within constraints is ordinary. The distinguishing question is whether options that would serve the person rather than the group remain genuinely available, or only nominally so.",
-    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+    "why_this_matters": "Agreement reached from a curated picture is still experienced as one's own conclusion, which leaves nothing obvious to object to.",
+    "what_it_is_not": "Governments and institutions explain their decisions, editors choose what to cover, and framing is unavoidable in any account of anything. Showing this requires systematic analysis of coverage over time, not disagreement with a particular story."
    },
    "existing_specific_text": {
-    "short_definition": "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated.",
-    "expanded_definition": "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated. (Overlaps with Choice Architecture Manipulation #211). As a communication pattern, Bounded Choice-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
-    "plain_language_summary": "In plain terms: restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated. (Overlaps with Choice Architecture Manipulation #211). This happens at a scale far beyond any single conversation.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "short_definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it.",
+    "expanded_definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it. As a communication pattern, Manufactured Consent-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
     "what_it_is": [
-     "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated. (Overlaps with Choice Architecture Manipulation #211)."
-    ],
-    "what_it_is_not": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
+     "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
     ],
     "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
     "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
-    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Milieu Control",
-     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
-    },
-    {
-     "name": "Mystical Manipulation",
-     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
-    },
-    {
-     "name": "Demand for Purity",
-     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
-    },
-    {
-     "name": "Sacred Science",
-     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
-    },
-    {
-     "name": "Doctrine Over Person",
-     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
-    },
-    {
-     "name": "Dispensing of Existence",
-     "definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Charismatic Authority Dependence",
-   "category": "Cult & Thought Reform",
-   "tier": "Reference-only",
-   "branch": "societal",
-   "risk_flagged": true,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "With one person established as the sole source of truth, meaning and safety, losing their approval means losing all of those at once, which makes ordinary disagreement feel like self-destruction.",
-    "what_it_is_not": "Admiring a teacher, mentor or leader and being genuinely changed by them is common and often good. The pattern differs where no second source of meaning remains — no one else whose judgement counts, and no way to be wrong about the leader without being wrong about everything.",
-    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
-   },
-   "existing_specific_text": {
-    "short_definition": "Installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own.",
-    "expanded_definition": "Installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own. (Overlaps with Authority Hijack #95, Identity Hooking #24). As a communication pattern, Charismatic Authority Dependence-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
-    "plain_language_summary": "In plain terms: installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own. (Overlaps with Authority Hijack #95, Identity Hooking #24). This happens at a scale far beyond any single conversation.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
-    "what_it_is": [
-     "Installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own. (Overlaps with Authority Hijack #95, Identity Hooking #24)."
-    ],
-    "what_it_is_not": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
-    ],
-    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
-    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
-    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Milieu Control",
-     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
-    },
-    {
-     "name": "Mystical Manipulation",
-     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
-    },
-    {
-     "name": "Demand for Purity",
-     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
-    },
-    {
-     "name": "Sacred Science",
-     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
-    },
-    {
-     "name": "Doctrine Over Person",
-     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
-    },
-    {
-     "name": "Dispensing of Existence",
-     "definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Forced Confession / Self-Criticism Rituals",
-   "category": "Cult & Thought Reform",
-   "tier": "Reference-only",
-   "branch": "societal",
-   "risk_flagged": true,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Material surrendered under group pressure does not go away; it stays available as leverage, and the habit of confessing on demand leaves a person with no private ground of their own to stand on.",
-    "what_it_is_not": "Accountability practices exist in healthy settings too — step work, clinical supervision, team retrospectives, restorative circles — and saying something difficult in front of a group is not itself harmful. The difference lies in whether disclosure is voluntary and bounded, or required, open-ended, and recalled against the person afterwards.",
-    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
-   },
-   "existing_specific_text": {
-    "short_definition": "Requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage).",
-    "expanded_definition": "Requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage). (Overlaps with Forced Submission #226, Humiliation Rituals #224). As a communication pattern, Forced Confession / Self-Criticism Rituals-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
-    "plain_language_summary": "In plain terms: requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage). (Overlaps with Forced Submission #226, Humiliation Rituals #224). This happens at a scale far beyond any single conversation.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
-    "what_it_is": [
-     "Requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage). (Overlaps with Forced Submission #226, Humiliation Rituals #224)."
-    ],
-    "what_it_is_not": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
-    ],
-    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
-    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
-    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
     "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
@@ -248,37 +95,157 @@
    },
    "related_tactics": [
     {
-     "name": "Milieu Control",
-     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
+     "name": "Overton Window Manipulation",
+     "definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
     },
     {
-     "name": "Mystical Manipulation",
-     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
+     "name": "Astroturfing"
     },
     {
-     "name": "Demand for Purity",
-     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
+     "name": "Wedge Issue Exploitation",
+     "definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
     },
     {
-     "name": "Sacred Science",
-     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
+     "name": "Computational Propaganda",
+     "definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
     },
     {
-     "name": "Doctrine Over Person",
-     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
     },
     {
-     "name": "Dispensing of Existence",
-     "definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous."
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Wedge Issue Exploitation",
+   "category": "Political & Propaganda",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "People end up divided along a line drawn for someone else's benefit, arguing about who they are while the things they actually share go unaddressed.",
+    "what_it_is_not": "Divisive issues are frequently important and deserve real argument, and raising one is not evidence of strategy. The distinction is between an issue pursued in order to settle it and one kept warm because the division itself is useful."
    },
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
+   "existing_specific_text": {
+    "short_definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement.",
+    "expanded_definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement. As a communication pattern, Wedge Issue Exploitation-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Overton Window Manipulation",
+     "definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
+    },
+    {
+     "name": "Manufactured Consent",
+     "definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
+    },
+    {
+     "name": "Astroturfing"
+    },
+    {
+     "name": "Computational Propaganda",
+     "definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
+    },
+    {
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
+    },
+    {
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Computational Propaganda",
+   "category": "Political & Propaganda",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "The sense of what most people believe — which shapes what any individual feels able to say aloud — gets set by accounts that are not people.",
+    "what_it_is_not": "Parties, campaigns and advocacy groups legitimately coordinate their messaging, and scheduling tools and staff accounts are not bots. Attribution here is technical work; an account that argues aggressively is not evidence of a network."
+   },
+   "existing_specific_text": {
+    "short_definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale.",
+    "expanded_definition": "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale. As a communication pattern, Computational Propaganda-type behavior in the Political & Propaganda category tends to work at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: the automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale. This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shifted perception of what's normal or true at a population level, rarely visible from inside it. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "The automated, algorithm-driven production and dissemination of politically motivated persuasive content using bots, fake accounts, and coordinated networks that simulate organic public discourse at machine scale."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate at the scale of populations and media systems, shaping what large groups of people come to believe is normal or true. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe shifted perception of what's normal or true at a population level, rarely visible from inside it in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Overton Window Manipulation",
+     "definition": "Systematically shifting the range of ideas considered acceptable in public discourse by persistently introducing extreme positions that make previously radical views seem moderate by comparison, gradually normalizing what was once unthinkable."
+    },
+    {
+     "name": "Manufactured Consent",
+     "definition": "Systematically shaping public opinion through media control, selective framing, and institutional messaging to create the appearance of democratic agreement with policies or actions that serve elite interests — the population believes it chose what was chosen for it."
+    },
+    {
+     "name": "Astroturfing"
+    },
+    {
+     "name": "Wedge Issue Exploitation",
+     "definition": "Identifying and amplifying divisive social issues specifically to fracture opposition coalitions, distract from unfavorable topics, or mobilize a specific base through emotional polarization rather than policy engagement."
+    },
+    {
+     "name": "Reflexive Control",
+     "definition": "A strategic influence operation that feeds an adversary carefully selected information, causing them to voluntarily make decisions that serve the manipulator's objectives while believing they are acting on their own analysis — controlling the decision by controlling the inputs."
+    },
+    {
+     "name": "Normative Messaging",
+     "definition": "Communicating explicit or implicit messages about what behavior or belief is \"normal\" within a population to leverage conformity pressure, where the target adjusts their behavior to match the described norm regardless of their private preferences."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
   }
  ]
 }

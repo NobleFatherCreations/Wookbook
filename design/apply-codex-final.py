@@ -81,7 +81,8 @@ def main():
 
     final = {}
     for p in sorted(glob.glob(os.path.join(FINAL, "*.json"))):
-        if os.path.basename(p) in ("manifest.json", "reviews.json"):
+        b = os.path.basename(p)
+        if not (b == "exemplars.json" or b.startswith(("batch-", "merged-"))):
             continue
         final.update(json.load(open(p, encoding="utf-8")))
     missing = [e["name"] for e in codex if e["name"] not in final]

@@ -1,739 +1,617 @@
 {
  "batch": "batch-33",
  "kind": "normal",
- "category": "Institutional & Process",
+ "category": "Pressure & Coercion",
  "entries": [
   {
-   "name": "Process Exhaustion",
-   "category": "Institutional & Process",
-   "tier": "Reference-only",
-   "branch": "reference",
+   "name": "Extinction Bursts",
+   "category": "Pressure & Coercion",
+   "tier": "Pattern-only",
+   "branch": "pattern",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target loses to depletion rather than to a decision, and the outcome is recorded as voluntary — they withdrew, they did not pursue it, they stopped replying."
+    "why_this_matters": "The first boundary that actually works is the one that costs the most, which teaches the target that holding a limit makes things worse rather than better."
    },
    "existing_specific_text": {
-    "short_definition": "Using procedures themselves as the weapon — endless meetings, forms, appeals, and re-reviews until the target gives up from depletion, not persuasion.",
-    "expanded_definition": "Using bureaucratic procedure itself as the mechanism of harm — endless meetings, forms, appeals, and re-reviews, deployed until the target gives up from sheer depletion rather than being genuinely persuaded or fairly resolved. The process may follow every formal rule while still functioning as an obstacle course specifically calibrated to outlast the target's patience and resources.",
-    "plain_language_summary": "In plain terms: using procedures themselves as the weapon — endless meetings, forms, appeals, and re-reviews until the target gives up from depletion, not persuasion.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "A dramatic escalation in manipulation tactics precisely when a previously effective method stops working — the last, loudest attempt before an old strategy is abandoned.",
+    "expanded_definition": "A dramatic escalation in manipulation tactics precisely when a previously effective method stops working — the last, loudest attempt before an old strategy is abandoned. As a communication pattern, Extinction Bursts-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: a dramatic escalation in manipulation tactics precisely when a previously effective method stops working — the last, loudest attempt before an old strategy is abandoned.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Using procedures themselves as the weapon — endless meetings, forms, appeals, and re-reviews until the target gives up from depletion, not persuasion.",
-     "Recognizable by phrasing such as \"Every complaint triggers a new process that restarts the clock\"."
+     "A dramatic escalation in manipulation tactics precisely when a previously effective method stops working — the last, loudest attempt before an old strategy is abandoned.",
+     "Recognizable by phrasing such as \"A sudden spike in intensity or a new, harsher tactic appearing right after the target successfully resisted or set a boundary for the first time\"."
     ],
     "what_it_sounds_like": [
-     "Every complaint or request triggers an entirely new process that restarts the timeline from the beginning, with no cumulative progress.",
-     "The volume of required forms, meetings, or re-reviews seems disproportionate to the actual complexity of the underlying issue.",
-     "The target notices the process itself, more than any substantive disagreement, is what's actually preventing resolution."
+     "A sudden spike in intensity or a new, harsher tactic appearing right after the target successfully resisted or set a boundary for the first time.",
+     "\"This has never happened before\" moments that follow a clear act of resistance.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'a dramatic escalation in manipulation tactics precisely when'. Later still: a return to warmth, and the cycle repeats."
     ],
     "what_it_is_not": [
-     "Genuine bureaucracy is slow without being aimed at you — the flag is process that accelerates for others and stalls only for the target."
+     "People do sometimes get more upset right after a hard conversation for ordinary reasons — the flag is a spike that specifically follows successful resistance and is aimed at re-establishing the old dynamic."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuinely complex issues do sometimes require real time and multiple steps to resolve fairly.",
-     "Institutional capacity constraints can slow things down for everyone without targeting any one person."
+     "Genuine, temporary difficulty adjusting to a new boundary, that settles down, is a normal part of relationship change."
     ],
     "common_false_positives": [
-     "A genuinely complex issue that legitimately requires multiple real steps and reasonable time to resolve properly.",
-     "A process that's slow due to real institutional capacity constraints affecting everyone, not specifically targeted at this issue.",
-     "Legitimate procedural requirements that exist for good reasons, even if they feel burdensome in a specific instance."
+     "A person's genuine, one-time frustrated reaction to a new boundary, that settles down over time rather than escalating into a new tactic.",
+     "Real difficulty adjusting to a changed dynamic, expressed honestly without becoming a harsher, new form of pressure.",
+     "A single moment of increased tension right after a change, that resolves as both people adjust."
     ],
     "discernment_questions": [
-     "Is the volume of process proportionate to the actual complexity of the issue?",
-     "Does each new step build on the last, or does it genuinely restart progress from zero?",
-     "Would a comparable issue, raised by someone else, go through the same volume of process?",
-     "Does the process seem calibrated more to test the target's endurance than to reach a fair resolution?"
+     "Does the intensity spike specifically and immediately after the target successfully resists something for the first time?",
+     "Does a new, harsher tactic appear that wasn't used before, right as the old one stopped working?",
+     "Does the escalation subside over time as the new boundary holds, or does it keep escalating further?",
+     "Would this look like proportionate, temporary adjustment difficulty, or a new, harsher strategy?"
     ],
     "less_concerning_if": [
-     "The process, while slow, is proportionate to real complexity and applies consistently to comparable issues."
+     "Any reaction to a new boundary settles down over time rather than escalating into new, harsher tactics."
     ],
     "more_concerning_if": [
-     "Process volume is disproportionate, restarts repeatedly without building progress, and seems calibrated to outlast the target."
+     "A new, harsher tactic appears specifically right after the target successfully resists something for the first time."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [
-     "workplace_or_legal_ambiguity"
+     "high_false_positive_risk"
     ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "HR Shielding",
-   "category": "Institutional & Process",
+   "name": "Door-in-the-Face",
+   "category": "Pressure & Coercion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The person who reported the harm absorbs the disruption while the situation they reported continues, and everyone else in the organisation learns what reporting costs."
+    "why_this_matters": "Relief at the smaller ask substitutes for evaluating it, so the second request is judged against the first rather than against what is actually reasonable.",
+    "what_it_is_not": "Opening high and scaling back on real feedback is ordinary negotiation, understood as such by both sides. Someone may genuinely have preferred the bigger option and settled in good faith for the smaller. A large ask and a modest one can simply be unconnected."
    },
    "existing_specific_text": {
-    "short_definition": "Institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
-    "expanded_definition": "Institutional machinery — nominally there to address complaints — positioned in practice to protect the institution's reputation and the accused party's position, rather than the person reporting harm. The process may look procedurally correct on paper while functionally prioritizing minimizing institutional liability over actually addressing what happened.",
-    "plain_language_summary": "In plain terms: institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Opening with a large, likely-to-be-refused request so a smaller, originally-intended request seems reasonable by comparison.",
+    "expanded_definition": "Opening with a large, clearly-likely-to-be-refused request specifically so that a smaller request — the one actually wanted all along — seems modest and reasonable by comparison once it's proposed second. The initial refusal creates a sense of relief or obligation that makes the real ask easier to accept than if it had been proposed on its own.",
+    "plain_language_summary": "In plain terms: opening with a large, likely-to-be-refused request so a smaller, originally-intended request seems reasonable by comparison.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
-     "Recognizable by phrasing such as \"Reports met with concern for 'how this looks' rather than what happened\"."
+     "Opening with a large, likely-to-be-refused request so a smaller, originally-intended request seems reasonable by comparison."
     ],
     "what_it_sounds_like": [
-     "A report of real concern is met with visible focus on \"how this looks\" or \"protecting the team,\" rather than engagement with what happened.",
-     "The accused party continues in their role with minimal disruption while the person reporting experiences new friction or scrutiny.",
-     "The investigation process itself becomes focused on managing the reporter's expectations rather than substantively examining the claim."
-    ],
-    "what_it_is_not": [
-     "Due process protects the accused too, legitimately — the flag is when investigation exists to exhaust and discredit reporters, not to find facts."
+     "An extreme, clearly-excessive initial request is proposed, followed shortly by a more moderate one that suddenly feels reasonable.",
+     "The target notices a sense of relief at the smaller \"ask,\" without stopping to evaluate whether it's actually reasonable on its own.",
+     "A pattern where big asks reliably precede the actually-intended smaller ask, rather than the smaller ask ever being made directly."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine investigations take time and confidentiality that can feel opaque and frustrating without being rigged.",
-     "A claim not being substantiated isn't automatically evidence the process was protective of wrongdoing."
+     "Real negotiations often do involve a genuine opening position getting scaled back based on honest back-and-forth. People sometimes propose their actual preference first, then genuinely settle for something smaller."
     ],
     "common_false_positives": [
-     "A genuine, thorough investigation process that takes time and appropriate confidentiality, which can feel opaque without being protective of wrongdoing.",
-     "A situation where the investigation genuinely didn't substantiate the claim, which isn't the same as the process being rigged.",
-     "An HR function that's under-resourced or inexperienced, producing a poor outcome through incompetence rather than institutional protection."
+     "A genuine negotiation where an opening position really does get reasonably scaled back based on real feedback.",
+     "Someone testing a genuinely-preferred bigger option first before settling, in good faith, for a smaller one that also works for them.",
+     "Coincidental sequencing where a big ask and a smaller one are unrelated to each other."
     ],
     "discernment_questions": [
-     "Does the process substantively investigate the claim, or focus mainly on managing optics and liability?",
-     "Does the accused party experience real, proportionate consequences if the claim is substantiated, or minimal disruption regardless?",
-     "Is confidentiality used to protect the process's integrity, or to prevent the reporter from understanding what's happening?",
-     "Would a neutral observer, reviewing how the process actually unfolded, describe it as genuinely investigative?"
+     "Does the smaller request hold up as reasonable on its own, independent of the large request that preceded it?",
+     "Was the large request ever seriously intended, or does it look designed purely to be refused?",
+     "Does this two-step pattern recur across different requests from the same person?",
+     "Would you have agreed to the smaller request as readily if it had simply been asked first, with no large request before it?"
     ],
     "less_concerning_if": [
-     "The process is genuinely thorough, if slow, and takes real steps toward substantively investigating the claim."
+     "The initial large request was a genuine, good-faith opening position, and the smaller one holds up as reasonable independently."
     ],
     "more_concerning_if": [
-     "Focus stays on institutional optics and liability, with minimal real disruption to the accused regardless of findings."
+     "The large request appears designed purely to be refused, priming the smaller one to feel reasonable by contrast."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "workplace_or_legal_ambiguity"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Pseudo-Consultation",
-   "category": "Institutional & Process",
+   "name": "Anchoring",
+   "category": "Pressure & Coercion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target spends real effort and real candour on input that could never have changed anything, and the decision is afterwards described as one they helped make."
+    "why_this_matters": "Everything that follows gets measured against a number or framing that was never justified, including offers that would have looked unreasonable in isolation.",
+    "what_it_is_not": "A good-faith opening position that both sides understand as a starting point is normal negotiation. Someone unfamiliar with the conventions may state an ambitious first figure with nothing behind it. A reference point that reflects a real constraint is a fact rather than a lever."
    },
    "existing_specific_text": {
-    "short_definition": "The performance of seeking input after the decision is already made — participation as theater.",
-    "expanded_definition": "The performance of seeking input or feedback after the actual decision has already been made — participation as theater, designed to produce the appearance of buy-in or due process without any real possibility of the input changing the outcome.",
-    "plain_language_summary": "In plain terms: the performance of seeking input after the decision is already made — participation as theater.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Introducing an initial reference point that unduly shapes all subsequent judgments or negotiations.",
+    "expanded_definition": "Introducing an initial reference point — a number, a demand, a framing — that unduly shapes all subsequent judgments or negotiations, even after the anchor itself is dropped or revised. Once an anchor is set, later, more reasonable-sounding offers get evaluated relative to it rather than on their own independent merits.",
+    "plain_language_summary": "In plain terms: introducing an initial reference point that unduly shapes all subsequent judgments or negotiations.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "The performance of seeking input after the decision is already made — participation as theater.",
-     "Recognizable by phrasing such as \"Feedback sessions scheduled after contracts are signed\"."
+     "Introducing an initial reference point that unduly shapes all subsequent judgments or negotiations."
     ],
     "what_it_sounds_like": [
-     "A feedback or consultation session scheduled after contracts are already signed or the decision is otherwise already final.",
-     "Input is solicited, but no visible mechanism exists for it to actually change anything about the outcome.",
-     "Concerns raised during the \"consultation\" are acknowledged politely but never seem to affect what happens next."
-    ],
-    "what_it_is_not": [
-     "Sometimes input genuinely can't change constraints — honest consultation says so upfront instead of staging influence."
+     "An opening demand or number is set unreasonably high or low specifically so a later, more moderate figure seems fair by comparison.",
+     "\"I was going to ask for [extreme thing], but I'll settle for [smaller thing]\" used to make the smaller thing feel like a concession.",
+     "Looking back, the target realizes they evaluated an offer as reasonable mainly because of what was proposed first, not on its own terms."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Legitimate consultation on narrower implementation details, after a larger decision, is a normal and honest scope.",
-     "Genuine time constraints, disclosed honestly, can limit how much a decision can still change."
+     "Opening negotiating positions are a completely normal and expected part of many transactions. Reasonable people often start conversations with their ideal outcome, without manipulative intent."
     ],
     "common_false_positives": [
-     "A genuine consultation process where the decision is still genuinely open, even if the final call ultimately isn't unanimous.",
-     "A situation where feedback is sought on implementation details after a larger decision is made, which is a legitimate, narrower scope for the consultation.",
-     "Time constraints that genuinely limit how much a decision can change, disclosed honestly rather than hidden behind a pretense of open input."
+     "A genuine, good-faith opening position in a normal negotiation, understood by both sides as a starting point.",
+     "Someone unfamiliar with negotiation norms who states an ambitious first number without any manipulative intent.",
+     "A situation where the \"anchor\" reflects a real constraint rather than a deliberately inflated reference point."
     ],
     "discernment_questions": [
-     "Is there any evidence the decision was genuinely still open at the time input was solicited?",
-     "Does feedback from the consultation process visibly show up anywhere in the final outcome?",
-     "Is the scope of what's actually still changeable disclosed honestly, or presented as broader than it really is?",
-     "Would the outcome have been any different if no one had participated in the consultation at all?"
+     "Does the final outcome hold up as reasonable when evaluated on its own, independent of the opening figure?",
+     "Was the initial anchor plausible, or clearly inflated specifically to shift perception?",
+     "Is this a one-time negotiation dynamic, or a recurring pattern across many interactions?",
+     "Would you have agreed to the final terms if they'd been the only thing proposed, with no anchor first?"
     ],
     "less_concerning_if": [
-     "The decision was genuinely still open, or the narrower scope of what's changeable is disclosed honestly."
+     "The opening position was a genuine, plausible starting point, and the final terms hold up independently."
     ],
     "more_concerning_if": [
-     "The decision was already final before input was solicited, and feedback shows no visible effect on the outcome."
+     "The anchor was clearly inflated purely to make a predetermined outcome feel reasonable by comparison."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "workplace_or_legal_ambiguity"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Tokenism",
-   "category": "Institutional & Process",
+   "name": "Emotional Flooding",
+   "category": "Pressure & Coercion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target's presence is used as the answer to the criticism they were brought in to voice, and objecting to that makes them look ungrateful for the seat."
+    "why_this_matters": "Sustained intensity leaves no quiet stretch in which to assess anything, so speed gets mistaken for depth and there is no calm vantage point from which to notice.",
+    "what_it_is_not": "The early excitement of a new relationship is genuinely intense and usually settles into something steadier. Someone living through a real crisis will be intense because the situation is. Naturally expressive people are engineering nothing."
    },
    "existing_specific_text": {
-    "short_definition": "Symbolic inclusion of a person or group to deflect criticism while denying real power.",
-    "expanded_definition": "Symbolic inclusion of a person or group — a visible seat, title, or presence — specifically to deflect criticism or demonstrate diversity, while denying that person or group any of the real power, voice, or influence the inclusion appears to represent.",
-    "plain_language_summary": "In plain terms: symbolic inclusion of a person or group to deflect criticism while denying real power.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Overwhelming the target's nervous system with intensity so urgency is mistaken for intimacy and speed is mistaken for depth.",
+    "expanded_definition": "Overwhelming the target's nervous system with sustained emotional intensity — declarations, crisis, high highs and low lows — so that the urgency of the intensity gets mistaken for genuine intimacy, and the speed of the connection gets mistaken for its depth. The overwhelm itself interferes with the kind of calm, gradual evaluation that would normally let someone assess whether a relationship or situation is actually sound.",
+    "plain_language_summary": "In plain terms: overwhelming the target's nervous system with intensity so urgency is mistaken for intimacy and speed is mistaken for depth.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Symbolic inclusion of a person or group to deflect criticism while denying real power.",
-     "Recognizable by phrasing such as \"One seat at the table, no vote\"."
+     "Overwhelming the target's nervous system with intensity so urgency is mistaken for intimacy and speed is mistaken for depth."
     ],
     "what_it_sounds_like": [
-     "A seat at the table that comes with no actual vote, veto, or meaningful influence over what gets decided.",
-     "The included person's presence is highlighted publicly, while their actual input in private meetings is consistently overridden or ignored.",
-     "Criticism about representation is met by pointing to the included person's presence, rather than any change in how much real influence they have."
-    ],
-    "what_it_is_not": [
-     "Small first steps toward inclusion can be sincere — the flag is when representation is the end state, not the beginning."
+     "A relationship or interaction that moves through dramatic highs and lows at a pace that leaves little room to catch one's breath or reflect.",
+     "Intense emotional experiences — passionate declarations, dramatic conflict, tearful reconciliation — occurring frequently and in rapid succession.",
+     "Looking back, the target realizes they never had a calm, ordinary period to actually evaluate the relationship on its normal, day-to-day merits."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuinely new roles can take real time to develop influence without that being tokenism.",
-     "Uneven but real and growing influence is different from purely symbolic inclusion."
+     "Early relationships and genuine crises really do produce authentic emotional intensity without being manipulative. Some people are naturally more emotionally expressive as part of who they are."
     ],
     "common_false_positives": [
-     "A genuine, newly-created role that's still developing real influence over time, in good faith, rather than being permanently symbolic.",
-     "A person who's included and whose input genuinely does shape outcomes, even if imperfectly or unevenly compared to others.",
-     "An organization honestly disclosing the current limits of a role's authority, rather than implying more influence than actually exists."
+     "A genuinely intense but healthy period, like the early excitement of a new relationship, that settles into something calmer over time.",
+     "Someone processing a real crisis where the emotional intensity reflects an actually difficult situation, not manufactured drama.",
+     "A person who's naturally more emotionally expressive, without engineering intensity for effect."
     ],
     "discernment_questions": [
-     "Does the included person's input actually, visibly shape real decisions, or does it get consistently overridden?",
-     "Is the inclusion used specifically to deflect criticism about representation, without any parallel change in actual influence?",
-     "Is there a credible path for the role's influence to grow, or does it stay permanently symbolic?",
-     "Would removing the person change anything substantive about how decisions get made?"
+     "Does the relationship or situation ever settle into a calm, ordinary baseline, or is intensity sustained indefinitely?",
+     "Does the intensity correlate with genuinely significant events, or does it seem manufactured relative to what's actually happening?",
+     "Would the connection or situation hold up if evaluated during a calm period, without the emotional intensity coloring the assessment?",
+     "Is there room for ordinary, low-key time together, or does everything feel high-stakes?"
     ],
     "less_concerning_if": [
-     "The role's influence is developing in good faith, even if not yet equal, with visible movement toward real input."
+     "Genuine excitement settles into a calmer, sustainable baseline over time."
     ],
     "more_concerning_if": [
-     "The role has no real influence, is specifically pointed to when representation is questioned, and shows no path toward growing."
+     "Intensity is sustained indefinitely and there's never a calm period to actually evaluate things clearly."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "workplace_or_legal_ambiguity"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Individualization of Systemic Issues",
-   "category": "Institutional & Process",
+   "name": "Cognitive Overload",
+   "category": "Pressure & Coercion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target adds self-improvement to an already unsustainable load, and concludes that the shortfall is in their own resilience rather than in the conditions."
+    "why_this_matters": "Agreement becomes the fastest way out of the overwhelm, and the decision that results was never really evaluated at all.",
+    "what_it_is_not": "Genuinely complex decisions require a great deal of real information, and someone anxious to be thorough may over-explain without meaning to obstruct anything. Real, externally imposed urgency produces the same compression with no one creating it."
    },
    "existing_specific_text": {
-    "short_definition": "Reframing structural problems as personal failings — the system's misalignment becomes your resilience deficit.",
-    "expanded_definition": "Reframing a structural or organizational problem as a personal failing — the system's actual misalignment (unreasonable workload, unclear expectations, inadequate resources) gets recast as an individual's resilience deficit, so the fix offered addresses the person rather than the actual, structural cause.",
-    "plain_language_summary": "In plain terms: reframing structural problems as personal failings — the system's misalignment becomes your resilience deficit.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Deliberately overwhelming someone with information or demands so they cannot evaluate a decision clearly.",
+    "expanded_definition": "Deliberately overwhelming someone with information, demands, or details — more than can reasonably be processed in the time available — so they cannot evaluate a decision clearly and are more likely to default to agreement just to end the overwhelm. The volume of information becomes an obstacle to good judgment rather than an aid to it.",
+    "plain_language_summary": "In plain terms: deliberately overwhelming someone with information or demands so they cannot evaluate a decision clearly.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Reframing structural problems as personal failings — the system's misalignment becomes your resilience deficit.",
-     "Recognizable by phrasing such as \"Burnout answered with wellness webinars instead of workload review\"."
+     "Deliberately overwhelming someone with information or demands so they cannot evaluate a decision clearly."
     ],
     "what_it_sounds_like": [
-     "Burnout from a genuinely unsustainable workload answered with a wellness webinar rather than any review of the workload itself.",
-     "\"You just need better time management\" applied to a problem that, examined honestly, is actually about insufficient resources or unclear priorities.",
-     "Multiple people independently struggling with the same systemic issue, each individually offered a personal-development solution rather than any structural fix."
-    ],
-    "what_it_is_not": [
-     "Personal agency is real and coaching can help — the flag is when individual framing is the only frame ever offered."
+     "A decision that needs to be made quickly is preceded by an overwhelming amount of complex detail, more than could reasonably be absorbed.",
+     "Requests to slow down or take more time are met with even more information, rather than actual space to think.",
+     "The target agrees mainly to escape the overwhelming feeling, not because they actually evaluated and understood the decision."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Individual skill development is genuinely valuable and isn't always a deflection from structural issues.",
-     "Organizations can legitimately address both individual and structural factors at the same time."
+     "Genuinely complex decisions sometimes really do require absorbing a lot of information. Some people over-explain from anxiety or thoroughness, not to prevent clear thinking."
     ],
     "common_false_positives": [
-     "A genuine, individual skill gap that really would benefit from personal development support, distinct from a broader structural issue.",
-     "An organization genuinely addressing both individual support and structural issues in parallel, not instead of each other.",
-     "A single person's difficulty that, on examination, really is more about their specific approach than about the system."
+     "A genuinely complex situation that requires a lot of real information to make an informed decision, without strategic intent to overwhelm.",
+     "Someone who over-explains out of anxiety or a desire to be thorough, not to prevent clear thinking.",
+     "A time-sensitive situation with real, unavoidable urgency that isn't manufactured."
     ],
     "discernment_questions": [
-     "Do multiple people independently struggle with the same issue, suggesting something structural rather than individual?",
-     "Does the offered solution address the actual root cause, or just the individual's coping capacity?",
-     "Is there any acknowledgment of the structural factor at all, or is it entirely reframed as personal?",
-     "Would fixing the individual's \"resilience\" actually resolve the underlying problem, or just help them tolerate it longer?"
+     "Is there a genuine reason the decision needs to be made this quickly, or is the urgency itself part of the overwhelm?",
+     "When more time or a simpler explanation is requested, is it given, or does the volume of information increase instead?",
+     "Does the target actually understand the decision they're agreeing to, or are they agreeing mainly to end the overwhelm?",
+     "Would the same decision look different with adequate time and a clearer breakdown of the information?"
     ],
     "less_concerning_if": [
-     "The issue genuinely is individual and specific, and structural factors are also acknowledged and addressed where relevant."
+     "Time and clearer explanation are genuinely offered when requested, even if the underlying topic is complex."
     ],
     "more_concerning_if": [
-     "Multiple people struggle with the same systemic issue, and the only offered solutions are individual-focused, with no structural acknowledgment."
+     "Requests to slow down produce more information rather than actual space, and urgency seems manufactured rather than real."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "workplace_or_legal_ambiguity"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Diffusion of Responsibility",
-   "category": "Institutional & Process",
+   "name": "Bait and Switch",
+   "category": "Pressure & Coercion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The harm is real and nobody is answerable for it, so the target has nowhere to take it, no one to ask for repair, and no way to stop it recurring."
+    "why_this_matters": "By the time the terms change, walking away costs more than accepting them, which is what makes the worse deal acceptable.",
+    "what_it_is_not": "Circumstances genuinely change and require honest renegotiation. A person correcting a mistake in their initial offer transparently, even inconveniently, is being straight. Terms that were clearly flagged as tentative at the time were never a promise."
    },
    "existing_specific_text": {
-    "short_definition": "Harm engineered so no single person is ever accountable — everyone was following process, approving what someone else drafted.",
-    "expanded_definition": "Harm engineered — deliberately or through institutional habit — so that no single person is ever accountable for it: everyone involved was following process, approving something someone else drafted, or executing a decision made further up or elsewhere. Each individual's role can look procedurally reasonable in isolation, while the outcome they collectively produced is harmful.",
-    "plain_language_summary": "In plain terms: harm engineered so no single person is ever accountable — everyone was following process, approving what someone else drafted.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Offering an attractive initial term or condition, then substituting a worse one once someone is already committed.",
+    "expanded_definition": "Offering an attractive initial term, price, or condition specifically to secure commitment, then substituting a less favorable one once the other person is already invested — practically, emotionally, or logistically — and less likely to walk away. The switch relies on the sunk cost of the initial commitment to make the substitution feel harder to refuse than it would have been from the start.",
+    "plain_language_summary": "In plain terms: offering an attractive initial term or condition, then substituting a worse one once someone is already committed.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Harm engineered so no single person is ever accountable — everyone was following process, approving what someone else drafted.",
-     "Recognizable by phrasing such as \"'That's not my department' forming a perfect circle\"."
+     "Offering an attractive initial term or condition, then substituting a worse one once someone is already committed."
     ],
     "what_it_sounds_like": [
-     "\"That's not my department\" said by everyone in a chain, forming a perfect, unbreakable circle of non-responsibility.",
-     "A harmful decision that, when traced, was approved by everyone and originated with no one in particular.",
-     "Attempts to identify who's actually responsible get redirected indefinitely from person to person or department to department."
-    ],
-    "what_it_is_not": [
-     "Large organizations genuinely distribute decisions — the flag is when the circle closes precisely around accountability for harm."
+     "Terms presented at the outset turn out to be different from what's actually delivered, discovered only after the target is already committed.",
+     "\"Things changed\" offered as an explanation for a substitution that conveniently benefits the person making the change.",
+     "The target notices they wouldn't have agreed to the current terms if they'd been the terms presented from the beginning."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Large, complex organizations do sometimes have genuine ambiguity about ownership, especially after restructuring.",
-     "Legitimate delegation to someone with more relevant expertise isn't evasion."
+     "Circumstances genuinely change and honest people sometimes have to revise an offer transparently. Initial terms are sometimes explicitly tentative, which isn't the same as a deliberate bait."
     ],
     "common_false_positives": [
-     "A genuinely complex organizational decision that really did involve legitimate, distributed input from many people, without anyone evading accountability.",
-     "Honest confusion about who owns a specific issue in a large or newly-restructured organization.",
-     "A single person genuinely, appropriately delegating a decision to someone with better expertise, which isn't evasion."
+     "Circumstances genuinely changed for reasons outside anyone's control, requiring a legitimate renegotiation.",
+     "A person who made an honest mistake in the initial offer and is correcting it transparently, even if inconveniently.",
+     "A situation where the initial terms were always conditional or tentative, and that was clearly communicated at the time."
     ],
     "discernment_questions": [
-     "When you trace the decision, does responsibility keep circling without ever landing, or is there a real, findable point of accountability?",
-     "Does everyone individually describe following a reasonable process, while the collective outcome is clearly harmful?",
-     "Is there a genuine effort to find and fix the point of failure, or does the search itself seem to be discouraged?",
-     "Would a neutral investigator be able to identify who actually had the authority to prevent this?"
+     "Was the change in terms disclosed as soon as it was known, or only once the target was already committed?",
+     "Does the substitution consistently favor the person who made the initial offer?",
+     "Is there a plausible, non-strategic reason for the change, or does the timing suggest it was the plan all along?",
+     "Would the target have agreed to the actual final terms if presented with them from the start?"
     ],
     "less_concerning_if": [
-     "Responsibility, when traced, does land somewhere real, even if the organization is genuinely complex."
+     "The change was disclosed promptly, has a genuine external cause, and doesn't specifically benefit the person who changed it."
     ],
     "more_concerning_if": [
-     "Responsibility circles indefinitely with no findable point of accountability, despite a clearly harmful collective outcome."
+     "The switch happens only once the target is already committed, and consistently benefits the person who made the initial offer."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "workplace_or_legal_ambiguity"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Administrative Escalation",
-   "category": "Institutional & Process",
+   "name": "Pre-Punishment",
+   "category": "Pressure & Coercion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Defending against a disproportionate process consumes time, money and attention regardless of how it concludes, and the next concern goes unraised for that reason alone.",
-    "what_it_is_not": "Some issues genuinely warrant formal process regardless of who raised a concern first. Organisations and families with a low threshold for formalising things apply it evenly to everyone. Someone unaware that informal resolution was available may escalate simply from not knowing another route existed."
+    "why_this_matters": "Opportunities are closed off before anyone else has the chance to refuse them, and the cost — jobs not applied for, things not said — stays invisible precisely because nothing happened.",
+    "what_it_is_not": "Realistic self-assessment about a situation where the odds genuinely are poor is judgement rather than fear. Ordinary caution and humility need no history behind them. Choosing not to pursue something because of competing priorities is a decision, not a withdrawal.",
+    "note": "This entry describes a self-directed, internalised pattern rather than something one person does to another, so why_this_matters is written about the cost the person carries rather than about a recipient of someone else's behaviour."
    },
    "existing_specific_text": {
-    "short_definition": "Informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary.",
-    "expanded_definition": "Informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary — a casual disagreement suddenly becomes a formal complaint, a family concern becomes a legal filing, a minor request for space becomes a documented incident. The formality itself is the punishment: it forces the target to spend time, money, and emotional energy defending against a process disproportionate to what actually happened.",
-    "plain_language_summary": "In plain terms: informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "The inner critic eliminating the self before anyone else can — not applying, not speaking, not trying — because past experience trained the target that visibility is punished.",
+    "expanded_definition": "An internalized pattern where a person's own inner critic eliminates options before anyone else has the chance to — not applying for something, not speaking up, not trying — because past experience trained them that visibility or effort gets punished. This is a self-directed pattern rather than something one person does to another in the moment; it describes how earlier experiences of pressure or punishment can continue operating internally, long after the original source is no longer present.",
+    "plain_language_summary": "In plain terms: the inner critic eliminating the self before anyone else can — not applying, not speaking, not trying — because past experience trained the target that visibility is punished.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Informal concerns converted into formal processes specifically as punishment for speaking up or setting a boundary.",
-     "Associated, when sustained, with effects such as a sense of powerlessness against a system that appears neutral but isn't functioning that way."
+     "The inner critic eliminating the self before anyone else can — not applying, not speaking, not trying — because past experience trained the target that visibility is punished."
     ],
     "what_it_sounds_like": [
-     "A minor, previously informal disagreement suddenly becomes a formal written complaint shortly after the target raised a concern of their own.",
-     "\"I'm going to have to escalate this formally\" used as a response to something that would ordinarily be resolved in conversation.",
-     "A pattern where formal processes are only ever initiated by one party, and only ever in response to the other asserting a need."
+     "Deciding not to apply, ask, or try, based on an anticipated rejection or punishment that hasn't actually happened yet.",
+     "A reflexive sense that trying and failing, or trying and succeeding, both feel unsafe, so not trying feels like the only safe option.",
+     "Noticing the impulse to shrink or hold back specifically in situations where being seen or visible would be required."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Some people or workplaces default to formal documentation as a general habit, not a targeted tactic. A genuinely serious issue can warrant formal process even if the timing looks suspicious."
+     "Sometimes caution really is realistic and well-founded given the actual circumstances. Choosing not to pursue something can be a genuine, considered decision rather than a fear response."
     ],
     "common_false_positives": [
-     "A genuinely serious issue that warrants formal process regardless of who raised a concern first.",
-     "An organization or family with a low threshold for formalizing things generally, applied evenly.",
-     "Someone unfamiliar with informal resolution options who escalates out of not knowing another way to be heard."
+     "Genuinely realistic self-assessment about a specific situation where the odds really are poor, based on real information.",
+     "Ordinary caution or humility that isn't rooted in an internalized fear response.",
+     "A deliberate, well-reasoned choice not to pursue something, based on priorities rather than fear."
     ],
     "discernment_questions": [
-     "Is the formal process proportionate to what actually happened?",
-     "Did the escalation happen specifically after the target raised their own concern?",
-     "Is formal process used evenly by both parties, or only by one?",
-     "Would this situation ordinarily be handled informally in this context?"
+     "Does the decision to hold back trace to a specific, realistic assessment of the current situation, or to a general, anticipatory fear?",
+     "Does this pattern show up across many different, unrelated situations, suggesting something internalized rather than situation-specific?",
+     "Would the same opportunity, evaluated without the anticipatory fear, look different?",
+     "Is there a memory or pattern from earlier experience that seems to be driving the anticipation, even though the current situation is different?"
     ],
     "less_concerning_if": [
-     "Escalation happens rarely, is proportionate, and isn't timed to follow the target's own complaints."
+     "The choice to hold back reflects a genuine, situation-specific assessment rather than a recurring pattern across unrelated situations."
     ],
     "more_concerning_if": [
-     "Escalation is disproportionate, one-directional, and reliably follows the target asserting a boundary."
+     "The pattern of self-elimination recurs across many different contexts and seems disconnected from the actual likely outcome in each one."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
     },
     {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
     },
     {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
     },
     {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
     },
     {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
     },
     {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": false,
+    "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [
-     "workplace_or_legal_ambiguity"
+     "clinical_adjacent_wording"
     ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
-  },
-  {
-   "name": "Paper Terrorism",
-   "category": "Institutional & Process",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": true,
-   "approved_draft": {
-    "why_this_matters": "Burden accumulates across filings rather than sitting in any one of them: responding to all of them costs time and money whether or not a single one has merit.",
-    "what_it_is_not": "Genuinely complex disputes require multiple legitimate filings to resolve. Thorough counsel generates volume as a by-product of diligence rather than as a strategy. Institutions produce a great deal of paperwork through their own procedural requirements, independent of any party's conduct.",
-    "note": "The short_definition is truncated mid-list (\"...floods of filings, motions, complaints,.\"), so both fields were derived from the expanded_definition and false-positive list instead."
-   },
-   "existing_specific_text": {
-    "short_definition": "Weaponizing systems through floods of filings, motions, complaints,.",
-    "expanded_definition": "Weaponizing administrative or legal systems by flooding them with filings, motions, complaints, or requests — not to resolve anything, but to exhaust the target's time, money, and legal resources. Unlike a single disproportionate escalation, this is characterized by volume and repetition: individual filings might each look minor or even legitimate, but the cumulative burden of responding to all of them is the actual mechanism.",
-    "plain_language_summary": "In plain terms: weaponizing systems through floods of filings, motions, complaints,.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Weaponizing systems through floods of filings, motions, complaints,.",
-     "Associated, when sustained, with effects such as a sense of powerlessness against a system that appears neutral but isn't functioning that way."
-    ],
-    "what_it_sounds_like": [
-     "A stream of separate, technically-proper filings or complaints, each requiring a formal response, arriving faster than any one could reasonably be resolved.",
-     "Repeated motions that re-litigate an issue already decided, forcing the target to respond again each time.",
-     "A pattern of formal requests that seem designed more to cost the target time and legal fees than to achieve any specific outcome."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Complex disputes legitimately generate a lot of paperwork. Thorough legal representation can look similar to this from the outside without being strategic exhaustion."
-    ],
-    "common_false_positives": [
-     "A genuinely complex legal or administrative dispute that requires multiple legitimate filings to resolve.",
-     "A party working with counsel who is being thorough rather than strategic, generating volume as a byproduct of due diligence.",
-     "An institution's own procedural requirements generating a high volume of paperwork independent of anyone's intent."
-    ],
-    "discernment_questions": [
-     "Does each filing have a plausible, substantive purpose, or does it mainly recreate cost and delay?",
-     "Is there a pattern of re-filing issues that have already been resolved?",
-     "Would a reasonable legal or administrative professional see the volume as proportionate to the underlying dispute?",
-     "Is the volume itself the burden, more than the substance of any one filing?"
-    ],
-    "less_concerning_if": [
-     "Filings are proportionate to a genuinely complex dispute and taper off as issues resolve."
-    ],
-    "more_concerning_if": [
-     "Filings continue or increase after issues are resolved, and repeatedly re-raise settled matters."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Legal/Administrative Threats",
-     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
-    },
-    {
-     "name": "Weaponized Therapy-Speak",
-     "definition": "Using clinical vocabulary as ammunition rather than understanding."
-    },
-    {
-     "name": "Trash-Can Diagnosis",
-     "definition": "Assigning the target a mental-health label as an insult or verdict."
-    },
-    {
-     "name": "Confidentiality as Weapon",
-     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
-    },
-    {
-     "name": "Pressure to Sign",
-     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
-    },
-    {
-     "name": "Clinical Tone Policing",
-     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "workplace_or_legal_ambiguity"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "known_truncation_note": "The source short_definition for this entry stops mid-sentence. Write a complete one from the expanded text and your own knowledge; do not reuse the old text."
   }
  ]
 }

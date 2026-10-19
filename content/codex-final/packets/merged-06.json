@@ -1,0 +1,1035 @@
+{
+ "batch": "merged-06",
+ "kind": "merged",
+ "category": "mixed categories",
+ "entries": [
+  {
+   "name": "Covert Contracts",
+   "category": "Hooking structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Covert Contracts' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Covert Contracts",
+    "Obligation Contracts"
+   ],
+   "members": [
+    {
+     "name": "Covert Contracts",
+     "tier": "Reference-only",
+     "source_definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed.",
+     "approved_draft": {
+      "why_this_matters": "The target is judged against a standard they had no access to, so effort never produces safety — there is always another rule they have not been told.",
+      "what_it_is_not": "Some expectations are shared widely enough that most people would recognise them unstated, and people often believe in good faith that something was mutual. Someone who adjusts readily once told the rule was never communicated is having a miscommunication, not enforcing one."
+     },
+     "existing_specific_text": {
+      "short_definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed.",
+      "expanded_definition": "Unspoken expectations the target is punished for failing to meet, without ever having been told they existed in the first place — the \"agreement\" was never actually made explicit or negotiated, but violating it is treated exactly as if it had been. This shares its core mechanism with Obligation Installation; the distinguishing emphasis here is specifically on the invisible contract itself, rather than on how loyalty gets extracted through confided secrets.",
+      "plain_language_summary": "In plain terms: unspoken expectations the target is punished for failing to meet without ever being told they existed.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+      ],
+      "what_it_sounds_like": [
+       "\"I shouldn't have to ask, you should just know\" applied to an expectation that was genuinely never discussed.",
+       "The target is criticized or punished for violating a standard they had no way of knowing existed beforehand.",
+       "Looking back, the target realizes an entire set of expectations were assumed on their behalf, never negotiated or agreed to."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Many reasonable social expectations really are unstated because they're widely understood.",
+       "Honest miscommunication about assumptions is common and resolves through conversation."
+      ],
+      "common_false_positives": [
+       "Reasonable, widely-understood social or relational norms that most people would recognize without needing them spelled out.",
+       "A person who genuinely believed something was mutually understood, correcting course readily once they learn it wasn't.",
+       "An honest miscommunication about expectations, resolved through direct conversation once it surfaces."
+      ],
+      "discernment_questions": [
+       "Would a reasonable person actually have known this expectation existed without being told?",
+       "Is there room to renegotiate the expectation once it's named, or is it treated as fixed and non-negotiable?",
+       "Does the target only discover these expectations by violating them, or is there any proactive communication about them?",
+       "Does this happen once, correctable through conversation, or as a recurring pattern of retroactive rules?"
+      ],
+      "less_concerning_if": [
+       "The expectation is one a reasonable person would recognize, and there's room to discuss and adjust it once named."
+      ],
+      "more_concerning_if": [
+       "The expectation is unusual and one-sided, only discovered through punishment, and treated as non-negotiable once revealed."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Obligation Contracts",
+     "tier": "Reference-only",
+     "source_definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation.",
+     "approved_draft": {
+      "why_this_matters": "The target is held to a debt they never agreed, and asking what they actually signed up for is treated as evidence of disloyalty rather than as a fair question.",
+      "what_it_is_not": "Long relationships do build genuine mutual obligations that both people would describe the same way if asked separately, and someone can be honestly hurt that an assumed closeness was not there. This describes a debt only one party has ever stated the terms of."
+     },
+     "existing_specific_text": {
+      "short_definition": "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation.",
+      "expanded_definition": "Unspoken debts enforced through shame and appeals to duty, built on the assumption that loyalty was agreed to without ever actually being negotiated or discussed — the target is treated as though they consented to an ongoing obligation they never actually chose, and made to feel ashamed for questioning or declining it.",
+      "plain_language_summary": "In plain terms: unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Unspoken debts enforced through shame, duty, and the assumption that loyalty was agreed to without negotiation."
+      ],
+      "what_it_sounds_like": [
+       "\"After everything, this is the least you owe\" invoked for an obligation that was never actually discussed or agreed to.",
+       "Loyalty is assumed and demanded as a baseline, with any hesitation treated as a betrayal rather than a reasonable question.",
+       "The target notices they're expected to prioritize this relationship's needs automatically, without that priority ever having been mutually established."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Real, freely-chosen loyalty built through genuine reciprocal history is healthy.",
+       "Honest hurt about a hoped-for closeness is different from shaming someone into obligation."
+      ],
+      "common_false_positives": [
+       "Genuine, freely-chosen loyalty and mutual obligation built through real, reciprocal history that the target actually endorses.",
+       "A person expressing real hurt that an assumed closeness wasn't there, without shaming the target for it.",
+       "Reasonable expectations in a relationship that both people have actually discussed and agreed to over time."
+      ],
+      "discernment_questions": [
+       "Was the obligation ever actually discussed and agreed to, or is it assumed as a baseline?",
+       "Does questioning or declining the obligation get met with shame, or genuine conversation about expectations?",
+       "Is loyalty here reciprocal and freely chosen, or one-directional and assumed?",
+       "Would the target, given a genuine choice, actually have agreed to this specific obligation?"
+      ],
+      "less_concerning_if": [
+       "The obligation reflects genuine, freely-chosen, reciprocal loyalty that was actually discussed at some point."
+      ],
+      "more_concerning_if": [
+       "The obligation was never discussed, is assumed as a baseline, and questioning it is met with shame."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    },
+    {
+     "name": "Platform Migration",
+     "definition": "Moving communication off-record or off-platform to reduce accountability and eliminate evidence."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "HR Shielding",
+   "category": "Institutional & Process",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'HR Shielding' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "HR Shielding",
+    "Strategic HR Complicity"
+   ],
+   "members": [
+    {
+     "name": "HR Shielding",
+     "tier": "Reference-only",
+     "source_definition": "Institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
+     "approved_draft": {
+      "why_this_matters": "The person who reported the harm absorbs the disruption while the situation they reported continues, and everyone else in the organisation learns what reporting costs."
+     },
+     "existing_specific_text": {
+      "short_definition": "Institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
+      "expanded_definition": "Institutional machinery — nominally there to address complaints — positioned in practice to protect the institution's reputation and the accused party's position, rather than the person reporting harm. The process may look procedurally correct on paper while functionally prioritizing minimizing institutional liability over actually addressing what happened.",
+      "plain_language_summary": "In plain terms: institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a sense of powerlessness against a system that appears neutral but isn't functioning that way. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Institutional machinery positioned to protect the institution and the accused rather than the person reporting harm.",
+       "Recognizable by phrasing such as \"Reports met with concern for 'how this looks' rather than what happened\"."
+      ],
+      "what_it_sounds_like": [
+       "A report of real concern is met with visible focus on \"how this looks\" or \"protecting the team,\" rather than engagement with what happened.",
+       "The accused party continues in their role with minimal disruption while the person reporting experiences new friction or scrutiny.",
+       "The investigation process itself becomes focused on managing the reporter's expectations rather than substantively examining the claim."
+      ],
+      "what_it_is_not": [
+       "Due process protects the accused too, legitimately — the flag is when investigation exists to exhaust and discredit reporters, not to find facts."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine investigations take time and confidentiality that can feel opaque and frustrating without being rigged.",
+       "A claim not being substantiated isn't automatically evidence the process was protective of wrongdoing."
+      ],
+      "common_false_positives": [
+       "A genuine, thorough investigation process that takes time and appropriate confidentiality, which can feel opaque without being protective of wrongdoing.",
+       "A situation where the investigation genuinely didn't substantiate the claim, which isn't the same as the process being rigged.",
+       "An HR function that's under-resourced or inexperienced, producing a poor outcome through incompetence rather than institutional protection."
+      ],
+      "discernment_questions": [
+       "Does the process substantively investigate the claim, or focus mainly on managing optics and liability?",
+       "Does the accused party experience real, proportionate consequences if the claim is substantiated, or minimal disruption regardless?",
+       "Is confidentiality used to protect the process's integrity, or to prevent the reporter from understanding what's happening?",
+       "Would a neutral observer, reviewing how the process actually unfolded, describe it as genuinely investigative?"
+      ],
+      "less_concerning_if": [
+       "The process is genuinely thorough, if slow, and takes real steps toward substantively investigating the claim."
+      ],
+      "more_concerning_if": [
+       "Focus stays on institutional optics and liability, with minimal real disruption to the accused regardless of findings."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Strategic HR Complicity",
+     "tier": "Reference-only",
+     "source_definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm.",
+     "approved_draft": {
+      "why_this_matters": "Someone brings a complaint believing they are speaking to a protector, and finds what they said has been used to shape the response against them — after which the next person is far less likely to report anything at all.",
+      "what_it_is_not": "HR staff who set out the limits of confidentiality, follow a policy that disappoints the complainant, or reach a conclusion the employee disagrees with are doing the job as designed, not colluding. The distinguishing pattern is information given in confidence being routed to pre-empt the person who gave it.",
+      "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+     },
+     "existing_specific_text": {
+      "short_definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm.",
+      "expanded_definition": "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm. (Overlaps with HR Shielding #175). As a communication pattern, Strategic HR Complicity-type behavior in the Organizational & Institutional category tends to work through the systems, incentives, and culture of an organization rather than any one person's words — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+      "plain_language_summary": "In plain terms: human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm. (Overlaps with HR Shielding #175). This happens at a scale far beyond any single conversation.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to burnout, disengagement, or self-blame for outcomes actually produced by systemic design. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+      "what_it_is": [
+       "Human Resources actively aligning with management interests rather than fulfilling its nominal employee-protection function, using its trusted position to extract information from complainants, advise leadership on pre-emption strategies, and manage the organization's liability rather than the employee's harm. (Overlaps with HR Shielding #175)."
+      ],
+      "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+      "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through the systems, incentives, and culture of an organization rather than any one person's words. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+      "possible_impact_on_receiver": "People sometimes describe burnout, disengagement, or self-blame for outcomes actually produced by systemic design in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "Institutional Betrayal",
+     "definition": "An institution's deliberate or negligent failure to prevent, respond to, or acknowledge harm against individuals who depend on it, compounding the original violation with the additional trauma of being abandoned by the system that was supposed to provide protection — the institution's inaction IS the second wound."
+    },
+    {
+     "name": "Organizational Silence Engineering",
+     "definition": "Deliberately constructing a culture where employees withhold information, feedback, concerns, and ideas because the organization has taught them — through example, consequence, and futility — that speaking produces punishment and silence produces safety."
+    },
+    {
+     "name": "Performance Framework Manipulation",
+     "definition": "Designing evaluation criteria, KPI systems, and review processes to reward compliance, deference, and institutional loyalty while systematically disadvantaging competence, dissent, and ethical independence — the measurement system IS the control system."
+    },
+    {
+     "name": "Algorithmic Management",
+     "definition": "Using automated systems to assign work, monitor performance, evaluate productivity, and make consequential decisions (scheduling, pay, termination) about workers, removing human judgment and creating a control apparatus that is simultaneously omnipresent, unaccountable, and unappealable — the algorithm as invisible boss."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Trash-Can Diagnosis",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Trash-Can Diagnosis' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Trash-Can Diagnosis",
+    "Identity Diminishment via Pathologizing"
+   ],
+   "members": [
+    {
+     "name": "Trash-Can Diagnosis",
+     "tier": "Detected",
+     "source_definition": "Assigning the target a mental-health label as an insult or verdict.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Assigning the target a mental-health label as an insult or verdict.",
+      "expanded_definition": "Assigning the target a mental-health label as an insult or verdict. A diagnosis-as-weapon dismisses everything the target says as symptoms. As a communication pattern, Trash-Can Diagnosis-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: assigning the target a mental-health label as an insult or verdict.",
+      "why_this_matters": "A diagnosis-as-weapon dismisses everything the target says as symptoms. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Assigning the target a mental-health label as an insult or verdict.",
+       "A diagnosis-as-weapon dismisses everything the target says as symptoms.",
+       "Contrasts with a healthier version: \"I'm finding your behavior really hard\" — behavior, not diagnosis.",
+       "Recognizable by phrasing such as \"You're a textbook narcissist\"."
+      ],
+      "what_it_sounds_like": [
+       "You're a textbook narcissist.",
+       "This is your BPD talking, not you.",
+       "You're a narcissist.",
+       "You need serious help, seriously."
+      ],
+      "what_it_is_not": [
+       "'You need help' can also be genuine, poorly-delivered concern for someone who's struggling."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine, qualified clinical observations exist and can be appropriate in the right context.",
+       "Describing frustration with specific behavior is different from diagnosing someone."
+      ],
+      "common_false_positives": [
+       "A genuine, appropriately qualified clinical observation, offered by someone actually qualified to make it, in a relevant context.",
+       "Frustration expressed about specific behavior, described as behavior rather than as a diagnostic label.",
+       "A person's own disclosed, real diagnosis referenced by themselves, which isn't the same as someone else weaponizing a label against them."
+      ],
+      "discernment_questions": [
+       "Is the diagnostic label offered by someone actually qualified to assess it, in an appropriate context?",
+       "Does the criticism focus on specific behavior, or does it generalize into a sweeping label about the target's character?",
+       "Does the label get used specifically to dismiss everything the target says as \"symptoms,\" regardless of content?",
+       "Would the underlying concern still be valid if described in terms of specific behavior rather than a diagnosis?"
+      ],
+      "less_concerning_if": [
+       "Feedback focuses on specific behavior rather than a diagnostic label, or any diagnostic language comes from someone actually qualified in an appropriate context."
+      ],
+      "more_concerning_if": [
+       "A diagnostic label is used as a blanket dismissal of everything the target says, by someone unqualified to assess it."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Identity Diminishment via Pathologizing",
+     "tier": "Reference-only",
+     "source_definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology.",
+     "approved_draft": {
+      "why_this_matters": "Self-protection gets reclassified as a symptom, so the target's boundaries cost them credibility and any pushback is read as further evidence of the alleged problem.",
+      "what_it_is_not": "A trusted person can gently name a real escalation out of genuine care, and a diagnosis someone has disclosed themselves can be referred to supportively. What is described here is a boundary answered with a label instead of a response."
+     },
+     "existing_specific_text": {
+      "short_definition": "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology.",
+      "expanded_definition": "Turning the target's boundaries, ordinary emotional reactions, or personal differences into evidence of a disorder or pathology, so that self-protection itself gets reframed as a symptom rather than a reasonable response. This can make the target hesitant to assert any boundary at all, since doing so risks having it used as further \"evidence\" of the alleged pathology.",
+      "plain_language_summary": "In plain terms: turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Turning the target's boundaries, reactions, or differences into disorders so self-protection becomes pathology."
+      ],
+      "what_it_sounds_like": [
+       "A reasonable boundary is described using clinical-sounding language that implies something is wrong with the person setting it.",
+       "\"That's your anxiety talking\" or similar framing applied to a response that would be reasonable for most people in the same situation.",
+       "The target notices that any pushback, however measured, gets treated as further confirmation of an alleged underlying issue."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Sometimes a real pattern does exist and gets raised supportively, separate from dismissing a current, valid point. Genuine, disclosed diagnoses can be referenced with real care rather than weaponized."
+      ],
+      "common_false_positives": [
+       "A genuine, appropriately qualified observation about a real pattern, offered supportively and separately from dismissing the target's current point.",
+       "A trusted person gently and appropriately raising a real concern about escalating reactions, in a caring rather than dismissive way.",
+       "The target's own openness about a real diagnosis they've disclosed, referenced in a supportive rather than weaponizing way."
+      ],
+      "discernment_questions": [
+       "Would the target's reaction be considered reasonable for most people in the same situation, independent of any alleged pathology?",
+       "Is the pathologizing language used specifically in response to boundaries or pushback, or in a genuinely separate, supportive context?",
+       "Does the person asserting the pathology have any real basis or qualification to do so?",
+       "Does every reaction, regardless of content, get filtered through the same pathologizing lens?"
+      ],
+      "less_concerning_if": [
+       "The reaction, examined on its own, would be seen as disproportionate by most reasonable observers, and any pathology framing is offered supportively."
+      ],
+      "more_concerning_if": [
+       "Ordinary, proportionate boundaries get consistently relabeled as pathology, specifically in response to pushback."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Describing a person's boundaries, reactions or differences as symptoms of a disorder, so that protecting themselves reads as proof something is wrong with them.",
+      "expanded_definition": "Ordinary responses get reread in clinical vocabulary: saying no is 'avoidant', being upset is 'a meltdown', needing space is 'a symptom'. The terms sound informed, but they come from people who are not assessing you and are used against what you just said. A trusted person can name a real change out of concern. This pattern is where each limit you set is answered with a label, so the next limit costs more to set.",
+      "plain_language_summary": "When you set a limit or react strongly, you are told it is a symptom, so protecting yourself starts to look like proof that something is wrong with you.",
+      "why_this_matters": "Self-protection gets reclassified as a symptom, so your boundaries cost you credibility and any pushback is read as further evidence of the alleged problem. You may stop setting limits at all, since each one can be turned into proof.",
+      "what_it_is": [
+       "A word from the mental-health vocabulary attached to a response, such as 'paranoid' for asking where someone was.",
+       "Applied to limits and reactions that would be reasonable for most people in the same situation.",
+       "Self-sealing: objecting to the label is taken as more of the symptom.",
+       "May be said in front of others or written into messages and notes, which lets it travel.",
+       "Different from a diagnosis given by a clinician after assessment; here nobody has assessed anything."
+      ],
+      "what_it_sounds_like": [
+       "That's just your anxiety talking.",
+       "You're being paranoid. Normal people don't ask that.",
+       "You're so avoidant. This is why you can't keep relationships.",
+       "I think you're having an episode.",
+       "Maybe you should get that checked, because it's not normal to react like this.",
+       "A group chat describes your request for quiet as 'one of her moods.'",
+       "A message to your family says you have 'been struggling with your mental health' right after you declined a request."
+      ],
+      "what_it_is_not": [
+       "A trusted person can gently name a real escalation out of care, and a diagnosis someone has disclosed themselves can be referred to supportively. What is described here is a boundary answered with a label instead of a response.",
+       "A clinician who has assessed you explaining a diagnosis you asked about.",
+       "Someone using these words about themselves: 'I'm anxious about this, can we slow down?'",
+       "A friend saying 'you don't seem like yourself lately,' then asking about it and listening.",
+       "Calling for help when someone seems truly unsafe, which is a response to a crisis and not a rebuttal of a limit."
+      ],
+      "this_may_be_it_when": [
+       "Your limit is answered with a term about you, not with a reply to the limit.",
+       "The person using the term has never assessed you and is not qualified to.",
+       "The label comes up each time you say no and rarely at other times.",
+       "Reasonable people in your position would have said the same.",
+       "The label is shared with others as an explanation for why you cannot be taken seriously."
+      ],
+      "this_may_not_be_it_when": [
+       "You have a diagnosis you chose to share, and they refer to it respectfully and still honor the limit.",
+       "The concern is about a clear change in you, like not eating, and is raised privately and with care.",
+       "The term is used by someone qualified, in a session you chose to attend.",
+       "Your limit is respected first, and concern is raised separately.",
+       "They are describing their own state, not yours."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Mental-health words are now everyday speech, and people use them loosely with no plan to dismiss anyone.",
+       "A person may truly be worried and not know another way to put it.",
+       "People who struggle themselves may see their own struggles in others."
+      ],
+      "common_false_positives": [
+       "A sibling who notices you have not been sleeping and asks whether you are all right.",
+       "A counselor naming a pattern you have both agreed to examine.",
+       "A friend who says 'I think I'm getting anxious, can we slow down?', talking about themselves."
+      ],
+      "discernment_questions": [
+       "Would most people in my position react as I did?",
+       "Does the label show up when I set a limit and not otherwise?",
+       "Do they have any training or basis for the term, and have they ever asked about my life?",
+       "Do they say the label to others about me?",
+       "Can I disagree with the label without it being taken as more evidence?"
+      ],
+      "less_concerning_if": [
+       "The term is raised once, privately, and dropped when you answer.",
+       "Your limit is respected whatever is said.",
+       "They apply the same words to themselves."
+      ],
+      "more_concerning_if": [
+       "The label is shared with family, coworkers or officials.",
+       "Your reaction to being labeled is cited as proof of it.",
+       "Decisions about you, such as who has a say in your care, your home or your children, begin to refer to the label."
+      ],
+      "pattern_over_time_signs": [
+       "You stop stating limits, because stating them has begun to cost more than it protects.",
+       "You start using their words on yourself, asking 'am I just being anxious?' before you speak.",
+       "People around you begin to repeat the term.",
+       "You are seen as 'the one with issues' by people who never saw what led up to each reaction."
+      ],
+      "repair_check": "Repair would be the limit being respected first, then the label withdrawn in front of whoever heard it. Someone apologizing for 'how it came out' while still holding that you have a problem has changed the tone but not the claim.",
+      "boundary_respect_check": "State a limit and see whether the answer is about the limit or about you. 'Okay, I won't ask for that' answers the limit. Any reply that includes a word for your mental state sends the limit back unanswered.",
+      "psychological_mechanism": "Clinical words carry authority, and few people feel qualified to argue with them. When your response is renamed as a symptom, defending it can feel like confirming it. Being told something is wrong with you again and again can lead you to weigh your own reactions less and the other person's reading more, and others may come to treat your boundaries as optional.",
+      "possible_impact_on_receiver": "People describe second-guessing normal reactions, apologizing for needing space, and hiding upset so as not to supply evidence. Some look up the terms used about them or ask others whether they are 'too much'. Some describe grief or anger at having been misread for years.",
+      "response_options": {
+       "soft_clarification": "Ask what they are basing the term on: 'Is there something specific I did that worries you? I'd rather talk about that than a label.'",
+       "firm_boundary": "Separate your limit from your health: 'My answer is about the request, not about my mental health. I'm asking you to respect that.'",
+       "disengagement": "Do not argue your sanity point by point. Ask for a pause of a few hours or a day, then return to the request in writing.",
+       "support_seeking": "Tell a trusted friend, or a clinician of your own choosing, which words are being used about you, and ask whether they match what they see. An outside view helps you check.",
+       "workplace_or_professional": "If a label is used about you at work, school or in a care setting, ask in writing what it is based on and who has seen it, and take it to HR, a union representative or an advocate."
+      },
+      "boundary_script": "\"I understand you're worried, and I'd like to talk about what actually happened. When you call my answer a symptom, I can't respond to that. What I said was no to this request. Can we stay with the request?\"",
+      "safety_sensitive": true,
+      "safety_note": "Watch for the label being used outside the conversation: shared with family, an employer, a school, a doctor or a court, or used to explain why your account should not count. Also watch for talk of treatment you did not ask for. Keep dated copies of messages, and speak to a legal aid service or an advocate before any meeting where the label may come up.",
+      "misuse_warning": [
+       "Not every mention of mental health about someone is pathologizing. Treating all concern as an attack can leave a person alone when they are struggling.",
+       "Applying this label to someone who is sincerely worried about you can turn a hard moment into a rupture. Check whether your limit was actually answered."
+      ],
+      "how_to_distinguish_from_related": "Emotional Invalidation tells you your feeling is not valid; pathologizing names a disorder that supposedly explains it. Accountability Evasion via Diagnosis uses a diagnosis to close one particular complaint, while this keeps going across your everyday limits and reactions. Authority Hijack tells you what you really feel; this tells you which condition you have.",
+      "core_meaning": "Describing a person's boundaries, reactions or differences as symptoms of a disorder, so that protecting themselves reads as proof something is wrong with them."
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Weaponized Therapy-Speak",
+     "definition": "Using clinical vocabulary as ammunition rather than understanding."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    },
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Weaponized Therapy-Speak",
+   "category": "Institutional & Process",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Weaponized Therapy-Speak' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Weaponized Therapy-Speak",
+    "Role Reversal via Therapy Language",
+    "Pseudo-Insight as Shutdown"
+   ],
+   "members": [
+    {
+     "name": "Weaponized Therapy-Speak",
+     "tier": "Detected",
+     "source_definition": "Using clinical vocabulary as ammunition rather than understanding.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Using clinical vocabulary as ammunition rather than understanding.",
+      "expanded_definition": "Using clinical vocabulary as ammunition rather than understanding. Borrowed authority pathologizes the target's normal responses. As a communication pattern, Weaponized Therapy-Speak-type behavior in the Institutional & Process category tends to work by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: using clinical vocabulary as ammunition rather than understanding.",
+      "why_this_matters": "Borrowed authority pathologizes the target's normal responses. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Using clinical vocabulary as ammunition rather than understanding.",
+       "Borrowed authority pathologizes the target's normal responses.",
+       "Contrasts with a healthier version: therapy language used on oneself: \"I notice I'm getting defensive.\".",
+       "Recognizable by phrasing such as \"I'm setting a boundary: you're not allowed to be upset\"."
+      ],
+      "what_it_sounds_like": [
+       "I'm setting a boundary: you're not allowed to be upset.",
+       "Your 'anxiety' is just manipulation — I've read about people like you.",
+       "My therapist says that you're a narcissist.",
+       "That's just your trauma talking.",
+       "You're clearly projecting again.",
+       "You clearly have unresolved issues."
+      ],
+      "what_it_is_not": [
+       "Therapy concepts are mainstream now; many people use them earnestly and imprecisely, not strategically."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine, self-aware use of therapeutic language about one's own behavior is healthy.",
+       "People newly learning these concepts sometimes apply them imperfectly but in good faith."
+      ],
+      "common_false_positives": [
+       "A person genuinely applying therapeutic language to their own behavior, reflecting real self-awareness.",
+       "Legitimate boundary-setting language used accurately, about the person's own limits, not to control the other person's emotional expression.",
+       "Someone newly learning therapeutic concepts who applies them somewhat clumsily but in good faith, open to correction."
+      ],
+      "discernment_questions": [
+       "Is the clinical language applied to the speaker's own behavior, or wielded against the target's normal reactions?",
+       "Does the \"boundary\" being set actually limit the speaker's own actions, or does it try to control the target's emotional expression?",
+       "Is the person using this vocabulary open to feedback about how it's landing, or doubling down when questioned?",
+       "Would the same situation, described in plain language instead of clinical terms, still sound reasonable?"
+      ],
+      "less_concerning_if": [
+       "Clinical language is applied to the speaker's own behavior or genuine self-limits, not used to control the target's reactions."
+      ],
+      "more_concerning_if": [
+       "Clinical vocabulary specifically targets and pathologizes the target's normal emotional responses, used to control rather than understand."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by using the credibility or procedures of an institution as cover, so a personal or unfair action looks like neutral policy. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a sense of powerlessness against a system that appears neutral but isn't functioning that way in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Role Reversal via Therapy Language",
+     "tier": "Detected",
+     "source_definition": "Using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+      "expanded_definition": "Using clinical-sounding language to reframe the target's self-protection as the actual problem. It borrows the credibility of therapeutic language to disarm exactly the self-protective instinct therapy is supposed to strengthen. As a communication pattern, Role Reversal via Therapy Language-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+      "why_this_matters": "It borrows the credibility of therapeutic language to disarm exactly the self-protective instinct therapy is supposed to strengthen. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Using clinical-sounding language to reframe the target's self-protection as the actual problem.",
+       "It borrows the credibility of therapeutic language to disarm exactly the self-protective instinct therapy is supposed to strengthen.",
+       "Contrasts with a healthier version: \"I hear that you're protecting yourself — can we talk about what's making that necessary?\".",
+       "Recognizable by phrasing such as \"That's not a boundary, that's control\"."
+      ],
+      "what_it_sounds_like": [
+       "That's not a boundary, that's control.",
+       "That's not self-care, that's avoidance."
+      ],
+      "what_it_is_not": [
+       "Sometimes what looks like a boundary really is avoidance, and a good friend or therapist might name that — the flag is this framing used to shut down a legitimate limit, not offered as caring reflection."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine therapeutic language, used appropriately and collaboratively, is a healthy tool.",
+       "A real, curious observation about a boundary isn't automatically dismissive."
+      ],
+      "common_false_positives": [
+       "Genuine, appropriate therapeutic language used by someone actually qualified, in a context where exploring the dynamic is the agreed purpose.",
+       "A real, honest observation that a specific boundary seems more like withdrawal than a healthy limit, offered with curiosity rather than to dismiss it.",
+       "A person applying therapy language to reflect on their own behavior, not to relabel the target's self-protection as the problem."
+      ],
+      "discernment_questions": [
+       "Does the clinical language get applied to the speaker's own behavior, or specifically to relabel the target's self-protection?",
+       "Is this offered in a context where exploring the dynamic together is the actual, mutual purpose?",
+       "Does the underlying self-protective instinct get respected, or specifically disarmed by the reframing?",
+       "Would the same situation, described in plain language, still sound like a fair characterization?"
+      ],
+      "less_concerning_if": [
+       "Therapeutic language is applied to the speaker's own behavior or offered collaboratively, not to dismiss the target's self-protection."
+      ],
+      "more_concerning_if": [
+       "Clinical language specifically relabels the target's self-protective boundary as the actual problem, disarming it."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Using clinical or therapy-style words to recast a person's self-protection as the real problem in the relationship.",
+      "core_meaning": "Using clinical or therapy-style words to recast a person's self-protection as the real problem in the relationship.",
+      "expanded_definition": "Words like 'boundaries', 'triggered', 'projecting', 'avoidant' and 'trauma response' are useful when two people use them to understand each other. Here they are pointed at one person to relabel their limits as symptoms. You say you need space after being shouted at, and are told you are 'avoiding' and 'shutting down'. Borrowing a few terms is no fault. It becomes a problem when the vocabulary only ever points at you.",
+      "plain_language_summary": "Someone uses therapy words to tell you that your attempt to protect yourself is actually the thing that is wrong with you.",
+      "why_this_matters": "Clinical words sound expert, which makes them hard to answer. If your limits keep being renamed as symptoms, you may start to distrust the very instincts that help keep you safe, and stop trusting your own reasons for saying no.",
+      "what_it_is": [
+       "Clinical vocabulary aimed at one person's behavior, while the speaker's own behavior is never looked at in the same terms.",
+       "A boundary, a request for space or a refusal that is relabeled as avoidance, control, deflection or a trauma response.",
+       "Often said with a tone of care or concern, which makes pushing back feel unkind.",
+       "A reversal: the person who set the limit ends up being analyzed, and the thing that led to the limit is left out of the conversation."
+      ],
+      "what_it_sounds_like": [
+       "That's not a boundary, that's control.",
+       "That's not self-care, that's avoidance.",
+       "You're projecting right now.",
+       "I think you're being triggered by something from your past, and it's got nothing to do with me.",
+       "Maybe you should ask a therapist why you shut down whenever we talk about this.",
+       "Your attachment style is making this harder for both of us.",
+       "I'm only saying this because I care about your healing."
+      ],
+      "what_it_is_not": [
+       "A good friend or therapist gently noting that a pattern of withdrawal might be hurting you, offered with curiosity and an open door for you to disagree.",
+       "Someone applying the same clinical lens to themselves, such as 'I think I was being defensive there'.",
+       "A couple or family in therapy together, where looking at each person's patterns is the shared task.",
+       "A real case of avoidance. People do sometimes dodge hard talks, and saying so kindly is not a trap.",
+       "Using psychology terms as everyday shorthand without aiming them at anyone."
+      ],
+      "this_may_be_it_when": [
+       "The clinical terms are used mainly in moments when you are setting a limit or complaining.",
+       "Nothing in the speaker's own conduct is ever described in those terms.",
+       "You are told to see a professional about your reaction, while your original complaint goes unanswered.",
+       "Your plain-language reason for the limit is replaced by a theory about your psychology.",
+       "After the exchange, you have apologized for the boundary rather than the boundary being discussed."
+      ],
+      "this_may_not_be_it_when": [
+       "They ask what is behind your limit and listen to the answer.",
+       "They turn the same words on themselves, saying things like 'I get defensive when I feel criticized'.",
+       "The therapeutic framing came up in a session you both agreed to, with a professional present.",
+       "The comment was a single clumsy remark, followed by 'sorry, that was not helpful'.",
+       "They respect the limit while adding that they would like to understand it better."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Therapy language is everywhere online, and many people pick it up and use it clumsily, without noticing it can sound like a diagnosis.",
+       "Someone who has had real benefit from therapy may sincerely want to offer you the same insight.",
+       "A person who feels shut out by your limit may reach for an expert-sounding word because they cannot find plain ones for their hurt."
+      ],
+      "common_false_positives": [
+       "A sibling who says 'I think we both get avoidant when Mum is mentioned' and means it about both of you.",
+       "A counselor who offers a reading of your pattern, which you are free to take or leave.",
+       "A friend sharing a podcast on attachment because it helped them, with no connection to a dispute."
+      ],
+      "discernment_questions": [
+       "Do these words get used on the speaker as often as on you?",
+       "When you give your reason for a limit in plain words, is it heard, or translated into something clinical?",
+       "Does the label come up when you say no, and rarely at other times?",
+       "Do you end up doubting a limit you felt sure of before the conversation?",
+       "If a neutral therapist heard this exchange, would they say the words were being used to understand you or to correct you?"
+      ],
+      "less_concerning_if": [
+       "The clinical words come with a question, such as 'Is that what's going on for you?', and the answer is accepted.",
+       "The speaker is just as willing to have their own behavior named.",
+       "Your limit is respected whether or not they agree with your reasons."
+      ],
+      "more_concerning_if": [
+       "The labels follow you into talks with other people, such as 'she's got trust issues', before you can speak for yourself.",
+       "You are told you must seek treatment before your limit counts.",
+       "The labeling gets heavier whenever the limit relates to something they did."
+      ],
+      "pattern_over_time_signs": [
+       "You find yourself using their vocabulary against your own judgment, thinking 'maybe I really am avoidant'.",
+       "You stop naming limits at all, because naming them leads to analysis.",
+       "Your reasons for setting boundaries are no longer discussed, only your psychology.",
+       "Friends comment that you used to be clearer about what you needed."
+      ],
+      "repair_check": "Listen for whether the speaker can describe your limit in your words, not theirs, and whether they stop diagnosing you. A change shows when they apply 'what was my part?' to themselves in the same talk. Complimenting your growth while the labels still arrive whenever you say no is not that.",
+      "boundary_respect_check": "Notice whether the limit survives being named. If you say 'I won't discuss that tonight' and the reply is 'okay, thanks for telling me', the boundary is being respected. If the reply is an assessment of why you feel that way, the limit has become a topic about you.",
+      "psychological_mechanism": "Clinical words can sound neutral and well informed, so they may be accepted more readily than a plain insult. When a person's self-protective reaction is described as a symptom, they can begin to doubt whether their instinct was sound. Because the language comes wrapped in concern, objecting can feel like proving the point.",
+      "possible_impact_on_receiver": "People describe confusion about whether their limits are healthy, a habit of explaining themselves in clinical terms, and fear that standing firm will confirm a label. Some say they stopped trusting their gut. Others recall feeling angry only afterward, once they saw that their original complaint was never answered.",
+      "response_options": {
+       "soft_clarification": "Bring the conversation back to plain words: 'Can we leave the labels aside? I don't want to be shouted at, and that's all I'm asking.'",
+       "firm_boundary": "Decline the diagnosis without arguing it: 'I'm not going to debate my psychology. My limit stands, and I'm happy to talk about what led to it.'",
+       "disengagement": "When each limit you set is met with an analysis, end the talk and return to the original issue in writing, in plain language.",
+       "support_seeking": "Describe the exchange to a licensed therapist or a trusted friend and ask if the label fits your situation, rather than relying on the person who used it.",
+       "workplace_or_professional": "If a manager uses terms like 'defensive' or 'not a team player' to answer a boundary, ask for the specific behavior and the specific request in writing."
+      },
+      "boundary_script": "\"I'd like us to stick to what happened, not to theories about me. I need a break when voices are raised, and that isn't avoidance or control. If you want, we can talk about the shouting itself once we're both calm.\"",
+      "safety_sensitive": false,
+      "safety_note": "This pattern on its own is not a physical danger. Take it more seriously if relabeling your limits is used to push you into contact you have said you do not want, to keep you from outside support, or to say your reports of harm are symptoms. In that case, speak with a licensed counselor who is independent of the person, and keep a dated record of what you said and how it was answered.",
+      "misuse_warning": [
+       "Turning the label on someone who is honestly sharing a concern about your withdrawal can stop you hearing something true. Ask whether the concern is aimed at understanding you.",
+       "Calling any use of therapy words a manipulation would punish people who are trying to learn how to talk about feelings."
+      ],
+      "how_to_distinguish_from_related": "Non-Apology Apology regrets your reaction without admitting what caused it, while this one goes further by giving your reaction a clinical name. Blame-Shifting says the problem is your fault in general terms, and here the blame arrives in expert vocabulary. Minimization says what happened was small, whereas this says your response to it is the symptom."
+     }
+    },
+    {
+     "name": "Pseudo-Insight as Shutdown",
+     "tier": "Reference-only",
+     "source_definition": "\"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance.",
+     "approved_draft": {
+      "why_this_matters": "A specific, checkable complaint is converted into something unfalsifiable about the target's inner life, which closes the conversation without anything being resolved or even disputed.",
+      "what_it_is_not": "\"You're projecting\" is sometimes accurate, and in a therapy room that kind of exploration is the agreed purpose of being there. The marker is a psychological reading offered as the whole reply to a concrete complaint."
+     },
+     "existing_specific_text": {
+      "short_definition": "\"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance.",
+      "expanded_definition": "Psychological-sounding language — \"you're projecting,\" \"this is your trauma talking\" — deployed specifically to close a conversation rather than to actually engage with its substance. The language borrows real clinical concepts, which gives it a veneer of insight, but its actual function here is to end the discussion by relocating the problem entirely inside the target.",
+      "plain_language_summary": "In plain terms: \"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "\"You're projecting\" or \"this is your trauma\" deployed to close the conversation rather than address the substance."
+      ],
+      "what_it_sounds_like": [
+       "\"You're projecting\" offered as a complete response to a specific, substantive concern, without any engagement with what was actually raised.",
+       "\"This is clearly about your past, not about what I did\" used to redirect a concrete complaint into an internal, unfalsifiable psychological explanation.",
+       "The target notices that raising almost any concern gets met with the same handful of psychological-sounding dismissals."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Real, evidenced psychological observations exist and can be offered thoughtfully alongside genuine engagement. Therapeutic contexts legitimately focus on internal psychological dynamics as their actual purpose."
+      ],
+      "common_false_positives": [
+       "A genuine, thoughtful observation from someone who also engages substantively with the target's specific concern, not instead of it.",
+       "A therapeutic context where exploring psychological dynamics is the actual, agreed-upon purpose of the conversation.",
+       "An accurate, well-evidenced observation about a real pattern, offered as one part of a fuller conversation rather than as a conversation-ending move."
+      ],
+      "discernment_questions": [
+       "Does the psychological framing replace engagement with the substance, or accompany real engagement with it?",
+       "Is the same handful of psychological-sounding phrases used regardless of what specific concern is raised?",
+       "Does the target have any way to have their actual, concrete concern addressed, separate from this reframing?",
+       "Is this offered in a context where exploring internal psychology is the explicit, mutually agreed purpose?"
+      ],
+      "less_concerning_if": [
+       "The psychological observation accompanies, rather than replaces, real engagement with the specific concern raised."
+      ],
+      "more_concerning_if": [
+       "The same psychological-sounding dismissal is used regardless of the actual concern, and nothing concrete ever gets addressed."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Using therapy-sounding phrases such as 'you're projecting' or 'that's your trauma' as the whole answer to a concrete complaint, so the talk ends.",
+      "expanded_definition": "Phrases borrowed from therapy, such as 'you're projecting', 'this is your trauma' or 'you're triggered', can offer real insight in the right place. Used as the entire reply to something specific, like 'you didn't pay the bill', they move the problem inside you, where nobody can check it. A claim about your inner life can be neither proven nor disproven, so it can't be answered, and the talk stops. One use proves little; the pattern is the same few phrases appearing whatever you raise.",
+      "plain_language_summary": "A concrete complaint gets met with a therapy-sounding phrase like 'you're projecting', and the conversation ends without anything being addressed.",
+      "why_this_matters": "A specific, checkable complaint is converted into something untestable about your inner life, which closes the conversation without anything being resolved or even disputed. You leave with the problem unsolved and a new doubt about yourself.",
+      "what_it_is": [
+       "A short psychological phrase offered as a full answer: 'you're projecting.'",
+       "Borrowed from therapy, where such ideas are explored with consent and in good faith, and used here to end an exchange.",
+       "Hard to answer because it claims something about your inner life that nobody can check.",
+       "The same few phrases return, whatever you bring up.",
+       "Different from an observation that arrives alongside real engagement with your point."
+      ],
+      "what_it_sounds_like": [
+       "You're projecting.",
+       "That's your trauma talking, not me.",
+       "You're just triggered right now.",
+       "This is clearly about your father, not about what I did.",
+       "You have attachment issues, and that's what this is.",
+       "I can't have a conversation with someone who's dysregulated.",
+       "Your email about the missing invoice is answered with 'I think you have some things to unpack.'"
+      ],
+      "what_it_is_not": [
+       "'You're projecting' is sometimes accurate, and in a therapy room that kind of exploration is the agreed purpose of being there. The marker is a psychological reading offered as the whole reply to a concrete complaint.",
+       "A pause to settle down ('I'm too upset to talk well, can we come back at six?') that is followed by a return.",
+       "Someone describing their own triggers: 'That topic is hard for me because of my past.'",
+       "A real observation offered together with an answer to your complaint.",
+       "A therapist's or friend's interpretation that you asked for.",
+       "Shared therapy vocabulary in a household where both of you use it lightly and mean it."
+      ],
+      "this_may_be_it_when": [
+       "The phrase comes as the entire reply, with nothing about the matter itself.",
+       "The same handful of terms answers different complaints.",
+       "The complaint concerns something checkable, like money, dates or a promise.",
+       "You did not ask for an interpretation.",
+       "The talk ends and nothing changes."
+      ],
+      "this_may_not_be_it_when": [
+       "The reading comes with an answer on the complaint.",
+       "You asked for their view on your patterns.",
+       "It is said in a therapy session where interpretation is the task.",
+       "They use the same words about themselves with equal readiness.",
+       "The talk continues after the phrase."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Therapy vocabulary has become everyday speech, and many people use it with no wish to end the talk.",
+       "When flooded with feeling, someone may grasp at a word that feels like understanding.",
+       "People who have been helped by therapy sometimes apply its lens to everything, sincerely."
+      ],
+      "common_false_positives": [
+       "A friend noting 'I think this is about your last job' while still discussing your complaint.",
+       "A partner in couples counseling naming a pattern the counselor suggested.",
+       "Someone saying 'I'm triggered, I need an hour' about themselves, and returning after the hour."
+      ],
+      "discernment_questions": [
+       "Is my concrete point answered, or only my psychology?",
+       "Would the same phrase be used for any complaint I made?",
+       "Could the claim be tested, and does anyone want to test it?",
+       "Did I ever ask them for an interpretation of my feelings?",
+       "After the phrase, did the topic return?"
+      ],
+      "less_concerning_if": [
+       "The phrase is followed by a real answer.",
+       "You asked for their psychological view and wanted to hear it.",
+       "They accept that it cannot settle the facts."
+      ],
+      "more_concerning_if": [
+       "The same phrases end every disagreement.",
+       "Others hear that you are 'triggered' or 'projecting' before they hear your complaint.",
+       "Practical matters like money, promises or safety stay unaddressed because of it."
+      ],
+      "pattern_over_time_signs": [
+       "You start prefacing every complaint with a disclaimer such as 'I know this might be my stuff'.",
+       "Disputes end in the same two or three phrases.",
+       "You read about psychology to check whether you are really doing what you are told.",
+       "Issues you raised months ago are still unanswered, as though they were resolved."
+      ],
+      "repair_check": "Repair is the original complaint finally getting a reply, even a disagreeing one, and the therapy words dropping out of disputes. A sincere-sounding 'maybe I shouldn't use those words' followed by the same words next time is a change in apology only.",
+      "boundary_respect_check": "Watch the reply that follows a request to stick to the facts. A reply that takes up the facts, even to disagree, has taken the request. A fresh psychological term has not.",
+      "psychological_mechanism": "Psychological language carries an air of expertise, and few people feel confident enough to dispute it on the spot. Because 'you're projecting' cannot be proven or disproven, the only way to answer it is to defend your inner life, which pulls the talk away from the facts. Repeated, it can teach you to examine yourself before examining the complaint.",
+      "possible_impact_on_receiver": "People describe a specific frustration: leaving a talk with the problem untouched and a new worry that they might be the problem. Some start reading about psychology to rule themselves out, or stop bringing up issues at all. Others say it felt like being politely told they were not worth answering.",
+      "response_options": {
+       "soft_clarification": "Offer to consider it later, and ask for the reply now: 'Maybe, and I'm happy to look at that. First, did the payment go through?'",
+       "firm_boundary": "Say what the talk is about: 'I'm asking about the payment. Please answer that.'",
+       "disengagement": "Stop the exchange when a term replaces an answer, and put the concrete question in writing so that it stands on the page.",
+       "support_seeking": "Describe the whole exchange to someone you trust, including the original complaint, and ask: was my question answered? Hearing yourself summarize it often makes this clear.",
+       "workplace_or_professional": "At work, restate the issue as a business matter in an email with a date and a request for a reply, and keep the thread."
+      },
+      "boundary_script": "\"You may be right that my past plays a part, and I'm open to talking about that another time. This conversation is about the invoice. Can you tell me when it will be paid?\"",
+      "safety_sensitive": false,
+      "safety_note": "Mostly a conversation problem. It becomes a safety matter if the phrases are used to explain away threats, injuries or money taken, or if you are told you are too unwell to be believed by others. If so, record specific events with dates and talk to an advocate or counselor outside the relationship.",
+      "misuse_warning": [
+       "Saying 'that's just therapy-speak' to dismiss every psychological observation can shut out a useful one. Ask whether your point was also answered.",
+       "Using 'that's pseudo-insight' as a comeback is itself a psychology-sounding reply that avoids the point."
+      ],
+      "how_to_distinguish_from_related": "Projection is a specific accusation returned to you; Pseudo-Insight as Shutdown is an interpretation of you that needs nothing from your complaint. Emotional Invalidation tells you your feeling is too much, while this one sets the feeling aside and offers a theory of where it comes from. Frame Assassination swaps the topic to your character or mood, where this one names a psychological mechanism and stops.",
+      "core_meaning": "Using therapy-sounding phrases such as 'you're projecting' or 'that's your trauma' as the whole answer to a concrete complaint, so the talk ends."
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Legal/Administrative Threats",
+     "definition": "Threatening police, lawyers, HR, or authorities as leverage."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    },
+    {
+     "name": "Confidentiality as Weapon",
+     "definition": "Invoking 'confidentiality' to block the target from seeing the evidence or accusations against them."
+    },
+    {
+     "name": "Pressure to Sign",
+     "definition": "Pushing someone to accept documents, agreements, or blame on the spot, without time to review or consult anyone."
+    },
+    {
+     "name": "Clinical Tone Policing",
+     "definition": "Using clinical or institutional authority to minimize real distress by framing it as excessive."
+    },
+    {
+     "name": "False Conclusion from Normal Labs",
+     "definition": "Using normal test results to dismiss the reality of ongoing symptoms — 'the numbers look fine' — when the numbers don't capture the problem."
+    },
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    },
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "clinical_adjacent_wording",
+     "high_false_positive_risk",
+     "workplace_or_legal_ambiguity"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  }
+ ]
+}

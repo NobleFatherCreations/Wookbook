@@ -1,0 +1,762 @@
+{
+ "batch": "merged-05",
+ "kind": "merged",
+ "category": "mixed categories",
+ "entries": [
+  {
+   "name": "Account Takeover",
+   "category": "Discard / institutional",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Account Takeover' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Account Takeover",
+    "Account Control"
+   ],
+   "members": [
+    {
+     "name": "Account Takeover",
+     "tier": "Reference-only",
+     "source_definition": "Seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity.",
+     "approved_draft": {
+      "why_this_matters": "Being displaced from your own accounts means losing not only access but the ability to speak as yourself — messages can go out under your name to people with every reason to believe them.",
+      "what_it_is_not": "Forgotten passwords and legitimate recovery processes exist, platforms have bugs and outages, and an authorised family member resetting a shared account and saying so is housekeeping. Recovery attempts being blocked or intercepted is what makes it something else."
+     },
+     "existing_specific_text": {
+      "short_definition": "Seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity.",
+      "expanded_definition": "Seizing control of the target's digital accounts — email, social media, banking, cloud storage — to impersonate them, surveil their private communications, sabotage their relationships, or lock them out of their own online identity entirely. This is a more severe, unilateral escalation of Account Control: the target isn't just monitored or restricted, they're actively displaced from accounts that are rightfully theirs.",
+      "plain_language_summary": "In plain terms: seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Seizing control of the target's digital accounts to impersonate them, surveil their communications, sabotage their relationships, or lock them out of their own identity."
+      ],
+      "what_it_sounds_like": [
+       "Login credentials for personal accounts stop working, with no request from the target to change them.",
+       "Messages or posts appear from the target's own accounts that they didn't send, sometimes damaging their relationships or reputation.",
+       "Password reset or recovery attempts are blocked, redirected, or intercepted by someone with access to the target's recovery information."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine technical issues and forgotten passwords happen to everyone and don't require anyone else's involvement.",
+       "Legitimate, disclosed account resets by authorized family members are normal."
+      ],
+      "common_false_positives": [
+       "A genuinely forgotten password combined with a legitimate account recovery process, without anyone else's involvement.",
+       "A shared family account being reasonably reset by another authorized user, with the target informed.",
+       "A platform-side security issue or bug unrelated to any specific person's actions."
+      ],
+      "discernment_questions": [
+       "Is there a person with a specific motive who would benefit from controlling this account?",
+       "Did the target lose access suddenly, without initiating any change themselves?",
+       "Is recovery specifically being blocked, or is this a routine technical issue affecting many users?",
+       "Does content appear from the account that the target didn't create?"
+      ],
+      "less_concerning_if": [
+       "The access loss is explainable by a routine technical issue or a legitimate, disclosed account action by an authorized user."
+      ],
+      "more_concerning_if": [
+       "Access loss is sudden and unexplained, recovery is specifically blocked, and content appears that the target didn't create."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Account Control",
+     "tier": "Reference-only",
+     "source_definition": "Controlling, monitoring, locking, or revoking the target's digital accounts, email, or platform access.",
+     "approved_draft": {
+      "why_this_matters": "Losing independent access to your own email, money or messages turns ordinary daily life into something that has to be requested.",
+      "what_it_is_not": "Plenty of households share accounts by agreement, a parent reasonably manages a young child's, and forgotten passwords get reset together. The distinguishing feature is access changed without the account holder's knowledge and returned only on conditions."
+     },
+     "existing_specific_text": {
+      "short_definition": "Controlling, monitoring, locking, or revoking the target's digital accounts, email, or platform access.",
+      "expanded_definition": "Controlling, monitoring, locking, or revoking the target's digital accounts — email, banking, social media, cloud storage — as a mechanism of practical control, often escalating from casual co-access to unilateral, target-excluding control. Unlike a one-time Device Access Demand, this describes ongoing control over accounts the target may have once had full independent access to.",
+      "plain_language_summary": "In plain terms: controlling, monitoring, locking, or revoking the target's digital accounts, email, or platform access.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Controlling, monitoring, locking, or revoking the target's digital accounts, email, or platform access."
+      ],
+      "what_it_sounds_like": [
+       "Login credentials for the target's own accounts are changed by someone else, without the target's knowledge or consent.",
+       "The target finds themselves locked out of an account they previously used independently, with the other person now holding sole access.",
+       "Access to shared or personal accounts is used as leverage in disagreements — restored only on the other person's terms."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely shared family or household accounts with mutual access are common and healthy. Reasonable parental account management for young children is age-appropriate, not controlling."
+      ],
+      "common_false_positives": [
+       "A genuinely shared account (a joint streaming subscription, a family calendar) with mutually agreed, revocable shared access.",
+       "A parent managing a young child's account appropriately, with access scaled back as the child grows.",
+       "A one-time, mutually agreed password reset for a legitimately forgotten shared account, not a unilateral lockout."
+      ],
+      "discernment_questions": [
+       "Was access to the account originally the target's own, later taken over without their consent?",
+       "Is the account control used as leverage during disagreements, restored only on certain terms?",
+       "Does the target have any independent way to recover access, or is it entirely gated by the other person?",
+       "Would a reasonable person consider this level of control appropriate given the relationship and the target's age/independence?"
+      ],
+      "less_concerning_if": [
+       "Any shared access is genuinely mutual, agreed, and revocable by either party without conflict."
+      ],
+      "more_concerning_if": [
+       "The target's own previously-independent access has been unilaterally taken over and is used as leverage."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Public Humiliation",
+     "definition": "Deliberately embarrassing someone in front of others as punishment or a display of power."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    },
+    {
+     "name": "Emotion Control",
+     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
+    },
+    {
+     "name": "Ritualized Exhaustion",
+     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
+    },
+    {
+     "name": "Nonverbal Dominance",
+     "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
+    },
+    {
+     "name": "Spatial Invasion",
+     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
+    },
+    {
+     "name": "Resource Sabotage",
+     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Emotional Blackmail",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Emotional Blackmail' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Emotional Blackmail",
+    "Conditional Love"
+   ],
+   "members": [
+    {
+     "name": "Emotional Blackmail",
+     "tier": "Detected",
+     "source_definition": "Making love or the relationship conditional on compliance.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Making love or the relationship conditional on compliance.",
+      "expanded_definition": "Making love or the relationship conditional on compliance. Turns affection into a hostage; choice under threat isn't choice. As a communication pattern, Emotional Blackmail-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: making love or the relationship conditional on compliance.",
+      "why_this_matters": "Turns affection into a hostage; choice under threat isn't choice. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Making love or the relationship conditional on compliance.",
+       "Turns affection into a hostage; choice under threat isn't choice.",
+       "Contrasts with a healthier version: \"This matters a lot to me. Can we find something that works for both of us?\".",
+       "Recognizable by phrasing such as \"If you really loved me, you'd stay\"."
+      ],
+      "what_it_sounds_like": [
+       "If you really loved me, you'd stay.",
+       "Leave, and everyone will know what you did.",
+       "If you really loved me, you would.",
+       "If you leave me, I'll.",
+       "You'll be sorry if you.",
+       "Do it or I'll.",
+       "Prove that you love me by."
+      ],
+      "what_it_is_not": [
+       "Stating that a behavior is a dealbreaker for you can be a legitimate boundary — context decides."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Honest, vulnerable expression of how a decision affects someone is different from a conditional threat."
+      ],
+      "common_false_positives": [
+       "A person honestly expressing how much a decision affects them, while still leaving the choice genuinely with the target.",
+       "Real, vulnerable communication about needs and fears in a relationship, without an implied threat of ending the relationship attached.",
+       "A person processing real hurt at a possible loss, expressed as feeling rather than as a conditional demand."
+      ],
+      "discernment_questions": [
+       "Is love or the relationship's continuation made explicitly conditional on compliance?",
+       "Does the target still feel they have a genuine choice, or does refusal carry an implied threat to the relationship itself?",
+       "Is the emotional expression an honest feeling, or a conditional demand disguised as feeling?",
+       "Would the relationship actually survive the target declining, based on how it's been framed?"
+      ],
+      "less_concerning_if": [
+       "Feelings are expressed honestly and vulnerably, with the relationship's continuation not made conditional on the outcome."
+      ],
+      "more_concerning_if": [
+       "The relationship's continuation is made explicitly conditional on compliance, turning the choice into a threat."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "boundary_script": "Given the safety dimension of this category, a scripted line matters less than the surrounding plan: if and when it feels safe, a simple, low-detail line like \"I need some space and I'll reach out when I'm ready\" is enough — it does not require justification. See the Safety note below before deciding how, when, or whether to address this directly with the person involved.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Conditional Love",
+     "tier": "Detected",
+     "source_definition": "Making affection explicitly contingent on obedience.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Making affection explicitly contingent on obedience.",
+      "expanded_definition": "Making affection explicitly contingent on obedience. Teaches the target that love must be earned by compliance. As a communication pattern, Conditional Love-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: making affection explicitly contingent on obedience.",
+      "why_this_matters": "Teaches the target that love must be earned by compliance. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Making affection explicitly contingent on obedience.",
+       "Teaches the target that love must be earned by compliance.",
+       "Contrasts with a healthier version: \"I'm upset with you right now, and I still love you.\".",
+       "Recognizable by phrasing such as \"I could really love you if you just lost the attitude\"."
+      ],
+      "what_it_sounds_like": [
+       "I could really love you if you just lost the attitude.",
+       "Be sweet like before and we'll be fine.",
+       "If you want me to love you."
+      ],
+      "what_it_is_not": [
+       "Hard to say innocently in this direct form — but it may be a heated exaggeration the speaker regrets."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "A single frustrated comment in the heat of an argument doesn't necessarily reflect genuinely conditional love.",
+       "Real hurt, honestly expressed, isn't the same as making love contingent on obedience."
+      ],
+      "common_false_positives": [
+       "Genuine, temporary frustration expressed honestly, without a pattern of tying affection itself to compliance.",
+       "A person processing real hurt in a moment, whose underlying affection isn't actually conditional despite a poorly-worded comment.",
+       "Reasonable relationship expectations discussed honestly, distinct from making love itself contingent on obedience."
+      ],
+      "discernment_questions": [
+       "Does affection get explicitly withdrawn or threatened specifically in response to non-compliance?",
+       "Is there a stable baseline of love that persists through disagreement, or does it feel conditional on good behavior?",
+       "Does this pattern recur across different situations, or was it one poorly-worded moment in anger?",
+       "Would the person acknowledge, if asked directly, that their love isn't actually conditional?"
+      ],
+      "less_concerning_if": [
+       "Affection remains stable through disagreement, even if a single comment in anger sounded conditional."
+      ],
+      "more_concerning_if": [
+       "Affection is explicitly and repeatedly tied to compliance, withdrawn specifically when the target doesn't obey."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Offering warmth, approval or affection while you comply with what someone wants, and pulling it back when you decline or disagree.",
+      "core_meaning": "Offering warmth, approval or affection while you comply with what someone wants, and pulling it back when you decline or disagree.",
+      "expanded_definition": "Conditional love treats affection as a reward and a lever. Care is generous when you comply and noticeably smaller when you disagree, decline or go your own way. It turns up between partners, between parents and children, and in friendships. One sharp comment in a bad moment is common and does not show it. What stands out is a clear, repeated link between obedience and warmth, spoken or obvious to everyone involved.",
+      "plain_language_summary": "Someone's warmth and love switch on when you do what they want and switch off when you do not, so love starts to feel like something you must earn.",
+      "why_this_matters": "When love depends on pleasing, you learn to scan for the other person's mood and shrink your own needs. Disagreement starts to feel dangerous, and it becomes hard to know what you want separate from what keeps the peace.",
+      "what_it_is": [
+       "Affection, praise or closeness that rises with compliance and falls with disagreement.",
+       "A message, spoken or acted out, that love is a payment and that you can fall behind.",
+       "Found in couples, in families where approval hangs on grades, looks or obedience, and in friendships with a hidden scorecard.",
+       "More than a bad mood: the withdrawal lasts, is tied to a specific request, and ends when you give in.",
+       "Sometimes delivered as kindness, such as 'I only want what's best for you', which makes the condition harder to see."
+      ],
+      "what_it_sounds_like": [
+       "I could love you so much more if you'd just stop arguing with me.",
+       "When you do it my way, we're great. Why can't it always be like that?",
+       "I'm not going to be affectionate with someone who talks to me like that.",
+       "After everything I do for you, the least you can do is listen.",
+       "You're my favorite when you're being agreeable.",
+       "Come back to me when you're ready to act right."
+      ],
+      "what_it_is_not": [
+       "Saying 'I love you, and I'm very upset about what you did', which keeps care in place while naming the problem.",
+       "A reasonable expectation inside a relationship, such as telling the truth or not hitting, where the response is to protect yourself and not to obtain obedience.",
+       "A hurt person needing a few hours of distance, who says so and comes back whether or not you give in.",
+       "A parent setting a household rule and enforcing a consequence while still showing the child affection.",
+       "A heated remark said once during a bad fight and later taken back."
+      ],
+      "this_may_be_it_when": [
+       "You can predict the warmth from whether you went along with their wishes that week.",
+       "They name the behavior they want as the price of affection.",
+       "Once you comply, the affection returns quickly and fully, as if nothing happened.",
+       "Your agreeing is described as proof of love, and your declining as proof of the opposite.",
+       "You have started to hide opinions or choices to protect the mood."
+      ],
+      "this_may_not_be_it_when": [
+       "Their love is stated and shown even when you disagree, for example 'I'm frustrated and I'm not going anywhere'.",
+       "They have a bad week and are short with everyone, including when you did nothing.",
+       "A request has a real reason, such as your safety or a shared bill, and is not about control.",
+       "They apologize for a harsh comment and it does not return.",
+       "You feel free to say no and the relationship carries on."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Anyone can be curt or distant when stressed or hurt, and may be less affectionate for a while.",
+       "Families often absorb habits of praising achievement, which can feel conditional without anyone planning it that way.",
+       "A partner may genuinely struggle to show warmth after a conflict and need time to find it again."
+      ],
+      "common_false_positives": [
+       "A friend who is annoyed that you cancelled three times and says so, without threatening the friendship.",
+       "A parent who is firm about homework and affectionate at bedtime.",
+       "A partner who asks for something reasonable, like telling them when you will be late, and is upset when it does not happen."
+      ],
+      "discernment_questions": [
+       "If I said no to this, would the affection survive the week?",
+       "Are the conditions ever spoken aloud, or only felt in how the mood changes?",
+       "Do I change my choices ahead of time to avoid the withdrawal?",
+       "Does the warmth come back as soon as I give in?",
+       "Do they place the same conditions on themselves?"
+      ],
+      "less_concerning_if": [
+       "Disagreement leads to a hard conversation and then ordinary warmth, not a long chill.",
+       "The expectations placed on you are ones they hold for themselves too.",
+       "You can state a limit and still be treated kindly afterward."
+      ],
+      "more_concerning_if": [
+       "Affection is explicitly withheld until you apologize or do what was asked.",
+       "The conditions grow over time, covering clothes, friends, work or money.",
+       "Other people are told, or shown, that you are difficult whenever you resist."
+      ],
+      "pattern_over_time_signs": [
+       "You find yourself pre-editing requests and opinions so as not to trigger the cooling.",
+       "The number of things you do not do or say grows quietly.",
+       "Good days are tied to compliance, so you start to read the warmth as a grade.",
+       "People who knew you earlier say you used to argue more, or laugh more freely."
+      ],
+      "repair_check": "Repair here looks like warmth that no longer varies with how well you obeyed: they stay kind during a disagreement, name the problem without a chill, and accept a no. A big loving gesture after you gave in just restarts the loop.",
+      "boundary_respect_check": "Notice what comes after the first time you decline something they asked for. Warmth that dips for a moment and then returns on its own is ordinary. Warmth that stays away until you apologize or reverse your decision is the part to watch.",
+      "psychological_mechanism": "Affection that comes and goes with compliance can work like an intermittent reward, and behavior adjusts fast to protect something valued. Because the wish for love is so basic, a person may begin anticipating the other's preferences before being asked, and may come to experience their own preferences as a risk to the relationship.",
+      "possible_impact_on_receiver": "People describe walking on eggshells, becoming skilled at reading moods, and feeling guilty for having needs. Some say they could not tell whether they were loved or only managed well. Children who grow up with it sometimes describe adulthood as a hunt for approval, and some partners describe a flat feeling that they are acting a part.",
+      "response_options": {
+       "soft_clarification": "Name the link calmly: 'It feels like you're warmer when I agree with you. I'd like us to be able to disagree and still be close.'",
+       "firm_boundary": "Refuse the trade: 'I'm not going to change my answer to get you to be kind to me.'",
+       "disengagement": "When the chill starts, do not chase it. Do something that is yours for the evening and return to the topic when both of you are calmer.",
+       "support_seeking": "Describe two or three specific episodes to a friend or counselor and ask whether the pattern between your choices and their warmth looks as clear to them as it does to you.",
+       "workplace_or_professional": "If a boss rewards agreement and goes cold on dissent, keep your feedback to work content in writing, and seek a mentor outside the reporting line."
+      },
+      "boundary_script": "\"I want to be close to you, and I also need to be able to say no to things without losing your warmth. I'll talk about this as long as you like, but I won't agree just to keep things pleasant.\"",
+      "safety_sensitive": false,
+      "safety_note": "On its own, this is a pain in the relationship rather than a physical danger. It becomes a safety matter when withdrawn affection is joined by threats, withheld money or housing, or fear of what happens when you refuse. If you depend on this person for shelter or income, plan with a counselor or advocate before you push back.",
+      "misuse_warning": [
+       "Every relationship has expectations, and holding someone to reasonable ones, such as honesty or respect, is not the same as conditional love. Using the label to dodge fair requests turns it into an excuse.",
+       "Applying the term to a parent who disciplines a child, or to anyone who is simply upset, can mislabel normal limits as cruelty."
+      ],
+      "how_to_distinguish_from_related": "Silent Treatment goes quiet to force a response, while conditional love can be delivered warmly and still tie the warmth to obedience. Negging chips away at your confidence through backhanded remarks and does not require withdrawn affection. Love Bombing hands out affection freely at the start, whereas conditional love measures it out according to your behavior."
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    },
+    {
+     "name": "Demand for Gratitude",
+     "definition": "Requiring displays of thanks as payment for help given."
+    },
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Silent Treatment",
+     "definition": "Withdrawing contact as punishment until the target complies."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": true,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Guilt-Tripping",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Guilt-Tripping' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Guilt-Tripping",
+    "Obligation Hooks"
+   ],
+   "members": [
+    {
+     "name": "Guilt-Tripping",
+     "tier": "Detected",
+     "source_definition": "Inducing guilt to make refusal feel morally wrong.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Inducing guilt to make refusal feel morally wrong.",
+      "expanded_definition": "Inducing guilt to make refusal feel morally wrong. Converts the target's conscience into a lever against them. As a communication pattern, Guilt-Tripping-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: inducing guilt to make refusal feel morally wrong.",
+      "why_this_matters": "Converts the target's conscience into a lever against them. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Inducing guilt to make refusal feel morally wrong.",
+       "Converts the target's conscience into a lever against them.",
+       "Contrasts with a healthier version: \"I'm disappointed, and I also know it's your decision to make.\".",
+       "Recognizable by phrasing such as \"After everything I've done for you\"."
+      ],
+      "what_it_sounds_like": [
+       "After everything I've done for you.",
+       "I never ask you for anything.",
+       "After all I have done for you.",
+       "I sacrificed everything for you.",
+       "You owe me.",
+       "How could you do this to me.",
+       "I guess I just don't matter to you any more.",
+       "If you really cared about me, you would."
+      ],
+      "what_it_is_not": [
+       "Expressing genuine hurt or disappointment is healthy — the flag is guilt used to override a stated 'no'."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Honest disappointment, expressed once without demanding a specific change, is a normal feeling to share."
+      ],
+      "common_false_positives": [
+       "A genuine, honest expression of disappointment that still leaves the decision clearly with the target.",
+       "A person processing real hurt about a decision, expressed vulnerably without implying the target is morally wrong for choosing it.",
+       "Reasonable feedback about impact, offered once, that doesn't function as an ongoing lever against future decisions."
+      ],
+      "discernment_questions": [
+       "Does the expressed disappointment leave room for the target's decision to still stand, or does it function as pressure to change it?",
+       "Is \"after everything I've done\" invoked to compel a specific, unrelated action?",
+       "Does this happen once, honestly, or as a recurring tool whenever the target makes a decision the person doesn't like?",
+       "Would the relationship's warmth actually be affected long-term by the target's decision standing?"
+      ],
+      "less_concerning_if": [
+       "Disappointment is expressed honestly, with the target's decision still respected and standing."
+      ],
+      "more_concerning_if": [
+       "Past generosity or sacrifice is repeatedly invoked specifically to compel a current, unrelated decision."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Obligation Hooks",
+     "tier": "Reference-only",
+     "source_definition": "Installing a persistent sense of \"owing\" that makes declining any request feel like a moral failure.",
+     "approved_draft": {
+      "why_this_matters": "A diffuse sense of owing colours every exchange, so even a reasonable refusal arrives feeling like a moral failure rather than a decision.",
+      "what_it_is_not": "Relationships with a real history of give and take produce genuine feelings of reciprocity, and a personal tendency towards guilt or people-pleasing may be nobody's doing. Mutual obligation running in both directions is ordinary; one-directional and permanent is the shape to notice."
+     },
+     "existing_specific_text": {
+      "short_definition": "Installing a persistent sense of \"owing\" that makes declining any request feel like a moral failure.",
+      "expanded_definition": "Installing a persistent, generalized sense of \"owing\" — not tied to any one specific gift or favor, but a diffuse feeling that the target is always somewhat in debt — so that declining any request, however reasonable, feels like a moral failure. Unlike Loan-Sharking Gifts, which ties debt to a specific act, this is a more ambient, harder-to-pin-down pressure that colors every interaction.",
+      "plain_language_summary": "In plain terms: installing a persistent sense of \"owing\" that makes declining any request feel like a moral failure.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Installing a persistent sense of \"owing\" that makes declining any request feel like a moral failure."
+      ],
+      "what_it_sounds_like": [
+       "A persistent undertone of \"you owe me\" that isn't tied to any single identifiable favor or gift.",
+       "The target feels guilty declining even small, reasonable requests, without being able to point to why.",
+       "\"After all I've done\" used vaguely, without specifying anything particular, as a general-purpose response to any pushback."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "A general sense of gratitude in a long relationship with real mutual history isn't the same as installed obligation. Personal tendencies toward guilt can exist independent of anyone deliberately creating them."
+      ],
+      "common_false_positives": [
+       "A relationship with genuine, real reciprocal history where both people have given and received over time.",
+       "A person's own tendency toward guilt or people-pleasing that isn't being actively installed by anyone.",
+       "Cultural norms of mutual obligation in close relationships that are healthy and mutual rather than one-directional."
+      ],
+      "discernment_questions": [
+       "Can the sense of owing be traced to anything specific, or is it diffuse and unfalsifiable?",
+       "Does the obligation feel one-directional, or is there real reciprocity over time?",
+       "Does declining a request reliably produce guilt regardless of how reasonable the decline is?",
+       "Would the target still feel this way after mentally listing what's actually been given in each direction?"
+      ],
+      "less_concerning_if": [
+       "A concrete accounting of give-and-take shows real reciprocity over time."
+      ],
+      "more_concerning_if": [
+       "The sense of owing persists and intensifies even when a fair accounting doesn't support it."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    },
+    {
+     "name": "Demand for Gratitude",
+     "definition": "Requiring displays of thanks as payment for help given."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Weaponized Generosity",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Weaponized Generosity' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Weaponized Generosity",
+    "Loan-Sharking Gifts"
+   ],
+   "members": [
+    {
+     "name": "Weaponized Generosity",
+     "tier": "Reference-only",
+     "source_definition": "Gift-giving or favors offered specifically to create an obligation that can be enforced later.",
+     "approved_draft": {
+      "why_this_matters": "Witnesses to the favour raise the social cost of declining, so refusing what comes next means looking ungrateful in front of people who saw only the kindness.",
+      "what_it_is_not": "Plenty of people are simply direct about wanting something back, and an openly transactional favour that survives a 'no' without consequence is not this. Reciprocal give and take between people who both understand the arrangement is ordinary."
+     },
+     "existing_specific_text": {
+      "short_definition": "Gift-giving or favors offered specifically to create an obligation that can be enforced later.",
+      "expanded_definition": "Gift-giving or favors offered specifically to create an obligation that can be enforced later — closely related to Loan-Sharking Gifts, but with the debt more explicitly and immediately invoked rather than left dormant. The generosity is often public or performative, ensuring witnesses to the \"debt\" that increase the social cost of the target declining to repay it.",
+      "plain_language_summary": "In plain terms: gift-giving or favors offered specifically to create an obligation that can be enforced later.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Gift-giving or favors offered specifically to create an obligation that can be enforced later."
+      ],
+      "what_it_sounds_like": [
+       "A gift or favor is given, often visibly or publicly, followed soon after by a specific request framed as fair repayment.",
+       "\"I did that for you, so the least you could do is this\" used shortly after the original favor, tying the two together explicitly.",
+       "Generosity that stops abruptly once the target declines to reciprocate on the specific terms expected."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Reciprocal generosity is a normal part of many relationships and doesn't require manipulation. Being direct about wanting something back isn't manipulative if \"no\" is genuinely accepted."
+      ],
+      "common_false_positives": [
+       "Genuine reciprocal favors between people who both understand and accept an informal, mutual give-and-take.",
+       "A person who's simply direct about wanting something back, without deception, and who accepts \"no\" without consequence.",
+       "One-time generosity where the giver never brings it up again regardless of the outcome."
+      ],
+      "discernment_questions": [
+       "Is the repayment demand explicit and immediate, tied closely to a specific prior favor?",
+       "Does the giver accept \"no\" to the repayment request without withdrawing warmth or escalating?",
+       "Was the original gift offered with any signal it came with strings, or did the strings appear only afterward?",
+       "Does generosity noticeably stop once the target doesn't reciprocate as expected?"
+      ],
+      "less_concerning_if": [
+       "The person accepts a decline gracefully and continues the relationship without punishing it."
+      ],
+      "more_concerning_if": [
+       "Warmth or generosity visibly withdraws specifically when the expected repayment isn't given."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Loan-Sharking Gifts",
+     "tier": "Reference-only",
+     "source_definition": "Unsolicited generosity designed to create invisible debt that can be called in later to extract compliance.",
+     "approved_draft": {
+      "why_this_matters": "Accepting a kindness turns out to have been entering an agreement, with the price set later, by someone else, for something unrelated.",
+      "what_it_is_not": "Generosity with no strings is common and looks identical at the moment of giving. Some people give freely as a matter of character and never mention it again. This one only becomes visible in retrospect, when the gift is produced as leverage for a separate demand."
+     },
+     "existing_specific_text": {
+      "short_definition": "Unsolicited generosity designed to create invisible debt that can be called in later to extract compliance.",
+      "expanded_definition": "Unsolicited generosity — gifts, favors, financial help — offered without being asked for, specifically designed to create an invisible debt that gets called in later to extract compliance. The generosity looks identical to genuine kindness at the moment it's given; the tell is what happens later, when the gift is invoked as leverage for something unrelated.",
+      "plain_language_summary": "In plain terms: unsolicited generosity designed to create invisible debt that can be called in later to extract compliance.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Unsolicited generosity designed to create invisible debt that can be called in later to extract compliance."
+      ],
+      "what_it_sounds_like": [
+       "A gift or favor given without being asked for, later referenced as reason the target owes compliance on something unrelated.",
+       "\"After everything I've done for you\" invoked in response to a request being declined or a boundary being set.",
+       "A pattern of generosity that seems to increase specifically before a request the person anticipates the target might refuse."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Real generosity exists without strings, and gratitude is a normal, healthy response to it. Some cultures have genuine norms of gift-reciprocity that aren't manipulative."
+      ],
+      "common_false_positives": [
+       "Genuine generosity given with no strings attached, where gratitude is felt but never weaponized later.",
+       "A person who gives generously as part of their nature and doesn't track or invoke it as debt.",
+       "A gift given in a specific cultural context of reciprocal generosity that both parties understand and accept."
+      ],
+      "discernment_questions": [
+       "Was the gift ever explicitly or implicitly invoked later as leverage for something unrelated?",
+       "Does the frequency or size of generosity spike right before requests the person expects might be refused?",
+       "Would the giver be equally warm if the target never reciprocated with compliance on anything?",
+       "Is gratitude expected once, or treated as an ongoing, invokable debt?"
+      ],
+      "less_concerning_if": [
+       "Generosity is never later invoked as leverage, even when the target declines a request."
+      ],
+      "more_concerning_if": [
+       "Generosity is specifically and repeatedly cited as reason the target owes future compliance."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  }
+ ]
+}

@@ -1,63 +1,39 @@
 {
  "batch": "batch-39",
- "kind": "normal",
- "category": "Reality Distortion",
+ "kind": "risk",
+ "category": "Cult & Thought Reform",
  "entries": [
   {
-   "name": "Countering",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
+   "name": "Dispensing of Existence",
+   "category": "Cult & Thought Reform",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
    "source_definition_is_cut_off": false,
-   "approved_draft": {},
+   "approved_draft": {
+    "why_this_matters": "Once worth is assigned by doctrine rather than held as a given, outsiders can be treated in ways that would otherwise be unthinkable — and those inside learn that their own standing is revocable on the same terms.",
+    "what_it_is_not": "Groups with strong boundaries — membership rules, excommunication, shunning — are not automatically doing this; many communities have exit rules without denying that leavers remain people. What marks the pattern is worth itself being withdrawn, so that harm to those outside reads as virtue rather than as harm.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
    "existing_specific_text": {
-    "short_definition": "Flatly contradicting the other person's account of events.",
-    "expanded_definition": "Flatly contradicting the other person's account of events. Constant contradiction makes shared reality impossible to establish. As a communication pattern, Countering-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: flatly contradicting the other person's account of events.",
-    "why_this_matters": "Constant contradiction makes shared reality impossible to establish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous.",
+    "expanded_definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous. (Overlaps with Dehumanization #83, Splitting #116). As a communication pattern, Dispensing of Existence-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: the group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous. (Overlaps with Dehumanization #83, Splitting #116). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
     "what_it_is": [
-     "Flatly contradicting the other person's account of events.",
-     "Constant contradiction makes shared reality impossible to establish.",
-     "Contrasts with a healthier version: \"My memory of that is different. Let's check the messages.\".",
-     "Recognizable by phrasing such as \"You're remembering it wrong\"."
-    ],
-    "what_it_sounds_like": [
-     "You're remembering it wrong.",
-     "That's not what happened and you know it.",
-     "That's not what happened.",
-     "That's not how it happened.",
-     "You're twisting my words.",
-     "You're putting words in my mouth."
+     "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous. (Overlaps with Dehumanization #83, Splitting #116)."
     ],
     "what_it_is_not": [
-     "Sometimes people truly didn't say the thing — a factual dispute is not manipulation by itself."
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
     ],
     "innocent_or_ordinary_possibilities": [
-     "People do genuinely misremember ambiguous events differently without any intent to distort.",
-     "A single, honest correction of a factual error isn't the same as a pattern of denial."
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
     ],
-    "common_false_positives": [
-     "A genuine, honest difference in memory about an ambiguous event, without repeated, blanket contradiction of everything the other person says.",
-     "A single correction of a specific factual error, offered once, not a pattern of flatly denying accounts generally.",
-     "Two people with real, differing perspectives on a shared, genuinely ambiguous experience."
-    ],
-    "discernment_questions": [
-     "Does the contradiction happen once about a specific fact, or as a pattern across many different claims?",
-     "Is there any willingness to check external evidence together, or is the contradiction just asserted?",
-     "Does the contradicted account, checked independently, actually hold up?",
-     "Would a neutral third party see the disagreement as genuine uncertainty or flat denial?"
-    ],
-    "less_concerning_if": [
-     "The disagreement is about one specific, genuinely ambiguous fact, with willingness to check evidence together."
-    ],
-    "more_concerning_if": [
-     "Contradiction is a repeated pattern across many claims, asserted without any willingness to check evidence."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -65,378 +41,68 @@
    },
    "related_tactics": [
     {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+     "name": "Milieu Control",
+     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
     },
     {
-     "name": "Trivializing",
-     "definition": "Framing the other person's reaction as excessive or silly."
+     "name": "Mystical Manipulation",
+     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
     },
     {
-     "name": "Diverting",
-     "definition": "Derailing the topic to avoid engaging with the actual complaint."
+     "name": "Demand for Purity",
+     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
     },
     {
-     "name": "Selective Memory",
-     "definition": "Conveniently not remembering things that were said or agreed."
+     "name": "Sacred Science",
+     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
     },
     {
-     "name": "Moving Goalposts",
-     "definition": "Changing the success criteria after they've been met."
+     "name": "Doctrine Over Person",
+     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
     },
     {
-     "name": "Thought-Stopping Clichés",
-     "definition": "Stock phrases that shut down examination of a problem."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Trivializing",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Framing the other person's reaction as excessive or silly.",
-    "expanded_definition": "Framing the other person's reaction as excessive or silly. Teaches the target their feelings are defective and not worth raising. As a communication pattern, Trivializing-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: framing the other person's reaction as excessive or silly.",
-    "why_this_matters": "Teaches the target their feelings are defective and not worth raising. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Framing the other person's reaction as excessive or silly.",
-     "Teaches the target their feelings are defective and not worth raising.",
-     "Contrasts with a healthier version: \"I didn't realize this hit you that hard — tell me more.\".",
-     "Recognizable by phrasing such as \"You're way too sensitive\"."
-    ],
-    "what_it_sounds_like": [
-     "You're way too sensitive.",
-     "You can't take a joke.",
-     "You're oversensitive.",
-     "You're being dramatic.",
-     "Stop being so dramatic.",
-     "Why are you so upset over nothing.",
-     "Your feelings are silly.",
-     "Relax, it's nothing."
-    ],
-    "what_it_is_not": [
-     "Occasionally people do overreact, and saying so once, gently, can be honest feedback."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine differences in what feels like a big deal exist between people without either being wrong.",
-     "Honest ignorance about impact, corrected once clarified, is normal."
-    ],
-    "common_false_positives": [
-     "A single, honest observation that a reaction seems disproportionate, raised with genuine curiosity rather than dismissal.",
-     "A person's own different threshold for what feels like a big deal, expressed without demanding the target's reaction change.",
-     "Real ignorance about how much something mattered, corrected once it's clarified."
-    ],
-    "discernment_questions": [
-     "Does the framing invite the target to explain more, or shut the conversation down?",
-     "Is this a one-time observation, or a pattern of consistently minimizing the target's reactions?",
-     "Does the person's understanding update once the target explains why it mattered, or stay dismissive?",
-     "Would a neutral observer see the target's original reaction as genuinely disproportionate, or reasonable?"
-    ],
-    "less_concerning_if": [
-     "The observation invites explanation and the person's understanding updates once they hear more."
-    ],
-    "more_concerning_if": [
-     "Minimizing reactions is a consistent pattern that doesn't update even after the target explains why something mattered."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
-    },
-    {
-     "name": "Countering",
-     "definition": "Flatly contradicting the other person's account of events."
-    },
-    {
-     "name": "Diverting",
-     "definition": "Derailing the topic to avoid engaging with the actual complaint."
-    },
-    {
-     "name": "Selective Memory",
-     "definition": "Conveniently not remembering things that were said or agreed."
-    },
-    {
-     "name": "Moving Goalposts",
-     "definition": "Changing the success criteria after they've been met."
-    },
-    {
-     "name": "Thought-Stopping Clichés",
-     "definition": "Stock phrases that shut down examination of a problem."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Diverting",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Derailing the topic to avoid engaging with the actual complaint.",
-    "expanded_definition": "Derailing the topic to avoid engaging with the actual complaint. The issue never gets addressed, so it can never be repaired. As a communication pattern, Diverting-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: derailing the topic to avoid engaging with the actual complaint.",
-    "why_this_matters": "The issue never gets addressed, so it can never be repaired. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Derailing the topic to avoid engaging with the actual complaint.",
-     "The issue never gets addressed, so it can never be repaired.",
-     "Contrasts with a healthier version: \"This is hard to hear, but go ahead — I'm listening.\".",
-     "Recognizable by phrasing such as \"Why are you bringing this up now?\"."
-    ],
-    "what_it_sounds_like": [
-     "Why are you bringing this up now?",
-     "There you go, changing the subject to your feelings.",
-     "Here we go again.",
-     "Not this again.",
-     "You always have to start something.",
-     "Why do you always bring this up."
-    ],
-    "what_it_is_not": [
-     "Fatigue with a recurring argument is human; \"here we go again\" can be exhaustion, not strategy."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuinely urgent, unrelated issues sometimes do need to be addressed first.",
-     "Honest confusion about timing can produce a real clarifying question rather than deflection."
-    ],
-    "common_false_positives": [
-     "Genuine need to address something more urgent first before returning to the original topic.",
-     "A person who misunderstood the timing and asked a real, non-deflecting clarifying question.",
-     "A conversation that naturally broadens, with the original concern still eventually addressed."
-    ],
-    "discernment_questions": [
-     "Does the conversation eventually return to and resolve the original complaint?",
-     "Is the redirect proportionate, or does it happen every time this topic comes up?",
-     "Does the question about timing get asked in good faith, or used to avoid the substance?",
-     "Would the same redirect happen regardless of what the actual complaint was?"
-    ],
-    "less_concerning_if": [
-     "The original complaint does eventually get addressed, even if the conversation took a detour first."
-    ],
-    "more_concerning_if": [
-     "The original complaint never gets addressed, and redirection happens reliably every time it's raised."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
-    },
-    {
-     "name": "Countering",
-     "definition": "Flatly contradicting the other person's account of events."
-    },
-    {
-     "name": "Trivializing",
-     "definition": "Framing the other person's reaction as excessive or silly."
-    },
-    {
-     "name": "Selective Memory",
-     "definition": "Conveniently not remembering things that were said or agreed."
-    },
-    {
-     "name": "Moving Goalposts",
-     "definition": "Changing the success criteria after they've been met."
-    },
-    {
-     "name": "Thought-Stopping Clichés",
-     "definition": "Stock phrases that shut down examination of a problem."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Selective Memory",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Conveniently not remembering things that were said or agreed.",
-    "expanded_definition": "Conveniently not remembering things that were said or agreed. Erases commitments and past harm from the shared record. As a communication pattern, Selective Memory-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: conveniently not remembering things that were said or agreed.",
-    "why_this_matters": "Erases commitments and past harm from the shared record. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Conveniently not remembering things that were said or agreed.",
-     "Erases commitments and past harm from the shared record.",
-     "Contrasts with a healthier version: \"I honestly don't remember — can you remind me what I said?\".",
-     "Recognizable by phrasing such as \"I never said that\"."
-    ],
-    "what_it_sounds_like": [
-     "I never said that.",
-     "You must be confusing me with someone else.",
-     "I have no memory of saying."
-    ],
-    "what_it_is_not": [
-     "People genuinely forget things constantly. Only a *convenient* pattern of forgetting is a flag."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine memory gaps happen to everyone, especially for things that didn't seem significant at the time.",
-     "Updating an account once reminded is healthy, normal behavior."
-    ],
-    "common_false_positives": [
-     "A genuine, honest gap in memory about something that wasn't especially significant at the time it happened.",
-     "A person who, once reminded with specifics, genuinely updates their account rather than continuing to deny it.",
-     "Normal forgetfulness that affects unimportant details evenly, not selectively the details that would create accountability."
-    ],
-    "discernment_questions": [
-     "Does the forgetting apply specifically to inconvenient commitments or past harms, while other details are remembered clearly?",
-     "Does the person update their account once reminded with evidence, or continue denying regardless?",
-     "Is there a pattern of specifically not remembering the same kind of thing repeatedly?",
-     "Would a neutral observer find the selective pattern of what's forgotten suspicious?"
-    ],
-    "less_concerning_if": [
-     "Forgetting is general and not selectively concentrated on accountability-relevant details, and updates readily with reminders."
-    ],
-    "more_concerning_if": [
-     "Forgetting is consistently specific to inconvenient commitments or past harms, and persists even with clear reminders."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
-    },
-    {
-     "name": "Countering",
-     "definition": "Flatly contradicting the other person's account of events."
-    },
-    {
-     "name": "Trivializing",
-     "definition": "Framing the other person's reaction as excessive or silly."
-    },
-    {
-     "name": "Diverting",
-     "definition": "Derailing the topic to avoid engaging with the actual complaint."
-    },
-    {
-     "name": "Moving Goalposts",
-     "definition": "Changing the success criteria after they've been met."
-    },
-    {
-     "name": "Thought-Stopping Clichés",
-     "definition": "Stock phrases that shut down examination of a problem."
+     "name": "Bounded Choice",
+     "definition": "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Moving Goalposts",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
+   "name": "Bounded Choice",
+   "category": "Cult & Thought Reform",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
    "source_definition_is_cut_off": false,
-   "approved_draft": {},
+   "approved_draft": {
+    "why_this_matters": "Choices feel entirely one's own while the range they were drawn from has quietly closed, so a person carries full responsibility for outcomes they were never given room to avoid.",
+    "what_it_is_not": "Every environment shapes what feels choosable — a job, a mortgage, a close family all narrow options, and feeling free within constraints is ordinary. The distinguishing question is whether options that would serve the person rather than the group remain genuinely available, or only nominally so.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
    "existing_specific_text": {
-    "short_definition": "Changing the success criteria after they've been met.",
-    "expanded_definition": "Changing the success criteria after they've been met. Makes approval permanently unreachable, keeping the target striving. As a communication pattern, Moving Goalposts-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: changing the success criteria after they've been met.",
-    "why_this_matters": "Makes approval permanently unreachable, keeping the target striving. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated.",
+    "expanded_definition": "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated. (Overlaps with Choice Architecture Manipulation #211). As a communication pattern, Bounded Choice-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated. (Overlaps with Choice Architecture Manipulation #211). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
     "what_it_is": [
-     "Changing the success criteria after they've been met.",
-     "Makes approval permanently unreachable, keeping the target striving.",
-     "Contrasts with a healthier version: \"You did what I asked. I realize I now also need X — that's new, and I own that.\".",
-     "Recognizable by phrasing such as \"That's still not good enough\"."
-    ],
-    "what_it_sounds_like": [
-     "That's still not good enough.",
-     "Now do it properly this time.",
-     "It's still not good enough.",
-     "That doesn't count.",
-     "You should have done more.",
-     "That was the bare minimum.",
-     "Now do it again.",
-     "I never said that would be enough."
+     "Restructuring a member's reality so completely that all choices feel internally motivated and freely made, while the actual option space has been constrained to only choices that serve the group — freedom is experienced subjectively while objectively eliminated. (Overlaps with Choice Architecture Manipulation #211)."
     ],
     "what_it_is_not": [
-     "Requirements legitimately change sometimes; one revision is not a trap."
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine circumstances do sometimes change, creating real new requirements, honestly disclosed as such.",
-     "Honest misunderstandings about original expectations get clarified, not covered up."
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
     ],
-    "common_false_positives": [
-     "A genuine, disclosed new requirement that emerged from real, changed circumstances, honestly acknowledged as new.",
-     "A misunderstanding about what was originally agreed, clarified honestly once raised.",
-     "Legitimate, evolving standards in a field or role that are communicated transparently as evolving, not hidden."
-    ],
-    "discernment_questions": [
-     "Is any new requirement acknowledged as new, or presented as though it was the standard all along?",
-     "Does meeting the stated goal ever actually result in approval, or does a new bar always appear?",
-     "Is there a plausible, disclosed reason for the change, or does it seem designed to keep approval permanently out of reach?",
-     "Would a neutral observer see the shifting standard as reasonable given real circumstances, or arbitrary?"
-    ],
-    "less_concerning_if": [
-     "Any new requirement is honestly disclosed as new, with a plausible reason, and approval is genuinely reachable."
-    ],
-    "more_concerning_if": [
-     "The goalpost shifts repeatedly and approval never actually arrives no matter what's achieved."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -444,186 +110,68 @@
    },
    "related_tactics": [
     {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+     "name": "Milieu Control",
+     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
     },
     {
-     "name": "Countering",
-     "definition": "Flatly contradicting the other person's account of events."
+     "name": "Mystical Manipulation",
+     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
     },
     {
-     "name": "Trivializing",
-     "definition": "Framing the other person's reaction as excessive or silly."
+     "name": "Demand for Purity",
+     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
     },
     {
-     "name": "Diverting",
-     "definition": "Derailing the topic to avoid engaging with the actual complaint."
+     "name": "Sacred Science",
+     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
     },
     {
-     "name": "Selective Memory",
-     "definition": "Conveniently not remembering things that were said or agreed."
+     "name": "Doctrine Over Person",
+     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
     },
     {
-     "name": "Thought-Stopping Clichés",
-     "definition": "Stock phrases that shut down examination of a problem."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Thought-Stopping Clichés",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Stock phrases that shut down examination of a problem.",
-    "expanded_definition": "Stock phrases that shut down examination of a problem. Blocks legitimate questions before they can be thought through. As a communication pattern, Thought-Stopping Clichés-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: stock phrases that shut down examination of a problem.",
-    "why_this_matters": "Blocks legitimate questions before they can be thought through. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Stock phrases that shut down examination of a problem.",
-     "Blocks legitimate questions before they can be thought through.",
-     "Contrasts with a healthier version: \"I don't have an answer, but your question is fair.\".",
-     "Recognizable by phrasing such as \"It is what it is, drop it\"."
-    ],
-    "what_it_sounds_like": [
-     "It is what it is, drop it.",
-     "Everything happens for a reason, stop dwelling.",
-     "It is what it is.",
-     "Everything happens for a reason.",
-     "Don't overthink it.",
-     "Just let it go already."
-    ],
-    "what_it_is_not": [
-     "These are everyday idioms most people use with zero intent to control anything."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine overwhelm or not having an answer in the moment is normal and doesn't require a permanent shutdown."
-    ],
-    "common_false_positives": [
-     "A genuine expression of not having an answer right now, paired with openness to keep discussing later.",
-     "A person who's simply exhausted or overwhelmed in the moment, using a shorthand phrase without intent to permanently shut down the topic.",
-     "Cultural or family phrases used habitually that don't actually prevent the conversation from continuing elsewhere."
-    ],
-    "discernment_questions": [
-     "Does the phrase end the conversation permanently, or does the topic get revisited later?",
-     "Is there any acknowledgment that the question was fair, even without an immediate answer?",
-     "Does this specific phrase get used reliably whenever this topic comes up?",
-     "Would a reasonable person feel their question had been taken seriously, even if unanswered in the moment?"
-    ],
-    "less_concerning_if": [
-     "The topic gets revisited later, and the question is acknowledged as fair even without an immediate answer."
-    ],
-    "more_concerning_if": [
-     "The same phrase reliably shuts down this specific topic permanently, with no acknowledgment or later revisiting."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
-    },
-    {
-     "name": "Countering",
-     "definition": "Flatly contradicting the other person's account of events."
-    },
-    {
-     "name": "Trivializing",
-     "definition": "Framing the other person's reaction as excessive or silly."
-    },
-    {
-     "name": "Diverting",
-     "definition": "Derailing the topic to avoid engaging with the actual complaint."
-    },
-    {
-     "name": "Selective Memory",
-     "definition": "Conveniently not remembering things that were said or agreed."
-    },
-    {
-     "name": "Moving Goalposts",
-     "definition": "Changing the success criteria after they've been met."
+     "name": "Dispensing of Existence",
+     "definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Normalization",
-   "category": "Reality Distortion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
+   "name": "Charismatic Authority Dependence",
+   "category": "Cult & Thought Reform",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
    "source_definition_is_cut_off": false,
-   "approved_draft": {},
+   "approved_draft": {
+    "why_this_matters": "With one person established as the sole source of truth, meaning and safety, losing their approval means losing all of those at once, which makes ordinary disagreement feel like self-destruction.",
+    "what_it_is_not": "Admiring a teacher, mentor or leader and being genuinely changed by them is common and often good. The pattern differs where no second source of meaning remains — no one else whose judgement counts, and no way to be wrong about the leader without being wrong about everything.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
    "existing_specific_text": {
-    "short_definition": "Framing harmful treatment as ordinary and unquestionable.",
-    "expanded_definition": "Framing harmful treatment as ordinary and unquestionable. Recalibrates the target's sense of what treatment is acceptable. As a communication pattern, Normalization-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: framing harmful treatment as ordinary and unquestionable.",
-    "why_this_matters": "Recalibrates the target's sense of what treatment is acceptable. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own.",
+    "expanded_definition": "Installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own. (Overlaps with Authority Hijack #95, Identity Hooking #24). As a communication pattern, Charismatic Authority Dependence-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own. (Overlaps with Authority Hijack #95, Identity Hooking #24). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
     "what_it_is": [
-     "Framing harmful treatment as ordinary and unquestionable.",
-     "Recalibrates the target's sense of what treatment is acceptable.",
-     "Contrasts with a healthier version: \"This is how I've always done it, but that doesn't make it right — let's look at it.\".",
-     "Recognizable by phrasing such as \"Every couple fights like this\"."
-    ],
-    "what_it_sounds_like": [
-     "Every couple fights like this.",
-     "This is just how families are.",
-     "That's just how it is.",
-     "Everyone does it.",
-     "All men are like this.",
-     "This is just normal, so stop."
+     "Installing the leader as the sole legitimate source of truth, meaning, purpose, and spiritual/emotional safety, creating a dependency where the leader's approval becomes the member's primary psychological need and the leader's interpretation of reality replaces the member's own. (Overlaps with Authority Hijack #95, Identity Hooking #24)."
     ],
     "what_it_is_not": [
-     "Sometimes the thing really is normal, and the speaker is offering perspective, not cover."
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine, accurate context about common experiences can be a legitimate part of a conversation.",
-     "Honest comparison to one's own past experiences isn't automatically dismissive."
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
     ],
-    "common_false_positives": [
-     "A genuine, accurate observation that a specific behavior really is common, offered as context rather than to shut down a legitimate concern.",
-     "A person processing their own upbringing or past relationships, comparing experiences honestly without dismissing the target's specific concern.",
-     "Cultural or generational differences in norms, discussed openly rather than used to end the conversation."
-    ],
-    "discernment_questions": [
-     "Does invoking \"everyone does this\" actually engage with whether the specific behavior is harmful, or does it end the conversation?",
-     "Is the comparison to others actually accurate, or an unverified, convenient claim?",
-     "Does the target's specific concern get a chance to be addressed on its own merits?",
-     "Would the behavior, evaluated on its own without the comparison, still seem reasonable?"
-    ],
-    "less_concerning_if": [
-     "The comparison is offered as context and the specific concern still gets addressed on its own merits."
-    ],
-    "more_concerning_if": [
-     "Invoking normalcy consistently shuts down the conversation without ever addressing whether the behavior is actually harmful."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -631,37 +179,105 @@
    },
    "related_tactics": [
     {
-     "name": "Gaslighting",
-     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+     "name": "Milieu Control",
+     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
     },
     {
-     "name": "Countering",
-     "definition": "Flatly contradicting the other person's account of events."
+     "name": "Mystical Manipulation",
+     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
     },
     {
-     "name": "Trivializing",
-     "definition": "Framing the other person's reaction as excessive or silly."
+     "name": "Demand for Purity",
+     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
     },
     {
-     "name": "Diverting",
-     "definition": "Derailing the topic to avoid engaging with the actual complaint."
+     "name": "Sacred Science",
+     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
     },
     {
-     "name": "Selective Memory",
-     "definition": "Conveniently not remembering things that were said or agreed."
+     "name": "Doctrine Over Person",
+     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
     },
     {
-     "name": "Moving Goalposts",
-     "definition": "Changing the success criteria after they've been met."
+     "name": "Dispensing of Existence",
+     "definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Forced Confession / Self-Criticism Rituals",
+   "category": "Cult & Thought Reform",
+   "tier": "Reference-only",
+   "branch": "societal",
+   "risk_flagged": true,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Material surrendered under group pressure does not go away; it stays available as leverage, and the habit of confessing on demand leaves a person with no private ground of their own to stand on.",
+    "what_it_is_not": "Accountability practices exist in healthy settings too — step work, clinical supervision, team retrospectives, restorative circles — and saying something difficult in front of a group is not itself harmful. The difference lies in whether disclosure is voluntary and bounded, or required, open-ended, and recalled against the person afterwards.",
+    "note": "Derived from the expanded definition alone; the false-positive material on this Reference-only entry is generic scaffolding shared across the category."
+   },
+   "existing_specific_text": {
+    "short_definition": "Requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage).",
+    "expanded_definition": "Requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage). (Overlaps with Forced Submission #226, Humiliation Rituals #224). As a communication pattern, Forced Confession / Self-Criticism Rituals-type behavior in the Cult & Thought Reform category tends to work through comprehensive control of information, identity, and belonging within a totalistic group system — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only, societal-scale entry, note: this operates far beyond what a personal conversation could establish, and this tool makes no attempt to detect it.",
+    "plain_language_summary": "In plain terms: requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage). (Overlaps with Forced Submission #226, Humiliation Rituals #224). This happens at a scale far beyond any single conversation.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to profound disorientation about one's own beliefs, identity, and ability to trust independent judgment. Recognizing this category matters for evaluating information and institutions critically — not for assessing any one person or conversation.",
+    "what_it_is": [
+     "Requiring members to publicly confess sins, doubts, transgressions, or insufficiencies in group settings, where the extracted confessions serve as both a control mechanism (creating vulnerability and shame) and an information-gathering tool (producing material for future leverage). (Overlaps with Forced Submission #226, Humiliation Rituals #224)."
     ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "what_it_is_not": [
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "This is one of Robert Lifton's criteria for totalistic thought reform — a whole-system, whole-community mechanism, not a phrase. Not every intense group or committed community exhibits this; the distinguishing question is usually whether doubt itself has become forbidden."
+    ],
+    "repair_check": "Institutional-correction check: when this pattern was documented or challenged, was there independent verification, a retraction, a correction, or accountability — or did the same pattern continue unaddressed? Source transparency and willingness to correct course are the closest equivalents to 'repair' at this scale.",
+    "boundary_respect_check": "What happens when the claims involved are checked against independent evidence, the quality and motive of the source, and any missing context? Does the pattern hold up under that scrutiny, or does it depend on taking one account at face value?",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through comprehensive control of information, identity, and belonging within a totalistic group system. This describes a documented mechanism at this scale, not a claim about any specific current event or actor.",
+    "possible_impact_on_receiver": "People sometimes describe profound disorientation about one's own beliefs, identity, and ability to trust independent judgment in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "boundary_script": "Verification script (to yourself, before sharing or acting): \"What's the original source here? Who else, independent of this source, has confirmed it? What am I not seeing?\"",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Milieu Control",
+     "definition": "Comprehensive regulation of all communication, information flow, and social contact within the group's environment, determining what members can read, hear, see, discuss, and with whom they may interact."
+    },
+    {
+     "name": "Mystical Manipulation",
+     "definition": "Engineering experiences that appear spontaneous, spiritual, or divinely ordained but are actually staged by leadership, used to demonstrate the group's special connection to higher powers and the leader's supernatural authority."
+    },
+    {
+     "name": "Demand for Purity",
+     "definition": "Dividing the world into absolute categories of pure and impure, good and evil, creating an environment of perpetual guilt and shame where members can never be righteous enough and must submit to the group's authority for moral guidance."
+    },
+    {
+     "name": "Sacred Science",
+     "definition": "Elevating the group's ideology to the status of absolute, unquestionable, sacred truth that transcends ordinary evidence or rational challenge — any doubt is not intellectual."
+    },
+    {
+     "name": "Doctrine Over Person",
+     "definition": "Systematically subordinating personal experience, perception, and memory to group doctrine, so that when a member's lived experience contradicts the ideology, they are taught that their experience is wrong rather than that the doctrine is flawed."
+    },
+    {
+     "name": "Dispensing of Existence",
+     "definition": "The group's ideology determines who has the right to exist, who has value, and who is subhuman — outsiders, apostates, and critics are assigned diminished worth or no worth, making their mistreatment not merely acceptable but righteous."
+    }
+   ],
+   "covers_two_things": "A title joins two things (Forced Confession / Self-Criticism Rituals). Cover BOTH, and say plainly whether they are two names for one behavior or two related behaviors.",
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]

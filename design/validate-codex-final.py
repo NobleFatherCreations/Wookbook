@@ -132,6 +132,16 @@ def texts(entry):
                 yield "response_options." + k, v
 
 
+def entry_files():
+    """Files that hold finished entries: exemplars, batches, merged-entry batches."""
+    out = []
+    for p in sorted(glob.glob(os.path.join(FINAL, "*.json"))):
+        b = os.path.basename(p)
+        if b == "exemplars.json" or b.startswith(("batch-", "merged-")):
+            out.append(p)
+    return out
+
+
 def load_base():
     d = json.load(open(DATA, encoding="utf-8"))
     return {e["name"]: e for e in d["codex_completed"]}
@@ -323,16 +333,34 @@ def main():
     ap.add_argument("files", nargs="*")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--quiet", action="store_true")
+    ap.add_argument("--complete", action="store_true",
+                    help="also require that the finished entries ARE the book: every one of the 310 "
+                         "(349 minus merged-away) present exactly once, no merged-away name present")
     a = ap.parse_args()
     check = a.files
-    allfiles = sorted(glob.glob(os.path.join(FINAL, "*.json")))
-    allfiles = [p for p in allfiles if os.path.basename(p) not in
-                ("manifest.json", "reviews.json")]
+    allfiles = entry_files()
     if a.all:
         check = allfiles
     if not check:
         ap.error("give batch files or --all")
     base_all = load_base()
+    if a.complete:
+        groups = json.load(open(os.path.join(FINAL, "tactic-merges.json")))["groups"]
+        gone = {n for g in groups for n in g["merged"]}
+        expected = set(base_all) - gone
+        have = Counter()
+        for p in entry_files():
+            have.update(json.load(open(p, encoding="utf-8")).keys())
+        missing = sorted(expected - set(have))
+        dup = sorted(n for n, c in have.items() if c > 1)
+        stray = sorted(set(have) - expected)
+        print(f"book = {len(expected)} entries; finished {len(set(have) & expected)}; "
+              f"missing {len(missing)}; written twice {len(dup)}; not in the book {len(stray)}")
+        for label, items in (("missing", missing), ("written twice", dup), ("not in the book", stray)):
+            if items and len(items) <= 40:
+                print(f"  {label}: {items}")
+        if missing or dup or stray:
+            sys.exit(1)
     mine = load_batches(check)
     others = load_batches([p for p in allfiles
                            if os.path.abspath(p) not in {os.path.abspath(c) for c in check}])

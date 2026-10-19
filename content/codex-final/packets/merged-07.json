@@ -1,0 +1,856 @@
+{
+ "batch": "merged-07",
+ "kind": "merged",
+ "category": "mixed categories",
+ "entries": [
+  {
+   "name": "Choice Restriction",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Choice Restriction' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Choice Restriction",
+    "Choice Architecture Manipulation"
+   ],
+   "members": [
+    {
+     "name": "Choice Restriction",
+     "tier": "Reference-only",
+     "source_definition": "Narrowing someone's realistic options so a particular outcome looks like the only reasonable one.",
+     "approved_draft": {
+      "why_this_matters": "No demand is ever made, so there is nothing to refuse — the preferred outcome simply becomes the only one left standing.",
+      "what_it_is_not": "Options are often genuinely limited by external constraints nobody arranged. Honest advice about which of several real options is best leaves the others available. Circumstances narrow on their own over time, with no strategy behind it."
+     },
+     "existing_specific_text": {
+      "short_definition": "Narrowing someone's realistic options so a particular outcome looks like the only reasonable one.",
+      "expanded_definition": "Narrowing someone's realistic set of options — practically, financially, or informationally — so that one particular outcome ends up looking like the only reasonable choice, even though it was never presented as a demand. The restriction does the persuading; no direct pressure toward the preferred option is even necessary once the alternatives have been closed off.",
+      "plain_language_summary": "In plain terms: narrowing someone's realistic options so a particular outcome looks like the only reasonable one.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Narrowing someone's realistic options so a particular outcome looks like the only reasonable one."
+      ],
+      "what_it_sounds_like": [
+       "Alternatives that would normally be reasonable get systematically ruled out, one at a time, until only one option remains.",
+       "\"You don't really have a choice\" stated as fact about a situation that was actually engineered to look that way.",
+       "Looking back, the target realizes the \"obvious\" choice was obvious only because every other option had quietly been removed."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Real constraints do sometimes genuinely limit options without anyone manipulating the situation. Honest advice about the best available choice isn't the same as eliminating alternatives."
+      ],
+      "common_false_positives": [
+       "A situation with genuinely limited options due to real external constraints, not anyone's engineering.",
+       "Someone offering honest advice about which of several real options is actually best, without removing the others.",
+       "Circumstances that naturally narrow over time for reasons unrelated to anyone's strategy."
+      ],
+      "discernment_questions": [
+       "Were the eliminated alternatives genuinely unavailable, or were they talked out of consideration one at a time?",
+       "Does the narrowing consistently point toward one particular, convenient-for-someone-else outcome?",
+       "Would a neutral observer agree the remaining option really was the only realistic one?",
+       "Who benefits from the narrowed set of options?"
+      ],
+      "less_concerning_if": [
+       "The narrowed options reflect real external constraints rather than anyone's active narrowing."
+      ],
+      "more_concerning_if": [
+       "Alternatives are systematically talked out of consideration until only one, conveniently favorable, option remains."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Choice Architecture Manipulation",
+     "tier": "Reference-only",
+     "source_definition": "Designing the available options so every path leads to the manipulator's preferred outcome while the target believes they are choosing freely.",
+     "approved_draft": {
+      "why_this_matters": "A choice that felt free but always led one way leaves nothing to object to afterwards — consent was given to something that was never really picked.",
+      "what_it_is_not": "Arguing openly for one option, with the reasoning visible, is ordinary persuasion, and sensible defaults exist for practical reasons. The difference lies in whether the reasoning sits on the table or inside the way the options were described."
+     },
+     "existing_specific_text": {
+      "short_definition": "Designing the available options so every path leads to the manipulator's preferred outcome while the target believes they are choosing freely.",
+      "expanded_definition": "Designing the available options — which ones are presented, in what order, with what framing — so that every visible path leads to the manipulator's preferred outcome, while the target experiences the choice as free and their own. Unlike Choice Restriction (which removes options outright), this leaves the options technically available but structures the presentation so one is effectively inevitable.",
+      "plain_language_summary": "In plain terms: designing the available options so every path leads to the manipulator's preferred outcome while the target believes they are choosing freely.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Designing the available options so every path leads to the manipulator's preferred outcome while the target believes they are choosing freely."
+      ],
+      "what_it_sounds_like": [
+       "A set of choices presented where the preferred option is made easiest, most default, or most socially costly to decline.",
+       "\"You could do A, B, or C\" where B and C are described in ways that make them obviously unappealing compared to A.",
+       "Looking back, the target realizes every path they were offered led to the same practical outcome."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Sincere, transparent advice about the best option is a normal and helpful part of many relationships. Reasonable defaults exist for practical reasons without any intent to engineer an outcome."
+      ],
+      "common_false_positives": [
+       "Genuine, honest advice about which option is actually best, presented with the reasoning transparent rather than hidden in the framing.",
+       "A person who has a real, sincere preference and expresses it, while still respecting whichever option the target ultimately picks.",
+       "Reasonable defaults set for genuinely practical reasons (like a default meeting time), not to engineer a specific outcome."
+      ],
+      "discernment_questions": [
+       "If the framing were stripped away and the options were presented neutrally, would the outcome still feel obvious?",
+       "Are the disfavored options genuinely viable, or are they set up to be unappealing regardless of the target's actual preferences?",
+       "Does the person accept a choice of the \"disfavored\" option gracefully, or push back when it happens?",
+       "Is the reasoning behind the framing transparent, or does it stay hidden?"
+      ],
+      "less_concerning_if": [
+       "The person's preference is transparent and they accept whichever option the target genuinely picks."
+      ],
+      "more_concerning_if": [
+       "The framing is specifically designed to make one outcome inevitable, and a genuine choice of another option is met with pushback."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    },
+    {
+     "name": "Emotion Control",
+     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
+    },
+    {
+     "name": "Ritualized Exhaustion",
+     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
+    },
+    {
+     "name": "Nonverbal Dominance",
+     "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
+    },
+    {
+     "name": "Spatial Invasion",
+     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
+    },
+    {
+     "name": "Resource Sabotage",
+     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Foot-in-the-Door",
+   "category": "Pressure & Coercion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Foot-in-the-Door' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Foot-in-the-Door",
+    "Graduated Compliance",
+    "Commitment Traps"
+   ],
+   "members": [
+    {
+     "name": "Foot-in-the-Door",
+     "tier": "Reference-only",
+     "source_definition": "Securing agreement to a small request first, to increase the odds of compliance with a larger request later.",
+     "approved_draft": {
+      "why_this_matters": "The larger request gets evaluated against a commitment already made rather than on its own terms, so consistency does the persuading.",
+      "what_it_is_not": "Small favours growing into larger ones naturally and mutually, with real consent at each stage, is how most relationships work. Someone can ask for something small, get it, and only later find they need something bigger. A large request that stands on its own merits is unaffected by whatever preceded it."
+     },
+     "existing_specific_text": {
+      "short_definition": "Securing agreement to a small request first, to increase the odds of compliance with a larger request later.",
+      "expanded_definition": "Securing agreement to a small, easy-to-accept request first, specifically to increase the odds of compliance with a larger, related request made later — leveraging the psychological tendency to want to stay consistent with a previous small commitment. Unlike Commitment Traps, which escalate gradually over many steps, this is typically a deliberate two-step sequence: small ask, then the real ask.",
+      "plain_language_summary": "In plain terms: securing agreement to a small request first, to increase the odds of compliance with a larger request later.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Securing agreement to a small request first, to increase the odds of compliance with a larger request later."
+      ],
+      "what_it_sounds_like": [
+       "A small, easy request is made and agreed to, followed shortly by a noticeably larger, related request from the same person.",
+       "\"You already said yes to the smaller thing, so this is really just an extension of that\" used to leverage the earlier agreement.",
+       "The target notices the pattern only in hindsight: the first small ask seems, looking back, designed to set up the second."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Relationships and working arrangements naturally involve escalating trust and requests over time, in good faith. A separate, later need for something bigger isn't automatically a planned sequence."
+      ],
+      "common_false_positives": [
+       "A genuine, incremental relationship where small favors and larger ones develop naturally and mutually over time, with real ongoing consent at each step.",
+       "Someone who asks for something small, gets it, and only later separately decides they need something bigger, without planning the sequence.",
+       "A larger request that stands on its own merits regardless of whether a smaller one preceded it."
+      ],
+      "discernment_questions": [
+       "Does the larger request hold up as reasonable on its own, or does it lean heavily on the earlier small agreement for its persuasive power?",
+       "Was the sequence — small ask, then large ask — planned from the start, or did the larger need arise independently later?",
+       "Would you agree to the larger request if it were the only thing being asked, with no smaller request first?",
+       "Is there room to decline the larger request without it being treated as inconsistent given the smaller one?"
+      ],
+      "less_concerning_if": [
+       "The larger request stands on its own merits and declining it doesn't get treated as a betrayal of the earlier small agreement."
+      ],
+      "more_concerning_if": [
+       "The larger request leans heavily on \"you already agreed to something similar\" and declining is met with pressure."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Graduated Compliance",
+     "tier": "Reference-only",
+     "source_definition": "Escalating requests in small increments so each step feels like a minor extension of the last.",
+     "approved_draft": {
+      "why_this_matters": "Each increment is small enough to accept, and the distance travelled from the starting point only becomes visible from a long way along it.",
+      "what_it_is_not": "Skill and trust genuinely develop in steps, and responsibility that is named out loud each time it increases has been earned rather than slipped past. Where both people would describe the present arrangement in the same terms, incremental growth is just growth."
+     },
+     "existing_specific_text": {
+      "short_definition": "Escalating requests in small increments so each step feels like a minor extension of the last.",
+      "expanded_definition": "Escalating requests in small, incremental steps so that each individual step feels like only a minor extension of the last one, even though the cumulative distance traveled from the starting point is significant. This is closely related to Foot-in-the-Door and Commitment Traps, but the distinguishing feature is the sustained, gradual increments over many steps, rather than a single two-step jump or an unstructured accumulation.",
+      "plain_language_summary": "In plain terms: escalating requests in small increments so each step feels like a minor extension of the last.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Escalating requests in small increments so each step feels like a minor extension of the last."
+      ],
+      "what_it_sounds_like": [
+       "A series of many small requests, each barely bigger than the last, that together add up to something far beyond what was initially agreed to.",
+       "Comparing the current situation to where things started reveals a significant gap that no single step alone would explain.",
+       "Pushing back on any individual increment feels disproportionate, since each one really was small — but the cumulative trajectory is not."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Roles and relationships do naturally and legitimately grow through many small, mutually-recognized steps. Gradual, consciously-tracked increases in responsibility are a normal part of trust-building."
+      ],
+      "common_false_positives": [
+       "A genuine, gradual, mutually-understood increase in scope that both people consciously tracked and agreed to along the way.",
+       "Natural skill or trust development where increased responsibility is earned and explicitly acknowledged at each stage.",
+       "Growth in a role or relationship that both parties are equally aware of and comfortable with."
+      ],
+      "discernment_questions": [
+       "Comparing the current situation to the original starting point, is the cumulative distance proportionate to what was ever explicitly discussed?",
+       "Are the increments tracked and acknowledged along the way, or does the trajectory only become visible in hindsight?",
+       "Would the current level of request, presented all at once from the start, have been agreed to?",
+       "Is there room to step back to an earlier increment without it being treated as a problem?"
+      ],
+      "less_concerning_if": [
+       "The cumulative growth was explicitly discussed and tracked at each stage by both people."
+      ],
+      "more_concerning_if": [
+       "The gap between where things started and where they are now is large and was never consciously agreed to as a whole."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Commitment Traps",
+     "tier": "Reference-only",
+     "source_definition": "Small initial agreements designed to escalate into obligations the target never explicitly chose.",
+     "approved_draft": {
+      "why_this_matters": "No single step was large enough to refuse, and the obligation that accumulated is one that was never actually agreed to at any point along the way.",
+      "what_it_is_not": "An expansion both people talked about as it happened is a shared decision, however large it ends up being. Volunteering for more is not being trapped by less. The distinction lies in whether the present obligation is one either party could have named at the start."
+     },
+     "existing_specific_text": {
+      "short_definition": "Small initial agreements designed to escalate into obligations the target never explicitly chose.",
+      "expanded_definition": "Small initial agreements — seemingly minor, easy to say yes to — designed to escalate over time into larger obligations the target never explicitly, consciously chose, but which now feel hard to back out of given everything already agreed to along the way. Each individual step feels reasonable; it's the cumulative destination that was never directly agreed to.",
+      "plain_language_summary": "In plain terms: small initial agreements designed to escalate into obligations the target never explicitly chose.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Small initial agreements designed to escalate into obligations the target never explicitly chose."
+      ],
+      "what_it_sounds_like": [
+       "A series of small, individually reasonable requests that, taken together, add up to something the target would never have agreed to upfront.",
+       "\"You already agreed to the smaller thing, so this is basically the same\" used to leverage an earlier, much smaller commitment.",
+       "The target realizes they're now doing something significant that they never actually made a single clear decision to take on."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Roles and responsibilities do naturally and legitimately grow over time with mutual, explicit agreement at each stage. People sometimes willingly take on more without any external pressure."
+      ],
+      "common_false_positives": [
+       "A genuinely gradual, mutually-understood increase in involvement that both people consciously discussed along the way.",
+       "Natural evolution of a role or relationship where bigger commitments were explicitly renegotiated at each stage.",
+       "Someone taking on more responsibility willingly and proactively, not because of incremental pressure."
+      ],
+      "discernment_questions": [
+       "Was there ever a point where the target consciously agreed to the current, full scope of the commitment?",
+       "Does each step get framed as \"basically the same\" as the last, even when it's a meaningfully bigger ask?",
+       "Would the target have agreed to the current level of commitment if it had been the original request?",
+       "Is there room to renegotiate or scale back, or does that get treated as reneging on something already agreed to?"
+      ],
+      "less_concerning_if": [
+       "Each escalation was explicitly discussed and consciously agreed to, not just assumed from an earlier smaller step."
+      ],
+      "more_concerning_if": [
+       "The current commitment was never directly agreed to as a whole, and scaling back gets treated as breaking a promise."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Urgency Manufacturing",
+   "category": "Pressure & Coercion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Urgency Manufacturing' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Urgency Manufacturing",
+    "Crisis Manufacturing"
+   ],
+   "members": [
+    {
+     "name": "Urgency Manufacturing",
+     "tier": "Detected",
+     "source_definition": "Compressing time so the target can't think or consult.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Compressing time so the target can't think or consult.",
+      "expanded_definition": "Compressing time so the target can't think or consult. Deliberation is the enemy of coercion; urgency removes it. As a communication pattern, Urgency Manufacturing-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: compressing time so the target can't think or consult.",
+      "why_this_matters": "Deliberation is the enemy of coercion; urgency removes it. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Compressing time so the target can't think or consult.",
+       "Deliberation is the enemy of coercion; urgency removes it.",
+       "Contrasts with a healthier version: \"No rush — take the time you need and tell me tomorrow.\".",
+       "Recognizable by phrasing such as \"Decide right now or forget it\"."
+      ],
+      "what_it_sounds_like": [
+       "Decide right now or forget it.",
+       "This offer is gone by tonight.",
+       "You have to decide right now.",
+       "There's no time to think about it.",
+       "Answer me now or.",
+       "This offer expires tonight."
+      ],
+      "what_it_is_not": [
+       "Some deadlines are real. Ask what actually happens if you take one more day."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely time-sensitive situations exist and can reasonably require a prompt decision."
+      ],
+      "common_false_positives": [
+       "A genuinely time-sensitive situation with a real, external deadline, honestly disclosed.",
+       "A person expressing real, proportionate urgency about something that actually does need a prompt decision.",
+       "A situation where slowing down and taking time would genuinely be respected if requested."
+      ],
+      "discernment_questions": [
+       "Is there a real, verifiable reason the decision needs to happen immediately?",
+       "Does asking for more time to think or consult someone produce genuine patience, or increased pressure?",
+       "Would the situation actually change if the target took more time, or is the urgency more about preventing reflection?",
+       "Does this pattern of manufactured urgency recur across different, unrelated decisions?"
+      ],
+      "less_concerning_if": [
+       "The urgency is real and verifiable, and requests for more time are genuinely respected."
+      ],
+      "more_concerning_if": [
+       "Urgency is manufactured to prevent reflection, and requests for time produce escalating pressure rather than patience."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Crisis Manufacturing",
+     "tier": "Reference-only",
+     "source_definition": "Creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance.",
+     "approved_draft": {
+      "why_this_matters": "There is no time to consult anyone or notice inconsistencies, and compliance given under that compression is difficult to revisit afterwards.",
+      "what_it_is_not": "Real emergencies with real external deadlines exist and feel exactly like this from the inside. Someone anxious themselves may communicate urgency with no relation to anyone else's decision-making. A legitimately time-sensitive opportunity is not manufactured by being described urgently."
+     },
+     "existing_specific_text": {
+      "short_definition": "Creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance.",
+      "expanded_definition": "Creating or exaggerating a sense of urgency and emergency specifically to prevent calm evaluation and force fast compliance before the target has time to think it through, consult anyone else, or notice inconsistencies. The crisis doesn't need to be entirely fabricated — even a real but minor issue can be manufactured into an emergency through tone and framing alone.",
+      "plain_language_summary": "In plain terms: creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Creating or exaggerating urgency and emergency to prevent calm evaluation and force fast compliance."
+      ],
+      "what_it_sounds_like": [
+       "\"We need to decide this right now\" applied to a decision that doesn't actually have a real, external time constraint.",
+       "A situation is framed as far more urgent than any objective account of the facts would support.",
+       "Requests for even a small amount of time to think are met with escalating pressure rather than any patience."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Real emergencies and genuinely time-sensitive opportunities do exist. Some people communicate their own anxiety as urgency without intending to manipulate anyone's decision."
+      ],
+      "common_false_positives": [
+       "A genuine emergency with real, external time pressure that isn't manufactured.",
+       "Someone who is themselves anxious and communicates that anxiety as urgency, without intending to manipulate anyone else's decision-making.",
+       "A legitimately time-sensitive opportunity where the urgency reflects real external circumstances."
+      ],
+      "discernment_questions": [
+       "Is there a real, external, verifiable reason this needs to be decided immediately?",
+       "Does asking for a reasonable amount of time to think produce patience, or escalating pressure?",
+       "Would the \"crisis\" look the same to a neutral third party without the emotional framing?",
+       "Does this pattern of manufactured urgency recur across different, unrelated situations?"
+      ],
+      "less_concerning_if": [
+       "The urgency is externally verifiable and a reasonable request for more time is respected."
+      ],
+      "more_concerning_if": [
+       "Requests for time produce escalating pressure, and the urgency doesn't hold up to neutral scrutiny."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    },
+    {
+     "name": "Sexual Coercion",
+     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Frame Control",
+   "category": "Reality Distortion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Frame Control' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Frame Control",
+    "False Framing",
+    "Frame Assassination"
+   ],
+   "members": [
+    {
+     "name": "Frame Control",
+     "tier": "Reference-only",
+     "source_definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing.",
+     "approved_draft": {
+      "why_this_matters": "An entirely accurate account can come out sounding irrelevant, because the terms of the conversation were set to exclude it before it was spoken.",
+      "what_it_is_not": "Disagreeing in good faith about what the real issue is happens constantly, and both readings can have merit. Steering a conversation back on topic is legitimate too. The pattern is a frame that no version of the other person's concern can fit inside."
+     },
+     "existing_specific_text": {
+      "short_definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing.",
+      "expanded_definition": "Controlling what the conversation is defined as being \"about\" — redefining the topic, the stakes, or the roles involved — so that the target's actual concern can't be expressed within the frame that's been set. Even a completely accurate account from the target ends up sounding wrong or irrelevant once it's forced into a frame designed to exclude it.",
+      "plain_language_summary": "In plain terms: controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
+      ],
+      "what_it_sounds_like": [
+       "A conversation about a specific action gets redefined as being about the target's \"tone\" or \"attitude\" instead.",
+       "\"This isn't about what I did, it's about why you're so insecure\" shifts the entire frame of the conversation onto the target.",
+       "No matter how the target phrases their concern, it keeps getting translated back into terms that favor the other person's position."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "People sometimes genuinely see a situation differently and aren't reframing it strategically. Conversations legitimately drift off-topic sometimes without any intent to avoid the real issue."
+      ],
+      "common_false_positives": [
+       "A genuine, good-faith disagreement about what the actual issue is, where both interpretations have some merit.",
+       "Someone redirecting a conversation because it's genuinely gotten off track, not to avoid the original point.",
+       "A person with a different, sincerely-held perspective on what's actually important in the situation."
+      ],
+      "discernment_questions": [
+       "No matter how the concern is rephrased, does it keep getting redirected into the same unfavorable frame?",
+       "Does the reframing consistently shift focus away from the original concern and onto the target?",
+       "Would a neutral third party agree the reframe reflects what's actually happening, or does it seem like a deflection?",
+       "Is there any frame in which the target's original concern would actually be heard?"
+      ],
+      "less_concerning_if": [
+       "There's genuine, good-faith disagreement about what the real issue is, open to being worked out."
+      ],
+      "more_concerning_if": [
+       "Every attempt to raise the concern gets redirected into the same frame that favors the other person, with no version that gets heard."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "False Framing",
+     "tier": "Reference-only",
+     "source_definition": "Presenting a situation through a distorted frame that predetermines how it will be judged.",
+     "approved_draft": {
+      "why_this_matters": "Judgement is settled before the facts are examined, and correcting the facts afterwards rarely dislodges the impression the framing has already made.",
+      "what_it_is_not": "Some situations really do warrant the strong framing they get, and a person describing a genuine hurt in dramatic terms is usually reporting how it felt to them. Choosing emphasis is part of ordinary persuasion and is not by itself distortion."
+     },
+     "existing_specific_text": {
+      "short_definition": "Presenting a situation through a distorted frame that predetermines how it will be judged.",
+      "expanded_definition": "Presenting a situation through a distorted frame — choosing which facts to foreground, what comparison to invoke, what label to attach — that predetermines how the situation will be judged before the actual facts are even considered. The frame does the persuasive work that the facts alone might not support.",
+      "plain_language_summary": "In plain terms: presenting a situation through a distorted frame that predetermines how it will be judged.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Presenting a situation through a distorted frame that predetermines how it will be judged."
+      ],
+      "what_it_sounds_like": [
+       "A situation is introduced with a loaded label (\"this is basically abandonment\") before any of the actual facts are laid out.",
+       "A comparison to something extreme is used to make an ordinary situation seem dramatically worse or better than it is.",
+       "The same set of facts, described by someone else without the frame attached, sounds meaningfully different."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "People naturally frame their own experiences in language that reflects how they genuinely felt, which isn't manipulation. Strong, accurate language can be uncomfortable without being distorted."
+      ],
+      "common_false_positives": [
+       "A genuinely accurate, if strongly-worded, description of a situation that really does warrant that framing.",
+       "Someone processing a real hurt using dramatic language because that's genuinely how it felt to them, not to manipulate a listener.",
+       "Natural persuasive framing used in an ordinary disagreement, without deceptive intent behind it."
+      ],
+      "discernment_questions": [
+       "If you strip away the frame and just list the facts, does the situation still support the same conclusion?",
+       "Is the comparison or label proportionate to what actually happened?",
+       "Does the framing consistently favor one party's interests regardless of the specific facts involved?",
+       "Would someone hearing just the facts, without the frame, reach the same conclusion?"
+      ],
+      "less_concerning_if": [
+       "The framing, while strong, holds up when checked against the underlying facts."
+      ],
+      "more_concerning_if": [
+       "The frame does most of the persuasive work and doesn't hold up once the facts are considered on their own."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Frame Assassination",
+     "tier": "Reference-only",
+     "source_definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior.",
+     "approved_draft": {
+      "why_this_matters": "The target arrives with a concern about an action and leaves defending their own stability. The original point is not refused, which is why it is so hard to notice that it was never answered.",
+      "what_it_is_not": "Conversations drift, and redirecting one collaboratively is ordinary; someone can also raise a real worry about your wellbeing without meaning to displace what you said. The test is whether the original topic can be returned to at all."
+     },
+     "existing_specific_text": {
+      "short_definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior.",
+      "expanded_definition": "Killing the target's original frame for a conversation — \"you did X, and it affected me this way\" — and replacing it with a different one that centers the target's emotional state or character instead of the other person's behavior. This is a more aggressive, decisive version of Frame Control: rather than gradually redirecting, it explicitly dismantles the target's frame and substitutes another one in its place.",
+      "plain_language_summary": "In plain terms: killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+      ],
+      "what_it_sounds_like": [
+       "A concern about a specific action is answered with a statement that redefines the entire conversation as being about the target's character or emotional state.",
+       "\"This isn't about what I did, this is about how unstable you've been lately\" used to completely replace the original topic.",
+       "No matter how the original concern is reasserted, the conversation stays anchored in the substitute frame."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Conversations sometimes genuinely need to widen to include more than one person's concern. Good-faith redirection toward a more productive framing is a normal part of difficult conversations."
+      ],
+      "common_false_positives": [
+       "A genuine, good-faith redirection when a conversation has drifted somewhere unproductive, offered collaboratively rather than as a dismantling.",
+       "Someone raising a real, separate concern about the target's wellbeing that isn't meant to replace the original topic entirely.",
+       "A conversation that naturally evolves to include both people's concerns, without either frame being \"killed.\""
+      ],
+      "discernment_questions": [
+       "Does the original concern get any space to be addressed, or is it entirely replaced by the new frame?",
+       "Is the new frame introduced collaboratively, or unilaterally imposed regardless of the target's response?",
+       "Does reasserting the original concern ever succeed in returning the conversation to it?",
+       "Would a neutral observer agree the substitute frame is a genuine, separate issue, or a deflection?"
+      ],
+      "less_concerning_if": [
+       "The original concern retains some space in the conversation, even alongside a new, genuinely relevant point."
+      ],
+      "more_concerning_if": [
+       "The original concern is entirely and permanently displaced by the substitute frame, with no way back to it."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Answering a concern about something someone did by swapping the whole topic for the other person's character or emotional state.",
+      "expanded_definition": "You raise something specific: 'You cancelled on me three times this month.' The reply does not dispute it or defend it. It swaps the subject: 'Why are you so angry all the time?' Your original point has not been refused, which is why it is hard to notice that it was never answered. One topic change in a tense talk is ordinary. The pattern is when each attempt to return to your point is sent back to the new topic, and the conversation ends up being about you.",
+      "plain_language_summary": "You bring up something someone did, and the conversation turns into a discussion of what is wrong with you, so your original point never gets answered.",
+      "why_this_matters": "You arrive with a concern about an action and leave defending your own stability. Your point was never refused, so it is hard to notice that it was never answered, and harder to explain to anyone else why you feel unheard.",
+      "what_it_is": [
+       "A switch of subject from what was done to who the speaker says you are, such as 'this is about your temper, not my schedule.'",
+       "More complete than drifting: the old topic is declared closed or renamed, and a new one is put in its place.",
+       "Usually set off by a concrete complaint, and aimed at your mood, your tone, your history or your motives.",
+       "Persistent: restating your original point gets it sent back to the new frame.",
+       "Can happen in writing too, where a reply to a list of grievances addresses only how the list was worded."
+      ],
+      "what_it_sounds_like": [
+       "This isn't about the dishes. This is about how unstable you've been lately.",
+       "I'm not going to discuss that until you calm down and look at why you're like this.",
+       "Do you hear yourself? That's the real issue here.",
+       "We're not talking about what I said, we're talking about the way you took it.",
+       "You always do this: you find something to be upset about and make it everyone's problem.",
+       "Your email asks about the missed payment; the reply is two paragraphs on how hostile your tone was, and nothing on the payment.",
+       "I think what you need to ask yourself is why this bothers you so much."
+      ],
+      "what_it_is_not": [
+       "Conversations drift, and steering one back together is ordinary; someone can also raise a real worry about your wellbeing without meaning to displace what you said. The test is whether the original topic can be returned to at all.",
+       "Agreeing to pause a heated talk and come back when both are calmer, with a time named and kept.",
+       "Adding a second issue alongside yours, such as 'I want to hear that, and I also felt hurt last week.'",
+       "A reply that disputes the facts of your complaint, which is disagreement and not a change of subject.",
+       "A mediator or counselor widening the lens to the whole relationship, with both people's agreement.",
+       "Someone going straight to their feelings because they heard your complaint as a verdict on them, then coming back to your point."
+      ],
+      "this_may_be_it_when": [
+       "Your complaint names an action and the reply names a trait.",
+       "You can state your point three times and each time end up back at the new topic.",
+       "The conversation ends with you apologizing for how you raised it.",
+       "The new topic is one you did not start and cannot easily refuse, such as your tone or mood.",
+       "Days later, the original issue has no answer and nobody has mentioned it."
+      ],
+      "this_may_not_be_it_when": [
+       "Your original point gets an answer, even a disagreeing one, before anything else is raised.",
+       "They ask 'can I say how this feels to me first?' and then return to your issue.",
+       "The concern they raise about you is specific, such as that you have been sleeping badly, and they stay on your topic too.",
+       "A time to resume is named and kept.",
+       "You yourself realize your original complaint was really about something else."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Some people go straight to feelings when they feel attacked, and hear a complaint as a verdict on them.",
+       "In a long, tense talk both people lose the thread, and the topic changes without anyone choosing it.",
+       "A person anxious about conflict may grab a different subject to lower the temperature."
+      ],
+      "common_false_positives": [
+       "A friend who says 'let's park this, I'm too tired to do it justice' and brings it back the next day.",
+       "A counselor who asks what else is going on for you, as part of an agreed session.",
+       "A partner who answers your complaint and also adds their own, so two topics now share the table."
+      ],
+      "discernment_questions": [
+       "Can I still find my original point anywhere in this conversation?",
+       "When I restate it, does it get answered, or is it sent back to the new topic?",
+       "Is the new subject something they would also raise on a calm day, with no complaint from me?",
+       "Do I leave these talks defending myself about things I never meant to discuss?",
+       "Would someone listening in say my concern was ever answered?"
+      ],
+      "less_concerning_if": [
+       "Your point gets at least a short answer before the talk widens.",
+       "The subject changes only when both of you are worn out, and returns when you are rested.",
+       "They can say afterward what your original concern was."
+      ],
+      "more_concerning_if": [
+       "The substitute topic is always your character, mood or mental state.",
+       "You have stopped raising concerns because you know how they will end.",
+       "Other people are told the argument was about your reaction, not about the thing that set it off."
+      ],
+      "pattern_over_time_signs": [
+       "You open complaints with long disclaimers about your tone, hoping to prevent the swap.",
+       "You find old concerns unanswered, with no memory of them being settled.",
+       "You say 'never mind' to end the talk, though the issue is unchanged.",
+       "Over months you bring up fewer concerns, and the list you keep in your head gets longer."
+      ],
+      "repair_check": "Once you point out the swap, a changed exchange looks like them stating your original point back to you and answering it, even if the answer is no. An apology about the argument that never touches the original issue leaves that issue where it was.",
+      "boundary_respect_check": "Notice whether you can hold your topic. Say once, 'I'd like an answer to my first question,' and see if it gets one. If the reply is more about you, the request was met with the very move it was about.",
+      "psychological_mechanism": "People tend to follow whichever topic is emotionally louder. A remark about your character or stability is hard to ignore, so attention moves to defending yourself, which is more tiring than complaining. Because the new frame is personal, correcting it can feel like proving the point, and the original concern gets quietly dropped by the person who raised it.",
+      "possible_impact_on_receiver": "People describe leaving a talk unable to say what they had meant to ask, replaying it for hours, and wondering whether they really are as difficult as they were just told. Some begin rehearsing complaints in advance, or stop raising them. A slow sense that nothing they bring up ever gets settled is also common.",
+      "response_options": {
+       "soft_clarification": "Name the swap and ask for both topics: 'I'd like to hear how I come across, and I'd also like an answer to what I first asked. Can we do mine first?'",
+       "firm_boundary": "Hold your topic: 'That may be worth talking about, but it's not the subject today. I asked about the cancelled plans.'",
+       "disengagement": "If the new topic keeps winning, stop the exchange and put the original concern in a short written note you can point back to.",
+       "support_seeking": "Tell a friend your original question and ask them to say back what they hear. If they can state it clearly, you know the question was not the problem.",
+       "workplace_or_professional": "At work, put the concern in an email naming the action and the date, and ask for a reply on that point. A written thread keeps the topic from drifting."
+      },
+      "boundary_script": "\"I notice we've moved from what I asked to how I'm asking. Could you tell me in one sentence what you make of the cancelled plans? Then I'll gladly hear what's on your mind.\"",
+      "safety_sensitive": false,
+      "safety_note": "On its own this is a conversation problem, not a danger sign. The picture changes if raising a concern starts to bring threats, punishments, or talk of your mental state to doctors or relatives. If that happens, note what was said and when, and talk to a counselor or advocate you trust before the next conversation about it.",
+      "misuse_warning": [
+       "Calling it frame killing whenever a talk changes topic punishes ordinary drift and hides the times you changed the subject yourself.",
+       "Used as an accusation, 'you're killing my frame' can itself replace the other person's concern, which is the move it describes."
+      ],
+      "how_to_distinguish_from_related": "Priming installs a lens before a talk; Frame Assassination removes yours during one. Projection returns your complaint as an accusation of the same behavior, while this tactic returns it as a remark about you. Pseudo-Insight as Shutdown answers with a psychological-sounding term such as 'that's your trauma', where Frame Assassination can use any substitute at all: your tone, your mood, your history.",
+      "core_meaning": "Answering a concern about something someone did by swapping the whole topic for the other person's character or emotional state."
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+    },
+    {
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    },
+    {
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
+    },
+    {
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
+    },
+    {
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
+    },
+    {
+     "name": "Priming / Narrative Seeding",
+     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
+    },
+    {
+     "name": "Credibility Theft",
+     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
+    },
+    {
+     "name": "Projection",
+     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
+    },
+    {
+     "name": "Authority Hijack",
+     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
+    },
+    {
+     "name": "Accountability Evasion via Diagnosis",
+     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
+    },
+    {
+     "name": "Trash-Can Diagnosis",
+     "definition": "Assigning the target a mental-health label as an insult or verdict."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  }
+ ]
+}

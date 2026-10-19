@@ -66,10 +66,6 @@
      "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
     },
     {
-     "name": "Postural Dominance",
-     "definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
-    },
-    {
      "name": "Spatial Invasion",
      "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
     },
@@ -86,7 +82,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -152,10 +148,6 @@
      "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
     },
     {
-     "name": "Postural Dominance",
-     "definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
-    },
-    {
      "name": "Spatial Invasion",
      "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
     },
@@ -172,179 +164,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Nonverbal Dominance",
-   "category": "Control structural",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Because nothing quotable is ever said, the experience cannot be evidenced to anyone else, and the person on the receiving end often ends up self-editing around a reaction they could not describe if asked.",
-    "what_it_is_not": "Faces move on their own: a flash of visible irritation, an expressive manner, a real sigh at the end of a long day. Ask whether the reaction appears whenever something is annoying, or specifically whenever one person disagrees."
-   },
-   "existing_specific_text": {
-    "short_definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words.",
-    "expanded_definition": "Using body language — sighs, eye rolls, prolonged stares, an imposing physical presence — to intimidate, dismiss, or control without ever saying anything that could be directly quoted or held accountable. The message is unmistakable to the target while remaining fully deniable to anyone else.",
-    "plain_language_summary": "In plain terms: using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
-    ],
-    "what_it_sounds_like": [
-     "A pointed sigh, eye roll, or exaggerated exhale specifically timed to a moment the target speaks up or disagrees.",
-     "Prolonged, uncomfortable staring used to communicate displeasure or force a topic to be dropped, with no words exchanged.",
-     "The target finds themselves self-editing to avoid triggering a nonverbal reaction, even though nothing was ever explicitly said."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine, involuntary emotional reactions are a normal part of being human and aren't automatically a control tactic. Some people are naturally more expressive in their face and body language, without any intent to intimidate."
-    ],
-    "common_false_positives": [
-     "Genuine, involuntary reactions (a startled expression, real frustration shown briefly) that aren't calculated to intimidate.",
-     "A person's naturally expressive face or body language that isn't targeted at controlling anyone.",
-     "A one-off, honest reaction to something genuinely frustrating, not a recurring pattern used specifically around disagreement."
-    ],
-    "discernment_questions": [
-     "Does the nonverbal reaction happen specifically and reliably around moments of disagreement or boundary-setting?",
-     "Does the target notice themselves self-editing specifically to avoid triggering it?",
-     "Would a neutral observer read the body language as intended to intimidate or dismiss, or as an ordinary, involuntary reaction?",
-     "Does this happen as a recurring pattern, or was it a single, honest reaction to something genuinely frustrating?"
-    ],
-    "less_concerning_if": [
-     "The reaction is involuntary, occasional, and doesn't specifically cluster around disagreement or boundaries."
-    ],
-    "more_concerning_if": [
-     "The nonverbal reaction reliably and specifically follows disagreement, and the target self-edits to avoid it."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Emotion Control",
-     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
-    },
-    {
-     "name": "Ritualized Exhaustion",
-     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
-    },
-    {
-     "name": "Postural Dominance",
-     "definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
-    },
-    {
-     "name": "Spatial Invasion",
-     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
-    },
-    {
-     "name": "Resource Sabotage",
-     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
-    },
-    {
-     "name": "\"Managed Out\" Through Exhaustion",
-     "definition": "Systematically removing purpose, opportunity, visibility, and belonging until the target leaves \"voluntarily.\"."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Postural Dominance",
-   "category": "Control structural",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Being physically talked down to registers below the level of argument; a sense of having shrunk arrives with nothing concrete to point at.",
-    "what_it_is_not": "Rooms have layouts, people have different heights and builds, and someone standing up is usually just about to leave. What separates this from ordinary movement is positioning that recurs specifically around correction or disagreement."
-   },
-   "existing_specific_text": {
-    "short_definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy.",
-    "expanded_definition": "Deliberately occupying higher-status physical positions — standing while others sit, taking up more space than necessary, positioning at the head of a table — to communicate authority and hierarchy through spatial arrangement rather than words. This works because physical positioning carries real, largely unconscious social signaling about status and power.",
-    "plain_language_summary": "In plain terms: occupying higher-status physical positions to communicate authority through spatial hierarchy.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
-    ],
-    "what_it_sounds_like": [
-     "A consistent pattern of standing over someone who's seated, specifically during moments of disagreement or correction.",
-     "Physical space is consistently occupied in a way that visually diminishes the target's presence in the room.",
-     "The target notices a physical sense of being talked down to, quite literally, that seems to track moments of conflict."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Room layouts and practical circumstances often dictate physical positioning without anyone intending anything by it. A person's natural size or posture isn't a deliberate choice to dominate."
-    ],
-    "common_false_positives": [
-     "Ordinary spatial arrangements dictated by a room's layout or the practicalities of a situation, not anyone's deliberate choice.",
-     "A person's natural size or posture, which isn't a deliberate choice to dominate space.",
-     "A brief, situational positioning (like standing to leave) that isn't a recurring, targeted pattern."
-    ],
-    "discernment_questions": [
-     "Does the physical positioning specifically and reliably occur around moments of disagreement or correction?",
-     "Is there a practical, non-strategic reason for the physical arrangement (room layout, task requirements)?",
-     "Does the target's felt sense of being physically diminished track a real, consistent pattern, or a single moment?",
-     "Would this positioning be noteworthy at all outside a context involving conflict or hierarchy?"
-    ],
-    "less_concerning_if": [
-     "The physical arrangement reflects practical circumstances rather than a targeted, recurring choice."
-    ],
-    "more_concerning_if": [
-     "The positioning specifically and reliably tracks moments of disagreement or correction."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Emotion Control",
-     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
-    },
-    {
-     "name": "Ritualized Exhaustion",
-     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
-    },
-    {
-     "name": "Nonverbal Dominance",
-     "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
-    },
-    {
-     "name": "Spatial Invasion",
-     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
-    },
-    {
-     "name": "Resource Sabotage",
-     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
-    },
-    {
-     "name": "\"Managed Out\" Through Exhaustion",
-     "definition": "Systematically removing purpose, opportunity, visibility, and belonging until the target leaves \"voluntarily.\"."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -415,10 +235,6 @@
      "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
     },
     {
-     "name": "Postural Dominance",
-     "definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
-    },
-    {
      "name": "Resource Sabotage",
      "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
     },
@@ -427,13 +243,13 @@
      "definition": "Systematically removing purpose, opportunity, visibility, and belonging until the target leaves \"voluntarily.\"."
     }
    ],
+   "reviewer_requires_safety_sensitive": "TRUE. The 2026-08-27 clinical review named this entry as one most likely to be read by someone in current danger. Set safety_sensitive true and write the note and script accordingly.",
    "old_safety_signals": {
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "reviewer_requires_safety_sensitive": "TRUE. The 2026-08-27 clinical review named this entry as one most likely to be read by someone in current danger. Set safety_sensitive true and write the note and script accordingly."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
   },
   {
    "name": "Resource Sabotage",
@@ -502,10 +318,6 @@
      "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
     },
     {
-     "name": "Postural Dominance",
-     "definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
-    },
-    {
      "name": "Spatial Invasion",
      "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
     },
@@ -518,7 +330,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -588,8 +400,86 @@
      "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
     },
     {
-     "name": "Postural Dominance",
-     "definition": "Occupying higher-status physical positions to communicate authority through spatial hierarchy."
+     "name": "Spatial Invasion",
+     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
+    },
+    {
+     "name": "Resource Sabotage",
+     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Evidence Traps",
+   "category": "Control structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Knowing that anything said may be stored and re-timed makes ordinary candour feel risky; speech starts being drafted rather than spoken.",
+    "what_it_is_not": "Keeping records is legitimate and often wise, and raising something someone said because it still matters, in the context it was said in, is just conversation. What is being described is the stripping of that context and the choosing of the moment it returns."
+   },
+   "existing_specific_text": {
+    "short_definition": "Communications, posts, or statements captured out of context and stored for selective deployment against the target.",
+    "expanded_definition": "Communications, posts, or statements deliberately captured out of context — screenshotted, saved, recorded — and stored for later, selective deployment against the target, often at a moment calculated to maximize damage. Unlike a single Forged Screenshot, the content here is genuine; the manipulation is in the selective timing and stripped context of its later use.",
+    "plain_language_summary": "In plain terms: communications, posts, or statements captured out of context and stored for selective deployment against the target.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Communications, posts, or statements captured out of context and stored for selective deployment against the target."
+    ],
+    "what_it_sounds_like": [
+     "An old message or statement, taken out of the context it was originally made in, resurfaces at a strategically damaging moment.",
+     "The target notices a pattern of things they've said being saved rather than responded to in the moment, only to reappear later.",
+     "A casual, off-hand comment gets treated as a formal, binding position when it's convenient to do so."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Legitimate record-keeping exists for many good reasons unrelated to weaponization. People naturally remember and reference things said earlier without having strategically saved them."
+    ],
+    "common_false_positives": [
+     "Someone genuinely and reasonably keeping records for legitimate documentation purposes, not for selective weaponization.",
+     "A message that's brought up again because it's still relevant, in its original context, to an ongoing conversation.",
+     "A person who happens to remember something the target said, without having specifically saved it for later use."
+    ],
+    "discernment_questions": [
+     "Does the resurfaced content lose important meaning when stripped of its original context?",
+     "Is the timing of the resurfacing calculated to maximize damage, rather than organically relevant?",
+     "Does this happen as a pattern, with content specifically saved rather than addressed at the time?",
+     "Would the target's original statement look different with its full context restored?"
+    ],
+    "less_concerning_if": [
+     "Content raised again retains its original context and meaning, and the timing is organically relevant."
+    ],
+    "more_concerning_if": [
+     "Content is stripped of context and resurfaces at a specifically damaging moment, as part of a recurring pattern."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Emotion Control",
+     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
+    },
+    {
+     "name": "Ritualized Exhaustion",
+     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
+    },
+    {
+     "name": "Nonverbal Dominance",
+     "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
     },
     {
      "name": "Spatial Invasion",
@@ -604,7 +494,172 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Moral Framing",
+   "category": "Control structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Once the subject has become what kind of person you are, the original issue is no longer on the table and cannot be settled.",
+    "what_it_is_not": "Sometimes an observation about character is accurate, specific and offered as real feedback, and sometimes two people simply hold different values and read the same event through them. A hurt remark later walked back and replaced with substance is not this."
+   },
+   "existing_specific_text": {
+    "short_definition": "Recasting the target's resistance, boundaries, or criticism as a moral or character failing rather than a legitimate response.",
+    "expanded_definition": "Recasting the target's resistance, reasonable boundaries, or fair criticism as a moral or character failing — selfishness, disloyalty, unkindness — rather than engaging with it as a legitimate response to something specific that happened. This shifts the conversation from what occurred to an indictment of the target's character.",
+    "plain_language_summary": "In plain terms: recasting the target's resistance, boundaries, or criticism as a moral or character failing rather than a legitimate response.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Recasting the target's resistance, boundaries, or criticism as a moral or character failing rather than a legitimate response."
+    ],
+    "what_it_sounds_like": [
+     "A specific, reasonable boundary is met with a response about what kind of person sets that kind of boundary, rather than engagement with the boundary itself.",
+     "\"That's a really selfish way to think about this\" applied to a fair, proportionate response to a real issue.",
+     "The target finds themselves defending their character rather than discussing the actual disagreement."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People sometimes have genuinely different values that lead to different moral readings of the same situation. Momentary hurt reactions happen and can be walked back with genuine engagement afterward."
+    ],
+    "common_false_positives": [
+     "A genuine, specific, and accurate observation about a real character issue, raised as part of substantive feedback, not as a deflection.",
+     "Two people with real, differing values who each see the same situation through a genuinely different moral lens.",
+     "A momentary, human reaction of feeling hurt and saying something character-related, later walked back and engaged with substantively."
+    ],
+    "discernment_questions": [
+     "Does the moral framing replace engagement with the specific issue, or accompany genuine discussion of it?",
+     "Is the character judgment proportionate to what actually happened, or does it escalate a minor disagreement into a verdict on someone's worth?",
+     "Does this happen specifically around boundaries and resistance, or in a broader, more balanced way?",
+     "Would a neutral observer agree the moral framing accurately reflects the target's actual behavior?"
+    ],
+    "less_concerning_if": [
+     "The character comment is proportionate, specific, and accompanies real engagement with the underlying issue."
+    ],
+    "more_concerning_if": [
+     "Moral framing consistently replaces engagement with substance, specifically around boundaries and resistance."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Emotion Control",
+     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
+    },
+    {
+     "name": "Ritualized Exhaustion",
+     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
+    },
+    {
+     "name": "Nonverbal Dominance",
+     "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
+    },
+    {
+     "name": "Spatial Invasion",
+     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
+    },
+    {
+     "name": "Resource Sabotage",
+     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Reproductive Coercion",
+   "category": "Control structural",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "A decision that belongs to one person's body and life ends up made under the weight of what refusal would cost them — job, money, support, standing in the family.",
+    "what_it_is_not": "People are allowed to want things and say so: a parent hoping for grandchildren, a partner describing the family they imagined. A neutral, lawful employment policy can also touch a reproductive decision without targeting it. What changes the picture is a consequence attached to the answer."
+   },
+   "existing_specific_text": {
+    "short_definition": "Controlling reproductive choices through institutional pressure, career consequences, or elimination of support.",
+    "expanded_definition": "Controlling another person's reproductive choices — whether to have children, when, or how many — through institutional pressure, career consequences, financial leverage, or the withdrawal of support, rather than respecting the choice as the individual's own to make. This can come from a partner, family, employer, or institution.",
+    "plain_language_summary": "In plain terms: controlling reproductive choices through institutional pressure, career consequences, or elimination of support.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to practical entrapment — the cost of leaving or objecting keeps rising the longer it continues. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Controlling reproductive choices through institutional pressure, career consequences, or elimination of support."
+    ],
+    "what_it_sounds_like": [
+     "Career or financial consequences implied or applied based on a reproductive decision the target is considering or has made.",
+     "Support (financial, emotional, practical) made conditional on a reproductive choice going a particular way.",
+     "Pressure applied through repeated, escalating institutional or family channels rather than respecting a stated decision as final."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People often have genuine feelings and hopes about family planning that they share without any attached leverage. Neutral policies sometimes intersect with reproductive decisions without targeting them specifically."
+    ],
+    "common_false_positives": [
+     "A genuine, one-time expression of a personal opinion or hope about family planning, offered without any attached leverage or consequence.",
+     "An employer's genuinely neutral, legally-compliant policy that happens to intersect with a reproductive decision, without targeting it.",
+     "Family members sharing real feelings about wanting grandchildren or similar, without any actual leverage attached to the sharing."
+    ],
+    "discernment_questions": [
+     "Is there an actual consequence (financial, professional, relational) tied to the reproductive decision, or just an expressed opinion?",
+     "Is support genuinely conditional on the outcome, or does it continue regardless of what's decided?",
+     "Does pressure continue and escalate after a decision has been clearly stated, or is it respected once stated?",
+     "Would a reasonable person see the pressure as an attempt to override the individual's own choice?"
+    ],
+    "less_concerning_if": [
+     "Any expressed opinion is just that — an opinion — with no leverage or consequence actually attached."
+    ],
+    "more_concerning_if": [
+     "A real consequence or conditional support is attached to the reproductive decision, and pressure continues after a decision is stated."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through concrete arrangements — money, contracts, timing — rather than anything said in the moment. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe practical entrapment — the cost of leaving or objecting keeps rising the longer it continues in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Emotion Control",
+     "definition": "Controlling the target's emotional expression through shame, fear, mandatory positivity, confession, punishment, and reward."
+    },
+    {
+     "name": "Ritualized Exhaustion",
+     "definition": "Forced schedules, sleep deprivation, and relentless demands designed to reduce cognitive capacity, willpower, and resistance."
+    },
+    {
+     "name": "Nonverbal Dominance",
+     "definition": "Using body language, sighs, eye rolls, stares, or physical presence to intimidate, dismiss, or control without words."
+    },
+    {
+     "name": "Spatial Invasion",
+     "definition": "Using physical proximity, cornering, blocking exits, or eliminating personal space to dominate and unsettle without verbal threat."
+    },
+    {
+     "name": "Resource Sabotage",
+     "definition": "Removing tools, information, support, access, or funding the target needs to succeed, then blaming them for the resulting failure."
+    }
+   ],
+   "reviewer_requires_safety_sensitive": "TRUE. The 2026-08-27 clinical review named this entry as one most likely to be read by someone in current danger. Set safety_sensitive true and write the note and script accordingly.",
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]

@@ -1,0 +1,1261 @@
+{
+ "batch": "merged-01",
+ "kind": "merged",
+ "category": "mixed categories",
+ "entries": [
+  {
+   "name": "Deflection",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Deflection' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Deflection",
+    "Diverting",
+    "Rapid Topic Switching"
+   ],
+   "members": [
+    {
+     "name": "Deflection",
+     "tier": "Reference-only",
+     "source_definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents.",
+     "approved_draft": {
+      "why_this_matters": "The original concern never receives a direct response, so it stays live and unaddressed while the conversation ends looking as though it happened.",
+      "what_it_is_not": "Someone genuinely overwhelmed may need to pause and fully mean to come back, and a person who misunderstood the question will answer something adjacent to it. Dealing with a genuinely urgent related matter first is legitimate — the question is whether the original topic is ever actually returned to."
+     },
+     "existing_specific_text": {
+      "short_definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents.",
+      "expanded_definition": "Redirecting away from the actual issue to prevent accountability — through a subject change, a counter-question, an unrelated past grievance, or a tangent — so the original concern never gets a direct response. Unlike Whataboutism specifically (which redirects to someone else's comparable behavior), Deflection can redirect anywhere: to a different topic entirely, a technicality, or a question that puts the target on the defensive instead.",
+      "plain_language_summary": "In plain terms: redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
+      ],
+      "what_it_sounds_like": [
+       "A direct question about a specific action is met with a question back, and the original question never gets answered.",
+       "\"Can we talk about this later\" repeated indefinitely, with \"later\" never actually arriving.",
+       "The conversation drifts to an unrelated grievance from months ago whenever the current issue is raised."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "People sometimes genuinely need time before they can engage with a hard topic. Misunderstanding a question is common and isn't inherently evasive."
+      ],
+      "common_false_positives": [
+       "Someone who's genuinely overwhelmed in the moment and needs to pause the conversation, with real intention to return to it.",
+       "A person who misunderstands the question and responds to something adjacent rather than deliberately avoiding it.",
+       "A legitimate need to address a related, urgent issue first before returning to the original topic."
+      ],
+      "discernment_questions": [
+       "Does the conversation ever circle back to the original issue, or does it consistently disappear?",
+       "Is the redirect proportionate, or does it happen every time this specific topic comes up?",
+       "Does the person seem aware they're avoiding the question, or genuinely confused about what's being asked?",
+       "Is there a pattern of specific topics reliably triggering deflection while others get direct answers?"
+      ],
+      "less_concerning_if": [
+       "The topic eventually gets a direct response, even if delayed."
+      ],
+      "more_concerning_if": [
+       "The same topic reliably never gets addressed directly, no matter how many times it's raised."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Steering a conversation away from the issue that was raised, by changing the subject, asking a question back, or bringing up something else.",
+      "core_meaning": "Steering a conversation away from the issue that was raised, by changing the subject, asking a question back, or bringing up something else.",
+      "expanded_definition": "Deflection is turning a conversation away from the issue just raised, so that it never gets a direct reply. The turn can be a new subject, a question thrown back, an older grievance, or a quibble over wording. Everyone does it sometimes, especially when caught off guard or ashamed. It becomes a pattern when one subject reliably goes nowhere, however it is raised, and the talk always ends with the concern unanswered. Unlike whataboutism, which points to someone else's behavior, deflection can head anywhere.",
+      "plain_language_summary": "You ask a straight question and get a different topic, a question back, or an old argument. When the talk ends, your question is still unanswered.",
+      "why_this_matters": "The original concern never gets a direct reply, so it stays open while the conversation ends looking as though it happened. The person who raised it is left unsure whether they were heard at all.",
+      "what_it_is": [
+       "A move away from a question, not a response to it: the topic changes, or the roles do.",
+       "Takes several forms: a counter-question, a tangent, a technicality, an older complaint, a joke, or sudden concern about your tone.",
+       "Often subtle enough that the conversation feels full, even warm, with no answer given.",
+       "Can be an unplanned reflex under stress, and is visible in the exchange whatever the reason behind it.",
+       "Matters by repetition: one subject is always avoided while others are discussed openly."
+      ],
+      "what_it_sounds_like": [
+       "Did you cancel the appointment? / Why are you always checking up on me?",
+       "Can we talk about this later? (said again each time, with no later arriving)",
+       "Speaking of which, did you ever call your mother back?",
+       "That's not the point. The point is how you brought it up.",
+       "You're raising this now? After the week I've had?",
+       "I'll answer when you ask nicely.",
+       "When you ask about last month's missed payment, the talk turns to something you said at Christmas.",
+       "Mid-question, the person gets up to make tea, takes a call, or begins a long story."
+      ],
+      "what_it_is_not": [
+       "Someone overwhelmed who asks for a pause and does come back, or a person who misheard the question and answered something nearby. Dealing with a truly urgent related matter first is also fine, so long as the original topic is picked up again.",
+       "A clarifying question such as 'Which time do you mean?', after which your answer leads to theirs.",
+       "A group conversation where tangents are normal and no one's question outranks another's.",
+       "A person who says 'I'm not ready to answer that yet' and means it honestly.",
+       "Brevity with a private subject you have no claim to an answer on."
+      ],
+      "this_may_be_it_when": [
+       "One topic gets a different style of response from the topics around it.",
+       "The 'later' has no time attached, and the other person never raises it themselves.",
+       "Their counter-question replaces the answer instead of coming before it.",
+       "When you return to your question, you are told it is closed or already discussed.",
+       "Your question turns into a conversation about you: your tone, your timing, your motives."
+      ],
+      "this_may_not_be_it_when": [
+       "They say 'give me an hour' and come back at that hour.",
+       "Their question back is a clarifying one and leads on to an answer.",
+       "The swerve happened once, straight after bad news or a shock.",
+       "They name it themselves: 'I'm dodging, and I'm sorry. Ask me again.'",
+       "A long delay ends in a thoughtful, direct answer."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Some people cannot think on the spot and need hours to reach an answer.",
+       "Embarrassment, or fear of a fight, can send anyone to the nearest other topic.",
+       "Cultural or family styles may treat direct questions as rude, so answers arrive sideways."
+      ],
+      "common_false_positives": [
+       "Someone in tears asking for a break who calls back the next day.",
+       "A friend who answers a nearby question because they misheard.",
+       "A person handling an emergency who says 'let me deal with this first' and then does."
+      ],
+      "discernment_questions": [
+       "Does the original question get answered at any point, even late?",
+       "Does this happen with one subject, or with every hard one?",
+       "Does the change of topic leave me defending myself, or is it just a tangent?",
+       "When I name the dodge gently, does the person return to the question?",
+       "If I wrote the question in a message, would the reply address it?"
+      ],
+      "less_concerning_if": [
+       "A late but direct answer arrives.",
+       "They notice and name the swerve themselves.",
+       "It only happens when they are tired, unwell or taken by surprise."
+      ],
+      "more_concerning_if": [
+       "Raising the subject routinely costs you something, such as a fight, a sulk, or a counter-complaint.",
+       "The matters that never get answered include money, safety or health.",
+       "Written questions go unanswered or are answered about something else."
+      ],
+      "pattern_over_time_signs": [
+       "A list of unanswered questions builds up, some of them months old.",
+       "You start choosing your moment with great care, and the right moment never arrives.",
+       "You ask in smaller and smaller pieces to get any response at all.",
+       "You have been given plenty of warmth and conversation, but no answers."
+      ],
+      "repair_check": "Repair means the dropped question is picked up again: they return to it without being prompted, answer it directly, and do so whenever the subject comes round again. A string of 'later' promises that never turn into a date is the old pattern with a gentler face.",
+      "boundary_respect_check": "Try putting the question in one written line and see what comes back. A direct answer, or an honest 'I don't want to answer that yet', respects the limit. A reply about something else, or about your wording, shows the question is still being routed around.",
+      "psychological_mechanism": "Changing the subject is easy because conversation has no fixed agenda, and the person who raised the issue is often too polite to insist. A counter-question hands the listener a task, and answering it feels cooperative. Within a few turns the original concern is buried, and the person who raised it may not notice what was lost until afterwards.",
+      "possible_impact_on_receiver": "People describe leaving a long conversation feeling heard, then realizing nothing was answered. Over time some stop asking, some ask louder, and some blame themselves for never finding the right moment or wording. Others describe a quiet resentment about questions that have been open for months.",
+      "response_options": {
+       "soft_clarification": "Name the gap kindly: 'We covered a lot, but I still don't have an answer to my first question. Can we go back to it?'",
+       "firm_boundary": "Hold the question in place: 'I'm going to ask it again, because it hasn't been answered. I'll wait while you think.'",
+       "disengagement": "If every attempt gets swept aside, stop raising it face to face. Send the question in writing, with a date for a reply, and leave it there.",
+       "support_seeking": "Tell a friend the exact question and the answers you have had so far. Hearing how little of it was answered can confirm you are not asking too much.",
+       "workplace_or_professional": "Put the question in an email with a date, copying whoever has to decide. A written question is harder to steer away than a spoken one."
+      },
+      "boundary_script": "\"I'd like to go back to my first question before we move on, because I don't think I've had an answer yet. If you need time, tell me when you'll reply, and I'll hold off until then.\"",
+      "safety_sensitive": false,
+      "safety_note": "Not a safety matter in itself. That changes when the question being avoided carries real stakes, like where money went, a medical decision, a child's wellbeing or a threat that was made, and raising it brings anger or fear. Then write down the question and what happened when you asked, and talk to a counselor or advocate before pressing it again.",
+      "misuse_warning": [
+       "Calling a pause or a topic change deflection can punish someone for being overwhelmed. If you need an answer right now, check whether time is part of the request.",
+       "The label can turn into a demand for a reply to every question. Nobody owes an answer on everything, especially private matters."
+      ],
+      "how_to_distinguish_from_related": "Whataboutism answers with someone else's comparable conduct; deflection goes wherever the exit is. Blame-Shifting engages with the complaint by turning it into your fault, while deflection does not engage with it at all. Denial says no to the facts, but deflection says nothing about them."
+     }
+    },
+    {
+     "name": "Diverting",
+     "tier": "Detected",
+     "source_definition": "Derailing the topic to avoid engaging with the actual complaint.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Derailing the topic to avoid engaging with the actual complaint.",
+      "expanded_definition": "Derailing the topic to avoid engaging with the actual complaint. The issue never gets addressed, so it can never be repaired. As a communication pattern, Diverting-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: derailing the topic to avoid engaging with the actual complaint.",
+      "why_this_matters": "The issue never gets addressed, so it can never be repaired. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Derailing the topic to avoid engaging with the actual complaint.",
+       "The issue never gets addressed, so it can never be repaired.",
+       "Contrasts with a healthier version: \"This is hard to hear, but go ahead — I'm listening.\".",
+       "Recognizable by phrasing such as \"Why are you bringing this up now?\"."
+      ],
+      "what_it_sounds_like": [
+       "Why are you bringing this up now?",
+       "There you go, changing the subject to your feelings.",
+       "Here we go again.",
+       "Not this again.",
+       "You always have to start something.",
+       "Why do you always bring this up."
+      ],
+      "what_it_is_not": [
+       "Fatigue with a recurring argument is human; \"here we go again\" can be exhaustion, not strategy."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely urgent, unrelated issues sometimes do need to be addressed first.",
+       "Honest confusion about timing can produce a real clarifying question rather than deflection."
+      ],
+      "common_false_positives": [
+       "Genuine need to address something more urgent first before returning to the original topic.",
+       "A person who misunderstood the timing and asked a real, non-deflecting clarifying question.",
+       "A conversation that naturally broadens, with the original concern still eventually addressed."
+      ],
+      "discernment_questions": [
+       "Does the conversation eventually return to and resolve the original complaint?",
+       "Is the redirect proportionate, or does it happen every time this topic comes up?",
+       "Does the question about timing get asked in good faith, or used to avoid the substance?",
+       "Would the same redirect happen regardless of what the actual complaint was?"
+      ],
+      "less_concerning_if": [
+       "The original complaint does eventually get addressed, even if the conversation took a detour first."
+      ],
+      "more_concerning_if": [
+       "The original complaint never gets addressed, and redirection happens reliably every time it's raised."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Rapid Topic Switching",
+     "tier": "Reference-only",
+     "source_definition": "Changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response.",
+     "approved_draft": {
+      "why_this_matters": "No concern stays open long enough to require a complete answer, so a conversation that covered everything resolves nothing.",
+      "what_it_is_not": "Busy conversations legitimately cover a lot of ground, and a fast-paced style can be energetic rather than evasive. Real time constraints often mean touching briefly on several things in a context where follow-up is genuinely expected later."
+     },
+     "existing_specific_text": {
+      "short_definition": "Changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response.",
+      "expanded_definition": "Changing subjects faster than the target can settle into any one of them, ensuring no single concern receives enough sustained attention to actually require a real, complete response. Unlike Deflection, which redirects away from one specific uncomfortable topic, this involves a more general, rapid churn across many topics that prevents any of them — comfortable or not — from being fully addressed.",
+      "plain_language_summary": "In plain terms: changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Changing subjects faster than the target can anchor, ensuring no single concern receives enough sustained attention to require a real response."
+      ],
+      "what_it_sounds_like": [
+       "A conversation moves through several unrelated topics in quick succession, none of which gets a complete resolution before the next begins.",
+       "Attempting to return to an earlier point is met with yet another new topic, rather than the conversation circling back.",
+       "The target leaves a conversation with a vague sense that several things were \"discussed\" but can't identify what was actually resolved."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Some conversations genuinely do need to cover a lot of ground quickly, especially under real time constraints. A naturally fast-paced or energetic communication style isn't automatically a tactic."
+      ],
+      "common_false_positives": [
+       "A genuinely busy or complex conversation that legitimately covers a lot of ground, with each topic getting reasonable attention.",
+       "A naturally fast-paced communication style that isn't strategically preventing resolution, just quick and energetic.",
+       "Time constraints that genuinely require covering multiple topics briefly, in a context where follow-up is expected later."
+      ],
+      "discernment_questions": [
+       "Does any topic in the conversation get a complete, satisfying resolution, or does everything stay perpetually unfinished?",
+       "Does attempting to return to an earlier point succeed, or does it consistently produce a new topic instead?",
+       "Is the pace proportionate to genuine time constraints, or does it seem designed to prevent depth on any one thing?",
+       "Looking back at the conversation, can you actually identify what, if anything, was resolved?"
+      ],
+      "less_concerning_if": [
+       "Topics do eventually get resolved, even if the conversation covers a lot of ground quickly."
+      ],
+      "more_concerning_if": [
+       "Nothing ever reaches resolution, and attempts to return to a topic reliably produce a new one instead."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    },
+    {
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+    },
+    {
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
+    },
+    {
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
+    },
+    {
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
+    },
+    {
+     "name": "Thought-Stopping Clichés",
+     "definition": "Stock phrases that shut down examination of a problem."
+    },
+    {
+     "name": "Ultimatums",
+     "definition": "Forcing a binary choice under threat of loss."
+    },
+    {
+     "name": "Urgency Manufacturing",
+     "definition": "Compressing time so the target can't think or consult."
+    },
+    {
+     "name": "False Dilemma",
+     "definition": "Presenting two options when more exist."
+    },
+    {
+     "name": "Sunk Cost Exploitation",
+     "definition": "Using past investment to block present exit."
+    },
+    {
+     "name": "Response-Time Policing",
+     "definition": "Treating reply latency as an offense requiring explanation."
+    },
+    {
+     "name": "Interrogation",
+     "definition": "Demanding justification as an entitlement, on command."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Minimization",
+   "category": "Accountability Evasion",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Minimization' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Minimization",
+    "Trivializing"
+   ],
+   "members": [
+    {
+     "name": "Minimization",
+     "tier": "Detected",
+     "source_definition": "Shrinking the harm so the reaction looks disproportionate.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Shrinking the harm so the reaction looks disproportionate.",
+      "expanded_definition": "Shrinking the harm so the reaction looks disproportionate. If nothing is ever a big deal, nothing ever has to change. As a communication pattern, Minimization-type behavior in the Accountability Evasion category tends to work by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: shrinking the harm so the reaction looks disproportionate.",
+      "why_this_matters": "If nothing is ever a big deal, nothing ever has to change. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Shrinking the harm so the reaction looks disproportionate.",
+       "If nothing is ever a big deal, nothing ever has to change.",
+       "Contrasts with a healthier version: \"I hear that this landed harder than I intended — walk me through it.\".",
+       "Recognizable by phrasing such as \"You're overreacting\"."
+      ],
+      "what_it_sounds_like": [
+       "You're overreacting.",
+       "It's really not that big a deal.",
+       "You're totally overreacting.",
+       "It's not that big of a deal.",
+       "You're blowing this way out of proportion.",
+       "It wasn't even that bad.",
+       "You'll get over it.",
+       "Making a mountain out of a molehill."
+      ],
+      "what_it_is_not": [
+       "Sometimes things genuinely aren't a big deal, and the speaker is offering (unwanted) perspective, not erasing harm."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Honest, if unwelcome, observations about proportionality can be a genuine perspective, not dismissal.",
+       "People do sometimes see the same event's significance differently without either being wrong."
+      ],
+      "common_false_positives": [
+       "A genuinely proportionate observation that a reaction seems bigger than the situation, raised with real curiosity about why, not to shut it down.",
+       "A person's honest, different perspective on how significant something was, expressed without demanding the target's feelings change.",
+       "An accurate, if unwelcome, observation that something really was a minor, one-time issue."
+      ],
+      "discernment_questions": [
+       "Does the framing invite understanding of why it mattered, or shut down further discussion?",
+       "Is this a pattern of consistently downplaying the same kind of concern, or a single, honest perspective difference?",
+       "Does the person's assessment update once they understand more about why it mattered?",
+       "Would a neutral observer see the original reaction as proportionate to what happened?"
+      ],
+      "less_concerning_if": [
+       "The observation invites understanding and the person's assessment updates once they learn more."
+      ],
+      "more_concerning_if": [
+       "Downplaying the concern is a consistent pattern that doesn't update even with more context, and shuts down discussion."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Shrinking how serious something was so that your reaction looks too big for what actually happened.",
+      "core_meaning": "Shrinking how serious something was so that your reaction looks too big for what actually happened.",
+      "expanded_definition": "Minimization accepts that something happened but makes it small. It was a joke, it was nothing, it was ages ago. The effect is to move the problem from the event to your response. Honest differences about how serious something was are normal, and a calm 'I think this is smaller than you do' is part of ordinary disagreement. The pattern shows when the downplaying is aimed at the same kinds of concerns every time and does not change when you explain why it mattered.",
+      "plain_language_summary": "Someone agrees it happened but insists it was tiny, so that being upset about it seems like the real problem.",
+      "why_this_matters": "If the size of the problem is always reduced, you may start to doubt your own sense of what is serious. Real harms can go unaddressed because raising them feels like making a fuss.",
+      "what_it_is": [
+       "Agreeing that an event took place while rating its importance far below how you rate it.",
+       "It turns a conversation about the act into a conversation about whether you are reacting too strongly.",
+       "It often borrows words that sound reasonable, such as 'perspective', 'drama' and 'moving on'.",
+       "It can be said kindly, even affectionately, which makes it harder to object to."
+      ],
+      "what_it_sounds_like": [
+       "You're overreacting.",
+       "It's really not that big a deal.",
+       "It was just a joke.",
+       "You're blowing this way out of proportion.",
+       "It wasn't even that bad.",
+       "You'll get over it.",
+       "Honestly, other people have it much worse.",
+       "Why are you making a mountain out of a molehill?"
+      ],
+      "what_it_is_not": [
+       "A friend with a calmer view saying so and then asking why it hit you hard.",
+       "An accurate remark that something really was a small, one-time slip that has already been fixed.",
+       "Reassurance offered to someone who is spiraling, such as 'this is fixable', which supports them instead of dismissing the matter.",
+       "Different thresholds: people differ in what they find upsetting, and neither view is a fault.",
+       "A person who changes their view once they hear the reasons behind your reaction."
+      ],
+      "this_may_be_it_when": [
+       "The same sort of concern is brought down to size each time you raise it.",
+       "Your feelings, and not the event, become the subject of the conversation.",
+       "Explaining why it mattered does not change their response.",
+       "You are told how big your reaction should be.",
+       "Mentioning that others have it worse is used to close the topic."
+      ],
+      "this_may_not_be_it_when": [
+       "They ask what made it matter so much and adjust once they hear the answer.",
+       "The size of the issue really is small and you partly agree on reflection.",
+       "They treat other people's concerns the same way, so it is a style and not aimed at you.",
+       "They take the concern seriously in action, for example by changing their behavior, even if they find it small.",
+       "The downplaying comes from a person who is trying to calm a situation."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Some people cope with stress by making light of it and would do the same about their own problems.",
+       "A person who was told as a child that feelings are an overreaction may repeat this without thinking.",
+       "They may honestly rate the event as small because it would not have hurt them, and not know it hurt you.",
+       "Humor is sometimes a way of showing care, and the joke may have been a clumsy attempt at comfort."
+      ],
+      "common_false_positives": [
+       "A doctor who says a lump is very likely harmless and explains why, in a calm and evidence-based way.",
+       "A friend who tells you a typo in an email is not worth losing sleep over, when it is truly minor.",
+       "A partner who says 'I think we are both tired and this is smaller than it feels' and then helps sort it out."
+      ],
+      "discernment_questions": [
+       "Do they explain why it is small, or only tell me it is?",
+       "Is my reaction in proportion to what I would say to a friend in my place?",
+       "Does this response come up for the same kinds of concern again and again?",
+       "Does their view change when I describe the effect on me?",
+       "Is there something I am not yet saying about why this mattered, which could help them understand?"
+      ],
+      "less_concerning_if": [
+       "They shift once they know how the event affected you.",
+       "They tend to treat their own troubles with the same light touch.",
+       "They back up their view with a reason and not just a verdict on your mood."
+      ],
+      "more_concerning_if": [
+       "The thing being called small involves injury, money, safety, or something you asked them not to do.",
+       "You have started to apologize for being upset about real events.",
+       "They describe your concerns as small to other people, so that you are seen as someone who exaggerates."
+      ],
+      "pattern_over_time_signs": [
+       "You find yourself choosing carefully which problems are worth mentioning, and dropping most of them.",
+       "Things that once upset you have started to seem like nothing, which bothers you.",
+       "You hear yourself using their words about your own feelings.",
+       "Friends say you seem to excuse things you used to find unacceptable."
+      ],
+      "repair_check": "Repair would be them taking the effect seriously even if they still rate the event as small, something like 'I did not see it that way, and I can see it hurt you.' A grudging 'fine, sorry you are upset' keeps the original rating in place and the concern still shrunk.",
+      "boundary_respect_check": "Notice what follows when you say the size of this is yours to judge. Do they stop and listen, or do you hear 'see, you are overreacting right now'? The second answer turns your boundary into one more example of the thing you were describing.",
+      "psychological_mechanism": "People calibrate their sense of what counts as serious partly from the reactions around them. Repeated reassurance that something is nothing can lead a person to check their feelings against the other person's rating, so the concern starts to feel like an error in themselves.",
+      "possible_impact_on_receiver": "People describe doubting their sense of proportion, feeling embarrassed about being upset, and gradually saying less about what bothers them. Some start to see themselves as the sensitive one, and may stop mentioning things that were truly serious.",
+      "response_options": {
+       "soft_clarification": "Give them a reason to adjust their rating: 'It may seem small to you. Here is why it was big for me.' Then see whether they listen.",
+       "firm_boundary": "Take the sizing out of their hands: 'You are welcome to a different opinion, but I decide how big this is for me.'",
+       "disengagement": "When the reply is only 'it is nothing', stop explaining. You do not need their agreement to treat your own concern as real.",
+       "support_seeking": "Ask someone you trust whether your reaction sounds in proportion. If they say yes, you have a second opinion that does not depend on this person.",
+       "workplace_or_professional": "If a safety or fairness issue is called trivial at work, write it up with dates and facts and send it to the person responsible, so the size is assessed on the record."
+      },
+      "boundary_script": "\"You may see this as small, and that is fine. For me it was not, and I need that to be taken seriously. I do not need you to feel the same way, only to stop telling me I am overreacting.\"",
+      "safety_sensitive": false,
+      "safety_note": "Downplaying is not a danger sign by itself. It matters more when what is being called small is injury, threats, control over money, or fear for your safety. In those cases, trust your own reading over theirs and talk to a trusted person, a doctor or a domestic abuse advocate.",
+      "misuse_warning": [
+       "A friend who honestly thinks you are worrying too much can sound like this. Labeling every reassurance as minimization can push away people who are trying to help.",
+       "Using the word to insist that your own rating of an event is the only correct one ends honest discussion of how serious it was."
+      ],
+      "how_to_distinguish_from_related": "Denial says it did not happen. Minimization says it did, and was nothing. Tone Policing leaves the size alone and objects to how you said it. Blame-Shifting accepts the event and its size but puts the cause on you. Minimization is the one that concedes the event and shrinks it."
+     }
+    },
+    {
+     "name": "Trivializing",
+     "tier": "Detected",
+     "source_definition": "Framing the other person's reaction as excessive or silly.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Framing the other person's reaction as excessive or silly.",
+      "expanded_definition": "Framing the other person's reaction as excessive or silly. Teaches the target their feelings are defective and not worth raising. As a communication pattern, Trivializing-type behavior in the Reality Distortion category tends to work by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: framing the other person's reaction as excessive or silly.",
+      "why_this_matters": "Teaches the target their feelings are defective and not worth raising. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Framing the other person's reaction as excessive or silly.",
+       "Teaches the target their feelings are defective and not worth raising.",
+       "Contrasts with a healthier version: \"I didn't realize this hit you that hard — tell me more.\".",
+       "Recognizable by phrasing such as \"You're way too sensitive\"."
+      ],
+      "what_it_sounds_like": [
+       "You're way too sensitive.",
+       "You can't take a joke.",
+       "You're oversensitive.",
+       "You're being dramatic.",
+       "Stop being so dramatic.",
+       "Why are you so upset over nothing.",
+       "Your feelings are silly.",
+       "Relax, it's nothing."
+      ],
+      "what_it_is_not": [
+       "Occasionally people do overreact, and saying so once, gently, can be honest feedback."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine differences in what feels like a big deal exist between people without either being wrong.",
+       "Honest ignorance about impact, corrected once clarified, is normal."
+      ],
+      "common_false_positives": [
+       "A single, honest observation that a reaction seems disproportionate, raised with genuine curiosity rather than dismissal.",
+       "A person's own different threshold for what feels like a big deal, expressed without demanding the target's reaction change.",
+       "Real ignorance about how much something mattered, corrected once it's clarified."
+      ],
+      "discernment_questions": [
+       "Does the framing invite the target to explain more, or shut the conversation down?",
+       "Is this a one-time observation, or a pattern of consistently minimizing the target's reactions?",
+       "Does the person's understanding update once the target explains why it mattered, or stay dismissive?",
+       "Would a neutral observer see the target's original reaction as genuinely disproportionate, or reasonable?"
+      ],
+      "less_concerning_if": [
+       "The observation invites explanation and the person's understanding updates once they hear more."
+      ],
+      "more_concerning_if": [
+       "Minimizing reactions is a consistent pattern that doesn't update even after the target explains why something mattered."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Tone Policing",
+     "definition": "Making the delivery the issue so the content never gets heard."
+    },
+    {
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+    },
+    {
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
+    },
+    {
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
+    },
+    {
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
+    },
+    {
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
+    },
+    {
+     "name": "Thought-Stopping Clichés",
+     "definition": "Stock phrases that shut down examination of a problem."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Victim Role Reversal",
+   "category": "Accountability Evasion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Victim Role Reversal' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Victim Role Reversal",
+    "Role Reversal Traps"
+   ],
+   "members": [
+    {
+     "name": "Victim Role Reversal",
+     "tier": "Reference-only",
+     "source_definition": "Recasting the person who caused harm as the one who is suffering, so sympathy flows away from the actual target.",
+     "approved_draft": {
+      "why_this_matters": "Sympathy that would have gone to the person harmed goes elsewhere, and onlookers form an impression of the situation that is very hard to correct later.",
+      "what_it_is_not": "Mutual harm is real, and two people can both have legitimate claims to being affected. Someone visibly wrestling with guilt is not necessarily redirecting anything. A person may also be genuinely going through something difficult that has nothing to do with the harm under discussion."
+     },
+     "existing_specific_text": {
+      "short_definition": "Recasting the person who caused harm as the one who is suffering, so sympathy flows away from the actual target.",
+      "expanded_definition": "Recasting the person who caused harm as the one who is suffering, so sympathy flows away from the actual target. The mechanism is specifically sympathy redirection — the person responsible for the harm positions themselves as the injured party, which can shift how both the target and any onlookers interpret the situation.",
+      "plain_language_summary": "In plain terms: recasting the person who caused harm as the one who is suffering, so sympathy flows away from the actual target.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Recasting the person who caused harm as the one who is suffering, so sympathy flows away from the actual target."
+      ],
+      "what_it_sounds_like": [
+       "\"I'm the real victim here\" stated by the person who caused the harm, in response to being confronted.",
+       "Onlookers begin expressing sympathy for the person who caused harm, based on their account of suffering.",
+       "A pattern where any accountability conversation ends with the person who caused harm positioned as more wronged than the actual target."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "People can be legitimately affected by a conflict in ways that aren't strategic victim-claiming. Real guilt and shame can look self-focused without being manipulative."
+      ],
+      "common_false_positives": [
+       "A situation with real, mutual harm where both people have legitimate claims to being affected.",
+       "Someone processing genuine guilt or shame in a way that looks like self-focus but isn't strategic.",
+       "A person who is, in some real and separate way, also going through something difficult, unrelated to the specific harm being discussed."
+      ],
+      "discernment_questions": [
+       "Does the sympathy redirect specifically and reliably happen when the person is being held accountable?",
+       "Is there a real, separate basis for the person's claimed suffering, or does it appear only in response to confrontation?",
+       "Does the original harm get addressed at all, or does it get fully replaced by the counter-narrative?",
+       "Would an outside observer, hearing both accounts, still see the original target as the one who was harmed?"
+      ],
+      "less_concerning_if": [
+       "There's a genuine, separately-verifiable basis for both people's distress, and the original harm still gets acknowledged."
+      ],
+      "more_concerning_if": [
+       "The claimed suffering appears specifically and only in response to being held accountable, and the original harm disappears from the conversation entirely."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ],
+      "how_to_distinguish_from_related": "The specific mechanism here is sympathy redirection: the person who caused harm positions themselves as the one who is suffering, so sympathy flows toward them instead of the actual target. This differs from the broader Role Reversal Traps pattern (which just describes the harmed person ending up apologizing, by whatever means) and from Role Reversal via Therapy Language, which achieves a similar flip through clinical-sounding vocabulary rather than through claiming victimhood."
+     },
+     "previously_written_entry": {
+      "short_definition": "Presenting oneself as the injured party when asked to answer for harm, so that sympathy moves away from the person who was actually hurt.",
+      "expanded_definition": "Victim role reversal happens when a person who is being asked to account for a harm answers by describing their own suffering, and onlookers or the other person start comforting them. The hurt they describe may be real. The pattern is in the effect: the conversation about what was done to you becomes a conversation about how awful this is for them. One tearful reaction proves little. Repetition is what matters: sympathy swings toward them each time accountability comes up.",
+      "plain_language_summary": "After hurting you, they become the one who is hurt, and everyone, maybe even you, starts looking after them while what happened to you drops out of the room.",
+      "why_this_matters": "Sympathy that should have gone to the person harmed goes elsewhere. Onlookers form an impression of the situation that is very hard to correct later, and the person harmed may start doubting whether they have the right to be upset.",
+      "what_it_is": [
+       "A swap in who is treated as wounded, usually after someone is told how their behavior landed.",
+       "Often delivered to an audience such as family, a friend group, a team or a congregation, not just to the person harmed.",
+       "The distress may be sincere. What defines the pattern is that it takes over the space where the other person's injury should be heard.",
+       "Tends to produce a trade: the person harmed ends up reassuring, defending themselves, or going quiet to avoid causing more pain."
+      ],
+      "what_it_sounds_like": [
+       "\"After everything I've done, this is how I'm treated? I'm the one who's been hurt here.\"",
+       "\"I can't believe you'd say that to me. I've been crying all day.\"",
+       "\"I'm the one everyone piles onto. Nobody ever asks how I'm doing.\"",
+       "A mutual friend saying, \"I just don't think you realize how much you've hurt them.\" (about the person who raised the complaint)",
+       "\"I guess I'm just a terrible person, then. Is that what you want me to say?\"",
+       "Tearful silence and withdrawal as soon as the complaint is named, followed by you finding yourself apologizing."
+      ],
+      "what_it_is_not": [
+       "Two people who were both hurt in the same conflict, each with a fair claim to be heard.",
+       "Someone overcome by guilt who cries or goes quiet but still hears you out and acknowledges what they did.",
+       "A person who is also going through something painful and separate, such as a loss, an illness or a job crisis, and says so without using it to close the topic.",
+       "A tearful reaction to being confronted, which is common and does not by itself show a pattern.",
+       "A fair reply that says 'that hurt me too' and then keeps listening."
+      ],
+      "this_may_be_it_when": [
+       "The claim of being hurt appears right when responsibility is raised and not at other times.",
+       "Others start comforting them and your account gets less airtime each time it is told.",
+       "You end up reassuring them about the very thing you came to talk about.",
+       "The harm done to you is never restated by them, even in summary.",
+       "Over several incidents, the conversation ends with them as the most wronged person present."
+      ],
+      "this_may_not_be_it_when": [
+       "They stay with your account first and talk about their own pain afterward.",
+       "Their distress existed before the conversation and has an independent source you can see.",
+       "Both of you leave feeling heard, even if neither fully won.",
+       "They can say, in their own words, what happened to you, and the sympathy for you is plain.",
+       "The tears or withdrawal were brief and the discussion then went on."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Many people feel real shame on hearing they hurt someone, and it can look like self-focus.",
+       "A conflict can have two injured parties, and some of what sounds like reversal is each person naming their own hurt.",
+       "A person who is already struggling may have little left to cope with criticism and may respond with visible despair.",
+       "Some people were taught to show distress as a way to ask for calm."
+      ],
+      "common_false_positives": [
+       "A friend who says 'I feel awful about this' and then asks what they can do to make it right.",
+       "A partner who is also hurt by a shared argument, and says so after hearing you.",
+       "A relative in grief who snaps at you and later apologizes."
+      ],
+      "discernment_questions": [
+       "After the conversation, whose pain was discussed the most, and whose was dropped?",
+       "Does the hurt they describe appear only when I raise something that asks them to answer?",
+       "Have other people started taking their side based on how they tell it, without hearing mine?",
+       "Can they, at any point, say back what happened to me?",
+       "Do I now apologize or comfort first, before I have said what I came to say?"
+      ],
+      "less_concerning_if": [
+       "Their feelings were voiced after yours were acknowledged.",
+       "You still came away with your original concern on the table and a plan for it.",
+       "This happened once during a very hard week and has not repeated."
+      ],
+      "more_concerning_if": [
+       "Other people now treat the person harmed as the aggressor, based on what they were told.",
+       "The pattern repeats on every topic where accountability could be asked for.",
+       "The person harmed has stopped raising concerns at all because it always costs them the relationship."
+      ],
+      "pattern_over_time_signs": [
+       "Your complaints now come with a mental note: how will this make them cry, and what will it cost me?",
+       "People close to you have formed a picture of you as the harsh one, though you rarely raise things.",
+       "Over months, a long list of things you stopped mentioning to avoid hurting them.",
+       "You find yourself explaining to others that you were not attacking, before they have said anything."
+      ],
+      "repair_check": "Genuine repair starts with the original harm being named by them, in specific terms, before their own distress is brought in, and with the person harmed no longer asked to carry their feelings. Warm words about how sorry they are that you are upset do not do this.",
+      "boundary_respect_check": "Ask yourself whether, once you said you needed to finish your point, you were allowed to. Notice if their sadness deepens until you stop, or if they can sit with discomfort while you speak. The first leaves your point unheard; the second does not.",
+      "psychological_mechanism": "Most people are quick to comfort someone who is visibly distressed, and slow to keep pressing a point while they do. When a person shows suffering at the moment of accountability, that habit can pull attention away from the harm. Onlookers who only hear the distressed version tend to settle on it, and a person who was harmed may feel guilty for causing visible pain.",
+      "possible_impact_on_receiver": "Accounts often mention guilt at having 'made them cry', hesitation to bring anything up again, and anger or confusion at being cast as the aggressor. Some recall ending up the soother, others the one whose version nobody asked for. Over time a few pull back from friends or family who only heard one side.",
+      "response_options": {
+       "soft_clarification": "Acknowledge the pain and keep your point: 'I can see this is really hard for you. I still need to finish telling you what happened to me.'",
+       "firm_boundary": "Decline the comforting role for now: 'I care that you're hurting, but I can't look after you in this conversation. I need us to talk about what happened.'",
+       "disengagement": "If the tears or accusations take over, pause: 'Let's stop for today and come back to this tomorrow, when we've both slept.'",
+       "support_seeking": "Tell your account to someone before the other version spreads, and ask them to hear the whole thing before saying anything about the other person.",
+       "workplace_or_professional": "At work, write down what happened with dates before meeting a manager or HR, and ask for a process that lets both accounts be recorded separately."
+      },
+      "boundary_script": "\"I'm sorry you're hurting, and I want to hear about it later. Right now I need you to hear what happened from my side first. After that, I will listen as long as you need.\"",
+      "safety_sensitive": false,
+      "safety_note": "This pattern alone is not a physical-safety concern. It changes when the person who is 'hurt' also threatens self-harm if you leave, spreads the story to cut you off from friends, or uses it to shape custody or workplace decisions. Then keep a dated record of what was said and who heard it, and talk to a counselor or legal aid service before responding.",
+      "misuse_warning": [
+       "Calling every upset reaction 'victim reversal' can make you deaf to someone who really is hurt, including in a conflict where both of you hurt each other.",
+       "Saying it to a person in tears, in the middle of the argument, tends to turn a description into an accusation."
+      ],
+      "how_to_distinguish_from_related": "DARVO runs a whole sequence: deny, attack, then claim to be the victim. Victim role reversal is only the last move, with no denial or attack needed. Blame-Shifting points at you as the cause and does not need any claim of being hurt. Minimization shrinks what happened to you, while this one swaps whose pain is the subject. The test is whose hurt is left standing when the conversation ends.",
+      "core_meaning": "Presenting oneself as the injured party when asked to answer for harm, so that sympathy moves away from the person who was actually hurt."
+     }
+    },
+    {
+     "name": "Role Reversal Traps",
+     "tier": "Reference-only",
+     "source_definition": "Flipping the dynamic so the person who caused harm is comforted while the person who was harmed ends up apologizing.",
+     "approved_draft": {
+      "why_this_matters": "The person who was harmed ends up doing the comforting and then the apologising, so accountability finishes further from the harm than where it started.",
+      "what_it_is_not": "Genuine remorse often includes real distress, and someone overwhelmed by their own mistake may need a moment without expecting to be looked after. Mutual reassurance is a normal part of repair between two people who were both affected."
+     },
+     "existing_specific_text": {
+      "short_definition": "Flipping the dynamic so the person who caused harm is comforted while the person who was harmed ends up apologizing.",
+      "expanded_definition": "Flipping the dynamic so the person who caused harm is comforted while the person who was harmed ends up apologizing. This is the umbrella pattern for a family of related reversals — the specific mechanism (sympathy redirection, borrowed therapy language, or something else) can vary, but the structural result is the same: accountability flows away from where the harm originated.",
+      "plain_language_summary": "In plain terms: flipping the dynamic so the person who caused harm is comforted while the person who was harmed ends up apologizing.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Flipping the dynamic so the person who caused harm is comforted while the person who was harmed ends up apologizing."
+      ],
+      "what_it_sounds_like": [
+       "After causing visible harm, the person becomes the one who needs comforting, and the target ends up reassuring them.",
+       "\"Do you know how hard this is for me?\" said by the person who caused the harm, redirecting focus to their own experience.",
+       "The target apologizes for how they reacted to being harmed, rather than the original harm being addressed."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine remorse can include real distress without that being manipulation. Repair sometimes involves some mutual reassurance, which isn't automatically a reversal."
+      ],
+      "common_false_positives": [
+       "Genuine remorse that includes real emotional distress, without demanding the target manage it.",
+       "A person who's overwhelmed by their own mistake and needs a moment, without expecting the target to provide comfort.",
+       "Both people genuinely affected by a conflict, where some mutual reassurance is a normal part of repair."
+      ],
+      "discernment_questions": [
+       "Does the person who caused harm end up being comforted, while the original harm goes unaddressed?",
+       "Does the target find themselves apologizing for their reaction rather than the original issue being resolved?",
+       "Is remorse expressed in a way that requires the target's emotional labor to manage it?",
+       "Does this pattern recur across different incidents, or was this a one-time overwhelmed reaction?"
+      ],
+      "less_concerning_if": [
+       "Remorse is expressed without requiring the target to manage or comfort it, and the original harm still gets addressed."
+      ],
+      "more_concerning_if": [
+       "The pattern recurs — harm causes comfort-seeking rather than accountability, every time."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by redirecting attention away from the behavior in question, so the conversation ends without the original concern ever being addressed. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a recurring sense that concerns never actually get addressed, and exhaustion from re-raising the same issue in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ],
+      "how_to_distinguish_from_related": "This is the umbrella pattern — the dynamic flips so the person who caused harm ends up comforted while the person who was harmed ends up apologizing. Victim Role Reversal is a specific version where the mechanism is sympathy-redirection: the person who caused harm is recast as the one suffering, so onlookers' sympathy moves toward them. Role Reversal via Therapy Language is a different specific version where the mechanism is borrowed clinical credibility — words like \"boundary\" or \"trauma response\" are used to relabel the target's self-protective reaction as the actual problem."
+     },
+     "previously_written_entry": {
+      "short_definition": "A pattern where the person who caused harm ends up comforted and the person who was harmed ends up apologizing or soothing.",
+      "expanded_definition": "Role reversal traps are situations that start with one person harmed and end with that person doing the emotional work: reassuring, explaining themselves, saying sorry. It is a broad family. It can come through tears, blame, a speech about how hard things are, or an appeal to a group. One tangled conversation is not the pattern. The pattern is the harm never getting answered while the harmed person reliably ends up looking after the other.",
+      "plain_language_summary": "You come to talk about something that hurt you, and you leave having comforted them or apologized to them, while the thing that hurt you never got an answer.",
+      "why_this_matters": "The person who was harmed ends up doing the comforting and then the apologizing, so accountability finishes further from the harm than where it started. Over time, they may stop raising concerns at all.",
+      "what_it_is": [
+       "A general shape, not one script. The ending is the same: the harmed person ends up caring for the other.",
+       "Can be made of several smaller moves, such as tears, blame, a plea for patience or a reference to the person's own history.",
+       "Found in family conflicts, friendships, romantic relationships and group settings, wherever one person's feelings come to outrank the issue.",
+       "Often unplanned on the surface. What matters is the repeated outcome, not any single sentence."
+      ],
+      "what_it_sounds_like": [
+       "\"Do you have any idea how hard this has been for me?\" (after you raised what they did)",
+       "\"I can't handle this right now. I need you to be supportive.\"",
+       "You: \"I'm sorry I brought it up.\" (a few minutes after you were the one who was wronged)",
+       "\"You've made me feel like a terrible person. Are you happy?\"",
+       "\"I guess I should just disappear, then.\"",
+       "A hug and \"it's fine, let's not fight\" that you find yourself offering to them."
+      ],
+      "what_it_is_not": [
+       "Real remorse, which can include tears and a need for a moment, without requiring you to manage it.",
+       "Mutual reassurance after a conflict where both people were hurt, which is a normal part of making up.",
+       "A person who is overwhelmed, steps away briefly and returns to deal with what happened.",
+       "A caring partner who comforts you and also takes responsibility.",
+       "Someone who brings up their own struggles in a separate conversation and not as a reply to yours."
+      ],
+      "this_may_be_it_when": [
+       "You leave a conversation having comforted them, with your concern unaddressed.",
+       "You apologize for how you raised something and not for anything you did.",
+       "The same thing happens when you bring up different topics.",
+       "Their feelings have to be dealt with before yours can be mentioned, and that moment never comes.",
+       "You hold back from raising things because you can predict who will end up consoled."
+      ],
+      "this_may_not_be_it_when": [
+       "After your concern is heard, comfort goes in both directions.",
+       "They come back to the issue after calming down, without being asked.",
+       "You leave feeling your concern was heard, even if no solution was reached.",
+       "The conversation was a one-off where both of you were exhausted.",
+       "They take responsibility for the harm in specific terms."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "People who feel guilty can be so overwhelmed that they cannot hold your needs in mind for a while.",
+       "Some people were raised in homes where upset meant someone had to be soothed, and repeat that without thinking.",
+       "A repair conversation often involves both people needing comfort at once.",
+       "A person who is suffering for unrelated reasons may lean on the nearest person."
+      ],
+      "common_false_positives": [
+       "A friend who cries when told they hurt you, and then asks how to make it right.",
+       "A couple where each comforts the other after a hard argument and still resolves it.",
+       "A parent who apologizes to an adult child and needs a minute to collect themselves."
+      ],
+      "discernment_questions": [
+       "At the end of the conversation, who had been comforted, and who had been heard?",
+       "Did the original harm get dealt with at any point?",
+       "Do I find myself apologizing for how I reacted instead of what happened?",
+       "Is this a one-time overwhelmed moment, or does it happen across many incidents?",
+       "Is remorse shown in a way I'm expected to manage?"
+      ],
+      "less_concerning_if": [
+       "The original issue is named and addressed, and comfort goes both ways.",
+       "Their upset is brief, and they return to the topic on their own.",
+       "The conversation ended with a concrete change, not only a feeling."
+      ],
+      "more_concerning_if": [
+       "The same ending repeats over many separate incidents.",
+       "You are now afraid to start difficult conversations at all.",
+       "Other people have begun to see you as the harm, because they only saw the ending."
+      ],
+      "pattern_over_time_signs": [
+       "A growing list of unresolved concerns you stopped raising.",
+       "You keep a mental count of how many times you were the one who apologized.",
+       "People who know you well notice you apologize more than you used to.",
+       "Your own hurt feels harder to name over time, because it has rarely been the subject."
+      ],
+      "repair_check": "Look for the harm being named first, by them, followed by a change you can see in the next incident. A scene where both of you feel better but nothing is different, or where you ended up reassuring them, only resembles repair.",
+      "boundary_respect_check": "Ask yourself whether you were able to finish what you came to say. Notice what happens when you state that you need to be heard first: do they wait, or does the focus move back to their feelings within minutes?",
+      "psychological_mechanism": "Many people feel an urge to look after someone who is upset, and that urge can be stronger than the wish to be heard. When a conversation about harm turns into one about the other person's distress, the one who was hurt often takes up caretaking without noticing. The sequence can also leave them feeling that raising concerns causes pain, which makes silence feel kind.",
+      "possible_impact_on_receiver": "Leaving talks oddly guilty and unresolved is a common account, along with apologizing for things not done and slowly keeping one's own needs private. Some come to see themselves as too much, too harsh or too demanding. Others report it took years to notice that nobody had ever answered a single thing they raised.",
+      "response_options": {
+       "soft_clarification": "Check the direction of the conversation aloud: 'I think we've moved to how hard this is for you. Can we go back to what I raised?'",
+       "firm_boundary": "Say you will not trade places: 'I'm willing to hear how you feel afterward. First I need an answer to what I raised.'",
+       "disengagement": "If the comforting begins, pause the talk: 'I'm going to stop here, and we can pick this up when neither of us is in the middle of it.'",
+       "support_seeking": "Tell a friend what you went to say and what you ended up doing, and ask them if that is how it seemed to them too.",
+       "workplace_or_professional": "Keep the written record of your concern separate from any feelings in the meeting, and follow up by email with what you raised and what was agreed."
+      },
+      "boundary_script": "\"I can see this is upsetting for you, and I do care. But I came with something that hurt me, and I'm not ready to move on from it yet. Can we finish that part first?\"",
+      "safety_sensitive": false,
+      "safety_note": "This pattern alone is not a physical danger. It changes if the comforting demanded includes threats of self-harm, or if the other person controls your home, money or contact with children. In that case do not manage it alone. Contact a crisis line for the self-harm statements, and a domestic abuse advocate or legal aid service about the housing, money or children.",
+      "misuse_warning": [
+       "Applying this label to every person who cries when confronted can make it hard for anyone to show real remorse.",
+       "Using it to refuse all reassurance, even when both people need it, can turn repair into a contest."
+      ],
+      "how_to_distinguish_from_related": "DARVO is a fixed sequence of denial, attack and claiming victimhood. Role reversal traps only describe where the conversation ends up, which can be reached without any denial. Regret aimed at your reaction instead of their act is a different move, and Blame-Shifting makes you the cause of the act. This is the wider outcome: comfort and apology flow toward the one who caused harm.",
+      "core_meaning": "A pattern where the person who caused harm ends up comforted and the person who was harmed ends up apologizing or soothing."
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "DARVO",
+     "definition": "Deny, Attack, Reverse Victim and Offender — flipping the accusation."
+    },
+    {
+     "name": "Blame-Shifting",
+     "definition": "Relocating responsibility for one's actions onto the target."
+    },
+    {
+     "name": "Whataboutism",
+     "definition": "Answering an accusation with a counter-accusation."
+    },
+    {
+     "name": "Non-Apology Apology",
+     "definition": "An apology for your reaction instead of their action."
+    },
+    {
+     "name": "Denial",
+     "definition": "Blanket refusal of any wrongdoing."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Breadcrumbing",
+   "category": "Attachment & Affection Control",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Breadcrumbing' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Breadcrumbing",
+    "Benching"
+   ],
+   "members": [
+    {
+     "name": "Breadcrumbing",
+     "tier": "Pattern-only",
+     "source_definition": "Minimal, sporadic attention — just enough contact to keep someone available and hoping, with no intention of real investment.",
+     "approved_draft": {
+      "why_this_matters": "The target stays available for a relationship that never arrives, holding a place open on the strength of contact that costs almost nothing to send."
+     },
+     "existing_specific_text": {
+      "short_definition": "Minimal, sporadic attention — just enough contact to keep someone available and hoping, with no intention of real investment.",
+      "expanded_definition": "Minimal, sporadic attention — just enough contact to keep someone available and hoping, with no intention of real investment. (Absorbs 'Benching': keeping someone on the roster with periodic pings.). As a communication pattern, Breadcrumbing-type behavior in the Attachment & Affection Control category tends to work by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable — describing a pattern in the exchange, not a fixed trait in the person. This entry also covers what earlier lists called: Benching — combined here as one entry since they describe the same underlying pattern. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+      "plain_language_summary": "In plain terms: minimal, sporadic attention — just enough contact to keep someone available and hoping, with no intention of real investment. (Absorbs 'Benching': keeping someone on the roster with periodic pings.).",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to anxiety about the relationship's stability and a tendency to over-invest in restoring approval. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Minimal, sporadic attention — just enough contact to keep someone available and hoping, with no intention of real investment. (Absorbs 'Benching': keeping someone on the roster with periodic pings.).",
+       "Recognizable by phrasing such as \"Occasional low-effort messages ('hey stranger', a like, an emoji) after long silence, never converting to plans\".",
+       "Also covers the related, previously separate entries: Benching."
+      ],
+      "what_it_sounds_like": [
+       "Occasional low-effort messages ('hey stranger', a like, an emoji) after long silence, never converting to plans.",
+       "Warmth spikes whenever the target seems to be moving on.",
+       "Message 1: warmth or normal conversation. Later: a shift matching 'minimal, sporadic attention — just enough contact to keep so'. Later still: a return to warmth, and the cycle repeats."
+      ],
+      "what_it_is_not": [
+       "Busy people drift and ping sporadically without strategy — the flag is a stable pattern where contact exists only to prevent detachment, never to build anything."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely busy people can build toward something real slowly, without deception.",
+       "Honest, mutual casualness that both people accept isn't breadcrumbing."
+      ],
+      "common_false_positives": [
+       "Genuine, if slow-developing, interest from someone who's honestly busy but still building toward something real.",
+       "A person clearly communicating they only have capacity for light, low-commitment contact right now, honestly.",
+       "Natural, mutual, low-intensity contact between people who both understand and accept it's casual."
+      ],
+      "discernment_questions": [
+       "Does contact ever progress toward plans or deeper commitment, or does it stay perpetually minimal?",
+       "Is the low-effort pattern honestly acknowledged, or does it come with implied promises of more?",
+       "Does asking directly about the relationship's direction get an honest answer?",
+       "Would the target's expectations, if voiced, be met with genuine engagement or vague deflection?"
+      ],
+      "less_concerning_if": [
+       "The low-effort contact is honestly acknowledged as casual, without implying more is coming."
+      ],
+      "more_concerning_if": [
+       "Contact stays perpetually minimal while implying more, never progressing despite the target's interest."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by making warmth or closeness conditional, so the relationship itself becomes something to be earned back rather than something stable. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe anxiety about the relationship's stability and a tendency to over-invest in restoring approval in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Sending just enough sporadic attention to keep someone hopeful and available, while the contact never turns into real plans or commitment.",
+      "core_meaning": "Sending just enough sporadic attention to keep someone hopeful and available, while the contact never turns into real plans or commitment.",
+      "expanded_definition": "Breadcrumbing is small, low-cost contact that keeps a person interested without ever moving forward: a like, a 'thinking of you', a message after weeks of silence. Anyone can be a poor texter, so one slow stretch proves nothing. What marks it is contact that arrives in thin bursts, never becomes a plan, and tends to appear just as you drift away. 'Benching' is the version where someone is kept in reserve.",
+      "plain_language_summary": "Someone gives you tiny scraps of attention now and then, enough to keep you hoping, but the contact never becomes a date, a plan, or a real relationship.",
+      "why_this_matters": "You may hold a place open for a relationship that never arrives, on the strength of contact that costs almost nothing to send. Time, other opportunities and your sense of what you are worth can quietly drain away.",
+      "what_it_is": [
+       "Brief, low-effort contact such as a reaction to your story, a meme, or a 'hey you' that asks for nothing.",
+       "Warm words with no follow-through: 'we should get dinner sometime' that never gets a date.",
+       "Bursts of attention that come after long silences, often when you have gone quiet.",
+       "An arrangement where you do the work of arranging meetings, and plans fall through or go unanswered.",
+       "Includes 'benching', where a person is kept available as an option while others are pursued."
+      ],
+      "what_it_sounds_like": [
+       "\"Hey stranger\" after six weeks of nothing.",
+       "A heart on your photo and no reply to your actual message.",
+       "\"We need to catch up soon!\" and then no day suggested.",
+       "\"Sorry, work has been insane. Let's talk this week,\" repeated each month.",
+       "A late-night text that says only \"thinking of you.\"",
+       "Plans that are agreed in principle and then 'let's see how the week goes' when you propose a date."
+      ],
+      "what_it_is_not": [
+       "A person who is busy in a demanding season and is honestly slow, but makes real plans when they are free.",
+       "A mutual casual connection in which both of you know what it is and neither expects more.",
+       "Someone shy or anxious who sends small signals because bigger ones feel risky, and who speeds up when you reach out.",
+       "A friendship that runs on occasional contact and is fine with that on both sides.",
+       "A person who has already told you plainly that they are not looking for anything serious."
+      ],
+      "this_may_be_it_when": [
+       "Over months, nothing becomes a plan, even though warm words keep arriving.",
+       "Contact picks up when you seem to be losing interest or seeing someone else.",
+       "You are the only one proposing times, and your proposals get vague replies.",
+       "When you ask where this is going, you get a compliment or a change of subject.",
+       "You feel more hopeful after each message and more empty a day later."
+      ],
+      "this_may_not_be_it_when": [
+       "When you suggest a date, they pick one and show up.",
+       "They have said clearly what they can offer, and you are choosing to accept that.",
+       "The gaps match their life, such as exams, shifts, or a sick relative.",
+       "They also make effort to reach you, with real questions and follow-up.",
+       "You never actually asked for more, so they may not know you want it."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Many people are poor at keeping in touch and treat everyone the same way.",
+       "Someone coming out of a bad relationship may be unsure about moving forward but still enjoy your company.",
+       "Messaging apps make it easy to tap a reaction without meaning anything beyond 'I saw this'."
+      ],
+      "common_false_positives": [
+       "A long-distance friendship where you speak a few times a year and both like that.",
+       "Someone busy with a new baby who sends short messages because that is all they have energy for.",
+       "A person who is slow-burn interested and gets bolder once you signal clearly that you want to see them."
+      ],
+      "discernment_questions": [
+       "In the last two months, how many plans did we actually make and keep?",
+       "Who reaches out first, and who does the arranging?",
+       "Have I told them directly what I want, and what did they say?",
+       "Does their contact rise when I step back, then fade when I engage?",
+       "If a friend described this, would I think they were being offered a relationship or a reminder?"
+      ],
+      "less_concerning_if": [
+       "A direct question about plans gets a real answer, even if it is a no.",
+       "Both of you know the contact is casual and are content with that.",
+       "Their attention is steady in small ways and matches how they treat other friends."
+      ],
+      "more_concerning_if": [
+       "They imply a future ('someday we'll...') while never acting on it.",
+       "You are asked to keep things quiet or low-key while they show interest in private.",
+       "Their contact increases specifically when you start dating someone else, then stops."
+      ],
+      "pattern_over_time_signs": [
+       "Your phone becomes something you check for one particular name.",
+       "You turn down other invitations, in case they finally suggest something.",
+       "The same sentence ('let's catch up soon') appears again and again, without a date.",
+       "Months in, you know very little about their daily life, and they know a great deal about yours."
+      ],
+      "repair_check": "A change here is visible in the calendar. Once you raise it, look for an actual date proposed by them and kept, and a clear statement of what they want. A heartfelt apology for being 'bad at this', followed by another round of crumbs, is the same pattern with better manners.",
+      "boundary_respect_check": "State the kind of contact you want and observe what they do next. Do they offer a concrete plan or say honestly that it is not what they want? Or do they send a warm message that skirts the question and the same thin contact resumes?",
+      "psychological_mechanism": "Hope is a strong motivator, and small signs of interest can be enough to keep it alive. When contact is rare and uncertain, ambiguous signals often get read in the most favourable light, and waiting for more is a common response. Because each message is easy to explain away, it can be hard to say what exactly is wrong, and so hard to stop waiting.",
+      "possible_impact_on_receiver": "People describe putting dating and friendships on hold, replaying short messages for hidden meaning, and feeling foolish for hoping. Some say that the lack of any clear 'no' made it harder to grieve than an ordinary break-up. Others describe a drop in confidence after months of being kept at arm's length.",
+      "response_options": {
+       "soft_clarification": "Ask for a specific thing and see what comes back: 'I'd love to see you. Are you free Saturday at 6 for dinner?' A reply with a yes or no is information.",
+       "firm_boundary": "Tell them what you need: 'I'm looking for someone who makes plans. If that's not you right now, I'd rather know.' Then act on the answer you get.",
+       "disengagement": "Stop replying to low-effort pings that carry no invitation. Put the energy into people who meet you halfway, and notice who that is.",
+       "support_seeking": "Show a friend the thread, or screenshots of the dates and gaps, and ask what they would expect from someone who was truly interested.",
+       "workplace_or_professional": "If a colleague or mentor keeps promising a project, introduction or promotion in passing, ask for a date and put the commitment in writing by email."
+      },
+      "boundary_script": "\"I enjoy hearing from you, but a message every few weeks isn't enough for me. If you want to see me, pick a day this week. If you don't, that's okay, and I'd prefer you tell me.\"",
+      "safety_sensitive": false,
+      "safety_note": "Breadcrumbing is not usually a physical-safety concern. It deserves more care if the person controls something you depend on, such as your job, immigration sponsorship or housing, or if their attention is accompanied by pressure for secrecy or sexual contact. Then do not rely on their promises; get any commitment written down and talk to someone outside the situation.",
+      "misuse_warning": [
+       "Calling every slow replier a breadcrumber can make you read ordinary busyness as contempt and discourage honest, awkward people.",
+       "Using the word to describe someone who told you plainly they were casual puts a harm on them that they never promised to prevent."
+      ],
+      "how_to_distinguish_from_related": "Future Faking paints a detailed, specific future to keep you invested; breadcrumbing offers almost no picture at all, only small contact. Hoovering follows a break or an exit and tries to pull you back; breadcrumbing runs while you are still hovering. Push-Pull has real warm phases; here there is never a stretch of real closeness. Next to the intensity of Love Bombing, this is the opposite: very thin attention."
+     }
+    },
+    {
+     "name": "Benching",
+     "tier": "Reference-only",
+     "source_definition": "Keeping someone available as a backup option without commitment, transparency, or timeline.",
+     "approved_draft": {
+      "why_this_matters": "The target's availability is preserved while their status stays undefined, so they keep a place open for something with no timeline and turn down things that had one.",
+      "what_it_is_not": "Early connections genuinely are undefined for a while, people are honestly busy, and openly casual arrangements both parties accept are their own thing. What is missing here is honesty about where things stand, not intensity."
+     },
+     "existing_specific_text": {
+      "short_definition": "Keeping someone available as a backup option without commitment, transparency, or timeline.",
+      "expanded_definition": "Keeping someone available as a backup option — through occasional, low-effort contact — without commitment, transparency, or any real timeline, so they stay available in case they're needed later while the person doing this pursues other options freely. This is closely related to Breadcrumbing; Benching specifically emphasizes the target's role as a reserved, undisclosed option rather than a genuine, developing connection.",
+      "plain_language_summary": "In plain terms: keeping someone available as a backup option without commitment, transparency, or timeline.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a growing sense of being stuck, disproportionate to how the arrangement first appeared. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Keeping someone available as a backup option without commitment, transparency, or timeline."
+      ],
+      "what_it_sounds_like": [
+       "Occasional, sporadic contact that never develops into anything more concrete, sustained just often enough to keep the target available.",
+       "The target is kept without a clear status, while the other person is visibly free to date or pursue other things.",
+       "Contact intensifies specifically when the person's other options fall through, then fades again once they don't need the backup anymore."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely early, undefined connections are a normal part of dating and don't require bad faith.",
+       "Busy or overwhelmed people sometimes maintain light contact without deceptive intent."
+      ],
+      "common_false_positives": [
+       "A genuinely early-stage, undefined connection where both people are honestly still figuring out what they want, without one exploiting the other.",
+       "A person who's honestly busy or going through something and maintains light contact without any deceptive intent about their availability.",
+       "Mutual, openly casual arrangements where both parties understand and accept the undefined nature."
+      ],
+      "discernment_questions": [
+       "Does contact intensify specifically when the other person's other options aren't working out?",
+       "Is the target given an honest answer when they ask directly about the nature or direction of the connection?",
+       "Is the arrangement openly, mutually understood as casual, or does the target believe something more is developing?",
+       "Does the pattern serve mainly to keep the target as an undisclosed fallback, rather than developing into anything real?"
+      ],
+      "less_concerning_if": [
+       "The undefined status is honestly acknowledged and mutually, openly accepted by both people."
+      ],
+      "more_concerning_if": [
+       "Contact reliably intensifies when the other person's other options fail, and direct questions about the relationship's status are dodged."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through structural or financial arrangements that quietly increase the cost of leaving over time. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe a growing sense of being stuck, disproportionate to how the arrangement first appeared in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Love Bombing",
+     "definition": "Overwhelming early affection and idealization."
+    },
+    {
+     "name": "Exclusive Meaning",
+     "definition": "Claiming to be the only one who truly understands the target."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Hoovering",
+     "definition": "Pulling the target back after distance or a breakup with promises of change."
+    },
+    {
+     "name": "Future Faking",
+     "definition": "Promising a future that keeps the target invested now."
+    },
+    {
+     "name": "Negging",
+     "definition": "Backhanded compliments that lower the target's confidence."
+    },
+    {
+     "name": "Premature Exclusivity",
+     "definition": "Demanding commitment before the target has enough information to make an informed choice."
+    },
+    {
+     "name": "Confirmation Bias Exploitation",
+     "definition": "Leveraging the target's natural tendency to seek evidence confirming the \"good version\" while dismissing the pattern of harm."
+    },
+    {
+     "name": "Halo Effect Exploitation",
+     "definition": "Using one positive trait, achievement, or reputation to override pattern recognition and excuse harmful behavior."
+    },
+    {
+     "name": "Covert Contracts",
+     "definition": "Unspoken expectations the target is punished for failing to meet without ever being told they existed."
+    },
+    {
+     "name": "Financial Dependence by Design",
+     "definition": "Structuring economic conditions so the target cannot survive without the system controlling them."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  }
+ ]
+}

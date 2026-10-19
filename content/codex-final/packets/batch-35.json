@@ -1,530 +1,610 @@
 {
  "batch": "batch-35",
  "kind": "normal",
- "category": "Isolation / social",
+ "category": "Reality Distortion",
  "entries": [
   {
-   "name": "Controlled Opposition",
-   "category": "Isolation / social",
+   "name": "Contradiction Stacking",
+   "category": "Reality Distortion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target's dissent is absorbed rather than answered: effort goes into a channel that was not built to lead anywhere, and the appearance of a debate substitutes for a change.",
-    "what_it_is_not": "Movements disagree internally about strategy constantly, and a critic who is cautious by genuine conviction is not a plant. Overlap between someone's positions and the interests they criticise is common and usually coincidental — this needs evidence of actual coordination, not a feeling that the opposition is too tidy.",
-    "note": "Politically loaded and highly prone to conspiratorial over-reading; the disconfirming case is written to raise the evidence bar rather than describe an innocent lookalike."
+    "why_this_matters": "Answering either claim appears to concede the other, so there is no position left from which to raise the issue — and whether the thing happened is never settled either way.",
+    "what_it_is_not": "Someone genuinely unsure what happened may give a shifting account while they work it out, and two statements about different situations can sound contradictory taken out of context. What marks the pattern is denial and justification held at the same time rather than one replacing the other."
    },
    "existing_specific_text": {
-    "short_definition": "Creating, funding, or co-opting the apparent resistance so dissent is channeled into a sanctioned space that produces no actual change.",
-    "expanded_definition": "Creating, funding, or co-opting the apparent resistance to a person, group, or idea so that dissent gets channeled into a sanctioned, contained space that produces no actual change — rather than suppressing opposition outright, it's absorbed and neutralized from the inside, giving the appearance of legitimate pushback while ensuring nothing meaningfully challenges the status quo.",
-    "plain_language_summary": "In plain terms: creating, funding, or co-opting the apparent resistance so dissent is channeled into a sanctioned space that produces no actual change.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Simultaneously denying and justifying the same behavior, creating logical impossibility the target cannot resolve.",
+    "expanded_definition": "Simultaneously denying that something happened and justifying it as reasonable, so the target is left with two incompatible responses and no way to actually resolve either one — \"I never did that\" followed, when evidence is presented, by \"and even if I did, you deserved it.\" The contradiction itself becomes disorienting, since engaging with either claim seems to concede the other.",
+    "plain_language_summary": "In plain terms: simultaneously denying and justifying the same behavior, creating logical impossibility the target cannot resolve.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Creating, funding, or co-opting the apparent resistance so dissent is channeled into a sanctioned space that produces no actual change."
+     "Simultaneously denying and justifying the same behavior, creating logical impossibility the target cannot resolve."
     ],
     "what_it_sounds_like": [
-     "A vocal, seemingly independent critic turns out to be funded, coordinated with, or quietly endorsed by the very party they claim to oppose.",
-     "Genuine dissent gets redirected toward a specific, contained, ultimately toothless outlet, away from anything that could produce real change.",
-     "The most visible \"opposition\" voice consistently pulls punches on the issues that would actually matter, while loudly attacking minor or symbolic ones."
+     "\"That never happened\" followed shortly by a justification for why it happened, without acknowledging the contradiction.",
+     "Denial and defense offered in the same conversation, sometimes even the same breath, about the same specific incident.",
+     "Pointing out the contradiction is met with irritation or a claim that the target is \"twisting things,\" rather than any resolution of which version is true."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine strategic disagreement within a movement is common and doesn't require any conspiracy to explain it.",
-     "Coincidental alignment of interests doesn't prove active coordination."
+     "People sometimes genuinely aren't sure what happened and their account shifts as they think it through. Processing a mistake out loud can look contradictory without being a deliberate tactic."
     ],
     "common_false_positives": [
-     "Genuine internal disagreement within a movement or organization about strategy, mistaken for orchestrated containment.",
-     "A critic who is simply cautious or moderate by genuine conviction, not because they're secretly controlled.",
-     "Coincidental overlap between a critic's positions and the interests of the party they're criticizing, without any actual coordination."
+     "A person genuinely uncertain about the details of a past event, whose account shifts as they try to remember, without strategic intent.",
+     "Two separate, unrelated statements that sound contradictory out of context but were about genuinely different things.",
+     "Someone processing a mistake out loud, moving between denial and rationalization as part of genuinely figuring out how they feel."
     ],
     "discernment_questions": [
-     "Is there verifiable evidence of funding, coordination, or communication between the \"opposition\" and the party being opposed?",
-     "Does the criticism consistently avoid the issues that would actually threaten the status quo?",
-     "Would genuine, independent dissent look meaningfully different from what's currently visible?",
-     "Is this claim falsifiable, or does it dismiss all moderate positions as secretly compromised regardless of evidence?"
+     "Do the denial and the justification refer to the exact same specific incident, or different things?",
+     "Does pointing out the contradiction lead to clarification, or further deflection?",
+     "Does this pattern recur across multiple separate incidents, or was this a one-time confused response?",
+     "Would a neutral observer, hearing both statements together, recognize a genuine logical contradiction?"
     ],
     "less_concerning_if": [
-     "A critic's caution or moderation has a plausible, independent explanation without any evidence of coordination."
+     "The apparent contradiction resolves with clarification, or reflects genuine uncertainty rather than strategic denial-plus-justification."
     ],
     "more_concerning_if": [
-     "There's verifiable evidence of funding or coordination, and criticism consistently steers away from anything that would create real change."
+     "The same denial-then-justification pattern recurs across multiple incidents and is never resolved when pointed out."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ambiguity as Weapon",
-     "definition": "Keeping exclusion, intent, or meaning deliberately vague so the target can't confirm what's happening and defaults to self-doubt."
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
     },
     {
-     "name": "Information Cascades",
-     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
     },
     {
-     "name": "Interruption Patterns",
-     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
     },
     {
-     "name": "Idea Theft in Real Time",
-     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
     },
     {
-     "name": "Gatekeeping",
-     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
     },
     {
-     "name": "Punishment by Proxy",
-     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Reputation Laundering",
-   "category": "Isolation / social",
+   "name": "Circular Arguments",
+   "category": "Reality Distortion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target has to argue against a portrayal with no traceable origin, while each person repeating it treats everyone else's repetition as their evidence for it.",
-    "what_it_is_not": "Reputations are frequently earned, and \"everyone says that\" is sometimes simply true. Several people who had similar experiences at first hand are corroborating each other; the distinction worth drawing is between people who encountered the person and people who encountered the story."
+    "why_this_matters": "There is no evidence that could count against the claim, so disagreeing becomes proof of the very unreliability being asserted.",
+    "what_it_is_not": "Restating a well-supported position in different words for clarity is not circularity, and someone repeating themselves under pressure is usually inarticulate rather than strategic. Two people simply asserting incompatible positions is a stalemate, not this."
    },
    "existing_specific_text": {
-    "short_definition": "A false or distorted narrative repeated across enough channels and enough time that it becomes accepted as established truth.",
-    "expanded_definition": "A false or distorted narrative repeated across enough channels and over enough time that it becomes accepted as established truth, independent of whether it was ever verified — similar to Information Laundering, but focused specifically on a person's or organization's reputation rather than a general factual claim, and often deployed deliberately to permanently damage someone's standing.",
-    "plain_language_summary": "In plain terms: a false or distorted narrative repeated across enough channels and enough time that it becomes accepted as established truth.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Reasoning that uses the conclusion as its own supporting premise, so the argument can't actually be tested.",
+    "expanded_definition": "Reasoning that uses its own conclusion as supporting evidence, so the argument can't actually be tested or falsified — \"I'm right because I'm always right,\" or \"you can't trust your memory because your memory is unreliable\" (used specifically to explain why the target shouldn't trust the memory that contradicts the speaker). The circularity is often disguised by restating the same claim in different words rather than repeating it verbatim.",
+    "plain_language_summary": "In plain terms: reasoning that uses the conclusion as its own supporting premise, so the argument can't actually be tested.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "A false or distorted narrative repeated across enough channels and enough time that it becomes accepted as established truth."
+     "Reasoning that uses the conclusion as its own supporting premise, so the argument can't actually be tested."
     ],
     "what_it_sounds_like": [
-     "A specific, damaging characterization of a person follows them across contexts, repeated by people who have no independent basis for it beyond having heard it elsewhere.",
-     "Attempting to correct the narrative is met with \"well, that's just what everyone says about them,\" treating repetition as if it were evidence.",
-     "The original source of the damaging characterization, when traced, turns out to be thin, unverified, or a single disputed incident."
+     "\"You're too sensitive to see this clearly\" used as the reason the target's disagreement doesn't count, when the target's supposed sensitivity is itself the thing being disputed.",
+     "\"I know I'm right because I've thought about this more than you have\" offered as if it were evidence rather than an assertion.",
+     "Pushback is met with a restated version of the original claim, dressed up as a new argument."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Reputations can be genuinely earned through real, independently verifiable patterns of behavior.",
-     "Multiple people having similar independent experiences with someone is real corroboration, not laundering."
+     "People under pressure sometimes just repeat themselves without realizing it, especially if they feel unheard. Genuine, confidently-held beliefs can sound repetitive without being logically circular."
     ],
     "common_false_positives": [
-     "A reputation that's genuinely earned through a real, verifiable pattern of behavior, independent of any laundering.",
-     "Multiple people independently having similar negative experiences with someone, which is corroboration rather than laundering.",
-     "A person's reputation accurately reflecting a documented, significant event that's fairly characterized."
+     "A genuinely well-reasoned position that happens to be restated for clarity, without actual circularity in the logic.",
+     "Someone inarticulate under pressure who repeats themselves without realizing it, rather than deliberately using circular logic.",
+     "A disagreement where both people are simply asserting incompatible positions without either one being formally circular."
     ],
     "discernment_questions": [
-     "Does the reputation trace back to independently verifiable events, or mainly to repetition of an unverified characterization?",
-     "Do people repeating the narrative have their own independent experience, or are they relaying what they've heard?",
-     "Is there room for the narrative to be revisited with new information, or is it treated as permanently settled?",
-     "Would the reputation hold up if traced back to its original, actual source and evaluated on that basis alone?"
+     "If you remove the restated conclusion, is there any actual independent evidence left supporting the claim?",
+     "Does pushback get met with genuinely new information, or a rephrased version of the same assertion?",
+     "Would a neutral third party, hearing the argument laid out plainly, recognize it as circular?",
+     "Is the target's own perception or credibility being used as the reason to dismiss their perception?"
     ],
     "less_concerning_if": [
-     "The reputation traces to independently verifiable events or multiple people's genuine, separate experiences."
+     "There's real, independent evidence behind the position beyond the restated conclusion."
     ],
     "more_concerning_if": [
-     "The narrative rests mainly on repetition of a thin or unverified original claim, treated as settled fact."
+     "Every challenge is met with a reworded version of the same unsupported claim, with no independent evidence ever offered."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ambiguity as Weapon",
-     "definition": "Keeping exclusion, intent, or meaning deliberately vague so the target can't confirm what's happening and defaults to self-doubt."
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
     },
     {
-     "name": "Information Cascades",
-     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
     },
     {
-     "name": "Interruption Patterns",
-     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
     },
     {
-     "name": "Idea Theft in Real Time",
-     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
     },
     {
-     "name": "Gatekeeping",
-     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
     },
     {
-     "name": "Punishment by Proxy",
-     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Maternal Gatekeeping",
-   "category": "Isolation / social",
+   "name": "Loaded Language",
+   "category": "Reality Distortion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The corrected caregiver's confidence erodes until they step back, and the stepping back is then read as proof they were never really willing.",
-    "what_it_is_not": "One specific safety concern, raised constructively, is not this — and two caregivers can have genuinely different methods that both work perfectly well. Someone still learning a particular skill can be given proportionate guidance without their competence being the target of it."
+    "why_this_matters": "A label does the work that evidence has not done, and once attached, answering it means arguing about the word rather than about what actually happened.",
+    "what_it_is_not": "Severe situations sometimes warrant severe words, and describing how something felt in strong terms is emotional honesty rather than a verdict on anyone. Some people, and some cultures, simply run to higher-intensity language across the board."
    },
    "existing_specific_text": {
-    "short_definition": "Positioning oneself as the singular authority over someone's development or caregiving to systematically undermine their confidence in their own competence.",
-    "expanded_definition": "Positioning oneself as the singular authority over someone's development or caregiving to systematically undermine their confidence in their own competence. As a communication pattern, Maternal Gatekeeping-type behavior in the Isolation / social category tends to work by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
-    "plain_language_summary": "In plain terms: positioning oneself as the singular authority over someone's development or caregiving to systematically undermine their confidence in their own competence.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Words engineered to carry judgment, verdict, or identity-level consequence without requiring evidence.",
+    "expanded_definition": "Words chosen specifically for the judgment, verdict, or identity-level consequence they carry, independent of whether evidence actually supports that judgment — calling a disagreement \"abuse,\" calling directness \"cruelty,\" calling a boundary \"coldness.\" The label does persuasive work that a neutral description of the same behavior wouldn't.",
+    "plain_language_summary": "In plain terms: words engineered to carry judgment, verdict, or identity-level consequence without requiring evidence.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Positioning oneself as the singular authority over someone's development or caregiving to systematically undermine their confidence in their own competence."
+     "Words engineered to carry judgment, verdict, or identity-level consequence without requiring evidence."
     ],
     "what_it_sounds_like": [
-     "One caregiver's approach is consistently corrected or redone, specifically undermining their sense of competence rather than addressing a real safety issue.",
-     "\"Let me just do it, you're doing it wrong\" applied to tasks that have no single correct way to be done.",
-     "The undermined caregiver notices they've started deferring or withdrawing from caregiving tasks they were once willing to do."
+     "A specific, extreme label attached to an ordinary or ambiguous behavior, before any discussion of what actually happened.",
+     "The same action described very differently depending on who's describing it — neutral from one person, alarming from another.",
+     "Pushback on the label itself gets treated as further evidence that the label was accurate."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine safety concerns, raised constructively, are a normal and appropriate part of co-parenting.",
-     "Different, equally valid approaches to caregiving exist, and pointing one out once isn't undermining."
+     "Genuinely severe situations warrant strong, accurate language. People describe their own emotional experience honestly without necessarily intending a formal verdict on someone else's character."
     ],
     "common_false_positives": [
-     "A genuine, specific safety concern about how a task is being done, raised constructively and once, not repeatedly undermining overall competence.",
-     "Two caregivers with genuinely different, both-reasonable approaches, where the \"correction\" is really just a preference difference stated once.",
-     "A caregiver who is objectively still learning a specific skill, receiving reasonable, proportionate guidance."
+     "A genuinely severe situation accurately described with strong, appropriate language.",
+     "Someone using emotionally honest language to describe how something felt to them, without intending an objective verdict.",
+     "Cultural or personal communication styles that lean toward more intense language generally."
     ],
     "discernment_questions": [
-     "Is the correction about a genuine safety issue, or about a difference in style where there's no objectively right way?",
-     "Does the pattern recur across many different tasks, gradually undermining the other caregiver's confidence broadly?",
-     "Does the undermined caregiver have room to develop their own competence and approach, or is every attempt redone?",
-     "Would a neutral observer see the correction as proportionate to an actual issue, or excessive relative to what's at stake?"
+     "Does the label match the severity of what actually, verifiably happened?",
+     "Does a neutral description of the same events support the same conclusion as the loaded label?",
+     "Is the label used consistently, or does it escalate specifically when a strong reaction is needed?",
+     "Does questioning the label get treated as confirming it, regardless of the actual facts?"
     ],
     "less_concerning_if": [
-     "Corrections are specific, about genuine safety issues, and don't undermine overall confidence in unrelated areas."
+     "The strong language, when checked against the actual facts, is proportionate and accurate."
     ],
     "more_concerning_if": [
-     "Corrections recur across many unrelated tasks and consistently prevent the other caregiver from developing their own competence."
+     "The label is disproportionate to the facts and any pushback on it is treated as further proof."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ambiguity as Weapon",
-     "definition": "Keeping exclusion, intent, or meaning deliberately vague so the target can't confirm what's happening and defaults to self-doubt."
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
     },
     {
-     "name": "Information Cascades",
-     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
     },
     {
-     "name": "Interruption Patterns",
-     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
     },
     {
-     "name": "Idea Theft in Real Time",
-     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
     },
     {
-     "name": "Gatekeeping",
-     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
     },
     {
-     "name": "Punishment by Proxy",
-     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Echo Chamber Construction",
-   "category": "Isolation / social",
+   "name": "Semantic Traps",
+   "category": "Reality Distortion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target loses the outside views that would let them sense-check their own situation, and the narrowing arrives feeling like a preference they chose.",
-    "what_it_is_not": "People form affinity groups on their own, and recommending sources you honestly rate is not curating somebody else's world. The distinguishing feature is active discouragement of everything else, not enthusiasm for something in particular."
+    "why_this_matters": "An imprecise paraphrase becomes the entire subject, and the behaviour it was pointing at leaves the conversation without ever having been discussed.",
+    "what_it_is_not": "Being genuinely misquoted in a way that changes the meaning is worth objecting to, and some people care about exact wording as a matter of temperament rather than evasion. The tell is whether the substance is returned to once the wording has been corrected."
    },
    "existing_specific_text": {
-    "short_definition": "Deliberately engineering the target's information environment so they encounter only perspectives reinforcing the manipulator's preferred reality, creating a self-reinforcing bubble where alternative viewpoints become invisible, untrustworthy, or simply never encountered.",
-    "expanded_definition": "Deliberately engineering the target's information environment so they encounter only perspectives reinforcing the manipulator's preferred reality — curating social circles, media sources, and conversations so that alternative viewpoints become rare, framed as untrustworthy, or simply never encountered. Over time, the target's sense of what's \"obviously true\" narrows to match exactly what's been fed to them.",
-    "plain_language_summary": "In plain terms: deliberately engineering the target's information environment so they encounter only perspectives reinforcing the manipulator's preferred reality, creating a self-reinforcing bubble where alternative viewpoints become invisible, untrustworthy, or simply never encountered.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "\"You're twisting my words\" deployed to derail into a debate about language instead of addressing the behavior the language described.",
+    "expanded_definition": "\"You're twisting my words\" or a similar phrase deployed to shift the conversation into a debate about the precise wording used, instead of addressing the actual behavior or concern the wording was describing. Even if the target's paraphrase was slightly imprecise, the semantic dispute becomes a way to avoid the substance entirely.",
+    "plain_language_summary": "In plain terms: \"You're twisting my words\" deployed to derail into a debate about language instead of addressing the behavior the language described.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Deliberately engineering the target's information environment so they encounter only perspectives reinforcing the manipulator's preferred reality, creating a self-reinforcing bubble where alternative viewpoints become invisible, untrustworthy, or simply never encountered."
+     "\"You're twisting my words\" deployed to derail into a debate about language instead of addressing the behavior the language described."
     ],
     "what_it_sounds_like": [
-     "Consistent steering toward specific sources and communities, paired with consistent discouragement of others, until the target's information diet is effectively curated by one person.",
-     "Outside perspectives are pre-framed as biased or untrustworthy before the target ever encounters them directly.",
-     "The target notices their own views have narrowed to closely match one specific circle's consensus, with genuine surprise at how differently outsiders see the same issue."
+     "A minor imprecision in how the target described something becomes the entire focus of the conversation, displacing the original concern.",
+     "\"That's not what I said\" used to dispute exact phrasing while ignoring the substance of what was actually meant.",
+     "The target finds themselves defending their choice of words instead of getting any engagement with their actual point."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Communities naturally form around shared worldviews without any one person orchestrating the boundary.",
-     "Recommending sources you believe are good, without blocking others, is a normal and common thing to do."
+     "Precise communicators do sometimes care genuinely about accurate wording, without using it strategically. Real misquotes are worth correcting since they can meaningfully change meaning."
     ],
     "common_false_positives": [
-     "Naturally forming affinity groups and communities that share a worldview, without any one person engineering the boundary.",
-     "A person recommending sources they genuinely believe are good, without actively blocking access to others.",
-     "The target's own genuine, independently-formed preference for certain communities or sources."
+     "A genuinely significant misquote or mischaracterization that meaningfully distorts what was actually said or meant.",
+     "Someone who's genuinely more precise or literal in communication style, and cares about accurate wording for its own sake.",
+     "A real, substantive misunderstanding that's worth clarifying before continuing the conversation."
     ],
     "discernment_questions": [
-     "Is there active discouragement of outside sources, or just a passive absence of exposure to them?",
-     "Does the target have genuine, unimpeded ability to seek out other perspectives if they choose to?",
-     "Is skepticism toward outside sources proportionate and specific, or does it apply broadly to anything outside the curated circle?",
-     "Would the target's views look meaningfully different with equal exposure to other perspectives?"
+     "Does the wording dispute meaningfully change the substance of the original concern, or is it a minor imprecision?",
+     "After the wording is clarified, does the conversation return to the original issue, or does it stay stuck on language?",
+     "Does this pattern happen specifically around accountability moments, or in all kinds of conversations equally?",
+     "Would the underlying concern still stand even with the most precise, careful wording available?"
     ],
     "less_concerning_if": [
-     "Any narrowing reflects the target's own genuine preferences, with real, unimpeded access to other perspectives available."
+     "Clarifying the wording leads back to genuine engagement with the original concern."
     ],
     "more_concerning_if": [
-     "Outside sources are actively discouraged or pre-framed as untrustworthy, and the target's independent access is genuinely restricted."
+     "The wording dispute becomes a permanent detour that the original concern never survives."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ambiguity as Weapon",
-     "definition": "Keeping exclusion, intent, or meaning deliberately vague so the target can't confirm what's happening and defaults to self-doubt."
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
     },
     {
-     "name": "Information Cascades",
-     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
     },
     {
-     "name": "Interruption Patterns",
-     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
     },
     {
-     "name": "Idea Theft in Real Time",
-     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
     },
     {
-     "name": "Gatekeeping",
-     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
     },
     {
-     "name": "Punishment by Proxy",
-     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Stochastic Harassment Direction",
-   "category": "Isolation / social",
+   "name": "Repetition as Truth",
+   "category": "Reality Distortion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "The target absorbs harassment from many people at once while the portrayal that produced it stays technically deniable, so there is no single act to report and no one to hold to it.",
-    "what_it_is_not": "Proportionate public criticism of someone's public actions is legitimate even when a third party overreacts to it, and reporting real wrongdoing through appropriate channels is not incitement. What is described here is repeated inflammatory portrayal aimed at an audience, not criticism as such.",
-    "note": "Turns on foreseeability, which is a judgement about likely effect rather than a described behaviour, so the disconfirming case does most of the guarding."
+    "why_this_matters": "Familiarity starts to feel like corroboration, so a claim nobody ever checked ends up carrying the weight of something established.",
+    "what_it_is_not": "A claim repeated because it keeps being relevant, or because fresh evidence keeps confirming it, is not doing this. People also repeat themselves when they feel unheard. The pattern is the same unsupported claim recycled unchanged, with no new support arriving alongside it."
    },
    "existing_specific_text": {
-    "short_definition": "Making public characterizations or statements designed to foreseeably incite third parties to harass a specific target while the instigator maintains personal deniability through the indirect, probabilistic nature of the incitement.",
-    "expanded_definition": "Making public characterizations or statements designed to foreseeably incite third parties to harass a specific target, while the instigator maintains personal deniability through the indirect, probabilistic nature of the incitement — no single follower is explicitly told to harass anyone, but the pattern and framing of the statements makes it statistically predictable that some of them will.",
-    "plain_language_summary": "In plain terms: making public characterizations or statements designed to foreseeably incite third parties to harass a specific target while the instigator maintains personal deniability through the indirect, probabilistic nature of the incitement.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Repeating a claim often enough that familiarity is mistaken for accuracy.",
+    "expanded_definition": "Repeating a claim often enough that its familiarity starts to feel like evidence of its accuracy, independent of whether it was ever actually verified. This works on a well-documented cognitive tendency — repeated exposure to a claim, even an unsupported one, tends to increase how true it feels, which is why the same unproven claim keeps reappearing rather than a wider variety of supporting arguments.",
+    "plain_language_summary": "In plain terms: repeating a claim often enough that familiarity is mistaken for accuracy.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Making public characterizations or statements designed to foreseeably incite third parties to harass a specific target while the instigator maintains personal deniability through the indirect, probabilistic nature of the incitement."
+     "Repeating a claim often enough that familiarity is mistaken for accuracy."
     ],
     "what_it_sounds_like": [
-     "Public statements that repeatedly and inflammatorily characterize a specific person in ways calculated to provoke anger, paired with enough visibility that some portion of the audience is likely to act on it.",
-     "Following a specific characterization, the target experiences a wave of harassment from people who cite that exact characterization as their justification.",
-     "The person making the statements can point out they never explicitly told anyone to do anything, even though the pattern of harassment closely follows the pattern of their statements."
+     "The same specific claim repeated across many separate conversations, in nearly identical wording, without ever presenting new supporting evidence.",
+     "\"I've told you this before\" invoked as if repetition itself were proof, rather than pointing to any actual evidence.",
+     "The claim starts to feel true to the target mainly because it's familiar, even when they can't identify what actually supports it."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Legitimate criticism of real public actions is normal and healthy, even if some people react disproportionately.",
-     "A single, non-repeated criticism that happens to precede an unrelated overreaction isn't the same as a deliberate pattern."
+     "People do repeat genuinely true, relevant things because they keep being relevant. Feeling unheard can lead to repetition without any calculated tactic behind it."
     ],
     "common_false_positives": [
-     "Legitimate, proportionate public criticism of someone's actual public actions, where any resulting hostile reaction is disproportionate to what was actually said.",
-     "A single instance of criticism that wasn't repeated or inflammatory, where any resulting harassment was a rare, unforeseeable overreaction.",
-     "Genuine reporting of real wrongdoing through appropriate channels, which is different from inflammatory characterization aimed at inciting a mob."
+     "A genuinely well-supported claim that's repeated because it keeps being relevant, not because repetition is doing the persuasive work.",
+     "Someone who repeats themselves because they feel unheard, not as a calculated familiarity tactic.",
+     "A claim that's repeated because new evidence keeps confirming it each time, not because it's being recycled unchanged."
     ],
     "discernment_questions": [
-     "Is the public characterization proportionate to what the target actually did, or does it use inflammatory language disproportionate to the facts?",
-     "Does harassment reliably follow specific statements, in a way that would be statistically predictable given the audience size and rhetoric?",
-     "Does the person continue the same pattern after seeing that it results in harassment, or do they moderate their language?",
-     "Would a reasonable person, making the same statements to the same audience, foresee this outcome?"
+     "If you set aside how many times you've heard the claim, is there independent evidence supporting it?",
+     "Does each repetition add new supporting information, or restate the identical claim unchanged?",
+     "Does the claim feel true mainly because it's familiar, or because you can point to actual evidence?",
+     "Would the claim hold up if you'd only heard it once?"
     ],
     "less_concerning_if": [
-     "The criticism is proportionate to real, documented actions and isn't inflammatory beyond what the facts support."
+     "Each repetition comes with genuine new evidence or context, not just the same unsupported assertion."
     ],
     "more_concerning_if": [
-     "Inflammatory characterizations reliably precede waves of harassment, and the pattern continues even after the connection becomes evident."
+     "The exact same unsupported claim recurs unchanged, and its persuasive power seems to come mainly from familiarity."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ambiguity as Weapon",
-     "definition": "Keeping exclusion, intent, or meaning deliberately vague so the target can't confirm what's happening and defaults to self-doubt."
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
     },
     {
-     "name": "Information Cascades",
-     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
     },
     {
-     "name": "Interruption Patterns",
-     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
     },
     {
-     "name": "Idea Theft in Real Time",
-     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
     },
     {
-     "name": "Gatekeeping",
-     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
     },
     {
-     "name": "Punishment by Proxy",
-     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Information Laundering",
-   "category": "Isolation / social",
+   "name": "Firehose of Falsehood",
+   "category": "Reality Distortion",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
-   "source_definition_is_cut_off": false,
+   "source_definition_is_cut_off": true,
    "approved_draft": {
-    "why_this_matters": "The target is contradicted by something that now looks well-sourced, and disproving it means unpicking a chain of citations rather than a single claim.",
-    "what_it_is_not": "Responsible journalism legitimately cites and builds on other credible reporting, and a claim that several outlets each confirmed separately is corroborated rather than laundered. The thing to trace is whether any link in the chain did original verification work."
+    "why_this_matters": "Verification cannot keep pace with volume, and the disorientation left behind is much harder to describe afterwards than any single false claim would have been.",
+    "what_it_is_not": "Someone genuinely distressed can produce many real concerns at once, and a rapid-fire style can reflect honest urgency about several separate issues. Volume alone is not the pattern; the difference shows in whether engaging with one claim gets engagement back or simply produces several more.",
+    "note": "The short_definition is truncated mid-sentence (\"Overwhelming with so many claims, accusations, or narratives.\"), so both fields were derived from the expanded_definition and false-positive list instead."
    },
    "existing_specific_text": {
-    "short_definition": "Routing false or misleading claims through progressively more credible intermediaries, publications, or platforms until the fabricated content acquires unearned legitimacy and becomes structurally indistinguishable from verified information.",
-    "expanded_definition": "Routing false or misleading claims through progressively more credible intermediaries, publications, or platforms until the fabricated content acquires unearned legitimacy and becomes structurally indistinguishable from verified information — a claim's origin in an unreliable source gets obscured as it moves through each successive, more reputable-seeming hop.",
-    "plain_language_summary": "In plain terms: routing false or misleading claims through progressively more credible intermediaries, publications, or platforms until the fabricated content acquires unearned legitimacy and becomes structurally indistinguishable from verified information.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to shrinking social support and increased reliance on the one relationship or group doing the isolating. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Overwhelming with so many claims, accusations, or narratives.",
+    "expanded_definition": "Overwhelming a target or audience with so many claims, accusations, or competing narratives at once that no single one can be fact-checked or addressed before the next arrives. The volume itself is the mechanism — accuracy becomes secondary to sheer output, since exhausting the capacity to verify is more effective than convincing on the merits of any one claim.",
+    "plain_language_summary": "In plain terms: overwhelming with so many claims, accusations, or narratives.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Routing false or misleading claims through progressively more credible intermediaries, publications, or platforms until the fabricated content acquires unearned legitimacy and becomes structurally indistinguishable from verified information."
+     "Overwhelming with so many claims, accusations, or narratives."
     ],
     "what_it_sounds_like": [
-     "A claim traces back, when carefully investigated, through a chain of sources each citing the previous one, none of which did original verification.",
-     "The claim gains apparent credibility specifically through repetition across sources, rather than through any new independent evidence.",
-     "The original, unreliable source becomes hard to find once the claim has been repeated by more reputable-seeming intermediaries."
+     "A rapid succession of different, sometimes contradictory claims or accusations, with no time to address any one before the next appears.",
+     "Attempting to address one specific claim gets met with several new ones rather than any engagement with the original.",
+     "Looking back, the target has trouble identifying any single claim as clearly false, but the cumulative effect was overwhelming and disorienting."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Legitimate journalism regularly and appropriately builds on other credible reporting.",
-     "Multiple credible outlets independently confirming the same claim is a sign of real verification, not laundering."
+     "Genuine distress can produce a rapid, overwhelming flow of real concerns without any strategic intent. Some people process and communicate in bursts that aren't designed to overwhelm anyone."
     ],
     "common_false_positives": [
-     "Legitimate journalism that appropriately cites and builds on other credible reporting, with real independent verification at some point in the chain.",
-     "A claim that happens to be picked up by multiple credible outlets because it's independently confirmed by each.",
-     "An honest citation chain where every link did real, if incremental, verification work."
+     "Someone who is genuinely, chaotically upset and expressing many real concerns at once, without strategic intent to overwhelm.",
+     "A person processing several legitimately separate grievances that happen to surface together.",
+     "Rapid-fire communication style that reflects genuine urgency about several real issues, not a deliberate volume tactic."
     ],
     "discernment_questions": [
-     "Does the chain of sources include at least one point of genuine, independent verification, or is it citations all the way down?",
-     "Does the claim's apparent credibility come from real evidence, or just repetition across enough sources?",
-     "Can the original source be identified, and does it hold up to scrutiny?",
-     "Would the claim survive being traced back to its actual origin and evaluated on that basis alone?"
+     "When any single claim is examined closely, does it hold up, or fall apart under scrutiny?",
+     "Does addressing one claim lead to engagement, or immediately to several new claims?",
+     "Is the volume proportionate to genuinely separate concerns, or does it seem designed to prevent any one from being examined?",
+     "Does the person show any interest in slowing down to address things one at a time?"
     ],
     "less_concerning_if": [
-     "The chain includes real, independent verification at some point, not just repeated citation."
+     "The person is willing to slow down and address concerns individually when asked."
     ],
     "more_concerning_if": [
-     "The claim's credibility rests entirely on repetition across sources, with no genuine independent verification anywhere in the chain."
+     "Any attempt to address one claim is consistently met with a flood of new ones rather than engagement."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing someone's access to other people or perspectives, so the remaining relationship becomes disproportionately important. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe shrinking social support and increased reliance on the one relationship or group doing the isolating in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ambiguity as Weapon",
-     "definition": "Keeping exclusion, intent, or meaning deliberately vague so the target can't confirm what's happening and defaults to self-doubt."
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
     },
     {
-     "name": "Information Cascades",
-     "definition": "A belief, reputation, or narrative spreading not because it's verified but because agreeing is socially safer than questioning."
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
     },
     {
-     "name": "Interruption Patterns",
-     "definition": "Systematically cutting off specific voices in group settings, silencing through conversational architecture rather than explicit prohibition."
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
     },
     {
-     "name": "Idea Theft in Real Time",
-     "definition": "Someone restates the target's point moments later and receives the credit, recognition, or response denied to the original speaker."
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
     },
     {
-     "name": "Gatekeeping",
-     "definition": "Controlling access to people, resources, information, or opportunities to maintain power over who participates and who is excluded."
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
     },
     {
-     "name": "Punishment by Proxy",
-     "definition": "Harming someone the target cares about to send a message without directly confronting the target, making the attack impossible to name because it didn't."
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
+    }
+   ],
+   "known_truncation_note": "A source short_definition for this entry stops mid-sentence. Write a complete one; do not reuse the old text.",
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Meta-Gaslighting",
+   "category": "Reality Distortion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Naming a pattern becomes the next thing to be disputed, so a person stops naming anything and loses the vocabulary for describing what is happening to them.",
+    "what_it_is_not": "Someone who sincerely does not believe they did what is described will deny it, and discomfort at a heavy label applied to an ambiguous situation is reasonable. Defending yourself against a genuine mischaracterisation is not this."
+   },
+   "existing_specific_text": {
+    "short_definition": "Denying that gaslighting occurred as a further way of destabilizing someone's perception of a pattern they've named.",
+    "expanded_definition": "Denying that gaslighting (or any named manipulation pattern) occurred, specifically in response to someone naming it — which functions as a further layer of destabilization, since now even the act of recognizing and naming a pattern gets treated as itself mistaken or unfair. This can make a target hesitant to name any pattern at all, for fear the naming itself will become the next thing disputed.",
+    "plain_language_summary": "In plain terms: denying that gaslighting occurred as a further way of destabilizing someone's perception of a pattern they've named.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Denying that gaslighting occurred as a further way of destabilizing someone's perception of a pattern they've named."
+    ],
+    "what_it_sounds_like": [
+     "\"I'm not gaslighting you, you're accusing me of something I'd never do\" used as a response that avoids addressing the specific claim.",
+     "Naming a pattern is met with offense at being accused, rather than engagement with whether the pattern actually occurred.",
+     "The target starts to feel like they can't even describe what's happening without it becoming a new point of conflict."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "People can genuinely and sincerely disagree that a serious label fits their behavior. Being accused of something serious is uncomfortable, and defensive reactions aren't automatically further manipulation."
+    ],
+    "common_false_positives": [
+     "A genuine, good-faith denial from someone who really doesn't believe they did what's being described, without any deeper strategy.",
+     "Legitimate discomfort with a serious label being applied to a situation that may not actually fit it.",
+     "A person defending themselves against a mischaracterization that genuinely doesn't match what happened."
+    ],
+    "discernment_questions": [
+     "Does the denial engage with the specific behavior being described, or just reject the label itself?",
+     "Does naming any pattern consistently become a new point of conflict, regardless of what the pattern is?",
+     "Is there room to discuss the underlying behavior without the conversation becoming about whether the label was fair?",
+     "Would the underlying behavior, described without the label, still hold up as accurate?"
+    ],
+    "less_concerning_if": [
+     "The person engages with the underlying behavior, even while pushing back on the specific label used."
+    ],
+    "more_concerning_if": [
+     "Any attempt to name a pattern becomes its own new conflict, regardless of the underlying behavior's accuracy."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by targeting confidence in one's own memory or perception, so the person starts checking their read of events against the other person's account instead of their own. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe increased self-doubt, difficulty trusting one's own memory, and a growing habit of deferring to someone else's account of events in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Gaslighting",
+     "definition": "Denying someone's perception or memory to make them doubt their own mind."
+    },
+    {
+     "name": "Countering",
+     "definition": "Flatly contradicting the other person's account of events."
+    },
+    {
+     "name": "Minimization",
+     "definition": "Shrinking the harm so the reaction looks disproportionate."
+    },
+    {
+     "name": "Deflection",
+     "definition": "Redirecting away from the actual issue to prevent accountability through subject changes, counter-questions, or tangents."
+    },
+    {
+     "name": "Selective Memory",
+     "definition": "Conveniently not remembering things that were said or agreed."
+    },
+    {
+     "name": "Moving Goalposts",
+     "definition": "Changing the success criteria after they've been met."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]

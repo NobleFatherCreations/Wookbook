@@ -144,6 +144,24 @@ entry says so when it applies:
 - `known_truncation_note` / `source_definition_is_cut_off`: the source definition
   stops mid-sentence. Write a complete one; never reuse the old text.
 
+## Merged entries (the packet says `MERGED_ENTRY`)
+
+The author merged groups of tactics that were the same thing in different words. One
+entry now stands for all of them, under the canonical name.
+
+- Write ONE entry under the packet's `name`. It must fully cover every name in
+  `merged_names_to_cover`; a reader who knew the tactic by any of those names should
+  recognise it.
+- In `expanded_definition`, say plainly that the other names are the same tactic and name
+  them ("also called ... and ..."). Do not put the other names in `short_definition`.
+- Draw `what_it_sounds_like`, `what_it_is_not` and the other lists from ALL members:
+  pick the best and most distinct items, do not just stack them.
+- Each member lists `previously_written_entry` if one exists. That is your best starting
+  text; fix and merge it rather than starting over, but do not carry over frames or
+  endings the checker would now reject.
+- The merged names are aliases: do not write separate entries for them, and do not name
+  them as related tactics.
+
 ## Using the packet
 
 Each packet entry has `existing_specific_text` (the old text with shared

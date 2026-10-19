@@ -62,8 +62,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -86,7 +86,7 @@
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -148,8 +148,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -172,93 +172,7 @@
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Paltering",
-   "category": "Confusion / rhetoric",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "The target is misled by statements that are all individually true, and when they object they are told, correctly, that nothing false was said — so they end up doubting their own reasonable inference rather than the account.",
-    "what_it_is_not": "Careful, precise people answer exactly what was asked without steering anyone anywhere, and someone can answer honestly with an incomplete picture because that is all they had. There are also things people are legitimately entitled not to disclose at all."
-   },
-   "existing_specific_text": {
-    "short_definition": "Actively using literally true statements deliberately selected and arranged to create a false impression, exploiting the assumption that truthfulness equals honesty while technically never uttering a lie.",
-    "expanded_definition": "Actively using literally true statements, deliberately selected and arranged, to create a false overall impression — exploiting the common assumption that literal truthfulness is the same as honesty, while never technically uttering a false statement. This is closely related to Half-Truth Framing, but paltering specifically emphasizes the active, deliberate selection of true statements as a strategy, often in response to a direct question, rather than in a general narrative.",
-    "plain_language_summary": "In plain terms: actively using literally true statements deliberately selected and arranged to create a false impression, exploiting the assumption that truthfulness equals honesty while technically never uttering a lie.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Actively using literally true statements deliberately selected and arranged to create a false impression, exploiting the assumption that truthfulness equals honesty while technically never uttering a lie."
-    ],
-    "what_it_sounds_like": [
-     "A direct, specific question answered with a technically true statement that carefully avoids the actual substance being asked about.",
-     "Later confrontation about the misleading impression is met with \"but everything I said was true,\" missing that the selection itself was misleading.",
-     "A pattern of answers that are individually accurate but collectively steer toward a false conclusion."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Precise, careful communicators sometimes just answer exactly what's asked, without any intent to mislead. People without full information sometimes give honestly incomplete answers."
-    ],
-    "common_false_positives": [
-     "A genuinely careful, precise communicator who answers exactly what's asked without deliberately steering toward a false impression.",
-     "Someone who didn't have the full picture themselves and answered honestly with what they knew, which happened to be incomplete.",
-     "A person legitimately protecting sensitive information they're not obligated to share, without creating an affirmatively false impression."
-    ],
-    "discernment_questions": [
-     "Does the technically-true answer, taken as a whole, create an impression that the full facts wouldn't support?",
-     "Was there a more direct, still-honest way to answer that was deliberately avoided?",
-     "Does this pattern of carefully-selected true statements recur specifically around inconvenient topics?",
-     "Would a reasonable listener, hearing the technically-true answer, walk away with an accurate understanding?"
-    ],
-    "less_concerning_if": [
-     "The answer, while perhaps incomplete, doesn't actively create a false impression when considered as a whole."
-    ],
-    "more_concerning_if": [
-     "A pattern of carefully-selected, technically-true statements consistently creates false impressions on inconvenient topics."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by overwhelming the listener's ability to track the actual argument, so confusion itself becomes the outcome. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe mental exhaustion and a loss of confidence in one's own ability to follow or hold a position in an argument in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Priming / Narrative Seeding",
-     "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
-    },
-    {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
-    },
-    {
-     "name": "Credibility Theft",
-     "definition": "Undermining someone's reliability as a witness to their own experience so their testimony is pre-discounted."
-    },
-    {
-     "name": "Projection",
-     "definition": "Attributing one's own harmful behavior, motives, or flaws to the target so the real source of harm is invisible."
-    },
-    {
-     "name": "Authority Hijack",
-     "definition": "Claiming interpretive authority over the target's inner experience, positioning oneself as the expert on what they \"really\" feel or mean."
-    },
-    {
-     "name": "Accountability Evasion via Diagnosis",
-     "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": false,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -320,8 +234,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -344,7 +258,7 @@
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -406,8 +320,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -430,7 +344,7 @@
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -492,8 +406,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -512,13 +426,13 @@
      "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
     }
    ],
+   "covers_two_things": "A title joins two things (Pseudo-Profundity / Intellectual Intimidation). Cover BOTH, and say plainly whether they are two names for one behavior or two related behaviors.",
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
   },
   {
    "name": "Semantic Erosion / Meaning Dilution",
@@ -580,8 +494,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -600,13 +514,13 @@
      "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
     }
    ],
+   "covers_two_things": "A title joins two things (Semantic Erosion / Meaning Dilution). Cover BOTH, and say plainly whether they are two names for one behavior or two related behaviors.",
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
   },
   {
    "name": "Dog Whistling / Coded Signaling",
@@ -668,8 +582,8 @@
      "definition": "Subtly installing a frame before an encounter so all subsequent information gets filtered through a lens the target never consciously chose."
     },
     {
-     "name": "Frame Assassination",
-     "definition": "Killing the target's frame and replacing it with one that centers their emotional state or character instead of the manipulator's behavior."
+     "name": "Frame Control",
+     "definition": "Controlling what the conversation is \"about\" so the target's truth cannot survive inside the manipulator's framing."
     },
     {
      "name": "Credibility Theft",
@@ -688,13 +602,13 @@
      "definition": "Replacing \"we failed you\" with a diagnosis that makes the problem the target's condition rather than the system's behavior."
     }
    ],
+   "covers_two_things": "A title joins two things (Dog Whistling / Coded Signaling). Cover BOTH, and say plainly whether they are two names for one behavior or two related behaviors.",
    "old_safety_signals": {
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
   }
  ]
 }

@@ -4,92 +4,6 @@
  "category": "Control & Domination",
  "entries": [
   {
-   "name": "Velvet Glove Control",
-   "category": "Control & Domination",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Nothing in the delivery offers anything to object to, so the narrowing of a person's choices happens while they feel well looked after.",
-    "what_it_is_not": "Gentle guidance from someone who ultimately accepts a decision they disagree with is care, not control, and a soft-spoken manner conceals nothing by itself. The test sits at the point of refusal, not in how the request was phrased."
-   },
-   "existing_specific_text": {
-    "short_definition": "Domination delivered through gentleness and softness rather than force, making it harder to name as control.",
-    "expanded_definition": "Domination delivered through gentleness, softness, and apparent care rather than force or overt demands, which makes it considerably harder to name as control — the target may feel cared for even while their autonomy is being steadily narrowed, since nothing about the delivery feels aggressive or unreasonable in the moment. The softness of the method doesn't change the substance of the outcome: choices are still being made for the target, just kindly.",
-    "plain_language_summary": "In plain terms: domination delivered through gentleness and softness rather than force, making it harder to name as control.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to reduced practical independence and a narrowing sense of what options are actually available. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Domination delivered through gentleness and softness rather than force, making it harder to name as control."
-    ],
-    "what_it_sounds_like": [
-     "Decisions consistently get made \"for the target's own good,\" delivered warmly, without the target ever quite being asked what they actually want.",
-     "Pushback is met not with anger but with gentle, concerned-sounding persistence that's hard to argue with without seeming unreasonable.",
-     "Looking back over time, the target notices their autonomy has narrowed considerably, even though no single moment felt confrontational."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuinely gentle, caring people exist and can offer honest input while still respecting someone's final decision. A soft communication style doesn't automatically indicate hidden control."
-    ],
-    "common_false_positives": [
-     "Genuinely caring, gentle guidance from someone who ultimately respects the target's final decision, even while offering their honest opinion.",
-     "A naturally soft-spoken communication style that isn't hiding any controlling intent.",
-     "Real concern, gently expressed, about a decision where the target's autonomy to choose is still genuinely respected in the end."
-    ],
-    "discernment_questions": [
-     "When the target does make their own choice, different from what was gently suggested, is it actually respected?",
-     "Does the gentle persistence ever stop, or does it continue indefinitely until the target complies?",
-     "Looking at outcomes over time rather than any single interaction, has the target's autonomy actually narrowed?",
-     "Would this pattern be easier to name if it were delivered more bluntly, with the same underlying substance?"
-    ],
-    "less_concerning_if": [
-     "The target's own choices, when made, are genuinely respected even if they differ from the gentle suggestion."
-    ],
-    "more_concerning_if": [
-     "Gentle persistence continues indefinitely regardless of the target's stated choice, and autonomy visibly narrows over time."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Isolation",
-     "definition": "Undermining the target's other relationships to increase dependence."
-    },
-    {
-     "name": "Monitoring & Surveillance",
-     "definition": "Demanding access, proof, and constant accounting of the target's activity."
-    },
-    {
-     "name": "Location Tracking",
-     "definition": "Requiring live location as a condition of peace."
-    },
-    {
-     "name": "Behavior Control",
-     "definition": "Issuing rules about clothing, movement, or association."
-    },
-    {
-     "name": "Infantilization",
-     "definition": "Treating a capable adult as unable to manage their own affairs."
-    },
-    {
-     "name": "\"I Know Best\" Paternalism",
-     "definition": "Overriding the target's choices 'for their own good'."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
    "name": "Demonstrating Omnipotence",
    "category": "Control & Domination",
    "tier": "Reference-only",
@@ -172,7 +86,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -258,7 +172,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -344,7 +258,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -430,7 +344,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
@@ -516,7 +430,7 @@
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]

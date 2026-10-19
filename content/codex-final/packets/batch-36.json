@@ -1,63 +1,328 @@
 {
  "batch": "batch-36",
  "kind": "normal",
- "category": "Pressure & Coercion",
+ "category": "Social Warfare & Triangulation",
  "entries": [
   {
-   "name": "Ultimatums",
-   "category": "Pressure & Coercion",
+   "name": "Triangulation",
+   "category": "Social Warfare & Triangulation",
    "tier": "Detected",
    "branch": "detected",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {},
    "existing_specific_text": {
-    "short_definition": "Forcing a binary choice under threat of loss.",
-    "expanded_definition": "Forcing a binary choice under threat of loss. Manufactures crisis to bypass negotiation. As a communication pattern, Ultimatums-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: forcing a binary choice under threat of loss.",
-    "why_this_matters": "Manufactures crisis to bypass negotiation. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Recruiting real or invented third parties as ammunition.",
+    "expanded_definition": "Recruiting real or invented third parties as ammunition. Turns a two-person disagreement into an ambush by a crowd. As a communication pattern, Triangulation-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: recruiting real or invented third parties as ammunition.",
+    "why_this_matters": "Turns a two-person disagreement into an ambush by a crowd. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Forcing a binary choice under threat of loss.",
-     "Manufactures crisis to bypass negotiation.",
-     "Contrasts with a healthier version: \"This is really important to me — can we find a way through it together?\".",
-     "Recognizable by phrasing such as \"It's me or them. Choose\"."
+     "Recruiting real or invented third parties as ammunition.",
+     "Turns a two-person disagreement into an ambush by a crowd.",
+     "Contrasts with a healthier version: \"Here's *my* problem with it\" — owned, first-person, no chorus.",
+     "Recognizable by phrasing such as \"Even your mother thinks you're out of line\"."
     ],
     "what_it_sounds_like": [
-     "It's me or them. Choose.",
-     "Do this or we're done.",
-     "It's me or.",
-     "This is your last chance.",
-     "Or else.",
-     "Choose:? them or me."
+     "Even your mother thinks you're out of line.",
+     "Dana told me what you said about me.",
+     "Even agrees with me that you.",
+     "Everyone thinks that you're.",
+     "I've talked to and they all think.",
+     "Ask any one, they'll tell you.",
+     "Told me that you said.",
+     "Even your mom thinks."
     ],
     "what_it_is_not": [
-     "'If you keep hurting me, I will leave' is a boundary, not an ultimatum — conditions about one's own safety or respect are legitimate.",
-     "'If you keep yelling at me, I'm leaving' is a boundary about one's own safety, not an ultimatum — this tool treats it as such."
+     "Citing that others share a concern can be legitimate (an intervention is triangulation-shaped but caring). Verify the chorus exists."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine, considered limits and dealbreakers are a normal, healthy part of relationships when stated honestly."
+     "Genuinely seeking outside, independent perspective on a shared issue is different from recruiting ammunition."
     ],
     "common_false_positives": [
-     "A genuine, honest statement of a real limit or need, offered with room for real discussion rather than as a manufactured binary crisis.",
-     "A person clearly communicating a genuine dealbreaker after real reflection, not manufactured in the heat of the moment to force a decision.",
-     "Reasonable boundaries stated plainly, without artificially compressing a complex issue into a false binary threat."
+     "A person genuinely, separately seeking a third party's honest, independent perspective on a shared issue, disclosed openly.",
+     "Real, first-person disagreement expressed directly, without needing to invoke other people's opinions as backup.",
+     "A third party's genuinely independent, unprompted opinion that happens to align with one side, mentioned honestly."
     ],
     "discernment_questions": [
-     "Is the binary choice genuinely the only real option, or does it artificially compress a more complex, negotiable situation?",
-     "Does the ultimatum leave room for real discussion, or is it delivered as a final, non-negotiable threat?",
-     "Was this a considered, honest limit, or manufactured suddenly to force an immediate decision?",
-     "Would a neutral observer see other realistic options the ultimatum obscures?"
+     "Is the third party's opinion genuinely independent, or was it solicited specifically to be used as ammunition?",
+     "Does the person express their own, first-person view, or does it hide behind a claimed chorus of others?",
+     "Is the third party's view accurately represented, or exaggerated or invented to add pressure?",
+     "Would the disagreement stand on its own without needing to invoke other people's supposed agreement?"
     ],
     "less_concerning_if": [
-     "A real limit is stated honestly, with room for genuine discussion rather than as a manufactured crisis."
+     "A third party's genuinely independent opinion is mentioned honestly, without being solicited as ammunition."
     ],
     "more_concerning_if": [
-     "A complex situation is artificially compressed into a binary threat, delivered suddenly to force an immediate decision."
+     "Third parties are recruited or invented specifically to add pressure to a two-person disagreement."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Forced Teaming",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Manufacturing a 'we' to erase the target's separate choice.",
+    "expanded_definition": "Manufacturing a 'we' to erase the target's separate choice. Obligations get created that the target never actually agreed to. As a communication pattern, Forced Teaming-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: manufacturing a 'we' to erase the target's separate choice.",
+    "why_this_matters": "Obligations get created that the target never actually agreed to. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Manufacturing a 'we' to erase the target's separate choice.",
+     "Obligations get created that the target never actually agreed to.",
+     "Contrasts with a healthier version: \"I'd like us to approach this together — are you in?\".",
+     "Recognizable by phrasing such as \"We're in this together whether you like it or not\"."
+    ],
+    "what_it_sounds_like": [
+     "We're in this together whether you like it or not.",
+     "People like us have to stick together.",
+     "We're in this together, and you can't.",
+     "It's us against the world.",
+     "People like us need to stick together."
+    ],
+    "what_it_is_not": [
+     "Team language is everywhere and almost always benign; the flag is 'we' immediately followed by *your* obligation."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, invited collaboration that the target actually agreed to is healthy teamwork."
+    ],
+    "common_false_positives": [
+     "A genuine, invited collaboration where the target actually agreed to work together, rather than having a \"we\" imposed on them.",
+     "A person expressing hope for partnership, phrased as an invitation rather than a declared, non-negotiable fact.",
+     "Real, mutual teamwork that both people consciously chose, referenced accurately as \"we.\""
+    ],
+    "discernment_questions": [
+     "Did the target actually agree to the \"we,\" or was it declared and imposed regardless of their input?",
+     "Does the framing leave room for the target to decline being part of the \"team,\" or is it non-negotiable?",
+     "Does an obligation get created that the target never actually consented to?",
+     "Would the collaboration exist if the target had been genuinely asked first?"
+    ],
+    "less_concerning_if": [
+     "The \"we\" reflects a real, mutually agreed collaboration the target consciously chose."
+    ],
+    "more_concerning_if": [
+     "A \"we\" is declared and imposed regardless of the target's actual agreement, creating an unconsented obligation."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "\"We're Family\" Erasure",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Using the family bond to nullify boundaries or fairness.",
+    "expanded_definition": "Using the family bond to nullify boundaries or fairness. 'Family' becomes a word that means the target can't say no. As a communication pattern, \"we're family\" erasure-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: using the family bond to nullify boundaries or fairness.",
+    "why_this_matters": "'Family' becomes a word that means the target can't say no. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Using the family bond to nullify boundaries or fairness.",
+     "'Family' becomes a word that means the target can't say no.",
+     "Contrasts with a healthier version: \"We're family, so let's find something that's fair to both of us.\"."
+    ],
+    "what_it_sounds_like": [
+     "We're family, so you can't.",
+     "Family doesn't say boundaries.",
+     "You can't charge family.",
+     "Blood is thicker than water."
+    ],
+    "what_it_is_not": [
+     "Appeals to family closeness are usually sincere expressions of value, not levers."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, mutual family values around support and closeness are healthy when reciprocal."
+    ],
+    "common_false_positives": [
+     "A genuine, mutual family value around support that both people actually endorse and apply reciprocally.",
+     "A person honestly appealing to family closeness while still respecting the target's right to say no.",
+     "Real, warm family bonds referenced without being used to nullify a specific boundary or unfair situation."
+    ],
+    "discernment_questions": [
+     "Is \"family\" invoked specifically to override a fair boundary or unequal arrangement?",
+     "Does the appeal to family leave room for the target to still say no, or does it function as an automatic override?",
+     "Is the family obligation reciprocal, or does it flow mainly in one direction?",
+     "Would the same request be reasonable if stated without invoking family loyalty?"
+    ],
+    "less_concerning_if": [
+     "Family closeness is referenced warmly and reciprocally, without overriding the target's ability to say no."
+    ],
+    "more_concerning_if": [
+     "\"Family\" is invoked specifically to nullify a boundary or unfair arrangement, removing the target's ability to decline."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Concern Trolling",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {},
+   "existing_specific_text": {
+    "short_definition": "Packaging control directives as worry.",
+    "expanded_definition": "Packaging control directives as worry. Refusing 'help' gets reframed as self-destructiveness, trapping the target. As a communication pattern, Concern Trolling-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: packaging control directives as worry.",
+    "why_this_matters": "Refusing 'help' gets reframed as self-destructiveness, trapping the target. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Packaging control directives as worry.",
+     "Refusing 'help' gets reframed as self-destructiveness, trapping the target.",
+     "Contrasts with a healthier version: \"I'm worried. Do you want my input, or just support?\".",
+     "Recognizable by phrasing such as \"I'm only saying this because I worry about you\"."
+    ],
+    "what_it_sounds_like": [
+     "I'm only saying this because I worry about you.",
+     "As your friend, I have to say everyone's noticed.",
+     "I'm just worried about you, that's why you should.",
+     "As someone who cares, you really need to stop."
+    ],
+    "what_it_is_not": [
+     "Most concern is real concern. The test: does the 'worry' only ever point toward what the speaker wants?"
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, appropriate concern about a real issue, offered once respectfully, isn't concern trolling."
+    ],
+    "common_false_positives": [
+     "A genuine, one-time expression of worry that respects the target's autonomy to decide how to respond.",
+     "A person honestly asking whether the target wants advice or just support, and respecting the answer.",
+     "Real, appropriate concern about a serious issue, offered once without repeated control-directives disguised as worry."
+    ],
+    "discernment_questions": [
+     "Does the \"concern\" leave room for the target to decline help without being reframed as self-destructive?",
+     "Is the worry used repeatedly to justify specific directives about what the target should do?",
+     "Does asking whether the target wants input or just support happen, and get respected?",
+     "Would the underlying request stand on its own without needing to be wrapped in worry?"
+    ],
+    "less_concerning_if": [
+     "Worry is expressed once, respects the target's autonomy, and doesn't recur as repeated directives."
+    ],
+    "more_concerning_if": [
+     "Worry is repeatedly used to justify specific directives, and declining help gets reframed as self-destructive."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -65,594 +330,292 @@
    },
    "related_tactics": [
     {
-     "name": "Urgency Manufacturing",
-     "definition": "Compressing time so the target can't think or consult."
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
     },
     {
-     "name": "False Dilemma",
-     "definition": "Presenting two options when more exist."
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
     },
     {
-     "name": "Sunk Cost Exploitation",
-     "definition": "Using past investment to block present exit."
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
     },
     {
-     "name": "Response-Time Policing",
-     "definition": "Treating reply latency as an offense requiring explanation."
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
     },
     {
-     "name": "Interrogation",
-     "definition": "Demanding justification as an entitlement, on command."
-    },
-    {
-     "name": "Sexual Coercion",
-     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": true,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "\"Polite Hostile\" Environments",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Pattern-only",
+   "branch": "pattern",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Nothing that happens is documentable, so whoever spoke up carries the cost alone with no case to make. Everyone watching learns that silence is the sensible option."
+   },
+   "existing_specific_text": {
+    "short_definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath.",
+    "expanded_definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath. As a communication pattern, \"polite hostile\" environments-type behavior in the Social Warfare & Triangulation category tends to work by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: a workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath.",
+     "Recognizable by phrasing such as \"Every formal interaction is impeccably polite, yet raising real concerns is consistently followed by subtle exclusion, cooled relationships, or stalled opportunities\"."
+    ],
+    "what_it_sounds_like": [
+     "Every formal interaction is impeccably polite, yet raising real concerns is consistently followed by subtle exclusion, cooled relationships, or stalled opportunities.",
+     "Colleagues describe a 'vibe' they can't quite name in official terms.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'a workplace or social space that appears civil and professio'. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "Genuine workplace civility and professionalism are good things — the flag is politeness used specifically as camouflage for a retaliation pattern, visible only once you track outcomes over months."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Genuine, reasonable workplace civility norms don't automatically punish real dissent."
+    ],
+    "common_false_positives": [
+     "A genuinely professional environment with reasonable norms around civility that doesn't actually punish real dissent or concerns when raised appropriately.",
+     "A workplace going through a rough patch where a few people's opportunities happen to stall for real, disclosed business reasons.",
+     "A single instance of a raised concern not going anywhere, without an established pattern connecting it to systematic exclusion."
+    ],
+    "discernment_questions": [
+     "Does raising real concerns actually and predictably lead to subtle exclusion or stalled opportunities, or is that a coincidence?",
+     "Is civility genuine, or does it function as a smokescreen that punishes anyone who breaks from it?",
+     "Does this pattern show up across multiple different people who've raised concerns, or is it isolated to one situation?",
+     "Would a neutral observer, tracking outcomes over time, see a real, punitive pattern connected to truth-telling?"
+    ],
+    "less_concerning_if": [
+     "Raising real concerns doesn't predictably lead to exclusion or stalled opportunities."
+    ],
+    "more_concerning_if": [
+     "Truth-telling or dissent predictably and consistently leads to subtle exclusion or stalled opportunities across multiple people."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Silent Coalitions",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "There is no incident to point at, only a consistent absence, which turns the search for an explanation inward.",
+    "what_it_is_not": "Social anxiety can produce the same feeling with nothing at all behind it, and some groups are simply less inclusive as a general dynamic rather than towards one individual. A low period colours ordinary social gaps and makes a pattern out of them."
+   },
+   "existing_specific_text": {
+    "short_definition": "Organized, covert group exclusion where the target is systematically marginalized but the coordination is invisible, making them blame themselves.",
+    "expanded_definition": "Organized, covert group exclusion where the target is systematically marginalized, but the coordination behind it stays invisible — no explicit conversation the target can point to, just a consistent pattern that leaves them wondering if they're imagining it or if something is genuinely wrong with them. The invisibility of the coordination is what distinguishes this from more overt Ostracism.",
+    "plain_language_summary": "In plain terms: organized, covert group exclusion where the target is systematically marginalized but the coordination is invisible, making them blame themselves.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Organized, covert group exclusion where the target is systematically marginalized but the coordination is invisible, making them blame themselves."
+    ],
+    "what_it_sounds_like": [
+     "A consistent, hard-to-pin-down sense of being subtly left out, without any single clear moment to point to.",
+     "The target starts to wonder if the problem is their own perception, since nothing concrete seems to have happened.",
+     "When the target finally names the pattern out loud, others act surprised or deny noticing anything, even though the pattern was consistent."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "General anxiety or a low period can genuinely color perception of ordinary social dynamics. Some groups are just naturally less inclusive as a whole, without targeting any one person specifically."
+    ],
+    "common_false_positives": [
+     "General social anxiety or self-consciousness that produces a similar feeling without any actual coordinated exclusion behind it.",
+     "A group that's genuinely just less close-knit or less inclusive as a general dynamic, not specifically targeting the individual.",
+     "The target going through a period of low mood that colors their perception of ordinary, unremarkable social gaps."
+    ],
+    "discernment_questions": [
+     "Does the sense of exclusion track a consistent pattern over time, or does it fluctuate with the target's general mood?",
+     "When compared against how the group treats other members, is the target notably and consistently different?",
+     "Do trusted, outside observers independently notice anything?",
+     "Does naming the pattern lead to any acknowledgment, or blanket denial that anything is happening?"
+    ],
+    "less_concerning_if": [
+     "The feeling doesn't hold up against comparison with how others are treated, and fluctuates with mood rather than being consistent."
+    ],
+    "more_concerning_if": [
+     "An outside observer independently confirms a consistent pattern that the target isn't imagining."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
+    },
+    {
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
+    },
+    {
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
+    },
+    {
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
+    },
+    {
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
+    },
+    {
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Urgency Manufacturing",
-   "category": "Pressure & Coercion",
-   "tier": "Detected",
-   "branch": "detected",
+   "name": "Group Consolidation",
+   "category": "Social Warfare & Triangulation",
+   "tier": "Reference-only",
+   "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
-   "approved_draft": {},
+   "approved_draft": {
+    "why_this_matters": "Everyone watching learns the price of dissent without being told, and the lesson outlasts the person it was demonstrated on.",
+    "what_it_is_not": "Proportionate accountability can be visible simply because of the setting — an open-plan office, a meeting, a family gathering. A genuinely serious matter can warrant a visible response on its own merits. Consequences applied consistently and announced as policy are not calibrated to an audience."
+   },
    "existing_specific_text": {
-    "short_definition": "Compressing time so the target can't think or consult.",
-    "expanded_definition": "Compressing time so the target can't think or consult. Deliberation is the enemy of coercion; urgency removes it. As a communication pattern, Urgency Manufacturing-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: compressing time so the target can't think or consult.",
-    "why_this_matters": "Deliberation is the enemy of coercion; urgency removes it. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "The visible punishment of one person teaching everyone watching that dissent has a price — the lesson isn't for the one punished, it's for the many observing.",
+    "expanded_definition": "The visible punishment of one person specifically to teach everyone watching that dissent has a price — the real audience for the punishment isn't the person being punished, it's everyone else observing what happens to people who step out of line. This differs from ordinary accountability in that the punishment is calibrated for its deterrent effect on bystanders, not proportionate to what the punished person actually did.",
+    "plain_language_summary": "In plain terms: the visible punishment of one person teaching everyone watching that dissent has a price — the lesson isn't for the one punished, it's for the many observing.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Compressing time so the target can't think or consult.",
-     "Deliberation is the enemy of coercion; urgency removes it.",
-     "Contrasts with a healthier version: \"No rush — take the time you need and tell me tomorrow.\".",
-     "Recognizable by phrasing such as \"Decide right now or forget it\"."
+     "The visible punishment of one person teaching everyone watching that dissent has a price — the lesson isn't for the one punished, it's for the many observing."
     ],
     "what_it_sounds_like": [
-     "Decide right now or forget it.",
-     "This offer is gone by tonight.",
-     "You have to decide right now.",
-     "There's no time to think about it.",
-     "Answer me now or.",
-     "This offer expires tonight."
-    ],
-    "what_it_is_not": [
-     "Some deadlines are real. Ask what actually happens if you take one more day."
+     "Someone who raised a concern or pushed back is publicly and disproportionately reprimanded, in a way visible to the rest of the group.",
+     "The punishment seems disproportionate to the offense but proportionate to its value as a warning to everyone else.",
+     "After witnessing one person's treatment, others in the group visibly become more cautious about raising similar concerns."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuinely time-sensitive situations exist and can reasonably require a prompt decision."
+     "Organizations sometimes have genuine, consistent policies about visible accountability that aren't about intimidation. Serious issues sometimes do warrant a visible response."
     ],
     "common_false_positives": [
-     "A genuinely time-sensitive situation with a real, external deadline, honestly disclosed.",
-     "A person expressing real, proportionate urgency about something that actually does need a prompt decision.",
-     "A situation where slowing down and taking time would genuinely be respected if requested."
+     "Proportionate, appropriate accountability that happens to be visible simply because of the setting (a public meeting, a shared workspace).",
+     "A genuinely serious violation that warranted a visible response regardless of any deterrent intent.",
+     "A leader being transparent about consequences as a matter of policy, applied consistently regardless of who's watching."
     ],
     "discernment_questions": [
-     "Is there a real, verifiable reason the decision needs to happen immediately?",
-     "Does asking for more time to think or consult someone produce genuine patience, or increased pressure?",
-     "Would the situation actually change if the target took more time, or is the urgency more about preventing reflection?",
-     "Does this pattern of manufactured urgency recur across different, unrelated decisions?"
+     "Is the visible punishment proportionate to what actually happened, or does it seem calibrated for effect on onlookers?",
+     "Do other people in the group visibly change their behavior — becoming quieter, more compliant — after witnessing it?",
+     "Is this kind of visible consequence applied consistently, or does it appear mainly around dissent specifically?",
+     "Would a private, proportionate response have addressed the actual issue just as well?"
     ],
     "less_concerning_if": [
-     "The urgency is real and verifiable, and requests for more time are genuinely respected."
+     "The response is proportionate to the actual issue and consistent regardless of who's watching."
     ],
     "more_concerning_if": [
-     "Urgency is manufactured to prevent reflection, and requests for time produce escalating pressure rather than patience."
+     "The response is disproportionate and specifically timed to be visible to others who might otherwise dissent."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by pulling other people into a two-person dynamic, diluting direct accountability and making the target doubt their own read with reinforcement from an audience. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe confusion about who actually said or thinks what, and strain on relationships with the people being triangulated in in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
     ]
    },
    "related_tactics": [
     {
-     "name": "Ultimatums",
-     "definition": "Forcing a binary choice under threat of loss."
+     "name": "Triangulation",
+     "definition": "Recruiting real or invented third parties as ammunition."
     },
     {
-     "name": "False Dilemma",
-     "definition": "Presenting two options when more exist."
+     "name": "Forced Teaming",
+     "definition": "Manufacturing a 'we' to erase the target's separate choice."
     },
     {
-     "name": "Sunk Cost Exploitation",
-     "definition": "Using past investment to block present exit."
+     "name": "\"We're Family\" Erasure",
+     "definition": "Using the family bond to nullify boundaries or fairness."
     },
     {
-     "name": "Response-Time Policing",
-     "definition": "Treating reply latency as an offense requiring explanation."
+     "name": "Concern Trolling",
+     "definition": "Packaging control directives as worry."
     },
     {
-     "name": "Interrogation",
-     "definition": "Demanding justification as an entitlement, on command."
+     "name": "\"Polite Hostile\" Environments",
+     "definition": "A workplace or social space that appears civil and professional on its surface while systematically punishing truth-telling, dissent, or authenticity underneath."
     },
     {
-     "name": "Sexual Coercion",
-     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
+     "name": "Flying Monkeys",
+     "definition": "Third parties enlisted, often unknowingly, to pressure or monitor a target on someone else's behalf."
     }
    ],
    "old_safety_signals": {
-    "old_page_badge": true,
+    "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "False Dilemma",
-   "category": "Pressure & Coercion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Presenting two options when more exist.",
-    "expanded_definition": "Presenting two options when more exist. Hides the exits; the target chooses between traps. As a communication pattern, False Dilemma-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: presenting two options when more exist.",
-    "why_this_matters": "Hides the exits; the target chooses between traps. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Presenting two options when more exist.",
-     "Hides the exits; the target chooses between traps.",
-     "Contrasts with a healthier version: \"Here are the options I see — what am I missing?\".",
-     "Recognizable by phrasing such as \"Either you trust me completely or this means nothing\"."
-    ],
-    "what_it_sounds_like": [
-     "Either you trust me completely or this means nothing.",
-     "You're with me or against me.",
-     "You're either with me or against me.",
-     "There are only two options.",
-     "It's all or nothing."
-    ],
-    "what_it_is_not": [
-     "Sometimes the speaker genuinely can't see other options either."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Some situations genuinely do simplify to two realistic options.",
-     "Simplifying a complex choice for clarity isn't manipulative if open to other options being raised."
-    ],
-    "common_false_positives": [
-     "A genuine situation that really does have only two realistic options, honestly presented as such.",
-     "A person simplifying a complex choice for clarity, while remaining open that other options exist if the target raises them.",
-     "An honest, if incomplete, framing that updates readily once additional options are pointed out."
-    ],
-    "discernment_questions": [
-     "Are there genuinely only two options, or does the framing hide other realistic alternatives?",
-     "Does raising a third option get engaged with, or dismissed as if it doesn't exist?",
-     "Is the binary framing used specifically to force an extreme choice?",
-     "Would a neutral observer see additional, reasonable options the framing leaves out?"
-    ],
-    "less_concerning_if": [
-     "The situation genuinely has limited options, or the framing updates readily once other options are raised."
-    ],
-    "more_concerning_if": [
-     "Real alternatives exist but are hidden, and the binary framing is used to force an extreme, either-or choice."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Ultimatums",
-     "definition": "Forcing a binary choice under threat of loss."
-    },
-    {
-     "name": "Urgency Manufacturing",
-     "definition": "Compressing time so the target can't think or consult."
-    },
-    {
-     "name": "Sunk Cost Exploitation",
-     "definition": "Using past investment to block present exit."
-    },
-    {
-     "name": "Response-Time Policing",
-     "definition": "Treating reply latency as an offense requiring explanation."
-    },
-    {
-     "name": "Interrogation",
-     "definition": "Demanding justification as an entitlement, on command."
-    },
-    {
-     "name": "Sexual Coercion",
-     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Sunk Cost Exploitation",
-   "category": "Pressure & Coercion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Using past investment to block present exit.",
-    "expanded_definition": "Using past investment to block present exit. Years already spent become the reason to spend more. As a communication pattern, Sunk Cost Exploitation-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: using past investment to block present exit.",
-    "why_this_matters": "Years already spent become the reason to spend more. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Using past investment to block present exit.",
-     "Years already spent become the reason to spend more.",
-     "Contrasts with a healthier version: \"We've built a lot — I want to fight for it. Do you?\" (an invitation, not a debt).",
-     "Recognizable by phrasing such as \"You'd throw away five years over this?\"."
-    ],
-    "what_it_sounds_like": [
-     "You'd throw away five years over this?",
-     "After everything we've built, you'd just walk?",
-     "After all these years, you can't just walk away.",
-     "You'd really throw away some years."
-    ],
-    "what_it_is_not": [
-     "Grief about potentially losing shared history is genuine and human; it's exploitation only when deployed to trap."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine value in what's been built together is a real, honest part of relationship decisions."
-    ],
-    "common_false_positives": [
-     "A genuine, honest reflection on real shared investment, offered as one factor among several in a mutual decision about the future.",
-     "A person expressing real value in what's been built together, inviting genuine reconsideration rather than blocking an exit.",
-     "Honest acknowledgment of time invested, alongside real respect for the target's right to still decide differently."
-    ],
-    "discernment_questions": [
-     "Is past investment offered as one honest factor to weigh, or wielded specifically to block the target from leaving?",
-     "Does the person respect the target's right to decide differently despite the investment, or treat leaving as unthinkable?",
-     "Does this framing appear specifically when the target considers ending something, or is it part of a broader, honest reflection?",
-     "Would the relationship's value stand on its own current merits, without needing to invoke past investment?"
-    ],
-    "less_concerning_if": [
-     "Past investment is offered as one honest factor, with real respect for the target's right to decide differently."
-    ],
-    "more_concerning_if": [
-     "Years invested are specifically wielded to make leaving feel unthinkable, regardless of current merits."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Ultimatums",
-     "definition": "Forcing a binary choice under threat of loss."
-    },
-    {
-     "name": "Urgency Manufacturing",
-     "definition": "Compressing time so the target can't think or consult."
-    },
-    {
-     "name": "False Dilemma",
-     "definition": "Presenting two options when more exist."
-    },
-    {
-     "name": "Response-Time Policing",
-     "definition": "Treating reply latency as an offense requiring explanation."
-    },
-    {
-     "name": "Interrogation",
-     "definition": "Demanding justification as an entitlement, on command."
-    },
-    {
-     "name": "Sexual Coercion",
-     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Response-Time Policing",
-   "category": "Pressure & Coercion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Treating reply latency as an offense requiring explanation.",
-    "expanded_definition": "Treating reply latency as an offense requiring explanation. Puts the target permanently on-call; delay becomes guilt. As a communication pattern, Response-Time Policing-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: treating reply latency as an offense requiring explanation.",
-    "why_this_matters": "Puts the target permanently on-call; delay becomes guilt. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Treating reply latency as an offense requiring explanation.",
-     "Puts the target permanently on-call; delay becomes guilt.",
-     "Contrasts with a healthier version: \"I get anxious when I don't hear back — a quick 'busy, later' helps me a lot.\".",
-     "Recognizable by phrasing such as \"Why did it take you two hours to reply?\"."
-    ],
-    "what_it_sounds_like": [
-     "Why did it take you two hours to reply?",
-     "Seen at 3:41. It's now 4. Explain.",
-     "Why did it take you so long to reply.",
-     "You saw my message and didn't reply.",
-     "Left me on read."
-    ],
-    "what_it_is_not": [
-     "Feeling neglected is a real feeling; asking about it once is communication, not policing."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine anxiety about not hearing back, especially in a specific high-stakes moment, is a normal feeling."
-    ],
-    "common_false_positives": [
-     "A genuine, honest expression of anxiety about not hearing back, shared once without demanding an explanation for every delay.",
-     "A person processing real worry during a specific, high-stakes situation where quick replies genuinely mattered.",
-     "Reasonable, mutually agreed expectations about response times in a specific context, applied evenly."
-    ],
-    "discernment_questions": [
-     "Is a delayed reply treated as requiring justification, or does the person express their own feeling about it without demanding an account?",
-     "Does this happen for every delay, or specifically around a real, disclosed high-stakes situation?",
-     "Is the standard applied mutually and reasonably, or does only the target's response time get policed?",
-     "Would a reasonable explanation actually satisfy the concern?"
-    ],
-    "less_concerning_if": [
-     "A specific worry is expressed honestly, without demanding justification for every delay."
-    ],
-    "more_concerning_if": [
-     "Every delay requires justification, and the target effectively stays on-call regardless of their own life."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Ultimatums",
-     "definition": "Forcing a binary choice under threat of loss."
-    },
-    {
-     "name": "Urgency Manufacturing",
-     "definition": "Compressing time so the target can't think or consult."
-    },
-    {
-     "name": "False Dilemma",
-     "definition": "Presenting two options when more exist."
-    },
-    {
-     "name": "Sunk Cost Exploitation",
-     "definition": "Using past investment to block present exit."
-    },
-    {
-     "name": "Interrogation",
-     "definition": "Demanding justification as an entitlement, on command."
-    },
-    {
-     "name": "Sexual Coercion",
-     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Interrogation",
-   "category": "Pressure & Coercion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Demanding justification as an entitlement, on command.",
-    "expanded_definition": "Demanding justification as an entitlement, on command. Being made to justify, argue, defend and explain on demand trains reflexive self-defense (the JADE loop). As a communication pattern, Interrogation-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: demanding justification as an entitlement, on command.",
-    "why_this_matters": "Being made to justify, argue, defend and explain on demand trains reflexive self-defense (the JADE loop). Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Demanding justification as an entitlement, on command.",
-     "Being made to justify, argue, defend and explain on demand trains reflexive self-defense (the JADE loop).",
-     "Contrasts with a healthier version: \"Help me understand what happened?\" — a question, not a summons.",
-     "Recognizable by phrasing such as \"You owe me an explanation\"."
-    ],
-    "what_it_sounds_like": [
-     "You owe me an explanation.",
-     "Explain yourself. Now.",
-     "You owe us an explanation.",
-     "Explain yourself, right now.",
-     "Justify yourself to me.",
-     "Answer me when I'm talking to you."
-    ],
-    "what_it_is_not": [
-     "Wanting an explanation after a genuine breach of trust is reasonable; the flag is the entitled, on-command framing.",
-     "Wanting a real explanation after a genuine breach of trust is fair; the flag is entitled, on-command demand."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuine curiosity and care, expressed as a question rather than a demand, is normal in close relationships."
-    ],
-    "common_false_positives": [
-     "A genuine, caring question asked once, from real concern, that doesn't demand a defense on command.",
-     "A reasonable request for information in a context like a formal process, where explanation is genuinely, appropriately expected.",
-     "Honest curiosity about what happened, asked with warmth rather than as a summons."
-    ],
-    "discernment_questions": [
-     "Does the request feel like genuine curiosity, or an entitled demand for justification on command?",
-     "Is there room to say \"I don't want to explain right now,\" or is explanation treated as owed regardless?",
-     "Does this happen as a repeated, reflexive pattern for anything the target does, or occasional genuine curiosity?",
-     "Would a reasonable person feel invited to share, or interrogated?"
-    ],
-    "less_concerning_if": [
-     "A question comes from genuine curiosity or care, with room to decline explaining in the moment."
-    ],
-    "more_concerning_if": [
-     "Explanation is demanded as an entitlement on command, repeatedly, regardless of context."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Ultimatums",
-     "definition": "Forcing a binary choice under threat of loss."
-    },
-    {
-     "name": "Urgency Manufacturing",
-     "definition": "Compressing time so the target can't think or consult."
-    },
-    {
-     "name": "False Dilemma",
-     "definition": "Presenting two options when more exist."
-    },
-    {
-     "name": "Sunk Cost Exploitation",
-     "definition": "Using past investment to block present exit."
-    },
-    {
-     "name": "Response-Time Policing",
-     "definition": "Treating reply latency as an offense requiring explanation."
-    },
-    {
-     "name": "Sexual Coercion",
-     "definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [
-     "high_false_positive_risk"
-    ],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
-  },
-  {
-   "name": "Sexual Coercion",
-   "category": "Pressure & Coercion",
-   "tier": "Detected",
-   "branch": "detected",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {},
-   "existing_specific_text": {
-    "short_definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent.",
-    "expanded_definition": "Using pressure, guilt, power, or implied consequences to override someone's sexual consent. It makes consent conditional on avoiding punishment rather than freely given — which is not consent. As a communication pattern, Sexual Coercion-type behavior in the Pressure & Coercion category tends to work by compressing the time or space available to think, so a decision gets made under urgency instead of consideration — describing a pattern in the exchange, not a fixed trait in the person.",
-    "plain_language_summary": "In plain terms: using pressure, guilt, power, or implied consequences to override someone's sexual consent.",
-    "why_this_matters": "It makes consent conditional on avoiding punishment rather than freely given — which is not consent. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Using pressure, guilt, power, or implied consequences to override someone's sexual consent.",
-     "It makes consent conditional on avoiding punishment rather than freely given — which is not consent.",
-     "Contrasts with a healthier version: a healthy dynamic treats \"no\" as a complete sentence, every time, with zero relational cost.",
-     "Recognizable by phrasing such as \"You owe me this much\"."
-    ],
-    "what_it_sounds_like": [
-     "You owe me this much.",
-     "If you really loved me, you'd do this.",
-     "You owe me sex.",
-     "If you really loved me, you'd sleep with me."
-    ],
-    "what_it_is_not": [
-     "This tool's evidence bar here is high on purpose — but if any of this resonates, it deserves a real conversation with someone you trust or a professional, not just a private reread of this page."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Honest expression of desire or disappointment, that still fully respects a \"no,\" is healthy communication."
-    ],
-    "common_false_positives": [
-     "A genuine, honest expression of desire that fully respects a \"no\" without any implied cost or consequence.",
-     "A person expressing real disappointment about a mismatch in desire, without pressure, guilt, or implied punishment attached.",
-     "Mutual, ongoing communication about intimacy where both people's \"no\" is treated as complete and final every time."
-    ],
-    "discernment_questions": [
-     "Does declining come with any implied or explicit cost, or is \"no\" treated as a complete, respected answer?",
-     "Is pressure, guilt, or a sense of owing invoked to override a decline?",
-     "Does this happen as a pattern, or was this a single, honest expression of disappointment that still respected the answer?",
-     "Would consent given here be genuinely free, or given specifically to avoid a consequence?"
-    ],
-    "less_concerning_if": [
-     "A \"no\" is fully respected without any implied cost, even alongside honest disappointment."
-    ],
-    "more_concerning_if": [
-     "Declining carries implied or explicit consequences, and pressure or guilt is used to override the answer."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by compressing the time or space available to think, so a decision gets made under urgency instead of consideration. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe decision fatigue and a pattern of agreeing to things in the moment that don't hold up on reflection in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "boundary_script": "Given the safety dimension of this category, a scripted line matters less than the surrounding plan: if and when it feels safe, a simple, low-detail line like \"I need some space and I'll reach out when I'm ready\" is enough — it does not require justification. See the Safety note below before deciding how, when, or whether to address this directly with the person involved.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Ultimatums",
-     "definition": "Forcing a binary choice under threat of loss."
-    },
-    {
-     "name": "Urgency Manufacturing",
-     "definition": "Compressing time so the target can't think or consult."
-    },
-    {
-     "name": "False Dilemma",
-     "definition": "Presenting two options when more exist."
-    },
-    {
-     "name": "Sunk Cost Exploitation",
-     "definition": "Using past investment to block present exit."
-    },
-    {
-     "name": "Response-Time Policing",
-     "definition": "Treating reply latency as an offense requiring explanation."
-    },
-    {
-     "name": "Interrogation",
-     "definition": "Demanding justification as an entitlement, on command."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": true,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]

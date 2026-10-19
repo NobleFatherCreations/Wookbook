@@ -1,0 +1,1061 @@
+{
+ "batch": "merged-03",
+ "kind": "merged",
+ "category": "mixed categories",
+ "entries": [
+  {
+   "name": "Identity Erosion",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "aftermath",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Identity Erosion' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Identity Erosion",
+    "Self-Abandonment"
+   ],
+   "members": [
+    {
+     "name": "Identity Erosion",
+     "tier": "Reference-only",
+     "source_definition": "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate.",
+      "expanded_definition": "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate. As a communication pattern, Identity Erosion-type behavior in the Attack & Erosion category tends to work by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry describing an internal state, note: this tool never scores or detects this about its user — it is here only so the state can be recognized and understood.",
+      "plain_language_summary": "In plain terms: the gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate. This is about a pattern inside you, not a verdict about you.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming an internal pattern accurately — without judgment — is often the first step toward loosening its grip.",
+      "what_it_is": [
+       "The gradual loss of your own preferences, opinions, style, and friendships until the self that predated the relationship is hard to locate.",
+       "Recognizable by phrasing such as \"Not remembering what music you liked before them\"."
+      ],
+      "what_it_sounds_like": [
+       "Not being able to remember what music, food, or hobbies you actually liked before this relationship began.",
+       "Realizing your opinions on most things now default to matching someone else's, without a clear memory of when that started.",
+       "Noticing your circle of friends has narrowed to almost entirely people connected to this one relationship."
+      ],
+      "what_it_is_not": [
+       "People in healthy relationships also grow and change together — the difference is whether the change ran in one direction only, away from your prior self."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Everyone's tastes and interests genuinely evolve over time, with or without a relationship's influence.",
+       "Healthy relationships do sometimes introduce genuinely enjoyed new interests."
+      ],
+      "common_false_positives": [
+       "Genuine, natural evolution of taste and interests over time, which happens to everyone regardless of any relationship.",
+       "Healthy influence from a partner introducing you to new things you've genuinely, independently come to enjoy.",
+       "A deliberate, chosen simplification of your social circle during a busy life phase, not connected to losing your own preferences."
+      ],
+      "discernment_questions": [
+       "Can you trace specific, remembered preferences you had before this relationship that have since disappeared?",
+       "Does the change reflect genuine, independent growth, or a narrowing that tracks specifically what this one person prefers?",
+       "Do you still have friendships and interests that exist independent of this relationship?",
+       "Does imagining your life without this person feel like losing access to yourself, more than just missing them?"
+      ],
+      "less_concerning_if": [
+       "This reflects genuine, independent evolution of your taste over time, or interests you've authentically come to share."
+      ],
+      "more_concerning_if": [
+       "Specific, remembered preferences have disappeared and narrowed specifically to match this one person, with your independent circle shrinking."
+      ],
+      "repair_check": "Self-repair check: has anything changed in the conditions that produced this pattern? Are there moments now, even small ones, where the old response doesn't fire the way it used to? Self-repair isn't a single realization — it's a pattern of small, repeated choices to trust your own read of things.",
+      "boundary_respect_check": "What happens when you give yourself permission to slow down, check the facts as you understand them, or ask for support before deciding how you feel? Is that permission honored internally, or does old habit override it quickly?",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a documented survival/adaptation mechanism, not a permanent trait or a diagnosis.",
+      "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of someone carrying this pattern.",
+      "boundary_script": "Self-support script: \"I'm allowed to trust my own read of things. I don't have to decide how I feel about this right now.\"",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone.",
+       "This entry is for self-understanding. It is not a basis for describing yourself, or for anyone else to describe you, as broken, defective, or diagnosable."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "The slow loss of your own tastes, opinions, habits and friendships inside a relationship, until the person you were earlier is hard to find.",
+      "core_meaning": "The slow loss of your own tastes, opinions, habits and friendships inside a relationship, until the person you were earlier is hard to find.",
+      "expanded_definition": "This is something a person carries rather than something one party does in a single moment. Over months or years, preferences narrow toward what the other person likes, old friendships fade, and opinions get shelved to keep things smooth. Everyone changes in a close relationship, and some of it is chosen and welcome. The concern is a change that runs one way, that you did not decide on, and that leaves you unsure what you would choose alone.",
+      "plain_language_summary": "You look up and cannot say what you like, what you think, or who your friends are anymore, because most of it has been shaped around someone else.",
+      "why_this_matters": "Losing your own preferences and people makes it harder to judge a situation, to leave one, or even to describe what you want. Without a self to measure against, a person can drift further from the support that would help.",
+      "what_it_is": [
+       "A gradual shift in tastes, opinions, clothes, hobbies and routines to match someone else's.",
+       "A shrinking circle, in which friends and family are seen less because there is less room or less welcome for them.",
+       "Often a series of small accommodations, each reasonable alone, that add up to a different life.",
+       "A state felt from the inside, usually noticed later when something, such as a song or a photo, shows a gap."
+      ],
+      "what_it_sounds_like": [
+       "\"I don't know, whatever you want is fine.\"",
+       "\"I used to love painting, but I haven't picked up a brush in years.\"",
+       "\"I haven't seen my college friends since we moved in together. It just sort of happened.\"",
+       "\"What do I think about it? I'd have to check what we think.\"",
+       "Finding old playlists and not recognizing a single song as yours.",
+       "\"I can't remember what I wore before I met them.\""
+      ],
+      "what_it_is_not": [
+       "Growing and changing in a good partnership, where both people try new things and both keep parts of their old selves.",
+       "A move, a new job or a new baby that naturally replaces old routines and friends for a while.",
+       "Falling out of an old hobby because you lost interest, with nobody encouraging that.",
+       "Choosing to spend more time with your partner or family and less with a wide circle, with nothing in the relationship asking for it.",
+       "The ordinary blur of early adulthood, when many people are still working out who they are."
+      ],
+      "this_may_be_it_when": [
+       "You can name specific things you loved before the relationship that you now avoid or feel awkward about.",
+       "You pre-check how a friend, hobby or opinion will be received before you act on it.",
+       "Time with your old friends has dropped, and the reasons you give sound like excuses.",
+       "You agree out loud with views you privately do not hold, mostly to avoid conflict.",
+       "Imagining a day on your own makes you realize you do not know what you would do."
+      ],
+      "this_may_not_be_it_when": [
+       "You can say why each change happened and would make the same choice again.",
+       "Your old friends are still in your life, though you see them less because of distance.",
+       "You have taken on your partner's hobby and still do things that only you enjoy.",
+       "Your views have shifted because you thought them through, and you can argue for them.",
+       "Changes are matched by your partner's own changes, and both of you say the relationship has made you more yourself."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Taste and opinion shift naturally across a decade, relationship or not.",
+       "Partners often trade interests and enjoy it.",
+       "A busy stage of life, with young children or demanding work, pushes out hobbies and friendships for reasons that have nothing to do with anyone's influence.",
+       "Someone coming out of a difficult stretch may be rebuilding their sense of self slowly."
+      ],
+      "common_false_positives": [
+       "Moving across the country and losing daily contact with old friends.",
+       "Giving up an old sport after an injury.",
+       "Choosing a quieter life after years of being very social, and being glad of it."
+      ],
+      "discernment_questions": [
+       "Can you list three things you liked before this relationship that you no longer do, and do you miss them?",
+       "Who decided that those things should change, and did you agree at the time?",
+       "If you were making plans only for yourself, what would you pick?",
+       "Which people do you see less now, and is that your choice?",
+       "When you express an opinion, do you check first how it will land?"
+      ],
+      "less_concerning_if": [
+       "You can still say what you like and think, even when it differs from your partner's.",
+       "Your friendships continue, in some form, and are welcome in the home.",
+       "You enjoy the new habits and can trace how you came to them."
+      ],
+      "more_concerning_if": [
+       "Your own preferences are met with sighs, mockery or silence, so you stop voicing them.",
+       "Money, transport or schedules are arranged so that you cannot easily see other people.",
+       "You are afraid to say what you actually want, even in small matters."
+      ],
+      "pattern_over_time_signs": [
+       "Photos from a few years ago look like someone you have to introduce to new friends.",
+       "Your answers to \"what do you want to do?\" start with a pause and the other person's name.",
+       "You find yourself defending the changes when a friend asks about them, before they have criticized anything.",
+       "Small pleasures that were yours alone, such as a morning run or a book club, drop away without a decision."
+      ],
+      "repair_check": "Self-repair check: has any small piece of you returned? A hobby picked up again, a friend called back, an opinion said aloud and survived. Rebuilding tends to come in such small acts rather than a single decision, and a weekend of reinvention that fades by Monday is not the same as one.",
+      "boundary_respect_check": "When you give yourself space to choose something small, such as a meal, a song or a Saturday plan, do you let yourself have it? Or does a habit of checking first take over before you notice? Notice how quickly the old reflex returns.",
+      "psychological_mechanism": "Adapting to another person's likes and moods can be a way of keeping a relationship steady, and it tends to feel like love or flexibility while it is happening. Each accommodation is small, so no single one prompts a second look. Over time, a person's own preferences get less practice, and they can become harder to hear.",
+      "possible_impact_on_receiver": "People describe an odd grief for someone who is still alive, a flatness when asked what they like, and a fear that nothing of them is left. Some say the loss showed itself only after the relationship ended, when the quiet gave them no cues. Guilt for even noticing it is common.",
+      "response_options": {
+       "soft_clarification": "Share a small, specific thing with your partner: \"I miss going to my pottery class. I'd like to start again on Thursdays.\"",
+       "firm_boundary": "Keep one thing as yours without making an announcement of it, such as a weekly call with a friend, and treat it as settled for yourself.",
+       "disengagement": "Take small steps back toward things that were yours, such as a long-ignored hobby, and let them rebuild without needing anyone's permission.",
+       "support_seeking": "Get in touch with one old friend or relative and ask what they remember about you. Their account can help you remember your own.",
+       "workplace_or_professional": "If this is happening at work, such as a team that rewards sameness, keep notes on the projects and ideas that were yours, and talk to a mentor about reclaiming them."
+      },
+      "boundary_script": "Self-support script: \"What I like and think counts, even when I can't say it out loud yet. I can start with one small choice today that is only mine.\"",
+      "safety_sensitive": true,
+      "safety_note": "On its own this is a loss to notice, not an emergency. It becomes more serious if your friends, money, phone or travel are being limited, or if disagreeing brings anger, threats or silence for days. A domestic abuse advocate or counselor can help you think this through privately, at a pace that is safe for you.",
+      "misuse_warning": [
+       "Telling a friend that they have lost themselves in a relationship, when they say they are happy, can feel like a verdict and push them away. Offer your observation once and keep the door open.",
+       "Using the phrase to explain every change in a partner, such as a new hobby, can turn growth into a charge against the person they love."
+      ],
+      "how_to_distinguish_from_related": "Contempt shows disgust at you, and nothing need be said about you here, because this is a slow fading of preferences that may involve no criticism at all. Emotional Invalidation rules your feelings inadmissible, whereas the loss in this entry is of knowing what you want. Intimidation works through implied consequences, and none are needed."
+     }
+    },
+    {
+     "name": "Self-Abandonment",
+     "tier": "Reference-only",
+     "source_definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment.",
+     "approved_draft": {
+      "why_this_matters": "The target can say what would keep the peace far more readily than what they want, and their own limits stop being information they are willing to act on."
+     },
+     "existing_specific_text": {
+      "short_definition": "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment.",
+      "expanded_definition": "Habitually overriding your own needs, limits, and knowledge of yourself in order to preserve a relationship or avoid a negative reaction — a learned pattern of putting your own reality last, so consistently that it can become hard to notice you're doing it at all.",
+      "plain_language_summary": "In plain terms: habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment. This is about a pattern inside you, not a verdict about you.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic. Naming an internal pattern accurately — without judgment — is often the first step toward loosening its grip.",
+      "what_it_is": [
+       "Habitually overriding your own needs, limits, and knowledge to preserve the relationship or avoid punishment.",
+       "Recognizable by phrasing such as \"Agreeing to things you promised yourself you wouldn't\"."
+      ],
+      "what_it_sounds_like": [
+       "Agreeing to things you'd promised yourself, beforehand, that you wouldn't agree to.",
+       "Treating your own exhaustion or need for rest as a problem to hide, rather than something to honor.",
+       "Noticing you can list what would keep the peace far more easily than you can list what you actually want."
+      ],
+      "what_it_is_not": [
+       "Ordinary compromise is mutual and bounded; self-abandonment is unilateral and expanding."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Reasonable compromise and flexibility, with real reciprocity, is part of healthy relationships.",
+       "Temporarily prioritizing someone else's urgent need, followed by returning to your own baseline, is normal."
+      ],
+      "common_false_positives": [
+       "A genuine, situational compromise made once, thoughtfully, that doesn't reflect an ongoing pattern of overriding your own needs.",
+       "Reasonable flexibility and adaptability in a healthy relationship where your needs are also honored in return.",
+       "A temporary period of prioritizing someone else's urgent, real need, followed by a return to your own baseline."
+      ],
+      "discernment_questions": [
+       "Is overriding your own needs a one-time, thoughtful compromise, or a consistent, automatic pattern?",
+       "Do you know what you actually want, or does the question itself feel hard to answer?",
+       "Does this pattern ease in relationships or situations that feel safe, or does it persist everywhere?",
+       "Is there reciprocity — does anyone else's flexibility toward your needs match what you're giving?"
+      ],
+      "less_concerning_if": [
+       "This reflects a one-time, thoughtful compromise or a temporary period of prioritizing someone else's real, urgent need."
+      ],
+      "more_concerning_if": [
+       "Overriding your own needs is automatic and consistent, and you find it genuinely hard to identify what you actually want."
+      ],
+      "repair_check": "Self-repair check: has anything changed in the conditions that produced this pattern? Are there moments now, even small ones, where the old response doesn't fire the way it used to? Self-repair isn't a single realization — it's a pattern of small, repeated choices to trust your own read of things.",
+      "boundary_respect_check": "What happens when you give yourself permission to slow down, check the facts as you understand them, or ask for support before deciding how you feel? Is that permission honored internally, or does old habit override it quickly?",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by reshaping how someone understands their own worth or role, so the belief keeps operating even without anyone actively reinforcing it. This describes a documented survival/adaptation mechanism, not a permanent trait or a diagnosis.",
+      "possible_impact_on_receiver": "People sometimes describe a gradually narrowing sense of one's own preferences, opinions, and identity outside the dynamic in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of someone carrying this pattern.",
+      "boundary_script": "Self-support script: \"I'm allowed to trust my own read of things. I don't have to decide how I feel about this right now.\"",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone.",
+       "This entry is for self-understanding. It is not a basis for describing yourself, or for anyone else to describe you, as broken, defective, or diagnosable."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    },
+    {
+     "name": "Identity Hooking",
+     "definition": "Claiming ownership of the target's identity or achievements."
+    },
+    {
+     "name": "Conditional Worth",
+     "definition": "Pegging the target's value to their usefulness or compliance."
+    },
+    {
+     "name": "Learned Helplessness",
+     "definition": "Repeatedly asserting the target cannot cope alone."
+    },
+    {
+     "name": "Loyalty Binds",
+     "definition": "Defining loyalty as unconditional compliance and silence."
+    },
+    {
+     "name": "Self-Gaslighting Induction",
+     "definition": "The installed habit of doubting your own memory and perception before anyone else has to — the endpoint of sustained gaslighting."
+    },
+    {
+     "name": "Fawning",
+     "definition": "A survival response of appeasing and pleasing a threatening person — agreement, flattery, and self-erasure as safety strategy."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [
+     "aftermath_self_reflection_needs_review",
+     "clinical_adjacent_wording"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Public Humiliation",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Public Humiliation' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Public Humiliation",
+    "Public Exposure"
+   ],
+   "members": [
+    {
+     "name": "Public Humiliation",
+     "tier": "Reference-only",
+     "source_definition": "Deliberately embarrassing someone in front of others as punishment or a display of power.",
+     "approved_draft": {
+      "why_this_matters": "An audience makes the injury durable in a way private criticism is not: everyone present carries a version of it afterwards, including the person it was about.",
+      "what_it_is_not": "Necessary and time-sensitive feedback sometimes has to be given where others happen to be, and settings where feedback is normal and applied evenly to everybody are humiliating nobody. An awkward moment can be nothing more than poor timing."
+     },
+     "existing_specific_text": {
+      "short_definition": "Deliberately embarrassing someone in front of others as punishment or a display of power.",
+      "expanded_definition": "Deliberately embarrassing someone in front of others — colleagues, family, friends — specifically as punishment or as a display of power over them. Unlike private criticism, which at least allows the target some dignity in addressing feedback, this specifically relies on an audience: the humiliation is only as effective as the number of witnesses.",
+      "plain_language_summary": "In plain terms: deliberately embarrassing someone in front of others as punishment or a display of power.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Deliberately embarrassing someone in front of others as punishment or a display of power."
+      ],
+      "what_it_sounds_like": [
+       "Criticism or correction delivered in front of others when a private conversation would have been just as effective or more so.",
+       "A mistake or vulnerability shared with a group specifically at the moment it would be most embarrassing.",
+       "The target notices the criticism escalates or becomes harsher specifically when other people are present to witness it."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Some genuinely necessary feedback happens in group settings for legitimate, practical reasons. Group critique or feedback processes exist in many professional and educational contexts without being humiliation tactics."
+      ],
+      "common_false_positives": [
+       "Genuinely necessary, time-sensitive feedback that happened to occur in a group setting without any intent to embarrass.",
+       "A group setting where feedback is a normal, expected part of the process and applied evenly to everyone.",
+       "An awkward moment that wasn't deliberately engineered, just poor timing."
+      ],
+      "discernment_questions": [
+       "Could this feedback or correction have reasonably been given privately, and was that considered?",
+       "Does the tone or severity of criticism change specifically when there's an audience?",
+       "Is this applied evenly to everyone in the group, or does it seem targeted at one person specifically?",
+       "Does the timing suggest the audience was the point, or was it simply when the issue happened to come up?"
+      ],
+      "less_concerning_if": [
+       "The feedback is applied evenly, could reasonably have happened in front of others regardless, and isn't harsher for having an audience."
+      ],
+      "more_concerning_if": [
+       "The severity or tone changes specifically with an audience present, and private alternatives were clearly available."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Embarrassing or belittling a person in front of others so that the audience adds to the sting and the person is lowered in everyone's eyes.",
+      "core_meaning": "Embarrassing or belittling a person in front of others so that the audience adds to the sting and the person is lowered in everyone's eyes.",
+      "expanded_definition": "What sets this apart from private criticism is the audience. A correction, a joke at someone's expense, a revealed secret or a story told against them weighs more with witnesses. Feedback given in public is sometimes unavoidable, so context matters. It raises concern when the audience seems to be part of the point, when the same words would be gentler in private, and when it keeps landing on one person.",
+      "plain_language_summary": "You are put down, corrected or laughed at in front of other people, in a way that would have been handled differently in private. The audience is what makes it hurt.",
+      "why_this_matters": "An audience makes the injury durable in a way private criticism is not: everyone present carries a version of it afterwards, including the person it was about.",
+      "what_it_is": [
+       "Criticism, ridicule or exposure delivered where other people can see or hear it.",
+       "Forms include a correction in a meeting, a story told against you at dinner, or a post or group message that shames you.",
+       "More lasting than a private remark, because the witnesses remember it and the target remembers them remembering.",
+       "Seen in workplaces, classrooms, families, friend groups and online."
+      ],
+      "what_it_sounds_like": [
+       "\"Let me show everyone how it should have been done.\"",
+       "\"Tell them what you did last weekend. Go on, it's hilarious.\"",
+       "A manager reading out your error in a team call, with your name attached.",
+       "\"Oh, don't mind her, she never gets the details right.\"",
+       "A group chat message that quotes something private you said, with laughing faces.",
+       "\"Do you want to tell them, or shall I?\""
+      ],
+      "what_it_is_not": [
+       "Necessary and time-sensitive feedback sometimes has to be given where others happen to be, and settings where feedback is normal and applied evenly to everybody are humiliating nobody.",
+       "An awkward moment can be nothing more than poor timing.",
+       "A public award or roast that the person agreed to and enjoys.",
+       "A teacher or coach correcting a technique in front of the group, in a setting where everyone expects it and nobody is mocked.",
+       "A story told with affection that the person is happy to have told, and which they might tell themselves."
+      ],
+      "this_may_be_it_when": [
+       "The criticism is harsher when there are people around than it is alone with you.",
+       "Private things, such as a mistake or a secret, are used in front of others.",
+       "The same person is picked out in group settings more than others.",
+       "You see others glance at you or look away after it happens.",
+       "You were not given a chance to hear it in private first, though one was possible."
+      ],
+      "this_may_not_be_it_when": [
+       "The feedback is the same for everyone and given in a way that is meant to be useful.",
+       "It was an emergency or a safety issue that needed fixing straight away.",
+       "You agreed to the format, such as a review session where all work is critiqued.",
+       "The speaker followed up privately to check how you felt and repaired it.",
+       "The comment was clumsy but kind in intent, and the person was visibly sorry."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "A busy meeting or live session leaves no time for private notes, and a quick correction may be the only option.",
+       "Some cultures and teams treat open correction as normal and respectful.",
+       "A person telling a funny story may not realize you find it embarrassing."
+      ],
+      "common_false_positives": [
+       "A choir director correcting a section's timing.",
+       "A friend sharing an old photo that you also find funny now.",
+       "A manager reading out a company-wide error without naming anyone."
+      ],
+      "discernment_questions": [
+       "Would the same words have been said in private, in the same way?",
+       "Did the audience seem to matter to the person speaking?",
+       "Is the same person the target again and again?",
+       "Was anything I had told in confidence used?",
+       "After it happened, did the person check in or acknowledge it?"
+      ],
+      "less_concerning_if": [
+       "Everyone is treated the same, and the setting makes public correction expected.",
+       "The person speaks to you in private afterward and makes it right.",
+       "The topic was a work task, and no personal detail was used."
+      ],
+      "more_concerning_if": [
+       "Private information, like health, money or family trouble, is brought out in front of others.",
+       "The audience is chosen, such as your family, your team or your online followers.",
+       "Complaining about it leads to more of it, or to being told you embarrassed yourself."
+      ],
+      "pattern_over_time_signs": [
+       "You begin to dread gatherings, meetings or group chats where this person will be present.",
+       "You find yourself preparing your answers in advance, to avoid being caught out in front of others.",
+       "Other people start to treat you as the butt of the joke, taking their cue from the way you are treated.",
+       "You speak less in groups, and your contributions are noticed less."
+      ],
+      "repair_check": "Meaningful change would show in public as well as in private: the person corrects you, if they must, in a way that does not expose you, and speaks up for you when others laugh. Apologizing in a private message while repeating the behavior in front of others leaves the audience part unchanged.",
+      "boundary_respect_check": "Ask for correction to happen one on one, then see what the next group setting brings. Is your request kept when other people are present, which is the moment it matters most? Or does the next public remark show it was put aside?",
+      "psychological_mechanism": "People are highly attuned to how their group sees them, and being lowered in front of others is a hit to standing, not only to feelings. Witnesses add to it by laughing, going quiet or looking away. A person may begin to expect it, and the dread alone can change how they speak and act around others.",
+      "possible_impact_on_receiver": "People describe heat in the face, loss of words, replaying the moment for days, and avoiding the people who saw it. Some say the worst part was a bystander's silence. Many talk about shrinking in later meetings, and about checking whether anyone still remembers.",
+      "response_options": {
+       "soft_clarification": "Ask for privacy next time, in a matter-of-fact tone: \"If there's a problem with my work, I'd rather hear it one on one.\"",
+       "firm_boundary": "Stop it in the room if you can: \"I'd like to talk about this privately, not in front of the group.\"",
+       "disengagement": "Leave the room, the chat or the table for a few minutes without explanation, and return only when the subject has moved on.",
+       "support_seeking": "Talk to someone who was there, and ask what they saw and heard. Knowing that a witness found it unfair can lift the doubt you carry.",
+       "workplace_or_professional": "Write down the date, the setting, the words used and who was present, then take the record to HR, a union rep, or a manager one level up."
+      },
+      "boundary_script": "\"I'm glad to hear your feedback on my work. I'd just like to have it in private, not in front of the team.\"",
+      "safety_sensitive": false,
+      "safety_note": "Public humiliation is mostly about standing and dignity, not physical danger. That changes if the humiliation includes intimate images or details shared without consent, threats to expose you, or follows you from a household to online spaces. Then save the evidence, report it to the platform or the police, and ask a legal aid service or an advocate about the next step.",
+      "misuse_warning": [
+       "Calling a fair, public correction humiliation can let real problems with performance go unaddressed. The label fits when the audience is the point, not when the venue is.",
+       "Telling a group that someone humiliated you, as a way to turn people against them, can become a humiliation of its own."
+      ],
+      "how_to_distinguish_from_related": "Shame Installation works on your sense of being fundamentally inadequate and can happen in private, whereas this relies on witnesses. Contempt is disgust that may not need an audience at all. Humor at your expense can be one means of humiliating someone, but humiliation can also come through corrections, revealed secrets or group messages."
+     }
+    },
+    {
+     "name": "Public Exposure",
+     "tier": "Reference-only",
+     "source_definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment.",
+     "approved_draft": {
+      "why_this_matters": "An audience makes the moment permanent: it is witnessed, retold, and cannot be taken back privately later.",
+      "what_it_is_not": "Some things genuinely have to be addressed where they happen — a safety problem in a room full of people — and information can be public for a real, disclosed reason. Carelessness with something private is also not the same as choosing a setting for the size of its audience."
+     },
+     "existing_specific_text": {
+      "short_definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment.",
+      "expanded_definition": "Singling someone out for shaming in front of others, using the audience itself as an amplifier and the visibility as the actual punishment — the point isn't to correct a specific behavior privately, it's to make the target's embarrassment as public and witnessed as possible.",
+      "plain_language_summary": "In plain terms: singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+      ],
+      "what_it_sounds_like": [
+       "A criticism or accusation delivered specifically in a setting designed to maximize the number of witnesses.",
+       "Private information or a private mistake is shared publicly in a way that serves no purpose except to embarrass the target.",
+       "The target notices the exposure happened in a context chosen specifically for its audience size."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Some matters genuinely do need to be addressed where they happen, including in front of others.",
+       "Careless, inadvertent sharing happens without any intent to maximize embarrassment."
+      ],
+      "common_false_positives": [
+       "A genuinely necessary public correction, like a safety issue, that would reasonably need to be addressed where it happened.",
+       "Information shared publicly because it was already public or because there was a legitimate, disclosed reason for the audience.",
+       "A private matter shared inadvertently or carelessly, without intent to maximize embarrassment."
+      ],
+      "discernment_questions": [
+       "Was there a legitimate reason the matter needed to be addressed in front of an audience, or could it have been handled privately?",
+       "Does the choice of venue seem specifically selected to maximize witnesses and embarrassment?",
+       "Is this a one-time lapse in judgment, or a repeated pattern of choosing public venues for private matters?",
+       "Would the same information, shared privately, have accomplished any legitimate purpose just as well?"
+      ],
+      "less_concerning_if": [
+       "There's a legitimate, disclosed reason the matter needed public attention, or the exposure was a one-time lapse rather than a pattern."
+      ],
+      "more_concerning_if": [
+       "The venue seems specifically chosen to maximize embarrassment, and this recurs as a pattern."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    },
+    {
+     "name": "Ghosting as Control",
+     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+    },
+    {
+     "name": "Humiliation Rituals",
+     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+    },
+    {
+     "name": "Forced Submission",
+     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+    },
+    {
+     "name": "Stalking & Surveillance (Post-Separation)"
+    },
+    {
+     "name": "Legal Abuse (Post-Separation)",
+     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+    },
+    {
+     "name": "Smear Campaign",
+     "definition": "A coordinated effort to damage someone's reputation through distorted or false information."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Setting Up to Fail",
+   "category": "Attack & Erosion",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Setting Up to Fail' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Setting Up to Fail",
+    "Impossible Metrics"
+   ],
+   "members": [
+    {
+     "name": "Setting Up to Fail",
+     "tier": "Reference-only",
+     "source_definition": "Assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy.",
+     "approved_draft": {
+      "why_this_matters": "Conditions disappear from the account and only the outcome remains, so a predictable failure becomes durable evidence about the person who was handed it.",
+      "what_it_is_not": "Difficult tasks with real constraints are ordinary work, and resources are often genuinely unavailable to everyone rather than withheld from one person. Something turning out harder than anyone anticipated is not engineered."
+     },
+     "existing_specific_text": {
+      "short_definition": "Assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy.",
+      "expanded_definition": "Assigning a specific task under conditions — inadequate resources, an unreasonable deadline, missing information — that make success genuinely unlikely, then using the resulting failure as evidence of the target's inadequacy. Unlike Impossible Metrics, which describes an ongoing, perpetually-out-of-reach standard, this is usually about one specific task or assignment engineered for failure.",
+      "plain_language_summary": "In plain terms: assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Assigning a task under conditions that make success unlikely, then using the failure as evidence of inadequacy."
+      ],
+      "what_it_sounds_like": [
+       "A task assigned with a deadline, resource level, or information gap that makes success implausible from the outset.",
+       "Requests for the additional resources, time, or information needed to succeed are denied or ignored.",
+       "When the predictable failure occurs, it's treated as evidence of the target's competence, without acknowledgment of the conditions that made it likely."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely difficult tasks and real resource constraints exist without anyone engineering failure. Tasks sometimes turn out harder than anyone anticipated for reasons unrelated to any strategy."
+      ],
+      "common_false_positives": [
+       "A genuinely difficult but achievable task, where the difficulty reflects real constraints rather than engineered ones.",
+       "A situation where necessary resources genuinely weren't available to anyone, not specifically withheld from the target.",
+       "A task that turned out to be harder than expected for reasons no one anticipated, without any intent behind the difficulty."
+      ],
+      "discernment_questions": [
+       "Would the task have been achievable with reasonable resources, time, and information?",
+       "Were requests for what was needed to succeed denied, or genuinely unavailable to everyone?",
+       "Is the resulting failure treated as evidence of a systemic issue with the task's conditions, or purely of the target's inadequacy?",
+       "Has anyone else succeeded at a comparable task under comparable conditions?"
+      ],
+      "less_concerning_if": [
+       "The task's difficulty reflects genuine, universal constraints, and reasonable requests for support are honored."
+      ],
+      "more_concerning_if": [
+       "Requests for necessary resources are specifically denied to this target, and the predictable failure is used purely as evidence of inadequacy."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "Giving someone a task under conditions that make success unlikely, then treating the failure as proof of their inadequacy.",
+      "core_meaning": "Giving someone a task under conditions that make success unlikely, then treating the failure as proof of their inadequacy.",
+      "expanded_definition": "This is one assignment with the odds stacked: a deadline too short, a budget too small, information held back, or authority missing for what is being asked. When it fails, the conditions vanish from the retelling and only the outcome remains. Plenty of tasks are hard, and plenty of resources are scarce for everyone. The pattern shows when requests for what is needed are brushed aside and the failure is later cited as a fact about you.",
+      "plain_language_summary": "You are handed a job few people could finish with what you were given, and when it goes wrong, the blame lands on you and not on the set-up.",
+      "why_this_matters": "Conditions disappear from the account and only the outcome remains, so a predictable failure becomes durable evidence about the person who was handed it. One failed project can be quoted in reviews and decisions about you long after the conditions are forgotten.",
+      "what_it_is": [
+       "A single task or project whose conditions make success unlikely: an impossible timeline, a thin budget, no access to people or data.",
+       "Often delivered with a vote of confidence ('I know you can do it'), which makes refusing awkward.",
+       "Paired with requests for more time, staff or information being declined, delayed or ignored.",
+       "Followed by a retelling that drops the conditions: 'the launch failed' instead of 'the launch had two weeks and no designer'.",
+       "Not limited to work. A household move, a school project or a group trip can be handed to one person the same way."
+      ],
+      "what_it_sounds_like": [
+       "I know it's due Friday and the data isn't in yet, but I have faith in you.",
+       "There's no budget for that, just make it work.",
+       "You don't need to see the client brief. Just draft it.",
+       "Take the lead on the audit, but don't involve finance.",
+       "Why did you let it fail? I gave you everything you needed.",
+       "Remember the Henderson project? That's why I can't trust you with this.",
+       "I'd help, but I think you should learn to do it on your own."
+      ],
+      "what_it_is_not": [
+       "Hard tasks with real constraints, which are ordinary work.",
+       "Resources that are unavailable to everyone, not withheld from you.",
+       "Something that turned out harder than anyone anticipated.",
+       "A stretch assignment given with the risk acknowledged openly and a fallback in place, so a miss is understood to be fine.",
+       "Clumsy delegation by someone who underestimated the task and revises the plan when told.",
+       "A pilot whose purpose is to test a plan, where its failing is the useful result."
+      ],
+      "this_may_be_it_when": [
+       "Asked for what you need, you get a refusal without a reason.",
+       "Others on the team got more time or support on comparable tasks.",
+       "Information or authority you needed was missing, and it could easily have been shared.",
+       "The record afterwards leaves out the constraints you flagged beforehand.",
+       "The failure gets cited later in unrelated conversations."
+      ],
+      "this_may_not_be_it_when": [
+       "You and the person assigning it both knew the odds and agreed to go ahead for a stated reason.",
+       "Your requests for support were met, even partly.",
+       "A post-mortem examined the conditions as well as your work.",
+       "Peers on similar tasks had the same conditions.",
+       "The missing information turned out to be unavailable to everybody."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Planners often underestimate how long things take, so the deadline may reflect a poor estimate.",
+       "Budgets get cut mid-quarter, and the person who assigned the task may have no say.",
+       "A busy person delegates with a thin brief because they don't have time to write a fuller one."
+      ],
+      "common_false_positives": [
+       "A start-up where everyone is stretched and the founder's own tasks are just as tight.",
+       "A coach's tough preparation set where the difficulty is the point and the athlete knows it.",
+       "A project that failed because the market changed under everyone involved."
+      ],
+      "discernment_questions": [
+       "Could a competent person with these resources and this time have succeeded, and can I name someone who did?",
+       "Did I flag the constraints in writing before I began?",
+       "How were my requests for help handled, and how were other people's?",
+       "When it failed, was the set-up discussed at all, or only me?",
+       "Is this failure being brought up in later, unrelated situations?"
+      ],
+      "less_concerning_if": [
+       "The shortfall in resources is shared by comparable tasks and acknowledged openly.",
+       "Requests for help get a real answer, even if the answer is no.",
+       "The review looks at the conditions as well as the outcome."
+      ],
+      "more_concerning_if": [
+       "The same person hands you doomed tasks repeatedly while others get workable ones.",
+       "Your written flags of risk are ignored and the failure is then recorded as yours alone.",
+       "Past failures are cited to justify removing responsibility, pay or a role."
+      ],
+      "pattern_over_time_signs": [
+       "You begin sending a note in writing before each task listing what you would need.",
+       "The assignments you are offered shrink after each failure, or only the doomed ones arrive.",
+       "You catch yourself volunteering for fewer things.",
+       "Colleagues or family members remember the failure but not its conditions."
+      ],
+      "repair_check": "Repair starts with the retelling. A person who has noticed this goes back to the people who heard that you failed the launch, corrects the account to include the deadline and missing staff, and gives the next assignment the resources it needs. Praise for effort that leaves the record unchanged is a different thing.",
+      "boundary_respect_check": "Watch the next request you send. If you ask in writing for what the task needs and get a yes, a partial yes with a reason, or a clear no that is noted in the plan, you were taken seriously. A cheerful 'you'll manage' and no reply is a different answer.",
+      "psychological_mechanism": "Failure tends to be read as information about the person, and the conditions that produced it fade from memory faster than the outcome. If whoever set the task also describes the result, that account can become the accepted one. People who fail under such conditions often blame their own skill, since the constraints felt like background and the result felt personal.",
+      "possible_impact_on_receiver": "People describe replaying the project to find what they should have done, losing confidence in tasks they once handled well, and dreading the next hand-off. Some start to avoid anything visible. Others say that once they wrote down the original conditions they felt a grim relief, because the failure looked different on paper.",
+      "response_options": {
+       "soft_clarification": "Ask about the gap before starting: 'This needs three people and I have one, with two weeks. What would you like me to drop?'",
+       "firm_boundary": "Put your concerns on record: 'I'll start, but I want it noted that without the client data this deadline is not realistic.'",
+       "disengagement": "Decline the version of the task that cannot be done and offer the version that can. Do not absorb the shortfall quietly with overtime.",
+       "support_seeking": "Walk a mentor or friend outside the project through the brief, deadline and resources, and ask whether they would have seen it as doable.",
+       "workplace_or_professional": "Send a short written summary after the assignment conversation: scope, deadline, resources, what you asked for. Keep it for any review, and use HR or a union representative if failures are cited in your evaluation."
+      },
+      "boundary_script": "\"I want this to go well, so I'm saying now that I can't finish it by Friday without the sales figures. If I can have them by Tuesday, I can meet the deadline.\"",
+      "safety_sensitive": false,
+      "safety_note": "On its own this is not a physical danger. It becomes a livelihood matter when failed assignments are used in firing, probation or job decisions that affect an immigration status. Keep the written brief, your flags and the outcome together, and ask a union representative, employment lawyer or legal aid service for advice before attending a disciplinary meeting alone.",
+      "misuse_warning": [
+       "Calling a hard assignment a set-up can stop you learning from a failure that was partly yours. Ask whether the conditions were the same for others.",
+       "Using the label on a manager whose estimate was simply wrong turns a fixable planning problem into a feud. Start with the written flag."
+      ],
+      "how_to_distinguish_from_related": "Impossible Metrics is a standing bar that stays out of reach across all your work; Setting Up to Fail is one assignment loaded against you. Scapegoating blames you for a failure that belonged to the group, whereas here the task was handed to you alone and the blame is for that one assignment. Intimidation threatens consequences; here nothing is threatened, and the record carries the consequence."
+     }
+    },
+    {
+     "name": "Impossible Metrics",
+     "tier": "Reference-only",
+     "source_definition": "Setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy.",
+     "approved_draft": {
+      "why_this_matters": "Failure is built into the standard but attributed to the person, so effort increases while the record fills up with shortfalls.",
+      "what_it_is_not": "High but achievable standards that others in the same role have actually met are demanding rather than impossible. Stretch goals framed openly as aspirational rather than pass or fail are a different thing. A bar the person has cleared before under similar conditions is evidence the bar is reachable."
+     },
+     "existing_specific_text": {
+      "short_definition": "Setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy.",
+      "expanded_definition": "Setting standards or goals specifically designed to be unachievable — through vague criteria, contradictory requirements, or resources that don't match the demand — and then attributing the resulting, essentially inevitable failure to the target's personal inadequacy rather than to the standard itself. Unlike Setting Up to Fail, which is usually about one specific task, this describes an ongoing standard or performance bar that stays perpetually out of reach.",
+      "plain_language_summary": "In plain terms: setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy.",
+      "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Setting standards designed to be unachievable, then attributing the inevitable failure to the target's inadequacy."
+      ],
+      "what_it_sounds_like": [
+       "Goals that shift or increase specifically once the target gets close to meeting the previous version.",
+       "Success criteria that are vague enough to be reinterpreted after the fact, no matter what was actually achieved.",
+       "Comparisons to a standard that, on closer examination, no one could realistically meet given the actual resources or time available."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuinely ambitious, achievable goals exist and some people rise to meet them while finding them difficult. Aspirational stretch targets, clearly framed as such, aren't the same as an engineered impossible standard."
+      ],
+      "common_false_positives": [
+       "Genuinely high, but achievable, standards that others in a similar role or situation have actually met.",
+       "Ambitious goals that are explicitly framed as aspirational stretch targets, not pass/fail requirements.",
+       "A standard that's difficult but was met by the target themselves in the past under similar conditions."
+      ],
+      "discernment_questions": [
+       "Has anyone, under comparable conditions, actually met this standard?",
+       "Do the goalposts move specifically once the target gets close to meeting them?",
+       "Are the success criteria specific and stable, or vague enough to be reinterpreted after the fact?",
+       "Is the resulting failure attributed to the target's inadequacy, or is the standard itself ever questioned?"
+      ],
+      "less_concerning_if": [
+       "The standard is demonstrably achievable and stable, even if it's genuinely difficult."
+      ],
+      "more_concerning_if": [
+       "The standard shifts specifically when approached, or has never been met by anyone under comparable conditions."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by chipping at self-worth through direct or indirect criticism, repeated often enough that it starts to feel like accurate self-assessment rather than someone else's opinion. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe lowered self-esteem and a tendency to pre-emptively doubt one's own competence or worth in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     },
+     "previously_written_entry": {
+      "short_definition": "A performance bar kept out of reach through vague, shifting or contradictory criteria, so the shortfall is then credited to the person.",
+      "core_meaning": "A performance bar kept out of reach through vague, shifting or contradictory criteria, so the shortfall is then credited to the person.",
+      "expanded_definition": "These are targets that cannot be met as set: the criteria are vague, the number rises when you get close, two requirements pull against each other, or the resources do not match the demand. The shortfall is then read as a personal failing and not as a property of the target. Hard targets are normal. What marks the pattern is that nobody under similar conditions has met it, the finish line moves, and the record fills with misses. It is a standing bar, not a single doomed task.",
+      "plain_language_summary": "The bar you are measured against keeps moving or can't be met, so you always fall short, and the shortfall is put down to you.",
+      "why_this_matters": "Failure is built into the standard but credited to the person, so effort rises while the record fills with shortfalls. People in this position often work longer and doubt themselves more, and the paper trail starts to read like proof of a problem with them.",
+      "what_it_is": [
+       "A target whose success criteria are vague enough, such as 'be more strategic' or 'show more ownership', to be reread after the fact.",
+       "A number that rises just as you approach it, or a new condition added when you meet the old one.",
+       "Contradictory demands, like cutting costs and doubling quality with the same team and hours.",
+       "Resources that do not match the load, such as one person asked to produce the output of three roles.",
+       "Found in jobs, schools, households ('a clean home') and caregiving. The harm lies in the growing record of misses."
+      ],
+      "what_it_sounds_like": [
+       "Hit ninety-five percent and we'll talk. Then, at ninety-six: 'Now we need ninety-eight.'",
+       "It just needs to be more polished, with no description of what polished means.",
+       "I want it fast, perfect and cheap, and I'm not discussing which one gives.",
+       "You'll know it when you see it, offered as the specification.",
+       "Other people manage, with nobody named.",
+       "Last quarter's target was met, but that was the easy one."
+      ],
+      "what_it_is_not": [
+       "High but achievable standards that others in the same role have met under the same conditions. Those are demanding, not impossible.",
+       "Stretch goals framed openly as aspirations rather than pass or fail.",
+       "A bar you have cleared before under similar conditions.",
+       "A target raised openly for a stated reason, such as a new contract, with resources raised to match.",
+       "A manager still working out what they want who clarifies when asked.",
+       "Hard performance management that is specific, with written criteria and support."
+      ],
+      "this_may_be_it_when": [
+       "You cannot find anyone who has met this bar under the same conditions.",
+       "The goal changes shape just as you near it.",
+       "Asked what success looks like, you get adjectives instead of numbers or examples.",
+       "Time or resources you asked for to hit the number are refused while the number stays.",
+       "Your misses are recorded carefully, while what you did hit goes unrecorded."
+      ],
+      "this_may_not_be_it_when": [
+       "Others in your role have hit the target and can describe how.",
+       "The criteria are written, stable, and applied to your peers.",
+       "When you hit it, it is recognised as a pass.",
+       "Asking for clarity gets a specific answer.",
+       "Resources were adjusted when you asked."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "A manager can be unclear because the company is unclear. Vague goals often start with vague strategy.",
+       "Targets set at the start of the year from forecasts may later prove optimistic.",
+       "Real competitive pressure sometimes raises standards because customers expect more."
+      ],
+      "common_false_positives": [
+       "A sales quota that is hard but hit by half the team.",
+       "A teacher grading to a rubric that is demanding but published in advance.",
+       "A new boss's higher standard announced with training and time to reach it."
+      ],
+      "discernment_questions": [
+       "Has anyone met this standard under conditions like mine, and can I name them?",
+       "Can I write down what a pass looks like, and would the other person sign it?",
+       "Did the target move after I got near it?",
+       "Are the contradictions in the demand ever acknowledged, or only my shortfall?",
+       "Are my hits recorded as carefully as my misses?"
+      ],
+      "less_concerning_if": [
+       "Others reach the target and the criteria are in writing.",
+       "When you meet it, it is recognised without a new condition appearing.",
+       "You can point out a contradiction in the demand and have it adjusted."
+      ],
+      "more_concerning_if": [
+       "The record of misses is being used for pay, hours, discipline or dismissal.",
+       "The same bar is not applied to others in the same role.",
+       "You are told that asking for clarity shows a bad attitude."
+      ],
+      "pattern_over_time_signs": [
+       "You work longer hours each quarter for results that are no better received.",
+       "Review meetings are mostly lists of what is missing.",
+       "You write more and more things down, because the definitions keep changing.",
+       "You stop expecting to ever hear 'that's done'."
+      ],
+      "repair_check": "Repair would be a standard you could pass: criteria written down, numbers fixed for a stated period, and a result recorded as met when you meet it. An apology for the stress while the same target stays in place changes the tone, not the bar.",
+      "boundary_respect_check": "Ask for the definition of done in writing and see whether it comes back. A specific answer that stays put for the period you agree is respect for the request. If the definition arrives and then changes again, the written version has not become the standard.",
+      "psychological_mechanism": "When a standard cannot be reached, effort stops translating into success, and people tend to turn the blame inward because the standard is presented as reasonable. Never being able to finish can create a constant sense of falling behind. The growing record of misses can then be read, by others and by the person, as evidence of a personal trait.",
+      "possible_impact_on_receiver": "People describe working harder for less sense of achievement, taking work home, and dreading review days. Some begin to believe they are bad at jobs they once did well. Others stop volunteering ideas, or reach burnout without ever having had one clear win to point to.",
+      "response_options": {
+       "soft_clarification": "Ask for clarity: 'What would a pass look like on this one? If I hit these numbers by the end of the month, would that count as met?'",
+       "firm_boundary": "State the contradiction: 'Faster and more thorough both need more time or more people. Which one would you like me to put first?'",
+       "disengagement": "Stop adding unpaid effort to chase a moving number. Work to the stated standard in normal hours and see whether the result is recorded.",
+       "support_seeking": "Compare notes with peers in the same role: what are they measured on, and do they hit it? A mentor or trusted colleague outside your chain can give a view.",
+       "workplace_or_professional": "Ask for the criteria in an email and confirm after each conversation what was agreed. Keep a dated log of results. HR, a union or an ombuds can compare your targets with your peers'."
+      },
+      "boundary_script": "\"I want to meet this target. To do that I need to know exactly what counts as meeting it, in writing, and what resources I'll have. Could we agree that today and review against it in a month?\"",
+      "safety_sensitive": false,
+      "safety_note": "This is rarely a physical danger. It becomes a livelihood issue when the record of misses feeds a dismissal, a demotion, or the end of a visa tied to the job. If a performance plan or warning appears, keep copies of the targets and your results, and speak to a union representative, employment lawyer or legal aid before signing anything.",
+      "misuse_warning": [
+       "Calling every hard target impossible can excuse a standard you could actually meet. Test it against the people who did meet it.",
+       "Treating a manager's vague wording as proof of a plan against you ignores that vagueness is often just an unfinished idea. Ask for specifics first."
+      ],
+      "how_to_distinguish_from_related": "Setting Up to Fail is one assignment with conditions stacked against it; Impossible Metrics is a standing bar that follows you from task to task. Comparative Devaluation holds you up against other people; here the comparison is to a number, or to unnamed peers who 'manage', that nobody has met. Shame Installation turns a failure into a judgement of who you are, while impossible metrics supply the failures."
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Contempt",
+     "definition": "Expressing disgust at the person, not the behavior."
+    },
+    {
+     "name": "Name-Calling Disguised as Humor",
+     "definition": "Insults delivered with a 'just joking' escape hatch."
+    },
+    {
+     "name": "Comparative Devaluation",
+     "definition": "Unfavorably measuring the target against others."
+    },
+    {
+     "name": "Emotional Invalidation",
+     "definition": "Ruling the target's feelings inadmissible."
+    },
+    {
+     "name": "Shame Installation",
+     "definition": "Attacking the target's fundamental adequacy as a person."
+    },
+    {
+     "name": "Intimidation",
+     "definition": "Implied or explicit threat of consequences for non-compliance."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Financial Control",
+   "category": "Control & Domination",
+   "tier": "Detected",
+   "branch": "detected",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "MERGED_ENTRY": "The author merged these tactics into ONE entry. Write a single entry under the name 'Financial Control' that fully covers every member below. In expanded_definition say the others are the same tactic under different names, and name them. Draw what_it_sounds_like, what_it_is_not and the other lists from ALL members (choose the best and most distinct items; do not just concatenate). Each member's previously written entry, if there is one, is the best starting text.",
+   "merged_names_to_cover": [
+    "Financial Control",
+    "Financial Enmeshment"
+   ],
+   "members": [
+    {
+     "name": "Financial Control",
+     "tier": "Detected",
+     "source_definition": "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+      "expanded_definition": "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence. Financial control is one of the strongest practical barriers to leaving an unsafe or unhappy situation. As a communication pattern, Financial Control-type behavior in the Control & Domination category tends to work by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance — describing a pattern in the exchange, not a fixed trait in the person.",
+      "plain_language_summary": "In plain terms: restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+      "why_this_matters": "Financial control is one of the strongest practical barriers to leaving an unsafe or unhappy situation. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Restricting someone's access to money, financial information, earning capacity, or economic independence to enforce dependence.",
+       "Financial control is one of the strongest practical barriers to leaving an unsafe or unhappy situation.",
+       "Contrasts with a healthier version: shared, transparent finances that both people can see and neither can unilaterally lock the other out of.",
+       "Recognizable by phrasing such as \"You don't need your own bank account\"."
+      ],
+      "what_it_sounds_like": [
+       "You don't need your own bank account.",
+       "I'll decide what you get to spend.",
+       "You don't need bank account.",
+       "I'll decide what you can spend.",
+       "You're not allowed to work."
+      ],
+      "what_it_is_not": [
+       "Genuinely agreed household budgeting with one person tracking the books isn't control by itself — the flag is unilateral restriction imposed as leverage, not shared agreement."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine, mutually agreed divisions of financial labor, with full transparency, are healthy and common."
+      ],
+      "common_false_positives": [
+       "A genuine, mutual agreement about how shared finances are managed, that both people can see and access.",
+       "A temporary arrangement during a real financial hardship, openly discussed and not designed to be permanent or one-sided.",
+       "A person managing finances as an agreed division of labor, with full transparency and no restriction on the other's independent access."
+      ],
+      "discernment_questions": [
+       "Does the target have real, independent access to money and financial information, or is it controlled entirely by one person?",
+       "Is any restriction mutually agreed and transparent, or unilaterally imposed?",
+       "Would the target be able to leave the relationship financially if they needed to?",
+       "Does financial management stay transparent, or is information specifically withheld from the target?"
+      ],
+      "less_concerning_if": [
+       "Financial arrangements are transparent, mutually agreed, and both people retain real independent access."
+      ],
+      "more_concerning_if": [
+       "Money, information, or earning capacity is unilaterally restricted, leaving the target financially unable to act independently."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "boundary_script": "Given the safety dimension of this category, a scripted line matters less than the surrounding plan: if and when it feels safe, a simple, low-detail line like \"I need some space and I'll reach out when I'm ready\" is enough — it does not require justification. See the Safety note below before deciding how, when, or whether to address this directly with the person involved.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    },
+    {
+     "name": "Financial Enmeshment",
+     "tier": "Detected",
+     "source_definition": "Using money and assets as an instrument of control.",
+     "approved_draft": {},
+     "existing_specific_text": {
+      "short_definition": "Using money and assets as an instrument of control.",
+      "expanded_definition": "Using money and assets as an instrument of control. Financial control is one of the strongest practical barriers to leaving an unhealthy situation. As a communication pattern, Financial Enmeshment-type behavior in the Control & Domination category tends to work by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance — describing a pattern in the exchange, not a fixed trait in the person. This entry also covers what earlier lists called: Financial Dependence-by-Design — combined here as one entry since they describe the same underlying pattern.",
+      "plain_language_summary": "In plain terms: using money and assets as an instrument of control.",
+      "why_this_matters": "Financial control is one of the strongest practical barriers to leaving an unhealthy situation. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+      "what_it_is": [
+       "Using money and assets as an instrument of control.",
+       "Financial control is one of the strongest practical barriers to leaving an unhealthy situation.",
+       "Contrasts with a healthier version: transparent shared budgeting both people can see and veto.",
+       "Recognizable by phrasing such as \"My money, my rules\".",
+       "Also covers the related, previously separate entries: Financial Dependence-by-Design."
+      ],
+      "what_it_sounds_like": [
+       "My money, my rules.",
+       "You'll get your allowance when you behave.",
+       "My house, my rules.",
+       "I'll cut you off your card.",
+       "Everything here is in my name.",
+       "You'll get your allowance when I say.",
+       "Ask me for permission before you spend."
+      ],
+      "what_it_is_not": [
+       "Households genuinely do have one earner and shared rules — the flag is money framed as leverage over behavior, not budgeting."
+      ],
+      "innocent_or_ordinary_possibilities": [
+       "Genuine, long-term financial interdependence is normal in many committed relationships."
+      ],
+      "common_false_positives": [
+       "A genuine, transparent shared budget that both people can see and have real input into.",
+       "Real financial interdependence built through a mutual, long relationship, that isn't used as leverage in disagreements.",
+       "A household with intertwined finances by necessity, where both people retain meaningful, if imperfect, financial agency."
+      ],
+      "discernment_questions": [
+       "Can the target see and meaningfully weigh in on shared financial decisions, or is access one-sided?",
+       "Is intertwined finance used as leverage during disagreements, or does it stay separate from conflict?",
+       "Would the target retain some financial agency even in a disagreement?",
+       "Does \"my money, my rules\" reflect actual unilateral control, or shorthand within a genuinely mutual system?"
+      ],
+      "less_concerning_if": [
+       "Shared finances are transparent and both people retain meaningful input and agency."
+      ],
+      "more_concerning_if": [
+       "Financial intertwinement is unilaterally controlled and specifically invoked as leverage during disagreements."
+      ],
+      "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+      "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+      "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by narrowing another person's practical options — money, movement, access — so compliance becomes the path of least resistance. This describes a possible mechanism, not a claim about what any specific person intended.",
+      "possible_impact_on_receiver": "People sometimes describe reduced practical independence and a narrowing sense of what options are actually available in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+      "boundary_script": "Given the safety dimension of this category, a scripted line matters less than the surrounding plan: if and when it feels safe, a simple, low-detail line like \"I need some space and I'll reach out when I'm ready\" is enough — it does not require justification. See the Safety note below before deciding how, when, or whether to address this directly with the person involved.",
+      "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+      "misuse_warning": [
+       "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+      ]
+     }
+    }
+   ],
+   "related_tactics": [
+    {
+     "name": "Isolation",
+     "definition": "Undermining the target's other relationships to increase dependence."
+    },
+    {
+     "name": "Monitoring & Surveillance",
+     "definition": "Demanding access, proof, and constant accounting of the target's activity."
+    },
+    {
+     "name": "Location Tracking",
+     "definition": "Requiring live location as a condition of peace."
+    },
+    {
+     "name": "Behavior Control",
+     "definition": "Issuing rules about clothing, movement, or association."
+    },
+    {
+     "name": "Infantilization",
+     "definition": "Treating a capable adult as unable to manage their own affairs."
+    },
+    {
+     "name": "\"I Know Best\" Paternalism",
+     "definition": "Overriding the target's choices 'for their own good'."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": true,
+    "old_review_flag_safety_sensitive": true,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  }
+ ]
+}

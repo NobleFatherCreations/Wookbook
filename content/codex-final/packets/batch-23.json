@@ -1,57 +1,60 @@
 {
  "batch": "batch-23",
  "kind": "normal",
- "category": "Discard / institutional",
+ "category": "Guilt & Obligation Leverage",
  "entries": [
   {
-   "name": "Ghosting as Control",
-   "category": "Discard / institutional",
-   "tier": "Reference-only",
-   "branch": "reference",
+   "name": "Aftercare Control",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Detected",
+   "branch": "detected",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Without any account of what happened there is nothing to process; the questions stay open, and attention stays fixed on someone who has gone.",
-    "what_it_is_not": "People need space, some find every difficult conversation genuinely hard and avoid it badly, and relationships fade by mutual drift. Even a brief \"I need distance\" is information — the pattern here is silence that lifts precisely when the other person starts to move on."
-   },
+   "approved_draft": {},
    "existing_specific_text": {
-    "short_definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment.",
-    "expanded_definition": "Disappearing without explanation, closure, or acknowledgment — specifically as a means of control rather than simply ending contact — creating ongoing anxiety, self-doubt, and unresolved attachment in the target. Unlike a clean, if painful, end to a relationship, this leaves the target without the information needed to actually process and move on, which can itself become a form of ongoing leverage.",
-    "plain_language_summary": "In plain terms: disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened.",
+    "expanded_definition": "Reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened. It converts the target's memory of harm into gratitude, preventing them from naming it as harm at all. As a communication pattern, Aftercare Control-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person.",
+    "plain_language_summary": "In plain terms: reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened.",
+    "why_this_matters": "It converts the target's memory of harm into gratitude, preventing them from naming it as harm at all. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+     "Reframing harm as help after the fact — 'that was for your own good' — so the target doubts their own read of what happened.",
+     "It converts the target's memory of harm into gratitude, preventing them from naming it as harm at all.",
+     "Contrasts with a healthier version: \"I'm sorry that hurt you — that wasn't okay, regardless of my intentions.\".",
+     "Recognizable by phrasing such as \"That was for your own good\"."
     ],
     "what_it_sounds_like": [
-     "Sudden, complete silence after previously consistent contact, with no explanation offered even when directly asked.",
-     "A pattern of disappearing and later resurfacing, specifically at moments when the target seems to be moving on.",
-     "The target notices themselves stuck in a loop of wondering what happened, unable to get closure or answers."
+     "That was for your own good.",
+     "You'll understand this was necessary, one day.",
+     "That was for your good.",
+     "You'll see this was necessary."
+    ],
+    "what_it_is_not": [
+     "Some hard choices really were for someone's benefit (a parent enforcing a curfew) — the flag is this phrase used to erase real pain rather than to explain a reasonable decision made in good faith."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Some people are genuinely avoidant and struggle with direct communication, without strategic intent.",
-     "Relationships sometimes naturally and mutually fade without anyone controlling the process."
+     "Sometimes an action genuinely did have protective intent, honestly explained without denying it also hurt."
     ],
     "common_false_positives": [
-     "A genuine, one-time need for space or distance, communicated even briefly, rather than complete unexplained silence.",
-     "Someone who is simply avoidant by nature and struggles with direct communication generally, without strategic intent.",
-     "A relationship that naturally faded through mutual, gradual disengagement rather than one person controlling the process."
+     "A genuine, later realization that something painful actually did serve a real protective purpose, acknowledged without denying it also hurt.",
+     "A person honestly explaining their intent after the fact, without insisting the target's own experience of harm was wrong.",
+     "Real, retrospective context that adds understanding without demanding the target reclassify genuine harm as help."
     ],
     "discernment_questions": [
-     "Was any explanation or acknowledgment offered, even minimal, or was it complete unexplained silence?",
-     "Does the person resurface specifically at moments when the target seems to be moving on or gaining closure elsewhere?",
-     "Is the pattern one-directional or does it reflect a more mutual dynamic?",
-     "Would providing even brief closure have been reasonably possible, given the relationship's history?"
+     "Does the \"for your own good\" framing come with real acknowledgment that it also caused harm, or does it erase the harm entirely?",
+     "Does the target's own memory and felt experience of harm get respected, or overridden by the reframe?",
+     "Does this happen once, in genuine reflection, or as a repeated pattern whenever accountability is sought?",
+     "Would the same action still seem justifiable if described accurately, without the retroactive reframing?"
     ],
     "less_concerning_if": [
-     "A brief explanation or acknowledgment was offered, even if imperfect, rather than complete silence."
+     "The explanation acknowledges real harm alongside genuine protective intent, without erasing the target's experience."
     ],
     "more_concerning_if": [
-     "Complete unexplained silence is followed by resurfacing specifically when the target seems to be moving on."
+     "The reframe consistently erases the target's memory of harm, insisting retroactively that it was actually help."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -59,85 +62,90 @@
    },
    "related_tactics": [
     {
-     "name": "Humiliation Rituals",
-     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
     },
     {
-     "name": "Public Exposure",
-     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
     },
     {
-     "name": "Forced Submission",
-     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
     },
     {
-     "name": "Stalking & Surveillance (Post-Separation)"
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
     },
     {
-     "name": "Legal Abuse (Post-Separation)",
-     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
     },
     {
-     "name": "Reputation Warfare (Post-Separation)",
-     "definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Humiliation Rituals",
-   "category": "Discard / institutional",
-   "tier": "Reference-only",
-   "branch": "reference",
+   "name": "Competitive Victimhood",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Pattern-only",
+   "branch": "pattern",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Being told the humiliation is the point makes objecting to it look like failing the test, so the cost is paid twice: once in public, and again in staying quiet about it.",
-    "what_it_is_not": "Genuinely hard training and demanding standards push people without diminishing them, and one harsh moment inside an otherwise respectful process is friction rather than a rite. Ask whether the stated growth would survive removing the audience."
+    "why_this_matters": "The target's own pain never gets a hearing, and rather than enter a contest they cannot win, they stop raising things at all."
    },
    "existing_specific_text": {
-    "short_definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working.",
-    "expanded_definition": "Degradation disguised as initiation, correction, discipline, or personal growth, where the target is publicly diminished and told that the pain or humiliation itself proves the process is legitimate or working. The ritualized, repeated nature and institutional framing make it harder to name as simple humiliation.",
-    "plain_language_summary": "In plain terms: degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention.",
+    "expanded_definition": "Responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention. As a communication pattern, Competitive Victimhood-type behavior in the Guilt & Obligation Leverage category tends to work by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice — describing a pattern in the exchange, not a fixed trait in the person. As a Pattern-only entry, note: this is only meaningful as a shape across many messages over time, never from a single line, and is never scored.",
+    "plain_language_summary": "In plain terms: responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+     "Responding to the target's pain with a bigger pain of one's own, ensuring the target's experience never receives full attention.",
+     "Recognizable by phrasing such as \"Every time you raise something that hurt you, the conversation ends up about how much worse it's been for them\"."
     ],
     "what_it_sounds_like": [
-     "A formalized, repeated practice of publicly diminishing new members, students, or subordinates, framed as a necessary rite of passage.",
-     "Objecting to the treatment is met with \"everyone goes through this, it's how we build character.\"",
-     "The target notices the stated growth purpose seems to exist mainly to justify the humiliation, rather than the reverse."
+     "Every time you raise something that hurt you, the conversation ends up about how much worse it's been for them.",
+     "This happens consistently enough that you've stopped bringing things up.",
+     "Message 1: warmth or normal conversation. Later: a shift matching 'responding to the target's pain with a bigger pain of one's '. Later still: a return to warmth, and the cycle repeats."
+    ],
+    "what_it_is_not": [
+     "Sometimes someone really is going through something bigger and it's fair for that to come up — the flag is a reliable pattern where your pain is never allowed room of its own."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuinely challenging training and rigorous standards exist without needing to involve humiliation.",
-     "A single, isolated harsh moment isn't the same as a ritualized, repeated pattern."
+     "People going through genuinely hard times sometimes need extra support that happens to coincide with someone else's difficulty."
     ],
     "common_false_positives": [
-     "A genuinely challenging but respectful training or onboarding process that pushes people without degrading them.",
-     "A single, isolated harsh moment during an otherwise respectful process, not a repeated, ritualized pattern.",
-     "A demanding standard that's difficult but doesn't involve humiliation, degradation, or public diminishment."
+     "A person going through a genuinely, separately difficult time who processes it honestly, without it being deployed specifically in response to the target's pain.",
+     "Mutual support where both people's struggles get real attention over time, even if one conversation focuses more on one person.",
+     "A single instance of someone needing extra support that happened to coincide with, but wasn't a response to, the target's own pain."
     ],
     "discernment_questions": [
-     "Does the process actually build the stated skill or bond, or does the humiliation itself seem to be the actual point?",
-     "Is objecting to specific instances of degradation met with genuine reconsideration, or dismissed as weakness?",
-     "Is the practice applied to everyone consistently, or does it seem to specifically target certain people?",
-     "Would removing the humiliating elements actually undermine the stated goal, or leave it intact?"
+     "Does this response happen specifically and reliably whenever the target raises their own pain?",
+     "Does the target's original pain ever get full attention on its own, in any conversation?",
+     "Is the other person's difficulty genuinely comparable, or does it consistently one-up whatever the target raised?",
+     "Would the target's concern get addressed if the other person's situation weren't brought up?"
     ],
     "less_concerning_if": [
-     "The process is challenging but doesn't involve public degradation, and objections are taken seriously."
+     "Both people's struggles get real, separate attention over time, without one consistently displacing the other."
     ],
     "more_concerning_if": [
-     "The humiliation itself seems to be the actual point, and objecting is dismissed as evidence of weakness."
+     "The target's pain reliably gets displaced by a bigger claimed pain, every time it's raised."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -145,85 +153,87 @@
    },
    "related_tactics": [
     {
-     "name": "Ghosting as Control",
-     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
     },
     {
-     "name": "Public Exposure",
-     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
     },
     {
-     "name": "Forced Submission",
-     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
     },
     {
-     "name": "Stalking & Surveillance (Post-Separation)"
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
     },
     {
-     "name": "Legal Abuse (Post-Separation)",
-     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
     },
     {
-     "name": "Reputation Warfare (Post-Separation)",
-     "definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "other_flags": [
+     "high_false_positive_risk"
+    ],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Public Exposure",
-   "category": "Discard / institutional",
+   "name": "FOG",
+   "category": "Guilt & Obligation Leverage",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "An audience makes the moment permanent: it is witnessed, retold, and cannot be taken back privately later.",
-    "what_it_is_not": "Some things genuinely have to be addressed where they happen — a safety problem in a room full of people — and information can be public for a real, disclosed reason. Carelessness with something private is also not the same as choosing a setting for the size of its audience."
+    "why_this_matters": "Each pressure on its own might be refusable; layered together they leave no version of 'no' that does not feel frightening, ungrateful, or cruel all at once.",
+    "what_it_is_not": "Real obligations, real stakes and real concern often coexist in the same situation without anyone assembling them into pressure. Family and cultural norms around duty can generate all three honestly. The flag is the combination arriving reliably around a specific request."
    },
    "existing_specific_text": {
-    "short_definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment.",
-    "expanded_definition": "Singling someone out for shaming in front of others, using the audience itself as an amplifier and the visibility as the actual punishment — the point isn't to correct a specific behavior privately, it's to make the target's embarrassment as public and witnessed as possible.",
-    "plain_language_summary": "In plain terms: singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Fear, obligation, and guilt used together as a compliance-inducing pressure combination.",
+    "expanded_definition": "Fear, obligation, and guilt used together — not necessarily any single one alone, but the combined pressure of all three — as a compliance-inducing tactic. FOG is less a single move than a climate: fear of what happens if you refuse, obligation framed as something you owe, and guilt for even considering saying no, layered so that any one element reinforces the others.",
+    "plain_language_summary": "In plain terms: fear, obligation, and guilt used together as a compliance-inducing pressure combination.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+     "Fear, obligation, and guilt used together as a compliance-inducing pressure combination."
     ],
     "what_it_sounds_like": [
-     "A criticism or accusation delivered specifically in a setting designed to maximize the number of witnesses.",
-     "Private information or a private mistake is shared publicly in a way that serves no purpose except to embarrass the target.",
-     "The target notices the exposure happened in a context chosen specifically for its audience size."
+     "A refusal is met with a mix of a veiled consequence, a reminder of what's owed, and an appeal to how selfish declining would be — all in the same conversation.",
+     "The target notices they feel simultaneously afraid, obligated, and guilty about a single decision that shouldn't carry that much weight.",
+     "Each individual comment might seem minor, but together they make saying no feel almost impossible."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Some matters genuinely do need to be addressed where they happen, including in front of others.",
-     "Careless, inadvertent sharing happens without any intent to maximize embarrassment."
+     "Real obligations exist and can legitimately involve fear, duty, and guilt without manipulation. Cultural and family expectations around duty are common and not inherently a tactic."
     ],
     "common_false_positives": [
-     "A genuinely necessary public correction, like a safety issue, that would reasonably need to be addressed where it happened.",
-     "Information shared publicly because it was already public or because there was a legitimate, disclosed reason for the audience.",
-     "A private matter shared inadvertently or carelessly, without intent to maximize embarrassment."
+     "A situation with genuine mutual obligation, real stakes, and legitimate reasons for concern, without deliberate combination as pressure.",
+     "Cultural or family norms around duty and obligation that create real pressure without being consciously wielded as a tactic.",
+     "A person expressing several honest feelings that happen to overlap without being strategically combined."
     ],
     "discernment_questions": [
-     "Was there a legitimate reason the matter needed to be addressed in front of an audience, or could it have been handled privately?",
-     "Does the choice of venue seem specifically selected to maximize witnesses and embarrassment?",
-     "Is this a one-time lapse in judgment, or a repeated pattern of choosing public venues for private matters?",
-     "Would the same information, shared privately, have accomplished any legitimate purpose just as well?"
+     "Does declining consistently trigger all three elements together, or just one occasionally?",
+     "Is the combined pressure proportionate to the actual request, or does it seem engineered to override any refusal?",
+     "Would a reasonable person feel this pressured by the situation on its actual merits?",
+     "Does the pressure ease once compliance is given, suggesting it was functioning as leverage?"
     ],
     "less_concerning_if": [
-     "There's a legitimate, disclosed reason the matter needed public attention, or the exposure was a one-time lapse rather than a pattern."
+     "The pressure reflects genuine, proportionate stakes rather than an engineered combination."
     ],
     "more_concerning_if": [
-     "The venue seems specifically chosen to maximize embarrassment, and this recurs as a pattern."
+     "All three elements consistently appear together specifically around refusals, and ease once compliance is given."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -231,85 +241,85 @@
    },
    "related_tactics": [
     {
-     "name": "Ghosting as Control",
-     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
     },
     {
-     "name": "Humiliation Rituals",
-     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
     },
     {
-     "name": "Forced Submission",
-     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
     },
     {
-     "name": "Stalking & Surveillance (Post-Separation)"
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
     },
     {
-     "name": "Legal Abuse (Post-Separation)",
-     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
     },
     {
-     "name": "Reputation Warfare (Post-Separation)",
-     "definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Forced Submission",
-   "category": "Discard / institutional",
+   "name": "Emotional Hostage-Taking",
+   "category": "Guilt & Obligation Leverage",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
    "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "An apology given to end pressure still enters the record as an admission, and the person then has to live alongside having confessed to something they do not believe they did.",
-    "what_it_is_not": "Asking for accountability where something actually happened is fair, and saying you were hurt and want it acknowledged is not forcing anything. What sets this apart is pressure that continues regardless of what the facts turn out to be."
+    "why_this_matters": "Managing another person's mood turns into the price of refusing anything, and blame for whatever follows attaches to whoever said no.",
+    "what_it_is_not": "Being genuinely, involuntarily upset by a disappointing answer is not leverage, and someone who struggles to regulate emotion is not thereby wielding it. Both people being affected by each other's choices is normal in any close relationship; the pattern is distress that intensifies specifically around requests and limits."
    },
    "existing_specific_text": {
-    "short_definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong.",
-    "expanded_definition": "Compelling an apology, confession, or compliance under pressure, regardless of whether the target actually did anything wrong — the goal isn't accountability or truth, it's the performance of submission itself, extracted through sustained pressure until the target complies just to make the pressure stop.",
-    "plain_language_summary": "In plain terms: compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Making one's own emotional state contingent on another person's compliance, so the other person feels responsible for managing it.",
+    "expanded_definition": "Making one's own emotional state — mood, wellbeing, even physical health — visibly contingent on another person's compliance, so the other person comes to feel directly responsible for managing it. This differs from simply expressing genuine feelings; the mechanism here is that the emotional state functions as leverage, reliably appearing or intensifying specifically around requests, disagreements, or boundaries.",
+    "plain_language_summary": "In plain terms: making one's own emotional state contingent on another person's compliance, so the other person feels responsible for managing it.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+     "Making one's own emotional state contingent on another person's compliance, so the other person feels responsible for managing it."
     ],
     "what_it_sounds_like": [
-     "Pressure to apologize or confess continues regardless of the target's account of events, until they comply just to end the confrontation.",
-     "\"Just say you're sorry and this can be over\" applied without any actual determination of what, if anything, happened.",
-     "The target notices they've apologized or confessed to something they don't actually believe they did, purely to de-escalate."
+     "\"I guess I'll just be miserable then\" or a visible mood collapse specifically timed to a request being declined.",
+     "A pattern where the target starts pre-emptively managing their own choices around anticipating the other person's emotional reaction.",
+     "Physical symptoms (headaches, not eating, not sleeping) that reliably appear around moments of disagreement or refusal."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Genuine accountability, when someone actually did something wrong, is a healthy and appropriate request.",
-     "Real hurt feelings, honestly expressed, are different from forced, unconditional submission."
+     "Genuine disappointment and emotional reactions are normal in close relationships. Some people have real difficulty regulating emotions without any intent to leverage that difficulty."
     ],
     "common_false_positives": [
-     "A genuine, warranted request for accountability where the target actually did something that merits an apology.",
-     "A person expressing real hurt and asking for acknowledgment, which is different from forcing submission regardless of the facts.",
-     "A situation resolved through genuine, mutual discussion rather than unilateral pressure."
+     "Someone genuinely, involuntarily upset by a disappointing outcome, without any strategic intent behind the reaction.",
+     "A person with real difficulty regulating emotions who isn't consciously using their distress as leverage.",
+     "Two people who are both emotionally affected by each other's choices, which is normal in any close relationship."
     ],
     "discernment_questions": [
-     "Is there any real inquiry into what actually happened, or is submission demanded regardless of the facts?",
-     "Does the pressure continue specifically until compliance, disconnected from any actual determination of wrongdoing?",
-     "Does the target genuinely believe what they're being pressured to admit, or are they complying just to stop the pressure?",
-     "Would refusing to comply, if the target is genuinely innocent, be treated as further evidence of guilt?"
+     "Does the emotional reaction consistently and specifically follow moments of refusal or disagreement?",
+     "Does the reaction subside quickly once compliance is given, in a way that feels transactional?",
+     "Is there room for the target to decline without the interaction escalating into a crisis?",
+     "Would the person's distress look the same regardless of whether the target complied?"
     ],
     "less_concerning_if": [
-     "There's a genuine, good-faith inquiry into what happened, and any request for accountability is proportionate to actual events."
+     "Distress is proportionate, not selectively timed to requests, and doesn't reliably resolve the moment compliance happens."
     ],
     "more_concerning_if": [
-     "Submission is demanded regardless of the facts, and pressure continues specifically until compliance."
+     "Distress reliably appears around refusals and resolves quickly once the target gives in."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -317,86 +327,258 @@
    },
    "related_tactics": [
     {
-     "name": "Ghosting as Control",
-     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
     },
     {
-     "name": "Humiliation Rituals",
-     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
     },
     {
-     "name": "Public Exposure",
-     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
     },
     {
-     "name": "Stalking & Surveillance (Post-Separation)"
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
     },
     {
-     "name": "Legal Abuse (Post-Separation)",
-     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
     },
     {
-     "name": "Reputation Warfare (Post-Separation)",
-     "definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": false,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   },
   {
-   "name": "Stalking & Surveillance (Post-Separation)",
-   "category": "Discard / institutional",
+   "name": "Weaponized Tears",
+   "category": "Guilt & Obligation Leverage",
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
-   "source_definition_is_cut_off": true,
+   "source_definition_is_cut_off": false,
    "approved_draft": {
-    "why_this_matters": "Separation is supposed to end the other person's access; when it does not, ordinary life — where you live, who you see, what you do next — continues to be conducted under observation.",
-    "what_it_is_not": "Shared custody and shared property require real, continuing contact, and news travels through mutual friends without anyone monitoring anyone. What falls outside that is knowledge of details that were never shared through any of those channels.",
-    "note": "The entry's short definition is truncated in the source (\"Comprehensive monitoring after the.\"), so both fields were derived from the expanded description and the examples rather than the definition line."
+    "why_this_matters": "The conversation reverses: whoever raised the harm ends up providing comfort, and the original concern is never returned to.",
+    "what_it_is_not": "Some people cry readily when confronted, particularly those who find criticism hard to receive, and that is distress rather than tactic. Tears while the conversation still continues are not this — what marks the pattern is that accountability stops."
    },
    "existing_specific_text": {
-    "short_definition": "Comprehensive monitoring after the.",
-    "expanded_definition": "Comprehensive monitoring after the. As a communication pattern, Stalking & Surveillance (Post-Separation)-type behavior in the Discard / institutional category tends to work through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal — describing a pattern in the exchange, not a fixed trait in the person. As a Reference-only entry, note: this cannot be established from pasted text at all — it's included for learning the concept, not for detection.",
-    "plain_language_summary": "In plain terms: comprehensive monitoring after the.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "short_definition": "Crying deployed at a moment calculated to halt accountability or redirect sympathy.",
+    "expanded_definition": "Crying deployed at a moment specifically timed to halt accountability or redirect sympathy — most notably, tears that reliably appear right as the target is raising a legitimate concern or holding someone accountable, shifting the focus from the original issue to comforting the person crying. This differs from genuine emotional overwhelm in its timing and function: it consistently interrupts accountability rather than simply reflecting real distress.",
+    "plain_language_summary": "In plain terms: crying deployed at a moment calculated to halt accountability or redirect sympathy.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
     "what_it_is": [
-     "Comprehensive monitoring after the."
+     "Crying deployed at a moment calculated to halt accountability or redirect sympathy."
     ],
     "what_it_sounds_like": [
-     "Location, movements, or whereabouts are tracked or referenced by a former partner in ways that couldn't come from any current, voluntary sharing.",
-     "Contact through mutual friends, shared custody logistics, or shared property becomes a consistent vehicle for monitoring rather than its stated purpose.",
-     "The target notices the former partner seems to know details about their current life that they never shared directly."
+     "Tears begin specifically as the target starts to explain what upset them, cutting the explanation short.",
+     "The conversation shifts from the original concern to comforting the crying person, and the original issue is never returned to.",
+     "A pattern where crying reliably appears at the exact moment accountability is sought, but not at other emotionally difficult moments."
     ],
     "innocent_or_ordinary_possibilities": [
-     "Legitimate shared custody or property logistics require some ongoing contact.",
-     "Information can reach someone through an obvious mutual connection without any surveillance involved."
+     "Some people have genuinely strong, involuntary emotional responses to conflict or criticism. Crying during a hard conversation doesn't mean the tears are calculated."
     ],
     "common_false_positives": [
-     "Legitimate, necessary contact through shared custody or shared property logistics, without any monitoring beyond what's practically required.",
-     "A former partner who has genuinely and completely stopped any contact or awareness of the target's life.",
-     "Information that reached the former partner through an obvious, non-surveillance channel, like a mutual friend who mentioned it openly."
+     "Genuine distress at being confronted, especially for someone with real difficulty receiving criticism, without calculated intent.",
+     "A person with a strong, involuntary emotional response to conflict generally, not specifically to being held accountable.",
+     "Crying that happens but doesn't actually derail the conversation — both things can still be discussed."
     ],
     "discernment_questions": [
-     "Does the former partner have specific knowledge that couldn't reasonably come from any legitimate, disclosed channel?",
-     "Does necessary shared-logistics contact stay within its stated purpose, or does it consistently expand into monitoring?",
-     "Has the pattern intensified specifically since the separation, rather than easing over time as normal for an ended relationship?",
-     "Would a reasonable person, in a genuinely over relationship, have this level of ongoing awareness?"
+     "Does the crying happen specifically and consistently at the moment accountability is being raised?",
+     "Does the conversation reliably shift away from the original issue once the crying starts?",
+     "Is the original concern ever returned to and actually addressed, or does it quietly disappear?",
+     "Does this person cry in other difficult moments unrelated to being held accountable?"
     ],
     "less_concerning_if": [
-     "Any awareness of the target's life comes through an obvious, disclosed channel, and shared-logistics contact stays within its stated purpose."
+     "The original issue still gets addressed, even if delayed by a genuine emotional moment."
     ],
     "more_concerning_if": [
-     "The former partner has specific knowledge with no legitimate explanation, and monitoring has intensified since the separation."
+     "The original issue reliably disappears once tears start, and this happens specifically around accountability."
     ],
     "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
     "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Obligation Installation",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Loyalty stops being something freely given and becomes a debt owed for having been trusted, and terms the person never agreed to can then be enforced as though they had.",
+    "what_it_is_not": "Confiding in someone is how intimacy works, and mutual disclosure that is never later invoked as leverage is not this. Many relationship expectations go unstated and are still perfectly reasonable; the difference is being held to account for breaking a rule that was never available to see."
+   },
+   "existing_specific_text": {
+    "short_definition": "Making the target the keeper of someone's sacrifice, secret, or story so loyalty becomes a moral debt.",
+    "expanded_definition": "Making the target the keeper of someone's sacrifice, secret, or personal story — entrusting them with something framed as significant — so that loyalty to the relationship becomes a moral debt rather than a free choice. This also covers unstated expectations the target is assumed to have agreed to simply by continuing the relationship, then held accountable for \"breaking\" even though they were never explicitly made.",
+    "plain_language_summary": "In plain terms: making the target the keeper of someone's sacrifice, secret, or story so loyalty becomes a moral debt.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Making the target the keeper of someone's sacrifice, secret, or story so loyalty becomes a moral debt.",
+     "Also covers the related, previously separate entries: Covert Contracts."
+    ],
+    "what_it_sounds_like": [
+     "\"I've never told anyone else this — you're the only one who knows,\" followed later by an expectation of loyalty tied to that disclosure.",
+     "An unstated expectation the target is told they \"should have known\" was part of the relationship, despite it never being discussed.",
+     "Being reminded of a confided secret specifically at moments when the target considers pulling away or disagreeing."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Real trust and confiding are part of healthy closeness. Most relationships involve some reasonable unstated expectations that aren't manipulative, just implicit."
+    ],
+    "common_false_positives": [
+     "Genuine intimacy where confiding is mutual and never later weaponized as leverage.",
+     "Reasonable, if unstated, relationship norms that most people would recognize without needing to be told explicitly.",
+     "A person who assumed shared expectations in good faith, without intending to trap the target in an unspoken contract."
+    ],
+    "discernment_questions": [
+     "Is the confided information later used specifically as leverage against the target's autonomy?",
+     "Are the \"unstated expectations\" ones a reasonable person would actually recognize, or unusual and self-serving?",
+     "Does the target have any real opportunity to renegotiate expectations, or are they only discovered by \"breaking\" them?",
+     "Would the relationship survive the target openly discussing and possibly declining the unstated expectation?"
+    ],
+    "less_concerning_if": [
+     "Confided information stays confided and isn't invoked as leverage; unstated expectations are ones a reasonable person would recognize."
+    ],
+    "more_concerning_if": [
+     "Secrets are specifically invoked when the target pulls away, and expectations are unusual and only surface after being \"broken.\""
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
+    "safety_note": "No elevated safety concern is implied by this entry on its own. If a situation ever does involve threats, monitoring, isolation, or fear for your safety, the general guidance still applies: A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
+    "misuse_warning": [
+     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
+    ]
+   },
+   "related_tactics": [
+    {
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
+    },
+    {
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
+    },
+    {
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
+    },
+    {
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
+    },
+    {
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
+    },
+    {
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
+    }
+   ],
+   "old_safety_signals": {
+    "old_page_badge": false,
+    "old_review_flag_safety_sensitive": false,
+    "other_flags": [],
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
+   }
+  },
+  {
+   "name": "Guilt Legacy",
+   "category": "Guilt & Obligation Leverage",
+   "tier": "Reference-only",
+   "branch": "reference",
+   "risk_flagged": false,
+   "source_definition_is_cut_off": false,
+   "approved_draft": {
+    "why_this_matters": "Repayment is expected for a debt incurred before the person could have consented to it, and declining reads as a betrayal not of one relationship but of a whole family line.",
+    "what_it_is_not": "Family and cultural values around duty and reciprocity are genuinely held by many people who endorse them freely, and a parent recounting real history is sharing context rather than calling in a debt. Norms that differ from your own expectations are not the same as norms deployed as leverage for a specific present demand."
+   },
+   "existing_specific_text": {
+    "short_definition": "Inherited, intergenerational obligation used to control, where debts incurred before the target was born are enforced as though they personally agreed to them.",
+    "expanded_definition": "Inherited, intergenerational obligation used to control — debts, sacrifices, or promises made before the target was born, or without their agreement, enforced as though the target personally consented to them. This works by framing the target's compliance as repayment for something they never chose to owe, often invoking ancestors, family history, or a parent's own past sacrifices.",
+    "plain_language_summary": "In plain terms: inherited, intergenerational obligation used to control, where debts incurred before the target was born are enforced as though they personally agreed to them.",
+    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
+    "what_it_is": [
+     "Inherited, intergenerational obligation used to control, where debts incurred before the target was born are enforced as though they personally agreed to them."
+    ],
+    "what_it_sounds_like": [
+     "\"After everything this family went through to get you where you are, this is how you repay it?\"",
+     "Specific references to a parent's or grandparent's sacrifices used as leverage for an unrelated, current decision.",
+     "Obligations framed as inherited duty (\"this is just what our family does\") rather than something the target actually agreed to."
+    ],
+    "innocent_or_ordinary_possibilities": [
+     "Many cultures and families have real, sincerely-held values around intergenerational duty that aren't manipulative. Sharing family history is a normal, often meaningful part of many relationships."
+    ],
+    "common_false_positives": [
+     "Genuine, freely-held family or cultural values around duty and reciprocity that the target actually shares and endorses.",
+     "A parent sharing real history and context about sacrifices made, without using it as leverage for a specific current demand.",
+     "Cultural norms around filial duty that differ from the target's expectations but aren't deployed manipulatively."
+    ],
+    "discernment_questions": [
+     "Is the family history being shared as context, or specifically deployed to extract a particular current compliance?",
+     "Does the target have any real ability to decline without being framed as a betrayal of the family?",
+     "Would this \"debt\" be recognized as legitimate by the target if they weren't under pressure in the moment?",
+     "Is the sacrifice invoked selectively, mainly when the target wants something different from what's expected?"
+    ],
+    "less_concerning_if": [
+     "Family history is shared as context and doesn't specifically target a current disagreement."
+    ],
+    "more_concerning_if": [
+     "The invoked debt only ever surfaces when the target wants something different from what's expected of them."
+    ],
+    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
+    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
+    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate by activating guilt or a sense of owed duty, so declining feels like a moral failure rather than a reasonable choice. This describes a possible mechanism, not a claim about what any specific person intended.",
+    "possible_impact_on_receiver": "People sometimes describe chronic guilt, difficulty saying no, and a sense that one's own needs are somehow selfish in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
     "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
     "misuse_warning": [
      "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
@@ -404,124 +586,35 @@
    },
    "related_tactics": [
     {
-     "name": "Ghosting as Control",
-     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
+     "name": "Guilt-Tripping",
+     "definition": "Inducing guilt to make refusal feel morally wrong."
     },
     {
-     "name": "Humiliation Rituals",
-     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
+     "name": "Emotional Blackmail",
+     "definition": "Making love or the relationship conditional on compliance."
     },
     {
-     "name": "Public Exposure",
-     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
+     "name": "Self-Harm Threats as Leverage",
+     "definition": "Threatening self-harm to prevent the other person's exit or refusal."
     },
     {
-     "name": "Forced Submission",
-     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
+     "name": "Pity Plays",
+     "definition": "Performing helplessness or victimhood to redirect sympathy."
     },
     {
-     "name": "Legal Abuse (Post-Separation)",
-     "definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
+     "name": "Martyrdom Display",
+     "definition": "Advertising one's sacrifices to generate obligation."
     },
     {
-     "name": "Reputation Warfare (Post-Separation)",
-     "definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
+     "name": "Duty Scripts",
+     "definition": "Invoking role obligations ('a good son would…') to compel behavior."
     }
    ],
    "old_safety_signals": {
     "old_page_badge": true,
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   },
-   "reviewer_requires_safety_sensitive": "TRUE. The 2026-08-27 clinical review named this entry as one most likely to be read by someone in current danger. Set safety_sensitive true and write the note and script accordingly.",
-   "known_truncation_note": "The source short_definition for this entry stops mid-sentence. Write a complete one from the expanded text and your own knowledge; do not reuse the old text.",
-   "covers_two_things": "The title joins two things. Cover BOTH. In expanded_definition say plainly whether they are two names for one behavior or two related behaviors, and make what_it_sounds_like and what_it_is_not fit both halves."
-  },
-  {
-   "name": "Legal Abuse (Post-Separation)",
-   "category": "Discard / institutional",
-   "tier": "Reference-only",
-   "branch": "reference",
-   "risk_flagged": false,
-   "source_definition_is_cut_off": false,
-   "approved_draft": {
-    "why_this_matters": "Each filing looks procedurally normal on its own, so the cost accumulates in money, time and nerves without ever producing a single moment anyone would call abuse.",
-    "what_it_is_not": "Complicated separations legitimately need many legal steps, courts are slow and expensive by themselves, and someone protecting a real interest will feel adversarial to the other side. Re-litigating settled matters with no new substantive basis is what stands apart."
-   },
-   "existing_specific_text": {
-    "short_definition": "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation.",
-    "expanded_definition": "Weaponizing courts, custody proceedings, filings, motions, and other legal processes to drain the target's financial and emotional resources, punish them for leaving, and maintain control after a relationship has ended — using the legitimate machinery of the legal system itself as the mechanism of ongoing harm, which makes it hard to recognize since each individual filing may look procedurally normal.",
-    "plain_language_summary": "In plain terms: weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation.",
-    "why_this_matters": "Patterns like this can shape communication, trust, and decision-making — left unnamed, they can contribute to compounded harm from institutions that were supposed to help, and delayed recognition of what happened. Naming a pattern accurately — without over-claiming — is usually what restores clarity faster than either ignoring it or catastrophizing it.",
-    "what_it_is": [
-     "Weaponizing courts, custody proceedings, filings, motions, and legal processes to drain, punish, and control the target after separation."
-    ],
-    "what_it_sounds_like": [
-     "Repeated legal filings or motions that re-litigate matters already settled, with no new substantive basis.",
-     "Court proceedings that seem timed to coincide with the target's significant life events, rather than any genuine legal need.",
-     "The financial and emotional cost of responding to ongoing legal actions seems disproportionate to what's actually being contested."
-    ],
-    "innocent_or_ordinary_possibilities": [
-     "Genuinely complex situations sometimes really do require multiple legitimate legal steps.",
-     "Court systems themselves can be slow and costly for reasons outside either party's control."
-    ],
-    "common_false_positives": [
-     "A genuinely complex custody or separation situation that legitimately requires multiple real legal steps to resolve.",
-     "One party appropriately using legal process to protect real, legitimate interests, even if it feels adversarial to the other.",
-     "Legal proceedings that are slow or costly due to the court system itself, not any one party's strategy."
-    ],
-    "discernment_questions": [
-     "Do the filings have genuine, substantive new legal basis, or do they re-litigate settled matters?",
-     "Is the volume and timing of legal action proportionate to any real, disputed issue?",
-     "Would a family law professional see this pattern as proportionate litigation or excessive?",
-     "Does the legal activity seem to track the target's life events rather than genuine legal necessity?"
-    ],
-    "less_concerning_if": [
-     "Legal filings have genuine, substantive basis and are proportionate to real, disputed matters."
-    ],
-    "more_concerning_if": [
-     "Filings repeatedly re-litigate settled matters, seem timed to the target's life events, and are disproportionate to what's actually contested."
-    ],
-    "repair_check": "After the incident, was there a genuine acknowledgment (not a non-apology), a concrete change in behavior, and no repeat of the same pattern? Repair is a pattern of change over time, not a single sentence of regret.",
-    "boundary_respect_check": "When a boundary was stated plainly in this area, was it honored going forward — or tested, ignored, punished, or reframed as unreasonable? Boundary respect observed over multiple instances is one of the more reliable signals available.",
-    "psychological_mechanism": "One documented mechanism behind patterns like this is that they can operate through formal processes, medical settings, or the aftermath of separation, where the harm is procedural as much as personal. This describes a possible mechanism, not a claim about what any specific person intended.",
-    "possible_impact_on_receiver": "People sometimes describe compounded harm from institutions that were supposed to help, and delayed recognition of what happened in connection with patterns like this. Impact varies widely by person, history, and context — this is a possibility to consider, not a predicted or universal outcome, and it is not a diagnosis of the person on the receiving end of a sustained pattern like this.",
-    "safety_note": "A phrase-matching tool cannot decide safety. If this involves threats, monitoring, isolation, sex, money, housing, immigration, self-harm pressure, retaliation, or fear for safety, prioritize real-world support from a trusted person, local support service, legal/workplace resource, or emergency help if immediate danger exists.",
-    "misuse_warning": [
-     "One example is a signal to examine, not proof of motive, diagnosis, abuse, danger, or character. Do not use this label to attack, shame, threaten, expose, or retaliate against someone."
-    ]
-   },
-   "related_tactics": [
-    {
-     "name": "Ghosting as Control",
-     "definition": "Disappearing without explanation, closure, or acknowledgment, creating anxiety, self-doubt, and unresolved attachment."
-    },
-    {
-     "name": "Humiliation Rituals",
-     "definition": "Degradation disguised as initiation, correction, discipline, or growth, where the target is publicly diminished and told the pain proves the process is working."
-    },
-    {
-     "name": "Public Exposure",
-     "definition": "Singling someone out for shaming in front of others, using the audience as amplifier and the visibility as punishment."
-    },
-    {
-     "name": "Forced Submission",
-     "definition": "Compelling apology, confession, or compliance under pressure regardless of whether the target did anything wrong."
-    },
-    {
-     "name": "Stalking & Surveillance (Post-Separation)"
-    },
-    {
-     "name": "Reputation Warfare (Post-Separation)",
-     "definition": "Systematic destruction of the target's credibility and social standing after departure through reference sabotage, narrative seeding, and industry blacklisting."
-    }
-   ],
-   "old_safety_signals": {
-    "old_page_badge": true,
-    "old_review_flag_safety_sensitive": false,
-    "other_flags": [],
-    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
+    "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; hints only."
    }
   }
  ]
