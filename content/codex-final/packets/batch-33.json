@@ -650,7 +650,7 @@
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
-   "source_definition_is_cut_off": false,
+   "source_definition_is_cut_off": true,
    "approved_draft": {
     "why_this_matters": "Burden accumulates across filings rather than sitting in any one of them: responding to all of them costs time and money whether or not a single one has merit.",
     "what_it_is_not": "Genuinely complex disputes require multiple legitimate filings to resolve. Thorough counsel generates volume as a by-product of diligence rather than as a strategy. Institutions produce a great deal of paperwork through their own procedural requirements, independent of any party's conduct.",
@@ -732,7 +732,8 @@
      "workplace_or_legal_ambiguity"
     ],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "known_truncation_note": "The source short_definition for this entry stops mid-sentence. Write a complete one from the expanded text and your own knowledge; do not reuse the old text."
   }
  ]
 }

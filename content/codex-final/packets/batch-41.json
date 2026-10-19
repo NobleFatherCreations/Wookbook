@@ -353,7 +353,7 @@
    "tier": "Reference-only",
    "branch": "reference",
    "risk_flagged": false,
-   "source_definition_is_cut_off": false,
+   "source_definition_is_cut_off": true,
    "approved_draft": {
     "why_this_matters": "Verification cannot keep pace with volume, and the disorientation left behind is much harder to describe afterwards than any single false claim would have been.",
     "what_it_is_not": "Someone genuinely distressed can produce many real concerns at once, and a rapid-fire style can reflect honest urgency about several separate issues. Volume alone is not the pattern; the difference shows in whether engaging with one claim gets engagement back or simply produces several more.",
@@ -432,7 +432,8 @@
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "known_truncation_note": "The source short_definition for this entry stops mid-sentence. Write a complete one from the expanded text and your own knowledge; do not reuse the old text."
   },
   {
    "name": "Meta-Gaslighting",

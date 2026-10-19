@@ -214,7 +214,7 @@
    "tier": "Reference-only",
    "branch": "societal",
    "risk_flagged": true,
-   "source_definition_is_cut_off": false,
+   "source_definition_is_cut_off": true,
    "approved_draft": {
     "why_this_matters": "Doubt gets recoded as a fault in the doubter rather than a question about the claim, so the ordinary means of testing an idea are unavailable from inside.",
     "what_it_is_not": "Strong conviction is not this, and every field has foundational assumptions it does not reopen daily. The flag is a body of ideas that cannot be questioned without the questioner's character or loyalty becoming the subject instead."
@@ -274,7 +274,8 @@
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "known_truncation_note": "The source short_definition for this entry stops mid-sentence. Write a complete one from the expanded text and your own knowledge; do not reuse the old text."
   },
   {
    "name": "Doctrine Over Person",

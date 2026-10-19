@@ -137,7 +137,8 @@
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "known_truncation_note": "The source short_definition for this entry stops mid-sentence. Write a complete one from the expanded text and your own knowledge; do not reuse the old text."
   },
   {
    "name": "Cyber Manipulation Operations (CMOs)",

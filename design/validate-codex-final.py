@@ -285,6 +285,22 @@ ANNOUNCE = re.compile(
     r"if it happens again,? i)\b", re.I)
 
 
+# The 2026-08-27 clinical review found the safety flag missing from these entries,
+# which are the ones most likely to be read by someone in current danger (its
+# section 5.2, plus two the same logic obviously covers). A writer must not
+# set them false.
+REQUIRE_SAFETY = {"Health Sabotage", "Stalking & Surveillance (Post-Separation)",
+                  "Intimate Image Abuse", "Reproductive Coercion",
+                  "Financial Dependence by Design", "Blackmail / Leverage Exploitation",
+                  "Spatial Invasion", "Rage as Control", "Ambient Sexual Threat",
+                  "Self-Harm Threats as Leverage", "Stalking-by-Notification"}
+# Source definitions the review found cut off mid-sentence (its section 5.3), two
+# of which no heuristic can see. The entry must not keep the broken text.
+KNOWN_BROKEN = {"Stalking & Surveillance (Post-Separation)", "Astroturfing", "Paper Terrorism",
+                "Firehose of Falsehood", "Cognitive Warfare", "Sacred Science",
+                "Ambient Sexual Threat"}
+
+
 def corpus_freq(batches, base_all):
     freq = Counter()
     for name, (e, _) in batches.items():
@@ -335,6 +351,11 @@ def main():
             base = {"name": name}
         risk = "manipulation_playbook_risk" in base.get("human_review_flags", [])
         check_shape(name, e, errs)
+        if name in REQUIRE_SAFETY and e.get("safety_sensitive") is not True:
+            errs.append("safety_sensitive must be true: the clinical review named this entry as one "
+                        "most likely to be read by someone in danger")
+        if name in KNOWN_BROKEN and e.get("short_definition", "").strip() == base.get("short_definition", "").strip():
+            errs.append("short_definition is still the cut-off source text; write a complete one")
         check_text(name, e, base, risk, errs, warns)
         norm = bp.make_normalizer(base)
         for f, s in texts(e):

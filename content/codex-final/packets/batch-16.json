@@ -432,7 +432,8 @@
     "old_review_flag_safety_sensitive": false,
     "other_flags": [],
     "note": "Old signals were set by a coarse rule. Decide safety_sensitive yourself from the spec; these are hints only."
-   }
+   },
+   "reviewer_requires_safety_sensitive": "TRUE. The 2026-08-27 clinical review named this entry as one most likely to be read by someone in current danger. Set safety_sensitive true and write the note and script accordingly."
   },
   {
    "name": "Resource Sabotage",

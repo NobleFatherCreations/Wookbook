@@ -135,6 +135,15 @@ Write each field as if you were the only entry. Facts about quoting real
 people: you may name a researcher or framework only when you are certain, and
 say no more about their work than you are sure of.
 
+## Entries the earlier clinical review singled out
+
+Two things from the 2026-08-27 review are enforced by the checker, and a packet
+entry says so when it applies:
+
+- `reviewer_requires_safety_sensitive`: the entry must have `safety_sensitive: true`.
+- `known_truncation_note` / `source_definition_is_cut_off`: the source definition
+  stops mid-sentence. Write a complete one; never reuse the old text.
+
 ## Using the packet
 
 Each packet entry has `existing_specific_text` (the old text with shared
