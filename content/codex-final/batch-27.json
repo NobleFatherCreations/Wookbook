@@ -179,13 +179,13 @@
     "possible_impact_on_receiver": "Rehearsed sentences pile up unsaid. Some lie awake over a conversation they could not start, or feel invisible when others assume all is well. Others find that things said to a counselor or put in writing come out more easily than aloud, which suggests the block is about the risk of speaking and not about having nothing to say.",
     "response_options": {
       "soft_clarification": "Start smaller than the full topic: 'There is something I find hard to talk about. Can I come back to it when I am ready?'",
-      "firm_boundary": "If someone talks over you or mocks the attempt, you can say 'I need to finish this sentence' and carry on at your own pace.",
+      "firm_boundary": "If it feels safe, and someone talks over you or mocks the attempt, you can say 'I need to finish this sentence' and carry on at your own pace. If it is not safe, use writing instead.",
       "disengagement": "If the topic stays locked in the moment, put it in a note, a text or a letter instead. Writing sidesteps the throat-closing part and leaves a record.",
       "support_seeking": "Say the sentence first to someone with no stake in your answer, such as a counselor, a helpline volunteer or a friend from outside the family.",
       "workplace_or_professional": "At work, use written channels for the subject that freezes you, such as an email to a manager or a note to HR, and ask for a meeting once the facts are on paper."
     },
     "boundary_script": "\"This is hard for me to say out loud, so I may go slowly. I'd like you to let me finish before you respond.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "Silence alone is not a danger sign. It matters more when the topic you cannot raise involves being hurt, threatened, watched or kept short of money, because then the silence may be shielding you from a real risk. Many advocacy lines offer chat or text for people who cannot speak freely, so start there, at a time and place the person it concerns cannot see.",
     "misuse_warning": [
       "Telling a quiet person they have been 'silenced' can overlook that they may simply prefer privacy or be shy.",
@@ -380,7 +380,7 @@
       "workplace_or_professional": "At work, notice if you take on everyone's emotional upkeep or unpaid extras, and practice handing back what belongs to other people."
     },
     "boundary_script": "\"I love you, and I can talk for a little while tonight. I can't be the one who fixes this, so I'd like you to ask your sister or a counselor for that part.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "Being the family's caretaker is not, in itself, a danger signal. That changes if the adult's crises involve self-harm threats you are expected to prevent, violence, or loss of housing that you are told is your responsibility. A child or teen in that position needs an adult outside the household, such as a school counselor, a doctor or a relative, to share the weight.",
     "misuse_warning": [
       "Calling every childhood chore 'parentification' can erase the real value of contributing to a household.",

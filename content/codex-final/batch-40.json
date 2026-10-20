@@ -86,10 +86,10 @@
       "soft_clarification": "If someone you trust has seen it, tell them plainly that it is fabricated and that you can show where you were. Then ask them not to forward it.",
       "firm_boundary": "Do not bargain with anyone demanding something in exchange for keeping it private. Keep the demand as it was sent and hand it to the people handling your report.",
       "disengagement": "Stop replying to the sender. Before blocking anyone, save the messages, links and dates so there is a record.",
-      "support_seeking": "StopNCII.org and Take It Down are hash-matching services that help block known intimate images on participating platforms. Ask whether they can take your case, and contact a victim advocate or legal aid about options where you live.",
+      "support_seeking": "StopNCII.org and Take It Down are hash-matching services that help block known intimate images on participating platforms; they need the image on your device, so ask whether they accept AI-generated images. Contact a victim advocate or legal aid about options where you live.",
       "workplace_or_professional": "If it reaches work or school, give HR or an administrator a short factual note with links and dates and ask for a named contact. You do not have to describe the content in detail."
     },
-    "boundary_script": "\"This is fabricated media of me. I have saved the links, the dates and every message about it. I am asking you to remove it and to tell me what happens next.\"",
+    "boundary_script": "\"This is fabricated media of me. I have saved the links, the dates and every message about it. I am asking you to remove it and to tell me what happens next.\" Send this to a platform, school or employer, never to the person who made or shared it.",
     "safety_sensitive": true,
     "safety_note": "Fabricated sexual images, demands for money, and threats to send material to family or an employer are danger signals, as is anyone who seems to know where you live or work. Save everything unaltered, tell someone you trust, and contact a victim advocate, legal aid or a police cybercrime unit. If you fear for your physical safety, call emergency services.",
     "misuse_warning": [
@@ -205,8 +205,8 @@
     "why_this_matters": "Risk moves offline and out of your hands: your home, workplace and family become reachable by strangers who have no tie to the original dispute, and the exposure cannot be fully undone.",
     "what_it_is": [
       "Posting a home address, phone number, workplace, school or a relative's name where strangers will see it.",
-      "Linking an anonymous account to a real name, which can end the safety that anonymity gave.",
-      "Combining facts that were each findable alone into one profile, which changes what they can be used for.",
+      "A real name or address suddenly attached to an account that was meant to stay anonymous, which can end the safety that anonymity gave.",
+      "Scattered facts about a person gathered in one place, which changes what those facts can be used for.",
       "Usually paired with a story that casts the person as deserving of anger, so readers feel invited to act.",
       "Set apart from criticism because it targets where a person can be reached, not what they said."
     ],
@@ -305,7 +305,7 @@
     "what_it_is": [
       "Accounts presenting as separate people but directed by the same hand.",
       "Used to cheer for one side, back up a person's story, or pile on a target so that a crowd appears.",
-      "Often built to look ordinary, with a plausible name, a photo and everyday posts, so the account itself reveals little.",
+      "Accounts that look ordinary on their own, so judging one reveals little; the pattern shows across several.",
       "Different from an openly run brand account or a person's disclosed second account.",
       "Harmful through false social proof: you read the numbers as other people's real opinions."
     ],
@@ -403,9 +403,9 @@
     "why_this_matters": "You can lose your account, your audience or your income through a system built to protect people, and appeals against decisions made on volume can be slow and hard to reach.",
     "what_it_is": [
       "Many reports against one account or post, filed close together, often citing a rule the content does not break.",
-      "Organized in a group chat, thread or list where people are told whom to report.",
+      "Organized in a group chat or thread where members are pointed toward a target.",
       "Aimed at creators, activists, small sellers and ordinary users, sometimes after they criticized someone.",
-      "Can rest on false claims such as spam, impersonation or harm.",
+      "Often feels sudden and unexplained to the person on the receiving end, because the stated grounds do not match what they posted.",
       "Different from legitimate reporting, where independent people flag real violations and the content matches the complaint."
     ],
     "what_it_sounds_like": [

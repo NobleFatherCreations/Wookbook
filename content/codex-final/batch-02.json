@@ -80,14 +80,14 @@
     "possible_impact_on_receiver": "People describe becoming guarded and careful about every word, rehearsing answers, and feeling exhausted after talks that went in circles. Some say they confessed to something they did not do just to end the questioning, and felt ashamed or confused about that afterward. Others describe losing trust in their own ability to say anything clearly.",
     "response_options": {
       "soft_clarification": "Ask what would settle it: 'If I showed you the thread, or you called her yourself, would that be enough?' Their answer shows whether any proof is possible.",
-      "firm_boundary": "State your answer once, then stop: 'I have told you what happened. I won't keep proving it, because every answer I give is being used against me.'",
-      "disengagement": "Leave the room or end the call after your one answer, and say you will talk again when the questioning can have an end.",
+      "firm_boundary": "State your answer once, then stop adding to it: 'I have told you what happened.' Offer to go through one specific item together, or with a neutral person, instead of defending each answer.",
+      "disengagement": "After your one answer, ask for a pause or a neutral third person, and do not announce that you are leaving or when you will come back. If the questioning feels unsafe, move toward other people.",
       "support_seeking": "Tell a friend exactly what you were accused of and how you replied, then ask whether your answers sound unreasonable. A third ear can break the loop.",
       "workplace_or_professional": "If this is at work, ask for the complaint in writing, answer it in writing, and ask the person handling it what evidence they are weighing."
     },
-    "boundary_script": "\"I've answered your question honestly. I won't keep defending myself, because whatever I say is being treated as proof. If you have something specific I can look at with you, I'll look at it. Otherwise I'm going to end this conversation for now.\"",
-    "safety_sensitive": true,
-    "safety_note": "Accusation loops can sit alongside constant checking of your phone, demands to prove where you were, or punishment for answers that are 'wrong'. If you feel afraid to say no, if you are being watched, or if questioning ever turns physical or comes with threats, contact a domestic abuse advocate before the next confrontation, and keep copies of messages somewhere they cannot reach.",
+    "boundary_script": "\"I've answered your question honestly. If you have something specific I can look at with you, I will. Could we take a break, or ask someone neutral to look at this with us?\"",
+    "safety_sensitive": false,
+    "safety_note": "Accusation loops are usually a conversation problem. They deserve more concern if they come with constant checking of your phone, demands to prove where you were, or punishment for answers that are 'wrong'. If you feel afraid to say no, are being watched, or questioning ever turns physical or comes with threats, contact a domestic abuse advocate before the next confrontation and keep copies of messages somewhere they cannot reach.",
     "misuse_warning": [
       "Naming this whenever someone doubts you can turn into a way to avoid fair questions. Being asked tough questions about something that does look off is not a trap.",
       "Saying 'you are Kafka-trapping me' in the middle of a real inquiry can sound like another dodge. The label fits when no answer could ever count."

@@ -466,8 +466,8 @@
       "workplace_or_professional": "If you work in advertising, lending or platform policy, review whether any targeting categories can single out people in crisis, and raise concerns through compliance or ethics channels."
     },
     "boundary_script": "\"This showed up right when I am at my lowest, and that timing is a reason to slow down. I will wait two days, read the full terms, and talk it over with someone I trust before doing anything.\"",
-    "safety_sensitive": true,
-    "safety_note": "Danger signs are an offer demanding money or account access quickly, secrecy from family, content that pushes toward self-harm, or a stranger who knows too much about you. Pause, do not send money, and speak to someone you trust. A consumer-protection agency, legal aid or a debt counselor can help with money. If anyone is thinking of self-harm, contact a crisis line or emergency services.",
+    "safety_sensitive": false,
+    "safety_note": "A targeted ad is pressure on judgment, not a threat, until it demands money or account access quickly, asks for secrecy from family, pushes toward self-harm, or comes from a stranger who knows too much about you. If so, pause and do not send money; a consumer-protection agency, legal aid or a debt counselor can help. If anyone is thinking of self-harm, contact a crisis line or emergency services.",
     "misuse_warning": [
       "Assuming every ad that fits your worries was aimed at you can make people feel watched and ashamed; much of it is coincidence or broad categories.",
       "Blaming people who fell for an offer adds shame to harm, and the tactic depends on that shame to keep victims quiet."
@@ -483,16 +483,16 @@
     "what_it_is": [
       "A contact that begins by chance, such as a message to a wrong number or a friendly follow, and turns into daily conversation.",
       "A warm relationship, romantic or friendly, in which the other person seems to share your life and values.",
-      "A later introduction of an investment, trading or crypto platform, often presented as how they became successful.",
+      "Money entering the picture only later, through an investment or trading platform the new friend recommends.",
       "A site or app that shows impressive gains but makes withdrawals difficult or always one payment away.",
       "A scheme worked by organized groups, with many victims in the pipeline, and not a lone person improvising."
     ],
     "what_it_sounds_like": [
-      "A text from an unknown number says 'Sorry, wrong person', then a pleasant conversation follows.",
+      "A text from an unknown number that turns into a pleasant daily conversation.",
       "The new friend is always attractive, successful and busy, never able to meet or appear on live video.",
-      "After weeks of chat, they mention an easy way they made money and offer to show you.",
+      "After weeks of chat, they bring up making money and encourage you to take a look.",
       "The platform they direct you to is one you have to join through a link they send, not a store you know.",
-      "A small first withdrawal works, then larger deposits are urged, and a fee or tax is needed to take money out.",
+      "Withdrawals that become difficult, with new fees or taxes asked for before money can come out.",
       "Questions or doubts are met with hurt feelings, reassurance or urgency about a closing window."
     ],
     "what_it_is_not": [

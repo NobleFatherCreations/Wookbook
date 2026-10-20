@@ -81,12 +81,12 @@
     "possible_impact_on_receiver": "People describe losing touch with friends and family, feeling unable to judge whether the group's claims hold up, and shame about wanting outside contact. After a long time inside, some describe feeling lost in ordinary life, unsure how to rebuild relationships or what to trust.",
     "response_options": {
       "soft_clarification": "Ask a plain question in the group: 'Is it all right if I keep up with my sister?' How the question is received tells you a good deal.",
-      "firm_boundary": "State a small, specific limit and keep it: 'I'm going to keep reading what I like, and I'd rather not talk about it.'",
+      "firm_boundary": "Keep one outside contact steady and ordinary, such as a short weekly call with someone who knew you before, without announcing it. Decide any larger change privately, with a counselor who knows high-control groups.",
       "disengagement": "Take a walk, a nap or a quiet hour alone when pressure builds, and keep one steady contact outside the group informed of how you are.",
       "support_seeking": "Reach someone who knew you before, or a counselor who understands high-control groups, and say what daily life is like in your own words.",
       "workplace_or_professional": "If a workplace program or training limits contact and outside information, ask for the policy in writing and keep copies where the organization cannot see them."
     },
-    "boundary_script": "\"One afternoon a week is for my own friends and my own reading. It has nothing to do with how I feel about this group. It is just something I need.\"",
+    "boundary_script": "\"Is it all right if I keep up with my sister and my old friends? I'm glad to talk about what the group is doing. I just want to stay in touch with them as well.\"",
     "safety_sensitive": true,
     "safety_note": "Warning signs include being watched, having your phone, money or documents held, being told what will happen to people who question, or fear of what follows contact with family. Decisions about leaving are best made privately, with an experienced advocate, a counselor who knows high-control groups, or a trusted person outside. If you are in immediate danger, contact emergency services.",
     "misuse_warning": [
@@ -105,7 +105,7 @@
       "An event described as unplanned, such as a vision, a healing or a perfectly timed sign, that was in fact prepared ahead of time.",
       "The experience then used as proof that the leader is chosen, gifted or specially guided.",
       "Often built on real emotion, real hope and real need, which is why it can feel so convincing from inside.",
-      "Sometimes small, like a message that seems to know a member's private details, and sometimes large, like a gathering built around a promised miracle."
+      "Sometimes small, like a remark that feels uncannily personal, and sometimes large, like a gathering built around a promised miracle."
     ],
     "what_it_sounds_like": [
       "It was no accident that you came today. You were meant to be here.",
@@ -113,7 +113,7 @@
       "The message came to me last night, and it was about you.",
       "Only those who are truly open feel it, and tonight many of you did.",
       "People who left never felt it, which tells you something.",
-      "How else could I have known that about your mother?"
+      "A leader asking how else they could have known something so personal."
     ],
     "what_it_is_not": [
       "Religious and spiritual experience is real to those who have it, and this entry takes no view on any belief. Ritual, atmosphere and preparation are ordinary in worship. The line is between a prepared setting and an arranged event presented as spontaneous.",
@@ -175,14 +175,14 @@
     "psychological_mechanism": "A strong experience in a charged setting works as direct evidence for many people, who trust what they felt over what they were told. When it is credited to one person, that person gains a kind of authority argument cannot reach. Admitting it was arranged may seem like losing something real, which makes it harder to revisit.",
     "possible_impact_on_receiver": "People describe real awe at the time and later confusion or grief on learning an event was arranged, along with embarrassment at having believed. Some describe being unsure which of their own spiritual experiences were real. Others keep what mattered to them while letting go of the person who claimed credit.",
     "response_options": {
-      "soft_clarification": "Ask a curious, plain question: 'I'd love to understand how that came about. Was it planned in any way?'",
-      "firm_boundary": "Decline to treat a single experience as proof: 'I'm glad it moved people. I'm not going to decide anything big based on it.'",
+      "soft_clarification": "Ask a curious, plain question, and only if it feels safe: 'I'd love to understand how that came about.' Do not press for an answer.",
+      "firm_boundary": "If it feels safe, decline to treat a single experience as proof: 'I'm glad it moved people. I'd like time before deciding anything big.'",
       "disengagement": "Step back from gatherings built around dramatic moments for a while and notice how you feel with some distance.",
       "support_seeking": "Talk with a chaplain, counselor or former member who can discuss spiritual experience without insisting on one answer, and who respects whatever you still believe.",
       "workplace_or_professional": "If a workplace or training program uses staged breakthroughs or 'signs', ask for the curriculum and a participant contact, and speak to an ombuds or HR if the answers are evasive."
     },
     "boundary_script": "\"I'm glad that was meaningful to people. I don't want to make any big decisions off one night, so I'm going to take my time.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "An arranged sign is not a physical danger in itself. The picture changes when the authority it builds is used to demand money or obedience or to cut members off from family, or when members are told that doubting means harm will follow. If that happens, reach someone outside the group, such as a counselor experienced with high-control groups, a legal aid office or a trusted relative.",
     "misuse_warning": [
       "Calling someone's sincere spiritual experience staged because you do not share the belief is a dismissal, not a finding. This label is about arrangement kept secret, not about what is true.",
@@ -368,13 +368,13 @@
     "possible_impact_on_receiver": "People describe silencing their own questions, fear of what doubt says about them, and difficulty weighing evidence after leaving. Some describe anger at having been told questions meant weakness, and relief at discovering ordinary inquiry is allowed. Others describe a long stretch of not trusting any source of authority.",
     "response_options": {
       "soft_clarification": "Ask a sincere question aloud: 'What would we expect to see if this teaching were wrong?'",
-      "firm_boundary": "Keep thinking for yourself and say so plainly: 'I'm going to look at how this holds up before I decide.'",
+      "firm_boundary": "If it feels safe, keep thinking for yourself and say so lightly: 'I'd like to look at how this holds up before I decide.'",
       "disengagement": "Take a break from study sessions and use the time to read widely, including sources the group dislikes.",
       "support_seeking": "Talk with someone outside who has no stake, such as a teacher, counselor or former member, and test your questions on them.",
       "workplace_or_professional": "If a company or program treats its method as beyond question, ask for the evidence in writing and keep a record of how the questions were answered."
     },
-    "boundary_script": "\"I believe in testing things, and I'm going to keep doing that with this too. If the teaching is sound, it should survive a few questions.\"",
-    "safety_sensitive": false,
+    "boundary_script": "\"I'm interested in learning more about this. Could you point me to where I can read about how it was tested? I want to look at it for myself.\"",
+    "safety_sensitive": true,
     "safety_note": "An unquestionable doctrine is not a physical danger by itself. It raises concern when questioning brings threats, shunning, loss of housing or income, or when the doctrine is used to deny medical care or to justify harm. If that happens, speak to a counselor who knows high-control groups, a legal aid office or a trusted relative before acting.",
     "misuse_warning": [
       "Calling any strong belief sacred science dismisses people for being sure of themselves. The test is whether questions can be asked and answered, not whether conviction runs deep.",
@@ -464,13 +464,13 @@
     "possible_impact_on_receiver": "People describe not trusting their own memory or feelings, silence about harm they experienced, and difficulty making decisions without checking with someone first. After leaving, some describe slowly relearning how to listen to themselves. Many describe a mix of anger and grief at the years their own experience was set aside.",
     "response_options": {
       "soft_clarification": "State what you saw and ask if it can count: 'This is what happened for me. Can we treat that as real and talk about it?'",
-      "firm_boundary": "Hold your own account without arguing it: 'That is my experience, and I'm not going to call it wrong.'",
+      "firm_boundary": "If it feels safe, hold your own account without arguing it: 'That is what I experienced.' If answering would cost you standing or safety, write it down privately instead.",
       "disengagement": "Pause a conversation that is turning into a verdict on you and write your account down privately for yourself.",
       "support_seeking": "Share what happened with someone who knew you before the group and ask how it sounds to them, or with a counselor who understands high-control groups.",
       "workplace_or_professional": "If a program or workplace treats complaints as personal flaws, put your account in writing with dates and take it to HR, an ombuds or an outside regulator."
     },
     "boundary_script": "\"I know what I experienced, and it matters to me. I'd like us to start from that, even if it does not fit the teaching.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "Being told your experience is wrong is not by itself a physical danger. It becomes serious when the pattern is used to hide abuse or to deny medical care, or when reporting harm brings retaliation. In that case put your account in writing, reach an outside advocate, a doctor, legal aid or a trusted person, and call emergency services if you are in danger.",
     "misuse_warning": [
       "Calling every disagreement with your experience this pattern can shut down honest correction. It fits when experience is never allowed to count, not when it is questioned once.",

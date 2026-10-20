@@ -280,8 +280,8 @@
       "workplace_or_professional": "At work, ask for any consequence or expectation in writing from HR or a supervisor, so fears can be checked against real policy and not hints."
     },
     "boundary_script": "\"This matters to you, and I take that seriously. I'm not able to give you an answer in this conversation. Give me a day, and I'll come back to you.\"",
-    "safety_sensitive": true,
-    "safety_note": "Watch whether the fear strand points at something concrete and serious: your housing, your income, access to your children, your immigration status or your physical safety. If it does, do not test it. Talk to a domestic violence or legal-aid advocate about a plan first; many can be reached by phone or chat without the other person knowing.",
+    "safety_sensitive": false,
+    "safety_note": "The mix of fear, obligation and guilt is mostly an emotional squeeze. Concern rises when the fear strand points at something concrete and serious: housing, income, access to your children, immigration status or your physical safety. In that case do not test it; talk to a domestic violence or legal-aid advocate about a plan first. Many can be reached by phone or chat without the other person knowing.",
     "misuse_warning": [
       "Naming FOG for any family request that carries some worry, duty and guilt can turn ordinary closeness into a verdict on the relationship.",
       "Calling someone's honest fear 'pressure' can dismiss people who are truly frightened for you."
@@ -370,14 +370,14 @@
     "possible_impact_on_receiver": "The image of eggshells comes up often. You may cancel your own plans, hide good news or stay quiet when you disagree. Many feel responsible for moods that are not theirs to carry, and tired from constantly forecasting how a small decision will land.",
     "response_options": {
       "soft_clarification": "Acknowledge the feeling without taking on the job: 'I can see you're disappointed. I still can't come, and I hope tonight goes okay.'",
-      "firm_boundary": "Separate the feeling from the decision: 'Your being upset matters to me, and it doesn't change my answer.'",
+      "firm_boundary": "Separate the feeling from the decision, gently: 'Your being upset matters to me, and I still need to decide this one myself.' If talk of self-harm comes up, stay with them and call a crisis line or emergency services together.",
       "disengagement": "If the mood turns into silence, let it run without chasing it, do something steadying for yourself, and talk about the request later at a calmer time.",
       "support_seeking": "Describe the loop to a friend or therapist: your answer, their mood, your next decision. Others can often tell you how much of it belongs to you.",
       "workplace_or_professional": "At work, if a colleague's visible mood steers decisions, ask for decisions to be made against criteria agreed in advance, and raise it with your manager if it continues."
     },
-    "boundary_script": "\"I can tell this is hard for you, and I'm sorry you're disappointed. I've thought about it and my answer is still no. Maybe we can think together about who else you could lean on tonight.\"",
-    "safety_sensitive": false,
-    "safety_note": "This stays an everyday pattern until the distress includes talk of harming themselves, or is used to keep you from leaving the house, seeing people or going to work. If you hear words about not wanting to live, take them seriously and contact a crisis line or emergency services for them, then speak to a counselor yourself about how much you can carry.",
+    "boundary_script": "\"I can tell this is hard for you, and I'm sorry you're disappointed. I've thought about it and my answer stays as it is for now. Maybe we can think together about who else you could lean on tonight.\"",
+    "safety_sensitive": true,
+    "safety_note": "Watch for talk of harming themselves, or distress used to keep you from leaving the house, seeing people or going to work. If you hear words about not wanting to live, take them seriously and contact a crisis line or emergency services for them if the risk feels immediate, then speak to a counselor yourself about how much you can carry. An advocate can help if the distress is used to control your movements.",
     "misuse_warning": [
       "Sadness after a refusal is human. Labeling every low mood as hostage-taking can punish people who are truly struggling.",
       "The label does not suit someone with depression, grief or illness whose state is not linked to your answers."
@@ -667,8 +667,8 @@
       "workplace_or_professional": "If a professional decision such as a transfer or job offer is being pressured by family, ask a mentor or career adviser to help you weigh it outside the family conversation."
     },
     "boundary_script": "\"I know what this family gave up, and I am grateful for it. Being grateful is not the same as owing this decision. Let me tell you what I'm thinking, and please hear me out.\"",
-    "safety_sensitive": true,
-    "safety_note": "Watch whether pressure moves from words to control: your documents held, money taken, contact limited, a marriage or a move arranged without your agreement, or talk of what will happen to you or your family if you refuse. If it does, do not argue it out alone. Reach a domestic violence or forced-marriage helpline, or an advocate familiar with your community, and plan privately before any conversation about it.",
+    "safety_sensitive": false,
+    "safety_note": "Family guilt over sacrifices is painful but is not by itself a danger. Concern rises when pressure moves from words to control: documents held, money taken, contact limited, a marriage or a move arranged without your agreement, or talk of what will happen if you refuse. If so, do not argue it out alone; reach a domestic violence or forced-marriage helpline, or an advocate familiar with your community, and plan privately.",
     "misuse_warning": [
       "Family duty is a real value in many cultures. Calling a loving, ordinary expectation 'guilt legacy' can dismiss a culture you may need to understand.",
       "The label describes how a debt is used, so it should not be applied to a parent simply because they mention their past."

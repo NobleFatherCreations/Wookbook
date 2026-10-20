@@ -281,7 +281,7 @@
       "support_seeking": "A domestic abuse advocate or a technology-safety service can help you check devices safely. Contact them from a phone or computer the other person has never had access to.",
       "workplace_or_professional": "If the home is rented, a landlord or letting agent may be able to reset devices they supplied. Keep any messages with them as a record."
     },
-    "boundary_script": "\"I'm still getting my head around how the system works. Could you walk me through which devices record or listen, so I know what's in each room?\"",
+    "boundary_script": "\"Is there a guide to the new system anywhere? I want to know how it works and what is in each room.\" If it could draw anger, leave the question alone and ask a tech-safety advocate.",
     "safety_sensitive": true,
     "safety_note": "Watch for signs that someone knows where you have been, tracks your phone or controls who can enter. If you suspect it, do not search for or disable devices at once, because that can be noticed. Use a safe device to contact a domestic abuse or tech-safety service, and plan any changes with them first.",
     "misuse_warning": [
@@ -378,7 +378,7 @@
       "support_seeking": "Tell your doctor, a nurse or a pharmacist what is happening, including that doses or appointments have been disrupted. They see this often and can help you plan care quietly.",
       "workplace_or_professional": "If sleep or time off is being disrupted by an employer or manager, document dates and hours and raise it with HR, a union or an occupational health service."
     },
-    "boundary_script": "\"My health care matters to me, and I'm going to keep my appointments and take my medicine as my doctor advised. I would really appreciate your help with that.\"",
+    "boundary_script": "\"My health care matters to me. I'd really appreciate your help keeping my appointments and my medication on schedule.\" If this could provoke a reaction, leave it out.",
     "safety_sensitive": true,
     "safety_note": "Take extra care if medicines go missing, if you are kept awake or cut off from care around the time you try to make a change, or if you feel physically unwell for no clear reason. A doctor, pharmacist or domestic abuse advocate can help you privately. If you feel seriously ill or think you have been given something you did not take knowingly, get medical help straight away.",
     "misuse_warning": [

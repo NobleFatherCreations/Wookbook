@@ -80,14 +80,14 @@
   "possible_impact_on_receiver": "People describe agreeing in the moment and feeling resentful or hollow later, rehearsing arguments in the shower, and walking on eggshells to avoid the next showdown. Some describe losing track of what they wanted in the first place, since every decision has become a way of avoiding a loss.",
   "response_options": {
    "soft_clarification": "Slow the moment down by naming it: 'It sounds like there are only two doors here. Can we look for a third before either of us decides?'",
-   "firm_boundary": "Decline to decide under a deadline: 'I'll give you an answer tomorrow. I don't make big decisions with a clock on them.'",
-   "disengagement": "Leave the room or end the call when the demand arrives, and return to the topic once both of you have had time to calm down.",
+   "firm_boundary": "Ask for time instead of refusing the deadline outright: 'Could I give you my answer tomorrow? I want to decide properly.' If the deadline comes with threats, talk to an advocate first.",
+   "disengagement": "Ask for a short break when the demand arrives, such as a drink of water or a call to a friend, and let the topic wait without announcing a verdict. Use the time to think about what is safe.",
    "support_seeking": "Tell a friend or counselor exactly what the two options were and what was threatened, and ask whether a third option was visible from outside.",
    "workplace_or_professional": "If a manager or client sets a take-it-or-leave-it demand, ask for the terms in writing and a reasonable time to respond, and keep the message."
   },
-  "boundary_script": "\"I take what you're asking seriously, and I won't answer it with a threat over my head. I need until tomorrow to think. After that I'll tell you where I stand.\"",
-  "safety_sensitive": false,
-  "safety_note": "Ultimatums sit closer to danger when the named loss is inflicted, when it involves children, housing, immigration status or money, or when it comes with threats of self-harm or exposure. If the demands are growing or the stakes feel life-sized, talk to an advocate or counselor before responding, and keep your own plans private.",
+  "boundary_script": "\"I take what you're asking seriously, and I want to give it a proper answer. Could I have until tomorrow to think it over?\" If the deadline carries threats, talk to an advocate before replying.",
+  "safety_sensitive": true,
+  "safety_note": "Danger signals are a named loss that is actually inflicted, stakes that involve children, housing, immigration status or money, and threats of self-harm or exposure. If the demands are growing or the stakes feel life-sized, talk to an advocate or counselor before responding, and keep your own plans private.",
   "misuse_warning": [
    "Calling a person's honest limit an ultimatum can paint any 'I can't stay if this continues' as coercion, and leave someone with a real need unheard.",
    "Using the word to win an argument turns a description of a move into a verdict on the person who made it."
@@ -464,13 +464,13 @@
   "possible_impact_on_receiver": "A racing heart when a conversation opens with 'we need to talk' is one report, along with over-explaining to everyone, and being unable to tell afterwards what they actually believed. Some describe giving false or partial answers just to end the round. Others mention feeling like a suspect in their own home.",
   "response_options": {
    "soft_clarification": "Offer a different way in: 'I'm happy to talk, but not as a list of demands. Can you ask me what's worrying you?'",
-   "firm_boundary": "Keep your privacy plain: 'I've told you what I'm comfortable sharing. I won't be answering more questions about this tonight.'",
-   "disengagement": "Step out of the room or off the call when questions become a chain, and come back to the subject after a break, ideally in writing.",
+   "firm_boundary": "If it feels safe, keep your privacy plain: 'That is what I'm comfortable sharing right now.' Otherwise answer briefly and calmly, and plan with an advocate afterward.",
+   "disengagement": "Ask for a drink of water or a short break when questions become a chain, and move toward other people or a door if they feel threatening. Do not announce when you will return; take the subject up again later, ideally in writing.",
    "support_seeking": "Describe one round of questions to a friend or counselor in detail, including how long it lasted, and ask how it sounds from the outside.",
    "workplace_or_professional": "If a manager is grilling you, ask for the concern in writing and a set meeting time, and bring a colleague or union representative if the process is formal."
   },
-  "boundary_script": "\"I want to talk about this, but not as an interrogation. I'll tell you what I can, and I won't answer in a rapid string of demands. If it helps, we can talk again after a break.\"",
-  "safety_sensitive": false,
+  "boundary_script": "\"I want to talk about this. Could we take a short break and come back to it, or have someone else sit in? I'll tell you what I can, one question at a time.\" Do this only if it feels safe; otherwise answer briefly and calmly and talk to an advocate later.",
+  "safety_sensitive": true,
   "safety_note": "Questioning moves toward danger when it goes on for hours, blocks you from leaving the room, includes searching your phone or belongings, or ends in shouting, threats, or physical intimidation. If you feel afraid of what happens after you decline to answer, talk privately with a domestic abuse advocate before you try anything else.",
   "misuse_warning": [
    "Calling any run of follow-up questions 'interrogation' can be used to dodge a fair and gentle request for an account, such as after a real breach of trust.",

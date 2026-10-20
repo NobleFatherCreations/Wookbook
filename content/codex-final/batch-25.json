@@ -375,8 +375,8 @@
       "workplace_or_professional": "Report any odd request to your security or IT team, and set up a rule that payments or access changes need a second person to confirm by a known channel."
     },
     "boundary_script": "\"Thanks for letting me know. I deal with anything like this through the official number, so I'll look it up myself and check. If it's real, it will still be there after I've confirmed it.\"",
-    "safety_sensitive": true,
-    "safety_note": "Watch for threats of arrest, claims that a relative is in danger, demands for secrecy, and pressure to send money in hard-to-trace ways. These can lead to serious loss of savings or access. If you have already sent money or shared a code, phone your bank's fraud line straight away using the number on your card, since speed matters.",
+    "safety_sensitive": false,
+    "safety_note": "A scam call or message is a fraud risk rather than a personal-safety one. It becomes more urgent with threats of arrest, claims that a relative is in danger, demands for secrecy, or pressure to send money in hard-to-trace ways. If you have already sent money or shared a code, phone your bank's fraud line straight away using the number on your card, since speed matters.",
     "misuse_warning": [
       "Treating every urgent request as a scam can strain relationships and slow honest work. Verification is the test, not a feeling of suspicion.",
       "Blaming someone who fell for it adds shame to a loss. Good people with good habits get caught by well-built pretexts."

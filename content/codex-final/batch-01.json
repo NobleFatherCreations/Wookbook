@@ -77,12 +77,12 @@
     ],
     "repair_check": "Repair here would mean going back to the first complaint and answering it, including the part they dispute, before any counter-claim gets a turn. Warning signs are a general 'sorry things got heated' that never touches the original point, or an apology that arrives only after you have apologized.",
     "boundary_respect_check": "Watch what happens to your original concern after you ask to finish it first. Does it get a reply, a date to continue, or a promise to return to it? Or does the conversation snap back to your character within a minute or two?",
-    "psychological_mechanism": "Psychologist Jennifer Freyd named DARVO in the 1990s, and later research by Harsey, Zurbriggen and Freyd (2017) linked exposure to it with people blaming themselves more. Being cast as the wrongdoer right after speaking up can pull attention onto clearing your own name, and the first complaint tends to slide out of view.",
+    "psychological_mechanism": "In an online vignette study, Harsey, Zurbriggen and Freyd (2017) linked exposure to DARVO-style replies with more self-blame. Being cast as the wrongdoer right after speaking up can pull attention onto clearing your own name, and the first complaint tends to slide out of view.",
     "possible_impact_on_receiver": "People describe leaving a confrontation feeling guilty and confused, sometimes apologizing for the very thing they came to raise. Some go quiet about later problems, because the last time cost too much. Others replay the conversation for days trying to find where it turned.",
     "response_options": {
       "soft_clarification": "Name the order of events calmly: 'I came to talk about the missed payment, and now we are talking about me. Can we finish the first subject?'",
-      "firm_boundary": "Refuse to defend yourself against the counter-charge until the first matter is answered: 'I will listen to your concern next, but I need an answer on mine first.'",
-      "disengagement": "When the talk has turned to your character, end it for now, say you will return to the original point, and put that point in writing so it does not get lost.",
+      "firm_boundary": "Ask for the first matter to be written down so it is not lost: 'Could we put my original point on paper? I'll read your concern too.' Keep the request mild.",
+      "disengagement": "When the talk turns to your character, ask whether the original point can be written down, then take a break without announcing a return time or a conclusion.",
       "support_seeking": "Tell a trusted person what you originally raised and what happened next. Hearing 'that is not what you came to talk about' from someone outside can restore your footing.",
       "workplace_or_professional": "Put the original complaint in writing with dates before any meeting, and ask HR or a manager to keep the discussion on that record when a counter-complaint appears."
     },
@@ -175,15 +175,15 @@
     "psychological_mechanism": "Many people accept responsibility quickly, especially for someone they care about or after being told they are difficult. Repeated, confident blame can draw on that readiness, so the receiver starts auditing their own conduct before the event itself, and the other person's choice drops out of the picture.",
     "possible_impact_on_receiver": "People describe constantly monitoring what they say, apologizing for outbursts they did not cause, and losing track of where their own responsibility starts and ends. Some grow quieter or more anxious around the person, and some begin hiding things to avoid setting off a reaction.",
     "response_options": {
-      "soft_clarification": "Separate the trigger from the choice: 'I can see that I upset you, and you were still the one who decided to throw the plate.'",
-      "firm_boundary": "State where your responsibility ends: 'I will own what I said. I will not own what you did in response.'",
-      "disengagement": "When the explanation turns to your faults, leave the room or end the call, and say you will return once the subject is what happened and not who is to blame.",
+      "soft_clarification": "Keep the question narrow and calm: 'I can see I upset you. Can we go through what happened, step by step?' Leave the trigger-versus-choice question for a counselor or mediator.",
+      "firm_boundary": "Say once what you will take responsibility for: 'I'll talk about what I said.' Ask to go through the rest in order, with a neutral person present if you can.",
+      "disengagement": "When the explanation turns to your faults, ask for a short pause, such as a drink of water, and let the topic wait without announcing a verdict or a return time.",
       "support_seeking": "Describe a specific incident to someone outside the relationship and ask whether the cause they hear sounds like yours. Outsiders often notice the shift in blame before you do.",
       "workplace_or_professional": "Record what happened in neutral terms, with dates and who did what, and ask for the discussion to cover each person's actions separately, not who caused whom."
     },
-    "boundary_script": "\"I can see that I upset you, and I am willing to talk about my part. What you did next was your decision. I'm not going to accept being told I made you do it.\"",
-    "safety_sensitive": true,
-    "safety_note": "Blame placed on you for shouting, breaking things or physical force can be part of a pattern of control, in which you are made responsible for managing someone else's anger. Warning signs include fear of their reaction, injury, or being told you deserve it. A domestic abuse advocate or trusted person can help you plan. If you are hurt, or afraid for your life, during one of these blame episodes, that is an emergency: call the emergency number where you live.",
+    "boundary_script": "\"I can see that I upset you, and I'm willing to talk about my part. I'd also like us to go through what happened next, step by step. Could someone else sit in?\"",
+    "safety_sensitive": false,
+    "safety_note": "Blame-shifting in an ordinary argument is a communication problem. Concern rises when you are blamed for someone's shouting, breaking things or physical force, or told you deserve it, because you may then be made responsible for managing their anger. Fear of their reaction or any injury is the signal. A domestic abuse advocate or trusted person can help you plan. If you are hurt or afraid for your life, call the emergency number where you live.",
     "misuse_warning": [
       "People are sometimes accused of blame-shifting for mentioning any context at all. Explaining what led up to something is fair. The concern is explanations that leave no room for the speaker's own choice.",
       "Using the label to avoid hearing a legitimate point about your own contribution turns it into a way of dodging."

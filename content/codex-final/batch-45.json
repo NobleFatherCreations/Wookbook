@@ -185,8 +185,8 @@
       "workplace_or_professional": "If your workplace has an ombuds office, a union, or an outside reporting line, learn how each works and what it protects before using one. An employment attorney can explain your options."
     },
     "boundary_script": "\"Can you walk me through how concerns get handled here? Who reviews them, and how would I hear what came of mine?\"",
-    "safety_sensitive": true,
-    "safety_note": "The danger signal is retaliation after speaking: lost hours, a sudden bad review, a changed role, or hints that your job is at risk. Treat these as worth documenting with dates, outside the employer's systems. Before any formal step, talk with an employment attorney, a union representative, or a legal aid clinic, since protections differ by place. If a concern involves immediate danger to people, contact emergency services.",
+    "safety_sensitive": false,
+    "safety_note": "A culture of silence is mainly a risk to careers and to problems left unreported. Concern rises when retaliation follows speaking up: lost hours, a sudden bad review, a changed role, or hints that your job is at risk. Document those with dates, outside the employer's systems, and talk with an employment attorney, union representative or legal aid clinic before any formal step. If a concern involves immediate danger to people, contact emergency services.",
     "misuse_warning": [
       "Calling a quiet or reserved workplace silenced can ignore people's real reasons for holding back. The label needs evidence of what happened to those who spoke.",
       "Using it to describe any manager who disagreed with you may turn an ordinary conflict into an accusation about the whole organization."
@@ -282,8 +282,8 @@
       "workplace_or_professional": "Ask whether there is a formal way to dispute a rating or plan, and consider talking with an employment attorney or legal aid before signing anything that you do not understand."
     },
     "boundary_script": "\"Before I sign, please send me the written criteria for this rating and the earlier feedback it relies on. My own response should go in the file as well.\"",
-    "safety_sensitive": true,
-    "safety_note": "The risk here is to income and standing: a rating or plan that sets up a dismissal, or pressure to resign or sign a release. Keep copies of your results, feedback and reviews outside work systems, with dates. Before signing any plan, agreement or resignation, ask for time and talk with an employment attorney, a union representative, or a legal aid service, since rights vary by place.",
+    "safety_sensitive": false,
+    "safety_note": "This mostly puts income and standing at stake, not physical safety. It becomes more serious when a rating or plan appears to set up a dismissal, or when you are pressed to resign or sign a release. Keep copies of your results, feedback and reviews outside work systems, with dates, and ask for time and advice from an employment attorney, union representative or legal aid service before signing, since rights vary by place.",
     "misuse_warning": [
       "Reading every poor review as manipulation can keep a person from hearing accurate feedback. The label needs evidence that the measures track deference more than work.",
       "Using it to describe any rubric you dislike turns a design flaw into an accusation."
@@ -379,8 +379,8 @@
       "workplace_or_professional": "A union, a worker center or an employment attorney can explain what rights to information and review may apply where you work, and how to raise a dispute."
     },
     "boundary_script": "\"Which data and rules led to this decision, and who can review it? Could you send me that, along with a way to submit corrections, in writing?\"",
-    "safety_sensitive": true,
-    "safety_note": "The danger is to income and work: deactivation, cut hours or pay, sometimes with no warning or person to appeal to. Keep your own records of hours, pay and messages, outside the company's systems. Pace pressure can also lead to injury or exhaustion, so protect breaks and safety. A union, worker center or employment attorney can advise on your rights. If you are hurt or unsafe, get medical or emergency help first.",
+    "safety_sensitive": false,
+    "safety_note": "The main exposure is to income and work: deactivation, cut hours or pay, sometimes with no warning or person to appeal to. Concern rises when the pace starts to cause injury or exhaustion, so protect your breaks. Keep your own records of hours, pay and messages outside the company's systems. A union, worker center or employment attorney can advise on rights. If you are hurt, get medical help first.",
     "misuse_warning": [
       "Calling any software tool at work algorithmic management can overlook systems that help workers and that a person reviews. The concern is hidden criteria and no route to a human.",
       "Blaming an algorithm can also let managers off the hook when they chose the rules; the label should not hide who set them up."

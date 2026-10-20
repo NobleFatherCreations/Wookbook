@@ -372,13 +372,13 @@
   "possible_impact_on_receiver": "Meeting outsiders can come as a shock, with the world looking different from what the circle said. Some report losing touch with relatives, finding it hard to talk to anyone who disagrees, and feeling embarrassed later about what they once repeated with certainty.",
   "response_options": {
    "soft_clarification": "Ask a mild question when you hear a sweeping claim: 'What is the best argument against that, and where would I read it?'",
-   "firm_boundary": "Keep your own reading and your own friends: 'I'm going to keep seeing my sister and reading more widely, and that doesn't change how I feel about you.'",
+   "firm_boundary": "Keep your own reading and friendships going quietly as a matter of course, without announcing them. If the group reacts with anger or pressure, talk to someone outside it before changing anything.",
    "disengagement": "Reduce time in the closed group chat or forum, and see what changes when you do. Do it quietly, and without a speech.",
    "support_seeking": "Reach out to one person from before and tell them honestly what you have been hearing lately. See whether they remain steady and kind.",
    "workplace_or_professional": "If this is a workplace team or professional network, ask for more than one source of information on decisions, and put questions in writing."
   },
-  "boundary_script": "\"I like a lot of what you share, and I also want to hear other views for myself. I'll keep reading widely and keep seeing my friends. If we disagree on something, I'd rather talk it through than be told the other side is lying.\"",
-  "safety_sensitive": false,
+  "boundary_script": "\"I like a lot of what you share, and I want to hear other views too. Is it okay if I keep reading widely and seeing my friends as well? If we disagree, I'd rather talk it through.\" Hold it back if the group tends to react with anger.",
+  "safety_sensitive": true,
   "safety_note": "Echo chamber construction is not by itself a physical-safety signal. It becomes one if you are told to cut off family, hand over passwords or devices, or if leaving the circle brings threats or loss of housing or income. At that point, reach for an outside person you trust, and for a cult-recovery or domestic abuse service.",
   "misuse_warning": [
    "Saying someone is 'in an echo chamber' is a quick way to dismiss their view without engaging with it. Everyone's circle is somewhat narrow.",
@@ -474,7 +474,7 @@
    "support_seeking": "Tell a trusted friend or family member what is happening, and ask for help with a record of each message, including a note of when it arrived.",
    "workplace_or_professional": "If you are the target at work, tell your manager or HR early, give them your record, and ask that the organization handle calls and emails about you."
   },
-  "boundary_script": "\"I am keeping a dated record of every message, and I am not replying to any of them. Will you read through them with me and help me work out who should see them?\"",
+  "boundary_script": "\"Will you read through these messages with me and help me work out who should see them? I'm keeping a dated record and not replying to any of them.\" Say this to a trusted helper, never to the sender.",
   "safety_sensitive": true,
   "safety_note": "Harassment waves can move from messages to threats, doxxing or visits to a home or workplace. Signs to take seriously are your address being shared, threats naming you or your family, or someone appearing in person. Keep dated copies, report each wave to the platform, and take the file to the police or a victim-support service, who can advise on protective orders.",
   "misuse_warning": [

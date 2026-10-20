@@ -179,12 +179,12 @@
     "possible_impact_on_receiver": "Many are oddly unsure what is happening in their own finances, health or family, lean on one voice for facts, and feel guilty for wanting to look something up. Some find later that what they were told was incomplete, and grieve the lost time. Others feel foggy or isolated even when surrounded by people.",
     "response_options": {
       "soft_clarification": "Ask for the information itself, calmly: 'Can you forward me that letter so I can read it too?' Their answer shows whether sharing is possible.",
-      "firm_boundary": "State a plain need once: 'I want to see my own statements and open my own mail.' You can repeat the same sentence without justifying it each time.",
+      "firm_boundary": "If past reactions suggest it is safe, state a plain need once: 'I'd like to read the letter myself.' If not, skip it; an advocate can help you reach your statements and mail another way.",
       "disengagement": "Stop explaining where you got a piece of information. You can read, call or ask someone in your own time and keep what you learn to yourself until you know what to do with it.",
       "support_seeking": "Check one or two facts you were given with an outside source you trust, like your own doctor, a bank, a library or a friend who knew you before, and compare.",
       "workplace_or_professional": "In an organization, ask for the policy or notice in writing, and ask who else has seen it. Written records give you something to check against if information is withheld."
     },
-    "boundary_script": "\"Could you send me a copy so I can read it myself? After that, I want to hear what you think of it.\"",
+    "boundary_script": "\"Could you send me a copy so I can read it myself? After that, I want to hear what you think of it.\" Skip this if asking has gone badly before.",
     "safety_sensitive": true,
     "safety_note": "Control over information turns serious when it covers your phone, mail, identity documents, medical care or money, or when asking for them brings anger or threats. Keep a list of key numbers and copies of key documents somewhere only you can reach, such as a trusted friend's home, and ask a domestic abuse advocate about safe ways to rebuild your own access.",
     "misuse_warning": [
@@ -281,7 +281,7 @@
       "support_seeking": "Use someone else's phone or a library computer to talk to a friend, helpline or advocate about the demands, in case your own device is being read.",
       "workplace_or_professional": "If an employer asks about a personal phone, ask which written policy requires it, and check with HR or a union before handing over anything beyond work accounts."
     },
-    "boundary_script": "\"I can tell you're worried, and I want to talk about that. I'd rather tell you things than have my phone checked. What would help you feel more settled right now?\"",
+    "boundary_script": "\"I can tell you're worried, and I want to talk about that. What would help you feel more settled right now? I'd rather tell you things than have my phone checked.\" Try it only if a calm reaction is likely, and otherwise speak with an advocate first.",
     "safety_sensitive": true,
     "safety_note": "Access demands can sit alongside stalking, or threats about what will be done with whatever is found. Warning signs: the other person knows things you never told them, apps you did not install, or fear of what happens if you change a passcode. Contact a domestic abuse advocate from a device they cannot reach, and ask how to check your phone safely for tracking software.",
     "misuse_warning": [
@@ -477,8 +477,8 @@
       "workplace_or_professional": "At work or with clients, restate the limit in writing, such as 'Please contact me during office hours only', and keep dated copies of the crossings for your manager or HR."
     },
     "boundary_script": "\"I said no calls after nine, and this one came at ten. I'd like us to keep to that, and I'm happy to talk about what was so urgent.\"",
-    "safety_sensitive": true,
-    "safety_note": "Testing becomes a safety matter when the steps move toward your body, your home, your location or your belongings, or when saying no to a small step brings anger. Trust the discomfort you notice early. If the crossings include touch you did not agree to, following you, or turning up uninvited at home, keep a dated record and contact an advocate or the police non-emergency line.",
+    "safety_sensitive": false,
+    "safety_note": "Testing is usually a matter of pace and respect. It deserves more concern when the steps move toward your body, home, location or belongings, or when saying no to a small step brings anger. Trust the discomfort you notice early. If crossings include touch you did not agree to, following you, or turning up uninvited at home, keep a dated record and contact an advocate or the police non-emergency line.",
     "misuse_warning": [
       "Reading every awkward misstep as testing can punish people who simply didn't know the limit. The label needs a limit that was clear and a crossing that repeated.",
       "Telling someone they are 'testing' you in the middle of a disagreement can end the chance for them to just say sorry and adjust."

@@ -32,7 +32,7 @@ ROOT = os.path.join(os.path.dirname(__file__), "..")
 FINAL = os.path.join(ROOT, "content", "codex-final")
 PACKETS = os.path.join(FINAL, "packets")
 SUPERSEDED = os.path.join(FINAL, "superseded")
-DATA = os.path.join(ROOT, "content", "playbook-data.json")
+DATA = os.path.join(ROOT, "content", "codex-final", "source-data-349.json")
 DRAFTS = os.path.join(ROOT, "content", "playbook-drafts.json")
 
 

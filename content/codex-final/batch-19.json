@@ -184,8 +184,8 @@
       "workplace_or_professional": "Keep a dated note of what you were asked, what you delivered and any praise, somewhere you can still reach if your access ends, and ask HR how to attach your own comments to the plan file."
     },
     "boundary_script": "\"Passing this plan is my aim. For that I need each goal written so I can tell when I've reached it, and my comments added to the file after every review. Can we settle that today?\"",
-    "safety_sensitive": true,
-    "safety_note": "A plan can sit beside real threats to income, housing or immigration status, particularly when a work visa depends on the job. Watch for pressure to resign quickly, to sign away claims, or to keep the plan secret. Before signing anything, ask an employment lawyer, a union representative or a legal aid service what it would mean for you.",
+    "safety_sensitive": false,
+    "safety_note": "An improvement plan is a workplace and income matter, not a physical one. Concern rises if it comes with pressure to resign quickly, to sign away claims, or to keep the plan secret, or if a work visa depends on the job. Before signing anything, ask an employment lawyer, a union representative or a legal aid service what it would mean for you.",
     "misuse_warning": [
       "Calling any plan a weaponized PIP can excuse you from a real gap. Check whether the shortfall was recorded before any complaint.",
       "Telling a manager their plan is weaponized claims to know their purpose, which a plan on paper cannot show."
@@ -667,7 +667,7 @@
       "support_seeking": "Describe the original lapse and the response asked for to someone outside the situation, and ask whether the two match. An advocate or counselor can also tell you whether a run of such demands is a known sign of controlling behavior.",
       "workplace_or_professional": "If the demand comes from a boss or institution, ask which policy sets the consequence and request it in writing, and keep dated notes of what was asked and what you did."
     },
-    "boundary_script": "\"I know I got that wrong, and I'm sorry. I want to make it right in a way that fits the mistake. Could we agree on something smaller that we both think is fair?\"",
+    "boundary_script": "\"I know I got that wrong, and I'm sorry. I want to make it right in a way that fits the mistake. Could we agree on something smaller that we both think is fair?\" If a refusal could bring anger, hold off.",
     "safety_sensitive": true,
     "safety_note": "Large, shifting demands can sit alongside controlling behavior: penalties involving money, access to children, your phone, your home or contact with others, and fear of what happens if you refuse. If complying has begun to feel necessary for safety, speak with a domestic abuse advocate or legal aid service, and choose a moment and a device where you cannot be overheard or checked.",
     "misuse_warning": [

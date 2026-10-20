@@ -455,14 +455,14 @@
     "possible_impact_on_receiver": "People describe dread each time an envelope or an email from a particular sender arrives, sleepless nights over a matter that began small, and growing caution about raising any concern at all. Some say they paid for advice they could not really afford, and some say they withdrew a legitimate request just to make it stop.",
     "response_options": {
       "soft_clarification": "Offer to go back to a conversation: 'This feels bigger than what happened. Can we talk it through before it goes any further?'",
-      "firm_boundary": "State that you will answer the formal process on its facts, and that you will continue to raise your own concern separately through the right channel.",
+      "firm_boundary": "Answer the formal process on its facts, in writing, and raise your own concern separately through the right channel.",
       "disengagement": "Respond in writing, briefly and factually, to the formal step, and avoid side conversations or messages that could be quoted back.",
       "support_seeking": "Ask a union representative, tenants' association, mediator or legal aid office to read the notice with you and tell you what response is actually required and by when.",
       "workplace_or_professional": "Request the written policy, ask what the process allows you to submit in reply, and ask for mediation as a first step if the policy provides for it."
     },
-    "boundary_script": "\"I will answer this fully. Could we also try talking it through first? And my own concern stays on the table at the same time, so neither one gets dropped.\"",
-    "safety_sensitive": false,
-    "safety_note": "Most of these exchanges are stressful and administrative. The stakes rise when the formal step touches your job, your home, immigration status or time with your children, and a response deadline is running. Read the deadline on the notice today and take it to legal aid, a union representative or a tenants' organization before you reply.",
+    "boundary_script": "\"I will answer this fully. Could we also talk it through first? I also want my own concern recorded alongside it, so neither one gets dropped.\"",
+    "safety_sensitive": true,
+    "safety_note": "Danger signals are a formal step that touches your job, home, immigration status or time with your children, especially with a response deadline running, or one filed by someone who has frightened you before. Read the deadline on the notice today and take it to legal aid, a union representative or a tenants' organization before you reply; an advocate can help if the filing is part of a wider pattern of control.",
     "misuse_warning": [
       "Treating every complaint filed against you as retaliation can blind you to a legitimate concern that deserves a real answer.",
       "Calling someone's careful record-keeping 'escalation' can penalize people who keep records because they were once disbelieved."

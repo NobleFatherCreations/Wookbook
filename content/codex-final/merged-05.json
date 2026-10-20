@@ -83,12 +83,12 @@
     "possible_impact_on_receiver": "People describe panic at being unable to reach their own contacts or money, shame about messages sent in their name, and a constant sense of being watched. Some stop trusting every device or app. Some say the practical problems, such as missing a work email or a bill, hurt as much as the intrusion.",
     "response_options": {
       "soft_clarification": "Ask a plain question about the change: 'My login doesn't work and the recovery number isn't mine. Do you know why?' Then see whether the answer is specific and whether it is fixed.",
-      "firm_boundary": "If it feels safe, ask once for your logins and recovery details back with nothing attached. If you are unsure how they would react, skip this step and use the private options below.",
+      "firm_boundary": "Do not ask for your logins back unless you are sure it is safe. A tech-safety advocate can help you regain control of your accounts first, because a demand can lead to the change being hidden or to anger.",
       "disengagement": "Do not argue over each message. Use a trusted device, such as a library computer or a friend's phone, to check what you can still reach and begin setting up new accounts.",
       "support_seeking": "Tell a trusted person or a domestic abuse or tech safety advocate what you have seen, and write down dates, screenshots of login alerts and unfamiliar devices before anything changes.",
       "workplace_or_professional": "If a work account is involved, report it to your IT or security team at once, and ask your bank or phone company to put a block on changes without extra verification."
     },
-    "boundary_script": "\"I'm having trouble getting into my own accounts, and I want to sort it out with you. Can we go through what changed and when, and what I need to do to have the logins back the way they were?\"",
+    "boundary_script": "\"My login stopped working and the recovery number isn't mine. Do you know why that happened? Let's sort it out calmly.\" If you are unsure how they would react, hold off and ask a tech-safety advocate how to proceed.",
     "safety_sensitive": true,
     "safety_note": "Losing control of accounts can go with monitoring, isolation, threats or control of money. Changing passwords or removing a device can alert the person to what you are doing. Work out your next step on a device they cannot see, with a domestic abuse advocate or a tech safety service, before you change anything on the compromised account.",
     "misuse_warning": [
@@ -384,8 +384,8 @@
       "workplace_or_professional": "At work, thank a colleague or boss for favors, and keep any request to do something in return in writing, so that what was agreed is on record."
     },
     "boundary_script": "\"Your help with that was kind. I want to keep it separate from this decision, and my answer to this is no. If it's the cost that matters to you, tell me the amount and I'll pay it back.\"",
-    "safety_sensitive": true,
-    "safety_note": "Watch for a debt that touches where you live, your income or your immigration status, because then refusing puts a roof or a livelihood at risk. If what you owe is tied to housing, work or legal status, speak to legal aid or a tenants' or migrant advocate before agreeing to anything or paying anything back.",
+    "safety_sensitive": false,
+    "safety_note": "A favor with strings is pressure on your choice, not a danger by itself. It changes if the debt touches where you live, your income or your immigration status, because then refusing puts a roof or livelihood at risk. If what you owe is tied to housing, work or legal status, speak to legal aid or a tenants' or migrant advocate before agreeing to or repaying anything.",
     "misuse_warning": [
       "Treating every kind act as a hidden trap can make you refuse honest help, and punish people for generosity. The tell is what is demanded later, not the gift.",
       "Accusing a giver on the strength of one awkward ask can wound someone who simply hoped to be helped in return."

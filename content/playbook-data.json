@@ -4689,7 +4689,7 @@
    "tag": "reference",
    "sounds": [
     "Several new-looking accounts replying within minutes of each other, with similar phrasing, to the same post.",
-    "Profile photos that look polished yet oddly generic, with unusual details in the background or on jewelry and teeth.",
+    "Profile photos that look polished yet oddly generic, which on its own proves nothing.",
     "Accounts with few personal photos, but many opinions on one theme.",
     "A friendly newcomer in a group who asks many questions about members and shares little checkable about themselves.",
     "Posting that runs at all hours with no breaks, or in bursts when a topic heats up.",
@@ -4714,7 +4714,7 @@
     "A reference page edited to include an unsupported claim, with a citation that does not say what it is cited for.",
     "A run of reviews or comments that all repeat one fabricated detail.",
     "An AI answer that confidently repeats a claim traced to a single dubious page.",
-    "A document or web page with text invisible to a human reader but visible to automated tools.",
+    "A web page or document whose content seems to differ for human and automated readers.",
     "Several sources that look separate but trace back to one origin.",
     "A correction that gets reversed or buried soon after it is made."
    ],
@@ -4913,11 +4913,11 @@
    ],
    "tag": "reference",
    "sounds": [
-    "A text from an unknown number says 'Sorry, wrong person', then a pleasant conversation follows.",
+    "A text from an unknown number that turns into a pleasant daily conversation.",
     "The new friend is always attractive, successful and busy, never able to meet or appear on live video.",
-    "After weeks of chat, they mention an easy way they made money and offer to show you.",
+    "After weeks of chat, they bring up making money and encourage you to take a look.",
     "The platform they direct you to is one you have to join through a link they send, not a store you know.",
-    "A small first withdrawal works, then larger deposits are urged, and a fee or tax is needed to take money out.",
+    "Withdrawals that become difficult, with new fees or taxes asked for before money can come out.",
     "Questions or doubts are met with hurt feelings, reassurance or urgency about a closing window."
    ],
    "why": "Months of unhurried, ordinary relationship-building mean that when the request finally comes it arrives from someone you have real reason to trust. The losses can be life-changing, and shame often keeps people from telling anyone until the money is gone."
@@ -5002,9 +5002,9 @@
    "tag": "reference",
    "sounds": [
     "A story about one contested issue suddenly leading every feed just before a vote on something unrelated.",
-    "A question phrased so that any answer offends part of the audience: 'Whose side are you on?'",
+    "A loaded 'Whose side are you on?' question that leaves no comfortable answer.",
     "A leader asking supporters to 'defend' their identity against a threat that has no actual bill attached.",
-    "Posts that are written to provoke the strongest reaction from the other camp and are then reshared by that camp.",
+    "Posts that draw their biggest reactions from the other camp, who then reshare them.",
     "A coalition meeting that falls apart over a side topic that was not on the agenda.",
     "Offers of a practical compromise rejected because 'it would end the fight.'"
    ],
@@ -5072,8 +5072,8 @@
    "sounds": [
     "Most of your neighbors have already signed up.",
     "Everyone knows that view is finished.",
-    "Join the millions who have switched.",
-    "Nobody serious still thinks that.",
+    "An ad claiming that a large crowd has already switched.",
+    "A claim that nobody serious still holds a view.",
     "A letter comparing your energy use with 'similar households' nearby.",
     "A feed counter showing a huge number of people agree, with no way to see who.",
     "People like you are choosing this option.",
@@ -5146,7 +5146,7 @@
     "A sudden, intense romance that begins soon after you took on sensitive responsibilities.",
     "Someone who always seems to be at the same conference, hotel, or event as you, and finds the coincidence charming.",
     "A partner who is hard to verify: no mutual friends, vague employer, photos that never include other people.",
-    "A warm message followed weeks later by 'I have copies of what we shared, and I would hate for anyone to see them.'",
+    "A warm message followed weeks later by a veiled hint that private material could be shared.",
     "A partner who is gentle about your confidential work at first, and then starts to frame small favors as proof of love."
    ],
    "why": "The relationship itself was the mechanism, so finding out means losing the connection and facing the consequences of everything disclosed inside it at the same moment. Shame and fear of exposure can keep people silent when telling a security officer early would limit the damage."
@@ -5234,11 +5234,11 @@
    ],
    "tag": "reference",
    "sounds": [
-    "'The outcome is already decided; there is no point in resisting.'",
+    "Messages insisting that the outcome is already decided and resisting is pointless.",
     "'Everyone around you has already moved on. You are the last to see it.'",
     "'They are not like us, and they never will be.'",
     "'Only the authorities can be trusted; anything else is a rumor.'",
-    "'Your leaders have abandoned you, and no one is coming.'",
+    "A message telling a group that its leaders have abandoned it and that no help is coming.",
     "A flyer, broadcast, or message that arrives in the same wording from sources that claim to be unrelated."
    ],
    "why": "Messages built around futility or inevitability leave people experiencing their own resignation as simple realism. When a frame feels like your own conclusion, you are less likely to question where it came from or whether other options exist."
@@ -5373,7 +5373,7 @@
     "The message came to me last night, and it was about you.",
     "Only those who are truly open feel it, and tonight many of you did.",
     "People who left never felt it, which tells you something.",
-    "How else could I have known that about your mother?"
+    "A leader asking how else they could have known something so personal."
    ],
    "why": "An experience read as evidence of something greater is very hard to reconsider later, and the authority it lends to whoever presided over it is correspondingly hard to question."
   },
@@ -8652,7 +8652,7 @@
     "workplace_or_professional": "If the messages arrive during work hours, you can tell a manager you have a personal emergency without giving detail, and ask whether your employer offers a counseling program."
    },
    "boundary_script": "\"I believe it hurts, and I'm taking what you said seriously. I can't be the only one who helps you stay safe, so I'd like us to call a crisis line together right now. Would it help if I rang your brother to come over?\"",
-   "safety_note": "Any talk of suicide deserves a real response, whatever lies behind it. Danger signs are a stated plan, a method at hand, a recent attempt or goodbye messages. If you see them, contact local emergency services or a crisis line (988 in the United States) on their behalf. Separately, if the threats rise whenever you try to be independent, an advocate can help you plan privately. Your next step is to bring in one outside helper.",
+   "safety_note": "Any talk of suicide deserves a real response, whatever lies behind it. Danger signs are a stated plan, a method at hand, a recent attempt or goodbye messages. If you see them and the risk feels immediate, call local emergency services; otherwise contact a crisis line (for example 988 in the United States; other countries have their own numbers) on their behalf. If the threats rise whenever you try to be independent, an advocate can help you plan privately.",
    "safety_sensitive": true,
    "misuse_warning": [
     "Do not treat every expression of despair as manipulation. If you cannot tell which it is, treat it as real danger and get help; the pattern can be sorted out later.",
@@ -9627,12 +9627,12 @@
    "possible_impact_on_receiver": "A pleasant early relief at being known is often followed, in accounts of this pattern, by a quiet loneliness as old friendships thin out. Explaining the relationship to anyone can feel impossible, because each concern seems to confirm that outsiders do not understand. Grief can arrive later, on seeing how much of a life had gone quiet.",
    "response_options": {
     "soft_clarification": "Say what you notice, once, kindly: 'I like that you get me. I also need my friends, and it hurts when you talk about them as if they don't count.'",
-    "firm_boundary": "Keep your plans and your confidences open: 'I'm going to keep talking to my sister about this. You're important to me, and so is she.'",
+    "firm_boundary": "Keep your outside friendships going as a matter of course, without announcing or defending them. If plans with friends bring anger, talk to a domestic abuse advocate before changing anything.",
     "disengagement": "Quietly rebuild contact with one person you have drifted from, even a short call, and notice how the other person reacts to that.",
     "support_seeking": "Pick a friend or relative you have missed and tell them honestly that you have been less in touch than you wanted, and that you would like to change that.",
     "workplace_or_professional": "If a boss or mentor insists they alone appreciate you, keep up your relationships with peers and other mentors, and ask a trusted colleague what they think of your work."
    },
-   "boundary_script": "\"It means a lot that you understand me. I'm still going to spend time with my friends and tell them what's going on in my life, and I'd like that to be okay with you.\"",
+   "boundary_script": "\"It means a lot that you understand me. I want to keep seeing my friends too, and I hope that is okay with you.\" Skip it if anger is likely.",
    "safety_note": "Narrowing the people you confide in can be an early part of coercive control, especially when it comes with checking your phone, deciding who you see, or anger when you make plans. Keep at least one outside contact who knows your real situation, and if you are afraid of the reaction, call a domestic violence hotline to talk through options privately.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -9747,13 +9747,13 @@
    "psychological_mechanism": "Hope for a better version of someone you care about is powerful, and a sincere-sounding apology can set off relief and attachment even when little has changed. Contact that arrives unpredictably, mixing warmth with distress, can keep attention fixed on the relationship and make a calm decision harder to hold.",
    "possible_impact_on_receiver": "A stomach-drop each time a certain name appears on the screen is a common account, along with doubt about whether leaving was right and tiredness from deciding again and again. Going back can bring a sense of having been weak or foolish. After finally not answering, some report a slow calm mixed with grief.",
    "response_options": {
-    "soft_clarification": "State your decision briefly and leave it there: 'I've thought about it and I'm not getting back together. Please don't contact me about this again.'",
-    "firm_boundary": "Block or mute the channels they use, and tell mutual friends you will not be relaying messages in either direction.",
+    "soft_clarification": "State your decision briefly, in writing, and only if you judge it safe: 'I've thought about it and my answer is the same.' If this person has ever frightened you, plan the message with an advocate first.",
+    "firm_boundary": "Mute or block the channels they use if you can do so safely. If they have been threatening, ask an advocate first, because a sudden silence can raise the risk. You do not have to tell mutual friends anything.",
     "disengagement": "Do not reply to the emotional content of a message, and do not set a reply time in your head. Silence can be your whole answer.",
     "support_seeking": "Keep a short log of dates and messages and share it with someone who knows the history, so you do not have to re-argue your decision alone each time.",
     "workplace_or_professional": "If an ex or former colleague keeps contacting you at work, tell your manager or HR, give them copies of the messages, and ask that the contact be handled through them."
    },
-   "boundary_script": "\"I read your message. My answer is no, and it won't change with more messages. If there's something practical we need to settle, email me about that only.\"",
+   "boundary_script": "\"I read your message. My answer is the same. If there is something practical we need to settle, email me about that.\" If they have ever frightened you, an advocate should help plan this first, and it is fine to skip it.",
    "safety_note": "Repeated unwanted contact after a breakup can slide into stalking, and threats, showing up where you live or work, or messages that mention hurting themselves or you are all danger signals. Save every message, tell someone you trust, and contact a domestic violence advocate or the police if you feel unsafe.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -10119,14 +10119,14 @@
    "possible_impact_on_receiver": "A knot in the stomach, constant phone checking, rehearsed apologies and a feeling of being invisible come up often in accounts of being frozen out. Some start to doubt whether they did something terrible, and some say they came to dread the quiet more than an open argument. Many describe walking on eggshells and agreeing to things to stop the next freeze.",
    "response_options": {
     "soft_clarification": "Ask for the topic, not the warmth: 'You've gone quiet since Saturday. Can you tell me what's on your mind, or when you'll be ready to talk?'",
-    "firm_boundary": "Separate pausing from punishing: 'I'm fine with space. I'm not fine with being ignored until I give in. Please tell me when we can talk.'",
+    "firm_boundary": "Separate pausing from punishing, as a request: 'Space is fine with me. Could you tell me when we can talk?'",
     "disengagement": "Do not chase, plead or send a stream of messages. Keep your routines, send one calm message, and answer normally when contact resumes.",
     "support_seeking": "Describe a recent silence to a friend or counselor, including what ended it. Hearing it out loud helps check whether it lasted until you gave way.",
     "workplace_or_professional": "If a manager or co-worker holds back information you need to do your job, ask for it in writing and copy the request to someone senior, so a record exists."
    },
-   "boundary_script": "\"If you're upset, I'll listen and I do want to hear it. Going quiet until I give in doesn't help us fix anything, though. If you need time, tell me roughly how long, and we can pick it up then.\"",
+   "boundary_script": "\"If you're upset, I'll listen, and I do want to hear it. If you need time, could you tell me roughly how long, so we can pick it up then?\"",
    "safety_note": "Silence alone is painful pressure, not a physical threat. It matters more when you depend on the person for housing, money or care and the freeze cuts off practical information, or when it alternates with intimidation. Keep copies of your identity papers and account details somewhere private, and speak to a domestic abuse advocate or legal aid about your options.",
-   "safety_sensitive": true,
+   "safety_sensitive": false,
    "misuse_warning": [
     "Needing space is healthy and many people go quiet from overwhelm, so labeling any pause as the silent treatment can punish someone for self-regulating, especially someone with a shutdown response.",
     "Demanding an immediate response and then calling its absence abuse can become a form of pressure of its own."
@@ -10148,8 +10148,7 @@
     "culturally_sensitive",
     "high_false_positive_risk",
     "neurodivergence_sensitive",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -10370,7 +10369,7 @@
     "support_seeking": "Describe the specifics to a domestic abuse advocate or a counselor. They can help you check your phone and accounts and plan, using a device the other person cannot reach.",
     "workplace_or_professional": "If a manager or coworker demands constant updates beyond the written rules, ask for the expectation in writing and keep a dated record of requests."
    },
-   "boundary_script": "\"I can tell you're worried, and I want to help with that. I would rather tell you about my day than hand over my phone. What has been bothering you?\"",
+   "boundary_script": "\"I can tell you're worried, and I want to help with that. What has been bothering you? I'd rather talk about it than hand over my phone.\" Expect a calm reaction before saying it; otherwise speak to an advocate first.",
    "safety_note": "Watch for checking that comes with anger, threats, or knowing things you never told them. If you think your phone, email or car is being watched, assume the watcher may see what you do on it, including searches for help. Reach a domestic abuse hotline or advocate from a library computer, a friend's phone or a work device, and ask them how to check your devices safely before you change anything.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -10612,7 +10611,7 @@
     "support_seeking": "Describe the rules, one by one, to a trusted friend or counselor, and ask whether they sound ordinary to them. A list on paper often looks different from a mood in the room.",
     "workplace_or_professional": "At work, a manager's rules should match written policy. Ask for any new expectation about dress or conduct to be in writing, and bring HR in if it is applied to you only."
    },
-   "boundary_script": "\"It bothers you, and I'd like to understand why. This one is my call, though. What's behind it for you?\"",
+   "boundary_script": "\"It bothers you, and I want to understand why. What is behind it for you? Can we talk it through when we're both calm?\" Say it only when you judge the moment safe; an advocate can help if it isn't.",
    "safety_note": "Rules that are enforced with threats, damage to your things, anger that frightens you or the loss of money, housing or contact with children are signs of coercive control. In that case, avoid direct confrontation about the rules. Contact a domestic abuse advocate or a legal aid service, in private, and talk through a safety plan before you change anything about how you comply.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -10728,7 +10727,7 @@
    "possible_impact_on_receiver": "Reports include losing confidence in things once done easily, such as banking, driving or choosing what to eat, and embarrassment in front of others. Some apologize constantly or stop trying new things. Some are surprised, on getting a task back, to find they can still do it.",
    "response_options": {
     "soft_clarification": "Offer a concrete picture of what you want: 'I'd like to handle the electricity bill myself this month. Could you show me where the login is?'",
-    "firm_boundary": "Ask for something you are entitled to, such as access to your accounts or papers, plainly and calmly, and without having to prove you can be trusted with it first. Think about how they have reacted before.",
+    "firm_boundary": "Only if past reactions suggest it is safe, ask for your own accounts or papers in plain, calm words. Otherwise talk to a legal aid service first about getting access without a confrontation.",
     "disengagement": "Practice quietly: take on small tasks of your own, such as booking your own appointments, and build the record of what you can do.",
     "support_seeking": "Tell someone who knows you well which areas of your life have been taken over, and ask them what they remember you managing. If your money or papers are held back, a legal aid service can explain your rights.",
     "workplace_or_professional": "At work or with professionals, speak for yourself: ask doctors, bankers or officials to address you directly, and ask for written summaries you can keep."
@@ -11089,12 +11088,12 @@
    ],
    "repair_check": "Repair here would mean going back to the first complaint and answering it, including the part they dispute, before any counter-claim gets a turn. Warning signs are a general 'sorry things got heated' that never touches the original point, or an apology that arrives only after you have apologized.",
    "boundary_respect_check": "Watch what happens to your original concern after you ask to finish it first. Does it get a reply, a date to continue, or a promise to return to it? Or does the conversation snap back to your character within a minute or two?",
-   "psychological_mechanism": "Psychologist Jennifer Freyd named DARVO in the 1990s, and later research by Harsey, Zurbriggen and Freyd (2017) linked exposure to it with people blaming themselves more. Being cast as the wrongdoer right after speaking up can pull attention onto clearing your own name, and the first complaint tends to slide out of view.",
+   "psychological_mechanism": "In an online vignette study, Harsey, Zurbriggen and Freyd (2017) linked exposure to DARVO-style replies with more self-blame. Being cast as the wrongdoer right after speaking up can pull attention onto clearing your own name, and the first complaint tends to slide out of view.",
    "possible_impact_on_receiver": "People describe leaving a confrontation feeling guilty and confused, sometimes apologizing for the very thing they came to raise. Some go quiet about later problems, because the last time cost too much. Others replay the conversation for days trying to find where it turned.",
    "response_options": {
     "soft_clarification": "Name the order of events calmly: 'I came to talk about the missed payment, and now we are talking about me. Can we finish the first subject?'",
-    "firm_boundary": "Refuse to defend yourself against the counter-charge until the first matter is answered: 'I will listen to your concern next, but I need an answer on mine first.'",
-    "disengagement": "When the talk has turned to your character, end it for now, say you will return to the original point, and put that point in writing so it does not get lost.",
+    "firm_boundary": "Ask for the first matter to be written down so it is not lost: 'Could we put my original point on paper? I'll read your concern too.' Keep the request mild.",
+    "disengagement": "When the talk turns to your character, ask whether the original point can be written down, then take a break without announcing a return time or a conclusion.",
     "support_seeking": "Tell a trusted person what you originally raised and what happened next. Hearing 'that is not what you came to talk about' from someone outside can restore your footing.",
     "workplace_or_professional": "Put the original complaint in writing with dates before any meeting, and ask HR or a manager to keep the discussion on that record when a counter-complaint appears."
    },
@@ -11212,15 +11211,15 @@
    "psychological_mechanism": "Many people accept responsibility quickly, especially for someone they care about or after being told they are difficult. Repeated, confident blame can draw on that readiness, so the receiver starts auditing their own conduct before the event itself, and the other person's choice drops out of the picture.",
    "possible_impact_on_receiver": "People describe constantly monitoring what they say, apologizing for outbursts they did not cause, and losing track of where their own responsibility starts and ends. Some grow quieter or more anxious around the person, and some begin hiding things to avoid setting off a reaction.",
    "response_options": {
-    "soft_clarification": "Separate the trigger from the choice: 'I can see that I upset you, and you were still the one who decided to throw the plate.'",
-    "firm_boundary": "State where your responsibility ends: 'I will own what I said. I will not own what you did in response.'",
-    "disengagement": "When the explanation turns to your faults, leave the room or end the call, and say you will return once the subject is what happened and not who is to blame.",
+    "soft_clarification": "Keep the question narrow and calm: 'I can see I upset you. Can we go through what happened, step by step?' Leave the trigger-versus-choice question for a counselor or mediator.",
+    "firm_boundary": "Say once what you will take responsibility for: 'I'll talk about what I said.' Ask to go through the rest in order, with a neutral person present if you can.",
+    "disengagement": "When the explanation turns to your faults, ask for a short pause, such as a drink of water, and let the topic wait without announcing a verdict or a return time.",
     "support_seeking": "Describe a specific incident to someone outside the relationship and ask whether the cause they hear sounds like yours. Outsiders often notice the shift in blame before you do.",
     "workplace_or_professional": "Record what happened in neutral terms, with dates and who did what, and ask for the discussion to cover each person's actions separately, not who caused whom."
    },
-   "boundary_script": "\"I can see that I upset you, and I am willing to talk about my part. What you did next was your decision. I'm not going to accept being told I made you do it.\"",
-   "safety_note": "Blame placed on you for shouting, breaking things or physical force can be part of a pattern of control, in which you are made responsible for managing someone else's anger. Warning signs include fear of their reaction, injury, or being told you deserve it. A domestic abuse advocate or trusted person can help you plan. If you are hurt, or afraid for your life, during one of these blame episodes, that is an emergency: call the emergency number where you live.",
-   "safety_sensitive": true,
+   "boundary_script": "\"I can see that I upset you, and I'm willing to talk about my part. I'd also like us to go through what happened next, step by step. Could someone else sit in?\"",
+   "safety_note": "Blame-shifting in an ordinary argument is a communication problem. Concern rises when you are blamed for someone's shouting, breaking things or physical force, or told you deserve it, because you may then be made responsible for managing their anger. Fear of their reaction or any injury is the signal. A domestic abuse advocate or trusted person can help you plan. If you are hurt or afraid for your life, call the emergency number where you live.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "People are sometimes accused of blame-shifting for mentioning any context at all. Explaining what led up to something is fair. The concern is explanations that leave no room for the speaker's own choice.",
     "Using the label to avoid hearing a legitimate point about your own contribution turns it into a way of dodging."
@@ -11239,8 +11238,7 @@
    "human_review_flags": [
     "culturally_sensitive",
     "neurodivergence_sensitive",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -11704,7 +11702,7 @@
    },
    "boundary_script": "\"You may see this as small, and that is fine. For me it was not, and I need that to be taken seriously. I do not need you to feel the same way, only to stop telling me I am overreacting.\"",
    "safety_note": "Downplaying is not a danger sign by itself. It matters more when what is being called small is an injury, a threat, control over your money, or fear of how someone will react. In those cases, trust your own reading over theirs, keep dated notes of what happened, and talk to a doctor or a domestic abuse advocate about the injury or the fear.",
-   "safety_sensitive": true,
+   "safety_sensitive": false,
    "misuse_warning": [
     "A friend who honestly thinks you are worrying too much can sound like this. Labeling every reassurance as minimization can push away people who are trying to help.",
     "Using the word to insist that your own rating of an event is the only correct one ends honest discussion of how serious it was."
@@ -11726,8 +11724,7 @@
     "culturally_sensitive",
     "high_false_positive_risk",
     "neurodivergence_sensitive",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -11940,14 +11937,14 @@
    "possible_impact_on_receiver": "People describe becoming guarded and careful about every word, rehearsing answers, and feeling exhausted after talks that went in circles. Some say they confessed to something they did not do just to end the questioning, and felt ashamed or confused about that afterward. Others describe losing trust in their own ability to say anything clearly.",
    "response_options": {
     "soft_clarification": "Ask what would settle it: 'If I showed you the thread, or you called her yourself, would that be enough?' Their answer shows whether any proof is possible.",
-    "firm_boundary": "State your answer once, then stop: 'I have told you what happened. I won't keep proving it, because every answer I give is being used against me.'",
-    "disengagement": "Leave the room or end the call after your one answer, and say you will talk again when the questioning can have an end.",
+    "firm_boundary": "State your answer once, then stop adding to it: 'I have told you what happened.' Offer to go through one specific item together, or with a neutral person, instead of defending each answer.",
+    "disengagement": "After your one answer, ask for a pause or a neutral third person, and do not announce that you are leaving or when you will come back. If the questioning feels unsafe, move toward other people.",
     "support_seeking": "Tell a friend exactly what you were accused of and how you replied, then ask whether your answers sound unreasonable. A third ear can break the loop.",
     "workplace_or_professional": "If this is at work, ask for the complaint in writing, answer it in writing, and ask the person handling it what evidence they are weighing."
    },
-   "boundary_script": "\"I've answered your question honestly. I won't keep defending myself, because whatever I say is being treated as proof. If you have something specific I can look at with you, I'll look at it. Otherwise I'm going to end this conversation for now.\"",
-   "safety_note": "Accusation loops can sit alongside constant checking of your phone, demands to prove where you were, or punishment for answers that are 'wrong'. If you feel afraid to say no, if you are being watched, or if questioning ever turns physical or comes with threats, contact a domestic abuse advocate before the next confrontation, and keep copies of messages somewhere they cannot reach.",
-   "safety_sensitive": true,
+   "boundary_script": "\"I've answered your question honestly. If you have something specific I can look at with you, I will. Could we take a break, or ask someone neutral to look at this with us?\"",
+   "safety_note": "Accusation loops are usually a conversation problem. They deserve more concern if they come with constant checking of your phone, demands to prove where you were, or punishment for answers that are 'wrong'. If you feel afraid to say no, are being watched, or questioning ever turns physical or comes with threats, contact a domestic abuse advocate before the next confrontation and keep copies of messages somewhere they cannot reach.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Naming this whenever someone doubts you can turn into a way to avoid fair questions. Being asked tough questions about something that does look off is not a trap.",
     "Saying 'you are Kafka-trapping me' in the middle of a real inquiry can sound like another dodge. The label fits when no answer could ever count."
@@ -11966,8 +11963,7 @@
    "human_review_flags": [
     "culturally_sensitive",
     "neurodivergence_sensitive",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -13259,14 +13255,14 @@
    "possible_impact_on_receiver": "People describe agreeing in the moment and feeling resentful or hollow later, rehearsing arguments in the shower, and walking on eggshells to avoid the next showdown. Some describe losing track of what they wanted in the first place, since every decision has become a way of avoiding a loss.",
    "response_options": {
     "soft_clarification": "Slow the moment down by naming it: 'It sounds like there are only two doors here. Can we look for a third before either of us decides?'",
-    "firm_boundary": "Decline to decide under a deadline: 'I'll give you an answer tomorrow. I don't make big decisions with a clock on them.'",
-    "disengagement": "Leave the room or end the call when the demand arrives, and return to the topic once both of you have had time to calm down.",
+    "firm_boundary": "Ask for time instead of refusing the deadline outright: 'Could I give you my answer tomorrow? I want to decide properly.' If the deadline comes with threats, talk to an advocate first.",
+    "disengagement": "Ask for a short break when the demand arrives, such as a drink of water or a call to a friend, and let the topic wait without announcing a verdict. Use the time to think about what is safe.",
     "support_seeking": "Tell a friend or counselor exactly what the two options were and what was threatened, and ask whether a third option was visible from outside.",
     "workplace_or_professional": "If a manager or client sets a take-it-or-leave-it demand, ask for the terms in writing and a reasonable time to respond, and keep the message."
    },
-   "boundary_script": "\"I take what you're asking seriously, and I won't answer it with a threat over my head. I need until tomorrow to think. After that I'll tell you where I stand.\"",
-   "safety_note": "Ultimatums sit closer to danger when the named loss is inflicted, when it involves children, housing, immigration status or money, or when it comes with threats of self-harm or exposure. If the demands are growing or the stakes feel life-sized, talk to an advocate or counselor before responding, and keep your own plans private.",
-   "safety_sensitive": false,
+   "boundary_script": "\"I take what you're asking seriously, and I want to give it a proper answer. Could I have until tomorrow to think it over?\" If the deadline carries threats, talk to an advocate before replying.",
+   "safety_note": "Danger signals are a named loss that is actually inflicted, stakes that involve children, housing, immigration status or money, and threats of self-harm or exposure. If the demands are growing or the stakes feel life-sized, talk to an advocate or counselor before responding, and keep your own plans private.",
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling a person's honest limit an ultimatum can paint any 'I can't stay if this continues' as coercion, and leave someone with a real need unheard.",
     "Using the word to win an argument turns a description of a move into a verdict on the person who made it."
@@ -13285,7 +13281,8 @@
    "human_review_flags": [
     "culturally_sensitive",
     "neurodivergence_sensitive",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -15219,14 +15216,14 @@
    "possible_impact_on_receiver": "A racing heart when a conversation opens with 'we need to talk' is one report, along with over-explaining to everyone, and being unable to tell afterwards what they actually believed. Some describe giving false or partial answers just to end the round. Others mention feeling like a suspect in their own home.",
    "response_options": {
     "soft_clarification": "Offer a different way in: 'I'm happy to talk, but not as a list of demands. Can you ask me what's worrying you?'",
-    "firm_boundary": "Keep your privacy plain: 'I've told you what I'm comfortable sharing. I won't be answering more questions about this tonight.'",
-    "disengagement": "Step out of the room or off the call when questions become a chain, and come back to the subject after a break, ideally in writing.",
+    "firm_boundary": "If it feels safe, keep your privacy plain: 'That is what I'm comfortable sharing right now.' Otherwise answer briefly and calmly, and plan with an advocate afterward.",
+    "disengagement": "Ask for a drink of water or a short break when questions become a chain, and move toward other people or a door if they feel threatening. Do not announce when you will return; take the subject up again later, ideally in writing.",
     "support_seeking": "Describe one round of questions to a friend or counselor in detail, including how long it lasted, and ask how it sounds from the outside.",
     "workplace_or_professional": "If a manager is grilling you, ask for the concern in writing and a set meeting time, and bring a colleague or union representative if the process is formal."
    },
-   "boundary_script": "\"I want to talk about this, but not as an interrogation. I'll tell you what I can, and I won't answer in a rapid string of demands. If it helps, we can talk again after a break.\"",
+   "boundary_script": "\"I want to talk about this. Could we take a short break and come back to it, or have someone else sit in? I'll tell you what I can, one question at a time.\" Do this only if it feels safe; otherwise answer briefly and calmly and talk to an advocate later.",
    "safety_note": "Questioning moves toward danger when it goes on for hours, blocks you from leaving the room, includes searching your phone or belongings, or ends in shouting, threats, or physical intimidation. If you feel afraid of what happens after you decline to answer, talk privately with a domestic abuse advocate before you try anything else.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling any run of follow-up questions 'interrogation' can be used to dodge a fair and gentle request for an account, such as after a real breach of trust.",
     "The label describes how questions are asked, not what they are about; it does not mean the questioner is wrong to be worried."
@@ -15246,7 +15243,8 @@
     "culturally_sensitive",
     "high_false_positive_risk",
     "neurodivergence_sensitive",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -15350,7 +15348,7 @@
     "support_seeking": "Tell a parent, friend or colleague you trust exactly what has been said and whether you were asked to keep it quiet. Secrecy is the part worth saying out loud.",
     "workplace_or_professional": "If a boss or senior colleague builds you up against your team, keep feedback in writing, share credit openly, and ask a mentor or HR how the favor will be seen if it is later withdrawn."
    },
-   "boundary_script": "\"Thank you, but I don't want to be told I'm better than my friends. Tell me what you think I did well, and I'm going to keep sharing it with the people around me.\"",
+   "boundary_script": "\"Thank you, but I don't want to be told I'm better than my friends. Tell me what you think I did well, and let's leave it at that.\"",
    "safety_note": "When someone with power over you, especially an adult with a young person, singles you out and asks for secrecy, gifts, private messaging or time alone, that can be a warning sign of grooming or exploitation. Watch also for anger when you see friends, or checking of your messages or money. Tell a parent, school counselor or other trusted adult, or a domestic abuse advocate, before the secret grows.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -16812,12 +16810,12 @@
    "possible_impact_on_receiver": "People describe asking permission for small purchases, hiding receipts, feeling like a child in their own home, and a sinking sense that leaving is not affordable. Some find out about debts only when a letter arrives. Others say the money was never the whole story, and that the loss of choices was what wore them down.",
    "response_options": {
     "soft_clarification": "Ask an ordinary question in an ordinary tone: \"Could we look at the statements together this weekend? I'd like to understand where we stand.\" If asking could make things worse, skip this step.",
-    "firm_boundary": "Name the pattern once, calmly, without blame: \"When money depends on how I behave, it is hard for me to speak up. Could we change that?\"",
+    "firm_boundary": "If it feels safe, name the pattern once, calmly, without blame: \"When money depends on how I behave, it is hard for me to speak up. Could we change that?\" Otherwise take it to an advocate first.",
     "disengagement": "If a money conversation turns to what you owe or could lose, you can ask to pause it: \"I need some time to think. Can we come back to this?\" Use your own judgment about whether pausing is safe.",
     "support_seeking": "Speak to a domestic abuse advocate, a financial counselor or a legal aid service. Many can talk privately about economic abuse and help with documents, accounts and credit without the other person knowing.",
     "workplace_or_professional": "If someone else controls your pay, ask payroll or HR in writing, when it is safe, whether wages can go to an account in your sole name. A legal aid or employment advice service can explain your rights."
    },
-   "boundary_script": "\"Could we go through the accounts together this weekend? I'd like both of us to be able to see what we have and agree who decides what.\"",
+   "boundary_script": "\"Could we go through the accounts together this weekend? I'd like both of us to be able to see what we have and agree who decides what.\" If asking could make things worse, skip it and call an advocate first.",
    "safety_note": "Warning signs include being cut off from money after you disagree, losing hold of your ID, phone or transport, debts opened in your name, or being kept from work. Quietly note what you know, and talk to a domestic abuse advocate or legal aid service about protecting income, documents and credit before you raise any change with the other person.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -18265,7 +18263,7 @@
    "response_options": {
     "soft_clarification": "Thank them for the gesture and name the missing step: 'That was kind. I'd still like to talk about what you said on Monday before we move on.'",
     "firm_boundary": "Put the order in plain terms: 'Please don't answer a hurtful moment with a gift. I'd rather you tell me what you did, and we go from there.'",
-    "disengagement": "Take the gift or the gesture if you want it, but leave the conversation about the incident marked as unfinished, and step out of the evening if the subject keeps being closed.",
+    "disengagement": "Take the gift or gesture if you want it, but keep the conversation about the incident marked as unfinished. Make a private note of what was said, and talk it over with a counselor or friend before the next conversation.",
     "support_seeking": "Write down the last three incidents and what followed each one. Show the list to a counselor or trusted friend and ask whether the order looks as odd to them as it does to you.",
     "workplace_or_professional": "If a manager follows harsh criticism with praise or perks, ask for the criticism in writing with specifics, and keep your own record of both."
    },
@@ -18390,7 +18388,7 @@
    "possible_impact_on_receiver": "People describe isolation that feels odd because they are surrounded by people who admire the other person. Some report rehearsing their account for years without telling it, and feeling an odd guilt for describing someone others like. Others say they came to dread praise of the person, and found it hardest to be congratulated for having such a partner.",
    "response_options": {
     "soft_clarification": "Say what you notice without arguing about character: 'You were gentle with my sister today, and this morning you spoke to me very differently. I'd like to understand that.'",
-    "firm_boundary": "Pause the conversation when the harshness starts: 'I'm not going to continue while I'm being spoken to like this. We can try again when it is calmer.'",
+    "firm_boundary": "Ask for a short break rather than a verdict on the person: 'Could we take twenty minutes and try again when it is calmer?'",
     "disengagement": "Stop trying to prove the private side to people who like the public one, and keep your own dated notes where the other person cannot read them.",
     "support_seeking": "Tell one person who can listen without trying to fix or defend, such as a counselor, a domestic abuse advocate, or a friend outside the shared circle.",
     "workplace_or_professional": "At work, write down dates, words and witnesses, and bring the record to HR or an ombuds, since a charming manner in meetings will not show up on its own."
@@ -19238,12 +19236,12 @@
    "possible_impact_on_receiver": "People describe taking longer routes, leaving early, dressing to draw less attention, and feeling embarrassed that they cannot explain it. Some talk about doubting their own read, and about the tiredness of staying watchful in places that should be ordinary. Others describe anger at having to plan their day around another person's presence.",
    "response_options": {
     "soft_clarification": "If you feel safe, say one thing plainly and briefly: \"Comments about my body make me uncomfortable.\" You do not need to argue the point.",
-    "firm_boundary": "State it once without softening, and write down the date and the words you used: \"I do not want comments about my appearance. Please stop.\"",
+    "firm_boundary": "If you feel safe, state it once without softening, and write down the date and the words you used: \"I do not want comments about my appearance. Please stop.\"",
     "disengagement": "Where you can, avoid being alone with them, bring a colleague or friend, and use routes and times that keep other people around.",
     "support_seeking": "Tell someone you trust what you have noticed, even if it sounds small, and ask them to keep a record with you of dates and what was said.",
     "workplace_or_professional": "Write down each incident with date, place, words and witnesses, and bring the record to HR, a union rep, a school office or an ombuds, as a pattern rather than separate incidents."
    },
-   "boundary_script": "\"Please stop commenting on my appearance. I would like to keep our conversations about the work.\"",
+   "boundary_script": "\"Please stop commenting on my appearance. I would like to keep our conversations about the work.\" If you do not feel safe, skip it and keep a record.",
    "safety_note": "Signals that raise concern are the person learning your schedule, turning up where you are, touching you without agreement, being in a position of power over you, or reacting to a refusal with anger. Keep dated records, tell someone you trust where you are going, and contact a sexual assault or domestic violence advocate or the police if you feel in immediate danger.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -19601,8 +19599,8 @@
     "workplace_or_professional": "If a boss triggers it, keep decisions in writing and give yourself a rule of answering after a day on anything large, so your yes is not made under pressure."
    },
    "boundary_script": "Self-support script: \"This quick yes is a safety habit. I can notice it without acting on it yet, and I can take my time deciding what I actually think.\"",
-   "safety_note": "Fawning usually points to a situation where someone feels frightening. If that person is threatening you, monitoring you or controlling your money or movements, plan with a domestic violence advocate or hotline rather than alone, and keep your plans private. If the reflex is mostly from the past, a trauma-informed therapist is a good next step.",
-   "safety_sensitive": true,
+   "safety_note": "Fawning is a protective reflex more than a hazard in itself. It usually points to a situation where someone feels frightening, so concern rises if that person is threatening you, monitoring you or controlling your money or movements; then plan with a domestic violence advocate rather than alone, and keep your plans private. If the reflex is mostly from the past, a trauma-informed therapist is a good next step.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Do not use this label for someone who is just polite, agreeable or accommodating. Fawning is about fear, and applying it to ordinary kindness makes kindness look like damage.",
     "It describes a response, not a flaw in the person, and should never be used to blame someone for how they coped."
@@ -19620,8 +19618,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "clinical_adjacent_wording",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -19963,14 +19960,14 @@
    "possible_impact_on_receiver": "Rehearsed sentences pile up unsaid. Some lie awake over a conversation they could not start, or feel invisible when others assume all is well. Others find that things said to a counselor or put in writing come out more easily than aloud, which suggests the block is about the risk of speaking and not about having nothing to say.",
    "response_options": {
     "soft_clarification": "Start smaller than the full topic: 'There is something I find hard to talk about. Can I come back to it when I am ready?'",
-    "firm_boundary": "If someone talks over you or mocks the attempt, you can say 'I need to finish this sentence' and carry on at your own pace.",
+    "firm_boundary": "If it feels safe, and someone talks over you or mocks the attempt, you can say 'I need to finish this sentence' and carry on at your own pace. If it is not safe, use writing instead.",
     "disengagement": "If the topic stays locked in the moment, put it in a note, a text or a letter instead. Writing sidesteps the throat-closing part and leaves a record.",
     "support_seeking": "Say the sentence first to someone with no stake in your answer, such as a counselor, a helpline volunteer or a friend from outside the family.",
     "workplace_or_professional": "At work, use written channels for the subject that freezes you, such as an email to a manager or a note to HR, and ask for a meeting once the facts are on paper."
    },
    "boundary_script": "\"This is hard for me to say out loud, so I may go slowly. I'd like you to let me finish before you respond.\"",
    "safety_note": "Silence alone is not a danger sign. It matters more when the topic you cannot raise involves being hurt, threatened, watched or kept short of money, because then the silence may be shielding you from a real risk. Many advocacy lines offer chat or text for people who cannot speak freely, so start there, at a time and place the person it concerns cannot see.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Telling a quiet person they have been 'silenced' can overlook that they may simply prefer privacy or be shy.",
     "Pushing someone to speak before they are ready repeats the pressure that taught the silence."
@@ -19988,7 +19985,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "clinical_adjacent_wording",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -20211,7 +20209,7 @@
    },
    "boundary_script": "\"I love you, and I can talk for a little while tonight. I can't be the one who fixes this, so I'd like you to ask your sister or a counselor for that part.\"",
    "safety_note": "Being the family's caretaker is not, in itself, a danger signal. That changes if the adult's crises involve self-harm threats you are expected to prevent, violence, or loss of housing that you are told is your responsibility. A child or teen in that position needs an adult outside the household, such as a school counselor, a doctor or a relative, to share the weight.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling every childhood chore 'parentification' can erase the real value of contributing to a household.",
     "The label can become a way to blame a struggling parent for everything, while overlooking the illness, poverty or lack of support that shaped the household."
@@ -20229,7 +20227,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "clinical_adjacent_wording",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -20455,8 +20454,8 @@
     "workplace_or_professional": "Ask whether there is an ombuds office, a second-level reviewer or an external body for complaints about the process, and request that route in writing."
    },
    "boundary_script": "\"Before we go on, could you tell me in writing who has seen what I reported, what the next steps are, and when I will hear back? I would also like to ask whether I can bring a support person to the next meeting.\"",
-   "safety_note": "Watch for retaliation after you report: changed hours, lost shifts, a sudden performance plan or pressure to sign something, since these can put your income or immigration status at stake. If the original harm involves threats, stalking or sexual violence, tell someone outside work as well. Keep dated copies of your own messages and notes, and ask an employment lawyer or legal aid clinic about time limits before signing anything.",
-   "safety_sensitive": true,
+   "safety_note": "A complaints process that protects the institution is a fairness problem first. Concern rises if retaliation follows the report: changed hours, lost shifts, a sudden performance plan or pressure to sign something, especially where income or immigration status depends on the job. If the original harm involved threats, stalking or sexual violence, tell someone outside work too. Keep dated copies of your own notes, and ask an employment lawyer or legal aid clinic about filing deadlines before signing anything.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "A disappointing outcome is not proof the process was rigged. Treating every unfavourable result as shielding can erode trust in a process that may have been fair.",
     "Pinning this label on one HR worker can personalise a problem that usually sits in how the process is built and whom it answers to."
@@ -20478,8 +20477,7 @@
     "overlaps_with_related_tactic",
     "reference_only_limitations",
     "workplace_or_legal_ambiguity",
-    "manipulation_playbook_risk",
-    "safety_sensitive"
+    "manipulation_playbook_risk"
    ]
   },
   {
@@ -21050,10 +21048,10 @@
     "soft_clarification": "If someone you trust has seen it, tell them plainly that it is fabricated and that you can show where you were. Then ask them not to forward it.",
     "firm_boundary": "Do not bargain with anyone demanding something in exchange for keeping it private. Keep the demand as it was sent and hand it to the people handling your report.",
     "disengagement": "Stop replying to the sender. Before blocking anyone, save the messages, links and dates so there is a record.",
-    "support_seeking": "StopNCII.org and Take It Down are hash-matching services that help block known intimate images on participating platforms. Ask whether they can take your case, and contact a victim advocate or legal aid about options where you live.",
+    "support_seeking": "StopNCII.org and Take It Down are hash-matching services that help block known intimate images on participating platforms; they need the image on your device, so ask whether they accept AI-generated images. Contact a victim advocate or legal aid about options where you live.",
     "workplace_or_professional": "If it reaches work or school, give HR or an administrator a short factual note with links and dates and ask for a named contact. You do not have to describe the content in detail."
    },
-   "boundary_script": "\"This is fabricated media of me. I have saved the links, the dates and every message about it. I am asking you to remove it and to tell me what happens next.\"",
+   "boundary_script": "\"This is fabricated media of me. I have saved the links, the dates and every message about it. I am asking you to remove it and to tell me what happens next.\" Send this to a platform, school or employer, never to the person who made or shared it.",
    "safety_note": "Fabricated sexual images, demands for money, and threats to send material to family or an employer are danger signals, as is anyone who seems to know where you live or work. Save everything unaltered, tell someone you trust, and contact a victim advocate, legal aid or a police cybercrime unit. If you fear for your physical safety, call emergency services.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -21221,8 +21219,8 @@
    "why_this_matters": "Risk moves offline and out of your hands: your home, workplace and family become reachable by strangers who have no tie to the original dispute, and the exposure cannot be fully undone.",
    "what_it_is": [
     "Posting a home address, phone number, workplace, school or a relative's name where strangers will see it.",
-    "Linking an anonymous account to a real name, which can end the safety that anonymity gave.",
-    "Combining facts that were each findable alone into one profile, which changes what they can be used for.",
+    "A real name or address suddenly attached to an account that was meant to stay anonymous, which can end the safety that anonymity gave.",
+    "Scattered facts about a person gathered in one place, which changes what those facts can be used for.",
     "Usually paired with a story that casts the person as deserving of anger, so readers feel invited to act.",
     "Set apart from criticism because it targets where a person can be reached, not what they said."
    ],
@@ -21347,7 +21345,7 @@
    "what_it_is": [
     "Accounts presenting as separate people but directed by the same hand.",
     "Used to cheer for one side, back up a person's story, or pile on a target so that a crowd appears.",
-    "Often built to look ordinary, with a plausible name, a photo and everyday posts, so the account itself reveals little.",
+    "Accounts that look ordinary on their own, so judging one reveals little; the pattern shows across several.",
     "Different from an openly run brand account or a person's disclosed second account.",
     "Harmful through false social proof: you read the numbers as other people's real opinions."
    ],
@@ -21598,9 +21596,9 @@
    "why_this_matters": "You can lose your account, your audience or your income through a system built to protect people, and appeals against decisions made on volume can be slow and hard to reach.",
    "what_it_is": [
     "Many reports against one account or post, filed close together, often citing a rule the content does not break.",
-    "Organized in a group chat, thread or list where people are told whom to report.",
+    "Organized in a group chat or thread where members are pointed toward a target.",
     "Aimed at creators, activists, small sellers and ordinary users, sometimes after they criticized someone.",
-    "Can rest on false claims such as spam, impersonation or harm.",
+    "Often feels sudden and unexplained to the person on the receiving end, because the stated grounds do not match what they posted.",
     "Different from legitimate reporting, where independent people flag real violations and the content matches the complaint."
    ],
    "what_it_sounds_like": [
@@ -22036,8 +22034,8 @@
     "workplace_or_professional": "Report any odd request to your security or IT team, and set up a rule that payments or access changes need a second person to confirm by a known channel."
    },
    "boundary_script": "\"Thanks for letting me know. I deal with anything like this through the official number, so I'll look it up myself and check. If it's real, it will still be there after I've confirmed it.\"",
-   "safety_note": "Watch for threats of arrest, claims that a relative is in danger, demands for secrecy, and pressure to send money in hard-to-trace ways. These can lead to serious loss of savings or access. If you have already sent money or shared a code, phone your bank's fraud line straight away using the number on your card, since speed matters.",
-   "safety_sensitive": true,
+   "safety_note": "A scam call or message is a fraud risk rather than a personal-safety one. It becomes more urgent with threats of arrest, claims that a relative is in danger, demands for secrecy, or pressure to send money in hard-to-trace ways. If you have already sent money or shared a code, phone your bank's fraud line straight away using the number on your card, since speed matters.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Treating every urgent request as a scam can strain relationships and slow honest work. Verification is the test, not a feeling of suspicion.",
     "Blaming someone who fell for it adds shame to a loss. Good people with good habits get caught by well-built pretexts."
@@ -22053,8 +22051,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -22736,7 +22733,7 @@
     "support_seeking": "Speak to a domestic abuse or financial abuse advocate, a legal aid service or a credit counselor, and ask about a private plan before you change anything at home.",
     "workplace_or_professional": "If pay, housing or documents are tied to a boss or sponsor, keep dated records of hours and payments and contact a labor rights group, union or legal clinic."
    },
-   "boundary_script": "\"I've been thinking I should know more about how our bills and accounts work, in case anything happens to you. Could you show me sometime when it suits you?\"",
+   "boundary_script": "\"Could you show me how our bills and accounts work, so I can help keep track of them? Sometime when it suits you is fine.\" If a question about money has caused trouble before, hold off and speak to an advocate.",
    "safety_note": "Watch for money being used to control where you go, threats to cut off housing, food or children's needs, debts placed in your name without your knowledge, or fear when you ask about finances. A domestic violence advocate can plan privately with you, including how to build savings and records safely. Ask the advocate which phone and email are safe to use for that first contact.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -23208,8 +23205,8 @@
     "workplace_or_professional": "Keep a dated note of what you were asked, what you delivered and any praise, somewhere you can still reach if your access ends, and ask HR how to attach your own comments to the plan file."
    },
    "boundary_script": "\"Passing this plan is my aim. For that I need each goal written so I can tell when I've reached it, and my comments added to the file after every review. Can we settle that today?\"",
-   "safety_note": "A plan can sit beside real threats to income, housing or immigration status, particularly when a work visa depends on the job. Watch for pressure to resign quickly, to sign away claims, or to keep the plan secret. Before signing anything, ask an employment lawyer, a union representative or a legal aid service what it would mean for you.",
-   "safety_sensitive": true,
+   "safety_note": "An improvement plan is a workplace and income matter, not a physical one. Concern rises if it comes with pressure to resign quickly, to sign away claims, or to keep the plan secret, or if a work visa depends on the job. Before signing anything, ask an employment lawyer, a union representative or a legal aid service what it would mean for you.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling any plan a weaponized PIP can excuse you from a real gap. Check whether the shortfall was recorded before any complaint.",
     "Telling a manager their plan is weaponized claims to know their purpose, which a plan on paper cannot show."
@@ -23227,8 +23224,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -23808,7 +23804,7 @@
     "support_seeking": "Describe the original lapse and the response asked for to someone outside the situation, and ask whether the two match. An advocate or counselor can also tell you whether a run of such demands is a known sign of controlling behavior.",
     "workplace_or_professional": "If the demand comes from a boss or institution, ask which policy sets the consequence and request it in writing, and keep dated notes of what was asked and what you did."
    },
-   "boundary_script": "\"I know I got that wrong, and I'm sorry. I want to make it right in a way that fits the mistake. Could we agree on something smaller that we both think is fair?\"",
+   "boundary_script": "\"I know I got that wrong, and I'm sorry. I want to make it right in a way that fits the mistake. Could we agree on something smaller that we both think is fair?\" If a refusal could bring anger, hold off.",
    "safety_note": "Large, shifting demands can sit alongside controlling behavior: penalties involving money, access to children, your phone, your home or contact with others, and fear of what happens if you refuse. If complying has begun to feel necessary for safety, speak with a domestic abuse advocate or legal aid service, and choose a moment and a device where you cannot be overheard or checked.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -24044,7 +24040,7 @@
    "psychological_mechanism": "People often judge a report by the reputation of whoever makes it, since checking every claim takes effort. An early remark about unreliability hands listeners a shortcut: they can disbelieve without examining. It tends to work better when it contains something true, like a bad week, and comes from someone the listener already trusts. The person it describes may begin to doubt themselves too.",
    "possible_impact_on_receiver": "People describe being met with polite doubt when they report something important, and learning later what had been said. Some hold back reports, over-prepare evidence, or avoid the people who may have heard the remarks. A lonely sense of being right and unheard is also reported, along with exhaustion at having to prove ordinary things.",
    "response_options": {
-    "soft_clarification": "Ask directly what was said: 'I've heard you've described me as unreliable. Can you tell me what you had in mind?' Keep it a question, and write down the answer afterward.",
+    "soft_clarification": "Ask a trusted colleague what they have heard, and write down the answer afterward, rather than confronting the person who may be saying it.",
     "firm_boundary": "Ask to be heard on the facts: 'Please judge what I'm reporting by the evidence, not by what you've heard about me. I can show you the messages.'",
     "disengagement": "Stop trying to win each doubter over one at a time. Put your account in writing, with dates, and let the record speak where conversation cannot.",
     "support_seeking": "Tell one person who knew you before this began what has been said, and ask whether it matches how they know you. Their answer helps you test the doubt you may have absorbed.",
@@ -24532,8 +24528,8 @@
     "workplace_or_professional": "At work or in a wellness or faith community, put the specific event in writing and ask for the process to address it, rather than for a shared reflection or a circle."
    },
    "boundary_script": "\"I take your faith seriously, and I'm not asking you to give it up. I am asking you to hear what happened to me before we talk about letting go. I'm not ready to forgive yet, and that isn't a failure.\"",
-   "safety_note": "Pressure to forgive and move on can sit alongside repeated harm, and it can hold someone in a situation that is still unsafe. Watch for forgiveness being demanded after threats, controlling behavior or physical harm, or for a spiritual leader asking you to handle it quietly. A domestic abuse advocate or a counselor outside the community can help you think it through first.",
-   "safety_sensitive": true,
+   "safety_note": "Pressure to forgive is a hurtful conversation rather than a danger in itself. It matters more when forgiveness is demanded after threats, controlling behavior or physical harm, or when a spiritual leader asks you to handle it quietly, because that can hold someone in a still-unsafe situation. A domestic abuse advocate or a counselor outside the community can help you think it through first.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling someone's faith or comfort practice 'bypassing' because it irritates you turns a description of one conversational move into an attack on their beliefs. The word fits an ordering problem, not a worldview.",
     "Using the term to wave away every request to forgive can make it harder to hear when the request is sincere and comes with a real acknowledgement."
@@ -24551,8 +24547,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -25244,8 +25239,8 @@
     "workplace_or_professional": "Report it to HR or a manager as specific words, dates and witnesses, and describe the effect on you, without claiming a hidden meaning you cannot show."
    },
    "boundary_script": "\"That comment landed differently for me than it did for everyone else in the room. Can we bring a third person in next time we talk about it?\"",
-   "safety_note": "When a coded remark refers to a past threat, to watching you, to where you live or work, or to harm to someone you love, treat the pattern as a possible safety issue even if the words are mild. If you believe you are in immediate danger, call your local emergency number. Otherwise, keep a private record somewhere the other person cannot reach and speak to a domestic abuse or stalking advocate about a safety plan before you respond to the remark.",
-   "safety_sensitive": true,
+   "safety_note": "A coded remark is mainly a problem of recognition and record-keeping. It becomes a possible safety issue when it refers to a past threat, to watching you, to where you live or work, or to harm to someone you love, even if the words are mild. If you believe you are in immediate danger, call your local emergency number. Otherwise keep a private record the other person cannot reach and speak to an advocate before you respond.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Because the meaning is hidden by design, anyone can claim to hear a dog whistle in any remark. Accusing a person of coded hostility without a consistent record can wrongly brand an innocent phrase and a person.",
     "Telling someone their reaction to a real threat is just 'hearing dog whistles' is a way of dismissing them, so the label cuts both ways."
@@ -25263,8 +25258,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -26443,14 +26437,14 @@
    "possible_impact_on_receiver": "Meeting outsiders can come as a shock, with the world looking different from what the circle said. Some report losing touch with relatives, finding it hard to talk to anyone who disagrees, and feeling embarrassed later about what they once repeated with certainty.",
    "response_options": {
     "soft_clarification": "Ask a mild question when you hear a sweeping claim: 'What is the best argument against that, and where would I read it?'",
-    "firm_boundary": "Keep your own reading and your own friends: 'I'm going to keep seeing my sister and reading more widely, and that doesn't change how I feel about you.'",
+    "firm_boundary": "Keep your own reading and friendships going quietly as a matter of course, without announcing them. If the group reacts with anger or pressure, talk to someone outside it before changing anything.",
     "disengagement": "Reduce time in the closed group chat or forum, and see what changes when you do. Do it quietly, and without a speech.",
     "support_seeking": "Reach out to one person from before and tell them honestly what you have been hearing lately. See whether they remain steady and kind.",
     "workplace_or_professional": "If this is a workplace team or professional network, ask for more than one source of information on decisions, and put questions in writing."
    },
-   "boundary_script": "\"I like a lot of what you share, and I also want to hear other views for myself. I'll keep reading widely and keep seeing my friends. If we disagree on something, I'd rather talk it through than be told the other side is lying.\"",
+   "boundary_script": "\"I like a lot of what you share, and I want to hear other views too. Is it okay if I keep reading widely and seeing my friends as well? If we disagree, I'd rather talk it through.\" Hold it back if the group tends to react with anger.",
    "safety_note": "Echo chamber construction is not by itself a physical-safety signal. It becomes one if you are told to cut off family, hand over passwords or devices, or if leaving the circle brings threats or loss of housing or income. At that point, reach for an outside person you trust, and for a cult-recovery or domestic abuse service.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Saying someone is 'in an echo chamber' is a quick way to dismiss their view without engaging with it. Everyone's circle is somewhat narrow.",
     "It can be turned on a loved one who has found a community that suits them, when nobody is steering them and the door is open."
@@ -26468,7 +26462,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations"
+    "reference_only_limitations",
+    "safety_sensitive"
    ]
   },
   {
@@ -26568,7 +26563,7 @@
     "support_seeking": "Tell a trusted friend or family member what is happening, and ask for help with a record of each message, including a note of when it arrived.",
     "workplace_or_professional": "If you are the target at work, tell your manager or HR early, give them your record, and ask that the organization handle calls and emails about you."
    },
-   "boundary_script": "\"I am keeping a dated record of every message, and I am not replying to any of them. Will you read through them with me and help me work out who should see them?\"",
+   "boundary_script": "\"Will you read through these messages with me and help me work out who should see them? I'm keeping a dated record and not replying to any of them.\" Say this to a trusted helper, never to the sender.",
    "safety_note": "Harassment waves can move from messages to threats, doxxing or visits to a home or workplace. Signs to take seriously are your address being shared, threats naming you or your family, or someone appearing in person. Keep dated copies, report each wave to the platform, and take the file to the police or a victim-support service, who can advise on protective orders.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -27411,8 +27406,8 @@
     "workplace_or_professional": "Keep a dated log of projects removed, meetings dropped and feedback received, and keep your own reviews and praise where company policy allows. Raise the pattern with HR or a union representative."
    },
    "boundary_script": "\"Help me understand how my role has changed over the last few months. Could we set up a time to talk about what I'm responsible for and what you expect from me?\"",
-   "safety_note": "The risk here is mostly to income and standing, and for some people to a visa or housing tied to the job. Watch for pay or immigration status depending on staying, pressure to sign a separation agreement quickly, or distress affecting your sleep or safety. Before signing anything, get advice from an employment lawyer, union or legal aid service, and keep dated notes of what changed.",
-   "safety_sensitive": true,
+   "safety_note": "This is chiefly a threat to income and standing, though a visa or housing tied to the job raises the stakes. Concern grows if pay or immigration status depends on staying, if you are pressed to sign a separation agreement quickly, or if the strain is hurting your sleep or health. Get advice from an employment lawyer, union or legal aid service before signing, and keep dated notes of what changed.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Reading every quiet spell or reassignment as being managed out can turn ordinary reorganizing into a grievance. The label needs a comparison, a timeline and a lack of explanation, not just a bad feeling.",
     "Telling a coworker they are being managed out can add to their distress or push a decision that the evidence does not support."
@@ -27429,8 +27424,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -27524,14 +27518,14 @@
    "possible_impact_on_receiver": "Accounts include going quiet in writing, rereading messages before sending, feeling watched in your own home or friend group, and wariness about telling anyone anything. Doubt about what you really meant can set in when you are shown a fragment. Others feel anger that something said in trust was held back for later.",
    "response_options": {
     "soft_clarification": "Ask for the whole picture: 'Can you show me the messages around that one? I remember the conversation going differently.'",
-    "firm_boundary": "Ask for concerns in real time: 'If something I say bothers you, tell me then. I don't want old messages used in new arguments.'",
+    "firm_boundary": "If it feels safe, ask for concerns in real time: 'If something I say bothers you, tell me then, so we can sort it out together.'",
     "disengagement": "Stop sharing delicate things with someone who keeps them for later, and move sensitive talk to a call or an in-person conversation.",
     "support_seeking": "Show the full thread to someone neutral and ask how it reads. If material is being shared, or threatened to be, keep your own copies of what was sent and talk to an advocate or lawyer.",
     "workplace_or_professional": "At work, keep your own copy of the full email thread, reply with the missing context in writing, and ask a manager or HR to review the whole exchange and not the fragment."
    },
    "boundary_script": "\"I'm happy to talk about anything I've said, if we look at the whole conversation and talk about it when it comes up. I'd rather not have old messages brought out in the middle of something else.\"",
    "safety_note": "Someone quietly saving your words is pressure on trust, not a physical danger. The picture changes if saved material is paired with threats to release it, intimate images or recordings, a custody or legal case, or demands that you do something or stay. Keep your own copies of what has been sent, and take them to a lawyer or a domestic abuse or cyber-abuse advocate before replying to any threat.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling any reminder of an earlier statement an evidence trap can make accountability look like an attack. People are entitled to say 'you told me this'.",
     "Using the label to avoid being quoted accurately confuses stripped context with unwelcome content."
@@ -27548,7 +27542,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations"
+    "reference_only_limitations",
+    "safety_sensitive"
    ]
   },
   {
@@ -28124,7 +28119,7 @@
     "support_seeking": "A domestic abuse advocate or a technology-safety service can help you check devices safely. Contact them from a phone or computer the other person has never had access to.",
     "workplace_or_professional": "If the home is rented, a landlord or letting agent may be able to reset devices they supplied. Keep any messages with them as a record."
    },
-   "boundary_script": "\"I'm still getting my head around how the system works. Could you walk me through which devices record or listen, so I know what's in each room?\"",
+   "boundary_script": "\"Is there a guide to the new system anywhere? I want to know how it works and what is in each room.\" If it could draw anger, leave the question alone and ask a tech-safety advocate.",
    "safety_note": "Watch for signs that someone knows where you have been, tracks your phone or controls who can enter. If you suspect it, do not search for or disable devices at once, because that can be noticed. Use a safe device to contact a domestic abuse or tech-safety service, and plan any changes with them first.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -28244,7 +28239,7 @@
     "support_seeking": "Tell your doctor, a nurse or a pharmacist what is happening, including that doses or appointments have been disrupted. They see this often and can help you plan care quietly.",
     "workplace_or_professional": "If sleep or time off is being disrupted by an employer or manager, document dates and hours and raise it with HR, a union or an occupational health service."
    },
-   "boundary_script": "\"My health care matters to me, and I'm going to keep my appointments and take my medicine as my doctor advised. I would really appreciate your help with that.\"",
+   "boundary_script": "\"My health care matters to me. I'd really appreciate your help keeping my appointments and my medication on schedule.\" If this could provoke a reaction, leave it out.",
    "safety_note": "Take extra care if medicines go missing, if you are kept awake or cut off from care around the time you try to make a change, or if you feel physically unwell for no clear reason. A doctor, pharmacist or domestic abuse advocate can help you privately. If you feel seriously ill or think you have been given something you did not take knowingly, get medical help straight away.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -28960,14 +28955,14 @@
    "possible_impact_on_receiver": "Giving in is often followed by a sick feeling, anger at oneself, and doubt about what one truly thinks of the original event. Some find they apologize automatically afterward. Others dread any conflict, because they expect it to end the same way, with their own words used against them.",
    "response_options": {
     "soft_clarification": "Offer your account once and ask for a way forward: 'Here is what I remember. What would help put it right?' Moving to repair can shift the talk from words to actions.",
-    "firm_boundary": "Decline to say words you do not believe: 'I can apologize for how it landed. I can't say I did something I don't think I did.'",
+    "firm_boundary": "If it feels safe, decline to say words you do not believe: 'I can apologize for how it landed. I can't say I did something I don't think I did.'",
     "disengagement": "Take a break from a conversation that has become a loop, and come back to it in writing, where nothing has to be answered on the spot.",
     "support_seeking": "Before signing or saying anything formal, tell someone outside the situation what is being asked and read it aloud to them. A second pair of ears can hear coercion that you can no longer hear.",
     "workplace_or_professional": "At work or school, ask what the process is, who will read the statement and what happens afterward. Ask to give your account in your own words, in writing, and keep a copy."
    },
    "boundary_script": "\"I've told you what I remember. I can say I'm sorry it hurt you, because I am. I can't say I did something I don't believe I did, and I'd rather work out together what would help.\"",
    "safety_note": "Pressure to apologize is not a danger signal on its own. It changes when fear is part of the picture: shouting that blocks a doorway, threats toward your job, housing or children, or a written confession demanded on the spot. If so, avoid signing anything in the moment and ask a legal aid service or an advocate to read it first.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling any request for an apology forced submission can let real accountability slide. When something did happen, asking for acknowledgment is fair.",
     "Using the label for being asked to follow an agreed rule treats ordinary limits as coercion."
@@ -28985,7 +28980,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations"
+    "reference_only_limitations",
+    "safety_sensitive"
    ]
   },
   {
@@ -29088,7 +29084,7 @@
     "support_seeking": "Call a domestic violence or stalking helpline and describe what you have noticed. Advocates can help you assess risk, plan, and decide what to document, without you having to decide anything on the call.",
     "workplace_or_professional": "Let one trusted person at work, such as security or a manager, know that someone may come to the workplace uninvited, and give them a photo and the key facts. Keep a dated log of any visit or message there."
    },
-   "boundary_script": "\"For the schedule and the bills, can we keep everything in writing in one place, like email or a co-parenting app? That way neither of us has to guess what was agreed.\"",
+   "boundary_script": "\"For the schedule and the bills, can we keep everything in writing in one place, like email or a co-parenting app? That way neither of us has to guess what was agreed.\" Offer this through a lawyer, mediator or co-parenting app, and only after an advocate agrees.",
    "safety_note": "Danger signals include showing up where you never said you would be, threats, damaged property, knowledge of private conversations, tracking devices, and contact that rises after you set a limit or begin a new relationship. Risk can rise around a separation. Before you change numbers, devices or routes, ask a stalking or domestic violence advocate to help you plan the order, since sudden changes can be noticed.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -29211,7 +29207,7 @@
     "support_seeking": "Seek a legal aid office, a court self-help center or a domestic violence legal advocate. Ask them to read the filings and say what they see.",
     "workplace_or_professional": "Tell one trusted manager only what you need to, such as that you have court dates, and arrange leave in advance, so a hearing does not put your job at risk."
    },
-   "boundary_script": "\"Anything about the schedule or what has changed, we can talk about directly. For the court matters, could we go through our lawyers, or a mediator, so that everything is in writing and nothing is missed?\"",
+   "boundary_script": "\"Anything about the schedule or what has changed, we can talk about directly. For the court matters, could we go through our lawyers, or a mediator, so that everything is in writing and nothing is missed?\" Raise this through your lawyer, and only after an advocate or lawyer agrees.",
    "safety_note": "Concern grows when filings sit alongside threats, danger to a child, or the chance of losing your home, income or custody time at the next hearing. Courts also hear true accounts of danger, so a filing is not proof of abuse. Bring the full file to a family law attorney or legal aid advocate and ask what limits or protections your court offers.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -29335,7 +29331,7 @@
    },
    "boundary_script": "\"Could we hear the whole recording, from before this starts to after it ends? Once we've both listened to all of it, we can talk about what was said.\"",
    "safety_note": "A doctored clip is not a danger by itself. What changes that is its use as leverage: a threat to send it to your employer, family or a court unless you comply, or a clip tied to intimate content. In that case, keep the evidence, hold off on replying, and take it to a lawyer or advocate who can advise on the next step.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling any unflattering clip edited lets you dismiss what you actually said. Check whether something you can point to is missing before accusing anyone.",
     "Insisting that someone produce a recording they never made, or that no longer exists, treats a missing file as proof of bad faith."
@@ -29353,7 +29349,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations"
+    "reference_only_limitations",
+    "safety_sensitive"
    ]
   },
   {
@@ -29451,12 +29448,12 @@
    "possible_impact_on_receiver": "People describe panic at being unable to reach their own contacts or money, shame about messages sent in their name, and a constant sense of being watched. Some stop trusting every device or app. Some say the practical problems, such as missing a work email or a bill, hurt as much as the intrusion.",
    "response_options": {
     "soft_clarification": "Ask a plain question about the change: 'My login doesn't work and the recovery number isn't mine. Do you know why?' Then see whether the answer is specific and whether it is fixed.",
-    "firm_boundary": "If it feels safe, ask once for your logins and recovery details back with nothing attached. If you are unsure how they would react, skip this step and use the private options below.",
+    "firm_boundary": "Do not ask for your logins back unless you are sure it is safe. A tech-safety advocate can help you regain control of your accounts first, because a demand can lead to the change being hidden or to anger.",
     "disengagement": "Do not argue over each message. Use a trusted device, such as a library computer or a friend's phone, to check what you can still reach and begin setting up new accounts.",
     "support_seeking": "Tell a trusted person or a domestic abuse or tech safety advocate what you have seen, and write down dates, screenshots of login alerts and unfamiliar devices before anything changes.",
     "workplace_or_professional": "If a work account is involved, report it to your IT or security team at once, and ask your bank or phone company to put a block on changes without extra verification."
    },
-   "boundary_script": "\"I'm having trouble getting into my own accounts, and I want to sort it out with you. Can we go through what changed and when, and what I need to do to have the logins back the way they were?\"",
+   "boundary_script": "\"My login stopped working and the recovery number isn't mine. Do you know why that happened? Let's sort it out calmly.\" If you are unsure how they would react, hold off and ask a tech-safety advocate how to proceed.",
    "safety_note": "Losing control of accounts can go with monitoring, isolation, threats or control of money. Changing passwords or removing a device can alert the person to what you are doing. Work out your next step on a device they cannot see, with a domestic abuse advocate or a tech safety service, before you change anything on the compromised account.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -29698,12 +29695,12 @@
    "possible_impact_on_receiver": "People describe panic, nausea, shame, trouble sleeping and a feeling of being watched wherever they go. Some stop using social media or avoid work and school for fear of being recognized. Many describe relief once they told one person, and some describe anger at being blamed for taking the picture in the first place.",
    "response_options": {
     "soft_clarification": "Before replying, save everything: screenshots of messages, usernames, links and dates, stored somewhere private. Questions and arguments with the sender can wait until you have advice.",
-    "firm_boundary": "Do not pay, send more images or negotiate. Payment or new images tend to bring further demands, not an end. Further contact can be limited to the one line in the script, or none at all.",
+    "firm_boundary": "Do not pay, send more images or negotiate. Payment or new images tend to bring further demands, not an end. Further contact with the sender can wait until an advocate has advised; do not send the script to them.",
     "disengagement": "If the sender is someone you know, ask an advocate before blocking or going silent, since a sudden change can raise the pressure. With a stranger, blocking after saving evidence is usually fine.",
-    "support_seeking": "Tell someone you trust and contact an image-abuse helpline or advocate. StopNCII.org (adults) and Take It Down (images of under-18s) let you flag an image so participating platforms can block it, without sharing the image itself.",
+    "support_seeking": "Tell someone you trust and contact an image-abuse helpline or advocate. StopNCII.org (adults) and Take It Down (images taken before 18, even if you are now an adult) let you flag an image so participating platforms can block it, without sharing it.",
     "workplace_or_professional": "If images or threats reach your job or school, tell one trusted person in HR, student services or security early, so it does not arrive as a surprise. Give them the links, not the images."
    },
-   "boundary_script": "\"I did not agree for any of these to be shared with anyone, and I'm not going to negotiate about them. Please send anything further to someone I trust, who can answer for me.\"",
+   "boundary_script": "\"I did not agree to these images being shared. I have saved the links, messages and dates, and I am asking for help getting them removed.\" Send this to a platform, school, employer or advocate, never to the person who shared them.",
    "safety_note": "Take seriously a deadline, a demand that keeps growing, contact from several accounts, messages to your family or workplace, or threats of self-harm used to keep you quiet. If shame feels unbearable, a crisis line can help tonight. If the person shown is under 18, treat it as urgent and contact your country's child-safety or police service. Save links and screenshots, then ask an advocate about takedown options before replying.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -29985,13 +29982,13 @@
    "what_it_is": [
     "Accounts with generated profile photos, believable backstories and steady posting, run as a group.",
     "Used to look like a crowd, to join a community and earn trust, or to pull information out of its members.",
-    "Often blending in with ordinary posting for a long stretch so the accounts look established before they push anything.",
+    "Accounts with little visible history before a topic arose, which makes any one of them hard to judge alone.",
     "Different from a lone fake profile in that the accounts vouch for, reply to and amplify each other.",
     "Difficult to confirm from outside: the evidence usually sits in platform data such as creation dates and shared infrastructure."
    ],
    "what_it_sounds_like": [
     "Several new-looking accounts replying within minutes of each other, with similar phrasing, to the same post.",
-    "Profile photos that look polished yet oddly generic, with unusual details in the background or on jewelry and teeth.",
+    "Profile photos that look polished yet oddly generic, which on its own proves nothing.",
     "Accounts with few personal photos, but many opinions on one theme.",
     "A friendly newcomer in a group who asks many questions about members and shares little checkable about themselves.",
     "Posting that runs at all hours with no breaks, or in bursts when a topic heats up.",
@@ -30103,8 +30100,8 @@
    "why_this_matters": "Decisions get made on a corrupted record. Because the corruption sits in the source, the person and the tools they use to double-check return the same wrong answer, which makes the error hard to catch.",
    "what_it_is": [
     "False or distorted entries placed in reference pages, review sections, shared files or search-indexed pages.",
-    "Material written to be picked up by AI systems, either when they are trained or when they read pages to answer a question.",
-    "Text embedded in a page or file that is aimed at an AI reader rather than a human one, such as hidden instructions.",
+    "Material that targets the sources AI systems and search tools draw on.",
+    "Content that tries to steer automated readers as well as human ones, which a human reader may never notice.",
     "Effective because the copy spreads: once it is cited, reposted or summarized, the original source of the error is buried.",
     "Different from a one-off lie in that it targets the shared source rather than a single conversation."
    ],
@@ -30112,7 +30109,7 @@
     "A reference page edited to include an unsupported claim, with a citation that does not say what it is cited for.",
     "A run of reviews or comments that all repeat one fabricated detail.",
     "An AI answer that confidently repeats a claim traced to a single dubious page.",
-    "A document or web page with text invisible to a human reader but visible to automated tools.",
+    "A web page or document whose content seems to differ for human and automated readers.",
     "Several sources that look separate but trace back to one origin.",
     "A correction that gets reversed or buried soon after it is made."
    ],
@@ -30303,8 +30300,8 @@
     "workplace_or_professional": "If you handle audience, community or product design work, flag intimacy-based pressure to give or stay, and raise it through your organization's ethics or compliance process."
    },
    "boundary_script": "\"I can care about this person's work and still choose not to give. My worth to them is not measured by what I pay, and I will decide about this later, after I have slept on it.\"",
-   "safety_note": "This becomes a safety matter when it drains money a person cannot spare, draws out intimate images or private details that could be used against them, or deepens isolation or despair. Involve a trusted person, contact your bank about payments, and reach a counselor or crisis line if you feel unable to cope or fear for your safety.",
-   "safety_sensitive": true,
+   "safety_note": "Attachment to a creator or companion is not a danger on its own. It deserves more attention if it drains money a person cannot spare, draws out intimate images or private details that could be used against them, or deepens isolation or despair. Involve a trusted person, contact your bank about payments, and reach a counselor or crisis line if you feel unable to cope.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Telling a fan their feelings are 'just parasocial' can shame them for ordinary attachment.",
     "Labeling every creator's warmth as engineered ignores the many who are simply sincere."
@@ -30322,8 +30319,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -30462,9 +30458,9 @@
    "why_this_matters": "The usual defenses, an unfamiliar voice, clumsy wording or an address that looks wrong, stop working when the approach sounds exactly like someone already known and trusted. People lose money, accounts and privacy while believing they were helping.",
    "what_it_is": [
     "Messages, calls or videos that imitate a relative, boss, bank, agency or friend using generated text, cloned voice or faked video.",
-    "Personalized with details gathered from public posts, past leaks or data brokers, so it sounds like it knows you.",
+    "Personalized enough that it can sound as if it knows you.",
     "Built around urgency and secrecy: a crisis, a deadline or a request not to tell anyone.",
-    "Sent in volume, so a small success rate still pays, and one attempt may be one of thousands.",
+    "Often sent to many people at once, so your message may be one of thousands.",
     "Different from a human scammer working a single target in how little effort each attempt needs."
    ],
    "what_it_sounds_like": [
@@ -30542,8 +30538,8 @@
     "workplace_or_professional": "At work, confirm any unusual payment or access request through a second, known channel, and report suspected impersonation to your security or IT team."
    },
    "boundary_script": "\"Before I do anything, I will contact this person myself using a number I already have. A real request will still be there in ten minutes, and nobody who cares about me will mind that I checked.\"",
-   "safety_note": "This can lead to serious financial loss, stolen accounts and fear for a relative's safety. If money or codes have been sent, call your bank right away, then report the incident and warn the person who was impersonated. If someone is truly in danger, contact them directly or call emergency services.",
-   "safety_sensitive": true,
+   "safety_note": "This is chiefly a financial and account risk, which grows if money or codes have been sent or a relative is said to be in danger. If money or codes have gone, call your bank right away, then report the incident and warn the person who was impersonated. If someone really might be in danger, contact them directly by a number you already hold, or call emergency services.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Telling relatives that all unexpected calls are AI scams can create fear and make people hang up on real emergencies.",
     "Blaming victims for being fooled adds shame and discourages them from reporting."
@@ -30561,8 +30557,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -31133,8 +31128,8 @@
     "workplace_or_professional": "If you work in advertising, lending or platform policy, review whether any targeting categories can single out people in crisis, and raise concerns through compliance or ethics channels."
    },
    "boundary_script": "\"This showed up right when I am at my lowest, and that timing is a reason to slow down. I will wait two days, read the full terms, and talk it over with someone I trust before doing anything.\"",
-   "safety_note": "Danger signs are an offer demanding money or account access quickly, secrecy from family, content that pushes toward self-harm, or a stranger who knows too much about you. Pause, do not send money, and speak to someone you trust. A consumer-protection agency, legal aid or a debt counselor can help with money. If anyone is thinking of self-harm, contact a crisis line or emergency services.",
-   "safety_sensitive": true,
+   "safety_note": "A targeted ad is pressure on judgment, not a threat, until it demands money or account access quickly, asks for secrecy from family, pushes toward self-harm, or comes from a stranger who knows too much about you. If so, pause and do not send money; a consumer-protection agency, legal aid or a debt counselor can help. If anyone is thinking of self-harm, contact a crisis line or emergency services.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Assuming every ad that fits your worries was aimed at you can make people feel watched and ashamed; much of it is coincidence or broad categories.",
     "Blaming people who fell for an offer adds shame to harm, and the tactic depends on that shame to keep victims quiet."
@@ -31152,8 +31147,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -31174,16 +31168,16 @@
    "what_it_is": [
     "A contact that begins by chance, such as a message to a wrong number or a friendly follow, and turns into daily conversation.",
     "A warm relationship, romantic or friendly, in which the other person seems to share your life and values.",
-    "A later introduction of an investment, trading or crypto platform, often presented as how they became successful.",
+    "Money entering the picture only later, through an investment or trading platform the new friend recommends.",
     "A site or app that shows impressive gains but makes withdrawals difficult or always one payment away.",
     "A scheme worked by organized groups, with many victims in the pipeline, and not a lone person improvising."
    ],
    "what_it_sounds_like": [
-    "A text from an unknown number says 'Sorry, wrong person', then a pleasant conversation follows.",
+    "A text from an unknown number that turns into a pleasant daily conversation.",
     "The new friend is always attractive, successful and busy, never able to meet or appear on live video.",
-    "After weeks of chat, they mention an easy way they made money and offer to show you.",
+    "After weeks of chat, they bring up making money and encourage you to take a look.",
     "The platform they direct you to is one you have to join through a link they send, not a store you know.",
-    "A small first withdrawal works, then larger deposits are urged, and a fee or tax is needed to take money out.",
+    "Withdrawals that become difficult, with new fees or taxes asked for before money can come out.",
     "Questions or doubts are met with hurt feelings, reassurance or urgency about a closing window."
    ],
    "what_it_is_not": [
@@ -31291,7 +31285,7 @@
    "plain_language_summary": "Someone keeps floating an outrageous idea, not to win it, but so that a less outrageous version starts to feel normal. You can only see the shift by looking back.",
    "why_this_matters": "What counts as an ordinary opinion shifts underneath people, so positions they would once have rejected outright arrive already sounding moderate. Because the move is gradual, no single step feels like the one to object to.",
    "what_it_is": [
-    "A repositioning of the middle: the loud extreme is a tool, and the milder position next to it is the real destination.",
+    "A gradual repositioning of what counts as the reasonable middle, often with a louder claim sitting beside a milder one.",
     "Visible mostly in aggregate and in hindsight, by comparing what could be said in public ten years ago with what can be said now.",
     "Direction-neutral. Any movement, party or interest can do it, toward any position, and the mechanism is the same.",
     "Often helped by outrage coverage: each repeat of the extreme claim, even in criticism, keeps it in circulation.",
@@ -31405,14 +31399,14 @@
    "forensic_only": false,
    "absorbs": [],
    "short_definition": "Shaping which facts, voices and choices the public sees so that agreement with a policy or decision feels freely reached but was steered.",
-   "expanded_definition": "Manufactured Consent describes agreement that looks like free choice but rests on a narrowed picture. The range of voices is kept small, some facts get little airtime, and the framing of the question limits which answers seem sensible. The phrase echoes the title of a 1988 book by Herman and Chomsky, 'Manufacturing Consent'. Editors must choose and every account frames, so the pattern shows only through analysis of coverage over time, never from one disliked story.",
+   "expanded_definition": "Manufactured Consent describes agreement that looks like free choice but rests on a narrowed picture. The range of voices is kept small, some facts get little airtime, and the framing of the question limits which answers seem sensible. The phrase goes back to Walter Lippmann (1922) and became the title of Herman and Chomsky's 1988 book, 'Manufacturing Consent', whose argument is debated. Editors must choose and every account frames, so the pattern shows only through analysis of coverage over time, never from one disliked story.",
    "plain_language_summary": "People agree with a decision believing they reached that view themselves, but the information and choices they were given were arranged beforehand to point one way.",
    "why_this_matters": "Agreement reached from a curated picture is still experienced as one's own conclusion, which leaves nothing obvious to object to. People may defend a position fiercely without realizing which options and facts were never put in front of them.",
    "what_it_is": [
-    "A narrowing of what the public sees: which experts are quoted, which questions get asked, and which options are treated as realistic.",
+    "A narrowing of what the public sees, as critics such as Herman and Chomsky have argued: which experts are quoted, which questions get asked, and which options are treated as realistic.",
     "Something that works on framing and omission more than on false statements, so a story can be accurate and still leave a distorted whole.",
     "Visible only through analysis over time, such as counting whose voices appear on a topic across many months of coverage.",
-    "Possible across the political spectrum and in any system where a few channels control what most people read, hear or see.",
+    "Argued to be possible across the political spectrum and in any system where a few channels control what most people read, hear or see.",
     "Different from persuasion, because the audience does not know a choice was shaped for it."
    ],
    "what_it_sounds_like": [
@@ -31435,7 +31429,7 @@
     "The options presented all lead to the same outcome.",
     "Facts that are easy to find in specialist sources barely appear in the places most people get their news.",
     "People who raise the missing option are treated as unserious rather than answered.",
-    "Surveys show people hold a view yet cannot name a single argument for the other side."
+    "When asked, people who hold a view cannot name a single argument for the other side."
    ],
    "this_may_not_be_it_when": [
     "The disagreement is with one headline or one outlet, and other outlets cover the topic differently.",
@@ -31652,9 +31646,9 @@
    ],
    "what_it_sounds_like": [
     "A story about one contested issue suddenly leading every feed just before a vote on something unrelated.",
-    "A question phrased so that any answer offends part of the audience: 'Whose side are you on?'",
+    "A loaded 'Whose side are you on?' question that leaves no comfortable answer.",
     "A leader asking supporters to 'defend' their identity against a threat that has no actual bill attached.",
-    "Posts that are written to provoke the strongest reaction from the other camp and are then reshared by that camp.",
+    "Posts that draw their biggest reactions from the other camp, who then reshare them.",
     "A coalition meeting that falls apart over a side topic that was not on the agenda.",
     "Offers of a practical compromise rejected because 'it would end the fight.'"
    ],
@@ -32011,8 +32005,8 @@
    "what_it_sounds_like": [
     "Most of your neighbors have already signed up.",
     "Everyone knows that view is finished.",
-    "Join the millions who have switched.",
-    "Nobody serious still thinks that.",
+    "An ad claiming that a large crowd has already switched.",
+    "A claim that nobody serious still holds a view.",
     "A letter comparing your energy use with 'similar households' nearby.",
     "A feed counter showing a huge number of people agree, with no way to see who.",
     "People like you are choosing this option.",
@@ -32126,7 +32120,7 @@
    "why_this_matters": "Retaliation, suspicion and public anger land on a group that did not do the thing, and the record that would correct it is the very thing that was arranged. The opposite harm exists too: calling real tragedies staged wounds the people who lived them.",
    "what_it_is": [
     "A deception about who is responsible for an event, not only about what happened.",
-    "The phrase comes from old naval ruses that involved flying another side's flag.",
+    "The phrase is usually traced to old naval ruses in which a ship flew another side's flag.",
     "Cases accepted as real have been established by archives, documents, testimony and investigation, usually long after the event.",
     "The idea can apply to a state, a group or a company, so scale does not define it.",
     "The claim 'it was a false flag' is itself widely used to explain events people dislike, so it needs strong evidence."
@@ -32370,7 +32364,7 @@
    "what_it_is": [
     "A relationship that is real in feeling for the person targeted but staged in purpose for the other side.",
     "Mostly discussed in connection with people who hold sensitive jobs, clearances, or access to information others want.",
-    "Often described as having two phases: closeness first, and only later a request, a favor, or a pressure point.",
+    "Often involves closeness that later turns into requests or pressure, rather than a single moment.",
     "A romance scam is a separate pattern: a stranger online builds affection to ask an ordinary person for money, with no access or secrets involved.",
     "Usually visible only in hindsight, once the pieces are laid side by side."
    ],
@@ -32379,7 +32373,7 @@
     "A sudden, intense romance that begins soon after you took on sensitive responsibilities.",
     "Someone who always seems to be at the same conference, hotel, or event as you, and finds the coincidence charming.",
     "A partner who is hard to verify: no mutual friends, vague employer, photos that never include other people.",
-    "A warm message followed weeks later by 'I have copies of what we shared, and I would hate for anyone to see them.'",
+    "A warm message followed weeks later by a veiled hint that private material could be shared.",
     "A partner who is gentle about your confidential work at first, and then starts to frame small favors as proof of love."
    ],
    "what_it_is_not": [
@@ -32583,7 +32577,7 @@
     "Strategic Leaking",
     "Cognitive Warfare"
    ],
-   "how_to_distinguish_from_related": "Honey Trapping works privately on one person through intimacy, while an agent of influence works publicly through an audience. MICE Framework Exploitation names the levers (money, ideology, compromise, ego) that may be used to bring such a person into an arrangement, whereas this entry describes the finished result. PSYOP Message Framing is about the shape of the message; an agent of influence is about who carries it and whether their independence is real.",
+   "how_to_distinguish_from_related": "Honey Trapping works privately on one person through intimacy, while an agent of influence works publicly through an audience. MICE Framework Exploitation names the levers (in one common version: money, ideology, coercion, sometimes called compromise, and ego) that may be used to bring such a person into an arrangement, whereas this entry describes the finished result. PSYOP Message Framing is about the shape of the message; an agent of influence is about who carries it and whether their independence is real.",
    "detection_notes": "Not matched or scored. Pasted personal text cannot establish an institutional- or societal-scale pattern — that requires independent, corroborated, documented evidence at a completely different scale.",
    "codex_maturity": "mature",
    "human_review_flags": [
@@ -32722,11 +32716,11 @@
    "forensic_only": false,
    "absorbs": [],
    "short_definition": "Being pulled into helping an outside party by pressure on one of four common motives: money, ideology, coercion or compromise, and ego.",
-   "expanded_definition": "MICE is a mnemonic from counterintelligence, usually given as Money, Ideology, Coercion (sometimes Compromise), and Ego. It sorts the reasons people have been drawn into betraying a trust. It is a way of describing cases afterward and of teaching people about risk, not a test that predicts who will do so. Everyone has money worries, beliefs, secrets and pride. Pressure on those is what matters, and that is something only visible in the circumstances, not in the person.",
+   "expanded_definition": "MICE is a mnemonic from counterintelligence, one common version being Money, Ideology, Coercion (sometimes Compromise), and Ego. It sorts the reasons people have been drawn into betraying a trust. It is a way of describing cases afterward and of teaching people about risk, not a test that predicts who will do so. Everyone has money worries, beliefs, secrets and pride. Pressure on those is what matters, and that is something only visible in the circumstances, not in the person.",
    "plain_language_summary": "Four ordinary human needs, money, belief, fear of exposure, and pride, can be leaned on by someone else. Knowing the list helps you notice when your own needs are being leaned on.",
    "why_this_matters": "What gets used is whatever a person most needs or most fears losing, so the approach can feel less like pressure and more like finally being understood. Because the levers are ordinary, people often feel shame and do not tell anyone, and that silence is what makes the situation worse.",
    "what_it_is": [
-    "A teaching mnemonic from counterintelligence: Money, Ideology, Coercion or Compromise, Ego.",
+    "A teaching mnemonic from counterintelligence, in one common version: Money, Ideology, Coercion (sometimes Compromise), Ego.",
     "Used mainly to explain, after the fact, why someone with access cooperated with an outside party, and to train people to notice risk.",
     "A description of motives, not a profile: all four are present in most lives.",
     "Typically combined and changing: one motive can open a door and another keep it open.",
@@ -32846,18 +32840,18 @@
    "plain_language_summary": "Some messages are built to make you feel that something is already decided, that resistance is pointless, or that a group is on your side or against you. Recognizing the angle helps you decide for yourself.",
    "why_this_matters": "Messages built around futility or inevitability leave people experiencing their own resignation as simple realism. When a frame feels like your own conclusion, you are less likely to question where it came from or whether other options exist.",
    "what_it_is": [
-    "A set of message angles used in military and political communication, such as legitimacy, inevitability, futility, group belonging, and authority.",
+    "A set of message angles used in military and political communication that tend to make resistance, doubt or leaving seem pointless or disloyal.",
     "Aimed at populations, not individuals, and measured by what groups do, not by whether they agree.",
     "Overlaps with advertising, public health campaigns and political persuasion, so the frame alone is not evidence of an operation.",
     "Often carried by repetition across many channels so it feels like background fact.",
     "Not the same as lying: many framed messages are true in every detail and persuasive for their emphasis."
    ],
    "what_it_sounds_like": [
-    "'The outcome is already decided; there is no point in resisting.'",
+    "Messages insisting that the outcome is already decided and resisting is pointless.",
     "'Everyone around you has already moved on. You are the last to see it.'",
     "'They are not like us, and they never will be.'",
     "'Only the authorities can be trusted; anything else is a rumor.'",
-    "'Your leaders have abandoned you, and no one is coming.'",
+    "A message telling a group that its leaders have abandoned it and that no help is coming.",
     "A flyer, broadcast, or message that arrives in the same wording from sources that claim to be unrelated."
    ],
    "what_it_is_not": [
@@ -33512,12 +33506,12 @@
    "possible_impact_on_receiver": "People describe losing touch with friends and family, feeling unable to judge whether the group's claims hold up, and shame about wanting outside contact. After a long time inside, some describe feeling lost in ordinary life, unsure how to rebuild relationships or what to trust.",
    "response_options": {
     "soft_clarification": "Ask a plain question in the group: 'Is it all right if I keep up with my sister?' How the question is received tells you a good deal.",
-    "firm_boundary": "State a small, specific limit and keep it: 'I'm going to keep reading what I like, and I'd rather not talk about it.'",
+    "firm_boundary": "Keep one outside contact steady and ordinary, such as a short weekly call with someone who knew you before, without announcing it. Decide any larger change privately, with a counselor who knows high-control groups.",
     "disengagement": "Take a walk, a nap or a quiet hour alone when pressure builds, and keep one steady contact outside the group informed of how you are.",
     "support_seeking": "Reach someone who knew you before, or a counselor who understands high-control groups, and say what daily life is like in your own words.",
     "workplace_or_professional": "If a workplace program or training limits contact and outside information, ask for the policy in writing and keep copies where the organization cannot see them."
    },
-   "boundary_script": "\"One afternoon a week is for my own friends and my own reading. It has nothing to do with how I feel about this group. It is just something I need.\"",
+   "boundary_script": "\"Is it all right if I keep up with my sister and my old friends? I'm glad to talk about what the group is doing. I just want to stay in touch with them as well.\"",
    "safety_note": "Warning signs include being watched, having your phone, money or documents held, being told what will happen to people who question, or fear of what follows contact with family. Decisions about leaving are best made privately, with an experienced advocate, a counselor who knows high-control groups, or a trusted person outside. If you are in immediate danger, contact emergency services.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -33560,7 +33554,7 @@
     "An event described as unplanned, such as a vision, a healing or a perfectly timed sign, that was in fact prepared ahead of time.",
     "The experience then used as proof that the leader is chosen, gifted or specially guided.",
     "Often built on real emotion, real hope and real need, which is why it can feel so convincing from inside.",
-    "Sometimes small, like a message that seems to know a member's private details, and sometimes large, like a gathering built around a promised miracle."
+    "Sometimes small, like a remark that feels uncannily personal, and sometimes large, like a gathering built around a promised miracle."
    ],
    "what_it_sounds_like": [
     "It was no accident that you came today. You were meant to be here.",
@@ -33568,7 +33562,7 @@
     "The message came to me last night, and it was about you.",
     "Only those who are truly open feel it, and tonight many of you did.",
     "People who left never felt it, which tells you something.",
-    "How else could I have known that about your mother?"
+    "A leader asking how else they could have known something so personal."
    ],
    "what_it_is_not": [
     "Religious and spiritual experience is real to those who have it, and this entry takes no view on any belief. Ritual, atmosphere and preparation are ordinary in worship. The line is between a prepared setting and an arranged event presented as spontaneous.",
@@ -33630,15 +33624,15 @@
    "psychological_mechanism": "A strong experience in a charged setting works as direct evidence for many people, who trust what they felt over what they were told. When it is credited to one person, that person gains a kind of authority argument cannot reach. Admitting it was arranged may seem like losing something real, which makes it harder to revisit.",
    "possible_impact_on_receiver": "People describe real awe at the time and later confusion or grief on learning an event was arranged, along with embarrassment at having believed. Some describe being unsure which of their own spiritual experiences were real. Others keep what mattered to them while letting go of the person who claimed credit.",
    "response_options": {
-    "soft_clarification": "Ask a curious, plain question: 'I'd love to understand how that came about. Was it planned in any way?'",
-    "firm_boundary": "Decline to treat a single experience as proof: 'I'm glad it moved people. I'm not going to decide anything big based on it.'",
+    "soft_clarification": "Ask a curious, plain question, and only if it feels safe: 'I'd love to understand how that came about.' Do not press for an answer.",
+    "firm_boundary": "If it feels safe, decline to treat a single experience as proof: 'I'm glad it moved people. I'd like time before deciding anything big.'",
     "disengagement": "Step back from gatherings built around dramatic moments for a while and notice how you feel with some distance.",
     "support_seeking": "Talk with a chaplain, counselor or former member who can discuss spiritual experience without insisting on one answer, and who respects whatever you still believe.",
     "workplace_or_professional": "If a workplace or training program uses staged breakthroughs or 'signs', ask for the curriculum and a participant contact, and speak to an ombuds or HR if the answers are evasive."
    },
    "boundary_script": "\"I'm glad that was meaningful to people. I don't want to make any big decisions off one night, so I'm going to take my time.\"",
    "safety_note": "An arranged sign is not a physical danger in itself. The picture changes when the authority it builds is used to demand money or obedience or to cut members off from family, or when members are told that doubting means harm will follow. If that happens, reach someone outside the group, such as a counselor experienced with high-control groups, a legal aid office or a trusted relative.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling someone's sincere spiritual experience staged because you do not share the belief is a dismissal, not a finding. This label is about arrangement kept secret, not about what is true.",
     "Assuming every ritual with theatrical elements is manipulation ignores that most are open about being prepared."
@@ -33656,7 +33650,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -33870,14 +33865,14 @@
    "possible_impact_on_receiver": "People describe silencing their own questions, fear of what doubt says about them, and difficulty weighing evidence after leaving. Some describe anger at having been told questions meant weakness, and relief at discovering ordinary inquiry is allowed. Others describe a long stretch of not trusting any source of authority.",
    "response_options": {
     "soft_clarification": "Ask a sincere question aloud: 'What would we expect to see if this teaching were wrong?'",
-    "firm_boundary": "Keep thinking for yourself and say so plainly: 'I'm going to look at how this holds up before I decide.'",
+    "firm_boundary": "If it feels safe, keep thinking for yourself and say so lightly: 'I'd like to look at how this holds up before I decide.'",
     "disengagement": "Take a break from study sessions and use the time to read widely, including sources the group dislikes.",
     "support_seeking": "Talk with someone outside who has no stake, such as a teacher, counselor or former member, and test your questions on them.",
     "workplace_or_professional": "If a company or program treats its method as beyond question, ask for the evidence in writing and keep a record of how the questions were answered."
    },
-   "boundary_script": "\"I believe in testing things, and I'm going to keep doing that with this too. If the teaching is sound, it should survive a few questions.\"",
+   "boundary_script": "\"I'm interested in learning more about this. Could you point me to where I can read about how it was tested? I want to look at it for myself.\"",
    "safety_note": "An unquestionable doctrine is not a physical danger by itself. It raises concern when questioning brings threats, shunning, loss of housing or income, or when the doctrine is used to deny medical care or to justify harm. If that happens, speak to a counselor who knows high-control groups, a legal aid office or a trusted relative before acting.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling any strong belief sacred science dismisses people for being sure of themselves. The test is whether questions can be asked and answered, not whether conviction runs deep.",
     "Using the label to mock someone's faith turns a description of a closed system into an insult."
@@ -33895,7 +33890,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -33989,14 +33985,14 @@
    "possible_impact_on_receiver": "People describe not trusting their own memory or feelings, silence about harm they experienced, and difficulty making decisions without checking with someone first. After leaving, some describe slowly relearning how to listen to themselves. Many describe a mix of anger and grief at the years their own experience was set aside.",
    "response_options": {
     "soft_clarification": "State what you saw and ask if it can count: 'This is what happened for me. Can we treat that as real and talk about it?'",
-    "firm_boundary": "Hold your own account without arguing it: 'That is my experience, and I'm not going to call it wrong.'",
+    "firm_boundary": "If it feels safe, hold your own account without arguing it: 'That is what I experienced.' If answering would cost you standing or safety, write it down privately instead.",
     "disengagement": "Pause a conversation that is turning into a verdict on you and write your account down privately for yourself.",
     "support_seeking": "Share what happened with someone who knew you before the group and ask how it sounds to them, or with a counselor who understands high-control groups.",
     "workplace_or_professional": "If a program or workplace treats complaints as personal flaws, put your account in writing with dates and take it to HR, an ombuds or an outside regulator."
    },
    "boundary_script": "\"I know what I experienced, and it matters to me. I'd like us to start from that, even if it does not fit the teaching.\"",
    "safety_note": "Being told your experience is wrong is not by itself a physical danger. It becomes serious when the pattern is used to hide abuse or to deny medical care, or when reporting harm brings retaliation. In that case put your account in writing, reach an outside advocate, a doctor, legal aid or a trusted person, and call emergency services if you are in danger.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Calling every disagreement with your experience this pattern can shut down honest correction. It fits when experience is never allowed to count, not when it is questioned once.",
     "Using the label against a friend who offers a different view of an event can turn a conversation into a verdict."
@@ -34014,7 +34010,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -34107,7 +34104,7 @@
    "possible_impact_on_receiver": "People who have been inside describe guilt over what they once said or did to others, grief for family who now treat them as gone, and a nagging fear that they are worthless outside the group. Some find it hard to trust their own sense of right and wrong afterward. Members still inside may describe a constant effort to stay on the right side of the line.",
    "response_options": {
     "soft_clarification": "Ask a plain question about one specific person: 'What did he actually do, and is he still a person we owe kindness?' Keep it curious and brief.",
-    "firm_boundary": "Decline to join the name-calling: 'I'm not going to talk about anyone that way.' You do not need to argue the doctrine to refuse to repeat contempt.",
+    "firm_boundary": "If it feels safe, decline to join the name-calling: 'I'd rather not talk about anyone that way.' You do not need to argue the doctrine. If refusing would cost you standing or safety, simply stay quiet.",
     "disengagement": "Change the subject or step out of the room when someone is being written off. Keep your private views private until you have support around you.",
     "support_seeking": "Talk with a counselor experienced in high-control groups or a former-member support organization. Decisions about your place in the group are best made privately with them, never announced.",
     "workplace_or_professional": "If this is in a workplace, school or care setting, keep dated notes of people being demeaned for their beliefs or membership and take them to HR, a licensed professional or counsel."
@@ -34227,14 +34224,14 @@
    "possible_impact_on_receiver": "Afterward, a confusing mix of guilt and anger is common: they remember saying yes, but also that no other answer felt available. Some find it hard to trust their own decisions or to say whether they ever wanted something. Others report relief when someone names the narrowing.",
    "response_options": {
     "soft_clarification": "Ask what each option would cost: 'If I decided otherwise, what would happen to my place here?' The answer shows how open the choice really is.",
-    "firm_boundary": "Ask for time and outside input before deciding: 'I'd like a week to think, and to talk with my sister first.' A real choice can wait.",
+    "firm_boundary": "If it feels safe, ask for time and outside input before deciding: 'I'd like a week to think, and to talk with my sister first.' A real choice can wait.",
     "disengagement": "Postpone big decisions that are presented as now-or-never, and note who benefits from the speed.",
     "support_seeking": "Talk to someone outside the group, such as a former member, therapist or counselor who knows high-control environments, and lay out the options as you see them.",
     "workplace_or_professional": "In a workplace or program that frames costly terms as voluntary, ask for the terms in writing and consult a lawyer or union representative before signing or committing."
    },
    "boundary_script": "Before I accept that I chose this freely, I ask myself: \"Could I say no and keep my home, my friends and my standing? Who told me the other options are not real, and have I heard it from anyone outside?\"",
    "safety_note": "Bounded choice alone is a pattern of pressure, not necessarily danger. It becomes safety-relevant when the narrowed options involve housing, money, immigration status, medical care or children, or when anyone is threatened for taking another path. Then consult a lawyer or legal aid, or a cult-recovery advocate, before acting, and plan any big change privately.",
-   "safety_sensitive": false,
+   "safety_sensitive": true,
    "misuse_warning": [
     "Cost, family duty and a demanding career are ordinary constraints. Treating each of them as coercion erases the real decisions behind a person's life.",
     "Telling someone they never really chose their life can take away their agency. The label is for understanding pressure, not for overriding what a person says they wanted."
@@ -34252,7 +34249,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic"
+    "overlaps_with_related_tactic",
+    "safety_sensitive"
    ]
   },
   {
@@ -34345,7 +34343,7 @@
    "possible_impact_on_receiver": "People describe an intense need for the leader's approval, dread at their displeasure, and difficulty making even small decisions alone. After leaving, many describe grief like a bereavement, along with shame about having believed. Some feel lost about what they value without the leader's voice.",
    "response_options": {
     "soft_clarification": "Ask how a question would be received: 'Is it okay if I talk this over with my sister too?' Notice whether the reply is warm or tense.",
-    "firm_boundary": "Keep one decision for your own judgment, such as a medical, money or family matter: 'I've decided to handle that one myself.'",
+    "firm_boundary": "If it feels safe, keep one decision for your own judgment, such as a medical, money or family matter, and say only 'I'll think about that.' You do not need to announce what you decided.",
     "disengagement": "Spend more time with people outside the leader's orbit, and let that grow slowly. Avoid dramatic statements about your doubts or plans.",
     "support_seeking": "Talk to a therapist, former member or cult-recovery counselor who knows high-control groups, and bring one specific example.",
     "workplace_or_professional": "In a workplace or training program built around a single boss or guru, keep outside mentors, write down instructions you are given, and bring concerns about pressure to HR or an ombuds."
@@ -34710,8 +34708,8 @@
     "workplace_or_professional": "If your workplace has an ombuds office, a union, or an outside reporting line, learn how each works and what it protects before using one. An employment attorney can explain your options."
    },
    "boundary_script": "\"Can you walk me through how concerns get handled here? Who reviews them, and how would I hear what came of mine?\"",
-   "safety_note": "The danger signal is retaliation after speaking: lost hours, a sudden bad review, a changed role, or hints that your job is at risk. Treat these as worth documenting with dates, outside the employer's systems. Before any formal step, talk with an employment attorney, a union representative, or a legal aid clinic, since protections differ by place. If a concern involves immediate danger to people, contact emergency services.",
-   "safety_sensitive": true,
+   "safety_note": "A culture of silence is mainly a risk to careers and to problems left unreported. Concern rises when retaliation follows speaking up: lost hours, a sudden bad review, a changed role, or hints that your job is at risk. Document those with dates, outside the employer's systems, and talk with an employment attorney, union representative or legal aid clinic before any formal step. If a concern involves immediate danger to people, contact emergency services.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling a quiet or reserved workplace silenced can ignore people's real reasons for holding back. The label needs evidence of what happened to those who spoke.",
     "Using it to describe any manager who disagreed with you may turn an ordinary conflict into an accusation about the whole organization."
@@ -34727,8 +34725,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -34829,8 +34826,8 @@
     "workplace_or_professional": "Ask whether there is a formal way to dispute a rating or plan, and consider talking with an employment attorney or legal aid before signing anything that you do not understand."
    },
    "boundary_script": "\"Before I sign, please send me the written criteria for this rating and the earlier feedback it relies on. My own response should go in the file as well.\"",
-   "safety_note": "The risk here is to income and standing: a rating or plan that sets up a dismissal, or pressure to resign or sign a release. Keep copies of your results, feedback and reviews outside work systems, with dates. Before signing any plan, agreement or resignation, ask for time and talk with an employment attorney, a union representative, or a legal aid service, since rights vary by place.",
-   "safety_sensitive": true,
+   "safety_note": "This mostly puts income and standing at stake, not physical safety. It becomes more serious when a rating or plan appears to set up a dismissal, or when you are pressed to resign or sign a release. Keep copies of your results, feedback and reviews outside work systems, with dates, and ask for time and advice from an employment attorney, union representative or legal aid service before signing, since rights vary by place.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Reading every poor review as manipulation can keep a person from hearing accurate feedback. The label needs evidence that the measures track deference more than work.",
     "Using it to describe any rubric you dislike turns a design flaw into an accusation."
@@ -34846,8 +34843,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -34948,8 +34944,8 @@
     "workplace_or_professional": "A union, a worker center or an employment attorney can explain what rights to information and review may apply where you work, and how to raise a dispute."
    },
    "boundary_script": "\"Which data and rules led to this decision, and who can review it? Could you send me that, along with a way to submit corrections, in writing?\"",
-   "safety_note": "The danger is to income and work: deactivation, cut hours or pay, sometimes with no warning or person to appeal to. Keep your own records of hours, pay and messages, outside the company's systems. Pace pressure can also lead to injury or exhaustion, so protect breaks and safety. A union, worker center or employment attorney can advise on your rights. If you are hurt or unsafe, get medical or emergency help first.",
-   "safety_sensitive": true,
+   "safety_note": "The main exposure is to income and work: deactivation, cut hours or pay, sometimes with no warning or person to appeal to. Concern rises when the pace starts to cause injury or exhaustion, so protect your breaks. Keep your own records of hours, pay and messages outside the company's systems. A union, worker center or employment attorney can advise on rights. If you are hurt, get medical help first.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling any software tool at work algorithmic management can overlook systems that help workers and that a person reviews. The concern is hidden criteria and no route to a human.",
     "Blaming an algorithm can also let managers off the hook when they chose the rules; the label should not hide who set them up."
@@ -34965,8 +34961,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "manipulation_playbook_risk",
-    "overlaps_with_related_tactic",
-    "safety_sensitive"
+    "overlaps_with_related_tactic"
    ]
   },
   {
@@ -36383,8 +36378,8 @@
     "workplace_or_professional": "At work, ask for any consequence or expectation in writing from HR or a supervisor, so fears can be checked against real policy and not hints."
    },
    "boundary_script": "\"This matters to you, and I take that seriously. I'm not able to give you an answer in this conversation. Give me a day, and I'll come back to you.\"",
-   "safety_note": "Watch whether the fear strand points at something concrete and serious: your housing, your income, access to your children, your immigration status or your physical safety. If it does, do not test it. Talk to a domestic violence or legal-aid advocate about a plan first; many can be reached by phone or chat without the other person knowing.",
-   "safety_sensitive": true,
+   "safety_note": "The mix of fear, obligation and guilt is mostly an emotional squeeze. Concern rises when the fear strand points at something concrete and serious: housing, income, access to your children, immigration status or your physical safety. In that case do not test it; talk to a domestic violence or legal-aid advocate about a plan first. Many can be reached by phone or chat without the other person knowing.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Naming FOG for any family request that carries some worry, duty and guilt can turn ordinary closeness into a verdict on the relationship.",
     "Calling someone's honest fear 'pressure' can dismiss people who are truly frightened for you."
@@ -36402,8 +36397,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -36497,14 +36491,14 @@
    "possible_impact_on_receiver": "The image of eggshells comes up often. You may cancel your own plans, hide good news or stay quiet when you disagree. Many feel responsible for moods that are not theirs to carry, and tired from constantly forecasting how a small decision will land.",
    "response_options": {
     "soft_clarification": "Acknowledge the feeling without taking on the job: 'I can see you're disappointed. I still can't come, and I hope tonight goes okay.'",
-    "firm_boundary": "Separate the feeling from the decision: 'Your being upset matters to me, and it doesn't change my answer.'",
+    "firm_boundary": "Separate the feeling from the decision, gently: 'Your being upset matters to me, and I still need to decide this one myself.' If talk of self-harm comes up, stay with them and call a crisis line or emergency services together.",
     "disengagement": "If the mood turns into silence, let it run without chasing it, do something steadying for yourself, and talk about the request later at a calmer time.",
     "support_seeking": "Describe the loop to a friend or therapist: your answer, their mood, your next decision. Others can often tell you how much of it belongs to you.",
     "workplace_or_professional": "At work, if a colleague's visible mood steers decisions, ask for decisions to be made against criteria agreed in advance, and raise it with your manager if it continues."
    },
-   "boundary_script": "\"I can tell this is hard for you, and I'm sorry you're disappointed. I've thought about it and my answer is still no. Maybe we can think together about who else you could lean on tonight.\"",
-   "safety_note": "This stays an everyday pattern until the distress includes talk of harming themselves, or is used to keep you from leaving the house, seeing people or going to work. If you hear words about not wanting to live, take them seriously and contact a crisis line or emergency services for them, then speak to a counselor yourself about how much you can carry.",
-   "safety_sensitive": false,
+   "boundary_script": "\"I can tell this is hard for you, and I'm sorry you're disappointed. I've thought about it and my answer stays as it is for now. Maybe we can think together about who else you could lean on tonight.\"",
+   "safety_note": "Watch for talk of harming themselves, or distress used to keep you from leaving the house, seeing people or going to work. If you hear words about not wanting to live, take them seriously and contact a crisis line or emergency services for them if the risk feels immediate, then speak to a counselor yourself about how much you can carry. An advocate can help if the distress is used to control your movements.",
+   "safety_sensitive": true,
    "misuse_warning": [
     "Sadness after a refusal is human. Labeling every low mood as hostage-taking can punish people who are truly struggling.",
     "The label does not suit someone with depression, grief or illness whose state is not linked to your answers."
@@ -36522,7 +36516,8 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations"
+    "reference_only_limitations",
+    "safety_sensitive"
    ]
   },
   {
@@ -36865,8 +36860,8 @@
     "workplace_or_professional": "At work, thank a colleague or boss for favors, and keep any request to do something in return in writing, so that what was agreed is on record."
    },
    "boundary_script": "\"Your help with that was kind. I want to keep it separate from this decision, and my answer to this is no. If it's the cost that matters to you, tell me the amount and I'll pay it back.\"",
-   "safety_note": "Watch for a debt that touches where you live, your income or your immigration status, because then refusing puts a roof or a livelihood at risk. If what you owe is tied to housing, work or legal status, speak to legal aid or a tenants' or migrant advocate before agreeing to anything or paying anything back.",
-   "safety_sensitive": true,
+   "safety_note": "A favor with strings is pressure on your choice, not a danger by itself. It changes if the debt touches where you live, your income or your immigration status, because then refusing puts a roof or livelihood at risk. If what you owe is tied to housing, work or legal status, speak to legal aid or a tenants' or migrant advocate before agreeing to or repaying anything.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Treating every kind act as a hidden trap can make you refuse honest help, and punish people for generosity. The tell is what is demanded later, not the gift.",
     "Accusing a giver on the strength of one awkward ask can wound someone who simply hoped to be helped in return."
@@ -36884,8 +36879,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -36986,8 +36980,8 @@
     "workplace_or_professional": "If a professional decision such as a transfer or job offer is being pressured by family, ask a mentor or career adviser to help you weigh it outside the family conversation."
    },
    "boundary_script": "\"I know what this family gave up, and I am grateful for it. Being grateful is not the same as owing this decision. Let me tell you what I'm thinking, and please hear me out.\"",
-   "safety_note": "Watch whether pressure moves from words to control: your documents held, money taken, contact limited, a marriage or a move arranged without your agreement, or talk of what will happen to you or your family if you refuse. If it does, do not argue it out alone. Reach a domestic violence or forced-marriage helpline, or an advocate familiar with your community, and plan privately before any conversation about it.",
-   "safety_sensitive": true,
+   "safety_note": "Family guilt over sacrifices is painful but is not by itself a danger. Concern rises when pressure moves from words to control: documents held, money taken, contact limited, a marriage or a move arranged without your agreement, or talk of what will happen if you refuse. If so, do not argue it out alone; reach a domestic violence or forced-marriage helpline, or an advocate familiar with your community, and plan privately.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Family duty is a real value in many cultures. Calling a loving, ordinary expectation 'guilt legacy' can dismiss a culture you may need to understand.",
     "The label describes how a debt is used, so it should not be applied to a parent simply because they mention their past."
@@ -37005,8 +36999,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -37715,12 +37708,12 @@
    "possible_impact_on_receiver": "Many are oddly unsure what is happening in their own finances, health or family, lean on one voice for facts, and feel guilty for wanting to look something up. Some find later that what they were told was incomplete, and grieve the lost time. Others feel foggy or isolated even when surrounded by people.",
    "response_options": {
     "soft_clarification": "Ask for the information itself, calmly: 'Can you forward me that letter so I can read it too?' Their answer shows whether sharing is possible.",
-    "firm_boundary": "State a plain need once: 'I want to see my own statements and open my own mail.' You can repeat the same sentence without justifying it each time.",
+    "firm_boundary": "If past reactions suggest it is safe, state a plain need once: 'I'd like to read the letter myself.' If not, skip it; an advocate can help you reach your statements and mail another way.",
     "disengagement": "Stop explaining where you got a piece of information. You can read, call or ask someone in your own time and keep what you learn to yourself until you know what to do with it.",
     "support_seeking": "Check one or two facts you were given with an outside source you trust, like your own doctor, a bank, a library or a friend who knew you before, and compare.",
     "workplace_or_professional": "In an organization, ask for the policy or notice in writing, and ask who else has seen it. Written records give you something to check against if information is withheld."
    },
-   "boundary_script": "\"Could you send me a copy so I can read it myself? After that, I want to hear what you think of it.\"",
+   "boundary_script": "\"Could you send me a copy so I can read it myself? After that, I want to hear what you think of it.\" Skip this if asking has gone badly before.",
    "safety_note": "Control over information turns serious when it covers your phone, mail, identity documents, medical care or money, or when asking for them brings anger or threats. Keep a list of key numbers and copies of key documents somewhere only you can reach, such as a trusted friend's home, and ask a domestic abuse advocate about safe ways to rebuild your own access.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -37841,7 +37834,7 @@
     "support_seeking": "Use someone else's phone or a library computer to talk to a friend, helpline or advocate about the demands, in case your own device is being read.",
     "workplace_or_professional": "If an employer asks about a personal phone, ask which written policy requires it, and check with HR or a union before handing over anything beyond work accounts."
    },
-   "boundary_script": "\"I can tell you're worried, and I want to talk about that. I'd rather tell you things than have my phone checked. What would help you feel more settled right now?\"",
+   "boundary_script": "\"I can tell you're worried, and I want to talk about that. What would help you feel more settled right now? I'd rather tell you things than have my phone checked.\" Try it only if a calm reaction is likely, and otherwise speak with an advocate first.",
    "safety_note": "Access demands can sit alongside stalking, or threats about what will be done with whatever is found. Warning signs: the other person knows things you never told them, apps you did not install, or fear of what happens if you change a passcode. Contact a domestic abuse advocate from a device they cannot reach, and ask how to check your phone safely for tracking software.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -38085,8 +38078,8 @@
     "workplace_or_professional": "At work or with clients, restate the limit in writing, such as 'Please contact me during office hours only', and keep dated copies of the crossings for your manager or HR."
    },
    "boundary_script": "\"I said no calls after nine, and this one came at ten. I'd like us to keep to that, and I'm happy to talk about what was so urgent.\"",
-   "safety_note": "Testing becomes a safety matter when the steps move toward your body, your home, your location or your belongings, or when saying no to a small step brings anger. Trust the discomfort you notice early. If the crossings include touch you did not agree to, following you, or turning up uninvited at home, keep a dated record and contact an advocate or the police non-emergency line.",
-   "safety_sensitive": true,
+   "safety_note": "Testing is usually a matter of pace and respect. It deserves more concern when the steps move toward your body, home, location or belongings, or when saying no to a small step brings anger. Trust the discomfort you notice early. If crossings include touch you did not agree to, following you, or turning up uninvited at home, keep a dated record and contact an advocate or the police non-emergency line.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Reading every awkward misstep as testing can punish people who simply didn't know the limit. The label needs a limit that was clear and a crossing that repeated.",
     "Telling someone they are 'testing' you in the middle of a disagreement can end the chance for them to just say sorry and adjust."
@@ -38104,8 +38097,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -38322,13 +38314,13 @@
    "psychological_mechanism": "Once a belief forms that an effort cannot succeed, trying often stops, even if the belief was never tested. A display of reach can plant that belief. Because it is hard to tell how much of the reach is real, uncertainty can do the work, and a person may begin to police their own choices before anyone has said a word.",
    "possible_impact_on_receiver": "A constant background sense of being observed is common, along with lowering the voice, deleting messages, and a shrinking list of things attempted. Some cannot say exactly what happened, because each incident on its own looked small or friendly. Some feel relief at an explanation, then guilt about having been suspicious.",
    "response_options": {
-    "soft_clarification": "Ask a plain question about one instance: 'How did you know I was at my sister's on Saturday?' Then listen to whether the answer is a source or a deflection.",
-    "firm_boundary": "Ask for privacy over your plans in calm, plain words, without arguing about what they can do: 'I'd like to be the one who decides when my plans get shared.'",
+    "soft_clarification": "Share less about plans in the moment and, if it feels safe, answer lightly with 'I haven't decided yet.' Do not ask how they knew; an advocate can help you check devices and accounts.",
+    "firm_boundary": "If it feels safe, ask for privacy over your plans in calm, plain words, without arguing about what they can do: 'I'd like to be the one who decides when my plans get shared.'",
     "disengagement": "When a display comes up, keep your response short and ordinary instead of showing alarm or awe, and change the subject. If it has felt unsafe, tell a trusted person before you do anything else.",
     "support_seeking": "Write down each incident with the date and what was said, then show the list to a friend, counselor or advocate who can judge the pattern from outside.",
     "workplace_or_professional": "If a colleague or supervisor shows knowledge of your private life or hints at influence over your position, note dates and words and raise it with HR or a union representative in writing."
    },
-   "boundary_script": "\"Yesterday you knew where I'd been, and I hadn't mentioned it to you. It unsettled me a little. Can you tell me how you knew?\"",
+   "boundary_script": "\"I want to be the one who decides when my plans get shared. I'm happy to tell you what I'm up to, but I'd rather not go back over how anything was found out.\" Skip it if you expect anger, and bring the pattern to an advocate instead.",
    "safety_note": "Take it seriously if the displays involve knowing where you are with no explanation, appearing at places you chose to be alone, or references to your children, home or work. Before you raise it or change any settings, check your phone and accounts for tracking with help from a domestic abuse advocate or a technology safety service, since a sudden loss of access can be noticed.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -38444,12 +38436,12 @@
    "possible_impact_on_receiver": "Feeling incapable in areas that were once easy is a frequent account, along with dread of small errands and worry about surviving alone. Some say it was only on leaving the situation, or on talking to an advisor, that they saw how many ordinary tasks had been taken from them. Shame about not knowing is common.",
    "response_options": {
     "soft_clarification": "Ask to be shown something specific: 'I would like to learn how the bills are set up. Could you sit with me one evening and go through it?'",
-    "firm_boundary": "Make a plain request about your own things: 'I'd like a copy of my passport to keep with my own papers.' If asking has gone badly before, skip this step and talk to an advocate first.",
+    "firm_boundary": "Talk first with a legal aid service or an advocate about getting copies of your own ID and papers safely. Asking the other person directly can wait until that plan exists, and you do not have to ask at all.",
     "disengagement": "Quietly build a skill elsewhere, such as an adult education class, a library workshop or a friend who will teach you, without needing agreement.",
     "support_seeking": "Ask a trusted friend, a financial counselor or a domestic abuse advocate to help you list which tasks and accounts you cannot reach by yourself.",
     "workplace_or_professional": "At work, if training, systems access or credentials are being held back, ask in writing for the specific training and keep a record of the reply for HR or your union."
    },
-   "boundary_script": "\"Could I have my own login for our bank account and a copy of my documents? It's nothing you did. I'd just like to be able to manage on the days you're away.\"",
+   "boundary_script": "\"Could you show me how the bills and accounts are set up, one evening this week? I want to be able to manage on the days you're away.\" If asking has gone badly before, leave it and talk to an advocate first.",
    "safety_note": "Pay particular attention if your documents, phone, money or immigration papers are held by the other person, or if asking for them back leads to anger or threats. Get independent advice from a domestic abuse advocate or legal aid service before you ask. Planning how to get copies of your papers and a bank account of your own is often better done quietly, with help.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -38564,7 +38556,7 @@
    "psychological_mechanism": "People weigh loss more heavily than equivalent gain, and a comfortable life is something to lose. When keeping it depends on compliance, each disagreement may be weighed against what it could cost, and staying silent can come to feel like the sensible choice. Envy from outsiders can add a sense that the unease must be your own fault.",
    "possible_impact_on_receiver": "Feeling trapped and ashamed together is often described, with no one to complain to, because friends would love such a life. Some are unsure whether the unhappiness is justified. Some say they stopped asking for what they wanted, or lost track of their own preferences. Gratitude and resentment can sit in the same person.",
    "response_options": {
-    "soft_clarification": "Ask whether the comfort is a gift or a condition: 'When I disagree, you bring up what I have. Does that mean it depends on my agreeing?'",
+    "soft_clarification": "Put the question to a counselor or friend rather than to the partner: when you disagree, do the benefits get mentioned, and does it feel like a condition?",
     "firm_boundary": "Keep the two subjects separate: 'I am thankful for what you provide. I am also allowed to have a view that differs from yours.'",
     "disengagement": "When the list of benefits comes out, you can let it sit and say you will talk when the conversation is about the actual issue.",
     "support_seeking": "Talk to a financial adviser, a legal clinic or a friend outside the arrangement about what you would hold, and what would stay in your name, if circumstances changed.",
@@ -39056,12 +39048,12 @@
    "possible_impact_on_receiver": "People describe a draining kind of hope: believing each apology, then watching the same thing return. Some blame themselves for giving another chance, and some feel their anger is unreasonable because they have been apologized to. Over time, trust in the words themselves can wear thin, including words that are meant.",
    "response_options": {
     "soft_clarification": "Ask what the apology comes with: 'Thank you for saying sorry. What will you do differently next time, and how will I know?'",
-    "firm_boundary": "Say that words are no longer enough on this issue: 'I appreciate the apology. For me to move on, I need to see something change, and I'll wait to see it.'",
+    "firm_boundary": "Say that words alone are no longer enough on this issue: 'I appreciate the apology. Could we write down what will be different?'",
     "disengagement": "Stop giving a quick 'it's fine' to end the discomfort. You can say 'I heard you' and leave it unresolved while behavior makes the case.",
     "support_seeking": "Keep a short dated list of the repeats and the apologies and show it to someone you trust. A pattern can be easier to see on paper than in the moment.",
     "workplace_or_professional": "Ask for the apology to come with a written next step and a review date, such as an agreement on how this will be handled next time."
    },
-   "boundary_script": "\"Your apology is real to me, and so is the pattern. This has happened a few times now, so what I need isn't another apology. I need to see what's different next time. Can we agree on what that will be?\"",
+   "boundary_script": "\"Your apology is real to me, and so is the pattern. This has happened a few times now, so what I need isn't another apology. Can we agree on what will be different next time?\"",
    "safety_note": "An apology followed by repetition can be part of a cycle in controlling or violent relationships, where remorse after an incident is followed by a calm period and then another incident. If the harm involves threats, hitting, destroyed property, control of money, or fear of how they will react, contact a domestic violence advocate, who can help you plan for safety without requiring you to leave. In immediate danger, call emergency services.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -39298,13 +39290,13 @@
    "psychological_mechanism": "When every action comes with a reasonable explanation, the listener tends to judge each incident alone, and each looks too small to object to. Objecting then carries a social cost, since it can make the objector seem suspicious or ungrateful. Doubt can turn inward, with the person wondering whether their reaction is the problem rather than the pattern.",
    "possible_impact_on_receiver": "People describe a creeping doubt about whether they are being unreasonable, a habit of saving up incidents that each feel too small, and difficulty explaining to others why they are troubled. Some feel isolated by how reasonable everything sounds. Others describe relief when they put the incidents on paper and see the shape for the first time.",
    "response_options": {
-    "soft_clarification": "Describe the effect and leave the reason alone: 'I know you were worried. What happens is that I no longer see my own messages. Can we find another way?'",
-    "firm_boundary": "Stop arguing over intent: 'Whatever the reason, this is what it is doing to me, and I need it to stop.'",
+    "soft_clarification": "Describe the effect and leave the reason alone, but only if it feels safe: 'I know you were worried. Could we look at how messages are handled, with someone else there?'",
+    "firm_boundary": "Skip arguing over intent. Keep a private, dated list of what has changed in your messages, accounts and contacts, and take it to an advocate before saying anything to the other person about it.",
     "disengagement": "Stop accepting each explanation as a final answer. You can say 'I hear the reason' and still keep your own copies of documents, accounts and contacts.",
     "support_seeking": "Write the incidents down with dates and take the list to someone outside the situation. Ask whether the direction looks as clear to them as it does on paper.",
     "workplace_or_professional": "Ask for the policy in writing and ask whether it is applied the same way to others. If the answers do not hold, take your dated list to HR or an ombuds."
    },
-   "boundary_script": "\"I believe you may have good reasons each time, and I'm not asking you to prove them. What I'm telling you is that, taken together, these things leave me with less say over my own days. I need that to change.\"",
+   "boundary_script": "\"I believe you may have good reasons each time, and I'm not asking you to prove them. Could we think about how messages and accounts are handled, with a third person there? I would feel better that way.\" Offer it only when you judge it safe; if not, take the list to an advocate first.",
    "safety_note": "Concern and rules are a common explanation for controlling behavior such as reading your messages, tracking your location, holding your documents, or limiting your contact with friends and money. If the explanations lead to you losing access to those things, or you fear the response to questions, take your dated list to a domestic abuse advocate or, at work, an employment lawyer. Keep copies of key documents somewhere safe outside the situation.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -39541,7 +39533,7 @@
    "possible_impact_on_receiver": "Accounts often mention guilt at having 'made them cry', hesitation to bring anything up again, and anger or confusion at being cast as the aggressor. Some recall ending up the soother, others the one whose version nobody asked for. Over time a few pull back from friends or family who only heard one side.",
    "response_options": {
     "soft_clarification": "Acknowledge the pain and keep your point: 'I can see this is really hard for you. I still need to finish telling you what happened to me.'",
-    "firm_boundary": "Decline the comforting role for now: 'I care that you're hurting, but I can't look after you in this conversation. I need us to talk about what happened.'",
+    "firm_boundary": "Decline the comforting role gently, for now: 'I do care that you're hurting. Can we first go through what happened, and then I'll listen?'",
     "disengagement": "If the tears or accusations take over, ask for a pause: 'Let's stop for today and come back to this tomorrow, when we've both slept.'",
     "support_seeking": "Tell your account to someone before the other version spreads, and ask them to hear the whole thing before saying anything about the other person.",
     "workplace_or_professional": "At work, write down what happened with dates before meeting a manager or HR, and ask for a process that lets both accounts be recorded separately."
@@ -40501,7 +40493,7 @@
     "support_seeking": "Tell one person outside the home exactly what happens, in order, and agree a code word that means you want them to call or come over. A domestic violence advocate can talk through options in confidence.",
     "workplace_or_professional": "At work, write down dates, words and who was present, and take it to HR or a manager above them, describing the effect on the work rather than the person's character."
    },
-   "boundary_script": "\"Once voices are raised I can't do this well, though I do want to talk about it. Could we take twenty minutes and then pick it up again?\"",
+   "boundary_script": "\"Once voices are raised I can't do this well, though I do want to talk about it. Could we take twenty minutes and then pick it up again?\" Skip it if the temperature is already rising.",
    "safety_note": "Anger that makes you afraid is a safety question, not only a communication one. Warning signs include thrown or broken objects, blocked doorways, grabbing, threats, being followed from room to room, and damage to your belongings. If you see them, keep a phone charged and papers where you can reach them, and call a domestic violence hotline or advocate to plan privately. If a rage turns physical, or you fear it will within minutes, leave if you can and call emergency services from wherever you are safe.",
    "safety_sensitive": true,
    "misuse_warning": [
@@ -40871,7 +40863,7 @@
    },
    "boundary_script": "\"I want this to go well, so I'm saying now that I can't finish it by Friday without the sales figures. Could we agree what counts as done, in writing, and when I can have the figures?\"",
    "safety_note": "This is rarely a physical danger, but the record of misses can feed probation, dismissal, or job decisions that affect an immigration status or housing tied to the post. Keep the written brief, your flags and the outcome together, and ask a union representative, employment lawyer or legal aid service for advice before attending a disciplinary meeting alone.",
-   "safety_sensitive": true,
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling every hard assignment a set-up can stop you learning from a failure that was partly yours. Ask whether the conditions were the same for others.",
     "Treating a manager's vague wording as proof of a plan against you ignores that vagueness is often just an unfinished idea. Ask for specifics in writing first."
@@ -40889,8 +40881,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -40991,8 +40982,8 @@
     "workplace_or_professional": "Ask in writing for the findings and a chance to respond. Gather the instructions, approvals and emails showing who decided what, and bring them to HR, a union or an employment lawyer."
    },
    "boundary_script": "\"I'm willing to answer for the part that was mine. I'd like the decisions made above and alongside me to be looked at in the same review, and I'd like to see the findings before they are shared.\"",
-   "safety_note": "Scapegoating becomes a safety matter when blame is attached to dismissal, loss of housing, exile from a group, harassment or threats, or when the group is one you cannot easily step away from, such as a family or a faith community. Keep copies of your own account and any messages, and see an employment lawyer, tenants' service or advocate before agreeing to any statement or exit terms.",
-   "safety_sensitive": true,
+   "safety_note": "Scapegoating is mostly a fairness and standing problem. It deserves more care when blame is tied to dismissal, loss of housing, exile from a group you cannot easily step away from (a family or a faith community), harassment or threats. Keep copies of your own account and any messages, and see an employment lawyer, tenants' service or advocate before agreeing to any statement or exit terms.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling every disciplinary outcome scapegoating can turn away fair accountability for a mistake that was truly yours. Check whether the consequences match your authority.",
     "Naming someone else as the group's scapegoat in a dispute can itself pin a role on them. Describe what happened to the person instead."
@@ -41010,8 +41001,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -41840,8 +41830,8 @@
     "workplace_or_professional": "Ask HR or a neutral manager for a meeting with a note-taker, bring your log, and request that the process be documented. A third party in the room changes what can be said."
    },
    "boundary_script": "\"Could we put each concern about me in writing, with an example and a date, and have someone neutral sit in on our next conversation? I can respond to specifics, but I can't respond to a feeling that everyone shares.\"",
-   "safety_note": "Mobbing can put your income, housing or professional standing at risk, and months of it can wear down health. Watch for threats, being followed or photographed, sudden changes to your position, or retaliation after you raise it. An employment lawyer, union representative or legal aid office can explain your protections before you do anything formal. If anyone makes you fear for your physical safety, call emergency services.",
-   "safety_sensitive": true,
+   "safety_note": "Mobbing mostly threatens income, standing and health over time, not physical safety. Concern rises if it escalates to threats, being followed or photographed, sudden changes to your position, or retaliation after you raise it. An employment lawyer, union representative or legal aid office can explain your protections before you take a formal step. If anyone makes you fear for your physical safety, call emergency services.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Calling one hard season of friction mobbing can turn ordinary disagreement or fair feedback into a campaign story, making it harder to hear what is accurate.",
     "Using the word against a group of people who each raised a real concern treats honest feedback as persecution."
@@ -41859,8 +41849,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -43766,8 +43755,8 @@
     "workplace_or_professional": "If a profile approached you through a professional network, report it to the platform and to your workplace's security or IT team, with screenshots and links."
    },
    "boundary_script": "\"I've enjoyed talking. Before we go further, I want us to have a live video call. I also don't send money or private photos to anyone I haven't met properly, so that isn't something I'll be doing.\"",
-   "safety_note": "Danger signals are requests for money, gift cards or crypto, requests for intimate images, pressure to keep the relationship secret, and threats to share what you have sent. Send nothing more. Keep screenshots, profile links and payment records, report the account to the platform, and contact your bank. If images were shared or threats made, a victim-support service or the police can advise on takedown options.",
-   "safety_sensitive": true,
+   "safety_note": "A fake profile is mostly a fraud and trust problem. Concern rises with requests for money, gift cards, crypto or intimate images, pressure to keep the relationship secret, or threats to share what you have sent. Send nothing more. Keep screenshots, profile links and payment records, report the account to the platform, and contact your bank. If images were shared or threats made, a victim-support service or the police can advise on takedown options.",
+   "safety_sensitive": false,
    "misuse_warning": [
     "Treating every shy or private online contact as a fake identity can hurt people who are cautious for good reasons.",
     "Publicly accusing a real person of catfishing without checking can expose a private individual to harassment."
@@ -43784,8 +43773,7 @@
    "codex_maturity": "mature",
    "human_review_flags": [
     "overlaps_with_related_tactic",
-    "reference_only_limitations",
-    "safety_sensitive"
+    "reference_only_limitations"
    ]
   },
   {
@@ -44602,14 +44590,14 @@
    "possible_impact_on_receiver": "People describe dread each time an envelope or an email from a particular sender arrives, sleepless nights over a matter that began small, and growing caution about raising any concern at all. Some say they paid for advice they could not really afford, and some say they withdrew a legitimate request just to make it stop.",
    "response_options": {
     "soft_clarification": "Offer to go back to a conversation: 'This feels bigger than what happened. Can we talk it through before it goes any further?'",
-    "firm_boundary": "State that you will answer the formal process on its facts, and that you will continue to raise your own concern separately through the right channel.",
+    "firm_boundary": "Answer the formal process on its facts, in writing, and raise your own concern separately through the right channel.",
     "disengagement": "Respond in writing, briefly and factually, to the formal step, and avoid side conversations or messages that could be quoted back.",
     "support_seeking": "Ask a union representative, tenants' association, mediator or legal aid office to read the notice with you and tell you what response is actually required and by when.",
     "workplace_or_professional": "Request the written policy, ask what the process allows you to submit in reply, and ask for mediation as a first step if the policy provides for it."
    },
-   "boundary_script": "\"I will answer this fully. Could we also try talking it through first? And my own concern stays on the table at the same time, so neither one gets dropped.\"",
-   "safety_note": "Most of these exchanges are stressful and administrative. The stakes rise when the formal step touches your job, your home, immigration status or time with your children, and a response deadline is running. Read the deadline on the notice today and take it to legal aid, a union representative or a tenants' organization before you reply.",
-   "safety_sensitive": false,
+   "boundary_script": "\"I will answer this fully. Could we also talk it through first? I also want my own concern recorded alongside it, so neither one gets dropped.\"",
+   "safety_note": "Danger signals are a formal step that touches your job, home, immigration status or time with your children, especially with a response deadline running, or one filed by someone who has frightened you before. Read the deadline on the notice today and take it to legal aid, a union representative or a tenants' organization before you reply; an advocate can help if the filing is part of a wider pattern of control.",
+   "safety_sensitive": true,
    "misuse_warning": [
     "Treating every complaint filed against you as retaliation can blind you to a legitimate concern that deserves a real answer.",
     "Calling someone's careful record-keeping 'escalation' can penalize people who keep records because they were once disbelieved."
@@ -44628,7 +44616,8 @@
    "human_review_flags": [
     "overlaps_with_related_tactic",
     "reference_only_limitations",
-    "workplace_or_legal_ambiguity"
+    "workplace_or_legal_ambiguity",
+    "safety_sensitive"
    ]
   },
   {

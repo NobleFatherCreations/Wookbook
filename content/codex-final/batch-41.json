@@ -202,13 +202,13 @@
     "what_it_is": [
       "Accounts with generated profile photos, believable backstories and steady posting, run as a group.",
       "Used to look like a crowd, to join a community and earn trust, or to pull information out of its members.",
-      "Often blending in with ordinary posting for a long stretch so the accounts look established before they push anything.",
+      "Accounts with little visible history before a topic arose, which makes any one of them hard to judge alone.",
       "Different from a lone fake profile in that the accounts vouch for, reply to and amplify each other.",
       "Difficult to confirm from outside: the evidence usually sits in platform data such as creation dates and shared infrastructure."
     ],
     "what_it_sounds_like": [
       "Several new-looking accounts replying within minutes of each other, with similar phrasing, to the same post.",
-      "Profile photos that look polished yet oddly generic, with unusual details in the background or on jewelry and teeth.",
+      "Profile photos that look polished yet oddly generic, which on its own proves nothing.",
       "Accounts with few personal photos, but many opinions on one theme.",
       "A friendly newcomer in a group who asks many questions about members and shares little checkable about themselves.",
       "Posting that runs at all hours with no breaks, or in bursts when a topic heats up.",
@@ -297,8 +297,8 @@
     "why_this_matters": "Decisions get made on a corrupted record. Because the corruption sits in the source, the person and the tools they use to double-check return the same wrong answer, which makes the error hard to catch.",
     "what_it_is": [
       "False or distorted entries placed in reference pages, review sections, shared files or search-indexed pages.",
-      "Material written to be picked up by AI systems, either when they are trained or when they read pages to answer a question.",
-      "Text embedded in a page or file that is aimed at an AI reader rather than a human one, such as hidden instructions.",
+      "Material that targets the sources AI systems and search tools draw on.",
+      "Content that tries to steer automated readers as well as human ones, which a human reader may never notice.",
       "Effective because the copy spreads: once it is cited, reposted or summarized, the original source of the error is buried.",
       "Different from a one-off lie in that it targets the shared source rather than a single conversation."
     ],
@@ -306,7 +306,7 @@
       "A reference page edited to include an unsupported claim, with a citation that does not say what it is cited for.",
       "A run of reviews or comments that all repeat one fabricated detail.",
       "An AI answer that confidently repeats a claim traced to a single dubious page.",
-      "A document or web page with text invisible to a human reader but visible to automated tools.",
+      "A web page or document whose content seems to differ for human and automated readers.",
       "Several sources that look separate but trace back to one origin.",
       "A correction that gets reversed or buried soon after it is made."
     ],
@@ -474,8 +474,8 @@
       "workplace_or_professional": "If you handle audience, community or product design work, flag intimacy-based pressure to give or stay, and raise it through your organization's ethics or compliance process."
     },
     "boundary_script": "\"I can care about this person's work and still choose not to give. My worth to them is not measured by what I pay, and I will decide about this later, after I have slept on it.\"",
-    "safety_sensitive": true,
-    "safety_note": "This becomes a safety matter when it drains money a person cannot spare, draws out intimate images or private details that could be used against them, or deepens isolation or despair. Involve a trusted person, contact your bank about payments, and reach a counselor or crisis line if you feel unable to cope or fear for your safety.",
+    "safety_sensitive": false,
+    "safety_note": "Attachment to a creator or companion is not a danger on its own. It deserves more attention if it drains money a person cannot spare, draws out intimate images or private details that could be used against them, or deepens isolation or despair. Involve a trusted person, contact your bank about payments, and reach a counselor or crisis line if you feel unable to cope.",
     "misuse_warning": [
       "Telling a fan their feelings are 'just parasocial' can shame them for ordinary attachment.",
       "Labeling every creator's warmth as engineered ignores the many who are simply sincere."
@@ -586,9 +586,9 @@
     "why_this_matters": "The usual defenses, an unfamiliar voice, clumsy wording or an address that looks wrong, stop working when the approach sounds exactly like someone already known and trusted. People lose money, accounts and privacy while believing they were helping.",
     "what_it_is": [
       "Messages, calls or videos that imitate a relative, boss, bank, agency or friend using generated text, cloned voice or faked video.",
-      "Personalized with details gathered from public posts, past leaks or data brokers, so it sounds like it knows you.",
+      "Personalized enough that it can sound as if it knows you.",
       "Built around urgency and secrecy: a crisis, a deadline or a request not to tell anyone.",
-      "Sent in volume, so a small success rate still pays, and one attempt may be one of thousands.",
+      "Often sent to many people at once, so your message may be one of thousands.",
       "Different from a human scammer working a single target in how little effort each attempt needs."
     ],
     "what_it_sounds_like": [
@@ -666,8 +666,8 @@
       "workplace_or_professional": "At work, confirm any unusual payment or access request through a second, known channel, and report suspected impersonation to your security or IT team."
     },
     "boundary_script": "\"Before I do anything, I will contact this person myself using a number I already have. A real request will still be there in ten minutes, and nobody who cares about me will mind that I checked.\"",
-    "safety_sensitive": true,
-    "safety_note": "This can lead to serious financial loss, stolen accounts and fear for a relative's safety. If money or codes have been sent, call your bank right away, then report the incident and warn the person who was impersonated. If someone is truly in danger, contact them directly or call emergency services.",
+    "safety_sensitive": false,
+    "safety_note": "This is chiefly a financial and account risk, which grows if money or codes have been sent or a relative is said to be in danger. If money or codes have gone, call your bank right away, then report the incident and warn the person who was impersonated. If someone really might be in danger, contact them directly by a number you already hold, or call emergency services.",
     "misuse_warning": [
       "Telling relatives that all unexpected calls are AI scams can create fear and make people hang up on real emergencies.",
       "Blaming victims for being fooled adds shame and discourages them from reporting."

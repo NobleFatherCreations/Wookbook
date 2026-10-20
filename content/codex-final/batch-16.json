@@ -475,8 +475,8 @@
       "workplace_or_professional": "Keep a dated log of projects removed, meetings dropped and feedback received, and keep your own reviews and praise where company policy allows. Raise the pattern with HR or a union representative."
     },
     "boundary_script": "\"Help me understand how my role has changed over the last few months. Could we set up a time to talk about what I'm responsible for and what you expect from me?\"",
-    "safety_sensitive": true,
-    "safety_note": "The risk here is mostly to income and standing, and for some people to a visa or housing tied to the job. Watch for pay or immigration status depending on staying, pressure to sign a separation agreement quickly, or distress affecting your sleep or safety. Before signing anything, get advice from an employment lawyer, union or legal aid service, and keep dated notes of what changed.",
+    "safety_sensitive": false,
+    "safety_note": "This is chiefly a threat to income and standing, though a visa or housing tied to the job raises the stakes. Concern grows if pay or immigration status depends on staying, if you are pressed to sign a separation agreement quickly, or if the strain is hurting your sleep or health. Get advice from an employment lawyer, union or legal aid service before signing, and keep dated notes of what changed.",
     "misuse_warning": [
       "Reading every quiet spell or reassignment as being managed out can turn ordinary reorganizing into a grievance. The label needs a comparison, a timeline and a lack of explanation, not just a bad feeling.",
       "Telling a coworker they are being managed out can add to their distress or push a decision that the evidence does not support."
@@ -565,13 +565,13 @@
     "possible_impact_on_receiver": "Accounts include going quiet in writing, rereading messages before sending, feeling watched in your own home or friend group, and wariness about telling anyone anything. Doubt about what you really meant can set in when you are shown a fragment. Others feel anger that something said in trust was held back for later.",
     "response_options": {
       "soft_clarification": "Ask for the whole picture: 'Can you show me the messages around that one? I remember the conversation going differently.'",
-      "firm_boundary": "Ask for concerns in real time: 'If something I say bothers you, tell me then. I don't want old messages used in new arguments.'",
+      "firm_boundary": "If it feels safe, ask for concerns in real time: 'If something I say bothers you, tell me then, so we can sort it out together.'",
       "disengagement": "Stop sharing delicate things with someone who keeps them for later, and move sensitive talk to a call or an in-person conversation.",
       "support_seeking": "Show the full thread to someone neutral and ask how it reads. If material is being shared, or threatened to be, keep your own copies of what was sent and talk to an advocate or lawyer.",
       "workplace_or_professional": "At work, keep your own copy of the full email thread, reply with the missing context in writing, and ask a manager or HR to review the whole exchange and not the fragment."
     },
     "boundary_script": "\"I'm happy to talk about anything I've said, if we look at the whole conversation and talk about it when it comes up. I'd rather not have old messages brought out in the middle of something else.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "Someone quietly saving your words is pressure on trust, not a physical danger. The picture changes if saved material is paired with threats to release it, intimate images or recordings, a custody or legal case, or demands that you do something or stay. Keep your own copies of what has been sent, and take them to a lawyer or a domestic abuse or cyber-abuse advocate before replying to any threat.",
     "misuse_warning": [
       "Calling any reminder of an earlier statement an evidence trap can make accountability look like an attack. People are entitled to say 'you told me this'.",

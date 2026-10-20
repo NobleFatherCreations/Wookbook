@@ -278,13 +278,13 @@
     "possible_impact_on_receiver": "Giving in is often followed by a sick feeling, anger at oneself, and doubt about what one truly thinks of the original event. Some find they apologize automatically afterward. Others dread any conflict, because they expect it to end the same way, with their own words used against them.",
     "response_options": {
       "soft_clarification": "Offer your account once and ask for a way forward: 'Here is what I remember. What would help put it right?' Moving to repair can shift the talk from words to actions.",
-      "firm_boundary": "Decline to say words you do not believe: 'I can apologize for how it landed. I can't say I did something I don't think I did.'",
+      "firm_boundary": "If it feels safe, decline to say words you do not believe: 'I can apologize for how it landed. I can't say I did something I don't think I did.'",
       "disengagement": "Take a break from a conversation that has become a loop, and come back to it in writing, where nothing has to be answered on the spot.",
       "support_seeking": "Before signing or saying anything formal, tell someone outside the situation what is being asked and read it aloud to them. A second pair of ears can hear coercion that you can no longer hear.",
       "workplace_or_professional": "At work or school, ask what the process is, who will read the statement and what happens afterward. Ask to give your account in your own words, in writing, and keep a copy."
     },
     "boundary_script": "\"I've told you what I remember. I can say I'm sorry it hurt you, because I am. I can't say I did something I don't believe I did, and I'd rather work out together what would help.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "Pressure to apologize is not a danger signal on its own. It changes when fear is part of the picture: shouting that blocks a doorway, threats toward your job, housing or children, or a written confession demanded on the spot. If so, avoid signing anything in the moment and ask a legal aid service or an advocate to read it first.",
     "misuse_warning": [
       "Calling any request for an apology forced submission can let real accountability slide. When something did happen, asking for acknowledgment is fair.",
@@ -383,7 +383,7 @@
       "support_seeking": "Call a domestic violence or stalking helpline and describe what you have noticed. Advocates can help you assess risk, plan, and decide what to document, without you having to decide anything on the call.",
       "workplace_or_professional": "Let one trusted person at work, such as security or a manager, know that someone may come to the workplace uninvited, and give them a photo and the key facts. Keep a dated log of any visit or message there."
     },
-    "boundary_script": "\"For the schedule and the bills, can we keep everything in writing in one place, like email or a co-parenting app? That way neither of us has to guess what was agreed.\"",
+    "boundary_script": "\"For the schedule and the bills, can we keep everything in writing in one place, like email or a co-parenting app? That way neither of us has to guess what was agreed.\" Offer this through a lawyer, mediator or co-parenting app, and only after an advocate agrees.",
     "safety_sensitive": true,
     "safety_note": "Danger signals include showing up where you never said you would be, threats, damaged property, knowledge of private conversations, tracking devices, and contact that rises after you set a limit or begin a new relationship. Risk can rise around a separation. Before you change numbers, devices or routes, ask a stalking or domestic violence advocate to help you plan the order, since sudden changes can be noticed.",
     "misuse_warning": [
@@ -482,7 +482,7 @@
       "support_seeking": "Seek a legal aid office, a court self-help center or a domestic violence legal advocate. Ask them to read the filings and say what they see.",
       "workplace_or_professional": "Tell one trusted manager only what you need to, such as that you have court dates, and arrange leave in advance, so a hearing does not put your job at risk."
     },
-    "boundary_script": "\"Anything about the schedule or what has changed, we can talk about directly. For the court matters, could we go through our lawyers, or a mediator, so that everything is in writing and nothing is missed?\"",
+    "boundary_script": "\"Anything about the schedule or what has changed, we can talk about directly. For the court matters, could we go through our lawyers, or a mediator, so that everything is in writing and nothing is missed?\" Raise this through your lawyer, and only after an advocate or lawyer agrees.",
     "safety_sensitive": true,
     "safety_note": "Concern grows when filings sit alongside threats, danger to a child, or the chance of losing your home, income or custody time at the next hearing. Courts also hear true accounts of danger, so a filing is not proof of abuse. Bring the full file to a family law attorney or legal aid advocate and ask what limits or protections your court offers.",
     "misuse_warning": [
@@ -581,7 +581,7 @@
       "workplace_or_professional": "In a complaint process, ask the investigator in writing to obtain the original, complete, unedited file and its metadata, and attach your own written account of the missing part."
     },
     "boundary_script": "\"Could we hear the whole recording, from before this starts to after it ends? Once we've both listened to all of it, we can talk about what was said.\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "A doctored clip is not a danger by itself. What changes that is its use as leverage: a threat to send it to your employer, family or a court unless you comply, or a clip tied to intimate content. In that case, keep the evidence, hold off on replying, and take it to a lawyer or advocate who can advise on the next step.",
     "misuse_warning": [
       "Calling any unflattering clip edited lets you dismiss what you actually said. Check whether something you can point to is missing before accusing anyone.",
@@ -772,12 +772,12 @@
     "possible_impact_on_receiver": "People describe panic, nausea, shame, trouble sleeping and a feeling of being watched wherever they go. Some stop using social media or avoid work and school for fear of being recognized. Many describe relief once they told one person, and some describe anger at being blamed for taking the picture in the first place.",
     "response_options": {
       "soft_clarification": "Before replying, save everything: screenshots of messages, usernames, links and dates, stored somewhere private. Questions and arguments with the sender can wait until you have advice.",
-      "firm_boundary": "Do not pay, send more images or negotiate. Payment or new images tend to bring further demands, not an end. Further contact can be limited to the one line in the script, or none at all.",
+      "firm_boundary": "Do not pay, send more images or negotiate. Payment or new images tend to bring further demands, not an end. Further contact with the sender can wait until an advocate has advised; do not send the script to them.",
       "disengagement": "If the sender is someone you know, ask an advocate before blocking or going silent, since a sudden change can raise the pressure. With a stranger, blocking after saving evidence is usually fine.",
-      "support_seeking": "Tell someone you trust and contact an image-abuse helpline or advocate. StopNCII.org (adults) and Take It Down (images of under-18s) let you flag an image so participating platforms can block it, without sharing the image itself.",
+      "support_seeking": "Tell someone you trust and contact an image-abuse helpline or advocate. StopNCII.org (adults) and Take It Down (images taken before 18, even if you are now an adult) let you flag an image so participating platforms can block it, without sharing it.",
       "workplace_or_professional": "If images or threats reach your job or school, tell one trusted person in HR, student services or security early, so it does not arrive as a surprise. Give them the links, not the images."
     },
-    "boundary_script": "\"I did not agree for any of these to be shared with anyone, and I'm not going to negotiate about them. Please send anything further to someone I trust, who can answer for me.\"",
+    "boundary_script": "\"I did not agree to these images being shared. I have saved the links, messages and dates, and I am asking for help getting them removed.\" Send this to a platform, school, employer or advocate, never to the person who shared them.",
     "safety_sensitive": true,
     "safety_note": "Take seriously a deadline, a demand that keeps growing, contact from several accounts, messages to your family or workplace, or threats of self-harm used to keep you quiet. If shame feels unbearable, a crisis line can help tonight. If the person shown is under 18, treat it as urgent and contact your country's child-safety or police service. Save links and screenshots, then ask an advocate about takedown options before replying.",
     "misuse_warning": [

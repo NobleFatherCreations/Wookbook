@@ -80,7 +80,7 @@
     "possible_impact_on_receiver": "People who have been inside describe guilt over what they once said or did to others, grief for family who now treat them as gone, and a nagging fear that they are worthless outside the group. Some find it hard to trust their own sense of right and wrong afterward. Members still inside may describe a constant effort to stay on the right side of the line.",
     "response_options": {
       "soft_clarification": "Ask a plain question about one specific person: 'What did he actually do, and is he still a person we owe kindness?' Keep it curious and brief.",
-      "firm_boundary": "Decline to join the name-calling: 'I'm not going to talk about anyone that way.' You do not need to argue the doctrine to refuse to repeat contempt.",
+      "firm_boundary": "If it feels safe, decline to join the name-calling: 'I'd rather not talk about anyone that way.' You do not need to argue the doctrine. If refusing would cost you standing or safety, simply stay quiet.",
       "disengagement": "Change the subject or step out of the room when someone is being written off. Keep your private views private until you have support around you.",
       "support_seeking": "Talk with a counselor experienced in high-control groups or a former-member support organization. Decisions about your place in the group are best made privately with them, never announced.",
       "workplace_or_professional": "If this is in a workplace, school or care setting, keep dated notes of people being demeaned for their beliefs or membership and take them to HR, a licensed professional or counsel."
@@ -176,13 +176,13 @@
     "possible_impact_on_receiver": "Afterward, a confusing mix of guilt and anger is common: they remember saying yes, but also that no other answer felt available. Some find it hard to trust their own decisions or to say whether they ever wanted something. Others report relief when someone names the narrowing.",
     "response_options": {
       "soft_clarification": "Ask what each option would cost: 'If I decided otherwise, what would happen to my place here?' The answer shows how open the choice really is.",
-      "firm_boundary": "Ask for time and outside input before deciding: 'I'd like a week to think, and to talk with my sister first.' A real choice can wait.",
+      "firm_boundary": "If it feels safe, ask for time and outside input before deciding: 'I'd like a week to think, and to talk with my sister first.' A real choice can wait.",
       "disengagement": "Postpone big decisions that are presented as now-or-never, and note who benefits from the speed.",
       "support_seeking": "Talk to someone outside the group, such as a former member, therapist or counselor who knows high-control environments, and lay out the options as you see them.",
       "workplace_or_professional": "In a workplace or program that frames costly terms as voluntary, ask for the terms in writing and consult a lawyer or union representative before signing or committing."
     },
     "boundary_script": "Before I accept that I chose this freely, I ask myself: \"Could I say no and keep my home, my friends and my standing? Who told me the other options are not real, and have I heard it from anyone outside?\"",
-    "safety_sensitive": false,
+    "safety_sensitive": true,
     "safety_note": "Bounded choice alone is a pattern of pressure, not necessarily danger. It becomes safety-relevant when the narrowed options involve housing, money, immigration status, medical care or children, or when anyone is threatened for taking another path. Then consult a lawyer or legal aid, or a cult-recovery advocate, before acting, and plan any big change privately.",
     "misuse_warning": [
       "Cost, family duty and a demanding career are ordinary constraints. Treating each of them as coercion erases the real decisions behind a person's life.",
@@ -271,7 +271,7 @@
     "possible_impact_on_receiver": "People describe an intense need for the leader's approval, dread at their displeasure, and difficulty making even small decisions alone. After leaving, many describe grief like a bereavement, along with shame about having believed. Some feel lost about what they value without the leader's voice.",
     "response_options": {
       "soft_clarification": "Ask how a question would be received: 'Is it okay if I talk this over with my sister too?' Notice whether the reply is warm or tense.",
-      "firm_boundary": "Keep one decision for your own judgment, such as a medical, money or family matter: 'I've decided to handle that one myself.'",
+      "firm_boundary": "If it feels safe, keep one decision for your own judgment, such as a medical, money or family matter, and say only 'I'll think about that.' You do not need to announce what you decided.",
       "disengagement": "Spend more time with people outside the leader's orbit, and let that grow slowly. Avoid dramatic statements about your doubts or plans.",
       "support_seeking": "Talk to a therapist, former member or cult-recovery counselor who knows high-control groups, and bring one specific example.",
       "workplace_or_professional": "In a workplace or training program built around a single boss or guru, keep outside mentors, write down instructions you are given, and bring concerns about pressure to HR or an ombuds."

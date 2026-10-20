@@ -288,7 +288,7 @@
       "workplace_or_professional": "Send a short written summary after the assignment conversation: scope, deadline, resources, what you asked for. Keep it for any review, and ask HR or a union representative how your targets compare with your peers'."
     },
     "boundary_script": "\"I want this to go well, so I'm saying now that I can't finish it by Friday without the sales figures. Could we agree what counts as done, in writing, and when I can have the figures?\"",
-    "safety_sensitive": true,
+    "safety_sensitive": false,
     "safety_note": "This is rarely a physical danger, but the record of misses can feed probation, dismissal, or job decisions that affect an immigration status or housing tied to the post. Keep the written brief, your flags and the outcome together, and ask a union representative, employment lawyer or legal aid service for advice before attending a disciplinary meeting alone.",
     "misuse_warning": [
       "Calling every hard assignment a set-up can stop you learning from a failure that was partly yours. Ask whether the conditions were the same for others.",
@@ -381,12 +381,12 @@
     "possible_impact_on_receiver": "People describe asking permission for small purchases, hiding receipts, feeling like a child in their own home, and a sinking sense that leaving is not affordable. Some find out about debts only when a letter arrives. Others say the money was never the whole story, and that the loss of choices was what wore them down.",
     "response_options": {
       "soft_clarification": "Ask an ordinary question in an ordinary tone: \"Could we look at the statements together this weekend? I'd like to understand where we stand.\" If asking could make things worse, skip this step.",
-      "firm_boundary": "Name the pattern once, calmly, without blame: \"When money depends on how I behave, it is hard for me to speak up. Could we change that?\"",
+      "firm_boundary": "If it feels safe, name the pattern once, calmly, without blame: \"When money depends on how I behave, it is hard for me to speak up. Could we change that?\" Otherwise take it to an advocate first.",
       "disengagement": "If a money conversation turns to what you owe or could lose, you can ask to pause it: \"I need some time to think. Can we come back to this?\" Use your own judgment about whether pausing is safe.",
       "support_seeking": "Speak to a domestic abuse advocate, a financial counselor or a legal aid service. Many can talk privately about economic abuse and help with documents, accounts and credit without the other person knowing.",
       "workplace_or_professional": "If someone else controls your pay, ask payroll or HR in writing, when it is safe, whether wages can go to an account in your sole name. A legal aid or employment advice service can explain your rights."
     },
-    "boundary_script": "\"Could we go through the accounts together this weekend? I'd like both of us to be able to see what we have and agree who decides what.\"",
+    "boundary_script": "\"Could we go through the accounts together this weekend? I'd like both of us to be able to see what we have and agree who decides what.\" If asking could make things worse, skip it and call an advocate first.",
     "safety_sensitive": true,
     "safety_note": "Warning signs include being cut off from money after you disagree, losing hold of your ID, phone or transport, debts opened in your name, or being kept from work. Quietly note what you know, and talk to a domestic abuse advocate or legal aid service about protecting income, documents and credit before you raise any change with the other person.",
     "misuse_warning": [

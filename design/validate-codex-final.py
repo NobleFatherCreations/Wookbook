@@ -38,7 +38,7 @@ from collections import Counter
 
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 FINAL = os.path.join(ROOT, "content", "codex-final")
-DATA = os.path.join(ROOT, "content", "playbook-data.json")
+DATA = os.path.join(ROOT, "content", "codex-final", "source-data-349.json")  # frozen pre-apply data: the cut-off definitions to replace
 
 _spec = importlib.util.spec_from_file_location(
     "codex_boilerplate", os.path.join(os.path.dirname(__file__), "codex-boilerplate.py"))
