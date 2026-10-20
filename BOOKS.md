@@ -311,6 +311,8 @@ entry carries its own hook (`what_it_sounds_like`), its own close
 beat is not optional decoration; it is what keeps the entry's own
 `misuse_warning` true once the entry leaves the book.**
 
+**Update 2026-10-20 (v9, not yet deployed):** 310 entries (349 minus 39 merged-away aliases), every entry written for its own tactic with no shared boilerplate, explicit `safety_sensitive` flag (105), a `#/about` safeguards page, alias redirects. See MEMORY.md for the pipeline.
+
 ## music — The Listening Room **[confirmed: rebuilt from the audio itself, 2026-08-12]**
 
 "Sorted by what each song is for." Not a book — a media page, and the only

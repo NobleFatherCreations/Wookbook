@@ -3208,5 +3208,21 @@ the reader to announce leaving). (3) A writer batch died on the session usage li
 work was saved on disk; follow the dispatch rule and resume one at a time. (4) The stock sentence
 "Call emergency services if you are in immediate danger." had spread to three entries; it is now said once
 on the safeguards page.
-**Not deployed.** The live Decoder is v7. The v8 file (typo fix) is committed but also not live; v9 will
-include it. A deploy needs the author's approval (the last attempt was blocked by the permission check).
+**Status 2026-10-20: all 310 entries written, validated, applied to `content/prose/_raw/playbook.html` as v9.**
+`validate-codex-final.py --all --complete` 310/310; `codex-boilerplate.py` clean (0 shared sentences, 0 truncated);
+Playwright (1440, 375 touch, reduced motion): no page errors, no external requests, no overflow, every entry
+renders its sections, aliases redirect. An independent safety review then found scripts that confronted or
+demanded on safety-sensitive entries (the regex check cannot see these), reusable playbook-style lines on
+risk entries, and a few over-strong facts; all were fixed in the source files. Badge recalibrated 116 -> 105
+(meaning: the pattern commonly accompanies physical danger, stalking, coercive control, intimate-image abuse,
+self-harm pressure or danger to children; workplace/fraud/everyday-argument entries lose it, their notes say
+what would raise the concern). Spelling normalised to American English.
+**Rebuild recipe** (apply is not idempotent): restore the pre-apply page (`git show 92855447~1:content/prose/_raw/playbook.html`),
+then `apply-codex-final.py --apply`, `patch-decoder-v9-page.py --apply`, `extract-playbook-data.py --apply`
+(expects 310). The validator and packet builder read the frozen `content/codex-final/source-data-349.json`.
+**Lessons (cont.):** the opener rule (same first three words on many entries) caught stock openers the
+frame rule missed; never commit a batch without reading the validator tail; the final reread must be
+sequential. Still open: wording nits listed by writers (Word Salad opener, Bounded Choice line, Meta-Gaslighting
+'abuse', Silent Coalitions definition) and the user's call on badge edge cases.
+**Not deployed.** The live Decoder is v7. v8 and v9 are committed but not live. Deploying needs the author's
+approval (the last attempt was blocked by the permission check). Version 9 supersedes v8.

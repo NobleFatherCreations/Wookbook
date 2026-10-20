@@ -88,8 +88,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v8",
+      "version": "v9",
       "changelog": [
+        {
+          "date": "2026-10-19",
+          "version": "v9",
+          "summary": "Every one of the guide's tactics now has its own written entry: definition, examples, what it is not, look-alikes, questions, a boundary script, a safety note and how to tell it from its neighbors, written for that tactic alone with no shared boilerplate. 39 tactics that were the same thing under different names were merged into 32 entries (349 tactics became 310); old names, links and saved items still lead to the right entry. A single \"How to use this safely\" page now holds the warnings that used to be repeated on every entry. Safety-sensitive entries (105) never script announcing you are leaving. Includes the v8 typo fix and the 20-volume House menu."
+        },
         {
           "date": "2026-10-18",
           "version": "v8",
