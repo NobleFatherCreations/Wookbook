@@ -1,0 +1,382 @@
+{
+ "Strategic Leaking": {
+  "short_definition": "Releasing sensitive information through channels that look unauthorized, so that a planned disclosure reads as a secret that escaped.",
+  "core_meaning": "Releasing sensitive information through channels that look unauthorized, so that a planned disclosure reads as a secret that escaped.",
+  "expanded_definition": "Strategic leaking is a disclosure that is presented as an accident or a breach but serves the interests of whoever released it. The aim can be to shape opinion, send a signal, test a reaction, or pull attention from something else. A story built on anonymous sources is not suspect by that fact alone. The question for a reader is who gains if this version of events is believed, and whether anyone has checked it independently.",
+  "plain_language_summary": "A story arrives as if someone slipped out a secret, but the release may have been planned and may serve the people who let it out.",
+  "why_this_matters": "Information that seems to have escaped carries extra credibility, because people assume nobody would choose to reveal it. A placed story can be read as an exposed one, and readers may never learn who benefited from the timing.",
+  "what_it_is": [
+   "A disclosure framed as unauthorized that actually serves the interests of someone connected to the source.",
+   "Used to shape opinion, signal intentions, test how people react, or move attention away from another story.",
+   "Passed on through anonymous sources, unnamed officials, documents with no clear chain of custody, or sudden 'insider' accounts.",
+   "Hard to spot from outside because real leaks and planned ones can look the same on the page.",
+   "Often partial: true details arranged so that the overall picture leans one way."
+  ],
+  "what_it_sounds_like": [
+   "A headline citing 'a person familiar with the matter' just before a major vote.",
+   "A document appears online with no explanation of where it came from, and is quoted everywhere within hours.",
+   "Several outlets report the same insider detail on the same morning, with matching wording.",
+   "A damaging story about a rival lands on the day a different embarrassing story is breaking.",
+   "An official publicly 'declines to comment' while the account keeps circulating, unchallenged.",
+   "A leaked memo that conveniently makes the sources' own side look reasonable and decisive."
+  ],
+  "what_it_is_not": [
+   "Genuine whistleblowing, where someone discloses wrongdoing at personal risk. From outside it can look the same, so the label should never be used to wave it away.",
+   "An open press briefing, where an official gives reporters information on the record or with the source's role stated.",
+   "A reporter's own investigation, built from several independent sources and records.",
+   "An honest mistake in which a document was shared with the wrong people.",
+   "Any anonymous sourcing at all. Reporters promise anonymity for sound reasons, and it is not evidence of a planted story."
+  ],
+  "this_may_be_it_when": [
+   "The timing fits one party's needs unusually well, such as just before a negotiation or a hearing.",
+   "The only people who gain from the story being believed are close to the source.",
+   "Details that would hurt the source's side are missing, while those that help it are rich.",
+   "No independent party has confirmed the material, yet it is treated as settled.",
+   "The people involved later acknowledge, or reporting establishes, that the release was authorized."
+  ],
+  "this_may_not_be_it_when": [
+   "The material is confirmed by records, other sources or people with no shared interest.",
+   "The story harms the party who is assumed to have released it.",
+   "The only reason for suspicion is that the story is surprising or unwelcome.",
+   "The outlet explains how it checked the material and what it could not verify.",
+   "The disclosure was on the record and the source is named."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "People talk to reporters for many reasons, including conscience, frustration, or a wish to be heard.",
+   "Several outlets can run the same detail at once because they all received the same public filing or announcement.",
+   "Timing can be coincidence: news clusters around scheduled events such as budgets, hearings and anniversaries."
+  ],
+  "common_false_positives": [
+   "A real whistleblower's disclosure that happens to help one side in a political fight.",
+   "A routine, openly attributed statement from an official's office.",
+   "A rumor spreading on social media with no source at all, which is a different problem from a placed disclosure."
+  ],
+  "discernment_questions": [
+   "Who gains if this account is believed, and does that person have any link to the source?",
+   "Has anyone with no stake in the matter confirmed the main claim?",
+   "What would a different version of the same events look like, and has it been told?",
+   "Why is this coming out now rather than a month ago?",
+   "Does the story contain anything that hurts its likely source, or only things that help?"
+  ],
+  "less_concerning_if": [
+   "Independent records or several unconnected sources back up the central claim.",
+   "The outlet is open about what it verified and what it did not.",
+   "The release exposes something that its source would clearly prefer to keep hidden."
+  ],
+  "more_concerning_if": [
+   "The story arrives with strong claims, no chain of custody, and heavy pressure to react at once.",
+   "Corrections or contrary evidence get far less attention than the original release.",
+   "The same kind of well-timed disclosure keeps favoring one party over a long stretch."
+  ],
+  "pattern_over_time_signs": [
+   "Anonymous stories repeatedly appear just before decisions that matter to one particular side.",
+   "Disclosures tend to flatter or protect the same group while damaging its rivals.",
+   "Earlier leaked claims quietly turn out to have been partial or wrong, and no one is held to account.",
+   "Coverage across outlets follows the same framing, down to the same phrases, within hours."
+  ],
+  "repair_check": "Accountability here looks like a source or outlet later explaining what was released, why, and what was left out, then correcting the record when details prove wrong. Silence, or a fresh unattributed story that shifts attention, is not a correction.",
+  "boundary_respect_check": "Can you wait a day? A claim that holds up will still hold up after checking. If the surrounding noise pushes you to react before anyone has confirmed anything, that pressure is worth examining before you share.",
+  "psychological_mechanism": "A secret that seems to have slipped out feels more honest than a statement, because a deliberate lie would seem pointless to hide. That assumption can make a placed account more convincing than an official one. Urgency and an air of forbidden knowledge can also make a claim feel important before anyone has examined it.",
+  "possible_impact_on_receiver": "People describe whiplash when a dramatic story is later revised, and a lingering sense of having been used to carry someone else's message. Some start to distrust all anonymous reporting, including the honest kind. Others feel the pull to share an exciting revelation and regret it afterward.",
+  "response_options": {
+   "soft_clarification": "Ask the person sharing the story where it first appeared and whether anyone else confirmed it, in a tone of curiosity rather than accusation.",
+   "firm_boundary": "Decide for yourself that you will not pass along a leaked claim until you have seen the original and at least one independent confirmation.",
+   "disengagement": "Step away from fast-moving threads about a supposed leak for a day. Real confirmations and corrections tend to arrive after the first wave of reaction.",
+   "support_seeking": "Take a doubtful story to a fact-checking service, a librarian, or a reporter who covers the topic, and ask how they would verify it.",
+   "workplace_or_professional": "If you work in media, public affairs or an organization that handles sensitive material, follow its sourcing and disclosure policies and record who decided to release what."
+  },
+  "boundary_script": "\"Before I pass this on: who is the original source, who gains if I believe it, and has anyone with nothing to gain confirmed it? If I can't answer those, I'll wait.\"",
+  "safety_sensitive": false,
+  "safety_note": "Reading a leaked story is not a danger in itself. Risk appears when a leak names private individuals, exposes their addresses or workplaces, or invites a pile-on. In that case do not share it further, report it to the platform, and tell the people named so they can protect themselves.",
+  "misuse_warning": [
+   "Calling a story 'just a leak' can become a way to dismiss real disclosures of wrongdoing. Whether a claim is true and whether it was placed are separate questions.",
+   "Accusing a named reporter or source of planting a story without evidence is itself a smear."
+  ],
+  "how_to_distinguish_from_related": "Strategic Deception is a wider campaign to mislead an adversary about plans or capabilities across several channels, while a leak is one release whose force comes from seeming accidental. Agent of Influence works through a person with a credible public platform, whereas a leak needs no such person. PSYOP Message Framing is about how a message is built to land, and a leak is about how it is delivered."
+ },
+ "Cognitive Warfare": {
+  "short_definition": "Efforts to wear down a population's ability to think clearly, trust shared facts, and reach agreement, by working on beliefs and attention.",
+  "core_meaning": "Efforts to wear down a population's ability to think clearly, trust shared facts, and reach agreement, by working on beliefs and attention.",
+  "expanded_definition": "Cognitive warfare is a term used in security circles for campaigns aimed at how a society thinks, not at its buildings or machines. Instead of persuading people of one claim, such campaigns can aim to leave them tired, suspicious of each other, and unable to settle on what is true. The word is contested and sometimes overused. Real societies also fall into confusion and distrust without any outside plan.",
+  "plain_language_summary": "A campaign that tries to leave a whole society confused, divided and unable to agree on facts, instead of winning people to one side.",
+  "why_this_matters": "What is attacked is a group's ability to reason together. The damage can show up as exhaustion, mutual distrust, and an inability to agree on anything long enough to act on it, which weakens people whichever side they are on.",
+  "what_it_is": [
+   "A strategy aimed at a population's attention, beliefs and trust rather than at its physical resources.",
+   "Often described as working through many small, repeated pushes, and not through one big lie.",
+   "Spread across news, social platforms, rumors, humor and ordinary conversation, which makes the source hard to see.",
+   "Judged by its effect on a group: confusion, cynicism, and the feeling that nothing can be known.",
+   "A contested label. Researchers and officials do not all define it the same way."
+  ],
+  "what_it_sounds_like": [
+   "A flood of conflicting accounts of the same event, so that people give up deciding which is right.",
+   "Posts insisting that 'everyone lies, so nothing can be trusted'.",
+   "Neighbors who once talked now avoid a subject because every conversation turns hostile.",
+   "Emotional stories, shared widely, that make an ordinary group of people seem like enemies.",
+   "Sudden bursts of outrage about a topic that most people had never discussed before.",
+   "Trusted institutions and local reporters described again and again as fools or frauds."
+  ],
+  "what_it_is_not": [
+   "A society arguing with itself. People disagree, polarize and lose trust for their own reasons, such as economic strain, real grievances and poor governance.",
+   "Ordinary advertising or political persuasion, which tries to win agreement openly and for a stated side.",
+   "A single rumor or hoax, which is misinformation, not necessarily a campaign.",
+   "Public diplomacy and openly labeled state media, which tell you who is speaking.",
+   "A convenient explanation for any social problem. Blaming a foreign adversary for domestic dysfunction is itself a familiar political move."
+  ],
+  "this_may_be_it_when": [
+   "Independent researchers or journalists have documented a coordinated effort with an identified sponsor.",
+   "Confusing, contradictory messages push in several opposed directions at once about the same event.",
+   "Content seems built to inflame mutual contempt among groups instead of persuading anyone.",
+   "The same themes recur across unconnected platforms, languages and communities.",
+   "The effect lasts after the original claims are debunked, leaving only a vague distrust."
+  ],
+  "this_may_not_be_it_when": [
+   "The disagreement has a clear local cause, such as a closed factory, a contested law or a recent scandal.",
+   "The conflict grows from messages people sent in their own voices, to people they know.",
+   "The only evidence is that the situation feels chaotic.",
+   "The claim of outside manipulation comes mainly from a side that gains from blaming outsiders.",
+   "No sponsor, method or documentation has been shown, only a mood."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "Fast news cycles overwhelm everyone and can feel like deliberate confusion even when nobody planned it.",
+   "Sincere people on opposite sides can hold sharply different views of the same facts.",
+   "Algorithms that reward engagement can spread angry content without any central plan."
+  ],
+  "common_false_positives": [
+   "A heated election season in which real voters are genuinely angry.",
+   "A viral hoax started by a single bored person.",
+   "A community split over a local issue, where the argument is about something real."
+  ],
+  "discernment_questions": [
+   "Is there documented evidence of who is behind this, or only a feeling that someone must be?",
+   "Does this content want me to believe one thing, or to give up on believing anything?",
+   "Am I being nudged to see my neighbors as enemies?",
+   "Would I still find this alarming if it came from a side I agree with?",
+   "Do reliable, independent sources describe the same events, even if they disagree about the meaning?"
+  ],
+  "less_concerning_if": [
+   "The dispute has identifiable local causes and people still talk across the divide.",
+   "Independent reporting explains the confusion without needing a hidden hand.",
+   "People involved can still agree on some basic facts, even while disagreeing on policy."
+  ],
+  "more_concerning_if": [
+   "Documented coordination with a named sponsor sits behind the confusion.",
+   "Contempt and exhaustion spread through a community faster than any single issue could explain.",
+   "People start to say that no source at all can be believed."
+  ],
+  "pattern_over_time_signs": [
+   "Trust in many different institutions and outlets falls together, not one at a time.",
+   "The topics change but the effect stays the same: more suspicion, less cooperation.",
+   "Ordinary conversations get harder, with friends and relatives avoiding certain subjects.",
+   "Debunked claims return in new forms, and each return finds fewer people willing to check."
+  ],
+  "repair_check": "Recovery looks like shared facts rebuilt slowly: institutions that show their sources and admit errors, and neighbors who can disagree and still talk. A louder counter-campaign, or an accusation that only the other side is manipulated, repeats the damage.",
+  "boundary_respect_check": "Slow down and see what the content does to you. If it wants an instant reaction, a side picked, or a verdict that nobody can be believed, that urgency is worth questioning. Material that survives a pause and a second source is safer to take seriously.",
+  "psychological_mechanism": "People rely on shared facts and a sense that others are reasonable in order to cooperate. Repeated overload, contradiction and provocation can tend to tire attention, make skepticism feel like safety, and turn disagreement into personal hostility. Once trust drops, even accurate information has a harder time being believed.",
+  "possible_impact_on_receiver": "People describe news fatigue, a feeling that everything is spin, and rising irritation with relatives or neighbors over topics they once discussed calmly. Some withdraw from public life altogether. Others become sure that everyone who disagrees is a dupe, which can leave them lonelier and more easily provoked.",
+  "response_options": {
+   "soft_clarification": "When a topic is getting heated, ask the other person what they have actually read and where it came from, and offer the sources you used.",
+   "firm_boundary": "Choose a small number of sources you can check and trust, and decline to react to content from accounts you cannot place.",
+   "disengagement": "Take a break from feeds that leave you angry and exhausted. Rest is a legitimate response, not surrender.",
+   "support_seeking": "Talk with someone from the other side of a divide in person, about something other than the dispute, to remember they are a real neighbor.",
+   "workplace_or_professional": "If you work in education, journalism, public service or platform integrity, document what you observe and use your organization's channels for reporting suspected coordinated activity."
+  },
+  "boundary_script": "\"Is this trying to convince me of something specific, or just make me angry and tired? Who made it, where did it start, and can I find a second source before I react?\"",
+  "safety_sensitive": false,
+  "safety_note": "Reading contested content is not a personal danger, but campaigns of this kind can spill into harassment of named people or into pressure to act at once. If you see threats or personal details being spread, save examples, report them to the platform, and alert the people affected. If you feel unsafe, contact local emergency services.",
+  "misuse_warning": [
+   "Calling any disagreement 'cognitive warfare' can turn a political opponent into an enemy agent. The term needs documented evidence, and not just a dislike of someone's views.",
+   "Using it to explain away every bad mood in a society hides real grievances that people have a right to raise."
+  ],
+  "how_to_distinguish_from_related": "PSYOP Message Framing concerns how a single message is built to move a particular audience, and cognitive warfare is the wider effort to degrade a whole population's reasoning. Strategic Deception targets an adversary's decisions about plans and capabilities. Agent of Influence works through one credible person. What sets this apart is its target: a society's shared sense of what is true."
+ },
+ "Cyber Manipulation Operations (CMOs)": {
+  "short_definition": "Quietly changing, inventing or deleting data inside a system, so that people make decisions based on records they believe are real.",
+  "core_meaning": "Quietly changing, inventing or deleting data inside a system, so that people make decisions based on records they believe are real.",
+  "expanded_definition": "Cyber manipulation operations, sometimes called CMOs, are intrusions whose goal is not to steal information but to alter it. A balance, a record, a sensor reading or a message is changed, and the people relying on it act on false figures without knowing. Nothing appears stolen and nothing appears broken. This is a forensic finding made by specialists, and it is not something to conclude from one number that looks wrong.",
+  "plain_language_summary": "Instead of stealing information, someone secretly changes it, so the people who rely on it make choices based on figures that are quietly wrong.",
+  "why_this_matters": "Nothing appears stolen and nothing appears broken, so decisions carry on being made confidently on figures that are quietly wrong. By the time anyone notices, the harm may already be done and trust in the records themselves is damaged.",
+  "what_it_is": [
+   "Tampering with the contents of records, such as balances, results, logs, readings or messages, rather than taking a copy.",
+   "Aimed at the decisions people make, not at the data as such.",
+   "Meant to go unnoticed, since a change that is detected loses its effect.",
+   "Found in finance, public records, health, industry and news, anywhere people rely on stored figures.",
+   "Established by specialists examining logs and backups, not by how a number looks."
+  ],
+  "what_it_sounds_like": [
+   "Two official systems that should agree show different totals, and nobody can say why.",
+   "A published figure is quietly revised, and the revision history cannot be explained.",
+   "Records show an action no one remembers taking.",
+   "Audit logs have gaps for the exact period in question.",
+   "Statements to customers contain errors that match no known software fault.",
+   "An organization announces that it is checking whether data was 'altered', and not just accessed."
+  ],
+  "what_it_is_not": [
+   "A software bug, a botched migration, or a typing mistake. Data corrupts through ordinary error far more often than through intrusion.",
+   "A number you personally find surprising. A discrepancy is a reason to investigate, not a conclusion.",
+   "Data theft or a breach where information is copied, which is a different harm.",
+   "A planned correction, in which an organization changes a record and documents why.",
+   "Routine rounding, timing differences, or two systems measuring things differently."
+  ],
+  "this_may_be_it_when": [
+   "Specialists examining the system find unauthorized changes to stored records.",
+   "Backups and live records disagree in a way that points to deliberate edits.",
+   "The altered figures consistently favor one outcome.",
+   "Access logs show someone with no reason to be in the system changing entries.",
+   "An organization confirms that records were altered without authorization."
+  ],
+  "this_may_not_be_it_when": [
+   "The error is explained by a known software fault or a data-entry mistake.",
+   "The numbers differ because the two sources define the figure differently.",
+   "The only evidence is a hunch that something is off.",
+   "A correction has been logged, with a reason and a name attached.",
+   "The discrepancy disappears once the record is rechecked."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "Rushed updates, merged databases and old formats produce wrong figures without anyone meaning harm.",
+   "Staff sometimes fix a record and forget to log it.",
+   "Delays in syncing between systems can make totals disagree for a while."
+  ],
+  "common_false_positives": [
+   "A bank statement that shows a pending charge differently from the final one.",
+   "A dashboard that lags a few hours behind the source.",
+   "A spreadsheet in which a formula was broken by someone's innocent edit."
+  ],
+  "discernment_questions": [
+   "Is there a documented, ordinary explanation for the difference?",
+   "Can the figure be checked against a second, independent record?",
+   "Has anyone qualified examined the system, or is this still a guess?",
+   "Who would gain if this particular number were wrong?",
+   "Is the organization willing to explain what it found and what it does not yet know?"
+  ],
+  "less_concerning_if": [
+   "The discrepancy has a simple explanation and is fixed once the cause is found.",
+   "Independent records agree with the figure you were first given.",
+   "The organization is open about the checks it ran and what they showed."
+  ],
+  "more_concerning_if": [
+   "The errors are consistent in direction and cannot be explained by software or human mistakes.",
+   "Logs, backups or records are missing or incomplete for the period in question.",
+   "The organization is slow to check, or discourages questions about the figures."
+  ],
+  "pattern_over_time_signs": [
+   "Small discrepancies keep appearing in the same type of record and are repeatedly written off.",
+   "Decisions based on the affected figures turn out badly more often than expected.",
+   "People start keeping their own copies because they no longer trust the official ones.",
+   "Review after review reveals changes nobody can attribute to a person or process."
+  ],
+  "repair_check": "Real recovery means restoring records from trusted backups, telling affected people what changed, and showing how future changes will be logged and reviewed. A bare statement that everything is fine, with no account of what was checked, does not rebuild trust.",
+  "boundary_respect_check": "When you ask an organization to confirm a figure against an independent record, notice the answer. A willingness to check and to say what the check showed is a good sign. Defensiveness, or an answer that only repeats the original number, tells you less.",
+  "psychological_mechanism": "Official records and automatic systems are usually treated as neutral and rarely re-checked. Altered data can exploit that default trust: a confident decision made on a false figure feels just like a sound one. Doubt arrives late, and once it does it can spread well beyond the records that were actually changed.",
+  "possible_impact_on_receiver": "People describe confusion and anger at discovering that a decision they made in good faith rested on a false figure, along with lingering suspicion of systems they used to trust. Some say they now keep personal copies of important records and check them more often.",
+  "response_options": {
+   "soft_clarification": "If a figure looks wrong, ask the organization to confirm it against a second record and tell you how the check was done.",
+   "firm_boundary": "Decline to act on a high-stakes number until it has been confirmed by an independent source or by a second system.",
+   "disengagement": "If a service keeps giving you inconsistent records, move important dealings to channels you can document, and keep your own dated copies.",
+   "support_seeking": "Report a suspected problem to the organization's security or records team, and ask a consumer protection service or a lawyer about your options.",
+   "workplace_or_professional": "If you work with sensitive records, report anomalies through your organization's incident process quickly, keep a dated note of what you saw, and avoid changing anything that could be evidence."
+  },
+  "boundary_script": "\"This number doesn't match what I expected. Before I act on it, can it be confirmed against a second record, and is there an ordinary explanation that has been checked?\"",
+  "safety_sensitive": false,
+  "safety_note": "A wrong number is not a threat to your physical safety. It becomes serious when altered records affect medicine, money, housing or legal status. In those cases contact the provider or agency directly, keep copies of what you have, and ask a legal aid service or consumer protection office for help.",
+  "misuse_warning": [
+   "Treating every odd figure as sabotage can shut down honest error-checking and make people accuse colleagues or officials without evidence.",
+   "Claiming that results were secretly altered, with no forensic finding, can wrongly destroy trust in records that are accurate."
+  ],
+  "how_to_distinguish_from_related": "Strategic Deception misleads an adversary through coordinated concealment and misdirection across many channels, while a data-altering operation changes what a specific system holds. Strategic Leaking releases real information at a chosen moment, whereas this alters the information itself. PSYOP Message Framing shapes how a message is received; this corrupts the record that decisions depend on."
+ },
+ "Adversarial Machine Learning": {
+  "short_definition": "Crafting the data an AI system learns from or reads so that it gives wrong or manipulated answers, a risk to filters, fraud checks and screening software.",
+  "core_meaning": "Crafting the data an AI system learns from or reads so that it gives wrong or manipulated answers, a risk to filters, fraud checks and screening software.",
+  "expanded_definition": "Adversarial machine learning is the study of how AI systems can be pushed into mistakes by inputs designed for that purpose, and of how to defend against it. For ordinary people the point is simple: a filter, a fraud check or a screening tool can be fooled, and it will still return a confident answer. Strange or wrong outputs are far more often ordinary limitations than attacks, and this entry gives no detail on any method.",
+  "plain_language_summary": "AI systems can be fooled by inputs made to mislead them, so a confident answer from a filter or screening tool is not always a correct one.",
+  "why_this_matters": "The systems people are told to rely on, such as filters, fraud checks and screening tools, return confident answers, and the person affected often has no way to see why. If such a system has been misled, the error can land on someone who did nothing.",
+  "what_it_is": [
+   "An attempt to make an AI system misread, misjudge or misclassify what it is given.",
+   "A concern for any automated decision tool, such as spam filters, fraud flags, content moderation, and screening software.",
+   "A field of research as well as a threat, since defenders study it to make systems safer.",
+   "Usually invisible to the person on the receiving end, who sees only the system's answer.",
+   "Distinct from ordinary AI error, which happens without anyone trying to cause it."
+  ],
+  "what_it_sounds_like": [
+   "A message that clearly looks like a scam passes an automated filter and lands in your inbox.",
+   "A harmless account or document is flagged and blocked, with no explanation you can understand.",
+   "An application is rejected by an automated screen and nobody can say which factor decided it.",
+   "A tool that has behaved sensibly for months suddenly gives odd answers on a certain topic.",
+   "A researcher publishes a report showing that a particular AI product can be misled by certain inputs.",
+   "A company announces it has found that a system's results were being steered."
+  ],
+  "what_it_is_not": [
+   "Everyday AI mistakes. Models break on unusual inputs, carry the biases of their training data, and drift as the world changes. A wrong or strange output is far more likely a limitation than an attack.",
+   "A system making a decision you dislike but that follows its stated rules.",
+   "Normal reports from security researchers who test systems with permission in order to fix them.",
+   "A human error in how a system was set up or who configured it.",
+   "Honest users who simply phrase things in unexpected ways."
+  ],
+  "this_may_be_it_when": [
+   "The company or independent researchers confirm that a system was fed misleading inputs.",
+   "The same oddly wrong result appears repeatedly and only for inputs with something unusual in common.",
+   "A cluster of bad outcomes coincides with a change in the data the system was learning from.",
+   "The wrong answers consistently favor one outside party.",
+   "The organization running the system has publicly acknowledged and described the problem."
+  ],
+  "this_may_not_be_it_when": [
+   "The error is occasional and varies at random, which is typical of ordinary model limits.",
+   "The system was recently updated or retrained and results shifted for known reasons.",
+   "The only evidence is that the answer seems unfair or surprising.",
+   "The tool was used outside what it was built for.",
+   "A person can review and correct the result when asked."
+  ],
+  "innocent_or_ordinary_possibilities": [
+   "AI tools make mistakes with unusual wording, photos or accents even when nobody is trying to trick them.",
+   "Training data can be incomplete or skewed, producing consistent errors without any attacker.",
+   "Systems drift as language, scams and habits change, so once-good performance fades."
+  ],
+  "common_false_positives": [
+   "A chatbot that gives a wrong fact with confidence.",
+   "A photo filter that misidentifies an object in poor light.",
+   "A spam filter that misses one new kind of scam message."
+  ],
+  "discernment_questions": [
+   "Is there a human who can review this decision if I ask?",
+   "Has the organization or an independent researcher explained what went wrong?",
+   "Is this a one-off error, or a repeated, consistent one?",
+   "Am I treating the system's confidence as proof of correctness?",
+   "What other evidence do I have, apart from the system's answer?"
+  ],
+  "less_concerning_if": [
+   "A person reviews the automated result and corrects it without fuss.",
+   "The error is rare, random, and fixed after you report it.",
+   "The organization explains how the tool is tested and monitored."
+  ],
+  "more_concerning_if": [
+   "An automated tool decides something about your money, job, housing, or legal status, and nobody can explain or review it.",
+   "The same type of mistake keeps hurting the same group of people.",
+   "The organization cannot or will not say how the system is checked for tampering."
+  ],
+  "pattern_over_time_signs": [
+   "An error that was fixed returns in a slightly different form.",
+   "Reports of the same odd failure collect from many unconnected people.",
+   "The tool's results grow less trustworthy after some change in what it takes in.",
+   "Appeals are refused with the same answer, with no human looking at your case."
+  ],
+  "repair_check": "Accountability would mean the operator telling affected people what went wrong, correcting individual decisions made on bad outputs, and showing how the system is now tested. A quiet fix with no account to those affected leaves the earlier decisions standing.",
+  "boundary_respect_check": "Ask for a human review of any automated decision that matters, and note how it is received. A prompt, plain explanation and a real second look is a good sign. A reply that repeats the system's result as if it were final is a poor one.",
+  "psychological_mechanism": "A computer seems neutral, fast and consistent, so its answers often get the benefit of the doubt. That trust can make an automated error harder to challenge than a human one. Opaque results also leave the affected person unsure where to push back, and many simply accept the outcome.",
+  "possible_impact_on_receiver": "People describe frustration at being refused or flagged by a system nobody can explain, a sense of helplessness in appeals, and fresh distrust of automated tools. Some become wary of every confident AI answer, while others feel pressure to doubt their own judgment against the machine's.",
+  "response_options": {
+   "soft_clarification": "Ask the organization in plain words how a decision was reached and whether a person reviewed it, and request the answer in writing.",
+   "firm_boundary": "Decline to treat an automated result as final for anything important, and ask for a human decision-maker to look at your case.",
+   "disengagement": "If a tool keeps giving you doubtful answers, stop relying on it for important matters and use a second source or a person.",
+   "support_seeking": "Take an unexplained automated decision to a consumer protection office, an advocacy group or a legal aid service, with copies of what you were told.",
+   "workplace_or_professional": "If you work with automated tools, log odd results with dates and examples, report them to whoever maintains the system, and keep a human check on high-stakes outputs."
+  },
+  "boundary_script": "\"This result came from an automated system, and a confident answer is not the same as a correct one. Can a person review it, and what else do I have that supports or contradicts it?\"",
+  "safety_sensitive": false,
+  "safety_note": "An odd AI result is rarely a personal danger. It becomes serious if an automated tool wrongly affects your money, housing, job, health care or legal standing. In that case ask for human review in writing, keep copies, and contact a legal aid service or consumer protection office.",
+  "misuse_warning": [
+   "Blaming every strange AI output on an attack can excuse real design flaws and hide the ordinary biases and limits that cause most errors.",
+   "Accusing a specific person or company of tampering with a model, with no evidence, is a serious claim that can do real harm."
+  ],
+  "how_to_distinguish_from_related": "Strategic Leaking releases real information at a chosen moment, while this entry concerns misleading an AI tool so that its judgments go wrong. Strategic Deception is a broad campaign to mislead an adversary's decisions through many channels. PSYOP Message Framing is crafted to move human audiences, whereas this entry is about fooling a machine's reading of its input."
+ }
+}
