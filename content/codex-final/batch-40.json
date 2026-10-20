@@ -1,0 +1,496 @@
+{
+  "Deepfakes": {
+    "short_definition": "Fabricated images, video or audio made to show a real person doing or saying something they never did.",
+    "core_meaning": "Fabricated images, video or audio made to show a real person doing or saying something they never did.",
+    "expanded_definition": "A deepfake is media made or altered with software so that it shows a real person in a situation that never happened: a face placed on another body, a mouth made to speak new words, or a staged scene that looks recorded. It is used to humiliate, extort, defraud or damage a reputation. A polished look proves nothing either way. What matters is whether the person shown, and independent records, say it happened.",
+    "plain_language_summary": "A fake picture, video or recording that looks real and shows you doing or saying something you never did. How real it looks is not a reliable test.",
+    "why_this_matters": "The target is left disproving something that never happened, to people who have already seen it, and a denial can sound like what anyone caught would say. Shame and speed of sharing do much of the damage.",
+    "what_it_is": [
+      "A fabricated image, clip or recording of a real person, made so it passes as a genuine record.",
+      "Often sexual when aimed at private individuals, which makes it a form of intimate-image abuse even though no such photo was ever taken.",
+      "Also used in fraud, such as a fake video of a trusted figure, and in smear campaigns against public figures.",
+      "Harmful through belief and spread, not quality: a rough fake can still travel far among people ready to believe it.",
+      "Set apart from ordinary editing by presenting invented events as unaltered reality."
+    ],
+    "what_it_sounds_like": [
+      "A clip or image of you circulating that shows a place, act or statement you know never occurred.",
+      "People you know reacting to something you have no memory of, and asking why you did it.",
+      "A sexual image carrying your face that you never posed for, posted to a forum or sent to your contacts.",
+      "A message demanding money, more images or silence, with a sample of the fabricated media attached as a reminder of what could be shared.",
+      "A video with no original upload, no named source, and a caption urging viewers to pass it along quickly.",
+      "Audio in your voice saying words you have never said, or a face and mouth that look slightly out of step, though a good fake may show neither flaw.",
+      "Posters who answer questions about where the footage came from with insults instead of a source."
+    ],
+    "what_it_is_not": [
+      "Genuine footage that shows something embarrassing. Unflattering is not fake, and a real recording calls for a different response.",
+      "Satire or parody clearly labeled as such, where viewers are not meant to take it as a record.",
+      "Ordinary retouching, filters, color correction or dubbing that the person knowingly agreed to.",
+      "A low-resolution clip that looks strange because of how it was saved and re-shared many times.",
+      "A real photo with a false caption, where nothing was synthesized but the framing misleads.",
+      "A lookalike or impersonator filmed in real life, which is a different problem from synthetic media."
+    ],
+    "this_may_be_it_when": [
+      "You can show where you were at the time, and the media claims otherwise.",
+      "The content has no original source and first appeared on a new or anonymous account.",
+      "It arrived with a demand, a deadline, or a threat to send it to people you know.",
+      "A sexual image uses your face, but the body, room or marks on it do not match your own.",
+      "People who know you well say it does not look or sound like you, but cannot say why."
+    ],
+    "this_may_not_be_it_when": [
+      "You remember being filmed or photographed and can recall the occasion.",
+      "The original file can be traced to a device that you or a friend used.",
+      "The person who shared it names a real source and takes it down when asked.",
+      "The media is clearly labeled as software-made and nobody presents it as real.",
+      "Your only reason for doubt is that the content is upsetting to see."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Heavy compression, filters and poor lighting can make genuine faces look waxy or odd.",
+      "A relative or coworker may forward a clip in alarm without any idea it is fake.",
+      "A joke made with an app among friends can later spread beyond the group without anyone planning that.",
+      "Video-call glitches and dropped frames distort faces in real recordings."
+    ],
+    "common_false_positives": [
+      "A real clip of a public figure that viewers dislike and therefore call fake.",
+      "A dubbed or translated video where the lip movements do not match the new language.",
+      "A film or game character built with openly disclosed digital effects.",
+      "A genuine voice note with static or clipped words."
+    ],
+    "discernment_questions": [
+      "Can I show, from my own records, where I was and what I was doing at the time the media claims?",
+      "Is there an original upload, or only copies of copies?",
+      "Who first posted it, and what did that account post before?",
+      "Is anyone using it to demand something from me?",
+      "Am I judging it by how real it looks, which is no longer a safe test?"
+    ],
+    "less_concerning_if": [
+      "It is labeled as altered and nobody is presenting it as a record.",
+      "The person shown agreed to it and knows where it will appear.",
+      "It has stayed within a small group, and its maker removed it when asked."
+    ],
+    "more_concerning_if": [
+      "It is sexual, or comes paired with a demand for money, images or silence.",
+      "It is being sent to your employer, family or school.",
+      "Copies reappear on new accounts after takedowns."
+    ],
+    "pattern_over_time_signs": [
+      "New versions of the media appear, each posted on a different site or account.",
+      "Strangers write to you about content you have not seen.",
+      "Friends and coworkers begin treating you differently without saying why.",
+      "You search for your own name or face every day and dread the next find."
+    ],
+    "repair_check": "Whether anything improved shows in what comes down and stays down: the media removed from the sites that host it, the account closed, and the maker naming themselves and ending any demands. An apology while copies still circulate repairs nothing.",
+    "boundary_respect_check": "Did the demands or new postings stop after you reported, or only change accounts? A pause that ends when attention moves elsewhere is not the same as the matter being closed.",
+    "psychological_mechanism": "Eyes and ears get believed before anyone asks where a clip came from, so a realistic fake lands as proof before any thinking starts. Once viewers have seen it, a denial may sound like what anyone caught would say. Shame, fear of exposure and the speed of sharing can push targets toward silence or compliance, which is part of what gives the fabrication its force.",
+    "possible_impact_on_receiver": "People describe shock at seeing their own face or voice used, shame they did not earn, dread about who has seen it, and trouble sleeping or going to work or school. Some pull back from social media, friends or public life. Others describe steadier footing once they had a report number, a lawyer or a friend on their side.",
+    "response_options": {
+      "soft_clarification": "If someone you trust has seen it, tell them plainly that it is fabricated and that you can show where you were. Then ask them not to forward it.",
+      "firm_boundary": "Do not bargain with anyone demanding something in exchange for keeping it private. Keep the demand as it was sent and hand it to the people handling your report.",
+      "disengagement": "Stop replying to the sender. Before blocking anyone, save the messages, links and dates so there is a record.",
+      "support_seeking": "StopNCII.org and Take It Down are hash-matching services that help block known intimate images on participating platforms. Ask whether they can take your case, and contact a victim advocate or legal aid about options where you live.",
+      "workplace_or_professional": "If it reaches work or school, give HR or an administrator a short factual note with links and dates and ask for a named contact. You do not have to describe the content in detail."
+    },
+    "boundary_script": "\"This is fabricated media of me. I have saved the links, the dates and every message about it. I am asking you to remove it and to tell me what happens next.\"",
+    "safety_sensitive": true,
+    "safety_note": "Fabricated sexual images, demands for money, and threats to send material to family or an employer are danger signals, as is anyone who seems to know where you live or work. Save everything unaltered, tell someone you trust, and contact a victim advocate, legal aid or a police cybercrime unit. If you fear for your physical safety, call emergency services.",
+    "misuse_warning": [
+      "Calling an unflattering but genuine recording a deepfake is a way of discrediting real evidence, including a real victim's.",
+      "Declaring a clip fake from how it looks alone can wrongly accuse an innocent poster and leave the actual question untested."
+    ],
+    "how_to_distinguish_from_related": "AI Voice Cloning fakes sound only, and often arrives as a live call or voice note asking for money; a deepfake fabricates sight, with or without sound. Doxxing publishes things that are true and private, such as an address, while a deepfake invents something false. Sock Puppets invent people who do not exist, not an invented version of a real one."
+  },
+  "AI Voice Cloning": {
+    "short_definition": "Software-made copies of a real person's voice, used to impersonate them in calls, messages or recordings.",
+    "core_meaning": "Software-made copies of a real person's voice, used to impersonate them in calls, messages or recordings.",
+    "expanded_definition": "AI voice cloning is the use of software to produce speech that sounds like a specific real person, built from recordings of them. It appears as an urgent call from a relative, a voice note from a boss, or a recording offered as proof of what someone said. A familiar sound no longer shows who is speaking. The pattern to notice is a trusted voice paired with pressure to act fast or keep quiet.",
+    "plain_language_summary": "A computer-made copy of someone's voice that can say things they never said. It may sound exactly like a person you trust, so the sound alone proves nothing.",
+    "why_this_matters": "A voice you have trusted all your life stops being evidence of anything, and checking each unexpected call through a second channel becomes a permanent tax on ordinary contact. People can lose money or be blamed for words they never spoke.",
+    "what_it_is": [
+      "Speech generated by software to imitate one particular person, including their pitch, pacing and accent.",
+      "Used in phone scams where the caller sounds like a child, parent or boss in trouble and asks for money or codes.",
+      "Also used to produce fake recordings of someone supposedly confessing, threatening or agreeing, to damage them or win a dispute.",
+      "Convincing enough that people who know the person well can be fooled, so a trusted-sounding voice is no longer a safe test.",
+      "Different from a human impersonator, because it is software producing the voice rather than a person doing an impression."
+    ],
+    "what_it_sounds_like": [
+      "A call in a voice that sounds like a relative's, describing an emergency that needs money right now.",
+      "A voice note from a boss or colleague asking for gift cards, a transfer or a login code, outside their usual habits.",
+      "A caller who resists being phoned back, or insists you stay on the line and tell no one.",
+      "The real person, reached another way, knowing nothing about the call.",
+      "A recording of someone supposedly admitting something, with no date, no setting and no one else on it.",
+      "Flat emotion, odd pauses or repeated phrasing in an otherwise convincing voice, though a clone may show none of these.",
+      "A voice-only request from someone who normally writes."
+    ],
+    "what_it_is_not": [
+      "A real call from a real person who is stressed, ill or in a noisy place and so sounds unlike themselves.",
+      "A human impression or prank by someone with a good ear.",
+      "An openly labeled automated voice, such as a clinic's appointment reminder.",
+      "A bad phone line, compression or Bluetooth echo that distorts a genuine voice.",
+      "A genuine recording that is unwelcome. Hearing yourself say something you regret is not proof it was cloned.",
+      "A voice copy that a person agreed to and disclosed, for example for audiobooks or accessibility."
+    ],
+    "this_may_be_it_when": [
+      "The voice is familiar, but the request is unlike anything this person has ever asked.",
+      "Urgency and secrecy arrive together: pay now and tell nobody.",
+      "The payment route is hard to trace or reverse, such as gift cards, crypto or a wire.",
+      "The person cannot be reached by their usual means while the call is happening.",
+      "The caller dodges a question that only the real person could answer."
+    ],
+    "this_may_not_be_it_when": [
+      "You phoned back on a number you already had and the same person answered.",
+      "The request matches what this person has done before, through their usual channel.",
+      "Someone who is physically with them confirms the situation.",
+      "The caller is fine with delay and welcomes you checking.",
+      "The voice sounds different because they are known to be sick, traveling or somewhere loud."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "A cold or exhaustion can change a voice a great deal.",
+      "People calling from a borrowed phone, a hospital or a station can sound and act unlike themselves.",
+      "Family emergencies are real, and a frightened relative may truly ask for money.",
+      "Voicemail systems and cheap earbuds flatten voices."
+    ],
+    "common_false_positives": [
+      "A friend who sounds robotic on a patchy connection.",
+      "An automated voice from a bank or clinic, openly announced as automated.",
+      "A relative who asks for help in an odd way because they are embarrassed.",
+      "A comedian or actor doing a recognizable impression."
+    ],
+    "discernment_questions": [
+      "If I hang up and call this person back on a number I already had, who answers?",
+      "Does anyone else who knows them know about this?",
+      "Am I being rushed, and told not to tell anyone?",
+      "Could I be sure of this voice if I could not see who was speaking?",
+      "How is the money supposed to move, and could I get it back?"
+    ],
+    "less_concerning_if": [
+      "You reached the person on a known number and they confirmed the call.",
+      "Nothing about money, codes or secrecy is asked.",
+      "The request fits the person's normal habits and channel."
+    ],
+    "more_concerning_if": [
+      "The speaker asks for money or codes and says you must not call anyone.",
+      "A recording is used as proof against someone, with no known origin.",
+      "The same voice shows up making demands to several people in one family or office."
+    ],
+    "pattern_over_time_signs": [
+      "Calls or voice notes keep arriving in familiar voices, small asks first and bigger ones later.",
+      "Relatives report similar calls that none of them can trace to the real person.",
+      "You catch yourself unsure whether to trust even genuine calls from people you love.",
+      "A recording attributed to you gets cited in a dispute, and each retelling treats it as settled."
+    ],
+    "repair_check": "Practical steps show repair: the number or account shut down, the bank freezing or reversing a transfer where it can, and everyone who was called told that it was not the real person. Anyone calling it a misunderstanding while the money is still gone has repaired nothing.",
+    "boundary_respect_check": "When you say you will call back on a number you already have, watch what the caller does. A real person welcomes the check. Pressure to stay on the line is the pattern showing itself.",
+    "psychological_mechanism": "A familiar voice tends to bypass doubt because we link it to people we love and trust, and a panicked tone can narrow thinking to the emergency in front of us. Urgency, secrecy and fear of being the one who did not help can push people to act before they check. Embarrassment afterward often keeps people from telling anyone.",
+    "possible_impact_on_receiver": "A drop in the stomach on hearing a loved one in apparent danger is common, followed by shame or anger at oneself after learning it was false. Some people lose savings. Others start doubting real calls or avoid answering the phone. Someone whose voice was copied may feel violated that something so personal was taken.",
+    "response_options": {
+      "soft_clarification": "Tell the caller you are going to phone back on the number you already have, then do it. A genuine caller can wait a minute.",
+      "firm_boundary": "Decline to send money, codes or sensitive details on a call you did not start, however urgent it sounds. Say it will be handled through your usual channel.",
+      "disengagement": "Hang up and check with the person, or someone near them, by another route. Do not stay on a line that insists you keep going.",
+      "support_seeking": "Tell your bank right away if money moved, report the call to the police or your country's fraud reporting service, and let family know so they can be careful.",
+      "workplace_or_professional": "If a voice message from an executive asks for payment or credentials, confirm with that person by a separate known route and report it to your security or finance team."
+    },
+    "boundary_script": "\"A voice is not proof. Before I send anything, I am going to hang up, call this person back on the number I already have, and ask someone who is near them whether any of this is true.\"",
+    "safety_sensitive": true,
+    "safety_note": "Cloned voices are used to claim a relative is in danger and to push money out of savings. If you hear a threat to someone you love, confirm they are safe through a separate channel first. Then contact your bank and the police or a fraud service, and legal aid if a recording is used in a custody, protective order or employment dispute. Call emergency services if anyone is in immediate danger.",
+    "misuse_warning": [
+      "Calling any awkward recording a voice clone can discredit genuine evidence, including a real victim's.",
+      "Telling a relative who really phoned for help that they must be a fake can leave a true emergency unanswered. The label calls for a check, not a refusal."
+    ],
+    "how_to_distinguish_from_related": "Deepfakes fabricate how someone looks and may also carry their voice; voice cloning is sound only and often arrives as a live call. Sock Puppets are invented personas with no real person behind them, whereas a clone borrows one real person's voice. Doxxing publishes true private details instead of faking a speaker."
+  },
+  "Doxxing": {
+    "short_definition": "Publishing a person's private details, such as a home address or workplace, so others can find or harass them.",
+    "core_meaning": "Publishing a person's private details, such as a home address or workplace, so others can find or harass them.",
+    "expanded_definition": "Doxxing is the release of personal information that was not meant to be public: a home address, phone number, employer, a child's school, or the real name behind an anonymous account. The details often arrive with a hostile story about the person. The exposure itself is the harm, since details once public cannot be fully recalled. Gathering findable facts into one profile can be harmful even if each fact alone was easy to find.",
+    "plain_language_summary": "Someone posts your private details, like where you live or work, where strangers can see them, so you are easier to find and bother.",
+    "why_this_matters": "Risk moves offline and out of your hands: your home, workplace and family become reachable by strangers who have no tie to the original dispute, and the exposure cannot be fully undone.",
+    "what_it_is": [
+      "Posting a home address, phone number, workplace, school or a relative's name where strangers will see it.",
+      "Linking an anonymous account to a real name, which can end the safety that anonymity gave.",
+      "Combining facts that were each findable alone into one profile, which changes what they can be used for.",
+      "Usually paired with a story that casts the person as deserving of anger, so readers feel invited to act.",
+      "Set apart from criticism because it targets where a person can be reached, not what they said."
+    ],
+    "what_it_sounds_like": [
+      "A post that lists your address, employer or family names beside an angry account of something you are said to have done.",
+      "Strangers messaging or phoning you about a dispute, using your real name.",
+      "Deliveries, calls or visitors you did not request arriving at your home or workplace.",
+      "A thread where people trade more details about you and congratulate each other for finding them.",
+      "Your real name suddenly attached to an account you kept anonymous.",
+      "A photo of your house or street shared with a comment.",
+      "An employer or landlord receiving complaints that name you right after an online dispute."
+    ],
+    "what_it_is_not": [
+      "Information you chose to make public, such as your own business address on your website.",
+      "Naming a public official in connection with their public role, where office contact details are listed openly for that purpose.",
+      "A news report that names someone and describes a public act without personal contact details.",
+      "A neighbor knowing where you live, or a friend mentioning your employer to someone who also knows you.",
+      "Harsh criticism of your public statements or work.",
+      "A court or property record that has always been public. It can feel invasive, but its existence is not an invitation to harass."
+    ],
+    "this_may_be_it_when": [
+      "The details were private until a dispute began.",
+      "The post pairs them with a call to contact or confront you.",
+      "Strangers start reaching you in places you never shared with them.",
+      "Your anonymous name and your real name are now linked in public.",
+      "Family members or an employer are named, not just you."
+    ],
+    "this_may_not_be_it_when": [
+      "The detail is one you posted publicly yourself.",
+      "It is a business listing or a public office contact.",
+      "There is no hostile framing and no sign anyone is acting on it.",
+      "It was shared privately with someone you trust and went no further.",
+      "The poster removes it promptly when asked."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "A friend may mention your workplace online without realizing it is sensitive.",
+      "A tagged photo can reveal your location without anyone having chosen to expose you.",
+      "Data brokers and public records may hold your details long before any dispute.",
+      "Local news or a school newsletter may name you in a routine way."
+    ],
+    "common_false_positives": [
+      "Your business address appearing on a review site.",
+      "A tagged check-in that you or a friend posted.",
+      "A harsh review of your business under the business's own name.",
+      "A spam call from a marketer who bought a contact list."
+    ],
+    "discernment_questions": [
+      "Was this detail private before, or have I shared it somewhere myself?",
+      "Is it paired with anger or an invitation to contact me?",
+      "Are strangers reaching me in ways that follow the posting?",
+      "Which details could be used to find me physically, and who else has them?",
+      "Is anyone in my household or workplace now exposed too?"
+    ],
+    "less_concerning_if": [
+      "The detail is already printed in a public place that you chose.",
+      "No stranger has contacted you about it, by message, phone or in person.",
+      "The poster took it down when you asked."
+    ],
+    "more_concerning_if": [
+      "Your home address, a child's school or your daily routine are shown.",
+      "People are being urged to visit, call or report you.",
+      "The details reappear on new sites after removal."
+    ],
+    "pattern_over_time_signs": [
+      "Contact from strangers comes in waves tied to new posts.",
+      "More details about you surface over weeks, as if someone keeps adding to a file.",
+      "You change routines: routes, hours, phone numbers, social media.",
+      "People you know ask whether you are okay after seeing a thread about you."
+    ],
+    "repair_check": "Repair shows in what is removed and stays removed: the post and its copies taken down, the publisher confirming in writing that nothing further is kept, and the contact from strangers dying off. An apology while the thread stays up does not count.",
+    "boundary_respect_check": "After you report, does the contact slow, or does fresh content turn up on other accounts? Whether the listing stays down is a better measure than anything said to you.",
+    "psychological_mechanism": "Exposure tends to turn an online dispute into a physical-world worry. Once a person knows strangers could find their door, ordinary acts like answering the phone or walking home can feel risky. Crowds can also spread responsibility thin: each stranger does a small thing and nobody feels like the cause of the whole, which can leave the target feeling watched by everyone.",
+    "possible_impact_on_receiver": "People describe fear at home, checking windows and cars, changing numbers, altering children's routines, and dreading every unknown caller. Some take time off work, go offline or move. Others describe shame at being found, or anger that a private life was made public.",
+    "response_options": {
+      "soft_clarification": "If a friend or relative may have shared a detail without thinking, ask them privately to remove it, and ask anyone who tagged you to do the same.",
+      "firm_boundary": "Report each post to the platform and to the site host, pointing to the page that shows your private details. Ask for removal of the information, not a debate.",
+      "disengagement": "Do not reply to the thread or to strangers who contact you. Save what arrives with dates, then limit who can reach you on each account.",
+      "support_seeking": "Tell someone you trust and a victim advocate where the post is, so a second person can help watch. If threats appear, contact the police and, where available, a legal aid clinic.",
+      "workplace_or_professional": "Alert your employer's security or HR team early so the front desk or phone line is ready for odd calls, and give them a short factual note rather than the thread itself."
+    },
+    "boundary_script": "\"This page shows my home address and workplace, which I never made public. I have saved the link and the date. I am asking that it be removed, and for help reporting any related posts.\"",
+    "safety_sensitive": true,
+    "safety_note": "A home address, a child's school or a daily routine appearing online is a safety signal, as are threats, strangers arriving in person, or anyone who seems to track your movements. Save everything, tell the people you live with, and contact the police and a victim advocate. If someone is at your door or you fear immediate harm, call emergency services.",
+    "misuse_warning": [
+      "Calling a public figure's openly listed office contact doxxing can shield them from legitimate accountability.",
+      "Posting someone's details to expose a supposed wrongdoer is the harm itself, whoever the target is and however sure the poster feels."
+    ],
+    "how_to_distinguish_from_related": "Deepfakes invent something false about you, while doxxing publishes something true and private. Stalking-by-Notification is watching your online activity and building a case from it, typically by one person, while doxxing hands your location to many. Coordinated Reporting targets your account, while doxxing exposes your doorstep."
+  },
+  "Sock Puppets": {
+    "short_definition": "Fake accounts run by one person or a small group to pass as independent people, creating false agreement or pile-ons.",
+    "core_meaning": "Fake accounts run by one person or a small group to pass as independent people, creating false agreement or pile-ons.",
+    "expanded_definition": "A sock puppet is an account that looks like an independent person but is controlled by someone else, often the same person behind other accounts. Several of them can make a view look widely held, cheer on an argument, vouch for a story, or swarm a target. The deception lies in the appearance of separate people. A single odd account proves little. What stands out is a group that seems independent but behaves as one.",
+    "plain_language_summary": "One person pretending to be many. The accounts seem unconnected, but the crowd of agreement or attack is smaller than it looks.",
+    "why_this_matters": "You argue against what looks like a consensus and decide you are the outlier, when the numbers on the other side were never real. The same trick can make a pile-on feel like the verdict of many.",
+    "what_it_is": [
+      "Accounts presenting as separate people but directed by the same hand.",
+      "Used to cheer for one side, back up a person's story, or pile on a target so that a crowd appears.",
+      "Often built to look ordinary, with a plausible name, a photo and everyday posts, so the account itself reveals little.",
+      "Different from an openly run brand account or a person's disclosed second account.",
+      "Harmful through false social proof: you read the numbers as other people's real opinions."
+    ],
+    "what_it_sounds_like": [
+      "Several new accounts with thin histories appearing together under a post to defend one person.",
+      "Replies that echo the same unusual phrase or talking point within minutes.",
+      "Accounts that praise or back each other and rarely talk to anyone else.",
+      "A witness who turns up to confirm a story and has no posts before the dispute.",
+      "Generic or stock-looking profile photos and handles ending in long strings of digits.",
+      "A set of accounts that are all active at the same odd hours.",
+      "A new account that knows details of a private argument it should not have seen."
+    ],
+    "what_it_is_not": [
+      "Real people who share an opinion and post around the same time because a news story or a famous account prompted them.",
+      "A person's disclosed alternate accounts, such as a work account and a personal one.",
+      "A group openly organizing supporters under its real name.",
+      "New accounts made by people who joined just to follow a breaking event.",
+      "A fan community whose members repeat the same slogans and memes.",
+      "Automated bot accounts, which can look similar but are not one person pretending to be many."
+    ],
+    "this_may_be_it_when": [
+      "Accounts claiming to be strangers show matching phrasing, timing and topics.",
+      "A cluster appears the day a conflict starts and vanishes after it.",
+      "They never post about anything else.",
+      "An account's claims about the dispute contain inside details.",
+      "When one is challenged, another steps in with near-identical wording."
+    ],
+    "this_may_not_be_it_when": [
+      "The accounts have long, varied histories and talk with many other people.",
+      "Their views differ in detail and tone.",
+      "The people can be reached and are known offline.",
+      "The support is openly announced by an organization.",
+      "The only evidence is that you disagree with them or that there are many."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Members of one community often share slang and arrive together when a link is passed around.",
+      "People open new accounts after losing a password or leaving a platform.",
+      "Privacy-minded users often keep sparse profiles as a safety habit.",
+      "A viral post sends a surge of newcomers to the same thread."
+    ],
+    "common_false_positives": [
+      "A fan group rallying after a post by a celebrity.",
+      "A company's official accounts posting together, openly.",
+      "A person with a main account and a clearly labeled hobby account.",
+      "Strangers who agree with you for their own reasons."
+    ],
+    "discernment_questions": [
+      "Do these accounts have lives beyond this dispute?",
+      "Is the wording alike in ways a shared news story would not explain?",
+      "Would I think differently if only two or three voices were saying this?",
+      "Did they appear only when this conflict began?",
+      "Am I judging them by their opinions, or by their behavior?"
+    ],
+    "less_concerning_if": [
+      "The accounts have long, varied histories and reply to many unrelated people.",
+      "Differences in opinion and style show up among them.",
+      "An organization claims the group and names itself."
+    ],
+    "more_concerning_if": [
+      "They are used to push a target out or to make threats while appearing unrelated.",
+      "Accounts return under new names after being removed.",
+      "They quote private information about the person they target."
+    ],
+    "pattern_over_time_signs": [
+      "New accounts keep arriving with the same argument whenever the issue returns.",
+      "The mass of support or attack drops to nothing once a decision date passes.",
+      "The agreement seems to come from a different crowd each time but sounds the same.",
+      "You begin to doubt your own views because everyone online seems to disagree."
+    ],
+    "repair_check": "When one operator is found out, repair would mean closing the extra accounts, saying openly that one person ran them, and retracting what they claimed. A fresh batch of accounts after a public apology shows the opposite.",
+    "boundary_respect_check": "Check whether the pile-on thins after you report or mute, or whether fresh accounts take the same place. A crowd of separate individuals tends to drift away; a staged one tends to be replaced.",
+    "psychological_mechanism": "Other people's apparent views serve as a guide to what is normal and safe to say, so several seeming strangers agreeing may read as evidence. A crowd also tends to leave a target feeling isolated and outnumbered, and to push bystanders toward silence or the majority side. Since each account looks separate, spotting the link takes effort most readers do not spend.",
+    "possible_impact_on_receiver": "Feeling outnumbered is a common description, along with doubting a view once held, withdrawing from a forum, or reading a pile-on as proof of being widely disliked when it came from few people. Some feel anger on learning the crowd was thin, and some grow distrustful of every new account that agrees with them.",
+    "response_options": {
+      "soft_clarification": "Before answering a crowd, look at whether the accounts have histories and whether their wording matches. A plain question such as whether you have talked before can show a lot.",
+      "firm_boundary": "Decline to argue with accounts you cannot place. Say what you think once, in your own space, and do not answer each reply.",
+      "disengagement": "Mute, block or limit replies on the thread and step away until the wave passes. Answering a swarm can feed it.",
+      "support_seeking": "Show a few examples to a friend who knows the dispute, or to a moderator or reporter, so a second pair of eyes can say whether the pattern looks real.",
+      "workplace_or_professional": "If this targets your business or role, collect dated examples, report them through the platform's channel for fake accounts, and tell your communications lead."
+    },
+    "boundary_script": "\"Before I react to this crowd: do these accounts have lives of their own, or did they all arrive together? Would I think differently if only three people were saying it?\"",
+    "safety_sensitive": false,
+    "safety_note": "Sock puppets alone are usually a distortion and a nuisance, not a physical danger. That changes when the accounts threaten you, share your personal details, or show up in your real-world life. Then save screenshots with links and dates, report to the platform, and speak to a victim advocate or the police.",
+    "misuse_warning": [
+      "Calling anyone who disagrees with you a sock puppet dismisses real people and can end an honest discussion.",
+      "Naming a particular person as the operator behind accounts, from similar writing alone, can wrongly accuse an innocent user."
+    ],
+    "how_to_distinguish_from_related": "Coordinated Reporting uses a crowd, real or fake, that complains in private to a platform; sock puppets speak in public to fake a crowd. Deepfakes fake a real person's actions, while sock puppets fake the existence of other people. Doxxing uses real details about you; a sock puppet's persona is invented."
+  },
+  "Coordinated Reporting": {
+    "short_definition": "Organized mass reporting of an account or post, often on false grounds, to get a platform to remove or restrict it.",
+    "core_meaning": "Organized mass reporting of an account or post, often on false grounds, to get a platform to remove or restrict it.",
+    "expanded_definition": "Coordinated reporting is the use of a platform's report buttons by many people at once to get someone suspended, demonetized or removed, whether or not a rule was broken. Platforms may treat the number of reports as a signal, so volume can stand in for evidence. Many honest reports about a real violation are not this. What marks it is organization, a mismatch between the reports and the content, and a target who cannot see why.",
+    "plain_language_summary": "Many people file complaints about the same account at the same time, not because of a real problem but to get it shut down.",
+    "why_this_matters": "You can lose your account, your audience or your income through a system built to protect people, and appeals against decisions made on volume can be slow and hard to reach.",
+    "what_it_is": [
+      "Many reports against one account or post, filed close together, often citing a rule the content does not break.",
+      "Organized in a group chat, thread or list where people are told whom to report.",
+      "Aimed at creators, activists, small sellers and ordinary users, sometimes after they criticized someone.",
+      "Can rest on false claims such as spam, impersonation or harm.",
+      "Different from legitimate reporting, where independent people flag real violations and the content matches the complaint."
+    ],
+    "what_it_sounds_like": [
+      "A sudden warning, strike or suspension arriving right after a public dispute.",
+      "A notice citing a rule that does not match what you posted.",
+      "Several posts removed within an hour for different stated reasons.",
+      "Followers telling you a thread or group is circulating your handle with encouragement to report it.",
+      "An account locked while the appeal sits unanswered.",
+      "Removal alerts arriving in bursts at similar times of day."
+    ],
+    "what_it_is_not": [
+      "Many independent people reporting a post that really breaks the rules.",
+      "A single mistaken removal by an automated filter.",
+      "A platform enforcing a rule you did not know about.",
+      "A follower reporting something harmful on their own.",
+      "A group openly flagging a real scam, where the reports match what is actually posted.",
+      "A platform outage or policy change that affects many accounts at once."
+    ],
+    "this_may_be_it_when": [
+      "Your removal followed a public argument by hours or days.",
+      "The rule cited does not fit the post.",
+      "People you do not know write to celebrate your suspension.",
+      "A thread or chat names your account as a target.",
+      "Several of your posts fell at once though nothing else changed."
+    ],
+    "this_may_not_be_it_when": [
+      "The post does break a rule once you read the policy.",
+      "Only one post was removed, with an explanation that fits.",
+      "Other users of similar content were treated the same way.",
+      "The platform shows an error or a mass policy change.",
+      "Nobody had a dispute with you beforehand."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Automated systems flag posts by keyword, which catches harmless content.",
+      "A post may truly have upset many people, who each reported it on their own.",
+      "Platforms change rules and enforcement in waves.",
+      "A viral post draws more attention and with it more reports, including honest ones."
+    ],
+    "common_false_positives": [
+      "A real policy violation that many independent users flagged.",
+      "A glitchy removal of many accounts after a platform update.",
+      "A temporary restriction that follows ordinary rate limits.",
+      "Being muted or blocked by someone, which is not a report."
+    ],
+    "discernment_questions": [
+      "Does the rule cited match what I actually posted?",
+      "Did this follow a dispute, and who was involved?",
+      "Is there any sign, such as a group post or a shared list, that people were organized?",
+      "Do I have the notices, dates and screenshots saved?",
+      "What appeal route exists, and have I used it?"
+    ],
+    "less_concerning_if": [
+      "The cited rule fits the content on a fair reading.",
+      "Removal came with a clear explanation and a working appeal.",
+      "No dispute with others came before it."
+    ],
+    "more_concerning_if": [
+      "It repeats after each reinstatement of the account.",
+      "It hits your source of income, such as a shop, channel or ad account.",
+      "The reporting is paired with harassment, doxxing or threats."
+    ],
+    "pattern_over_time_signs": [
+      "Each time you post on one subject, a wave of reports follows.",
+      "Appeals meet automated replies while the cycle continues.",
+      "Your reach shrinks and you begin to censor yourself.",
+      "The same names, or the same kinds of accounts, appear in threads about you before each removal."
+    ],
+    "repair_check": "Reinstatement is only part of it. Repair also means the history and strikes cleared, and the platform confirming the reports were unfounded. An account restored on Monday and hit again by Friday has not been repaired.",
+    "boundary_respect_check": "Consider whether your appeal gets a human answer that addresses the actual content. Silence, form replies, and a second wave of reports soon after reinstatement all suggest the problem is continuing.",
+    "psychological_mechanism": "Reporting systems are designed to treat many separate complaints as a sign that something is wrong, so volume can pass for evidence. Automated review, thin staffing and the weight of numbers can carry the decision before a person looks. Targets often censor themselves out of fear of the next strike, which can quiet them even without a removal.",
+    "possible_impact_on_receiver": "People describe losing months of work, followers or income in an afternoon, the helplessness of an appeal that goes nowhere, and a creeping habit of watching their words. Some feel anger at being treated as the offender, and some move to other platforms or stop posting about the subject that drew attention.",
+    "response_options": {
+      "soft_clarification": "Read the notice closely and write down which rule it cites and which post it points to. A mismatch is useful to state in your appeal.",
+      "firm_boundary": "Use the platform's appeal route and state facts only: what you posted, the rule cited, and why they do not match. Keep it short and attach screenshots.",
+      "disengagement": "Do not argue with accounts celebrating the suspension or ask them to stop. Keep your records and let the appeal run.",
+      "support_seeking": "Contact the platform's creator or business support if you have it, a digital-rights group, or a lawyer if income is at stake. Share the timeline with someone who can help watch the account.",
+      "workplace_or_professional": "If the account is part of your job, tell your manager early and keep the notices, dates and appeal numbers in one folder so the business can show what happened."
+    },
+    "boundary_script": "\"The rule cited in this notice does not match what I posted. I have saved the notice, the post and the date. I am asking for a review by a person, and for the reports behind it to be looked at together.\"",
+    "safety_sensitive": true,
+    "safety_note": "Mass reports sometimes travel with harassment, doxxing or threats, and with the loss of a business or income. Threats, strangers learning your address, or messages celebrating your harm are signals to take seriously. Keep every notice and thread, tell a trusted person, and reach the police, a victim advocate or legal aid for threats or lost income.",
+    "misuse_warning": [
+      "Calling a legitimate removal a brigade avoids asking whether the post broke a rule.",
+      "Naming specific people as the organizers of a report wave without evidence can bring harassment onto the wrong person."
+    ],
+    "how_to_distinguish_from_related": "Sock Puppets make a fake crowd that speaks in public; coordinated reporting uses a crowd, real or fake, that complains in private to a platform. Doxxing sends people to your door instead of to your report queue, though the two can travel together. Stalking-by-Notification gathers your activity to use against you, while here the weapon is the platform's own enforcement."
+  }
+}
