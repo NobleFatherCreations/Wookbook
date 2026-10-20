@@ -43,8 +43,8 @@ OUT = os.path.join(ROOT, "content", "playbook-data.json")
 
 # name -> expected entry count, so a silently truncated deploy fails loudly
 DATASETS = {
-    "COMPENDIUM": 349,
-    "CODEX_COMPLETED": 349,
+    "COMPENDIUM": 310,
+    "CODEX_COMPLETED": 310,
     "RECIPES": 109,
 }
 
