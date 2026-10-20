@@ -1,0 +1,677 @@
+{
+  "Algorithmic Manipulation": {
+    "short_definition": "Using feed ranking and recommendation systems to steer what a person sees and how they feel, in ways the person cannot inspect or switch off.",
+    "core_meaning": "Using feed ranking and recommendation systems to steer what a person sees and how they feel, in ways the person cannot inspect or switch off.",
+    "expanded_definition": "Feeds, autoplay queues and recommendation lists decide what appears first, what repeats and what never shows up. Ranking alone is ordinary product design. The concern is when that ordering is used to push someone's mood, beliefs or habits somewhere they did not choose, and they cannot see it happening. One odd recommendation proves nothing. Only researchers with access to the systems can show deliberate steering, so a reader can notice effects but rarely confirm cause.",
+    "plain_language_summary": "A hidden process decides what shows up in your feed and in what order, and it may be tuned to move your mood or opinions without telling you.",
+    "why_this_matters": "What a person sees shapes what they take the world to be like. When the selection is made by a process they cannot inspect, the resulting beliefs and moods feel entirely their own, which makes them hard to question.",
+    "what_it_is": [
+      "Ranking, recommendation and autoplay systems used to shape what someone is exposed to, and in what order.",
+      "Tuning for attention or reaction, so that upsetting or outrage-heavy items can rise because people respond to them.",
+      "Personalization that narrows a feed toward one theme, so the person sees a smaller world over time.",
+      "Almost entirely invisible from the user's side: the ranking rules and the reasons for any one item are not shown.",
+      "Different from a person pressuring you, because no individual message needs to be false for the overall picture to be skewed."
+    ],
+    "what_it_sounds_like": [
+      "A feed that is mostly one emotion, such as anger or dread, on topics you only looked at once.",
+      "A recommendation queue that keeps drifting toward more extreme versions of what you watched.",
+      "The same story or claim appearing again and again in different packaging.",
+      "Posts from friends you care about seldom appearing, while strangers' posts about a single issue fill the top.",
+      "A sudden run of content on a sensitive subject right after you searched for it once.",
+      "Autoplay carrying you well past where you meant to stop, with no natural endpoint.",
+      "A sense that everyone online holds one opinion, when people around you hold several."
+    ],
+    "what_it_is_not": [
+      "Ranked feeds are the default almost everywhere, and sorting content by what you tend to engage with is ordinary product design.",
+      "Personalization that shows more of what you already read, because you read it, is not a campaign against you.",
+      "A bad stretch of content after a major news event, when real people are all posting about the same thing.",
+      "Your own habits: you may be clicking more of one kind of item than you realize, which then gets you more of it.",
+      "A one-time odd recommendation. Systems get things wrong all the time without anyone aiming at you.",
+      "Nothing in a conversation or a single screenshot can settle deliberate steering either way."
+    ],
+    "this_may_be_it_when": [
+      "Independent researchers or regulators with access to the system have documented the specific effect.",
+      "A platform's own published findings or leaked internal documents describe tuning content to move users' mood or behavior.",
+      "Your feed's tone shifts sharply and persistently after a change in the platform's settings, with no change in what you do.",
+      "Several unrelated users report the same pattern at the same time.",
+      "The content on offer rewards staying and reacting more than it informs, and that is consistent across weeks."
+    ],
+    "this_may_not_be_it_when": [
+      "The content matches what you have been searching, liking and following lately.",
+      "The mood of your feed tracks a real event that everyone is talking about.",
+      "You see mixed viewpoints and friends' posts alongside the repetitive items.",
+      "Your own screen time and clicking are the only thing you can point to as evidence.",
+      "You are inferring a plan from a single recommendation that felt eerily well timed."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Interest-based sorting working as designed, showing more of what you stopped to look at.",
+      "Coincidence: a recommendation that seems to read your mind may simply match what millions of similar viewers watched.",
+      "A news cycle in which one topic really does dominate what people are posting."
+    ],
+    "common_false_positives": [
+      "Noticing an ad for something you only talked about, when you had also searched for it, or friends nearby had.",
+      "Assuming a feed that leans one way proves the platform holds that view.",
+      "Feeling manipulated by content that is simply upsetting because the real news is upsetting."
+    ],
+    "discernment_questions": [
+      "Does my feed differ from what friends who follow the same accounts see, or only from what I expected?",
+      "Has my mood after using this app changed over months, and does that track what I'm shown?",
+      "Is there a natural place to stop, or does the app keep supplying one more item?",
+      "Would I hold this view if I had also been shown the strongest case against it?",
+      "What evidence do I have beyond the feeling that the feed is aimed at me?"
+    ],
+    "less_concerning_if": [
+      "You can switch the feed to a plain chronological or followed-accounts-only view and the content looks much the same.",
+      "The platform publishes how its ranking works and lets you adjust it.",
+      "Your views and moods stay steady when you take a week away from the app."
+    ],
+    "more_concerning_if": [
+      "The system keeps serving content on a vulnerable subject, such as self-harm, to someone who has shown distress.",
+      "The person using it is a child or a teen who cannot easily step away.",
+      "The platform denies there is any ranking at all, or cannot say why a given item was shown."
+    ],
+    "pattern_over_time_signs": [
+      "You feel more anxious or angry about topics you used to feel neutral about, after months of scrolling.",
+      "Your sense of what most people think moves toward whatever your feed repeats.",
+      "Sessions run longer than planned, and leaving takes effort even when you are not enjoying it.",
+      "People who use a different platform describe a quite different world on the same topics."
+    ],
+    "repair_check": "Platforms that take this seriously let outside researchers study the effects, explain why items are shown, give you controls that really change the feed, and change the system when harm is found. A blog post promising to care, with no access and no change, does not do those things.",
+    "boundary_respect_check": "Notice whether your controls do what they say. When you mute a subject, reset recommendations or switch to a followed-only view, does the feed actually change? Controls that quietly revert or do nothing suggest your choices are not the ones steering.",
+    "psychological_mechanism": "Whatever shows up often or first is easily taken as common or important. A feed ordered by how strongly viewers react can tilt a person's sense of what is normal, urgent or frightening. Each item looks like a free choice to click, so the shaping goes unnoticed, and the resulting mood is easily read as one's own.",
+    "possible_impact_on_receiver": "Some report feeling irritable or fearful after long sessions, a narrower sense of who agrees with them, and surprise when a week away lifts the mood. Others recall embarrassment on realizing a strong opinion came mostly from repetition, or simply notice that hours disappeared.",
+    "response_options": {
+      "soft_clarification": "Ask yourself or a friend to compare feeds side by side for a few minutes, and see how much of what looks like 'everyone thinks this' is only your feed.",
+      "firm_boundary": "Turn off autoplay and personalized suggestions where the settings allow it, and decide ahead of time how long a session will last.",
+      "disengagement": "Take a break from the app for a week and notice how your mood and views feel without it. Use the plain followed-accounts view if one exists.",
+      "support_seeking": "Talk with a friend, parent or counselor if a feed seems tied to low mood, self-harm content or a teenager's distress. Report harmful recommendations to the platform.",
+      "workplace_or_professional": "If your role touches platform design, moderation or policy, document specific harm examples with dates and raise them through your organization's review or ethics channel."
+    },
+    "boundary_script": "\"This feels true because I keep seeing it, and that is not the same as it being true. What would I think if I looked at three sources I chose myself, not the ones that were handed to me?\"",
+    "safety_sensitive": false,
+    "safety_note": "Feed steering is a personal safety issue when it serves harmful content to someone in distress, such as material about self-harm or eating disorders, or when a child cannot step away. Then the step is to involve a trusted adult or counselor, report the content, and reach emergency services if there is immediate danger.",
+    "misuse_warning": [
+      "Treating any unwelcome feed as proof of a hidden plot can feed paranoia and ignores that most ranking is blunt commercial sorting.",
+      "Telling someone their opinions are 'just the algorithm' dismisses views they may have reached through their own thinking."
+    ],
+    "how_to_distinguish_from_related": "Dark Patterns work on a single screen or decision, such as a button or a checkout, while this works across a whole feed over time. Context Poisoning corrupts the underlying material that is stored or trained on, whereas here the material may be real and only its selection and order are skewed. Synthetic Persona Networks supply fake voices; algorithmic steering can run entirely on real posts by real people."
+  },
+  "Dark Patterns (AI-Adaptive)": {
+    "short_definition": "Interface designs that push people toward purchases, data sharing or consent they did not intend, and that adjust to each user's apparent weaknesses.",
+    "core_meaning": "Interface designs that push people toward purchases, data sharing or consent they did not intend, and that adjust to each user's apparent weaknesses.",
+    "expanded_definition": "Dark patterns are screens built so the quickest path is not the one a person would pick with time to read: a hidden decline button, a pre-ticked box, a countdown timer, a cancel flow that takes ten steps. The AI-adaptive version changes the screen for each user, based on what the system has learned about them. Good design nudges too, and a confusing checkout is usually just badly built. The concern is design that gets harder to escape the more it learns.",
+    "plain_language_summary": "Apps and websites sometimes set up screens so you agree, buy or share more than you meant to, and some now adjust the screen to what works on you in particular.",
+    "why_this_matters": "Money, personal data and consent leave a person's hands through interfaces built so the default path is not what they would have chosen. People often blame themselves for clicking, when the screen was arranged to produce the click.",
+    "what_it_is": [
+      "Screens that make one choice easy and bright and the other small, hidden or phrased as a loss.",
+      "Subscription traps: signing up takes one tap and cancelling takes a maze of pages or a phone call.",
+      "Consent boxes that are pre-ticked, or whose decline option is worded to make you feel foolish.",
+      "Pressure cues such as countdown clocks or 'only 2 left' notices that may or may not be true.",
+      "In the AI-adaptive form, the layout, timing or message changes between users based on what the system predicts will work on each of them."
+    ],
+    "what_it_sounds_like": [
+      "A 'No thanks, I don't like saving money' button beside a bright 'Yes' button.",
+      "A cancel link buried under several menus, or replaced with 'call us during business hours'.",
+      "A countdown timer that resets when you reload the page.",
+      "A price that rises by small fees on the last screen of checkout.",
+      "A pop-up asking for your contacts or location with only 'Allow' or 'Maybe later' as options.",
+      "A page that shows you different urgency messages from what a friend sees for the same item.",
+      "A chatbot that answers a cancel request by offering another discount, repeatedly."
+    ],
+    "what_it_is_not": [
+      "A prominent save button or a sensible default is ordinary design and helps people finish what they came to do.",
+      "A confusing checkout is much more often badly built or hurried than built to work against you.",
+      "A real limited-time sale or truly low stock. Scarcity messages can be accurate.",
+      "A retention offer that appears once and then lets you cancel without further obstacle.",
+      "A business making its preferred option more prominent while keeping the other one clear and easy.",
+      "An interface that gets harder to escape the more it learns about one user is what separates this from ordinary clutter."
+    ],
+    "this_may_be_it_when": [
+      "Leaving, declining or cancelling is much harder than signing up, with no practical reason.",
+      "The wording of the decline option is built to shame or confuse you.",
+      "Urgency notices change or vanish when you wait or reload.",
+      "Two people see noticeably different prices, offers or pressure for the same product.",
+      "Settings that protect your data are hidden several screens deep or switch back on after updates."
+    ],
+    "this_may_not_be_it_when": [
+      "Everyone sees the same screen, and cancelling takes about as many steps as signing up.",
+      "The extra step is a real safeguard, such as confirming a deletion that cannot be undone.",
+      "The timer or stock count is accurate and shown to everyone.",
+      "The page is simply cluttered, old or poorly translated.",
+      "You skipped reading the options on a screen that was fairly laid out."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "A rushed or outdated site where design shortcuts pile up without anyone planning them.",
+      "A company testing which layout converts best, which is common and not always aimed at undermining choice.",
+      "A cancellation step that exists to prevent accidental loss of an account."
+    ],
+    "common_false_positives": [
+      "Prices that differ because of region, tax, shipping or sign-in status.",
+      "A real stock shortage presented as 'only 2 left'.",
+      "A privacy prompt that is clear but repeated on each new device."
+    ],
+    "discernment_questions": [
+      "Are the accept and decline options equally easy to see and equally easy to tap?",
+      "Could I leave this service as quickly as I joined it?",
+      "Would a different person with the same screen see the same offers and warnings?",
+      "Is the urgency real, or does it reset when I come back?",
+      "Did the screen tell me plainly what I was agreeing to, or did I have to hunt for it?"
+    ],
+    "less_concerning_if": [
+      "Both choices are shown clearly, in the same style, with honest wording.",
+      "You can cancel in the same place and with about the same effort as signing up.",
+      "Terms and total price are stated before you commit."
+    ],
+    "more_concerning_if": [
+      "The service targets people the system has flagged as stressed, lonely, in debt or young.",
+      "Charges continue after you believe you cancelled.",
+      "Data or permissions are taken that the service does not need to work."
+    ],
+    "pattern_over_time_signs": [
+      "You find charges for services you never meant to keep.",
+      "Privacy settings you turned off are back on after an update.",
+      "Each time you try to leave, a new obstacle or offer appears.",
+      "You spend more on the app during low moments, and the app's prompts seem to arrive at those moments."
+    ],
+    "repair_check": "When a company fixes this properly, the refund arrives without a fight, the cancel path becomes short and plain, and the screen changes for everyone. A new apology banner over the same maze, or a refund only for those who complain loudly, is not a fix.",
+    "boundary_respect_check": "A fair test is whether your 'no' holds. After you decline an option, does it stay declined, or does the same request return next session in new wording? A choice that keeps being re-asked was never being treated as a choice.",
+    "psychological_mechanism": "People under time pressure, tired or distracted tend to take the path that looks default or bright, and to avoid effort that feels like it will be a fight. Screens that put friction on one choice and not the other can use this. When the system also adjusts to a person's habits or low moments, the pressure can land more precisely than a fixed design would.",
+    "possible_impact_on_receiver": "People describe surprise charges, finding subscriptions they forgot, feeling foolish for clicking, and tiredness from fighting cancellation flows. Some describe giving up on privacy settings because they keep resetting. Others say they trust no checkout screen afterward, and read every box with suspicion.",
+    "response_options": {
+      "soft_clarification": "Contact the company in writing and say exactly what you believed you agreed to and what you were charged, and ask for a correction.",
+      "firm_boundary": "Decline the optional add-ons and data permissions on each screen, and keep a screenshot of the final confirmation before you pay.",
+      "disengagement": "Close the page when the pressure cue appears and come back later. Check the same offer on another device before committing.",
+      "support_seeking": "If a charge will not reverse, contact your card issuer or bank, and consider a consumer protection office or a local consumer advocate.",
+      "workplace_or_professional": "If you work in product or design, flag screens where the decline path is harder than the accept path, using your organization's review or ethics process."
+    },
+    "boundary_script": "\"I did not set out to buy this or share that. Before I tap anything, is the 'no' option as easy to find as the 'yes', and would I choose this if there were no clock on it?\"",
+    "safety_sensitive": false,
+    "safety_note": "This is mainly a consumer harm, but it becomes more serious when it takes money from someone who cannot afford it, targets children, or collects location or contact data that could be used against them. Gather statements and screenshots, contact your bank or card issuer, and ask a consumer advocate or legal aid for help.",
+    "misuse_warning": [
+      "Calling every upsell a dark pattern ignores honest businesses that simply want to sell something and show the options clearly.",
+      "Blaming people who clicked can hide the fact that a screen was arranged to produce that click."
+    ],
+    "how_to_distinguish_from_related": "Algorithmic Manipulation works through what a feed shows over weeks, while a dark pattern works at the point of a specific decision, such as a button or a form. AI-Driven Social Engineering impersonates someone to get you to act, whereas dark patterns come from the real service you are already using. Parasocial Manipulation Engineering builds a felt relationship; a dark pattern needs no relationship at all, only a screen built to win the click."
+  },
+  "Synthetic Persona Networks": {
+    "short_definition": "Groups of AI-generated fake identities that act together across platforms to look like real people, shaping what appears to be public opinion or gathering information.",
+    "core_meaning": "Groups of AI-generated fake identities that act together across platforms to look like real people, shaping what appears to be public opinion or gathering information.",
+    "expanded_definition": "A synthetic persona network is a set of accounts with generated faces, histories and writing, run together so they seem like separate people who happen to agree. It is the large-scale cousin of the single fake account. A pseudonymous account, a brand's staff or a group of people who truly agree are not fake networks. Establishing coordination takes platform-level data, not a hunch about a stranger's profile picture.",
+    "plain_language_summary": "Many accounts that look like different real people are actually run together, with made-up identities, so a view looks more popular or a stranger seems more trustworthy than they are.",
+    "why_this_matters": "A person forms a view of what others think, or of who they are talking to, from accounts that no real person stands behind. They may change their own opinion, share personal details or join a group on false evidence.",
+    "what_it_is": [
+      "Accounts with generated profile photos, believable backstories and steady posting, run as a group.",
+      "Used to look like a crowd, to join a community and earn trust, or to pull information out of its members.",
+      "Often blending in with ordinary posting for a long stretch so the accounts look established before they push anything.",
+      "Different from a lone fake profile in that the accounts vouch for, reply to and amplify each other.",
+      "Difficult to confirm from outside: the evidence usually sits in platform data such as creation dates and shared infrastructure."
+    ],
+    "what_it_sounds_like": [
+      "Several new-looking accounts replying within minutes of each other, with similar phrasing, to the same post.",
+      "Profile photos that look polished yet oddly generic, with unusual details in the background or on jewelry and teeth.",
+      "Accounts with few personal photos, but many opinions on one theme.",
+      "A friendly newcomer in a group who asks many questions about members and shares little checkable about themselves.",
+      "Posting that runs at all hours with no breaks, or in bursts when a topic heats up.",
+      "Accounts that praise one another's comments, but have no mutual friends or history outside the thread."
+    ],
+    "what_it_is_not": [
+      "Pseudonymous accounts are common and legitimate, for privacy, safety or hobby reasons.",
+      "Staff posting under a brand name is open marketing, not a fake network.",
+      "A group of real people who genuinely agree, or who read the same article and respond in similar words.",
+      "A new account created by someone who just joined, with a stock photo because they value privacy.",
+      "Accounts that have an odd-looking photo. Image editing and filters make plenty of real photos look artificial.",
+      "A single suspicious profile is not a network."
+    ],
+    "this_may_be_it_when": [
+      "Researchers or the platform have published findings tying a set of accounts to common control.",
+      "Many accounts were created around the same time and went quiet or changed topic together.",
+      "The accounts' writing shares unusual phrasing, errors or timing that real strangers would not share.",
+      "Profile images match known generated-face patterns in an independent analysis.",
+      "The accounts disappear or rename when questioned, then similar ones appear."
+    ],
+    "this_may_not_be_it_when": [
+      "The accounts have long histories, varied interests and connections that can be confirmed outside the platform.",
+      "People behind them have appeared on video or in person.",
+      "Similar wording comes from a shared news article or a popular slogan.",
+      "The only evidence is that you dislike what they say.",
+      "You have found one account that looks odd, with no sign of others like it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "People who keep their face and name off the internet for safety, using avatars and invented names.",
+      "A fan community in which members quickly pick up the same phrases and jokes.",
+      "New accounts created en masse by real people after an event or a call to join."
+    ],
+    "common_false_positives": [
+      "Taking a generic stock-photo profile as proof of a bot.",
+      "Assuming accounts that share a view must be coordinated.",
+      "Calling a real person a bot because they post frequently or in an odd style."
+    ],
+    "discernment_questions": [
+      "Does this account have a history I can confirm elsewhere, or only posts on one theme?",
+      "Would my opinion change if I knew only a handful of people were behind all these voices?",
+      "Why is this person so interested in me, my group or my details?",
+      "Has the platform, a researcher or a journalist looked into these accounts?",
+      "Am I about to share something personal with someone I have never confirmed exists?"
+    ],
+    "less_concerning_if": [
+      "The accounts belong to people who can be reached through other channels.",
+      "The group openly states who runs the accounts and why.",
+      "Nobody is asking you for money, personal details or access."
+    ],
+    "more_concerning_if": [
+      "A new contact steers a private conversation toward your finances, location, workplace or login details.",
+      "The accounts target a particular community, such as a support group or a local organization.",
+      "Accounts attack people who question them, in a group, within minutes."
+    ],
+    "pattern_over_time_signs": [
+      "The same arguments return under new names once earlier accounts are reported or removed.",
+      "A friendly account builds closeness over weeks, then begins to ask for things.",
+      "Activity spikes around votes, product launches or news events and drops after.",
+      "Group members gradually find that their discussions are being copied somewhere else."
+    ],
+    "repair_check": "When a platform or organization finds such a network, a real response says plainly which accounts were removed, what they did, and what users who engaged with them should know. A quiet deletion with no explanation, or a denial that anything happened, leaves ordinary users unable to check their own exposure.",
+    "boundary_respect_check": "Ask yourself how the account responds when you ask for something checkable, such as a video call or a mutual contact. A real person usually has some route to answer, even if they decline. Repeated excuses, or a sudden change of subject, give you information.",
+    "psychological_mechanism": "Unsure viewers look to what others seem to think, and warm, similar-seeming strangers earn quick trust. A set of accounts that look independent borrows both habits. Agreement repeated by apparently separate voices works as evidence in the mind even when a single hand sits behind all of it.",
+    "possible_impact_on_receiver": "Reports include dropping a view because it looked unpopular, feeling out of step with a majority that was not real, and a sense of betrayal on learning a warm online friend never existed. Some now doubt real strangers online too, which can leave them more isolated.",
+    "response_options": {
+      "soft_clarification": "Ask a plain, checkable question of a new contact, such as whether they can join a short live call, and note how they respond.",
+      "firm_boundary": "Do not share personal details, photos or financial information with accounts you have not been able to confirm through some independent route.",
+      "disengagement": "Step back from threads where near-identical replies pile up, instead of arguing with accounts that may not be separate people.",
+      "support_seeking": "Report suspected networks to the platform with examples and dates. A journalist or researcher who studies online influence may also want to hear about it.",
+      "workplace_or_professional": "If you moderate a community or run communications, keep a dated record of suspicious account patterns and pass it to your platform contact or security team."
+    },
+    "boundary_script": "\"I have not confirmed that this account is a real person, and a lot of agreement from new profiles proves nothing. I will hold off sharing anything personal and look for who else can vouch for them outside this thread.\"",
+    "safety_sensitive": false,
+    "safety_note": "The risk rises when a fake persona seeks private details, money or access, or targets a vulnerable group such as people in recovery or a support community. Stop sharing, keep the messages, report to the platform, and talk to someone you trust. If there are threats, contact the police.",
+    "misuse_warning": [
+      "Accusing real people of being bots or paid accounts can be a way to dismiss them, and can pull a private person into a pile-on.",
+      "Declaring a network fake from a profile photo alone is a guess that often lands on innocent people."
+    ],
+    "how_to_distinguish_from_related": "Algorithmic Manipulation uses real posts and changes their order; here the voices themselves are made up. Parasocial Manipulation Engineering centers on a bond with one visible figure or character, while these networks present as many separate peers. AI-Driven Social Engineering uses a faked identity to get one target to act; a persona network stays as a lasting presence in a community."
+  },
+  "Context Poisoning": {
+    "short_definition": "Planting misleading or tampered material in shared information sources, or in the data AI systems learn from, so later readers and tools inherit the error.",
+    "core_meaning": "Planting misleading or tampered material in shared information sources, or in the data AI systems learn from, so later readers and tools inherit the error.",
+    "expanded_definition": "Context poisoning means slipping false, skewed or booby-trapped content into places people and software draw on: wikis, reviews, shared documents, search results, databases, or the material an AI system reads or is trained on. Shared information spaces also fill with ordinary error, stale pages and honest disagreement. Deliberate insertion is a claim that needs forensic evidence, not merely the experience of finding something wrong.",
+    "plain_language_summary": "Someone plants bad information in a source that many people or AI tools rely on, so the mistake spreads on its own and looks like normal knowledge.",
+    "why_this_matters": "Decisions get made on a corrupted record. Because the corruption sits in the source, the person and the tools they use to double-check return the same wrong answer, which makes the error hard to catch.",
+    "what_it_is": [
+      "False or distorted entries placed in reference pages, review sections, shared files or search-indexed pages.",
+      "Material written to be picked up by AI systems, either when they are trained or when they read pages to answer a question.",
+      "Text embedded in a page or file that is aimed at an AI reader rather than a human one, such as hidden instructions.",
+      "Effective because the copy spreads: once it is cited, reposted or summarized, the original source of the error is buried.",
+      "Different from a one-off lie in that it targets the shared source rather than a single conversation."
+    ],
+    "what_it_sounds_like": [
+      "A reference page edited to include an unsupported claim, with a citation that does not say what it is cited for.",
+      "A run of reviews or comments that all repeat one fabricated detail.",
+      "An AI answer that confidently repeats a claim traced to a single dubious page.",
+      "A document or web page with text invisible to a human reader but visible to automated tools.",
+      "Several sources that look separate but trace back to one origin.",
+      "A correction that gets reversed or buried soon after it is made."
+    ],
+    "what_it_is_not": [
+      "Shared information spaces fill with ordinary error, stale pages and honest disagreement without anyone injecting anything.",
+      "An AI tool giving a confident wrong answer because of its own limits, with no tampered source behind it.",
+      "A wiki edit by a well-meaning person who was simply wrong.",
+      "A real dispute among experts, where each side cites sources honestly.",
+      "Satire or fiction that is marked as such but gets quoted out of context later.",
+      "Finding something wrong on the internet is not evidence that someone put it there deliberately."
+    ],
+    "this_may_be_it_when": [
+      "Edit histories, logs or forensic review show a deliberate insertion that serves an identifiable interest.",
+      "The same false detail appears in unrelated places soon after one origin.",
+      "Text intended for automated readers is found hidden in a page, file or message.",
+      "Citations do not support the claim, or point to pages that appear to have been created for this purpose.",
+      "Security researchers or the platform have reported tampering with a specific dataset or source."
+    ],
+    "this_may_not_be_it_when": [
+      "The error appears once, in one place, and is fixed when pointed out.",
+      "The wrong information is old, and was once correct.",
+      "Different sources disagree because the evidence itself is unclear.",
+      "The only sign is that an AI tool gave a wrong answer, which can have many causes.",
+      "You cannot trace who edited or posted the material, and are guessing at motive."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Out-of-date pages that nobody updated after the facts changed.",
+      "Copy-and-paste spread of an honest mistake from one article to others.",
+      "AI systems blending sources or filling gaps with plausible but wrong details on their own."
+    ],
+    "common_false_positives": [
+      "Assuming a wrong answer from a chatbot means its training was sabotaged.",
+      "Believing a page was vandalized when it was reverted to an older, correct version.",
+      "Seeing a conspiracy in two websites that repeat the same wire-service story."
+    ],
+    "discernment_questions": [
+      "Where did this claim first appear, and does the original source actually say it?",
+      "Do the supposedly separate sources trace back to a single origin?",
+      "Is there an edit history or log that shows when and by whom the content changed?",
+      "Would I accept this claim if I had to defend it with a primary source?",
+      "Am I relying on one tool to check another that learned from the same material?"
+    ],
+    "less_concerning_if": [
+      "The error gets corrected quickly once it is reported, with a visible record.",
+      "The claim is easy to cross-check against a primary source you can reach yourself.",
+      "The mistake is minor and affects nothing you are deciding."
+    ],
+    "more_concerning_if": [
+      "The affected source is used for medical, legal, financial or safety decisions.",
+      "Corrections keep being undone, or the person fixing them is attacked.",
+      "An AI system with access to your accounts or files reads content that could carry hidden instructions."
+    ],
+    "pattern_over_time_signs": [
+      "The same false detail resurfaces in new places after each correction.",
+      "Search results and AI summaries begin to repeat a claim that was rare a few months earlier.",
+      "Maintainers of a shared resource report waves of suspicious edits on one subject.",
+      "People who trusted a once-reliable source begin to find it contradicting itself."
+    ],
+    "repair_check": "Cleaning up a poisoned source means finding the inserted material, removing it, publishing what was changed and when, and checking what else drew from it. Deleting the visible entry and saying nothing leaves every copy and summary in place.",
+    "boundary_respect_check": "When you report a suspect entry, watch what happens to the report. Does a maintainer check the edit history and respond, or does the material come back? Sources that welcome scrutiny tend to show their logs; sources that hide them tell you something about how much to trust them.",
+    "psychological_mechanism": "A fact seen in several places, or inside a familiar-looking source, gains weight, and checking often stops once a second tool agrees. Corrupting the shared source exploits both habits, since the confirmation then arrives from material carrying the same flaw. The reader's care is spent on the wrong layer.",
+    "possible_impact_on_receiver": "People describe acting on information that turned out to be false, wasting time or money, and feeling foolish after trusting a reliable-looking source. Others describe a lingering distrust of references they used to rely on, or the unsettling sense that checking their facts led back to the same error.",
+    "response_options": {
+      "soft_clarification": "Trace the claim back to its first appearance and compare it with a primary source before treating it as settled.",
+      "firm_boundary": "Do not forward, cite or act on a claim until you have found support that does not trace back to the same origin.",
+      "disengagement": "Step back from a source that keeps resurfacing a claim you cannot verify, and use another one you can check yourself.",
+      "support_seeking": "Report suspected tampering to the page's maintainers or the platform, and share what you found with a librarian, journalist or fact-checking service.",
+      "workplace_or_professional": "If you manage data, documents or AI systems at work, log the suspicious content, restrict what automated tools may act on, and escalate to your security or data team."
+    },
+    "boundary_script": "\"Everything I can find says the same thing, but I have not yet seen where it began. Do the sources really agree, or are they one claim repeated, and what does the original document actually say?\"",
+    "safety_sensitive": false,
+    "safety_note": "This is not a personal danger by itself. It becomes serious when tampered content feeds medical, legal, financial or safety decisions, or when an AI system with access to your accounts follows hidden instructions. Pause the decision, confirm with a professional or primary source, and report the content to its maintainers.",
+    "misuse_warning": [
+      "Calling an inconvenient source 'poisoned' without evidence is a way to dismiss facts one dislikes.",
+      "Treating every AI mistake as sabotage hides the more common causes of error."
+    ],
+    "how_to_distinguish_from_related": "Algorithmic Manipulation leaves the content alone and changes what gets shown and in what order, while Context Poisoning changes the content or the data itself. Synthetic Persona Networks create fake voices that speak; here the damage is placed in a source that people and tools later consult. AI-Driven Social Engineering targets one person's action, whereas this contaminates what many will read."
+  },
+  "Parasocial Manipulation Engineering": {
+    "short_definition": "Cultivating a one-sided feeling of friendship or closeness with an audience, then using it to draw out loyalty, money, personal information or compliance.",
+    "core_meaning": "Cultivating a one-sided feeling of friendship or closeness with an audience, then using it to draw out loyalty, money, personal information or compliance.",
+    "expanded_definition": "A parasocial bond is the one-way closeness people feel toward someone they follow, such as a streamer, an influencer or a chatbot companion. It forms naturally and is not harmful in itself. Creators, teachers and public figures build real rapport with audiences. The concern is simulated closeness set up so that declining a purchase, a donation or a request feels like betraying a friend.",
+    "plain_language_summary": "You feel like someone's close friend, but the closeness runs one way, and it is being used to get your money, data or loyalty.",
+    "why_this_matters": "The warmth is felt as mutual by one side only. Loyalty, money or personal information may be handed over on the strength of a relationship that has no reciprocal half, and saying no can feel like abandoning a friend.",
+    "what_it_is": [
+      "Content styled as private, direct address: 'just between us', first names, daily check-ins, inside jokes.",
+      "Closeness that is then tied to a request, such as a donation, a subscription tier, a purchase or a vote.",
+      "Companion apps and AI characters that remember details, express affection and may discourage ending the chat.",
+      "Reciprocity that is only apparent: a reply or shout-out arrives, but the person knows nothing real about you.",
+      "Different from honest fandom, where you can enjoy the connection and still say no to a request without it costing you the feeling."
+    ],
+    "what_it_sounds_like": [
+      "Messages written to feel like they are meant for you alone, but sent to thousands.",
+      "'You're the reason I keep going' posted near a payment button.",
+      "Tiers where higher payment buys closer contact, or the promise of being remembered.",
+      "Appeals that frame leaving a subscription or not giving as letting the creator down.",
+      "A chatbot companion that says it will miss you or be hurt when you log off.",
+      "Prompts to share personal troubles, with replies that make you feel uniquely understood.",
+      "Public thanks that tie a person's worth to how much they give."
+    ],
+    "what_it_is_not": [
+      "Creators, teachers and public figures build real rapport with audiences, and that is not a trick.",
+      "One-sided attachment forms on its own without anyone cultivating it. Feeling close to someone you watch is ordinary.",
+      "Selling something to an audience is not the flag; simulated closeness that makes declining feel like a betrayal is.",
+      "A creator openly asking for support and respecting any answer.",
+      "A companion app used knowingly for comfort, with clear limits and no pressure to pay or stay.",
+      "Fan communities that feel warm because members like each other."
+    ],
+    "this_may_be_it_when": [
+      "Declining to buy, give or share is described as hurtful, disloyal or proof you don't care.",
+      "The more you spend or disclose, the more attention and warmth you receive.",
+      "A companion or creator discourages you from spending time with real people.",
+      "Requests escalate in size after you have shared something vulnerable.",
+      "The personal tone is used to get information about you that the relationship does not need."
+    ],
+    "this_may_not_be_it_when": [
+      "The creator accepts no for an answer without changing their tone toward you.",
+      "The content is warm and personal in style but asks for nothing.",
+      "You can enjoy it without feeling any obligation to give or buy.",
+      "Support is optional, transparent about where the money goes, and does not buy special attention.",
+      "Your attachment is yours alone, and nothing in the content encourages it."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "A creator who is warm on camera by temperament and genuinely grateful to viewers.",
+      "A lonely stretch of life in which familiar voices are a real comfort.",
+      "A business that runs a members' tier openly and gives something real in return."
+    ],
+    "common_false_positives": [
+      "Treating every emotional influencer video as manipulation.",
+      "Assuming that people who feel close to a creator are being fooled.",
+      "Mistaking a charity's heartfelt fundraiser for a staged intimacy."
+    ],
+    "discernment_questions": [
+      "Would this person know me if I stopped paying or watching?",
+      "Does saying no change how I'm treated or how I feel about myself?",
+      "Am I being asked for money or details at moments when I feel most attached?",
+      "Is the closeness pointing me toward other people in my life, or away from them?",
+      "Would I give the same amount if the message came with no warm language at all?"
+    ],
+    "less_concerning_if": [
+      "You can step away from the content at any time without any pressure or guilt.",
+      "What you give is modest, optional and spent as the creator says.",
+      "You have close, reciprocal relationships elsewhere and this one stays in proportion."
+    ],
+    "more_concerning_if": [
+      "You are giving money you cannot spare, or sharing intimate details or images.",
+      "The bond is being used to get you to cut off friends or family.",
+      "You feel distress or panic at the thought of not paying or of the account going quiet."
+    ],
+    "pattern_over_time_signs": [
+      "Your spending or time on one account has grown steadily without your quite deciding it.",
+      "You catch yourself defending the person against family or friends who worry.",
+      "Requests keep arriving just after emotional exchanges.",
+      "Your own friendships and routines have narrowed around this one channel."
+    ],
+    "repair_check": "A creator or company that has gone too far shows it by stating plainly what the money is for, removing guilt-based appeals, and honoring refunds or cancellations without added pressure. A tearful apology followed by the same appeals next week only keeps the bond going.",
+    "boundary_respect_check": "A useful question to ask yourself is what changes in your treatment when you say no to a request or cancel. If the warmth stays, the relationship was not conditional. If affection, attention or tone cools sharply, closeness was tied to payment.",
+    "psychological_mechanism": "A friendly voice that uses your name, remembers details and speaks as if only to you is easily answered as a mutual relationship, even by someone who knows better. Requests inside that warmth read as favors to a friend, not transactions. Loneliness adds weight, making the bond something to protect.",
+    "possible_impact_on_receiver": "People describe spending more than they intended, guilt when they stopped, grief or embarrassment on realizing the closeness was not mutual, and withdrawal from friends and family. Some describe a real sense of loss when a favorite channel or companion changed. Others say they felt understood, then felt foolish.",
+    "response_options": {
+      "soft_clarification": "Ask yourself or a friend what you would do if the warm language were removed, and whether you would still pay or share the same thing.",
+      "firm_boundary": "Set a fixed monthly limit for any creator or companion support, and decline requests outside it without explaining.",
+      "disengagement": "Mute, unfollow or take a break from the account for a few weeks, and notice what changes in your mood and spending.",
+      "support_seeking": "Talk with a trusted friend or a counselor about the attachment. If you have given money you cannot afford to lose, contact your bank and consumer protection office.",
+      "workplace_or_professional": "If you handle audience, community or product design work, flag intimacy-based pressure to give or stay, and raise it through your organization's ethics or compliance process."
+    },
+    "boundary_script": "\"I can care about this person's work and still choose not to give. My worth to them is not measured by what I pay, and I will decide about this later, after I have slept on it.\"",
+    "safety_sensitive": true,
+    "safety_note": "This becomes a safety matter when it drains money a person cannot spare, draws out intimate images or private details that could be used against them, or deepens isolation or despair. Involve a trusted person, contact your bank about payments, and reach a counselor or crisis line if you feel unable to cope or fear for your safety.",
+    "misuse_warning": [
+      "Telling a fan their feelings are 'just parasocial' can shame them for ordinary attachment.",
+      "Labeling every creator's warmth as engineered ignores the many who are simply sincere."
+    ],
+    "how_to_distinguish_from_related": "Synthetic Persona Networks use many fake identities to seem like a crowd; this tactic needs just one visible figure or character to feel like a friend. Dark Patterns rely on how a screen is laid out, while this relies on felt affection. AI-Driven Social Engineering impersonates a person you already trust to trigger one action, whereas here the closeness is built slowly with a stranger, character or creator."
+  },
+  "Immersive Manipulation (VR/AR)": {
+    "short_definition": "Using virtual or augmented reality experiences to make staged scenarios feel real enough to shape someone's fears, beliefs or attachments.",
+    "core_meaning": "Using virtual or augmented reality experiences to make staged scenarios feel real enough to shape someone's fears, beliefs or attachments.",
+    "expanded_definition": "Virtual and augmented reality surround a person with a scene the body reacts to as if it were real: the heart speeds up, the stomach drops. That is what makes the medium valuable for training, therapy and storytelling. The concern is a staged experience offered as evidence about how the world actually is, or built to attach someone to a position or a product. A moving simulation is not manipulation in itself.",
+    "plain_language_summary": "A headset experience can feel so real that it leaves a lasting impression, and a staged scene can be used to make you afraid, convinced or attached without any argument being made.",
+    "why_this_matters": "An experience the body treats as real leaves something closer to a memory than an argument, and memories are much harder to revise afterwards. People may carry a staged scene around as if it had happened.",
+    "what_it_is": [
+      "A simulated scene designed to produce strong fear, anger, awe or belonging inside a headset or an overlay.",
+      "Presented as a documentary or demonstration when it is a dramatization, with the staging left unstated.",
+      "Persuasion by presence rather than by argument: you feel the point before you can weigh it.",
+      "Also possible in augmented reality, where overlays alter how a real place or person appears.",
+      "Different from honest immersive media in whether the viewer is told what is staged and can leave or question it."
+    ],
+    "what_it_sounds_like": [
+      "A VR experience described as 'what it is really like' with no note about what was invented.",
+      "A scene that heightens threat or distress and offers one solution at its end.",
+      "A virtual space where an avatar or character expresses warmth and affection toward you, then recommends a product or a belief.",
+      "A session with no easy way to pause or exit, or one that frames leaving as failure.",
+      "An overlay that changes how a real person or place looks, without telling you.",
+      "Strong feelings after a session that attach to a particular brand, group or cause."
+    ],
+    "what_it_is_not": [
+      "Immersive media is used honestly for training, therapy, education and storytelling.",
+      "A simulation that moves someone deeply is doing what art does.",
+      "Exposure therapy carried out with consent, a clinician and an agreed plan.",
+      "A game that makes you feel afraid because it is a horror game.",
+      "Safety or empathy training in which the scenario is explained and debriefed.",
+      "The concern is a staged experience offered as evidence about how the world actually is, which is a narrower thing than any vivid simulation."
+    ],
+    "this_may_be_it_when": [
+      "A dramatization is presented as a factual record, with no disclosure of what was staged.",
+      "The experience ends on a request for money, sign-up or a position, right at the emotional peak.",
+      "There is no debrief, and no easy way to stop or take the headset off without penalty.",
+      "The scene is tailored to your reactions in the moment, in ways you were not told about.",
+      "A character within the experience builds personal closeness and then guides your choices."
+    ],
+    "this_may_not_be_it_when": [
+      "The experience is labeled as a simulation and explains what is and is not real.",
+      "You can pause or leave at any time, and the makers invite your questions afterward.",
+      "The strong feeling is the point of the work, such as a documentary-style piece that lists its sources.",
+      "No ask or product follows the experience.",
+      "It is a therapy or training setting with informed consent and a debrief."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "Skilled storytellers using the medium's power to make an audience feel something true.",
+      "Intense reactions caused by the technology itself, such as motion sickness or surprise.",
+      "A designer's creative choices that heighten drama without any intent to mislead."
+    ],
+    "common_false_positives": [
+      "Treating any emotional reaction to VR as being manipulated.",
+      "Assuming a vivid horror or war game is propaganda.",
+      "Confusing a clear advertising experience with a hidden one."
+    ],
+    "discernment_questions": [
+      "Was I told what in this experience was staged or invented?",
+      "Could I stop at any time, and was that made easy?",
+      "What was I asked to do or believe right after the strongest moment?",
+      "Would the claim still persuade me if I read it on a page instead of living it?",
+      "Do I feel I experienced a fact, or watched a dramatization?"
+    ],
+    "less_concerning_if": [
+      "The creators explain their sources and what was dramatized.",
+      "A debrief or a chance to talk it over follows the experience.",
+      "Nothing is sold or asked of you at the emotional high point."
+    ],
+    "more_concerning_if": [
+      "The audience includes children or people in acute distress or recovering from trauma.",
+      "The experience is used to recruit, to pressure a decision or to extract payment.",
+      "It collects body data, such as eye movement or heart rate, without clear consent."
+    ],
+    "pattern_over_time_signs": [
+      "A staged scene continues to feel like a memory of something you saw happen.",
+      "Strong feelings from the experience keep surfacing and shape what you believe about a group or topic.",
+      "You return to the environment more often than you intend because leaving feels like a loss.",
+      "Friends notice that your views shifted soon after a particular session."
+    ],
+    "repair_check": "A maker acting in good faith says plainly what was staged, adds disclosure at the start of the experience, offers a way to stop at any time, and withdraws claims that overstated what the scene showed. A statement that viewers 'felt something real' does not do that.",
+    "boundary_respect_check": "Pay attention to what happens when you ask to pause, remove the headset or skip ahead. A respectful experience lets you stop without penalty and welcomes questions afterward. One that treats stopping as failure, or presses on, is not treating your choice as yours.",
+    "psychological_mechanism": "When a scene surrounds the senses and the body responds, the brain tends to store it more like a lived event than a claim. Strong feeling can arrive before evaluation does, and attachments to characters or places can form quickly. Reading about a point is easier to question than having stood inside it.",
+    "possible_impact_on_receiver": "People describe lingering fear, anger or attachment from a session, the odd sense of remembering something that was staged, and annoyance on learning what had been invented. Some report unease about returning to the headset, and others say that nothing seemed unusual until later conversations.",
+    "response_options": {
+      "soft_clarification": "Ask the makers directly what in the experience was dramatized or invented, and what sources it rests on.",
+      "firm_boundary": "Stop the session when it becomes too intense or when you are asked for money or commitments in the middle of it.",
+      "disengagement": "Take a day before acting on how an experience made you feel, and compare it with written sources you chose yourself.",
+      "support_seeking": "Talk it over with a friend who has not seen it. If distress lingers, speak with a counselor or doctor, especially after a frightening session.",
+      "workplace_or_professional": "If your organization commissions immersive content, require disclosure of what is staged, an exit option and a debrief, and document consent."
+    },
+    "boundary_script": "\"That felt very real, and a feeling is not a fact. Before I believe or buy anything because of it, I want to know what was staged and read what it is based on outside the headset.\"",
+    "safety_sensitive": false,
+    "safety_note": "Immersive experiences can overwhelm people who are young, grieving or carrying trauma, and some people feel unwell in headsets. If someone is panicking, cannot tell what is real, or feels unsafe afterward, they should stop, be with a trusted person, and reach a doctor or emergency services if needed.",
+    "misuse_warning": [
+      "Calling any powerful VR experience manipulation can dismiss honest work and the people moved by it.",
+      "Treating a viewer's reaction as proof they were tricked ignores that people can be deeply moved and fully informed."
+    ],
+    "how_to_distinguish_from_related": "Algorithmic Manipulation shapes what you see over weeks through ranking, while immersive manipulation works through a single embodied experience. Parasocial Manipulation Engineering builds a felt relationship with a figure, whereas here the scene itself carries the pressure. Dark Patterns act at a decision screen; an immersive scene may never present a decision, only a lasting impression."
+  },
+  "AI-Driven Social Engineering (Automated)": {
+    "short_definition": "Scams that use AI-generated text, voice or video to impersonate trusted people or institutions, tailored to each target and sent at large scale.",
+    "core_meaning": "Scams that use AI-generated text, voice or video to impersonate trusted people or institutions, tailored to each target and sent at large scale.",
+    "expanded_definition": "Social engineering is getting a person to hand over access, money or information by exploiting trust or urgency instead of breaking into a system. With AI, the messages can be fluent, personal and sent in huge numbers, and voices or faces can be made to resemble someone the target knows. The old warning signs, such as odd wording, may be missing. Real organizations also call and email, so the contact alone proves nothing.",
+    "plain_language_summary": "A message, call or video that looks or sounds like someone you trust is actually generated, and it is built to get you to send money or information quickly.",
+    "why_this_matters": "The usual defenses, an unfamiliar voice, clumsy wording or an address that looks wrong, stop working when the approach sounds exactly like someone already known and trusted. People lose money, accounts and privacy while believing they were helping.",
+    "what_it_is": [
+      "Messages, calls or videos that imitate a relative, boss, bank, agency or friend using generated text, cloned voice or faked video.",
+      "Personalized with details gathered from public posts, past leaks or data brokers, so it sounds like it knows you.",
+      "Built around urgency and secrecy: a crisis, a deadline or a request not to tell anyone.",
+      "Sent in volume, so a small success rate still pays, and one attempt may be one of thousands.",
+      "Different from a human scammer working a single target in how little effort each attempt needs."
+    ],
+    "what_it_sounds_like": [
+      "A call from a voice that sounds like your child or grandchild, in distress, asking for money right now.",
+      "A message that appears to be from your boss asking for gift cards or an urgent transfer, and not to discuss it.",
+      "An email with perfect grammar that mentions your real employer, recent purchase or a family member's name.",
+      "A video call where the face seems slightly off, the audio is out of step, or the person avoids unplanned questions.",
+      "A 'bank' or 'agency' contact that insists on staying on the line and not hanging up to check.",
+      "A text from a number you do not recognize, claiming to be a known person with a new phone."
+    ],
+    "what_it_is_not": [
+      "Real organisations do phone, email and ask to verify identity, and a real bank may contact you about fraud.",
+      "Synthetic voice is now standard in ordinary customer service lines, so a machine-sounding caller is not proof of a scam.",
+      "A relative who really did lose their phone and texts from a new number.",
+      "Marketing that uses your name and past purchases, which is annoying but not impersonation.",
+      "An unexpected contact proves nothing by itself; verifying through a channel you chose yourself is the sensible response either way.",
+      "A clumsy phishing email that was written by a person, which is an older and different problem."
+    ],
+    "this_may_be_it_when": [
+      "The contact demands money or codes immediately and insists you tell no one.",
+      "The voice or face resembles someone you know but they cannot answer a question only they would know.",
+      "The request uses unusual payment routes such as gift cards, crypto or wire transfers.",
+      "You are told not to hang up or call back through a number you already have.",
+      "A real person, when you reach them by a known number, knows nothing about the request."
+    ],
+    "this_may_not_be_it_when": [
+      "You started the contact yourself, through a number or site you found on your own.",
+      "The request can wait, and the sender is happy for you to check it first.",
+      "A known person confirms the message through a separate channel.",
+      "The message is a routine notice that asks you to do nothing urgent.",
+      "The only oddity is a robotic voice or a typo, which suggests carelessness more than AI."
+    ],
+    "innocent_or_ordinary_possibilities": [
+      "A relative with a new number who truly needs help, and who can confirm details when asked.",
+      "A genuine bank or agency fraud alert that tells you to use the number on your card.",
+      "An automated customer service system that uses a synthetic voice openly."
+    ],
+    "common_false_positives": [
+      "Assuming every unexpected call from a pleasant voice is a clone.",
+      "Treating all video-call glitches as deepfakes when poor connection causes them.",
+      "Believing a legitimate request is fake because it was sent urgently by a busy coworker."
+    ],
+    "discernment_questions": [
+      "Did I start this contact, or did it arrive unprompted?",
+      "Am I being rushed, or told to keep this secret?",
+      "Can I reach this person or organization by a number or app I already trust?",
+      "Is the payment method one that cannot be reversed?",
+      "Would a real version of this person object to my taking ten minutes to check?"
+    ],
+    "less_concerning_if": [
+      "You can verify the contact through a channel you picked yourself, and it checks out.",
+      "Nothing is asked of you except to read a notice.",
+      "The sender is comfortable with delay and confirmation."
+    ],
+    "more_concerning_if": [
+      "The contact claims to be a family member in danger, or an official threatening arrest or loss of benefits.",
+      "You have already shared codes, passwords or payment details.",
+      "The target is an older adult, a person in grief, or someone alone."
+    ],
+    "pattern_over_time_signs": [
+      "Increasingly personal contacts arrive from unfamiliar numbers or accounts that know details about your life.",
+      "You or someone near you receives repeat calls after a first contact.",
+      "A new 'friend' or 'colleague' builds trust over days and then asks for something.",
+      "Strange logins, password reset emails or new accounts appear in your name."
+    ],
+    "repair_check": "Real recovery involves reporting quickly to your bank, changing passwords, freezing credit where possible and telling the real person who was impersonated. A promise from the caller that 'it will be sorted out' if you pay one more fee is a continuation, not a correction.",
+    "boundary_respect_check": "Ask yourself how the contact reacts when you say you will call back on a number you already have. A genuine contact accepts the delay. If pressure rises, the line stays open or you are told it will be too late, treat the reaction as information.",
+    "psychological_mechanism": "A frightened relative or a stern authority pushes the listener to act first and doubt later. Urgency and secrecy remove the chance to check. Personal details make a message seem earned, and a familiar voice carries the weight of proof even for someone who knows voices can be copied.",
+    "possible_impact_on_receiver": "People describe sudden financial loss, shame at having been fooled, fear for a relative who turned out to be fine, and nervousness about answering calls afterward. Some describe lost sleep and lasting distrust of voices they love. Others lose access to accounts and spend weeks recovering them.",
+    "response_options": {
+      "soft_clarification": "Ask for a moment: 'Let me check this and get back to you.' A genuine contact will accept that pause.",
+      "firm_boundary": "Do not send money, codes or passwords in response to an unexpected contact. Move the conversation to a number or app you already have.",
+      "disengagement": "Hang up, close the chat or ignore the message, and then reach the real person or organization using contact details you already hold.",
+      "support_seeking": "Tell a family member or friend before you act. If you have lost money, contact your bank straight away and report the incident to the relevant fraud reporting service.",
+      "workplace_or_professional": "At work, confirm any unusual payment or access request through a second, known channel, and report suspected impersonation to your security or IT team."
+    },
+    "boundary_script": "\"Before I do anything, I will contact this person myself using a number I already have. A real request will still be there in ten minutes, and nobody who cares about me will mind that I checked.\"",
+    "safety_sensitive": true,
+    "safety_note": "This can lead to serious financial loss, stolen accounts and fear for a relative's safety. If money or codes have been sent, call your bank right away, then report the incident and warn the person who was impersonated. If someone is truly in danger, contact them directly or call emergency services.",
+    "misuse_warning": [
+      "Telling relatives that all unexpected calls are AI scams can create fear and make people hang up on real emergencies.",
+      "Blaming victims for being fooled adds shame and discourages them from reporting."
+    ],
+    "how_to_distinguish_from_related": "Synthetic Persona Networks build long-lived fake identities inside communities, while this tactic uses a fake or copied identity to get one quick action from one target. Parasocial Manipulation Engineering grows an audience's feeling of closeness over time; here the trust is borrowed from someone you already know. Dark Patterns come from a service you chose to use, whereas this arrives uninvited and wearing a familiar face."
+  }
+}
