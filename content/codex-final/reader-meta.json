@@ -1,0 +1,7684 @@
+{
+ "entries": {
+  "Gaslighting": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Making you doubt your own memory",
+   "search_words": [
+    "says it never happened",
+    "making me feel crazy",
+    "denies things i saw",
+    "i doubt my own memory now",
+    "they rewrite what happened"
+   ],
+   "related": [
+    "Countering",
+    "Minimization",
+    "Selective Memory",
+    "Meta-Gaslighting",
+    "Medical Gaslighting",
+    "Self-Gaslighting Induction"
+   ]
+  },
+  "Countering": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Flatly contradicting what you remember",
+   "search_words": [
+    "always says that's not what happened",
+    "argues every detail",
+    "contradicts everything i say",
+    "we only ever fight about facts"
+   ],
+   "related": [
+    "Selective Memory",
+    "Deflection",
+    "Gaslighting",
+    "Revisionist History",
+    "Semantic Traps",
+    "Denial"
+   ]
+  },
+  "Selective Memory": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "conveniently forgets promises",
+    "claims they don't remember",
+    "forgets what they agreed to",
+    "only remembers what suits them"
+   ],
+   "related": [
+    "Countering",
+    "Moving Goalposts",
+    "Minimization",
+    "Gaslighting",
+    "Feigned Ignorance",
+    "Revisionist History"
+   ]
+  },
+  "Moving Goalposts": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "nothing is ever good enough",
+    "keeps changing what they want",
+    "did what they asked and it still wasn't enough",
+    "the rules keep changing"
+   ],
+   "related": [
+    "Countering",
+    "Deflection",
+    "Gaslighting",
+    "Setting Up to Fail",
+    "Performance Framework Manipulation",
+    "Strategic Ambiguity"
+   ]
+  },
+  "Thought-Stopping Clichés": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "groups"
+   ],
+   "subtitle": "Stock sayings that end the conversation",
+   "search_words": [
+    "told not to overthink it",
+    "it is what it is",
+    "shut down with a saying",
+    "a phrase ends every talk"
+   ],
+   "related": [
+    "Deflection",
+    "Minimization",
+    "Countering",
+    "Toxic Positivity / Weaponized Optimism",
+    "Thought Control",
+    "Spiritual Bypassing"
+   ]
+  },
+  "Normalization": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "told everyone goes through this",
+    "that's just how families are",
+    "every couple fights like this",
+    "made to feel wrong for minding"
+   ],
+   "related": [
+    "Minimization",
+    "Countering",
+    "Deflection",
+    "Gaslighting",
+    "Thought-Stopping Clichés",
+    "Overton Window Manipulation"
+   ]
+  },
+  "Guilt-Tripping": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "after everything i've done for you",
+    "made to feel selfish for saying no",
+    "feel bad whenever i refuse",
+    "reminds me of their sacrifices"
+   ],
+   "related": [
+    "Martyrdom Display",
+    "Demand for Gratitude",
+    "Duty Scripts",
+    "FOG",
+    "Emotional Blackmail",
+    "Weaponized Generosity"
+   ]
+  },
+  "Emotional Blackmail": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "if you loved me you would",
+    "their love depends on me giving in",
+    "threatens to leave if i say no",
+    "love with conditions"
+   ],
+   "related": [
+    "Guilt-Tripping",
+    "Self-Harm Threats as Leverage",
+    "Silent Treatment",
+    "FOG",
+    "Ultimatums",
+    "Emotional Hostage-Taking"
+   ]
+  },
+  "Self-Harm Threats as Leverage": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says they'll hurt themselves if i leave",
+    "threatens suicide when i say no",
+    "scared to leave because of what they'll do to themselves",
+    "my choice feels like their life"
+   ],
+   "related": [
+    "Emotional Blackmail",
+    "Pity Plays",
+    "Guilt-Tripping",
+    "Emotional Hostage-Taking",
+    "Catastrophizing as Control"
+   ]
+  },
+  "Pity Plays": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i end up reassuring them",
+    "says they're a terrible friend when i complain",
+    "everything turns into their sadness",
+    "can't bring anything up without them falling apart"
+   ],
+   "related": [
+    "Martyrdom Display",
+    "Guilt-Tripping",
+    "Weaponized Tears",
+    "Competitive Victimhood",
+    "Strategic Self-Deprecation / Performed Humility",
+    "Self-Harm Threats as Leverage"
+   ]
+  },
+  "Martyrdom Display": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "relationship",
+    "friends"
+   ],
+   "subtitle": "Making sacrifices loud so you feel you owe",
+   "search_words": [
+    "sighs and says don't mind me",
+    "i'll just do it myself like always",
+    "keeps score of what they gave up",
+    "loud sacrifices nobody asked for"
+   ],
+   "related": [
+    "Pity Plays",
+    "Demand for Gratitude",
+    "Guilt-Tripping",
+    "Guilt Legacy",
+    "Favor Debt",
+    "Competitive Victimhood"
+   ]
+  },
+  "Duty Scripts": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "groups",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "a good daughter would",
+    "family comes first",
+    "told i owe my parents",
+    "saying no makes me a bad son"
+   ],
+   "related": [
+    "Guilt-Tripping",
+    "Emotional Blackmail",
+    "Demand for Gratitude",
+    "\"Sacred Duty\" Manipulation",
+    "Guilt Legacy",
+    "\"We're Family\" Erasure"
+   ]
+  },
+  "Demand for Gratitude": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "relationship",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "never thanked enough",
+    "expects me to keep saying thank you",
+    "help comes with a bill",
+    "always reminded how lucky i am"
+   ],
+   "related": [
+    "Martyrdom Display",
+    "Duty Scripts",
+    "Guilt-Tripping",
+    "Weaponized Generosity",
+    "Favor Debt"
+   ]
+  },
+  "Favor Debt": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "relationship",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "remember who paid for your school",
+    "i can never pay them back",
+    "you owe me after everything",
+    "old gifts used to get a yes"
+   ],
+   "related": [
+    "Duty Scripts",
+    "Emotional Blackmail",
+    "Guilt-Tripping",
+    "Weaponized Generosity",
+    "Covert Contracts",
+    "Obligation Installation"
+   ]
+  },
+  "Catastrophizing as Control": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says i'll end up alone and broke",
+    "nobody else will put up with me",
+    "scares me out of my plans",
+    "says i can't make it on my own"
+   ],
+   "related": [
+    "Emotional Blackmail",
+    "Guilt-Tripping",
+    "Pity Plays",
+    "Learned Helplessness",
+    "Phobia Indoctrination",
+    "Self-Harm Threats as Leverage"
+   ]
+  },
+  "Love Bombing": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online",
+    "groups"
+   ],
+   "subtitle": "Too much love, too fast",
+   "search_words": [
+    "moving way too fast",
+    "showered with attention right away",
+    "says i'm the one after a week",
+    "too good to be true",
+    "huge promises early on"
+   ],
+   "related": [
+    "Exclusive Meaning",
+    "Future Faking",
+    "Hoovering",
+    "Idealize-Devalue-Discard Cycle",
+    "Premature Exclusivity",
+    "Manufactured Intimacy"
+   ]
+  },
+  "Exclusive Meaning": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says nobody gets me like they do",
+    "my friends seem to matter less now",
+    "gently turns me against my family",
+    "only they understand me"
+   ],
+   "related": [
+    "The Exception Script",
+    "Love Bombing",
+    "Isolation",
+    "Manufactured Intimacy",
+    "Mirroring-on-Demand",
+    "Manufactured Destiny"
+   ]
+  },
+  "Hoovering": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Pulling you back after you leave",
+   "search_words": [
+    "my ex keeps coming back",
+    "they say they've changed this time",
+    "keeps trying to get me back",
+    "an emergency every time i pull away"
+   ],
+   "related": [
+    "Future Faking",
+    "Love Bombing",
+    "Emotional Blackmail",
+    "Push-Pull",
+    "Ghosting as Control",
+    "Relief Bait"
+   ]
+  },
+  "Future Faking": {
+   "group": "hook",
+   "settings": [
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "keeps promising we'll get married",
+    "always says it'll happen soon",
+    "plans that never happen",
+    "waiting for the life they described"
+   ],
+   "related": [
+    "Hoovering",
+    "Love Bombing",
+    "Emotional Blackmail",
+    "Breadcrumbing",
+    "Manufactured Destiny",
+    "Manufactured Intimacy"
+   ]
+  },
+  "Negging": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "friends",
+    "online"
+   ],
+   "subtitle": "Compliments with a put-down inside",
+   "search_words": [
+    "backhanded compliments",
+    "compliments that sting",
+    "pretty smart for someone like me",
+    "makes me want their approval more"
+   ],
+   "related": [
+    "Emotional Blackmail",
+    "Exclusive Meaning",
+    "The Exception Script",
+    "Sarcasm as Weapon",
+    "Comparative Devaluation",
+    "Intermittent Reinforcement"
+   ]
+  },
+  "Silent Treatment": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "friends",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "ignoring me for days",
+    "won't talk to me",
+    "cold shoulder",
+    "punishing me with silence",
+    "stonewalls me until i apologize"
+   ],
+   "related": [
+    "Emotional Blackmail",
+    "Hoovering",
+    "Negging",
+    "Punishment of Boundaries",
+    "Negative Reinforcement Traps",
+    "Ghosting as Control"
+   ]
+  },
+  "Isolation": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "cut off from my friends",
+    "they don't like me seeing my family",
+    "i have no one left",
+    "slowly lost everyone"
+   ],
+   "related": [
+    "Behavior Control",
+    "Monitoring & Surveillance",
+    "Punishment of Boundaries",
+    "Exclusive Meaning",
+    "Milieu Control",
+    "Information Control"
+   ]
+  },
+  "Monitoring & Surveillance": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "checks my phone",
+    "reads my messages",
+    "always wants to know where i am",
+    "asks for photos to prove where i am"
+   ],
+   "related": [
+    "Location Tracking",
+    "Behavior Control",
+    "Isolation",
+    "Device Access Demands",
+    "Stalking-by-Notification",
+    "Demonstrating Omnipotence"
+   ]
+  },
+  "Location Tracking": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "makes me share my location",
+    "gets mad when my location is off",
+    "tracks where i am all the time",
+    "questions where my dot is"
+   ],
+   "related": [
+    "Monitoring & Surveillance",
+    "Behavior Control",
+    "Punishment of Boundaries",
+    "Device Access Demands",
+    "Stalking & Surveillance (Post-Separation)",
+    "Demonstrating Omnipotence"
+   ]
+  },
+  "Behavior Control": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "tells me what i can wear",
+    "need permission to go out",
+    "decides who i can see",
+    "makes rules for my life"
+   ],
+   "related": [
+    "Infantilization",
+    "\"I Know Best\" Paternalism",
+    "Punishment of Boundaries",
+    "Isolation",
+    "Enforcing Trivial Demands",
+    "Financial Control"
+   ]
+  },
+  "Infantilization": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Treating you like a child",
+   "search_words": [
+    "treats me like a child",
+    "takes over my jobs",
+    "talks to me like i'm a kid",
+    "says i can't handle adult things"
+   ],
+   "related": [
+    "\"I Know Best\" Paternalism",
+    "Behavior Control",
+    "Isolation",
+    "Learned Helplessness",
+    "Forced Dependency",
+    "Velvet Glove Control"
+   ]
+  },
+  "\"I Know Best\" Paternalism": {
+   "group": "control",
+   "settings": [
+    "family",
+    "relationship",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says it's for my own good",
+    "won't accept my no",
+    "goes around me to help",
+    "says i'll thank them later"
+   ],
+   "related": [
+    "Behavior Control",
+    "Infantilization",
+    "Punishment of Boundaries",
+    "Velvet Glove Control",
+    "Concern Trolling",
+    "Information Control"
+   ]
+  },
+  "Punishment of Boundaries": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "friends",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "punished for saying no",
+    "things go cold when i set a limit",
+    "they make me pay for asking for space",
+    "my boundary gets mocked"
+   ],
+   "related": [
+    "Isolation",
+    "Behavior Control",
+    "Monitoring & Surveillance",
+    "Extinction Bursts",
+    "Silent Treatment",
+    "Boundary Testing"
+   ]
+  },
+  "DARVO": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Turning blame back on the person who complained",
+   "search_words": [
+    "i end up apologizing when i bring something up",
+    "they act like the victim",
+    "turns it around on me",
+    "now i'm the bad guy"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "Whataboutism",
+    "Denial",
+    "Victim Role Reversal",
+    "Projection",
+    "Complaint Weaponization"
+   ]
+  },
+  "Blame-Shifting": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "look what you made me do",
+    "says it's my fault they yelled",
+    "it's always my fault",
+    "blames me for their choices"
+   ],
+   "related": [
+    "DARVO",
+    "Denial",
+    "Whataboutism",
+    "Scapegoating",
+    "Projection",
+    "Victim Role Reversal"
+   ]
+  },
+  "Whataboutism": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "brings up something i did instead",
+    "what about that time you",
+    "every complaint turns into a tie",
+    "switches to my mistakes"
+   ],
+   "related": [
+    "DARVO",
+    "Blame-Shifting",
+    "Denial",
+    "False Equivalence",
+    "Deflection",
+    "Competitive Victimhood"
+   ]
+  },
+  "Non-Apology Apology": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "sorry you feel that way",
+    "fake apology",
+    "sorry but you started it",
+    "apologizes without admitting anything"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "DARVO",
+    "Denial",
+    "Apology Without Repair",
+    "Minimization",
+    "Forced Forgiveness"
+   ]
+  },
+  "Denial": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "never admits anything",
+    "says nothing wrong happened",
+    "even with proof they say no",
+    "refuses to take responsibility"
+   ],
+   "related": [
+    "Minimization",
+    "Blame-Shifting",
+    "DARVO",
+    "Countering",
+    "Gaslighting",
+    "Plausible Deniability"
+   ]
+  },
+  "Minimization": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "friends",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says i'm overreacting",
+    "it's not a big deal",
+    "it was just a joke",
+    "makes what happened sound tiny"
+   ],
+   "related": [
+    "Denial",
+    "Tone Policing",
+    "Blame-Shifting",
+    "Gaslighting",
+    "Emotional Invalidation",
+    "Normalization"
+   ]
+  },
+  "Tone Policing": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work",
+    "society"
+   ],
+   "subtitle": "Attacking how you said it, not what",
+   "search_words": [
+    "watch your tone",
+    "won't talk while i'm upset",
+    "how i said it is always the problem",
+    "my point never gets answered"
+   ],
+   "related": [
+    "Minimization",
+    "DARVO",
+    "Denial",
+    "\"You're Too Emotional\"",
+    "Counterfeit Calm",
+    "Clinical Tone Policing"
+   ]
+  },
+  "Kafka Trapping": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "work",
+    "groups",
+    "society"
+   ],
+   "subtitle": "When denying it is taken as proof",
+   "search_words": [
+    "denying it proves i did it",
+    "anything i say makes me look guilty",
+    "no way to prove i'm innocent",
+    "defending myself makes it worse"
+   ],
+   "related": [
+    "Denial",
+    "DARVO",
+    "Whataboutism",
+    "Circular Arguments",
+    "Double Binds"
+   ]
+  },
+  "Contempt": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "looks at me with disgust",
+    "sneers at me",
+    "treats me like i'm beneath them",
+    "embarrassed to be seen with me"
+   ],
+   "related": [
+    "Shame Installation",
+    "Name-Calling Disguised as Humor",
+    "Emotional Invalidation",
+    "Sarcasm as Weapon",
+    "Nonverbal Dominance",
+    "Dehumanization"
+   ]
+  },
+  "Name-Calling Disguised as Humor": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "friends",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "insults me then says just kidding",
+    "mean nicknames",
+    "calls me names as a joke",
+    "i'm the one who can't take a joke"
+   ],
+   "related": [
+    "Contempt",
+    "Comparative Devaluation",
+    "Emotional Invalidation",
+    "Sarcasm as Weapon",
+    "Minimization",
+    "Labeling as Identity Warfare"
+   ]
+  },
+  "Comparative Devaluation": {
+   "group": "wear",
+   "settings": [
+    "family",
+    "relationship",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "why can't you be more like your sister",
+    "compares me to their ex",
+    "there's always someone better than me",
+    "i never measure up"
+   ],
+   "related": [
+    "Contempt",
+    "Shame Installation",
+    "Name-Calling Disguised as Humor",
+    "Golden Child Elevation",
+    "Negging",
+    "Scapegoating"
+   ]
+  },
+  "Emotional Invalidation": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "friends",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "you have no reason to be upset",
+    "told i shouldn't feel that way",
+    "my feelings don't count",
+    "stop being dramatic"
+   ],
+   "related": [
+    "Contempt",
+    "Shame Installation",
+    "Name-Calling Disguised as Humor",
+    "\"You're Too Emotional\"",
+    "Minimization",
+    "Toxic Positivity / Weaponized Optimism"
+   ]
+  },
+  "Shame Installation": {
+   "group": "wear",
+   "settings": [
+    "family",
+    "relationship",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "what is wrong with you",
+    "made to feel ashamed of who i am",
+    "one mistake means i'm a bad person",
+    "the shame stays even when they're gone"
+   ],
+   "related": [
+    "Contempt",
+    "Emotional Invalidation",
+    "Comparative Devaluation",
+    "Shame-as-Governance Disguised as Advice",
+    "Demand for Purity",
+    "Public Humiliation"
+   ]
+  },
+  "Intimidation": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "scared of what they'll do",
+    "you don't want to see me angry",
+    "threats when i disagree",
+    "afraid to say no"
+   ],
+   "related": [
+    "Baiting",
+    "Contempt",
+    "Shame Installation",
+    "Rage as Control",
+    "Spatial Invasion",
+    "Nonverbal Dominance"
+   ]
+  },
+  "Triangulation": {
+   "group": "people",
+   "settings": [
+    "family",
+    "relationship",
+    "friends",
+    "work"
+   ],
+   "subtitle": "Bringing in other people's opinions against you",
+   "search_words": [
+    "says everyone agrees with them",
+    "says my mom thinks i was wrong",
+    "pits people against me",
+    "uses others to back them up"
+   ],
+   "related": [
+    "Flying Monkeys",
+    "Forced Teaming",
+    "Concern Trolling",
+    "Divide and Conquer",
+    "Golden Child Elevation",
+    "Social Proof Pressure"
+   ]
+  },
+  "Forced Teaming": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "friends",
+    "groups",
+    "online"
+   ],
+   "subtitle": "A 'we' you never agreed to",
+   "search_words": [
+    "acts like we're on the same team",
+    "says we need to deal with this",
+    "assumes i've already signed up",
+    "saying no feels like letting the team down"
+   ],
+   "related": [
+    "\"We're Family\" Erasure",
+    "Triangulation",
+    "Flying Monkeys",
+    "Social Proof Pressure",
+    "Social Engineering",
+    "\"Polite Hostile\" Environments"
+   ]
+  },
+  "\"We're Family\" Erasure": {
+   "group": "pressure",
+   "settings": [
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "we're family so you can't say no",
+    "family doesn't need boundaries",
+    "relatives expect favors for free",
+    "guilt because we're related"
+   ],
+   "related": [
+    "Forced Teaming",
+    "Triangulation",
+    "Concern Trolling",
+    "Duty Scripts",
+    "Loyalty Binds",
+    "Forced Forgiveness"
+   ]
+  },
+  "Concern Trolling": {
+   "group": "pressure",
+   "settings": [
+    "friends",
+    "family",
+    "online",
+    "work"
+   ],
+   "subtitle": "Fake worry used to push you",
+   "search_words": [
+    "i'm only saying this because i worry",
+    "worry that always ends in an order",
+    "acts concerned to control me",
+    "as your friend everyone's noticed"
+   ],
+   "related": [
+    "Flying Monkeys",
+    "Triangulation",
+    "\"We're Family\" Erasure",
+    "\"I Know Best\" Paternalism",
+    "Velvet Glove Control",
+    "Shame-as-Governance Disguised as Advice"
+   ]
+  },
+  "Ultimatums": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "it's me or your friends",
+    "do this or we're done",
+    "forced to pick right now",
+    "threatens to end it unless"
+   ],
+   "related": [
+    "False Dilemma",
+    "Urgency Manufacturing",
+    "Sunk Cost Exploitation",
+    "Emotional Blackmail",
+    "Choice Restriction",
+    "Extinction Bursts"
+   ]
+  },
+  "Urgency Manufacturing": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "online",
+    "society",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "decide right now",
+    "no time to think",
+    "offer ends tonight",
+    "pressure gets worse when i ask for time"
+   ],
+   "related": [
+    "Ultimatums",
+    "False Dilemma",
+    "Response-Time Policing",
+    "Manufactured Scarcity",
+    "Pressure to Sign",
+    "Social Engineering"
+   ]
+  },
+  "False Dilemma": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "work",
+    "society"
+   ],
+   "subtitle": "Pretending there are only two choices",
+   "search_words": [
+    "either you trust me or you don't",
+    "you're with us or against us",
+    "told there are only two options",
+    "both choices are bad"
+   ],
+   "related": [
+    "Ultimatums",
+    "Urgency Manufacturing",
+    "Sunk Cost Exploitation",
+    "Choice Restriction",
+    "Bounded Choice",
+    "Wedge Issue Exploitation"
+   ]
+  },
+  "Sunk Cost Exploitation": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "work",
+    "groups"
+   ],
+   "subtitle": "Using what you've invested to keep you there",
+   "search_words": [
+    "you'd throw away all these years",
+    "can't leave after everything i've put in",
+    "we've invested too much to stop",
+    "i'd waste everything if i go"
+   ],
+   "related": [
+    "Ultimatums",
+    "False Dilemma",
+    "Urgency Manufacturing",
+    "Bait and Switch",
+    "Foot-in-the-Door",
+    "Golden Bars"
+   ]
+  },
+  "Response-Time Policing": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "friends",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "mad when i don't text back fast",
+    "i saw you read it",
+    "why did it take so long to reply",
+    "have to explain every gap"
+   ],
+   "related": [
+    "Interrogation",
+    "Ultimatums",
+    "Urgency Manufacturing",
+    "Stalking-by-Notification",
+    "Monitoring & Surveillance"
+   ]
+  },
+  "Exaggeration": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "you always do this",
+    "you never listen",
+    "blows things out of proportion",
+    "we argue about always and never"
+   ],
+   "related": [
+    "Vague Allegations",
+    "Lying",
+    "Fabricated Evidence",
+    "Semantic Traps",
+    "Loaded Language"
+   ]
+  },
+  "Vague Allegations": {
+   "group": "truth",
+   "settings": [
+    "work",
+    "friends",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "people are talking about you",
+    "complaints but they won't say who",
+    "concerns about my attitude",
+    "can't answer an accusation with no details"
+   ],
+   "related": [
+    "Exaggeration",
+    "Fabricated Evidence",
+    "Lying by Omission",
+    "Confidentiality as Weapon",
+    "Reputation Laundering",
+    "Paper-Trail Traps"
+   ]
+  },
+  "Identity Hooking": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i made you who you are",
+    "says my success is really theirs",
+    "without me you'd be nothing",
+    "leaving feels like losing myself"
+   ],
+   "related": [
+    "Conditional Worth",
+    "Learned Helplessness",
+    "Identity Erosion",
+    "Favor Debt",
+    "Credit Theft",
+    "Loyalty Binds"
+   ]
+  },
+  "Conditional Worth": {
+   "group": "wear",
+   "settings": [
+    "family",
+    "relationship",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "only worth something when i'm useful",
+    "have to earn my place",
+    "nice only when i do what they want",
+    "my value depends on helping"
+   ],
+   "related": [
+    "Identity Hooking",
+    "Fawning",
+    "Loyalty Binds",
+    "Objectification",
+    "Approval Addiction Cultivation",
+    "The \"Good Woman Program\""
+   ]
+  },
+  "Learned Helplessness": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says i can't survive without them",
+    "i've stopped even trying",
+    "don't think i can manage alone",
+    "they take over so i never learn"
+   ],
+   "related": [
+    "Conditional Worth",
+    "Identity Erosion",
+    "Self-Gaslighting Induction",
+    "Forced Dependency",
+    "Infantilization",
+    "Catastrophizing as Control"
+   ]
+  },
+  "Loyalty Binds": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "groups",
+    "friends",
+    "work"
+   ],
+   "subtitle": "Loyalty means never telling or disagreeing",
+   "search_words": [
+    "what happens in this house stays here",
+    "telling anyone is betrayal",
+    "a real friend wouldn't question them",
+    "made to keep family secrets"
+   ],
+   "related": [
+    "Conditional Worth",
+    "Identity Hooking",
+    "Fawning",
+    "Silence Installation",
+    "\"We're Family\" Erasure",
+    "Parentification"
+   ]
+  },
+  "Legal/Administrative Threats": {
+   "group": "systems",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "threatens to call the police",
+    "you'll hear from my lawyer",
+    "threatens to report me",
+    "every argument puts my job at risk"
+   ],
+   "related": [
+    "Pressure to Sign",
+    "Confidentiality as Weapon",
+    "Administrative Escalation",
+    "Paper Terrorism",
+    "Intimidation",
+    "Legal Abuse (Post-Separation)"
+   ]
+  },
+  "Weaponized Therapy-Speak": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "friends",
+    "online"
+   ],
+   "subtitle": "Therapy words used to shut you down",
+   "search_words": [
+    "says my boundary is controlling",
+    "tells me i'm projecting",
+    "uses therapy words against me",
+    "calls my feelings a trauma response"
+   ],
+   "related": [
+    "Non-Apology Apology",
+    "Blame-Shifting",
+    "Minimization",
+    "Trash-Can Diagnosis",
+    "Accountability Evasion via Diagnosis",
+    "Projection"
+   ]
+  },
+  "Trash-Can Diagnosis": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work",
+    "online"
+   ],
+   "subtitle": "Throwing a mental-health label at you",
+   "search_words": [
+    "calls me crazy",
+    "says it's just my anxiety talking",
+    "calls me unstable",
+    "says something is wrong with my head"
+   ],
+   "related": [
+    "Weaponized Therapy-Speak",
+    "Credibility Theft",
+    "Authority Hijack",
+    "Accountability Evasion via Diagnosis",
+    "Labeling as Identity Warfare",
+    "Medical Gaslighting"
+   ]
+  },
+  "Stalking-by-Notification": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "saw you were online at 2am",
+    "asks why i posted but didn't reply",
+    "watches my last seen",
+    "interrogated about read receipts"
+   ],
+   "related": [
+    "Ghosting-Orbiting Cycle",
+    "Doxxing",
+    "Response-Time Policing",
+    "Monitoring & Surveillance",
+    "Demonstrating Omnipotence",
+    "Device Access Demands"
+   ]
+  },
+  "Baiting": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "online",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "pushes my buttons on purpose",
+    "pokes at me until i snap",
+    "my reaction gets used against me",
+    "tries to start a fight"
+   ],
+   "related": [
+    "Intimidation",
+    "Emotional Invalidation",
+    "Contempt",
+    "\"You're Too Emotional\"",
+    "Gotcha Framing",
+    "Rage as Control"
+   ]
+  },
+  "Interrogation": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "demands i explain myself",
+    "the questions never stop",
+    "grilling me",
+    "answer me right now"
+   ],
+   "related": [
+    "Response-Time Policing",
+    "Ultimatums",
+    "False Dilemma",
+    "Monitoring & Surveillance",
+    "Forced Submission"
+   ]
+  },
+  "The Exception Script": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online",
+    "groups",
+    "work"
+   ],
+   "subtitle": "You're special, unlike everyone around you",
+   "search_words": [
+    "you're not like other girls",
+    "so mature for your age",
+    "says i'm different from my friends",
+    "praise that puts down everyone else"
+   ],
+   "related": [
+    "Exclusive Meaning",
+    "Love Bombing",
+    "Negging",
+    "Isolation",
+    "Manufactured Intimacy"
+   ]
+  },
+  "\"You're Too Emotional\"": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "we can't talk while you're like this",
+    "told i'm too emotional to take seriously",
+    "calm down and be rational",
+    "my tears become the problem"
+   ],
+   "related": [
+    "Emotional Invalidation",
+    "Contempt",
+    "Intimidation",
+    "Tone Policing",
+    "Counterfeit Calm",
+    "Baiting"
+   ]
+  },
+  "Gotcha Framing": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "aha so you admit it",
+    "my own words used against me",
+    "any small admission gets twisted",
+    "can't be honest without it being used"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "Minimization",
+    "Denial",
+    "Evidence Traps",
+    "Semantic Traps",
+    "Baiting"
+   ]
+  },
+  "False Authority": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i'm just being objective",
+    "stating facts not opinions",
+    "anyone sensible would agree",
+    "made to feel irrational for disagreeing"
+   ],
+   "related": [
+    "Minimization",
+    "Blame-Shifting",
+    "Denial",
+    "Authority Hijack",
+    "Pseudo-Profundity / Intellectual Intimidation",
+    "Credential-Costuming"
+   ]
+  },
+  "Confidentiality as Weapon": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "can't tell me what i'm accused of",
+    "the details are confidential",
+    "not allowed to see the evidence",
+    "complaint against me but no details"
+   ],
+   "related": [
+    "Legal/Administrative Threats",
+    "Pressure to Sign",
+    "HR Shielding",
+    "Vague Allegations",
+    "Institutional Betrayal",
+    "Process Exhaustion"
+   ]
+  },
+  "Pressure to Sign": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "relationship",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "just sign here",
+    "no time to read the contract",
+    "told it's only a formality",
+    "pushed to sign before i understood"
+   ],
+   "related": [
+    "Legal/Administrative Threats",
+    "Confidentiality as Weapon",
+    "Urgency Manufacturing",
+    "Cognitive Overload",
+    "PIP Weaponization",
+    "HR Shielding"
+   ]
+  },
+  "False Equivalence": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "society"
+   ],
+   "subtitle": "Treating a small fault like a big one",
+   "search_words": [
+    "we're both to blame",
+    "you raised your voice too",
+    "my small thing counts as much as their big thing",
+    "we both made mistakes here"
+   ],
+   "related": [
+    "Whataboutism",
+    "Minimization",
+    "Blame-Shifting",
+    "DARVO"
+   ]
+  },
+  "Aftercare Control": {
+   "group": "truth",
+   "settings": [
+    "family",
+    "relationship",
+    "groups"
+   ],
+   "subtitle": "Calling a past hurt good for you",
+   "search_words": [
+    "says it was for my own good",
+    "one day you'll thank me",
+    "punishment called love",
+    "told to be grateful for being hurt"
+   ],
+   "related": [
+    "Guilt-Tripping",
+    "Duty Scripts",
+    "Martyrdom Display",
+    "Revisionist History",
+    "Minimization"
+   ]
+  },
+  "Clinical Tone Policing": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "doctor says i'm being dramatic",
+    "told to calm down before talking about my pain",
+    "they focus on my mood not my symptoms",
+    "brushed off at appointments"
+   ],
+   "related": [
+    "Weaponized Therapy-Speak",
+    "Trash-Can Diagnosis",
+    "False Conclusion from Normal Labs",
+    "Medical Gaslighting",
+    "Tone Policing"
+   ]
+  },
+  "False Conclusion from Normal Labs": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "tests are normal but i still feel sick",
+    "doctor says nothing is wrong",
+    "scan was clear so they stopped looking",
+    "nothing more they can do"
+   ],
+   "related": [
+    "Clinical Tone Policing",
+    "Trash-Can Diagnosis",
+    "Medical Gaslighting",
+    "Accountability Evasion via Diagnosis"
+   ]
+  },
+  "Medical Gaslighting": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "doctor won't believe my symptoms",
+    "told it's probably just anxiety",
+    "told to lose weight instead of tested",
+    "not taken seriously by doctors"
+   ],
+   "related": [
+    "Clinical Tone Policing",
+    "Trash-Can Diagnosis",
+    "Weaponized Therapy-Speak",
+    "False Conclusion from Normal Labs",
+    "Gaslighting",
+    "Accountability Evasion via Diagnosis"
+   ]
+  },
+  "Sexual Coercion": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "work"
+   ],
+   "subtitle": "Pressuring someone into sex",
+   "search_words": [
+    "pressured into sex",
+    "keeps asking until i give in",
+    "made to feel i owed them sex",
+    "saying no to sex gets punished",
+    "went along because refusing was harder"
+   ],
+   "related": [
+    "Ultimatums",
+    "Interrogation",
+    "Urgency Manufacturing",
+    "False Dilemma",
+    "Reproductive Coercion",
+    "Intimate Image Abuse"
+   ]
+  },
+  "Financial Control": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "controls all the money",
+    "not allowed my own bank account",
+    "gives me an allowance",
+    "won't let me work",
+    "have to ask for money"
+   ],
+   "related": [
+    "Infantilization",
+    "\"I Know Best\" Paternalism",
+    "Isolation",
+    "Financial Dependence by Design",
+    "Forced Dependency",
+    "Moving-in-Silence"
+   ]
+  },
+  "Weaponized Incompetence": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "does chores badly on purpose",
+    "says i'm just better at it",
+    "i end up doing everything",
+    "pretends not to know how"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "Minimization",
+    "Denial",
+    "Feigned Ignorance",
+    "Malicious Compliance",
+    "The Rescue Hook"
+   ]
+  },
+  "Strategic Apathy": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i don't care you decide",
+    "whatever i pick is wrong",
+    "won't give an opinion then complains",
+    "every decision left to me"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "Minimization",
+    "Denial",
+    "Double Binds",
+    "Weaponized Incompetence"
+   ]
+  },
+  "Reverse Psychology": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "tells me not to so i will",
+    "says i probably couldn't handle it",
+    "dared without being dared",
+    "talked into it by being told no"
+   ],
+   "related": [
+    "Ultimatums",
+    "False Dilemma",
+    "Interrogation",
+    "Baiting",
+    "Reflexive Control"
+   ]
+  },
+  "Malicious Compliance": {
+   "group": "blame",
+   "settings": [
+    "work",
+    "family",
+    "relationship"
+   ],
+   "subtitle": "Following instructions exactly so it fails",
+   "search_words": [
+    "did exactly what i said on purpose",
+    "follows my words not my point",
+    "useless result but technically right",
+    "you didn't say to"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "Minimization",
+    "Denial",
+    "Weaponized Incompetence"
+   ]
+  },
+  "Moral Licensing": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work",
+    "groups"
+   ],
+   "subtitle": "Pointing to good deeds to dodge a complaint",
+   "search_words": [
+    "look how much i've done for this family",
+    "says they're a good person so it can't be",
+    "ask anyone who knows me",
+    "my complaint gets answered with their reputation"
+   ],
+   "related": [
+    "Denial",
+    "Blame-Shifting",
+    "Minimization",
+    "Halo Effect Exploitation",
+    "Martyrdom Display"
+   ]
+  },
+  "Strategic Self-Deprecation / Performed Humility": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "friends",
+    "work"
+   ],
+   "subtitle": "Putting themselves down so you stop complaining",
+   "search_words": [
+    "says they're hopeless when i bring something up",
+    "i end up cheering them up",
+    "i'm such a bad friend",
+    "beats me to the criticism"
+   ],
+   "related": [
+    "Identity Performances",
+    "Performative Allyship / False Solidarity",
+    "Credential-Costuming",
+    "Pity Plays",
+    "Weaponized Tears"
+   ]
+  },
+  "Priming / Narrative Seeding": {
+   "group": "people",
+   "settings": [
+    "work",
+    "family",
+    "friends"
+   ],
+   "subtitle": "Telling you what to think before you look",
+   "search_words": [
+    "warned about someone before i met them",
+    "told what to expect from a person",
+    "a heads-up before the meeting",
+    "first impression set up for me"
+   ],
+   "related": [
+    "Credibility Theft",
+    "Frame Control",
+    "Authority Hijack",
+    "Reputation Laundering",
+    "Smear Campaign"
+   ]
+  },
+  "Push-Pull": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "hot and cold",
+    "close then suddenly distant",
+    "chasing the good part",
+    "mixed signals"
+   ],
+   "related": [
+    "Love Bombing",
+    "Hoovering",
+    "Breadcrumbing",
+    "Intermittent Reinforcement",
+    "Splitting",
+    "Emotional Flooding"
+   ]
+  },
+  "Intermittent Reinforcement": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "Never knowing if you'll get warmth or coldness",
+   "search_words": [
+    "kindness only now and then",
+    "waiting for the nice version to come back",
+    "one good day keeps me there",
+    "random affection"
+   ],
+   "related": [
+    "Love Bombing",
+    "Emotional Blackmail",
+    "Negging",
+    "Push-Pull",
+    "Trauma Bonding",
+    "Relief Bait"
+   ]
+  },
+  "Breadcrumbing": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online",
+    "friends"
+   ],
+   "subtitle": "Just enough attention to keep you hoping",
+   "search_words": [
+    "texts just enough to keep me hanging",
+    "likes my photos but won't make plans",
+    "hey stranger after weeks",
+    "kept on the back burner"
+   ],
+   "related": [
+    "Future Faking",
+    "Hoovering",
+    "Love Bombing",
+    "Ghosting-Orbiting Cycle",
+    "Push-Pull"
+   ]
+  },
+  "Trauma Bonding": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "family",
+    "groups"
+   ],
+   "subtitle": "Feeling closest right after being hurt",
+   "search_words": [
+    "closest right after they hurt me",
+    "can't leave even though it hurts",
+    "the person who hurts me comforts me",
+    "feel addicted to them"
+   ],
+   "related": [
+    "Relief Bait",
+    "Intermittent Reinforcement",
+    "Emotional Blackmail",
+    "Idealize-Devalue-Discard Cycle",
+    "Approval Addiction Cultivation",
+    "Emotional Flooding"
+   ]
+  },
+  "Relief Bait": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Kindness right after the hurt",
+   "search_words": [
+    "flowers the day after a fight",
+    "sudden sweetness after being cruel",
+    "acts like nothing happened and is lovely",
+    "i let it go because i'm relieved"
+   ],
+   "related": [
+    "Apology Without Repair",
+    "Intermittent Reinforcement",
+    "Trauma Bonding",
+    "Hoovering",
+    "Negative Reinforcement Traps",
+    "Confirmation Bias Exploitation"
+   ]
+  },
+  "Dr. Jekyll/Mr. Hyde": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Kind in public, cruel in private",
+   "search_words": [
+    "nice in public mean at home",
+    "everyone thinks they're lovely",
+    "no one would believe me",
+    "like two different people"
+   ],
+   "related": [
+    "Contempt",
+    "Intimidation",
+    "Flying Monkeys",
+    "Ambient Abuse",
+    "Credibility Theft",
+    "Halo Effect Exploitation"
+   ]
+  },
+  "Ambient Abuse": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "A tense mood with no single incident",
+   "search_words": [
+    "tense atmosphere all the time",
+    "sighs and slammed cupboards",
+    "always guessing their mood",
+    "tired and can't say why"
+   ],
+   "related": [
+    "Contempt",
+    "Intimidation",
+    "Emotional Invalidation",
+    "Nonverbal Dominance",
+    "Negative Reinforcement Traps",
+    "Ambient Sexual Threat"
+   ]
+  },
+  "Ghosting-Orbiting Cycle": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online"
+   ],
+   "subtitle": "Ignoring your messages but watching your posts",
+   "search_words": [
+    "ignores me but watches my stories",
+    "likes old photos then disappears",
+    "won't reply but is still watching",
+    "can't tell if it's over"
+   ],
+   "related": [
+    "Stalking-by-Notification",
+    "Doxxing",
+    "Breadcrumbing",
+    "Ghosting as Control",
+    "Push-Pull"
+   ]
+  },
+  "Sealioning": {
+   "group": "truth",
+   "settings": [
+    "online",
+    "work",
+    "society"
+   ],
+   "subtitle": "Polite questions that never stop",
+   "search_words": [
+    "keeps asking for sources",
+    "endless just asking questions",
+    "nothing i explain is enough",
+    "worn out from explaining"
+   ],
+   "related": [
+    "Whataboutism",
+    "Denial",
+    "Blame-Shifting",
+    "Burden of Proof Shifting",
+    "Gish Gallop"
+   ]
+  },
+  "Idealize-Devalue-Discard Cycle": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "friends",
+    "work"
+   ],
+   "subtitle": "Put on a pedestal, then dropped",
+   "search_words": [
+    "treated as perfect then as nothing",
+    "praised then criticized then dumped",
+    "they used to adore me",
+    "cast aside out of nowhere"
+   ],
+   "related": [
+    "Love Bombing",
+    "Hoovering",
+    "Negging",
+    "Splitting",
+    "Push-Pull",
+    "Trauma Bonding"
+   ]
+  },
+  "Extinction Bursts": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Things get worse right after you set limits",
+   "search_words": [
+    "got worse after i said no",
+    "missed calls after a boundary",
+    "pressure turned up when i stood firm",
+    "what's gotten into you"
+   ],
+   "related": [
+    "Ultimatums",
+    "Urgency Manufacturing",
+    "False Dilemma",
+    "Punishment of Boundaries",
+    "Boundary Testing"
+   ]
+  },
+  "Competitive Victimhood": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "friends",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "they always had it worse",
+    "try being me",
+    "my problem never gets heard",
+    "my pain turns into a contest"
+   ],
+   "related": [
+    "Pity Plays",
+    "Martyrdom Display",
+    "Guilt-Tripping",
+    "Victim Role Reversal",
+    "Whataboutism",
+    "Weaponized Tears"
+   ]
+  },
+  "Ambient Sexual Threat": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "friends",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "creepy comments about my body",
+    "always aware of where he is",
+    "sexual jokes about me in front of others",
+    "changing my route to avoid someone"
+   ],
+   "related": [
+    "Intimidation",
+    "Contempt",
+    "Emotional Invalidation",
+    "Sexual Coercion",
+    "Boundary Testing",
+    "Ambient Abuse"
+   ]
+  },
+  "\"Polite Hostile\" Environments": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "everyone is nice but i'm shut out",
+    "speaking up got me frozen out",
+    "fake friendly workplace",
+    "learned to keep quiet at work"
+   ],
+   "related": [
+    "Concern Trolling",
+    "Forced Teaming",
+    "Triangulation",
+    "Organizational Silence Engineering",
+    "Silent Coalitions",
+    "Mobbing"
+   ]
+  },
+  "Self-Gaslighting Induction": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Doubting yourself automatically",
+   "search_words": [
+    "doubt myself automatically",
+    "maybe i'm remembering it wrong",
+    "second-guess everything",
+    "can't trust my own memory anymore"
+   ],
+   "related": [
+    "Identity Erosion",
+    "Fawning",
+    "Learned Helplessness",
+    "Gaslighting",
+    "Internalized Conditioning",
+    "Thought Control"
+   ]
+  },
+  "Fawning": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "People-pleasing because you feel unsafe",
+   "search_words": [
+    "apologize for everything",
+    "people-pleasing when i'm scared",
+    "agree just to keep the peace",
+    "laugh along to stay safe"
+   ],
+   "related": [
+    "Self-Gaslighting Induction",
+    "Identity Erosion",
+    "Conditional Worth",
+    "Approval Addiction Cultivation",
+    "Silence Installation",
+    "Internalized Conditioning"
+   ]
+  },
+  "Identity Erosion": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "don't know who i am anymore",
+    "lost my hobbies",
+    "whatever you want is fine",
+    "stopped seeing my old friends"
+   ],
+   "related": [
+    "Fawning",
+    "Self-Gaslighting Induction",
+    "Identity Hooking",
+    "Isolation",
+    "Approval Addiction Cultivation",
+    "Learned Helplessness"
+   ]
+  },
+  "Internalized Conditioning": {
+   "group": "wear",
+   "settings": [
+    "family",
+    "relationship",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i still hear their voice",
+    "follow their rules even when they're gone",
+    "feel in trouble for no reason",
+    "police myself"
+   ],
+   "related": [
+    "Self-Gaslighting Induction",
+    "Conditional Worth",
+    "Fawning",
+    "Pre-Punishment",
+    "Silence Installation"
+   ]
+  },
+  "Silence Installation": {
+   "group": "wear",
+   "settings": [
+    "family",
+    "relationship",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "can't make myself say it",
+    "the words won't come out",
+    "it never goes well so i stay quiet",
+    "practice it but never say it"
+   ],
+   "related": [
+    "Loyalty Binds",
+    "Fawning",
+    "Self-Gaslighting Induction",
+    "Organizational Silence Engineering",
+    "Rage as Control",
+    "Pre-Punishment"
+   ]
+  },
+  "Approval Addiction Cultivation": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "my mood depends on theirs",
+    "need their approval to feel okay",
+    "wait to hear what they think first",
+    "checking their reaction constantly"
+   ],
+   "related": [
+    "Conditional Worth",
+    "Fawning",
+    "Identity Hooking",
+    "Intermittent Reinforcement",
+    "Charismatic Authority Dependence",
+    "Trauma Bonding"
+   ]
+  },
+  "Parentification": {
+   "group": "wear",
+   "settings": [
+    "family"
+   ],
+   "subtitle": "A child made to care for the adult",
+   "search_words": [
+    "had to look after my parent",
+    "i was the parent as a kid",
+    "my mom told me all her problems",
+    "grew up too fast"
+   ],
+   "related": [
+    "Learned Helplessness",
+    "Loyalty Binds",
+    "Conditional Worth",
+    "Emotional Parasitism",
+    "The Rescue Hook"
+   ]
+  },
+  "Process Exhaustion": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "endless paperwork",
+    "sent from office to office",
+    "have to start the form again",
+    "request closed because i didn't reply in time"
+   ],
+   "related": [
+    "Pressure to Sign",
+    "Confidentiality as Weapon",
+    "Legal/Administrative Threats",
+    "Diffusion of Responsibility",
+    "Paper Terrorism"
+   ]
+  },
+  "HR Shielding": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "HR protecting the company, not you",
+   "search_words": [
+    "hr is on their side",
+    "reported to hr and nothing happened",
+    "hr asked who else i told",
+    "my complaint made me the problem"
+   ],
+   "related": [
+    "Confidentiality as Weapon",
+    "Pressure to Sign",
+    "Institutional Betrayal",
+    "Organizational Silence Engineering",
+    "Complaint Weaponization"
+   ]
+  },
+  "Pseudo-Consultation": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "society",
+    "groups"
+   ],
+   "subtitle": "Asked for input after it was decided",
+   "search_words": [
+    "asked my opinion after deciding",
+    "feedback ignored",
+    "fake consultation meeting",
+    "they say we were consulted"
+   ],
+   "related": [
+    "Tone Policing",
+    "Legal/Administrative Threats",
+    "Weaponized Inclusion / Strategic Containment",
+    "Manufactured Consent",
+    "Tokenism",
+    "Moving-in-Silence"
+   ]
+  },
+  "Tokenism": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups",
+    "society"
+   ],
+   "subtitle": "Included for show, not for a voice",
+   "search_words": [
+    "the only one like me in the room",
+    "put in photos for diversity",
+    "a title with no power",
+    "asked to speak for my whole community"
+   ],
+   "related": [
+    "Tone Policing",
+    "Legal/Administrative Threats",
+    "Performative Allyship / False Solidarity",
+    "Weaponized Inclusion / Strategic Containment",
+    "Pseudo-Consultation",
+    "Gatekeeping"
+   ]
+  },
+  "Individualization of Systemic Issues": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "society"
+   ],
+   "subtitle": "Blamed for a problem the system caused",
+   "search_words": [
+    "told to be more resilient",
+    "doing three people's work",
+    "wellness webinar instead of help",
+    "told to manage my time better"
+   ],
+   "related": [
+    "Weaponized Therapy-Speak",
+    "Trash-Can Diagnosis",
+    "Tone Policing",
+    "\"Managed Out\" Through Exhaustion",
+    "Toxic Positivity / Weaponized Optimism"
+   ]
+  },
+  "Diffusion of Responsibility": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "society"
+   ],
+   "subtitle": "Everyone points to someone else",
+   "search_words": [
+    "not my department",
+    "passed around between offices",
+    "nobody will take responsibility",
+    "they say the system did it"
+   ],
+   "related": [
+    "Legal/Administrative Threats",
+    "Tone Policing",
+    "Weaponized Therapy-Speak",
+    "Process Exhaustion",
+    "Willful Blindness as Complicity",
+    "Algorithmic Management"
+   ]
+  },
+  "Deepfakes": {
+   "group": "online",
+   "settings": [
+    "online",
+    "relationship",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "fake video of me",
+    "my face on something i never did",
+    "fake nude with my face",
+    "people saw a clip of me that isn't real"
+   ],
+   "related": [
+    "AI Voice Cloning",
+    "Doxxing",
+    "Sock Puppets",
+    "Intimate Image Abuse",
+    "Fabricated Evidence",
+    "Context Collapse Exploitation"
+   ]
+  },
+  "AI Voice Cloning": {
+   "group": "online",
+   "settings": [
+    "online",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "call sounded like my grandson asking for money",
+    "voice note from my boss asking for gift cards",
+    "fake call from family in trouble",
+    "sounds like someone i know but isn't"
+   ],
+   "related": [
+    "Deepfakes",
+    "Sock Puppets",
+    "Doxxing",
+    "AI-Driven Social Engineering (Automated)",
+    "Social Engineering"
+   ]
+  },
+  "Doxxing": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "posted my address online",
+    "strangers know where i live",
+    "shared where i work so people would bother me",
+    "people showing up at my home"
+   ],
+   "related": [
+    "Deepfakes",
+    "Stalking-by-Notification",
+    "Coordinated Reporting",
+    "Brigading",
+    "Stochastic Harassment Direction"
+   ]
+  },
+  "Sock Puppets": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "One person posing as many accounts",
+   "search_words": [
+    "fake accounts defending them",
+    "new accounts all saying the same thing",
+    "same person behind many accounts",
+    "fake crowd online"
+   ],
+   "related": [
+    "Coordinated Reporting",
+    "Deepfakes",
+    "Doxxing",
+    "Synthetic Persona Networks",
+    "Astroturfing",
+    "Brigading"
+   ]
+  },
+  "Fabricated Evidence": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "fake screenshots of me",
+    "edited messages shown to others",
+    "made up proof",
+    "texts i never sent"
+   ],
+   "related": [
+    "Lying",
+    "Lying by Omission",
+    "Vague Allegations",
+    "Edited Recordings",
+    "False Reports",
+    "Deepfakes"
+   ]
+  },
+  "Coordinated Reporting": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "account suspended after an argument",
+    "everyone reported my posts",
+    "got banned for nothing",
+    "posts removed all at once"
+   ],
+   "related": [
+    "Sock Puppets",
+    "Doxxing",
+    "Stalking-by-Notification",
+    "Brigading",
+    "False Reports"
+   ]
+  },
+  "Credential-Costuming": {
+   "group": "truth",
+   "settings": [
+    "work",
+    "online",
+    "society"
+   ],
+   "subtitle": "Fake or inflated titles to stop questions",
+   "search_words": [
+    "claims to be an expert",
+    "fake degree",
+    "brags about credentials so i don't ask",
+    "titles i can't check"
+   ],
+   "related": [
+    "Identity Performances",
+    "Strategic Self-Deprecation / Performed Humility",
+    "Social Engineering",
+    "False Authority",
+    "Halo Effect Exploitation"
+   ]
+  },
+  "Identity Performances": {
+   "group": "truth",
+   "settings": [
+    "online",
+    "relationship",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "their story didn't add up",
+    "pretended to have been through the same thing",
+    "fake backstory",
+    "a different person to different people"
+   ],
+   "related": [
+    "Credential-Costuming",
+    "Performative Allyship / False Solidarity",
+    "Social Engineering",
+    "Catfishing",
+    "Mirroring-on-Demand"
+   ]
+  },
+  "Social Engineering": {
+   "group": "online",
+   "settings": [
+    "work",
+    "online"
+   ],
+   "subtitle": "Pretending to be someone to get access",
+   "search_words": [
+    "call from a fake bank fraud team",
+    "asked to read out a code",
+    "boss texted asking for gift cards",
+    "scam text with a link"
+   ],
+   "related": [
+    "Credential-Costuming",
+    "Identity Performances",
+    "Performative Allyship / False Solidarity",
+    "Urgency Manufacturing",
+    "AI-Driven Social Engineering (Automated)",
+    "SIM Swap / 2FA Interception"
+   ]
+  },
+  "Performative Allyship / False Solidarity": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "friends",
+    "society"
+   ],
+   "subtitle": "Saying they support you, then not showing up",
+   "search_words": [
+    "says they stand with me then stays silent",
+    "posts about inclusion but does nothing",
+    "support disappears when it costs them",
+    "all talk no help"
+   ],
+   "related": [
+    "Identity Performances",
+    "Strategic Self-Deprecation / Performed Humility",
+    "Social Engineering",
+    "Tokenism",
+    "Willful Blindness as Complicity"
+   ]
+  },
+  "Premature Exclusivity": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "wants to be exclusive right away",
+    "deleted the apps after one date",
+    "upset when i want more time",
+    "rushing the relationship"
+   ],
+   "related": [
+    "Halo Effect Exploitation",
+    "Covert Contracts",
+    "Love Bombing",
+    "Manufactured Destiny",
+    "Urgency Manufacturing"
+   ]
+  },
+  "Confirmation Bias Exploitation": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Using the good times to excuse the bad",
+   "search_words": [
+    "that's not who i really am",
+    "remember our trip",
+    "holding on to the good version",
+    "explaining away the bad times"
+   ],
+   "related": [
+    "Halo Effect Exploitation",
+    "Premature Exclusivity",
+    "Covert Contracts",
+    "Relief Bait",
+    "Intermittent Reinforcement"
+   ]
+  },
+  "Halo Effect Exploitation": {
+   "group": "blame",
+   "settings": [
+    "work",
+    "groups",
+    "society",
+    "family"
+   ],
+   "subtitle": "Their reputation used to excuse their behavior",
+   "search_words": [
+    "but he's so well respected",
+    "she'd never do that, she's the best",
+    "nobody believes it because they're popular",
+    "their status shuts down complaints"
+   ],
+   "related": [
+    "Confirmation Bias Exploitation",
+    "Premature Exclusivity",
+    "Covert Contracts",
+    "Moral Licensing",
+    "Dr. Jekyll/Mr. Hyde",
+    "Credential-Costuming"
+   ]
+  },
+  "Covert Contracts": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "Unspoken rules you're punished for breaking",
+   "search_words": [
+    "you should just know",
+    "rules nobody told me",
+    "punished for expectations i didn't know about",
+    "unspoken deals"
+   ],
+   "related": [
+    "Premature Exclusivity",
+    "Financial Dependence by Design",
+    "Halo Effect Exploitation",
+    "Obligation Installation",
+    "Favor Debt",
+    "\"Sacred Duty\" Manipulation"
+   ]
+  },
+  "Financial Dependence by Design": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "can't afford to leave",
+    "discouraged from working",
+    "no money of my own",
+    "every dollar checked"
+   ],
+   "related": [
+    "Covert Contracts",
+    "Platform Migration",
+    "Premature Exclusivity",
+    "Financial Control",
+    "Forced Dependency",
+    "Golden Bars"
+   ]
+  },
+  "Platform Migration": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "Moving serious talks where nothing is saved",
+   "search_words": [
+    "call me don't text",
+    "switch to the disappearing app",
+    "won't put it in writing",
+    "no record of what was promised"
+   ],
+   "related": [
+    "Covert Contracts",
+    "Financial Dependence by Design",
+    "Halo Effect Exploitation",
+    "Strategic Ambiguity",
+    "Selective Memory"
+   ]
+  },
+  "\"Sacred Duty\" Manipulation": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "god wants you to do this",
+    "our ancestors sacrificed for this",
+    "saying no is a sin",
+    "religious guilt"
+   ],
+   "related": [
+    "Covert Contracts",
+    "Financial Dependence by Design",
+    "Halo Effect Exploitation",
+    "Duty Scripts",
+    "Guilt Legacy",
+    "Demand for Purity"
+   ]
+  },
+  "Shame-as-Governance Disguised as Advice": {
+   "group": "wear",
+   "settings": [
+    "family",
+    "work",
+    "friends"
+   ],
+   "subtitle": "Advice that is really a judgment of you",
+   "search_words": [
+    "only telling you because i care",
+    "advice that feels like an insult",
+    "a responsible person wouldn't",
+    "no offense but"
+   ],
+   "related": [
+    "PIP Weaponization",
+    "Overcorrection Demands",
+    "Shame Installation",
+    "Concern Trolling",
+    "Moral Framing",
+    "The \"Good Woman Program\""
+   ]
+  },
+  "PIP Weaponization": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "A performance plan used to push you out",
+   "search_words": [
+    "put on a performance plan",
+    "targets keep changing",
+    "paperwork to fire me",
+    "set up to fail at work"
+   ],
+   "related": [
+    "Shame-as-Governance Disguised as Advice",
+    "Credit Laundering",
+    "Overcorrection Demands",
+    "Setting Up to Fail",
+    "\"Managed Out\" Through Exhaustion",
+    "Performance Framework Manipulation"
+   ]
+  },
+  "Credit Laundering": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "Your idea passed along under someone else's name",
+   "search_words": [
+    "my idea ended up with someone else's name",
+    "boss presented my work",
+    "credit taken by the team lead",
+    "my analysis with no mention of me"
+   ],
+   "related": [
+    "PIP Weaponization",
+    "Objectification",
+    "Shame-as-Governance Disguised as Advice",
+    "Credit Theft",
+    "Idea Theft in Real Time"
+   ]
+  },
+  "The \"Good Woman Program\"": {
+   "group": "wear",
+   "settings": [
+    "work",
+    "family",
+    "society",
+    "groups"
+   ],
+   "subtitle": "Rules that reward women for putting others first",
+   "search_words": [
+    "expected to be nice all the time",
+    "called sharp for asking a question",
+    "punished for saying no as a woman",
+    "told to be more agreeable"
+   ],
+   "related": [
+    "Shame-as-Governance Disguised as Advice",
+    "Overcorrection Demands",
+    "Objectification",
+    "Conditional Worth",
+    "Fawning"
+   ]
+  },
+  "Objectification": {
+   "group": "wear",
+   "settings": [
+    "work",
+    "relationship",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "only call when they need something",
+    "treated like a tool",
+    "valued for my looks",
+    "they lose interest when i'm not useful"
+   ],
+   "related": [
+    "Dehumanization",
+    "Credit Laundering",
+    "The \"Good Woman Program\"",
+    "Conditional Worth",
+    "Emotional Parasitism"
+   ]
+  },
+  "Dehumanization": {
+   "group": "wear",
+   "settings": [
+    "work",
+    "society",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "talked about like i'm not there",
+    "treated like a number",
+    "nobody asks what i think",
+    "called a difficult case"
+   ],
+   "related": [
+    "Objectification",
+    "Shame-as-Governance Disguised as Advice",
+    "Overcorrection Demands",
+    "Dispensing of Existence",
+    "Contempt"
+   ]
+  },
+  "Overcorrection Demands": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "apology is never enough",
+    "small mistake huge punishment",
+    "have to say sorry in front of everyone",
+    "made to apologize again and again"
+   ],
+   "related": [
+    "Shame-as-Governance Disguised as Advice",
+    "PIP Weaponization",
+    "Dehumanization",
+    "Forced Submission",
+    "Guilt-Tripping"
+   ]
+  },
+  "Toxic Positivity / Weaponized Optimism": {
+   "group": "wear",
+   "settings": [
+    "work",
+    "friends",
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "just stay positive",
+    "look on the bright side",
+    "at least you have your health",
+    "good vibes only"
+   ],
+   "related": [
+    "Shame-as-Governance Disguised as Advice",
+    "Dehumanization",
+    "Overcorrection Demands",
+    "Emotional Invalidation",
+    "Spiritual Bypassing",
+    "Thought-Stopping Clichés"
+   ]
+  },
+  "Credibility Theft": {
+   "group": "people",
+   "settings": [
+    "work",
+    "family",
+    "relationship",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "told people i exaggerate",
+    "nobody believes me anymore",
+    "warned others i get confused",
+    "my word doesn't count"
+   ],
+   "related": [
+    "Gaslighting",
+    "Priming / Narrative Seeding",
+    "Trash-Can Diagnosis",
+    "Smear Campaign",
+    "Dr. Jekyll/Mr. Hyde",
+    "Reputation Laundering"
+   ]
+  },
+  "Projection": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Accusing you of what they are doing",
+   "search_words": [
+    "accuses me of what they do",
+    "calls me the controlling one",
+    "says i'm the liar",
+    "flips my complaint back onto me"
+   ],
+   "related": [
+    "Blame-Shifting",
+    "DARVO",
+    "Denial",
+    "Weaponized Therapy-Speak",
+    "Preemptive Accusation",
+    "Frame Control"
+   ]
+  },
+  "Authority Hijack": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "tells me what i really feel",
+    "says they know what i meant",
+    "explains my own mind to me",
+    "not allowed to know my own feelings"
+   ],
+   "related": [
+    "Emotional Invalidation",
+    "Gaslighting",
+    "Credibility Theft",
+    "Doctrine Over Person",
+    "False Authority",
+    "Trash-Can Diagnosis"
+   ]
+  },
+  "Accountability Evasion via Diagnosis": {
+   "group": "blame",
+   "settings": [
+    "work",
+    "family",
+    "relationship"
+   ],
+   "subtitle": "Answering a complaint by questioning your mental health",
+   "search_words": [
+    "suggests i see someone when i complain",
+    "worried about my mental health instead",
+    "sent to counseling instead of fixing it",
+    "my complaint became about me"
+   ],
+   "related": [
+    "Trash-Can Diagnosis",
+    "Weaponized Therapy-Speak",
+    "Frame Control",
+    "Spiritual Bypassing",
+    "Medical Gaslighting"
+   ]
+  },
+  "Spiritual Bypassing": {
+   "group": "blame",
+   "settings": [
+    "groups",
+    "friends",
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Spiritual talk used to skip past a hurt",
+   "search_words": [
+    "just forgive and let it go",
+    "karma will handle it",
+    "my anger is my own problem",
+    "good vibes instead of an apology"
+   ],
+   "related": [
+    "Frame Control",
+    "Credibility Theft",
+    "Accountability Evasion via Diagnosis",
+    "Forced Forgiveness",
+    "Toxic Positivity / Weaponized Optimism",
+    "Thought-Stopping Clichés"
+   ]
+  },
+  "Burden of Proof Shifting": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "prove it",
+    "show me where i said that",
+    "needs three examples before changing",
+    "always on me to prove"
+   ],
+   "related": [
+    "Credibility Theft",
+    "Frame Control",
+    "Projection",
+    "Sealioning",
+    "Gish Gallop"
+   ]
+  },
+  "Gish Gallop": {
+   "group": "truth",
+   "settings": [
+    "online",
+    "society",
+    "work"
+   ],
+   "subtitle": "Too many claims to answer",
+   "search_words": [
+    "so many points i can't answer",
+    "you didn't address point four",
+    "drowning in arguments",
+    "rapid-fire claims"
+   ],
+   "related": [
+    "Frame Control",
+    "Priming / Narrative Seeding",
+    "Credibility Theft",
+    "Firehose of Falsehood",
+    "Sealioning",
+    "Cognitive Overload"
+   ]
+  },
+  "Limited Hangout": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "society"
+   ],
+   "subtitle": "Admitting a little to hide a lot",
+   "search_words": [
+    "admitted a small part to stop my questions",
+    "fine i did that but that's all",
+    "partial confession",
+    "why are you still asking"
+   ],
+   "related": [
+    "Frame Control",
+    "Priming / Narrative Seeding",
+    "Projection",
+    "Half-Truth Framing",
+    "Lying by Omission"
+   ]
+  },
+  "Pseudo-Profundity / Intellectual Intimidation": {
+   "group": "truth",
+   "settings": [
+    "work",
+    "groups",
+    "online"
+   ],
+   "subtitle": "Big words that say nothing",
+   "search_words": [
+    "talks over my head",
+    "makes me feel too stupid to question",
+    "fancy words that mean nothing",
+    "if you have to ask you wouldn't understand"
+   ],
+   "related": [
+    "Authority Hijack",
+    "Credibility Theft",
+    "Frame Control",
+    "False Authority",
+    "Word Salad"
+   ]
+  },
+  "Semantic Erosion / Meaning Dilution": {
+   "group": "truth",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Overusing serious words until they mean nothing",
+   "search_words": [
+    "that word means nothing anymore",
+    "everyone calls everything trauma",
+    "if that's harassment then everything is",
+    "my words don't land"
+   ],
+   "related": [
+    "Frame Control",
+    "Accountability Evasion via Diagnosis",
+    "Credibility Theft",
+    "Loaded Language",
+    "Meta-Gaslighting"
+   ]
+  },
+  "Dog Whistling / Coded Signaling": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "society",
+    "online"
+   ],
+   "subtitle": "A message with a hidden second meaning",
+   "search_words": [
+    "sounds normal but i know what it means",
+    "coded threats",
+    "hidden meaning only i get",
+    "they can always say they meant nothing"
+   ],
+   "related": [
+    "Priming / Narrative Seeding",
+    "Frame Control",
+    "Projection",
+    "Intimidation",
+    "Plausible Deniability"
+   ]
+  },
+  "Information Cascades": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online",
+    "work",
+    "friends"
+   ],
+   "subtitle": "Believing it because everyone else does",
+   "search_words": [
+    "everyone's saying it so it must be true",
+    "nobody actually checked",
+    "the whole team already agrees",
+    "a rumor everyone believes"
+   ],
+   "related": [
+    "Strategic Ambiguity",
+    "Gatekeeping",
+    "Information Laundering",
+    "Reputation Laundering",
+    "Social Proof Pressure",
+    "Normative Messaging"
+   ]
+  },
+  "Interruption Patterns": {
+   "group": "people",
+   "settings": [
+    "work",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "always getting talked over",
+    "can't finish a sentence",
+    "let me stop you there",
+    "they explain what i meant"
+   ],
+   "related": [
+    "Idea Theft in Real Time",
+    "Gatekeeping",
+    "Information Cascades",
+    "Credit Theft",
+    "Silent Coalitions"
+   ]
+  },
+  "Idea Theft in Real Time": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "nobody reacts until someone else says it",
+    "someone repeated my idea and got praised",
+    "that's what i was saying",
+    "ignored in meetings"
+   ],
+   "related": [
+    "Interruption Patterns",
+    "Gatekeeping",
+    "Information Cascades",
+    "Credit Theft",
+    "Credit Laundering"
+   ]
+  },
+  "Gatekeeping": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "the rules change depending on who you are",
+    "need their permission to get access",
+    "newer people get in but not me",
+    "blocked from opportunities"
+   ],
+   "related": [
+    "Interruption Patterns",
+    "Weaponized Inclusion / Strategic Containment",
+    "Punishment by Proxy",
+    "Maternal Gatekeeping",
+    "Tokenism",
+    "Idea Theft in Real Time"
+   ]
+  },
+  "Punishment by Proxy": {
+   "group": "people",
+   "settings": [
+    "family",
+    "work",
+    "groups",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "my sister got punished after i spoke up",
+    "they went after my family",
+    "people close to me suffer when i stand firm",
+    "my friend got uninvited after our fight"
+   ],
+   "related": [
+    "Gatekeeping",
+    "Weaponized Inclusion / Strategic Containment",
+    "Information Cascades",
+    "Intimidation",
+    "Flying Monkeys"
+   ]
+  },
+  "Weaponized Inclusion / Strategic Containment": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups",
+    "society"
+   ],
+   "subtitle": "Given a seat so you can't object",
+   "search_words": [
+    "invited onto a committee with no vote",
+    "you were part of the decision",
+    "keep concerns inside the group",
+    "a seat but no say"
+   ],
+   "related": [
+    "Gatekeeping",
+    "Interruption Patterns",
+    "Punishment by Proxy",
+    "Pseudo-Consultation",
+    "Tokenism",
+    "Controlled Opposition"
+   ]
+  },
+  "Controlled Opposition": {
+   "group": "society",
+   "settings": [
+    "society",
+    "groups"
+   ],
+   "subtitle": "Fake opponents who keep change from happening",
+   "search_words": [
+    "the protest leaders are on the other side",
+    "watchdog funded by the company",
+    "outrage that goes nowhere",
+    "petition that changed nothing"
+   ],
+   "related": [
+    "Gatekeeping",
+    "Strategic Ambiguity",
+    "Information Cascades",
+    "Astroturfing",
+    "Agent of Influence Operations",
+    "Weaponized Inclusion / Strategic Containment"
+   ]
+  },
+  "Reputation Laundering": {
+   "group": "people",
+   "settings": [
+    "work",
+    "friends",
+    "groups",
+    "family"
+   ],
+   "subtitle": "A rumor repeated until it seems like fact",
+   "search_words": [
+    "everyone says i'm difficult",
+    "warned about me before meeting me",
+    "rumor with no source",
+    "people just say it about me"
+   ],
+   "related": [
+    "Information Cascades",
+    "Gatekeeping",
+    "Punishment by Proxy",
+    "Smear Campaign",
+    "Credibility Theft",
+    "Information Laundering"
+   ]
+  },
+  "Maternal Gatekeeping": {
+   "group": "control",
+   "settings": [
+    "family"
+   ],
+   "subtitle": "One parent blocking the other's care of children",
+   "search_words": [
+    "won't let me parent my own kid",
+    "redoes everything i do with the baby",
+    "you're holding her wrong",
+    "i gave up helping with the kids"
+   ],
+   "related": [
+    "Gatekeeping",
+    "Interruption Patterns",
+    "Punishment by Proxy",
+    "Infantilization",
+    "Behavior Control"
+   ]
+  },
+  "Echo Chamber Construction": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "online",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "told not to trust any other news",
+    "only watch what they send me",
+    "everyone else is lying",
+    "my sister would only confuse me"
+   ],
+   "related": [
+    "Information Cascades",
+    "Gatekeeping",
+    "Strategic Ambiguity",
+    "Milieu Control",
+    "Information Control",
+    "Algorithmic Manipulation"
+   ]
+  },
+  "Stochastic Harassment Direction": {
+   "group": "people",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Stirring up a crowd against someone",
+   "search_words": [
+    "an influencer told followers about me",
+    "strangers harassing me after a post",
+    "never told anyone to do it",
+    "followers came after me"
+   ],
+   "related": [
+    "Punishment by Proxy",
+    "Information Cascades",
+    "Reputation Laundering",
+    "Brigading",
+    "Pile-Ons",
+    "Doxxing"
+   ]
+  },
+  "Information Laundering": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "A weak claim dressed up as well-sourced",
+   "search_words": [
+    "according to reports",
+    "source cites a source that cites nothing",
+    "everyone quotes it but nobody checked",
+    "untraceable statistic"
+   ],
+   "related": [
+    "Information Cascades",
+    "Strategic Ambiguity",
+    "Reputation Laundering",
+    "Context Poisoning",
+    "Firehose of Falsehood"
+   ]
+  },
+  "Emotion Control": {
+   "group": "control",
+   "settings": [
+    "family",
+    "relationship",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "not allowed to cry",
+    "told to smile at dinner",
+    "only happy feelings allowed",
+    "my feelings get used against me later"
+   ],
+   "related": [
+    "Nonverbal Dominance",
+    "Ritualized Exhaustion",
+    "Emotional Invalidation",
+    "Toxic Positivity / Weaponized Optimism",
+    "Silence Installation",
+    "Negative Reinforcement Traps"
+   ]
+  },
+  "Ritualized Exhaustion": {
+   "group": "control",
+   "settings": [
+    "groups",
+    "work",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "never allowed to rest",
+    "kept up late every night",
+    "too tired to say no",
+    "sleep when the work is done"
+   ],
+   "related": [
+    "Resource Sabotage",
+    "\"Managed Out\" Through Exhaustion",
+    "Emotion Control",
+    "Health Sabotage",
+    "Cognitive Overload",
+    "Time Theft"
+   ]
+  },
+  "Nonverbal Dominance": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "eye rolls when i disagree",
+    "stares until i give up",
+    "stands over me while i talk",
+    "sighs so i stop talking"
+   ],
+   "related": [
+    "Spatial Invasion",
+    "Emotion Control",
+    "Contempt",
+    "Intimidation",
+    "Ambient Abuse"
+   ]
+  },
+  "Spatial Invasion": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "blocks the door",
+    "stands too close when angry",
+    "won't let me leave the room",
+    "corners me"
+   ],
+   "related": [
+    "Nonverbal Dominance",
+    "Emotion Control",
+    "Resource Sabotage",
+    "Intimidation",
+    "Rage as Control"
+   ]
+  },
+  "Resource Sabotage": {
+   "group": "control",
+   "settings": [
+    "work",
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "they hide things i need",
+    "forgot to tell me the venue changed",
+    "budget pulled then blamed me",
+    "won't drive me then blames me"
+   ],
+   "related": [
+    "Ritualized Exhaustion",
+    "\"Managed Out\" Through Exhaustion",
+    "Nonverbal Dominance",
+    "Sabotaging Success",
+    "Setting Up to Fail",
+    "Health Sabotage"
+   ]
+  },
+  "\"Managed Out\" Through Exhaustion": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "pushed out of my job slowly",
+    "taken off my projects",
+    "not invited to meetings anymore",
+    "they want me to quit"
+   ],
+   "related": [
+    "Resource Sabotage",
+    "Ritualized Exhaustion",
+    "Emotion Control",
+    "PIP Weaponization",
+    "Performance Framework Manipulation",
+    "Individualization of Systemic Issues"
+   ]
+  },
+  "Evidence Traps": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "saves my messages to use later",
+    "keeps a file on me",
+    "brings up what i said months ago",
+    "everything i say becomes evidence"
+   ],
+   "related": [
+    "Emotion Control",
+    "Resource Sabotage",
+    "Fabricated Evidence",
+    "Gotcha Framing",
+    "Paper-Trail Traps",
+    "Forced Confession / Self-Criticism Rituals"
+   ]
+  },
+  "Moral Framing": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "relationship",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "that's so selfish of you",
+    "a good daughter would come",
+    "made to feel like a bad person for asking",
+    "i never thought you'd be so cold"
+   ],
+   "related": [
+    "Emotion Control",
+    "Nonverbal Dominance",
+    "Resource Sabotage",
+    "Duty Scripts",
+    "Moral Outrage as Weapon",
+    "Guilt-Tripping"
+   ]
+  },
+  "Reproductive Coercion": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Pressure or control over having children",
+   "search_words": [
+    "pressured to have a baby",
+    "messes with my birth control",
+    "family will cut us off without a grandchild",
+    "job threatened if i get pregnant"
+   ],
+   "related": [
+    "Resource Sabotage",
+    "\"Managed Out\" Through Exhaustion",
+    "Emotion Control",
+    "Sexual Coercion",
+    "Health Sabotage",
+    "Financial Control"
+   ]
+  },
+  "Negative Reinforcement Traps": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "The tension stops only when you give in",
+   "search_words": [
+    "tense until i say yes",
+    "warm the second i give in",
+    "peace only when i do what they want",
+    "days of one-word answers"
+   ],
+   "related": [
+    "Emotion Control",
+    "Nonverbal Dominance",
+    "Ritualized Exhaustion",
+    "Silent Treatment",
+    "Relief Bait",
+    "Ambient Abuse"
+   ]
+  },
+  "Moving-in-Silence": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Big decisions made behind your back",
+   "search_words": [
+    "decided without asking me",
+    "signed the lease without me",
+    "found out after it was done",
+    "no point getting upset now"
+   ],
+   "related": [
+    "Resource Sabotage",
+    "Emotion Control",
+    "Financial Control",
+    "\"I Know Best\" Paternalism",
+    "Pseudo-Consultation",
+    "Choice Restriction"
+   ]
+  },
+  "Smart-Home Coercion": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "heating changes after arguments",
+    "cameras i didn't install",
+    "smart lock won't let me in",
+    "they know when i got home"
+   ],
+   "related": [
+    "Spatial Invasion",
+    "Resource Sabotage",
+    "Monitoring & Surveillance",
+    "Demonstrating Omnipotence",
+    "Stalking & Surveillance (Post-Separation)"
+   ]
+  },
+  "Health Sabotage": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "messes with my medication",
+    "keeps me up at night on purpose",
+    "won't take me to appointments",
+    "says i don't need my pills"
+   ],
+   "related": [
+    "Ritualized Exhaustion",
+    "Resource Sabotage",
+    "Forced Dependency",
+    "Reproductive Coercion",
+    "Infantilization"
+   ]
+  },
+  "Blackmail / Leverage Exploitation": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "threatens to tell everyone",
+    "holding a secret over me",
+    "do this or i'll show your messages",
+    "threatening to expose me"
+   ],
+   "related": [
+    "Emotion Control",
+    "Resource Sabotage",
+    "Intimate Image Abuse",
+    "Emotional Blackmail",
+    "Evidence Traps",
+    "Honey Trapping"
+   ]
+  },
+  "Willful Blindness as Complicity": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i don't want to know",
+    "nobody formally told me",
+    "looks the other way",
+    "pretends not to notice"
+   ],
+   "related": [
+    "Resource Sabotage",
+    "Emotion Control",
+    "Institutional Betrayal",
+    "Diffusion of Responsibility",
+    "Organizational Silence Engineering",
+    "Performative Allyship / False Solidarity"
+   ]
+  },
+  "Moral Outrage as Weapon": {
+   "group": "pressure",
+   "settings": [
+    "online",
+    "groups",
+    "relationship",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "how could you even ask that",
+    "their outrage shuts me up",
+    "questioning makes me look terrible",
+    "what kind of person defends that"
+   ],
+   "related": [
+    "Emotion Control",
+    "Nonverbal Dominance",
+    "Moral Framing",
+    "Pile-Ons",
+    "Loaded Language"
+   ]
+  },
+  "Ghosting as Control": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "friends",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "disappears for weeks then comes back",
+    "ghosts me then texts hey you",
+    "shows up when i'm finally over it",
+    "left on read for days"
+   ],
+   "related": [
+    "Stalking & Surveillance (Post-Separation)",
+    "Forced Submission",
+    "Smear Campaign",
+    "Ghosting-Orbiting Cycle",
+    "Hoovering",
+    "Silent Treatment"
+   ]
+  },
+  "Humiliation Rituals": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "hazing",
+    "made to look stupid in front of the group",
+    "it's how we build character",
+    "stand up and confess what i did"
+   ],
+   "related": [
+    "Public Humiliation",
+    "Forced Submission",
+    "Smear Campaign",
+    "Forced Confession / Self-Criticism Rituals",
+    "Group Consolidation"
+   ]
+  },
+  "Forced Submission": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "not leaving until i admit it",
+    "just say sorry and it's over",
+    "made to confess to something i didn't do",
+    "sign the statement and we'll drop it"
+   ],
+   "related": [
+    "Humiliation Rituals",
+    "Public Humiliation",
+    "Ghosting as Control",
+    "Interrogation",
+    "Forced Confession / Self-Criticism Rituals",
+    "Overcorrection Demands"
+   ]
+  },
+  "Stalking & Surveillance (Post-Separation)": {
+   "group": "control",
+   "settings": [
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "my ex keeps showing up",
+    "knows things i never told them",
+    "same car outside my place",
+    "being followed after we split"
+   ],
+   "related": [
+    "Ghosting as Control",
+    "Legal Abuse (Post-Separation)",
+    "Smear Campaign",
+    "Location Tracking",
+    "Smart-Home Coercion",
+    "Account Takeover"
+   ]
+  },
+  "Legal Abuse (Post-Separation)": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "keeps taking me back to court",
+    "endless custody motions",
+    "my ex's lawyer again",
+    "court costs draining me"
+   ],
+   "related": [
+    "Forced Submission",
+    "Smear Campaign",
+    "Stalking & Surveillance (Post-Separation)",
+    "Paper Terrorism",
+    "Administrative Escalation",
+    "Legal/Administrative Threats"
+   ]
+  },
+  "Edited Recordings": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "online",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "recording cut to make me look bad",
+    "video starts halfway through",
+    "clip missing what happened before",
+    "edited audio of an argument"
+   ],
+   "related": [
+    "Smear Campaign",
+    "Legal Abuse (Post-Separation)",
+    "Forced Submission",
+    "Fabricated Evidence",
+    "Context Collapse Exploitation"
+   ]
+  },
+  "Account Takeover": {
+   "group": "online",
+   "settings": [
+    "online",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "locked out of my email",
+    "someone posting as me",
+    "they changed my password",
+    "won't give my login back"
+   ],
+   "related": [
+    "Stalking & Surveillance (Post-Separation)",
+    "Resource Sabotage",
+    "SIM Swap / 2FA Interception",
+    "Device Access Demands",
+    "Monitoring & Surveillance"
+   ]
+  },
+  "SIM Swap / 2FA Interception": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "Someone stealing your phone number to get in",
+   "search_words": [
+    "phone suddenly says no service",
+    "login codes i didn't ask for",
+    "my number was moved to another sim",
+    "can't get into my accounts"
+   ],
+   "related": [
+    "Stalking & Surveillance (Post-Separation)",
+    "Legal Abuse (Post-Separation)",
+    "Forced Submission",
+    "Account Takeover",
+    "Social Engineering"
+   ]
+  },
+  "Intimate Image Abuse": {
+   "group": "online",
+   "settings": [
+    "online",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "threatens to share my nudes",
+    "posted private pictures of me",
+    "send more or everyone sees",
+    "sextortion"
+   ],
+   "related": [
+    "Public Humiliation",
+    "Forced Submission",
+    "Stalking & Surveillance (Post-Separation)",
+    "Blackmail / Leverage Exploitation",
+    "Deepfakes",
+    "Sexual Coercion"
+   ]
+  },
+  "Algorithmic Manipulation": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Hidden feed rules that steer your mood",
+   "search_words": [
+    "my feed only shows angry stuff",
+    "videos keep getting more extreme",
+    "the app knows how to keep me scrolling",
+    "same story everywhere i look"
+   ],
+   "related": [
+    "Dark Patterns (AI-Adaptive)",
+    "Context Poisoning",
+    "Synthetic Persona Networks",
+    "Algorithmic Targeting of Vulnerable Populations",
+    "Echo Chamber Construction",
+    "AI-Driven Narrative Hijacking"
+   ]
+  },
+  "Dark Patterns (AI-Adaptive)": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Apps designed to trick you into clicking yes",
+   "search_words": [
+    "can't find the cancel button",
+    "tricked into subscribing",
+    "countdown timer resets",
+    "no thanks i don't like saving money"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "AI-Driven Social Engineering (Automated)",
+    "Parasocial Manipulation Engineering",
+    "Manufactured Scarcity",
+    "Urgency Manufacturing",
+    "Algorithmic Targeting of Vulnerable Populations"
+   ]
+  },
+  "Synthetic Persona Networks": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Many fake accounts run as one group",
+   "search_words": [
+    "lots of fake profiles agreeing",
+    "accounts with ai faces",
+    "new accounts all replying at once",
+    "fake people in the comments"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "Parasocial Manipulation Engineering",
+    "AI-Driven Social Engineering (Automated)",
+    "Sock Puppets",
+    "Computational Propaganda",
+    "AI-Driven Narrative Hijacking"
+   ]
+  },
+  "Context Poisoning": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Planting false information where people and AI look",
+   "search_words": [
+    "ai repeated something false",
+    "fake facts on a reference page",
+    "reviews all repeat the same made-up detail",
+    "wrong info spreading everywhere"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "Synthetic Persona Networks",
+    "AI-Driven Social Engineering (Automated)",
+    "Information Laundering",
+    "Epistemic Coercion via AI",
+    "Adversarial Machine Learning"
+   ]
+  },
+  "Parasocial Manipulation Engineering": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "One-sided closeness with a creator, used for money",
+   "search_words": [
+    "feels like the streamer is my friend",
+    "pay more to get closer",
+    "influencer says i'm the reason they keep going",
+    "messages that feel personal but aren't"
+   ],
+   "related": [
+    "Synthetic Persona Networks",
+    "Dark Patterns (AI-Adaptive)",
+    "AI-Driven Social Engineering (Automated)",
+    "Weaponized AI Empathy",
+    "Algorithmic Targeting of Vulnerable Populations",
+    "Pig Butchering (Long-Con Digital Fraud)"
+   ]
+  },
+  "Immersive Manipulation (VR/AR)": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "vr scene made me scared",
+    "headset experience felt too real",
+    "virtual character sold me something",
+    "staged virtual reality"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "Parasocial Manipulation Engineering",
+    "Dark Patterns (AI-Adaptive)",
+    "Biometric Exploitation"
+   ]
+  },
+  "AI-Driven Social Engineering (Automated)": {
+   "group": "online",
+   "settings": [
+    "online",
+    "work",
+    "family"
+   ],
+   "subtitle": "AI-made scams that copy people you trust",
+   "search_words": [
+    "scam message that knew my details",
+    "fake email from my boss",
+    "video call from someone fake",
+    "ai scam call"
+   ],
+   "related": [
+    "Synthetic Persona Networks",
+    "Parasocial Manipulation Engineering",
+    "Dark Patterns (AI-Adaptive)",
+    "AI Voice Cloning",
+    "Social Engineering"
+   ]
+  },
+  "Weaponized AI Empathy": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "chatbot says it misses me",
+    "ai companion guilt trips me",
+    "app pretends to care about me",
+    "bot keeps asking personal details"
+   ],
+   "related": [
+    "Dark Patterns (AI-Adaptive)",
+    "Parasocial Manipulation Engineering",
+    "Synthetic Persona Networks",
+    "Epistemic Coercion via AI",
+    "Manufactured Intimacy"
+   ]
+  },
+  "Biometric Exploitation": {
+   "group": "online",
+   "settings": [
+    "online",
+    "work"
+   ],
+   "subtitle": "Reading your face or voice to steer you",
+   "search_words": [
+    "app wants my camera for no reason",
+    "tracking my face",
+    "software reading my mood",
+    "interview tool analyzing me"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "Dark Patterns (AI-Adaptive)",
+    "Immersive Manipulation (VR/AR)",
+    "Algorithmic Management",
+    "Algorithmic Targeting of Vulnerable Populations"
+   ]
+  },
+  "Epistemic Coercion via AI": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "An AI becoming the only voice you trust",
+   "search_words": [
+    "i only trust the ai now",
+    "chatbot says no need to check",
+    "ai never says it might be wrong",
+    "stopped thinking for myself"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "Context Poisoning",
+    "Weaponized AI Empathy",
+    "False Authority",
+    "Echo Chamber Construction"
+   ]
+  },
+  "AI-Driven Narrative Hijacking": {
+   "group": "society",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "comments all sound the same",
+    "slogan everywhere overnight",
+    "same story on sites i've never heard of",
+    "flood of posts on one issue"
+   ],
+   "related": [
+    "Synthetic Persona Networks",
+    "Context Poisoning",
+    "Algorithmic Manipulation",
+    "Computational Propaganda",
+    "Firehose of Falsehood"
+   ]
+  },
+  "Algorithmic Targeting of Vulnerable Populations": {
+   "group": "online",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "loan ads after i searched debt",
+    "cure ads after a diagnosis",
+    "recovery scam after i lost money",
+    "ads know when i'm low"
+   ],
+   "related": [
+    "Algorithmic Manipulation",
+    "Dark Patterns (AI-Adaptive)",
+    "Parasocial Manipulation Engineering",
+    "Biometric Exploitation",
+    "Pig Butchering (Long-Con Digital Fraud)"
+   ]
+  },
+  "Pig Butchering (Long-Con Digital Fraud)": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "Online romance scam that ends in fake investing",
+   "search_words": [
+    "wrong number text turned into a friendship",
+    "online friend wants me to invest",
+    "crypto app they recommended",
+    "never video calls but talks about money",
+    "lost my savings to someone online"
+   ],
+   "related": [
+    "Parasocial Manipulation Engineering",
+    "Synthetic Persona Networks",
+    "Dark Patterns (AI-Adaptive)",
+    "Catfishing",
+    "Love Bombing",
+    "Sunk Cost Exploitation"
+   ]
+  },
+  "Overton Window Manipulation": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "Making extreme ideas sound normal",
+   "search_words": [
+    "extreme ideas now sound normal",
+    "just asking questions about wild ideas",
+    "the middle keeps moving",
+    "a few years ago nobody would say this"
+   ],
+   "related": [
+    "Manufactured Consent",
+    "Wedge Issue Exploitation",
+    "Normative Messaging",
+    "Normalization",
+    "Door-in-the-Face"
+   ]
+  },
+  "Manufactured Consent": {
+   "group": "society",
+   "settings": [
+    "society"
+   ],
+   "subtitle": "Shaping choices so people think they agreed",
+   "search_words": [
+    "news only quotes one side",
+    "debate with no real alternatives",
+    "agreed without seeing other options",
+    "everyone starts from the same assumption"
+   ],
+   "related": [
+    "Astroturfing",
+    "Reflexive Control",
+    "Normative Messaging",
+    "Pseudo-Consultation",
+    "Overton Window Manipulation",
+    "Computational Propaganda"
+   ]
+  },
+  "Astroturfing": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "Fake grassroots support",
+   "search_words": [
+    "fake reviews worded alike",
+    "paid people pretending to be ordinary",
+    "letters to the paper all the same",
+    "fake movement"
+   ],
+   "related": [
+    "Manufactured Consent",
+    "Computational Propaganda",
+    "Normative Messaging",
+    "Sock Puppets",
+    "Controlled Opposition",
+    "Agent of Influence Operations"
+   ]
+  },
+  "Wedge Issue Exploitation": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "Hot-button issues pushed to split people",
+   "search_words": [
+    "hot topic everywhere before a vote",
+    "whose side are you on",
+    "dividing people who mostly agree",
+    "culture war distraction"
+   ],
+   "related": [
+    "Overton Window Manipulation",
+    "Computational Propaganda",
+    "Reflexive Control",
+    "Divide and Conquer",
+    "False Dilemma"
+   ]
+  },
+  "Computational Propaganda": {
+   "group": "society",
+   "settings": [
+    "online",
+    "society"
+   ],
+   "subtitle": "Bots making a message look popular",
+   "search_words": [
+    "bots pushing a hashtag",
+    "fake accounts posting the same sentence",
+    "trending overnight from new accounts",
+    "political bots"
+   ],
+   "related": [
+    "Astroturfing",
+    "Manufactured Consent",
+    "Wedge Issue Exploitation",
+    "Synthetic Persona Networks",
+    "AI-Driven Narrative Hijacking"
+   ]
+  },
+  "Reflexive Control": {
+   "group": "society",
+   "settings": [
+    "society",
+    "work"
+   ],
+   "subtitle": "Steering your information so you pick their option",
+   "search_words": [
+    "all the reports pointed one way",
+    "a leak arrived just in time",
+    "my decision was steered",
+    "only one obvious option left"
+   ],
+   "related": [
+    "Manufactured Consent",
+    "Computational Propaganda",
+    "Normative Messaging",
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Choice Restriction",
+    "Reverse Psychology"
+   ]
+  },
+  "Normative Messaging": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online",
+    "work"
+   ],
+   "subtitle": "'Everybody does it,' so you should too",
+   "search_words": [
+    "everyone else has signed up",
+    "most people agree",
+    "everyone's switching",
+    "can't check if everyone really does"
+   ],
+   "related": [
+    "Astroturfing",
+    "Manufactured Consent",
+    "Overton Window Manipulation",
+    "Social Proof Pressure",
+    "Information Cascades"
+   ]
+  },
+  "False Flag Operations": {
+   "group": "society",
+   "settings": [
+    "society"
+   ],
+   "subtitle": "Staging an attack to blame someone else",
+   "search_words": [
+    "made to look like the other side did it",
+    "staged attack",
+    "blamed the wrong group",
+    "people quick to call everything staged"
+   ],
+   "related": [
+    "Astroturfing",
+    "Reflexive Control",
+    "Wedge Issue Exploitation",
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Fabricated Evidence"
+   ]
+  },
+  "Post-Truth Epistemic Manipulation": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "Making people feel nothing can be known",
+   "search_words": [
+    "nobody can know what's true",
+    "it's all spin",
+    "your truth my truth",
+    "gave up checking facts"
+   ],
+   "related": [
+    "Manufactured Consent",
+    "Computational Propaganda",
+    "Overton Window Manipulation",
+    "Cognitive Warfare",
+    "Firehose of Falsehood"
+   ]
+  },
+  "Honey Trapping": {
+   "group": "society",
+   "settings": [
+    "relationship",
+    "work"
+   ],
+   "subtitle": "A fake romance used to get secrets",
+   "search_words": [
+    "new partner asks a lot about my work",
+    "romance started after my promotion",
+    "always at the same events as me",
+    "dating someone who wants work secrets"
+   ],
+   "related": [
+    "Agent of Influence Operations",
+    "MICE Framework Exploitation",
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Love Bombing",
+    "Blackmail / Leverage Exploitation"
+   ]
+  },
+  "Agent of Influence Operations": {
+   "group": "society",
+   "settings": [
+    "society"
+   ],
+   "subtitle": "A trusted voice secretly steered by others",
+   "search_words": [
+    "commentator secretly paid",
+    "experts all funded by the same group",
+    "hidden ties to a government",
+    "not really independent"
+   ],
+   "related": [
+    "Honey Trapping",
+    "MICE Framework Exploitation",
+    "PSYOP Message Framing",
+    "Controlled Opposition",
+    "Astroturfing",
+    "Strategic Leaking"
+   ]
+  },
+  "Strategic Deception (Denial & Deception / D&D)": {
+   "group": "society",
+   "settings": [
+    "society"
+   ],
+   "subtitle": "Hiding the real and showing the fake",
+   "search_words": [
+    "true statements that leave out what matters",
+    "decoy activity",
+    "sources that turn out to be the same",
+    "staged picture of events"
+   ],
+   "related": [
+    "Honey Trapping",
+    "Agent of Influence Operations",
+    "PSYOP Message Framing",
+    "False Flag Operations",
+    "Half-Truth Framing",
+    "Cognitive Warfare"
+   ]
+  },
+  "MICE Framework Exploitation": {
+   "group": "society",
+   "settings": [
+    "work",
+    "society"
+   ],
+   "subtitle": "Money, belief, pressure or ego used to recruit",
+   "search_words": [
+    "stranger interested in my debts",
+    "offer of money way out of proportion",
+    "someone shares my anger at my employer",
+    "feel like i'm being recruited"
+   ],
+   "related": [
+    "Honey Trapping",
+    "Agent of Influence Operations",
+    "PSYOP Message Framing",
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Blackmail / Leverage Exploitation"
+   ]
+  },
+  "PSYOP Message Framing": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "Messages built to make resisting feel pointless",
+   "search_words": [
+    "resisting is pointless",
+    "everyone has already moved on",
+    "they're not like us",
+    "it's already been decided"
+   ],
+   "related": [
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Agent of Influence Operations",
+    "Honey Trapping",
+    "MICE Framework Exploitation",
+    "Cognitive Warfare"
+   ]
+  },
+  "Strategic Leaking": {
+   "group": "society",
+   "settings": [
+    "society",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "leak right before the vote",
+    "a person familiar with the matter",
+    "document with no source everywhere",
+    "planned leak"
+   ],
+   "related": [
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Agent of Influence Operations",
+    "PSYOP Message Framing",
+    "Reflexive Control",
+    "Cyber Manipulation Operations (CMOs)"
+   ]
+  },
+  "Cognitive Warfare": {
+   "group": "society",
+   "settings": [
+    "society",
+    "online"
+   ],
+   "subtitle": "Campaigns to leave a society confused and divided",
+   "search_words": [
+    "can't agree on basic facts",
+    "so many versions i gave up",
+    "neighbors stopped talking about it",
+    "everyone lies so nothing can be trusted"
+   ],
+   "related": [
+    "PSYOP Message Framing",
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Agent of Influence Operations",
+    "Post-Truth Epistemic Manipulation",
+    "Firehose of Falsehood"
+   ]
+  },
+  "Cyber Manipulation Operations (CMOs)": {
+   "group": "society",
+   "settings": [
+    "society",
+    "work"
+   ],
+   "subtitle": "Secretly changing data people rely on",
+   "search_words": [
+    "numbers changed with no explanation",
+    "records show things nobody did",
+    "systems disagree on totals",
+    "data quietly altered"
+   ],
+   "related": [
+    "Strategic Deception (Denial & Deception / D&D)",
+    "Strategic Leaking",
+    "PSYOP Message Framing",
+    "Adversarial Machine Learning",
+    "Context Poisoning"
+   ]
+  },
+  "Adversarial Machine Learning": {
+   "group": "online",
+   "settings": [
+    "online",
+    "work"
+   ],
+   "subtitle": "Tricking AI tools into wrong answers",
+   "search_words": [
+    "scam got past the filter",
+    "flagged by ai for no reason",
+    "rejected by an automated screen",
+    "ai got fooled"
+   ],
+   "related": [
+    "Strategic Leaking",
+    "Strategic Deception (Denial & Deception / D&D)",
+    "PSYOP Message Framing",
+    "Algorithmic Management",
+    "Context Poisoning",
+    "Cyber Manipulation Operations (CMOs)"
+   ]
+  },
+  "Milieu Control": {
+   "group": "society",
+   "settings": [
+    "groups"
+   ],
+   "subtitle": "A group controlling your information and contacts",
+   "search_words": [
+    "group says to keep distance from family",
+    "not allowed outside books",
+    "must tell the leader who i talk to",
+    "only the group's view allowed"
+   ],
+   "related": [
+    "Doctrine Over Person",
+    "Sacred Science",
+    "Bounded Choice",
+    "Isolation",
+    "Information Control",
+    "Echo Chamber Construction"
+   ]
+  },
+  "Mystical Manipulation": {
+   "group": "society",
+   "settings": [
+    "groups"
+   ],
+   "subtitle": "Staged signs that the leader is chosen",
+   "search_words": [
+    "leader says it was meant to be",
+    "miracles that seemed set up",
+    "you were meant to be here",
+    "signs that prove the leader"
+   ],
+   "related": [
+    "Sacred Science",
+    "Demand for Purity",
+    "Milieu Control",
+    "Charismatic Authority Dependence",
+    "Manufactured Destiny"
+   ]
+  },
+  "Demand for Purity": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "family"
+   ],
+   "subtitle": "Impossible standards that keep you ashamed",
+   "search_words": [
+    "never good enough for the group",
+    "confess to feel clean",
+    "outsiders are contaminated",
+    "guilty for my own thoughts"
+   ],
+   "related": [
+    "Sacred Science",
+    "Doctrine Over Person",
+    "Dispensing of Existence",
+    "Forced Confession / Self-Criticism Rituals",
+    "Shame Installation",
+    "\"Sacred Duty\" Manipulation"
+   ]
+  },
+  "Sacred Science": {
+   "group": "society",
+   "settings": [
+    "groups"
+   ],
+   "subtitle": "Teachings you're not allowed to question",
+   "search_words": [
+    "can't question the teaching",
+    "my doubts are the problem",
+    "real believers don't need proof",
+    "questions mean i'm not ready"
+   ],
+   "related": [
+    "Doctrine Over Person",
+    "Milieu Control",
+    "Mystical Manipulation",
+    "Thought Control",
+    "Charismatic Authority Dependence",
+    "Demand for Purity"
+   ]
+  },
+  "Doctrine Over Person": {
+   "group": "society",
+   "settings": [
+    "groups"
+   ],
+   "subtitle": "Told your own experience is wrong",
+   "search_words": [
+    "my experience doesn't count against the teaching",
+    "that's just your ego",
+    "pain is part of the process",
+    "the group says i remember it wrong"
+   ],
+   "related": [
+    "Sacred Science",
+    "Milieu Control",
+    "Bounded Choice",
+    "Gaslighting",
+    "Thought Control",
+    "Charismatic Authority Dependence"
+   ]
+  },
+  "Dispensing of Existence": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "society"
+   ],
+   "subtitle": "Outsiders and leavers treated as lesser",
+   "search_words": [
+    "people who leave are dead to us",
+    "don't say her name",
+    "outsiders aren't real people",
+    "shunned for leaving"
+   ],
+   "related": [
+    "Milieu Control",
+    "Demand for Purity",
+    "Doctrine Over Person",
+    "Dehumanization",
+    "Ostracism",
+    "Phobia Indoctrination"
+   ]
+  },
+  "Bounded Choice": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "relationship"
+   ],
+   "subtitle": "Free choices with only one real option",
+   "search_words": [
+    "nobody forced you",
+    "free to choose but not really",
+    "every other option costs too much",
+    "my choice was made for me"
+   ],
+   "related": [
+    "Milieu Control",
+    "Doctrine Over Person",
+    "Demand for Purity",
+    "Choice Restriction",
+    "False Dilemma"
+   ]
+  },
+  "Charismatic Authority Dependence": {
+   "group": "society",
+   "settings": [
+    "groups"
+   ],
+   "subtitle": "Needing one leader's word for everything",
+   "search_words": [
+    "only he knows the truth",
+    "lost without the leader's approval",
+    "ask him not anyone else",
+    "can't decide without them"
+   ],
+   "related": [
+    "Sacred Science",
+    "Doctrine Over Person",
+    "Mystical Manipulation",
+    "Approval Addiction Cultivation",
+    "Milieu Control"
+   ]
+  },
+  "Forced Confession / Self-Criticism Rituals": {
+   "group": "society",
+   "settings": [
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "made to share secrets in group",
+    "confessions used against me later",
+    "read my doubts out loud",
+    "you haven't told us everything"
+   ],
+   "related": [
+    "Demand for Purity",
+    "Milieu Control",
+    "Doctrine Over Person",
+    "Humiliation Rituals",
+    "Forced Submission",
+    "Evidence Traps"
+   ]
+  },
+  "Institutional Betrayal": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "reported it and they protected themselves",
+    "school ignored my report",
+    "matter closed with no findings",
+    "told reporting would hurt me"
+   ],
+   "related": [
+    "Organizational Silence Engineering",
+    "HR Shielding",
+    "Performance Framework Manipulation",
+    "Willful Blindness as Complicity",
+    "Confidentiality as Weapon"
+   ]
+  },
+  "Organizational Silence Engineering": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "Workplaces that teach people to stay quiet",
+   "search_words": [
+    "everyone's afraid to speak up",
+    "remember what happened to the last person",
+    "the real talk happens in the parking lot",
+    "open door nobody uses"
+   ],
+   "related": [
+    "Institutional Betrayal",
+    "HR Shielding",
+    "Algorithmic Management",
+    "\"Polite Hostile\" Environments",
+    "Silence Installation",
+    "Willful Blindness as Complicity"
+   ]
+  },
+  "Performance Framework Manipulation": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "hit my numbers but got a bad review",
+    "marked down for attitude",
+    "rated on fit",
+    "targets raised after i hit them"
+   ],
+   "related": [
+    "Institutional Betrayal",
+    "Organizational Silence Engineering",
+    "Algorithmic Management",
+    "PIP Weaponization",
+    "Moving Goalposts",
+    "\"Managed Out\" Through Exhaustion"
+   ]
+  },
+  "Algorithmic Management": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "online"
+   ],
+   "subtitle": "Software as your boss, with nobody to ask",
+   "search_words": [
+    "app decides my hours",
+    "deactivated with no reason",
+    "told the system did it",
+    "no human to talk to"
+   ],
+   "related": [
+    "Performance Framework Manipulation",
+    "Institutional Betrayal",
+    "Organizational Silence Engineering",
+    "Diffusion of Responsibility",
+    "Biometric Exploitation"
+   ]
+  },
+  "Revisionist History": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "we never agreed to that",
+    "rewrites what happened",
+    "says they were against it from the start",
+    "the story changes later"
+   ],
+   "related": [
+    "Selective Memory",
+    "Countering",
+    "Gaslighting",
+    "Moving Goalposts",
+    "Strategic Ambiguity",
+    "Aftercare Control"
+   ]
+  },
+  "Word Salad": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work"
+   ],
+   "subtitle": "Long answers that never answer",
+   "search_words": [
+    "never get a straight answer",
+    "rambling reply to a yes or no question",
+    "confused after every talk",
+    "talks in circles"
+   ],
+   "related": [
+    "Deflection",
+    "Thought-Stopping Clichés",
+    "Gaslighting",
+    "Circular Arguments",
+    "Pseudo-Profundity / Intellectual Intimidation"
+   ]
+  },
+  "Contradiction Stacking": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "it didn't happen but you deserved it",
+    "two answers that don't fit",
+    "denies it then defends it",
+    "i can't win either way"
+   ],
+   "related": [
+    "Gaslighting",
+    "Deflection",
+    "Minimization",
+    "Denial",
+    "Double Binds"
+   ]
+  },
+  "Circular Arguments": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "groups",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "goes round in circles",
+    "i'm right because i'm right",
+    "nothing could prove them wrong",
+    "same point in new words"
+   ],
+   "related": [
+    "Deflection",
+    "Moving Goalposts",
+    "Countering",
+    "Kafka Trapping",
+    "Word Salad"
+   ]
+  },
+  "Loaded Language": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "society",
+    "groups"
+   ],
+   "subtitle": "Heavy labels that do the arguing",
+   "search_words": [
+    "calls a disagreement an attack",
+    "my ordinary thing gets a nasty name",
+    "calls me hysterical",
+    "defending myself against a word"
+   ],
+   "related": [
+    "Gaslighting",
+    "Minimization",
+    "Deflection",
+    "Labeling as Identity Warfare",
+    "Semantic Erosion / Meaning Dilution",
+    "Moral Outrage as Weapon"
+   ]
+  },
+  "Semantic Traps": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "online"
+   ],
+   "subtitle": "Arguing over your exact words",
+   "search_words": [
+    "nitpicks my words",
+    "i didn't scream i spoke loudly",
+    "one wrong word cancels my point",
+    "you said never"
+   ],
+   "related": [
+    "Countering",
+    "Deflection",
+    "Minimization",
+    "Exaggeration",
+    "Gotcha Framing"
+   ]
+  },
+  "Frame Control": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "Changing what the conversation is about",
+   "search_words": [
+    "it always becomes about me",
+    "this isn't about the dishes",
+    "the conversation gets turned around",
+    "we end up talking about something else"
+   ],
+   "related": [
+    "Deflection",
+    "Projection",
+    "Priming / Narrative Seeding",
+    "Meta-Gaslighting",
+    "Half-Truth Framing",
+    "Burden of Proof Shifting"
+   ]
+  },
+  "Strategic Ambiguity": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work"
+   ],
+   "subtitle": "Vague words that can mean anything later",
+   "search_words": [
+    "i said i'd see what i could do",
+    "never a clear promise",
+    "can't prove what was promised",
+    "maybe never turns into yes or no"
+   ],
+   "related": [
+    "Moving Goalposts",
+    "Selective Memory",
+    "Deflection",
+    "Platform Migration",
+    "Plausible Deniability",
+    "Revisionist History"
+   ]
+  },
+  "Repetition as Truth": {
+   "group": "truth",
+   "settings": [
+    "family",
+    "relationship",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "said so many times i believe it",
+    "you've always been bad with money",
+    "the same line over and over",
+    "everyone knows you can't be trusted"
+   ],
+   "related": [
+    "Gaslighting",
+    "Selective Memory",
+    "Countering",
+    "Labeling as Identity Warfare",
+    "Firehose of Falsehood"
+   ]
+  },
+  "Firehose of Falsehood": {
+   "group": "truth",
+   "settings": [
+    "online",
+    "society",
+    "relationship"
+   ],
+   "subtitle": "So many claims you can't check them",
+   "search_words": [
+    "too many stories to keep up with",
+    "new accusations every time",
+    "can't tell what's true anymore",
+    "different explanations every hour"
+   ],
+   "related": [
+    "Repetition as Truth",
+    "Deflection",
+    "Moving Goalposts",
+    "Gish Gallop",
+    "Post-Truth Epistemic Manipulation",
+    "Cognitive Warfare"
+   ]
+  },
+  "Meta-Gaslighting": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "online"
+   ],
+   "subtitle": "Told that naming the problem is the problem",
+   "search_words": [
+    "can't even name what's happening",
+    "calling it gaslighting makes me the bad one",
+    "apologizing for pointing it out",
+    "describing it gets called unfair"
+   ],
+   "related": [
+    "Gaslighting",
+    "Deflection",
+    "Countering",
+    "DARVO",
+    "Semantic Erosion / Meaning Dilution",
+    "Frame Control"
+   ]
+  },
+  "FOG": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "relationship"
+   ],
+   "subtitle": "Fear, obligation and guilt all at once",
+   "search_words": [
+    "scared guilty and in debt all at once",
+    "can't say no to my parents",
+    "trapped by guilt and fear",
+    "i owe them so i can't refuse"
+   ],
+   "related": [
+    "Guilt-Tripping",
+    "Emotional Blackmail",
+    "Duty Scripts",
+    "Obligation Installation",
+    "Intimidation"
+   ]
+  },
+  "Emotional Hostage-Taking": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "i'll be miserable if you go",
+    "responsible for their mood",
+    "can't go out because they'll be upset",
+    "they fall apart if i say no"
+   ],
+   "related": [
+    "Pity Plays",
+    "Self-Harm Threats as Leverage",
+    "Martyrdom Display",
+    "Emotional Blackmail",
+    "Weaponized Tears"
+   ]
+  },
+  "Weaponized Tears": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "cries whenever i bring something up",
+    "i end up comforting them instead",
+    "tears end the conversation",
+    "can't raise problems without them crying"
+   ],
+   "related": [
+    "Pity Plays",
+    "Guilt-Tripping",
+    "Martyrdom Display",
+    "Competitive Victimhood",
+    "Strategic Self-Deprecation / Performed Humility",
+    "Emotional Hostage-Taking"
+   ]
+  },
+  "Obligation Installation": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "friends",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "shared a secret then said i owe them",
+    "after what i told you",
+    "i should have known what they expected",
+    "debts i never agreed to"
+   ],
+   "related": [
+    "Duty Scripts",
+    "Emotional Blackmail",
+    "Guilt-Tripping",
+    "Covert Contracts",
+    "Manufactured Intimacy",
+    "Favor Debt"
+   ]
+  },
+  "Weaponized Generosity": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "friends",
+    "relationship",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "gifts with strings attached",
+    "a favor used against me later",
+    "the least you can do",
+    "saying no makes me ungrateful"
+   ],
+   "related": [
+    "Demand for Gratitude",
+    "Guilt-Tripping",
+    "Pity Plays",
+    "Favor Debt",
+    "Obligation Installation"
+   ]
+  },
+  "Guilt Legacy": {
+   "group": "pressure",
+   "settings": [
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "grandparents sacrificed so i can't say no",
+    "after everything this family went through",
+    "immigrant parent guilt",
+    "betraying everyone who came before"
+   ],
+   "related": [
+    "Duty Scripts",
+    "Guilt-Tripping",
+    "Martyrdom Display",
+    "\"Sacred Duty\" Manipulation",
+    "Favor Debt"
+   ]
+  },
+  "Manufactured Intimacy": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "shared their trauma on the first date",
+    "feel responsible for someone i just met",
+    "you're the only one who listens to me",
+    "too close too fast"
+   ],
+   "related": [
+    "Love Bombing",
+    "Exclusive Meaning",
+    "Future Faking",
+    "Obligation Installation",
+    "Emotional Parasitism",
+    "The Exception Script"
+   ]
+  },
+  "Manufactured Destiny": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "groups",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says we're soulmates",
+    "the universe brought us together",
+    "told i'll regret leaving forever",
+    "fate means i can't walk away"
+   ],
+   "related": [
+    "Love Bombing",
+    "Exclusive Meaning",
+    "Future Faking",
+    "Premature Exclusivity",
+    "Mystical Manipulation"
+   ]
+  },
+  "Mirroring-on-Demand": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "online"
+   ],
+   "subtitle": "Copying your likes to seem a perfect match",
+   "search_words": [
+    "likes everything i like",
+    "too perfect a match",
+    "agrees with everything i say",
+    "their interests change to match mine"
+   ],
+   "related": [
+    "Love Bombing",
+    "Exclusive Meaning",
+    "Negging",
+    "Identity Performances",
+    "Catfishing"
+   ]
+  },
+  "The Rescue Hook": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "friends",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "always stepping in to rescue them",
+    "doing everything for them",
+    "i don't know what i'd do without you",
+    "they can't cope so i do it"
+   ],
+   "related": [
+    "Emotional Blackmail",
+    "Love Bombing",
+    "Hoovering",
+    "Emotional Parasitism",
+    "Parentification",
+    "Weaponized Incompetence"
+   ]
+  },
+  "Emotional Parasitism": {
+   "group": "hook",
+   "settings": [
+    "friends",
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "one-sided friendship",
+    "it's always about them",
+    "drained after every conversation",
+    "i give and they take"
+   ],
+   "related": [
+    "Manufactured Intimacy",
+    "The Rescue Hook",
+    "Love Bombing",
+    "Objectification",
+    "Parentification"
+   ]
+  },
+  "Information Control": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "decides what i get to know",
+    "keeps me from the news",
+    "don't tell your sister",
+    "handles all the calls so i don't know"
+   ],
+   "related": [
+    "Isolation",
+    "Monitoring & Surveillance",
+    "\"I Know Best\" Paternalism",
+    "Milieu Control",
+    "Echo Chamber Construction",
+    "Compartmentalization"
+   ]
+  },
+  "Device Access Demands": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "demands my phone password",
+    "unlock it now",
+    "saying no means i'm hiding something",
+    "goes through my phone"
+   ],
+   "related": [
+    "Monitoring & Surveillance",
+    "Location Tracking",
+    "Behavior Control",
+    "Account Takeover",
+    "Stalking-by-Notification"
+   ]
+  },
+  "Enforcing Trivial Demands": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "petty rules at home",
+    "the cups have to face one way",
+    "do it again properly",
+    "huge reaction over tiny things"
+   ],
+   "related": [
+    "Behavior Control",
+    "Infantilization",
+    "\"I Know Best\" Paternalism",
+    "Moving Goalposts",
+    "Rage as Control"
+   ]
+  },
+  "Boundary Testing": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "friends",
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "keeps pushing past my no",
+    "it's just a hug relax",
+    "a little further each time",
+    "ignores my limits"
+   ],
+   "related": [
+    "Behavior Control",
+    "Monitoring & Surveillance",
+    "Location Tracking",
+    "Foot-in-the-Door",
+    "Extinction Bursts",
+    "Sexual Coercion"
+   ]
+  },
+  "Velvet Glove Control": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "Control that feels gentle and caring",
+   "search_words": [
+    "controls me nicely",
+    "always worried about me",
+    "let me handle it for you",
+    "slowly stopped deciding for myself"
+   ],
+   "related": [
+    "Infantilization",
+    "\"I Know Best\" Paternalism",
+    "Behavior Control",
+    "Golden Bars",
+    "Concern Trolling"
+   ]
+  },
+  "Demonstrating Omnipotence": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "work"
+   ],
+   "subtitle": "Showing they know everything you do",
+   "search_words": [
+    "knows where i've been",
+    "talked to my boss behind my back",
+    "small world i was in your building",
+    "feels like they know everything"
+   ],
+   "related": [
+    "Monitoring & Surveillance",
+    "Location Tracking",
+    "Isolation",
+    "Smart-Home Coercion",
+    "Stalking & Surveillance (Post-Separation)",
+    "Intimidation"
+   ]
+  },
+  "Forced Dependency": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "won't let me learn to drive",
+    "i don't know how to pay the bills",
+    "they do everything so i can't",
+    "can't manage without them"
+   ],
+   "related": [
+    "Infantilization",
+    "Isolation",
+    "Behavior Control",
+    "Learned Helplessness",
+    "Financial Control",
+    "Golden Bars"
+   ]
+  },
+  "Golden Bars": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "A comfortable life with strings attached",
+   "search_words": [
+    "nice life but i can't complain",
+    "most people would kill for this",
+    "trapped in a good life",
+    "everything i'd lose if i left"
+   ],
+   "related": [
+    "Forced Dependency",
+    "Behavior Control",
+    "Isolation",
+    "Financial Dependence by Design",
+    "Sunk Cost Exploitation",
+    "Velvet Glove Control"
+   ]
+  },
+  "Manufactured Scarcity": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "online",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "only two spots left",
+    "price goes up tomorrow",
+    "other people are interested",
+    "last chance to buy"
+   ],
+   "related": [
+    "Infantilization",
+    "Isolation",
+    "Behavior Control",
+    "Urgency Manufacturing",
+    "Dark Patterns (AI-Adaptive)"
+   ]
+  },
+  "Time Theft": {
+   "group": "control",
+   "settings": [
+    "work",
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "always kept waiting",
+    "cancel your plans this is more important",
+    "my time doesn't matter",
+    "keep the evening free with no plan"
+   ],
+   "related": [
+    "Behavior Control",
+    "Monitoring & Surveillance",
+    "Infantilization",
+    "Ritualized Exhaustion"
+   ]
+  },
+  "Deflection": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "changes the subject",
+    "answers with a question",
+    "my question never gets answered",
+    "brings up old arguments"
+   ],
+   "related": [
+    "Whataboutism",
+    "Blame-Shifting",
+    "Denial",
+    "Thought-Stopping Clichés",
+    "Word Salad",
+    "Frame Control"
+   ]
+  },
+  "Apology Without Repair": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "says sorry then does it again",
+    "i said i was sorry what more do you want",
+    "the same apology every time",
+    "nothing ever changes"
+   ],
+   "related": [
+    "Non-Apology Apology",
+    "Denial",
+    "Minimization",
+    "Relief Bait",
+    "Hoovering"
+   ]
+  },
+  "Forced Forgiveness": {
+   "group": "pressure",
+   "settings": [
+    "family",
+    "groups",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "told to just let it go",
+    "pressured to forgive",
+    "it's been long enough",
+    "everyone wants me to move on"
+   ],
+   "related": [
+    "Minimization",
+    "Denial",
+    "Non-Apology Apology",
+    "Spiritual Bypassing",
+    "\"We're Family\" Erasure"
+   ]
+  },
+  "Plausible Deniability": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "always has a good excuse",
+    "it's just policy",
+    "you're reading into it",
+    "can't point to one thing"
+   ],
+   "related": [
+    "Denial",
+    "Minimization",
+    "Blame-Shifting",
+    "Dog Whistling / Coded Signaling",
+    "Strategic Ambiguity"
+   ]
+  },
+  "Feigned Ignorance": {
+   "group": "blame",
+   "settings": [
+    "work",
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "pretends not to know",
+    "what promise",
+    "never saw the due date",
+    "acts clueless about one thing"
+   ],
+   "related": [
+    "Denial",
+    "Minimization",
+    "Blame-Shifting",
+    "Selective Memory",
+    "Weaponized Incompetence"
+   ]
+  },
+  "Victim Role Reversal": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "they act like the hurt one",
+    "comforting them after they hurt me",
+    "nobody asks how i'm doing",
+    "my hurt disappears from the room"
+   ],
+   "related": [
+    "DARVO",
+    "Denial",
+    "Blame-Shifting",
+    "Non-Apology Apology",
+    "Minimization",
+    "Competitive Victimhood"
+   ]
+  },
+  "Preemptive Accusation": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "work",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "accused me before i said anything",
+    "warned others i'd call them difficult",
+    "got their story in first",
+    "my complaint looks like getting even"
+   ],
+   "related": [
+    "Whataboutism",
+    "DARVO",
+    "Blame-Shifting",
+    "Complaint Weaponization",
+    "Projection"
+   ]
+  },
+  "Complaint Weaponization": {
+   "group": "blame",
+   "settings": [
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "they reported me first",
+    "there's a complaint on file against me",
+    "hr already has their side",
+    "my report looks like revenge"
+   ],
+   "related": [
+    "DARVO",
+    "Blame-Shifting",
+    "Whataboutism",
+    "Preemptive Accusation",
+    "False Reports",
+    "Administrative Escalation"
+   ]
+  },
+  "Counterfeit Calm": {
+   "group": "blame",
+   "settings": [
+    "relationship",
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "stays calm and makes me look crazy",
+    "i'm not upset you're worked up",
+    "let's take a breath",
+    "my anger becomes the issue"
+   ],
+   "related": [
+    "Tone Policing",
+    "Minimization",
+    "Denial",
+    "Non-Apology Apology",
+    "\"You're Too Emotional\""
+   ]
+  },
+  "Double Binds": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "Wrong whatever you do",
+   "search_words": [
+    "damned if i do damned if i don't",
+    "can't win",
+    "criticized for both",
+    "opposite rules at once"
+   ],
+   "related": [
+    "Minimization",
+    "Whataboutism",
+    "DARVO",
+    "Moving Goalposts",
+    "Contradiction Stacking",
+    "Strategic Apathy"
+   ]
+  },
+  "Sarcasm as Weapon": {
+   "group": "wear",
+   "settings": [
+    "relationship",
+    "family",
+    "work",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "mean jokes at my expense",
+    "mock praise",
+    "sarcastic comments all the time",
+    "nice of you to finally join us"
+   ],
+   "related": [
+    "Contempt",
+    "Shame Installation",
+    "Emotional Invalidation",
+    "Name-Calling Disguised as Humor",
+    "Negging"
+   ]
+  },
+  "Public Humiliation": {
+   "group": "wear",
+   "settings": [
+    "work",
+    "family",
+    "online",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "embarrassed me in front of everyone",
+    "called out on a team call",
+    "laughed at in public",
+    "shared my private stuff with others"
+   ],
+   "related": [
+    "Shame Installation",
+    "Smear Campaign",
+    "Humiliation Rituals",
+    "Group Consolidation",
+    "Intimate Image Abuse",
+    "Forced Submission"
+   ]
+  },
+  "Labeling as Identity Warfare": {
+   "group": "people",
+   "settings": [
+    "family",
+    "work",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "known as the difficult one",
+    "that's just her being her",
+    "everyone sees me through a label",
+    "labeled the problem child"
+   ],
+   "related": [
+    "Contempt",
+    "Name-Calling Disguised as Humor",
+    "Shame Installation",
+    "Scapegoating",
+    "Golden Child Elevation",
+    "Reputation Laundering"
+   ]
+  },
+  "Rage as Control": {
+   "group": "pressure",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "explodes so i stay quiet",
+    "slams doors",
+    "afraid of the next outburst",
+    "yelling ends every conversation"
+   ],
+   "related": [
+    "Intimidation",
+    "Contempt",
+    "Emotional Invalidation",
+    "Spatial Invasion",
+    "Ambient Abuse",
+    "Silence Installation"
+   ]
+  },
+  "Credit Theft": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "took credit for my work",
+    "my name left off",
+    "presented my idea as theirs",
+    "as i was saying about my own point"
+   ],
+   "related": [
+    "Comparative Devaluation",
+    "Emotional Invalidation",
+    "Shame Installation",
+    "Credit Laundering",
+    "Idea Theft in Real Time"
+   ]
+  },
+  "Sabotaging Success": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "starts a fight before my big exam",
+    "forgot to tell me the recruiter called",
+    "always something before my interview",
+    "ruins my good days"
+   ],
+   "related": [
+    "Setting Up to Fail",
+    "Intimidation",
+    "Resource Sabotage",
+    "Ritualized Exhaustion"
+   ]
+  },
+  "Setting Up to Fail": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "given an impossible task",
+    "no budget but make it work",
+    "targets nobody could meet",
+    "blamed when i fall short"
+   ],
+   "related": [
+    "Comparative Devaluation",
+    "Shame Installation",
+    "Intimidation",
+    "Sabotaging Success",
+    "PIP Weaponization",
+    "Resource Sabotage"
+   ]
+  },
+  "Scapegoating": {
+   "group": "people",
+   "settings": [
+    "family",
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "always blamed for everything",
+    "one person blamed for the group's problems",
+    "it's always my fault at home",
+    "singled out as the cause"
+   ],
+   "related": [
+    "Setting Up to Fail",
+    "Comparative Devaluation",
+    "Shame Installation",
+    "Golden Child Elevation",
+    "Mobbing",
+    "Blame-Shifting"
+   ]
+  },
+  "Flying Monkeys": {
+   "group": "people",
+   "settings": [
+    "family",
+    "friends",
+    "relationship"
+   ],
+   "subtitle": "People sent to pressure you for someone else",
+   "search_words": [
+    "relatives taking their side",
+    "friends passing on their messages",
+    "they asked me to talk to you",
+    "people pressuring me for my ex"
+   ],
+   "related": [
+    "Triangulation",
+    "Concern Trolling",
+    "Forced Teaming",
+    "Smear Campaign",
+    "Hoovering",
+    "Divide and Conquer"
+   ]
+  },
+  "Smear Campaign": {
+   "group": "people",
+   "settings": [
+    "family",
+    "friends",
+    "work",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "spreading lies about me",
+    "turned everyone against me",
+    "told people i'm unstable",
+    "friends stopped talking to me"
+   ],
+   "related": [
+    "Flying Monkeys",
+    "Public Humiliation",
+    "Legal Abuse (Post-Separation)",
+    "Credibility Theft",
+    "Reputation Laundering",
+    "Priming / Narrative Seeding"
+   ]
+  },
+  "Silent Coalitions": {
+   "group": "people",
+   "settings": [
+    "friends",
+    "work",
+    "groups"
+   ],
+   "subtitle": "Group exclusion through small, deniable slights",
+   "search_words": [
+    "group chat moved on without me",
+    "plans i found out about later",
+    "people quietly freezing me out",
+    "shorter replies than everyone else gets"
+   ],
+   "related": [
+    "Triangulation",
+    "Flying Monkeys",
+    "\"Polite Hostile\" Environments",
+    "Ostracism",
+    "Mobbing",
+    "Group Consolidation"
+   ]
+  },
+  "Group Consolidation": {
+   "group": "people",
+   "settings": [
+    "work",
+    "groups",
+    "online"
+   ],
+   "subtitle": "Punishing one person as a warning to all",
+   "search_words": [
+    "made an example of",
+    "called out in front of everyone",
+    "let this be a lesson",
+    "kicked from the group chat"
+   ],
+   "related": [
+    "\"Polite Hostile\" Environments",
+    "Silent Coalitions",
+    "Triangulation",
+    "Public Humiliation",
+    "Humiliation Rituals"
+   ]
+  },
+  "Pile-Ons": {
+   "group": "people",
+   "settings": [
+    "online",
+    "friends",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "everyone jumped on me",
+    "comments all attacking me",
+    "went viral for the wrong reason",
+    "can't answer them all"
+   ],
+   "related": [
+    "Triangulation",
+    "Flying Monkeys",
+    "Brigading",
+    "Mobbing",
+    "Stochastic Harassment Direction",
+    "Context Collapse Exploitation"
+   ]
+  },
+  "Ostracism": {
+   "group": "people",
+   "settings": [
+    "friends",
+    "family",
+    "groups",
+    "work"
+   ],
+   "subtitle": "Being left out on purpose",
+   "search_words": [
+    "always left out",
+    "never added to the group chat",
+    "they didn't invite me",
+    "frozen out"
+   ],
+   "related": [
+    "Triangulation",
+    "Flying Monkeys",
+    "Silent Coalitions",
+    "Dispensing of Existence",
+    "Mobbing"
+   ]
+  },
+  "Mobbing": {
+   "group": "people",
+   "settings": [
+    "work",
+    "groups",
+    "friends"
+   ],
+   "subtitle": "A group ganging up on one person",
+   "search_words": [
+    "whole team against me",
+    "ganged up on at work",
+    "everyone has noticed it, not just me",
+    "bullied by a group"
+   ],
+   "related": [
+    "Flying Monkeys",
+    "Triangulation",
+    "\"Polite Hostile\" Environments",
+    "Scapegoating",
+    "Pile-Ons",
+    "Ostracism"
+   ]
+  },
+  "Splitting": {
+   "group": "hook",
+   "settings": [
+    "relationship",
+    "friends",
+    "family"
+   ],
+   "subtitle": "Seeing you as all good, then all bad",
+   "search_words": [
+    "best person ever then the worst",
+    "one small thing and i'm dropped",
+    "you're just like all the rest",
+    "pedestal then nothing"
+   ],
+   "related": [
+    "Triangulation",
+    "Forced Teaming",
+    "Flying Monkeys",
+    "Idealize-Devalue-Discard Cycle",
+    "Push-Pull"
+   ]
+  },
+  "Golden Child Elevation": {
+   "group": "people",
+   "settings": [
+    "family",
+    "work"
+   ],
+   "subtitle": "One favorite everyone else is measured against",
+   "search_words": [
+    "my sibling can do no wrong",
+    "my parents have a favorite",
+    "why can't you be like your brother",
+    "always compared to the favorite"
+   ],
+   "related": [
+    "Triangulation",
+    "\"We're Family\" Erasure",
+    "Forced Teaming",
+    "Comparative Devaluation",
+    "Scapegoating",
+    "Labeling as Identity Warfare"
+   ]
+  },
+  "Social Proof Pressure": {
+   "group": "people",
+   "settings": [
+    "work",
+    "friends",
+    "family",
+    "online"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "everyone else already agreed",
+    "i'm the only one holding things up",
+    "all the other parents said yes",
+    "who is everyone"
+   ],
+   "related": [
+    "Forced Teaming",
+    "Triangulation",
+    "Flying Monkeys",
+    "Normative Messaging",
+    "Information Cascades"
+   ]
+  },
+  "Divide and Conquer": {
+   "group": "people",
+   "settings": [
+    "work",
+    "family",
+    "friends"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "turned us against each other",
+    "here's what she really said about you",
+    "keep this between us",
+    "we stopped comparing notes"
+   ],
+   "related": [
+    "Triangulation",
+    "Flying Monkeys",
+    "Forced Teaming",
+    "Compartmentalization",
+    "Wedge Issue Exploitation"
+   ]
+  },
+  "Foot-in-the-Door": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "relationship",
+    "online"
+   ],
+   "subtitle": "A small yes leading to bigger asks",
+   "search_words": [
+    "small favor turned big",
+    "you already helped so finish it",
+    "free trial into a contract",
+    "one yes led to more"
+   ],
+   "related": [
+    "Sunk Cost Exploitation",
+    "Ultimatums",
+    "Urgency Manufacturing",
+    "Boundary Testing",
+    "Door-in-the-Face",
+    "Bait and Switch"
+   ]
+  },
+  "Door-in-the-Face": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "friends",
+    "family"
+   ],
+   "subtitle": "A huge ask first, then a smaller one",
+   "search_words": [
+    "asked for a lot then less",
+    "i met you halfway now your turn",
+    "hard to say no twice",
+    "the smaller favor felt fair"
+   ],
+   "related": [
+    "False Dilemma",
+    "Urgency Manufacturing",
+    "Sunk Cost Exploitation",
+    "Foot-in-the-Door",
+    "Anchoring"
+   ]
+  },
+  "Anchoring": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "society",
+    "online"
+   ],
+   "subtitle": "A first number that skews the rest",
+   "search_words": [
+    "first price made the deal look good",
+    "lowball salary offer",
+    "it was four hundred now three-fifty",
+    "made up starting number"
+   ],
+   "related": [
+    "Urgency Manufacturing",
+    "False Dilemma",
+    "Sunk Cost Exploitation",
+    "Door-in-the-Face",
+    "Bait and Switch"
+   ]
+  },
+  "Choice Restriction": {
+   "group": "control",
+   "settings": [
+    "relationship",
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "my options kept disappearing",
+    "you don't really have a choice",
+    "already booked so i just sign",
+    "every other option made to look impossible"
+   ],
+   "related": [
+    "False Dilemma",
+    "Ultimatums",
+    "Resource Sabotage",
+    "Bounded Choice",
+    "Moving-in-Silence"
+   ]
+  },
+  "Emotional Flooding": {
+   "group": "hook",
+   "settings": [
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "constant emotional rollercoaster",
+    "fight then gift then fight",
+    "never a calm moment",
+    "intense from the first week"
+   ],
+   "related": [
+    "Urgency Manufacturing",
+    "Ultimatums",
+    "Interrogation",
+    "Love Bombing",
+    "Push-Pull",
+    "Trauma Bonding"
+   ]
+  },
+  "Cognitive Overload": {
+   "group": "pressure",
+   "settings": [
+    "work",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "too much to read before signing",
+    "twelve things to go through tonight",
+    "overwhelmed into saying yes",
+    "so much info i can't think"
+   ],
+   "related": [
+    "Urgency Manufacturing",
+    "Interrogation",
+    "False Dilemma",
+    "Pressure to Sign",
+    "Gish Gallop"
+   ]
+  },
+  "Bait and Switch": {
+   "group": "truth",
+   "settings": [
+    "work",
+    "online",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "sold out so here's a pricier one",
+    "the job wasn't what they said",
+    "hidden fees afterward",
+    "the offer changed after i agreed"
+   ],
+   "related": [
+    "Sunk Cost Exploitation",
+    "False Dilemma",
+    "Ultimatums",
+    "Foot-in-the-Door",
+    "Anchoring"
+   ]
+  },
+  "Pre-Punishment": {
+   "group": "wear",
+   "settings": [
+    "work",
+    "family",
+    "relationship"
+   ],
+   "subtitle": "Stopping yourself before anyone else can",
+   "search_words": [
+    "no point applying",
+    "talk myself out of trying",
+    "don't speak up in meetings",
+    "reject myself first"
+   ],
+   "related": [
+    "Ultimatums",
+    "False Dilemma",
+    "Interrogation",
+    "Sunk Cost Exploitation",
+    "Internalized Conditioning",
+    "Silence Installation"
+   ]
+  },
+  "Lying": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "caught them lying",
+    "tells me things that aren't true",
+    "lies about where they were",
+    "made decisions based on lies"
+   ],
+   "related": [
+    "Lying by Omission",
+    "Fabricated Evidence",
+    "Exaggeration",
+    "Half-Truth Framing",
+    "Catfishing"
+   ]
+  },
+  "Lying by Omission": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "family",
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "left out the important part",
+    "you never asked",
+    "found out later they knew",
+    "hid a key fact"
+   ],
+   "related": [
+    "Lying",
+    "Strategic Incompleteness",
+    "Countering",
+    "Half-Truth Framing",
+    "Compartmentalization",
+    "Limited Hangout"
+   ]
+  },
+  "Strategic Incompleteness": {
+   "group": "truth",
+   "settings": [
+    "work",
+    "groups",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "never told the whole plan",
+    "i'll explain later",
+    "don't worry about that yet",
+    "only ever the next step"
+   ],
+   "related": [
+    "Lying by Omission",
+    "Vague Allegations",
+    "Lying",
+    "Compartmentalization",
+    "Information Control"
+   ]
+  },
+  "Catfishing": {
+   "group": "online",
+   "settings": [
+    "online",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "they were using fake photos",
+    "never shows up on video",
+    "the person online wasn't real",
+    "camera always broken"
+   ],
+   "related": [
+    "Lying",
+    "Exaggeration",
+    "Fabricated Evidence",
+    "Identity Performances",
+    "Pig Butchering (Long-Con Digital Fraud)",
+    "Mirroring-on-Demand"
+   ]
+  },
+  "Half-Truth Framing": {
+   "group": "truth",
+   "settings": [
+    "relationship",
+    "work",
+    "society"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "everything they said was true but",
+    "technically true",
+    "facts that point the wrong way",
+    "answered a different question"
+   ],
+   "related": [
+    "Lying",
+    "Lying by Omission",
+    "Frame Control",
+    "Limited Hangout",
+    "Strategic Deception (Denial & Deception / D&D)"
+   ]
+  },
+  "False Reports": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "relationship",
+    "family"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "reported for something i didn't do",
+    "welfare check based on lies",
+    "fake complaint to hr",
+    "defending myself against a made-up report"
+   ],
+   "related": [
+    "Lying",
+    "Fabricated Evidence",
+    "Vague Allegations",
+    "Complaint Weaponization",
+    "Administrative Escalation",
+    "Coordinated Reporting"
+   ]
+  },
+  "Paper-Trail Traps": {
+   "group": "systems",
+   "settings": [
+    "work"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "emails building a case against me",
+    "several previous concerns no one told me about",
+    "just to confirm what we discussed",
+    "a file i never saw"
+   ],
+   "related": [
+    "Fabricated Evidence",
+    "Lying by Omission",
+    "Vague Allegations",
+    "Evidence Traps",
+    "PIP Weaponization"
+   ]
+  },
+  "Compartmentalization": {
+   "group": "truth",
+   "settings": [
+    "family",
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "everyone told a different story",
+    "don't mention this to your brother",
+    "nobody sees the whole picture",
+    "each of us knows a different piece"
+   ],
+   "related": [
+    "Lying by Omission",
+    "Strategic Incompleteness",
+    "Vague Allegations",
+    "Divide and Conquer",
+    "Information Control"
+   ]
+  },
+  "Thought Control": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "relationship"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "my questions get called negativity",
+    "we don't use that word here",
+    "doubts mean i'm drifting",
+    "special group language"
+   ],
+   "related": [
+    "Loyalty Binds",
+    "Self-Gaslighting Induction",
+    "Learned Helplessness",
+    "Sacred Science",
+    "Thought-Stopping Clichés",
+    "Doctrine Over Person"
+   ]
+  },
+  "Phobia Indoctrination": {
+   "group": "society",
+   "settings": [
+    "groups",
+    "family"
+   ],
+   "subtitle": "Fear planted so leaving feels terrifying",
+   "search_words": [
+    "terrified of leaving the group",
+    "scary stories about people who left",
+    "panic at the thought of going",
+    "taught to fear outsiders"
+   ],
+   "related": [
+    "Learned Helplessness",
+    "Fawning",
+    "Loyalty Binds",
+    "Dispensing of Existence",
+    "Catastrophizing as Control"
+   ]
+  },
+  "Administrative Escalation": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "groups"
+   ],
+   "subtitle": "",
+   "search_words": [
+    "small issue turned into an hr complaint",
+    "formal warning out of nowhere",
+    "this is now on the record",
+    "went straight to filing"
+   ],
+   "related": [
+    "Legal/Administrative Threats",
+    "Tone Policing",
+    "Trash-Can Diagnosis",
+    "Paper Terrorism",
+    "Complaint Weaponization",
+    "False Reports"
+   ]
+  },
+  "Paper Terrorism": {
+   "group": "systems",
+   "settings": [
+    "work",
+    "relationship",
+    "society"
+   ],
+   "subtitle": "Burying someone in legal filings and complaints",
+   "search_words": [
+    "buried in lawsuits",
+    "complaint after complaint",
+    "endless legal paperwork",
+    "fake liens and filings"
+   ],
+   "related": [
+    "Legal/Administrative Threats",
+    "Pressure to Sign",
+    "Tone Policing",
+    "Legal Abuse (Post-Separation)",
+    "Administrative Escalation",
+    "Process Exhaustion"
+   ]
+  },
+  "Brigading": {
+   "group": "online",
+   "settings": [
+    "online"
+   ],
+   "subtitle": "A crowd sent from elsewhere to swarm you",
+   "search_words": [
+    "flood of replies from strangers",
+    "one-star reviews all at once",
+    "people sent to my page",
+    "mentions full of the same phrase"
+   ],
+   "related": [
+    "Sock Puppets",
+    "Doxxing",
+    "Pile-Ons",
+    "Coordinated Reporting",
+    "Stochastic Harassment Direction"
+   ]
+  },
+  "Context Collapse Exploitation": {
+   "group": "online",
+   "settings": [
+    "online",
+    "work"
+   ],
+   "subtitle": "Your words cut out of context and spread",
+   "search_words": [
+    "screenshot taken out of context",
+    "old post dug up",
+    "quote cut short",
+    "cropped to look bad"
+   ],
+   "related": [
+    "Deepfakes",
+    "Doxxing",
+    "AI Voice Cloning",
+    "Edited Recordings",
+    "Pile-Ons"
+   ]
+  }
+ },
+ "new_feelings": [
+  {
+   "key": "scared",
+   "group": "relationship",
+   "label": "I'm scared of what they'll do if I say no"
+  },
+  {
+   "key": "money",
+   "group": "relationship",
+   "label": "They control the money, and I can't get to my own"
+  },
+  {
+   "key": "watched",
+   "group": "relationship",
+   "label": "I think someone is watching me, tracking me or getting into my phone"
+  },
+  {
+   "key": "pressuredsex",
+   "group": "relationship",
+   "label": "I was pressured into sex or touching I didn't want"
+  },
+  {
+   "key": "wontleavealone",
+   "group": "relationship",
+   "label": "We split up, and they still won't leave me alone"
+  },
+  {
+   "key": "groupdecides",
+   "group": "social",
+   "label": "A group I belong to decides who I can talk to"
+  },
+  {
+   "key": "cantleavegroup",
+   "group": "social",
+   "label": "I'm afraid of what will happen if I question or leave the group"
+  },
+  {
+   "key": "reportedworse",
+   "group": "work",
+   "label": "I reported something, and the place meant to help made it worse"
+  },
+  {
+   "key": "doctor",
+   "group": "work",
+   "label": "A doctor or clinic keeps telling me nothing is wrong"
+  },
+  {
+   "key": "newinterest",
+   "group": "work",
+   "label": "Someone new seems very interested in my work, money or secrets"
+  },
+  {
+   "key": "privatephotos",
+   "group": "online",
+   "label": "Someone has private photos of me and is using them"
+  },
+  {
+   "key": "onlinemoney",
+   "group": "online",
+   "label": "Someone I met online is asking me for money or to invest"
+  },
+  {
+   "key": "fakeaboutme",
+   "group": "online",
+   "label": "Something fake or cut out of context about me is spreading"
+  },
+  {
+   "key": "crowdonme",
+   "group": "online",
+   "label": "Lots of strangers are suddenly coming after me online"
+  },
+  {
+   "key": "cantknowtrue",
+   "group": "online",
+   "label": "I can't tell what's true anymore in the news or online"
+  }
+ ],
+ "feelings_index": {
+  "off": [
+   "Ambient Abuse",
+   "Gaslighting",
+   "Push-Pull",
+   "Intermittent Reinforcement",
+   "Plausible Deniability",
+   "Dr. Jekyll/Mr. Hyde",
+   "Negging",
+   "Strategic Ambiguity",
+   "Velvet Glove Control",
+   "Mirroring-on-Demand",
+   "Covert Contracts",
+   "Dog Whistling / Coded Signaling",
+   "Love Bombing",
+   "Honey Trapping"
+  ],
+  "notmyself": [
+   "Identity Erosion",
+   "Fawning",
+   "Approval Addiction Cultivation",
+   "Self-Gaslighting Induction",
+   "Emotion Control",
+   "Learned Helplessness",
+   "Silence Installation",
+   "Exclusive Meaning",
+   "Conditional Worth",
+   "Identity Hooking",
+   "Shame Installation",
+   "Velvet Glove Control"
+  ],
+  "eggshells": [
+   "Rage as Control",
+   "Ambient Abuse",
+   "Intimidation",
+   "Nonverbal Dominance",
+   "Negative Reinforcement Traps",
+   "Enforcing Trivial Demands",
+   "Silent Treatment",
+   "Emotion Control",
+   "Fawning",
+   "Emotional Hostage-Taking",
+   "Spatial Invasion",
+   "Punishment of Boundaries",
+   "Covert Contracts",
+   "Moving Goalposts"
+  ],
+  "goodmoments": [
+   "Intermittent Reinforcement",
+   "Trauma Bonding",
+   "Relief Bait",
+   "Confirmation Bias Exploitation",
+   "Push-Pull",
+   "Idealize-Devalue-Discard Cycle",
+   "Emotional Flooding",
+   "Golden Bars",
+   "Sunk Cost Exploitation",
+   "Hoovering"
+  ],
+  "waitingforstart": [
+   "Idealize-Devalue-Discard Cycle",
+   "Love Bombing",
+   "Future Faking",
+   "Mirroring-on-Demand",
+   "Push-Pull",
+   "Intermittent Reinforcement",
+   "Breadcrumbing",
+   "Confirmation Bias Exploitation",
+   "Manufactured Destiny",
+   "Splitting"
+  ],
+  "myupset": [
+   "DARVO",
+   "Victim Role Reversal",
+   "Weaponized Tears",
+   "Pity Plays",
+   "Competitive Victimhood",
+   "Strategic Self-Deprecation / Performed Humility",
+   "Counterfeit Calm",
+   "\"You're Too Emotional\"",
+   "Tone Policing",
+   "Emotional Hostage-Taking",
+   "Self-Harm Threats as Leverage",
+   "Meta-Gaslighting"
+  ],
+  "apologizing": [
+   "DARVO",
+   "Blame-Shifting",
+   "Fawning",
+   "Projection",
+   "Victim Role Reversal",
+   "Overcorrection Demands",
+   "Forced Submission",
+   "Baiting",
+   "Meta-Gaslighting",
+   "Negative Reinforcement Traps",
+   "Silent Treatment",
+   "Shame Installation"
+  ],
+  "onlysorryifleave": [
+   "Hoovering",
+   "Apology Without Repair",
+   "Non-Apology Apology",
+   "Relief Bait",
+   "Future Faking",
+   "Self-Harm Threats as Leverage",
+   "Emotional Blackmail",
+   "Trauma Bonding",
+   "Extinction Bursts",
+   "Catastrophizing as Control",
+   "Ghosting as Control"
+  ],
+  "guiltyforspace": [
+   "Punishment of Boundaries",
+   "Guilt-Tripping",
+   "Emotional Hostage-Taking",
+   "Silent Treatment",
+   "Martyrdom Display",
+   "Moral Framing",
+   "Extinction Bursts",
+   "Pity Plays",
+   "Boundary Testing",
+   "Emotional Blackmail",
+   "Weaponized Therapy-Speak",
+   "Isolation",
+   "Response-Time Policing"
+  ],
+  "testedaffection": [
+   "Emotional Blackmail",
+   "Intermittent Reinforcement",
+   "Conditional Worth",
+   "Moving Goalposts",
+   "Covert Contracts",
+   "Overcorrection Demands",
+   "Push-Pull",
+   "Negging",
+   "Silent Treatment",
+   "Negative Reinforcement Traps",
+   "Splitting"
+  ],
+  "familyjustus": [
+   "Normalization",
+   "\"We're Family\" Erasure",
+   "Loyalty Binds",
+   "Duty Scripts",
+   "Forced Forgiveness",
+   "Minimization",
+   "Golden Child Elevation",
+   "Scapegoating",
+   "Guilt Legacy",
+   "Thought-Stopping Clichés",
+   "Internalized Conditioning",
+   "Parentification",
+   "Aftercare Control"
+  ],
+  "alwaysblamed": [
+   "Scapegoating",
+   "Blame-Shifting",
+   "Labeling as Identity Warfare",
+   "Golden Child Elevation",
+   "Projection",
+   "Mobbing",
+   "Setting Up to Fail",
+   "Kafka Trapping",
+   "Double Binds",
+   "Repetition as Truth",
+   "Comparative Devaluation",
+   "Preemptive Accusation"
+  ],
+  "keepthepeace": [
+   "Forced Forgiveness",
+   "\"We're Family\" Erasure",
+   "Loyalty Binds",
+   "Fawning",
+   "Negative Reinforcement Traps",
+   "Silence Installation",
+   "Duty Scripts",
+   "Emotional Hostage-Taking",
+   "Rage as Control",
+   "Spiritual Bypassing",
+   "Normalization",
+   "Toxic Positivity / Weaponized Optimism"
+  ],
+  "goldenchild": [
+   "Golden Child Elevation",
+   "Comparative Devaluation",
+   "Scapegoating",
+   "Triangulation",
+   "Divide and Conquer",
+   "Labeling as Identity Warfare",
+   "Splitting",
+   "Conditional Worth",
+   "Double Binds",
+   "Moving Goalposts"
+  ],
+  "strongone": [
+   "Parentification",
+   "The Rescue Hook",
+   "Emotional Parasitism",
+   "Conditional Worth",
+   "Weaponized Incompetence",
+   "Silence Installation",
+   "Fawning",
+   "Identity Erosion",
+   "Duty Scripts",
+   "Pre-Punishment",
+   "Objectification"
+  ],
+  "niceinfront": [
+   "Dr. Jekyll/Mr. Hyde",
+   "Performative Allyship / False Solidarity",
+   "\"Polite Hostile\" Environments",
+   "Public Humiliation",
+   "Halo Effect Exploitation",
+   "Idea Theft in Real Time",
+   "Credit Theft",
+   "Counterfeit Calm",
+   "Moral Licensing",
+   "Interruption Patterns",
+   "Shame-as-Governance Disguised as Advice"
+  ],
+  "toosensitive": [
+   "\"You're Too Emotional\"",
+   "Tone Policing",
+   "Minimization",
+   "Emotional Invalidation",
+   "Clinical Tone Policing",
+   "Counterfeit Calm",
+   "Accountability Evasion via Diagnosis",
+   "Trash-Can Diagnosis",
+   "Individualization of Systemic Issues",
+   "Semantic Erosion / Meaning Dilution",
+   "Name-Calling Disguised as Humor",
+   "Sarcasm as Weapon",
+   "The \"Good Woman Program\"",
+   "Weaponized Therapy-Speak"
+  ],
+  "threepeoplework": [
+   "Individualization of Systemic Issues",
+   "Setting Up to Fail",
+   "Ritualized Exhaustion",
+   "Weaponized Incompetence",
+   "Objectification",
+   "Time Theft",
+   "Moving Goalposts",
+   "Performance Framework Manipulation",
+   "The \"Good Woman Program\"",
+   "Toxic Positivity / Weaponized Optimism",
+   "Algorithmic Management",
+   "Resource Sabotage"
+  ],
+  "writingchanges": [
+   "Platform Migration",
+   "Strategic Ambiguity",
+   "Revisionist History",
+   "Selective Memory",
+   "Moving Goalposts",
+   "Paper-Trail Traps",
+   "Feigned Ignorance",
+   "Bait and Switch",
+   "Countering",
+   "Evidence Traps",
+   "Confidentiality as Weapon",
+   "Diffusion of Responsibility",
+   "Process Exhaustion"
+  ],
+  "notateamplayer": [
+   "Labeling as Identity Warfare",
+   "Forced Teaming",
+   "\"Polite Hostile\" Environments",
+   "Organizational Silence Engineering",
+   "Performance Framework Manipulation",
+   "Group Consolidation",
+   "Punishment of Boundaries",
+   "Social Proof Pressure",
+   "Mobbing",
+   "Moral Framing",
+   "Weaponized Inclusion / Strategic Containment",
+   "\"Managed Out\" Through Exhaustion",
+   "PIP Weaponization"
+  ],
+  "others": [
+   "Dr. Jekyll/Mr. Hyde",
+   "Halo Effect Exploitation",
+   "Credibility Theft",
+   "Smear Campaign",
+   "Priming / Narrative Seeding",
+   "Plausible Deniability",
+   "Ambient Abuse",
+   "Flying Monkeys",
+   "Moral Licensing",
+   "Counterfeit Calm",
+   "Identity Performances"
+  ],
+  "saidaboutme": [
+   "Smear Campaign",
+   "Reputation Laundering",
+   "Credibility Theft",
+   "Divide and Conquer",
+   "Fabricated Evidence",
+   "Triangulation",
+   "Vague Allegations",
+   "Priming / Narrative Seeding",
+   "Edited Recordings",
+   "Context Collapse Exploitation",
+   "Preemptive Accusation",
+   "False Reports",
+   "Flying Monkeys"
+  ],
+  "alwaysreach": [
+   "Breadcrumbing",
+   "Emotional Parasitism",
+   "Ghosting as Control",
+   "Ghosting-Orbiting Cycle",
+   "Push-Pull",
+   "Silent Treatment",
+   "Objectification",
+   "Silent Coalitions",
+   "Intermittent Reinforcement",
+   "Ostracism"
+  ],
+  "droppeduseful": [
+   "Objectification",
+   "Conditional Worth",
+   "Idealize-Devalue-Discard Cycle",
+   "Emotional Parasitism",
+   "Splitting",
+   "Credit Theft",
+   "Ghosting as Control",
+   "The Rescue Hook",
+   "Dehumanization",
+   "Credit Laundering"
+  ],
+  "strangerknowsme": [
+   "Parasocial Manipulation Engineering",
+   "Manufactured Intimacy",
+   "Mirroring-on-Demand",
+   "Love Bombing",
+   "Catfishing",
+   "Pig Butchering (Long-Con Digital Fraud)",
+   "Weaponized AI Empathy",
+   "The Exception Script",
+   "Exclusive Meaning",
+   "Identity Performances",
+   "Manufactured Destiny",
+   "Honey Trapping",
+   "Social Engineering"
+  ],
+  "missingout": [
+   "Urgency Manufacturing",
+   "Manufactured Scarcity",
+   "Dark Patterns (AI-Adaptive)",
+   "Social Proof Pressure",
+   "Normative Messaging",
+   "Anchoring",
+   "Foot-in-the-Door",
+   "Bait and Switch",
+   "Algorithmic Targeting of Vulnerable Populations",
+   "Parasocial Manipulation Engineering",
+   "Pressure to Sign",
+   "Sunk Cost Exploitation",
+   "Door-in-the-Face"
+  ],
+  "worseafterscroll": [
+   "Algorithmic Manipulation",
+   "Comparative Devaluation",
+   "Algorithmic Targeting of Vulnerable Populations",
+   "Parasocial Manipulation Engineering",
+   "Biometric Exploitation",
+   "Dark Patterns (AI-Adaptive)",
+   "Immersive Manipulation (VR/AR)",
+   "Toxic Positivity / Weaponized Optimism",
+   "Pile-Ons",
+   "Echo Chamber Construction"
+  ],
+  "everyoneagrees": [
+   "Social Proof Pressure",
+   "Information Cascades",
+   "Sock Puppets",
+   "Astroturfing",
+   "Synthetic Persona Networks",
+   "Computational Propaganda",
+   "Normative Messaging",
+   "Pile-Ons",
+   "AI-Driven Narrative Hijacking",
+   "Triangulation",
+   "Overton Window Manipulation",
+   "Manufactured Consent",
+   "Moral Outrage as Weapon"
+  ],
+  "excuses": [
+   "Confirmation Bias Exploitation",
+   "Halo Effect Exploitation",
+   "Plausible Deniability",
+   "Normalization",
+   "Minimization",
+   "Trauma Bonding",
+   "Moral Licensing",
+   "Relief Bait",
+   "Dr. Jekyll/Mr. Hyde",
+   "Apology Without Repair",
+   "Pity Plays",
+   "Self-Gaslighting Induction",
+   "Weaponized Tears"
+  ],
+  "myfault": [
+   "Blame-Shifting",
+   "DARVO",
+   "Shame Installation",
+   "Projection",
+   "Scapegoating",
+   "Setting Up to Fail",
+   "Kafka Trapping",
+   "Double Binds",
+   "Gaslighting",
+   "Baiting",
+   "Individualization of Systemic Issues",
+   "Strategic Apathy",
+   "Malicious Compliance",
+   "Resource Sabotage",
+   "Sabotaging Success"
+  ],
+  "exhausted": [
+   "Ambient Abuse",
+   "Ritualized Exhaustion",
+   "Emotional Parasitism",
+   "Process Exhaustion",
+   "Word Salad",
+   "Sealioning",
+   "Gish Gallop",
+   "Cognitive Overload",
+   "Time Theft",
+   "Health Sabotage",
+   "Moving Goalposts",
+   "\"Managed Out\" Through Exhaustion",
+   "Paper Terrorism",
+   "Emotional Flooding",
+   "Firehose of Falsehood",
+   "Weaponized Incompetence"
+  ],
+  "saidyes": [
+   "Foot-in-the-Door",
+   "Door-in-the-Face",
+   "Reverse Psychology",
+   "Urgency Manufacturing",
+   "Cognitive Overload",
+   "Pressure to Sign",
+   "FOG",
+   "Sexual Coercion",
+   "Negative Reinforcement Traps",
+   "Bounded Choice",
+   "Choice Restriction",
+   "Reflexive Control",
+   "Weaponized Generosity",
+   "Obligation Installation",
+   "Social Engineering",
+   "MICE Framework Exploitation"
+  ],
+  "stoppedtrusting": [
+   "Gaslighting",
+   "Self-Gaslighting Induction",
+   "Countering",
+   "Meta-Gaslighting",
+   "Authority Hijack",
+   "Doctrine Over Person",
+   "Medical Gaslighting",
+   "Repetition as Truth",
+   "Revisionist History",
+   "Contradiction Stacking",
+   "Pseudo-Profundity / Intellectual Intimidation",
+   "Epistemic Coercion via AI",
+   "Thought Control",
+   "False Authority",
+   "Learned Helplessness"
+  ],
+  "rehearseconvos": [
+   "Rage as Control",
+   "Silence Installation",
+   "Semantic Traps",
+   "Gotcha Framing",
+   "Evidence Traps",
+   "Interrogation",
+   "Kafka Trapping",
+   "Burden of Proof Shifting",
+   "Tone Policing",
+   "Pre-Punishment",
+   "Response-Time Policing",
+   "Frame Control",
+   "Fawning"
+  ],
+  "minimizewhenexplain": [
+   "Minimization",
+   "Normalization",
+   "Ambient Abuse",
+   "Plausible Deniability",
+   "Self-Gaslighting Induction",
+   "Semantic Erosion / Meaning Dilution",
+   "Silence Installation",
+   "Velvet Glove Control",
+   "Dr. Jekyll/Mr. Hyde",
+   "Internalized Conditioning",
+   "Golden Bars",
+   "Boundary Testing",
+   "Ambient Sexual Threat"
+  ],
+  "scared": [
+   "Intimidation",
+   "Rage as Control",
+   "Spatial Invasion",
+   "Self-Harm Threats as Leverage",
+   "Ultimatums",
+   "Blackmail / Leverage Exploitation",
+   "Punishment by Proxy",
+   "Legal/Administrative Threats",
+   "Nonverbal Dominance",
+   "Ambient Sexual Threat",
+   "Catastrophizing as Control",
+   "Extinction Bursts",
+   "Dog Whistling / Coded Signaling",
+   "Demonstrating Omnipotence",
+   "FOG",
+   "Punishment of Boundaries"
+  ],
+  "money": [
+   "Financial Control",
+   "Financial Dependence by Design",
+   "Forced Dependency",
+   "Golden Bars",
+   "Infantilization",
+   "Favor Debt",
+   "Moving-in-Silence",
+   "Learned Helplessness",
+   "Velvet Glove Control",
+   "Information Control",
+   "Weaponized Generosity",
+   "Legal Abuse (Post-Separation)"
+  ],
+  "watched": [
+   "Monitoring & Surveillance",
+   "Location Tracking",
+   "Device Access Demands",
+   "Stalking-by-Notification",
+   "Smart-Home Coercion",
+   "Account Takeover",
+   "Demonstrating Omnipotence",
+   "Stalking & Surveillance (Post-Separation)",
+   "SIM Swap / 2FA Interception",
+   "Response-Time Policing",
+   "Interrogation",
+   "Biometric Exploitation",
+   "Ghosting-Orbiting Cycle",
+   "Doxxing"
+  ],
+  "pressuredsex": [
+   "Sexual Coercion",
+   "Boundary Testing",
+   "Reproductive Coercion",
+   "Ambient Sexual Threat",
+   "Intimate Image Abuse",
+   "Emotional Blackmail",
+   "Guilt-Tripping",
+   "Covert Contracts",
+   "Negative Reinforcement Traps",
+   "Foot-in-the-Door",
+   "Trauma Bonding"
+  ],
+  "wontleavealone": [
+   "Stalking & Surveillance (Post-Separation)",
+   "Hoovering",
+   "Legal Abuse (Post-Separation)",
+   "Smear Campaign",
+   "Flying Monkeys",
+   "Smart-Home Coercion",
+   "Ghosting-Orbiting Cycle",
+   "Account Takeover",
+   "Intimate Image Abuse",
+   "Paper Terrorism",
+   "Location Tracking",
+   "Demonstrating Omnipotence",
+   "Ghosting as Control"
+  ],
+  "groupdecides": [
+   "Milieu Control",
+   "Information Control",
+   "Isolation",
+   "Echo Chamber Construction",
+   "Behavior Control",
+   "Bounded Choice",
+   "Thought Control",
+   "Dispensing of Existence",
+   "Loyalty Binds",
+   "Charismatic Authority Dependence",
+   "Group Consolidation",
+   "Ritualized Exhaustion"
+  ],
+  "cantleavegroup": [
+   "Phobia Indoctrination",
+   "Dispensing of Existence",
+   "Bounded Choice",
+   "Demand for Purity",
+   "Sacred Science",
+   "Charismatic Authority Dependence",
+   "Forced Confession / Self-Criticism Rituals",
+   "Mystical Manipulation",
+   "Doctrine Over Person",
+   "Humiliation Rituals",
+   "Sunk Cost Exploitation",
+   "\"Sacred Duty\" Manipulation",
+   "Manufactured Destiny",
+   "Loyalty Binds"
+  ],
+  "reportedworse": [
+   "Institutional Betrayal",
+   "HR Shielding",
+   "Confidentiality as Weapon",
+   "Willful Blindness as Complicity",
+   "Complaint Weaponization",
+   "Organizational Silence Engineering",
+   "Diffusion of Responsibility",
+   "Process Exhaustion",
+   "Accountability Evasion via Diagnosis",
+   "Pressure to Sign",
+   "Administrative Escalation",
+   "Pseudo-Consultation",
+   "False Reports",
+   "Paper Terrorism"
+  ],
+  "doctor": [
+   "Medical Gaslighting",
+   "False Conclusion from Normal Labs",
+   "Clinical Tone Policing",
+   "Trash-Can Diagnosis",
+   "Accountability Evasion via Diagnosis",
+   "Dehumanization",
+   "Diffusion of Responsibility",
+   "Minimization"
+  ],
+  "newinterest": [
+   "Honey Trapping",
+   "MICE Framework Exploitation",
+   "Social Engineering",
+   "Manufactured Intimacy",
+   "Love Bombing",
+   "Credential-Costuming",
+   "Identity Performances",
+   "Pig Butchering (Long-Con Digital Fraud)",
+   "Mirroring-on-Demand"
+  ],
+  "privatephotos": [
+   "Intimate Image Abuse",
+   "Blackmail / Leverage Exploitation",
+   "Deepfakes",
+   "Account Takeover",
+   "Public Humiliation",
+   "Evidence Traps",
+   "Doxxing",
+   "Catfishing",
+   "Forced Submission"
+  ],
+  "onlinemoney": [
+   "Pig Butchering (Long-Con Digital Fraud)",
+   "Catfishing",
+   "AI Voice Cloning",
+   "AI-Driven Social Engineering (Automated)",
+   "Social Engineering",
+   "Parasocial Manipulation Engineering",
+   "Manufactured Intimacy",
+   "Love Bombing",
+   "Weaponized AI Empathy",
+   "Algorithmic Targeting of Vulnerable Populations",
+   "Sunk Cost Exploitation",
+   "Urgency Manufacturing"
+  ],
+  "fakeaboutme": [
+   "Deepfakes",
+   "Fabricated Evidence",
+   "Edited Recordings",
+   "Context Collapse Exploitation",
+   "Smear Campaign",
+   "False Reports",
+   "AI Voice Cloning",
+   "Reputation Laundering",
+   "Account Takeover",
+   "Credibility Theft",
+   "Paper-Trail Traps"
+  ],
+  "crowdonme": [
+   "Brigading",
+   "Pile-Ons",
+   "Stochastic Harassment Direction",
+   "Doxxing",
+   "Coordinated Reporting",
+   "Sock Puppets",
+   "Mobbing",
+   "Context Collapse Exploitation",
+   "Moral Outrage as Weapon",
+   "Group Consolidation",
+   "Synthetic Persona Networks"
+  ],
+  "cantknowtrue": [
+   "Firehose of Falsehood",
+   "Post-Truth Epistemic Manipulation",
+   "Cognitive Warfare",
+   "Context Poisoning",
+   "Information Laundering",
+   "AI-Driven Narrative Hijacking",
+   "Computational Propaganda",
+   "PSYOP Message Framing",
+   "Strategic Deception (Denial & Deception / D&D)",
+   "False Flag Operations",
+   "Epistemic Coercion via AI",
+   "Strategic Leaking",
+   "Cyber Manipulation Operations (CMOs)",
+   "Agent of Influence Operations",
+   "Manufactured Consent",
+   "Wedge Issue Exploitation"
+  ]
+ }
+}

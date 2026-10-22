@@ -106,6 +106,33 @@ const STOP = new Set(D.stop);
 function searchTokens(n){return n.split(" ").filter(w=>w.length>2&&!STOP.has(w));}
 /* Ranking carried over from v9 (name > folded-in name > what people say > the rest),
    plus everyday words written for each entry, so "ignoring me" finds the silent treatment. */
+/* A few everyday words people use for the same thing, folded together so
+   "reads my texts" meets "reads my messages". Small on purpose. */
+const SAME={text:"messag",dm:"messag",chat:"messag",email:"messag",boyfriend:"partner",girlfriend:"partner",husband:"partner",wife:"partner",spouse:"partner",ex:"partner",
+  boss:"manag",supervisor:"manag",mom:"parent",mum:"parent",dad:"parent",mother:"parent",father:"parent",cell:"phone",mobile:"phone",
+  yell:"shout",scream:"shout",ignor:"silen",cash:"money",paycheck:"money",wage:"money"};
+function stem(w){w=w.length>4?w.replace(/(ings|ing|edly|ed|ies|es|s|ly)$/,""):w.replace(/s$/,"");return SAME[w]||w;}
+function stems(t){return new Set(t.split(" ").filter(Boolean).map(stem));}
+const stemLine=t=>t.split(" ").filter(Boolean).map(stem).join(" ");
+const STEMS = HAY.map(h=>({name:stems(h.name), words:stems(h.words), said:stems(h.said), all:stems(h.all), wline:stemLine(h.words), sline:stemLine(h.said)}));
+function fuzzy(n){
+  const toks=searchTokens(n).map(stem); if(!toks.length) return [];
+  const w=n.split(" ").map(stem), grams=[];
+  for(let i=0;i<w.length-1;i++){grams.push(w[i]+" "+w[i+1]); if(i<w.length-2) grams.push(w[i]+" "+w[i+1]+" "+w[i+2]);}
+  const scored=[];
+  E.forEach((e,i)=>{const h=HAY[i], st=STEMS[i]; let hits=0,score=0;
+    toks.forEach(t=>{ if(!st.all.has(t)) return; hits++; score+= st.name.has(t)?4 : st.words.has(t)?3.5 : st.said.has(t)?3 : 1; });
+    if(!hits) return;
+    grams.forEach(g=>{ if(st.wline.includes(g)) score+=8; else if(st.sline.includes(g)) score+=6; });
+    scored.push({e,hits,score});});
+  const need=toks.length<=2?toks.length:Math.min(3,Math.ceil(toks.length/2));
+  const kept=scored.filter(x=>x.hits>=need).sort((a,b)=>b.score-a.score||b.hits-a.hits||a.e.n.localeCompare(b.e.n));
+  const top=kept.length?kept[0].score:0;
+  return kept.filter(x=>x.score>=Math.max(2,top*.5)).slice(0,12).map(x=>x.e);
+}
+/* Ranking carried over from v9 (name > folded-in name > everyday words > what
+   people say > the rest). When few entries contain the exact wording, close
+   matches by shared words are added after them, never mixed in above. */
 function search(q){
   const n=norm(String(q||"").slice(0,400));
   if(!n) return {list:[],fuzzy:false,n};
@@ -116,20 +143,9 @@ function search(q){
       return {e,r};}).filter(Boolean).sort((a,b)=>a.r-b.r||a.e.n.localeCompare(b.e.n)).map(x=>x.e);
     if(n.length<4&&list.length>40) list=[];
   }
-  if(list.length) return {list,fuzzy:false,n};
-  const toks=searchTokens(n); if(!toks.length) return {list:[],fuzzy:false,n};
-  const w=n.split(" "), grams=[];
-  for(let i=0;i<w.length-1;i++){grams.push(w[i]+" "+w[i+1]); if(i<w.length-2) grams.push(w[i]+" "+w[i+1]+" "+w[i+2]);}
-  const scored=[];
-  E.forEach((e,i)=>{const h=HAY[i]; let hits=0,score=0;
-    toks.forEach(t=>{ if(!h.all.includes(t)) return; hits++; score+= h.name.includes(t)?4 : h.words.includes(t)?3 : h.said.includes(t)?3 : 1; });
-    if(!hits) return;
-    grams.forEach(g=>{ if(h.said.includes(g)||h.words.includes(g)) score+=6; else if(h.all.includes(g)) score+=2; });
-    scored.push({e,hits,score});});
-  const need=toks.length<=2?toks.length:Math.min(4,Math.ceil(toks.length/2));
-  const kept=scored.filter(x=>x.hits>=need).sort((a,b)=>b.score-a.score||b.hits-a.hits||a.e.n.localeCompare(b.e.n));
-  const top=kept.length?kept[0].score:0;
-  return {list:kept.filter(x=>x.score>=Math.max(2,top*.5)).slice(0,12).map(x=>x.e),fuzzy:true,n};
+  const exact=list.length;
+  if(exact<5&&n.split(" ").length>1){ const seen=new Set(list); fuzzy(n).forEach(e=>{ if(!seen.has(e)&&list.length<12) list.push(e); }); }
+  return {list,fuzzy:!exact&&list.length>0,n};
 }
 /* Held in memory, never in the URL: what someone pastes here can be what was
    said to them, and it must not land in history, the address bar or autocomplete. */
@@ -182,7 +198,7 @@ function viewSearch(){
   const r=search(SEARCH_Q);
   return '<p class="eyebrow"><a href="'+href("")+'">Home</a></p><h1 class="h1">Search</h1>'+
     '<div style="margin-top:24px">'+searchBox("q-page",SEARCH_Q,true)+'</div>'+
-    '<div id="results" aria-live="polite">'+resultsHTML(r)+'</div>';
+    '<p class="sr-only" id="rcount" aria-live="polite"></p><div id="results">'+resultsHTML(r)+'</div>';
 }
 function resultsHTML(r){
   if(!r.n) return '<p class="small muted" style="margin-top:24px">Search by name ("gaslighting"), by everyday words ("ignoring me"), or paste something that was said to you. Press / from anywhere to search.</p>'+
@@ -395,7 +411,7 @@ function viewAbout(){
   '</div>';
 }
 function notFound(){
-  return '<div class="empty" style="margin-top:40px"><p><strong>That page is not here.</strong></p><p class="small muted">The link may be out of date or cut short.</p><div class="chips" style="justify-content:center"><a class="btn primary" href="'+href("")+'">Go home</a><a class="btn" href="'+href("search")+'">Search</a></div></div>';
+  return '<h1 class="sr-only">Page not found</h1><div class="empty" style="margin-top:40px"><p><strong>That page is not here.</strong></p><p class="small muted">The link may be out of date or cut short.</p><div class="chips" style="justify-content:center"><a class="btn primary" href="'+href("")+'">Go home</a><a class="btn" href="'+href("search")+'">Search</a></div></div>';
 }
 
 /* ---------- router ---------- */
@@ -409,7 +425,7 @@ const LEGACY={core:"common",trail:"saved",narrow:"guide",index:"all",constellati
 const ROUTES={"":viewHome,search:viewSearch,browse:a=>a?viewGroup(a):viewBrowse(),where:viewWhere,common:viewCommon,all:viewAll,
   entry:viewEntry,guide:viewGuide,patterns:viewPatterns,saved:viewSaved,about:viewAbout};
 const SCROLL = {};
-let FRESH = false, LAST_KEY = null, PENDING_VT = null;
+let MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PENDING_VT = null;
 function key(){return location.hash||"#/";}
 function render(){
   let r=parse();
@@ -453,6 +469,8 @@ function setNav(view){
 }
 function afterRender(r){
   const live=$("#q-page");
+  if(!live&&MOVED_FOCUS){ const h=$("#main h1:not(.sr-only)")||$("#main h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); } }
+  MOVED_FOCUS=true;
   if(live){ live.focus({preventScroll:true}); const v=live.value; live.setSelectionRange(v.length,v.length); }
   if(r.view==="entry") watchParts();
 }
@@ -500,7 +518,7 @@ document.addEventListener("submit",ev=>{
   const i=f.querySelector("input"); SEARCH_Q=i.value;
   if(parse().view!=="search"){ FRESH=true; location.hash="#/search"; } else { updateResults(); i.blur(); }
 });
-const updateResults=(()=>{let t; return ()=>{clearTimeout(t); t=setTimeout(()=>{ const r=$("#results"); if(r) r.innerHTML=resultsHTML(search(SEARCH_Q)); },120);};})();
+const updateResults=(()=>{let t; return ()=>{clearTimeout(t); t=setTimeout(()=>{ const r=$("#results"); if(r){ const x=search(SEARCH_Q); r.innerHTML=resultsHTML(x); const c=$("#rcount"); if(c) c.textContent=x.n?(x.list.length?x.list.length+" matches":"No matches"):""; } },120);};})();
 document.addEventListener("input",ev=>{
   const i=ev.target;
   if(i.closest&&i.closest("[data-search]")){ i.closest("form").classList.toggle("has",!!i.value);

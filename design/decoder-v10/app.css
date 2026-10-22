@@ -403,3 +403,4 @@ details.part[open] .p-body{animation:rise 240ms var(--ease) both}
 .hero>div{min-width:0}
 @media (max-width:760px){.short{margin-top:8px}}
 @media (max-width:760px){.search input{font-size:17px;padding-right:48px}}
+#main h1:focus{outline:none}
