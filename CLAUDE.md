@@ -18,6 +18,20 @@ explicitly refuse gamification/tracking; children's book Playground
 Protectors is the opposite case and *wants* gamification; Root is a guided
 practice, not a chapter book). Read before pasting, every time.
 
+## find-skills — load every coding thread (non-negotiable)
+
+`find-skills` (`vercel-labs/skills@find-skills`) is installed at
+`.claude/skills/find-skills/` and pinned in `skills-lock.json`. At the start of
+**every** coding thread, invoke it with the Skill tool before starting work, and
+again whenever a task might be served by an installable skill ("is there a skill
+for X?", an unfamiliar domain, a repeatable workflow). Search with
+`npx skills find <query>`; verify install count and source before recommending;
+**never install a found skill without the user's go-ahead** (safety rule 1 below
+applies). The `SessionStart` hook re-announces this every session. Do not ask
+the user to retype the install command — if `.claude/skills/find-skills/` is
+missing in a fresh checkout, restore it with
+`npx skills add vercel-labs/skills@find-skills -a claude-code --copy -y`.
+
 ## Self-contained architecture (non-negotiable)
 
 Every book is: no dependencies, no external requests, no storage, fully

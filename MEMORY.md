@@ -3226,3 +3226,11 @@ sequential. Still open: wording nits listed by writers (Word Salad opener, Bound
 'abuse', Silent Coalitions definition) and the user's call on badge edge cases.
 **Not deployed.** The live Decoder is v7. v8 and v9 are committed but not live. Deploying needs the author's
 approval (the last attempt was blocked by the permission check). Version 9 supersedes v8.
+
+## 2026-10-22 — find-skills installed and made universal
+`vercel-labs/skills@find-skills` is installed (copy, not symlink) at `.claude/skills/find-skills/` in Wookbook,
+Books and Castings, pinned in `skills-lock.json`. It loads every coding thread via three layers: a standing rule
+in `CLAUDE.md`, the `SessionStart` hook (`.claude/hooks/session-start.sh`) which prints the instruction, and the
+skill itself being in `.claude/skills/`. Installing found skills still needs the user's go-ahead. The user should
+never have to retype the `npx skills add` command; if the folder is missing, restore with
+`npx skills add vercel-labs/skills@find-skills -a claude-code --copy -y`.
