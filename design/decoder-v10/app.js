@@ -188,10 +188,10 @@ function viewHome(){
 function way(route,icon,title,text,go){
   return '<a class="way" href="'+href(route)+'"><span class="w-ic">'+ic(icon)+'</span><span><h2>'+title+'</h2><p>'+text+'</p></span><span class="go">'+go+'</span></a>';
 }
-function groupTiles(){
+function groupTiles(lv){ lv=lv||3;
   return '<div class="groups">'+D.groups.map(g=>{
     const list=IN_GROUP[g.k];
-    return '<a class="group" href="'+href("browse/"+g.k)+'"><h3>'+H(g.label)+'</h3><p>'+H(g.blurb)+'</p><span class="eg">'+list.length+' tactics, including '+list.slice().sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,2).map(e=>H(e.n)).join(" and ")+'</span></a>';
+    return '<a class="group" href="'+href("browse/"+g.k)+'"><h'+lv+' class="gt">'+H(g.label)+'</h'+lv+'><p>'+H(g.blurb)+'</p><span class="eg">'+list.length+' tactics, including '+list.slice().sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,2).map(e=>H(e.n)).join(" and ")+'</span></a>';
   }).join("")+'</div>';
 }
 function viewSearch(){
@@ -212,7 +212,7 @@ function resultsHTML(r){
 function viewBrowse(){
   return '<p class="eyebrow"><a href="'+href("")+'">Home</a></p><h1 class="h1">Browse by what it does</h1>'+
     '<p class="lede">'+D.groups.length+' groups. Each tactic sits in the one that fits it best, and links to its close relatives in other groups.</p>'+
-    '<div style="margin-top:40px">'+groupTiles()+'</div>'+
+    '<div style="margin-top:40px">'+groupTiles(2)+'</div>'+
     '<section class="sect"><div class="sect-head"><div><h2 class="h2">Or by where it happens</h2></div></div><div class="chips">'+
     D.settings.map(s=>'<a class="chip" href="'+href("where/"+s.k)+'">'+H(s.label)+'</a>').join("")+'</div></section>';
 }
@@ -420,7 +420,7 @@ function viewAbout(){
   const p=t=>'<p>'+t+'</p>', h=t=>'<h2 class="h2" style="margin:48px 0 16px">'+t+'</h2>';
   return '<div class="read"><p class="eyebrow"><a href="'+href("")+'">Home</a></p><h1 class="h1">How to use this guide safely</h1>'+
     '<p class="lede">What applies to every entry, said once.</p>'+
-    '<div class="callout" style="margin-top:32px"><h3>'+ic("shield")+'If you are not safe</h3><p>If any of this involves threats, being watched or tracked, being cut off from people or money, housing or immigration status, sex, pressure toward self-harm, or fear for your safety, reach a real person: someone you trust, a local support service, a legal or workplace resource, or emergency services if you are in immediate danger. Entries marked Safety-sensitive say more about what to watch for.</p></div>'+
+    '<div class="callout" style="margin-top:32px"><h2 class="ch">'+ic("shield")+'If you are not safe</h2><p>If any of this involves threats, being watched or tracked, being cut off from people or money, housing or immigration status, sex, pressure toward self-harm, or fear for your safety, reach a real person: someone you trust, a local support service, a legal or workplace resource, or emergency services if you are in immediate danger. Entries marked Safety-sensitive say more about what to watch for.</p></div>'+
     h("What this guide is")+p("A reading aid. It helps you put a name to something that happened, see what else it could be, and decide what to do next. Some entries are about everyday relationships; others are about workplaces, online life, and influence on a whole society.")+
     h("What it is not")+p("It is not a diagnosis, a legal opinion, or therapy. It cannot tell you what another person meant, what they are like, or whether you are in danger. Only you, and the people you trust, can weigh that.")+
     h("A signal, not a verdict")+p("One example of a pattern is a reason to look more closely, not proof of motive or character. Every entry says what its tactic is not, because most of these behaviors also have ordinary explanations. Please do not use a label from this guide to attack, shame, threaten, expose or get back at someone.")+
