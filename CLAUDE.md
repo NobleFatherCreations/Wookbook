@@ -32,6 +32,27 @@ the user to retype the install command — if `.claude/skills/find-skills/` is
 missing in a fresh checkout, restore it with
 `npx skills add vercel-labs/skills@find-skills -a claude-code --copy -y`.
 
+### Using find-skills effectively
+
+**Use it when:**
+- A task might have an existing skill and the name is unknown — search by keyword (`npx skills find <query>`, optionally `--owner <owner>`) instead of stopping to browse a directory.
+- Setting up a new repo or machine — let it pull the skills the work needs instead of hand-copying `SKILL.md` files.
+- The user asks "how do I do X", "is there a skill for X", or "can you do X" for a specialised domain.
+- Keeping the installed set current — `npx skills list` to see it, `npx skills update` to refresh it.
+
+**Don't use it when:**
+- The skill is already known — go straight to its install command from its skills.sh page; a search is slower.
+- Authoring a skill — use `skill-creator`, not search.
+- Vetting a skill for security or maintenance — results rank by popularity, not review. Read the skill's files before trusting it.
+- Node is unavailable — every command runs through `npx`; install manually.
+
+**How to run it well:**
+1. Check the skills.sh leaderboard first for well-known skills, then search with specific keywords ("react testing", not "testing"); retry with alternate terms ("deployment", "ci-cd").
+2. Verify before recommending: prefer 1K+ installs (be wary under 100), official sources (`vercel-labs`, `anthropics`, `microsoft`), and repos with real stars.
+3. Present name, what it does, install count, source, install command and skills.sh link.
+4. Install only after the user says yes. In this project prefer project-level `-a claude-code --copy -y` (committed, survives container resets) over the skill's default `-g`, which would vanish with the container. Then record it in `MEMORY.md`, and check it against `BOOKS.md`/design stance before applying it to a book.
+5. If nothing is found, say so and do the task directly; offer `npx skills init <name>` only for repeatable work.
+
 ## Self-contained architecture (non-negotiable)
 
 Every book is: no dependencies, no external requests, no storage, fully

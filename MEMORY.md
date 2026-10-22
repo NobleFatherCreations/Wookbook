@@ -3234,3 +3234,5 @@ in `CLAUDE.md`, the `SessionStart` hook (`.claude/hooks/session-start.sh`) which
 skill itself being in `.claude/skills/`. Installing found skills still needs the user's go-ahead. The user should
 never have to retype the `npx skills add` command; if the folder is missing, restore with
 `npx skills add vercel-labs/skills@find-skills -a claude-code --copy -y`.
+**Usage guidance added 2026-10-22:** `CLAUDE.md` → "Using find-skills effectively" holds the when-to-use / when-not-to-use
+rules and the search → verify → present → ask → install workflow. Read it before using the skill.
