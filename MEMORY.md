@@ -3269,3 +3269,23 @@ display face, now fixed by `fitText()`; (4) software-rendered canvas on a thrott
 lines per group at 3 scales, caps DPR at 1.5 on phones, and drops dust/glows automatically if frames run slow; (5) edit via direct file
 edits and re-read, two of my scripted replacements silently didn't apply.
 **Still to do:** deploy (needs the author's approval); DESIGN.md (documenter agent resumed after a rate limit); clinical read of rewritten scripts.
+
+## 2026-10-22 — Pattern Decoder v11: ten lights, four skies (built, NOT deployed)
+
+References studied in a real browser (Playwright, computed styles): **Stripe Press**
+(each book its own material/colour; minimal tick-rail spine index), **Apple AirPods Pro**
+(96px/-1.44px display, 0.32s cubic-bezier(.4,0,.6,1) reveals, 80ms stagger), **Linear**
+(#08090A, 160ms cubic-bezier(.25,.46,.45,.94), keyboard-first, "1 / 84" pager).
+What v11 took from them: per-constellation colours (`GROUP_COLORS` in the build → `D.groups[].c`),
+colourways Midnight/Aurora/Dusk/Eclipse/Daylight (`data-skin`, store key `fg_skin`; canvas
+reads `--sky-*` CSS vars), Ctrl/⌘K command menu (`palOpen`), left constellation rail
+(≥1180px fine pointers), J/K entry pager, word-mask headline reveals (`splitHeads`), View
+Transitions with the tapped name morphing into the title (`data-vtn`), constellation
+draw-on, pointer starlight, rare meteors. Calm/reduced motion stops all of it.
+Fixed DESIGN.md defects: tracked-caps eyebrow + scroll cue, "?" bullet, wordmark under 24px.
+Gotcha: horizontal padding on the `.wd` masks made every headline 1px too wide and
+`fitText` shrank them 5% × 14 — keep mask padding vertical only.
+Verified: 310/310 entries at 1440 + 390 with no overflow or page errors; flows (⌘K →
+Enter, J, skins, hover previews); reduced motion leaves no hidden words.
+Figma record (user's drafts, via Figma MCP html_to_figma): https://www.figma.com/design/K5gk9VL90NpeCnGwvJYxHZ
+Deploy to noblepatterns still needs the user's explicit go-ahead.

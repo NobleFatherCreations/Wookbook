@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" data-skin="midnight">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0E1326" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ECEDF6" media="(prefers-color-scheme: light)">
 <link rel="icon" href="{{LOGO}}">
-<script>(function(){try{var v=localStorage.getItem("fg_theme");var t=v!==null?JSON.parse(v):"dark";document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}catch(e){}})();</script>
+<script>(function(){var r=document.documentElement;try{var k=localStorage.getItem("fg_skin"),v=localStorage.getItem("fg_theme");var s=k!==null?JSON.parse(k):(v!==null&&JSON.parse(v)==="light"?"daylight":"midnight");r.setAttribute("data-skin",s);r.setAttribute("data-theme",s==="daylight"?"light":"dark")}catch(e){r.setAttribute("data-skin","midnight")}})();</script>
 <style>
 {{FONTS}}
 {{CSS}}
@@ -24,7 +24,7 @@
     <a class="brand" href="#/" data-nav="home"><img src="{{LOGO}}" alt="" width="32" height="32"><b><span class="the">The </span>Pattern Decoder</b></a>
     <span class="spacer"></span>
     <nav class="tnav" aria-label="Main">
-      <a href="#/search" data-nav="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
+      <a href="#/search" data-nav="search" data-palette class="find"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search<kbd class="kb" aria-hidden="true">⌘K</kbd></a>
       <a href="#/guide" data-nav="guide">Help me figure it out</a>
       <a href="#/sky" data-nav="sky">The sky</a>
       <a href="#/browse" data-nav="browse">Browse</a>
@@ -32,9 +32,11 @@
       <a href="#/about" data-nav="about" class="safe-link">Use this safely</a>
     </nav>
     <button class="icon-btn" type="button" data-calm aria-pressed="false" aria-label="Turn on calm mode"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c3-5 5-5 8 0s5 5 8 0"/></svg></button>
-    <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"></button>
+    <div class="skin-wrap"><button class="icon-btn" type="button" data-skinmenu aria-haspopup="true" aria-expanded="false" aria-controls="skins" aria-label="Choose the colour of the sky"><span class="skin-dot" aria-hidden="true"></span></button>
+      <div class="skins" id="skins" hidden role="group" aria-label="Colour of the sky"></div></div>
   </div>
 </header>
+<nav class="rail" id="rail" aria-label="Constellations"></nav>
 <main id="main" tabindex="-1">
   <noscript><div class="wrap"><p>The Pattern Decoder needs JavaScript to search and show entries. Everything runs on your device; nothing is sent anywhere.</p></div></noscript>
 </main>
@@ -53,6 +55,7 @@
   <a href="#/saved" data-nav="saved"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Saved</a>
 </nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="pal" id="pal" hidden><div class="pal-scrim" data-palclose></div><div class="pal-box" role="dialog" aria-modal="true" aria-label="Go to anything"></div></div>
 <script type="application/json" id="data">{{DATA}}</script>
 {{HOUSE}}
 <script>

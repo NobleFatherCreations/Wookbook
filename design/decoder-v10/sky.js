@@ -19,12 +19,18 @@ const Sky = (() => {
   const stars = S.pos.map((p, i) => ({ x: p[0], y: p[1], r: 1.4 + Math.min(3.2, (D.entries[i].pop || 0) * .38), ph: (i * 2.399) % 6.283 }));
   function relayout() { const n = pickLayout(); if (n === S) return false; S = n; layers = null; S.pos.forEach((p, i) => { stars[i].x = p[0]; stars[i].y = p[1]; }); api.S = S; return true; }
   const sprite = {};
+  /* Colours come from the page's colourway (CSS custom properties), so the sky and the
+     page always agree. Each constellation also has its own light, from the data. */
+  const hexRGB = h => [1, 3, 5].map(n => parseInt(h.slice(n, n + 2), 16));
   const ink = () => {
+    const cs = getComputedStyle(document.documentElement), v = n => cs.getPropertyValue("--sky-" + n).trim();
     const light = document.documentElement.getAttribute("data-theme") === "light";
-    return light ? { star: "40,48,100", glow: "40,48,100", brass: "122,90,22", line: "40,48,100", dust: "40,48,100", text: "20,26,51" }
-                 : { star: "236,232,220", glow: "190,208,255", brass: "230,198,124", line: "190,208,255", dust: "190,208,255", text: "236,232,220" };
+    const g = {}; D.groups.forEach(G => { const c = hexRGB(G.c || "#BED0FF"); g[G.k] = (light ? c.map(x => Math.round(x * .5)) : c).join(","); });
+    return { star: v("star") || "236,232,220", glow: v("glow") || "190,208,255", brass: v("brass") || "230,198,124", line: v("line") || "190,208,255", dust: v("dust") || "190,208,255", text: v("text") || "236,232,220", plate: v("plate") || "10,14,30", g, light };
   };
   let C = ink();
+  let gfT0 = 0, gfLast = null;                            // when the focused constellation last changed: its lines draw themselves in
+  let meteor = null, nextMeteor = performance.now() + 5000;
   function makeSprite(rgb) {
     const key = rgb, c = document.createElement("canvas"); c.width = c.height = 64; const g = c.getContext("2d");
     const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
@@ -100,6 +106,14 @@ const Sky = (() => {
     }
     if (vel.x || vel.y) { cam.x += vel.x * dt / cam.k; cam.y += vel.y * dt / cam.k; vel.x *= .93; vel.y *= .93; if (Math.abs(vel.x) < .005 && Math.abs(vel.y) < .005) vel.x = vel.y = 0; else animating = true; clampCam(); }
     if (appear < 1) { appear = Math.min(1, appear + dt / 1500); animating = true; }
+    if (st.groupFocus !== gfLast) { gfLast = st.groupFocus; gfT0 = performance.now(); }
+    if (st.groupFocus && motionOK() && performance.now() - gfT0 < 1800) animating = true;
+    if (!meteor && !lite && alive() && performance.now() > nextMeteor && !tween) {
+      const fromL = Math.random() < .5, x = W * (.15 + Math.random() * .7), y = H * (.06 + Math.random() * .3), sp = 380 + Math.random() * 260;
+      meteor = { t0: performance.now(), ms: 950, x, y, vx: (fromL ? 1 : -1) * sp, vy: sp * (.35 + Math.random() * .3) };
+      nextMeteor = performance.now() + 9000 + Math.random() * 14000;
+    }
+    if (meteor) animating = true;
     if (animating || dirty || alive()) {
       draw(t);
       /* adapt: if frames keep arriving slower than ~30fps while the camera moves, drop the decorative layers */
@@ -127,14 +141,24 @@ const Sky = (() => {
     }
     cx.globalAlpha = 1;
     /* soft nebula at each constellation: one cached glow, scaled */
-    const nb = neb(C.glow);
     if (!lite) for (const g in S.groups) {
-      const G = S.groups[g], x = sx(G.x), y = sy(G.y), r = G.r * cam.k * 1.5;
+      const G = S.groups[g], x = sx(G.x), y = sy(G.y), r = G.r * cam.k * 1.6;
       if (x < -r || x > W + r || y < -r || y > H + r) continue;
-      cx.globalAlpha = Math.min(1, (st.groupFocus === g ? .2 : .11) * dim * ap);
-      cx.drawImage(nb, x - r, y - r, r * 2, r * 2);
+      cx.globalAlpha = Math.min(1, (st.groupFocus === g ? .3 : st.groupFocus ? .06 : .15) * (C.light ? .6 : 1) * dim * ap);
+      cx.drawImage(neb(C.g[g] || C.glow), x - r, y - r, r * 2, r * 2);
     }
     cx.globalAlpha = 1;
+    /* a shooting star, now and then, on the open sky only */
+    if (meteor) {
+      const p = (performance.now() - meteor.t0) / meteor.ms;
+      if (p >= 1) meteor = null; else {
+        const hx = meteor.x + meteor.vx * p, hy = meteor.y + meteor.vy * p, len = 160 * Math.sin(p * Math.PI) + 10;
+        const n = Math.hypot(meteor.vx, meteor.vy), tx = hx - meteor.vx / n * len, ty = hy - meteor.vy / n * len;
+        const gr = cx.createLinearGradient(hx, hy, tx, ty);
+        gr.addColorStop(0, "rgba(" + C.star + "," + (.9 * Math.sin(p * Math.PI) * dim) + ")"); gr.addColorStop(1, "rgba(" + C.star + ",0)");
+        cx.strokeStyle = gr; cx.lineWidth = 1.4; cx.lineCap = "round"; cx.beginPath(); cx.moveTo(hx, hy); cx.lineTo(tx, ty); cx.stroke(); cx.lineWidth = 1; cx.lineCap = "butt";
+      }
+    }
     const focusSet = st.focus, fSet = focusSet ? new Set(focusSet) : null;
     const gDim = i => st.groupFocus ? (D.entries[i].g === st.groupFocus ? 1 : .22) : 1;
     /* lines: related links inside a constellation, faint; focused links stronger.
@@ -147,7 +171,8 @@ const Sky = (() => {
       const lod = LODS.findIndex(ls => ls >= cam.k * .92), intro = Math.max(0, Math.min(1, ap * 1.6 - .5));
       for (const L of layers) {
         const pr = L.per[lod < 0 ? LODS.length - 1 : lod];
-        const a = .2 * dim * intro * (st.groupFocus && st.groupFocus !== L.g ? .05 : 1);
+        if (st.groupFocus === L.g) continue;
+        const a = .2 * dim * intro * (st.groupFocus ? .05 : 1);
         if (a < .01) continue;
         const x = sx(L.x0), y = sy(L.y0), w = pr.c.width / pr.ls * cam.k, h = pr.c.height / pr.ls * cam.k;
         if (x > W || y > H || x + w < 0 || y + h < 0) continue;
@@ -155,8 +180,10 @@ const Sky = (() => {
       }
       cx.globalAlpha = 1;
     }
-    const buckets = [[], [], [], []];
+    const buckets = [[], [], [], []], mine = [];
+    const gf = st.groupFocus;
     for (const [i, j] of S.edges) {
+      if (gf && D.entries[i].g === gf && D.entries[j].g === gf && !(fSet && fSet.has(i) && fSet.has(j))) { mine.push(i, j); continue; }
       const a = stars[i], b = stars[j];
       const x1 = sx(a.x), y1 = sy(a.y), x2 = sx(b.x), y2 = sy(b.y);
       if ((x1 < -50 && x2 < -50) || (x1 > W + 50 && x2 > W + 50) || (y1 < -50 && y2 < -50) || (y1 > H + 50 && y2 > H + 50)) continue;
@@ -176,6 +203,19 @@ const Sky = (() => {
       cx.beginPath();
       for (let q = 0; q < L.length; q += 5) { cx.moveTo(L[q], L[q + 1]); cx.lineTo(L[q + 2], L[q + 3]); }
       cx.stroke();
+    }
+    /* the focused constellation, in its own colour, drawing itself edge by edge */
+    if (mine.length) {
+      const prog = motionOK() ? (performance.now() - gfT0) / 1700 : 9, m = mine.length / 2;
+      cx.strokeStyle = "rgba(" + (C.g[gf] || C.line) + "," + (.62 * dim) + ")"; cx.lineWidth = 1.15; cx.beginPath();
+      for (let q = 0; q < mine.length; q += 2) {
+        const a = stars[mine[q]], b = stars[mine[q + 1]];
+        const e = Math.max(0, Math.min(1, (prog - (q / 2) / m * .55) / .45)); if (!e) continue;
+        const x1 = sx(a.x), y1 = sy(a.y), x2 = x1 + (sx(b.x) - x1) * e, y2 = y1 + (sy(b.y) - y1) * e;
+        if (st.clipY != null && Math.min(y1, y2) > st.clipY) continue;
+        cx.moveTo(x1, y1); cx.lineTo(x2, y2);
+      }
+      cx.stroke(); cx.lineWidth = 1;
     }
     /* cross-constellation links of the focused star */
     if (st.ring >= 0 && st.link) {
@@ -205,8 +245,10 @@ const Sky = (() => {
       a *= delay;
       if (st.clipY != null) a *= Math.max(0, Math.min(1, (st.clipY - y) / 70 + 1));
       const tw = aliveNow ? .82 + .18 * Math.sin(time * (.8 + (i % 7) * .13) + s.ph) : 1;
-      const size = Math.max(6, s.r * cam.k * 8.5) * (lit ? 1.5 : 1) * (i === st.ring ? 1.6 : 1) * (st.groupFocus && D.entries[i].g === st.groupFocus ? 1.35 : 1);
-      const img = (lit || vis || sv || i === st.ring) ? brass : star;
+      let near = 0; if (st.px != null) { const dd = Math.hypot(x - st.px, y - st.py); near = dd < 170 ? 1 - dd / 170 : 0; near *= near; a = Math.min(1, a * (1 + near * 1.6)); }
+      const mineG = st.groupFocus && D.entries[i].g === st.groupFocus;
+      const size = Math.max(6, s.r * cam.k * 8.5) * (lit ? 1.5 : 1) * (i === st.ring ? 1.6 : 1) * (mineG ? 1.35 : 1) * (1 + near * .6) * (i === st.hover ? 1.5 : 1);
+      const img = (lit || vis || sv || i === st.ring || i === st.hover) ? brass : mineG ? spr(C.g[st.groupFocus]) : star;
       cx.globalAlpha = Math.min(1, a * tw);
       cx.drawImage(img, x - size, y - size, size * 2, size * 2);
       /* core point */
@@ -231,7 +273,7 @@ const Sky = (() => {
         const G = S.groups[g.k]; const x = sx(G.x), y = sy(G.y - G.r - 40);
         if (x < -80 || x > W + 80 || y < 74 || y > H - 20) continue;
         const on = st.groupFocus === g.k, a = (on ? 1 : .62) * ap * Math.max(.4, dim);
-        cx.fillStyle = "rgba(" + C.brass + "," + a + ")";
+        cx.fillStyle = "rgba(" + (C.g[g.k] || C.brass) + "," + a + ")";
         const label = (W < 700 ? g.short : g.label).toUpperCase(); cx.letterSpacing = W < 700 ? "0.1em" : "0.16em";
         const tw = cx.measureText(label).width; let lx = x;
         if (lx - tw / 2 < 12) lx = 12 + tw / 2; if (lx + tw / 2 > W - 12) lx = W - 12 - tw / 2;
@@ -251,7 +293,7 @@ const Sky = (() => {
         let lx = x + 12, ly = y; if (lx + w > W - 8) lx = x - 12 - w;
         if (i !== st.hover && placed.some(p => Math.abs(p[0] - lx) < Math.max(w, p[2]) && Math.abs(p[1] - ly) < 17)) continue;
         placed.push([lx, ly, w]);
-        cx.fillStyle = "rgba(" + (C.text === "236,232,220" ? "10,14,30" : "248,248,252") + ",.72)";
+        cx.fillStyle = "rgba(" + C.plate + ",.78)";
         const rx = lx - 6, ry = ly - 11; cx.beginPath(); cx.roundRect ? cx.roundRect(rx, ry, w, 22, 11) : cx.rect(rx, ry, w, 22); cx.fill();
         cx.fillStyle = "rgba(" + C.text + ",.95)"; cx.fillText(txt, lx + 1, ly + .5);
       }
@@ -296,7 +338,12 @@ const Sky = (() => {
   cv.addEventListener("wheel", e => { if (!st.interactive) return; e.preventDefault(); setK(cam.k * Math.exp(-e.deltaY * .0016), e.clientX, e.clientY); tween = null; invalidate(); }, { passive: false });
   addEventListener("resize", () => { relayout(); resize(); if (api.onResize) api.onResize(); });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) invalidate(); });
-  new MutationObserver(() => { C = ink(); invalidate(); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+  new MutationObserver(() => { C = ink(); layers = null; invalidate(); if (motionOK() && cv.animate) cv.animate([{ opacity: .2 }, { opacity: 1 }], { duration: 700, easing: "cubic-bezier(.16,1,.3,1)" }); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme", "data-skin"] });
+  /* the stars nearest the pointer brighten a little, wherever the sky is showing */
+  if (matchMedia("(pointer: fine)").matches) {
+    addEventListener("pointermove", e => { if (!motionOK() || st.dim < .6) { if (st.px != null) { st.px = null; invalidate(); } return; } st.px = e.clientX; st.py = e.clientY; invalidate(); }, { passive: true });
+    document.addEventListener("pointerleave", () => { st.px = null; invalidate(); });
+  }
 
   const api = {
     cam, st, stars, fitK, S, resize, invalidate, flyTo, setK,
@@ -304,6 +351,7 @@ const Sky = (() => {
     setCalm(v) { CALM = v; store.set("calm", v); if (v) { tween = null; vel.x = vel.y = 0; } invalidate(); },
     setMarks(v, s) { visited.clear(); saved.clear(); v.forEach(i => visited.add(i)); s.forEach(i => saved.add(i)); invalidate(); },
     set(opts) { Object.assign(st, opts); invalidate(); },
+    colorOf: g => C.g[g],
     lit(list, labels) { st.lit = new Set(list || []); st.labelLit = !!labels; invalidate(); },
     skipIntro() { appear = 1; },
     toWorld: (px, py) => [wx(px), wy(py)],

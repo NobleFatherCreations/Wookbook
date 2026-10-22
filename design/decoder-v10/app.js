@@ -43,6 +43,7 @@ const ICONS={
   link:'<path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/>',
   steps:'<path d="M4 6h10M4 12h16M4 18h7"/>',
   telescope:'<path d="m10.5 8.5 7-4 2 3.5-7 4z"/><path d="m8 11-3.5 2 1 1.7L9 12.7"/><path d="M12 14.5 9 21M12 14.5l3 6.5"/>',
+  up:'<path d="m6 15 6-6 6 6"/>', down:'<path d="m6 9 6 6 6-6"/>', enter:'<path d="M20 5v7a3 3 0 0 1-3 3H5"/><path d="m9 11-4 4 4 4"/>',
   plus:'<path d="M12 5v14M5 12h14"/>', minus:'<path d="M5 12h14"/>', reset:'<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/>', calm:'<path d="M4 12c3-5 5-5 8 0s5 5 8 0"/>',
 };
 
@@ -93,7 +94,7 @@ const href = h => "#/"+h;
 const entryHref = e => href("entry/"+e.s);
 function rowHTML(e, opts){
   opts=opts||{};
-  return '<a class="row" href="'+entryHref(e)+'" data-vt="'+e.i+'">'+
+  return '<a class="row" href="'+entryHref(e)+'" data-vt="'+e.i+'" data-i="'+e.i+'" style="--c:'+GROUP[e.g].c+'">'+
     '<span class="nm"><span data-vtn="'+e.i+'">'+H(e.n)+'</span>'+(e.sens?'<span class="dot-safe" title="Safety-sensitive">'+ic("shield")+'<span class="sr-only">Safety-sensitive</span></span>':'')+'</span>'+
     (e.sub?'<span class="sub">'+H(e.sub)+'</span>':'')+
     '<span class="df">'+H(e.f.short_definition)+'</span>'+
@@ -204,7 +205,7 @@ function way(route,icon,title,text,go){
 function groupTiles(lv){ lv=lv||3;
   return '<div class="groups">'+D.groups.map(g=>{
     const list=IN_GROUP[g.k];
-    return '<a class="group" href="'+href("browse/"+g.k)+'"><h'+lv+' class="gt">'+H(g.label)+'</h'+lv+'><p>'+H(g.blurb)+'</p><span class="n">'+list.length+' tactics</span></a>';
+    return '<a class="group" href="'+href("browse/"+g.k)+'" data-preview="'+g.k+'" style="--c:'+g.c+'"><h'+lv+' class="gt"><i class="gd" aria-hidden="true"></i>'+H(g.label)+'</h'+lv+'><p>'+H(g.blurb)+'</p><span class="n">'+list.length+' tactics</span></a>';
   }).join("")+'</div>';
 }
 function viewSearch(){
@@ -317,9 +318,9 @@ function viewEntry(slug){
     '<div>'+
     '<header class="e-head">'+
       '<p class="eyebrow"><a href="'+href("browse")+'">Browse</a> <span aria-hidden="true">/</span> <a href="'+href("browse/"+g.k)+'">'+H(g.label)+'</a></p>'+
-      '<h1 class="h1" style="--vt:t'+e.i+'">'+H(e.n)+'</h1>'+
+      '<h1 class="h1" data-vtn="'+e.i+'">'+H(e.n)+'</h1>'+
       (e.sub?'<p class="e-sub">'+H(e.sub)+'</p>':'')+
-      '<div class="e-meta">'+(e.sens?'<span class="badge safety">'+ic("shield")+'Safety-sensitive</span>':'')+
+      '<div class="e-meta"><span class="pager" role="group" aria-label="Position in '+esc(g.label)+'"><a class="pg" href="'+entryHref(prev)+'" data-pg="prev" aria-label="Previous in '+esc(g.label)+': '+esc(prev.n)+'">'+ic("up")+'</a><span class="pos"><b>'+(gi+1)+'</b> / '+inG.length+'</span><a class="pg" href="'+entryHref(next)+'" data-pg="next" aria-label="Next in '+esc(g.label)+': '+esc(next.n)+'">'+ic("down")+'</a><span class="kb-hint" aria-hidden="true"><kbd>J</kbd><kbd>K</kbd></span></span>'+(e.sens?'<span class="badge safety">'+ic("shield")+'Safety-sensitive</span>':'')+
         (e.abs&&e.abs.length?'<span>Also called '+e.abs.map(H).join(", ")+'</span>':'')+'</div>'+
       '<div class="e-actions">'+
         '<button class="btn" type="button" data-star="'+esc(e.n)+'" aria-pressed="'+starred+'">'+ic(starred?"starOn":"star")+'<span>'+(starred?"Saved":"Save")+'</span></button>'+
@@ -448,7 +449,7 @@ let SKY_PICK=-1;
 function viewSky(){
   return '<div class="sky-ui">'+
     '<div class="sky-top"><h1 class="sky-h">The sky</h1><p class="small muted">Every tactic is a star. Drag to move, pinch or scroll to zoom, tap a star to read about it.</p></div>'+
-    '<div class="sky-groups" role="group" aria-label="Fly to a constellation">'+D.groups.map(g=>'<button class="chip" type="button" data-skygroup="'+g.k+'">'+H(g.label)+'</button>').join("")+'</div>'+
+    '<div class="sky-groups" role="group" aria-label="Fly to a constellation">'+D.groups.map(g=>'<button class="chip" type="button" data-skygroup="'+g.k+'" style="--c:'+g.c+'"><i class="gd" aria-hidden="true"></i>'+H(g.label)+'</button>').join("")+'</div>'+
     '<div class="sky-tools" role="group" aria-label="Zoom"><button class="icon-btn solid" type="button" data-zoom="1" aria-label="Zoom in">'+ic("plus")+'</button><button class="icon-btn solid" type="button" data-zoom="-1" aria-label="Zoom out">'+ic("minus")+'</button><button class="icon-btn solid" type="button" data-zoom="0" aria-label="Show everything">'+ic("reset")+'</button></div>'+
     '<aside class="sheet" id="sheet" hidden aria-live="polite"></aside>'+
     '<p class="sr-only">This map is visual. To browse the same tactics as lists, use Browse or A to Z.</p>'+
@@ -457,10 +458,10 @@ function viewSky(){
 function sheetHTML(i){
   const e=E[i]; const g=GROUP[e.g];
   return '<button class="sheet-x" type="button" data-sheetclose aria-label="Close">'+ic("close")+'</button>'+
-    '<p class="eyebrow">'+H(g.label)+'</p><h2 class="sheet-t">'+H(e.n)+'</h2>'+(e.sub?'<p class="e-sub" style="font-size:17px;margin:4px 0 0">'+H(e.sub)+'</p>':'')+
+    '<p class="eyebrow" style="color:'+g.c+'">'+H(g.label)+'</p><h2 class="sheet-t" data-vtn="'+e.i+'">'+H(e.n)+'</h2>'+(e.sub?'<p class="e-sub" style="font-size:17px;margin:4px 0 0">'+H(e.sub)+'</p>':'')+
     '<p class="sheet-s">'+H(e.f.plain_language_summary)+'</p>'+
     (e.sens?'<p class="small" style="color:var(--ember);margin:0 0 12px">'+ic("shield")+' Safety-sensitive</p>':'')+
-    '<div class="chips"><a class="btn primary" href="'+entryHref(e)+'">Read this entry</a>'+(e.rel&&e.rel.length?'<button class="btn" type="button" data-skylink="'+i+'">Show its neighbours</button>':'')+'</div>';
+    '<div class="chips"><a class="btn primary" href="'+entryHref(e)+'" data-vt="'+e.i+'">Read this entry</a>'+(e.rel&&e.rel.length?'<button class="btn" type="button" data-skylink="'+i+'">Show its neighbours</button>':'')+'</div>';
 }
 function pickStar(i){
   const sh=$("#sheet"); if(!sh) return;
@@ -488,12 +489,15 @@ const ROUTES={"":viewHome,sky:viewSky,search:viewSearch,browse:a=>a?viewGroup(a)
 const SCROLL = {};
 
 /* ---------- where the camera goes on each page ---------- */
-let HOME_SCROLL=false;
+let HOME_SCROLL=false, ROUTE_G=null, ROUTE_DIM=1;
 function skyRoute(r,first){
   const phone=innerWidth<760, fk=Sky.fitK(), S=Sky.S;
   const fly=(x,y,k,ms,ox,oy)=>Sky.flyTo(x,y,k,first?0:ms,ox||0,oy||0);
   Sky.st.interactive=false; Sky.st.chain=null; Sky.set({ring:-1,link:false,focus:null,groupFocus:null,labels:false,names:false,hover:-1});
   Sky.lit([]); HOME_SCROLL=false; document.body.dataset.sky=r.view;
+  const rg=r.view==="browse"&&GROUP[r.arg]?r.arg:(r.view==="entry"?((BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]||{}).g):null);
+  ROUTE_G=rg||null; if(rg){ document.body.style.setProperty("--g",GROUP[rg].c); document.body.dataset.g=rg; } else { document.body.style.removeProperty("--g"); delete document.body.dataset.g; }
+  document.querySelectorAll("#rail a").forEach(a=>{ if(a.dataset.rail===rg) a.setAttribute("aria-current","true"); else a.removeAttribute("aria-current"); });
   const win=(()=>{const w=$(".sky-window"); if(!w) return null; const b=w.getBoundingClientRect(); return {oy:b.top+scrollY+b.height/2-innerHeight/2,h:b.height,w:b.width,bottom:b.bottom+scrollY};})();
   let dim=.28;
   if(r.view===""){
@@ -526,7 +530,7 @@ function skyRoute(r,first){
     fly(S.w/2,S.h/2,fk*(phone?1.1:1),1000,0,0); dim=.24;
   }
   const cp=$(".stage-copy")||$(".sky-top"); if(cp){ const b=cp.getBoundingClientRect(); Sky.set({avoid:{x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}}); } else Sky.set({avoid:null});
-  Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky");
+  ROUTE_DIM=dim; Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky");
   if(r.view===""){ if(STORY) STORY.step=-2; storyUpdate(); }
 }
 function cvPointer(on){ $("#sky").style.pointerEvents=on?"auto":"none"; $("#sky").style.cursor=on?"grab":"default"; $("#sky").tabIndex=on?0:-1; }
@@ -580,7 +584,24 @@ function render(){
     afterRender(r); skyRoute(r,LAST_KEY===null&&!INTRO_PLAYED);
     INTRO_PLAYED=true;
   };
-  go();
+  const vt=PENDING_VT; PENDING_VT=null;
+  if(!INTRO_PLAYED||!document.startViewTransition||!motionOn()){ go(); splitHeads(); return; }
+  if(vt!=null){ const src=document.querySelector('#main [data-vtn="'+vt+'"]'); if(src) src.style.viewTransitionName="title"; }
+  document.documentElement.classList.toggle("vt-title",vt!=null);
+  let t; try{ t=document.startViewTransition(()=>{ go(); if(vt!=null){ const h=document.querySelector('#main h1[data-vtn="'+vt+'"]'); if(h) h.style.viewTransitionName="title"; } splitHeads(vt!=null); }); }catch(e){ go(); splitHeads(); return; }
+  t.finished.finally(()=>{ document.querySelectorAll('[style*="view-transition-name"]').forEach(x=>x.style.viewTransitionName=""); document.documentElement.classList.remove("vt-title"); });
+}
+function motionOn(){ return !Sky.calm&&!matchMedia("(prefers-reduced-motion: reduce)").matches; }
+/* Headlines rise into place word by word, each behind its own mask. */
+function splitHeads(skipTitle){
+  document.querySelectorAll("#main .h1,#main .stage-h,#main .beat-h,#main .sky-h").forEach(el=>{
+    if(el.dataset.split||el.children.length) return; el.dataset.split="1";
+    if(skipTitle&&el.dataset.vtn!=null){ return; }
+    const words=el.textContent.trim().split(/\s+/);
+    el.setAttribute("aria-label",el.textContent.trim());
+    el.innerHTML=words.map((w,i)=>'<span class="wd" aria-hidden="true"><span style="--i:'+i+'">'+esc(w)+'</span></span>').join(" ");
+  });
+  fitAll();
 }
 function titleFor(r){
   const base="The Pattern Decoder";
@@ -686,7 +707,7 @@ document.addEventListener("input",ev=>{
 });
 document.addEventListener("keydown",ev=>{
   if(ev.key==="/"&&!/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName||"")&&!ev.metaKey&&!ev.ctrlKey){
-    ev.preventDefault(); const h=$("#q-home")||$("#q-page"); if(h) h.focus(); else { FRESH=true; location.hash="#/search"; } }
+    ev.preventDefault(); const h=$("#q-home")||$("#q-page"); if(h) h.focus(); else palOpen(); }
 });
 function copyText(text,msg){
   const done=()=>toast(msg);
@@ -700,6 +721,96 @@ function themeIcon(){ const b=$("[data-theme-toggle]"); if(!b) return; const lig
   b.innerHTML=ic(light?"moon":"sun"); b.setAttribute("aria-label",light?"Switch to the dark theme":"Switch to the light theme"); }
 themeIcon(); calmUI(); refreshMarks();
 Sky.onPick=i=>pickStar(i);
+
+/* ---------- the rail: ten marks, one per constellation (after Stripe Press's spine index) ---------- */
+(function rail(){ const r=$("#rail"); if(!r) return;
+  r.innerHTML=D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-rail="'+g.k+'" data-preview="'+g.k+'" style="--c:'+g.c+'"><i aria-hidden="true"></i><span>'+H(g.label)+'</span></a>').join(""); })();
+/* hovering a constellation anywhere lights it up in the sky, without moving the camera */
+let PREV_T;
+function preview(k){ clearTimeout(PREV_T); if(typeof Sky==="undefined"||document.body.dataset.sky==="sky"||document.body.dataset.sky==="entry") return;
+  PREV_T=setTimeout(()=>{ if(k) Sky.set({groupFocus:k,dim:Math.max(ROUTE_DIM,.85)}); else Sky.set({groupFocus:ROUTE_G,dim:ROUTE_DIM}); },k?60:120); }
+document.addEventListener("pointerover",ev=>{ if(ev.pointerType!=="mouse") return;
+  const p=ev.target.closest("[data-preview]"); if(p){ preview(p.dataset.preview); return; }
+  const row=ev.target.closest(".row[data-i]"); const w=$(".sky-window");
+  if(row&&w&&w.getBoundingClientRect().bottom>80){ Sky.set({hover:+row.dataset.i}); } });
+document.addEventListener("pointerout",ev=>{ if(ev.pointerType!=="mouse") return;
+  const p=ev.target.closest("[data-preview]"); if(p&&!p.contains(ev.relatedTarget)) preview(null);
+  const row=ev.target.closest(".row[data-i]"); if(row&&!row.contains(ev.relatedTarget)&&!Sky.st.interactive) Sky.set({hover:-1}); });
+document.addEventListener("focusin",ev=>{ const p=ev.target.closest&&ev.target.closest("[data-preview]"); if(p) preview(p.dataset.preview); });
+document.addEventListener("focusout",ev=>{ const p=ev.target.closest&&ev.target.closest("[data-preview]"); if(p) preview(null); });
+
+/* ---------- colourways: the sky you read under ---------- */
+const SKINS=[["midnight","Midnight","Deep blue, gold stars","#E8C877","#0A1030"],["aurora","Aurora","Green light, far north","#8FE6C6","#04201E"],["dusk","Dusk","Violet, after sunset","#D2B6FF","#1C0E2A"],["eclipse","Eclipse","Black, silver stars","#E6E6EC","#000000"],["daylight","Daylight","Light, for bright rooms","#8A6414","#ECEDF6"]];
+function skinNow(){ return document.documentElement.getAttribute("data-skin")||"midnight"; }
+function skinMenu(){ const m=$("#skins"); if(!m) return; const cur=skinNow();
+  m.innerHTML='<p class="skins-h">The sky</p>'+SKINS.map(s=>'<button type="button" data-skin="'+s[0]+'" aria-pressed="'+(s[0]===cur)+'"><span class="sw" style="--a:'+s[3]+';--b:'+s[4]+'"></span><span><b>'+s[1]+'</b><small>'+s[2]+'</small></span></button>').join(""); }
+function setSkin(k){ const html=document.documentElement; html.setAttribute("data-skin",k); html.setAttribute("data-theme",k==="daylight"?"light":"dark"); store.set("skin",k); store.set("theme",k==="daylight"?"light":"dark"); skinMenu(); }
+function skinOpen(on){ const m=$("#skins"), b=$("[data-skinmenu]"); if(!m||!b) return; m.hidden=!on; b.setAttribute("aria-expanded",on); if(on){ skinMenu(); const p=m.querySelector('[aria-pressed="true"]'); if(p) p.focus(); } }
+document.addEventListener("click",ev=>{
+  const b=ev.target.closest("[data-skinmenu]"); if(b){ skinOpen($("#skins").hidden); return; }
+  const s=ev.target.closest("[data-skin]"); if(s&&s.closest("#skins")){ setSkin(s.dataset.skin); toast(SKINS.find(x=>x[0]===s.dataset.skin)[1]+" sky"); return; }
+  if(!ev.target.closest("#skins")&&$("#skins")&&!$("#skins").hidden) skinOpen(false);
+});
+
+/* ---------- go to anything: a command menu (after Linear) ---------- */
+const PAGES=[["guide","Help me figure it out","Two short questions"],["sky","The sky","Every tactic as a star"],["common","The most common","Where to begin"],["browse","Browse by what it does","Ten constellations"],["all","A–Z","All "+E.length+" tactics"],["patterns","How tactics combine","Patterns, step by step"],["saved","Saved and recent","On this device"],["about","Use this guide safely","Read this first if you are unsure"]];
+const PAL={sel:0,items:[],ret:null};
+function palItems(q){
+  const n=norm(q), out=[];
+  if(!n){
+    store.get("trail",[]).slice(0,3).map(t=>BY[t.name]).filter(Boolean).forEach(e=>out.push({h:"Recently read",href:entryHref(e),t:e.n,s:GROUP[e.g].label,c:GROUP[e.g].c,vt:e.i}));
+    PAGES.forEach(p=>out.push({h:"Go to",href:href(p[0]),t:p[1],s:p[2]}));
+    D.groups.forEach(g=>out.push({h:"Constellations",href:href("browse/"+g.k),t:g.label,s:IN_GROUP[g.k].length+" tactics",c:g.c,g:g.k}));
+    return out;
+  }
+  search(q).list.slice(0,7).forEach(e=>out.push({h:"Tactics",href:entryHref(e),t:e.n,s:e.f.short_definition,c:GROUP[e.g].c,vt:e.i}));
+  D.groups.filter(g=>norm(g.label+" "+g.blurb).includes(n)).forEach(g=>out.push({h:"Constellations",href:href("browse/"+g.k),t:g.label,s:IN_GROUP[g.k].length+" tactics",c:g.c,g:g.k}));
+  PAGES.filter(p=>norm(p[1]+" "+p[2]).includes(n)).forEach(p=>out.push({h:"Go to",href:href(p[0]),t:p[1],s:p[2]}));
+  out.push({h:"Search",href:href("search"),t:"Search every entry for “"+q+"”",s:"Full results, with the matching stars lit",q});
+  return out;
+}
+function palDraw(){
+  const box=$("#pal .pal-box"), list=$("#pal-list"), q=$("#pal-q").value; PAL.items=palItems(q); PAL.sel=Math.min(PAL.sel,PAL.items.length-1);
+  let h="", last=null;
+  PAL.items.forEach((it,i)=>{ if(it.h!==last){ h+='<li class="pal-h" role="presentation">'+it.h+'</li>'; last=it.h; }
+    h+='<li role="option" id="pi-'+i+'" class="pal-it" data-pi="'+i+'" aria-selected="'+(i===PAL.sel)+'"'+(it.c?' style="--c:'+it.c+'"':'')+'><i class="'+(it.c?'gd':'gd none')+'" aria-hidden="true"></i><span class="pt"><b>'+H(it.t)+'</b><span>'+H(it.s||"")+'</span></span><span class="pk" aria-hidden="true">'+ic("enter")+'</span></li>'; });
+  list.innerHTML=h||'<li class="pal-h">Nothing here</li>';
+  $("#pal-q").setAttribute("aria-activedescendant",PAL.items.length?"pi-"+PAL.sel:"");
+  const sel=$("#pi-"+PAL.sel); if(sel) sel.scrollIntoView({block:"nearest"});
+  const it=PAL.items[PAL.sel]; if(it&&typeof Sky!=="undefined"&&ROUTE_DIM>=.6){ if(it.vt!=null) Sky.set({hover:it.vt}); else Sky.set({hover:-1}); }
+}
+function palOpen(){
+  const p=$("#pal"); if(!p||!p.hidden) return; PAL.ret=document.activeElement; PAL.sel=0;
+  p.querySelector(".pal-box").innerHTML='<div class="pal-in">'+ic("search")+'<label class="sr-only" for="pal-q">Go to a tactic, group or page</label><input id="pal-q" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Go to a tactic, a group or a page"><kbd class="kb">esc</kbd></div><ul class="pal-list" id="pal-list" role="listbox" aria-label="Results"></ul><p class="pal-foot" aria-hidden="true"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></p>';
+  p.hidden=false; document.documentElement.classList.add("pal-on"); palDraw(); $("#pal-q").focus();
+}
+function palClose(go){
+  const p=$("#pal"); if(!p||p.hidden) return; p.hidden=true; document.documentElement.classList.remove("pal-on"); if(!go&&typeof Sky!=="undefined"&&!Sky.st.interactive) Sky.set({hover:-1});
+  if(!go&&PAL.ret&&PAL.ret.focus) PAL.ret.focus({preventScroll:true});
+}
+function palGo(i){ const it=PAL.items[i]; if(!it) return; palClose(true); if(it.q!=null) SEARCH_Q=it.q; if(LAST_KEY) SCROLL[LAST_KEY]=window.scrollY; FRESH=true; delete SCROLL[it.href]; PENDING_VT=null; location.hash=it.href; }
+document.addEventListener("input",ev=>{ if(ev.target.id==="pal-q"){ PAL.sel=0; palDraw(); } });
+document.addEventListener("click",ev=>{
+  if(ev.target.closest("[data-palclose]")){ palClose(); return; }
+  const it=ev.target.closest("[data-pi]"); if(it){ palGo(+it.dataset.pi); return; }
+  const f=ev.target.closest("a[data-palette]"); if(f&&innerWidth>760){ ev.preventDefault(); ev.stopPropagation(); palOpen(); }
+},true);
+document.addEventListener("pointermove",ev=>{ const it=ev.target.closest&&ev.target.closest("[data-pi]"); if(it&&+it.dataset.pi!==PAL.sel){ PAL.sel=+it.dataset.pi; document.querySelectorAll(".pal-it").forEach(x=>x.setAttribute("aria-selected",x===it)); $("#pal-q").setAttribute("aria-activedescendant",it.id); } },{passive:true});
+document.addEventListener("keydown",ev=>{
+  const typing=/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName||"");
+  if((ev.metaKey||ev.ctrlKey)&&(ev.key==="k"||ev.key==="K")){ ev.preventDefault(); $("#pal").hidden?palOpen():palClose(); return; }
+  if(!$("#pal").hidden){
+    if(ev.key==="Escape"){ ev.preventDefault(); palClose(); }
+    else if(ev.key==="ArrowDown"||ev.key==="ArrowUp"){ ev.preventDefault(); const n=PAL.items.length; if(n){ PAL.sel=(PAL.sel+(ev.key==="ArrowDown"?1:-1)+n)%n; palDraw(); } }
+    else if(ev.key==="Enter"){ ev.preventDefault(); palGo(PAL.sel); }
+    else if(ev.key==="Tab"){ ev.preventDefault(); $("#pal-q").focus(); }
+    return;
+  }
+  if(ev.key==="Escape"&&$("#skins")&&!$("#skins").hidden){ skinOpen(false); $("[data-skinmenu]").focus(); return; }
+  if(typing||ev.metaKey||ev.ctrlKey||ev.altKey) return;
+  if(parse().view==="entry"&&(ev.key==="j"||ev.key==="k")){ const a=$('[data-pg="'+(ev.key==="j"?"next":"prev")+'"]'); if(a){ ev.preventDefault(); FRESH=true; location.hash=a.getAttribute("href"); } }
+},true);
+if(!/Mac|iPhone|iPad/.test(navigator.platform||navigator.userAgent)) document.querySelectorAll(".find .kb").forEach(k=>k.textContent="Ctrl K");
 document.getElementById("sky").addEventListener("keydown",ev=>{
   if(Sky.st.interactive===false) return; const k=ev.key;
   const dirs={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};

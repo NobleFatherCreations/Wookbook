@@ -88,8 +88,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v10",
+      "version": "v11",
       "changelog": [
+        {
+          "date": "2026-10-22",
+          "version": "v11",
+          "summary": "Ten lights, four skies: each constellation has its own colour that the sky and page take on; Midnight/Aurora/Dusk/Eclipse/Daylight colourways; Ctrl/⌘K command menu, constellation rail, J/K entry pager; word-by-word headline reveals, view-transition page hand-offs with the tapped name becoming the title, constellations that draw their lines in, pointer starlight, rare shooting stars; all stopped by Calm/reduced motion. Not yet deployed."
+        },
         {
           "date": "2026-10-22",
           "version": "v10",

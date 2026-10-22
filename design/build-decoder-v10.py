@@ -22,8 +22,11 @@ from collections import Counter
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 V10 = os.path.join(os.path.dirname(__file__), "decoder-v10")
 A = os.path.join(V10, "assets")
-VERSION = "v10 — 2026-10-22"
+VERSION = "v11 — 2026-10-22"
 UPDATES = [
+    "<strong>Ten lights, four skies.</strong> Each constellation now has its own colour, and the sky and the page take it on as you move into it. Pick the sky you read under: Midnight, Aurora, Dusk, Eclipse or Daylight.",
+    "<strong>Faster ways around.</strong> Press Ctrl K (or ⌘K) anywhere to jump to any tactic, group or page. A rail of ten marks at the edge of the screen shows where you are, and on an entry J and K step through its constellation.",
+    "<strong>Motion that means something.</strong> Pages now hand off to each other: the name you tap becomes the title you read, headlines rise into place, a constellation draws its lines as you arrive, and the stars near your pointer brighten. Calm mode still stops all of it.",
     "<strong>A typeface of its own.</strong> The guide now has Astra, a typeface drawn for it: every letter is a constellation, and the dots of the i and the full stops are stars. Everything else was stripped back to space, type and thin lines.",
     "<strong>The sky.</strong> Every tactic is now a star in one night sky, grouped into ten constellations. The sky moves with you: wide on the home page, into a constellation when you open a group, onto the single star when you read an entry. Stars you have read glow gold, saved ones are ringed, and search results and your answers to the guide light up where they sit. A Calm button stops all motion.",
     "<strong>A simpler guide.</strong> Search by what happened, answer two short questions, or browse ten plain groups. Every entry now reads in five parts: in short, understand it, is this it, what you can do, and go deeper.",
@@ -31,6 +34,8 @@ UPDATES = [
     "<strong>Every entry rewritten (v9).</strong> Each tactic has its own definition, examples, look-alikes, questions, words you could use and a safety note. Tactics that were the same thing under two names were merged; old names and links still work.",
 ]
 
+GROUP_COLORS = {"truth": "#9FB2FF", "pressure": "#B9A6FF", "control": "#86CFEA", "hook": "#F0A6CF", "wear": "#D7A8F2",
+                "blame": "#D6DC8F", "people": "#8FDCB8", "systems": "#AFC2DA", "online": "#7FE0DA", "society": "#A6D99B"}
 GROUPS = [
     ("truth", "Twisting what is real", "Lies, denial and confusion that leave you unsure of your own memory or judgment."),
     ("pressure", "Guilt, pressure and fear", "Pushing you to say yes through guilt, obligation, urgency or threat."),
@@ -251,7 +256,7 @@ def main():
     core = sorted(codex, key=lambda c: (-((4 if c["tier"] == "Detected" else 0) + min(pop.get(c["name"], 0), 10)), c["name"]))
     common = [c["name"] for c in core[:24]]
     SHORT = {"truth": "Twisting truth", "pressure": "Guilt and pressure", "control": "Control", "hook": "Love that hooks", "wear": "Put-downs", "blame": "Dodging blame", "people": "Turning people", "systems": "Work and systems", "online": "Online", "society": "Groups and cults"}
-    groups = [{"k": k, "label": l, "blurb": b, "short": SHORT[k]} for k, l, b in GROUPS if any(e["g"] == k for e in entries)]
+    groups = [{"k": k, "label": l, "blurb": b, "short": SHORT[k], "c": GROUP_COLORS[k]} for k, l, b in GROUPS if any(e["g"] == k for e in entries)]
     payload = {
         "entries": entries, "groups": groups,
         "settings": [{"k": k, "label": l, "blurb": b} for k, l, b in SETTINGS],
