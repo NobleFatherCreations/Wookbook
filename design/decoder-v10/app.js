@@ -167,37 +167,22 @@ function searchBox(id,value,autofocus){
 function viewHome(){
   const trail=store.get("trail",[]);
   const last=trail[0]&&BY[trail[0].name];
-  const gl=k=>GROUP[k];
-  const beats=[
-    ["310 tactics.","Each one a star in a single sky."],
-    ["Ten constellations.","Each group is a different way a person can take control."],
-    [gl("truth").label+".",gl("truth").blurb],
-    [gl("hook").label+".",gl("hook").blurb],
-    [gl("people").label+".",gl("people").blurb],
-  ];
-  const story=beats.map((b,i)=>'<div class="beat'+(i===0?' on':'')+'" data-beat="'+i+'"><h2 class="beat-h">'+H(b[0])+'</h2><p class="beat-p">'+H(b[1])+'</p></div>').join("")+
-    '<div class="beat" data-beat="'+beats.length+'"><h2 class="beat-h">Start anywhere.</h2><div class="beat-links">'+
-      '<a href="'+href("guide")+'">Help me figure it out<span aria-hidden="true">&rarr;</span></a>'+
-      '<a href="'+href("sky")+'">Explore the sky<span aria-hidden="true">&rarr;</span></a>'+
-      '<a href="'+href("common")+'">The most common<span aria-hidden="true">&rarr;</span></a></div></div>';
   return '<section class="stage">'+
     '<div class="stage-copy">'+
       '<h1 class="stage-h">Put a name to what is happening.</h1>'+
-      '<p class="lede">Explained in plain words: what it looks like, how to tell if it really fits, and what you can do.</p>'+
-      '<div class="stage-search">'+searchBox("q-home","")+'</div>'+
+      '<p class="lede">'+E.length+' manipulation and control tactics, explained in plain words: what each looks like, how to tell if it really fits, and what you can do.</p>'+
+      '<button class="pill pill-xl" type="button" data-palette aria-haspopup="dialog">'+ic("search")+'<span class="pill-t">Search, or describe what happened</span><kbd class="kb" aria-hidden="true">⌘K</kbd></button>'+
       '<div class="tries"><span class="muted">Try</span>'+D.tries.map(t=>'<button class="chip" type="button" data-try="'+esc(t)+'">'+H(t)+'</button>').join("")+'</div>'+
-      '<p class="privacy">'+ic("lock")+'Nothing you type leaves this device.</p>'+
-      (last?'<div class="continue"><p class="small">You were reading <strong>'+H(last.n)+'</strong></p><a class="btn" href="'+entryHref(last)+'">Continue</a></div>':'')+
+      '<div class="ways-row">'+
+        '<a class="btn primary" href="'+href("guide")+'">Help me figure it out</a>'+
+        '<a class="btn" href="'+href("common")+'">The most common</a>'+
+        '<a class="btn" href="'+href("sky")+'">Explore the sky</a>'+
+      '</div>'+
+      (last?'<p class="continue small">You were reading <a href="'+entryHref(last)+'" data-vt="'+last.i+'"><span data-vtn="'+last.i+'">'+H(last.n)+'</span></a></p>':'')+
     '</div>'+
-    '<div class="scroll-cue" aria-hidden="true"><span>'+E.length+' tactics</span><i></i></div>'+
-  '</section>'+
-  '<section class="story" data-n="'+(beats.length+1)+'" style="height:calc('+(beats.length+1)+' * 88vh + 100vh)" aria-label="A tour of the sky">'+
-    '<div class="story-pin">'+story+'<div class="story-dots" aria-hidden="true">'+Array.from({length:beats.length+1},()=>'<i></i>').join("")+'</div></div>'+
-  '</section>'+
-  '<section class="sect first" style="margin-top:0"><div class="sect-head"><div><h2 class="h2">Browse by what it does</h2><p>Every tactic belongs to the group where it fits best.</p></div><a class="btn" href="'+href("all")+'">A&ndash;Z of all '+E.length+'</a></div>'+
-  groupTiles()+'</section>'+
-  '<section class="sect"><div class="sect-head"><div><h2 class="h2">Where is it happening?</h2><p>Narrow the guide to one part of life.</p></div></div>'+
-  '<div class="chips">'+D.settings.map(s=>'<a class="chip" href="'+href("where/"+s.k)+'">'+H(s.label)+' <span class="n">'+E.filter(e=>(e.w||[]).includes(s.k)).length+'</span></a>').join("")+'</div></section>';
+    '<nav class="dock" aria-label="The ten constellations">'+D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-preview="'+g.k+'" style="--c:'+g.c+'"><i class="gd" aria-hidden="true"></i><span>'+H(g.short||g.label)+'</span></a>').join("")+'</nav>'+
+    '<p class="privacy">'+ic("lock")+'Nothing you type leaves this device.</p>'+
+  '</section>';
 }
 function way(route,icon,title,text,go){
   return '<a class="way" href="'+href(route)+'"><span class="w-ic">'+ic(icon)+'</span><span><h2>'+title+'</h2><p>'+text+'</p></span><span class="go">'+go+'</span></a>';
@@ -231,16 +216,33 @@ function viewBrowse(){
     D.settings.map(s=>'<a class="chip" href="'+href("where/"+s.k)+'">'+H(s.label)+'</a>').join("")+'</div></section>';
 }
 let FILTER_SET = "";
+function groupTrack(cur){
+  return '<nav class="track" aria-label="Constellations"><span class="ind" aria-hidden="true"></span>'+D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-track="'+g.k+'" style="--c:'+g.c+'"'+(g.k===cur?' class="on" aria-current="page"':'')+'><i class="gd" aria-hidden="true"></i><span>'+H(g.label)+'</span><span class="n">'+IN_GROUP[g.k].length+'</span></a>').join("")+'</nav>';
+}
+function tacticTile(e,big){
+  return '<a class="tile tac'+(big?' s3 big':' s2')+'" href="'+entryHref(e)+'" data-vt="'+e.i+'" data-i="'+e.i+'" style="--c:'+GROUP[e.g].c+'">'+
+    '<span class="nm"><span data-vtn="'+e.i+'">'+H(e.n)+'</span>'+(e.sens?'<span class="dot-safe" title="Safety-sensitive">'+ic("shield")+'<span class="sr-only">Safety-sensitive</span></span>':'')+'</span>'+
+    (e.sub?'<span class="sub">'+H(e.sub)+'</span>':'')+'<span class="df">'+H(e.f.short_definition)+'</span><span class="go" aria-hidden="true">'+ic("chevron")+'</span></a>';
+}
 function viewGroup(k){
   const g=GROUP[k]; if(!g) return notFound();
   const all=IN_GROUP[k];
   const counts=D.settings.map(s=>({s,n:all.filter(e=>(e.w||[]).includes(s.k)).length})).filter(x=>x.n);
   const list=FILTER_SET?all.filter(e=>(e.w||[]).includes(FILTER_SET)):all;
-  return '<div class="sky-window" aria-hidden="true"></div><p class="eyebrow"><a href="'+href("browse")+'">Browse</a></p><h1 class="h1">'+H(g.label)+'</h1><p class="lede">'+H(g.blurb)+'</p>'+
-    '<div class="chips" style="margin-top:32px" role="group" aria-label="Where it happens">'+
-      '<button class="chip" type="button" data-setfilter="" aria-pressed="'+(!FILTER_SET)+'">Everywhere <span class="n">'+all.length+'</span></button>'+
-      counts.map(x=>'<button class="chip" type="button" data-setfilter="'+x.s.k+'" aria-pressed="'+(FILTER_SET===x.s.k)+'">'+H(x.s.label)+' <span class="n">'+x.n+'</span></button>').join("")+
-    '</div><p class="count">'+list.length+' tactics</p>'+rows(list);
+  const top=new Set([...list].sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,2).map(e=>e.n));
+  const ordered=list.filter(e=>top.has(e.n)).concat(list.filter(e=>!top.has(e.n)));
+  return '<div class="split">'+
+    '<aside class="pane-l"><div class="sky-window" aria-hidden="true"></div>'+
+      '<p class="eyebrow"><a href="'+href("browse")+'">Browse</a></p><h1 class="h1">'+H(g.label)+'</h1><p class="lede">'+H(g.blurb)+'</p>'+
+      groupTrack(k)+
+    '</aside>'+
+    '<section class="pane-r scroll" aria-label="Tactics in '+esc(g.label)+'">'+
+      '<div class="chips filter" role="group" aria-label="Where it happens">'+
+        '<button class="chip" type="button" data-setfilter="" aria-pressed="'+(!FILTER_SET)+'">Everywhere <span class="n">'+all.length+'</span></button>'+
+        counts.map(x=>'<button class="chip" type="button" data-setfilter="'+x.s.k+'" aria-pressed="'+(FILTER_SET===x.s.k)+'">'+H(x.s.label)+' <span class="n">'+x.n+'</span></button>').join("")+
+      '</div><p class="count">'+list.length+' tactics'+(FILTER_SET?' in '+H(SET[FILTER_SET].label.toLowerCase()):'')+', most common first</p>'+
+      '<div class="bento">'+ordered.map((e,i)=>tacticTile(e,i<2)).join("")+'</div>'+foot()+
+    '</section></div>';
 }
 function viewWhere(k){
   const s=SET[k]; if(!s) return notFound();
@@ -273,13 +275,24 @@ function azList(){
 
 /* ---------- the entry ---------- */
 const RESP = [["soft_clarification","Ask about it gently"],["firm_boundary","Set a clear limit"],["disengagement","Step back"],["support_seeking","Get support"],["workplace_or_professional","At work, school or with services"]];
-/* A part of the entry: open by default on wide screens, folded behind its
-   heading on a phone so the page starts as a 30-second read. */
-function part(id,title,hint,inner){
-  return '<details class="part" id="'+id+'"'+(OPEN_PARTS?' open':'')+'><summary><span class="p-t"><h2 class="h2">'+title+'</h2><span class="p-h">'+hint+'</span></span><span class="p-ic">'+ic("chevron")+'</span></summary><div class="p-body">'+inner+'</div></details>';
-}
-let OPEN_PARTS = !matchMedia("(max-width: 760px)").matches;
 const PARTS = [["short","In short"],["understand","Understand it"],["fit","Is this it?"],["do","What you can do"],["deeper","Go deeper"]];
+/* Scannable prose: the first sentence (the answer) is set in bold, and long
+   paragraphs are broken into fragments of two sentences. */
+function sentences(t){ const m=String(t||"").match(/[^.!?]+(?:[.!?]+["”’)]*|$)\s*/g); return (m||[String(t||"")]).map(x=>x.trim()).filter(Boolean); }
+function prose(t){
+  const ss=sentences(t); if(!ss.length) return "";
+  let out='<p><strong>'+H(ss[0])+'</strong>'+(ss[1]?' '+H(ss[1]):'')+'</p>';
+  for(let i=2;i<ss.length;i+=2) out+='<p>'+H(ss[i])+(ss[i+1]?' '+H(ss[i+1]):'')+'</p>';
+  return out;
+}
+/* In a list, the lead phrase of each point is what you scan for: bold it. */
+function leadLi(t){
+  t=String(t||""); const m=t.match(/^(.{6,64}?)(\s[—–-]\s|:\s|,\s)/);
+  return m?'<strong>'+H(m[1])+'</strong>'+H(m[2]+t.slice(m[0].length)):H(t);
+}
+function bl(items,cls){ return items&&items.length?'<ul'+(cls?' class="'+cls+'"':'')+'>'+items.map(x=>'<li>'+leadLi(x)+'</li>').join("")+'</ul>':""; }
+function tile(title,inner,span,cls){ return inner?'<article class="tile s'+span+(cls?' '+cls:'')+'">'+(title?'<h3>'+title+'</h3>':'')+inner+'</article>':""; }
+function sec(id,title,hint,tiles){ return '<section class="sec part" id="'+id+'" aria-labelledby="h-'+id+'"><header class="sec-h"><h2 class="h2" id="h-'+id+'" data-reveal>'+title+'</h2>'+(hint?'<p>'+hint+'</p>':'')+'</header><div class="bento">'+tiles+'</div></section>'; }
 /* The first use of each glossary term on an entry page becomes a button that
    opens a one-line plain explanation right under it. */
 function gloss(html){
@@ -289,7 +302,7 @@ function gloss(html){
     Object.keys(D.glossary).forEach(t=>{
       if(used.has(t)) return;
       const re=new RegExp("\\b("+t.replace(/ /g,"\\s")+"s?)\\b","i");
-      if(re.test(inner)&&!/<(button|a) /.test(orig)){
+      if(re.test(inner.replace(/<[^>]+>/g," "))&&re.test(inner)&&!/<(button|a) /.test(orig)){
         used.add(t);
         const id="g-"+t.replace(/ /g,"-");
         inner=inner.replace(re,'<button type="button" class="term" data-term="'+id+'" aria-expanded="false" aria-controls="'+id+'">$1</button>');
@@ -308,68 +321,68 @@ function viewEntry(slug){
   const inG=IN_GROUP[e.g], gi=inG.indexOf(e);
   const prev=inG[(gi-1+inG.length)%inG.length], next=inG[(gi+1)%inG.length];
   const says=(f.what_it_sounds_like||[]);
-  const toc=PARTS.map(p=>'<a href="#'+p[0]+'" data-part="'+p[0]+'">'+p[1]+'</a>').join("");
-  const safety = e.sens
-    ? '<div class="callout" role="note"><h3>'+ic("shield")+'Your safety comes first</h3><p>'+H(f.safety_note)+'</p><p class="small" style="margin-top:8px"><a href="'+href("about")+'">How to use this guide safely</a></p></div>'
-    : '';
   const pats=(PATS_OF[e.n]||[]).map(ri=>D.recipes[ri]);
-  return gloss('<div class="sky-window" aria-hidden="true"></div><article class="entry">'+
-    '<nav class="toc" aria-label="On this page">'+toc+'</nav>'+
-    '<div>'+
-    '<header class="e-head">'+
+  const notIt=(f.this_may_not_be_it_when||[]);
+  const left='<aside class="pane-l"><div class="sky-window" aria-hidden="true"></div>'+
       '<p class="eyebrow"><a href="'+href("browse")+'">Browse</a> <span aria-hidden="true">/</span> <a href="'+href("browse/"+g.k)+'">'+H(g.label)+'</a></p>'+
       '<h1 class="h1" data-vtn="'+e.i+'">'+H(e.n)+'</h1>'+
       (e.sub?'<p class="e-sub">'+H(e.sub)+'</p>':'')+
-      '<div class="e-meta"><span class="pager" role="group" aria-label="Position in '+esc(g.label)+'"><a class="pg" href="'+entryHref(prev)+'" data-pg="prev" aria-label="Previous in '+esc(g.label)+': '+esc(prev.n)+'">'+ic("up")+'</a><span class="pos"><b>'+(gi+1)+'</b> / '+inG.length+'</span><a class="pg" href="'+entryHref(next)+'" data-pg="next" aria-label="Next in '+esc(g.label)+': '+esc(next.n)+'">'+ic("down")+'</a><span class="kb-hint" aria-hidden="true"><kbd>J</kbd><kbd>K</kbd></span></span>'+(e.sens?'<span class="badge safety">'+ic("shield")+'Safety-sensitive</span>':'')+
-        (e.abs&&e.abs.length?'<span>Also called '+e.abs.map(H).join(", ")+'</span>':'')+'</div>'+
+      '<div class="e-meta"><span class="pager" role="group" aria-label="Position in '+esc(g.label)+'"><a class="pg" href="'+entryHref(prev)+'" data-pg="prev" aria-label="Previous in '+esc(g.label)+': '+esc(prev.n)+'">'+ic("up")+'</a><span class="pos"><b>'+(gi+1)+'</b> / '+inG.length+'</span><a class="pg" href="'+entryHref(next)+'" data-pg="next" aria-label="Next in '+esc(g.label)+': '+esc(next.n)+'">'+ic("down")+'</a><span class="kb-hint" aria-hidden="true"><kbd>J</kbd><kbd>K</kbd></span></span>'+
+        (e.sens?'<span class="badge safety">'+ic("shield")+'Safety-sensitive</span>':'')+'</div>'+
       '<div class="e-actions">'+
         '<button class="btn" type="button" data-star="'+esc(e.n)+'" aria-pressed="'+starred+'">'+ic(starred?"starOn":"star")+'<span>'+(starred?"Saved":"Save")+'</span></button>'+
-        '<button class="btn" type="button" data-share>'+ic("share")+'Share link</button>'+
-        '<button class="btn" type="button" data-print>'+ic("print")+'Print</button>'+
+        '<button class="btn" type="button" data-share>'+ic("share")+'<span>Share link</span></button>'+
+        '<button class="btn" type="button" data-print>'+ic("print")+'<span>Print</span></button>'+
       '</div>'+
-    '</header>'+
-    '<nav class="chipbar" aria-label="Jump to a part">'+PARTS.map(p=>'<a class="chip" href="#'+p[0]+'" data-part="'+p[0]+'">'+p[1]+'</a>').join("")+'<button class="chip open-all" type="button" data-openall>Open all</button></nav>'+
-
-    '<section class="part" id="short" aria-labelledby="h-short" style="padding-top:24px"><h2 class="sr-only" id="h-short">In short</h2>'+
-      '<div class="short"><p class="sum">'+H(f.plain_language_summary)+'</p>'+
-      (says.length?'<p class="says-h">It can sound like</p><ul class="says">'+says.slice(0,3).map(s=>'<li>'+H(s)+'</li>').join("")+'</ul>':'')+
-      (f.this_may_not_be_it_when&&f.this_may_not_be_it_when.length?'<p class="says-h">It may be something else if</p>'+ul(f.this_may_not_be_it_when.slice(0,2),"away"):'')+
-      '</div>'+safety+
-    '</section>'+
-    part("understand","Understand it","What it is, why it matters, and how it shows up",
-      '<div class="text"><p>'+H(f.expanded_definition)+'</p><p>'+H(f.why_this_matters)+'</p></div>'+
-      blk("How it shows up",ul(f.what_it_is))+
-      (says.length>3?blk("More things people say",ul(says.slice(3),"said")):""))+
-    part("fit","Is this it?","Signs in both directions, and questions to ask yourself",
-      '<p class="intro">One moment proves very little. Weigh it honestly, in both directions.</p>'+
-      '<div class="compare"><div class="tw"><h3>Signs it might be this</h3>'+ul(f.this_may_be_it_when)+'</div><div class="aw"><h3>Signs it is probably something else</h3>'+ul(f.this_may_not_be_it_when.slice(2).concat(f.less_concerning_if))+'</div></div>'+
-      blk("Questions to ask yourself",ul(f.discernment_questions),"qs")+
-      blk("More worrying if",ul(f.more_concerning_if))+
-      blk("What shows up over time",ul(f.pattern_over_time_signs))+
-      blk("What it is not",ul(f.what_it_is_not))+
-      blk("Ordinary explanations",ul(f.innocent_or_ordinary_possibilities))+
-      blk("Often mistaken for this",ul(f.common_false_positives)))+
-    part("do","What you can do","Words you could use, ways to respond, and signs of change",
-      (e.sens?'<p class="intro">Read the safety note first. If speaking up could make things worse, skip the wording below and talk to someone you trust or a local support service.</p>':'<p class="intro">Pick what fits. You do not owe anyone a confrontation.</p>')+
-      '<div class="script"><p class="lbl">'+({verify:"A check to run before you share or act",self:"Words to say to yourself",say:"Words you could use"}[e.kind])+'</p><blockquote id="bs">'+H(f.boundary_script.replace(/^Verification script[^:]*:\s*/i,""))+'</blockquote>'+
-        '<div class="row-act"><button class="btn" type="button" data-copy="bs">'+ic("copy")+'<span>Copy</span></button></div></div>'+
-      '<div class="blk"><h3>Ways to respond</h3><div class="resp">'+RESP.map(r=>f.response_options&&f.response_options[r[0]]?'<div><h4>'+r[1]+'</h4><p>'+H(f.response_options[r[0]])+'</p></div>':'').join("")+'</div></div>'+
-      blk("Is it changing?",'<p>'+H(f.boundary_respect_check)+'</p><p>'+H(f.repair_check)+'</p>')+
-      (!e.sens?'<div class="note"><h3>When to take it more seriously</h3><p>'+H(f.safety_note)+'</p></div>':''))+
-    part("deeper","Go deeper","How it works, its effects, and its close relatives",
-      blk("How it works",'<p>'+H(f.psychological_mechanism)+'</p>')+
-      blk("How it can affect you",'<p>'+H(f.possible_impact_on_receiver)+'</p>')+
-      blk("Telling it apart from its neighbours",'<p>'+H(f.how_to_distinguish_from_related)+'</p>'+
-        (e.rel&&e.rel.length?'<div class="related">'+e.rel.map(n=>BY[n]?'<a class="chip" href="'+entryHref(BY[n])+'">'+H(n)+'</a>':'').join("")+'</div>':''))+
-      blk("Using this label fairly",ul(f.misuse_warning))+
-      (pats.length?blk("Patterns it is part of",'<div class="pats">'+pats.slice(0,6).map(r=>'<a href="'+href("patterns/"+slugify(r.n))+'"><b>'+H(r.n)+'</b><span>'+r.c.length+' tactics in sequence</span></a>').join("")+'</div>'):""))+
-
+      '<nav class="track parts" aria-label="On this page"><span class="ind" aria-hidden="true"></span>'+PARTS.map((p,n)=>'<a href="#'+p[0]+'" data-part="'+p[0]+'"><span class="tn">0'+(n+1)+'</span><span>'+p[1]+'</span></a>').join("")+'</nav>'+
+    '</aside>';
+  const right='<section class="pane-r scroll" aria-label="'+esc(e.n)+'">'+
+    '<nav class="chipbar" aria-label="Jump to a part">'+PARTS.map(p=>'<a class="chip" href="#'+p[0]+'" data-part="'+p[0]+'">'+p[1]+'</a>').join("")+'</nav>'+
+    sec("short","In short",(e.abs&&e.abs.length?'Also called '+e.abs.map(H).join(", "):''),
+      tile("",'<p class="sum">'+H(f.plain_language_summary)+'</p>',6,"hero")+
+      (e.sens?'<article class="tile s6 safe" role="note"><h3>'+ic("shield")+'Your safety comes first</h3>'+prose(f.safety_note)+'<p class="small"><a href="'+href("about")+'">How to use this guide safely</a></p></article>':'')+
+      tile("It can sound like",says.length?'<ul class="says">'+says.slice(0,3).map(x=>'<li>'+H(x)+'</li>').join("")+'</ul>':'',notIt.length?4:6,"quote")+
+      tile("It may be something else if",bl(notIt.slice(0,2),"away"),2,"")
+    )+
+    sec("understand","Understand it","What it is, why it matters, and how it shows up",
+      tile("What it is",'<div class="text">'+prose(f.expanded_definition)+'</div>',4,"tall")+
+      tile("Why it matters",'<div class="text">'+prose(f.why_this_matters)+'</div>',2,"")+
+      tile("How it shows up",bl(f.what_it_is),says.length>3?3:6,"")+
+      (says.length>3?tile("More things people say",'<ul class="says">'+says.slice(3).map(x=>'<li>'+H(x)+'</li>').join("")+'</ul>',3,"quote"):"")
+    )+
+    sec("fit","Is this it?","One moment proves very little. Weigh it honestly, in both directions.",
+      tile("Signs it might be this",bl(f.this_may_be_it_when),3,"tw")+
+      tile("Signs it is probably something else",bl(notIt.slice(2).concat(f.less_concerning_if||[])),3,"aw")+
+      tile("Questions to ask yourself",bl(f.discernment_questions,"qs"),2,"tall")+
+      tile("More worrying if",bl(f.more_concerning_if),2,"")+
+      tile("What shows up over time",bl(f.pattern_over_time_signs),2,"")+
+      tile("What it is not",bl(f.what_it_is_not),3,"")+
+      tile("Ordinary explanations",bl(f.innocent_or_ordinary_possibilities),3,"")+
+      tile("Often mistaken for this",bl(f.common_false_positives),6,"")
+    )+
+    sec("do","What you can do",e.sens?'Read the safety note first. If speaking up could make things worse, skip the wording below and talk to someone you trust or a local support service.':'Pick what fits. You do not owe anyone a confrontation.',
+      '<article class="tile s4 script"><h3>'+({verify:"A check to run before you share or act",self:"Words to say to yourself",say:"Words you could use"}[e.kind])+'</h3><blockquote id="bs">'+H(f.boundary_script.replace(/^Verification script[^:]*:\s*/i,""))+'</blockquote><div class="row-act"><button class="btn" type="button" data-copy="bs">'+ic("copy")+'<span>Copy</span></button></div></article>'+
+      tile("Is it changing?",'<div class="text">'+prose(f.boundary_respect_check)+prose(f.repair_check)+'</div>',2,"")+
+      tile("Ways to respond",'<div class="resp">'+RESP.map(r=>f.response_options&&f.response_options[r[0]]?'<div><h4>'+r[1]+'</h4><p>'+H(f.response_options[r[0]])+'</p></div>':'').join("")+'</div>',6,"")+
+      (!e.sens?tile("When to take it more seriously",'<div class="text">'+prose(f.safety_note)+'</div>',6,"note"):"")
+    )+
+    sec("deeper","Go deeper","How it works, its effects, and its close relatives",
+      tile("How it works",'<div class="text">'+prose(f.psychological_mechanism)+'</div>',3,"")+
+      tile("How it can affect you",'<div class="text">'+prose(f.possible_impact_on_receiver)+'</div>',3,"")+
+      tile("Telling it apart from its neighbours",'<div class="text">'+prose(f.how_to_distinguish_from_related)+'</div>'+(e.rel&&e.rel.length?'<div class="related">'+e.rel.map(n=>BY[n]?'<a class="chip" href="'+entryHref(BY[n])+'" style="--c:'+GROUP[BY[n].g].c+'"><i class="gd" aria-hidden="true"></i>'+H(n)+'</a>':'').join("")+'</div>':''),4,"")+
+      tile("Using this label fairly",bl(f.misuse_warning),2,"")+
+      (pats.length?tile("Patterns it is part of",'<div class="pats">'+pats.slice(0,6).map(r=>'<a href="'+href("patterns/"+slugify(r.n))+'"><b>'+H(r.n)+'</b><span>'+r.c.length+' tactics in sequence</span></a>').join("")+'</div>',6,""):"")
+    )+
     '<nav class="pn" aria-label="More in '+esc(g.label)+'">'+
-      '<a href="'+entryHref(prev)+'"><span class="k">Previous in '+H(g.label)+'</span><span class="t">'+H(prev.n)+'</span></a>'+
-      '<a class="nx" href="'+entryHref(next)+'"><span class="k">Next</span><span class="t">'+H(next.n)+'</span></a>'+
-    '</nav>'+
-    '<p class="back-to"><a class="btn ghost" href="'+href("browse/"+g.k)+'">All '+inG.length+' in '+H(g.label)+'</a></p>'+
-    '</div></article>');
+      '<a class="tile" href="'+entryHref(prev)+'" data-vt="'+prev.i+'"><span class="k">Previous in '+H(g.label)+'</span><span class="t" data-vtn="'+prev.i+'">'+H(prev.n)+'</span></a>'+
+      '<a class="tile nx" href="'+entryHref(next)+'" data-vt="'+next.i+'"><span class="k">Next</span><span class="t" data-vtn="'+next.i+'">'+H(next.n)+'</span></a>'+
+    '</nav>'+foot()+
+  '</section>';
+  return gloss('<div class="split entry">'+left+right+'</div>');
+}
+function foot(){
+  return '<footer class="foot"><p>A free guide by Noble Father Creations. It is a reading aid, not a diagnosis, a legal opinion or therapy. If you are in danger, contact emergency services.</p>'+
+    '<p class="foot-links"><a href="'+href("about")+'">Use this safely</a><a href="'+href("all")+'">A–Z</a><a href="'+href("patterns")+'">How tactics combine</a><a href="'+href("saved")+'">Saved and recent</a><a href="'+href("about")+'#updates">What changed</a></p></footer>';
 }
 
 /* ---------- guide: two questions, then a short list ---------- */
@@ -440,7 +453,7 @@ function viewAbout(){
     h("A signal, not a verdict")+p("One example of a pattern is a reason to look more closely, not proof of motive or character. Every entry says what its tactic is not, because most of these behaviors also have ordinary explanations. Please do not use a label from this guide to attack, shame, threaten, expose or get back at someone.")+
     h("The search box")+p("Pasting in something that was said to you finds entries whose wording is close to it. That is a pointer to read further, never a finding. It cannot see the tone, the history, or whether the words were meant seriously. What you type is never added to the address bar or your history.")+
     h("Your privacy")+p("There is no account. Your saved and recent entries stay on this device. The page counts anonymous visits, and nothing you type, paste or save is sent anywhere.")+
-    h("What changed")+'<p class="small muted">'+esc(D.version)+'</p><ul class="updates">'+D.updates.map(u=>'<li>'+u+'</li>').join("")+'</ul>'+
+    '<h2 class="h2" id="updates" style="margin:48px 0 16px">What changed</h2>'+'<p class="small muted">'+esc(D.version)+'</p><ul class="updates">'+D.updates.map(u=>'<li>'+u+'</li>').join("")+'</ul>'+
   '</div>';
 }
 
@@ -489,16 +502,16 @@ const ROUTES={"":viewHome,sky:viewSky,search:viewSearch,browse:a=>a?viewGroup(a)
 const SCROLL = {};
 
 /* ---------- where the camera goes on each page ---------- */
-let HOME_SCROLL=false, ROUTE_G=null, ROUTE_DIM=1;
+let HOME_SCROLL=false, ROUTE_G=null, ROUTE_DIM=1, WIN_OY=null;
 function skyRoute(r,first){
   const phone=innerWidth<760, fk=Sky.fitK(), S=Sky.S;
   const fly=(x,y,k,ms,ox,oy)=>Sky.flyTo(x,y,k,first?0:ms,ox||0,oy||0);
-  Sky.st.interactive=false; Sky.st.chain=null; Sky.set({ring:-1,link:false,focus:null,groupFocus:null,labels:false,names:false,hover:-1});
+  Sky.st.interactive=false; Sky.st.chain=null; Sky.set({ring:-1,link:false,focus:null,groupFocus:null,labels:false,names:false,hover:-1,hoverable:r.view==="",magnet:r.view===""||r.view==="sky"});
   Sky.lit([]); HOME_SCROLL=false; document.body.dataset.sky=r.view;
   const rg=r.view==="browse"&&GROUP[r.arg]?r.arg:(r.view==="entry"?((BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]||{}).g):null);
   ROUTE_G=rg||null; if(rg){ document.body.style.setProperty("--g",GROUP[rg].c); document.body.dataset.g=rg; } else { document.body.style.removeProperty("--g"); delete document.body.dataset.g; }
   document.querySelectorAll("#rail a").forEach(a=>{ if(a.dataset.rail===rg) a.setAttribute("aria-current","true"); else a.removeAttribute("aria-current"); });
-  const win=(()=>{const w=$(".sky-window"); if(!w) return null; const b=w.getBoundingClientRect(); return {oy:b.top+scrollY+b.height/2-innerHeight/2,h:b.height,w:b.width,bottom:b.bottom+scrollY};})();
+  const win=(()=>{const w=$(".sky-window"); if(!w) return null; const b=w.getBoundingClientRect(); return {ox:b.left+b.width/2-innerWidth/2,oy:b.top+scrollY+b.height/2-innerHeight/2,h:b.height,w:b.width,bottom:b.bottom+scrollY};})();
   let dim=.28;
   if(r.view===""){
     Sky.set({names:false}); dim=1; HOME_SCROLL=true; storySetup(); { const cp=$(".stage-copy"); if(cp&&STORY){ const b=cp.getBoundingClientRect(); STORY.avoid={x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}; } }
@@ -509,35 +522,35 @@ function skyRoute(r,first){
   }else if(r.view==="browse"&&r.arg&&GROUP[r.arg]&&win){
     const G=S.groups[r.arg];
     Sky.set({groupFocus:r.arg,labels:true,names:true}); dim=1;
-    fly(G.x,G.y,Math.min(win.h*.46/G.r,win.w*.4/G.r),1200,0,win.oy);
+    fly(G.x,G.y,Math.min(win.h*.46/G.r,win.w*.4/G.r),1200,win.ox,win.oy);
   }else if(r.view==="entry"&&win){
     const e=BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]; if(e){
       const set=[e.i].concat((e.rel||[]).map(n=>BY[n]&&BY[n].i).filter(x=>x!=null));
       let RX=60,RY=60; set.forEach(i=>{RX=Math.max(RX,Math.abs(Sky.stars[i].x-Sky.stars[e.i].x));RY=Math.max(RY,Math.abs(Sky.stars[i].y-Sky.stars[e.i].y));});
       const k=Math.min(win.h*.38/RY,win.w*(phone?.36:.3)/RX,fk*7);
       Sky.set({ring:e.i,link:true,focus:set,labels:true}); dim=1;
-      fly(Sky.stars[e.i].x,Sky.stars[e.i].y,Math.max(k,fk*1.2),1300,0,win.oy);
+      fly(Sky.stars[e.i].x,Sky.stars[e.i].y,Math.max(k,fk*1.2),1300,win.ox,win.oy);
     }
   }else if(r.view==="patterns"&&r.arg&&win){
     const rc=Sky.S.seq[D.recipes.findIndex(x=>slugify(x.n)===r.arg)];
     if(rc&&rc.length){ Sky.st.chain=rc; Sky.lit(rc,true); dim=1;
       let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; rc.forEach(i=>{const p=Sky.stars[i];x0=Math.min(x0,p.x);x1=Math.max(x1,p.x);y0=Math.min(y0,p.y);y1=Math.max(y1,p.y);});
       const k=Math.min(win.w*.8/Math.max(160,x1-x0),win.h*.7/Math.max(160,y1-y0));
-      fly((x0+x1)/2,(y0+y1)/2,Math.max(fk*.28,Math.min(k,fk*4)),1200,0,win.oy); }
+      fly((x0+x1)/2,(y0+y1)/2,Math.max(fk*.28,Math.min(k,fk*4)),1200,win.ox,win.oy); }
   }else if(r.view==="search"&&win){
     dim=1; Sky.set({names:false}); fly(S.w/2,S.h/2,Math.max(fk*.55,Math.min(win.w/S.w,win.h*1.9/S.h)),1000,0,win.oy);
   }else{
     fly(S.w/2,S.h/2,fk*(phone?1.1:1),1000,0,0); dim=.24;
   }
   const cp=$(".stage-copy")||$(".sky-top"); if(cp){ const b=cp.getBoundingClientRect(); Sky.set({avoid:{x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}}); } else Sky.set({avoid:null});
-  ROUTE_DIM=dim; Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky");
+  ROUTE_DIM=dim; WIN_OY=win?win.oy:null; Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky"||r.view==="");
   if(r.view===""){ if(STORY) STORY.step=-2; storyUpdate(); }
 }
-function cvPointer(on){ $("#sky").style.pointerEvents=on?"auto":"none"; $("#sky").style.cursor=on?"grab":"default"; $("#sky").tabIndex=on?0:-1; }
+function cvPointer(on){ const c=$("#sky"), sky=parse().view==="sky"; c.style.pointerEvents=on?"auto":"none"; c.style.cursor=sky?"grab":"default"; c.tabIndex=sky?0:-1; }
 function winScroll(){ const w=$(".sky-window"); if(!w||!Sky.st.clipY&&Sky.st.clipY!==0) return; Sky.set({clipY:w.getBoundingClientRect().bottom}); }
 let STORY=null;
 function storySetup(){ const el=$(".story"); STORY=el?{el,n:+el.dataset.n,step:-2}:null; }
-function headerState(){ const t=$(".top"); if(t) t.classList.toggle("solid",scrollY>12); }
+function headerState(){ const t=$(".top"); if(t) t.classList.toggle("solid",scrollTop()>12||scrollY>12); }
 function storyUpdate(){
   if(!STORY||!HOME_SCROLL) return;
   const calm=Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -561,6 +574,10 @@ addEventListener("resize",debounce(fitAll,150));
 addEventListener("scroll",()=>{ headerState(); if(HOME_SCROLL) requestAnimationFrame(storyUpdate); else if(Sky.st.clipY!=null) requestAnimationFrame(winScroll); },{passive:true});
 let INTRO_PLAYED=false, MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PENDING_VT = null;
 function key(){return location.hash||"#/";}
+/* On wide screens the guide is one locked viewport and the reading pane scrolls by itself;
+   on a phone the page scrolls as usual. Everything that reads or sets a scroll position asks here. */
+function scroller(){ const sc=document.querySelector("#main .scroll"); return sc&&/(auto|scroll)/.test(getComputedStyle(sc).overflowY)?sc:document.scrollingElement; }
+function scrollTop(v){ const sc=scroller(); if(v==null) return sc.scrollTop; sc.scrollTop=v; }
 function render(){
   let r=parse();
   if(LEGACY[r.view]){
@@ -573,13 +590,13 @@ function render(){
   const html=fn?fn(r.arg):notFound();
   const main=$("#main");
   const go=()=>{
-    main.innerHTML='<div class="wrap view">'+html+'</div>';
+    const full=/^<(div class="split|section class="stage|div class="sky-ui)/.test(html);
+    main.innerHTML=full?'<div class="view full">'+html+'</div>':'<div class="view sheet"><div class="panel scroll"><div class="wrap">'+html+'</div>'+foot()+'</div></div>';
     setNav(r.view);
     document.title=titleFor(r);
     const k=key();
-    if(!FRESH&&SCROLL[k]!=null) window.scrollTo(0,SCROLL[k]);
-    else if(r.view==="entry"&&location.hash.indexOf("#",1)>0){}
-    else window.scrollTo(0,0);
+    window.scrollTo(0,0);
+    if(!FRESH&&SCROLL[k]!=null) scrollTop(SCROLL[k]); else scrollTop(0);
     FRESH=false; LAST_KEY=k;
     afterRender(r); skyRoute(r,LAST_KEY===null&&!INTRO_PLAYED);
     INTRO_PLAYED=true;
@@ -594,14 +611,18 @@ function render(){
 function motionOn(){ return !Sky.calm&&!matchMedia("(prefers-reduced-motion: reduce)").matches; }
 /* Headlines rise into place word by word, each behind its own mask. */
 function splitHeads(skipTitle){
-  document.querySelectorAll("#main .h1,#main .stage-h,#main .beat-h,#main .sky-h").forEach(el=>{
+  document.querySelectorAll("#main .h1,#main .stage-h,#main .sky-h,#main [data-reveal]").forEach(el=>{
     if(el.dataset.split||el.children.length) return; el.dataset.split="1";
-    if(skipTitle&&el.dataset.vtn!=null){ return; }
+    if(skipTitle&&el.dataset.vtn!=null){ el.classList.add("in"); return; }
     const words=el.textContent.trim().split(/\s+/);
     el.setAttribute("aria-label",el.textContent.trim());
-    el.innerHTML=words.map((w,i)=>'<span class="wd" aria-hidden="true"><span style="--i:'+i+'">'+esc(w)+'</span></span>').join(" ");
+    el.innerHTML=words.map(w=>'<span class="wd" aria-hidden="true"><span>'+esc(w)+'</span></span>').join(" ");
   });
   fitAll();
+  /* one delay per line, not per word: each line rises as a single strip of glass */
+  document.querySelectorAll("#main [data-split]").forEach(el=>{ let top=null, line=-1;
+    el.querySelectorAll(".wd").forEach(w=>{ const t=w.offsetTop; if(top===null||Math.abs(t-top)>4){ top=t; line++; } w.firstChild.style.setProperty("--i",line); });
+    if(!el.hasAttribute("data-reveal")) el.classList.add("in"); });
 }
 function titleFor(r){
   const base="The Pattern Decoder";
@@ -620,36 +641,43 @@ function calmUI(){ const on=Sky.calm||matchMedia("(prefers-reduced-motion: reduc
 function debounce(fn,ms){let t;return function(){clearTimeout(t);t=setTimeout(fn,ms);};}
 /* Display type is wide: if one word is wider than its box (Compartmentalization), shrink the headline just enough. */
 function fitText(el){
-  if(!el) return; el.style.fontSize=""; let fs=parseFloat(getComputedStyle(el).fontSize);
-  for(let i=0;i<14&&el.scrollWidth>el.clientWidth+1&&fs>22;i++){ fs=Math.max(22,fs*Math.min(.95,el.clientWidth/el.scrollWidth)); el.style.fontSize=fs+"px"; }
+  /* no transition while measuring: Calm and reduced motion give every property a 1ms one, which hides the new size */
+  if(!el) return; el.classList.add("measuring"); el.style.transition="none"; el.style.fontSize=""; el.style.overflowWrap="normal"; let fs=parseFloat(getComputedStyle(el).fontSize);
+  /* masked words clip their own overflow, so measure them unmasked, as plain text */
+  const need=()=>el.scrollWidth;
+  for(let i=0,w=need();i<14&&w>el.clientWidth+1&&fs>22;i++,w=need()){ fs=Math.max(22,fs*Math.min(.95,el.clientWidth/w)); el.style.fontSize=fs+"px"; }
+  el.style.overflowWrap=need()>el.clientWidth+1?"break-word":"normal"; el.classList.remove("measuring"); el.style.transition="";
 }
 function fitAll(){ document.querySelectorAll("#main .h1,#main .stage-h,#main .beat-h,#main .gt,#main .sheet-t,#main .sky-h,#main .way h2,#main .pn .t").forEach(fitText); }
 let RV=null;
 function reveals(){
   if(RV) RV.disconnect();
-  const items=document.querySelectorAll(".ways .way,.groups .group,.sect-head,.rows .row:nth-child(-n+9)");
+  const items=document.querySelectorAll(".ways .way,.groups .group,.sect-head,.rows .row:nth-child(-n+9),#main .tile,#main .sec-h");
   if(!("IntersectionObserver" in window)||Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches){ document.documentElement.classList.add("no-io"); return; }
   document.documentElement.classList.remove("no-io");
   RV=new IntersectionObserver(es=>es.forEach((x,n)=>{ if(x.isIntersecting){ x.target.style.transitionDelay=(n*70)+"ms"; x.target.classList.add("in"); RV.unobserve(x.target); } }),{rootMargin:"0px 0px -8% 0px"});
   items.forEach(el=>{ el.classList.add("rv"); RV.observe(el); });
 }
-function afterRender(r){ reveals(); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
+function afterRender(r){ if(typeof kbLabels==="function") kbLabels(); reveals(); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
   const live=$("#q-page");
   if(!live&&MOVED_FOCUS){ const h=$("#main h1:not(.sr-only)")||$("#main h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); } }
   MOVED_FOCUS=true;
   if(live){ live.focus({preventScroll:true}); const v=live.value; live.setSelectionRange(v.length,v.length); }
-  if(r.view==="entry") watchParts();
+  if(r.view==="entry"){ watchParts(); requestAnimationFrame(()=>trackTo("short")); }
+  if(r.view==="browse"&&r.arg) requestAnimationFrame(()=>trackTo(r.arg));
   if(r.view==="search") lightResults(search(SEARCH_Q).list);
   if(r.view==="guide"&&GUIDE.step===2) lightResults(guideList());
   if(r.view==="saved"||r.view==="") refreshMarks();
 }
+function trackTo(id){ const t=$("#main .track"); if(!t) return; const a=t.querySelector('[data-part="'+id+'"],[data-track="'+id+'"]'), ind=t.querySelector(".ind"); if(!a||!ind) return;
+  t.querySelectorAll("a").forEach(x=>x.classList.toggle("on",x===a)); ind.style.transform="translateY("+a.offsetTop+"px)"; ind.style.height=a.offsetHeight+"px"; ind.style.opacity=1; }
 let PART_OBS=null;
 function watchParts(){
   if(PART_OBS) PART_OBS.disconnect();
   if(!("IntersectionObserver" in window)) return;
   PART_OBS=new IntersectionObserver(es=>{
-    es.forEach(x=>{ if(x.isIntersecting){ const id=x.target.id;
-      document.querySelectorAll("[data-part]").forEach(a=>a.classList.toggle("on",a.dataset.part===id));
+    es.forEach(x=>{ if(x.isIntersecting){ const id=x.target.id; trackTo(id);
+      document.querySelectorAll(".chipbar [data-part]").forEach(a=>a.classList.toggle("on",a.dataset.part===id));
       const chip=$('.chipbar [data-part="'+id+'"]'); if(chip&&chip.scrollIntoView&&window.innerWidth<1040){ const bar=chip.parentNode; bar.scrollTo({left:chip.offsetLeft-16,behavior:"smooth"}); } } });
   },{rootMargin:"-30% 0px -60% 0px"});
   document.querySelectorAll(".part").forEach(p=>PART_OBS.observe(p));
@@ -657,14 +685,16 @@ function watchParts(){
 
 /* ---------- events (one delegated listener) ---------- */
 window.addEventListener("hashchange",()=>{ render(); });
-window.addEventListener("scroll",()=>{ if(LAST_KEY) SCROLL[LAST_KEY]=window.scrollY; },{passive:true});
+document.addEventListener("scroll",ev=>{ const t=ev.target;
+  if(t&&t.classList&&t.classList.contains("pane-l")){ const w=t.querySelector(".sky-window"); if(w&&WIN_OY!=null){ Sky.set({offY:WIN_OY-t.scrollTop,clipY:Math.max(0,w.getBoundingClientRect().bottom)}); } return; }
+  if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); headerState(); },{passive:true,capture:true});
 document.addEventListener("click",ev=>{
   const a=ev.target.closest("a[href^='#/']");
-  if(a){ if(LAST_KEY) SCROLL[LAST_KEY]=window.scrollY; FRESH=true; delete SCROLL[a.getAttribute("href")]; const vt=a.dataset.vt; PENDING_VT=vt!=null?vt:null; return; }
+  if(a){ if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); FRESH=true; delete SCROLL[a.getAttribute("href")]; const vt=a.dataset.vt; PENDING_VT=vt!=null?vt:null; return; }
   const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall],[data-term],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],[data-calm],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],[data-calm]");
   if(!t) return;
   const d=t.dataset;
-  if(d.try!==undefined){ SEARCH_Q=d.try; if(parse().view==="search"){ const i=$("#q-page"); i.value=SEARCH_Q; updateResults(); } else { FRESH=true; location.hash="#/search"; } return; }
+  if(d.try!==undefined){ SEARCH_Q=d.try; if(parse().view==="search"){ const i=$("#q-page"); i.value=SEARCH_Q; updateResults(); } else palOpen(d.try); return; }
   if(d.clear!==undefined){ const f=t.closest("form"), i=f.querySelector("input"); i.value=""; f.classList.remove("has"); if(i.id==="q-page"){SEARCH_Q="";updateResults();} i.focus(); return; }
   if(d.star!==undefined){ const on=toggleStar(d.star); t.setAttribute("aria-pressed",on); t.innerHTML=ic(on?"starOn":"star")+'<span>'+(on?"Saved":"Save")+'</span>'; toast(on?"Saved on this device":"Removed from saved"); return; }
   if(d.share!==undefined){ const url=location.href; if(navigator.share){ navigator.share({title:document.title,url}).catch(()=>{}); } else copyText(url,"Link copied"); return; }
@@ -673,11 +703,11 @@ document.addEventListener("click",ev=>{
   if(d.where!==undefined){ GUIDE.where=d.where||null; GUIDE.feels=[]; GUIDE.step=1; render(); return; }
   if(d.feel!==undefined){ const k=d.feel; GUIDE.feels=GUIDE.feels.includes(k)?GUIDE.feels.filter(x=>x!==k):GUIDE.feels.concat(k);
     t.setAttribute("aria-pressed",GUIDE.feels.includes(k)); const bar=$(".guide-bar"); if(bar){ bar.children[1].textContent=GUIDE.feels.length?GUIDE.feels.length+" picked":"Pick at least one"; bar.children[2].disabled=!GUIDE.feels.length; } return; }
-  if(d.gstep!==undefined){ GUIDE.step=+d.gstep; render(); window.scrollTo(0,0); return; }
+  if(d.gstep!==undefined){ GUIDE.step=+d.gstep; render(); scrollTop(0); return; }
   if(d.greset!==undefined){ GUIDE={step:0,where:null,feels:[]}; render(); return; }
-  if(d.setfilter!==undefined){ FILTER_SET=d.setfilter; const y=window.scrollY; render(); window.scrollTo(0,y); return; }
+  if(d.setfilter!==undefined){ FILTER_SET=d.setfilter; const y=scrollTop(); render(); scrollTop(y); return; }
   if(d.jump!==undefined){ ev.preventDefault(); const el=document.getElementById(d.jump); if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); return; }
-  if(d.part!==undefined){ ev.preventDefault(); const el=document.getElementById(d.part); if(el){ if(el.tagName==="DETAILS") el.open=true; el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); const h=el.querySelector("h2"); if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});} } return; }
+  if(d.part!==undefined){ ev.preventDefault(); const el=document.getElementById(d.part); if(el){ trackTo(d.part); el.scrollIntoView({behavior:motionOn()?"smooth":"auto",block:"start"}); const h=el.querySelector("h2"); if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});} } return; }
   if(d.skygroup!==undefined){ const G=Sky.S.groups[d.skygroup]; Sky.set({groupFocus:d.skygroup}); pickStar(-1); Sky.set({groupFocus:d.skygroup});
     Sky.flyTo(G.x,G.y,Math.min(innerWidth,innerHeight)*(innerWidth<760?.36:.3)/G.r,1000,0,innerWidth<760?-innerHeight*.12:0); Sky.st.labels=true; return; }
   if(d.zoom!==undefined){ if(d.zoom==="0"){ Sky.set({groupFocus:null,labels:false}); pickStar(-1); Sky.flyTo(Sky.S.w/2,Sky.S.h/2,Sky.fitK(),900,0,0); } else { Sky.setK(Sky.cam.k*(d.zoom==="1"?1.5:1/1.5)); Sky.invalidate(); } return; }
@@ -687,9 +717,8 @@ document.addEventListener("click",ev=>{
     Sky.flyTo(Sky.stars[i].x,Sky.stars[i].y,Math.min(Sky.fitK()*6,Math.min(innerWidth,innerHeight)*.3/R),900,0,innerWidth<760?-innerHeight*.2:0); return; }
   if(d.calm!==undefined){ Sky.setCalm(!Sky.calm); calmUI(); return; }
   if(d.term!==undefined){ const def=document.getElementById(d.term); if(def){ def.hidden=!def.hidden; t.setAttribute("aria-expanded",!def.hidden); } return; }
-  if(d.openall!==undefined){ const all=[...document.querySelectorAll("details.part")]; const open=!all.every(x=>x.open); all.forEach(x=>x.open=open); OPEN_PARTS=open; t.textContent=open?"Fold all":"Open all"; return; }
   if(d.clearsaved!==undefined){ if(confirm("Clear your saved and recent entries on this device?")){ store.set("starred",[]); store.set("trail",[]); render(); } return; }
-  if(d.themeToggle!==undefined){ const cur=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light"; document.documentElement.setAttribute("data-theme",cur); store.set("theme",cur); themeIcon(); return; }
+  if(d.themeToggle!==undefined){ setSkin(document.documentElement.getAttribute("data-theme")==="light"?"midnight":"daylight"); return; }
 });
 document.addEventListener("submit",ev=>{
   const f=ev.target.closest("[data-search]"); if(!f) return; ev.preventDefault();
@@ -718,9 +747,9 @@ function copyText(text,msg){
 let TOAST_T;
 function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(TOAST_T); TOAST_T=setTimeout(()=>t.classList.remove("on"),1800); }
 function themeIcon(){ const b=$("[data-theme-toggle]"); if(!b) return; const light=document.documentElement.getAttribute("data-theme")==="light";
-  b.innerHTML=ic(light?"moon":"sun"); b.setAttribute("aria-label",light?"Switch to the dark theme":"Switch to the light theme"); }
+  b.innerHTML=ic(light?"moon":"sun"); b.setAttribute("aria-label",light?"Switch to Midnight":"Switch to Daylight"); }
 themeIcon(); calmUI(); refreshMarks();
-Sky.onPick=i=>pickStar(i);
+Sky.onPick=i=>{ if(parse().view===""){ if(i>=0){ PENDING_VT=null; FRESH=true; location.hash=entryHref(E[i]); } return; } pickStar(i); };
 
 /* ---------- the rail: ten marks, one per constellation (after Stripe Press's spine index) ---------- */
 (function rail(){ const r=$("#rail"); if(!r) return;
@@ -739,18 +768,12 @@ document.addEventListener("pointerout",ev=>{ if(ev.pointerType!=="mouse") return
 document.addEventListener("focusin",ev=>{ const p=ev.target.closest&&ev.target.closest("[data-preview]"); if(p) preview(p.dataset.preview); });
 document.addEventListener("focusout",ev=>{ const p=ev.target.closest&&ev.target.closest("[data-preview]"); if(p) preview(null); });
 
-/* ---------- colourways: the sky you read under ---------- */
-const SKINS=[["midnight","Midnight","Deep blue, gold stars","#E8C877","#0A1030"],["aurora","Aurora","Green light, far north","#8FE6C6","#04201E"],["dusk","Dusk","Violet, after sunset","#D2B6FF","#1C0E2A"],["eclipse","Eclipse","Black, silver stars","#E6E6EC","#000000"],["daylight","Daylight","Light, for bright rooms","#8A6414","#ECEDF6"]];
-function skinNow(){ return document.documentElement.getAttribute("data-skin")||"midnight"; }
-function skinMenu(){ const m=$("#skins"); if(!m) return; const cur=skinNow();
-  m.innerHTML='<p class="skins-h">The sky</p>'+SKINS.map(s=>'<button type="button" data-skin="'+s[0]+'" aria-pressed="'+(s[0]===cur)+'"><span class="sw" style="--a:'+s[3]+';--b:'+s[4]+'"></span><span><b>'+s[1]+'</b><small>'+s[2]+'</small></span></button>').join(""); }
-function setSkin(k){ const html=document.documentElement; html.setAttribute("data-skin",k); html.setAttribute("data-theme",k==="daylight"?"light":"dark"); store.set("skin",k); store.set("theme",k==="daylight"?"light":"dark"); skinMenu(); }
-function skinOpen(on){ const m=$("#skins"), b=$("[data-skinmenu]"); if(!m||!b) return; m.hidden=!on; b.setAttribute("aria-expanded",on); if(on){ skinMenu(); const p=m.querySelector('[aria-pressed="true"]'); if(p) p.focus(); } }
-document.addEventListener("click",ev=>{
-  const b=ev.target.closest("[data-skinmenu]"); if(b){ skinOpen($("#skins").hidden); return; }
-  const s=ev.target.closest("[data-skin]"); if(s&&s.closest("#skins")){ setSkin(s.dataset.skin); toast(SKINS.find(x=>x[0]===s.dataset.skin)[1]+" sky"); return; }
-  if(!ev.target.closest("#skins")&&$("#skins")&&!$("#skins").hidden) skinOpen(false);
-});
+/* ---------- two atmospheres: Midnight (ink black) and Daylight (gallery white) ---------- */
+function setSkin(k){ const html=document.documentElement; html.setAttribute("data-skin",k); html.setAttribute("data-theme",k==="daylight"?"light":"dark"); store.set("skin",k); store.set("theme",k==="daylight"?"light":"dark"); themeIcon(); }
+if(!/^(midnight|daylight)$/.test(store.get("skin","midnight"))) store.set("skin","midnight");
+/* a soft aura follows the pointer beneath each button's edge */
+document.addEventListener("pointermove",ev=>{ const b=ev.target.closest&&ev.target.closest(".btn,.pill,.chip,.pg,.tile.tac"); if(!b) return; const r=b.getBoundingClientRect(); b.style.setProperty("--mx",(ev.clientX-r.left)+"px"); b.style.setProperty("--my",(ev.clientY-r.top)+"px"); },{passive:true});
+Sky.onCluster=g=>{ if(parse().view==="sky"){ const G=Sky.S.groups[g]; pickStar(-1); Sky.set({groupFocus:g,labels:true}); Sky.flyTo(G.x,G.y,Math.min(innerWidth,innerHeight)*(innerWidth<760?.36:.3)/G.r,1100,0,innerWidth<760?-innerHeight*.12:0); } else { FRESH=true; location.hash=href("browse/"+g); } };
 
 /* ---------- go to anything: a command menu (after Linear) ---------- */
 const PAGES=[["guide","Help me figure it out","Two short questions"],["sky","The sky","Every tactic as a star"],["common","The most common","Where to begin"],["browse","Browse by what it does","Ten constellations"],["all","A–Z","All "+E.length+" tactics"],["patterns","How tactics combine","Patterns, step by step"],["saved","Saved and recent","On this device"],["about","Use this guide safely","Read this first if you are unsure"]];
@@ -779,21 +802,21 @@ function palDraw(){
   const sel=$("#pi-"+PAL.sel); if(sel) sel.scrollIntoView({block:"nearest"});
   const it=PAL.items[PAL.sel]; if(it&&typeof Sky!=="undefined"&&ROUTE_DIM>=.6){ if(it.vt!=null) Sky.set({hover:it.vt}); else Sky.set({hover:-1}); }
 }
-function palOpen(){
+function palOpen(q){
   const p=$("#pal"); if(!p||!p.hidden) return; PAL.ret=document.activeElement; PAL.sel=0;
   p.querySelector(".pal-box").innerHTML='<div class="pal-in">'+ic("search")+'<label class="sr-only" for="pal-q">Go to a tactic, group or page</label><input id="pal-q" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Go to a tactic, a group or a page"><kbd class="kb">esc</kbd></div><ul class="pal-list" id="pal-list" role="listbox" aria-label="Results"></ul><p class="pal-foot" aria-hidden="true"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span><span><kbd>esc</kbd> close</span></p>';
-  p.hidden=false; document.documentElement.classList.add("pal-on"); palDraw(); $("#pal-q").focus();
+  p.hidden=false; document.documentElement.classList.add("pal-on"); if(q) $("#pal-q").value=q; palDraw(); $("#pal-q").focus();
 }
 function palClose(go){
   const p=$("#pal"); if(!p||p.hidden) return; p.hidden=true; document.documentElement.classList.remove("pal-on"); if(!go&&typeof Sky!=="undefined"&&!Sky.st.interactive) Sky.set({hover:-1});
   if(!go&&PAL.ret&&PAL.ret.focus) PAL.ret.focus({preventScroll:true});
 }
-function palGo(i){ const it=PAL.items[i]; if(!it) return; palClose(true); if(it.q!=null) SEARCH_Q=it.q; if(LAST_KEY) SCROLL[LAST_KEY]=window.scrollY; FRESH=true; delete SCROLL[it.href]; PENDING_VT=null; location.hash=it.href; }
+function palGo(i){ const it=PAL.items[i]; if(!it) return; palClose(true); if(it.q!=null) SEARCH_Q=it.q; if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); FRESH=true; delete SCROLL[it.href]; PENDING_VT=null; location.hash=it.href; }
 document.addEventListener("input",ev=>{ if(ev.target.id==="pal-q"){ PAL.sel=0; palDraw(); } });
 document.addEventListener("click",ev=>{
   if(ev.target.closest("[data-palclose]")){ palClose(); return; }
   const it=ev.target.closest("[data-pi]"); if(it){ palGo(+it.dataset.pi); return; }
-  const f=ev.target.closest("a[data-palette]"); if(f&&innerWidth>760){ ev.preventDefault(); ev.stopPropagation(); palOpen(); }
+  const f=ev.target.closest("[data-palette]"); if(f){ ev.preventDefault(); ev.stopPropagation(); palOpen(); }
 },true);
 document.addEventListener("pointermove",ev=>{ const it=ev.target.closest&&ev.target.closest("[data-pi]"); if(it&&+it.dataset.pi!==PAL.sel){ PAL.sel=+it.dataset.pi; document.querySelectorAll(".pal-it").forEach(x=>x.setAttribute("aria-selected",x===it)); $("#pal-q").setAttribute("aria-activedescendant",it.id); } },{passive:true});
 document.addEventListener("keydown",ev=>{
@@ -806,11 +829,10 @@ document.addEventListener("keydown",ev=>{
     else if(ev.key==="Tab"){ ev.preventDefault(); $("#pal-q").focus(); }
     return;
   }
-  if(ev.key==="Escape"&&$("#skins")&&!$("#skins").hidden){ skinOpen(false); $("[data-skinmenu]").focus(); return; }
   if(typing||ev.metaKey||ev.ctrlKey||ev.altKey) return;
   if(parse().view==="entry"&&(ev.key==="j"||ev.key==="k")){ const a=$('[data-pg="'+(ev.key==="j"?"next":"prev")+'"]'); if(a){ ev.preventDefault(); FRESH=true; location.hash=a.getAttribute("href"); } }
 },true);
-if(!/Mac|iPhone|iPad/.test(navigator.platform||navigator.userAgent)) document.querySelectorAll(".find .kb").forEach(k=>k.textContent="Ctrl K");
+const KB_MAC=/Mac|iPhone|iPad/.test(navigator.platform||navigator.userAgent); function kbLabels(){ if(!KB_MAC) document.querySelectorAll(".pill .kb").forEach(k=>k.textContent="Ctrl K"); } kbLabels();
 document.getElementById("sky").addEventListener("keydown",ev=>{
   if(Sky.st.interactive===false) return; const k=ev.key;
   const dirs={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};

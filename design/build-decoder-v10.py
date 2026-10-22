@@ -22,8 +22,11 @@ from collections import Counter
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 V10 = os.path.join(os.path.dirname(__file__), "decoder-v10")
 A = os.path.join(V10, "assets")
-VERSION = "v11 — 2026-10-22"
+VERSION = "v12 — 2026-10-22"
 UPDATES = [
+    "<strong>One screen, nothing to wade through (v12).</strong> On a computer the guide now fits a single screen: pick a group or a tactic and the screen splits, with where you are on the left and the entry on the right in tiles you can scan. A thin bar on the left follows the part you are reading.",
+    "<strong>Easier to scan.</strong> The first sentence of every explanation is set in bold, so the answer comes first, and the lead words of each sign and question stand out. Reading text is now set in Inter, with more space between lines.",
+    "<strong>Two skies.</strong> Midnight is ink black with smoked-glass panels; Daylight is gallery white. On the open sky the stars drift, lean toward your pointer and show their names as you pass; click a star to read it or a constellation to fly into it.",
     "<strong>Ten lights, four skies.</strong> Each constellation now has its own colour, and the sky and the page take it on as you move into it. Pick the sky you read under: Midnight, Aurora, Dusk, Eclipse or Daylight.",
     "<strong>Faster ways around.</strong> Press Ctrl K (or ⌘K) anywhere to jump to any tactic, group or page. A rail of ten marks at the edge of the screen shows where you are, and on an entry J and K step through its constellation.",
     "<strong>Motion that means something.</strong> Pages now hand off to each other: the name you tap becomes the title you read, headlines rise into place, a constellation draws its lines as you arrive, and the stars near your pointer brighten. Calm mode still stops all of it.",
@@ -271,7 +274,8 @@ def main():
     shell = read(V10, "shell.html")
     import base64
     faces = re.findall(r"@font-face\s*\{[^}]*\}", read(A, "fonts.css"))
-    sans = "\n".join(f for f in faces if "'Public Sans'" in f)
+    # Inter (SIL OFL 1.1, rsms.me/inter), variable 100-900, subset to Latin by fontTools
+    sans = "@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}" % base64.b64encode(open(os.path.join(A, "inter-var.woff2"), "rb").read()).decode()
     astra = "\n".join("@font-face{font-family:'Astra';font-style:normal;font-weight:%d;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
                       % (wt, base64.b64encode(open(os.path.join(A, "astra-%s.woff2" % nm), "rb").read()).decode())
                       for nm, wt in (("light", 300), ("medium", 500)))

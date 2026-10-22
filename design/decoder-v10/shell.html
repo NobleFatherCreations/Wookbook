@@ -6,10 +6,10 @@
 <title>The Pattern Decoder — {{COUNT}} manipulation and control tactics, explained</title>
 <meta name="description" content="A free, offline guide to {{COUNT}} manipulation and control tactics in plain words: what each looks like, how to tell if it fits, and what you can do. No account, nothing you type leaves your device.">
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#0E1326" media="(prefers-color-scheme: dark)">
-<meta name="theme-color" content="#ECEDF6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
 <link rel="icon" href="{{LOGO}}">
-<script>(function(){var r=document.documentElement;try{var k=localStorage.getItem("fg_skin"),v=localStorage.getItem("fg_theme");var s=k!==null?JSON.parse(k):(v!==null&&JSON.parse(v)==="light"?"daylight":"midnight");r.setAttribute("data-skin",s);r.setAttribute("data-theme",s==="daylight"?"light":"dark")}catch(e){r.setAttribute("data-skin","midnight")}})();</script>
+<script>(function(){var r=document.documentElement;try{var k=localStorage.getItem("fg_skin"),v=localStorage.getItem("fg_theme");var s=k!==null?JSON.parse(k):(v!==null&&JSON.parse(v)==="light"?"daylight":"midnight");if(s!=="daylight")s="midnight";r.setAttribute("data-skin",s);r.setAttribute("data-theme",s==="daylight"?"light":"dark")}catch(e){r.setAttribute("data-skin","midnight")}})();</script>
 <style>
 {{FONTS}}
 {{CSS}}
@@ -22,34 +22,27 @@
 <header class="top">
   <div class="top-in">
     <a class="brand" href="#/" data-nav="home"><img src="{{LOGO}}" alt="" width="32" height="32"><b><span class="the">The </span>Pattern Decoder</b></a>
-    <span class="spacer"></span>
-    <nav class="tnav" aria-label="Main">
-      <a href="#/search" data-nav="search" data-palette class="find"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search<kbd class="kb" aria-hidden="true">⌘K</kbd></a>
-      <a href="#/guide" data-nav="guide">Help me figure it out</a>
-      <a href="#/sky" data-nav="sky">The sky</a>
-      <a href="#/browse" data-nav="browse">Browse</a>
-      <a href="#/saved" data-nav="saved">Saved</a>
-      <a href="#/about" data-nav="about" class="safe-link">Use this safely</a>
-    </nav>
-    <button class="icon-btn" type="button" data-calm aria-pressed="false" aria-label="Turn on calm mode"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c3-5 5-5 8 0s5 5 8 0"/></svg></button>
-    <div class="skin-wrap"><button class="icon-btn" type="button" data-skinmenu aria-haspopup="true" aria-expanded="false" aria-controls="skins" aria-label="Choose the colour of the sky"><span class="skin-dot" aria-hidden="true"></span></button>
-      <div class="skins" id="skins" hidden role="group" aria-label="Colour of the sky"></div></div>
+    <button class="pill" type="button" data-palette aria-haspopup="dialog"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="pill-t">Search {{COUNT}} tactics</span><kbd class="kb" aria-hidden="true">⌘K</kbd></button>
+    <div class="top-r">
+      <nav class="tnav" aria-label="Main">
+        <a href="#/guide" data-nav="guide">Help me figure it out</a>
+        <a href="#/sky" data-nav="sky">The sky</a>
+        <a href="#/browse" data-nav="browse">Browse</a>
+        <a href="#/saved" data-nav="saved" class="t-opt">Saved</a>
+        <a href="#/about" data-nav="about" class="t-opt">Use this safely</a>
+      </nav>
+      <button class="icon-btn" type="button" data-calm aria-pressed="false" aria-label="Turn on calm mode"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c3-5 5-5 8 0s5 5 8 0"/></svg></button>
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to Daylight"></button>
+    </div>
   </div>
 </header>
 <nav class="rail" id="rail" aria-label="Constellations"></nav>
 <main id="main" tabindex="-1">
   <noscript><div class="wrap"><p>The Pattern Decoder needs JavaScript to search and show entries. Everything runs on your device; nothing is sent anywhere.</p></div></noscript>
 </main>
-<footer class="foot">
-  <div class="foot-in">
-    <div><p class="about">A free guide by Noble Father Creations. It is a reading aid, not a diagnosis, a legal opinion or therapy. If you are in danger, contact emergency services.</p></div>
-    <div><h4>Find</h4><ul><li><a href="#/search">Search</a></li><li><a href="#/guide">Help me figure it out</a></li><li><a href="#/common">The most common</a></li><li><a href="#/browse">Browse</a></li><li><a href="#/all">A–Z</a></li></ul></div>
-    <div><h4>More</h4><ul><li><a href="#/patterns">How tactics combine</a></li><li><a href="#/saved">Saved and recent</a></li><li><a href="#/about">Use this safely</a></li><li><a href="#/about">What changed</a></li></ul></div>
-  </div>
-</footer>
 <nav class="tabs" aria-label="Main">
   <a href="#/" data-nav="home"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
-  <a href="#/search" data-nav="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
+  <a href="#/search" data-nav="search" data-palette><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
   <a href="#/sky" data-nav="sky"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.6"/><circle cx="5" cy="7" r="1.1"/><circle cx="19" cy="9" r="1.1"/><circle cx="16" cy="19" r="1.1"/><path d="M5 7l7 5 7-3M12 12l4 7"/></svg>Sky</a>
   <a href="#/browse" data-nav="browse"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Browse</a>
   <a href="#/saved" data-nav="saved"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Saved</a>

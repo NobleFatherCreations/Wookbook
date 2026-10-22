@@ -88,8 +88,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v11",
+      "version": "v12",
       "changelog": [
+        {
+          "date": "2026-10-22",
+          "version": "v12",
+          "summary": "Invisible complexity: single locked viewport on wide screens (inner-scrolling panes, phones scroll normally); 35/65 split master-detail for groups and entries with a sliding timeline-track indicator; bento grid of 0.5px-outlined smoke-glass tiles; Midnight (#000, #121214 glass, #E4E4E7) and Daylight (#FFF, #0F0F11) only; Astra tracked 0.1em + Inter 1.75 body; bold lead sentences and lead phrases; line-by-line veil reveals; fluid-magnetism star physics with micro labels and star/cluster clicks; centered ⌘K command pill with frosted dim; press-scale + pointer aura buttons. Fixed: reduced-motion/Calm 1ms transitions broke headline fitting. Not yet deployed."
+        },
         {
           "date": "2026-10-22",
           "version": "v11",

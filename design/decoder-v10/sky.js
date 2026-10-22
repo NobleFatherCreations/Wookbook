@@ -17,6 +17,37 @@ const Sky = (() => {
   const visited = new Set(), saved = new Set();
   const rankIn = {}; (() => { const by = {}; D.entries.forEach((e, i) => (by[e.g] = by[e.g] || []).push(i)); for (const g in by) by[g].sort((a, b) => (D.entries[b].pop || 0) - (D.entries[a].pop || 0) || a - b).forEach((i, n) => rankIn[i] = n); })();
   const stars = S.pos.map((p, i) => ({ x: p[0], y: p[1], r: 1.4 + Math.min(3.2, (D.entries[i].pop || 0) * .38), ph: (i * 2.399) % 6.283 }));
+  /* Fluid magnetism: every node sits on a damped spring around its place in the sky,
+     drifts a little on its own, and is drawn toward the pointer when it comes close.
+     Offsets are in screen pixels, so the effect feels the same at any zoom. */
+  const OX = new Float32Array(N), OY = new Float32Array(N), VX = new Float32Array(N), VY = new Float32Array(N), NEAR = new Float32Array(N);
+  const FINE = matchMedia("(pointer: fine)").matches;
+  const MAG_R = 160;
+  const GOF = D.entries.map(e => e.g), GACT = {};          // constellations the pointer is touching: only these redraw their lines live
+  function physics(dt, t) {
+    const on = st.magnet && FINE && motionOK() && !lite;
+    const f = Math.min(3, dt / 16.67), damp = Math.pow(.84, f);
+    let energy = 0;
+    const px = on ? st.px : null, py = st.py;
+    for (const g in GACT) GACT[g] = false;
+    for (let i = 0; i < N; i++) {
+      const s = stars[i];
+      let tx = 0, ty = 0, n = 0;
+      if (on) {
+        tx = Math.sin(t * .00042 + s.ph) * 1.5; ty = Math.cos(t * .00037 + s.ph * 1.3) * 1.5;          // drift
+        if (px != null) {
+          const bx = sx(s.x) + OX[i], by = sy(s.y) + OY[i], dx = px - bx, dy = py - by, d = Math.hypot(dx, dy);
+          if (d < MAG_R && d > .5) { n = 1 - d / MAG_R; n *= n; const pull = Math.min(d * .5, 26 * n); tx += dx / d * pull; ty += dy / d * pull;
+            tx += Math.sin(t * .018 + s.ph * 7) * 1.1 * n; ty += Math.cos(t * .021 + s.ph * 5) * 1.1 * n; }          // hum
+        }
+      }
+      VX[i] = (VX[i] + (tx - OX[i]) * .075 * f) * damp; VY[i] = (VY[i] + (ty - OY[i]) * .075 * f) * damp;
+      OX[i] += VX[i] * f; OY[i] += VY[i] * f; NEAR[i] += (n - NEAR[i]) * Math.min(1, .18 * f);
+      if (NEAR[i] > .01 || Math.abs(OX[i]) > 2.2 || Math.abs(OY[i]) > 2.2) GACT[GOF[i]] = true;
+      energy += Math.abs(VX[i]) + Math.abs(VY[i]) + Math.abs(OX[i]) * (on ? 0 : 1) + Math.abs(OY[i]) * (on ? 0 : 1) + NEAR[i];
+    }
+    return on || energy > .05;
+  }
   function relayout() { const n = pickLayout(); if (n === S) return false; S = n; layers = null; S.pos.forEach((p, i) => { stars[i].x = p[0]; stars[i].y = p[1]; }); api.S = S; return true; }
   const sprite = {};
   /* Colours come from the page's colourway (CSS custom properties), so the sky and the
@@ -114,6 +145,7 @@ const Sky = (() => {
       nextMeteor = performance.now() + 9000 + Math.random() * 14000;
     }
     if (meteor) animating = true;
+    if (physics(dt, t)) animating = true;
     if (animating || dirty || alive()) {
       draw(t);
       /* adapt: if frames keep arriving slower than ~30fps while the camera moves, drop the decorative layers */
@@ -129,6 +161,7 @@ const Sky = (() => {
   const vel = { x: 0, y: 0 };
   function clampCam() { cam.x = Math.max(0, Math.min(S.w, cam.x)); cam.y = Math.max(0, Math.min(S.h, cam.y)); }
 
+  const qx = i => sx(stars[i].x) + OX[i], qy = i => sy(stars[i].y) + OY[i];
   function draw(t) {
     cx.clearRect(0, 0, W, H);
     const dim = st.dim, ap = appear, time = (t || 0) / 1000; aliveNow = alive();
@@ -171,7 +204,7 @@ const Sky = (() => {
       const lod = LODS.findIndex(ls => ls >= cam.k * .92), intro = Math.max(0, Math.min(1, ap * 1.6 - .5));
       for (const L of layers) {
         const pr = L.per[lod < 0 ? LODS.length - 1 : lod];
-        if (st.groupFocus === L.g) continue;
+        if (st.groupFocus === L.g || GACT[L.g]) continue;
         const a = .2 * dim * intro * (st.groupFocus ? .05 : 1);
         if (a < .01) continue;
         const x = sx(L.x0), y = sy(L.y0), w = pr.c.width / pr.ls * cam.k, h = pr.c.height / pr.ls * cam.k;
@@ -184,14 +217,14 @@ const Sky = (() => {
     const gf = st.groupFocus;
     for (const [i, j] of S.edges) {
       if (gf && D.entries[i].g === gf && D.entries[j].g === gf && !(fSet && fSet.has(i) && fSet.has(j))) { mine.push(i, j); continue; }
-      const a = stars[i], b = stars[j];
-      const x1 = sx(a.x), y1 = sy(a.y), x2 = sx(b.x), y2 = sy(b.y);
+      const x1 = qx(i), y1 = qy(i), x2 = qx(j), y2 = qy(j);
       if ((x1 < -50 && x2 < -50) || (x1 > W + 50 && x2 > W + 50) || (y1 < -50 && y2 < -50) || (y1 > H + 50 && y2 > H + 50)) continue;
       const lit2 = st.lit.has(i) && st.lit.has(j), strong = fSet && fSet.has(i) && fSet.has(j);
-      if (useCache && !lit2 && !strong) continue;
+      if (useCache && !lit2 && !strong && !GACT[GOF[i]]) continue;
       let al = (strong ? .6 : .2) * dim * Math.min(gDim(i), gDim(j)) * Math.max(0, Math.min(1, ap * 1.6 - .5 - (i % 17) / 40));
       if (st.clipY != null) al *= Math.max(0, Math.min(1, (st.clipY - Math.min(y1, y2)) / 70 + 1));
       if (lit2) al = Math.max(al, .5);
+      al = Math.min(.9, al * (1 + (NEAR[i] + NEAR[j]) * 1.4));
       if (al < .02) continue;
       const bk = (strong || lit2) ? 3 : al > .15 ? 2 : al > .08 ? 1 : 0;
       buckets[bk].push(x1, y1, x2, y2, al);
@@ -209,9 +242,8 @@ const Sky = (() => {
       const prog = motionOK() ? (performance.now() - gfT0) / 1700 : 9, m = mine.length / 2;
       cx.strokeStyle = "rgba(" + (C.g[gf] || C.line) + "," + (.62 * dim) + ")"; cx.lineWidth = 1.15; cx.beginPath();
       for (let q = 0; q < mine.length; q += 2) {
-        const a = stars[mine[q]], b = stars[mine[q + 1]];
         const e = Math.max(0, Math.min(1, (prog - (q / 2) / m * .55) / .45)); if (!e) continue;
-        const x1 = sx(a.x), y1 = sy(a.y), x2 = x1 + (sx(b.x) - x1) * e, y2 = y1 + (sy(b.y) - y1) * e;
+        const x1 = qx(mine[q]), y1 = qy(mine[q]), x2 = x1 + (qx(mine[q + 1]) - x1) * e, y2 = y1 + (qy(mine[q + 1]) - y1) * e;
         if (st.clipY != null && Math.min(y1, y2) > st.clipY) continue;
         cx.moveTo(x1, y1); cx.lineTo(x2, y2);
       }
@@ -236,7 +268,7 @@ const Sky = (() => {
     const star = spr(C.star), brass = spr(C.brass);
     const labelQ = [];
     for (let i = 0; i < N; i++) {
-      const s = stars[i], x = sx(s.x), y = sy(s.y);
+      const s = stars[i], x = qx(i), y = qy(i);
       if (x < -30 || x > W + 30 || y < -30 || y > H + 30) continue;
       const infocus = fSet ? fSet.has(i) : true, lit = st.lit.has(i), vis = visited.has(i), sv = saved.has(i);
       let a = (infocus ? 1 : .35) * gDim(i) * dim;
@@ -245,7 +277,8 @@ const Sky = (() => {
       a *= delay;
       if (st.clipY != null) a *= Math.max(0, Math.min(1, (st.clipY - y) / 70 + 1));
       const tw = aliveNow ? .82 + .18 * Math.sin(time * (.8 + (i % 7) * .13) + s.ph) : 1;
-      let near = 0; if (st.px != null) { const dd = Math.hypot(x - st.px, y - st.py); near = dd < 170 ? 1 - dd / 170 : 0; near *= near; a = Math.min(1, a * (1 + near * 1.6)); }
+      let near = NEAR[i]; if (!near && st.px != null && !st.magnet) { const dd = Math.hypot(x - st.px, y - st.py); near = dd < 170 ? 1 - dd / 170 : 0; near *= near; }
+      if (near) a = Math.min(1, a * (1 + near * 1.8));
       const mineG = st.groupFocus && D.entries[i].g === st.groupFocus;
       const size = Math.max(6, s.r * cam.k * 8.5) * (lit ? 1.5 : 1) * (i === st.ring ? 1.6 : 1) * (mineG ? 1.35 : 1) * (1 + near * .6) * (i === st.hover ? 1.5 : 1);
       const img = (lit || vis || sv || i === st.ring || i === st.hover) ? brass : mineG ? spr(C.g[st.groupFocus]) : star;
@@ -262,6 +295,7 @@ const Sky = (() => {
         cx.globalAlpha = (1 - pr) * .8; cx.strokeStyle = "rgb(" + C.brass + ")"; cx.beginPath(); cx.arc(x, y, 8 + pr * 26, 0, 6.283); cx.stroke();
       }
       if ((st.clipY == null || y < st.clipY - 10) && (i === st.hover || lit && labelsOn() || i === st.ring || (fSet && fSet.has(i) && st.labels) || (st.labels && cam.k > fitK() * 2.4 && (!st.groupFocus || D.entries[i].g === st.groupFocus)) || (st.groupFocus && st.labels && D.entries[i].g === st.groupFocus && rankIn[i] < (W < 700 ? 7 : 12)))) labelQ.push([i, x, y, a]);
+      else if (st.magnet && NEAR[i] > .3 && (st.clipY == null || y < st.clipY - 10)) labelQ.push([i, x, y, a, NEAR[i]]);
     }
     cx.globalAlpha = 1;
     /* constellation names */
@@ -285,10 +319,13 @@ const Sky = (() => {
     }
     /* star labels */
     if (labelQ.length) {
-      cx.font = "500 13px 'Public Sans',system-ui,sans-serif"; cx.textAlign = "left"; cx.textBaseline = "middle";
+      cx.font = "500 12.5px Inter,system-ui,sans-serif"; cx.textAlign = "left"; cx.textBaseline = "middle";
       const placed = [];
-      labelQ.sort((a, b) => (b[0] === st.hover) - (a[0] === st.hover));
-      for (const [i, x, y, a] of labelQ) {
+      labelQ.sort((a, b) => (b[0] === st.hover) - (a[0] === st.hover) || (b[4] || 1) - (a[4] || 1));
+      let micro = 0;
+      for (const [i, x, y, a, nr] of labelQ) {
+        if (nr != null && i !== st.hover && ++micro > 4) continue;
+        cx.globalAlpha = nr != null && i !== st.hover ? Math.min(1, .35 + nr) : 1;
         const txt = curly(D.entries[i].n), w = cx.measureText(txt).width + 14;
         let lx = x + 12, ly = y; if (lx + w > W - 8) lx = x - 12 - w;
         if (i !== st.hover && placed.some(p => Math.abs(p[0] - lx) < Math.max(w, p[2]) && Math.abs(p[1] - ly) < 17)) continue;
@@ -297,6 +334,7 @@ const Sky = (() => {
         const rx = lx - 6, ry = ly - 11; cx.beginPath(); cx.roundRect ? cx.roundRect(rx, ry, w, 22, 11) : cx.rect(rx, ry, w, 22); cx.fill();
         cx.fillStyle = "rgba(" + C.text + ",.95)"; cx.fillText(txt, lx + 1, ly + .5);
       }
+      cx.globalAlpha = 1;
     }
   }
   const labelsOn = () => st.labelLit;
@@ -305,16 +343,23 @@ const Sky = (() => {
   let ptrs = new Map(), moved = 0, pinch0 = null, downT = 0, lastMove = null;
   function nearest(px, py, rad) {
     let best = -1, bd = rad * rad;
-    for (let i = 0; i < N; i++) { const dx = sx(stars[i].x) - px, dy = sy(stars[i].y) - py, d = dx * dx + dy * dy; if (d < bd) { bd = d; best = i; } }
+    for (let i = 0; i < N; i++) { const dx = qx(i) - px, dy = qy(i) - py, d = dx * dx + dy * dy; if (d < bd) { bd = d; best = i; } }
+    return best;
+  }
+  function clusterAt(px, py) {
+    const x = wx(px), y = wy(py); let best = null, bd = 1e12;
+    for (const g in S.groups) { const G = S.groups[g], d = Math.hypot(G.x - x, G.y - y); if (d < G.r * 1.15 && d < bd) { bd = d; best = g; } }
     return best;
   }
   function down(e) {
+    if (st.hoverable && !st.interactive) { downT = performance.now(); moved = 0; lastMove = { x: e.clientX, y: e.clientY, t: downT }; return; }
     if (!st.interactive) return; cv.setPointerCapture && cv.setPointerCapture(e.pointerId);
     ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); moved = 0; downT = performance.now(); vel.x = vel.y = 0; tween = null;
     if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; pinch0 = { d: Math.hypot(a.x - b.x, a.y - b.y), k: cam.k }; }
     lastMove = { x: e.clientX, y: e.clientY, t: performance.now() };
   }
   function move(e) {
+    if (st.hoverable && !st.interactive) { const i = nearest(e.clientX, e.clientY, 20); if (i !== st.hover) { st.hover = i; cv.style.cursor = i >= 0 || clusterAt(e.clientX, e.clientY) ? "pointer" : "default"; invalidate(); } else cv.style.cursor = i >= 0 || clusterAt(e.clientX, e.clientY) ? "pointer" : "default"; return; }
     if (!st.interactive) return;
     if (!ptrs.has(e.pointerId)) { const i = nearest(e.clientX, e.clientY, 22); if (i !== st.hover) { st.hover = i; cv.style.cursor = i >= 0 ? "pointer" : "grab"; invalidate(); if (api.onHover) api.onHover(i); } return; }
     const p = ptrs.get(e.pointerId), dx = e.clientX - p.x, dy = e.clientY - p.y; p.x = e.clientX; p.y = e.clientY; moved += Math.abs(dx) + Math.abs(dy);
@@ -323,8 +368,9 @@ const Sky = (() => {
     invalidate();
   }
   function up(e) {
+    if (st.hoverable && !st.interactive) { if (performance.now() - downT < 500) { const i = nearest(e.clientX, e.clientY, 22); if (i >= 0 && api.onPick) api.onPick(i); else { const g = clusterAt(e.clientX, e.clientY); if (g && api.onCluster) api.onCluster(g); } } return; }
     if (!st.interactive) return; const was = ptrs.has(e.pointerId); ptrs.delete(e.pointerId); if (ptrs.size < 2) pinch0 = null;
-    if (was && moved < 8 && performance.now() - downT < 500) { const i = nearest(e.clientX, e.clientY, 26); vel.x = vel.y = 0; if (api.onPick) api.onPick(i); }
+    if (was && moved < 8 && performance.now() - downT < 500) { const i = nearest(e.clientX, e.clientY, 26); vel.x = vel.y = 0; if (i < 0 && api.onCluster) { const g = clusterAt(e.clientX, e.clientY); if (g) { api.onCluster(g); return; } } if (api.onPick) api.onPick(i); }
     else if (performance.now() - lastMove.t > 80) vel.x = vel.y = 0;
     if (!motionOK()) vel.x = vel.y = 0; invalidate();
   }
@@ -338,7 +384,7 @@ const Sky = (() => {
   cv.addEventListener("wheel", e => { if (!st.interactive) return; e.preventDefault(); setK(cam.k * Math.exp(-e.deltaY * .0016), e.clientX, e.clientY); tween = null; invalidate(); }, { passive: false });
   addEventListener("resize", () => { relayout(); resize(); if (api.onResize) api.onResize(); });
   document.addEventListener("visibilitychange", () => { if (!document.hidden) invalidate(); });
-  new MutationObserver(() => { C = ink(); layers = null; invalidate(); if (motionOK() && cv.animate) cv.animate([{ opacity: .2 }, { opacity: 1 }], { duration: 700, easing: "cubic-bezier(.16,1,.3,1)" }); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme", "data-skin"] });
+  new MutationObserver(() => { C = ink(); layers = null; invalidate(); if (motionOK() && cv.animate) cv.animate([{ opacity: .2 }, { opacity: 1 }], { duration: 700, easing: "cubic-bezier(.16,1,.3,1)" }); }).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
   /* the stars nearest the pointer brighten a little, wherever the sky is showing */
   if (matchMedia("(pointer: fine)").matches) {
     addEventListener("pointermove", e => { if (!motionOK() || st.dim < .6) { if (st.px != null) { st.px = null; invalidate(); } return; } st.px = e.clientX; st.py = e.clientY; invalidate(); }, { passive: true });
@@ -355,8 +401,8 @@ const Sky = (() => {
     lit(list, labels) { st.lit = new Set(list || []); st.labelLit = !!labels; invalidate(); },
     skipIntro() { appear = 1; },
     toWorld: (px, py) => [wx(px), wy(py)],
-    toScreen: i => [sx(stars[i].x), sy(stars[i].y)],
-    nearest, onPick: null, onHover: null, onResize: null,
+    toScreen: i => [qx(i), qy(i)],
+    nearest, clusterAt, onPick: null, onCluster: null, onHover: null, onResize: null,
   };
   twinkle = !(navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
   resize(); cam.k = fitK();

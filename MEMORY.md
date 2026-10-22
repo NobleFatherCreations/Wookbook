@@ -3289,3 +3289,27 @@ Verified: 310/310 entries at 1440 + 390 with no overflow or page errors; flows (
 Enter, J, skins, hover previews); reduced motion leaves no hidden words.
 Figma record (user's drafts, via Figma MCP html_to_figma): https://www.figma.com/design/K5gk9VL90NpeCnGwvJYxHZ
 Deploy to noblepatterns still needs the user's explicit go-ahead.
+
+## 2026-10-22 — Pattern Decoder v12: invisible complexity (built, NOT deployed)
+
+Driven by the user's pasted "luxury masterpiece" brief. Taken: locked single viewport on
+≥901px (`.scroll` panes; `scroller()`/`scrollTop()` abstract window vs pane), 35/65 split
+for groups/entries (`.split`, `.pane-l`, `.pane-r`), timeline track with sliding `.ind`
+(`trackTo`), bento of 0.5px-outlined smoke-glass tiles, Midnight #000/#121214@70%/blur40/#E4E4E7
+and Daylight #FFF/#0F0F11 only (old skins migrate to midnight), Astra tracked .1em + Inter
+variable (subset, `assets/inter-var.woff2`, OFL) at 1.75, bold lead sentence (`prose`) and
+lead phrase (`leadLi`), line-by-line veil reveals (`splitHeads` sets --i per line), fluid
+magnetism in sky.js (`physics`, OX/OY/VX/VY/NEAR, GACT so only touched constellations redraw
+lines live), star click → entry and cluster click → constellation on home, centred ⌘K pill
+for every search entry point, press .98 + pointer aura + 0.35px chromatic split on buttons.
+Declined from the brief: Next.js/React/Tailwind/Framer (project rule: no dependencies,
+offline) and swapping Astra for Cormorant/Didot (user asked earlier for an original face;
+Astra tracked out meets the "tracked geometric display" option). Phones keep normal page
+scroll on purpose (address bar, tap-to-top, reachability).
+**Gotcha found:** reduced-motion and Calm set `transition-duration:1ms` on `*`, which makes
+EVERY property (incl. inherited font-size) transition — any measure-after-set code reads stale
+values. `fitText` now adds `.measuring` (transitions off, masks unwrapped) while it measures.
+Verified: 310/310 entries at 1440 + 390, no overflow, no page errors; desktop never scrolls
+the document; keyboard order, ⌘K focus trap + restore, Calm leaves no hidden words.
+Headless software rendering ran the magnet at ~36fps — needs a real-GPU / real-phone check.
+Figma record page added: https://www.figma.com/design/K5gk9VL90NpeCnGwvJYxHZ?node-id=5-2
