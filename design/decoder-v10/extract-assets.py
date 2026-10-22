@@ -39,7 +39,7 @@ def save(name, text):
 
 os.makedirs(OUT, exist_ok=True)
 faces = re.findall(r"@font-face\s*\{[^}]*\}", html)
-keep = [f for f in faces if re.search(r"font-family:\s*'(IM Fell English|Public Sans)'", f)]
+keep = [f for f in faces if re.search(r"font-family:\s*'(IM Fell English SC|IM Fell English|Public Sans)'", f)]
 save("fonts.css", "\n".join(keep))
 save("cover.txt", js_value("COVER_PLATE"))
 save("wordmark.svg", js_value("WORDMARK"))

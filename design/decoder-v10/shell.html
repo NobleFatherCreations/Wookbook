@@ -9,7 +9,7 @@
 <meta name="theme-color" content="#0E1326" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#ECEDF6" media="(prefers-color-scheme: light)">
 <link rel="icon" href="{{LOGO}}">
-<script>(function(){try{var v=localStorage.getItem("fg_theme");var t=v!==null?JSON.parse(v):(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}catch(e){}})();</script>
+<script>(function(){try{var v=localStorage.getItem("fg_theme");var t=v!==null?JSON.parse(v):"dark";document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}catch(e){}})();</script>
 <style>
 {{FONTS}}
 {{CSS}}
@@ -17,6 +17,8 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<canvas id="sky" aria-label="A star chart of all {{COUNT}} tactics" role="img"></canvas>
+<div class="veil" aria-hidden="true"></div>
 <header class="top">
   <div class="top-in">
     <a class="brand" href="#/" data-nav="home"><img src="{{LOGO}}" alt="" width="32" height="32"><b>The Pattern Decoder</b></a>
@@ -24,10 +26,12 @@
     <nav class="tnav" aria-label="Main">
       <a href="#/search" data-nav="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
       <a href="#/guide" data-nav="guide">Help me figure it out</a>
+      <a href="#/sky" data-nav="sky">The sky</a>
       <a href="#/browse" data-nav="browse">Browse</a>
       <a href="#/saved" data-nav="saved">Saved</a>
       <a href="#/about" data-nav="about" class="safe-link">Use this safely</a>
     </nav>
+    <button class="icon-btn" type="button" data-calm aria-pressed="false" aria-label="Turn on calm mode"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c3-5 5-5 8 0s5 5 8 0"/></svg></button>
     <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"></button>
   </div>
 </header>
@@ -44,6 +48,7 @@
 <nav class="tabs" aria-label="Main">
   <a href="#/" data-nav="home"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
   <a href="#/search" data-nav="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
+  <a href="#/sky" data-nav="sky"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.6"/><circle cx="5" cy="7" r="1.1"/><circle cx="19" cy="9" r="1.1"/><circle cx="16" cy="19" r="1.1"/><path d="M5 7l7 5 7-3M12 12l4 7"/></svg>Sky</a>
   <a href="#/browse" data-nav="browse"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Browse</a>
   <a href="#/saved" data-nav="saved"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Saved</a>
 </nav>

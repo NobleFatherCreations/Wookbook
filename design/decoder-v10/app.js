@@ -42,6 +42,8 @@ const ICONS={
   lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
   link:'<path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/>',
   steps:'<path d="M4 6h10M4 12h16M4 18h7"/>',
+  telescope:'<path d="m10.5 8.5 7-4 2 3.5-7 4z"/><path d="m8 11-3.5 2 1 1.7L9 12.7"/><path d="M12 14.5 9 21M12 14.5l3 6.5"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>', minus:'<path d="M5 12h14"/>', reset:'<path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/>', calm:'<path d="M4 12c3-5 5-5 8 0s5 5 8 0"/>',
 };
 
 /* ---------- indexes ---------- */
@@ -82,8 +84,9 @@ const store=(()=>{let mem={},ok=false;
   store.set("starred",s2);
 })();
 function isStarred(n){return store.get("starred",[]).includes(n)}
-function toggleStar(n){let s=store.get("starred",[]); s=s.includes(n)?s.filter(x=>x!==n):[n].concat(s); store.set("starred",s); return s.includes(n);}
-function logTrail(n){let t=store.get("trail",[]).filter(x=>x.name!==n); t.unshift({name:n,ts:Date.now()}); store.set("trail",t.slice(0,200));}
+function toggleStar(n){let s=store.get("starred",[]); s=s.includes(n)?s.filter(x=>x!==n):[n].concat(s); store.set("starred",s); if(typeof Sky!=="undefined") refreshMarks(); return s.includes(n);}
+function logTrail(n){let t=store.get("trail",[]).filter(x=>x.name!==n); t.unshift({name:n,ts:Date.now()}); store.set("trail",t.slice(0,200)); if(typeof Sky!=="undefined") refreshMarks();}
+function refreshMarks(){ Sky.setMarks(store.get("trail",[]).map(t=>BY[t.name]&&BY[t.name].i).filter(x=>x!=null), store.get("starred",[]).map(n=>BY[n]&&BY[n].i).filter(x=>x!=null)); }
 
 /* ---------- links ---------- */
 const href = h => "#/"+h;
@@ -158,29 +161,32 @@ function searchBox(id,value,autofocus){
     '<button type="button" class="s-clear" data-clear aria-label="Clear search">'+ic("close")+'</button></form>';
 }
 
+//@@SKY@@
 /* ---------- views ---------- */
 function viewHome(){
   const trail=store.get("trail",[]);
   const last=trail[0]&&BY[trail[0].name];
-  return '<section class="hero">'+
-    '<div>'+
+  return '<section class="stage">'+
+    '<div class="stage-copy">'+
       '<h1 class="sr-only">The Pattern Decoder</h1>'+
       '<span class="hero-mark" aria-hidden="true">'+D.wordmark+'</span>'+
-      '<p class="h2" style="max-width:20ch">Put a name to what is happening.</p>'+
-      '<p class="lede">'+E.length+' manipulation and control tactics, each explained in plain words: what it looks like, how to tell if it fits, and what you can do.</p>'+
-      '<div style="margin-top:32px">'+searchBox("q-home","")+'</div>'+
+      '<p class="kicker"><b>'+E.length+'</b> stars. Each one a tactic.</p>'+
+      '<p class="stage-h">Put a name to what is happening.</p>'+
+      '<p class="lede">Explained in plain words: what it looks like, how to tell if it really fits, and what you can do.</p>'+
+      '<div class="stage-search">'+searchBox("q-home","")+'</div>'+
       '<div class="tries"><span class="muted">Try</span>'+D.tries.map(t=>'<button class="chip" type="button" data-try="'+esc(t)+'">'+H(t)+'</button>').join("")+'</div>'+
       '<p class="privacy">'+ic("lock")+'Nothing you type leaves this device.</p>'+
+      (last?'<div class="continue"><p class="small">You were reading <strong>'+H(last.n)+'</strong></p><a class="btn" href="'+entryHref(last)+'">Continue</a></div>':'')+
     '</div>'+
-    '<figure class="hero-art" style="margin:0"><img src="'+D.cover+'" alt="An engraved star chart in gold on deep indigo, its constellations drawn as people: one turning away, a hand on a shoulder, a pair of watching eyes." width="1800" height="1004" fetchpriority="high" decoding="async"></figure>'+
+    '<a class="scroll-cue" href="#instruments" data-jump="instruments" aria-label="See the ways in">'+ic("chevron")+'</a>'+
   '</section>'+
-  (last?'<div class="continue"><p class="small">You were reading <strong>'+H(last.n)+'</strong></p><a class="btn" href="'+entryHref(last)+'">Continue</a></div>':'')+
+  '<section class="sect first" id="instruments" aria-label="Ways in">'+
   '<div class="ways">'+
-    way("guide","compass","Help me figure it out","Answer two short questions about what has been happening. No names needed.","Start")+
-    way("browse","grid","Browse by what it does",D.groups.length+" plain groups, from twisting the truth to control over money.","Browse")+
+    way("guide","compass","Help me figure it out","Answer two short questions about what has been happening. No names needed.","Begin")+
+    way("sky","telescope","Explore the sky","Fly through all "+E.length+" tactics as stars, grouped into ten constellations.","Open the sky")+
     way("common","star","Start with the most common","The "+D.common.length+" tactics people run into most often.","See them")+
-  '</div>'+
-  '<section class="sect"><div class="sect-head"><div><h2 class="h2">Browse by what it does</h2><p>Every tactic sits in one group. Open a group to see them all.</p></div><a class="btn ghost" href="'+href("all")+'">A–Z of all '+E.length+'</a></div>'+
+  '</div></section>'+
+  '<section class="sect"><div class="sect-head"><div><h2 class="h2">Ten constellations</h2><p>Every tactic belongs to the group where it fits best.</p></div><a class="btn ghost" href="'+href("all")+'">A–Z of all '+E.length+'</a></div>'+
   groupTiles()+'</section>'+
   '<section class="sect"><div class="sect-head"><div><h2 class="h2">Where is it happening?</h2><p>Narrow the guide to one part of life.</p></div></div>'+
   '<div class="chips">'+D.settings.map(s=>'<a class="chip" href="'+href("where/"+s.k)+'">'+H(s.label)+' <span class="n">'+E.filter(e=>(e.w||[]).includes(s.k)).length+'</span></a>').join("")+'</div></section>';
@@ -196,7 +202,7 @@ function groupTiles(lv){ lv=lv||3;
 }
 function viewSearch(){
   const r=search(SEARCH_Q);
-  return '<p class="eyebrow"><a href="'+href("")+'">Home</a></p><h1 class="h1">Search</h1>'+
+  return '<div class="sky-window" aria-hidden="true"></div><p class="eyebrow"><a href="'+href("")+'">Home</a></p><h1 class="h1">Search</h1>'+
     '<div style="margin-top:24px">'+searchBox("q-page",SEARCH_Q,true)+'</div>'+
     '<p class="sr-only" id="rcount" aria-live="polite"></p><div id="results">'+resultsHTML(r)+'</div>';
 }
@@ -222,7 +228,7 @@ function viewGroup(k){
   const all=IN_GROUP[k];
   const counts=D.settings.map(s=>({s,n:all.filter(e=>(e.w||[]).includes(s.k)).length})).filter(x=>x.n);
   const list=FILTER_SET?all.filter(e=>(e.w||[]).includes(FILTER_SET)):all;
-  return '<p class="eyebrow"><a href="'+href("browse")+'">Browse</a></p><h1 class="h1">'+H(g.label)+'</h1><p class="lede">'+H(g.blurb)+'</p>'+
+  return '<div class="sky-window" aria-hidden="true"></div><p class="eyebrow"><a href="'+href("browse")+'">Browse</a></p><h1 class="h1">'+H(g.label)+'</h1><p class="lede">'+H(g.blurb)+'</p>'+
     '<div class="chips" style="margin-top:32px" role="group" aria-label="Where it happens">'+
       '<button class="chip" type="button" data-setfilter="" aria-pressed="'+(!FILTER_SET)+'">Everywhere <span class="n">'+all.length+'</span></button>'+
       counts.map(x=>'<button class="chip" type="button" data-setfilter="'+x.s.k+'" aria-pressed="'+(FILTER_SET===x.s.k)+'">'+H(x.s.label)+' <span class="n">'+x.n+'</span></button>').join("")+
@@ -299,7 +305,7 @@ function viewEntry(slug){
     ? '<div class="callout" role="note"><h3>'+ic("shield")+'Your safety comes first</h3><p>'+H(f.safety_note)+'</p><p class="small" style="margin-top:8px"><a href="'+href("about")+'">How to use this guide safely</a></p></div>'
     : '';
   const pats=(PATS_OF[e.n]||[]).map(ri=>D.recipes[ri]);
-  return gloss('<article class="entry">'+
+  return gloss('<div class="sky-window" aria-hidden="true"></div><article class="entry">'+
     '<nav class="toc" aria-label="On this page">'+toc+'</nav>'+
     '<div>'+
     '<header class="e-head">'+
@@ -396,7 +402,7 @@ function viewGuide(){
 function viewPatterns(k){
   if(k){
     const r=D.recipes.find(x=>slugify(x.n)===k); if(!r) return notFound();
-    return '<p class="eyebrow"><a href="'+href("patterns")+'">How tactics combine</a></p><h1 class="h1">'+H(r.n)+'</h1><p class="lede">'+H(r.d)+'</p>'+
+    return '<div class="sky-window" aria-hidden="true"></div><p class="eyebrow"><a href="'+href("patterns")+'">How tactics combine</a></p><h1 class="h1">'+H(r.n)+'</h1><p class="lede">'+H(r.d)+'</p>'+
       '<ol class="chain">'+r.c.map(n=>{const e=BY[n]; return e?'<li><a href="'+entryHref(e)+'">'+H(e.n)+'</a><p>'+H(e.f.short_definition)+'</p></li>':'';}).join("")+'</ol>';
   }
   return '<p class="eyebrow"><a href="'+href("")+'">Home</a></p><h1 class="h1">How tactics combine</h1>'+
@@ -429,6 +435,35 @@ function viewAbout(){
     h("What changed")+'<p class="small muted">'+esc(D.version)+'</p><ul class="updates">'+D.updates.map(u=>'<li>'+u+'</li>').join("")+'</ul>'+
   '</div>';
 }
+
+/* ---------- the sky: an explorable map of every tactic ---------- */
+let SKY_PICK=-1;
+function viewSky(){
+  return '<div class="sky-ui">'+
+    '<div class="sky-top"><h1 class="sky-h">The sky</h1><p class="small muted">Every tactic is a star. Drag to move, pinch or scroll to zoom, tap a star to read about it.</p></div>'+
+    '<div class="sky-groups" role="group" aria-label="Fly to a constellation">'+D.groups.map(g=>'<button class="chip" type="button" data-skygroup="'+g.k+'">'+H(g.label)+'</button>').join("")+'</div>'+
+    '<div class="sky-tools" role="group" aria-label="Zoom"><button class="icon-btn solid" type="button" data-zoom="1" aria-label="Zoom in">'+ic("plus")+'</button><button class="icon-btn solid" type="button" data-zoom="-1" aria-label="Zoom out">'+ic("minus")+'</button><button class="icon-btn solid" type="button" data-zoom="0" aria-label="Show everything">'+ic("reset")+'</button></div>'+
+    '<aside class="sheet" id="sheet" hidden aria-live="polite"></aside>'+
+    '<p class="sr-only">This map is visual. To browse the same tactics as lists, use Browse or A to Z.</p>'+
+  '</div>';
+}
+function sheetHTML(i){
+  const e=E[i]; const g=GROUP[e.g];
+  return '<button class="sheet-x" type="button" data-sheetclose aria-label="Close">'+ic("close")+'</button>'+
+    '<p class="eyebrow">'+H(g.label)+'</p><h2 class="sheet-t">'+H(e.n)+'</h2>'+(e.sub?'<p class="e-sub" style="font-size:17px;margin:4px 0 0">'+H(e.sub)+'</p>':'')+
+    '<p class="sheet-s">'+H(e.f.plain_language_summary)+'</p>'+
+    (e.sens?'<p class="small" style="color:var(--ember);margin:0 0 12px">'+ic("shield")+' Safety-sensitive</p>':'')+
+    '<div class="chips"><a class="btn primary" href="'+entryHref(e)+'">Read this entry</a>'+(e.rel&&e.rel.length?'<button class="btn" type="button" data-skylink="'+i+'">Show its neighbours</button>':'')+'</div>';
+}
+function pickStar(i){
+  const sh=$("#sheet"); if(!sh) return;
+  SKY_PICK=i;
+  if(i<0){ sh.hidden=true; Sky.set({ring:-1,link:false,focus:null}); Sky.lit([]); return; }
+  sh.innerHTML=sheetHTML(i); sh.hidden=false;
+  Sky.set({ring:i,link:false,focus:null}); Sky.lit([]);
+  const k=Math.max(Sky.cam.k,Sky.fitK()*2.6), st=Sky.st; 
+  Sky.flyTo(Sky.stars[i].x,Sky.stars[i].y,k,700,0,innerWidth<700?-innerHeight*.18:0);
+}
 function notFound(){
   return '<h1 class="sr-only">Page not found</h1><div class="empty" style="margin-top:40px"><p><strong>That page is not here.</strong></p><p class="small muted">The link may be out of date or cut short.</p><div class="chips" style="justify-content:center"><a class="btn primary" href="'+href("")+'">Go home</a><a class="btn" href="'+href("search")+'">Search</a></div></div>';
 }
@@ -441,10 +476,60 @@ function parse(){
 }
 /* Old v9 routes keep working. */
 const LEGACY={core:"common",trail:"saved",narrow:"guide",index:"all",constellation:"browse",category:"browse",feeling:"guide"};
-const ROUTES={"":viewHome,search:viewSearch,browse:a=>a?viewGroup(a):viewBrowse(),where:viewWhere,common:viewCommon,all:viewAll,
+const ROUTES={"":viewHome,sky:viewSky,search:viewSearch,browse:a=>a?viewGroup(a):viewBrowse(),where:viewWhere,common:viewCommon,all:viewAll,
   entry:viewEntry,guide:viewGuide,patterns:viewPatterns,saved:viewSaved,about:viewAbout};
 const SCROLL = {};
-let MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PENDING_VT = null;
+
+/* ---------- where the camera goes on each page ---------- */
+let HOME_SCROLL=false;
+function skyRoute(r,first){
+  const phone=innerWidth<760, fk=Sky.fitK(), S=Sky.S;
+  const fly=(x,y,k,ms,ox,oy)=>Sky.flyTo(x,y,k,first?0:ms,ox||0,oy||0);
+  Sky.st.interactive=false; Sky.st.chain=null; Sky.set({ring:-1,link:false,focus:null,groupFocus:null,labels:false,names:false,hover:-1});
+  Sky.lit([]); HOME_SCROLL=false; document.body.dataset.sky=r.view;
+  const win=(()=>{const w=$(".sky-window"); if(!w) return null; const b=w.getBoundingClientRect(); return {oy:b.top+scrollY+b.height/2-innerHeight/2,h:b.height,w:b.width,bottom:b.bottom+scrollY};})();
+  let dim=.28;
+  if(r.view===""){
+    Sky.set({names:true}); dim=1; HOME_SCROLL=true;
+    fly(S.w/2,S.h/2,fk*(phone?1:.92),1400,phone?0:innerWidth*.2,phone?-innerHeight*.2:0);
+  }else if(r.view==="sky"){
+    Sky.st.interactive=true; Sky.set({names:true,labels:false}); dim=1;
+    fly(S.w/2,S.h/2,fk,1100,0,phone?40:0);
+  }else if(r.view==="browse"&&r.arg&&GROUP[r.arg]&&win){
+    const G=S.groups[r.arg];
+    Sky.set({groupFocus:r.arg,labels:true,names:true}); dim=1;
+    fly(G.x,G.y,Math.min(win.h*.46/G.r,win.w*.4/G.r),1200,0,win.oy);
+  }else if(r.view==="entry"&&win){
+    const e=BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]; if(e){
+      const set=[e.i].concat((e.rel||[]).map(n=>BY[n]&&BY[n].i).filter(x=>x!=null));
+      let RX=60,RY=60; set.forEach(i=>{RX=Math.max(RX,Math.abs(Sky.stars[i].x-Sky.stars[e.i].x));RY=Math.max(RY,Math.abs(Sky.stars[i].y-Sky.stars[e.i].y));});
+      const k=Math.min(win.h*.38/RY,win.w*(phone?.36:.3)/RX,fk*7);
+      Sky.set({ring:e.i,link:true,focus:set,labels:true}); dim=1;
+      fly(Sky.stars[e.i].x,Sky.stars[e.i].y,Math.max(k,fk*1.2),1300,0,win.oy);
+    }
+  }else if(r.view==="patterns"&&r.arg&&win){
+    const rc=Sky.S.seq[D.recipes.findIndex(x=>slugify(x.n)===r.arg)];
+    if(rc&&rc.length){ Sky.st.chain=rc; Sky.lit(rc,true); dim=1;
+      let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; rc.forEach(i=>{const p=Sky.stars[i];x0=Math.min(x0,p.x);x1=Math.max(x1,p.x);y0=Math.min(y0,p.y);y1=Math.max(y1,p.y);});
+      const k=Math.min(win.w*.8/Math.max(160,x1-x0),win.h*.7/Math.max(160,y1-y0));
+      fly((x0+x1)/2,(y0+y1)/2,Math.max(fk*.28,Math.min(k,fk*4)),1200,0,win.oy); }
+  }else if(r.view==="search"&&win){
+    dim=1; Sky.set({names:false}); fly(S.w/2,S.h/2,Math.max(fk*.55,Math.min(win.w/S.w,win.h*1.9/S.h)),1000,0,win.oy);
+  }else{
+    fly(S.w/2,S.h/2,fk*(phone?1.1:1),1000,0,0); dim=.24;
+  }
+  const cp=$(".stage-copy")||$(".sky-top"); if(cp){ const b=cp.getBoundingClientRect(); Sky.set({avoid:{x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}}); } else Sky.set({avoid:null});
+  Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky");
+}
+function cvPointer(on){ $("#sky").style.pointerEvents=on?"auto":"none"; $("#sky").style.cursor=on?"grab":"default"; $("#sky").tabIndex=on?0:-1; }
+function winScroll(){ const w=$(".sky-window"); if(!w||!Sky.st.clipY&&Sky.st.clipY!==0) return; Sky.set({clipY:w.getBoundingClientRect().bottom}); }
+function homeScroll(){
+  if(!HOME_SCROLL) return;
+  const f=Math.min(1,scrollY/Math.max(1,innerHeight*.9));
+  Sky.set({dim:1-.74*f}); Sky.cam.k=Sky.fitK()*(innerWidth<760?1:.92)*(1+f*.28); Sky.invalidate();
+}
+addEventListener("scroll",()=>{ if(HOME_SCROLL) requestAnimationFrame(homeScroll); else if(Sky.st.clipY!=null) requestAnimationFrame(winScroll); },{passive:true});
+let INTRO_PLAYED=false, MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PENDING_VT = null;
 function key(){return location.hash||"#/";}
 function render(){
   let r=parse();
@@ -466,32 +551,43 @@ function render(){
     else if(r.view==="entry"&&location.hash.indexOf("#",1)>0){}
     else window.scrollTo(0,0);
     FRESH=false; LAST_KEY=k;
-    afterRender(r);
+    afterRender(r); skyRoute(r,LAST_KEY===null&&!INTRO_PLAYED);
+    INTRO_PLAYED=true;
   };
-  const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if(document.startViewTransition&&!reduce&&LAST_KEY!==null){
-    if(PENDING_VT!=null){ const t=$('[data-vtn="'+PENDING_VT+'"]'); if(t) t.style.viewTransitionName="t"+PENDING_VT; }
-    document.startViewTransition(go); PENDING_VT=null;
-  } else go();
+  go();
 }
 function titleFor(r){
   const base="The Pattern Decoder";
   if(r.view==="entry"){const e=BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]; return e?curly(e.n)+" — "+base:base;}
   if(r.view==="browse"&&r.arg&&GROUP[r.arg]) return GROUP[r.arg].label+" — "+base;
-  const t={search:"Search",browse:"Browse",where:"Where it happens",common:"The most common",all:"A–Z",guide:"Help me figure it out",patterns:"How tactics combine",saved:"Saved and recent",about:"Use this safely"}[r.view];
+  const t={sky:"The sky",search:"Search",browse:"Browse",where:"Where it happens",common:"The most common",all:"A–Z",guide:"Help me figure it out",patterns:"How tactics combine",saved:"Saved and recent",about:"Use this safely"}[r.view];
   return t?t+" — "+base:base+" — "+E.length+" manipulation and control tactics, explained";
 }
 function setNav(view){
-  const map={"":"home",search:"search",browse:"browse",where:"browse",all:"browse",common:"browse",entry:"browse",guide:"guide",patterns:"browse",saved:"saved",about:"about"};
+  const map={"":"home",sky:"sky",search:"search",browse:"browse",where:"browse",all:"browse",common:"browse",entry:"browse",guide:"guide",patterns:"browse",saved:"saved",about:"about"};
   const cur=map[view];
   document.querySelectorAll("[data-nav]").forEach(a=>{ if(a.dataset.nav===cur) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
 }
-function afterRender(r){
+function lightResults(list){ if(typeof Sky==="undefined") return; Sky.lit(list.slice(0,16).map(e=>e.i),list.length<=12); Sky.set({ring:list.length===1?list[0].i:-1}); const w=$(".sky-window"); if(w&&list.length&&list.length<=40){ const b=w.getBoundingClientRect(), pts=list.slice(0,16).map(e=>Sky.stars[e.i]); let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; pts.forEach(p=>{x0=Math.min(x0,p.x);x1=Math.max(x1,p.x);y0=Math.min(y0,p.y);y1=Math.max(y1,p.y);}); const k=Math.min(b.width*.8/Math.max(260,x1-x0),b.height*.8/Math.max(260,y1-y0)); Sky.flyTo((x0+x1)/2,(y0+y1)/2,Math.max(Sky.fitK()*.55,Math.min(k,Sky.fitK()*2.5)),900,0,b.top+scrollY+b.height/2-innerHeight/2); } else if(w&&!list.length){ const b=w.getBoundingClientRect(); Sky.flyTo(Sky.S.w/2,Sky.S.h/2,Math.max(Sky.fitK()*.55,Math.min(b.width/Sky.S.w,b.height*1.9/Sky.S.h)),700,0,b.top+scrollY+b.height/2-innerHeight/2); } }
+function calmUI(){ const on=Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches; document.documentElement.dataset.calm=on?"1":"0"; document.querySelectorAll("[data-calm]").forEach(b=>{b.setAttribute("aria-pressed",on); b.setAttribute("aria-label",on?"Calm mode is on. Turn motion back on":"Turn on calm mode: stops all motion");}); }
+let RV=null;
+function reveals(){
+  if(RV) RV.disconnect();
+  const items=document.querySelectorAll(".ways .way,.groups .group,.sect-head,.rows .row:nth-child(-n+9)");
+  if(!("IntersectionObserver" in window)||Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches){ document.documentElement.classList.add("no-io"); return; }
+  document.documentElement.classList.remove("no-io");
+  RV=new IntersectionObserver(es=>es.forEach((x,n)=>{ if(x.isIntersecting){ x.target.style.transitionDelay=(n*70)+"ms"; x.target.classList.add("in"); RV.unobserve(x.target); } }),{rootMargin:"0px 0px -8% 0px"});
+  items.forEach(el=>{ el.classList.add("rv"); RV.observe(el); });
+}
+function afterRender(r){ reveals();
   const live=$("#q-page");
   if(!live&&MOVED_FOCUS){ const h=$("#main h1:not(.sr-only)")||$("#main h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); } }
   MOVED_FOCUS=true;
   if(live){ live.focus({preventScroll:true}); const v=live.value; live.setSelectionRange(v.length,v.length); }
   if(r.view==="entry") watchParts();
+  if(r.view==="search") lightResults(search(SEARCH_Q).list);
+  if(r.view==="guide"&&GUIDE.step===2) lightResults(guideList());
+  if(r.view==="saved"||r.view==="") refreshMarks();
 }
 let PART_OBS=null;
 function watchParts(){
@@ -511,7 +607,7 @@ window.addEventListener("scroll",()=>{ if(LAST_KEY) SCROLL[LAST_KEY]=window.scro
 document.addEventListener("click",ev=>{
   const a=ev.target.closest("a[href^='#/']");
   if(a){ if(LAST_KEY) SCROLL[LAST_KEY]=window.scrollY; FRESH=true; delete SCROLL[a.getAttribute("href")]; const vt=a.dataset.vt; PENDING_VT=vt!=null?vt:null; return; }
-  const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall],[data-term]");
+  const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall],[data-term],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],[data-calm],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],[data-calm]");
   if(!t) return;
   const d=t.dataset;
   if(d.try!==undefined){ SEARCH_Q=d.try; if(parse().view==="search"){ const i=$("#q-page"); i.value=SEARCH_Q; updateResults(); } else { FRESH=true; location.hash="#/search"; } return; }
@@ -528,6 +624,14 @@ document.addEventListener("click",ev=>{
   if(d.setfilter!==undefined){ FILTER_SET=d.setfilter; const y=window.scrollY; render(); window.scrollTo(0,y); return; }
   if(d.jump!==undefined){ ev.preventDefault(); const el=document.getElementById(d.jump); if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); return; }
   if(d.part!==undefined){ ev.preventDefault(); const el=document.getElementById(d.part); if(el){ if(el.tagName==="DETAILS") el.open=true; el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); const h=el.querySelector("h2"); if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});} } return; }
+  if(d.skygroup!==undefined){ const G=Sky.S.groups[d.skygroup]; Sky.set({groupFocus:d.skygroup}); pickStar(-1); Sky.set({groupFocus:d.skygroup});
+    Sky.flyTo(G.x,G.y,Math.min(innerWidth,innerHeight)*(innerWidth<760?.36:.3)/G.r,1000,0,innerWidth<760?-innerHeight*.12:0); Sky.st.labels=true; return; }
+  if(d.zoom!==undefined){ if(d.zoom==="0"){ Sky.set({groupFocus:null,labels:false}); pickStar(-1); Sky.flyTo(Sky.S.w/2,Sky.S.h/2,Sky.fitK(),900,0,0); } else { Sky.setK(Sky.cam.k*(d.zoom==="1"?1.5:1/1.5)); Sky.invalidate(); } return; }
+  if(d.sheetclose!==undefined){ pickStar(-1); return; }
+  if(d.skylink!==undefined){ const i=+d.skylink, e=E[i]; const set=[i].concat((e.rel||[]).map(n=>BY[n]&&BY[n].i).filter(x=>x!=null));
+    Sky.set({focus:set,link:true,groupFocus:null,labels:true}); Sky.lit([]); let R=60; set.forEach(j=>{R=Math.max(R,Math.hypot(Sky.stars[j].x-Sky.stars[i].x,Sky.stars[j].y-Sky.stars[i].y));});
+    Sky.flyTo(Sky.stars[i].x,Sky.stars[i].y,Math.min(Sky.fitK()*6,Math.min(innerWidth,innerHeight)*.3/R),900,0,innerWidth<760?-innerHeight*.2:0); return; }
+  if(d.calm!==undefined){ Sky.setCalm(!Sky.calm); calmUI(); return; }
   if(d.term!==undefined){ const def=document.getElementById(d.term); if(def){ def.hidden=!def.hidden; t.setAttribute("aria-expanded",!def.hidden); } return; }
   if(d.openall!==undefined){ const all=[...document.querySelectorAll("details.part")]; const open=!all.every(x=>x.open); all.forEach(x=>x.open=open); OPEN_PARTS=open; t.textContent=open?"Fold all":"Open all"; return; }
   if(d.clearsaved!==undefined){ if(confirm("Clear your saved and recent entries on this device?")){ store.set("starred",[]); store.set("trail",[]); render(); } return; }
@@ -538,7 +642,7 @@ document.addEventListener("submit",ev=>{
   const i=f.querySelector("input"); SEARCH_Q=i.value;
   if(parse().view!=="search"){ FRESH=true; location.hash="#/search"; } else { updateResults(); i.blur(); }
 });
-const updateResults=(()=>{let t; return ()=>{clearTimeout(t); t=setTimeout(()=>{ const r=$("#results"); if(r){ const x=search(SEARCH_Q); r.innerHTML=resultsHTML(x); const c=$("#rcount"); if(c) c.textContent=x.n?(x.list.length?x.list.length+" matches":"No matches"):""; } },120);};})();
+const updateResults=(()=>{let t; return ()=>{clearTimeout(t); t=setTimeout(()=>{ const r=$("#results"); if(r){ const x=search(SEARCH_Q); lightResults(x.list); r.innerHTML=resultsHTML(x); const c=$("#rcount"); if(c) c.textContent=x.n?(x.list.length?x.list.length+" matches":"No matches"):""; } },120);};})();
 document.addEventListener("input",ev=>{
   const i=ev.target;
   if(i.closest&&i.closest("[data-search]")){ i.closest("form").classList.toggle("has",!!i.value);
@@ -561,5 +665,17 @@ let TOAST_T;
 function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("on"); clearTimeout(TOAST_T); TOAST_T=setTimeout(()=>t.classList.remove("on"),1800); }
 function themeIcon(){ const b=$("[data-theme-toggle]"); if(!b) return; const light=document.documentElement.getAttribute("data-theme")==="light";
   b.innerHTML=ic(light?"moon":"sun"); b.setAttribute("aria-label",light?"Switch to the dark theme":"Switch to the light theme"); }
-themeIcon();
+themeIcon(); calmUI(); refreshMarks();
+Sky.onPick=i=>pickStar(i);
+document.getElementById("sky").addEventListener("keydown",ev=>{
+  if(Sky.st.interactive===false) return; const k=ev.key;
+  const dirs={ArrowLeft:[-1,0],ArrowRight:[1,0],ArrowUp:[0,-1],ArrowDown:[0,1]};
+  if(dirs[k]){ ev.preventDefault(); const from=SKY_PICK>=0?SKY_PICK:Sky.nearest(innerWidth/2,innerHeight/2,9999); if(SKY_PICK<0){ pickStar(from); return; }
+    const [dx,dy]=dirs[k], p=Sky.stars[SKY_PICK]; let best=-1,bs=1e12;
+    Sky.stars.forEach((q,i)=>{ if(i===SKY_PICK) return; const vx=q.x-p.x, vy=q.y-p.y, d=Math.hypot(vx,vy); const dot=(vx*dx+vy*dy)/d; if(dot<.5) return; const sc=d*(2-dot); if(sc<bs){bs=sc;best=i;} });
+    if(best>=0) pickStar(best); }
+  else if(k==="Enter"&&SKY_PICK>=0){ location.hash=entryHref(E[SKY_PICK]); }
+  else if(k==="Escape"){ pickStar(-1); }
+  else if(k==="+"||k==="="){ Sky.setK(Sky.cam.k*1.4); Sky.invalidate(); } else if(k==="-"){ Sky.setK(Sky.cam.k/1.4); Sky.invalidate(); }
+});
 render();

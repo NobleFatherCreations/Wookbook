@@ -24,6 +24,7 @@ V10 = os.path.join(os.path.dirname(__file__), "decoder-v10")
 A = os.path.join(V10, "assets")
 VERSION = "v10 — 2026-10-22"
 UPDATES = [
+    "<strong>The sky.</strong> Every tactic is now a star in one night sky, grouped into ten constellations. The sky moves with you: wide on the home page, into a constellation when you open a group, onto the single star when you read an entry. Stars you have read glow gold, saved ones are ringed, and search results and your answers to the guide light up where they sit. A Calm button stops all motion.",
     "<strong>A simpler guide.</strong> Search by what happened, answer two short questions, or browse ten plain groups. Every entry now reads in five parts: in short, understand it, is this it, what you can do, and go deeper.",
     "<strong>Easier on a phone.</strong> Search sits at the top, a tab bar keeps every part of the guide one tap away, and each entry has a bar to jump between its parts.",
     "<strong>Every entry rewritten (v9).</strong> Each tactic has its own definition, examples, look-alikes, questions, words you could use and a safety note. Tactics that were the same thing under two names were merged; old names and links still work.",
@@ -116,6 +117,72 @@ def dedupe(items, against):
     return keep or items[:1]
 
 
+def layout_sky(entries, recipes, portrait=False):
+    """Deterministic star positions: each group is a constellation on a ring; inside a group
+    stars start on a phyllotaxis spiral (popular ones nearest the centre) and are relaxed
+    with springs along related links and repulsion, so neighbours sit near each other.
+    Pure Python and seeded, so the same data always draws the same sky."""
+    import math, random
+    W, H = (1700, 2700) if portrait else (2600, 1700)
+    order = ["hook", "wear", "truth", "blame", "pressure", "control", "people", "systems", "online", "society"]
+    cx0, cy0 = W / 2, H / 2
+    centres = {}
+    for i, g in enumerate(order):
+        a = -math.pi / 2 + i * 2 * math.pi / len(order) + 0.18
+        rr = 0.36 + 0.05 * math.sin(i * 2.3)
+        centres[g] = (cx0 + math.cos(a) * W * rr * (1.05 if portrait else 1), cy0 + math.sin(a) * H * rr * (1.0 if portrait else 1.02))
+    idx = {e["n"]: i for i, e in enumerate(entries)}
+    pos = [None] * len(entries)
+    rng = random.Random(310)
+    for g in order:
+        members = sorted([e for e in entries if e["g"] == g], key=lambda e: (-e["pop"], e["n"]))
+        gx, gy = centres[g]
+        for k, e in enumerate(members):
+            r = 38 * math.sqrt(k + 1.5); a = k * 2.399963 + rng.random() * .4
+            pos[idx[e["n"]]] = [gx + r * math.cos(a), gy + r * math.sin(a) * .82]
+    edges = set()
+    for e in entries:
+        i = idx[e["n"]]; same = [idx[r] for r in e["rel"] if r in idx and entries[idx[r]]["g"] == e["g"]]
+        for j in same[:3]:
+            edges.add((min(i, j), max(i, j)))
+    for it in range(220):
+        force = [[0.0, 0.0] for _ in pos]
+        for i in range(len(pos)):
+            for j in range(i + 1, len(pos)):
+                dx = pos[i][0] - pos[j][0]; dy = pos[i][1] - pos[j][1]
+                d2 = dx * dx + dy * dy + .01
+                if d2 < 110 * 110:
+                    d = math.sqrt(d2); f = (110 - d) / 110 * 2.2
+                    force[i][0] += dx / d * f; force[i][1] += dy / d * f
+                    force[j][0] -= dx / d * f; force[j][1] -= dy / d * f
+        for i, j in edges:
+            dx = pos[j][0] - pos[i][0]; dy = pos[j][1] - pos[i][1]
+            d = math.sqrt(dx * dx + dy * dy) + .01
+            f = (d - 96) * .012
+            force[i][0] += dx / d * f; force[i][1] += dy / d * f
+            force[j][0] -= dx / d * f; force[j][1] -= dy / d * f
+        for i, e in enumerate(entries):
+            gx, gy = centres[e["g"]]
+            force[i][0] += (gx - pos[i][0]) * .004; force[i][1] += (gy - pos[i][1]) * .004
+        for i in range(len(pos)):
+            pos[i][0] += max(-6, min(6, force[i][0])); pos[i][1] += max(-6, min(6, force[i][1]))
+    xs = [p[0] for p in pos]; ys = [p[1] for p in pos]
+    mx, my = (min(xs) + max(xs)) / 2, (min(ys) + max(ys)) / 2
+    scale_x = (W * .9) / (max(xs) - min(xs)); scale_y = (H * .9) / (max(ys) - min(ys)); sc = min(scale_x, scale_y, 1.25)
+    for p in pos:
+        p[0] = round(W / 2 + (p[0] - mx) * sc, 1); p[1] = round(H / 2 + (p[1] - my) * sc, 1)
+    gcent = {}
+    for g in order:
+        pts = [pos[idx[e["n"]]] for e in entries if e["g"] == g]
+        gx = sum(p[0] for p in pts) / len(pts); gy = sum(p[1] for p in pts) / len(pts)
+        rad = max(math.hypot(p[0] - gx, p[1] - gy) for p in pts)
+        gcent[g] = {"x": round(gx, 1), "y": round(gy, 1), "r": round(rad, 1)}
+    # cross-group related links are kept separately: drawn only for a focused star
+    near = [[idx[r] for r in e["rel"] if r in idx] for e in entries]
+    return {"w": W, "h": H, "pos": pos, "edges": sorted([list(x) for x in edges]), "groups": gcent, "near": near,
+            "seq": [[idx[n] for n in r["c"] if n in idx] for r in recipes]}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(ROOT, "content", "prose", "_raw", "playbook-v10.html"))
@@ -176,17 +243,20 @@ def main():
                   "less_concerning_if": dedupe(c["less_concerning_if"], c["this_may_not_be_it_when"])},
         })
     by = {e["n"]: e for e in entries}
+    _rec = [{"c": [aliases.get(x, x) for x in r["c"]]} for r in recipes]
+    payload_sky = {"land": layout_sky(entries, _rec), "port": layout_sky(entries, _rec, True)}
     # The most common: the v9 formula (text-detectable tier, then how often it recurs
     # inside the documented sequences), kept to 24 so the list stays a starting point.
     core = sorted(codex, key=lambda c: (-((4 if c["tier"] == "Detected" else 0) + min(pop.get(c["name"], 0), 10)), c["name"]))
     common = [c["name"] for c in core[:24]]
-    groups = [{"k": k, "label": l, "blurb": b} for k, l, b in GROUPS if any(e["g"] == k for e in entries)]
+    SHORT = {"truth": "Twisting truth", "pressure": "Guilt and pressure", "control": "Control", "hook": "Love that hooks", "wear": "Put-downs", "blame": "Dodging blame", "people": "Turning people", "systems": "Work and systems", "online": "Online", "society": "Groups and cults"}
+    groups = [{"k": k, "label": l, "blurb": b, "short": SHORT[k]} for k, l, b in GROUPS if any(e["g"] == k for e in entries)]
     payload = {
         "entries": entries, "groups": groups,
         "settings": [{"k": k, "label": l, "blurb": b} for k, l, b in SETTINGS],
         "recipes": [{"n": r["n"], "c": [aliases.get(x, x) for x in r["c"] if aliases.get(x, x) in by], "d": r["d"]} for r in recipes],
         "aliases": aliases, "narrow": narrow, "feelings": feelings, "feelingGroups": feeling_groups,
-        "stop": stop, "common": common, "glossary": GLOSSARY, "tries": TRIES, "catToGroup": CAT_TO_GROUP,
+        "sky": payload_sky, "stop": stop, "common": common, "glossary": GLOSSARY, "tries": TRIES, "catToGroup": CAT_TO_GROUP,
         "cover": read(A, "cover.txt"), "wordmark": read(A, "wordmark.svg"),
         "version": VERSION, "updates": UPDATES,
     }
@@ -200,7 +270,7 @@ def main():
                  .replace("{{DATA}}", blob)
                  .replace("{{HOUSE}}", read(A, "house.html"))
                  .replace("{{BEACON}}", read(A, "beacon.html"))
-                 .replace("{{JS}}", read(V10, "app.js")))
+                 .replace("{{JS}}", read(V10, "app.js").replace("//@@SKY@@", read(V10, "sky.js"))))
     assert "{{" not in html, "unfilled placeholder in shell"
     with open(a.out, "w", encoding="utf-8") as fh:
         fh.write(html)

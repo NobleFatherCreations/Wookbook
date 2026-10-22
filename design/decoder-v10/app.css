@@ -13,6 +13,7 @@
   --sans:'Public Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
   --r-sm:8px; --r:12px; --r-lg:20px;
   --ease:cubic-bezier(.23,1,.32,1); --t:200ms;
+  --ts:0 2px 40px rgba(3,6,18,.5);
   --measure:68ch; --head-h:64px; --tab-h:64px;
   /* aliases read by the shared House menu */
   --accent:var(--brass); --accent-grad:var(--brass-2); --accent-ink:var(--brass-ink);
@@ -21,6 +22,7 @@
   color-scheme:dark;
 }
 :root[data-theme="light"]{
+  --ts:none;
   --bg:#ECEDF6; --bg-2:#E4E6F2; --surface:#F8F8FC; --surface-2:#F1F2F9;
   --ink:#141A33; --ink-2:#3B4167; --ink-3:#5F6690;
   --line:rgba(20,26,51,.14); --line-2:rgba(20,26,51,.08);
@@ -426,3 +428,152 @@ details.part[open] .p-body{animation:rise 240ms var(--ease) both}
 .callout .ch{display:flex;gap:8px;align-items:center;font:600 16px/1.3 var(--sans);color:var(--ember);margin:0 0 8px}
 .eyebrow a{display:inline-block;padding:6px 0}
 @media (min-width:1180px){.groups{grid-template-columns:repeat(5,1fr)}.group{padding:20px}.group .gt{font-size:22px}}
+
+/* =========================================================================
+   v10.1 — the sky world. The canvas is the page's ground; everything else
+   is lit glass and engraved type laid over it.
+   ========================================================================= */
+:root{
+  --glass:rgba(16,22,46,.62); --glass-2:rgba(22,30,60,.78); --glass-line:rgba(214,178,98,.22); --glass-hi:rgba(255,255,255,.05);
+  --chart:'IM Fell English SC','IM Fell English',Georgia,serif;
+}
+:root[data-theme="light"]{--glass:rgba(250,250,254,.72);--glass-2:rgba(250,250,254,.9);--glass-line:rgba(122,90,22,.28);--glass-hi:rgba(255,255,255,.7)}
+html{background:var(--bg)}
+body{background:transparent}
+body::before{display:none}
+#sky{position:fixed;inset:0;z-index:0;width:100vw;height:100vh;display:block;touch-action:pan-y}
+body[data-sky="sky"] #sky{touch-action:none}
+.veil{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 0%,transparent 40%,color-mix(in srgb,var(--bg) 70%,transparent) 100%),
+             linear-gradient(180deg,color-mix(in srgb,var(--bg) 55%,transparent),transparent 22%,transparent 70%,color-mix(in srgb,var(--bg) 85%,transparent));
+  transition:opacity 600ms var(--ease)}
+body[data-sky="sky"] .veil{opacity:.55}
+html{background:linear-gradient(180deg,#060917,#0B1022 55%,#10173A) fixed}
+:root[data-theme="light"]{background:linear-gradient(180deg,#D9DDF0,#ECEDF6) fixed}
+
+/* type: engraved display, bigger scale */
+.h1{font:400 clamp(40px,7.2vw,84px)/1.02 var(--serif);letter-spacing:-.01em;text-shadow:var(--ts)}
+.h2{font:400 clamp(28px,4.2vw,44px)/1.1 var(--serif)}
+.eyebrow{font-family:var(--chart);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.eyebrow a{color:var(--brass);text-decoration:none}.eyebrow a:hover{color:var(--brass-2)}
+.kicker{font-family:var(--chart);font-size:clamp(15px,2vw,18px);letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin:0 0 16px}
+.kicker b{font-weight:400;font-size:1.5em;letter-spacing:.04em}
+.stage-h{font:400 clamp(44px,8.4vw,104px)/.98 var(--serif);margin:0 0 20px;letter-spacing:-.015em;max-width:12ch;text-wrap:balance;text-shadow:var(--ts)}
+
+/* header: floats on the sky */
+.top{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 78%,transparent),transparent);border-bottom:0;-webkit-backdrop-filter:none;backdrop-filter:none}
+.tnav a,.icon-btn{color:var(--ink-2)}
+.tnav a[aria-current="page"]{background:var(--glass);box-shadow:inset 0 0 0 1px var(--glass-line)}
+.icon-btn.solid{width:44px;height:44px;background:var(--glass-2);border:1px solid var(--glass-line);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+[data-calm][aria-pressed="true"]{color:var(--brass)}
+
+/* panels become lit glass with a hairline of brass */
+.way,.group,.row,.short,.compare>div,.resp>div,.note,.opt,.empty,.pats a,.pn a,.continue{
+  background:var(--glass);-webkit-backdrop-filter:blur(14px) saturate(1.15);backdrop-filter:blur(14px) saturate(1.15);
+  border:1px solid var(--glass-line);box-shadow:inset 0 1px 0 var(--glass-hi),0 14px 40px rgba(3,6,18,.28)}
+.row{border-radius:var(--r)}
+.short{border-radius:var(--r-lg);padding:32px;position:relative}
+.short::before,.short::after,.script::before,.script::after{content:"";position:absolute;width:16px;height:16px;border:1px solid var(--brass);opacity:.8;pointer-events:none}
+.short::before,.script::before{top:10px;left:10px;border-right:0;border-bottom:0}
+.short::after,.script::after{bottom:10px;right:10px;border-left:0;border-top:0}
+.script{position:relative}
+.way{padding:28px;min-height:190px;position:relative;overflow:hidden}
+.way::after{content:"";position:absolute;right:-30px;top:-30px;width:140px;height:140px;border-radius:50%;background:radial-gradient(circle,var(--brass-wash),transparent 70%);transition:transform 600ms var(--ease)}
+.way:hover::after{transform:scale(1.5)}
+.way .w-ic{background:none;border:1px solid var(--glass-line);color:var(--brass)}
+.way h2{font:400 26px/1.15 var(--serif)}
+.group .gt{font:400 25px/1.15 var(--serif)}
+
+/* the home stage: the sky is the hero */
+.stage{position:relative;min-height:calc(100svh - var(--head-h));display:flex;align-items:flex-end;padding:24px 0 64px}
+.stage-copy{max-width:600px;position:relative;z-index:1}
+.stage .hero-mark{width:min(100%,360px);margin:0 0 28px;opacity:.95}
+.stage-search{margin-top:28px}
+.scroll-cue{position:absolute;left:50%;bottom:20px;transform:translateX(-50%) rotate(90deg);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  color:var(--ink-3);border:1px solid var(--glass-line);background:var(--glass);text-decoration:none}
+.sect.first{margin-top:24px}
+@media (min-width:901px){.stage{align-items:center}.stage-copy{margin-top:-6vh}}
+@media (max-width:900px){.stage{padding-bottom:88px;align-items:flex-end}.stage .hero-mark{display:none}.stage-h{font-size:clamp(42px,12.5vw,64px)}.scroll-cue{display:none}}
+.search input{background:var(--glass-2);border-color:var(--glass-line);box-shadow:0 12px 44px rgba(3,6,18,.4)}
+.tries .chip,.chips .chip{background:var(--glass);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.chip[aria-pressed="true"],.chip.on{background:var(--brass-wash)}
+
+/* a window onto the sky at the top of pages that sit in a place on the map */
+.sky-window{height:clamp(190px,34vh,320px);margin:0 -24px}
+@media (max-width:760px){.sky-window{height:clamp(170px,27vh,240px);margin:0 -16px}}
+body[data-sky="entry"] main,body[data-sky="browse"] main,body[data-sky="search"] main,body[data-sky="patterns"] main{
+  background:linear-gradient(180deg,transparent 0,color-mix(in srgb,var(--bg) 72%,transparent) 260px,color-mix(in srgb,var(--bg) 88%,transparent) 100%)}
+body:not([data-sky=""]):not([data-sky="sky"]) .wrap{padding-top:0}
+body[data-sky="all"] .wrap,body[data-sky="saved"] .wrap,body[data-sky="about"] .wrap,body[data-sky="common"] .wrap,body[data-sky="where"] .wrap,body[data-sky="guide"] .wrap{padding-top:40px}
+body[data-sky="browse"] main,body[data-sky="all"] main,body[data-sky="saved"] main,body[data-sky="about"] main,body[data-sky="common"] main,body[data-sky="where"] main,body[data-sky="guide"] main{background:color-mix(in srgb,var(--bg) 68%,transparent)}
+
+/* the Sky page */
+body[data-sky="sky"] .foot,body[data-sky="sky"] .tabs ~ .foot{display:none}
+body[data-sky="sky"] main{min-height:calc(100svh - var(--head-h));pointer-events:none}
+body[data-sky="sky"] .wrap{padding:0;max-width:none}
+.sky-ui{position:fixed;inset:var(--head-h) 0 0 0;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;padding:16px 24px 24px}
+.sky-ui>*{pointer-events:auto}
+.sky-top{max-width:420px;pointer-events:none}.sky-top *{pointer-events:none}
+.sky-h{font:400 clamp(34px,5vw,56px)/1 var(--serif);margin-bottom:8px;text-shadow:0 2px 30px rgba(3,6,18,.6)}
+.sky-groups{display:flex;gap:8px;overflow-x:auto;padding:4px 0;scrollbar-width:none;margin:0 -24px;padding:4px 24px;max-width:calc(100% + 48px)}
+.sky-groups::-webkit-scrollbar{display:none}
+.sky-tools{position:absolute;right:24px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px}
+.sheet{position:absolute;right:24px;bottom:84px;width:min(380px,calc(100vw - 48px));padding:24px;border-radius:var(--r-lg);background:var(--glass-2);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid var(--glass-line);box-shadow:0 24px 70px rgba(3,6,18,.5);animation:sheetin 260ms var(--ease) both}
+.sheet[hidden]{display:none}
+.sheet-x{position:absolute;right:10px;top:10px;width:40px;height:40px;border:0;background:none;color:var(--ink-3);cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.sheet-x:hover{color:var(--ink);background:var(--surface-2)}
+.sheet-t{font:400 28px/1.1 var(--serif);margin:0 36px 4px 0}
+.sheet-s{margin:14px 0 16px;color:var(--ink-2);font-size:16px;line-height:1.55}
+@keyframes sheetin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (max-width:760px){
+  .sky-ui{padding:12px 16px calc(var(--tab-h) + 12px + env(safe-area-inset-bottom))}
+  .sky-groups{margin:0 -16px;padding:4px 16px;max-width:calc(100% + 32px)}
+  .sky-tools{right:12px;top:auto;bottom:calc(var(--tab-h) + 70px + env(safe-area-inset-bottom));transform:none;flex-direction:row}
+  .sheet{left:12px;right:12px;width:auto;bottom:calc(var(--tab-h) + 64px + env(safe-area-inset-bottom))}
+  .sky-top{max-width:none}
+}
+
+/* entry: reading stays calm and solid */
+.entry{margin-top:0}
+.short .sum{font-size:clamp(21px,2.6vw,26px)}
+.part>summary .h2,details.part .h2{font:400 clamp(26px,3.4vw,34px)/1.1 var(--serif)}
+details.part{border-top:1px solid var(--glass-line)}
+details.part[open]>summary{padding-bottom:0}
+.toc a.on{border-left-color:var(--brass);color:var(--ink)}
+.e-sub{font-size:23px}
+.scene{position:relative}
+
+/* section headers get an engraved rule */
+.sect-head{position:relative;padding-bottom:20px;margin-bottom:28px}
+.sect-head::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;
+  background:linear-gradient(90deg,var(--glass-line),transparent 70%) left center/100% 1px no-repeat}
+.sect-head h2::after{content:"";display:inline-block;width:7px;height:7px;margin-left:14px;vertical-align:middle;background:var(--brass);transform:rotate(45deg);opacity:.9}
+
+/* calm: stop everything that moves */
+[data-calm="1"] *,[data-calm="1"] *::before,[data-calm="1"] *::after{animation:none!important;transition-duration:1ms!important;scroll-behavior:auto!important}
+.tabs{grid-template-columns:repeat(5,1fr)!important}
+@media (max-width:760px){.tabs{background:color-mix(in srgb,var(--bg) 82%,transparent)}.tabs a[data-nav="sky"]{color:var(--ink-2)}}
+@media (prefers-reduced-motion:reduce){.sheet{animation:none}}
+
+/* reveal: sections rise in as they enter the view, once */
+.rv{opacity:0;transform:translateY(18px);transition:opacity 700ms var(--ease),transform 700ms var(--ease)}
+.rv.in{opacity:1;transform:none}
+[data-calm="1"] .rv,.no-io .rv{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}}
+
+.stage-copy::before{content:"";position:absolute;inset:-60px -80px -40px -120px;z-index:-1;pointer-events:none;
+  background:radial-gradient(60% 60% at 40% 50%,color-mix(in srgb,var(--bg) 78%,transparent),transparent 100%)}
+
+.stage-copy{width:100%;min-width:0}
+.stage-copy>*{max-width:100%}
+.stage-search,.search{max-width:100%}
+.tries{max-width:100%}
+@media (max-width:760px){body[data-sky="sky"] .nf-seal{bottom:calc(var(--tab-h) + 132px + env(safe-area-inset-bottom))!important}}
+
+main,.foot{position:relative;z-index:1}
+.top{z-index:50}.tabs{z-index:60}
+
+.sheet .eyebrow{padding-right:40px}
+@media (min-width:761px){.sky-tools{right:auto;left:24px;top:auto;bottom:90px;transform:none}}
+.sky-top{pointer-events:none}
