@@ -138,7 +138,7 @@ function searchBox(id,value,autofocus){
   return '<form class="search'+(value?' has':'')+'" role="search" data-search>'+
     '<span class="s-ic">'+ic("search")+'</span>'+
     '<label class="sr-only" for="'+id+'">Search the guide</label>'+
-    '<input id="'+id+'" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" value="'+esc(value||"")+'" placeholder="What happened? Or a name"'+(autofocus?' autofocus':'')+'>'+
+    '<input id="'+id+'" type="search" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" value="'+esc(value||"")+'" placeholder="What happened, or a name"'+(autofocus?' autofocus':'')+'>'+
     '<button type="button" class="s-clear" data-clear aria-label="Clear search">'+ic("close")+'</button></form>';
 }
 
