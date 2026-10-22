@@ -82,7 +82,7 @@
       "firm_boundary": "Say you will give input once you have been told what it can change, and that you want a written reply showing what was done with it afterward.",
       "disengagement": "Skip the survey or session if the decision is visibly final, and send a short written objection for the record instead of a performance of enthusiasm.",
       "support_seeking": "Compare notes with others who took part. If several of you saw the same fixed outcome, a joint letter or a conversation with a representative carries more weight.",
-      "workplace_or_professional": "Keep the dates of the invitation, the draft and the announcement. If a formal consultation duty applies, a union rep, ombuds office or regulator can tell you what was required."
+      "workplace_or_professional": "Keep the dates of the invitation, the draft and the announcement. If a formal consultation duty applies, a union rep, ombudsperson's office (an independent complaints office) or regulator can tell you what was required."
     },
     "boundary_script": "\"Before I give feedback, which parts can still change? If you can send me the decision date, and tell me afterward what happened to the comments, I'll write something thorough.\"",
     "safety_sensitive": false,
@@ -97,7 +97,7 @@
     "short_definition": "Including one person or a small number from a group as a visible gesture, without giving them the voice or authority that inclusion seems to promise.",
     "core_meaning": "Including one person or a small number from a group as a visible gesture, without giving them the voice or authority that inclusion seems to promise.",
     "expanded_definition": "Tokenism is inclusion that exists mainly to be seen. One member of a group is given a title, a seat on a panel, a spot in a photograph, and then is expected to stand for everyone like them. Their presence is mentioned more often than their views are asked for. A first hire from an underrepresented group is not tokenism by itself, since every change starts somewhere. It becomes tokenism when visibility stays high and influence stays near zero, and the person's presence is offered as the answer to questions about representation.",
-    "plain_language_summary": "A person holds a seat, a title or a spot in the photo that makes the group look inclusive, while their opinions carry little weight in real decisions.",
+    "plain_language_summary": "A seat, a title or a spot in the photo makes the group look inclusive. But the person's views carry little weight in real decisions.",
     "why_this_matters": "Your presence gets used as the reply to the very criticism you were brought in to raise, and pushing back makes you look ungrateful for the seat. You can end up carrying the group's image while holding none of its power.",
     "what_it_is": [
       "A single representative placed on a committee, board or team with no vote, no budget or no say in the agenda.",
@@ -180,7 +180,7 @@
     },
     "boundary_script": "\"I can share my own experience, but I can't speak for everyone from my background. Can we agree on what I actually get to decide in this role, so my presence here counts for something?\"",
     "safety_sensitive": false,
-    "safety_note": "Tokenism in itself brings no physical danger. It can carry career risk if raising it is answered with threats to your position or reference. If that begins, keep a dated record of the exchange and ask an employment lawyer, union representative or ombuds office what protection applies before you press further.",
+    "safety_note": "Tokenism in itself brings no physical danger. It can carry career risk if raising it is answered with threats to your position or reference. If that begins, keep a dated record of the exchange. Before you press further, ask an employment lawyer, union representative or ombudsperson's office (an independent complaints office) what protection applies.",
     "misuse_warning": [
       "Calling someone a token can wound the very person who earned the seat, and it can hide that they are doing real work. The word describes a role's design, not a person's worth.",
       "Applying the label to any early step toward inclusion can discourage organizations that are sincerely trying."
@@ -358,12 +358,12 @@
     "repair_check": "A named person takes the case, says what they will do and by when, and the fix is made. A sympathetic call from someone who cannot change anything, or a promise to pass the complaint along, does not count.",
     "boundary_respect_check": "Ask for a single owner by name and a date for the next step. See whether you get both. Notice if the reply restates the process in more detail instead, which leaves your question unanswered.",
     "psychological_mechanism": "When many people each hold a small share of a decision, each can feel the outcome is not really theirs, and each check may be treated as someone else's safety net. On the receiving end, repeated transfers tend to wear down persistence, and the effort of tracing the problem can end up larger than the problem.",
-    "possible_impact_on_receiver": "People describe retelling their story to a fifth stranger, losing days to hold queues, and a growing sense that they are shouting into a wall. Some give up and absorb the cost. Others turn their anger on individual staff who are as powerless as they are.",
+    "possible_impact_on_receiver": "People describe retelling their story to a fifth stranger, losing days on hold, and a growing sense that they are shouting into a wall. Some give up and absorb the cost. Others turn their anger on individual staff who are as powerless as they are.",
     "response_options": {
       "soft_clarification": "Ask each person who you reach one question: 'Who is the person who can decide this, and can you give me their name or role title?'",
       "firm_boundary": "State that you will keep one written thread open until someone with authority takes ownership, and ask for a reference number to quote each time.",
       "disengagement": "Pause the phone calls, which leave no record, and move to email or letters so each referral is on paper before you invest more time.",
-      "support_seeking": "Take the log of who said what to an ombuds office, a consumer or patient advocate, or an elected representative's caseworker, who can often find the owner you cannot.",
+      "support_seeking": "Take the log of who said what to an ombudsperson's office (an independent complaints office), a consumer or patient advocate, or an elected representative's caseworker, who can often find the owner you cannot.",
       "workplace_or_professional": "Within an organization, ask for the process owner or the approving manager for the decision by role, and request a written account of how the decision was reached."
     },
     "boundary_script": "\"I understand that your step was done correctly. I still need the name or job title of the person who has the authority to reverse this, and I'll keep a written record of each person who points me elsewhere.\"",
@@ -379,7 +379,7 @@
     "short_definition": "Turning a small, informal concern into a formal complaint, report or legal step whose weight is out of proportion to what happened.",
     "core_meaning": "Turning a small, informal concern into a formal complaint, report or legal step whose weight is out of proportion to what happened.",
     "expanded_definition": "Administrative Escalation is the jump from a conversation to a paper process. A disagreement that could have been settled over coffee becomes an HR complaint, a neighbor's noise becomes a formal notice, a request for space becomes a documented incident. Formal routes are sometimes exactly right. The warning sign is a formality far larger than the event, arriving soon after you raised a concern of your own, and mostly flowing in one direction. The process itself then costs you time, money and attention to answer.",
-    "plain_language_summary": "A small disagreement suddenly becomes an official complaint or filing, and you spend weeks answering something that could have been talked through.",
+    "plain_language_summary": "A small disagreement suddenly turns into an official complaint or filing. You spend weeks answering something a short talk could have settled.",
     "why_this_matters": "Defending against a process that is out of scale takes time, money and attention however it ends, and your next concern may go unraised for that reason alone. Even a case that is dismissed leaves a record you did not expect to have.",
     "what_it_is": [
       "A conversation-sized matter moved straight into a written complaint, formal warning or filed report.",
@@ -440,7 +440,7 @@
     ],
     "more_concerning_if": [
       "A series of formal steps follows each concern you raise, one after another.",
-      "The consequences threatened in the formal notice, such as a job, a tenancy or access to children, are far greater than the event.",
+      "The consequences threatened in the formal notice, such as a job, a lease or access to children, are far greater than the event.",
       "You are told that the process will go away if you drop your original concern."
     ],
     "pattern_over_time_signs": [
@@ -462,7 +462,7 @@
     },
     "boundary_script": "\"I will answer this fully. Could we also talk it through first? I also want my own concern recorded alongside it, so neither one gets dropped.\"",
     "safety_sensitive": true,
-    "safety_note": "Danger signals are a formal step that touches your job, home, immigration status or time with your children, especially with a response deadline running, or one filed by someone who has frightened you before. Read the deadline on the notice today and take it to legal aid, a union representative or a tenants' organization before you reply; an advocate can help if the filing is part of a wider pattern of control.",
+    "safety_note": "Danger signals are a formal step that touches your job, home, immigration status or time with your children, especially with a response deadline running. Another is a filing by someone who has frightened you before. Read the deadline on the notice today. Take it to legal aid, a union representative or a tenants' organization before you reply. An advocate can help if the filing is part of a wider pattern of control.",
     "misuse_warning": [
       "Treating every complaint filed against you as retaliation can blind you to a legitimate concern that deserves a real answer.",
       "Calling someone's careful record-keeping 'escalation' can penalize people who keep records because they were once disbelieved."
@@ -556,7 +556,7 @@
     },
     "boundary_script": "\"I'll respond to anything the court requires. I am asking the court to look at these filings together, because several raise matters that have already been decided.\"",
     "safety_sensitive": true,
-    "safety_note": "Filing volume can sit alongside other control, especially after a separation: threats, monitoring, financial pressure or a fight over children. If a stream of filings comes from someone who frightened you before, tell a domestic abuse or legal advocate about the whole history, not only the paperwork, and ask about protective orders and safe ways to receive court mail.",
+    "safety_note": "Filing volume can sit alongside other control, especially after a separation: threats, monitoring, financial pressure or a fight over children. A stream of filings may come from someone who frightened you before. If so, tell a domestic abuse or legal advocate about the whole history, not only the paperwork. Ask about protective orders and safe ways to receive court mail.",
     "misuse_warning": [
       "A person who files many papers because they are in real distress or do not understand court rules may not be doing anything to harm you. Look at the content and the effect, and avoid assuming what they feel.",
       "Using the phrase to describe any lawsuit against you can wrongly paint a legitimate claim as harassment."

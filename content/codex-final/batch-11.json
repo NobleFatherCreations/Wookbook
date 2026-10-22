@@ -90,7 +90,7 @@
     },
     "boundary_script": "\"I appreciate the heads-up, but I'd like to meet her without it. If something specific happened, tell me what and when, and I'll weigh it myself. Otherwise I'll make up my own mind.\"",
     "safety_sensitive": false,
-    "safety_note": "Rarely a safety concern alone. It changes when advance word is aimed at people who control something you depend on, such as a landlord, an employer, a custody evaluator or an immigration officer, or arrives with threats or isolation. Then write down what was said and by whom, and take it to a legal aid service or an advocate before you respond.",
+    "safety_note": "Rarely a safety concern alone. It changes when advance word is aimed at people who control something you depend on. Examples are a landlord, an employer, a custody evaluator or an immigration officer. It also changes when it arrives with threats or isolation. Then write down what was said and by whom, and take it to a legal aid service or an advocate before you respond.",
     "misuse_warning": [
       "Any advance warning can be called seeding. Treating every heads-up as a plot leaves you unable to take sincere advice, and the label cannot show what anyone meant.",
       "Suspecting that someone primed your friends can become its own lens, in which every cool reception proves the plot."
@@ -101,7 +101,7 @@
   "Credibility Theft": {
     "short_definition": "Casting doubt on someone's reliability in advance, so whatever they later report is heard as doubtful before they have said it.",
     "expanded_definition": "Credibility theft works on the audience, not on the argument. Remarks about someone's memory, mood, honesty or habit of exaggerating are placed with people who have not yet heard their account: relatives, coworkers, a manager, a school. When the account arrives, it is weighed against the reputation instead of the facts. Doubting a single claim is not this. The pattern is doubt about the person, spread early and widely, without any specific claim being named.",
-    "plain_language_summary": "Before you have said anything, other people have been told you exaggerate, get confused or are hard to believe, so what you report lands already doubted.",
+    "plain_language_summary": "Before you say a word, others have been told you exaggerate or get confused. So what you report is doubted before you even speak.",
     "why_this_matters": "Your account is discounted before you give it, so whatever you later report meets people who have already been prepared not to believe it, and you may never find out why. Asking for help becomes hardest exactly when you most need it.",
     "what_it_is": [
       "Remarks about your reliability that reach other people before your own account does, such as 'she remembers things her own way.'",
@@ -187,7 +187,7 @@
     },
     "boundary_script": "\"I'd like what I report to be looked at on its own facts. I have messages and dates for it. Could we go through them together, or could someone else look at them with us?\"",
     "safety_sensitive": true,
-    "safety_note": "This often travels with bigger problems. Watch for doubt being planted with people who decide things about you, such as a landlord, employer, family court or doctor, and for remarks about your mental state used to explain away a report of harm. Keep dated copies somewhere only you can reach, and speak to a legal aid service or an advocate before the next formal step.",
+    "safety_note": "This often travels with bigger problems. Watch for doubt being planted with people who decide things about you, such as a landlord, employer, family court or doctor. Watch, too, for remarks about your mental state used to explain away a report of harm. Keep dated copies somewhere only you can reach, and speak to a legal aid service or an advocate before the next formal step.",
     "misuse_warning": [
       "Anyone whose account was doubted can feel this has happened to them. A record of real errors reasonably lowers trust, and using the label to wave that record away turns it around.",
       "Confronting the people who repeated the remarks as if they had planned them can look like one more attempt to discredit someone. Check what was actually said, and by whom, before you describe it."
@@ -283,7 +283,7 @@
     },
     "boundary_script": "\"I'm open to hearing whether I do that, and I will listen when we get there. Right now I'm asking about what happened on Tuesday. Can we finish that first?\"",
     "safety_sensitive": false,
-    "safety_note": "Having your concern turned back on you is a communication problem. It changes when the charges against you are used to justify checking your phone, controlling your movements or limiting your money, or when you start to fear the reaction to naming anything. If so, write down specifics privately and speak to a counselor or advocate outside the relationship.",
+    "safety_note": "Having your concern turned back on you is a communication problem. It changes when the charges against you are used to justify checking your phone, controlling your movements or limiting your money. It also changes when you start to fear the reaction to naming anything. If so, write down specifics privately and speak to a counselor or advocate outside the relationship.",
     "misuse_warning": [
       "Saying 'you're projecting' to someone's honest complaint is itself the move described in Pseudo-Insight as Shutdown: it ends the conversation instead of describing it.",
       "The word names an accusation that fits the accuser, which you can only judge from the record. Using it because a charge stung is not enough."
@@ -437,7 +437,7 @@
       "People afraid of conflict may reach for a soft-sounding suggestion because they do not know what else to say."
     ],
     "common_false_positives": [
-      "A GP asking about your mood during an appointment about something else.",
+      "A family doctor asking about your mood during an appointment about something else.",
       "A workplace policy that sends everyone who files a complaint a list of support services, alongside the investigation.",
       "A relative who notices you have seemed low and says so, before any complaint exists."
     ],
@@ -472,7 +472,7 @@
       "soft_clarification": "Separate the two: 'I appreciate the concern, and I'd like to look at what happened. Can you tell me how my complaint will be reviewed?'",
       "firm_boundary": "Ask for a written answer: 'Please respond to the complaint itself, in writing, with what was found.'",
       "disengagement": "If a referral is offered in place of a review, set it aside for now and say you will take it up separately and by choice.",
-      "support_seeking": "Take your account to someone outside the system, such as an independent patient advocate, an ombudsman or a union representative, who can help press for a response on the facts.",
+      "support_seeking": "Take your account to someone outside the system, such as an independent patient advocate, an ombudsman (an independent complaints officer) or a union representative, who can help press for a response on the facts.",
       "workplace_or_professional": "Put the complaint in writing, with dates, to a named person, and keep a copy. If it is answered with comments about your health, note that and ask for the outcome in writing."
     },
     "boundary_script": "\"I'm glad you care about how I'm doing, and I'll take that up separately. What I'd like now is an answer to the complaint itself: what happened on the fourteenth, and what will be done about it.\"",

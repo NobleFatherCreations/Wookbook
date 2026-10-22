@@ -87,7 +87,7 @@
     },
     "boundary_script": "\"I've answered your question honestly. If you have something specific I can look at with you, I will. Could we take a break, or ask someone neutral to look at this with us?\"",
     "safety_sensitive": false,
-    "safety_note": "Accusation loops are usually a conversation problem. They deserve more concern if they come with constant checking of your phone, demands to prove where you were, or punishment for answers that are 'wrong'. If you feel afraid to say no, are being watched, or questioning ever turns physical or comes with threats, contact a domestic abuse advocate before the next confrontation and keep copies of messages somewhere they cannot reach.",
+    "safety_note": "Accusation loops are usually a conversation problem. They deserve more concern if they come with constant checking of your phone, demands to prove where you were, or punishment for answers that are 'wrong'. Take note if you feel afraid to say no, are being watched, or questioning turns physical or comes with threats. Then contact a domestic abuse advocate before the next confrontation, and keep copies of messages somewhere they cannot reach.",
     "misuse_warning": [
       "Naming this whenever someone doubts you can turn into a way to avoid fair questions. Being asked tough questions about something that does look off is not a trap.",
       "Saying 'you are Kafka-trapping me' in the middle of a real inquiry can sound like another dodge. The label fits when no answer could ever count."
@@ -167,7 +167,7 @@
       "Your sentences get shorter and more carefully worded whenever this person is listening.",
       "You open with 'I'm not saying this is true, but...' and it still lands as a confession.",
       "Past remarks resurface months later, quoted without the doubt you attached.",
-      "You find it easier to tell a friend or a diary the honest version than to tell this person."
+      "You find it easier to tell a friend or a journal the honest version than to tell this person."
     ],
     "repair_check": "Watch for whether openness becomes safe again. A person who has changed will treat your next unfinished thought as something to explore together, and may even say they regret pouncing before. An apology that is followed by another 'aha' the next time you admit something has not changed anything.",
     "boundary_respect_check": "Try telling them, 'I was thinking out loud, not confessing.' Notice whether that is allowed to stand. If they accept it and ask what you were thinking, your point was heard; if they insist your words stand as spoken, the thinking-aloud space is still closed.",
@@ -182,7 +182,7 @@
     },
     "boundary_script": "\"I was thinking out loud, and I'd like to keep being able to do that with you. I'm not confessing to anything. If you want to know what I meant, ask me, and I'll tell you. If it turns into a gotcha, I'll stop sharing.\"",
     "safety_sensitive": false,
-    "safety_note": "A trap question is a conversation problem, not a safety one. It becomes more serious if admissions are saved and used to threaten you, such as through exposure to your employer or family, or to take away money or access to children. If that begins, write down exactly what was said and when, and ask a legal aid service or an employee representative how those admissions could be used.",
+    "safety_note": "A trap question is a conversation problem, not a safety one. It becomes more serious if admissions are saved and used to threaten you. That could mean exposure to your employer or family, or losing money or access to children. If that begins, write down exactly what was said and when, and ask a legal aid service or an employee representative how those admissions could be used.",
     "misuse_warning": [
       "Calling it a gotcha whenever someone repeats your own words back can protect you from fair accountability. A clear statement is yours to stand behind.",
       "Using the label to avoid ever being quoted at all makes honest discussion harder for everyone."
@@ -382,7 +382,7 @@
   "Weaponized Incompetence": {
     "short_definition": "A pattern in which someone seems unable to do an unwanted task, so that it falls to another person for good.",
     "core_meaning": "A pattern in which someone seems unable to do an unwanted task, so that it falls to another person for good.",
-    "expanded_definition": "A task is done badly, or a person says they just cannot do it, and soon it is given to someone else. It happens most often in households and workplaces over chores such as laundry, school forms or booking appointments. This entry does not claim to know why anyone struggles with a task, and skill gaps, disability and honest confusion are common. What stands out is a task that never gets learned and always lands with the same person.",
+    "expanded_definition": "A task is done badly, or a person says they just cannot do it, and soon it is given to someone else. It happens most often in households and workplaces over chores such as laundry, school forms or booking appointments. None of this shows why anyone struggles with a task, and skill gaps, disability and honest confusion are common. What stands out is a task that never gets learned and always lands with the same person.",
     "plain_language_summary": "A chore gets done so badly, or is said to be so hard, that you take it over for good, and it never comes back to them.",
     "why_this_matters": "The task lands permanently on one person, along with the work of noticing it, asking about it, and eventually giving up on asking. Raising it also makes them sound as if they are complaining about help they were offered.",
     "what_it_is": [
@@ -467,17 +467,17 @@
     },
     "boundary_script": "\"I'm happy to show you how I do the school forms once. After that they're yours to track and finish, including remembering the deadlines. If it turns out to be really hard for you, tell me and we'll work out a swap of equal weight.\"",
     "safety_sensitive": false,
-    "safety_note": "This is a fairness and workload issue, not usually a safety one. It changes if the avoided tasks involve a child's medical care or safety, or if you are being punished for handing a task back, or if you control no money and cannot leave a bad split. In those cases, speak to a family doctor, a mediator or legal aid about the specific job at stake.",
+    "safety_note": "This is a fairness and workload issue, not usually a safety one. It changes if the avoided tasks involve a child's medical care or safety. It also changes if you are punished for handing a task back, or if you control no money and cannot leave a bad split. In those cases, speak to a family doctor, a mediator or legal aid about the specific job at stake.",
     "misuse_warning": [
       "Applying this label to anyone who does a chore differently from you can punish people who are honestly learning or who have a disability. Check whether they improve and whether the load really is uneven.",
-      "Using it as an accusation of laziness ends the conversation. This entry is about a pattern in the work, not what anyone intends."
+      "Using it as an accusation of laziness ends the conversation. The useful question is about the pattern in the work, not what anyone intends."
     ],
     "how_to_distinguish_from_related": "Blame-Shifting is about responsibility for something already done wrong, while Weaponized Incompetence is about who ends up with future work. Minimization shrinks your complaint, saying it is only a chore, whereas the pattern here is the quiet handover of the chore itself. Denial refuses that anything is wrong; this one often involves cheerful agreement that they are bad at the task."
   },
   "Strategic Apathy": {
     "short_definition": "Declaring 'I don't care' or 'whatever you want' at decision points, then criticizing whichever choice the other person makes.",
     "core_meaning": "Declaring 'I don't care' or 'whatever you want' at decision points, then criticizing whichever choice the other person makes.",
-    "expanded_definition": "A choice has to be made: a restaurant, a school, a holiday, a house. One person says 'you pick, I don't mind', and the other picks. Later the choice is picked apart. The first person carries no risk, while the second carries all of it. This entry does not claim to know why someone says they do not care, and real indifference is common. What stands out is a shrug at the moment of choosing and strong views afterward.",
+    "expanded_definition": "A choice has to be made: a restaurant, a school, a vacation, a house. One person says 'you pick, I don't mind', and the other picks. Later the choice is picked apart. The first person carries no risk, while the second carries all of it. Nobody can tell from the outside why someone says they do not care, and real indifference is common. What stands out is a shrug at the moment of choosing and strong views afterward.",
     "plain_language_summary": "You are told 'I don't care, you decide', and then whatever you choose turns out to be wrong.",
     "why_this_matters": "One person makes every decision alone and then carries the criticism for whichever way it went. Over time, deciding stops feeling like having a say and starts feeling like exposure.",
     "what_it_is": [
@@ -498,7 +498,7 @@
     "what_it_is_not": [
       "Honest indifference about a small thing, with no later complaint about the outcome.",
       "Depression, burnout or decision fatigue, where choosing really does feel impossible and the person says so openly.",
-      "A couple who agreed that one of them handles certain kinds of decisions, such as holidays or finances, and who trust each other's judgment.",
+      "A couple who agreed that one of them handles certain kinds of decisions, such as vacations or finances, and who trust each other's judgment.",
       "Someone from a family or culture where deferring to the host or the other person is polite, and who means it.",
       "A person who truly has no strong feeling on the matter and is happy with any result."
     ],
@@ -562,7 +562,7 @@
     },
     "boundary_script": "\"If you tell me to decide, I'll decide, and then it's decided. I'd like one thing from you before I do. What matters most to you about this? If you really have no preference, I'll go ahead without hearing about it afterward.\"",
     "safety_sensitive": false,
-    "safety_note": "Strategic Apathy is a pattern about decisions, not a danger in itself. What would change that is blame for outcomes escalating to anger, threats, or punishment, or being left to bear the cost of decisions about money, housing or children with no access to the accounts or papers. If that is happening, collect copies of key documents and speak with a financial counselor or legal aid service about your position.",
+    "safety_note": "Strategic Apathy is a pattern about decisions, not a danger in itself. What would change that is blame for outcomes escalating to anger, threats or punishment. Another sign is being left to bear the cost of decisions about money, housing or children, with no access to the accounts or papers. If that is happening, collect copies of key documents and speak with a financial counselor or legal aid service about your position.",
     "misuse_warning": [
       "Reading every 'I don't mind' as a trap can make you miss someone who truly is easygoing. Look for the later criticism, not the shrug.",
       "Pushing a tired or depressed person to state preferences can add to their burden. Ask first whether they are struggling."

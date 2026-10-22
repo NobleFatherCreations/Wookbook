@@ -62,7 +62,7 @@
     "less_concerning_if": [
       "The scorn is rare and tied to a specific moment, and they own it afterwards.",
       "You can do the same, return fire and be met with laughter and not offense.",
-      "Disagreements usually keep the target on the issue rather than on your character."
+      "Disagreements usually stay aimed at the issue rather than at your character."
     ],
     "more_concerning_if": [
       "Scorn has become the default tone for everyday exchanges, not only conflict.",
@@ -121,7 +121,7 @@
       "Mutual teasing where both people give and take, and either can say 'too far' and be heard.",
       "A single joke that misfired, followed by 'sorry, that came out wrong' and no repeat.",
       "A nickname you chose or like, even if it sounds rude to outsiders.",
-      "Roast-style humor at an event where everyone agreed to the format and the target is in on it.",
+      "Roast-style humor at an event where everyone agreed to the format and the person being teased is in on it.",
       "Gentle irony about a shared experience, such as a team's terrible road trip, that does not single out one person."
     ],
     "this_may_be_it_when": [
@@ -163,7 +163,7 @@
     "more_concerning_if": [
       "The 'joke' is a demeaning label that others have begun to use for you too.",
       "You have been told you are too sensitive more than once about the same line.",
-      "You avoid certain topics or gatherings to dodge being the target."
+      "You avoid certain topics or gatherings to dodge being the butt of the joke."
     ],
     "pattern_over_time_signs": [
       "You steer conversations away from your job, looks or past, because they are likely punchlines.",
@@ -184,7 +184,7 @@
     },
     "boundary_script": "\"I'm not upset about being teased in general. That particular name stings, and the laugh doesn't make it sting less. I'd like you to stop using it, and if I say it's too far, please let that be the end of it.\"",
     "safety_sensitive": false,
-    "safety_note": "Insults wrapped in jokes are usually a matter of respect, not danger. It would change if the jokes carry threats ('keep it up and see'), if they are used to control what you may say to others, or if you feel afraid of what happens after you object. Then speak to a trusted person or counselor about how the pattern is escalating.",
+    "safety_note": "Insults wrapped in jokes are usually a matter of respect, not danger. It would change if the jokes carry threats ('keep it up and see') or are used to control what you may say to others. It would also change if you feel afraid of what happens after you object. Then speak to a trusted person or counselor about how the pattern is escalating.",
     "misuse_warning": [
       "Not every cruel-sounding joke is this tactic, and ending a friendship over one tasteless remark can miss a real apology that was coming.",
       "Calling someone's sense of humor 'abusive' in response to normal banter can make real complaints about harmful teasing easier to dismiss."
@@ -376,7 +376,7 @@
     },
     "boundary_script": "\"I'm not looking for you to agree with how I feel. I'm asking you not to tell me I shouldn't feel it. If you want to share how you see it afterward, I'll listen, but I need to be heard first.\"",
     "safety_sensitive": false,
-    "safety_note": "Having feelings dismissed is hurtful but is not in itself a sign of danger. It becomes more serious if you are being told you are unwell or unstable in front of others, if you are punished for showing distress, or if your only support is the person dismissing you. Then a counselor, doctor or advocate outside the relationship can help you check your own bearings.",
+    "safety_note": "Having feelings dismissed is hurtful but is not in itself a sign of danger. It becomes more serious if you are told in front of others that you are unwell or unstable. It also does if you are punished for showing distress, or if your only support is the person dismissing you. Then a counselor, doctor or advocate outside the relationship can help you check your own bearings.",
     "misuse_warning": [
       "Calling every attempt to cheer you up or offer perspective 'invalidation' can make kindness feel suspect. Look for feelings routinely ruled out, not a clumsy comfort.",
       "Using the word to demand that others agree with your account of events mixes up respecting a feeling with agreeing with a conclusion."

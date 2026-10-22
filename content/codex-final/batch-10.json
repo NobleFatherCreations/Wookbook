@@ -50,7 +50,7 @@
     "common_false_positives": [
       "A manager's review noting that you missed all four deadlines this quarter.",
       "Friends calling you 'the planner' because you do run every trip.",
-      "A teacher's note that a pupil 'struggles with transitions', written to get support in place and not to settle a verdict."
+      "A teacher's note that a student 'struggles with transitions', written to get support in place and not to settle a verdict."
     ],
     "discernment_questions": [
       "Can the person using the label name two or three specific things I did, with dates?",
@@ -98,7 +98,7 @@
   "Rage as Control": {
     "short_definition": "Explosive anger that, whatever lies behind it, reliably ends a disagreement because the people around it learn to give way.",
     "core_meaning": "Explosive anger that, whatever lies behind it, reliably ends a disagreement because the people around it learn to give way.",
-    "expanded_definition": "This entry describes what an outburst does, not what is inside the person. Shouting, slamming a door, hitting a table, or going rigid and cold with fury can all close a conversation. The people nearby learn to calm things down first, and whatever raised the issue gets dropped. One blow-up under strain is common. The pattern shows when outbursts arrive as you push back, the topic does not return afterwards, and your world shrinks around avoiding the next one.",
+    "expanded_definition": "The focus is what an outburst does, not what is going on inside the person. Shouting, slamming a door, hitting a table, or going rigid and cold with fury can all close a conversation. The people nearby learn to calm things down first, and whatever raised the issue gets dropped. One blow-up under strain is common. The pattern shows when outbursts arrive as you push back, the topic does not return afterwards, and your world shrinks around avoiding the next one.",
     "plain_language_summary": "After enough blow-ups, you stop raising things that might set one off, so the anger ends up deciding what can be talked about.",
     "why_this_matters": "People around an outburst learn to put calming things down ahead of whatever started it, so topics stop being raised long before anyone decides to stop raising them. Over time one person's temper quietly sets the limits of a household or workplace.",
     "what_it_is": [
@@ -278,21 +278,21 @@
       "firm_boundary": "Name the fact and the fix: 'This section is my work, drafted on the third. I'd like it credited to me in the circulated version.'",
       "disengagement": "Share early ideas in writing, by email with a date and to the group, instead of in hallway talk or live calls where nothing is recorded.",
       "support_seeking": "Ask a colleague who saw the original work to confirm in writing when it was first shown, and talk to a mentor outside your reporting line about how to raise it.",
-      "workplace_or_professional": "Keep dated drafts and sent messages. Raise it with your manager first. If the reporting line is the problem, an HR, union or ombuds route can look at the record."
+      "workplace_or_professional": "Keep dated drafts and sent messages. Raise it with your manager first. If the reporting line is the problem, HR, a union, or an ombudsperson (an independent complaints officer) can look at the record."
     },
     "boundary_script": "\"The record needs to be right. I wrote this proposal and sent the first draft on the twelfth, so please credit it to me when it goes to the director's list.\"",
     "safety_sensitive": false,
-    "safety_note": "Credit theft rarely endangers you physically. It becomes more serious when it is tied to job security, a visa or sponsorship that depends on your employer, a degree, or retaliation after you speak. Gather dated proof of your own authorship, without copying confidential material before checking policy, and speak to an employment lawyer, union representative or student ombuds before escalating inside the organization.",
+    "safety_note": "Credit theft rarely endangers you physically. It becomes more serious when it is tied to job security, a visa or sponsorship that depends on your employer, a degree, or retaliation after you speak. Gather dated proof of your own authorship, without copying confidential material before checking policy, and speak to an employment lawyer, union representative or student ombudsperson before escalating inside the organization.",
     "misuse_warning": [
       "Claiming theft whenever a project's credit is less than you hoped can hurt a colleague who gave you a fair share. Check the record first.",
       "Posting a screenshot of a missing name as a public accusation can turn a fixable oversight into a feud. Ask for the correction first."
     ],
-    "how_to_distinguish_from_related": "Comparative Devaluation measures you unfavourably against other people; credit theft needs no comparison, because it moves the work itself. Emotional Invalidation is what you may hear when you raise it ('you're being petty'), but it is a separate act from the taking. Shame Installation attacks your adequacy as a person. Credit theft leaves your adequacy alone and takes the evidence of it."
+    "how_to_distinguish_from_related": "Comparative Devaluation measures you unfavorably against other people; credit theft needs no comparison, because it moves the work itself. Emotional Invalidation is what you may hear when you raise it ('you're being petty'), but it is a separate act from the taking. Shame Installation attacks your adequacy as a person. Credit theft leaves your adequacy alone and takes the evidence of it."
   },
   "Sabotaging Success": {
-    "short_definition": "A run of setbacks, such as a canceled lift, a lost message or a sudden crisis, that keeps landing just as someone is about to advance.",
-    "core_meaning": "A run of setbacks, such as a canceled lift, a lost message or a sudden crisis, that keeps landing just as someone is about to advance.",
-    "expanded_definition": "Here, delays and obstacles keep arriving just before something important to you: an exam, an interview, a launch, a course, a move. Each event looks ordinary alone, like a forgotten lift, a message that was not passed on, or a crisis that needs you tonight. What makes it a pattern is the timing and the repetition, and that the same person is near the trouble. Looking back across months can reveal a link no single event showed. It cannot tell you why anyone did it.",
+    "short_definition": "A run of setbacks, such as a canceled ride, a lost message or a sudden crisis, that keeps landing just as someone is about to advance.",
+    "core_meaning": "A run of setbacks, such as a canceled ride, a lost message or a sudden crisis, that keeps landing just as someone is about to advance.",
+    "expanded_definition": "Here, delays and obstacles keep arriving just before something important to you: an exam, an interview, a launch, a course, a move. Each event looks ordinary alone, like a forgotten ride, a message that was not passed on, or a crisis that needs you tonight. What makes it a pattern is the timing and the repetition, and that the same person is near the trouble. Looking back across months can reveal a link no single event showed. It cannot tell you why anyone did it.",
     "plain_language_summary": "Things keep going wrong just before your big moments, and when you look back, the same person is close to the problem each time.",
     "why_this_matters": "Progress keeps stalling for reasons that each look like bad luck, so you start doubting your own competence rather than the timing. Over months, chances to earn, learn or move out can quietly pass, which matters most where you depend on one person for money or a home.",
     "what_it_is": [
@@ -304,7 +304,7 @@
     ],
     "what_it_sounds_like": [
       "I know your exam's tomorrow, but I really need to talk about us tonight.",
-      "Oh, I forgot to tell you the recruiter rang.",
+      "Oh, I forgot to tell you the recruiter called.",
       "I can't do pickup after all, so you'll just have to miss the interview.",
       "Do you really think you're ready for that course? It'll only end in tears.",
       "Keys, charger or paperwork go missing on the morning of the interview, and nobody knows where.",
@@ -379,7 +379,7 @@
     },
     "boundary_script": "\"This course matters a lot to me, and my first assessment is next Tuesday. I'd like to talk about how we can keep that evening free, and what you can take on so I can study.\"",
     "safety_sensitive": true,
-    "safety_note": "Sabotage becomes a safety matter when it targets your independence: your job, qualification, savings, ID documents, phone or transport, or when it comes with threats or checking on where you go. Keep copies of key papers and a little money with someone you trust, and call a domestic abuse or financial-abuse service to talk it through confidentially before changing anything visibly.",
+    "safety_note": "Sabotage becomes a safety matter when it hits your independence: your job, qualification, savings, ID documents, phone or transport. It also does when it comes with threats or checking on where you go. Keep copies of key papers and a little money with someone you trust, and call a domestic abuse or financial-abuse service to talk it through confidentially before changing anything visibly.",
     "misuse_warning": [
       "Reading every canceled plan as sabotage turns real bad luck and honest busyness into an accusation. A timeline kept over months is the evidence, not one bad week.",
       "Telling someone they are sabotaging you before you have checked the pattern can end a conversation they would have joined. Start by describing the dates."
@@ -403,7 +403,7 @@
       "We found the problem. It's Priya.",
       "If it weren't for him, we'd all be fine.",
       "A report names one junior employee as sole cause and leaves out the sign-off chain.",
-      "She's always the one who stirs things up, said in a family after a group row.",
+      "She's always the one who stirs things up, said in a family after a group fight.",
       "Let's not look backward. The person responsible has been dealt with.",
       "The group chat turns on one member after a mistake everyone shared.",
       "The organization says one individual acted outside procedures, while the procedures stay unchanged."
@@ -471,12 +471,12 @@
       "soft_clarification": "Ask for the full picture in a calm voice: 'Can we look at who signed off on this and what the process was? I'd like the account to be complete.'",
       "firm_boundary": "Correct the record on what you did: 'I carried out the instruction I was given on the third. I'm happy to go through the emails.'",
       "disengagement": "Don't try to win the group over in the moment. Write down your account while it is fresh, and hold off replying in group chats while feelings are high.",
-      "support_seeking": "Talk to someone outside the group, such as a friend, a union representative or an ombuds, who can hear your account without a stake in it and say whether the blame matches your role.",
+      "support_seeking": "Talk to someone outside the group, such as a friend, a union representative or an ombudsperson (an independent complaints officer), who can hear your account without a stake in it and say whether the blame matches your role.",
       "workplace_or_professional": "Ask in writing for the findings and a chance to respond. Gather the instructions, approvals and emails showing who decided what, and bring them to HR, a union or an employment lawyer."
     },
     "boundary_script": "\"I'm willing to answer for the part that was mine. I'd like the decisions made above and alongside me to be looked at in the same review, and I'd like to see the findings before they are shared.\"",
     "safety_sensitive": false,
-    "safety_note": "Scapegoating is mostly a fairness and standing problem. It deserves more care when blame is tied to dismissal, loss of housing, exile from a group you cannot easily step away from (a family or a faith community), harassment or threats. Keep copies of your own account and any messages, and see an employment lawyer, tenants' service or advocate before agreeing to any statement or exit terms.",
+    "safety_note": "Scapegoating is mostly a fairness and standing problem. It deserves more care when blame is tied to dismissal, loss of housing, harassment or threats. The same goes for exile from a group you cannot easily step away from, such as a family or a faith community. Keep copies of your own account and any messages, and see an employment lawyer, tenants' service or advocate before agreeing to any statement or exit terms.",
     "misuse_warning": [
       "Calling every disciplinary outcome scapegoating can turn away fair accountability for a mistake that was truly yours. Check whether the consequences match your authority.",
       "Naming someone else as the group's scapegoat in a dispute can itself pin a role on them. Describe what happened to the person instead."

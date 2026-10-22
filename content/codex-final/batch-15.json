@@ -25,7 +25,7 @@
       "Someone who truly has more information or contacts in one area and uses it openly to help, such as a relative who works at the hospital you are attending.",
       "A coincidence with a plain explanation, like learning where you were from a friend you both know or from a post you shared yourself.",
       "A well-connected person who mentions their network because it is part of who they are, with no change in how you act afterwards.",
-      "A parent or carer who knows details because the household shares a calendar and a family chat.",
+      "A parent or caregiver who knows details because the household shares a calendar and a family chat.",
       "Boasting. Bragging about influence to everyone is self-presentation, and it differs from reach pointed at the choices of one person.",
       "A supervisor who knows your schedule because that is what supervising your shifts involves."
     ],
@@ -89,7 +89,7 @@
     },
     "boundary_script": "\"I want to be the one who decides when my plans get shared. I'm happy to tell you what I'm up to, but I'd rather not go back over how anything was found out.\" Skip it if you expect anger, and bring the pattern to an advocate instead.",
     "safety_sensitive": true,
-    "safety_note": "Take it seriously if the displays involve knowing where you are with no explanation, appearing at places you chose to be alone, or references to your children, home or work. Before you raise it or change any settings, check your phone and accounts for tracking with help from a domestic abuse advocate or a technology safety service, since a sudden loss of access can be noticed.",
+    "safety_note": "Take it seriously if the displays involve knowing where you are with no explanation, appearing at places you chose to be alone, or references to your children, home or work. Before you raise it or change any settings, check your phone and accounts for tracking. Get help from a domestic abuse advocate or a technology safety service, since a sudden loss of access can be noticed.",
     "misuse_warning": [
       "Reading every coincidence or well-informed friend as proof of surveillance can fuel fear without evidence. Trace one example at a time and check how it was possible.",
       "Using the label for someone who is merely well-connected or boastful treats a personality as a pattern of control."
@@ -122,7 +122,7 @@
       "One partner handling the bills because they like spreadsheets and the other is happy to see the summary whenever they ask.",
       "Reasonable reliance during an illness, a move, a new baby or a bereavement, with the shared aim of the person regaining their feet.",
       "Someone who has decided they simply do not want to learn a task, and knows they could ask.",
-      "A carer who handles things for a person whose condition truly makes it unsafe to do them alone, with the person's input and review.",
+      "A caregiver who handles things for a person whose condition truly makes it unsafe to do them alone, with the person's input and review.",
       "A teacher, mentor or professional who holds back information for a legitimate stage-by-stage reason and tells you how you will get access.",
       "Cultural or generational family roles that both adults chose, with open access to the information involved."
     ],
@@ -220,7 +220,7 @@
       "Honest discussion of the trade-offs in any big decision, such as the cost of moving or the loss of a salary, raised by both people openly.",
       "A person who values comfort and says so, as one factor among many in a mutual decision.",
       "A gift given with no expectation, even if the person later feels hurt about how it was received.",
-      "Reasonable terms of a job, such as a company flat that goes with the role, which are written down and apply to everyone in it.",
+      "Reasonable terms of a job, such as a company apartment that goes with the role, which are written down and apply to everyone in it.",
       "Gratitude. Feeling thankful for what a person has provided is not evidence that you are being held."
     ],
     "this_may_be_it_when": [
@@ -341,7 +341,7 @@
     ],
     "common_false_positives": [
       "A concert ticket sale that really does sell out in hours, with a visible stock counter.",
-      "A tenant agency telling you honestly that popular flats get several applications on the day they list.",
+      "A rental agent telling you honestly that popular apartments get several applications on the day they list.",
       "A colleague saying 'sign up soon, the course fills each year' which proves true when you look."
     ],
     "discernment_questions": [
@@ -411,7 +411,7 @@
     ],
     "what_it_is_not": [
       "Occasional lateness from traffic, illness or a crisis, mentioned honestly and apologized for, with a change next time.",
-      "A person who is disorganised with everyone, including their own appointments, and who is not singling you out.",
+      "A person who is disorganized with everyone, including their own appointments, and who is not singling you out.",
       "Real unpredictability in shift work, caring duties or emergency jobs, which affects everyone close to them and which they are open about.",
       "A genuine difference in how each of you views punctuality, which you can name and agree on.",
       "A culture or workplace where meetings begin when people arrive, and everyone expects that.",
@@ -477,7 +477,7 @@
     },
     "boundary_script": "\"When plans change at the last minute, I lose the evening and sometimes the money. I'd like a message at least an hour ahead if you're running late, so I can plan.\"",
     "safety_sensitive": false,
-    "safety_note": "Being kept waiting is a matter of respect and not of safety. It can change if waiting is made a condition of access, for example being told to stay home and available, or if lateness is used to keep track of where you are. If your time is being controlled to keep you available or to limit your contacts, talk to an advisor who knows about coercive control.",
+    "safety_note": "Being kept waiting is a matter of respect and not of safety. It can change if waiting is made a condition of access, for example being told to stay home and available. It can also change if lateness is used to keep track of where you are. Your time may be controlled to keep you available or to limit your contacts. If so, talk to an advisor who knows about coercive control, the slow use of rules, checking and fear to run someone's life.",
     "misuse_warning": [
       "Applying the label to a friend who is just always late, or has a condition affecting time, treats a trait as an insult. The test is a one-sided pattern with a clear cost.",
       "Using it as a scorecard for every delay can make ordinary life feel like an offense, and invites the other person to keep a counter-list."

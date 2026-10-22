@@ -87,7 +87,7 @@
     },
     "boundary_script": "\"This feels caring, and I know it is a program. Before sharing anything else, I will check what it keeps and whether a person can help me instead. My private details stay with me until then.\"",
     "safety_sensitive": false,
-    "safety_note": "The risk here is mostly to privacy, money and emotional reliance, and it rises sharply when the person is a child, in crisis, or isolated. If a chat is encouraging self-harm, secrecy from family, or large payments, stop engaging and speak to a trusted adult, a counselor or an emergency service if anyone is in immediate danger.",
+    "safety_note": "The risk here is mostly to privacy, money and emotional reliance, and it rises sharply when the person is a child, in crisis, or isolated. A chat may be encouraging self-harm, secrecy from family, or large payments. If so, stop engaging and speak to a trusted adult or a counselor, or an emergency service if anyone is in immediate danger.",
     "misuse_warning": [
       "Calling every friendly chatbot manipulative can shame people who find honest comfort in these tools, and it hides the real signal, which is a request riding on the warmth.",
       "Saying someone was 'tricked by a bot' can be used to dismiss their feelings or their judgment; the feeling can be real even when the design is the problem."
@@ -193,7 +193,7 @@
     "short_definition": "Pushing people to depend on an AI system's framing of the facts while wearing down their confidence in checking, questioning or reasoning for themselves.",
     "core_meaning": "Pushing people to depend on an AI system's framing of the facts while wearing down their confidence in checking, questioning or reasoning for themselves.",
     "expanded_definition": "People increasingly ask AI chat tools to explain, summarize and decide. Using a good source is normal. The concern is a setup in which one system's framing becomes the only one on offer, doubts are brushed aside, and checking elsewhere is made to seem pointless or foolish. One confident wrong answer means little, since every source makes mistakes. The pattern is a steady drift in which your own reasoning and your habit of cross-checking fade because the system always sounds sure.",
-    "plain_language_summary": "An AI tool becomes the only voice you trust for what is true, and its smooth certainty makes checking other sources, or trusting your own thinking, feel unnecessary.",
+    "plain_language_summary": "An AI tool becomes the only voice you trust about what is true. Its smooth confidence makes checking elsewhere, or trusting yourself, feel pointless.",
     "why_this_matters": "Confidence in your own reasoning erodes when every question is answered fluently by something that never sounds unsure. The habit of checking elsewhere quietly lapses, and the system's picture of the world becomes yours without a moment of choosing it.",
     "what_it_is": [
       "A system that answers in a confident tone about matters that are really disputed, uncertain or beyond what it knows.",
@@ -277,7 +277,7 @@
     },
     "boundary_script": "\"It sounds very sure, but sounding sure is not evidence. On anything that matters I will find where this comes from and compare it with one other source before relying on it.\"",
     "safety_sensitive": false,
-    "safety_note": "The main harm is to judgment and decision quality, and it grows when high-stakes choices about health, money or legal matters rest on one unverified source. If a tool's advice could affect your health or safety, check it with a qualified person, such as a doctor, pharmacist or lawyer, before acting, and do not take a confident tone as proof.",
+    "safety_note": "The main harm is to judgment and decision quality, and it grows when high-stakes choices about health, money or legal matters rest on one unverified source. If a tool's advice could affect your health or safety, check it with a qualified person, such as a doctor, pharmacist or lawyer, before acting. Do not take a confident tone as proof.",
     "misuse_warning": [
       "Telling someone their use of an AI tool is 'coercion' can be a way to dismiss a choice they made willingly; reliance is not the same as being forced.",
       "Distrusting every answer on principle is also a failure of reasoning, and it can push people toward sources that are worse."
@@ -288,7 +288,7 @@
     "short_definition": "Flooding public conversation with machine-generated, tailored messaging so fast and so plentiful that one party ends up setting the terms of a debate.",
     "core_meaning": "Flooding public conversation with machine-generated, tailored messaging so fast and so plentiful that one party ends up setting the terms of a debate.",
     "expanded_definition": "Generative AI makes text, images and video cheap to produce in large quantity and in many variations. Used openly, that is just communication. Hijacking is when the sheer volume and variety of messaging, often without disclosure of who or what is behind it, crowds out other voices and fixes the terms of the debate: which question is asked, which words are used, which story sticks. One viral post is ordinary. Look instead for similar framing flooding many places at once and keeping pace with every counter-argument.",
-    "plain_language_summary": "A huge wave of AI-made posts and stories crowds the conversation about an issue until one framing seems to be what everyone is talking about.",
+    "plain_language_summary": "A huge wave of AI-made posts floods the talk about an issue. Soon one way of seeing it seems to be all anyone is saying.",
     "why_this_matters": "Volume settles what a topic is about before most people have finished forming a view. The terms of the argument arrive already fixed, and those who disagree find themselves answering a question they never chose.",
     "what_it_is": [
       "Many posts, comments, articles or videos carrying one frame, produced faster than any group of volunteers could manage.",
@@ -372,7 +372,7 @@
     },
     "boundary_script": "\"I've seen this everywhere in a day, and that alone tells me nothing. Before I repeat it, I want a named source and the original recording. If I can't find them, I'll hold off and say so.\"",
     "safety_sensitive": false,
-    "safety_note": "Most of the harm is to public understanding, but fabricated content can turn into harassment, threats or panic aimed at real people. If you or someone you know is targeted by a flood of fake material or by threats that follow it, save evidence, report it to the platform and local authorities, and seek help from a digital-safety or legal-aid organization.",
+    "safety_note": "Most of the harm is to public understanding, but fabricated content can turn into harassment, threats or panic aimed at real people. You or someone you know may be hit by a flood of fake material or by threats that follow it. If so, save evidence and report it to the platform and local authorities. Seek help from a digital-safety or legal-aid organization.",
     "misuse_warning": [
       "Calling a view 'AI-generated hijacking' because it is popular or unwelcome dismisses real people who hold it.",
       "Suspecting everything is fake can leave people unable to trust anything, which serves those who want the truth to feel unknowable."
@@ -467,7 +467,7 @@
     },
     "boundary_script": "\"This showed up right when I am at my lowest, and that timing is a reason to slow down. I will wait two days, read the full terms, and talk it over with someone I trust before doing anything.\"",
     "safety_sensitive": false,
-    "safety_note": "A targeted ad is pressure on judgment, not a threat, until it demands money or account access quickly, asks for secrecy from family, pushes toward self-harm, or comes from a stranger who knows too much about you. If so, pause and do not send money; a consumer-protection agency, legal aid or a debt counselor can help. If anyone is thinking of self-harm, contact a crisis line or emergency services.",
+    "safety_note": "A targeted ad is pressure on judgment, not a threat, until it demands money or account access quickly or asks for secrecy from family. It also crosses that line when it pushes toward self-harm, or comes from a stranger who knows too much about you. If so, pause and do not send money; a consumer-protection agency, legal aid or a debt counselor can help. If anyone is thinking of self-harm, contact a crisis line or emergency services.",
     "misuse_warning": [
       "Assuming every ad that fits your worries was aimed at you can make people feel watched and ashamed; much of it is coincidence or broad categories.",
       "Blaming people who fell for an offer adds shame to harm, and the tactic depends on that shame to keep victims quiet."
@@ -478,7 +478,7 @@
     "short_definition": "A long online scam in which a stranger builds weeks or months of trust with a victim, then leads them into a fake investment or other financial loss.",
     "core_meaning": "A long online scam in which a stranger builds weeks or months of trust with a victim, then leads them into a fake investment or other financial loss.",
     "expanded_definition": "The name comes from the idea of fattening before slaughter, and it describes a fraud that unfolds slowly. It often begins with a wrong-number text or a friendly message, grows into a daily friendship or romance, and only later turns to money, usually a trading or crypto platform that looks real and even shows gains. One friendly stranger is common and mostly harmless. The pattern is a relationship that never asks for anything until it introduces a platform, then keeps raising the stakes.",
-    "plain_language_summary": "A friendly or romantic stranger online spends weeks earning your trust, then steers you toward putting money into a fake investment, and it can cost you your savings.",
+    "plain_language_summary": "A friendly or romantic stranger online spends weeks winning your trust. Then they steer you into a fake investment that can cost your savings.",
     "why_this_matters": "Months of unhurried, ordinary relationship-building mean that when the request finally comes it arrives from someone you have real reason to trust. The losses can be life-changing, and shame often keeps people from telling anyone until the money is gone.",
     "what_it_is": [
       "A contact that begins by chance, such as a message to a wrong number or a friendly follow, and turns into daily conversation.",

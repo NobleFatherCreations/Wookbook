@@ -9,7 +9,7 @@
    "Often fueled by a screenshot or quote shared outside its original context, so newcomers react to the clip instead of the whole story.",
    "Joiners frequently add one more line without reading what came before, so the tone hardens as the thread grows.",
    "Possible in a comment section, a group chat, a classroom or a staff channel, not only on big platforms.",
-   "Different from a one-on-one argument because the target faces a crowd and cannot reply to each person."
+   "Different from a one-on-one argument because one person faces a crowd and cannot reply to each member of it."
   ],
   "what_it_sounds_like": [
    "Did you really say that? Everyone is talking about you.",
@@ -74,9 +74,9 @@
    "Old screenshots resurface whenever you say something new.",
    "People you barely know mention the episode as though it defined you."
   ],
-  "repair_check": "After a pile-on, repair shows in the crowd's behavior: people who joined correct a mistaken claim, drop the clipped screenshot and stop circulating it. A general call to move on, with no correction, leaves the target carrying the original story.",
+  "repair_check": "After a pile-on, repair shows in the crowd's behavior: people who joined correct a mistaken claim, drop the clipped screenshot and stop circulating it. A general call to move on, with no correction, leaves the person at the center carrying the original story.",
   "boundary_respect_check": "What happens after you state your position once, calmly, and then stop replying? If the thread slows and the replies thin out, the crowd was reacting to a moment. If new replies keep arriving to bait you, the silence is not being respected.",
-  "psychological_mechanism": "Seeing many others react tends to signal that the reaction must be deserved, so each joiner needs less evidence than the one before. Adding one line feels low-cost, which makes joining easy. For the target, a large count of strangers can be read as a verdict on their whole character, even when most replies were quick and shallow.",
+  "psychological_mechanism": "Seeing many others react tends to signal that the reaction must be deserved, so each joiner needs less evidence than the one before. Adding one line feels low-cost, which makes joining easy. For the person at the center, a large count of strangers can be read as a verdict on their whole character, even when most replies were quick and shallow.",
   "possible_impact_on_receiver": "Every notification can set off a racing heart, and people describe rereading each line to find the fair point, then distrusting their own judgment. Some delete posts or accounts, stop speaking up in groups or dread opening the app. Others say a few supportive messages from people who knew them mattered more than any rebuttal.",
   "response_options": {
    "soft_clarification": "If a few replies raise a genuine point, answer one of them with a short, specific reply and leave the rest. Replying to everyone gives the thread more fuel.",
@@ -269,7 +269,7 @@
   ],
   "repair_check": "Whether anything has been mended shows in what the group does: complaints are written down, put to you specifically, and closed once answered. If the group only softens its tone for a week while the unwritten grievances stay open, nothing underneath has moved.",
   "boundary_respect_check": "Ask for one concern to be put in writing with an example and a date. Notice whether the request is met, or heard as one more sign you are hard to work with. A group acting in good faith can produce a specific example.",
-  "psychological_mechanism": "When several people appear to hold the same view, a target can start to think the problem must be them. Each participant may feel their own part is minor, and later joiners take earlier ones as a signal. Because objecting becomes the next complaint, the target can end up doubting their own account and withdrawing, which the group may then read as confirmation.",
+  "psychological_mechanism": "When several people appear to hold the same view, the person singled out can start to think the problem must be them. Each participant may feel their own part is minor, and later joiners take earlier ones as a signal. Because objecting becomes the next complaint, they can end up doubting their own account and withdrawing, which the group may then read as confirmation.",
   "possible_impact_on_receiver": "People describe dread before shifts or meetings, sleeplessness, losing confidence in work they were good at, and feeling invisible among people who used to be warm. Some describe a drop in performance that then seemed to prove the complaints, and anger at being asked to prove what they could not safely say.",
   "response_options": {
    "soft_clarification": "Ask one colleague you trust to describe what they see: 'Have you noticed a change in how people deal with me? I'd like an honest read.'",
@@ -379,7 +379,7 @@
   "safety_sensitive": false,
   "safety_note": "Swinging views of a person are not a safety signal on their own. Watch for shifts that bring threats, cutting off your contact with others, control of money or a place to live, or humiliation in front of others. If those appear, an advocate or counselor can help you plan, and a friend outside the relationship can help you keep perspective.",
   "misuse_warning": [
-   "Calling a friend's anger at you 'splitting' turns a descriptive idea into a verdict about someone's mind, which this entry cannot support.",
+   "Calling a friend's anger at you 'splitting' turns a descriptive idea into a verdict about someone's mind, which nobody can support from the outside.",
    "The word describes a pattern in how someone talks about people. It should not be used to explain away a real wrong done to you, or to excuse it."
   ],
   "how_to_distinguish_from_related": "Triangulation brings a third party in as ammunition; splitting needs no third party at all, only a swing in how one person is seen. Forced Teaming builds a 'we' to override your separate choices, so closeness is imposed from the start, while the closeness in splitting collapses without warning. Flying Monkeys carry the verdict to others; splitting is the verdict itself.",
@@ -473,7 +473,7 @@
   },
   "boundary_script": "\"I'm glad my sister is doing well. When I'm compared to her, I stop hearing the news and hear only that I fall short. Please talk about my work on its own, without her name in the sentence.\"",
   "safety_sensitive": false,
-  "safety_note": "Favoritism is a painful pattern, not a physical-safety one in itself. It becomes more serious when it reaches money or housing, such as threats of being cut off, or when a child is treated very differently from siblings in ways that affect food, care or protection. A family therapist, a school counselor or, where a child's care is at stake, a child protection service can help.",
+  "safety_note": "Favoritism is a painful pattern, not a physical-safety one in itself. It becomes more serious when it reaches money or housing, such as threats of being cut off. It also does when a child is treated very differently from siblings in ways that affect food, care or protection. A family therapist, a school counselor or, where a child's care is at stake, a child protection service can help.",
   "misuse_warning": [
    "Labeling a proud parent with this term can turn warm praise for a real achievement into an accusation. Ask whether the praise is being used to measure others.",
    "The favored person is often a bystander, and blaming them for the family's pattern repeats the same unfairness."
@@ -484,7 +484,7 @@
  "Divide and Conquer": {
   "short_definition": "Distance or distrust between people who might otherwise support one another, so that they do not compare notes or act together.",
   "expanded_definition": "Divide and Conquer is a pattern where people who could back each other up are kept apart. It often runs on selective retelling: one person hears a sharpened version of what the other said, and the other hears the reverse. It can also look like private favors or secrets that make each person feel they alone hold a special place. One garbled message means little. The pattern is that gaps keep opening between the same people who might compare notes. This does not show what anyone meant.",
-  "plain_language_summary": "People who would normally compare notes and back each other up end up distrustful or distant, each holding a different version of what the other said.",
+  "plain_language_summary": "People who would normally compare notes and back each other up drift apart. Each one holds a different version of what the others said.",
   "why_this_matters": "Two people who might have compared notes stop speaking, and each carries a version of the other that neither gets the chance to correct. Meanwhile no one is in a position to say that something is wrong, because each person is dealing with it alone.",
   "what_it_is": [
    "Relaying what each person said to the other in trimmed, sharpened or invented form.",

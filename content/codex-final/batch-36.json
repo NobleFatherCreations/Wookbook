@@ -87,7 +87,7 @@
     },
     "boundary_script": "\"I want to hear your concern, but I can't answer for what other people think. Tell me what bothers you, and if someone else's view matters here, I'll ask them myself.\"",
     "safety_sensitive": false,
-    "safety_note": "Being quoted against by a crowd is distressing but is not a physical-safety signal alone. It changes if the recruited group is used to track where you are, to keep you from leaving a house or a job, or to pressure you about money or children. In that case, speak with an advocate or a legal aid service before replying to anyone.",
+    "safety_note": "Being quoted against by a crowd is distressing but is not a physical-safety signal alone. It changes if the recruited group is used to track where you are, or to keep you from leaving a house or a job. Pressure about money or children changes it too. In that case, speak with an advocate or a legal aid service before replying to anyone.",
     "misuse_warning": [
       "Labeling any mention of a friend's opinion as triangulation can shut down normal advice-seeking. The label fits when outside voices replace a person's own position, not whenever others are consulted.",
       "Assuming a quoted third party is lying, without asking them, can create the very distrust the pattern is known for."
@@ -463,7 +463,7 @@
       "firm_boundary": "State what you will continue to do: 'I will keep raising problems I see, in writing, so there is a clear record of what was said and when.'",
       "disengagement": "Put your energy into the people and work that are still open to you, and stop investing in channels where candor has been punished.",
       "support_seeking": "Talk with a mentor outside the organization, a professional association or an employment advisor about what you have seen, and compare your timeline with their experience.",
-      "workplace_or_professional": "Keep a dated log of what you raised, who responded and what changed afterward. Bring it to HR, an ombuds office or an employment lawyer if the consequences are tangible."
+      "workplace_or_professional": "Keep a dated log of what you raised, who responded and what changed afterward. Bring it to HR, an ombudsperson's office (an independent complaints office) or an employment lawyer if the consequences are tangible."
     },
     "boundary_script": "\"I appreciate how respectful this team is, and raising concerns is part of doing my job well. Let's put them in writing so we can all see what was raised and what was decided.\"",
     "safety_sensitive": false,
@@ -475,14 +475,14 @@
     "how_to_distinguish_from_related": "Concern Trolling is personal and aimed at one person's choices, while a polite hostile environment is a climate that touches many people. Forced Teaming demands loyalty to a 'we' by name, and here the loyalty is unspoken and enforced through omission. Triangulation uses specific third parties as ammunition, whereas this one needs no individual messenger at all."
   },
   "Silent Coalitions": {
-    "short_definition": "A group quietly agreeing, without any open discussion, to keep one person on the margins so that no clear incident ever exists.",
-    "core_meaning": "A group quietly agreeing, without any open discussion, to keep one person on the margins so that no clear incident ever exists.",
+    "short_definition": "A group leaving one person out through many small, deniable slights, so no single clear incident ever stands out.",
+    "core_meaning": "A group leaving one person out through many small, deniable slights, so no single clear incident ever stands out.",
     "expanded_definition": "A silent coalition is a group that sidelines one member through many small, deniable acts: plans made elsewhere, replies that arrive late, jokes that nobody explains. There is no announcement and often no explicit agreement, so the person has nothing concrete to name and may conclude the fault lies with them. Any one slight is ordinary. It starts to look like a coalition when the same person is left out consistently, across settings, while others in the group are not.",
     "plain_language_summary": "A group keeps one person on the edge through lots of small, hard-to-prove moments, so the person starts to think the problem must be them.",
     "why_this_matters": "There is no incident to point at, only a consistent absence, which turns the search for an explanation inward. The person ends up blaming themselves for something nobody will admit to.",
     "what_it_is": [
       "Consistent small exclusions from invitations, group chats, inside jokes and decisions, with no single moment that could be called unfair.",
-      "Exclusion that looks coordinated, though the coordination itself can never be seen.",
+      "Exclusion that can feel coordinated even when nobody planned it.",
       "Shared reactions across several people, such as the same polite silence when the person speaks.",
       "Denial when the person raises it, often with real surprise, because each individual feels they did nothing."
     ],
@@ -495,7 +495,7 @@
       "People who are friendly one-on-one are distant in a group."
     ],
     "what_it_is_not": [
-      "Social anxiety can produce the same feeling with nothing at all behind it, and some groups are simply less inclusive as a general dynamic rather than towards one individual.",
+      "Social anxiety can produce the same feeling with nothing at all behind it, and some groups are simply less inclusive as a general dynamic rather than toward one individual.",
       "A low period colors ordinary social gaps and makes a pattern out of them.",
       "A tight friend group that has history together and is not hostile to new people, only slow to open up.",
       "A busy season in which everyone is slow to reply, including to each other.",
@@ -561,7 +561,7 @@
     },
     "boundary_script": "\"I've noticed I'm often out of the loop on plans, and it's been weighing on me. I'm not blaming anyone. I'd just like to be included, and I'd welcome hearing if there is something I'm missing.\"",
     "safety_sensitive": false,
-    "safety_note": "Group exclusion hurts, but it rarely creates physical danger. It changes if the group's silence follows you into your home, your job or online spaces through threats, rumors that could cost you work or housing, or sharing of private images. At that point, save evidence and speak to a trusted person, an employer's process or a local support service.",
+    "safety_note": "Group exclusion hurts, but it rarely creates physical danger. It changes if the group's silence follows you into your home, your job or online spaces. That can come through threats, rumors that could cost you work or housing, or sharing of private images. At that point, save evidence and speak to a trusted person, an employer's process or a local support service.",
     "misuse_warning": [
       "Treating every unreturned message as a coalition can turn ordinary social drift into a story of persecution and push away people who are not hostile.",
       "Telling others that a group is conspiring against you, without evidence, can itself damage relationships that might have recovered."
@@ -651,11 +651,11 @@
       "firm_boundary": "State your own limit without confronting anyone in public: 'I will keep raising concerns through the proper channel, and I'd like a clear response when I do.'",
       "disengagement": "Reduce your visibility in the room if you feel at risk, while you decide privately what to do, and avoid joining in the mockery of the person punished.",
       "support_seeking": "Reach out quietly to the person who was singled out, and to someone outside the group, so that no one carries the lesson alone.",
-      "workplace_or_professional": "Write down what happened, when and who saw it, and bring it to HR, an ombuds office, a union representative or an employment lawyer if the response affected someone's job."
+      "workplace_or_professional": "Write down what happened, when and who saw it, and bring it to HR, an ombudsperson's office (an independent complaints office), a union representative or an employment lawyer if the response affected someone's job."
     },
     "boundary_script": "\"I think the issue deserved a conversation, but I don't think it needed to be handled in front of everyone. I'd like us to agree on how concerns are raised, so that people feel able to speak up.\"",
     "safety_sensitive": false,
-    "safety_note": "Public punishment is a status and fairness issue in most cases. It becomes more serious if it is used to threaten livelihood, housing or standing in a close community, if people are told to shun the person, or if it is combined with intimidation. Keep notes with dates and witnesses, and speak with an employment lawyer, a union or a trusted outside advisor early.",
+    "safety_note": "Public punishment is a status and fairness issue in most cases. It becomes more serious if it is used to threaten livelihood, housing or standing in a close community. It also does if people are told to shun the person, or if it is combined with intimidation. Keep notes with dates and witnesses, and speak with an employment lawyer, a union or a trusted outside advisor early.",
     "misuse_warning": [
       "Reading every public reprimand as an example being made can overlook cases where visible accountability was fair and proportionate.",
       "Calling a leader's decision 'consolidation' without evidence about timing, proportion and audience can turn a disagreement into an accusation of motive."

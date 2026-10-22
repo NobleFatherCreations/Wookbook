@@ -380,7 +380,7 @@
     },
     "boundary_script": "\"Could you tell me which criteria decide whether I get access, and where they are written down? I want to meet them, and I can't do that if they change from one conversation to the next.\"",
     "safety_sensitive": false,
-    "safety_note": "Gatekeeping is usually an everyday organizational or social problem. It moves toward danger when the gate controls basics, such as who may see your own money, your documents, your children or your friends, and when you are discouraged from looking for other routes. Then speak privately to a legal aid service or a domestic abuse advocate and plan any change with them first.",
+    "safety_note": "Gatekeeping is usually an everyday organizational or social problem. It moves toward danger when the gate controls basics, such as who may see your own money, your documents, your children or your friends. It does too when you are discouraged from looking for other routes. Then speak privately to a legal aid service or a domestic abuse advocate and plan any change with them first.",
     "misuse_warning": [
       "Calling every refusal gatekeeping treats ordinary limits, fees, deadlines and capacity as plots. The label needs a gate whose rules differ between people.",
       "A person who guards confidential material for a good reason can be unfairly branded. Asking for the reason is fairer than accusing."
@@ -474,11 +474,11 @@
       "firm_boundary": "Keep boundaries small and concrete, and phrase them as you normally would: \"I'm not able to agree to that today.\" Avoid tying them to anything that has happened to anyone else.",
       "disengagement": "Do not announce changes. Think privately about which contacts are optional, and work out what to adjust, and when, with an advocate before any step reaches the other person.",
       "support_seeking": "Tell one person outside the situation what happened and in what order, with dates, and ask them to hold a copy. A domestic violence hotline or advocate can talk through safety for the third person as well as for you.",
-      "workplace_or_professional": "If the trouble reaches a coworker, record dates and facts only, such as what changed, when and who was told, and take them to HR or an ombuds around the concrete change, not around who might have caused it."
+      "workplace_or_professional": "If the trouble reaches a coworker, record dates and facts only, such as what changed, when and who was told, and take them to HR or an ombudsperson (an independent complaints officer) around the concrete change, not around who might have caused it."
     },
-    "boundary_script": "\"What's going on for her matters to me, and I'm wary of guessing. Could we ask someone we both trust to help us talk it through?\"",
+    "boundary_script": "\"What's going on for her matters to me, and I'm wary of guessing. Can we leave it there for today and come back to it when things are calmer?\"",
     "safety_sensitive": true,
-    "safety_note": "This pattern can sit beside stalking, coercive control, or threats toward children, pets and relatives. Warning signs are harm to the third person that follows your refusals, remarks linking it to you, and fear of what a disagreement might cost them. Do not confront the person or announce changes. Talk to a domestic violence advocate or legal aid service about a plan for you and the third person, and keep dated notes where the other person cannot see them.",
+    "safety_note": "This pattern can sit beside stalking, threats toward children, pets and relatives, or coercive control (an ongoing pattern of intimidation and rules that limits your life). Warning signs are harm to the third person that follows your refusals, remarks linking it to you, and fear of what a disagreement might cost them. Do not confront the person or announce changes. Talk to a domestic violence advocate or legal aid service about a plan for you and the third person, and keep dated notes where the other person cannot see them.",
     "misuse_warning": [
       "This label is easy to over-read, because the link rests on timing and the reader usually cannot see the cause. Treating coincidence as a message can damage a relationship that did nothing.",
       "Telling the third person \"they hurt you because of me\" can frighten them and add to the pressure. Share what you can verify instead."
@@ -488,13 +488,13 @@
   "Weaponized Inclusion / Strategic Containment": {
     "short_definition": "Placing someone inside a group or process where they stay closely visible and have little real influence, so inclusion replaces independent action.",
     "core_meaning": "Placing someone inside a group or process where they stay closely visible and have little real influence, so inclusion replaces independent action.",
-    "expanded_definition": "Weaponized Inclusion and Strategic Containment are two names for one pattern, one naming the invitation and the other its effect. A critic, newcomer or rival is brought onto the committee, task force or working group. They now have a title and a seat, and any objection can be answered with \"you were part of this.\" The pattern is suggested when the seat carries no authority, when the group's real decisions happen elsewhere, and when acting independently is met with reminders of inclusion. New structures and junior roles can look similar.",
+    "expanded_definition": "Weaponized inclusion describes the invitation; strategic containment describes its effect. A critic, newcomer or rival is brought onto the committee, task force or working group. They now have a title and a seat, and any objection can be answered with \"you were part of this.\" The pattern is suggested when the seat carries no authority, when the group's real decisions happen elsewhere, and when acting independently is met with reminders of inclusion. New structures and junior roles can look similar.",
     "plain_language_summary": "You get invited in and given a seat, but the real decisions happen elsewhere, and anything you do outside gets answered with \"you were part of it.\"",
     "why_this_matters": "Your independent options close as the formal ones open, and any objection is answered with the fact that you were included. You can end up co-owning decisions you never shaped, with less room to act outside them.",
     "what_it_is": [
       "An invitation onto a committee, advisory board, working group or family decision that carries a title but little influence.",
       "Participation that doubles as visibility: meetings, minutes and reporting lines put the person's views and plans in front of others.",
-      "Two names for one pattern. Weaponized Inclusion stresses the invitation, and Strategic Containment stresses what the arrangement does, which is hold the person inside it.",
+      "A seat that comes with rules for the new member, such as speaking only through the group, sharing drafts first, or keeping disagreements internal.",
       "Common in workplaces, activist groups, boards, schools and community organizations where a critic or newcomer is given a role.",
       "A way of answering criticism with proof of participation: \"you had a voice.\""
     ],

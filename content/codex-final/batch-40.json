@@ -4,7 +4,7 @@
     "core_meaning": "Fabricated images, video or audio made to show a real person doing or saying something they never did.",
     "expanded_definition": "A deepfake is media made or altered with software so that it shows a real person in a situation that never happened: a face placed on another body, a mouth made to speak new words, or a staged scene that looks recorded. It is used to humiliate, extort, defraud or damage a reputation. A polished look proves nothing either way. What matters is whether the person shown, and independent records, say it happened.",
     "plain_language_summary": "A fake picture, video or recording that looks real and shows you doing or saying something you never did. How real it looks is not a reliable test.",
-    "why_this_matters": "The target is left disproving something that never happened, to people who have already seen it, and a denial can sound like what anyone caught would say. Shame and speed of sharing do much of the damage.",
+    "why_this_matters": "You are left disproving something that never happened, to people who have already seen it, and a denial can sound like what anyone caught would say. Shame and speed of sharing do much of the damage.",
     "what_it_is": [
       "A fabricated image, clip or recording of a real person, made so it passes as a genuine record.",
       "Often sexual when aimed at private individuals, which makes it a form of intimate-image abuse even though no such photo was ever taken.",
@@ -91,7 +91,7 @@
     },
     "boundary_script": "\"This is fabricated media of me. I have saved the links, the dates and every message about it. I am asking you to remove it and to tell me what happens next.\" Send this to a platform, school or employer, never to the person who made or shared it.",
     "safety_sensitive": true,
-    "safety_note": "Fabricated sexual images, demands for money, and threats to send material to family or an employer are danger signals, as is anyone who seems to know where you live or work. Save everything unaltered, tell someone you trust, and contact a victim advocate, legal aid or a police cybercrime unit. If you fear for your physical safety, call emergency services.",
+    "safety_note": "Fabricated sexual images, demands for money, and threats to send material to family or an employer are danger signals. So is anyone who seems to know where you live or work. Save everything unaltered, tell someone you trust, and contact a victim advocate, legal aid or a police cybercrime unit. If you fear for your physical safety, call emergency services.",
     "misuse_warning": [
       "Calling an unflattering but genuine recording a deepfake is a way of discrediting real evidence, including a real victim's.",
       "Declaring a clip fake from how it looks alone can wrongly accuse an innocent poster and leave the actual question untested."
@@ -278,7 +278,7 @@
     ],
     "repair_check": "Repair shows in what is removed and stays removed: the post and its copies taken down, the publisher confirming in writing that nothing further is kept, and the contact from strangers dying off. An apology while the thread stays up does not count.",
     "boundary_respect_check": "After you report, does the contact slow, or does fresh content turn up on other accounts? Whether the listing stays down is a better measure than anything said to you.",
-    "psychological_mechanism": "Exposure tends to turn an online dispute into a physical-world worry. Once a person knows strangers could find their door, ordinary acts like answering the phone or walking home can feel risky. Crowds can also spread responsibility thin: each stranger does a small thing and nobody feels like the cause of the whole, which can leave the target feeling watched by everyone.",
+    "psychological_mechanism": "Exposure tends to turn an online dispute into a physical-world worry. Once a person knows strangers could find their door, ordinary acts like answering the phone or walking home can feel risky. Crowds can also spread responsibility thin: each stranger does a small thing and nobody feels like the cause of the whole, which can leave the exposed person feeling watched by everyone.",
     "possible_impact_on_receiver": "People describe fear at home, checking windows and cars, changing numbers, altering children's routines, and dreading every unknown caller. Some take time off work, go offline or move. Others describe shame at being found, or anger that a private life was made public.",
     "response_options": {
       "soft_clarification": "If a friend or relative may have shared a detail without thinking, ask them privately to remove it, and ask anyone who tagged you to do the same.",
@@ -287,12 +287,12 @@
       "support_seeking": "Tell someone you trust and a victim advocate where the post is, so a second person can help watch. If threats appear, contact the police and, where available, a legal aid clinic.",
       "workplace_or_professional": "Alert your employer's security or HR team early so the front desk or phone line is ready for odd calls, and give them a short factual note rather than the thread itself."
     },
-    "boundary_script": "\"This page shows my home address and workplace, which I never made public. I have saved the link and the date. I am asking that it be removed, and for help reporting any related posts.\"",
+    "boundary_script": "\"This post shows my home address and workplace, which I never made public. I have saved the link and the date. I am asking that it be removed, and for help reporting any related posts.\"",
     "safety_sensitive": true,
-    "safety_note": "A home address, a child's school or a daily routine appearing online is a safety signal, as are threats, strangers arriving in person, or anyone who seems to track your movements. Save everything, tell the people you live with, and contact the police and a victim advocate. If someone is at your door or you fear immediate harm, call emergency services.",
+    "safety_note": "A home address, a child's school or a daily routine appearing online is a safety signal. So are threats, strangers arriving in person, or anyone who seems to track your movements. Save everything, tell the people you live with, and contact the police and a victim advocate. If someone is at your door or you fear immediate harm, call emergency services.",
     "misuse_warning": [
       "Calling a public figure's openly listed office contact doxxing can shield them from legitimate accountability.",
-      "Posting someone's details to expose a supposed wrongdoer is the harm itself, whoever the target is and however sure the poster feels."
+      "Posting someone's details to expose a supposed wrongdoer is the harm itself, whoever is exposed and however sure the poster feels."
     ],
     "how_to_distinguish_from_related": "Deepfakes invent something false about you, while doxxing publishes something true and private. Stalking-by-Notification is watching your online activity and building a case from it, typically by one person, while doxxing hands your location to many. Coordinated Reporting targets your account, while doxxing exposes your doorstep."
   },
@@ -324,7 +324,7 @@
       "A group openly organizing supporters under its real name.",
       "New accounts made by people who joined just to follow a breaking event.",
       "A fan community whose members repeat the same slogans and memes.",
-      "Automated bot accounts, which can look similar but are not one person pretending to be many."
+      "Parody or role-play accounts whose bio says openly who runs them and that they are not the real person."
     ],
     "this_may_be_it_when": [
       "Accounts claiming to be strangers show matching phrasing, timing and topics.",

@@ -3,7 +3,7 @@
     "short_definition": "Using a person's last-seen times, read receipts, story views and online status as evidence in a running case about where they were and why they did not answer.",
     "core_meaning": "Using a person's last-seen times, read receipts, story views and online status as evidence in a running case about where they were and why they did not answer.",
     "expanded_definition": "Stalking-by-Notification means turning the small signals apps display, such as a green dot, a 'seen at 2:14' stamp, a story view or a like, into proof of something. The person watching compares those signals with what you said, then brings you the mismatch as a question you have to answer. One hurt remark about being left on read is ordinary. The pattern is the checking repeating, the signals treated like a log, and you starting to time your own replies and posts around the questions. It does not show what anyone meant by looking.",
-    "plain_language_summary": "Someone reads your online status like a security log and then questions you about it, until simply being seen online starts to feel like something you will have to explain.",
+    "plain_language_summary": "Someone watches when you are online and then questions you about it. Soon just being seen online feels like something you must explain.",
     "why_this_matters": "When every green dot can become a question, ordinary use of your own phone turns into something to defend. People start planning when to be online and when to look away, and the hours spent explaining can crowd out the relationship itself.",
     "what_it_is": [
       "Reading app signals such as last active, read receipts, typing dots, story views and likes as if they were a record of your day.",
@@ -102,7 +102,7 @@
     "short_definition": "Going silent in direct messages while still viewing, liking or reacting to someone's posts, so they are neither in contact nor free of it.",
     "core_meaning": "Going silent in direct messages while still viewing, liking or reacting to someone's posts, so they are neither in contact nor free of it.",
     "expanded_definition": "Ghosting is going quiet with no explanation. Orbiting is staying in view afterwards: story views, likes, an occasional emoji reaction. It becomes a cycle when contact fades, the small signals keep arriving, and now and then a warm message returns, often just as you seem to be settling. Someone who simply drifted and never unfollowed can look the same from outside. The shape across weeks matters more than any one view, and none of it shows why anyone does it.",
-    "plain_language_summary": "Someone stops answering your messages but keeps watching your stories and now and then likes something, so you cannot tell whether the connection is over.",
+    "plain_language_summary": "Someone stops answering your messages but keeps watching your stories and liking posts. You can't tell whether the connection is over.",
     "why_this_matters": "You are neither in contact nor free of it. Attention keeps arriving with no reply attached, and each small sign can revive hope at exactly the point it was beginning to fade.",
     "what_it_is": [
       "Direct messages that go unanswered or unopened, sometimes for weeks.",
@@ -147,7 +147,7 @@
       "Someone embarrassed about a long silence may find it harder to break each week that passes."
     ],
     "common_false_positives": [
-      "A friend who is slow to text but likes your posts and then rings you at the weekend.",
+      "A friend who is slow to text but likes your posts and then calls you on the weekend.",
       "A cousin who views every story and has never been a texter.",
       "A former partner who liked a birthday photo once."
     ],
@@ -187,7 +187,7 @@
     },
     "boundary_script": "\"We haven't talked in a while, and I'm not looking to argue about it. If you want to stay in touch, a direct message to me is the way to do it.\"",
     "safety_sensitive": true,
-    "safety_note": "Silence plus views is usually painful rather than dangerous. It changes if the watching extends to turning up where you are, contacting your family or friends, messages from new accounts after you block, or anger when you move on, especially after leaving a controlling relationship. Save dated screenshots somewhere they cannot reach and show them to a stalking or domestic abuse advocate before deciding on a block.",
+    "safety_note": "Silence plus views is usually painful rather than dangerous. It changes if the watching extends to turning up where you are, contacting your family or friends, or messages from new accounts after you block. Anger when you move on is another sign, especially after leaving a controlling relationship. Save dated screenshots somewhere they cannot reach and show them to a stalking or domestic abuse advocate before deciding on a block.",
     "misuse_warning": [
       "A like from someone shy or avoidant is not proof of a campaign, and reading every tap as a tactic can keep you watching the list.",
       "Calling someone an 'orbiter' to a shared circle can become a way to shame a person who has simply gone quiet."
@@ -198,11 +198,11 @@
     "short_definition": "A group converging on one person's posts, account or message at once, usually after a shared call to do so, so the volume itself overwhelms them.",
     "core_meaning": "A group converging on one person's posts, account or message at once, usually after a shared call to do so, so the volume itself overwhelms them.",
     "expanded_definition": "Brigading is a surge of replies, reports, downvotes, ratings or messages sent to one person or page by people who have been pointed there, often by a post, group chat or forum thread elsewhere. It also happens on review pages, polls and comment sections. What separates it from a pile-on is the shared source and the short window. Each participant may do something small. The weight comes from the sum, which no one can answer one by one.",
-    "plain_language_summary": "Dozens or hundreds of people send replies or reports to one person within hours, usually because a post somewhere else sent them there, so there is no way to answer them all.",
+    "plain_language_summary": "Dozens or hundreds of people flood one person with replies or reports within hours. Usually a post somewhere else sent them, and nobody could answer them all.",
     "why_this_matters": "Volume arriving at once removes any chance of answering the way you could answer a single message, and the platform itself becomes unusable for as long as it lasts. Notifications pile up faster than anyone can read, and a calm reply is buried.",
     "what_it_is": [
       "A sudden spike of hostile or mocking replies, ratings or messages in a short window.",
-      "A visible source, such as a post, screenshot, group chat or forum thread, that points people toward the target.",
+      "A visible source, such as a post, screenshot, group chat or forum thread, that points people toward one person or account.",
       "Mass reports, downvotes or one-star ratings, sometimes on a shop, book or app page.",
       "Participants who may not know the person and have seen only one screenshot.",
       "Sometimes an old post pulled back up and sent round again, so a quiet account is suddenly busy."
@@ -274,7 +274,7 @@
     ],
     "repair_check": "Where the source post's author acknowledges the pile-on, removes the call to converge and asks followers to stop, the volume tends to fall. A quiet deletion while the thread elsewhere keeps running, or an 'I never told anyone to do that' with the link left up, leaves the wave moving.",
     "boundary_respect_check": "Watch the first day after you limit replies or lock the account. If the wave thins and does not move to your email, workplace or another platform, the limit worked. If new accounts appear or the thread starts discussing how to get round it, the limit is being tested.",
-    "psychological_mechanism": "Seeing many people agree can make a view feel more correct, and each participant can feel their own small reply is harmless because they are one of many. For the target, a flood in a short time can overload the ability to sort real concerns from noise, and the crowd can feel far larger than the number of people actually involved.",
+    "psychological_mechanism": "Seeing many people agree can make a view feel more correct, and each participant can feel their own small reply is harmless because they are one of many. For the person on the receiving end, a flood in a short time can overload the ability to sort real concerns from noise, and the crowd can feel far larger than the number of people actually involved.",
     "possible_impact_on_receiver": "People describe dreading to open notifications, losing sleep, deleting posts or accounts, and checking the thread to see what comes next. Some describe shame over things they never said. Friends and employers may see screenshots, so some describe worry about work or reputation, and relief once the wave passes or someone speaks up.",
     "response_options": {
       "soft_clarification": "If you were misquoted, post one calm correction with the full original attached and answer no individual replies. People who arrive later can then see the record.",

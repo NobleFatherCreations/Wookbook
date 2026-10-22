@@ -89,9 +89,9 @@
       "support_seeking": "Tell one person you trust what was said, in the actual words, and ask a counselor or a domestic abuse advocate how to respond. You should not carry this by yourself.",
       "workplace_or_professional": "If the messages arrive during work hours, you can tell a manager you have a personal emergency without giving detail, and ask whether your employer offers a counseling program."
     },
-    "boundary_script": "\"I believe it hurts, and I'm taking what you said seriously. I can't be the only one who helps you stay safe, so I'd like us to call a crisis line together right now. Would it help if I rang your brother to come over?\"",
+    "boundary_script": "\"I believe it hurts, and I'm taking what you said seriously. I can't be the only one who helps you stay safe, so I'd like us to call a crisis line together right now. Would it help if I called your brother to come over?\"",
     "safety_sensitive": true,
-    "safety_note": "Any talk of suicide deserves a real response, whatever lies behind it. Danger signs are a stated plan, a method at hand, a recent attempt or goodbye messages. If you see them and the risk feels immediate, call local emergency services; otherwise contact a crisis line (for example 988 in the United States; other countries have their own numbers) on their behalf. If the threats rise whenever you try to be independent, an advocate can help you plan privately.",
+    "safety_note": "Any talk of suicide deserves a real response, whatever lies behind it. Danger signs are a stated plan, a method at hand, a recent attempt or goodbye messages. If you see them and the risk feels immediate, call local emergency services. Otherwise, contact a crisis line on their behalf (for example 988 in the United States; other countries have their own numbers). If the threats rise whenever you try to be independent, an advocate can help you plan privately.",
     "misuse_warning": [
       "Do not treat every expression of despair as manipulation. If you cannot tell which it is, treat it as real danger and get help; the pattern can be sorted out later.",
       "Telling others that someone was 'only threatening' can leave a person who is in real crisis without help."
@@ -290,9 +290,9 @@
     "safety_note": "Martyrdom display on its own carries no particular danger. What would change that is sacrifice used to control where you go, whom you see or how you spend money, or any hint of retaliation when you decline. If that appears, write down specific examples and talk to a counselor or advocate before changing the arrangement. A practical first step is a written split of tasks.",
     "misuse_warning": [
       "A person who really does carry far more than their share may sound like this when worn out. Calling it a tactic can excuse everyone else from the work.",
-      "Be careful with the label for elders and carers, whose self-sacrifice is often real and unseen."
+      "Be careful with the label for elders and caregivers, whose self-sacrifice is often real and unseen."
     ],
-    "how_to_distinguish_from_related": "Pity Plays focus on present helplessness and end in comfort; martyrdom display lists sacrifices already made and ends in owing. Demand for Gratitude asks outright for thanks after help, while martyrdom display usually asks for nothing aloud and lets the effort speak. Guilt-Tripping blames you for something you did, whereas here the claim is about what the speaker has done for you. The difference is a ledger of the speaker's effort, kept in view but never itemised as a bill."
+    "how_to_distinguish_from_related": "Pity Plays focus on present helplessness and end in comfort; martyrdom display lists sacrifices already made and ends in owing. Demand for Gratitude asks outright for thanks after help, while martyrdom display usually asks for nothing aloud and lets the effort speak. Guilt-Tripping blames you for something you did, whereas here the claim is about what the speaker has done for you. The difference is a ledger of the speaker's effort, kept in view but never itemized as a bill."
   },
   "Duty Scripts": {
     "short_definition": "Using a role such as daughter, son or parent as an unarguable rule for what one must do, so refusing sounds like failing at the role.",
@@ -395,7 +395,7 @@
   "Demand for Gratitude": {
     "short_definition": "Expecting thanks on demand, in the right words or amount, as the price of help given, so that generosity ends up with conditions attached.",
     "core_meaning": "Expecting thanks on demand, in the right words or amount, as the price of help given, so that generosity ends up with conditions attached.",
-    "expanded_definition": "Demand for gratitude turns help into something that must be repaid in visible thanks. The help may be real: a lift, a loan, a roof, a favor. What changes is that thanks is asked for, measured and chased. A single 'a thank-you would be nice' after a long day is a human feeling. Look for thanks that must come in particular forms, gratitude raised again weeks later, and a helped person made to feel lower for having been helped.",
+    "expanded_definition": "Demand for gratitude turns help into something that must be repaid in visible thanks. The help may be real: a ride, a loan, a roof, a favor. What changes is that thanks is asked for, measured and chased. A single 'a thank-you would be nice' after a long day is a human feeling. Look for thanks that must come in particular forms, gratitude raised again weeks later, and a helped person made to feel lower for having been helped.",
     "plain_language_summary": "You were helped, and now you are expected to keep showing how thankful you are, in the right way, or be reminded of it. Help turns into a cost.",
     "why_this_matters": "When thanks is required, help stops being a gift and starts to feel like a loan with interest. People can start to avoid accepting help, even when they need it, or hide small wins so nobody feels unappreciated.",
     "what_it_is": [
@@ -417,7 +417,7 @@
     "what_it_is_not": [
       "Hurt feelings that help went unmentioned, said once and kindly: 'It would mean a lot to hear that it helped.'",
       "Teaching a child to say please and thank you, a normal part of manners.",
-      "A charity or club that thanks donors publicly, with the acknowledgement agreed in advance.",
+      "A charity or club that thanks donors publicly, with the acknowledgment agreed in advance.",
       "Close friends who say thanks for small things as a habit both of them enjoy.",
       "A person who gave a great deal, is worn thin and wants to be seen, which is different from wanting to be repaid.",
       "A workplace that recognizes effort in a review."
@@ -438,7 +438,7 @@
     ],
     "innocent_or_ordinary_possibilities": [
       "People who rarely received thanks growing up may feel its absence sharply.",
-      "A busy, tired helper may ask for acknowledgement simply because it has been a long week.",
+      "A busy, tired helper may ask for acknowledgment simply because it has been a long week.",
       "Cultures differ in how much thanks is expected, and what looks cold in one looks polite in another.",
       "Receivers often forget to say thanks in a crisis, and the helper's hurt is then genuine."
     ],
@@ -475,7 +475,7 @@
     "psychological_mechanism": "Gratitude is a real and valuable feeling, and most people want to repay kindness. When thanks is demanded, that feeling can be treated as a payment due, and a person who is slow to produce it may feel ungenerous. Because the amount owed is never fixed, the debt rarely feels settled, and staying quietly agreeable can seem easier.",
     "possible_impact_on_receiver": "Never having thanked enough is a frequent feeling, with discomfort at accepting gifts, rehearsed thank-yous, and hiding anything that might look ungrateful. Asking for help can stop altogether, since it would add to the account. A slow dislike can grow toward someone the person has real reason to appreciate.",
     "response_options": {
-      "soft_clarification": "Offer thanks that is true and specific: 'The lift got me to the interview on time, and I appreciated it.' Then notice whether it lands, or whether more is expected.",
+      "soft_clarification": "Offer thanks that is true and specific: 'The ride got me to the interview on time, and I appreciated it.' Then notice whether it lands, or whether more is expected.",
       "firm_boundary": "Tell them the way thanks is being asked for is hard for you: 'I am grateful, and I can't be asked for it every time we talk.'",
       "disengagement": "If a meeting turns into a review of your gratitude, close that part with one 'thank you again' and move on, without adding more.",
       "support_seeking": "Ask a friend, relative or counselor whether help like this would normally come with this much accounting, or whether you are missing something.",
@@ -488,7 +488,7 @@
       "Wanting appreciation is human. Using this label every time someone mentions that they helped would silence honest feelings.",
       "Do not apply it to a child learning manners, or to someone who was truly not thanked after a big effort."
     ],
-    "how_to_distinguish_from_related": "Martyrdom Display shows sacrifice through sighs and 'don't mind me' and asks for nothing aloud; demand for gratitude names the thanks it expects. Duty Scripts claim you owe obedience because of a role, while here you owe acknowledgement because of help given. Guilt-Tripping makes you feel at fault for a harm, and demand for gratitude makes you feel at fault for not feeling thankful enough. The difference is the object: your thanks, in a particular form, as the thing being collected."
+    "how_to_distinguish_from_related": "Martyrdom Display shows sacrifice through sighs and 'don't mind me' and asks for nothing aloud; demand for gratitude names the thanks it expects. Duty Scripts claim you owe obedience because of a role, while here you owe acknowledgment because of help given. Guilt-Tripping makes you feel at fault for a harm, and demand for gratitude makes you feel at fault for not feeling thankful enough. The difference is the object: your thanks, in a particular form, as the thing being collected."
   },
   "Favor Debt": {
     "short_definition": "Citing past gifts, money or support as the reason someone must agree to a present request, so past kindness is treated like a signed contract.",
@@ -581,7 +581,7 @@
     },
     "boundary_script": "\"I haven't forgotten what you did for me, and I'm still grateful. I can't pay it back by agreeing to this one. Tell me a way to thank you that I can really do.\"",
     "safety_sensitive": false,
-    "safety_note": "Favor debt becomes a safety matter when the debt is financial or legal: loans in your name, a sponsored visa or housing tied to compliance, or threats to cut off what you depend on. Keep copies of any papers you have signed, and get independent advice from legal aid or a tenant or immigration adviser before changing anything.",
+    "safety_note": "Favor debt becomes a safety matter when the debt is financial or legal. Examples are loans in your name, a sponsored visa or housing tied to compliance, or threats to cut off what you depend on. Keep copies of any papers you have signed, and get independent advice from legal aid or a tenant or immigration adviser before changing anything.",
     "misuse_warning": [
       "Mentioning past help is not always a lever. Calling every reminder of support 'favor debt' can brush aside people who really did give a lot and are asking fairly.",
       "Do not use the label to avoid repaying a loan that was clearly agreed."
@@ -592,7 +592,7 @@
     "short_definition": "Predicting that someone will fall into ruin, loneliness or disaster if they act independently, so that leaving or choosing differently begins to feel unsafe.",
     "core_meaning": "Predicting that someone will fall into ruin, loneliness or disaster if they act independently, so that leaving or choosing differently begins to feel unsafe.",
     "expanded_definition": "Catastrophizing as control means painting the future in worst-case terms whenever the other person is about to make a choice of their own: a job, a move, a friendship, an end to the relationship. The predictions come as facts, not worries, and they usually cast the speaker as the one thing keeping disaster away. Worry about someone you love is normal, and a frank warning can be a kindness. The pattern is predictions that outsize the real risk, return at each step toward independence, and leave you less able to trust your own plans.",
-    "plain_language_summary": "When you move toward something of your own, someone predicts you will end up broke, alone or ruined without them, until managing alone feels impossible.",
+    "plain_language_summary": "When you try something on your own, they predict you'll end up broke or alone. Over time, managing alone starts to feel impossible.",
     "why_this_matters": "Fear of the future can keep a person in place more firmly than any rule. When every independent step is described as the start of ruin, you may stop trying, stay where you are, and lose confidence that you could cope.",
     "what_it_is": [
       "Forecasts of disaster delivered as certainties: 'you will lose the house', not 'I am worried about the house'.",
@@ -679,7 +679,7 @@
     },
     "boundary_script": "\"I've heard that you're worried, and I want to understand the real risks. Can we write down what could go wrong and what would help with each one? I want to talk it over with my sister as well.\"",
     "safety_sensitive": true,
-    "safety_note": "Predictions of ruin become a safety concern when they travel with control of money, papers, phones or transport, with monitoring, or with claims that you would lose children or housing if you left. Those can be signs of coercive control. A next step specific to this tactic: talk through your real options with a domestic abuse advocate or legal aid service, who can help you plan privately, before anything changes.",
+    "safety_note": "Predictions of ruin become a safety concern when they travel with monitoring, or with control of money, papers, phones or transport. They also do when you are told you would lose children or housing if you left. Those can be signs of coercive control, where someone gradually takes charge of your choices through fear and dependence. A next step specific to this tactic: talk through your real options with a domestic abuse advocate or legal aid service, who can help you plan privately, before anything changes.",
     "misuse_warning": [
       "A frank warning about a risky plan is not control. Labeling honest caution as a tactic can lead you to ignore real risks.",
       "Do not use this label to dismiss an anxious relative who is trying, clumsily, to say that they care."

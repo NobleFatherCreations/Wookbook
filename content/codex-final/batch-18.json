@@ -3,7 +3,7 @@
     "short_definition": "Stretching a claim with words like always, never, everyone or nothing, so it sounds bigger and harder to answer than the facts support.",
     "core_meaning": "Stretching a claim with words like always, never, everyone or nothing, so it sounds bigger and harder to answer than the facts support.",
     "expanded_definition": "Exaggeration here means inflating a claim with absolutes and extremes: always, never, everyone, nothing, completely ruined. Nearly everyone does this when upset, so a single 'you never listen' says little. What matters is whether the stretched word is the main charge, whether one counterexample is waved away, and whether the talk gets stuck on 'always' while the real complaint, which may be partly fair, goes unanswered.",
-    "plain_language_summary": "Someone turns a specific problem into a sweeping one, with words like 'you never' and 'you always', so you end up arguing about the word instead of the thing that happened.",
+    "plain_language_summary": "A specific problem gets turned into 'you never' or 'you always'. Then you end up arguing about the word, not about what happened.",
     "why_this_matters": "A stretched claim is hard to answer. Defending yourself against 'never' can make you look petty for listing the one time, and a fair point buried inside the claim gets lost along with the exaggeration.",
     "what_it_is": [
       "Words like always, never, everyone, nothing or ruined standing in for a count that would be closer to 'twice this month'.",
@@ -90,7 +90,7 @@
     },
     "boundary_script": "\"Hearing what's wrong is what I want, and a real example is how I can do it. Can you tell me about one time this week? Then we can talk about that, instead of always and never.\"",
     "safety_sensitive": false,
-    "safety_note": "Stretched wording is an everyday habit and rarely a safety signal alone. That changes if sweeping charges come with threats, if you fear the reaction when you ask for an example, or if the same claims about you are repeated to others in ways that cut you off from them. Write down what was said and when, and show it to someone you trust before the next argument.",
+    "safety_note": "Stretched wording is an everyday habit and rarely a safety signal alone. That changes if sweeping charges come with threats, or if you fear the reaction when you ask for an example. It also changes if the same claims about you are repeated to others in ways that cut you off from them. Write down what was said and when, and show it to someone you trust before the next argument.",
     "misuse_warning": [
       "Labeling a frustrated 'you never' as manipulation can make it harder for the person to say anything strongly, and leaves the fair core of the complaint unheard.",
       "Counting up someone's 'always' statements as evidence against them turns a speech habit into a verdict."
@@ -283,7 +283,7 @@
     },
     "boundary_script": "\"Being able to rely on what you tell me matters to me. When it's about money or plans, I'll ask to see the confirmation. That isn't an accusation, it's how I'm going to make decisions from now on.\"",
     "safety_sensitive": false,
-    "safety_note": "Lying becomes safety-relevant when the false claims concern where someone is, what has been done with your money or documents, or when asking about the truth is met with anger or threats. Keep copies of records you can verify, and if questions bring fear, speak to an advocate or lawyer before raising it again.",
+    "safety_note": "Lying becomes safety-relevant when the false claims concern where someone is, or what has been done with your money or documents. It also does when asking about the truth is met with anger or threats. Keep copies of records you can verify, and if questions bring fear, speak to an advocate or lawyer before raising it again.",
     "misuse_warning": [
       "Calling someone a liar when they may have been mistaken or remember differently closes the conversation and treats a guess about what they knew as fact.",
       "Treating one inaccurate statement as proof that everything else the person says is false."
@@ -487,10 +487,10 @@
     "how_to_distinguish_from_related": "Lying is one false statement that can sit inside an otherwise real relationship; catfishing replaces the whole person the relationship is with. Exaggeration inflates real qualities such as height or income, while a fabricated identity can't be fixed by toning it down. Fabricated Evidence manufactures documents or screenshots to prove a claim; a catfish profile may contain staged photos, but what defines it is that the person at the other end is not who they say."
   },
   "False Reports": {
-    "short_definition": "Filing complaints or accusations with an employer, school, agency or police that contain claims the filer knows are untrue, so the target must answer for something that never happened.",
-    "core_meaning": "Filing complaints or accusations with an employer, school, agency or police that contain claims the filer knows are untrue, so the target must answer for something that never happened.",
-    "expanded_definition": "A false report is a formal complaint whose central facts did not happen: an invented incident, a made-up date, an act the target could not have done. It goes to a body with power, such as a manager, a school, a licensing board, a child-protection agency or the police, which must respond. Mistaken reports and honestly disputed ones are different, and a report that cannot be proved is not necessarily false. What marks the pattern is a report contradicted by independent records, sometimes repeated to more than one body.",
-    "plain_language_summary": "Someone makes a formal complaint about you to an authority about something that did not happen, and you have to defend yourself before anyone finds out whether it is true.",
+    "short_definition": "Filing complaints or accusations with an employer, school, agency or police that contain claims the filer knows are untrue, so the accused person must answer for something that never happened.",
+    "core_meaning": "Filing complaints or accusations with an employer, school, agency or police that contain claims the filer knows are untrue, so the accused person must answer for something that never happened.",
+    "expanded_definition": "A false report is a formal complaint whose central facts did not happen: an invented incident, a made-up date, an act the accused person could not have done. It goes to a body with power, such as a manager, a school, a licensing board, a child-protection agency or the police, which must respond. Mistaken reports and honestly disputed ones are different, and a report that cannot be proved is not necessarily false. What marks the pattern is a report contradicted by independent records, sometimes repeated to more than one body.",
+    "plain_language_summary": "Someone reports you to an authority for something that never happened. You have to defend yourself before anyone checks whether it is true.",
     "why_this_matters": "A fabricated complaint puts a real job, license or family arrangement in jeopardy, and the person has to answer for something that did not happen before anyone establishes whether it did.",
     "what_it_is": [
       "A formal complaint, accusation or document sent to an authority whose core facts are untrue.",
@@ -507,7 +507,7 @@
       "Several agencies receiving similar reports from the same source within weeks."
     ],
     "what_it_is_not": [
-      "A genuine report that characterises events in a way the subject disputes still reflects the reporter's honest perception. Institutions also make their own errors in processing legitimate reports.",
+      "A genuine report that characterizes events in a way the subject disputes still reflects the reporter's honest perception. Institutions also make their own errors in processing legitimate reports.",
       "Two people who disagree factually about what happened, where neither is inventing anything.",
       "A report made in good faith and found unsubstantiated. Unproven is not the same as false.",
       "A mandated reporter, such as a teacher or nurse, passing on a concern as their role requires.",
@@ -562,7 +562,7 @@
       "You avoid ordinary things, like a child handover or a one-to-one meeting, for fear of another report.",
       "Managers, relatives or neighbors are approached and asked about you."
     ],
-    "repair_check": "A written withdrawal or correction, sent to the same body that received the report, plus a plain acknowledgement to you that the claim was not true, is what repair would involve. Saying 'I only wanted someone to listen' while the file stays open leaves the consequences where they were.",
+    "repair_check": "A written withdrawal or correction, sent to the same body that received the report, plus a plain acknowledgment to you that the claim was not true, is what repair would involve. Saying 'I only wanted someone to listen' while the file stays open leaves the consequences where they were.",
     "boundary_respect_check": "What matters is whether the reports stop and whether anything is corrected on the record. Words said to you in private, such as 'I'm sorry it went that far', count for little if the institution has not been told. Notice which bodies have heard the correction.",
     "psychological_mechanism": "Institutions are built to take reports seriously and to act while the facts are unknown, which is sensible but can cause harm if the report is invented. Being accused by a body with power can produce fear, shame and urgency to defend oneself before anything is checked. People around you may keep a lingering doubt even after a clearing.",
     "possible_impact_on_receiver": "People describe shock at being formally accused, sleeplessness, and a sense of being watched by the process. Some face suspension, interviews or temporary limits on contact with children while a report is looked at. Even after being cleared, many describe lasting caution about being alone with others or doing ordinary things.",
@@ -593,7 +593,7 @@
       "'Confirming' emails sent after a conversation that restate it in a slanted form, so that silence reads as agreement.",
       "Documentation concentrated on one person while others doing the same things go unrecorded.",
       "Built out of sight, so the first time the person hears of the 'history' is when it is used.",
-      "Found at work, in schools and care settings, in tenancy disputes, and in family and custody conflicts."
+      "Found at work, in schools and care settings, in rental disputes, and in family and custody conflicts."
     ],
     "what_it_sounds_like": [
       "Just to confirm what we discussed... followed by a version you do not recognize.",
@@ -651,7 +651,7 @@
     "more_concerning_if": [
       "A hearing, review or dismissal is being prepared and you are not told what is in the file.",
       "Records are refused to you, or appear only at the point of a decision.",
-      "The file will be used where much is at stake: a job, custody, a tenancy or immigration status."
+      "The file will be used where much is at stake: a job, custody, a lease or immigration status."
     ],
     "pattern_over_time_signs": [
       "'Confirming' emails arrive after each conversation, and the version differs from yours.",
@@ -672,7 +672,7 @@
     },
     "boundary_script": "\"Please give me a copy of anything written about me, and add my responses to the file. And when there is a concern, tell me when it happens so I can answer it at the time.\"",
     "safety_sensitive": true,
-    "safety_note": "This tactic matters most when the record may be used in decisions about your job, tenancy, immigration status or time with your children. Signs of high stakes are meetings called without notice, requests to sign things you haven't read, and being told 'it's all documented'. Sign nothing unread. Keep your own dated notes somewhere the other person cannot reach, and see a lawyer or union representative before any formal meeting.",
+    "safety_note": "This tactic matters most when the record may be used in decisions about your job, housing, immigration status or time with your children. Signs of high stakes are meetings called without notice, requests to sign things you haven't read, and being told 'it's all documented'. Sign nothing unread. Keep your own dated notes somewhere the other person cannot reach, and see a lawyer or union representative before any formal meeting.",
     "misuse_warning": [
       "Keeping your own notes is not a paper-trail trap, and calling honest record-keeping a trap can excuse behavior that really was a problem.",
       "Believing every unwelcome review is a plot can stop a person from seeing feedback that is accurate."
@@ -769,7 +769,7 @@
     },
     "boundary_script": "\"I'm glad to keep your private things private. I'm not comfortable keeping something from my brother when it affects his money. Can the three of us talk about it together?\"",
     "safety_sensitive": false,
-    "safety_note": "Separate pockets of information are most worrying when the person holding the map also controls money, care or housing for someone who depends on them, such as an older parent or a partner without their own accounts. Then the gaps can hide real harm. Gather the facts from others involved, ask the bank, doctor or care manager what you are entitled to see, and contact an adult-protection or elder-care service if someone's welfare is at risk.",
+    "safety_note": "Separate pockets of information are most worrying when the person holding the map also controls money, care or housing for someone who depends on them. That could be an older parent or a partner without their own accounts. Then the gaps can hide real harm. Gather the facts from others involved, and ask the bank, doctor or care manager what you are entitled to see. Contact an adult-protection or elder-care service if someone's welfare is at risk.",
     "misuse_warning": [
       "Treating every confidence as compartmentalization punishes ordinary privacy, such as someone's diagnosis or a surprise being planned.",
       "Using the label to demand that one person reveal another's private matters."

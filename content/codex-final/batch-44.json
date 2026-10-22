@@ -287,7 +287,7 @@
  "Adversarial Machine Learning": {
   "short_definition": "Crafting the data an AI system learns from or reads so that it gives wrong or manipulated answers, a risk to filters, fraud checks and screening software.",
   "core_meaning": "Crafting the data an AI system learns from or reads so that it gives wrong or manipulated answers, a risk to filters, fraud checks and screening software.",
-  "expanded_definition": "Adversarial machine learning is the study of how AI systems can be pushed into mistakes by inputs designed for that purpose, and of how to defend against it. For ordinary people the point is simple: a filter, a fraud check or a screening tool can be fooled, and it will still return a confident answer. Strange or wrong outputs are far more often ordinary limitations than attacks, and this entry gives no detail on any method.",
+  "expanded_definition": "Adversarial machine learning is the study of how AI systems can be pushed into mistakes by inputs designed for that purpose, and of how to defend against it. For ordinary people the point is simple: a filter, a fraud check or a screening tool can be fooled, and it will still return a confident answer. Strange or wrong outputs are far more often ordinary limitations than attacks, and spotting a wrong answer is not the same as finding an attack.",
   "plain_language_summary": "AI systems can be fooled by inputs made to mislead them, so a confident answer from a filter or screening tool is not always a correct one.",
   "why_this_matters": "The systems people are told to rely on, such as filters, fraud checks and screening tools, return confident answers, and the person affected often has no way to see why. If such a system has been misled, the error can land on someone who did nothing.",
   "what_it_is": [
@@ -377,6 +377,6 @@
    "Blaming every strange AI output on an attack can excuse real design flaws and hide the ordinary biases and limits that cause most errors.",
    "Accusing a specific person or company of tampering with a model, with no evidence, is a serious claim that can do real harm."
   ],
-  "how_to_distinguish_from_related": "Strategic Leaking releases real information at a chosen moment, while this entry concerns misleading an AI tool so that its judgments go wrong. Strategic Deception is a broad campaign to mislead an adversary's decisions through many channels. PSYOP Message Framing is crafted to move human audiences, whereas this entry is about fooling a machine's reading of its input."
+  "how_to_distinguish_from_related": "Strategic Leaking releases real information at a chosen moment, while adversarial machine learning concerns misleading an AI tool so that its judgments go wrong. Strategic Deception is a broad campaign to mislead an adversary's decisions through many channels. PSYOP Message Framing is crafted to move human audiences, whereas an adversarial input is about fooling a machine's reading of its input."
  }
 }

@@ -89,7 +89,7 @@
     },
     "boundary_script": "\"This feels true because I keep seeing it, and that is not the same as it being true. What would I think if I looked at three sources I chose myself, not the ones that were handed to me?\"",
     "safety_sensitive": false,
-    "safety_note": "Feed steering is a personal safety issue when it serves harmful content to someone in distress, such as material about self-harm or eating disorders, or when a child cannot step away. Then the step is to involve a trusted adult or counselor, report the content, and reach emergency services if there is immediate danger.",
+    "safety_note": "Feed steering is a personal safety issue when it serves harmful content to someone in distress, such as material about self-harm or eating disorders. It also is when a child cannot step away. Then the step is to involve a trusted adult or counselor, report the content, and reach emergency services if there is immediate danger.",
     "misuse_warning": [
       "Treating any unwelcome feed as proof of a hidden plot can feed paranoia and ignores that most ranking is blunt commercial sorting.",
       "Telling someone their opinions are 'just the algorithm' dismisses views they may have reached through their own thinking."
@@ -99,13 +99,13 @@
   "Dark Patterns (AI-Adaptive)": {
     "short_definition": "Interface designs that push people toward purchases, data sharing or consent they did not intend, and that adjust to each user's apparent weaknesses.",
     "core_meaning": "Interface designs that push people toward purchases, data sharing or consent they did not intend, and that adjust to each user's apparent weaknesses.",
-    "expanded_definition": "Dark patterns are screens built so the quickest path is not the one a person would pick with time to read: a hidden decline button, a pre-ticked box, a countdown timer, a cancel flow that takes ten steps. The AI-adaptive version changes the screen for each user, based on what the system has learned about them. Good design nudges too, and a confusing checkout is usually just badly built. The concern is design that gets harder to escape the more it learns.",
+    "expanded_definition": "Dark patterns are screens built so the quickest path is not the one a person would pick with time to read: a hidden decline button, a pre-checked box, a countdown timer, a cancel flow that takes ten steps. The AI-adaptive version changes the screen for each user, based on what the system has learned about them. Good design nudges too, and a confusing checkout is usually just badly built. The concern is design that gets harder to escape the more it learns.",
     "plain_language_summary": "Apps and websites sometimes set up screens so you agree, buy or share more than you meant to, and some now adjust the screen to what works on you in particular.",
     "why_this_matters": "Money, personal data and consent leave a person's hands through interfaces built so the default path is not what they would have chosen. People often blame themselves for clicking, when the screen was arranged to produce the click.",
     "what_it_is": [
       "Screens that make one choice easy and bright and the other small, hidden or phrased as a loss.",
       "Subscription traps: signing up takes one tap and canceling takes a maze of pages or a phone call.",
-      "Consent boxes that are pre-ticked, or whose decline option is worded to make you feel foolish.",
+      "Consent boxes that are pre-checked, or whose decline option is worded to make you feel foolish.",
       "Pressure cues such as countdown clocks or 'only 2 left' notices that may or may not be true.",
       "In the AI-adaptive form, the layout, timing or message changes between users based on what the system predicts will work on each of them."
     ],
@@ -186,7 +186,7 @@
     },
     "boundary_script": "\"I did not set out to buy this or share that. Before I tap anything, is the 'no' option as easy to find as the 'yes', and would I choose this if there were no clock on it?\"",
     "safety_sensitive": false,
-    "safety_note": "This is mainly a consumer harm, but it becomes more serious when it takes money from someone who cannot afford it, targets children, or collects location or contact data that could be used against them. Gather statements and screenshots, contact your bank or card issuer, and ask a consumer advocate or legal aid for help.",
+    "safety_note": "This is mainly a consumer harm, but it becomes more serious when it takes money from someone who cannot afford it or targets children. It also does when it collects location or contact data that could be used against them. Gather statements and screenshots, contact your bank or card issuer, and ask a consumer advocate or legal aid for help.",
     "misuse_warning": [
       "Calling every upsell a dark pattern ignores honest businesses that simply want to sell something and show the options clearly.",
       "Blaming people who clicked can hide the fact that a screen was arranged to produce that click."
@@ -197,7 +197,7 @@
     "short_definition": "Groups of AI-generated fake identities that act together across platforms to look like real people, shaping what appears to be public opinion or gathering information.",
     "core_meaning": "Groups of AI-generated fake identities that act together across platforms to look like real people, shaping what appears to be public opinion or gathering information.",
     "expanded_definition": "A synthetic persona network is a set of accounts with generated faces, histories and writing, run together so they seem like separate people who happen to agree. It is the large-scale cousin of the single fake account. A pseudonymous account, a brand's staff or a group of people who truly agree are not fake networks. Establishing coordination takes platform-level data, not a hunch about a stranger's profile picture.",
-    "plain_language_summary": "Many accounts that look like different real people are actually run together, with made-up identities, so a view looks more popular or a stranger seems more trustworthy than they are.",
+    "plain_language_summary": "Many accounts look like different real people, but they are run together. The fake crowd makes a view look popular or a stranger look trustworthy.",
     "why_this_matters": "A person forms a view of what others think, or of who they are talking to, from accounts that no real person stands behind. They may change their own opinion, share personal details or join a group on false evidence.",
     "what_it_is": [
       "Accounts with generated profile photos, believable backstories and steady posting, run as a group.",
@@ -486,7 +486,7 @@
     "short_definition": "Using virtual or augmented reality experiences to make staged scenarios feel real enough to shape someone's fears, beliefs or attachments.",
     "core_meaning": "Using virtual or augmented reality experiences to make staged scenarios feel real enough to shape someone's fears, beliefs or attachments.",
     "expanded_definition": "Virtual and augmented reality surround a person with a scene the body reacts to as if it were real: the heart speeds up, the stomach drops. That is what makes the medium valuable for training, therapy and storytelling. The concern is a staged experience offered as evidence about how the world actually is, or built to attach someone to a position or a product. A moving simulation is not manipulation in itself.",
-    "plain_language_summary": "A headset experience can feel so real that it leaves a lasting impression, and a staged scene can be used to make you afraid, convinced or attached without any argument being made.",
+    "plain_language_summary": "A headset experience can feel so real that it stays with you. A staged scene can make you scared, convinced or attached without any argument at all.",
     "why_this_matters": "An experience the body treats as real leaves something closer to a memory than an argument, and memories are much harder to revise afterwards. People may carry a staged scene around as if it had happened.",
     "what_it_is": [
       "A simulated scene designed to produce strong fear, anger, awe or belonging inside a headset or an overlay.",
@@ -581,8 +581,8 @@
   "AI-Driven Social Engineering (Automated)": {
     "short_definition": "Scams that use AI-generated text, voice or video to impersonate trusted people or institutions, tailored to each target and sent at large scale.",
     "core_meaning": "Scams that use AI-generated text, voice or video to impersonate trusted people or institutions, tailored to each target and sent at large scale.",
-    "expanded_definition": "Social engineering is getting a person to hand over access, money or information by exploiting trust or urgency instead of breaking into a system. With AI, the messages can be fluent, personal and sent in huge numbers, and voices or faces can be made to resemble someone the target knows. The old warning signs, such as odd wording, may be missing. Real organizations also call and email, so the contact alone proves nothing.",
-    "plain_language_summary": "A message, call or video that looks or sounds like someone you trust is actually generated, and it is built to get you to send money or information quickly.",
+    "expanded_definition": "Social engineering is getting a person to hand over access, money or information by exploiting trust or urgency instead of breaking into a system. With AI, the messages can be fluent, personal and sent in huge numbers, and voices or faces can be made to resemble someone you know. The old warning signs, such as odd wording, may be missing. Real organizations also call and email, so the contact alone proves nothing.",
+    "plain_language_summary": "A message, call or video seems to come from someone you trust, but AI made it. It is built to rush you into sending money or details.",
     "why_this_matters": "The usual defenses, an unfamiliar voice, clumsy wording or an address that looks wrong, stop working when the approach sounds exactly like someone already known and trusted. People lose money, accounts and privacy while believing they were helping.",
     "what_it_is": [
       "Messages, calls or videos that imitate a relative, boss, bank, agency or friend using generated text, cloned voice or faked video.",
@@ -646,7 +646,7 @@
     "more_concerning_if": [
       "The contact claims to be a family member in danger, or an official threatening arrest or loss of benefits.",
       "You have already shared codes, passwords or payment details.",
-      "The target is an older adult, a person in grief, or someone alone."
+      "The person being contacted is an older adult, grieving, or alone."
     ],
     "pattern_over_time_signs": [
       "Increasingly personal contacts arrive from unfamiliar numbers or accounts that know details about your life.",
