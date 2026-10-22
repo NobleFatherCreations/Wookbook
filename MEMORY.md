@@ -3250,3 +3250,22 @@ no external requests but the beacon, no overflow; 4x-CPU phone load 2.2 s -> 1.3
 Dropped from v9: the canvas constellation map (related links and patterns carry it now).
 **Lessons:** view transitions make rendering async, so tests must wait for the new h1; a Playwright overflow check
 of the root misses a grid child that grows (min-width:0 fix); a placeholder longer than the phone input is cut off.
+
+## 2026-10-22 (later) — Decoder v10.2: the sky world, an original typeface, Apple-style restraint (built, NOT deployed)
+**Why a redo:** the first v10 was a competent card layout; the author wanted a premium, original, Apple-simple, artistic result
+("what would a million-dollar site look like"). I had loaded skills as checklists and never invoked `impeccable` or the motion skills.
+**Process now:** PRODUCT.md written (init round answered: reader = someone hurting and unsure; world = observatory at night; motion = rich).
+The skill's random direction roll was overridden because the author pinned the world.
+**What it is:** one persistent canvas sky behind everything (`design/decoder-v10/sky.js`): 310 tactics are stars in 10 constellations
+(layout computed in `build-decoder-v10.py::layout_sky`, landscape + portrait), the camera flies per page (wide on home, into a group, onto an
+entry's star), explorable `#/sky` page, stars you read glow, search/guide results light up, Calm button + reduced motion stop all motion.
+Home is a centred stage + pinned scroll story where the sky tours the groups.
+**Typeface:** ASTRA, drawn from scratch (`design/decoder-v10/font/build-astra.py`, needs `pip install fonttools brotli`; I used a scratch
+`--target`, nothing system-wide): monoline geometric, round caps, letters are constellations, i/j/punctuation dots are four-point stars.
+Light 300 + Medium 500, ~5 KB each. Missing glyphs (&, +, %) fall back to Public Sans. IM Fell English was removed.
+**Rules learned:** (1) `const X` at script top level is not `window.X`, so `window.Sky` guards silently skipped features; (2) a canvas at
+z-index below `body` can never receive pointer events; (3) every-entry overflow test found ~24 titles with a word wider than the screen in the
+display face, now fixed by `fitText()`; (4) software-rendered canvas on a throttled phone is a harsh benchmark: the sky now caches constellation
+lines per group at 3 scales, caps DPR at 1.5 on phones, and drops dust/glows automatically if frames run slow; (5) edit via direct file
+edits and re-read, two of my scripted replacements silently didn't apply.
+**Still to do:** deploy (needs the author's approval); DESIGN.md (documenter agent resumed after a rate limit); clinical read of rewritten scripts.
