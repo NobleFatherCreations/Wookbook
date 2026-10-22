@@ -63,6 +63,15 @@ SETTINGS = [
     ("society", "Media and society", "News, politics, advertising and influence at scale."),
 ]
 FEEL_TO_SETTING = {"relationship": "relationship", "family": "family", "work": "work", "social": "friends", "online": "online"}
+# Terms readers meet in the "what you can do" and safety text, explained once, on tap.
+GLOSSARY = {
+    "advocate": "A trained person, often free, who helps you understand your options and make a safety plan. Domestic violence and sexual assault services, unions and patient services have them.",
+    "legal aid": "Free or low-cost legal help for people who cannot pay a lawyer. Many areas have a legal aid office or a law school clinic.",
+    "crisis line": "A phone, text or chat service you can contact any time to talk to a trained person, often free and confidential.",
+    "protective order": "A court order that tells someone to stay away from you or stop contacting you. The name varies by place, for example restraining order.",
+    "coercive control": "A pattern of behavior that takes away a person's freedom bit by bit: watching, isolating, controlling money or rules, and making them afraid.",
+    "ombudsperson": "An independent officer inside an organization who looks into complaints and is not on either side.",
+}
 TRIES = ["You're overreacting", "the silent treatment", "they keep changing the rules", "love bombing"]
 FIELDS = ["short_definition", "plain_language_summary", "expanded_definition", "why_this_matters", "what_it_is",
           "what_it_sounds_like", "what_it_is_not", "this_may_be_it_when", "this_may_not_be_it_when",
@@ -160,7 +169,8 @@ def main():
             "sens": bool(c["safety_sensitive"]), "abs": c.get("absorbs") or [],
             "rel": [r for r in (m.get("related") or c.get("related_tactics", [])) if r in names and r != n],
             "pop": pop.get(n, 0),
-            "kind": "verify" if (g == "society" or c["boundary_script"].lower().startswith("verification")) else "say",
+            "kind": ("verify" if (c["branch"] == "societal" or c["boundary_script"].lower().startswith("verification"))
+                     else "self" if c["branch"] == "aftermath" else "say"),
             "f": {**{f: c[f] for f in FIELDS},
                   "less_concerning_if": dedupe(c["less_concerning_if"], c["this_may_not_be_it_when"])},
         })
@@ -175,7 +185,7 @@ def main():
         "settings": [{"k": k, "label": l, "blurb": b} for k, l, b in SETTINGS],
         "recipes": [{"n": r["n"], "c": [aliases.get(x, x) for x in r["c"] if aliases.get(x, x) in by], "d": r["d"]} for r in recipes],
         "aliases": aliases, "narrow": narrow, "feelings": feelings, "feelingGroups": feeling_groups,
-        "stop": stop, "common": common, "tries": TRIES, "catToGroup": CAT_TO_GROUP,
+        "stop": stop, "common": common, "glossary": GLOSSARY, "tries": TRIES, "catToGroup": CAT_TO_GROUP,
         "cover": read(A, "cover.txt"), "wordmark": read(A, "wordmark.svg"),
         "version": VERSION, "updates": UPDATES,
     }

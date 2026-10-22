@@ -404,3 +404,11 @@ details.part[open] .p-body{animation:rise 240ms var(--ease) both}
 @media (max-width:760px){.short{margin-top:8px}}
 @media (max-width:760px){.search input{font-size:17px;padding-right:48px}}
 #main h1:focus{outline:none}
+.term{display:inline;padding:0;border:0;background:none;font:inherit;color:inherit;cursor:help;
+  text-decoration:underline dotted color-mix(in srgb,var(--brass) 70%,transparent);text-underline-offset:4px;text-decoration-thickness:1.5px}
+.term:hover,.term[aria-expanded="true"]{color:var(--brass)}
+.term-def{display:block;margin:8px 0 4px;padding:10px 14px;border-radius:var(--r-sm);background:var(--bg-2);border-left:2px solid var(--brass);font-size:15px;color:var(--ink-2);line-height:1.5}
+.term-def[hidden]{display:none}
+.chip{white-space:nowrap}
+.top{background:color-mix(in srgb,var(--bg) 94%,transparent)}
+@media (max-width:1040px){.chipbar{background:color-mix(in srgb,var(--bg) 97%,transparent)}}

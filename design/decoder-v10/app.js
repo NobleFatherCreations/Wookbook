@@ -266,6 +266,25 @@ function part(id,title,hint,inner){
 }
 let OPEN_PARTS = !matchMedia("(max-width: 760px)").matches;
 const PARTS = [["short","In short"],["understand","Understand it"],["fit","Is this it?"],["do","What you can do"],["deeper","Go deeper"]];
+/* The first use of each glossary term on an entry page becomes a button that
+   opens a one-line plain explanation right under it. */
+function gloss(html){
+  const used=new Set();
+  return html.replace(/<(p|li)>([\s\S]*?)<\/\1>/g,(m,tag,inner)=>{ const orig=inner;
+    let defs="";
+    Object.keys(D.glossary).forEach(t=>{
+      if(used.has(t)) return;
+      const re=new RegExp("\\b("+t.replace(/ /g,"\\s")+"s?)\\b","i");
+      if(re.test(inner)&&!/<(button|a) /.test(orig)){
+        used.add(t);
+        const id="g-"+t.replace(/ /g,"-");
+        inner=inner.replace(re,'<button type="button" class="term" data-term="'+id+'" aria-expanded="false" aria-controls="'+id+'">$1</button>');
+        defs+='<span class="term-def" id="'+id+'" hidden><b>'+t.charAt(0).toUpperCase()+t.slice(1)+':</b> '+esc(D.glossary[t])+'</span>';
+      }
+    });
+    return "<"+tag+">"+inner+defs+"</"+tag+">";
+  });
+}
 function viewEntry(slug){
   let e=BY_SLUG[slug];
   if(!e&&ALIAS_SLUG[slug]){ e=BY[ALIAS_SLUG[slug]]; try{history.replaceState(null,"",entryHref(e))}catch(x){} }
@@ -280,7 +299,7 @@ function viewEntry(slug){
     ? '<div class="callout" role="note"><h3>'+ic("shield")+'Your safety comes first</h3><p>'+H(f.safety_note)+'</p><p class="small" style="margin-top:8px"><a href="'+href("about")+'">How to use this guide safely</a></p></div>'
     : '';
   const pats=(PATS_OF[e.n]||[]).map(ri=>D.recipes[ri]);
-  return '<article class="entry">'+
+  return gloss('<article class="entry">'+
     '<nav class="toc" aria-label="On this page">'+toc+'</nav>'+
     '<div>'+
     '<header class="e-head">'+
@@ -318,7 +337,7 @@ function viewEntry(slug){
       blk("Often mistaken for this",ul(f.common_false_positives)))+
     part("do","What you can do","Words you could use, ways to respond, and signs of change",
       (e.sens?'<p class="intro">Read the safety note first. If speaking up could make things worse, skip the wording below and talk to someone you trust or a local support service.</p>':'<p class="intro">Pick what fits. You do not owe anyone a confrontation.</p>')+
-      '<div class="script"><p class="lbl">'+(e.kind==="verify"?"A check to run before you share or act":"Words you could use")+'</p><blockquote id="bs">'+H(f.boundary_script.replace(/^Verification script[^:]*:\s*/i,""))+'</blockquote>'+
+      '<div class="script"><p class="lbl">'+({verify:"A check to run before you share or act",self:"Words to say to yourself",say:"Words you could use"}[e.kind])+'</p><blockquote id="bs">'+H(f.boundary_script.replace(/^Verification script[^:]*:\s*/i,""))+'</blockquote>'+
         '<div class="row-act"><button class="btn" type="button" data-copy="bs">'+ic("copy")+'<span>Copy</span></button></div></div>'+
       '<div class="blk"><h3>Ways to respond</h3><div class="resp">'+RESP.map(r=>f.response_options&&f.response_options[r[0]]?'<div><h4>'+r[1]+'</h4><p>'+H(f.response_options[r[0]])+'</p></div>':'').join("")+'</div></div>'+
       blk("Is it changing?",'<p>'+H(f.boundary_respect_check)+'</p><p>'+H(f.repair_check)+'</p>')+
@@ -336,7 +355,7 @@ function viewEntry(slug){
       '<a class="nx" href="'+entryHref(next)+'"><span class="k">Next</span><span class="t">'+H(next.n)+'</span></a>'+
     '</nav>'+
     '<p class="back-to"><a class="btn ghost" href="'+href("browse/"+g.k)+'">All '+inG.length+' in '+H(g.label)+'</a></p>'+
-    '</div></article>';
+    '</div></article>');
 }
 
 /* ---------- guide: two questions, then a short list ---------- */
@@ -492,7 +511,7 @@ window.addEventListener("scroll",()=>{ if(LAST_KEY) SCROLL[LAST_KEY]=window.scro
 document.addEventListener("click",ev=>{
   const a=ev.target.closest("a[href^='#/']");
   if(a){ if(LAST_KEY) SCROLL[LAST_KEY]=window.scrollY; FRESH=true; delete SCROLL[a.getAttribute("href")]; const vt=a.dataset.vt; PENDING_VT=vt!=null?vt:null; return; }
-  const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall]");
+  const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall],[data-term]");
   if(!t) return;
   const d=t.dataset;
   if(d.try!==undefined){ SEARCH_Q=d.try; if(parse().view==="search"){ const i=$("#q-page"); i.value=SEARCH_Q; updateResults(); } else { FRESH=true; location.hash="#/search"; } return; }
@@ -509,6 +528,7 @@ document.addEventListener("click",ev=>{
   if(d.setfilter!==undefined){ FILTER_SET=d.setfilter; const y=window.scrollY; render(); window.scrollTo(0,y); return; }
   if(d.jump!==undefined){ ev.preventDefault(); const el=document.getElementById(d.jump); if(el) el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); return; }
   if(d.part!==undefined){ ev.preventDefault(); const el=document.getElementById(d.part); if(el){ if(el.tagName==="DETAILS") el.open=true; el.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"}); const h=el.querySelector("h2"); if(h){h.setAttribute("tabindex","-1");h.focus({preventScroll:true});} } return; }
+  if(d.term!==undefined){ const def=document.getElementById(d.term); if(def){ def.hidden=!def.hidden; t.setAttribute("aria-expanded",!def.hidden); } return; }
   if(d.openall!==undefined){ const all=[...document.querySelectorAll("details.part")]; const open=!all.every(x=>x.open); all.forEach(x=>x.open=open); OPEN_PARTS=open; t.textContent=open?"Fold all":"Open all"; return; }
   if(d.clearsaved!==undefined){ if(confirm("Clear your saved and recent entries on this device?")){ store.set("starred",[]); store.set("trail",[]); render(); } return; }
   if(d.themeToggle!==undefined){ const cur=document.documentElement.getAttribute("data-theme")==="light"?"dark":"light"; document.documentElement.setAttribute("data-theme",cur); store.set("theme",cur); themeIcon(); return; }
