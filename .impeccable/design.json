@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-22T00:00:00Z",
+  "title": "Design System: The Pattern Decoder",
+  "extensions": {
+    "colorMeta": {
+      "night-ink": {"role": "neutral", "displayName": "Night Ink", "canonical": "#05070F", "tonalRamp": ["#05070F","#0A0F1F","#10172E","#1A2340","#2A3556","#4A5578","#8A93AE","#C8CCDC"]},
+      "off-white": {"role": "neutral", "displayName": "Off-White", "canonical": "#F4F1EA", "tonalRamp": ["#4A4944","#6E6C66","#908E87","#B0AEA6","#C8C5BD","#DAD7CF","#EAE7DF","#F4F1EA"]},
+      "star-gold": {"role": "primary", "displayName": "Star Gold", "canonical": "#E8C877", "tonalRamp": ["#3A2E0E","#5E4A15","#8A6414","#B38A28","#D1A94C","#E8C877","#F3DA97","#FBEFCB"]},
+      "ember": {"role": "secondary", "displayName": "Safety Ember", "canonical": "#F2A38A", "tonalRamp": ["#4A1F12","#7A2F1A","#A33A1E","#D0634A","#F2A38A","#F6BBA8","#FAD3C6","#FDEAE3"]}
+    },
+    "typographyMeta": {
+      "display-hero": {"displayName": "Astra Display", "purpose": "Home stage headline, 24px and up only."},
+      "body": {"displayName": "Public Sans Body", "purpose": "All reading and all scripts."},
+      "label": {"displayName": "Block Label", "purpose": "Tracked caps block headings inside entries."}
+    },
+    "shadows": [],
+    "motion": [
+      {"name": "ease", "value": "cubic-bezier(.22,.61,.36,1)", "purpose": "State changes at 220ms."},
+      {"name": "ease-out", "value": "cubic-bezier(.16,1,.3,1)", "purpose": "Reveals and story beats, 500 to 900ms."},
+      {"name": "camera", "value": "cubic ease-in-out tween", "purpose": "Sky camera flights between pages."}
+    ],
+    "breakpoints": [
+      {"name": "phone", "value": "760px"},
+      {"name": "entry-toc", "value": "1040px"},
+      {"name": "compare-stack", "value": "640px"}
+    ]
+  },
+  "components": [
+    {"name": "Search Pill", "kind": "input", "refersTo": "search-pill", "description": "Hero search control.",
+     "html": "<div class=\"ds-search\"><input placeholder=\"Describe what is happening\"></div>",
+     "css": ".ds-search input{width:100%;max-width:680px;height:60px;padding:0 56px 0 54px;border-radius:999px;border:1px solid rgba(244,241,234,.47);background:rgba(10,14,28,.72);backdrop-filter:blur(18px);color:#F4F1EA;font:400 18px 'Public Sans',system-ui,sans-serif;transition:border-color 220ms} .ds-search input:focus{outline:none;border-color:rgba(244,241,234,.7)} .ds-search input:focus-visible{outline:2px solid #E8C877;outline-offset:3px}"},
+    {"name": "Primary Button", "kind": "button", "refersTo": "button-primary", "description": "Off-white pill action.",
+     "html": "<button class=\"ds-btn\">Start here</button>",
+     "css": ".ds-btn{min-height:44px;padding:0 22px;border-radius:999px;border:1px solid #F4F1EA;background:#F4F1EA;color:#05070F;font:500 15px 'Public Sans',system-ui,sans-serif;cursor:pointer;transition:background 220ms,transform 120ms} .ds-btn:hover{background:rgba(244,241,234,.86)} .ds-btn:active{transform:scale(.97)} .ds-btn:focus-visible{outline:2px solid #E8C877;outline-offset:3px}"},
+    {"name": "Chip", "kind": "chip", "refersTo": "chip", "description": "Pill filter.",
+     "html": "<button class=\"ds-chip\">Control</button>",
+     "css": ".ds-chip{min-height:38px;padding:0 16px;border-radius:999px;border:1px solid rgba(244,241,234,.14);background:none;color:rgba(244,241,234,.7);font:400 15px 'Public Sans',system-ui,sans-serif;cursor:pointer;transition:all 220ms} .ds-chip:hover{color:#F4F1EA;background:rgba(244,241,234,.045)} .ds-chip:focus-visible{outline:2px solid #E8C877;outline-offset:3px}"},
+    {"name": "Constellation Row", "kind": "custom", "refersTo": "list-row", "description": "Typographic list row replacing a card.",
+     "html": "<a class=\"ds-row\"><span class=\"ds-t\">Pressure</span><p>Making you hurry a choice.</p><span class=\"ds-n\">31</span></a>",
+     "css": ".ds-row{display:grid;grid-template-columns:1.1fr 1.2fr auto;gap:24px;align-items:baseline;padding:30px 4px;border-bottom:1px solid rgba(244,241,234,.14);color:#F4F1EA;transition:padding 220ms,background 220ms} .ds-row:hover{padding-left:16px;background:rgba(244,241,234,.045)} .ds-t{font:300 36px/1.1 Astra,system-ui,sans-serif} .ds-row p{margin:0;color:rgba(244,241,234,.7);font:400 16px 'Public Sans',system-ui,sans-serif} .ds-n{color:rgba(244,241,234,.47);font-size:14px}"},
+    {"name": "Safety Callout", "kind": "custom", "refersTo": "safety-badge", "description": "Ember-only safety block.",
+     "html": "<div class=\"ds-safe\"><h3>Safety first</h3><p>Plan carefully before you act.</p></div>",
+     "css": ".ds-safe{padding:24px 28px;border-radius:14px;border:1px solid rgba(242,163,138,.34);background:rgba(242,163,138,.09);color:#F4F1EA;font-family:'Public Sans',system-ui,sans-serif} .ds-safe h3{margin:0 0 10px;font:600 15px/1.3 'Public Sans',system-ui,sans-serif;color:#F2A38A} .ds-safe p{margin:0}"},
+    {"name": "Script Quote", "kind": "custom", "refersTo": "body", "description": "Sayable wording in Public Sans with a gold rule.",
+     "html": "<div class=\"ds-script\"><blockquote>I need some time to think.</blockquote></div>",
+     "css": ".ds-script{padding:8px 0 8px 28px;border-left:1px solid #E8C877} .ds-script blockquote{margin:0;font:400 22px/1.6 'Public Sans',system-ui,sans-serif;color:#F4F1EA;max-width:36em}"}
+  ],
+  "narrative": {
+    "northStar": "The Observatory at Night",
+    "overview": "One canvas sky is fixed behind the whole guide. The 310 tactics are its stars, grouped into ten constellations, and the camera moves with the reader. Everything else is quiet type laid over that sky, with Apple-like restraint: no cards, no boxes, hairlines, space and scale do the work.",
+    "keyCharacteristics": ["Dark night-sky default with a light twilight theme.", "Astra display over Public Sans reading.", "Gold for stars, links and active marks; ember for safety only.", "Typographic list rows between hairlines replace cards.", "Calm mode and reduced motion stop all motion."],
+    "rules": [
+      {"name": "The Star Rule", "body": "Gold appears only where something is a star, a link or an active mark. It never fills a surface or decorates.", "section": "colors"},
+      {"name": "The Ember Rule", "body": "Ember means safety, nothing else.", "section": "colors"},
+      {"name": "The Alpha Ladder Rule", "body": "Text hierarchy is one off-white at 100, .70 and .47 alpha; do not introduce new greys.", "section": "colors"},
+      {"name": "The 24px Floor Rule", "body": "Astra is used at 24px and up. Below that, set Public Sans.", "section": "typography"},
+      {"name": "The Plain Script Rule", "body": "Anything the reader might say aloud or act on is Public Sans.", "section": "typography"},
+      {"name": "The No-Shadow Rule", "body": "Separation comes from hairlines, blur and the sky, never from box-shadow.", "section": "elevation"},
+      {"name": "The Glass Only Where Floating Rule", "body": "A surface is glass only if it hovers over the canvas or scrolling content.", "section": "elevation"}
+    ],
+    "dos": ["Do build structure with 1px hairlines (.14 alpha), space and type scale.", "Do keep gold for stars, links and active marks; ember for safety only.", "Do set Astra at 24px and up, Public Sans everywhere else and for all scripts.", "Do let the sky and the camera carry orientation, and keep content visible with Calm mode and reduced motion.", "Do keep pills for controls and 44px minimum touch targets."],
+    "donts": ["Don't wrap content in cards or boxed panels; use list rows between hairlines.", "Don't use box-shadow.", "Don't introduce a second accent or tint a surface gold.", "Don't hide content behind animation or let a reveal delay help."]
+  }
+}
