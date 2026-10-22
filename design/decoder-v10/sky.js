@@ -17,7 +17,7 @@ const Sky = (() => {
   const visited = new Set(), saved = new Set();
   const rankIn = {}; (() => { const by = {}; D.entries.forEach((e, i) => (by[e.g] = by[e.g] || []).push(i)); for (const g in by) by[g].sort((a, b) => (D.entries[b].pop || 0) - (D.entries[a].pop || 0) || a - b).forEach((i, n) => rankIn[i] = n); })();
   const stars = S.pos.map((p, i) => ({ x: p[0], y: p[1], r: 1.4 + Math.min(3.2, (D.entries[i].pop || 0) * .38), ph: (i * 2.399) % 6.283 }));
-  function relayout() { const n = pickLayout(); if (n === S) return false; S = n; S.pos.forEach((p, i) => { stars[i].x = p[0]; stars[i].y = p[1]; }); api.S = S; return true; }
+  function relayout() { const n = pickLayout(); if (n === S) return false; S = n; layers = null; S.pos.forEach((p, i) => { stars[i].x = p[0]; stars[i].y = p[1]; }); api.S = S; return true; }
   const sprite = {};
   const ink = () => {
     const light = document.documentElement.getAttribute("data-theme") === "light";
@@ -32,16 +32,43 @@ const Sky = (() => {
     g.fillStyle = gr; g.fillRect(0, 0, 64, 64); sprite[key] = c; return c;
   }
   const spr = rgb => sprite[rgb] || makeSprite(rgb);
+  /* Each constellation's faint lines are baked once into a small image (at three scales)
+     and blitted, so panning never re-strokes 600 lines. Focused or lit lines are still vector. */
+  const LODS = [.3, .55, .9]; let layers = null, layerSig = "";
+  function buildLayers() {
+    layers = []; layerSig = C.line + "|" + (S === D.sky.port ? "p" : "l");
+    const by = {}; S.edges.forEach(([i, j]) => (by[D.entries[i].g] = by[D.entries[i].g] || []).push([i, j]));
+    for (const g in by) {
+      let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9;
+      by[g].forEach(([i, j]) => [stars[i], stars[j]].forEach(p => { x0 = Math.min(x0, p.x); x1 = Math.max(x1, p.x); y0 = Math.min(y0, p.y); y1 = Math.max(y1, p.y); }));
+      x0 -= 6; y0 -= 6; x1 += 6; y1 += 6;
+      const per = LODS.map(ls => {
+        const c = document.createElement("canvas"); c.width = Math.ceil((x1 - x0) * ls); c.height = Math.ceil((y1 - y0) * ls);
+        const k = c.getContext("2d"); k.strokeStyle = "rgb(" + C.line + ")"; k.lineWidth = 1; k.beginPath();
+        by[g].forEach(([i, j]) => { k.moveTo((stars[i].x - x0) * ls, (stars[i].y - y0) * ls); k.lineTo((stars[j].x - x0) * ls, (stars[j].y - y0) * ls); });
+        k.stroke(); return { ls, c };
+      });
+      layers.push({ g, x0, y0, per });
+    }
+  }
+  const nebSprite = {};
+  function neb(rgb) {
+    if (nebSprite[rgb]) return nebSprite[rgb];
+    const c = document.createElement("canvas"); c.width = c.height = 128; const g = c.getContext("2d");
+    const gr = g.createRadialGradient(64, 64, 0, 64, 64, 64);
+    gr.addColorStop(0, "rgba(" + rgb + ",1)"); gr.addColorStop(1, "rgba(" + rgb + ",0)");
+    g.fillStyle = gr; g.fillRect(0, 0, 128, 128); return (nebSprite[rgb] = c);
+  }
   /* background dust: fixed points in screen space with tiny parallax */
   let dust = [];
   function seedDust() {
     dust = []; let s = 7;
     const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
-    const n = Math.round(W * H / 5200);
+    const n = Math.round(W * H / (W < 700 ? 9000 : 5200));
     for (let i = 0; i < n; i++) dust.push({ x: rnd(), y: rnd(), r: .35 + rnd() * .9, a: .18 + rnd() * .5, z: .05 + rnd() * .2 });
   }
   function resize() {
-    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    DPR = Math.min(window.devicePixelRatio || 1, innerWidth < 700 ? 1.5 : 2);
     W = innerWidth; H = innerHeight;
     cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR); cv.style.width = W + "px"; cv.style.height = H + "px";
     cx.setTransform(DPR, 0, 0, DPR, 0, 0); seedDust(); invalidate();
@@ -73,47 +100,68 @@ const Sky = (() => {
     }
     if (vel.x || vel.y) { cam.x += vel.x * dt / cam.k; cam.y += vel.y * dt / cam.k; vel.x *= .93; vel.y *= .93; if (Math.abs(vel.x) < .005 && Math.abs(vel.y) < .005) vel.x = vel.y = 0; else animating = true; clampCam(); }
     if (appear < 1) { appear = Math.min(1, appear + dt / 1500); animating = true; }
-    if (animating || dirty || alive()) draw(t);
+    if (animating || dirty || alive()) {
+      draw(t);
+      /* adapt: if frames keep arriving slower than ~30fps while the camera moves, drop the decorative layers */
+      if (!lite && animating && dt > 0) { slow = dt > 30 ? slow + 1 : Math.max(0, slow - 1); if (slow > 14) { lite = true; invalidate(); } }
+    }
     dirty = false;
     if (animating) raf = requestAnimationFrame(frame);
     else if (alive()) setTimeout(() => { if (!raf) raf = requestAnimationFrame(frame); }, 90);
   }
-  let twinkle = true;
+  let twinkle = true, lite = false, slow = 0;
+  let aliveNow = false;
   const alive = () => twinkle && motionOK() && st.dim > .6 && (document.body.dataset.sky === "" || document.body.dataset.sky === "sky");
   const vel = { x: 0, y: 0 };
   function clampCam() { cam.x = Math.max(0, Math.min(S.w, cam.x)); cam.y = Math.max(0, Math.min(S.h, cam.y)); }
 
   function draw(t) {
     cx.clearRect(0, 0, W, H);
-    const dim = st.dim, ap = appear, time = (t || 0) / 1000;
+    const dim = st.dim, ap = appear, time = (t || 0) / 1000; aliveNow = alive();
     /* dust */
     cx.fillStyle = "rgb(" + C.dust + ")";
-    for (const d of dust) {
+    if (!lite) for (const d of dust) {
       const x = ((d.x * W - (cam.x - S.w / 2) * cam.k * d.z) % W + W) % W, y = ((d.y * H - (cam.y - S.h / 2) * cam.k * d.z) % H + H) % H;
-      cx.globalAlpha = d.a * (0.35 + .65 * dim) * ap * (alive() ? .78 + .22 * Math.sin(time * .7 + d.x * 40) : 1);
+      cx.globalAlpha = Math.round(d.a * (0.35 + .65 * dim) * ap * (aliveNow ? .78 + .22 * Math.sin(time * .7 + d.x * 40) : 1) * 6) / 6;
       cx.fillRect(x, y, d.r, d.r);
     }
     cx.globalAlpha = 1;
-    /* soft nebula at each constellation */
-    for (const g in S.groups) {
-      const G = S.groups[g], x = sx(G.x), y = sy(G.y), r = G.r * cam.k * 1.7;
+    /* soft nebula at each constellation: one cached glow, scaled */
+    const nb = neb(C.glow);
+    if (!lite) for (const g in S.groups) {
+      const G = S.groups[g], x = sx(G.x), y = sy(G.y), r = G.r * cam.k * 1.5;
       if (x < -r || x > W + r || y < -r || y > H + r) continue;
-      const on = st.groupFocus === g, a = (on ? .2 : .11) * dim * ap;
-      const gr = cx.createRadialGradient(x, y, 0, x, y, r);
-      gr.addColorStop(0, "rgba(" + C.glow + "," + a + ")"); gr.addColorStop(1, "rgba(" + C.glow + ",0)");
-      cx.fillStyle = gr; cx.fillRect(x - r, y - r, r * 2, r * 2);
+      cx.globalAlpha = Math.min(1, (st.groupFocus === g ? .2 : .11) * dim * ap);
+      cx.drawImage(nb, x - r, y - r, r * 2, r * 2);
     }
+    cx.globalAlpha = 1;
     const focusSet = st.focus, fSet = focusSet ? new Set(focusSet) : null;
     const gDim = i => st.groupFocus ? (D.entries[i].g === st.groupFocus ? 1 : .22) : 1;
     /* lines: related links inside a constellation, faint; focused links stronger.
        Batched into a few paths by strength so the canvas strokes four times, not 600. */
     cx.lineWidth = 1;
+    const sig = C.line + "|" + (S === D.sky.port ? "p" : "l");
+    const useCache = st.clipY == null && cam.k <= LODS[LODS.length - 1] * 1.05;
+    if (useCache) {
+      if (!layers || layerSig !== sig) buildLayers();
+      const lod = LODS.findIndex(ls => ls >= cam.k * .92), intro = Math.max(0, Math.min(1, ap * 1.6 - .5));
+      for (const L of layers) {
+        const pr = L.per[lod < 0 ? LODS.length - 1 : lod];
+        const a = .2 * dim * intro * (st.groupFocus && st.groupFocus !== L.g ? .05 : 1);
+        if (a < .01) continue;
+        const x = sx(L.x0), y = sy(L.y0), w = pr.c.width / pr.ls * cam.k, h = pr.c.height / pr.ls * cam.k;
+        if (x > W || y > H || x + w < 0 || y + h < 0) continue;
+        cx.globalAlpha = a; cx.drawImage(pr.c, x, y, w, h);
+      }
+      cx.globalAlpha = 1;
+    }
     const buckets = [[], [], [], []];
     for (const [i, j] of S.edges) {
       const a = stars[i], b = stars[j];
       const x1 = sx(a.x), y1 = sy(a.y), x2 = sx(b.x), y2 = sy(b.y);
       if ((x1 < -50 && x2 < -50) || (x1 > W + 50 && x2 > W + 50) || (y1 < -50 && y2 < -50) || (y1 > H + 50 && y2 > H + 50)) continue;
       const lit2 = st.lit.has(i) && st.lit.has(j), strong = fSet && fSet.has(i) && fSet.has(j);
+      if (useCache && !lit2 && !strong) continue;
       let al = (strong ? .6 : .2) * dim * Math.min(gDim(i), gDim(j)) * Math.max(0, Math.min(1, ap * 1.6 - .5 - (i % 17) / 40));
       if (st.clipY != null) al *= Math.max(0, Math.min(1, (st.clipY - Math.min(y1, y2)) / 70 + 1));
       if (lit2) al = Math.max(al, .5);
@@ -156,7 +204,7 @@ const Sky = (() => {
       const delay = Math.min(1, Math.max(0, ap * 1.8 - (Math.hypot(s.x - S.w / 2, s.y - S.h / 2) / 1800)));
       a *= delay;
       if (st.clipY != null) a *= Math.max(0, Math.min(1, (st.clipY - y) / 70 + 1));
-      const tw = alive() ? .82 + .18 * Math.sin(time * (.8 + (i % 7) * .13) + s.ph) : 1;
+      const tw = aliveNow ? .82 + .18 * Math.sin(time * (.8 + (i % 7) * .13) + s.ph) : 1;
       const size = Math.max(6, s.r * cam.k * 8.5) * (lit ? 1.5 : 1) * (i === st.ring ? 1.6 : 1) * (st.groupFocus && D.entries[i].g === st.groupFocus ? 1.35 : 1);
       const img = (lit || vis || sv || i === st.ring) ? brass : star;
       cx.globalAlpha = Math.min(1, a * tw);
@@ -164,7 +212,8 @@ const Sky = (() => {
       /* core point */
       cx.globalAlpha = Math.min(1, a * tw * 1.1);
       cx.fillStyle = "rgb(" + ((lit || vis || sv || i === st.ring) ? C.brass : C.star) + ")";
-      cx.beginPath(); cx.arc(x, y, Math.max(1.35, s.r * cam.k * (sv ? 1.4 : .95)), 0, 6.283); cx.fill();
+      const cr = Math.max(1.35, s.r * cam.k * (sv ? 1.4 : .95));
+      if (cr < 2.2) cx.fillRect(x - cr, y - cr, cr * 2, cr * 2); else { cx.beginPath(); cx.arc(x, y, cr, 0, 6.283); cx.fill(); }
       if (sv) { cx.globalAlpha = a * .7; cx.strokeStyle = "rgb(" + C.brass + ")"; cx.lineWidth = 1; cx.beginPath(); cx.arc(x, y, Math.max(5, s.r * cam.k * 2.2), 0, 6.283); cx.stroke(); }
       if (i === st.ring) {
         const pr = (motionOK() ? (time * .6) % 1 : .5);
@@ -175,15 +224,15 @@ const Sky = (() => {
     cx.globalAlpha = 1;
     /* constellation names */
     if (st.names) {
-      const fs = W < 700 ? 11 : Math.max(11, Math.min(17, cam.k * 15 + 7)); const nameBoxes = [];
-      cx.font = "400 " + fs + "px 'IM Fell English SC','IM Fell English',Georgia,serif"; cx.textAlign = "center"; cx.textBaseline = "middle";
+      const fs = W < 700 ? 12 : Math.max(12, Math.min(17, cam.k * 15 + 8)); const nameBoxes = [];
+      cx.font = "500 " + fs + "px Astra,system-ui,sans-serif"; cx.textAlign = "center"; cx.textBaseline = "middle";
       for (const g of D.groups) {
         if (st.groupFocus && g.k !== st.groupFocus) continue;
         const G = S.groups[g.k]; const x = sx(G.x), y = sy(G.y - G.r - 40);
         if (x < -80 || x > W + 80 || y < 74 || y > H - 20) continue;
         const on = st.groupFocus === g.k, a = (on ? 1 : .62) * ap * Math.max(.4, dim);
         cx.fillStyle = "rgba(" + C.brass + "," + a + ")";
-        const label = (W < 700 ? g.short : g.label).toUpperCase(); cx.letterSpacing = W < 700 ? "0.08em" : "0.14em";
+        const label = (W < 700 ? g.short : g.label).toUpperCase(); cx.letterSpacing = W < 700 ? "0.1em" : "0.16em";
         const tw = cx.measureText(label).width; let lx = x;
         if (lx - tw / 2 < 12) lx = 12 + tw / 2; if (lx + tw / 2 > W - 12) lx = W - 12 - tw / 2;
         const av = st.avoid, hit = av && lx + tw / 2 > av.x0 && lx - tw / 2 < av.x1 && y > av.y0 && y < av.y1;
@@ -263,5 +312,6 @@ const Sky = (() => {
   };
   twinkle = !(navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
   resize(); cam.k = fitK();
+  if (document.fonts) { document.fonts.load('500 14px Astra').then(() => api.invalidate()); document.fonts.ready.then(() => api.invalidate()); }
   return api;
 })();

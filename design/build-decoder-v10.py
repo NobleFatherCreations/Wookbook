@@ -24,6 +24,7 @@ V10 = os.path.join(os.path.dirname(__file__), "decoder-v10")
 A = os.path.join(V10, "assets")
 VERSION = "v10 — 2026-10-22"
 UPDATES = [
+    "<strong>A typeface of its own.</strong> The guide now has Astra, a typeface drawn for it: every letter is a constellation, and the dots of the i and the full stops are stars. Everything else was stripped back to space, type and thin lines.",
     "<strong>The sky.</strong> Every tactic is now a star in one night sky, grouped into ten constellations. The sky moves with you: wide on the home page, into a constellation when you open a group, onto the single star when you read an entry. Stars you have read glow gold, saved ones are ringed, and search results and your answers to the guide light up where they sit. A Calm button stops all motion.",
     "<strong>A simpler guide.</strong> Search by what happened, answer two short questions, or browse ten plain groups. Every entry now reads in five parts: in short, understand it, is this it, what you can do, and go deeper.",
     "<strong>Easier on a phone.</strong> Search sits at the top, a tab bar keeps every part of the guide one tap away, and each entry has a bar to jump between its parts.",
@@ -263,7 +264,13 @@ def main():
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     logo = read(A, "brand-logo.txt")
     shell = read(V10, "shell.html")
-    html = (shell.replace("{{FONTS}}", read(A, "fonts.css"))
+    import base64
+    faces = re.findall(r"@font-face\s*\{[^}]*\}", read(A, "fonts.css"))
+    sans = "\n".join(f for f in faces if "'Public Sans'" in f)
+    astra = "\n".join("@font-face{font-family:'Astra';font-style:normal;font-weight:%d;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
+                      % (wt, base64.b64encode(open(os.path.join(A, "astra-%s.woff2" % nm), "rb").read()).decode())
+                      for nm, wt in (("light", 300), ("medium", 500)))
+    html = (shell.replace("{{FONTS}}", sans + "\n" + astra)
                  .replace("{{CSS}}", read(V10, "app.css"))
                  .replace("{{LOGO}}", logo)
                  .replace("{{COUNT}}", str(len(entries)))

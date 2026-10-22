@@ -166,27 +166,34 @@ function searchBox(id,value,autofocus){
 function viewHome(){
   const trail=store.get("trail",[]);
   const last=trail[0]&&BY[trail[0].name];
+  const gl=k=>GROUP[k];
+  const beats=[
+    ["310 tactics.","Each one a star in a single sky."],
+    ["Ten constellations.","Each group is a different way a person can take control."],
+    [gl("truth").label+".",gl("truth").blurb],
+    [gl("hook").label+".",gl("hook").blurb],
+    [gl("people").label+".",gl("people").blurb],
+  ];
+  const story=beats.map((b,i)=>'<div class="beat'+(i===0?' on':'')+'" data-beat="'+i+'"><h2 class="beat-h">'+H(b[0])+'</h2><p class="beat-p">'+H(b[1])+'</p></div>').join("")+
+    '<div class="beat" data-beat="'+beats.length+'"><h2 class="beat-h">Start anywhere.</h2><div class="beat-links">'+
+      '<a href="'+href("guide")+'">Help me figure it out<span aria-hidden="true">&rarr;</span></a>'+
+      '<a href="'+href("sky")+'">Explore the sky<span aria-hidden="true">&rarr;</span></a>'+
+      '<a href="'+href("common")+'">The most common<span aria-hidden="true">&rarr;</span></a></div></div>';
   return '<section class="stage">'+
     '<div class="stage-copy">'+
-      '<h1 class="sr-only">The Pattern Decoder</h1>'+
-      '<span class="hero-mark" aria-hidden="true">'+D.wordmark+'</span>'+
-      '<p class="kicker"><b>'+E.length+'</b> stars. Each one a tactic.</p>'+
-      '<p class="stage-h">Put a name to what is happening.</p>'+
+      '<h1 class="stage-h">Put a name to what is happening.</h1>'+
       '<p class="lede">Explained in plain words: what it looks like, how to tell if it really fits, and what you can do.</p>'+
       '<div class="stage-search">'+searchBox("q-home","")+'</div>'+
       '<div class="tries"><span class="muted">Try</span>'+D.tries.map(t=>'<button class="chip" type="button" data-try="'+esc(t)+'">'+H(t)+'</button>').join("")+'</div>'+
       '<p class="privacy">'+ic("lock")+'Nothing you type leaves this device.</p>'+
       (last?'<div class="continue"><p class="small">You were reading <strong>'+H(last.n)+'</strong></p><a class="btn" href="'+entryHref(last)+'">Continue</a></div>':'')+
     '</div>'+
-    '<a class="scroll-cue" href="#instruments" data-jump="instruments" aria-label="See the ways in">'+ic("chevron")+'</a>'+
+    '<div class="scroll-cue" aria-hidden="true"><span>'+E.length+' tactics</span><i></i></div>'+
   '</section>'+
-  '<section class="sect first" id="instruments" aria-label="Ways in">'+
-  '<div class="ways">'+
-    way("guide","compass","Help me figure it out","Answer two short questions about what has been happening. No names needed.","Begin")+
-    way("sky","telescope","Explore the sky","Fly through all "+E.length+" tactics as stars, grouped into ten constellations.","Open the sky")+
-    way("common","star","Start with the most common","The "+D.common.length+" tactics people run into most often.","See them")+
-  '</div></section>'+
-  '<section class="sect"><div class="sect-head"><div><h2 class="h2">Ten constellations</h2><p>Every tactic belongs to the group where it fits best.</p></div><a class="btn ghost" href="'+href("all")+'">A–Z of all '+E.length+'</a></div>'+
+  '<section class="story" data-n="'+(beats.length+1)+'" style="height:calc('+(beats.length+1)+' * 88vh + 100vh)" aria-label="A tour of the sky">'+
+    '<div class="story-pin">'+story+'<div class="story-dots" aria-hidden="true">'+Array.from({length:beats.length+1},()=>'<i></i>').join("")+'</div></div>'+
+  '</section>'+
+  '<section class="sect first" style="margin-top:0"><div class="sect-head"><div><h2 class="h2">Browse by what it does</h2><p>Every tactic belongs to the group where it fits best.</p></div><a class="btn" href="'+href("all")+'">A&ndash;Z of all '+E.length+'</a></div>'+
   groupTiles()+'</section>'+
   '<section class="sect"><div class="sect-head"><div><h2 class="h2">Where is it happening?</h2><p>Narrow the guide to one part of life.</p></div></div>'+
   '<div class="chips">'+D.settings.map(s=>'<a class="chip" href="'+href("where/"+s.k)+'">'+H(s.label)+' <span class="n">'+E.filter(e=>(e.w||[]).includes(s.k)).length+'</span></a>').join("")+'</div></section>';
@@ -197,7 +204,7 @@ function way(route,icon,title,text,go){
 function groupTiles(lv){ lv=lv||3;
   return '<div class="groups">'+D.groups.map(g=>{
     const list=IN_GROUP[g.k];
-    return '<a class="group" href="'+href("browse/"+g.k)+'"><h'+lv+' class="gt">'+H(g.label)+'</h'+lv+'><p>'+H(g.blurb)+'</p><span class="eg">'+list.length+' tactics, including '+list.slice().sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,2).map(e=>H(e.n)).join(" and ")+'</span></a>';
+    return '<a class="group" href="'+href("browse/"+g.k)+'"><h'+lv+' class="gt">'+H(g.label)+'</h'+lv+'><p>'+H(g.blurb)+'</p><span class="n">'+list.length+' tactics</span></a>';
   }).join("")+'</div>';
 }
 function viewSearch(){
@@ -459,7 +466,7 @@ function pickStar(i){
   const sh=$("#sheet"); if(!sh) return;
   SKY_PICK=i;
   if(i<0){ sh.hidden=true; Sky.set({ring:-1,link:false,focus:null}); Sky.lit([]); return; }
-  sh.innerHTML=sheetHTML(i); sh.hidden=false;
+  sh.innerHTML=sheetHTML(i); sh.hidden=false; fitText(sh.querySelector(".sheet-t"));
   Sky.set({ring:i,link:false,focus:null}); Sky.lit([]);
   const k=Math.max(Sky.cam.k,Sky.fitK()*2.6), st=Sky.st; 
   Sky.flyTo(Sky.stars[i].x,Sky.stars[i].y,k,700,0,innerWidth<700?-innerHeight*.18:0);
@@ -490,8 +497,8 @@ function skyRoute(r,first){
   const win=(()=>{const w=$(".sky-window"); if(!w) return null; const b=w.getBoundingClientRect(); return {oy:b.top+scrollY+b.height/2-innerHeight/2,h:b.height,w:b.width,bottom:b.bottom+scrollY};})();
   let dim=.28;
   if(r.view===""){
-    Sky.set({names:true}); dim=1; HOME_SCROLL=true;
-    fly(S.w/2,S.h/2,fk*(phone?1:.92),1400,phone?0:innerWidth*.2,phone?-innerHeight*.2:0);
+    Sky.set({names:false}); dim=1; HOME_SCROLL=true; storySetup(); { const cp=$(".stage-copy"); if(cp&&STORY){ const b=cp.getBoundingClientRect(); STORY.avoid={x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}; } }
+    fly(S.w/2,S.h/2,fk*(phone?1.0:.95),1400,0,0);
   }else if(r.view==="sky"){
     Sky.st.interactive=true; Sky.set({names:true,labels:false}); dim=1;
     fly(S.w/2,S.h/2,fk,1100,0,phone?40:0);
@@ -520,15 +527,34 @@ function skyRoute(r,first){
   }
   const cp=$(".stage-copy")||$(".sky-top"); if(cp){ const b=cp.getBoundingClientRect(); Sky.set({avoid:{x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}}); } else Sky.set({avoid:null});
   Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky");
+  if(r.view===""){ if(STORY) STORY.step=-2; storyUpdate(); }
 }
 function cvPointer(on){ $("#sky").style.pointerEvents=on?"auto":"none"; $("#sky").style.cursor=on?"grab":"default"; $("#sky").tabIndex=on?0:-1; }
 function winScroll(){ const w=$(".sky-window"); if(!w||!Sky.st.clipY&&Sky.st.clipY!==0) return; Sky.set({clipY:w.getBoundingClientRect().bottom}); }
-function homeScroll(){
-  if(!HOME_SCROLL) return;
-  const f=Math.min(1,scrollY/Math.max(1,innerHeight*.9));
-  Sky.set({dim:1-.74*f}); Sky.cam.k=Sky.fitK()*(innerWidth<760?1:.92)*(1+f*.28); Sky.invalidate();
+let STORY=null;
+function storySetup(){ const el=$(".story"); STORY=el?{el,n:+el.dataset.n,step:-2}:null; }
+function headerState(){ const t=$(".top"); if(t) t.classList.toggle("solid",scrollY>12); }
+function storyUpdate(){
+  if(!STORY||!HOME_SCROLL) return;
+  const calm=Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const r=STORY.el.getBoundingClientRect(), total=Math.max(1,r.height-innerHeight);
+  const phone=innerWidth<760, fk=Sky.fitK(), S=Sky.S;
+  let step=r.top>innerHeight*.45?-1:(r.bottom<innerHeight*.6?STORY.n:Math.min(STORY.n-1,Math.max(0,Math.floor(Math.max(0,-r.top)/total*STORY.n))));
+  if(step===STORY.step) return; STORY.step=step; Sky.set({avoid:step<0?STORY.avoid:(step===1?{x0:0,x1:innerWidth,y0:innerHeight*.34,y1:innerHeight*.68}:null)});
+  document.querySelectorAll(".beat").forEach(b=>b.classList.toggle("on",+b.dataset.beat===step));
+  document.querySelectorAll(".story-dots i").forEach((d,i)=>d.classList.toggle("on",i===step));
+  if(calm) return;
+  const groups=["truth","hook","people"], gi=step-2;
+  const wide=(names,dim)=>{ Sky.set({groupFocus:null,names,labels:false,dim}); Sky.flyTo(S.w/2,S.h/2,fk*(phone?1.0:.95),1300,0,0); };
+  if(step<=0) wide(false,1);
+  else if(step===1) wide(true,1);
+  else if(gi>=0&&gi<groups.length){ const G=S.groups[groups[gi]]; Sky.set({groupFocus:groups[gi],names:true,labels:false,dim:1});
+    Sky.flyTo(G.x,G.y,Math.min(innerWidth,innerHeight)*(phone?.36:.3)/G.r,1400,0,phone?-innerHeight*.08:0); }
+  else if(step===STORY.n-1) wide(false,.9);
+  else wide(false,.26);
 }
-addEventListener("scroll",()=>{ if(HOME_SCROLL) requestAnimationFrame(homeScroll); else if(Sky.st.clipY!=null) requestAnimationFrame(winScroll); },{passive:true});
+addEventListener("resize",debounce(fitAll,150));
+addEventListener("scroll",()=>{ headerState(); if(HOME_SCROLL) requestAnimationFrame(storyUpdate); else if(Sky.st.clipY!=null) requestAnimationFrame(winScroll); },{passive:true});
 let INTRO_PLAYED=false, MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PENDING_VT = null;
 function key(){return location.hash||"#/";}
 function render(){
@@ -570,6 +596,13 @@ function setNav(view){
 }
 function lightResults(list){ if(typeof Sky==="undefined") return; Sky.lit(list.slice(0,16).map(e=>e.i),list.length<=12); Sky.set({ring:list.length===1?list[0].i:-1}); const w=$(".sky-window"); if(w&&list.length&&list.length<=40){ const b=w.getBoundingClientRect(), pts=list.slice(0,16).map(e=>Sky.stars[e.i]); let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; pts.forEach(p=>{x0=Math.min(x0,p.x);x1=Math.max(x1,p.x);y0=Math.min(y0,p.y);y1=Math.max(y1,p.y);}); const k=Math.min(b.width*.8/Math.max(260,x1-x0),b.height*.8/Math.max(260,y1-y0)); Sky.flyTo((x0+x1)/2,(y0+y1)/2,Math.max(Sky.fitK()*.55,Math.min(k,Sky.fitK()*2.5)),900,0,b.top+scrollY+b.height/2-innerHeight/2); } else if(w&&!list.length){ const b=w.getBoundingClientRect(); Sky.flyTo(Sky.S.w/2,Sky.S.h/2,Math.max(Sky.fitK()*.55,Math.min(b.width/Sky.S.w,b.height*1.9/Sky.S.h)),700,0,b.top+scrollY+b.height/2-innerHeight/2); } }
 function calmUI(){ const on=Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches; document.documentElement.dataset.calm=on?"1":"0"; document.querySelectorAll("[data-calm]").forEach(b=>{b.setAttribute("aria-pressed",on); b.setAttribute("aria-label",on?"Calm mode is on. Turn motion back on":"Turn on calm mode: stops all motion");}); }
+function debounce(fn,ms){let t;return function(){clearTimeout(t);t=setTimeout(fn,ms);};}
+/* Display type is wide: if one word is wider than its box (Compartmentalization), shrink the headline just enough. */
+function fitText(el){
+  if(!el) return; el.style.fontSize=""; let fs=parseFloat(getComputedStyle(el).fontSize);
+  for(let i=0;i<14&&el.scrollWidth>el.clientWidth+1&&fs>22;i++){ fs=Math.max(22,fs*Math.min(.95,el.clientWidth/el.scrollWidth)); el.style.fontSize=fs+"px"; }
+}
+function fitAll(){ document.querySelectorAll("#main .h1,#main .stage-h,#main .beat-h,#main .gt,#main .sheet-t,#main .sky-h,#main .way h2,#main .pn .t").forEach(fitText); }
 let RV=null;
 function reveals(){
   if(RV) RV.disconnect();
@@ -579,7 +612,7 @@ function reveals(){
   RV=new IntersectionObserver(es=>es.forEach((x,n)=>{ if(x.isIntersecting){ x.target.style.transitionDelay=(n*70)+"ms"; x.target.classList.add("in"); RV.unobserve(x.target); } }),{rootMargin:"0px 0px -8% 0px"});
   items.forEach(el=>{ el.classList.add("rv"); RV.observe(el); });
 }
-function afterRender(r){ reveals();
+function afterRender(r){ reveals(); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
   const live=$("#q-page");
   if(!live&&MOVED_FOCUS){ const h=$("#main h1:not(.sr-only)")||$("#main h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); } }
   MOVED_FOCUS=true;
