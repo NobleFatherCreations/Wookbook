@@ -425,3 +425,4 @@ details.part[open] .p-body{animation:rise 240ms var(--ease) both}
 @media (max-width:760px){.group .gt{font-size:21px}}
 .callout .ch{display:flex;gap:8px;align-items:center;font:600 16px/1.3 var(--sans);color:var(--ember);margin:0 0 8px}
 .eyebrow a{display:inline-block;padding:6px 0}
+@media (min-width:1180px){.groups{grid-template-columns:repeat(5,1fr)}.group{padding:20px}.group .gt{font-size:22px}}

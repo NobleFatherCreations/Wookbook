@@ -311,6 +311,8 @@ entry carries its own hook (`what_it_sounds_like`), its own close
 beat is not optional decoration; it is what keeps the entry's own
 `misuse_warning` true once the entry leaves the book.**
 
+**Update 2026-10-22 (v10, not yet deployed):** redesigned: search by everyday words, two-question guide, 10 plain groups + 7 settings, entries in five parts with a 30-second summary; build `design/build-decoder-v10.py`. Live is still v7.
+
 **Update 2026-10-20 (v9, not yet deployed):** 310 entries (349 minus 39 merged-away aliases), every entry written for its own tactic with no shared boilerplate, explicit `safety_sensitive` flag (105), a `#/about` safeguards page, alias redirects. See MEMORY.md for the pipeline.
 
 ## music — The Listening Room **[confirmed: rebuilt from the audio itself, 2026-08-12]**

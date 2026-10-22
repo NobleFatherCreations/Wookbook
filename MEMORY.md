@@ -3226,3 +3226,27 @@ sequential. Still open: wording nits listed by writers (Word Salad opener, Bound
 'abuse', Silent Coalitions definition) and the user's call on badge edge cases.
 **Not deployed.** The live Decoder is v7. v8 and v9 are committed but not live. Deploying needs the author's
 approval (the last attempt was blocked by the permission check). Version 9 supersedes v8.
+
+## 2026-10-22 — Pattern Decoder v10 (redesign; built, verified, NOT deployed)
+**Ask (the author):** helpful and easy to understand for all levels, easy to navigate even when people
+don't know what to look for, beautiful with high attention to detail. "Go."
+**Skills vendored** (from skills.sh, copied by hand to avoid the skills CLI's install telemetry; markdown only):
+site-architecture, copy-editing, ux-heuristics, refactoring-ui, frontend-design, web-design-guidelines,
+better-accessibility, web-accessibility, web-perf — see `.claude/skills/README.md` for sources/commits.
+**What v10 is:** a new single-file build, `design/build-decoder-v10.py` -> `content/prose/_raw/playbook-v10.html`
+(now `sites.json` localSource). Inputs: `content/playbook-data.json`, `content/codex-final/reader-meta.json`
+(per-entry group of 10, settings of 7, 140 plain subtitles, everyday search words, curated related links,
+50 feelings incl. 15 new, reaching all 105 safety-sensitive entries), `design/decoder-v10/{app.css,app.js,shell.html}`,
+assets from `design/decoder-v10/extract-assets.py` (reads the v9 page at commit b180cbe4). Plan:
+`design/DECODER-V10-PLAN.md`; content audit: `content/codex-final/CONTENT-AUDIT.md`.
+**Keep:** `content/prose/_raw/playbook.html` is still the v9-format page that `extract-playbook-data.py` reads;
+rebuild recipe unchanged (pristine page from `92855447~1`, apply, patch, extract), then `build-decoder-v10.py`.
+**Content round:** audit fixes applied to all sources (joint-counselling and "someone we both trust" removed from
+safety-sensitive scripts, process-note leaks, "the target", American English, 62 summaries rewritten, every safety
+note sentence over 30 words split); validator 310/310, boilerplate clean. Clinical review of the changed safety scripts
+is still advised.
+**Verified:** all 310 entries render every field at 375 dark, 1440 dark, 390 light + reduced motion; no page errors,
+no external requests but the beacon, no overflow; 4x-CPU phone load 2.2 s -> 1.3 s; entry page 6,100 -> 2,400 px.
+Dropped from v9: the canvas constellation map (related links and patterns carry it now).
+**Lessons:** view transitions make rendering async, so tests must wait for the new h1; a Playwright overflow check
+of the root misses a grid child that grows (min-width:0 fix); a placeholder longer than the phone input is cut off.
