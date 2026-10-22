@@ -2,8 +2,9 @@
 """Build the Pattern Decoder v10: one self-contained, offline HTML file.
 
 Run from the repo root:  python3 design/build-decoder-v10.py [--out PATH]
-Default output: content/prose/_raw/playbook-v10.html (a draft until v10 ships,
-when it replaces playbook.html).
+Default output: content/prose/_raw/playbook-v10.html, the deployable page
+(sites.json localSource). playbook.html stays as the v9-format data page that
+extract-playbook-data.py reads; it is not deployed.
 
 Inputs
   content/playbook-data.json            the 310 finished entries + sequences
