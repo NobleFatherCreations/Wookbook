@@ -1,0 +1,120 @@
+<style id="nf-seal-css">
+/* ---- nf-seal: current-generation hub catalogue drawer, replaces the legacy
+   nh-tab widget. Ported from source/projects/noble-father-festival.html
+   (structure/behavior only) and re-skinned onto this page's own design
+   tokens instead of that page's wax/plum palette, so it stays correct in
+   both light and dark theme rather than being permanently dark. ---- */
+.nf-seal{position:fixed;right:18px;bottom:18px;z-index:950;width:56px;height:56px;
+  border-radius:50%;border:none;cursor:pointer;
+  font-family:var(--serif);font-weight:600;font-size:19px;letter-spacing:.02em;
+  color:var(--accent-ink);
+  background:radial-gradient(circle at 34% 28%,var(--accent-grad),var(--accent) 62%);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.25),
+    0 0 0 3px var(--bg),0 6px 18px rgba(0,0,0,.35);
+  transition:transform 180ms cubic-bezier(.2,.7,.2,1),box-shadow 180ms cubic-bezier(.2,.7,.2,1)}
+.nf-seal:hover{transform:translateY(-2px) rotate(-4deg);
+  box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.25),
+    0 0 0 3px var(--bg),0 8px 22px rgba(0,0,0,.4),0 10px 24px -6px var(--glow-1)}
+.nf-seal:active{transform:scale(.92);transition-duration:90ms}
+.nf-seal:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.nf-seal[aria-expanded="true"]{transform:scale(.92);opacity:0;pointer-events:none;transition-duration:140ms}
+@media (prefers-reduced-motion: no-preference){
+  .nf-seal{animation:nf-sealidle 7s ease-in-out infinite}
+  @keyframes nf-sealidle{
+    0%,100%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.25),0 0 0 3px var(--bg),0 6px 18px rgba(0,0,0,.35)}
+    50%{box-shadow:inset 0 2px 3px rgba(255,255,255,.22),inset 0 -3px 5px rgba(0,0,0,.25),0 0 0 3px var(--bg),0 6px 18px rgba(0,0,0,.35),0 8px 18px -6px var(--glow-1)}
+  }
+}
+.nf-scrim{position:fixed;inset:0;background:rgba(8,10,16,.55);backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);z-index:960;opacity:0;pointer-events:none;
+  transition:opacity 140ms cubic-bezier(.2,.7,.2,1)}
+.nf-open .nf-scrim{opacity:1;pointer-events:auto;transition-duration:220ms}
+.nf-panel{position:fixed;top:0;right:0;bottom:0;width:min(408px,100vw);z-index:970;
+  display:flex;flex-direction:column;background:var(--bg);
+  box-shadow:inset 1px 0 0 var(--edge-hi),-32px 0 64px rgba(0,0,0,.35);
+  transform:translateX(103%);visibility:hidden;
+  transition:transform 160ms cubic-bezier(.5,0,.9,.6),visibility 0s 160ms}
+.nf-panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--accent-grad),var(--accent) 50%,var(--accent-grad));opacity:.8}
+.nf-open .nf-panel{transform:translateX(0);visibility:visible;
+  transition:transform 270ms cubic-bezier(.2,.7,.2,1),visibility 0s}
+@media(max-width:560px){
+  .nf-panel{width:100vw;transform:translateY(103%)}
+  .nf-panel::before{left:0;right:0;top:0;bottom:auto;width:auto;height:3px}
+  .nf-open .nf-panel{transform:translateY(0)}
+}
+.nf-panel-head{display:flex;align-items:flex-start;justify-content:space-between;
+  padding:26px 26px 18px;border-bottom:1px solid var(--line2)}
+.nf-eyebrow{font-family:var(--mono);font-size:10px;letter-spacing:.3em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.nf-panel-title{font-family:var(--serif);font-size:27px;font-weight:500;color:var(--ink);line-height:1.1}
+.nf-close{background:none;border:1px solid var(--line2);color:var(--mut);
+  width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:17px;line-height:1;
+  flex-shrink:0;margin-left:12px;transition:color 140ms,border-color 140ms,transform 140ms cubic-bezier(.2,.7,.2,1)}
+.nf-close:hover{color:var(--accent);border-color:var(--accent);transform:rotate(90deg)}
+.nf-close:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.nf-toc{list-style:none;overflow-y:auto;flex:1;padding:10px 26px 18px;overscroll-behavior:contain;margin:0}
+.nf-row{border-bottom:1px solid var(--line2)}
+.nf-row a{display:grid;grid-template-columns:12px 34px 1fr auto;grid-template-rows:auto auto;
+  align-items:baseline;column-gap:9px;padding:13px 2px;text-decoration:none;
+  transition:transform 160ms cubic-bezier(.2,.7,.2,1)}
+.nf-row a:hover{transform:translateX(4px)}
+.nf-dot{grid-row:1/3;align-self:center;width:5px;height:5px;border-radius:50%;
+  background:var(--va,var(--accent));opacity:.55;box-shadow:0 2px 6px -1px var(--va,var(--accent));
+  transition:opacity 160ms,transform 160ms cubic-bezier(.2,.7,.2,1)}
+.nf-row a:hover .nf-dot{opacity:1;transform:scale(1.35)}
+.nf-row a:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:4px}
+.nf-num{grid-row:1/3;font-family:var(--mono);font-size:11px;color:var(--mut);transition:color 160ms}
+.nf-row a:hover .nf-num{color:var(--accent)}
+.nf-vol{font-family:var(--serif);font-size:16.5px;font-weight:500;color:var(--ink);transition:color 160ms}
+.nf-row a:hover .nf-vol{color:var(--accent)}
+.nf-desc{grid-column:3/5;font-size:11.5px;color:var(--mut);letter-spacing:.02em;font-family:var(--sans)}
+.nf-ext{grid-column:4;font-size:11px;color:var(--mut)}
+.nf-row.nf-here .nf-vol{color:var(--accent)}
+.nf-row.nf-here .nf-num{color:var(--accent)}
+.nf-here-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-left:7px;
+  background:var(--accent);box-shadow:0 2px 8px -2px var(--glow-1);vertical-align:baseline}
+.nf-panel-foot{padding:14px 26px 20px;border-top:1px solid var(--line2);
+  font-family:var(--serif);font-style:italic;font-size:12.5px;color:var(--mut)}
+.nf-open .nf-row{opacity:0;transform:translateY(9px);
+  animation:nf-rise 210ms cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--nf-i)*20ms + 60ms)}
+@keyframes nf-rise{to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){
+  .nf-seal,.nf-seal:hover,.nf-close:hover,.nf-row a,.nf-row a:hover{transition:none;transform:none}
+  .nf-panel,.nf-open .nf-panel{transition:transform 0s,visibility 0s}
+  .nf-scrim,.nf-open .nf-scrim{transition:none}
+  .nf-open .nf-row{animation:none;opacity:1;transform:none}
+}
+</style>
+<div id="nf-chrome" class="nf-chrome" data-nf-page="playbook">
+<button class="nf-seal" type="button" aria-expanded="false" aria-controls="nf-panel" aria-label="Open the Catalogue — Noble Father Creations">NF</button>
+<div class="nf-scrim" aria-hidden="true"></div>
+<nav class="nf-panel" id="nf-panel" aria-label="The Catalogue" aria-hidden="true">
+<div class="nf-panel-head"><div><div class="nf-eyebrow">Noble Father Creations</div><h2 class="nf-panel-title">The Catalogue</h2></div><button class="nf-close" type="button" aria-label="Close the Catalogue">&#10005;</button></div>
+<ul class="nf-toc"><li class="nf-row" style="--nf-i:0"><a href="https://noblefathercreations.com/loop"><span class="nf-dot" style="--va:#6E93B5" aria-hidden="true"></span><span class="nf-num">I</span><span class="nf-vol">The Loop</span><span class="nf-desc">The machine that learns you</span></a></li><li class="nf-row" style="--nf-i:1"><a href="https://noblefathercreations.com/press"><span class="nf-dot" style="--va:#E8C879" aria-hidden="true"></span><span class="nf-num">II</span><span class="nf-vol">The Press</span><span class="nf-desc">Real wax, a voice inside</span></a></li><li class="nf-row" style="--nf-i:2"><a href="https://noblefathercreations.com/portals"><span class="nf-dot" style="--va:#7FD9D4" aria-hidden="true"></span><span class="nf-num">III</span><span class="nf-vol">The Portals</span><span class="nf-desc">Strontium glow, no battery</span></a></li><li class="nf-row" style="--nf-i:3"><a href="https://noblefathercreations.com/shadowroot"><span class="nf-dot" style="--va:#D9964A" aria-hidden="true"></span><span class="nf-num">IV</span><span class="nf-vol">The Root</span><span class="nf-desc">A shadow work practice</span></a></li><li class="nf-row" style="--nf-i:4"><a href="https://noblefathercreations.com/scale"><span class="nf-dot" style="--va:#9B8FA8" aria-hidden="true"></span><span class="nf-num">V</span><span class="nf-vol">The Weighing</span><span class="nf-desc">How to be right about people</span></a></li><li class="nf-row" style="--nf-i:5"><a href="https://noblefathercreations.com/faith"><span class="nf-dot" style="--va:#C29A52" aria-hidden="true"></span><span class="nf-num">VI</span><span class="nf-vol">The Sacred Divide</span><span class="nf-desc">25 traditions, 750 entries</span></a></li><li class="nf-row" style="--nf-i:6"><a href="https://noblefathercreations.com/fractal"><span class="nf-dot" style="--va:#E5A93C" aria-hidden="true"></span><span class="nf-num">VII</span><span class="nf-vol">The Fractal</span><span class="nf-desc">One pattern runs the world</span></a></li><li class="nf-row" style="--nf-i:7"><a href="https://noblefathercreations.com/fracture"><span class="nf-dot" style="--va:#C9A35B" aria-hidden="true"></span><span class="nf-num">VIII</span><span class="nf-vol">The Fracture</span><span class="nf-desc">The reading edition</span></a></li><li class="nf-row" style="--nf-i:8"><a href="https://noblefathercreations.com/feminine"><span class="nf-dot" style="--va:#C85F7E" aria-hidden="true"></span><span class="nf-num">IX</span><span class="nf-vol">The Sovereign Divine Feminine</span><span class="nf-desc">A field guide</span></a></li><li class="nf-row" style="--nf-i:9"><a href="https://noblefathercreations.com/children"><span class="nf-dot" style="--va:#FFC23D" aria-hidden="true"></span><span class="nf-num">X</span><span class="nf-vol">Playground Protectors</span><span class="nf-desc">Shaela&#8217;s guide for brave kids</span></a></li><li class="nf-row" style="--nf-i:10"><a href="https://noblefathercreations.com/wook"><span class="nf-dot" style="--va:#D8FF3D" aria-hidden="true"></span><span class="nf-num">XI</span><span class="nf-vol">The Festie Codex</span><span class="nf-desc">The gate &mdash; attendee&#8217;s cut</span></a></li><li class="nf-row nf-here" style="--nf-i:11"><a href="#" aria-current="page"><span class="nf-dot" style="--va:#8A8071" aria-hidden="true"></span><span class="nf-num">XII</span><span class="nf-vol">The Pattern Decoder<span class="nf-here-dot" aria-hidden="true"></span></span><span class="nf-desc">310 tactics, decoded</span></a></li><li class="nf-row" style="--nf-i:12"><a href="https://noblefathercreations.com/music"><span class="nf-dot" style="--va:#C9A24A" aria-hidden="true"></span><span class="nf-num">XIII</span><span class="nf-vol">The Music</span><span class="nf-desc">Free to stream</span></a></li><li class="nf-row" style="--nf-i:13"><a href="https://noblefathercreations.com/festival"><span class="nf-dot" style="--va:#E8C879" aria-hidden="true"></span><span class="nf-num">XIV</span><span class="nf-vol">The Festie Bible</span><span class="nf-desc">Twelve guides for the festival world</span></a></li><li class="nf-row" style="--nf-i:14"><a href="https://noblefathercreations.com/resin"><span class="nf-dot" style="--va:#7FD6C2" aria-hidden="true"></span><span class="nf-num">XV</span><span class="nf-vol">The Casting</span><span class="nf-desc">Eco-resin, hand-painted</span></a></li><li class="nf-row" style="--nf-i:15"><a href="https://noblefathercreations.com/longafter"><span class="nf-dot" style="--va:#D9846A" aria-hidden="true"></span><span class="nf-num">XVI</span><span class="nf-vol">The Long After</span><span class="nf-desc">What happens once you&#8217;ve left</span></a></li><li class="nf-row" style="--nf-i:16"><a href="https://noblefathercreations.com/silence"><span class="nf-dot" style="--va:#93A7B8" aria-hidden="true"></span><span class="nf-num">XVII</span><span class="nf-vol">The Silence</span><span class="nf-desc">For men nobody thought to ask</span></a></li><li class="nf-row" style="--nf-i:17"><a href="https://noblefathercreations.com/atwill"><span class="nf-dot" style="--va:#C98A2E" aria-hidden="true"></span><span class="nf-num">XVIII</span><span class="nf-vol">At Will</span><span class="nf-desc">The coercive workplace</span></a></li><li class="nf-row" style="--nf-i:18"><a href="https://noblefathercreations.com/repair"><span class="nf-dot" style="--va:#A8474F" aria-hidden="true"></span><span class="nf-num">XIX</span><span class="nf-vol">The Repair</span><span class="nf-desc">For the person on the other side of it</span></a></li><li class="nf-row" style="--nf-i:19"><a href="https://noblefathercreations.com/slowtake"><span class="nf-dot" style="--va:#B99A3F" aria-hidden="true"></span><span class="nf-num">XX</span><span class="nf-vol">The Slow Take</span><span class="nf-desc">Coercion in later life</span></a></li></ul>
+<div class="nf-panel-foot">Bound by hand in the study &mdash; twenty volumes &amp; counting.</div>
+</nav>
+</div>
+<script id="nf-chrome-js">
+(function(){
+  var root=document.getElementById('nf-chrome');if(!root)return;
+  var seal=root.querySelector('.nf-seal'),scrim=root.querySelector('.nf-scrim'),
+      panel=root.querySelector('.nf-panel'),close=root.querySelector('.nf-close');
+  function open(){root.classList.add('nf-open');seal.setAttribute('aria-expanded','true');
+    panel.removeAttribute('aria-hidden');close.focus({preventScroll:true})}
+  function shut(){root.classList.remove('nf-open');seal.setAttribute('aria-expanded','false');
+    panel.setAttribute('aria-hidden','true');seal.focus({preventScroll:true})}
+  seal.addEventListener('click',open);
+  close.addEventListener('click',shut);
+  scrim.addEventListener('click',shut);
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&root.classList.contains('nf-open')){shut();return}
+    if(!root.classList.contains('nf-open'))return;
+    if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+      var links=[].slice.call(panel.querySelectorAll('.nf-row a'));
+      var i=links.indexOf(document.activeElement);
+      var next=e.key==='ArrowDown'?(i+1)%links.length:(i-1+links.length)%links.length;
+      links[next].focus();e.preventDefault();
+    }});
+})();
+</script>

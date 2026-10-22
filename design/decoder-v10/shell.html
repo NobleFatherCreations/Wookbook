@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Pattern Decoder — {{COUNT}} manipulation and control tactics, explained</title>
+<meta name="description" content="A free, offline guide to {{COUNT}} manipulation and control tactics in plain words: what each looks like, how to tell if it fits, and what you can do. No account, nothing you type leaves your device.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0E1326" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ECEDF6" media="(prefers-color-scheme: light)">
+<link rel="icon" href="{{LOGO}}">
+<script>(function(){try{var v=localStorage.getItem("fg_theme");var t=v!==null?JSON.parse(v):(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark")}catch(e){}})();</script>
+<style>
+{{FONTS}}
+{{CSS}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/" data-nav="home"><img src="{{LOGO}}" alt="" width="32" height="32"><b>The Pattern Decoder</b></a>
+    <span class="spacer"></span>
+    <nav class="tnav" aria-label="Main">
+      <a href="#/search" data-nav="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
+      <a href="#/guide" data-nav="guide">Help me figure it out</a>
+      <a href="#/browse" data-nav="browse">Browse</a>
+      <a href="#/saved" data-nav="saved">Saved</a>
+      <a href="#/about" data-nav="about" class="safe-link">Use this safely</a>
+    </nav>
+    <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch theme"></button>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <noscript><div class="wrap"><p>The Pattern Decoder needs JavaScript to search and show entries. Everything runs on your device; nothing is sent anywhere.</p></div></noscript>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div><p class="about">A free guide by Noble Father Creations. It is a reading aid, not a diagnosis, a legal opinion or therapy. If you are in danger, contact emergency services.</p></div>
+    <div><h4>Find</h4><ul><li><a href="#/search">Search</a></li><li><a href="#/guide">Help me figure it out</a></li><li><a href="#/common">The most common</a></li><li><a href="#/browse">Browse</a></li><li><a href="#/all">A–Z</a></li></ul></div>
+    <div><h4>More</h4><ul><li><a href="#/patterns">How tactics combine</a></li><li><a href="#/saved">Saved and recent</a></li><li><a href="#/about">Use this safely</a></li><li><a href="#/about">What changed</a></li></ul></div>
+  </div>
+</footer>
+<nav class="tabs" aria-label="Main">
+  <a href="#/" data-nav="home"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+  <a href="#/search" data-nav="search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
+  <a href="#/browse" data-nav="browse"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Browse</a>
+  <a href="#/saved" data-nav="saved"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Saved</a>
+</nav>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="application/json" id="data">{{DATA}}</script>
+{{HOUSE}}
+<script>
+{{JS}}
+</script>
+{{BEACON}}
+</body>
+</html>
