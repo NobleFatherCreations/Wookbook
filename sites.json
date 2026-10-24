@@ -67,7 +67,12 @@
         "version": "v2",
         "summary": "Fixed the intro video not playing and the tutorial not appearing on some phones; the 3 doors are now genuinely the only thing you can do until you pick one (scrolling past them no longer works); each door now visibly moves instead of only reacting to hover, which never fires on a touch screen. Also found and fixed a layout bug this same round introduced -- the door screen had grown taller than one view, and centering it on the doors pushed the title off the top of the screen with no way to scroll back to it; it now scrolls smoothly within its own frame instead. Typography rebuilt: the display serif now uses its full character at large sizes, headings have real weight contrast, and small print moved out of the monospace into something easier to read on a phone."
       }
-    ]
+    ],
+    "syncedFromLive": {
+      "date": "2026-10-24",
+      "reason": "live is the rebuilt Catalogue (sections reordered, NFC guide second, 20 volumes); the repo still held the August build",
+      "how": "live bytes copied over the repo source; the older file remains in git history"
+    }
   },
   "projects": [
     {
@@ -264,7 +269,12 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project.",
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live carries the 20-volume House menu (patched 2026-09-01); the repo held the older menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "sovereign",
@@ -305,7 +315,12 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them.",
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live carries the 20-volume House menu (patched 2026-09-01); the repo held the older menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "playground",
@@ -346,7 +361,12 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them.",
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live carries the 20-volume House menu (patched 2026-09-01); the repo held the older menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "festie-codex",
@@ -384,7 +404,12 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceVerified": "2026-08-25"
+      "localSourceVerified": "2026-08-25",
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live carries the newer chapters and the shared menu; the repo held an early build",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "fractal",
@@ -425,7 +450,12 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project.",
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live carries the 20-volume House menu (patched 2026-09-01); the repo held the older menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "allfracture",
@@ -476,7 +506,12 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them.",
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live carries the 20-volume House menu (patched 2026-09-01); the repo held the older menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "loop",
@@ -518,7 +553,11 @@
       ],
       "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
       "localSource": "fixes/loop.html",
-      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project.",
+      "pendingDeploy": {
+        "since": "2026-10-24",
+        "note": "Repo is AHEAD of live. It names the faith book 'The Sacred Divide' (renamed 2026-09-27, live on /faith since 2026-09-28); live still says 'The Coercive Control Codex' in this book's menu and, for The Weighing, in two sentences. Only that text differs. Needs an explicit go-ahead to deploy (single-file site, site id b9405b37-a71c-4c55-bbd2-a3043963b457)."
+      }
     },
     {
       "codename": "scale",
@@ -560,7 +599,11 @@
       ],
       "localSourceVerified": "byte-exact match to live content, confirmed via deploy verification, 2026-08-05",
       "localSource": "fixes/scale.html",
-      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project."
+      "localSourceNote": "KNOWN GAP (2026-08-27): like playbook was before its fix, this local mirror predates the Cloudflare beacon and does not contain it, while live does. Deploying this file as-is would silently drop the beacon that this project's own on-page changelog discloses. Add it (see playbook's fix in this same update for the exact snippet and insertion point) before any redeploy of this project.",
+      "pendingDeploy": {
+        "since": "2026-10-24",
+        "note": "Repo is AHEAD of live. It names the faith book 'The Sacred Divide' (renamed 2026-09-27, live on /faith since 2026-09-28); live still says 'The Coercive Control Codex' in this book's menu and, for The Weighing, in two sentences. Only that text differs. Needs an explicit go-ahead to deploy (single-file site, site id 27ab9f53-5850-4fb1-8bed-6513b33ee11f)."
+      }
     },
     {
       "codename": "faith",
@@ -595,11 +638,13 @@
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
       ],
-      "localSource": "source/projects/faith-index.html",
       "localSourceVerified": "2026-08-25",
       "leakFix": "fixes/faith.html",
       "leakFixNote": "Byte-verified corrected HTML for the build-instruction comment leak, awaiting redeploy. Was tracked but referenced nowhere, so nothing could find it.",
-      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them."
+      "localSourceNote": "Re-synced FROM live 2026-08-25. Live had drifted ahead of the repo: changes made directly on the deployed sites between 2026-08-14 and 2026-08-15 were never brought back. Deploying the repo copy would have reverted them.",
+      "supersededSource": "source/projects/faith-index.html",
+      "liveSnapshot": "deploy/snapshots/faith.html",
+      "sourceNote": "2026-10-24: live /faith is The Sacred Divide v4 (deployed 2026-09-28 from the Books repo, library/faith/). source/projects/faith-index.html is the superseded August 2026 lineage and is kept as history only. deploy/snapshots/faith.html is a byte capture of live's index; the real source is github.com/noblefathercreations/books library/faith/."
     },
     {
       "codename": "music",
@@ -637,7 +682,12 @@
           "version": "v1",
           "summary": "Baseline entry - version tracking starts here; earlier history not reconstructed."
         }
-      ]
+      ],
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live menu footer reads 'twenty volumes'; repo said 'fifteen'",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": "festie-bible",
@@ -689,7 +739,12 @@
           "version": "v1",
           "summary": "First build. All 12 guides (G.R.O.V.E./B.A.S.S./R.A.V.E./P.R.I.D.E./C.R.E.A.T.E./S.O.U.N.D./M.A.R.K.E.T./H.O.L.D./C.A.R.E./L.E.A.D./E.V.E.N.T./S.A.F.E.), 149 scenario pages, extracted and rebuilt with a real logo (the source PDF's brand mark rendered at ~10% opacity -- fixed), reading-progress bar, in-guide contents drawer, and a persistent crisis-resource strip."
         }
-      ]
+      ],
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live added the shared menu, author line and copyright; the repo held an earlier build",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "codename": null,
@@ -709,7 +764,11 @@
           "version": "v1",
           "summary": "Added to the registry. It was live and completely untracked before this -- nothing watched it and its page existed nowhere but the host."
         }
-      ]
+      ],
+      "rebaselined": {
+        "date": "2026-10-24",
+        "reason": "the only difference was the shared House menu, extended to 20 volumes (one 2,235-byte hunk)"
+      }
     },
     {
       "codename": null,
@@ -752,7 +811,12 @@
           "version": "v1",
           "summary": "The torch effect that follows your cursor no longer leaves the pieces dark and unlit on phones and tablets. One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
         }
-      ]
+      ],
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live added links to the NFC programming guide and the 20-volume menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "title": "The Press",
@@ -768,7 +832,12 @@
           "version": "v1",
           "summary": "One name for one book: the volume that had been appearing as \"All Fracture\" or \"The Fracture Everywhere\" in the catalogue is now just \"The Fracture\", the same everywhere it is listed."
         }
-      ]
+      ],
+      "syncedFromLive": {
+        "date": "2026-10-24",
+        "reason": "live added the NFC programming guide link and the 20-volume menu",
+        "how": "live bytes copied over the repo source; the older file remains in git history"
+      }
     },
     {
       "title": "The Whole Picture",
@@ -906,5 +975,6 @@
     "castingImagesLive": "1275/1275 across 425 pieces",
     "pageChecks": "60 renders across 16 pages x 3 viewport passes: 0 failures, 0 broken links",
     "howToRepeat": "npm run check"
-  }
+  },
+  "syncNote": "2026-10-24: every source that was behind live was brought up to live byte for byte; the two that are ahead of live (loop, scale) are marked pendingDeploy. 'npm run deployed' should report them as the only drift."
 }
