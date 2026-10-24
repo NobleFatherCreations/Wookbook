@@ -1,3 +1,5 @@
+> **Superseded (2026-10-24):** this file records the v10.2 build. Live is v14; the current tokens and rules are in `design/decoder-v10/app.css` (v12–v14 blocks at its end) and summarised in MEMORY.md (handoff of 2026-10-24). Regenerate this file from the built page before relying on it.
+
 ---
 name: The Pattern Decoder
 description: A free, offline guide to 310 manipulation and control tactics, read under one persistent night sky where every tactic is a star.

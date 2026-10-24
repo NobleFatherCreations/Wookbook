@@ -174,7 +174,66 @@
         "method": "netlify MCP deploy-site -> npx @netlify/mcp from a staging dir containing only index.html (= content/prose/_raw/playbook-v10.html)",
         "verified": "curl of noblefathercreations.com/playbook and noblepatterns.netlify.app both byte-identical to the repo file (md5 947ee1587a2bc20700b38244b1a484f9, 3,678,177 bytes); npm run deployed: playbook in sync; live Playwright smoke test at 1440 and 390 with no page errors",
         "replaced": "v7 (2026-08-29) + 20-volume nav patch, md5 9e861a939ae32c49bef1d5fbc2fc5704; pre-deploy diff vs the repo's 2026-10-18 capture showed only the three known v8 edits, so nothing on live was lost"
-      }
+      },
+      "openItems": [
+        {
+          "area": "decoder",
+          "item": "Real-device frame rate: the magnet sky and grain ran at 35-42fps in a GPU-less test browser; check on a real computer and a real phone, and that lite mode kicks in only when it should."
+        },
+        {
+          "area": "decoder",
+          "item": "Daylight theme was not screenshot-reviewed for the v14 layout (contrast was measured and passes)."
+        },
+        {
+          "area": "decoder",
+          "item": "Print: the Print button and print stylesheet were not re-tested against the v14 folio layout."
+        },
+        {
+          "area": "decoder",
+          "item": "Screen reader pass with real assistive tech (VoiceOver/NVDA/TalkBack): only automated keyboard/focus/name checks were run."
+        },
+        {
+          "area": "decoder",
+          "item": "Clinical read of the rewritten safety scripts and notes (e.g. Trauma Bonding, Sexual Coercion) by a qualified reader."
+        },
+        {
+          "area": "decoder",
+          "item": "Human read of the automatic bolding (first sentence, lead phrases) and of the 58 entries whose short passages are set as large quotes."
+        },
+        {
+          "area": "decoder",
+          "item": "Owner decisions pending: private reading on by default or not; next safety round (quick exit, hide a constellation) which the owner put on hold."
+        },
+        {
+          "area": "decoder",
+          "item": "Private reading ends on reload by design and cannot hide the browser's own record of visiting the site; the analytics beacon still counts visits (approved)."
+        },
+        {
+          "area": "decoder",
+          "item": "Astra still lacks + and %; text using them falls back to system-ui in display sizes."
+        },
+        {
+          "area": "decoder",
+          "item": "Records are stale: DESIGN.md describes v10.2; Figma file has v11/v12 pages only; the v12 Brief Check artifact predates v13/v14."
+        },
+        {
+          "area": "decoder",
+          "item": "The verification scripts used this session live in a scratch folder, not the repo; add a permanent scripts/verify-decoder.mjs so audits are repeatable."
+        },
+        {
+          "area": "fleet",
+          "item": "npm run deployed (Wookbook) shows live AHEAD of the repo for hub, shadowroot, feminine, children, wook, fractal, fracture, loop, scale, music, festival, nfcportals, noblenfcseals (newer nf-chrome House menu on live); faith copy is ~3 MB larger than live; reaction-map changed since capture. Reconcile each before any deploy."
+        },
+        {
+          "area": "fleet",
+          "item": "Wookbook sites.json still points at the pre-2026-08-31 folder layout; Books has the reorganised tree but no deploy checker. Port scripts/verify-deployed.mjs to Books and point the registry at the new paths."
+        },
+        {
+          "area": "fleet",
+          "item": "Unverified claims from pasted text: a Netlify suspension and a failing GitHub Action. Nothing in this session showed either; check the Netlify dashboard and Actions if they matter."
+        }
+      ],
+      "openItemsUpdated": "2026-10-24"
     },
     {
       "codename": "root",
