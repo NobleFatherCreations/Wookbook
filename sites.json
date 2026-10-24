@@ -74,7 +74,7 @@
       "codename": "decoder",
       "slug": "playbook",
       "title": "The Pattern Decoder",
-      "tagline": "349 tactics · type what happened",
+      "tagline": "310 tactics · put a name to what is happening",
       "url": "https://noblefathercreations.com/playbook",
       "netlifySite": "noblepatterns",
       "netlifySiteId": "8b3d5fdf-49e5-46eb-bb53-97d69039a44e",
@@ -93,7 +93,7 @@
         {
           "date": "2026-10-24",
           "version": "v14",
-          "summary": "Grimoire layer: 0px radius everywhere (stars and House seal excepted), glass at rgba(255,255,255,.005) with 0.5px inset rings, 24fps steps(24) film grain on one composited layer, home CTAs as Cormorant links on a 0.5px mint rule, asymmetric off-centre home and folio layout with the entry title moved to the reading page (Astra 100, .22em, ~78px), wide uneven gutters, short tiles auto-set as large quotes, drop capital, constellation sigils (7-star MST from the sky data), atlas graticule, star chart coordinates (cartouche), folio number + running head, reading meridian, star/card→first tile view-transition morph, fact tiles from existing data, phone print order + half-width pairing + edge-docked 56px bar. Private now writes nothing to localStorage and uses history.replaceState. Fixed: any click on empty space toggled Calm (root data-calm matched the delegated handler); first load after private no longer writes empty lists. Not yet deployed."
+          "summary": "Grimoire layer: 0px radius everywhere (stars and House seal excepted), glass at rgba(255,255,255,.005) with 0.5px inset rings, 24fps steps(24) film grain on one composited layer, home CTAs as Cormorant links on a 0.5px mint rule, asymmetric off-centre home and folio layout with the entry title moved to the reading page (Astra 100, .22em, ~78px), wide uneven gutters, short tiles auto-set as large quotes, drop capital, constellation sigils (7-star MST from the sky data), atlas graticule, star chart coordinates (cartouche), folio number + running head, reading meridian, star/card→first tile view-transition morph, fact tiles from existing data, phone print order + half-width pairing + edge-docked 56px bar. Private now writes nothing to localStorage and uses history.replaceState. Fixed: any click on empty space toggled Calm (root data-calm matched the delegated handler); first load after private no longer writes empty lists. Deployed 2026-10-24 (deploy 6adcc6fa52666a093ddba0ad), replacing v7; v8–v13 were never deployed on their own."
         },
         {
           "date": "2026-10-24",
@@ -168,11 +168,12 @@
       ],
       "localSourceVerified": "Rebased onto the live bytes of 2026-10-18 (v7 + 20-volume nav + analytics beacon), then three edits: typo, version badge, Updates entry.",
       "lastDeploy": {
-        "date": "2026-08-29",
-        "version": "v7",
-        "deployId": "6a92d467b551c9c57993a8e6",
-        "method": "netlify MCP deploy-site -> npx @netlify/mcp from a staging dir containing only index.html",
-        "verified": "curl of noblefathercreations.com/playbook byte-identical to the repo file (md5 2d5051f20f1a21e1f1f7a0e64d4c96b3); 127/127 thread audit re-run against the downloaded live page"
+        "date": "2026-10-24",
+        "version": "v14",
+        "deployId": "6adcc6fa52666a093ddba0ad",
+        "method": "netlify MCP deploy-site -> npx @netlify/mcp from a staging dir containing only index.html (= content/prose/_raw/playbook-v10.html)",
+        "verified": "curl of noblefathercreations.com/playbook and noblepatterns.netlify.app both byte-identical to the repo file (md5 947ee1587a2bc20700b38244b1a484f9, 3,678,177 bytes); npm run deployed: playbook in sync; live Playwright smoke test at 1440 and 390 with no page errors",
+        "replaced": "v7 (2026-08-29) + 20-volume nav patch, md5 9e861a939ae32c49bef1d5fbc2fc5704; pre-deploy diff vs the repo's 2026-10-18 capture showed only the three known v8 edits, so nothing on live was lost"
       }
     },
     {

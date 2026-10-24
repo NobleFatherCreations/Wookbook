@@ -3353,3 +3353,8 @@ unreadable: Cormorant's x-height is small); widow joins capped so half-width pho
 Verified: 310/310 at 1440 + 390, no overflow/errors, radius 0 on every element, grain steps(24),
 morph pseudo-elements observed for both card and star, zero localStorage/sessionStorage/cookie
 keys and no history growth while private, contrast ≥4.84:1.
+- 2026-10-24 **v14 DEPLOYED** to noblepatterns (deploy 6adcc6fa52666a093ddba0ad) on the user's "Deploy live".
+  Live = repo byte for byte (md5 947ee158…) on both netlify.app and noblefathercreations.com/playbook;
+  `npm run deployed` → playbook ✓. Replaced v7+nav-patch (pre-check: only the 3 known v8 edits differed).
+  Seen but NOT touched: `npm run deployed` reports **shadowroot DRIFTED — live has 1990 bytes more**
+  (first difference ~line 1353). Unrelated to this round; needs its own look before anyone deploys shadowroot.
