@@ -3422,3 +3422,8 @@ fractal, fracture, music, nfcportals, noblenfcseals); reaction-map re-baselined;
 `npm run deployed` here: 17 in sync, 2 drifted = loop and scale, which are AHEAD of live on purpose
 (Sacred Divide rename not yet deployed; marked pendingDeploy), 1 unchecked (Casting lives in its own repo).
 Production deploy of loop/scale is waiting for an explicit go-ahead.
+- 2026-10-24 **Redesign hand-off:** `docs/DECODER-REDESIGN-BRIEF.md` (Part A = paste-ready prompt for another chat,
+  also `docs/DECODER-HANDOFF-PROMPT.txt`; Part B = measured pros/cons of v14; Part C = ranked improvement ideas and
+  owner decisions). Key measured facts: entry = 29 tiles / ~1,730 words / 11.3 desktop screens / 16.5 phone screens;
+  3.2 MB JSON = 90% of the page, 347 ms startup task (836 ms at 4x CPU), headline visible 3.4 s on a throttled phone;
+  `.h1` defined 6x in CSS, 49 !important. No analysis finding has been implemented yet.
