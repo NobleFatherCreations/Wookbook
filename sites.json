@@ -88,8 +88,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v13",
+      "version": "v14",
       "changelog": [
+        {
+          "date": "2026-10-24",
+          "version": "v14",
+          "summary": "Grimoire layer: 0px radius everywhere (stars and House seal excepted), glass at rgba(255,255,255,.005) with 0.5px inset rings, 24fps steps(24) film grain on one composited layer, home CTAs as Cormorant links on a 0.5px mint rule, asymmetric off-centre home and folio layout with the entry title moved to the reading page (Astra 100, .22em, ~78px), wide uneven gutters, short tiles auto-set as large quotes, drop capital, constellation sigils (7-star MST from the sky data), atlas graticule, star chart coordinates (cartouche), folio number + running head, reading meridian, star/card→first tile view-transition morph, fact tiles from existing data, phone print order + half-width pairing + edge-docked 56px bar. Private now writes nothing to localStorage and uses history.replaceState. Fixed: any click on empty space toggled Calm (root data-calm matched the delegated handler); first load after private no longer writes empty lists. Not yet deployed."
+        },
         {
           "date": "2026-10-24",
           "version": "v13",

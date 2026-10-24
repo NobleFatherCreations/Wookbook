@@ -3334,3 +3334,22 @@ click matched `<html>` and toggled private on every click. It is `data-priv` on 
 Pause: `breathShow()` after 20 min active+visible reading; `breath:false` turns it off (Use this
 safely page can turn it back on). Ripple: `Sky.ripple(x,y)` 12ms/rank, capped 1.4s.
 Verified: 310/310 at 1440 + 390, a11y script clean, contrast ≥4.98:1 both themes.
+
+## 2026-10-24 — Pattern Decoder v14: the grimoire (built, NOT deployed)
+
+User's "master regression" protocol + my 6 additions: constellation sigils (`sigil(k,size)`,
+7 brightest stars joined by a minimum spanning tree from `D.sky.land`), atlas graticule on the
+canvas (`st.graticule`), star-chart cartouche (`atlasAt(i)`), folio running head + "No. n of 310"
+(alphabetical), drop capital (`.tile.initial`), reading meridian (`.meridian`), plus fact tiles
+from existing data (`facts(e)`). Entry title now lives in the right pane (`.folio .title`);
+phones reorder entries with `display:contents` + `order`. Star/card→hero morph = view-transition
+name `morph` (`PENDING_MORPH`, `.morph-seed`). Private: `setPrivate(true)` moves every fg_* key
+into memory and deletes it; nothing is written while private; `nav()` uses replaceState.
+**Gotcha (twice now):** never put an attribute on <html> that a delegated `closest()` handler
+listens for. `data-calm` on <html> made ANY click on empty space toggle Calm since v10 — fixed by
+`button[data-calm]`. Same class as the v13 `data-private` bug.
+Enhancements to the brief: metadata at 13–14px Cormorant italic (brief's 9px/11px would be
+unreadable: Cormorant's x-height is small); widow joins capped so half-width phone tiles never overflow.
+Verified: 310/310 at 1440 + 390, no overflow/errors, radius 0 on every element, grain steps(24),
+morph pseudo-elements observed for both card and star, zero localStorage/sessionStorage/cookie
+keys and no history growth while private, contrast ≥4.84:1.

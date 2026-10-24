@@ -191,6 +191,21 @@ const Sky = (() => {
       cx.drawImage(neb(C.g[g] || C.glow), x - r, y - r, r * 2, r * 2);
     }
     cx.globalAlpha = 1;
+    /* the atlas graticule, as on an engraved planisphere: declination arcs around a pole above the sky,
+       hour meridians fanning from it, labelled at the edge. Only on the open sky. */
+    if (st.graticule && !lite) {
+      const px = sx(S.w / 2), py = sy(-S.h * 0.85), step = S.h * 0.17 * cam.k;
+      cx.lineWidth = .5; cx.strokeStyle = "rgba(" + C.line + "," + (.075 * dim * ap) + ")";
+      cx.beginPath();
+      for (let n = 3; n <= 14; n++) { const r = n * step; cx.moveTo(px + r, py); cx.arc(px, py, r, 0, Math.PI); }
+      for (let h = -6; h <= 6; h++) { const a = Math.PI / 2 + h * Math.PI / 26, r0 = 3 * step, r1 = 14 * step; cx.moveTo(px + Math.cos(a) * r0, py + Math.sin(a) * r0); cx.lineTo(px + Math.cos(a) * r1, py + Math.sin(a) * r1); }
+      cx.stroke(); cx.lineWidth = 1;
+      cx.font = "italic 400 13px Cormorant,Georgia,serif"; cx.fillStyle = "rgba(" + C.line + "," + (.34 * dim * ap) + ")"; cx.textBaseline = "middle";
+      cx.textAlign = "left";
+      for (let n = 4; n <= 13; n += 3) { const y = py + n * step; if (y > 90 && y < H - 20) cx.fillText("+" + (90 - n * 6) + "°", 14, y); }
+      cx.textAlign = "center";
+      for (let h = -6; h <= 6; h += 2) { const a = Math.PI / 2 + h * Math.PI / 26, r = 14 * step, x = px + Math.cos(a) * r, y = py + Math.sin(a) * r; if (x > 30 && x < W - 30 && y < H - 12) cx.fillText(((h + 12) % 24) + "ʰ", x, Math.min(H - 14, y + 14)); }
+    }
     /* a shooting star, now and then, on the open sky only */
     if (meteor) {
       const p = (performance.now() - meteor.t0) / meteor.ms;
@@ -233,6 +248,7 @@ const Sky = (() => {
       if (useCache && !lit2 && !strong && !GACT[GOF[i]]) continue;
       let al = (strong ? .6 : .2) * dim * Math.min(gDim(i), gDim(j)) * Math.max(0, Math.min(1, ap * 1.6 - .5 - (i % 17) / 40));
       if (st.clipY != null) al *= Math.max(0, Math.min(1, (st.clipY - Math.min(y1, y2)) / 70 + 1));
+      if (st.clipX != null) al *= Math.max(0, Math.min(1, (st.clipX - Math.max(x1, x2)) / 80 + 1));
       if (lit2) al = Math.max(al, .5);
       al = Math.min(.9, al * (1 + (NEAR[i] + NEAR[j]) * 1.4));
       if (al < .02) continue;
@@ -255,6 +271,7 @@ const Sky = (() => {
         const e = Math.max(0, Math.min(1, (prog - (q / 2) / m * .55) / .45)); if (!e) continue;
         const x1 = qx(mine[q]), y1 = qy(mine[q]), x2 = x1 + (qx(mine[q + 1]) - x1) * e, y2 = y1 + (qy(mine[q + 1]) - y1) * e;
         if (st.clipY != null && Math.min(y1, y2) > st.clipY) continue;
+        if (st.clipX != null && Math.max(x1, x2) > st.clipX + 40) continue;
         cx.moveTo(x1, y1); cx.lineTo(x2, y2);
       }
       cx.stroke(); cx.lineWidth = 1;
@@ -264,6 +281,8 @@ const Sky = (() => {
       cx.setLineDash([3, 5]);
       for (const j of S.near[st.ring]) {
         const a = stars[st.ring], b = stars[j]; if (Math.hypot(a.x - b.x, a.y - b.y) > 900) continue;
+        if (st.clipY != null && Math.max(qy(st.ring), qy(j)) > st.clipY - 6) continue;
+        if (st.clipX != null && Math.max(qx(st.ring), qx(j)) > st.clipX) continue;
         cx.strokeStyle = "rgba(" + C.brass + "," + (.55 * ap) + ")";
         cx.beginPath(); cx.moveTo(sx(a.x), sy(a.y)); cx.lineTo(sx(b.x), sy(b.y)); cx.stroke();
       }
@@ -286,6 +305,7 @@ const Sky = (() => {
       const delay = Math.min(1, Math.max(0, ap * 1.8 - (Math.hypot(s.x - S.w / 2, s.y - S.h / 2) / 1800)));
       a *= delay;
       if (st.clipY != null) a *= Math.max(0, Math.min(1, (st.clipY - y) / 70 + 1));
+      if (st.clipX != null) { a *= Math.max(0, Math.min(1, (st.clipX - x) / 80 + 1)); if (a <= 0) continue; }
       const tw = aliveNow ? .82 + .18 * Math.sin(time * (.8 + (i % 7) * .13) + s.ph) : 1;
       let rp = 1; if (RIP) { rp = Math.max(0, Math.min(1, (performance.now() - RIP.t0 - RIPD[i]) / 560)); rp = 1 - Math.pow(1 - rp, 3); a *= rp; if (!rp) continue; }
       let near = NEAR[i]; if (!near && st.px != null && !st.magnet) { const dd = Math.hypot(x - st.px, y - st.py); near = dd < 170 ? 1 - dd / 170 : 0; near *= near; }
@@ -306,7 +326,7 @@ const Sky = (() => {
         cx.globalAlpha = (1 - pr) * .8; cx.strokeStyle = "rgb(" + C.brass + ")"; cx.beginPath(); cx.arc(x, y, 8 + pr * 26, 0, 6.283); cx.stroke();
       }
       if ((st.clipY == null || y < st.clipY - 10) && (i === st.hover || lit && labelsOn() || i === st.ring || (fSet && fSet.has(i) && st.labels) || (st.labels && cam.k > fitK() * 2.4 && (!st.groupFocus || D.entries[i].g === st.groupFocus)) || (st.groupFocus && st.labels && D.entries[i].g === st.groupFocus && rankIn[i] < (W < 700 ? 7 : 12)))) labelQ.push([i, x, y, a]);
-      else if (st.magnet && NEAR[i] > .3 && (st.clipY == null || y < st.clipY - 10)) labelQ.push([i, x, y, a, NEAR[i]]);
+      else if (st.magnet && NEAR[i] > .3 && (st.clipY == null || y < st.clipY - 10) && !(st.avoid && x > st.avoid.x0 - 220 && x < st.avoid.x1 && y > st.avoid.y0 && y < st.avoid.y1)) labelQ.push([i, x, y, a, NEAR[i]]);
     }
     cx.globalAlpha = 1;
     /* constellation names */
@@ -343,7 +363,7 @@ const Sky = (() => {
         if (i !== st.hover && placed.some(p => Math.abs(p[0] - lx) < Math.max(w, p[2]) && Math.abs(p[1] - ly) < 17)) continue;
         placed.push([lx, ly, w]);
         cx.fillStyle = "rgba(" + C.plate + ",.78)";
-        const rx = lx - 6, ry = ly - 11; cx.beginPath(); cx.roundRect ? cx.roundRect(rx, ry, w, 22, 11) : cx.rect(rx, ry, w, 22); cx.fill();
+        const rx = lx - 6, ry = ly - 11; cx.beginPath(); cx.rect(rx, ry, w, 22); cx.fill();
         cx.fillStyle = "rgba(" + C.text + ",.95)"; cx.fillText(txt, lx + 1, ly + .5);
       }
       cx.globalAlpha = 1;

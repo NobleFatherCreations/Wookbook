@@ -22,8 +22,11 @@ from collections import Counter
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 V10 = os.path.join(os.path.dirname(__file__), "decoder-v10")
 A = os.path.join(V10, "assets")
-VERSION = "v13 — 2026-10-24"
+VERSION = "v14 — 2026-10-24"
 UPDATES = [
+    "<strong>Set like a book (v14).</strong> Square edges and near-invisible panes, a fine moving film grain, and each entry laid out like a printed folio: a running head, its number in the guide, and its name set large across the page. Short passages are set as large quotes, the first explanation opens with a tall initial, and a thin line down the right edge shows where you are.",
+    "<strong>Star charts.</strong> Every constellation now has its own mark, drawn from its seven brightest stars. Each entry gives its star’s place on the chart, the open sky carries a faint atlas grid, and the star or card you choose unfolds into the entry as it opens.",
+    "<strong>Fixed.</strong> Clicking an empty part of a page could switch Calm mode on. Private reading now stores nothing at all on the device and adds nothing to your browser history while it is on.",
     "<strong>A finer finish (v13).</strong> A deeper night with a soft light that follows your pointer, warmer off-white text, tactic names set as tall thin capitals, and an italic face for quotes and labels. Pointing at a tile brings it forward and quiets the rest, and stars ripple in when you open a constellation. On a phone, search and the main places now sit in one pill at the bottom, within reach of your thumb.",
     "<strong>Private reading.</strong> Turn on Private and nothing you read, save or search is kept once you close the tab. An optional reminder dims the screen after a long stretch of reading so you can take a breath; you can switch it off.",
     "<strong>One screen, nothing to wade through (v12).</strong> On a computer the guide now fits a single screen: pick a group or a tactic and the screen splits, with where you are on the left and the entry on the right in tiles you can scan. A thin bar on the left follows the part you are reading.",

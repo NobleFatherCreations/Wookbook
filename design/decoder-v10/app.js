@@ -70,14 +70,16 @@ const HAY = E.map(e=>({
 const VOLATILE=new Set(["trail","starred"]);
 const store=(()=>{let mem={},ok=false;
   try{localStorage.setItem("__t","1");localStorage.removeItem("__t");ok=true}catch(e){}
-  let priv=false; try{priv=ok&&JSON.parse(localStorage.getItem("fg_private")||"false")===true}catch(e){}
+  let priv=false; try{ if(ok) localStorage.removeItem("fg_private"); }catch(e){}   // older builds kept this flag; Private now starts off each visit
   return{
     get private(){return priv},
-    setPrivate(v){ priv=!!v; try{ if(ok){ localStorage.setItem("fg_private",JSON.stringify(priv)); if(priv) VOLATILE.forEach(k=>localStorage.removeItem("fg_"+k)); } }catch(e){} },
-    get(k,d){if(priv&&VOLATILE.has(k)) return (k in mem)?mem[k]:d; try{if(ok){const v=localStorage.getItem("fg_"+k);if(v!==null){const p=JSON.parse(v);
+    /* Private writes nothing to the device at all, not even that it is on: every key this guide ever stored is removed,
+       and from then on everything (reading, saved, theme, settings) lives in memory until the page is closed or reloaded. */
+    setPrivate(v){ priv=!!v; try{ if(ok){ if(priv){ for(let n=localStorage.length-1;n>=0;n--){ const k=localStorage.key(n); if(k&&k.indexOf("fg_")===0){ const raw=localStorage.getItem(k); if(!(k.slice(3) in mem)) try{ mem[k.slice(3)]=JSON.parse(raw); }catch(e){} localStorage.removeItem(k); } } } } }catch(e){} },
+    get(k,d){if(priv) return (k in mem)?mem[k]:d; try{if(ok){const v=localStorage.getItem("fg_"+k);if(v!==null){const p=JSON.parse(v);
       if(Array.isArray(d)&&!Array.isArray(p))return d; if(typeof d==="string"&&typeof p!=="string")return d; return p;}return d}}catch(e){}
       return (k in mem)?mem[k]:d},
-    set(k,v){mem[k]=v; if(priv&&VOLATILE.has(k)) return; try{if(ok)localStorage.setItem("fg_"+k,JSON.stringify(v))}catch(e){ok=false}},
+    set(k,v){mem[k]=v; if(priv) return; try{if(ok)localStorage.setItem("fg_"+k,JSON.stringify(v))}catch(e){ok=false}},
   };})();
 /* Saved items from before the merge may name a tactic that is now an alias. */
 (function normaliseSaved(){
@@ -85,14 +87,32 @@ const store=(()=>{let mem={},ok=false;
   const tr=store.get("trail",[]), st=store.get("starred",[]);
   const seen=new Set(), t2=[];
   tr.forEach(t=>{ if(!t||typeof t.name!=="string")return; const c=canon(t.name); if(!BY[c]||seen.has(c))return; seen.add(c); t2.push({name:c,ts:t.ts}); });
-  store.set("trail",t2);
+  /* only rewrite what was already there: a first visit, or the first visit after private reading, writes nothing */
+  if(tr.length&&JSON.stringify(t2)!==JSON.stringify(tr)) store.set("trail",t2);
   const s2=[...new Set(st.filter(n=>typeof n==="string").map(canon))].filter(n=>BY[n]);
-  store.set("starred",s2);
+  if(st.length&&JSON.stringify(s2)!==JSON.stringify(st)) store.set("starred",s2);
 })();
 function isStarred(n){return store.get("starred",[]).includes(n)}
 function toggleStar(n){let s=store.get("starred",[]); s=s.includes(n)?s.filter(x=>x!==n):[n].concat(s); store.set("starred",s); if(typeof Sky!=="undefined") refreshMarks(); return s.includes(n);}
 function logTrail(n){let t=store.get("trail",[]).filter(x=>x.name!==n); t.unshift({name:n,ts:Date.now()}); store.set("trail",t.slice(0,200)); if(typeof Sky!=="undefined") refreshMarks();}
 function refreshMarks(){ Sky.setMarks(store.get("trail",[]).map(t=>BY[t.name]&&BY[t.name].i).filter(x=>x!=null), store.get("starred",[]).map(n=>BY[n]&&BY[n].i).filter(x=>x!=null)); }
+
+/* ---------- sigils: each constellation's mark is drawn from its own sky, its seven brightest
+   stars joined by the shortest set of lines (a minimum spanning tree), so no two are alike ---------- */
+const SIGIL={};
+function sigil(k,size,cls){
+  if(!SIGIL[k]){ const P=D.sky.land.pos, mem=E.filter(e=>e.g===k).sort((a,b)=>(b.pop||0)-(a.pop||0)||a.i-b.i).slice(0,7).map(e=>P[e.i]);
+    let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; mem.forEach(p=>{x0=Math.min(x0,p[0]);x1=Math.max(x1,p[0]);y0=Math.min(y0,p[1]);y1=Math.max(y1,p[1]);});
+    const sc=80/Math.max(x1-x0,y1-y0,1), pts=mem.map(p=>[10+(p[0]-x0)*sc+(80-(x1-x0)*sc)/2,10+(p[1]-y0)*sc+(80-(y1-y0)*sc)/2]);
+    const inT=[0], lines=[]; while(inT.length<pts.length){ let best=null; inT.forEach(a=>pts.forEach((q,b)=>{ if(inT.includes(b)) return; const d=Math.hypot(pts[a][0]-q[0],pts[a][1]-q[1]); if(!best||d<best[2]) best=[a,b,d]; })); lines.push(best); inT.push(best[1]); }
+    SIGIL[k]=lines.map(([a,b])=>'<line x1="'+pts[a][0].toFixed(1)+'" y1="'+pts[a][1].toFixed(1)+'" x2="'+pts[b][0].toFixed(1)+'" y2="'+pts[b][1].toFixed(1)+'"/>').join("")+
+      pts.map((q,n)=>'<circle cx="'+q[0].toFixed(1)+'" cy="'+q[1].toFixed(1)+'" r="'+(n===0?5:n<3?3.6:2.6)+'"/>').join(""); }
+  return '<svg class="sigil'+(cls?' '+cls:'')+'" viewBox="0 0 100 100" width="'+size+'" height="'+size+'" aria-hidden="true">'+SIGIL[k]+'</svg>';
+}
+/* a star's place on the atlas, read from where it sits in the wide sky: hours of right ascension and degrees of declination */
+function atlasAt(i){ const S=D.sky.land, p=S.pos[i], ra=p[0]/S.w*24, de=90-p[1]/S.h*120;
+  const h=Math.floor(ra), m=Math.round((ra-h)*60)%60; return {ra:h+"ʰ "+String(m).padStart(2,"0")+"ᵐ", dec:(de>=0?"+":"−")+Math.abs(de).toFixed(1)+"°"}; }
+const FOLIO={}; ALPHA.forEach((e,n)=>FOLIO[e.n]=n+1);
 
 /* ---------- links ---------- */
 const href = h => "#/"+h;
@@ -179,13 +199,13 @@ function viewHome(){
       '<button class="pill pill-xl" type="button" data-palette aria-haspopup="dialog">'+ic("search")+'<span class="pill-t">Search, or describe what happened</span><kbd class="kb" aria-hidden="true">⌘K</kbd></button>'+
       '<div class="tries"><span class="muted">Try</span>'+D.tries.map(t=>'<button class="chip" type="button" data-try="'+esc(t)+'">'+H(t)+'</button>').join("")+'</div>'+
       '<div class="ways-row">'+
-        '<a class="btn primary" href="'+href("guide")+'">Help me figure it out</a>'+
-        '<a class="btn" href="'+href("common")+'">The most common</a>'+
-        '<a class="btn" href="'+href("sky")+'">Explore the sky</a>'+
+        '<a class="ed-link" href="'+href("guide")+'">Help me figure it out</a>'+
+        '<a class="ed-link" href="'+href("common")+'">The most common</a>'+
+        '<a class="ed-link" href="'+href("sky")+'">Explore the sky</a>'+
       '</div>'+
       (last?'<p class="continue small">You were reading <a href="'+entryHref(last)+'" data-vt="'+last.i+'"><span data-vtn="'+last.i+'">'+H(last.n)+'</span></a></p>':'')+
     '</div>'+
-    '<nav class="dock" aria-label="The ten constellations">'+D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-preview="'+g.k+'" style="--c:'+g.c+'"><i class="gd" aria-hidden="true"></i><span>'+H(g.short||g.label)+'</span></a>').join("")+'</nav>'+
+    '<nav class="dock" aria-label="The ten constellations">'+D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-preview="'+g.k+'" style="--c:'+g.c+'">'+sigil(g.k,22)+'<span>'+H(g.short||g.label)+'</span></a>').join("")+'</nav>'+
     '<p class="privacy">'+ic("lock")+'Nothing you type leaves this device.</p>'+
   '</section>';
 }
@@ -222,7 +242,7 @@ function viewBrowse(){
 }
 let FILTER_SET = "";
 function groupTrack(cur){
-  return '<nav class="track" aria-label="Constellations"><span class="ind" aria-hidden="true"></span>'+D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-track="'+g.k+'" style="--c:'+g.c+'"'+(g.k===cur?' class="on" aria-current="page"':'')+'><i class="gd" aria-hidden="true"></i><span>'+H(g.label)+'</span><span class="n">'+IN_GROUP[g.k].length+'</span></a>').join("")+'</nav>';
+  return '<nav class="track" aria-label="Constellations"><span class="ind" aria-hidden="true"></span>'+D.groups.map(g=>'<a href="'+href("browse/"+g.k)+'" data-track="'+g.k+'" style="--c:'+g.c+'"'+(g.k===cur?' class="on" aria-current="page"':'')+'>'+sigil(g.k,20)+'<span>'+H(g.label)+'</span><span class="n">'+IN_GROUP[g.k].length+'</span></a>').join("")+'</nav>';
 }
 function tacticTile(e,big){
   return '<a class="tile tac'+(big?' s3 big':' s2')+'" href="'+entryHref(e)+'" data-vt="'+e.i+'" data-i="'+e.i+'" style="--c:'+GROUP[e.g].c+'">'+
@@ -237,7 +257,7 @@ function viewGroup(k){
   const top=new Set([...list].sort((a,b)=>(b.pop||0)-(a.pop||0)).slice(0,2).map(e=>e.n));
   const ordered=list.filter(e=>top.has(e.n)).concat(list.filter(e=>!top.has(e.n)));
   return '<div class="split">'+
-    '<aside class="pane-l"><div class="sky-window" aria-hidden="true"></div>'+
+    '<aside class="pane-l" style="--c:'+g.c+'"><div class="sky-window" aria-hidden="true"></div>'+sigil(g.k,260,"watermark")+
       '<p class="eyebrow"><a href="'+href("browse")+'">Browse</a></p><h1 class="h1">'+H(g.label)+'</h1><p class="lede">'+H(g.blurb)+'</p>'+
       groupTrack(k)+
     '</aside>'+
@@ -328,10 +348,10 @@ function viewEntry(slug){
   const says=(f.what_it_sounds_like||[]);
   const pats=(PATS_OF[e.n]||[]).map(ri=>D.recipes[ri]);
   const notIt=(f.this_may_not_be_it_when||[]);
+  const at=atlasAt(e.i);
   const left='<aside class="pane-l"><div class="sky-window" aria-hidden="true"></div>'+
+      '<p class="cartouche" aria-label="Its place on the star chart: right ascension '+at.ra+', declination '+at.dec+'"><span>'+at.ra+'</span><span>'+at.dec+'</span><span>in '+H(g.label)+'</span></p>'+
       '<p class="eyebrow"><a href="'+href("browse")+'">Browse</a> <span aria-hidden="true">/</span> <a href="'+href("browse/"+g.k)+'">'+H(g.label)+'</a></p>'+
-      '<h1 class="h1" data-vtn="'+e.i+'">'+H(e.n)+'</h1>'+
-      (e.sub?'<p class="e-sub">'+H(e.sub)+'</p>':'')+
       '<div class="e-meta"><span class="pager" role="group" aria-label="Position in '+esc(g.label)+'"><a class="pg" href="'+entryHref(prev)+'" data-pg="prev" aria-label="Previous in '+esc(g.label)+': '+esc(prev.n)+'">'+ic("up")+'</a><span class="pos"><b>'+(gi+1)+'</b> / '+inG.length+'</span><a class="pg" href="'+entryHref(next)+'" data-pg="next" aria-label="Next in '+esc(g.label)+': '+esc(next.n)+'">'+ic("down")+'</a><span class="kb-hint" aria-hidden="true"><kbd>J</kbd><kbd>K</kbd></span></span>'+
         (e.sens?'<span class="badge safety">'+ic("shield")+'Safety-sensitive</span>':'')+'</div>'+
       '<div class="e-actions">'+
@@ -342,15 +362,18 @@ function viewEntry(slug){
       '<nav class="track parts" aria-label="On this page"><span class="ind" aria-hidden="true"></span>'+PARTS.map((p,n)=>'<a href="#'+p[0]+'" data-part="'+p[0]+'"><span class="tn">0'+(n+1)+'</span><span>'+p[1]+'</span></a>').join("")+'</nav>'+
     '</aside>';
   const right='<section class="pane-r scroll" aria-label="'+esc(e.n)+'">'+
+    '<header class="folio"><p class="running">'+sigil(g.k,16)+'<span>'+H(g.label)+'</span><span class="no">No. '+FOLIO[e.n]+' of '+E.length+'</span></p>'+
+      '<h1 class="h1 title" data-vtn="'+e.i+'">'+H(e.n)+'</h1>'+(e.sub?'<p class="e-sub">'+H(e.sub)+'</p>':'')+'</header>'+
     '<nav class="chipbar" aria-label="Jump to a part">'+PARTS.map(p=>'<a class="chip" href="#'+p[0]+'" data-part="'+p[0]+'">'+p[1]+'</a>').join("")+'</nav>'+
     sec("short","In short",(e.abs&&e.abs.length?'Also called '+e.abs.map(H).join(", "):''),
       tile("",'<p class="sum">'+H(f.plain_language_summary)+'</p>',6,"hero")+
       (e.sens?'<article class="tile s6 safe" role="note"><h3>'+ic("shield")+'Your safety comes first</h3>'+prose(f.safety_note)+'<p class="small"><a href="'+href("about")+'">How to use this guide safely</a></p></article>':'')+
+      facts(e)+
       tile("It can sound like",says.length?'<ul class="says">'+says.slice(0,3).map(x=>'<li>'+H(x)+'</li>').join("")+'</ul>':'',notIt.length?4:6,"quote")+
       tile("It may be something else if",bl(notIt.slice(0,2),"away"),2,"")
     )+
     sec("understand","Understand it","What it is, why it matters, and how it shows up",
-      tile("What it is",'<div class="text">'+prose(f.expanded_definition)+'</div>',4,"tall")+
+      tile("What it is",'<div class="text">'+prose(f.expanded_definition)+'</div>',4,"tall initial")+
       tile("Why it matters",'<div class="text">'+prose(f.why_this_matters)+'</div>',2,"")+
       tile("How it shows up",bl(f.what_it_is),says.length>3?3:6,"")+
       (says.length>3?tile("More things people say",'<ul class="says">'+says.slice(3).map(x=>'<li>'+H(x)+'</li>').join("")+'</ul>',3,"quote"):"")
@@ -383,7 +406,16 @@ function viewEntry(slug){
       '<a class="tile nx" href="'+entryHref(next)+'" data-vt="'+next.i+'"><span class="k">Next</span><span class="t" data-vtn="'+next.i+'">'+H(next.n)+'</span></a>'+
     '</nav>'+foot()+
   '</section>';
-  return gloss('<div class="split entry">'+left+right+'</div>');
+  return gloss('<div class="split entry">'+left+right+'<div class="meridian" aria-hidden="true"><i></i></div></div>');
+}
+/* Small fact tiles, built only from what the guide already knows about the entry. On a phone they pair up half-width. */
+function facts(e){
+  const out=[], w=(e.w||[]).map(k=>SET[k]&&SET[k].label).filter(Boolean), rel=(e.rel||[]).filter(n=>BY[n]), pats=(PATS_OF[e.n]||[]).length;
+  if(w.length) out.push(['Where it happens',w.length>3?w.slice(0,3).join(", ")+" and more":w.join(", ")]);
+  if(rel.length) out.push(['Close relatives',rel.length+(rel.length===1?" tactic, ":" tactics, ")+"starting with "+rel[0]]);
+  if(pats) out.push(['In patterns',"Part of "+pats+(pats===1?" known sequence":" known sequences")]);
+  if(e.abs&&e.abs.length) out.push(['Also called',e.abs.slice(0,2).join(", ")]);
+  return out.slice(0,4).map(([h,t])=>'<article class="tile s'+(out.length>=3?2:3)+' fact pair"><h3>'+h+'</h3><p>'+H(t)+'</p></article>').join("");
 }
 function foot(){
   return '<footer class="foot"><p>A free guide by Noble Father Creations. It is a reading aid, not a diagnosis, a legal opinion or therapy. If you are in danger, contact emergency services.</p>'+
@@ -458,7 +490,7 @@ function viewAbout(){
     h("A signal, not a verdict")+p("One example of a pattern is a reason to look more closely, not proof of motive or character. Every entry says what its tactic is not, because most of these behaviors also have ordinary explanations. Please do not use a label from this guide to attack, shame, threaten, expose or get back at someone.")+
     h("The search box")+p("Pasting in something that was said to you finds entries whose wording is close to it. That is a pointer to read further, never a finding. It cannot see the tone, the history, or whether the words were meant seriously. What you type is never added to the address bar or your history.")+
     h("Your privacy")+p("There is no account. Your saved and recent entries stay on this device. The page counts anonymous visits, and nothing you type, paste or save is sent anywhere.")+
-    p("If someone else uses this device, turn on Private. Then what you read, save and search is kept only until you close the tab, and anything saved earlier is removed from this device.")+
+    p("If someone else uses this device, turn on Private. It removes everything this guide had stored on the device and writes nothing new: what you read, save and search is held in the open page only, and moving between entries adds nothing to your browser history. Private ends when you close or reload the page, so turn it on again next time. Your browser still records that you visited this guide; a private browser window hides that too.")+
     '<div class="chips" style="margin:8px 0 12px"><button class="btn" type="button" data-private aria-pressed="'+store.private+'">'+(store.private?"Private reading is on":"Turn on private reading")+'</button>'+
     (store.get("breath",true)===false?'<button class="btn ghost" type="button" data-breath="on">Turn reading pauses back on</button>':'')+'</div>'+
     h("Taking a pause")+p("After about twenty minutes of steady reading, the guide dims and suggests a short pause. You can keep reading straight away, or switch the reminder off.")+
@@ -515,7 +547,7 @@ let HOME_SCROLL=false, ROUTE_G=null, ROUTE_DIM=1, WIN_OY=null;
 function skyRoute(r,first){
   const phone=innerWidth<760, fk=Sky.fitK(), S=Sky.S;
   const fly=(x,y,k,ms,ox,oy)=>Sky.flyTo(x,y,k,first?0:ms,ox||0,oy||0);
-  Sky.st.interactive=false; Sky.st.chain=null; Sky.set({ring:-1,link:false,focus:null,groupFocus:null,labels:false,names:false,hover:-1,hoverable:r.view==="",magnet:r.view===""||r.view==="sky"});
+  Sky.st.interactive=false; Sky.st.chain=null; Sky.set({ring:-1,link:false,focus:null,groupFocus:null,labels:false,names:false,hover:-1,hoverable:r.view==="",magnet:r.view===""||r.view==="sky",graticule:r.view===""||r.view==="sky"});
   Sky.lit([]); HOME_SCROLL=false; document.body.dataset.sky=r.view;
   const rg=r.view==="browse"&&GROUP[r.arg]?r.arg:(r.view==="entry"?((BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]||{}).g):null);
   ROUTE_G=rg||null; if(rg){ document.body.style.setProperty("--g",GROUP[rg].c); document.body.dataset.g=rg; } else { document.body.style.removeProperty("--g"); delete document.body.dataset.g; }
@@ -554,7 +586,7 @@ function skyRoute(r,first){
   const cp=$(".stage-copy")||$(".sky-top"); if(cp){ const b=cp.getBoundingClientRect(); Sky.set({avoid:{x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}}); } else Sky.set({avoid:null});
   if(!first&&typeof Sky.ripple==="function"){ const focusStar=r.view==="entry"?(BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]||{}).i:null; const G=r.view==="browse"&&GROUP[r.arg]?S.groups[r.arg]:null;
     if(focusStar!=null) Sky.ripple(Sky.stars[focusStar].x,Sky.stars[focusStar].y); else if(G) Sky.ripple(G.x,G.y); else if(r.view===""||r.view==="sky") Sky.ripple(S.w/2,S.h/2); }
-  ROUTE_DIM=dim; WIN_OY=win?win.oy:null; Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky"||r.view==="");
+  const pl=$(".split .pane-l"), wide=innerWidth>900; ROUTE_DIM=dim; WIN_OY=win?win.oy:null; Sky.set({dim,clipY:win?win.bottom:null,clipX:pl&&wide?pl.getBoundingClientRect().right:null}); cvPointer(r.view==="sky"||r.view==="");
   if(r.view===""){ if(STORY) STORY.step=-2; storyUpdate(); }
 }
 function cvPointer(on){ const c=$("#sky"), sky=parse().view==="sky"; c.style.pointerEvents=on?"auto":"none"; c.style.cursor=sky?"grab":"default"; c.tabIndex=sky?0:-1; }
@@ -585,6 +617,9 @@ addEventListener("resize",debounce(fitAll,150));
 addEventListener("scroll",()=>{ headerState(); if(HOME_SCROLL) requestAnimationFrame(storyUpdate); else if(Sky.st.clipY!=null) requestAnimationFrame(winScroll); },{passive:true});
 let INTRO_PLAYED=false, MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PENDING_VT = null;
 function key(){return location.hash||"#/";}
+/* Going somewhere. In private reading the page replaces its one history entry instead of adding to the browser's history. */
+function nav(h){ if(store.private){ try{ history.replaceState(null,"",h); }catch(e){ location.hash=h; return; } render(); } else location.hash=h; }
+let PENDING_MORPH=null;
 /* On wide screens the guide is one locked viewport and the reading pane scrolls by itself;
    on a phone the page scrolls as usual. Everything that reads or sets a scroll position asks here. */
 function scroller(){ const sc=document.querySelector("#main .scroll"); return sc&&/(auto|scroll)/.test(getComputedStyle(sc).overflowY)?sc:(document.scrollingElement||document.documentElement); }
@@ -612,11 +647,14 @@ function render(){
     afterRender(r); skyRoute(r,LAST_KEY===null&&!INTRO_PLAYED);
     INTRO_PLAYED=true;
   };
-  const vt=PENDING_VT; PENDING_VT=null;
+  const vt=PENDING_VT; PENDING_VT=null; const mo=PENDING_MORPH; PENDING_MORPH=null;
   if(!INTRO_PLAYED||!document.startViewTransition||!motionOn()){ go(); splitHeads(); return; }
   if(vt!=null){ const src=document.querySelector('#main [data-vtn="'+vt+'"]'); if(src) src.style.viewTransitionName="title"; }
+  /* the star (or the card) you chose untethers and unfolds into the first tile of the entry */
+  let seed=null; if(mo&&r.view==="entry"){ if(mo.el) mo.el.style.viewTransitionName="morph"; else { seed=document.createElement("i"); seed.className="morph-seed"; seed.style.left=(mo.x-6)+"px"; seed.style.top=(mo.y-6)+"px"; seed.style.viewTransitionName="morph"; document.body.appendChild(seed); } }
   document.documentElement.classList.toggle("vt-title",vt!=null);
-  let t; try{ t=document.startViewTransition(()=>{ go(); if(vt!=null){ const h=document.querySelector('#main h1[data-vtn="'+vt+'"]'); if(h) h.style.viewTransitionName="title"; } splitHeads(vt!=null); }); }catch(e){ go(); splitHeads(); return; }
+  let t; try{ t=document.startViewTransition(()=>{ go(); if(seed) seed.remove(); if(vt!=null){ const h=document.querySelector('#main h1[data-vtn="'+vt+'"]'); if(h) h.style.viewTransitionName="title"; }
+    if(mo&&r.view==="entry"){ const hero=document.querySelector("#main .tile.hero"); if(hero) hero.style.viewTransitionName="morph"; } splitHeads(vt!=null); }); }catch(e){ if(seed) seed.remove(); go(); splitHeads(); return; }
   t.finished.finally(()=>{ document.querySelectorAll('[style*="view-transition-name"]').forEach(x=>x.style.viewTransitionName=""); document.documentElement.classList.remove("vt-title"); });
 }
 function motionOn(){ return !Sky.calm&&!matchMedia("(prefers-reduced-motion: reduce)").matches; }
@@ -648,7 +686,7 @@ function setNav(view){
   document.querySelectorAll("[data-nav]").forEach(a=>{ if(a.dataset.nav===cur) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
 }
 function lightResults(list){ if(typeof Sky==="undefined") return; Sky.lit(list.slice(0,16).map(e=>e.i),list.length<=12); Sky.set({ring:list.length===1?list[0].i:-1}); const w=$(".sky-window"); if(w&&list.length&&list.length<=40){ const b=w.getBoundingClientRect(), pts=list.slice(0,16).map(e=>Sky.stars[e.i]); let x0=1e9,x1=-1e9,y0=1e9,y1=-1e9; pts.forEach(p=>{x0=Math.min(x0,p.x);x1=Math.max(x1,p.x);y0=Math.min(y0,p.y);y1=Math.max(y1,p.y);}); const k=Math.min(b.width*.8/Math.max(260,x1-x0),b.height*.8/Math.max(260,y1-y0)); Sky.flyTo((x0+x1)/2,(y0+y1)/2,Math.max(Sky.fitK()*.55,Math.min(k,Sky.fitK()*2.5)),900,0,b.top+scrollY+b.height/2-innerHeight/2); } else if(w&&!list.length){ const b=w.getBoundingClientRect(); Sky.flyTo(Sky.S.w/2,Sky.S.h/2,Math.max(Sky.fitK()*.55,Math.min(b.width/Sky.S.w,b.height*1.9/Sky.S.h)),700,0,b.top+scrollY+b.height/2-innerHeight/2); } }
-function calmUI(){ const on=Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches; document.documentElement.dataset.calm=on?"1":"0"; document.querySelectorAll("[data-calm]").forEach(b=>{b.setAttribute("aria-pressed",on); b.setAttribute("aria-label",on?"Calm mode is on. Turn motion back on":"Turn on calm mode: stops all motion");}); }
+function calmUI(){ const on=Sky.calm||matchMedia("(prefers-reduced-motion: reduce)").matches; document.documentElement.dataset.calm=on?"1":"0"; document.querySelectorAll("button[data-calm]").forEach(b=>{b.setAttribute("aria-pressed",on); b.setAttribute("aria-label",on?"Calm mode is on. Turn motion back on":"Turn on calm mode: stops all motion");}); }
 function debounce(fn,ms){let t;return function(){clearTimeout(t);t=setTimeout(fn,ms);};}
 /* Display type is wide: if one word is wider than its box (Compartmentalization), shrink the headline just enough. */
 function fitText(el){
@@ -673,8 +711,15 @@ function reveals(){
 function noWidows(root){ root.querySelectorAll("p,li,blockquote,.df,.sum,.lede").forEach(el=>{
   const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let last=null; while(w.nextNode()) if(/\S/.test(w.currentNode.nodeValue)) last=w.currentNode;
   if(!last) return; const v=last.nodeValue, i=v.trimEnd().lastIndexOf(" "); if(i<1) return;
-  const tail=v.slice(i+1).trim(); if(tail.length>16||tail.length<1) return; last.nodeValue=v.slice(0,i)+"\u00a0"+v.slice(i+1); }); }
-function afterRender(r){ if(typeof kbLabels==="function") kbLabels(); noWidows($("#main")); reveals(); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
+  const tail=v.slice(i+1).trim(), prev=v.slice(0,i).split(/\s/).pop()||""; if(tail.length>12||tail.length<1||prev.length+tail.length>18) return; last.nodeValue=v.slice(0,i)+"\u00a0"+v.slice(i+1); }); }
+/* Each tile reads its own length: a short one is set large, as an editorial quote; on a phone, short ones pair up half-width. */
+function densities(){ document.querySelectorAll("#main .bento .tile:not(.tac):not(.hero)").forEach(t=>{ const body=t.cloneNode(true); const h=body.querySelector("h3"); if(h) h.remove(); const n=body.textContent.trim().length;
+  t.classList.toggle("brief",n<190&&!!t.querySelector(".text")&&!t.classList.contains("script")); t.classList.toggle("pair",n<230&&!t.classList.contains("script")&&!t.classList.contains("safe")&&!t.querySelector(".pats,.resp,.related,.says,.chips")); }); }
+/* the reading meridian: a hairline down the reading pane, ticked at each part, with a star at your place */
+function meridian(){ const m=$("#main .meridian"), pane=$("#main .pane-r"); if(!m||!pane) return; const H=pane.scrollHeight;
+  m.querySelectorAll("b").forEach(x=>x.remove()); pane.querySelectorAll(".sec").forEach(sc=>{ const b=document.createElement("b"); b.style.top=(sc.offsetTop/H*100)+"%"; m.appendChild(b); }); meridianAt(); }
+function meridianAt(){ const m=$("#main .meridian i"), pane=$("#main .pane-r"); if(!m||!pane) return; const max=Math.max(1,pane.scrollHeight-pane.clientHeight); m.style.transform="translateY("+(pane.scrollTop/max*(pane.clientHeight-48))+"px)"; }
+function afterRender(r){ if(typeof kbLabels==="function") kbLabels(); noWidows($("#main")); densities(); reveals(); requestAnimationFrame(meridian); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
   const live=$("#q-page");
   if(!live&&MOVED_FOCUS){ const h=$("#main h1:not(.sr-only)")||$("#main h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); } }
   MOVED_FOCUS=true;
@@ -703,11 +748,16 @@ function watchParts(){
 window.addEventListener("hashchange",()=>{ render(); });
 document.addEventListener("scroll",ev=>{ const t=ev.target;
   if(t&&t.classList&&t.classList.contains("pane-l")){ const w=t.querySelector(".sky-window"); if(w&&WIN_OY!=null){ Sky.set({offY:WIN_OY-t.scrollTop,clipY:Math.max(0,w.getBoundingClientRect().bottom)}); } return; }
+  if(t&&t.classList&&t.classList.contains("pane-r")) requestAnimationFrame(meridianAt);
   if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); headerState(); },{passive:true,capture:true});
 document.addEventListener("click",ev=>{
   const a=ev.target.closest("a[href^='#/']");
-  if(a){ if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); FRESH=true; delete SCROLL[a.getAttribute("href")]; const vt=a.dataset.vt; PENDING_VT=vt!=null?vt:null; return; }
-  const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall],[data-term],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],[data-calm],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],[data-calm]");
+  if(a){ if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); FRESH=true; delete SCROLL[a.getAttribute("href")]; const vt=a.dataset.vt; PENDING_VT=vt!=null?vt:null;
+    if(a.classList.contains("tac")) PENDING_MORPH={el:a};
+    else if(a.closest(".sky-ui .sheet")&&SKY_PICK>=0){ const q=Sky.toScreen(SKY_PICK); PENDING_MORPH={x:q[0],y:q[1]}; }
+    if(store.private){ ev.preventDefault(); nav(a.getAttribute("href")); }
+    return; }
+  const t=ev.target.closest("[data-try],[data-clear],[data-star],[data-share],[data-print],[data-copy],[data-where],[data-feel],[data-gstep],[data-greset],[data-setfilter],[data-jump],[data-part],[data-clearsaved],[data-theme-toggle],[data-openall],[data-term],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],button[data-calm],[data-skygroup],[data-zoom],[data-sheetclose],[data-skylink],button[data-calm]");
   if(!t) return;
   const d=t.dataset;
   if(d.try!==undefined){ SEARCH_Q=d.try; if(parse().view==="search"){ const i=$("#q-page"); i.value=SEARCH_Q; updateResults(); } else palOpen(d.try); return; }
@@ -739,14 +789,14 @@ document.addEventListener("click",ev=>{
 document.addEventListener("submit",ev=>{
   const f=ev.target.closest("[data-search]"); if(!f) return; ev.preventDefault();
   const i=f.querySelector("input"); SEARCH_Q=i.value;
-  if(parse().view!=="search"){ FRESH=true; location.hash="#/search"; } else { updateResults(); i.blur(); }
+  if(parse().view!=="search"){ FRESH=true; nav("#/search"); } else { updateResults(); i.blur(); }
 });
 const updateResults=(()=>{let t; return ()=>{clearTimeout(t); t=setTimeout(()=>{ const r=$("#results"); if(r){ const x=search(SEARCH_Q); lightResults(x.list); r.innerHTML=resultsHTML(x); const c=$("#rcount"); if(c) c.textContent=x.n?(x.list.length?x.list.length+" matches":"No matches"):""; } },120);};})();
 document.addEventListener("input",ev=>{
   const i=ev.target;
   if(i.closest&&i.closest("[data-search]")){ i.closest("form").classList.toggle("has",!!i.value);
     if(i.id==="q-page"){ SEARCH_Q=i.value; updateResults(); }
-    else if(i.id==="q-home"&&i.value.trim().length>=3){ SEARCH_Q=i.value; FRESH=true; location.hash="#/search"; }
+    else if(i.id==="q-home"&&i.value.trim().length>=3){ SEARCH_Q=i.value; FRESH=true; nav("#/search"); }
   }
   if(i.id==="azf"){ AZ_Q=i.value; const l=$("#azlist"); if(l) l.innerHTML=azList(); }
 });
@@ -770,7 +820,7 @@ function privUI(){ const on=store.private; document.documentElement.dataset.priv
   document.querySelectorAll("[data-private]").forEach(b=>{ b.setAttribute("aria-pressed",on); b.setAttribute("aria-label",on?"Private reading is on. Turn it off":"Turn on private reading"); }); }
 document.addEventListener("click",ev=>{ const b=ev.target.closest("[data-private]"); if(!b) return;
   const on=!store.private; store.setPrivate(on); privUI(); if(typeof Sky!=="undefined") refreshMarks();
-  toast(on?"Private: nothing is kept after you close this tab":"Private off: saved and recent are kept on this device");
+  toast(on?"Private: nothing is written to this device. It ends when you close or reload the page":"Private off: saved and recent are kept on this device");
   if(parse().view==="saved"||parse().view==="about") render(); });
 privUI();
 
@@ -794,7 +844,7 @@ document.addEventListener("keydown",ev=>{ if(ev.key==="Escape"&&!$("#breath").hi
   addEventListener("pointermove",e=>{ tx=e.clientX; ty=e.clientY; if(!raf) raf=requestAnimationFrame(step); document.documentElement.classList.add("lumen-on"); },{passive:true});
   document.addEventListener("pointerleave",()=>document.documentElement.classList.remove("lumen-on")); step(); })();
 
-Sky.onPick=i=>{ if(parse().view===""){ if(i>=0){ PENDING_VT=null; FRESH=true; location.hash=entryHref(E[i]); } return; } pickStar(i); };
+Sky.onPick=i=>{ if(parse().view===""){ if(i>=0){ PENDING_VT=null; const q=Sky.toScreen(i); PENDING_MORPH={x:q[0],y:q[1]}; FRESH=true; nav(entryHref(E[i])); } return; } pickStar(i); };
 
 /* ---------- the rail: ten marks, one per constellation (after Stripe Press's spine index) ---------- */
 (function rail(){ const r=$("#rail"); if(!r) return;
@@ -818,7 +868,7 @@ function setSkin(k){ const html=document.documentElement; html.setAttribute("dat
 if(!/^(midnight|daylight)$/.test(store.get("skin","midnight"))) store.set("skin","midnight");
 /* a soft aura follows the pointer beneath each button's edge */
 document.addEventListener("pointermove",ev=>{ const b=ev.target.closest&&ev.target.closest(".btn,.pill,.chip,.pg,.tile.tac"); if(!b) return; const r=b.getBoundingClientRect(); b.style.setProperty("--mx",(ev.clientX-r.left)+"px"); b.style.setProperty("--my",(ev.clientY-r.top)+"px"); },{passive:true});
-Sky.onCluster=g=>{ if(parse().view==="sky"){ const G=Sky.S.groups[g]; pickStar(-1); Sky.set({groupFocus:g,labels:true}); Sky.flyTo(G.x,G.y,Math.min(innerWidth,innerHeight)*(innerWidth<760?.36:.3)/G.r,1100,0,innerWidth<760?-innerHeight*.12:0); } else { FRESH=true; location.hash=href("browse/"+g); } };
+Sky.onCluster=g=>{ if(parse().view==="sky"){ const G=Sky.S.groups[g]; pickStar(-1); Sky.set({groupFocus:g,labels:true}); Sky.flyTo(G.x,G.y,Math.min(innerWidth,innerHeight)*(innerWidth<760?.36:.3)/G.r,1100,0,innerWidth<760?-innerHeight*.12:0); } else { FRESH=true; nav(href("browse/"+g)); } };
 
 /* ---------- go to anything: a command menu (after Linear) ---------- */
 const PAGES=[["guide","Help me figure it out","Two short questions"],["sky","The sky","Every tactic as a star"],["common","The most common","Where to begin"],["browse","Browse by what it does","Ten constellations"],["all","A–Z","All "+E.length+" tactics"],["patterns","How tactics combine","Patterns, step by step"],["saved","Saved and recent","On this device"],["about","Use this guide safely","Read this first if you are unsure"]];
@@ -856,7 +906,7 @@ function palClose(go){
   const p=$("#pal"); if(!p||p.hidden) return; p.hidden=true; document.documentElement.classList.remove("pal-on"); if(!go&&typeof Sky!=="undefined"&&!Sky.st.interactive) Sky.set({hover:-1});
   if(!go&&PAL.ret&&PAL.ret.focus) PAL.ret.focus({preventScroll:true});
 }
-function palGo(i){ const it=PAL.items[i]; if(!it) return; palClose(true); if(it.q!=null) SEARCH_Q=it.q; if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); FRESH=true; delete SCROLL[it.href]; PENDING_VT=null; location.hash=it.href; }
+function palGo(i){ const it=PAL.items[i]; if(!it) return; palClose(true); if(it.q!=null) SEARCH_Q=it.q; if(LAST_KEY) SCROLL[LAST_KEY]=scrollTop(); FRESH=true; delete SCROLL[it.href]; PENDING_VT=null; nav(it.href); }
 document.addEventListener("input",ev=>{ if(ev.target.id==="pal-q"){ PAL.sel=0; palDraw(); } });
 document.addEventListener("click",ev=>{
   if(ev.target.closest("[data-palclose]")){ palClose(); return; }
@@ -875,7 +925,7 @@ document.addEventListener("keydown",ev=>{
     return;
   }
   if(typing||ev.metaKey||ev.ctrlKey||ev.altKey) return;
-  if(parse().view==="entry"&&(ev.key==="j"||ev.key==="k")){ const a=$('[data-pg="'+(ev.key==="j"?"next":"prev")+'"]'); if(a){ ev.preventDefault(); FRESH=true; location.hash=a.getAttribute("href"); } }
+  if(parse().view==="entry"&&(ev.key==="j"||ev.key==="k")){ const a=$('[data-pg="'+(ev.key==="j"?"next":"prev")+'"]'); if(a){ ev.preventDefault(); FRESH=true; nav(a.getAttribute("href")); } }
 },true);
 const KB_MAC=/Mac|iPhone|iPad/.test(navigator.platform||navigator.userAgent); function kbLabels(){ if(!KB_MAC) document.querySelectorAll(".pill .kb").forEach(k=>k.textContent="Ctrl K"); } kbLabels();
 document.getElementById("sky").addEventListener("keydown",ev=>{
@@ -885,7 +935,7 @@ document.getElementById("sky").addEventListener("keydown",ev=>{
     const [dx,dy]=dirs[k], p=Sky.stars[SKY_PICK]; let best=-1,bs=1e12;
     Sky.stars.forEach((q,i)=>{ if(i===SKY_PICK) return; const vx=q.x-p.x, vy=q.y-p.y, d=Math.hypot(vx,vy); const dot=(vx*dx+vy*dy)/d; if(dot<.5) return; const sc=d*(2-dot); if(sc<bs){bs=sc;best=i;} });
     if(best>=0) pickStar(best); }
-  else if(k==="Enter"&&SKY_PICK>=0){ location.hash=entryHref(E[SKY_PICK]); }
+  else if(k==="Enter"&&SKY_PICK>=0){ const q=Sky.toScreen(SKY_PICK); PENDING_MORPH={x:q[0],y:q[1]}; nav(entryHref(E[SKY_PICK])); }
   else if(k==="Escape"){ pickStar(-1); }
   else if(k==="+"||k==="="){ Sky.setK(Sky.cam.k*1.4); Sky.invalidate(); } else if(k==="-"){ Sky.setK(Sky.cam.k/1.4); Sky.invalidate(); }
 });

@@ -1,4 +1,4 @@
-/* The Pattern Decoder v13 — the couture layer, over v12's invisible complexity.
+/* The Pattern Decoder v14 — the grimoire, over v13's couture layer and v12's invisible complexity.
    One locked viewport on wide screens: a living sky behind, smoke-glass panels in front.
    Display: Astra (drawn for this guide), light, tracked wide. Reading: Inter at 1.75.
    Two atmospheres only: Midnight (ink black) and Daylight (gallery white).
@@ -653,3 +653,150 @@ html.breathing #sky{opacity:.45;transition:opacity 2000ms var(--spring)}
 .tile,.pill,.btn,.chip,.pg,.panel,.pal-box,.sky-ui .sheet,.guide-bar,.icon-btn.solid,input.filter,.search input{border:0!important;--edge:var(--hair);box-shadow:inset 0 0 0 .5px var(--edge),inset 0 1px 0 -.5px var(--hi)}
 .btn.primary{--edge:var(--ink)}.btn.ghost,.tries .chip{--edge:transparent}.tile.safe{--edge:var(--ember-line)}
 .pill,.btn,.chip,.pg,.tile.tac,.pn .tile{transition:--edge 300ms var(--spring),transform 500ms var(--spring),color 200ms var(--snap),text-shadow 300ms var(--spring),opacity 900ms var(--spring)}
+
+/* ================= v14 · the grimoire ================= */
+/* sharp geometry: every container, control and capsule is a clean 90° cut. Only stars stay round,
+   and the shared House seal keeps its own shape. */
+*:not([class*="nf-"]):not(.gd):not(.sw):not(.skin-dot),*:not([class*="nf-"])::before,*:not([class*="nf-"])::after{border-radius:0!important}
+.brand img{border-radius:50%!important}
+
+/* paper-thin glass: a sheet you can barely see, defined only by its half-pixel edge */
+.tile,.panel{background:rgba(255,255,255,.005)}
+:root[data-theme="light"] .tile,:root[data-theme="light"] .panel{background:rgba(255,255,255,.42)}
+.tile.safe{background:color-mix(in srgb,var(--ember) 4%,rgba(255,255,255,.005))}
+.tile.script{background:linear-gradient(160deg,color-mix(in srgb,var(--g) 6%,transparent),transparent 62%)}
+
+/* living grain: archival film moving at a locked 24 frames a second, on one composited layer */
+body::before{background:radial-gradient(90% 70% at 50% -12%,rgba(40,46,78,.42),transparent 62%),radial-gradient(70% 60% at 104% 108%,rgba(56,38,74,.22),transparent 66%),radial-gradient(60% 55% at -8% 78%,rgba(18,42,56,.26),transparent 70%),var(--bg)}
+.veil::after{content:"";position:absolute;inset:-60%;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:220px 220px;will-change:transform;animation:grain 1s steps(24) infinite}
+:root[data-theme="light"] .veil::after{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes grain{from{transform:translate3d(0,0,0)}to{transform:translate3d(-893px,-641px,0)}}
+[data-calm="1"] .veil::after{animation:none}
+@media (prefers-reduced-motion:reduce){.veil::after{animation:none}}
+
+/* submerged controls: the three ways in become quiet serif lines on a half-pixel rule that only glows when you reach for them */
+.ways-row{gap:10px 36px;margin-top:36px}
+.ed-link{display:inline-block;padding:6px 0 5px;font:italic 400 clamp(20px,1.6vw,24px)/1.2 var(--lit);color:var(--ink);text-decoration:none;
+  box-shadow:inset 0 -.5px 0 color-mix(in srgb,var(--mint) 45%,transparent);transition:box-shadow 400ms var(--spring),text-shadow 400ms var(--spring),color 300ms var(--snap)}
+.ed-link:hover,.ed-link:focus-visible{box-shadow:inset 0 -.5px 0 var(--mint),0 6px 18px -10px var(--mint);text-shadow:0 0 14px color-mix(in srgb,var(--mint) 55%,transparent);outline:none}
+.ed-link:active{transform:translateY(.5px)}
+.continue a{font:italic 400 19px var(--lit);border:0;box-shadow:inset 0 -.5px 0 var(--mint)}
+
+/* asymmetry: the home statement sits off-centre on the left, large, with everything else hanging from it */
+@media (min-width:901px){
+  .stage{align-items:flex-start;text-align:left;padding-left:9vw;padding-right:6vw}
+  .stage-copy{align-items:flex-start;margin:auto 0 0;max-width:1100px}
+  .stage-copy::before{inset:-14% -30% -14% -12%;background:radial-gradient(48% 52% at 34% 50%,color-mix(in srgb,var(--bg) 84%,transparent) 20%,transparent 100%)}
+  .stage-h{font-size:clamp(44px,6.2vw,108px);letter-spacing:.22em;max-width:14ch;line-height:1.1}
+  .stage .lede{margin:34px 0 0 14%;text-align:left;max-width:46ch}
+  .stage .pill-xl{margin-left:14%}
+  .tries,.ways-row,.continue{justify-content:flex-start;margin-left:14%}
+  .dock{justify-content:flex-start;margin-left:-14px}
+  .stage .privacy{justify-content:flex-start;margin-left:0}
+}
+
+/* the folio: a running head, the folio number, and the title blown up off-centre across the reading page */
+.folio{padding:12px 0 8px}
+.running{display:flex;align-items:center;gap:12px;margin:0 0 clamp(28px,5vh,64px);padding-bottom:12px;font:italic 400 14px/1.3 var(--lit);color:var(--mint);box-shadow:inset 0 -.5px 0 var(--hair);max-width:none}
+.running .no{margin-left:auto;font-variant-numeric:oldstyle-nums}
+.folio .title{font-size:clamp(46px,5.4vw,104px);font-weight:100;letter-spacing:.22em;line-height:1.08;margin:0 0 0 9%;max-width:none}
+.folio .e-sub{margin:22px 0 0 18%;max-width:30ch;font-size:clamp(22px,1.9vw,30px)}
+#short .sec-h{margin-top:clamp(40px,7vh,88px)}
+
+/* the instrument column: where the star sits on the chart, read as an atlas would print it */
+.cartouche{display:flex;flex-wrap:wrap;gap:4px 18px;margin:0 0 22px;font:italic 400 14px/1.4 var(--lit);color:var(--mint);font-variant-numeric:lining-nums tabular-nums}
+.cartouche span:last-child{color:var(--ink-3)}
+
+/* vast, uneven whitespace: tiles float on wide gutters, and alternate parts step in from the left */
+.bento{column-gap:clamp(18px,2.2vw,36px);row-gap:clamp(22px,3.5vw,56px)}
+.tile{padding:clamp(28px,2.6vw,44px) clamp(28px,2.8vw,48px)}
+.tile.hero{padding:clamp(36px,3.6vw,64px) clamp(32px,4vw,72px)}
+@media (min-width:901px){.sec:nth-of-type(even) .bento,.sec:nth-of-type(even) .sec-h{margin-left:7%}}
+.sec{padding-top:clamp(36px,5vw,72px)}
+
+/* tiny, sharp metadata against the giant title */
+.count,.pager .pos,.track .tn{font-family:var(--lit);font-style:italic;font-size:14px}
+.privacy{font:italic 400 14px var(--lit);color:var(--ink-3)}
+
+/* tiles that size themselves by their own text: a short one is set as a large editorial quote */
+.tile.brief .text p{font:italic 400 clamp(22px,1.9vw,32px)/1.38 var(--lit);color:var(--ink);letter-spacing:0}
+.tile.brief .text p strong{font-weight:500}
+.tile.brief .text{padding-left:6%}
+
+/* the drop capital: the first explanation of every entry opens with a thin initial three lines deep */
+.tile.initial .text p:first-child::first-letter{float:left;font:100 4.4em/.82 var(--display);margin:.08em .14em 0 -.04em;color:var(--gx);text-transform:uppercase}
+
+/* sigils: each constellation's own seven-star figure, drawn from the sky itself */
+.sigil{flex:none;color:var(--cx,currentColor);overflow:visible}
+.sigil line{stroke:currentColor;stroke-width:.8px;vector-effect:non-scaling-stroke;opacity:.65}
+.sigil circle{fill:currentColor}
+.dock .sigil{transition:transform 500ms var(--spring)}.dock a:hover .sigil{transform:scale(1.25) rotate(-6deg)}
+.track .sigil{transition:transform 500ms var(--spring)}.track a.on .sigil{transform:scale(1.25)}
+.running .sigil{color:var(--gx)}
+.pane-l{position:relative;isolation:isolate}
+.sigil.watermark{position:absolute;z-index:-1;right:-36px;top:calc(clamp(130px,21vh,230px) + 40px);width:min(260px,60%);height:auto;opacity:.09;pointer-events:none}
+.sigil.watermark line{stroke-width:1px}
+
+/* the reading meridian: a hairline down the page, ticked at each part, with a star at your place */
+.split{position:relative}
+.meridian{position:absolute;right:18px;top:96px;bottom:32px;width:1px;transform:scaleX(.5);background:var(--hair);pointer-events:none}
+.meridian b{position:absolute;left:-5px;width:11px;height:1px;background:var(--hair-hi)}
+.meridian i{position:absolute;left:-4px;top:0;width:9px;height:9px;transform-origin:center;background:var(--gx);box-shadow:0 0 12px var(--gx);will-change:transform;transition:transform 160ms linear}
+.meridian i::after{content:"";position:absolute;inset:0;transform:rotate(45deg);background:inherit}
+@media (max-width:900px){.meridian{display:none}}
+
+/* the morph: the star you chose untethers and unfolds into the first tile's hairline edge */
+.morph-seed{position:fixed;z-index:3;width:12px;height:12px;background:var(--ink);box-shadow:0 0 18px var(--ink);pointer-events:none}
+::view-transition-group(morph){animation-duration:920ms;animation-timing-function:var(--spring)}
+::view-transition-old(morph){animation:fade 320ms var(--apple) reverse both}
+::view-transition-new(morph){animation:fade 720ms var(--spring) 140ms both}
+::view-transition-old(morph),::view-transition-new(morph){height:100%;width:100%}
+
+/* ================= phones: alternating cadence and a submerged bar ================= */
+@media (max-width:900px){
+  .tabs{left:0;right:0;bottom:0;height:calc(56px + env(safe-area-inset-bottom));padding:0 8px env(safe-area-inset-bottom);
+    background:linear-gradient(0deg,color-mix(in srgb,var(--bg) 94%,transparent),color-mix(in srgb,var(--bg) 62%,transparent));
+    -webkit-backdrop-filter:blur(30px) saturate(1.3);backdrop-filter:blur(30px) saturate(1.3);box-shadow:inset 0 .5px 0 var(--hair)}
+  .tabs a{height:48px}
+  .tabs a.t-search{height:38px;background:rgba(255,255,255,.03);box-shadow:inset 0 0 0 .5px var(--hair-hi)}
+  :root[data-theme="light"] .tabs a.t-search{background:rgba(15,15,17,.03)}
+  body{padding-bottom:calc(56px + 12px + env(safe-area-inset-bottom))}
+  .nf-seal{bottom:calc(56px + 18px + env(safe-area-inset-bottom))!important}
+  .toast{bottom:calc(56px + 18px + env(safe-area-inset-bottom))}
+  .guide-bar{bottom:calc(56px + 14px + env(safe-area-inset-bottom))}
+  .breath{padding-bottom:calc(56px + 22px + env(safe-area-inset-bottom))}
+  .bento{row-gap:16px;column-gap:10px}
+  .tile.pair{grid-column:span 1;padding:20px 16px}
+  .tile.pair>h3{font-size:16px}
+  .tile.pair li,.tile.pair .text p{font-size:14.5px;line-height:1.75}
+  .tile.brief.pair .text p{font-size:19px;line-height:1.35}
+  .tile.brief .text{padding-left:0}
+  .folio .title{font-size:clamp(30px,9vw,46px);letter-spacing:.16em;margin-left:4%}
+  .folio .e-sub{margin-left:12%}
+  .running{margin-bottom:24px}
+  .stage{align-items:flex-start;text-align:left}
+  .stage-copy{align-items:flex-start}
+  .stage .lede{text-align:left;margin-left:0}
+  .tries,.ways-row,.dock,.stage .privacy{justify-content:flex-start}
+  .ways-row{gap:6px 24px}
+  .sigil.watermark{top:180px;right:-24px;width:200px}
+}
+/* phones: an entry reads in print order (its star, its coordinates, its title), then the controls */
+@media (max-width:900px){
+  .split.entry{display:flex;flex-direction:column}
+  .split.entry>.pane-l,.split.entry>.pane-r{display:contents}
+  .split.entry .sky-window{order:1}.split.entry .cartouche{order:2;padding:0 20px}.split.entry .pane-l>.eyebrow{order:3;padding:0 20px;margin-bottom:4px}
+  .split.entry .folio{order:4;padding:4px 20px 0}.split.entry .e-meta{order:5;padding:0 20px}.split.entry .e-actions{order:6;padding:0 20px}
+  .split.entry .chipbar{order:7;margin-left:0;margin-right:0}
+  .split.entry .pane-r>.sec,.split.entry .pane-r>.pn,.split.entry .pane-r>.foot{order:8;margin-left:20px;margin-right:20px}
+  .split.entry .pane-l>.track,.split.entry .meridian{display:none}
+}
+/* fact tiles: a single line each, set small and exact */
+.tile.fact{padding:22px 26px}
+.tile.fact>h3{font-size:16px;margin-bottom:8px}
+.tile.fact p{margin:0;font-size:15px;line-height:1.6;color:var(--ink)}
+@media (max-width:900px){.tile.fact{padding:16px 14px}.tile.fact p{font-size:14px}}
+@media (max-width:900px){.split.entry .sky-window{margin:0 0 8px}}
+.pager .pos{color:var(--ink-2)}
+.tile{overflow-wrap:break-word}
+@media (max-width:900px){.split{overflow-x:clip}}
