@@ -3409,3 +3409,9 @@ points at the pre-2026-08-31 layout, e.g. `source/projects/noble-father-root.htm
 `faith`: our copy is ~3 MB larger than live. `reaction-map`: changed since its capture. **Do not deploy any
 of these from Wookbook until each is reconciled** (decide which side is right first — CLAUDE.md rule 3).
 Books has no deploy checker yet (`scripts/verify-deployed.mjs` lives only in Wookbook).
+- 2026-10-24 **Hand-off documents for another AI:** `docs/DECODER-BLUEPRINT.md` (complete design and
+  architecture: principles, files, routes, layout, colour, type, surface, sky engine, motion, components,
+  privacy, accessibility, version history, lessons) and `docs/DECODER-CODEX.md` (everything the site offers:
+  safety page, constellations, settings, guide, glossary, 109 patterns, 39 merged names, and all 310 entries
+  with every field). Regenerate the codex with `python3 design/export-decoder-codex.py` after any content
+  change (set DECODER_PAGES_JSON to a captured innerText of #/about to include the safety page verbatim).
