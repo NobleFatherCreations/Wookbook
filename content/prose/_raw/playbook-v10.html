@@ -1696,7 +1696,7 @@ let INTRO_PLAYED=false, MOVED_FOCUS = false, FRESH = false, LAST_KEY = null, PEN
 function key(){return location.hash||"#/";}
 /* On wide screens the guide is one locked viewport and the reading pane scrolls by itself;
    on a phone the page scrolls as usual. Everything that reads or sets a scroll position asks here. */
-function scroller(){ const sc=document.querySelector("#main .scroll"); return sc&&/(auto|scroll)/.test(getComputedStyle(sc).overflowY)?sc:document.scrollingElement; }
+function scroller(){ const sc=document.querySelector("#main .scroll"); return sc&&/(auto|scroll)/.test(getComputedStyle(sc).overflowY)?sc:(document.scrollingElement||document.documentElement); }
 function scrollTop(v){ const sc=scroller(); if(v==null) return sc.scrollTop; sc.scrollTop=v; }
 function render(){
   let r=parse();
