@@ -149,7 +149,8 @@ const Sky = (() => {
     if (animating || dirty || alive()) {
       draw(t);
       /* adapt: if frames keep arriving slower than ~30fps while the camera moves, drop the decorative layers */
-      if (!lite && animating && dt > 0) { slow = dt > 30 ? slow + 1 : Math.max(0, slow - 1); if (slow > 14) { lite = true; invalidate(); } }
+      /* phones drop to lite below ~30fps; a computer keeps the full sky (and the magnet) down to ~25fps */
+      if (!lite && animating && dt > 0) { slow = dt > (FINE ? 40 : 30) ? slow + 1 : Math.max(0, slow - 1); if (slow > (FINE ? 20 : 14)) { lite = true; invalidate(); } }
     }
     dirty = false;
     if (animating) raf = requestAnimationFrame(frame);
@@ -359,7 +360,7 @@ const Sky = (() => {
     lastMove = { x: e.clientX, y: e.clientY, t: performance.now() };
   }
   function move(e) {
-    if (st.hoverable && !st.interactive) { const i = nearest(e.clientX, e.clientY, 20); if (i !== st.hover) { st.hover = i; cv.style.cursor = i >= 0 || clusterAt(e.clientX, e.clientY) ? "pointer" : "default"; invalidate(); } else cv.style.cursor = i >= 0 || clusterAt(e.clientX, e.clientY) ? "pointer" : "default"; return; }
+    if (st.hoverable && !st.interactive) { const i = nearest(e.clientX, e.clientY, 10); if (i !== st.hover) { st.hover = i; cv.style.cursor = i >= 0 || clusterAt(e.clientX, e.clientY) ? "pointer" : "default"; invalidate(); } else cv.style.cursor = i >= 0 || clusterAt(e.clientX, e.clientY) ? "pointer" : "default"; return; }
     if (!st.interactive) return;
     if (!ptrs.has(e.pointerId)) { const i = nearest(e.clientX, e.clientY, 22); if (i !== st.hover) { st.hover = i; cv.style.cursor = i >= 0 ? "pointer" : "grab"; invalidate(); if (api.onHover) api.onHover(i); } return; }
     const p = ptrs.get(e.pointerId), dx = e.clientX - p.x, dy = e.clientY - p.y; p.x = e.clientX; p.y = e.clientY; moved += Math.abs(dx) + Math.abs(dy);
@@ -368,7 +369,8 @@ const Sky = (() => {
     invalidate();
   }
   function up(e) {
-    if (st.hoverable && !st.interactive) { if (performance.now() - downT < 500) { const i = nearest(e.clientX, e.clientY, 22); if (i >= 0 && api.onPick) api.onPick(i); else { const g = clusterAt(e.clientX, e.clientY); if (g && api.onCluster) api.onCluster(g); } } return; }
+    /* on the open sky a star needs a direct hit; anywhere else inside a constellation flies you into it */
+    if (st.hoverable && !st.interactive) { if (performance.now() - downT < 500) { const i = nearest(e.clientX, e.clientY, 10); if (i >= 0 && api.onPick) api.onPick(i); else { const g = clusterAt(e.clientX, e.clientY); if (g && api.onCluster) api.onCluster(g); } } return; }
     if (!st.interactive) return; const was = ptrs.has(e.pointerId); ptrs.delete(e.pointerId); if (ptrs.size < 2) pinch0 = null;
     if (was && moved < 8 && performance.now() - downT < 500) { const i = nearest(e.clientX, e.clientY, 26); vel.x = vel.y = 0; if (i < 0 && api.onCluster) { const g = clusterAt(e.clientX, e.clientY); if (g) { api.onCluster(g); return; } } if (api.onPick) api.onPick(i); }
     else if (performance.now() - lastMove.t > 80) vel.x = vel.y = 0;
@@ -394,6 +396,7 @@ const Sky = (() => {
   const api = {
     cam, st, stars, fitK, S, resize, invalidate, flyTo, setK,
     get calm() { return CALM; },
+    get lite() { return lite; },
     setCalm(v) { CALM = v; store.set("calm", v); if (v) { tween = null; vel.x = vel.y = 0; } invalidate(); },
     setMarks(v, s) { visited.clear(); saved.clear(); v.forEach(i => visited.add(i)); s.forEach(i => saved.add(i)); invalidate(); },
     set(opts) { Object.assign(st, opts); invalidate(); },

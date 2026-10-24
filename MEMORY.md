@@ -3313,3 +3313,10 @@ Verified: 310/310 entries at 1440 + 390, no overflow, no page errors; desktop ne
 the document; keyboard order, ⌘K focus trap + restore, Calm leaves no hidden words.
 Headless software rendering ran the magnet at ~36fps — needs a real-GPU / real-phone check.
 Figma record page added: https://www.figma.com/design/K5gk9VL90NpeCnGwvJYxHZ?node-id=5-2
+- 2026-10-24 v12 fixes from the proof pass: (1) the sky's adaptive lite mode was switching the
+  magnet OFF in software-rendered browsers (36fps tripped the 30fps rule) — computers now go lite
+  only below ~25fps; `Sky.lite` getter exposed for tests. (2) Home star pick radius 22→10px so
+  clicking inside a constellation actually flies into it (stars were too dense to ever miss).
+  (3) Chromium renders `border:.5px` as 2 device px; glass outlines are now `border:0` +
+  `box-shadow:inset 0 0 0 .5px var(--edge)` (states recolour `--edge`, registered @property) —
+  measured 1 device px at DPR 2.

@@ -109,7 +109,7 @@ p{margin:0 0 14px;max-width:var(--measure);text-wrap:pretty}
   background:var(--glass);border:.5px solid var(--hair);color:var(--ink-3);font:400 15px var(--sans);text-align:left;
   box-shadow:inset 0 .5px 0 var(--hi);transition:border-color 300ms var(--spring),color 300ms var(--spring),transform 400ms var(--spring)}
 .pill .pill-t{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pill:hover{color:var(--ink-2);border-color:color-mix(in srgb,var(--ink) 30%,transparent)}
+.pill:hover{color:var(--ink-2);--edge:color-mix(in srgb,var(--ink) 30%,transparent)}
 .pill:active{transform:scale(.98);transition-duration:90ms}
 .pill-xl{height:64px;width:min(640px,100%);min-width:0;padding:0 14px 0 26px;font-size:18px;gap:16px;margin-top:40px}
 .pill-xl svg.i{width:22px;height:22px}
@@ -123,22 +123,22 @@ p{margin:0 0 14px;max-width:var(--measure);text-wrap:pretty}
 .btn::before,.pill::before,.chip::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;opacity:0;pointer-events:none;
   background:radial-gradient(120px circle at var(--mx) var(--my),color-mix(in srgb,var(--g) 28%,transparent),transparent 70%);transition:opacity 400ms var(--spring)}
 .btn:hover::before,.pill:hover::before,.chip:hover::before{opacity:1}
-.btn:hover{border-color:color-mix(in srgb,var(--ink) 28%,transparent);text-shadow:.35px 0 rgba(255,70,90,.35),-.35px 0 rgba(70,200,255,.35)}
+.btn:hover{--edge:color-mix(in srgb,var(--ink) 28%,transparent);text-shadow:.35px 0 rgba(255,70,90,.35),-.35px 0 rgba(70,200,255,.35)}
 :root[data-theme="light"] .btn:hover{text-shadow:.3px 0 rgba(220,40,60,.28),-.3px 0 rgba(20,140,220,.28)}
 .btn:active{transform:scale(.98);transition-duration:90ms}
-.btn.primary{background:var(--ink);border-color:var(--ink);color:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
+.btn.primary{background:var(--ink);--edge:var(--ink);color:var(--bg);-webkit-backdrop-filter:none;backdrop-filter:none}
 .btn.primary::before{background:radial-gradient(120px circle at var(--mx) var(--my),rgba(255,255,255,.35),transparent 70%)}
 :root[data-theme="light"] .btn.primary::before{background:radial-gradient(120px circle at var(--mx) var(--my),rgba(0,0,0,.25),transparent 70%)}
 .btn.primary:hover{text-shadow:none}
-.btn.ghost{background:none;border-color:transparent;color:var(--ink-2);-webkit-backdrop-filter:none;backdrop-filter:none}
-.btn[aria-pressed="true"]{color:var(--star);border-color:color-mix(in srgb,var(--star) 60%,transparent)}
+.btn.ghost{background:none;--edge:transparent;color:var(--ink-2);-webkit-backdrop-filter:none;backdrop-filter:none}
+.btn[aria-pressed="true"]{color:var(--star);--edge:color-mix(in srgb,var(--star) 60%,transparent)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;align-items:center;gap:8px;min-height:38px;padding:0 16px;border-radius:999px;border:.5px solid var(--hair);background:var(--glass);
   -webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);color:var(--ink-2);font-size:14.5px;line-height:1.2;cursor:pointer;white-space:nowrap;
   transition:color 200ms var(--snap),border-color 200ms var(--snap),transform 500ms var(--spring)}
 .chip:hover{color:var(--ink)}
 .chip:active{transform:scale(.98);transition-duration:90ms}
-.chip[aria-pressed="true"],.chip.on{color:var(--ink);border-color:color-mix(in srgb,var(--ink) 45%,transparent);background:var(--fill-2)}
+.chip[aria-pressed="true"],.chip.on{color:var(--ink);--edge:color-mix(in srgb,var(--ink) 45%,transparent);background:var(--fill-2)}
 .chip .n{color:var(--ink-3);font-size:12.5px;font-variant-numeric:tabular-nums}
 .badge{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 12px;border-radius:999px;font-size:13px;font-weight:600}
 .badge.safety{color:var(--ember);background:var(--ember-wash);border:.5px solid var(--ember-line)}
@@ -200,7 +200,7 @@ body[data-sky=""] #main :is(a,button,input,.dock){pointer-events:auto}
 .pager .pos{padding:0 6px}.pager .pos b{color:var(--ink);font-weight:600}
 .pg{position:relative;isolation:isolate;overflow:hidden;display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;border:.5px solid var(--hair);background:var(--glass);color:var(--ink-2);
   transition:border-color 200ms var(--snap),color 200ms var(--snap),transform 500ms var(--spring)}
-.pg:hover{color:var(--ink);border-color:var(--gx)}.pg:active{transform:scale(.92);transition-duration:90ms}
+.pg:hover{color:var(--ink);--edge:var(--gx)}.pg:active{transform:scale(.92);transition-duration:90ms}
 .pg svg.i{width:16px;height:16px}
 .kb-hint{display:inline-flex;gap:4px;margin-left:6px}
 @media (pointer:coarse){.kb-hint{display:none}}
@@ -241,7 +241,7 @@ body[data-g] .pane-l .eyebrow a:last-child{color:var(--gx)}
 .tile.tw>h3{color:var(--toward)}.tile.tw li::before{background:var(--toward)}
 .tile.aw>h3{color:var(--away)}.tile.aw li::before{background:var(--away)}
 .tile ul.qs li::before{width:7px;height:7px;top:.66em;background:none;border:1px solid var(--gx)}
-.tile.safe{background:color-mix(in srgb,var(--ember) 9%,var(--glass));border-color:var(--ember-line)}
+.tile.safe{background:color-mix(in srgb,var(--ember) 9%,var(--glass));--edge:var(--ember-line)}
 .tile.safe>h3{color:var(--ember);font-weight:600}
 .tile.safe p{color:var(--ink)}
 .tile.script{background:linear-gradient(160deg,color-mix(in srgb,var(--g) 10%,var(--glass)),var(--glass) 60%)}
@@ -263,7 +263,7 @@ body[data-g] .pane-l .eyebrow a:last-child{color:var(--gx)}
 #short .sec-h{margin-top:4px}
 .pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:40px}
 .pn .tile{grid-column:auto;display:flex;flex-direction:column;gap:6px;transition:border-color 300ms var(--spring),transform 500ms var(--spring)}
-.pn .tile:hover{border-color:color-mix(in srgb,var(--g) 55%,transparent)}
+.pn .tile:hover{--edge:color-mix(in srgb,var(--g) 55%,transparent)}
 .pn .tile:active{transform:scale(.99)}
 .pn .k{font-size:13px;color:var(--ink-3)}.pn .t{font:300 clamp(20px,1.6vw,26px)/1.25 var(--display);letter-spacing:.06em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .pn .nx{text-align:right}
@@ -275,7 +275,7 @@ body[data-g] .pane-l .eyebrow a:last-child{color:var(--gx)}
 .tile.tac{display:flex;flex-direction:column;gap:8px;overflow:hidden;transition:border-color 300ms var(--spring),transform 500ms var(--spring)}
 .tile.tac::before{content:"";position:absolute;inset:0;z-index:-1;opacity:0;pointer-events:none;background:radial-gradient(260px circle at var(--mx) var(--my),color-mix(in srgb,var(--c) 16%,transparent),transparent 70%);transition:opacity 400ms var(--spring)}
 .tile.tac:hover::before{opacity:1}
-.tile.tac:hover{border-color:color-mix(in srgb,var(--c) 45%,transparent)}
+.tile.tac:hover{--edge:color-mix(in srgb,var(--c) 45%,transparent)}
 .tile.tac:active{transform:scale(.985);transition-duration:90ms}
 .tile.tac .nm{font:600 18px/1.35 var(--sans);letter-spacing:-.01em;display:flex;gap:10px;align-items:baseline;justify-content:space-between;padding-right:20px}
 .tile.tac.big .nm{font:300 clamp(24px,2vw,30px)/1.2 var(--display);letter-spacing:.06em}
@@ -320,13 +320,13 @@ body[data-sky="search"] .panel,body[data-sky="patterns"] .panel{background:linea
 .az a{min-width:32px;height:32px;display:inline-flex;align-items:center;justify-content:center;border-radius:8px;color:var(--ink-3);font-weight:600;font-size:13.5px}
 .az a:hover{color:var(--ink);background:var(--fill)}
 input.filter{width:100%;max-width:420px;height:48px;padding:0 20px;border-radius:999px;border:.5px solid var(--hair);background:var(--glass);color:var(--ink);font:400 16px var(--sans)}
-input.filter:focus{outline:none;border-color:color-mix(in srgb,var(--ink) 40%,transparent)}
+input.filter:focus{outline:none;--edge:color-mix(in srgb,var(--ink) 40%,transparent)}
 .empty{padding:40px 0;text-align:center}
 .empty p{margin:0 auto 16px}
 .search{position:relative;width:100%;max-width:680px}
 .search input{width:100%;height:58px;padding:0 56px 0 54px;border-radius:999px;border:.5px solid var(--hair);background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);color:var(--ink);font:400 17px var(--sans);-webkit-appearance:none;appearance:none}
 .search input::placeholder{color:var(--ink-3)}
-.search input:focus{outline:none;border-color:color-mix(in srgb,var(--ink) 40%,transparent)}
+.search input:focus{outline:none;--edge:color-mix(in srgb,var(--ink) 40%,transparent)}
 .search .s-ic{position:absolute;left:20px;top:50%;transform:translateY(-50%);color:var(--ink-3);pointer-events:none;display:flex}
 .search .s-clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:none;color:var(--ink-3);cursor:pointer;display:none;align-items:center;justify-content:center}
 .search.has .s-clear{display:flex}
@@ -522,3 +522,10 @@ html.pal-on{overflow:hidden}
   .wd>span{transform:none!important;opacity:1!important;filter:none!important;clip-path:none!important}
 }
 #main h1:focus,#main h2:focus{outline:none}
+
+/* true 0.5px hairlines: Chromium rounds sub-pixel borders up to a whole pixel, so glass
+   surfaces draw their outline as a 0.5px inset ring instead (states recolour --edge) */
+@property --edge{syntax:"<color>";inherits:false;initial-value:transparent}
+.tile,.pill,.btn,.chip,.pg,.panel,.pal-box,.sky-ui .sheet,.guide-bar,.icon-btn.solid,input.filter,.search input{border:0!important;--edge:var(--hair);box-shadow:inset 0 0 0 .5px var(--edge),inset 0 1px 0 -.5px var(--hi)}
+.btn.primary{--edge:var(--ink)}.btn.ghost,.tries .chip{--edge:transparent}.tile.safe{--edge:var(--ember-line)}
+.pill,.btn,.chip,.pg,.tile.tac,.pn .tile{transition:--edge 300ms var(--spring),transform 500ms var(--spring),color 200ms var(--snap),text-shadow 300ms var(--spring),opacity 900ms var(--spring)}
