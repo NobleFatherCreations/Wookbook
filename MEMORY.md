@@ -3415,3 +3415,10 @@ Books has no deploy checker yet (`scripts/verify-deployed.mjs` lives only in Woo
   safety page, constellations, settings, guide, glossary, 109 patterns, 39 merged names, and all 310 entries
   with every field). Regenerate the codex with `python3 design/export-decoder-codex.py` after any content
   change (set DECODER_PAGES_JSON to a captured innerText of #/about to include the safety page verbatim).
+
+## 2026-10-24 — Fleet drift reconciled (see Books/MEMORY.md for the full account)
+Wookbook sources brought up to live byte for byte (hub, wook, festival, shadowroot, feminine, children,
+fractal, fracture, music, nfcportals, noblenfcseals); reaction-map re-baselined; faith now a live snapshot.
+`npm run deployed` here: 17 in sync, 2 drifted = loop and scale, which are AHEAD of live on purpose
+(Sacred Divide rename not yet deployed; marked pendingDeploy), 1 unchecked (Casting lives in its own repo).
+Production deploy of loop/scale is waiting for an explicit go-ahead.
