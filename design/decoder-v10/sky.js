@@ -62,6 +62,14 @@ const Sky = (() => {
   let C = ink();
   let gfT0 = 0, gfLast = null;                            // when the focused constellation last changed: its lines draw themselves in
   let meteor = null, nextMeteor = performance.now() + 5000;
+  /* the cosmic stagger: after the camera moves, stars light up outward from where it landed, 12ms apart */
+  let RIP = null; const RIPD = new Float32Array(N);
+  function ripple(x, y) {
+    if (!motionOK()) { RIP = null; return; }
+    const order = stars.map((s, i) => [Math.hypot(s.x - x, s.y - y), i]).sort((a, b) => a[0] - b[0]);
+    order.forEach(([, i], rank) => { RIPD[i] = Math.min(1400, rank * 12); });
+    RIP = { t0: performance.now() + 120 }; invalidate();
+  }
   function makeSprite(rgb) {
     const key = rgb, c = document.createElement("canvas"); c.width = c.height = 64; const g = c.getContext("2d");
     const gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
@@ -145,6 +153,7 @@ const Sky = (() => {
       nextMeteor = performance.now() + 9000 + Math.random() * 14000;
     }
     if (meteor) animating = true;
+    if (RIP) { if (performance.now() - RIP.t0 > 1400 + 560) RIP = null; else animating = true; }
     if (physics(dt, t)) animating = true;
     if (animating || dirty || alive()) {
       draw(t);
@@ -278,10 +287,11 @@ const Sky = (() => {
       a *= delay;
       if (st.clipY != null) a *= Math.max(0, Math.min(1, (st.clipY - y) / 70 + 1));
       const tw = aliveNow ? .82 + .18 * Math.sin(time * (.8 + (i % 7) * .13) + s.ph) : 1;
+      let rp = 1; if (RIP) { rp = Math.max(0, Math.min(1, (performance.now() - RIP.t0 - RIPD[i]) / 560)); rp = 1 - Math.pow(1 - rp, 3); a *= rp; if (!rp) continue; }
       let near = NEAR[i]; if (!near && st.px != null && !st.magnet) { const dd = Math.hypot(x - st.px, y - st.py); near = dd < 170 ? 1 - dd / 170 : 0; near *= near; }
       if (near) a = Math.min(1, a * (1 + near * 1.8));
       const mineG = st.groupFocus && D.entries[i].g === st.groupFocus;
-      const size = Math.max(6, s.r * cam.k * 8.5) * (lit ? 1.5 : 1) * (i === st.ring ? 1.6 : 1) * (mineG ? 1.35 : 1) * (1 + near * .6) * (i === st.hover ? 1.5 : 1);
+      const size = (.55 + .45 * rp) * Math.max(6, s.r * cam.k * 8.5) * (lit ? 1.5 : 1) * (i === st.ring ? 1.6 : 1) * (mineG ? 1.35 : 1) * (1 + near * .6) * (i === st.hover ? 1.5 : 1);
       const img = (lit || vis || sv || i === st.ring || i === st.hover) ? brass : mineG ? spr(C.g[st.groupFocus]) : star;
       cx.globalAlpha = Math.min(1, a * tw);
       cx.drawImage(img, x - size, y - size, size * 2, size * 2);
@@ -327,6 +337,7 @@ const Sky = (() => {
       for (const [i, x, y, a, nr] of labelQ) {
         if (nr != null && i !== st.hover && ++micro > 4) continue;
         cx.globalAlpha = nr != null && i !== st.hover ? Math.min(1, .35 + nr) : 1;
+        if (y < (W < 900 ? 70 : 84)) continue;                      // never under the header
         const txt = curly(D.entries[i].n), w = cx.measureText(txt).width + 14;
         let lx = x + 12, ly = y; if (lx + w > W - 8) lx = x - 12 - w;
         if (i !== st.hover && placed.some(p => Math.abs(p[0] - lx) < Math.max(w, p[2]) && Math.abs(p[1] - ly) < 17)) continue;
@@ -405,7 +416,7 @@ const Sky = (() => {
     skipIntro() { appear = 1; },
     toWorld: (px, py) => [wx(px), wy(py)],
     toScreen: i => [qx(i), qy(i)],
-    nearest, clusterAt, onPick: null, onCluster: null, onHover: null, onResize: null,
+    ripple, nearest, clusterAt, onPick: null, onCluster: null, onHover: null, onResize: null,
   };
   twinkle = !(navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 2);
   resize(); cam.k = fitK();

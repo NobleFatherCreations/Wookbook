@@ -66,13 +66,18 @@ const HAY = E.map(e=>({
 }));
 
 /* ---------- storage (device only; survives being unavailable) ---------- */
+/* Private reading keeps what you read, save and search in memory only: it is gone when the tab closes. */
+const VOLATILE=new Set(["trail","starred"]);
 const store=(()=>{let mem={},ok=false;
   try{localStorage.setItem("__t","1");localStorage.removeItem("__t");ok=true}catch(e){}
+  let priv=false; try{priv=ok&&JSON.parse(localStorage.getItem("fg_private")||"false")===true}catch(e){}
   return{
-    get(k,d){try{if(ok){const v=localStorage.getItem("fg_"+k);if(v!==null){const p=JSON.parse(v);
+    get private(){return priv},
+    setPrivate(v){ priv=!!v; try{ if(ok){ localStorage.setItem("fg_private",JSON.stringify(priv)); if(priv) VOLATILE.forEach(k=>localStorage.removeItem("fg_"+k)); } }catch(e){} },
+    get(k,d){if(priv&&VOLATILE.has(k)) return (k in mem)?mem[k]:d; try{if(ok){const v=localStorage.getItem("fg_"+k);if(v!==null){const p=JSON.parse(v);
       if(Array.isArray(d)&&!Array.isArray(p))return d; if(typeof d==="string"&&typeof p!=="string")return d; return p;}return d}}catch(e){}
       return (k in mem)?mem[k]:d},
-    set(k,v){mem[k]=v;try{if(ok)localStorage.setItem("fg_"+k,JSON.stringify(v))}catch(e){ok=false}},
+    set(k,v){mem[k]=v; if(priv&&VOLATILE.has(k)) return; try{if(ok)localStorage.setItem("fg_"+k,JSON.stringify(v))}catch(e){ok=false}},
   };})();
 /* Saved items from before the merge may name a tactic that is now an alias. */
 (function normaliseSaved(){
@@ -453,6 +458,10 @@ function viewAbout(){
     h("A signal, not a verdict")+p("One example of a pattern is a reason to look more closely, not proof of motive or character. Every entry says what its tactic is not, because most of these behaviors also have ordinary explanations. Please do not use a label from this guide to attack, shame, threaten, expose or get back at someone.")+
     h("The search box")+p("Pasting in something that was said to you finds entries whose wording is close to it. That is a pointer to read further, never a finding. It cannot see the tone, the history, or whether the words were meant seriously. What you type is never added to the address bar or your history.")+
     h("Your privacy")+p("There is no account. Your saved and recent entries stay on this device. The page counts anonymous visits, and nothing you type, paste or save is sent anywhere.")+
+    p("If someone else uses this device, turn on Private. Then what you read, save and search is kept only until you close the tab, and anything saved earlier is removed from this device.")+
+    '<div class="chips" style="margin:8px 0 12px"><button class="btn" type="button" data-private aria-pressed="'+store.private+'">'+(store.private?"Private reading is on":"Turn on private reading")+'</button>'+
+    (store.get("breath",true)===false?'<button class="btn ghost" type="button" data-breath="on">Turn reading pauses back on</button>':'')+'</div>'+
+    h("Taking a pause")+p("After about twenty minutes of steady reading, the guide dims and suggests a short pause. You can keep reading straight away, or switch the reminder off.")+
     '<h2 class="h2" id="updates" style="margin:48px 0 16px">What changed</h2>'+'<p class="small muted">'+esc(D.version)+'</p><ul class="updates">'+D.updates.map(u=>'<li>'+u+'</li>').join("")+'</ul>'+
   '</div>';
 }
@@ -543,6 +552,8 @@ function skyRoute(r,first){
     fly(S.w/2,S.h/2,fk*(phone?1.1:1),1000,0,0); dim=.24;
   }
   const cp=$(".stage-copy")||$(".sky-top"); if(cp){ const b=cp.getBoundingClientRect(); Sky.set({avoid:{x0:b.left-20,x1:b.right+20,y0:b.top-20,y1:b.bottom+20}}); } else Sky.set({avoid:null});
+  if(!first&&typeof Sky.ripple==="function"){ const focusStar=r.view==="entry"?(BY_SLUG[r.arg]||BY[ALIAS_SLUG[r.arg]]||{}).i:null; const G=r.view==="browse"&&GROUP[r.arg]?S.groups[r.arg]:null;
+    if(focusStar!=null) Sky.ripple(Sky.stars[focusStar].x,Sky.stars[focusStar].y); else if(G) Sky.ripple(G.x,G.y); else if(r.view===""||r.view==="sky") Sky.ripple(S.w/2,S.h/2); }
   ROUTE_DIM=dim; WIN_OY=win?win.oy:null; Sky.set({dim,clipY:win?win.bottom:null}); cvPointer(r.view==="sky"||r.view==="");
   if(r.view===""){ if(STORY) STORY.step=-2; storyUpdate(); }
 }
@@ -658,7 +669,12 @@ function reveals(){
   RV=new IntersectionObserver(es=>es.forEach((x,n)=>{ if(x.isIntersecting){ x.target.style.transitionDelay=(n*70)+"ms"; x.target.classList.add("in"); RV.unobserve(x.target); } }),{rootMargin:"0px 0px -8% 0px"});
   items.forEach(el=>{ el.classList.add("rv"); RV.observe(el); });
 }
-function afterRender(r){ if(typeof kbLabels==="function") kbLabels(); reveals(); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
+/* the last two words of a paragraph never part: no single word left alone on the final line */
+function noWidows(root){ root.querySelectorAll("p,li,blockquote,.df,.sum,.lede").forEach(el=>{
+  const w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT); let last=null; while(w.nextNode()) if(/\S/.test(w.currentNode.nodeValue)) last=w.currentNode;
+  if(!last) return; const v=last.nodeValue, i=v.trimEnd().lastIndexOf(" "); if(i<1) return;
+  const tail=v.slice(i+1).trim(); if(tail.length>16||tail.length<1) return; last.nodeValue=v.slice(0,i)+"\u00a0"+v.slice(i+1); }); }
+function afterRender(r){ if(typeof kbLabels==="function") kbLabels(); noWidows($("#main")); reveals(); headerState(); fitAll(); if(document.fonts) document.fonts.ready.then(fitAll);
   const live=$("#q-page");
   if(!live&&MOVED_FOCUS){ const h=$("#main h1:not(.sr-only)")||$("#main h1"); if(h){ h.setAttribute("tabindex","-1"); h.focus({preventScroll:true}); } }
   MOVED_FOCUS=true;
@@ -749,6 +765,35 @@ function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("on
 function themeIcon(){ const b=$("[data-theme-toggle]"); if(!b) return; const light=document.documentElement.getAttribute("data-theme")==="light";
   b.innerHTML=ic(light?"moon":"sun"); b.setAttribute("aria-label",light?"Switch to Midnight":"Switch to Daylight"); }
 themeIcon(); calmUI(); refreshMarks();
+/* ---------- private reading ---------- */
+function privUI(){ const on=store.private; document.documentElement.dataset.priv=on?"1":"0";
+  document.querySelectorAll("[data-private]").forEach(b=>{ b.setAttribute("aria-pressed",on); b.setAttribute("aria-label",on?"Private reading is on. Turn it off":"Turn on private reading"); }); }
+document.addEventListener("click",ev=>{ const b=ev.target.closest("[data-private]"); if(!b) return;
+  const on=!store.private; store.setPrivate(on); privUI(); if(typeof Sky!=="undefined") refreshMarks();
+  toast(on?"Private: nothing is kept after you close this tab":"Private off: saved and recent are kept on this device");
+  if(parse().view==="saved"||parse().view==="about") render(); });
+privUI();
+
+/* ---------- a pause, after a long stretch of reading (optional) ---------- */
+const BREATH_AFTER=20*60*1000; let READ_MS=0, LAST_ACT=Date.now(), BREATH_RET=null;
+["pointerdown","keydown","wheel","touchstart","scroll"].forEach(t=>addEventListener(t,()=>{ LAST_ACT=Date.now(); },{passive:true,capture:true}));
+setInterval(()=>{ if(document.hidden||store.get("breath",true)===false||!$("#breath").hidden) return; if(Date.now()-LAST_ACT<120000) READ_MS+=15000; if(READ_MS>=BREATH_AFTER) breathShow(); },15000);
+function breathShow(){ const b=$("#breath"); if(!b||!b.hidden) return; BREATH_RET=document.activeElement; b.hidden=false; document.documentElement.classList.add("breathing");
+  if(typeof Sky!=="undefined") Sky.set({dim:Math.min(Sky.st.dim,.35)}); const k=b.querySelector('[data-breath="go"]'); if(k) k.focus({preventScroll:true}); }
+function breathHide(){ const b=$("#breath"); if(!b||b.hidden) return; b.hidden=true; document.documentElement.classList.remove("breathing"); READ_MS=0;
+  if(typeof Sky!=="undefined") Sky.set({dim:ROUTE_DIM}); if(BREATH_RET&&BREATH_RET.focus) BREATH_RET.focus({preventScroll:true}); }
+document.addEventListener("click",ev=>{ const b=ev.target.closest("[data-breath]"); if(!b) return; const v=b.dataset.breath;
+  if(v==="off"){ store.set("breath",false); toast("Reminders off. Turn them back on in Use this safely"); }
+  if(v==="on"){ store.set("breath",true); toast("Reminders on"); render(); return; }
+  breathHide(); });
+document.addEventListener("keydown",ev=>{ if(ev.key==="Escape"&&!$("#breath").hidden) breathHide(); });
+
+/* ---------- a soft light that follows the pointer, behind the panels ---------- */
+(function lumen(){ const el=$(".lumen i"); if(!el||!matchMedia("(pointer: fine)").matches) return; let x=innerWidth/2,y=innerHeight/2,tx=x,ty=y,raf=0;
+  const step=()=>{ raf=0; x+=(tx-x)*.14; y+=(ty-y)*.14; el.style.transform="translate3d("+(x-450)+"px,"+(y-450)+"px,0)"; if(Math.abs(tx-x)+Math.abs(ty-y)>.5) raf=requestAnimationFrame(step); };
+  addEventListener("pointermove",e=>{ tx=e.clientX; ty=e.clientY; if(!raf) raf=requestAnimationFrame(step); document.documentElement.classList.add("lumen-on"); },{passive:true});
+  document.addEventListener("pointerleave",()=>document.documentElement.classList.remove("lumen-on")); step(); })();
+
 Sky.onPick=i=>{ if(parse().view===""){ if(i>=0){ PENDING_VT=null; FRESH=true; location.hash=entryHref(E[i]); } return; } pickStar(i); };
 
 /* ---------- the rail: ten marks, one per constellation (after Stripe Press's spine index) ---------- */

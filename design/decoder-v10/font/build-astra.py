@@ -95,6 +95,9 @@ G["B"] = ([L((0, 0), (0, 700)),
 G["C"] = ([arc(330, 350, 330, 350, 45, 315)], [])
 G["D"] = ([join(L((0, 700), (0, 0)), L((180, 0)), arc(180, 350, 340, 350, -90, 90), L((0, 700)))], [])
 G["E"] = ([L((430, 700), (0, 700), (0, 0), (430, 0)), L((0, 350), (360, 350))], [])
+G["É"] = (G["E"][0] + [L((150, 770), (270, 880))], [])
+# the ampersand: a small loop, a long leg, and an open bowl, like the rest of the alphabet a joined figure
+G["&"] = ([circle(205, 560, 130, 140), L((120, 455), (560, 0)), arc(235, 215, 215, 215, 118, 395)], [])
 G["F"] = ([L((430, 700), (0, 700), (0, 0)), L((0, 350), (360, 350))], [])
 G["G"] = ([join(arc(330, 350, 330, 350, 45, 360), L((380, 350)))], [])
 G["H"] = ([L((0, 0), (0, 700)), L((500, 0), (500, 700)), L((0, 350), (500, 350))], [])
@@ -262,7 +265,7 @@ def build(weight_name, w, out):
                        "uniqueFontIdentifier": "AstraDisplay-" + weight_name, "fullName": "Astra Display " + weight_name,
                        "psName": "AstraDisplay-" + weight_name, "version": "Version 1.000"})
     fb.setupOS2(sTypoAscender=800, sTypoDescender=-260, sTypoLineGap=0, usWinAscent=900, usWinDescent=300,
-                sxHeight=500, sCapHeight=700, usWeightClass=300 if w < 60 else 500, fsType=0)
+                sxHeight=500, sCapHeight=700, usWeightClass=100 if w < 32 else 300 if w < 60 else 500, fsType=0)
     fb.setupPost()
     font = fb.font
     for gn in font["glyf"].keys():
@@ -277,6 +280,6 @@ def build(weight_name, w, out):
 if __name__ == "__main__":
     assets = os.path.join(HERE, "..", "assets")
     os.makedirs(assets, exist_ok=True)
-    for nm, w in (("Light", 44), ("Medium", 84)):
+    for nm, w in (("Thin", 24), ("Light", 44), ("Medium", 84)):
         out = os.path.join(assets, "astra-%s.woff2" % nm.lower())
         print(nm, w, build(nm, w, out) // 1024, "KB", os.path.relpath(out))

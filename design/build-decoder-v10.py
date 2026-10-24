@@ -22,8 +22,10 @@ from collections import Counter
 ROOT = os.path.join(os.path.dirname(__file__), "..")
 V10 = os.path.join(os.path.dirname(__file__), "decoder-v10")
 A = os.path.join(V10, "assets")
-VERSION = "v12 — 2026-10-22"
+VERSION = "v13 — 2026-10-24"
 UPDATES = [
+    "<strong>A finer finish (v13).</strong> A deeper night with a soft light that follows your pointer, warmer off-white text, tactic names set as tall thin capitals, and an italic face for quotes and labels. Pointing at a tile brings it forward and quiets the rest, and stars ripple in when you open a constellation. On a phone, search and the main places now sit in one pill at the bottom, within reach of your thumb.",
+    "<strong>Private reading.</strong> Turn on Private and nothing you read, save or search is kept once you close the tab. An optional reminder dims the screen after a long stretch of reading so you can take a breath; you can switch it off.",
     "<strong>One screen, nothing to wade through (v12).</strong> On a computer the guide now fits a single screen: pick a group or a tactic and the screen splits, with where you are on the left and the entry on the right in tiles you can scan. A thin bar on the left follows the part you are reading.",
     "<strong>Easier to scan.</strong> The first sentence of every explanation is set in bold, so the answer comes first, and the lead words of each sign and question stand out. Reading text is now set in Inter, with more space between lines.",
     "<strong>Two skies.</strong> Midnight is ink black with smoked-glass panels; Daylight is gallery white. On the open sky the stars drift, lean toward your pointer and show their names as you pass; click a star to read it or a constellation to fly into it.",
@@ -278,7 +280,9 @@ def main():
     sans = "@font-face{font-family:'Inter';font-style:normal;font-weight:100 900;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}" % base64.b64encode(open(os.path.join(A, "inter-var.woff2"), "rb").read()).decode()
     astra = "\n".join("@font-face{font-family:'Astra';font-style:normal;font-weight:%d;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}"
                       % (wt, base64.b64encode(open(os.path.join(A, "astra-%s.woff2" % nm), "rb").read()).decode())
-                      for nm, wt in (("light", 300), ("medium", 500)))
+                      for nm, wt in (("thin", 100), ("light", 300), ("medium", 500)))
+    # Cormorant Garamond Italic (SIL OFL 1.1), instanced to 300-500 and subset to Latin: quotes, subtitles and labels only
+    astra += "\n@font-face{font-family:'Cormorant';font-style:italic;font-weight:300 500;font-display:swap;src:url(data:font/woff2;base64,%s) format('woff2')}" % base64.b64encode(open(os.path.join(A, "cormorant-italic.woff2"), "rb").read()).decode()
     html = (shell.replace("{{FONTS}}", sans + "\n" + astra)
                  .replace("{{CSS}}", read(V10, "app.css"))
                  .replace("{{LOGO}}", logo)

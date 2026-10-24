@@ -88,8 +88,13 @@
         "found": false,
         "checkedAt": "2026-08-02"
       },
-      "version": "v12",
+      "version": "v13",
       "changelog": [
+        {
+          "date": "2026-10-24",
+          "version": "v13",
+          "summary": "Couture layer: velvet #040508 ground with nebular gradients and grain, pointer-following light (transformed layer), silk text rgba(240,242,245,.95), solar amber #FF9100 reserved for safety; Astra Thin (new weight 100, plus É and &) uppercase at .18em for titles; Cormorant Garamond Italic (self-hosted, OFL) in silver-mint for quotes, subtitles and labels; Inter at 1.85 with widow control; tile focus veil; 12ms star ripple after camera moves; phone bottom thumb pill with centred search and two-up tactic tiles; private reading (memory-only trail/saved, clears stored ones); optional 20-minute reading pause. Not yet deployed."
+        },
         {
           "date": "2026-10-22",
           "version": "v12",

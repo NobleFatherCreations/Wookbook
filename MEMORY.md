@@ -3320,3 +3320,17 @@ Figma record page added: https://www.figma.com/design/K5gk9VL90NpeCnGwvJYxHZ?nod
   (3) Chromium renders `border:.5px` as 2 device px; glass outlines are now `border:0` +
   `box-shadow:inset 0 0 0 .5px var(--edge)` (states recolour `--edge`, registered @property) —
   measured 1 device px at DPR 2.
+
+## 2026-10-24 — Pattern Decoder v13: couture layer (built, NOT deployed)
+
+From the user's "COUTURE LAYER" protocol (their explicit choices override my earlier
+reservations: uppercase thin titles, Cormorant as a third face, 1.85 leading, amber alert).
+New assets: `assets/astra-thin.woff2` (builder now makes Thin w=24 / Light 44 / Medium 84;
+added É and &), `assets/cormorant-italic.woff2` (instanced 300–500, Latin subset, OFL beside it).
+Private reading: `store.private`/`setPrivate`; VOLATILE keys (trail, starred) live in memory only,
+stored copies removed on enable; flag itself persists in `fg_private`.
+**Gotcha:** the root marker must NOT be `data-private` — `closest("[data-private]")` from any
+click matched `<html>` and toggled private on every click. It is `data-priv` on <html>.
+Pause: `breathShow()` after 20 min active+visible reading; `breath:false` turns it off (Use this
+safely page can turn it back on). Ripple: `Sky.ripple(x,y)` 12ms/rank, capped 1.4s.
+Verified: 310/310 at 1440 + 390, a11y script clean, contrast ≥4.98:1 both themes.

@@ -19,6 +19,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <canvas id="sky" aria-label="A star chart of all {{COUNT}} tactics" role="img"></canvas>
 <div class="veil" aria-hidden="true"></div>
+<div class="lumen" aria-hidden="true"><i></i></div>
 <header class="top">
   <div class="top-in">
     <a class="brand" href="#/" data-nav="home"><img src="{{LOGO}}" alt="" width="32" height="32"><b><span class="the">The </span>Pattern Decoder</b></a>
@@ -31,6 +32,7 @@
         <a href="#/saved" data-nav="saved" class="t-opt">Saved</a>
         <a href="#/about" data-nav="about" class="t-opt">Use this safely</a>
       </nav>
+      <button class="icon-btn priv-btn" type="button" data-private aria-pressed="false" aria-label="Turn on private reading"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-6 9-6 9 6 9 6-3.5 6-9 6-9-6-9-6z"/><circle cx="12" cy="12" r="2.6"/><path class="slash" d="M4 4l16 16"/></svg><span class="priv-t">Private</span></button>
       <button class="icon-btn" type="button" data-calm aria-pressed="false" aria-label="Turn on calm mode"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12c3-5 5-5 8 0s5 5 8 0"/></svg></button>
       <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to Daylight"></button>
     </div>
@@ -42,12 +44,13 @@
 </main>
 <nav class="tabs" aria-label="Main">
   <a href="#/" data-nav="home"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
-  <a href="#/search" data-nav="search" data-palette><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
   <a href="#/sky" data-nav="sky"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="1.6"/><circle cx="5" cy="7" r="1.1"/><circle cx="19" cy="9" r="1.1"/><circle cx="16" cy="19" r="1.1"/><path d="M5 7l7 5 7-3M12 12l4 7"/></svg>Sky</a>
+  <a href="#/search" data-nav="search" data-palette class="t-search"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</a>
   <a href="#/browse" data-nav="browse"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>Browse</a>
   <a href="#/saved" data-nav="saved"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg>Saved</a>
 </nav>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="breath" id="breath" hidden><div class="breath-box" role="dialog" aria-modal="false" aria-labelledby="breath-h"><p class="breath-k">A pause</p><h2 id="breath-h">You have been reading for a while.</h2><p>This can be heavy to sit with. Breathe out slowly, look away from the screen for a moment, and come back when you are ready.</p><div class="breath-act"><button class="btn primary" type="button" data-breath="go">Keep reading</button><button class="btn ghost" type="button" data-breath="off">Don’t remind me again</button></div></div></div>
 <div class="pal" id="pal" hidden><div class="pal-scrim" data-palclose></div><div class="pal-box" role="dialog" aria-modal="true" aria-label="Go to anything"></div></div>
 <script type="application/json" id="data">{{DATA}}</script>
 {{HOUSE}}

@@ -1,22 +1,25 @@
-/* The Pattern Decoder v12 — invisible complexity.
+/* The Pattern Decoder v13 — the couture layer, over v12's invisible complexity.
    One locked viewport on wide screens: a living sky behind, smoke-glass panels in front.
    Display: Astra (drawn for this guide), light, tracked wide. Reading: Inter at 1.75.
    Two atmospheres only: Midnight (ink black) and Daylight (gallery white).
    Each constellation keeps its own light; ember is reserved for safety. */
 :root{
-  --bg:#000000; --bg-2:#0B0B0D; --ink:#E4E4E7; --ink-2:rgba(228,228,231,.72); --ink-3:rgba(228,228,231,.5);
-  --glass:rgba(18,18,20,.7); --glass-2:rgba(18,18,20,.86); --blur:blur(40px) saturate(1.35);
+  --bg:#040508; --bg-2:#0A0B10; --ink:rgba(240,242,245,.95); --ink-2:rgba(240,242,245,.72); --ink-3:rgba(240,242,245,.5);
+  --mint:rgba(200,215,210,.8); --hair-hi:rgba(255,255,255,.4);
+  --glass:rgba(14,15,20,.66); --glass-2:rgba(12,13,18,.86); --blur:blur(40px) saturate(1.35);
   --hair:rgba(255,255,255,.12); --hair-2:rgba(255,255,255,.07); --line:rgba(228,228,231,.13); --line-2:rgba(228,228,231,.07);
   --fill:rgba(228,228,231,.045); --fill-2:rgba(228,228,231,.085); --hi:rgba(255,255,255,.06);
   --star:#D9C59A; --star-2:#EADBB6; --star-ink:#0F0F11; --star-wash:rgba(217,197,154,.12);
-  --ember:#F2A38A; --ember-wash:rgba(242,163,138,.08); --ember-line:rgba(242,163,138,.34);
+  /* the one alert colour: solar amber, kept for safety and nothing else */
+  --ember:#FF9100; --ember-wash:rgba(255,145,0,.07); --ember-line:rgba(255,145,0,.44); --ember-glow:rgba(255,145,0,.28);
   --toward:#9CD9BC; --away:#AFB8E8;
   --g:var(--star);
   --display:'Astra',system-ui,-apple-system,'Segoe UI',sans-serif;
   --sans:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+  --lit:'Cormorant','Cormorant Garamond',Garamond,'Iowan Old Style',Georgia,serif;
   --spring:cubic-bezier(.16,1,.3,1); --snap:cubic-bezier(.25,.46,.45,.94); --apple:cubic-bezier(.4,0,.6,1); --ease:cubic-bezier(.22,.61,.36,1); --ease-out:var(--spring);
   --r:18px; --r-lg:26px; --measure:66ch; --head-h:72px; --tab-h:62px;
-  --sky-star:228,228,231; --sky-glow:180,190,230; --sky-line:200,205,230; --sky-brass:217,197,154; --sky-dust:210,214,235; --sky-text:236,236,240; --sky-plate:8,8,10;
+  --sky-star:228,228,231; --sky-glow:180,190,230; --sky-line:200,205,230; --sky-brass:217,197,154; --sky-dust:210,214,235; --sky-text:240,242,245; --sky-plate:4,5,8;
   /* aliases the shared House menu reads */
   --accent:var(--star); --accent-grad:var(--star-2); --accent-ink:var(--star-ink); --brass:var(--star);
   --line2:var(--line); --mut:var(--ink-3); --mono:var(--sans); --serif:var(--display);
@@ -29,7 +32,8 @@
   --hair:rgba(15,15,17,.12); --hair-2:rgba(15,15,17,.07); --line:rgba(15,15,17,.13); --line-2:rgba(15,15,17,.07);
   --fill:rgba(15,15,17,.035); --fill-2:rgba(15,15,17,.07); --hi:rgba(255,255,255,.7);
   --star:#7A5A16; --star-2:#94701F; --star-ink:#FFFFFF; --star-wash:rgba(122,90,22,.1);
-  --ember:#A33A1E; --ember-wash:rgba(163,58,30,.06); --ember-line:rgba(163,58,30,.3);
+  --ember:#B35500; --ember-wash:rgba(255,145,0,.08); --ember-line:rgba(179,85,0,.4); --ember-glow:rgba(255,145,0,.18);
+  --mint:rgba(44,72,64,.9); --hair-hi:rgba(15,15,17,.42);
   --toward:#1F6B52; --away:#3D4F8F;
   --sky-star:30,32,48; --sky-glow:70,80,150; --sky-line:40,44,80; --sky-brass:122,90,22; --sky-dust:40,44,80; --sky-text:15,15,17; --sky-plate:255,255,255;
   --edge-hi:rgba(15,15,17,.02); --glow-1:rgba(122,90,22,.06);
@@ -522,6 +526,126 @@ html.pal-on{overflow:hidden}
   .wd>span{transform:none!important;opacity:1!important;filter:none!important;clip-path:none!important}
 }
 #main h1:focus,#main h2:focus{outline:none}
+
+/* ================= v13 · the couture layer ================= */
+/* velvet: the void has depth, a faint nebular weather and film grain, and sits under the sky */
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .045 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+  radial-gradient(90% 70% at 50% -12%,rgba(40,46,78,.42),transparent 62%),radial-gradient(70% 60% at 104% 108%,rgba(56,38,74,.22),transparent 66%),
+  radial-gradient(60% 55% at -8% 78%,rgba(18,42,56,.26),transparent 70%),var(--bg)}
+:root[data-theme="light"] body::before{background:radial-gradient(90% 70% at 50% -12%,rgba(205,212,236,.5),transparent 62%),radial-gradient(70% 60% at 104% 108%,rgba(232,222,240,.5),transparent 66%),var(--bg)}
+/* a soft light follows the pointer behind the panels: one transformed layer, no repaints */
+.lumen{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;opacity:0;transition:opacity 1200ms var(--spring)}
+html.lumen-on .lumen{opacity:1}
+.lumen i{position:absolute;left:0;top:0;width:900px;height:900px;border-radius:50%;will-change:transform;
+  background:radial-gradient(closest-side,color-mix(in srgb,var(--g) 7%,rgba(235,240,255,.055)),rgba(235,240,255,.02) 46%,transparent)}
+:root[data-theme="light"] .lumen i{background:radial-gradient(closest-side,rgba(90,100,160,.07),rgba(90,100,160,.025) 46%,transparent)}
+[data-calm="1"] .lumen{display:none}
+@media (prefers-reduced-motion:reduce){.lumen{display:none}}
+
+/* architectural display: thin capitals, tracked wide */
+.h1,.stage-h,.sky-h,.sheet-t,.sec-h .h2,.gt,.pn .t,.tile.tac.big .nm,.chain a,.letter{text-transform:uppercase;letter-spacing:.18em;font-family:var(--display)}
+.h1,.stage-h,.sky-h,.sec-h .h2{font-weight:100}
+.sheet-t,.gt,.pn .t,.tile.tac.big .nm,.chain a{font-weight:300}
+.h1{font-size:clamp(30px,2.9vw,48px);line-height:1.22}
+.stage-h{font-size:clamp(34px,5vw,80px);line-height:1.16;max-width:16ch}
+.sec-h .h2{font-size:clamp(20px,1.7vw,26px);line-height:1.3}
+.sky-h{font-size:clamp(32px,3.6vw,50px)}
+.tile.tac.big .nm{font-size:clamp(19px,1.55vw,24px);line-height:1.35;overflow-wrap:anywhere}
+.pn .t{font-size:clamp(17px,1.3vw,21px)}
+.gt{letter-spacing:.14em}
+.group .gt{font-size:clamp(19px,1.8vw,27px)}
+
+/* the editorial voice: Cormorant italic, silver-mint, for quotes, subtitles and labels only */
+.e-sub,.tile>h3,.eyebrow,.sec-h p,.count,.tile.tac .sub,.row .sub,.pal-h,.track .tn,.tile.quote .says li,.tile.script blockquote,.skins-h,.sheet .eyebrow,.foot p:first-child{font-family:var(--lit);font-style:italic}
+.e-sub{font-weight:400;font-size:clamp(22px,1.8vw,28px);line-height:1.3;letter-spacing:0;color:var(--mint)}
+.tile>h3{font-weight:500;font-size:18px;line-height:1.3;letter-spacing:.005em;color:var(--mint);margin-bottom:14px}
+.tile.tw>h3{color:var(--toward)}.tile.aw>h3{color:var(--away)}.tile.safe>h3{font-family:var(--sans);font-style:normal;font-weight:600;font-size:14px;letter-spacing:.02em;color:var(--ember)}
+.tile.script>h3{color:var(--gx)}
+.eyebrow{font-size:18px;font-weight:400;color:var(--mint)}
+.eyebrow a:last-child{color:inherit}
+body[data-g] .pane-l .eyebrow a:last-child{color:var(--gx)}
+.sec-h p{font-size:18px;line-height:1.4;color:var(--mint)}
+.count{font-size:17px;color:var(--mint)}
+.tile.tac .sub,.row .sub{font-size:17px;line-height:1.35;font-weight:500;color:var(--mint)}
+.pal-h{font-size:15.5px;color:var(--mint)}
+.track .tn{font-size:16px;font-weight:500;letter-spacing:0;width:24px;font-variant-numeric:oldstyle-nums}
+.tile.quote .says li{font-size:21px;line-height:1.5;font-weight:400;font-style:italic;color:var(--ink);padding-left:22px}
+.tile.quote .says li::before{font-family:var(--lit);font-size:34px;top:-.12em;color:var(--mint)}
+.tile.script blockquote{font-size:clamp(22px,1.7vw,26px);line-height:1.5;font-weight:400;color:var(--ink)}
+
+/* reading: Inter at 1.85, with the last two words of every paragraph held together */
+body{line-height:1.85}
+.tile .text p{line-height:1.85}
+.tile li{line-height:1.8}
+.resp p,.row .df,.tile.tac .df{line-height:1.8}
+.tile.hero .sum{line-height:1.6}
+
+/* the one alert colour glows, sparingly */
+.badge.safety{color:var(--ember);background:var(--ember-wash);--edge:var(--ember-line);box-shadow:inset 0 0 0 .5px var(--ember-line),0 0 18px var(--ember-glow);border:0}
+.tile.safe{--edge:var(--ember-line);box-shadow:inset 0 0 0 .5px var(--ember-line),0 0 0 .5px transparent,0 18px 60px -30px var(--ember-glow)}
+.dot-safe{color:var(--ember);filter:drop-shadow(0 0 6px var(--ember-glow))}
+.callout{border:0;box-shadow:inset 0 0 0 .5px var(--ember-line)}
+
+/* the focus veil: the tile you point at comes forward, its ring sharpens, the rest step back */
+.bento .tile{transition:opacity 500ms var(--spring),transform 600ms var(--spring),--edge 400ms var(--spring)}
+@media (hover:hover) and (pointer:fine){
+  .bento:has(.tile:hover) .tile:not(:hover){opacity:.38;transform:scale(.99)}
+  .bento .tile:hover{transform:scale(1.01);--edge:var(--hair-hi)}
+  .bento .tile.safe:hover{--edge:var(--ember)}
+}
+[data-calm="1"] .bento .tile{transform:none!important}
+
+/* private reading: a quiet switch that becomes a status when on */
+.priv-btn{width:auto!important;padding:0 10px!important;gap:6px}
+.priv-btn .priv-t{display:none;font-size:13px;font-weight:600;letter-spacing:.02em}
+.priv-btn .slash{opacity:0;transition:opacity 300ms var(--spring)}
+[data-priv="1"] .priv-btn{color:var(--ink);box-shadow:inset 0 0 0 .5px var(--hair-hi);border-radius:999px;padding:0 14px 0 12px!important}
+[data-priv="1"] .priv-btn .slash{opacity:1}
+[data-priv="1"] .priv-btn .priv-t{display:inline}
+
+/* a pause: the sky dims, one quiet card, nothing to dismiss in a hurry */
+.breath{position:fixed;inset:0;z-index:260;display:flex;align-items:flex-end;justify-content:center;padding:24px 16px calc(40px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--bg) 58%,transparent);-webkit-backdrop-filter:blur(6px) saturate(.8);backdrop-filter:blur(6px) saturate(.8);animation:fade 1600ms var(--spring) both}
+.breath[hidden]{display:none}
+.breath-box{width:min(520px,100%);padding:32px 32px 26px;border-radius:28px;background:var(--glass-2);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:inset 0 0 0 .5px var(--hair);animation:materialize 900ms var(--spring) 300ms both}
+.breath-k{margin:0 0 6px;font:italic 400 19px/1.3 var(--lit);color:var(--mint)}
+.breath h2{margin:0 0 12px;font:100 clamp(20px,2vw,26px)/1.3 var(--display);letter-spacing:.14em;text-transform:uppercase}
+.breath p{color:var(--ink-2)}
+.breath-act{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+html.breathing #sky{opacity:.45;transition:opacity 2000ms var(--spring)}
+
+/* ================= phones: one pill at the bottom, within the thumb's reach ================= */
+@media (max-width:900px){
+  .tabs{left:max(10px,env(safe-area-inset-left));right:max(10px,env(safe-area-inset-right));bottom:calc(10px + env(safe-area-inset-bottom));height:64px;padding:0 6px;border-radius:32px;border-top:0;
+    grid-template-columns:1fr 1fr 1.9fr 1fr 1fr;align-items:center;box-shadow:inset 0 0 0 .5px var(--hair),0 24px 60px -20px rgba(0,0,0,.7)}
+  .tabs a{height:52px;border-radius:26px;transition:color 160ms var(--snap),background 200ms var(--snap),transform 400ms var(--spring)}
+  .tabs a:active{transform:scale(.94)}
+  .tabs a.t-search{flex-direction:row;gap:8px;height:46px;margin:0 4px;border-radius:23px;font-size:14px;font-weight:500;color:var(--ink);background:var(--fill-2);box-shadow:inset 0 0 0 .5px var(--hair-hi)}
+  .tabs a.t-search svg.i{width:18px;height:18px}
+  body{padding-bottom:calc(var(--tab-h) + 30px + env(safe-area-inset-bottom))}
+  .nf-seal{bottom:calc(var(--tab-h) + 30px + env(safe-area-inset-bottom))!important}
+  .toast{bottom:calc(var(--tab-h) + 32px + env(safe-area-inset-bottom))}
+  .breath{padding-bottom:calc(var(--tab-h) + 34px + env(safe-area-inset-bottom))}
+  .guide-bar{bottom:calc(var(--tab-h) + 26px + env(safe-area-inset-bottom))}
+  .top-r{gap:0}.icon-btn{width:38px}
+  .brand b{letter-spacing:.02em}
+  /* the bento keeps its weights on a phone: a two-track grid where short cards pair up and long reads run full width */
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .tile,.tile.s2,.tile.s3,.tile.s4,.tile.s6{grid-column:span 2}
+  .tile.tac.s2{grid-column:span 1;padding:18px 16px;border-radius:20px}
+  .tile.tac.s2 .nm{font-size:15.5px;padding-right:0}
+  .tile.tac.s2 .sub{font-size:15.5px}
+  .tile.tac.s2 .df{font-size:13.5px;-webkit-line-clamp:4}
+  .tile.tac .go{display:none}
+  .tile.hero{padding:30px 24px}
+  .tile.hero .sum{font-size:21px}
+  .tile.s2:not(.tac){padding:20px 20px}
+  .h1{font-size:clamp(26px,7.6vw,38px);letter-spacing:.14em}
+  .stage-h{font-size:clamp(28px,8.6vw,48px);letter-spacing:.12em}
+  .tile.quote .says li{font-size:19px}
+}
+
 
 /* true 0.5px hairlines: Chromium rounds sub-pixel borders up to a whole pixel, so glass
    surfaces draw their outline as a 0.5px inset ring instead (states recolour --edge) */
