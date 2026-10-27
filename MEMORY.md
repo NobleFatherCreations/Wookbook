@@ -3427,3 +3427,7 @@ Production deploy of loop/scale is waiting for an explicit go-ahead.
   owner decisions). Key measured facts: entry = 29 tiles / ~1,730 words / 11.3 desktop screens / 16.5 phone screens;
   3.2 MB JSON = 90% of the page, 347 ms startup task (836 ms at 4x CPU), headline visible 3.4 s on a throttled phone;
   `.h1` defined 6x in CSS, 49 !important. No analysis finding has been implemented yet.
+
+## 2026-10-27 — Pattern Decoder v15 deployed (registry updated here)
+
+v15 is LIVE at https://noblefathercreations.com/playbook (deploy `6ae07f8d1d3cc016c185f5cc`). In this repo: `sites.json` playbook is v15 with `localSource` = `content/prose/_raw/playbook-v15.html` (identical to live, md5 `faa7a856edb3e34f5dbe94eab06462d8`), and `npm run deployed` reports playbook in sync. The v15 builder, app, tests, design record and the full hand-off live in the Books repo: read its `MEMORY.md` (section "HAND-OFF for the next chat") and `BOOKS.md`. Do not rebuild the playbook from `design/build-decoder-v10.py` here: that is the v14 builder.
