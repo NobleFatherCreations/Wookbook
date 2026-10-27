@@ -226,7 +226,8 @@ never let the ledger drift from what the page itself says.
   `.claude/skills/README.md` for what each does and any caveats.
 - **Subagents in `.claude/agents/`**: 16 of them, design/UX/writing/code
   review plus impeccable's support crew — see `.claude/agents/README.md`.
-- **MCP servers in `.mcp.json`**: `playwright` (browser automation),
+- **MCP servers in `.mcp.json`**: `sequential-thinking` (step-by-step planning; use it before multi-step design or
+  architecture work; also registered at user scope by the environment setup script), `playwright` (browser automation),
   `higgsfield` (image/video gen — needs your own API key, currently a
   placeholder).
 - **`garrytan/gastown` is declined**, same reasons as gstack — background

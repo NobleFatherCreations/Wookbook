@@ -2,15 +2,27 @@
   "mcpServers": {
     "playwright": {
       "command": "npx",
-      "args": ["-y", "@playwright/mcp@latest"]
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
     },
     "higgsfield": {
       "command": "python",
-      "args": ["tools/geopopos-higgsfield_ai_mcp/src/higgsfield_mcp/server.py"],
+      "args": [
+        "tools/geopopos-higgsfield_ai_mcp/src/higgsfield_mcp/server.py"
+      ],
       "env": {
         "HF_API_KEY": "",
         "HF_SECRET": ""
       }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking@2.0.0"
+      ]
     }
   }
 }
