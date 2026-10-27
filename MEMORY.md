@@ -3457,3 +3457,7 @@ v15 is LIVE at https://noblefathercreations.com/playbook (deploy `6ae07f8d1d3cc0
   above the repos (/home/user), it must be registered at user scope by the environment's Setup script:
   `claude mcp add --scope user sequential-thinking -- npx -y @modelcontextprotocol/server-sequential-thinking@2.0.0 || true`
   (verified Connected on 2026-10-27; Node 22 warns that it wants Node 24 but works).
+- 2026-10-27 (later): the repos' SessionStart hook (`.claude/hooks/session-start.sh` in Books and Wookbook) now registers
+  Sequential Thinking at user scope on every start (idempotent; tested fresh, repeated, and outside a repo: Connected).
+  A server registered by a hook is live from the next start or resume of that chat; the environment Setup script line is
+  still the only way to have it in the very first turn of every new chat.
